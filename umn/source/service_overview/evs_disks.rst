@@ -33,7 +33,7 @@ EVS disks have two device types, Virtual Block Device (VBD) and Small Computer S
 Helpful Links
 -------------
 
--  `Which ECSs Can Be Attached with SCSI EVS Disks? <en-us_topic_0077938284.html>`__
+-  `Which ECSs Can Be Attached with SCSI EVS Disks? <faqs/disk_management/which_ecss_can_be_attached_with_scsi_evs_disks>`__
 
 
 .. |image1| image:: /_static/images/note_3.0-en-us.png

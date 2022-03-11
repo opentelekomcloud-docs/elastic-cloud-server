@@ -54,7 +54,7 @@ Performing Basic Configurations
 
    |image5|
 
-   -  Before selecting an ECS type, learn the introduction and notes on each type of ECSs. For details, see `ECS Types <en-us_topic_0035470096.html>`__.
+   -  Before selecting an ECS type, learn the introduction and notes on each type of ECSs. For details, see `ECS Types <service_overview/instances/ecs_types>`__.
 
    -  **Local Disk**: specifies the local storage of the physical server where the ECS is deployed. Only Hard Disk Driver (HDD) disks are supported. If the ECS of the selected type (such as **Disk-intensive**) uses local disks, the system automatically attaches the local disks to the ECS and displays the information of the local disks.
 
@@ -104,13 +104,13 @@ Performing Basic Configurations
 
       Allows you to use your existing OS license. In such a case, you do not need to apply for a license again.
 
-   For more details, see `License Type <en-us_topic_0046566932.html>`__.
+   For more details, see `License Type <service_overview/security/license_type>`__.
 
 #. Set **System Disk** and **Data Disk** if required.
 
    -  System disk
 
-      For the disk types supported by an ECS, see `EVS Disks <en-us_topic_0030828256.html>`__.
+      For the disk types supported by an ECS, see `EVS Disks <service_overview/evs_disks>`__.
 
       -  If the image based on which an ECS is created is not encrypted, the system disk of the ECS is not encrypted. If the image based on which an ECS is created is encrypted, the system disk of the ECS is automatically encrypted. For details, see `(Optional) Encryption-related parameters <#EN-US_TOPIC_0163572589__en-us_topic_0144542112_li3286101316615>`__.
       -  **Encryption**: indicates that the system disk is encrypted if you select this option. For details, see `(Optional) Encryption-related parameters <#EN-US_TOPIC_0163572589__en-us_topic_0144542112_li3286101316615>`__.
@@ -122,7 +122,7 @@ Performing Basic Configurations
 
       Click |image7| and set the following functions if required:
 
-      -  **SCSI**: indicates that the device type of the data disk is SCSI if you select this option. For more information about SCSI disks and the ECSs that can be attached with SCSI disks, see `EVS Disks <en-us_topic_0030828256.html>`__.
+      -  **SCSI**: indicates that the device type of the data disk is SCSI if you select this option. For more information about SCSI disks and the ECSs that can be attached with SCSI disks, see `EVS Disks <service_overview/evs_disks>`__.
 
       -  **Share**: indicates that the EVS disk is sharable if you select this option. Such an EVS disk can be attached to multiple ECSs.
 
@@ -140,7 +140,7 @@ Performing Basic Configurations
 
    -  (Optional) Encryption-related parameters
 
-      To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permission, assign the KMS access permissions to EVS. If you do not have the permission, contact the user having the security administrator rights to assign the KMS access permissions. For more details, see `Can All Users Use the Encryption Feature? <en-us_topic_0047272493.html>`__
+      To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permission, assign the KMS access permissions to EVS. If you do not have the permission, contact the user having the security administrator rights to assign the KMS access permissions. For more details, see `Can All Users Use the Encryption Feature? <faqs/disk_management/can_all_users_use_the_encryption_feature>`__
 
       -  **Encryption**: indicates that the EVS disk has been encrypted.
       -  **Create Xrole**: assigns KMS access permissions to EVS to obtain KMS keys. After the permissions are assigned, follow-up operations do not require assigning permissions again.

@@ -11,8 +11,8 @@ There are two ways to expand a system disk:
 -  Consider the empty partition as a new partition and attach this partition to a directory in the root partition after formatting it. For details, see this section.
 -  Add the empty partition to the root partition to be expanded. For detailed operations, see the following:
 
-   -  `How Can I Add the Empty Partition of an Expanded System Disk to the End Root Partition Online? <en-us_topic_0078300749.html>`__
-   -  `How Can I Add the Empty Partition of an Expanded System Disk to the Non-end Root Partition Online? <en-us_topic_0078300750.html>`__
+   -  `How Can I Add the Empty Partition of an Expanded System Disk to the End Root Partition Online? <faqs/disk_management/how_can_i_add_the_empty_partition_of_an_expanded_system_disk_to_the_end_root_partition_online>`__
+   -  `How Can I Add the Empty Partition of an Expanded System Disk to the Non-end Root Partition Online? <faqs/disk_management/how_can_i_add_the_empty_partition_of_an_expanded_system_disk_to_the_non-end_root_partition_online>`__
 
 Procedure
 ---------

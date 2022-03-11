@@ -10,10 +10,10 @@ Prerequisites
 -------------
 
 -  The target ECS is running.
--  You have obtained the password for logging in to the Windows ECS. For details, see `Obtaining the Password for Logging In to a Windows ECS <en-us_topic_0031107266.html>`__.
--  You have bound an EIP to the ECS. For details, see `Binding an EIP <en-us_topic_0174917535.html>`__.
+-  You have obtained the password for logging in to the Windows ECS. For details, see `Obtaining the Password for Logging In to a Windows ECS <passwords_and_key_pairs/obtaining_the_password_for_logging_in_to_a_windows_ecs>`__.
+-  You have bound an EIP to the ECS. For details, see `Binding an EIP <eips/binding_an_eip>`__.
 
--  Access to port 3389 is allowed in the inbound direction of the security group to which the ECS belongs. For details, see `Configuring Security Group Rules <en-us_topic_0030878383.html>`__.
+-  Access to port 3389 is allowed in the inbound direction of the security group to which the ECS belongs. For details, see `Configuring Security Group Rules <security/security_groups/configuring_security_group_rules>`__.
 -  The network connection between the login tool and the target ECS is normal. For example, the default port 3389 is not blocked by the firewall.
 -  RDP has been enabled on the target ECS. By default, RDP has been enabled on the ECSs created using a public image. For instructions about how to enable RDP, see `Enabling RDP <#EN-US_TOPIC_0017955381__section65216898112059>`__.
 
@@ -61,7 +61,7 @@ By default, RDP has been enabled on the ECSs created using a public image.
 
 #. Log in to the Windows ECS using VNC.
 
-   For details, see `Login Using VNC <en-us_topic_0027268511.html>`__.
+   For details, see `Login Using VNC <instances/logging_in_to_a_windows_ecs/login_using_vnc>`__.
 
 #. Click **Start** in the task bar and choose **Control Panel** > **System and Security** > **System** > **Remote settings**.
 

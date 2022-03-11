@@ -32,8 +32,8 @@ Notes
 -  Do not perform any operations on the ECS immediately after its OS is changed. Wait for several minutes until the system successfully injects the password or key. Otherwise, the injection may fail, and the ECS cannot be logged in to.
 -  After the OS is changed, the password for logging in to the ECS is reset. To retrieve the password, perform the following operations:
 
-   -  For a Linux ECS, log in to it using the key and set a new password. For instructions about how to log in to an ECS using a key pair, see `Login Using an SSH Key <en-us_topic_0017955380.html>`__.
-   -  For a Windows ECS, retrieve the password by following the instructions provided in `Obtaining the Password for Logging In to a Windows ECS <en-us_topic_0031107266.html>`__.
+   -  For a Linux ECS, log in to it using the key and set a new password. For instructions about how to log in to an ECS using a key pair, see `Login Using an SSH Key <instances/logging_in_to_a_linux_ecs/login_using_an_ssh_key>`__.
+   -  For a Windows ECS, retrieve the password by following the instructions provided in `Obtaining the Password for Logging In to a Windows ECS <passwords_and_key_pairs/obtaining_the_password_for_logging_in_to_a_windows_ecs>`__.
 
 -  The system disk capacity of an ECS with OS changed may change because the system disk capacity specified by the image of the changed OS may be changed.
 -  You can choose to encrypt the system disk of an ECS during OS change.
@@ -78,11 +78,11 @@ Procedure
 
 #. Modify related ECS parameters, such as **Image Type** and **Image**, based on service requirements.
 
-   For more details, see `Creating an ECS <en-us_topic_0021831611.html>`__.
+   For more details, see `Creating an ECS <getting_started/creating_an_ecs>`__.
 
 #. (Optional) Select the **Encryption** option to encrypt the system disk during OS change.
 
-   To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permission, assign the KMS access permissions to EVS. If you do not have the permission, contact the user having the security administrator rights to assign the KMS access permissions. For more details, see `Can All Users Use the Encryption Feature? <en-us_topic_0047272493.html>`__
+   To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permission, assign the KMS access permissions to EVS. If you do not have the permission, contact the user having the security administrator rights to assign the KMS access permissions. For more details, see `Can All Users Use the Encryption Feature? <faqs/disk_management/can_all_users_use_the_encryption_feature>`__
 
    Encryption parameters are as follows:
 
@@ -92,7 +92,7 @@ Procedure
    -  **Xrole Name: EVSAccessKMS**: specifies that permissions have been assigned to EVS to obtain KMS keys for encrypting or decrypting EVS disks.
    -  **KMS Key ID**: specifies the ID of the key used by the encrypted data disk.
 
-#. (Optional) Select a **License Type** (**Use license from the system** or **Bring your own license (BYOL)**) if the changed OS running on your ECS is billed. For more details, see `License Type <en-us_topic_0046566932.html>`__.The following OSs are billed:
+#. (Optional) Select a **License Type** (**Use license from the system** or **Bring your own license (BYOL)**) if the changed OS running on your ECS is billed. For more details, see `License Type <service_overview/security/license_type>`__.The following OSs are billed:
 
    -  SUSE Linux Enterprise Server
    -  Oracle Enterprise Linux
@@ -121,7 +121,7 @@ Follow-up Procedure
 
       It is a good practice to back up the **/etc/fstab** file before writing data into it.
 
-      To enable automatic partition mounting upon system startup, see `Initializing a Linux Data Disk (fdisk) <en-us_topic_0085634797.html>`__.
+      To enable automatic partition mounting upon system startup, see `Initializing a Linux Data Disk (fdisk) <getting_started/initializing_evs_data_disks/initializing_a_linux_data_disk_(fdisk)>`__.
 
    #. Mount the partition so that you can use the data disk.
 

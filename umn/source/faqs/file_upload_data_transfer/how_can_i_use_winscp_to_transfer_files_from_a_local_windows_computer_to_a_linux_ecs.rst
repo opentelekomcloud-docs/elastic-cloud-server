@@ -12,9 +12,9 @@ Prerequisites
 -------------
 
 -  The target ECS is running.
--  The ECS has an EIP bound. For details, see `Binding an EIP <en-us_topic_0174917535.html>`__.
+-  The ECS has an EIP bound. For details, see `Binding an EIP <eips/binding_an_eip>`__.
 
--  The security group of the ECS allows traffic on port 22. For details, see `Configuring Security Group Rules <en-us_topic_0030878383.html>`__.
+-  The security group of the ECS allows traffic on port 22. For details, see `Configuring Security Group Rules <security/security_groups/configuring_security_group_rules>`__.
 
 Solution
 --------

@@ -4,7 +4,7 @@ Why Does the System Display a Message Indicating that the Password for Logging I
 Symptom
 -------
 
-Password authentication is required to log in to a Windows ECS. Therefore, you require a key file to obtain the initial password for logging in to the ECS. However, after you click **Get Password** (see `Obtaining the Password for Logging In to a Windows ECS <en-us_topic_0031107266.html>`__), the system displays a message indicating that the password cannot be viewed. ECS login was therefore unsuccessful.
+Password authentication is required to log in to a Windows ECS. Therefore, you require a key file to obtain the initial password for logging in to the ECS. However, after you click **Get Password** (see `Obtaining the Password for Logging In to a Windows ECS <passwords_and_key_pairs/obtaining_the_password_for_logging_in_to_a_windows_ecs>`__), the system displays a message indicating that the password cannot be viewed. ECS login was therefore unsuccessful.
 
 Possible Causes
 ---------------

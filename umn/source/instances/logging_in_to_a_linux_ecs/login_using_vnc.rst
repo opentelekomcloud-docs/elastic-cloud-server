@@ -10,7 +10,7 @@ For instructions about how to copy and paste data on VNC pages after the ECS log
 
 |image1|
 
-Before using remote login (VNC) provided on the management console to log in to a Linux ECS authenticated using a key pair, log in to the ECS `using an SSH key <en-us_topic_0017955380.html>`__ and set a login password.
+Before using remote login (VNC) provided on the management console to log in to a Linux ECS authenticated using a key pair, log in to the ECS `using an SSH key <instances/logging_in_to_a_linux_ecs/login_using_an_ssh_key>`__ and set a login password.
 
 Constraints
 -----------
@@ -234,13 +234,13 @@ Helpful Links
 
 For FAQs about VNC-based ECS logins, see the following links:
 
--  `What Browser Version Is Required to Remotely Log In to an ECS? <en-us_topic_0035233718.html>`__
--  `What Should I Do If I Cannot Use the German Keyboard to Enter Characters When I Log In to a Linux ECS Using VNC? <en-us_topic_0030932496.html>`__
--  `Why Cannot I Use the MAC Keyboard to Enter Lowercase Characters When I Log In to an ECS Using VNC? <en-us_topic_0047624368.html>`__
--  `What Should I Do If the Page Does not Respond After I Log In to an ECS Using VNC and Do Not Perform Any Operation for a Long Period of Time? <en-us_topic_0030932497.html>`__
--  `What Should I Do If I Cannot View Data After Logging In to an ECS Using VNC? <en-us_topic_0030932499.html>`__
--  `Why Are Characters Entered Through VNC Still Incorrect After the Keyboard Language Is Switched? <en-us_topic_0030932500.html>`__
--  `Why Does a Blank Screen Appear While the System Displays a Message Indicating Successful Authentication After I Attempted to Log In to an ECS Using VNC? <en-us_topic_0032850906.html>`__
+-  `What Browser Version Is Required to Remotely Log In to an ECS? <faqs/login_and_connection/what_browser_version_is_required_to_remotely_log_in_to_an_ecs>`__
+-  `What Should I Do If I Cannot Use the German Keyboard to Enter Characters When I Log In to a Linux ECS Using VNC? <faqs/login_and_connection/what_should_i_do_if_i_cannot_use_the_german_keyboard_to_enter_characters_when_i_log_in_to_a_linux_ecs_using_vnc>`__
+-  `Why Cannot I Use the MAC Keyboard to Enter Lowercase Characters When I Log In to an ECS Using VNC? <faqs/login_and_connection/why_cannot_i_use_the_mac_keyboard_to_enter_lowercase_characters_when_i_log_in_to_an_ecs_using_vnc>`__
+-  `What Should I Do If the Page Does not Respond After I Log In to an ECS Using VNC and Do Not Perform Any Operation for a Long Period of Time? <faqs/login_and_connection/what_should_i_do_if_the_page_does_not_respond_after_i_log_in_to_an_ecs_using_vnc_and_do_not_perform_any_operation_for_a_long_period_of_time>`__
+-  `What Should I Do If I Cannot View Data After Logging In to an ECS Using VNC? <faqs/login_and_connection/what_should_i_do_if_i_cannot_view_data_after_logging_in_to_an_ecs_using_vnc>`__
+-  `Why Are Characters Entered Through VNC Still Incorrect After the Keyboard Language Is Switched? <faqs/login_and_connection/why_are_characters_entered_through_vnc_still_incorrect_after_the_keyboard_language_is_switched>`__
+-  `Why Does a Blank Screen Appear While the System Displays a Message Indicating Successful Authentication After I Attempted to Log In to an ECS Using VNC? <faqs/login_and_connection/why_does_a_blank_screen_appear_while_the_system_displays_a_message_indicating_successful_authentication_after_i_attempted_to_log_in_to_an_ecs_using_vnc>`__
 
 
 .. |image1| image:: /_static/images/note_3.0-en-us.png

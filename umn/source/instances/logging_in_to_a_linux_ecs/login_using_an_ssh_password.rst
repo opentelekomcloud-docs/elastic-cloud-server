@@ -14,9 +14,9 @@ Prerequisites
 -------------
 
 -  The target ECS is running.
--  You have bound an EIP to the ECS. For details, see `Binding an EIP <en-us_topic_0174917535.html>`__.
+-  You have bound an EIP to the ECS. For details, see `Binding an EIP <eips/binding_an_eip>`__.
 
--  Access to port 22 is allowed in the inbound direction of the security group to which the ECS belongs. For details, see `Configuring Security Group Rules <en-us_topic_0030878383.html>`__.
+-  Access to port 22 is allowed in the inbound direction of the security group to which the ECS belongs. For details, see `Configuring Security Group Rules <security/security_groups/configuring_security_group_rules>`__.
 -  The network connection between the login tool (PuTTY) and the target ECS is normal. For example, the default port 22 is not blocked by the firewall.
 -  You have obtained the SSH login permission and reset the common user password for logging in to the Linux ECS. For details, see `Configuring the Login Permission Using SSH Password Authentication <#EN-US_TOPIC_0017955633__section6207684794951>`__.
 
@@ -25,7 +25,7 @@ Configuring the Login Permission Using SSH Password Authentication
 
 **Assigning the remote login permission using SSH key authentication**
 
-#. Use the SSH key to log in to the Linux ECS. For details, see `Login Using an SSH Key <en-us_topic_0017955380.html>`__.
+#. Use the SSH key to log in to the Linux ECS. For details, see `Login Using an SSH Key <instances/logging_in_to_a_linux_ecs/login_using_an_ssh_key>`__.
 
 #. Run the following command to change the value of **PasswordAuthentication** in **/etc/ssh/sshd_config** to **yes**:
 

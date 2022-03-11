@@ -12,7 +12,7 @@ Run the following command to change the OS keyboard language:
 
 For example, if the name of a German keyboard mapping file is **de**, run the **loadkeys de** command.
 
-For instructions about how to configure the keyboard language for a Linux ECS, see `Login Using VNC <en-us_topic_0093263550.html>`__.
+For instructions about how to configure the keyboard language for a Linux ECS, see `Login Using VNC <instances/logging_in_to_a_linux_ecs/login_using_vnc>`__.
 
 Procedure
 ---------

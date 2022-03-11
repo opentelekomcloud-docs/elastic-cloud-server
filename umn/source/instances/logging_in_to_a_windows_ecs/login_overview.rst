@@ -10,7 +10,7 @@ Constraints
 
 -  If an ECS uses key pair authentication, use the password obtaining function available on the management console to decrypt the private key used during ECS creation to obtain a password.
 
--  Certain G series of ECSs do not support remote login provided by the management console. If you need to remotely log in to the ECSs, install the VNC server on them. For details, see `GPU-accelerated ECSs <en-us_topic_0097289624.html>`__. You are suggested to log in to the ECSs using MSTSC.
+-  Certain G series of ECSs do not support remote login provided by the management console. If you need to remotely log in to the ECSs, install the VNC server on them. For details, see `GPU-accelerated ECSs <service_overview/ecs_specifications_and_types/gpu-accelerated_ecss>`__. You are suggested to log in to the ECSs using MSTSC.
 
 -  If you log in to a GPU-accelerated ECS using MSTSC, GPU acceleration will fail. This is because MSTSC replaces the WDDM GPU driver with a non-accelerated remote desktop display driver. In such a case, you must use other methods to log in to the ECS, such as VNC. If the remote login function available on the management console fails to meet your service requirements, you must install a suitable remote login tool on the ECS, such as TightVNC.
 

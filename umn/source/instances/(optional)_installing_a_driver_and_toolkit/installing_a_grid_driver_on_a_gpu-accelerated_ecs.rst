@@ -22,7 +22,7 @@ Process of installing a GRID driver:
 |image1|
 
 -  NVIDIA allows you to apply for a 90-day trial license.
--  For details about GPU-accelerated ECSs with different specifications and application scenarios, see `GPU-accelerated ECSs <en-us_topic_0097289624.html>`__.
+-  For details about GPU-accelerated ECSs with different specifications and application scenarios, see `GPU-accelerated ECSs <service_overview/ecs_specifications_and_types/gpu-accelerated_ecss>`__.
 
 Purchasing a GRID License
 -------------------------

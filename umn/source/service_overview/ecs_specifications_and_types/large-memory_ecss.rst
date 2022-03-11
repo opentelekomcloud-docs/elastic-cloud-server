@@ -67,7 +67,7 @@ Notes
       |               |                                  | extension NIC to **8888**.                                      |
       +---------------+----------------------------------+-----------------------------------------------------------------+
 
--  An ECS can have a maximum of 60 attached disks, including the system disk. For details about constraints, see `Can I Attach Multiple Disks to an ECS? <en-us_topic_0018073215.html>`__
+-  An ECS can have a maximum of 60 attached disks, including the system disk. For details about constraints, see `Can I Attach Multiple Disks to an ECS? <faqs/disk_management/can_i_attach_multiple_disks_to_an_ecs>`__
 
    An example is provided as follows:
 
@@ -78,7 +78,7 @@ Notes
 
    |image1|
 
-   The maximum number of disks attached to an existing large-memory ECS remains unchanged. To attach 60 disks, enable advanced disk. For details, see `Enabling Advanced Disk <en-us_topic_0122307169.html>`__.
+   The maximum number of disks attached to an existing large-memory ECS remains unchanged. To attach 60 disks, enable advanced disk. For details, see `Enabling Advanced Disk <evs_disks/enabling_advanced_disk>`__.
 
 
 .. |image1| image:: /_static/images/note_3.0-en-us.png

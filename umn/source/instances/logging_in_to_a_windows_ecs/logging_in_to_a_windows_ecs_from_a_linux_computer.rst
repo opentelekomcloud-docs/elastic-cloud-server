@@ -63,7 +63,7 @@ By default, RDP has been enabled on the ECSs created using a public image.
 
 #. Log in to the Windows ECS using VNC.
 
-   For details, see `Login Using VNC <en-us_topic_0027268511.html>`__.
+   For details, see `Login Using VNC <instances/logging_in_to_a_windows_ecs/login_using_vnc>`__.
 
 #. Click **Start** in the task bar and choose **Control Panel** > **System and Security** > **System** > **Remote settings**.
 

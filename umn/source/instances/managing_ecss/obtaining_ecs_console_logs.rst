@@ -149,7 +149,7 @@ Procedure
 Related Links
 -------------
 
-`Why Does the System Display a Question Mark When I Attempt to Obtain Console Logs? <en-us_topic_0088241338.html>`__
+`Why Does the System Display a Question Mark When I Attempt to Obtain Console Logs? <faqs/ecs_management/why_does_the_system_display_a_question_mark_when_i_attempt_to_obtain_console_logs>`__
 
 
 .. |image1| image:: /_static/images/note_3.0-en-us.png

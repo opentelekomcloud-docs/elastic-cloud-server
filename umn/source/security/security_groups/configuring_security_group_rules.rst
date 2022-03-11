@@ -9,7 +9,7 @@ Similar to firewall, a security group is a logical group used to control network
 -  Inbound: Inbound rules allow external network traffic to be sent to the ECSs in the security group.
 -  Outbound: Outbound rules allow network traffic from the ECSs in the security group to be sent out of the security group.
 
-For details about the default security group rules, see *Virtual Private Cloud User Guide*. For details about configuration examples for security group rules, see `Security Group Configuration Examples <en-us_topic_0140323152.html>`__.
+For details about the default security group rules, see *Virtual Private Cloud User Guide*. For details about configuration examples for security group rules, see `Security Group Configuration Examples <security/security_groups/security_group_configuration_examples>`__.
 
 Procedure
 ---------

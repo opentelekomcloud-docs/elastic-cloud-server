@@ -38,7 +38,7 @@ Procedure
 #. Select the target disk, specify the disk as the system disk or data disk.\ |image3|
 
    -  If no EVS disks are available, click **Create Disk** in the lower part of the list.
-   -  For details about restrictions on attaching a disk, see `What Are the Requirements for Attaching an EVS Disk to an ECS? <en-us_topic_0040863659.html>`__
+   -  For details about restrictions on attaching a disk, see `What Are the Requirements for Attaching an EVS Disk to an ECS? <faqs/disk_management/what_are_the_requirements_for_attaching_an_evs_disk_to_an_ecs>`__
    -  The device names for the local disks and EVS disks mounted to a disk-intensive ECS comply with the following rules:
 
       -  System disk: Use sda or vda.
@@ -57,7 +57,7 @@ Follow-up Procedure
 
 If the attached disk is newly created, the disk can be used only after it is initialized.
 
-For instructions about how to initialize a data disk, see `Scenarios and Disk Partitions <en-us_topic_0030831623.html>`__.
+For instructions about how to initialize a data disk, see `Scenarios and Disk Partitions <getting_started/initializing_evs_data_disks/scenarios_and_disk_partitions>`__.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

@@ -19,7 +19,7 @@ Prerequisites
 
 -  Alarm rules have been configured in Cloud Eye for the target ECS.
 
-   The monitoring data is unavailable for the ECSs without alarm rules configured in Cloud Eye. For details, see `Setting Alarm Rules <en-us_topic_0027371531.html>`__.
+   The monitoring data is unavailable for the ECSs without alarm rules configured in Cloud Eye. For details, see `Setting Alarm Rules <monitoring/setting_alarm_rules>`__.
 
 -  The target ECS has been properly running for at least 10 minutes.
 

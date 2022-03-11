@@ -104,9 +104,9 @@ Notes on Using D2 ECSs
 
    -  Both EVS disks and local disks can be used as data disks of a D2 ECS.
 
-   -  A maximum of 60 disks (including VBD, SCSI, and local disks) can be attached to a D2 ECS. Among the 60 disks, the maximum number of SCSI disks is 30, and the VBD disks (including the system disk) is 24. For details, see `Can I Attach Multiple Disks to an ECS? <en-us_topic_0018073215.html>`__\ |image1|
+   -  A maximum of 60 disks (including VBD, SCSI, and local disks) can be attached to a D2 ECS. Among the 60 disks, the maximum number of SCSI disks is 30, and the VBD disks (including the system disk) is 24. For details, see `Can I Attach Multiple Disks to an ECS? <faqs/disk_management/can_i_attach_multiple_disks_to_an_ecs>`__\ |image1|
 
-      The maximum number of disks attached to an existing D2 ECS remains unchanged. To attach 60 disks, enable advanced disk. For details, see `Enabling Advanced Disk <en-us_topic_0122307169.html>`__.
+      The maximum number of disks attached to an existing D2 ECS remains unchanged. To attach 60 disks, enable advanced disk. For details, see `Enabling Advanced Disk <evs_disks/enabling_advanced_disk>`__.
 
    -  You are advised to use World Wide Names (WWNs), but not drive letters, in applications to perform operations on local disks to prevent drive letter drift (low probability) on Linux. Take local disk attachment as an example:
 

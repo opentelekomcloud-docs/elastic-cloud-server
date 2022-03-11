@@ -24,7 +24,7 @@ Advanced Settings
 
 #. Set **ECS Group**.
 
-   An ECS group applies the anti-affinity policy to the ECSs in it so that the ECSs are automatically allocated to different hosts. This configuration is optional. For instructions about how to create an ECS group, see `Managing ECS Groups <en-us_topic_0032980085.html>`__.
+   An ECS group applies the anti-affinity policy to the ECSs in it so that the ECSs are automatically allocated to different hosts. This configuration is optional. For instructions about how to create an ECS group, see `Managing ECS Groups <instances/managing_ecss/managing_ecs_groups>`__.
 
    |image3|
 
@@ -38,7 +38,7 @@ Advanced Settings
 
       For example, if you activate user **root** permission by passing a script, you can log in to the ECS as user **root**.
 
-      For details, see `Passing User Data to ECSs <en-us_topic_0032380449.html>`__.
+      For details, see `Passing User Data to ECSs <instances/obtaining_metadata_and_passing_user_data/passing_user_data_to_ecss>`__.
 
    -  Tag
 
@@ -50,7 +50,7 @@ Advanced Settings
 
       After creating the ECS, you can view the tags on the pages providing details about the ECS, EIP, and EVS disks.
 
-      For detailed operations, see `Overview <en-us_topic_0092499768.html>`__.
+      For detailed operations, see `Overview <resources_and_tags/tag_management/overview>`__.
 
    -  Agency
 

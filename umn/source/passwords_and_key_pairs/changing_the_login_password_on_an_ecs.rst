@@ -49,7 +49,7 @@ Windows
 
 #. Log in to the ECS.
 
-   For details, see `Login Overview <en-us_topic_0092494943.html>`__.
+   For details, see `Login Overview <instances/logging_in_to_a_windows_ecs/login_overview>`__.
 
 #. Press **Win+R** to start the **Run** dialog box.
 
@@ -64,7 +64,7 @@ Linux
 
 #. Use the existing key file to log in to the ECS as user **root** through SSH.
 
-   For details, see `Login Using an SSH Key <en-us_topic_0017955380.html>`__.
+   For details, see `Login Using an SSH Key <instances/logging_in_to_a_linux_ecs/login_using_an_ssh_key>`__.
 
 #. Run the following command to reset the password of user **root**:
 

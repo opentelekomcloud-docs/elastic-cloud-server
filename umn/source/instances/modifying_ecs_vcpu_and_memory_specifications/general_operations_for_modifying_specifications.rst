@@ -15,15 +15,15 @@ To obtain the virtualization type of an ECS, perform the following operations:
 
 #. On the page providing details about the ECS, view the ECS specifications.\ **Figure 1** Viewing ECS specifications
    |image1|
-#. Check the specifications tables in `ECS Types <en-us_topic_0035470096.html>`__ for the virtualization type.
+#. Check the specifications tables in `ECS Types <service_overview/instances/ecs_types>`__ for the virtualization type.
 
 Notes
 -----
 
 -  If ECS specifications are downgraded, the ECS performance will deteriorate.
--  Certain ECSs do not support specifications modification currently. For details about available ECS types as well as their functions and usage, see "Notes" in `ECS Types <en-us_topic_0035470096.html>`__.
+-  Certain ECSs do not support specifications modification currently. For details about available ECS types as well as their functions and usage, see "Notes" in `ECS Types <service_overview/instances/ecs_types>`__.
 -  When the disk status is **Expanding**, you are not allowed to modify the specifications of the ECS where the disk is attached.
--  Before modifying the specifications of a Windows ECS, modify the SAN policy by following the instructions provided in `Why Does a Disk Attached to a Windows ECS Go Offline? <en-us_topic_0114225937.html>`__ to prevent disks from going offline after the specifications are modified.
+-  Before modifying the specifications of a Windows ECS, modify the SAN policy by following the instructions provided in `Why Does a Disk Attached to a Windows ECS Go Offline? <faqs/disk_management/why_does_a_disk_attached_to_a_windows_ecs_go_offline>`__ to prevent disks from going offline after the specifications are modified.
 -  Before modifying specifications, make sure that the ECS has been stopped.
 
 Step 1: Modify Specifications
@@ -59,7 +59,7 @@ Step 1: Modify Specifications
 
    After modifying the specifications, you can check whether the specifications have been modified in **Failures**.
 
-   a. Check whether **Failures** is displayed on the management console. For details, see `Viewing Failures <en-us_topic_0108255889.html>`__.
+   a. Check whether **Failures** is displayed on the management console. For details, see `Viewing Failures <instances/viewing_ecs_information/viewing_failures>`__.
 
       -  If yes, go to step `10.b <#EN-US_TOPIC_0013771092__li6253192246>`__.
       -  If no, the specifications have been modified.
@@ -76,11 +76,11 @@ After specifications are modified, disk attachment may fail. Therefore, check di
 
 -  Windows ECS
 
-   For details, see `Why Do the Disks of a Windows ECS Go Offline After I Modify the ECS Specifications? <en-us_topic_0214940105.html>`__
+   For details, see `Why Do the Disks of a Windows ECS Go Offline After I Modify the ECS Specifications? <faqs/ecs_management/why_do_the_disks_of_a_windows_ecs_go_offline_after_i_modify_the_ecs_specifications>`__
 
 -  Linux ECS
 
-   For details, see `Why Does the Disk Attachment of a Linux ECS Fail After I Modify the ECS Specifications? <en-us_topic_0214940106.html>`__
+   For details, see `Why Does the Disk Attachment of a Linux ECS Fail After I Modify the ECS Specifications? <faqs/ecs_management/why_does_the_disk_attachment_of_a_linux_ecs_fail_after_i_modify_the_ecs_specifications>`__
 
 Follow-up Procedure
 -------------------

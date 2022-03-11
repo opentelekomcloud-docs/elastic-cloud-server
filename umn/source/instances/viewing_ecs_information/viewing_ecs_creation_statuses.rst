@@ -23,9 +23,9 @@ Procedure
 
       -  **Running**: The request of creating the ECS has been processed, and the ECS is running properly. An ECS in this state can provide services for you.
 
-         See `How Do I Handle Error Messages Displayed on the Management Console? <en-us_topic_0032398121.html>`__ for troubleshooting.
+         See `How Do I Handle Error Messages Displayed on the Management Console? <faqs/ecs_management/how_do_i_handle_error_messages_displayed_on_the_management_console>`__ for troubleshooting.
 
-   -  If you find that the task status area shows an ECS creation failure but the ECS list displays the created ECS, see `Why Does the Failures Area Show an ECS Creation Failure But the ECS List Displays the Created ECS? <en-us_topic_0039524582.html>`__
+   -  If you find that the task status area shows an ECS creation failure but the ECS list displays the created ECS, see `Why Does the Failures Area Show an ECS Creation Failure But the ECS List Displays the Created ECS? <faqs/creation_and_deletion/why_does_the_failures_area_show_an_ecs_creation_failure_but_the_ecs_list_displays_the_created_ecs>`__
 
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png

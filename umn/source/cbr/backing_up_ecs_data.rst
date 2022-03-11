@@ -6,7 +6,7 @@ Scenarios
 
 CBR enhances data integrity and service continuity. For example, if an ECS or a EVS disk is faulty or a misoperation causes data loss, you can use data backups to quickly restore data. This section describes how to back up ECSs and EVS disks.
 
-For more information, `CBR Architecture <en-us_topic_0000001128445638.html#EN-US_TOPIC_0000001128445638__section10399144613501>`__, `Backup Mechanism <en-us_topic_0000001128445638.html#EN-US_TOPIC_0000001128445638__section696712594578>`__, and `Backup Options <en-us_topic_0000001128445638.html#EN-US_TOPIC_0000001128445638__section533362013>`__.
+For more information, `CBR Architecture <cbr/overview#EN-US_TOPIC_0000001128445638__section10399144613501>`__, `Backup Mechanism <cbr/overview#EN-US_TOPIC_0000001128445638__section696712594578>`__, and `Backup Options <cbr/overview#EN-US_TOPIC_0000001128445638__section533362013>`__.
 
 You can back up ECS data using the Cloud Server Backup or Cloud Disk Backup function.
 

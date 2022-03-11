@@ -17,21 +17,21 @@ Failure Types
 
 .. table:: **Table 1** Failure types
 
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | Failure Type                                              | Description                                               |
-   +===========================================================+===========================================================+
-   | Creation failures                                         | A task failed to process. For a failed task, the system   |
-   |                                                           | rolls back and displays an error code, for example,       |
-   |                                                           | **Ecs.0013 Insufficient EIP quota**. See `How Do I Handle |
-   |                                                           | Error Messages Displayed on the Management                |
-   |                                                           | Console? <en-us_topic_0032398121.html>`__ for             |
-   |                                                           | troubleshooting.                                          |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
-   | Operation failures                                        | -  Modifying ECS specifications                           |
-   |                                                           |                                                           |
-   |                                                           |    If an ECS specifications modification failed, this     |
-   |                                                           |    operation is recorded in **Failures**.                 |
-   +-----------------------------------------------------------+-----------------------------------------------------------+
+   +--------------------+----------------------------------------------------------------------------------------------------------+
+   | Failure Type       | Description                                                                                              |
+   +====================+==========================================================================================================+
+   | Creation failures  | A task failed to process. For a failed task, the system                                                  |
+   |                    | rolls back and displays an error code, for example,                                                      |
+   |                    | **Ecs.0013 Insufficient EIP quota**. See `How Do I Handle                                                |
+   |                    | Error Messages Displayed on the Management                                                               |
+   |                    | Console? <faqs/ecs_management/how_do_i_handle_error_messages_displayed_on_the_management_console>`__ for |
+   |                    | troubleshooting.                                                                                         |
+   +--------------------+----------------------------------------------------------------------------------------------------------+
+   | Operation failures | -  Modifying ECS specifications                                                                          |
+   |                    |                                                                                                          |
+   |                    |    If an ECS specifications modification failed, this                                                    |
+   |                    |    operation is recorded in **Failures**.                                                                |
+   +--------------------+----------------------------------------------------------------------------------------------------------+
 
 Procedure
 ---------

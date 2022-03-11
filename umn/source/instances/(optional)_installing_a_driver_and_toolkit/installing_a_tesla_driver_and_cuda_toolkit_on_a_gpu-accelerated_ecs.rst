@@ -25,7 +25,7 @@ Notes
 
 Installation process:
 
--  `Obtaining a Tesla Driver and CUDA Toolkit <en-us_topic_0213874991.html>`__
+-  `Obtaining a Tesla Driver and CUDA Toolkit <instances/(optional)_installing_a_driver_and_toolkit/obtaining_a_tesla_driver_and_cuda_toolkit>`__
 -  Installing a Tesla Driver
 
    -  `Installing a Tesla Driver on a Linux ECS <#EN-US_TOPIC_0149470468__section1728514576397>`__
@@ -209,7 +209,7 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 
       Install the desired program: **yum install -y kernel-devel-`uname -r\` gcc gcc-c++**
 
-#. On the CUDA download page, set parameters according to the information shown in `Obtaining a Tesla Driver and CUDA Toolkit <en-us_topic_0213874991.html>`__.\ **Figure 16** Selecting a CUDA version
+#. On the CUDA download page, set parameters according to the information shown in `Obtaining a Tesla Driver and CUDA Toolkit <instances/(optional)_installing_a_driver_and_toolkit/obtaining_a_tesla_driver_and_cuda_toolkit>`__.\ **Figure 16** Selecting a CUDA version
    |image18|
 #. Find the link for downloading CUDA 10.1 and copy the link.\ **Figure 17** Copying the link for downloading CUDA
    |image19|
@@ -272,7 +272,7 @@ Installing the CUDA Toolkit on a Windows ECS
 The following uses Windows Server 2016 Standard 64bit as an example to describe how to install the CUDA 10.1 toolkit on a GPU-accelerated ECS.
 
 #. Log in to the ECS.
-#. On the CUDA download page, set parameters according to the information shown in `Downloading a CUDA Toolkit <en-us_topic_0213874991.html#EN-US_TOPIC_0213874991__section10203125783920>`__.\ **Figure 25** Selecting a CUDA version
+#. On the CUDA download page, set parameters according to the information shown in `Downloading a CUDA Toolkit <instances/(optional)_installing_a_driver_and_toolkit/obtaining_a_tesla_driver_and_cuda_toolkit#EN-US_TOPIC_0213874991__section10203125783920>`__.\ **Figure 25** Selecting a CUDA version
    |image27|
 #. Find the link for downloading CUDA 10.1.\ **Figure 26** Finding the link for downloading CUDA
    |image28|

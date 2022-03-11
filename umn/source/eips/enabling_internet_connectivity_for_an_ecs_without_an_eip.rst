@@ -37,7 +37,7 @@ In this example, the proxy ECS runs CentOS 6.5.
 
 #. Log in to the proxy ECS.
 
-   For more details, see `Login Overview <en-us_topic_0013771089.html>`__.
+   For more details, see `Login Overview <instances/logging_in_to_a_linux_ecs/login_overview>`__.
 
 #. Run the following command to check whether the proxy ECS can access the Internet:
 

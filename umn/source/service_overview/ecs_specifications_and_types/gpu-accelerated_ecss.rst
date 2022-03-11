@@ -35,8 +35,8 @@ Available now: All GPU models except the recommended ones.
 
 Helpful links:
 
--  `Installing a GRID Driver on a GPU-accelerated ECS <en-us_topic_0149610914.html>`__
--  `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468.html>`__
+-  `Installing a GRID Driver on a GPU-accelerated ECS <instances/(optional)_installing_a_driver_and_toolkit/installing_a_grid_driver_on_a_gpu-accelerated_ecs>`__
+-  `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <instances/(optional)_installing_a_driver_and_toolkit/installing_a_tesla_driver_and_cuda_toolkit_on_a_gpu-accelerated_ecs>`__
 
 Graphics-accelerated Enhancement G6
 -----------------------------------
@@ -218,7 +218,7 @@ P2s ECSs are used in computing acceleration scenarios, such as deep learning tra
    -  Oracle Linux 7.6 64bit
 
 -  By default, P2s ECSs created using a Windows public image have the Tesla driver installed.
--  If a P2s ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468.html>`__.
+-  If a P2s ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <instances/(optional)_installing_a_driver_and_toolkit/installing_a_tesla_driver_and_cuda_toolkit_on_a_gpu-accelerated_ecs>`__.
 
 Computing-accelerated P2v
 -------------------------
@@ -316,8 +316,8 @@ P2v ECSs are used in computing acceleration scenarios, such as deep learning tra
    -  Oracle Linux 7.6 64bit
 
 -  By default, P2v ECSs created using a Windows public image have the Tesla driver installed.
--  By default, P2v ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468.html>`__.
--  If a P2v ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468.html>`__.
+-  By default, P2v ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <instances/(optional)_installing_a_driver_and_toolkit/installing_a_tesla_driver_and_cuda_toolkit_on_a_gpu-accelerated_ecs>`__.
+-  If a P2v ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <instances/(optional)_installing_a_driver_and_toolkit/installing_a_tesla_driver_and_cuda_toolkit_on_a_gpu-accelerated_ecs>`__.
 
 Computing-accelerated P2
 ------------------------
@@ -415,9 +415,9 @@ P2 ECSs are used in computing acceleration scenarios, such as deep learning trai
 
 -  After you delete a P2 ECS, the data stored in local NVMe SSDs is automatically cleared.
 
--  By default, P2 ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468.html>`__.
+-  By default, P2 ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <instances/(optional)_installing_a_driver_and_toolkit/installing_a_tesla_driver_and_cuda_toolkit_on_a_gpu-accelerated_ecs>`__.
 
--  If a P2 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468.html>`__.
+-  If a P2 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <instances/(optional)_installing_a_driver_and_toolkit/installing_a_tesla_driver_and_cuda_toolkit_on_a_gpu-accelerated_ecs>`__.
 
 Computing-accelerated P1
 ------------------------
@@ -504,7 +504,7 @@ P1 ECSs are used in computing acceleration scenarios, such as deep learning trai
 
    Data may be lost on the local NVMe SSDs attached to P1 ECSs due to a fault, for example, due to a disk or host fault. Therefore, you are suggested to store only temporary data in local NVMe SSDs. If you store important data in such a disk, securely back up the data.
 
--  After a P1 ECS is created, you must install the NVIDIA driver for computing acceleration. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468.html>`__.
+-  After a P1 ECS is created, you must install the NVIDIA driver for computing acceleration. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <instances/(optional)_installing_a_driver_and_toolkit/installing_a_tesla_driver_and_cuda_toolkit_on_a_gpu-accelerated_ecs>`__.
 
 -  P1 ECSs do not support specifications modification.
 
@@ -519,9 +519,9 @@ P1 ECSs are used in computing acceleration scenarios, such as deep learning trai
 
 -  By default, P1 ECSs created using a Windows public image have the Tesla driver installed.
 
--  By default, P1 ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468.html>`__.
+-  By default, P1 ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <instances/(optional)_installing_a_driver_and_toolkit/installing_a_tesla_driver_and_cuda_toolkit_on_a_gpu-accelerated_ecs>`__.
 
--  If a P1 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468.html>`__.
+-  If a P1 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <instances/(optional)_installing_a_driver_and_toolkit/installing_a_tesla_driver_and_cuda_toolkit_on_a_gpu-accelerated_ecs>`__.
 
 Inference-accelerated PI2
 -------------------------
@@ -607,8 +607,8 @@ PI2 ECSs support the following commonly used software:
 
 -  PI2 ECSs support automatic recovery when the hosts accommodating such ECSs become faulty.
 -  By default, PI2 ECSs created using a Windows public image have the Tesla driver installed.
--  By default, PI2 ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468.html>`__.
--  If a PI2 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468.html>`__.
+-  By default, PI2 ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <instances/(optional)_installing_a_driver_and_toolkit/installing_a_tesla_driver_and_cuda_toolkit_on_a_gpu-accelerated_ecs>`__.
+-  If a PI2 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <instances/(optional)_installing_a_driver_and_toolkit/installing_a_tesla_driver_and_cuda_toolkit_on_a_gpu-accelerated_ecs>`__.
 
 
 .. |image1| image:: /_static/images/note_3.0-en-us.png

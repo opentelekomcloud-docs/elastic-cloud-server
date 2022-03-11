@@ -19,13 +19,13 @@ Solution
 
 -  Method 1 (recommended)
 
-   Modify the ECS specifications to increase the vCPUs and memory size. For instructions about how to modify ECS specifications, see `General Operations for Modifying Specifications <en-us_topic_0013771092.html>`__.
+   Modify the ECS specifications to increase the vCPUs and memory size. For instructions about how to modify ECS specifications, see `General Operations for Modifying Specifications <instances/modifying_ecs_vcpu_and_memory_specifications/general_operations_for_modifying_specifications>`__.
 
 -  Method 2
 
    Enable virtual memory on the ECS to obtain its idle memory.
 
-   For instructions about how to enable virtual memory, see `How Can I Enable Virtual Memory on a Windows ECS? <en-us_topic_0120795802.html>`__
+   For instructions about how to enable virtual memory, see `How Can I Enable Virtual Memory on a Windows ECS? <faqs/disk_management/how_can_i_enable_virtual_memory_on_a_windows_ecs>`__
 
    |image2|
 

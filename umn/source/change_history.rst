@@ -5,898 +5,898 @@ Change History
 
 .. _EN-US_TOPIC_0041169567__table12541045111012:
 
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| Released On                                               | Description                                               |
-+===========================================================+===========================================================+
-| 2022-01-10                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | Added "Maximum NICs" in the following sections:           |
-|                                                           |                                                           |
-|                                                           | -  `General-Purpose ECSs <en-us_topic_0035470101.html>`__ |
-|                                                           | -  `Dedicated General-Purpose                             |
-|                                                           |    ECSs <en-us_topic_0091224748.html>`__                  |
-|                                                           | -  `Memory-optimized                                      |
-|                                                           |    ECSs <en-us_topic_0035550301.html>`__                  |
-|                                                           | -  `GPU-accelerated ECSs <en-us_topic_0097289624.html>`__ |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2021-12-30                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Deleted the description that the Windows Server OS     |
-|                                                           |    supports BYOL in `License                              |
-|                                                           |    Type <en-us_topic_0046566932.html>`__.                 |
-|                                                           | -  Added a note for the ECS name `Step 3: Configure       |
-|                                                           |    Advanced Settings <en-us_topic_0163572591.html>`__.    |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2021-11-20                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | `Can ECSs Automatically Recover After the Physical Host   |
-|                                                           | Accommodating the ECSs Becomes                            |
-|                                                           | Faulty? <en-us_topic_0095020344.html>`__                  |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added image encryption and system disk encryption in   |
-|                                                           |    `User Encryption <en-us_topic_0046912051.html>`__.     |
-|                                                           | -  Added description that ECSs can be created from        |
-|                                                           |    encrypted images in `ECS and Other                     |
-|                                                           |    Services <en-us_topic_0013771111.html>`__.             |
-|                                                           | -  Added description that the system disk can be          |
-|                                                           |    encrypted during ECS creation in `Step 1: Configure    |
-|                                                           |    Basic Settings <en-us_topic_0163572589.html>`__.       |
-|                                                           | -  Added description that the system disk can be          |
-|                                                           |    encrypted during OS reinstallation in `Reinstalling    |
-|                                                           |    the OS <en-us_topic_0024911405.html>`__.               |
-|                                                           | -  Added description that the system disk can be          |
-|                                                           |    encrypted during OS change in `Changing the            |
-|                                                           |    OS <en-us_topic_0031523135.html>`__.                   |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2021-10-20                                                | Optimized descriptions in `Step 1: Configure Basic        |
-|                                                           | Settings <en-us_topic_0163572589.html>`__.                |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2021-09-10                                                | -  Modified the following content:                        |
-|                                                           |                                                           |
-|                                                           |    -  Deleted description about Xen ECSs.                 |
-|                                                           |                                                           |
-|                                                           | -  Deleted the following sections:                        |
-|                                                           |                                                           |
-|                                                           |    -  Changing a General-Purpose ECS to an H1 ECS         |
-|                                                           |    -  Changing a Xen ECS to a KVM ECS (Windows)           |
-|                                                           |    -  Automatically Changing a Xen ECS to a KVM ECS       |
-|                                                           |       (Linux)                                             |
-|                                                           |    -  Manually Changing a Xen ECS to a KVM ECS (Linux)    |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2021-08-09                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added P2s ECSs in `GPU-accelerated                     |
-|                                                           |    ECSs <en-us_topic_0097289624.html>`__.                 |
-|                                                           | -  Added the URL for downloading the CUDA toolkit for P2s |
-|                                                           |    ECSs in `Obtaining a Tesla Driver and CUDA             |
-|                                                           |    Toolkit <en-us_topic_0213874991.html>`__.              |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2021-08-02                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | Deleted descriptions about Marketplace images from        |
-|                                                           | `Images <en-us_topic_0030828254.html>`__ and `Step 1:     |
-|                                                           | Configure Basic                                           |
-|                                                           | Settings <en-us_topic_0163572589.html>`__.                |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2021-04-23                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | Added `How Do I Configure atop and kdump on Linux ECSs    |
-|                                                           | for Performance                                           |
-|                                                           | Analysis? <en-us_topic_0000001143214829.html>`__.         |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2020-11-12                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Changed CSBS to CBR in `ECS and Other                  |
-|                                                           |    Services <en-us_topic_0013771111.html>`__.             |
-|                                                           | -  Added CBR to back up ECS data in `Step 3: Configure    |
-|                                                           |    Advanced Settings <en-us_topic_0163572591.html>`__.    |
-|                                                           | -  Added CBR to back up ECS data in                       |
-|                                                           |    `CBR <en-us_topic_0096304614.html>`__.                 |
-|                                                           | -  Added description in notes in `Migrating an            |
-|                                                           |    ECS <en-us_topic_0133365988.html>`__, indicating that  |
-|                                                           |    CBR backups are not affected by cold migrations.       |
-|                                                           | -  Added a solution of using CBR in `Why Does It Take     |
-|                                                           |    Longer to Create ECSs When I Use a Full-ECS            |
-|                                                           |    Image? <en-us_topic_0102391480.html>`__                |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2020-10-09                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | Added the Windows Server 2019 Standard 64bit and Oracle   |
-|                                                           | Linux 7.6 64bit OSs supported by P2v ECSs in              |
-|                                                           | `GPU-accelerated ECSs <en-us_topic_0097289624.html>`__.   |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2020-09-08                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  Added PI2 ECSs in `GPU-accelerated                     |
-|                                                           |    ECSs <en-us_topic_0097289624.html>`__.                 |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added CPU information for KVM ECSs in `ECS             |
-|                                                           |    Specifications <en-us_topic_0177512565.html>`__.       |
-|                                                           | -  Terminated Windows OSs from the OSs supported by E1    |
-|                                                           |    and E2 ECSs in `Large-Memory                           |
-|                                                           |    ECSs <en-us_topic_0038024694.html>`__.                 |
-|                                                           | -  Modified `Basic ECS                                    |
-|                                                           |    Metrics <en-us_topic_0030911465.html>`__ because the   |
-|                                                           |    monitoring metric **System Status Check Failed** has   |
-|                                                           |    been terminated.                                       |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2020-06-08                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | Added the procedure for changing the OS keyboard language |
-|                                                           | in `What Should I Do If I Cannot Use the German Keyboard  |
-|                                                           | to Enter Characters When I Log In to a Linux ECS Using    |
-|                                                           | VNC? <en-us_topic_0030932496.html>`__                     |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2020-04-22                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added m2.4xlarge.8 in `Memory-optimized                |
-|                                                           |    ECSs <en-us_topic_0035550301.html>`__.                 |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2020-03-30                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  Added `GPU Driver <en-us_topic_0234802636.html>`__ to  |
-|                                                           |    describe GRID and Tesla drivers.                       |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Optimized the operations for installing a Tesla driver |
-|                                                           |    and CUDA toolkit in `Installing a Tesla Driver and     |
-|                                                           |    CUDA Toolkit on a GPU-accelerated                      |
-|                                                           |    ECS <en-us_topic_0149470468.html>`__.                  |
-|                                                           | -  Terminated the sections of installing a NVIDIA GPU     |
-|                                                           |    driver and CUDA toolkit on P1, P2, and P2v ECSs and    |
-|                                                           |    added `Installing a Tesla Driver and CUDA Toolkit on a |
-|                                                           |    GPU-accelerated ECS <en-us_topic_0149470468.html>`__   |
-|                                                           |    for installation.                                      |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2019-12-26                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  Added C4 series in `Dedicated General-Purpose          |
-|                                                           |    ECSs <en-us_topic_0091224748.html>`__.                 |
-|                                                           | -  Added M4 series in `Memory-optimized                   |
-|                                                           |    ECSs <en-us_topic_0035550301.html>`__.                 |
-|                                                           | -  Added newly released E3 ECSs in `Large-Memory          |
-|                                                           |    ECSs <en-us_topic_0038024694.html>`__.                 |
-|                                                           | -  Added G6 ECSs in `GPU-accelerated                      |
-|                                                           |    ECSs <en-us_topic_0097289624.html>`__.                 |
-|                                                           | -  Added P2v ECSs in `GPU-accelerated                     |
-|                                                           |    ECSs <en-us_topic_0097289624.html>`__.                 |
-|                                                           | -  Added `Installing a Tesla Driver and CUDA Toolkit on a |
-|                                                           |    GPU-accelerated ECS <en-us_topic_0149470468.html>`__.  |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Changing a Xen ECS to a KVM ECS (Windows)              |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2019-03-13                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Deleted E3 ECSs in `Large-Memory                       |
-|                                                           |    ECSs <en-us_topic_0038024694.html>`__ because they     |
-|                                                           |    have been terminated.                                  |
-|                                                           | -  Deleted "FPGA-accelerated ECSs" because such ECSs have |
-|                                                           |    been terminated.                                       |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2019-03-06                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Deleted metadata types that are not supported in       |
-|                                                           |    `Obtaining Metadata <en-us_topic_0042400609.html>`__.  |
-|                                                           | -  Added use restrictions in `Passing User Data to        |
-|                                                           |    ECSs <en-us_topic_0032380449.html>`__.                 |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2019-03-05                                                | Deleted the following content:                            |
-|                                                           |                                                           |
-|                                                           | -  Deleted FAQ "Why Are Certain Flavor Quotas Separately  |
-|                                                           |    Displayed on the Quota Page?"                          |
-|                                                           | -  Deleted description of separately displayed quotas in  |
-|                                                           |    `Quota                                                 |
-|                                                           |    Adjustment <en-us_topic_0000001210881033.html>`__.     |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2019-03-04                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Modified the figure for ECS login modes in `Logging In |
-|                                                           |    to an ECS <en-us_topic_0092494193.html>`__.            |
-|                                                           | -  Modified the flowchart in sections "Changing a Xen ECS |
-|                                                           |    to a KVM ECS (Windows)" and "Automatically Changing a  |
-|                                                           |    Xen ECS to a KVM ECS (Linux)".                         |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2019-02-25                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Adjusted the format of information display for the     |
-|                                                           |    step "(Optional) Select the check box to confirm the   |
-|                                                           |    ECS configuration" in `General Operations for          |
-|                                                           |    Modifying                                              |
-|                                                           |    Specifications <en-us_topic_0013771092.html>`__.       |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2019-02-22                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added operation limitations after the ECS state        |
-|                                                           |    changes from **Creating** to **Running** in `Creating  |
-|                                                           |    an ECS <en-us_topic_0021831611.html>`__.               |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2019-02-18                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  `How Can I Attach a Snapshot-based System Disk to an   |
-|                                                           |    ECS as Its Data Disk? <en-us_topic_0152643976.html>`__ |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Why Are Certain Flavor Quotas Separately Displayed on  |
-|                                                           |    the Quota Page?                                        |
-|                                                           | -  Changed the ECS types that support changing from Xen   |
-|                                                           |    to KVM in "Changing a Xen ECS to a KVM ECS (Windows)". |
-|                                                           | -  Changed the ECS types that support changing from Xen   |
-|                                                           |    to KVM and the command for downloading the driver      |
-|                                                           |    installation script in "Automatically Changing a Xen   |
-|                                                           |    ECS to a KVM ECS (Linux)".                             |
-|                                                           | -  Added description about the impact on ECS backups and  |
-|                                                           |    IDs after a cold migration in `Migrating an            |
-|                                                           |    ECS <en-us_topic_0133365988.html>`__.                  |
-|                                                           | -  Added the information that OTC Tools has been          |
-|                                                           |    installed for public images in `Basic ECS              |
-|                                                           |    Metrics <en-us_topic_0030911465.html>`__.              |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2019-02-13                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | Added EulerOS and SUSE 11 to the OSs that support         |
-|                                                           | automatic script operations in "Automatically Changing a  |
-|                                                           | Xen ECS to a KVM ECS (Linux)".                            |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2019-02-12                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Changed the URL for downloading the PV driver and UVP  |
-|                                                           |    VMTools in "Changing a Xen ECS to a KVM ECS            |
-|                                                           |    (Windows)".                                            |
-|                                                           | -  Changed the URL for downloading the script in          |
-|                                                           |    "Automatically Changing a Xen ECS to a KVM ECS         |
-|                                                           |    (Linux)".                                              |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2019-02-03                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Moved C3 ECSs to `Dedicated General-Purpose            |
-|                                                           |    ECSs <en-us_topic_0091224748.html>`__.                 |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2019-01-30                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  Added the FPGA-accelerated ECS type.                   |
-|                                                           | -  Added `Migrating an                                    |
-|                                                           |    ECS <en-us_topic_0133365988.html>`__.                  |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Changed monitoring metric names in `Basic ECS          |
-|                                                           |    Metrics <en-us_topic_0030911465.html>`__.              |
-|                                                           |                                                           |
-|                                                           | Deleted the following content:                            |
-|                                                           |                                                           |
-|                                                           | -  Terminated T series of general computing-basic ECSs.   |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-12-30                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  Added newly released T series of general               |
-|                                                           |    computing-basic ECSs.                                  |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added newly released E3 ECSs in `Large-Memory          |
-|                                                           |    ECSs <en-us_topic_0038024694.html>`__.                 |
-|                                                           | -  Modified description in "Confirm Order" of `Creating   |
-|                                                           |    an ECS <en-us_topic_0021831611.html>`__.               |
-|                                                           | -  Modified the **Agency** description in `Creating an    |
-|                                                           |    ECS <en-us_topic_0021831611.html>`__.                  |
-|                                                           | -  Modified order confirmation operations in `Creating an |
-|                                                           |    ECS <en-us_topic_0021831611.html>`__.                  |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-12-22                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added DeH parameter description in `Creating an        |
-|                                                           |    ECS <en-us_topic_0021831611.html>`__.                  |
-|                                                           | -  Modified the flowchart and follow-up operations in     |
-|                                                           |    "Changing a Xen ECS to a KVM ECS (Windows)".           |
-|                                                           | -  Modified the flowchart and follow-up operations in     |
-|                                                           |    "Automatically Changing a Xen ECS to a KVM ECS         |
-|                                                           |    (Linux)".                                              |
-|                                                           | -  Added UVP in                                           |
-|                                                           |    `Glossary <en-us_topic_0047898078.html>`__.            |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-12-12                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added description in `GPU-accelerated                  |
-|                                                           |    ECSs <en-us_topic_0097289624.html>`__ because P1 and   |
-|                                                           |    P2 ECSs do not support automatic recovery.             |
-|                                                           | -  `(Optional) Configuring Mapping Between Hostnames and  |
-|                                                           |    IP Addresses <en-us_topic_0074752335.html>`__          |
-|                                                           | -  Installing a NVIDIA GPU Driver and CUDA Toolkit on a   |
-|                                                           |    P1 ECS                                                 |
-|                                                           | -  Installing a NVIDIA GPU Driver and CUDA Toolkit on a   |
-|                                                           |    P2 ECS                                                 |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-12-10                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  Changing a Xen ECS to a KVM ECS (Windows)              |
-|                                                           | -  Automatically Changing a Xen ECS to a KVM ECS (Linux)  |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Adjusted the structure of the document.                |
-|                                                           | -  Modified the procedure for creating an ECS in `Getting |
-|                                                           |    Started <en-us_topic_0013771105.html>`__.              |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-11-22                                                | KVM ECSs support automatic recovery.                      |
-|                                                           |                                                           |
-|                                                           | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  Automatically Recovering ECSs                          |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  `Creating an ECS <en-us_topic_0021831611.html>`__      |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-10-29                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  Why Are Certain Flavor Quotas Separately Displayed on  |
-|                                                           |    the Quota Page?                                        |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-09-30                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Updated supported images in `Enabling NIC              |
-|                                                           |    Multi-Queue <en-us_topic_0058758453.html>`__.          |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-09-22                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Optimized descriptions in `Can I Attach Multiple Disks |
-|                                                           |    to an ECS? <en-us_topic_0018073215.html>`__            |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-08-31                                                | Accepted in OTC 3.2.                                      |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-08-17                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  `Quota                                                 |
-|                                                           |    Adjustment <en-us_topic_0000001210881033.html>`__      |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added newly released E3 ECSs in `ECS                   |
-|                                                           |    Types <en-us_topic_0035470096.html>`__ and             |
-|                                                           |    `Large-Memory ECSs <en-us_topic_0038024694.html>`__.   |
-|                                                           | -  Modified description in `Can I Attach Multiple Disks   |
-|                                                           |    to an ECS? <en-us_topic_0018073215.html>`__, allowing  |
-|                                                           |    an ECS to have up to 60 attached disks.                |
-|                                                           | -  Added the procedure for restarting the ECS in `How Can |
-|                                                           |    I Enable Virtual Memory on a Windows                   |
-|                                                           |    ECS? <en-us_topic_0120795802.html>`__                  |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-07-31                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  `Changing the Login Password on an                     |
-|                                                           |    ECS <en-us_topic_0122627689.html>`__                   |
-|                                                           | -  `Enabling Advanced                                     |
-|                                                           |    Disk <en-us_topic_0122307169.html>`__                  |
-|                                                           | -  `What Should I Do If Cloud-Init Does Not Work After    |
-|                                                           |    Python Is Upgraded? <en-us_topic_0118224527.html>`__   |
-|                                                           | -  `Why Does the System Display Error Code 0x112f When I  |
-|                                                           |    Log In to a Windows                                    |
-|                                                           |    ECS? <en-us_topic_0120795668.html>`__                  |
-|                                                           | -  `How Can I Enable Virtual Memory on a Windows          |
-|                                                           |    ECS? <en-us_topic_0120795802.html>`__                  |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Modified description in `Large-Memory                  |
-|                                                           |    ECSs <en-us_topic_0038024694.html>`__, `Disk-intensive |
-|                                                           |    ECSs <en-us_topic_0035470099.html>`__, and `Can I      |
-|                                                           |    Attach Multiple Disks to an                            |
-|                                                           |    ECS? <en-us_topic_0018073215.html>`__, allowing an ECS |
-|                                                           |    to have up to 60 attached disks.                       |
-|                                                           | -  Modified description in                                |
-|                                                           |    `Overview <en-us_topic_0092499768.html>`__, allowing   |
-|                                                           |    the tags added during ECS creation to be automatically |
-|                                                           |    added to the created EIP and EVS disks.                |
-|                                                           | -  Modified description in                                |
-|                                                           |    `CBR <en-us_topic_0096304614.html>`__ and `Why Does It |
-|                                                           |    Take Longer to Create ECSs When I Use a Full-ECS       |
-|                                                           |    Image? <en-us_topic_0102391480.html>`__ to support     |
-|                                                           |    full-ECS images.                                       |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-07-03                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added the rules for the device names of the disks      |
-|                                                           |    mounted to a disk-intensive ECS in `Attaching an EVS   |
-|                                                           |    Disk to an ECS <en-us_topic_0096293655.html>`__.       |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-07-01                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  `CTS <en-us_topic_0116266206.html>`__                  |
-|                                                           | -  `How Can I Test Network                                |
-|                                                           |    Performance? <en-us_topic_0115820205.html>`__          |
-|                                                           | -  `Why Does an Authentication Failure Occurs After I     |
-|                                                           |    Attempt to Remotely Log In to a Windows                |
-|                                                           |    ECS? <en-us_topic_0018339851.html>`__                  |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Allowed to export certain ECSs in `Exporting ECS       |
-|                                                           |    Information <en-us_topic_0060610074.html>`__.          |
-|                                                           | -  Modified prerequisites in `Changing the                |
-|                                                           |    OS <en-us_topic_0031523135.html>`__, allowing you to   |
-|                                                           |    change the OS of an ECS on which reinstalling the OS   |
-|                                                           |    failed.                                                |
-|                                                           | -  Modified description in `Changing a Security           |
-|                                                           |    Group <en-us_topic_0093492517.html>`__, allowing you   |
-|                                                           |    to change the security group in the **Operation**      |
-|                                                           |    column.                                                |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-06-30                                                | Accepted in OTC 3.1.                                      |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-06-29                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Terminated the full-ECS image function.                |
-|                                                           | -  Terminated FPGA-accelerated ECSs.                      |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-06-22                                                | Modified *Elastic Cloud Server User Guide 38* according   |
-|                                                           | to review comments.                                       |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-06-14                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  Allowed to create ECSs using full-ECS images.          |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added description in `Disk-intensive                   |
-|                                                           |    ECSs <en-us_topic_0035470099.html>`__ because D2 ECSs  |
-|                                                           |    do not support automatic recovery.                     |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-06-01                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Modified FPGA-accelerated ECS specifications.          |
-|                                                           | -  Deleted the DSS information.                           |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-05-23                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Modified the specifications and functions of           |
-|                                                           |    FPGA-accelerated ECSs.                                 |
-|                                                           | -  Modified the overview, specifications, and functions   |
-|                                                           |    of D2 ECSs as well as notes on using them in           |
-|                                                           |    `Disk-intensive ECSs <en-us_topic_0035470099.html>`__. |
-|                                                           | -  Modified the description of automatic recovery.        |
-|                                                           | -  Added the description of viewing details about failed  |
-|                                                           |    tasks in `Viewing                                      |
-|                                                           |    Failures <en-us_topic_0108255889.html>`__.             |
-|                                                           | -  Added the FPGA, HDK, SDK, AEI, and DPDK terms in       |
-|                                                           |    `Glossary <en-us_topic_0047898078.html>`__.            |
-|                                                           | -  Modified the functions of and notes on using P2 ECSs   |
-|                                                           |    in `GPU-accelerated                                    |
-|                                                           |    ECSs <en-us_topic_0097289624.html>`__.                 |
-|                                                           | -  Added the OSs supported by P2 ECSs in installing a     |
-|                                                           |    NVIDIA GPU driver and CUDA toolkit on the P2 ECSs.     |
-|                                                           | -  Replaced screenshots in `How Do I Obtain My Disk Name  |
-|                                                           |    in the ECS OS Using the Device Identifier Provided on  |
-|                                                           |    the Console? <en-us_topic_0103285575.html>`__          |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-04-28                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  Added newly released FPGA-accelerated ECSs.            |
-|                                                           | -  Installing a NVIDIA GPU Driver and CUDA Toolkit on a   |
-|                                                           |    P2 ECS                                                 |
-|                                                           | -  `Viewing Failures <en-us_topic_0108255889.html>`__     |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added newly released D2 ECSs in `Disk-intensive        |
-|                                                           |    ECSs <en-us_topic_0035470099.html>`__.                 |
-|                                                           | -  Added newly released P2 ECSs in `GPU-accelerated       |
-|                                                           |    ECSs <en-us_topic_0097289624.html>`__.                 |
-|                                                           | -  Modified description in `General Operations for        |
-|                                                           |    Modifying                                              |
-|                                                           |    Specifications <en-us_topic_0013771092.html>`__,       |
-|                                                           |    allowing you to check whether specifications have been |
-|                                                           |    modified.                                              |
-|                                                           | -  Added description in "Automatically Recovering ECSs",  |
-|                                                           |    allowing KVM ECSs to support automatic recovery.       |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-03-30                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  Added the mapping between device names and disks in    |
-|                                                           |    `How Do I Obtain My Disk Name in the ECS OS Using the  |
-|                                                           |    Device Identifier Provided on the                      |
-|                                                           |    Console? <en-us_topic_0103285575.html>`__              |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-02-07                                                | Accepted in OTC 3.0.                                      |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-02-03                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  6.7.2-Changing a General-Purpose ECS to an H1 ECS      |
-|                                                           | -  Installing a NVIDIA GPU Driver and CUDA Toolkit on a   |
-|                                                           |    P1 ECS                                                 |
-|                                                           | -  `What Can I Do If Switching from a Non-root User to    |
-|                                                           |    User root Times Out? <en-us_topic_0094801708.html>`__  |
-|                                                           | -  `Why Is the Memory of an ECS Obtained by Running the   |
-|                                                           |    free Command Inconsistent with the Actual              |
-|                                                           |    Memory? <en-us_topic_0093153741.html>`__               |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Modified the document structure.                       |
-|                                                           | -  Allowed to modify specifications between               |
-|                                                           |    general-purpose (S1, C1, C2, or M1) ECSs and H1 ECSs   |
-|                                                           |    in `General Operations for Modifying                   |
-|                                                           |    Specifications <en-us_topic_0013771092.html>`__.       |
-|                                                           | -  Updated the description and screenshots for selecting  |
-|                                                           |    ECS types during ECS creation because the GUI has been |
-|                                                           |    modified.                                              |
-|                                                           | -  Modified description in `Can I Attach Multiple Disks   |
-|                                                           |    to an ECS? <en-us_topic_0018073215.html>`__, allowing  |
-|                                                           |    you to attach up to 60 EVS disks to an ECS.            |
-|                                                           | -  Modified default configurations during ECS creation in |
-|                                                           |    `Overview <en-us_topic_0092499768.html>`__.            |
-|                                                           |    Specifically, no built-in tags will be created for an  |
-|                                                           |    ECS by default.                                        |
-|                                                           | -  Added "Follow-up Procedure" in `General Operations for |
-|                                                           |    Modifying                                              |
-|                                                           |    Specifications <en-us_topic_0013771092.html>`__.       |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-01-26                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Updated certain screenshots in this document.          |
-|                                                           | -  Added notes on using M3 ECSs.                          |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2018-01-19                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  `Why Does the System Display a Question Mark When I    |
-|                                                           |    Attempt to Obtain Console                              |
-|                                                           |    Logs? <en-us_topic_0088241338.html>`__                 |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2017-12-30                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  `How Can I Rectify the Fault That May Occur on a Linux |
-|                                                           |    ECS with an NVMe SSD Disk                              |
-|                                                           |    Attached? <en-us_topic_0087622835.html>`__             |
-|                                                           | -  `Why Does the System Display a Question Mark When I    |
-|                                                           |    Attempt to Obtain Console                              |
-|                                                           |    Logs? <en-us_topic_0088241338.html>`__                 |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Modified notes in `Enabling NIC                        |
-|                                                           |    Multi-Queue <en-us_topic_0058758453.html>`__.          |
-|                                                           | -  Added C3, M3, and P1 ECSs in `ECS                      |
-|                                                           |    Types <en-us_topic_0035470096.html>`__.                |
-|                                                           | -  Added the function of creating a disk using DSS        |
-|                                                           |    resources.                                             |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2017-10-27                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added computing I, computing II, and memory-optimized  |
-|                                                           |    first-generation ECS types into the general-purpose    |
-|                                                           |    ECS type in `ECS                                       |
-|                                                           |    Types <en-us_topic_0035470096.html>`__.                |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2017-10-18                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Changed the OSs supported by H2 and HL1 ECSs in        |
-|                                                           |    `High-Performance Computing                            |
-|                                                           |    ECSs <en-us_topic_0035470100.html>`__.                 |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2017-10-06                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added constraints on detaching an EVS disk from a      |
-|                                                           |    running Windows ECS in `Detaching an EVS Disk from a   |
-|                                                           |    Running ECS <en-us_topic_0036046828.html>`__.          |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2017-09-30                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  `(Optional) Configuring Mapping Between Hostnames and  |
-|                                                           |    IP Addresses <en-us_topic_0074752335.html>`__          |
-|                                                           | -  `How Can I Adjust System Disk                          |
-|                                                           |    Partitions? <en-us_topic_0076210995.html>`__           |
-|                                                           | -  `How Can I Add the Empty Partition of an Expanded      |
-|                                                           |    System Disk to the End Root Partition                  |
-|                                                           |    Online? <en-us_topic_0078300749.html>`__               |
-|                                                           | -  `How Can I Add the Empty Partition of an Expanded      |
-|                                                           |    System Disk to the Non-end Root Partition              |
-|                                                           |    Online? <en-us_topic_0078300750.html>`__               |
-|                                                           | -  `Which ECSs Can Be Attached with SCSI EVS              |
-|                                                           |    Disks? <en-us_topic_0077938284.html>`__                |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added S2 ECSs in `General-Purpose                      |
-|                                                           |    ECSs <en-us_topic_0035470101.html>`__.                 |
-|                                                           | -  Added EVS disk device types in `EVS                    |
-|                                                           |    Disks <en-us_topic_0030828256.html>`__.                |
-|                                                           | -  Modified description in `Reinstalling the              |
-|                                                           |    OS <en-us_topic_0024911405.html>`__ and `Changing the  |
-|                                                           |    OS <en-us_topic_0031523135.html>`__, allowing you to   |
-|                                                           |    inject user data during ECS OS reinstallation or       |
-|                                                           |    change.                                                |
-|                                                           | -  Modified the description of managing virtual IP        |
-|                                                           |    addresses in `General Operations for Modifying         |
-|                                                           |    Specifications <en-us_topic_0013771092.html>`__.       |
-|                                                           | -  Allowed attaching up to 24 EVS disks to an ECS in `Can |
-|                                                           |    I Attach Multiple Disks to an                          |
-|                                                           |    ECS? <en-us_topic_0018073215.html>`__                  |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2017-09-18                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Modified the overview, functions, and notes on using   |
-|                                                           |    HL1 ECSs in `High-Performance Computing                |
-|                                                           |    ECSs <en-us_topic_0035470100.html>`__.                 |
-|                                                           | -  Modified notes in "Automatically Recovering ECSs".     |
-|                                                           | -  Added notes on using tools, such as ibstat in `How Can |
-|                                                           |    I Check Whether the Network Communication Is Normal    |
-|                                                           |    Between Two ECSs Equipped with an InfiniBand NIC       |
-|                                                           |    Driver? <en-us_topic_0058747426.html>`__               |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2017-09-06                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Modified key description and added an image for the    |
-|                                                           |    encryption process in `User                            |
-|                                                           |    Encryption <en-us_topic_0046912051.html>`__.           |
-|                                                           | -  Added the official website for downloading TightVNC in |
-|                                                           |    `Login Overview <en-us_topic_0013771089.html>`__.      |
-|                                                           | -  Added examples for configuring routing policies in     |
-|                                                           |    `Can I Bind Multiple EIPs to an                        |
-|                                                           |    ECS? <en-us_topic_0018073216.html>`__                  |
-|                                                           | -  Added description in `Will NICs Added to an ECS Start  |
-|                                                           |    Automatically? <en-us_topic_0025445670.html>`__,       |
-|                                                           |    indicating that only the NICs added to an ECS running  |
-|                                                           |    the CentOS 7.0 OS requires manual activation.          |
-|                                                           | -  `What Should I Do If I Cannot Use the German Keyboard  |
-|                                                           |    to Enter Characters When I Log In to a Linux ECS Using |
-|                                                           |    VNC? <en-us_topic_0030932496.html>`__                  |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2017-08-22                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  Added automatic recovery.                              |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Modified description, indicating that SCSI EVS disks   |
-|                                                           |    cannot be added during ECS creation.                   |
-|                                                           |                                                           |
-|                                                           | -  Deleted the description of exporting the ECS list.     |
-|                                                           | -  Changed the KVM ECS types to H2, M2, and HL1.          |
-|                                                           | -  Confirmed and modified all issues in this document.    |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2017-08-11                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  Supported the multi-project function in                |
-|                                                           |    `Project <en-us_topic_0070518971.html>`__.             |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2017-06-07                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Modified notes on using H2 ECSs in `High-Performance   |
-|                                                           |    Computing ECSs <en-us_topic_0035470100.html>`__.       |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2017-06-05                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added the description of built-in tags in `General     |
-|                                                           |    Operations for Modifying                               |
-|                                                           |    Specifications <en-us_topic_0013771092.html>`__.       |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2017-05-30                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Changed the OSs supported by large-memory ECSs in      |
-|                                                           |    `Large-Memory ECSs <en-us_topic_0038024694.html>`__.   |
-|                                                           | -  Changed the OSs supported by disk-intensive ECSs in    |
-|                                                           |    `Disk-intensive ECSs <en-us_topic_0035470099.html>`__. |
-|                                                           | -  Added the **InfiniBand NIC status** metric in `Basic   |
-|                                                           |    ECS Metrics <en-us_topic_0030911465.html>`__.          |
-|                                                           | -  Added the description of adding, viewing, modifying,   |
-|                                                           |    and deleting tags in `General Operations for Modifying |
-|                                                           |    Specifications <en-us_topic_0013771092.html>`__.       |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2017-05-19                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added **Marketplace image** to **Image** in `Step 1:   |
-|                                                           |    Configure Basic                                        |
-|                                                           |    Settings <en-us_topic_0163572589.html>`__.             |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2017-05-08                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  `Obtaining ECS Console                                 |
-|                                                           |    Logs <en-us_topic_0057711189.html>`__                  |
-|                                                           | -  `Enabling NIC                                          |
-|                                                           |    Multi-Queue <en-us_topic_0058758453.html>`__           |
-|                                                           | -  `How Can I Check Whether the Network Communication Is  |
-|                                                           |    Normal Between Two ECSs Equipped with an InfiniBand    |
-|                                                           |    NIC Driver? <en-us_topic_0058747426.html>`__           |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2017-04-07                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  `How Can a Changed Static Hostname Take Effect         |
-|                                                           |    Permanently? <en-us_topic_0050735736.html>`__          |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added G2, M2, and H2 ECSs in `ECS                      |
-|                                                           |    Types <en-us_topic_0035470096.html>`__.                |
-|                                                           |                                                           |
-|                                                           | -  Modified H1 ECS specifications in `High-Performance    |
-|                                                           |    Computing ECSs <en-us_topic_0035470100.html>`__.       |
-|                                                           |                                                           |
-|                                                           | -  Modified large-memory ECS specifications in            |
-|                                                           |    `Large-Memory ECSs <en-us_topic_0038024694.html>`__.   |
-|                                                           |                                                           |
-|                                                           | -  Added the **System Status Check Failed** metric in     |
-|                                                           |    `Basic ECS Metrics <en-us_topic_0030911465.html>`__.   |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2017-03-09                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Changed the maximum number of tags that can be added   |
-|                                                           |    to an ECS to 11, where 1 is automatically added by the |
-|                                                           |    system and the other 10 must be manually added.        |
-|                                                           | -  Changed one tag-related screenshot due to GUI          |
-|                                                           |    optimization.                                          |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2017-02-03                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  `Why Does a Key Pair Created Using puttygen.exe Fail   |
-|                                                           |    to Be Imported on the Management                       |
-|                                                           |    Console? <en-us_topic_0047654687.html>`__              |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Modified the method of using **puttygen.exe** to       |
-|                                                           |    generate key pairs in `Creating a Key                  |
-|                                                           |    Pair <en-us_topic_0014250631.html>`__.                 |
-|                                                           | -  Added description in `License                          |
-|                                                           |    Type <en-us_topic_0046566932.html>`__, indicating that |
-|                                                           |    the system does not support dynamic license type       |
-|                                                           |    changing.                                              |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2017-01-27                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Deleted Ubuntu from the OSs supporting BYOL in         |
-|                                                           |    `License Type <en-us_topic_0046566932.html>`__.        |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2017-01-26                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added full names of acronyms in `User                  |
-|                                                           |    Encryption <en-us_topic_0046912051.html>`__.           |
-|                                                           | -  Changed the OSs supporting BYOL in `License            |
-|                                                           |    Type <en-us_topic_0046566932.html>`__ and `Changing    |
-|                                                           |    the OS <en-us_topic_0031523135.html>`__.               |
-|                                                           |                                                           |
-|                                                           |    -  Added Red Hat Enterprise Linux.                     |
-|                                                           |    -  Added the scope of Windows OSs for using BYOL.      |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2017-01-20                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  `License Type <en-us_topic_0046566932.html>`__         |
-|                                                           | -  `User Encryption <en-us_topic_0046912051.html>`__      |
-|                                                           | -  `Can All Users Use the Encryption                      |
-|                                                           |    Feature? <en-us_topic_0047272493.html>`__              |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2017-01-16                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added Marketplace image in                             |
-|                                                           |    `Images <en-us_topic_0030828254.html>`__ and `Step 1:  |
-|                                                           |    Configure Basic                                        |
-|                                                           |    Settings <en-us_topic_0163572589.html>`__.             |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2016-10-09                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  `Managing ECS Groups <en-us_topic_0032980085.html>`__  |
-|                                                           | -  `Viewing ECS Creation                                  |
-|                                                           |    Statuses <en-us_topic_0039588795.html>`__              |
-|                                                           | -  `Why Does the Failures Area Show an ECS Creation       |
-|                                                           |    Failure But the ECS List Displays the Created          |
-|                                                           |    ECS? <en-us_topic_0039524582.html>`__                  |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added information for remotely logging in to ECSs in   |
-|                                                           |    `Login Using VNC <en-us_topic_0027268511.html>`__,     |
-|                                                           |    `Login Using an SSH                                    |
-|                                                           |    Key <en-us_topic_0017955380.html>`__, `Login Using an  |
-|                                                           |    SSH Password <en-us_topic_0017955633.html>`__, and     |
-|                                                           |    `Login Using MSTSC <en-us_topic_0017955381.html>`__.   |
-|                                                           | -  Added document links to the default keyboard types of  |
-|                                                           |    the ECSs created using public images in `Login Using   |
-|                                                           |    VNC <en-us_topic_0027268511.html>`__.                  |
-|                                                           | -  Added notes on keyboard language settings for          |
-|                                                           |    VNC-based ECS logins and the mapping between four      |
-|                                                           |    types of keyboards in `Login Using                     |
-|                                                           |    VNC <en-us_topic_0027268511.html>`__. Provided         |
-|                                                           |    configuration examples and links to related FAQs.      |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2016-09-30                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added constraints in `Managing ECS                     |
-|                                                           |    Groups <en-us_topic_0032980085.html>`__ because ECS    |
-|                                                           |    groups apply only to HANA ECSs and large-memory ECSs.  |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2016-09-28                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  `Can I Change the OS of an                             |
-|                                                           |    ECS? <en-us_topic_0018078522.html>`__                  |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Deleted the FAQ that is not required any more because  |
-|                                                           |    the preset Linux ECS username has been changed after   |
-|                                                           |    Cloud-Init is supported.                               |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2016-09-27                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  `Can I Attach Multiple Disks to an                     |
-|                                                           |    ECS? <en-us_topic_0018073215.html>`__                  |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Modified the instructions to configure keyboard        |
-|                                                           |    languages in VNC logins in `Login Using                |
-|                                                           |    VNC <en-us_topic_0027268511.html>`__.                  |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2016-09-26                                                | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added the instructions to configure keyboard languages |
-|                                                           |    in VNC logins in `Login Using                          |
-|                                                           |    VNC <en-us_topic_0027268511.html>`__.                  |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2016-09-23                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  `Large-Memory ECSs <en-us_topic_0038024694.html>`__    |
-|                                                           | -  `Why Is the NIC Not                                    |
-|                                                           |    Working? <en-us_topic_0036068717.html>`__              |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added encryption algorithms and the method of using    |
-|                                                           |    PuTTYgen to generate key pairs in `Creating a Key      |
-|                                                           |    Pair <en-us_topic_0014250631.html>`__.                 |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2016-09-18                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  `Expanding the Local Disks of a Disk-intensive         |
-|                                                           |    ECS <en-us_topic_0037470901.html>`__                   |
-|                                                           | -  `What Is the cloudbase-init Account in Windows ECSs    |
-|                                                           |    Used for? <en-us_topic_0037633087.html>`__             |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  Added the description of interactive password reset    |
-|                                                           |    scripts in `Resetting the Password for Logging In to a |
-|                                                           |    Linux ECS <en-us_topic_0021427650.html>`__             |
-|                                                           | -  Added notes on using various ECSs in `Memory-optimized |
-|                                                           |    ECSs <en-us_topic_0035550301.html>`__, `Disk-intensive |
-|                                                           |    ECSs <en-us_topic_0035470099.html>`__, and             |
-|                                                           |    `High-Performance Computing                            |
-|                                                           |    ECSs <en-us_topic_0035470100.html>`__.                 |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2016-08-25                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  `GPU-accelerated ECSs <en-us_topic_0097289624.html>`__ |
-|                                                           | -  `Disk-intensive ECSs <en-us_topic_0035470099.html>`__  |
-|                                                           | -  `Why Is the NIC Not                                    |
-|                                                           |    Working? <en-us_topic_0036068717.html>`__              |
-|                                                           | -  `High-Performance Computing                            |
-|                                                           |    ECSs <en-us_topic_0035470100.html>`__                  |
-|                                                           | -  `Detaching an EVS Disk from a Running                  |
-|                                                           |    ECS <en-us_topic_0036046828.html>`__                   |
-|                                                           | -  `What Browser Version Is Required to Remotely Log In   |
-|                                                           |    to an ECS? <en-us_topic_0035233718.html>`__            |
-|                                                           | -  `Why Does the Login to My Linux ECS Using a Key File   |
-|                                                           |    Fail? <en-us_topic_0031734664.html>`__                 |
-|                                                           | -  `Why Does the System Display a Message Indicating that |
-|                                                           |    the Password for Logging In to a Windows ECS Cannot Be |
-|                                                           |    Viewed? <en-us_topic_0031736846.html>`__               |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2016-07-15                                                | Added the following content:                              |
-|                                                           |                                                           |
-|                                                           | -  Cloud-Init                                             |
-|                                                           | -  Forcible ECS shutdown                                  |
-|                                                           | -  Forcible ECS restarting                                |
-|                                                           | -  OS changing                                            |
-|                                                           |                                                           |
-|                                                           | Modified the following content:                           |
-|                                                           |                                                           |
-|                                                           | -  ECS login modes                                        |
-|                                                           | -  OS reinstallation                                      |
-+-----------------------------------------------------------+-----------------------------------------------------------+
-| 2016-03-14                                                | This issue is the first official release.                 |
-+-----------------------------------------------------------+-----------------------------------------------------------+
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Released On | Description                                                                                                                                                         |
++=============+=====================================================================================================================================================================+
+| 2022-01-10  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | Added "Maximum NICs" in the following sections:                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  `General-Purpose ECSs <service_overview/ecs_specifications_and_types/general-purpose_ecss>`__                                                                    |
+|             | -  `Dedicated General-Purpose                                                                                                                                       |
+|             |    ECSs <service_overview/ecs_specifications_and_types/dedicated_general-purpose_ecss>`__                                                                           |
+|             | -  `Memory-optimized                                                                                                                                                |
+|             |    ECSs <service_overview/ecs_specifications_and_types/memory-optimized_ecss>`__                                                                                    |
+|             | -  `GPU-accelerated ECSs <service_overview/ecs_specifications_and_types/gpu-accelerated_ecss>`__                                                                    |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2021-12-30  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Deleted the description that the Windows Server OS                                                                                                               |
+|             |    supports BYOL in `License                                                                                                                                        |
+|             |    Type <service_overview/security/license_type>`__.                                                                                                                |
+|             | -  Added a note for the ECS name `Step 3: Configure                                                                                                                 |
+|             |    Advanced Settings <getting_started/creating_an_ecs/step_3_configure_advanced_settings>`__.                                                                       |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2021-11-20  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | `Can ECSs Automatically Recover After the Physical Host                                                                                                             |
+|             | Accommodating the ECSs Becomes                                                                                                                                      |
+|             | Faulty? <faqs/ecs_overview/can_ecss_automatically_recover_after_the_physical_host_accommodating_the_ecss_becomes_faulty>`__                                         |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added image encryption and system disk encryption in                                                                                                             |
+|             |    `User Encryption <service_overview/security/user_encryption>`__.                                                                                                 |
+|             | -  Added description that ECSs can be created from                                                                                                                  |
+|             |    encrypted images in `ECS and Other                                                                                                                               |
+|             |    Services <service_overview/ecs_and_other_services>`__.                                                                                                           |
+|             | -  Added description that the system disk can be                                                                                                                    |
+|             |    encrypted during ECS creation in `Step 1: Configure                                                                                                              |
+|             |    Basic Settings <getting_started/creating_an_ecs/step_1_configure_basic_settings>`__.                                                                             |
+|             | -  Added description that the system disk can be                                                                                                                    |
+|             |    encrypted during OS reinstallation in `Reinstalling                                                                                                              |
+|             |    the OS <instances/managing_ecss/reinstalling_the_os>`__.                                                                                                         |
+|             | -  Added description that the system disk can be                                                                                                                    |
+|             |    encrypted during OS change in `Changing the                                                                                                                      |
+|             |    OS <instances/managing_ecss/changing_the_os>`__.                                                                                                                 |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2021-10-20  | Optimized descriptions in `Step 1: Configure Basic                                                                                                                  |
+|             | Settings <getting_started/creating_an_ecs/step_1_configure_basic_settings>`__.                                                                                      |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2021-09-10  | -  Modified the following content:                                                                                                                                  |
+|             |                                                                                                                                                                     |
+|             |    -  Deleted description about Xen ECSs.                                                                                                                           |
+|             |                                                                                                                                                                     |
+|             | -  Deleted the following sections:                                                                                                                                  |
+|             |                                                                                                                                                                     |
+|             |    -  Changing a General-Purpose ECS to an H1 ECS                                                                                                                   |
+|             |    -  Changing a Xen ECS to a KVM ECS (Windows)                                                                                                                     |
+|             |    -  Automatically Changing a Xen ECS to a KVM ECS                                                                                                                 |
+|             |       (Linux)                                                                                                                                                       |
+|             |    -  Manually Changing a Xen ECS to a KVM ECS (Linux)                                                                                                              |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2021-08-09  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added P2s ECSs in `GPU-accelerated                                                                                                                               |
+|             |    ECSs <service_overview/ecs_specifications_and_types/gpu-accelerated_ecss>`__.                                                                                    |
+|             | -  Added the URL for downloading the CUDA toolkit for P2s                                                                                                           |
+|             |    ECSs in `Obtaining a Tesla Driver and CUDA                                                                                                                       |
+|             |    Toolkit <instances/(optional)_installing_a_driver_and_toolkit/obtaining_a_tesla_driver_and_cuda_toolkit>`__.                                                     |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2021-08-02  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | Deleted descriptions about Marketplace images from                                                                                                                  |
+|             | `Images <service_overview/images>`__ and `Step 1:                                                                                                                   |
+|             | Configure Basic                                                                                                                                                     |
+|             | Settings <getting_started/creating_an_ecs/step_1_configure_basic_settings>`__.                                                                                      |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2021-04-23  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | Added `How Do I Configure atop and kdump on Linux ECSs                                                                                                              |
+|             | for Performance                                                                                                                                                     |
+|             | Analysis? <troubleshooting/how_do_i_configure_atop_and_kdump_on_linux_ecss_for_performance_analysis>`__.                                                            |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2020-11-12  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Changed CSBS to CBR in `ECS and Other                                                                                                                            |
+|             |    Services <service_overview/ecs_and_other_services>`__.                                                                                                           |
+|             | -  Added CBR to back up ECS data in `Step 3: Configure                                                                                                              |
+|             |    Advanced Settings <getting_started/creating_an_ecs/step_3_configure_advanced_settings>`__.                                                                       |
+|             | -  Added CBR to back up ECS data in                                                                                                                                 |
+|             |    `CBR </cbr>`__.                                                                                                                                                  |
+|             | -  Added description in notes in `Migrating an                                                                                                                      |
+|             |    ECS <instances/migrating_an_ecs>`__, indicating that                                                                                                             |
+|             |    CBR backups are not affected by cold migrations.                                                                                                                 |
+|             | -  Added a solution of using CBR in `Why Does It Take                                                                                                               |
+|             |    Longer to Create ECSs When I Use a Full-ECS                                                                                                                      |
+|             |    Image? <faqs/creation_and_deletion/why_does_it_take_longer_to_create_ecss_when_i_use_a_full-ecs_image>`__                                                        |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2020-10-09  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | Added the Windows Server 2019 Standard 64bit and Oracle                                                                                                             |
+|             | Linux 7.6 64bit OSs supported by P2v ECSs in                                                                                                                        |
+|             | `GPU-accelerated ECSs <service_overview/ecs_specifications_and_types/gpu-accelerated_ecss>`__.                                                                      |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2020-09-08  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  Added PI2 ECSs in `GPU-accelerated                                                                                                                               |
+|             |    ECSs <service_overview/ecs_specifications_and_types/gpu-accelerated_ecss>`__.                                                                                    |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added CPU information for KVM ECSs in `ECS                                                                                                                       |
+|             |    Specifications <service_overview/ecs_specifications_and_types/ecs_specifications>`__.                                                                            |
+|             | -  Terminated Windows OSs from the OSs supported by E1                                                                                                              |
+|             |    and E2 ECSs in `Large-Memory                                                                                                                                     |
+|             |    ECSs <service_overview/ecs_specifications_and_types/large-memory_ecss>`__.                                                                                       |
+|             | -  Modified `Basic ECS                                                                                                                                              |
+|             |    Metrics <monitoring/basic_ecs_metrics>`__ because the                                                                                                            |
+|             |    monitoring metric **System Status Check Failed** has                                                                                                             |
+|             |    been terminated.                                                                                                                                                 |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2020-06-08  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | Added the procedure for changing the OS keyboard language                                                                                                           |
+|             | in `What Should I Do If I Cannot Use the German Keyboard                                                                                                            |
+|             | to Enter Characters When I Log In to a Linux ECS Using                                                                                                              |
+|             | VNC? <faqs/login_and_connection/what_should_i_do_if_i_cannot_use_the_german_keyboard_to_enter_characters_when_i_log_in_to_a_linux_ecs_using_vnc>`__                 |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2020-04-22  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added m2.4xlarge.8 in `Memory-optimized                                                                                                                          |
+|             |    ECSs <service_overview/ecs_specifications_and_types/memory-optimized_ecss>`__.                                                                                   |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2020-03-30  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  Added `GPU Driver <instances/(optional)_installing_a_driver_and_toolkit/gpu_driver>`__ to                                                                        |
+|             |    describe GRID and Tesla drivers.                                                                                                                                 |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Optimized the operations for installing a Tesla driver                                                                                                           |
+|             |    and CUDA toolkit in `Installing a Tesla Driver and                                                                                                               |
+|             |    CUDA Toolkit on a GPU-accelerated                                                                                                                                |
+|             |    ECS <instances/(optional)_installing_a_driver_and_toolkit/installing_a_tesla_driver_and_cuda_toolkit_on_a_gpu-accelerated_ecs>`__.                               |
+|             | -  Terminated the sections of installing a NVIDIA GPU                                                                                                               |
+|             |    driver and CUDA toolkit on P1, P2, and P2v ECSs and                                                                                                              |
+|             |    added `Installing a Tesla Driver and CUDA Toolkit on a                                                                                                           |
+|             |    GPU-accelerated ECS <instances/(optional)_installing_a_driver_and_toolkit/installing_a_tesla_driver_and_cuda_toolkit_on_a_gpu-accelerated_ecs>`__                |
+|             |    for installation.                                                                                                                                                |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2019-12-26  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  Added C4 series in `Dedicated General-Purpose                                                                                                                    |
+|             |    ECSs <service_overview/ecs_specifications_and_types/dedicated_general-purpose_ecss>`__.                                                                          |
+|             | -  Added M4 series in `Memory-optimized                                                                                                                             |
+|             |    ECSs <service_overview/ecs_specifications_and_types/memory-optimized_ecss>`__.                                                                                   |
+|             | -  Added newly released E3 ECSs in `Large-Memory                                                                                                                    |
+|             |    ECSs <service_overview/ecs_specifications_and_types/large-memory_ecss>`__.                                                                                       |
+|             | -  Added G6 ECSs in `GPU-accelerated                                                                                                                                |
+|             |    ECSs <service_overview/ecs_specifications_and_types/gpu-accelerated_ecss>`__.                                                                                    |
+|             | -  Added P2v ECSs in `GPU-accelerated                                                                                                                               |
+|             |    ECSs <service_overview/ecs_specifications_and_types/gpu-accelerated_ecss>`__.                                                                                    |
+|             | -  Added `Installing a Tesla Driver and CUDA Toolkit on a                                                                                                           |
+|             |    GPU-accelerated ECS <instances/(optional)_installing_a_driver_and_toolkit/installing_a_tesla_driver_and_cuda_toolkit_on_a_gpu-accelerated_ecs>`__.               |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Changing a Xen ECS to a KVM ECS (Windows)                                                                                                                        |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2019-03-13  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Deleted E3 ECSs in `Large-Memory                                                                                                                                 |
+|             |    ECSs <service_overview/ecs_specifications_and_types/large-memory_ecss>`__ because they                                                                           |
+|             |    have been terminated.                                                                                                                                            |
+|             | -  Deleted "FPGA-accelerated ECSs" because such ECSs have                                                                                                           |
+|             |    been terminated.                                                                                                                                                 |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2019-03-06  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Deleted metadata types that are not supported in                                                                                                                 |
+|             |    `Obtaining Metadata <instances/obtaining_metadata_and_passing_user_data/obtaining_metadata>`__.                                                                  |
+|             | -  Added use restrictions in `Passing User Data to                                                                                                                  |
+|             |    ECSs <instances/obtaining_metadata_and_passing_user_data/passing_user_data_to_ecss>`__.                                                                          |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2019-03-05  | Deleted the following content:                                                                                                                                      |
+|             |                                                                                                                                                                     |
+|             | -  Deleted FAQ "Why Are Certain Flavor Quotas Separately                                                                                                            |
+|             |    Displayed on the Quota Page?"                                                                                                                                    |
+|             | -  Deleted description of separately displayed quotas in                                                                                                            |
+|             |    `Quota                                                                                                                                                           |
+|             |    Adjustment <resources_and_tags/quota_adjustment>`__.                                                                                                             |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2019-03-04  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Modified the figure for ECS login modes in `Logging In                                                                                                           |
+|             |    to an ECS <getting_started/logging_in_to_an_ecs>`__.                                                                                                             |
+|             | -  Modified the flowchart in sections "Changing a Xen ECS                                                                                                           |
+|             |    to a KVM ECS (Windows)" and "Automatically Changing a                                                                                                            |
+|             |    Xen ECS to a KVM ECS (Linux)".                                                                                                                                   |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2019-02-25  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Adjusted the format of information display for the                                                                                                               |
+|             |    step "(Optional) Select the check box to confirm the                                                                                                             |
+|             |    ECS configuration" in `General Operations for                                                                                                                    |
+|             |    Modifying                                                                                                                                                        |
+|             |    Specifications <instances/modifying_ecs_vcpu_and_memory_specifications/general_operations_for_modifying_specifications>`__.                                      |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2019-02-22  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added operation limitations after the ECS state                                                                                                                  |
+|             |    changes from **Creating** to **Running** in `Creating                                                                                                            |
+|             |    an ECS <getting_started/creating_an_ecs>`__.                                                                                                                     |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2019-02-18  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  `How Can I Attach a Snapshot-based System Disk to an                                                                                                             |
+|             |    ECS as Its Data Disk? <faqs/disk_management/how_can_i_attach_a_snapshot-based_system_disk_to_an_ecs_as_its_data_disk>`__                                         |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Why Are Certain Flavor Quotas Separately Displayed on                                                                                                            |
+|             |    the Quota Page?                                                                                                                                                  |
+|             | -  Changed the ECS types that support changing from Xen                                                                                                             |
+|             |    to KVM in "Changing a Xen ECS to a KVM ECS (Windows)".                                                                                                           |
+|             | -  Changed the ECS types that support changing from Xen                                                                                                             |
+|             |    to KVM and the command for downloading the driver                                                                                                                |
+|             |    installation script in "Automatically Changing a Xen                                                                                                             |
+|             |    ECS to a KVM ECS (Linux)".                                                                                                                                       |
+|             | -  Added description about the impact on ECS backups and                                                                                                            |
+|             |    IDs after a cold migration in `Migrating an                                                                                                                      |
+|             |    ECS <instances/migrating_an_ecs>`__.                                                                                                                             |
+|             | -  Added the information that OTC Tools has been                                                                                                                    |
+|             |    installed for public images in `Basic ECS                                                                                                                        |
+|             |    Metrics <monitoring/basic_ecs_metrics>`__.                                                                                                                       |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2019-02-13  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | Added EulerOS and SUSE 11 to the OSs that support                                                                                                                   |
+|             | automatic script operations in "Automatically Changing a                                                                                                            |
+|             | Xen ECS to a KVM ECS (Linux)".                                                                                                                                      |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2019-02-12  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Changed the URL for downloading the PV driver and UVP                                                                                                            |
+|             |    VMTools in "Changing a Xen ECS to a KVM ECS                                                                                                                      |
+|             |    (Windows)".                                                                                                                                                      |
+|             | -  Changed the URL for downloading the script in                                                                                                                    |
+|             |    "Automatically Changing a Xen ECS to a KVM ECS                                                                                                                   |
+|             |    (Linux)".                                                                                                                                                        |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2019-02-03  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Moved C3 ECSs to `Dedicated General-Purpose                                                                                                                      |
+|             |    ECSs <service_overview/ecs_specifications_and_types/dedicated_general-purpose_ecss>`__.                                                                          |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2019-01-30  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  Added the FPGA-accelerated ECS type.                                                                                                                             |
+|             | -  Added `Migrating an                                                                                                                                              |
+|             |    ECS <instances/migrating_an_ecs>`__.                                                                                                                             |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Changed monitoring metric names in `Basic ECS                                                                                                                    |
+|             |    Metrics <monitoring/basic_ecs_metrics>`__.                                                                                                                       |
+|             |                                                                                                                                                                     |
+|             | Deleted the following content:                                                                                                                                      |
+|             |                                                                                                                                                                     |
+|             | -  Terminated T series of general computing-basic ECSs.                                                                                                             |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-12-30  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  Added newly released T series of general                                                                                                                         |
+|             |    computing-basic ECSs.                                                                                                                                            |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added newly released E3 ECSs in `Large-Memory                                                                                                                    |
+|             |    ECSs <service_overview/ecs_specifications_and_types/large-memory_ecss>`__.                                                                                       |
+|             | -  Modified description in "Confirm Order" of `Creating                                                                                                             |
+|             |    an ECS <getting_started/creating_an_ecs>`__.                                                                                                                     |
+|             | -  Modified the **Agency** description in `Creating an                                                                                                              |
+|             |    ECS <getting_started/creating_an_ecs>`__.                                                                                                                        |
+|             | -  Modified order confirmation operations in `Creating an                                                                                                           |
+|             |    ECS <getting_started/creating_an_ecs>`__.                                                                                                                        |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-12-22  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added DeH parameter description in `Creating an                                                                                                                  |
+|             |    ECS <getting_started/creating_an_ecs>`__.                                                                                                                        |
+|             | -  Modified the flowchart and follow-up operations in                                                                                                               |
+|             |    "Changing a Xen ECS to a KVM ECS (Windows)".                                                                                                                     |
+|             | -  Modified the flowchart and follow-up operations in                                                                                                               |
+|             |    "Automatically Changing a Xen ECS to a KVM ECS                                                                                                                   |
+|             |    (Linux)".                                                                                                                                                        |
+|             | -  Added UVP in                                                                                                                                                     |
+|             |    `Glossary </glossary>`__.                                                                                                                                        |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-12-12  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added description in `GPU-accelerated                                                                                                                            |
+|             |    ECSs <service_overview/ecs_specifications_and_types/gpu-accelerated_ecss>`__ because P1 and                                                                      |
+|             |    P2 ECSs do not support automatic recovery.                                                                                                                       |
+|             | -  `(Optional) Configuring Mapping Between Hostnames and                                                                                                            |
+|             |    IP Addresses <instances/(optional)_configuring_mapping_between_hostnames_and_ip_addresses>`__                                                                    |
+|             | -  Installing a NVIDIA GPU Driver and CUDA Toolkit on a                                                                                                             |
+|             |    P1 ECS                                                                                                                                                           |
+|             | -  Installing a NVIDIA GPU Driver and CUDA Toolkit on a                                                                                                             |
+|             |    P2 ECS                                                                                                                                                           |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-12-10  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  Changing a Xen ECS to a KVM ECS (Windows)                                                                                                                        |
+|             | -  Automatically Changing a Xen ECS to a KVM ECS (Linux)                                                                                                            |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Adjusted the structure of the document.                                                                                                                          |
+|             | -  Modified the procedure for creating an ECS in `Getting                                                                                                           |
+|             |    Started </getting_started>`__.                                                                                                                                   |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-11-22  | KVM ECSs support automatic recovery.                                                                                                                                |
+|             |                                                                                                                                                                     |
+|             | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  Automatically Recovering ECSs                                                                                                                                    |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  `Creating an ECS <getting_started/creating_an_ecs>`__                                                                                                            |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-10-29  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  Why Are Certain Flavor Quotas Separately Displayed on                                                                                                            |
+|             |    the Quota Page?                                                                                                                                                  |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-09-30  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Updated supported images in `Enabling NIC                                                                                                                        |
+|             |    Multi-Queue <nics/enabling_nic_multi-queue>`__.                                                                                                                  |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-09-22  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Optimized descriptions in `Can I Attach Multiple Disks                                                                                                           |
+|             |    to an ECS? <faqs/disk_management/can_i_attach_multiple_disks_to_an_ecs>`__                                                                                       |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-08-31  | Accepted in OTC 3.2.                                                                                                                                                |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-08-17  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  `Quota                                                                                                                                                           |
+|             |    Adjustment <resources_and_tags/quota_adjustment>`__                                                                                                              |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added newly released E3 ECSs in `ECS                                                                                                                             |
+|             |    Types <service_overview/instances/ecs_types>`__ and                                                                                                              |
+|             |    `Large-Memory ECSs <service_overview/ecs_specifications_and_types/large-memory_ecss>`__.                                                                         |
+|             | -  Modified description in `Can I Attach Multiple Disks                                                                                                             |
+|             |    to an ECS? <faqs/disk_management/can_i_attach_multiple_disks_to_an_ecs>`__, allowing                                                                             |
+|             |    an ECS to have up to 60 attached disks.                                                                                                                          |
+|             | -  Added the procedure for restarting the ECS in `How Can                                                                                                           |
+|             |    I Enable Virtual Memory on a Windows                                                                                                                             |
+|             |    ECS? <faqs/disk_management/how_can_i_enable_virtual_memory_on_a_windows_ecs>`__                                                                                  |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-07-31  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  `Changing the Login Password on an                                                                                                                               |
+|             |    ECS <passwords_and_key_pairs/changing_the_login_password_on_an_ecs>`__                                                                                           |
+|             | -  `Enabling Advanced                                                                                                                                               |
+|             |    Disk <evs_disks/enabling_advanced_disk>`__                                                                                                                       |
+|             | -  `What Should I Do If Cloud-Init Does Not Work After                                                                                                              |
+|             |    Python Is Upgraded? <faqs/passwords_and_key_pairs/what_should_i_do_if_cloud-init_does_not_work_after_python_is_upgraded>`__                                      |
+|             | -  `Why Does the System Display Error Code 0x112f When I                                                                                                            |
+|             |    Log In to a Windows                                                                                                                                              |
+|             |    ECS? <faqs/login_and_connection/why_does_the_system_display_error_code_0x112f_when_i_log_in_to_a_windows_ecs>`__                                                 |
+|             | -  `How Can I Enable Virtual Memory on a Windows                                                                                                                    |
+|             |    ECS? <faqs/disk_management/how_can_i_enable_virtual_memory_on_a_windows_ecs>`__                                                                                  |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Modified description in `Large-Memory                                                                                                                            |
+|             |    ECSs <service_overview/ecs_specifications_and_types/large-memory_ecss>`__, `Disk-intensive                                                                       |
+|             |    ECSs <service_overview/ecs_specifications_and_types/disk-intensive_ecss>`__, and `Can I                                                                          |
+|             |    Attach Multiple Disks to an                                                                                                                                      |
+|             |    ECS? <faqs/disk_management/can_i_attach_multiple_disks_to_an_ecs>`__, allowing an ECS                                                                            |
+|             |    to have up to 60 attached disks.                                                                                                                                 |
+|             | -  Modified description in                                                                                                                                          |
+|             |    `Overview <resources_and_tags/tag_management/overview>`__, allowing                                                                                              |
+|             |    the tags added during ECS creation to be automatically                                                                                                           |
+|             |    added to the created EIP and EVS disks.                                                                                                                          |
+|             | -  Modified description in                                                                                                                                          |
+|             |    `CBR </cbr>`__ and `Why Does It                                                                                                                                  |
+|             |    Take Longer to Create ECSs When I Use a Full-ECS                                                                                                                 |
+|             |    Image? <faqs/creation_and_deletion/why_does_it_take_longer_to_create_ecss_when_i_use_a_full-ecs_image>`__ to support                                             |
+|             |    full-ECS images.                                                                                                                                                 |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-07-03  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added the rules for the device names of the disks                                                                                                                |
+|             |    mounted to a disk-intensive ECS in `Attaching an EVS                                                                                                             |
+|             |    Disk to an ECS <evs_disks/attaching_an_evs_disk_to_an_ecs>`__.                                                                                                   |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-07-01  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  `CTS </cts>`__                                                                                                                                                   |
+|             | -  `How Can I Test Network                                                                                                                                          |
+|             |    Performance? <faqs/network_configurations/how_can_i_test_network_performance>`__                                                                                 |
+|             | -  `Why Does an Authentication Failure Occurs After I                                                                                                               |
+|             |    Attempt to Remotely Log In to a Windows                                                                                                                          |
+|             |    ECS? <faqs/login_and_connection/why_does_an_authentication_failure_occurs_after_i_attempt_to_remotely_log_in_to_a_windows_ecs>`__                                |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Allowed to export certain ECSs in `Exporting ECS                                                                                                                 |
+|             |    Information <instances/viewing_ecs_information/exporting_ecs_information>`__.                                                                                    |
+|             | -  Modified prerequisites in `Changing the                                                                                                                          |
+|             |    OS <instances/managing_ecss/changing_the_os>`__, allowing you to                                                                                                 |
+|             |    change the OS of an ECS on which reinstalling the OS                                                                                                             |
+|             |    failed.                                                                                                                                                          |
+|             | -  Modified description in `Changing a Security                                                                                                                     |
+|             |    Group <security/security_groups/changing_a_security_group>`__, allowing you                                                                                      |
+|             |    to change the security group in the **Operation**                                                                                                                |
+|             |    column.                                                                                                                                                          |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-06-30  | Accepted in OTC 3.1.                                                                                                                                                |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-06-29  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Terminated the full-ECS image function.                                                                                                                          |
+|             | -  Terminated FPGA-accelerated ECSs.                                                                                                                                |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-06-22  | Modified *Elastic Cloud Server User Guide 38* according                                                                                                             |
+|             | to review comments.                                                                                                                                                 |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-06-14  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  Allowed to create ECSs using full-ECS images.                                                                                                                    |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added description in `Disk-intensive                                                                                                                             |
+|             |    ECSs <service_overview/ecs_specifications_and_types/disk-intensive_ecss>`__ because D2 ECSs                                                                      |
+|             |    do not support automatic recovery.                                                                                                                               |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-06-01  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Modified FPGA-accelerated ECS specifications.                                                                                                                    |
+|             | -  Deleted the DSS information.                                                                                                                                     |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-05-23  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Modified the specifications and functions of                                                                                                                     |
+|             |    FPGA-accelerated ECSs.                                                                                                                                           |
+|             | -  Modified the overview, specifications, and functions                                                                                                             |
+|             |    of D2 ECSs as well as notes on using them in                                                                                                                     |
+|             |    `Disk-intensive ECSs <service_overview/ecs_specifications_and_types/disk-intensive_ecss>`__.                                                                     |
+|             | -  Modified the description of automatic recovery.                                                                                                                  |
+|             | -  Added the description of viewing details about failed                                                                                                            |
+|             |    tasks in `Viewing                                                                                                                                                |
+|             |    Failures <instances/viewing_ecs_information/viewing_failures>`__.                                                                                                |
+|             | -  Added the FPGA, HDK, SDK, AEI, and DPDK terms in                                                                                                                 |
+|             |    `Glossary </glossary>`__.                                                                                                                                        |
+|             | -  Modified the functions of and notes on using P2 ECSs                                                                                                             |
+|             |    in `GPU-accelerated                                                                                                                                              |
+|             |    ECSs <service_overview/ecs_specifications_and_types/gpu-accelerated_ecss>`__.                                                                                    |
+|             | -  Added the OSs supported by P2 ECSs in installing a                                                                                                               |
+|             |    NVIDIA GPU driver and CUDA toolkit on the P2 ECSs.                                                                                                               |
+|             | -  Replaced screenshots in `How Do I Obtain My Disk Name                                                                                                            |
+|             |    in the ECS OS Using the Device Identifier Provided on                                                                                                            |
+|             |    the Console? <faqs/disk_management/how_do_i_obtain_my_disk_name_in_the_ecs_os_using_the_device_identifier_provided_on_the_console>`__                            |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-04-28  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  Added newly released FPGA-accelerated ECSs.                                                                                                                      |
+|             | -  Installing a NVIDIA GPU Driver and CUDA Toolkit on a                                                                                                             |
+|             |    P2 ECS                                                                                                                                                           |
+|             | -  `Viewing Failures <instances/viewing_ecs_information/viewing_failures>`__                                                                                        |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added newly released D2 ECSs in `Disk-intensive                                                                                                                  |
+|             |    ECSs <service_overview/ecs_specifications_and_types/disk-intensive_ecss>`__.                                                                                     |
+|             | -  Added newly released P2 ECSs in `GPU-accelerated                                                                                                                 |
+|             |    ECSs <service_overview/ecs_specifications_and_types/gpu-accelerated_ecss>`__.                                                                                    |
+|             | -  Modified description in `General Operations for                                                                                                                  |
+|             |    Modifying                                                                                                                                                        |
+|             |    Specifications <instances/modifying_ecs_vcpu_and_memory_specifications/general_operations_for_modifying_specifications>`__,                                      |
+|             |    allowing you to check whether specifications have been                                                                                                           |
+|             |    modified.                                                                                                                                                        |
+|             | -  Added description in "Automatically Recovering ECSs",                                                                                                            |
+|             |    allowing KVM ECSs to support automatic recovery.                                                                                                                 |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-03-30  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  Added the mapping between device names and disks in                                                                                                              |
+|             |    `How Do I Obtain My Disk Name in the ECS OS Using the                                                                                                            |
+|             |    Device Identifier Provided on the                                                                                                                                |
+|             |    Console? <faqs/disk_management/how_do_i_obtain_my_disk_name_in_the_ecs_os_using_the_device_identifier_provided_on_the_console>`__                                |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-02-07  | Accepted in OTC 3.0.                                                                                                                                                |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-02-03  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  6.7.2-Changing a General-Purpose ECS to an H1 ECS                                                                                                                |
+|             | -  Installing a NVIDIA GPU Driver and CUDA Toolkit on a                                                                                                             |
+|             |    P1 ECS                                                                                                                                                           |
+|             | -  `What Can I Do If Switching from a Non-root User to                                                                                                              |
+|             |    User root Times Out? <troubleshooting/what_can_i_do_if_switching_from_a_non-root_user_to_user_root_times_out>`__                                                 |
+|             | -  `Why Is the Memory of an ECS Obtained by Running the                                                                                                             |
+|             |    free Command Inconsistent with the Actual                                                                                                                        |
+|             |    Memory? <faqs/disk_management/why_is_the_memory_of_an_ecs_obtained_by_running_the_free_command_inconsistent_with_the_actual_memory>`__                           |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Modified the document structure.                                                                                                                                 |
+|             | -  Allowed to modify specifications between                                                                                                                         |
+|             |    general-purpose (S1, C1, C2, or M1) ECSs and H1 ECSs                                                                                                             |
+|             |    in `General Operations for Modifying                                                                                                                             |
+|             |    Specifications <instances/modifying_ecs_vcpu_and_memory_specifications/general_operations_for_modifying_specifications>`__.                                      |
+|             | -  Updated the description and screenshots for selecting                                                                                                            |
+|             |    ECS types during ECS creation because the GUI has been                                                                                                           |
+|             |    modified.                                                                                                                                                        |
+|             | -  Modified description in `Can I Attach Multiple Disks                                                                                                             |
+|             |    to an ECS? <faqs/disk_management/can_i_attach_multiple_disks_to_an_ecs>`__, allowing                                                                             |
+|             |    you to attach up to 60 EVS disks to an ECS.                                                                                                                      |
+|             | -  Modified default configurations during ECS creation in                                                                                                           |
+|             |    `Overview <resources_and_tags/tag_management/overview>`__.                                                                                                       |
+|             |    Specifically, no built-in tags will be created for an                                                                                                            |
+|             |    ECS by default.                                                                                                                                                  |
+|             | -  Added "Follow-up Procedure" in `General Operations for                                                                                                           |
+|             |    Modifying                                                                                                                                                        |
+|             |    Specifications <instances/modifying_ecs_vcpu_and_memory_specifications/general_operations_for_modifying_specifications>`__.                                      |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-01-26  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Updated certain screenshots in this document.                                                                                                                    |
+|             | -  Added notes on using M3 ECSs.                                                                                                                                    |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2018-01-19  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  `Why Does the System Display a Question Mark When I                                                                                                              |
+|             |    Attempt to Obtain Console                                                                                                                                        |
+|             |    Logs? <faqs/ecs_management/why_does_the_system_display_a_question_mark_when_i_attempt_to_obtain_console_logs>`__                                                 |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2017-12-30  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  `How Can I Rectify the Fault That May Occur on a Linux                                                                                                           |
+|             |    ECS with an NVMe SSD Disk                                                                                                                                        |
+|             |    Attached? <faqs/disk_management/how_can_i_rectify_the_fault_that_may_occur_on_a_linux_ecs_with_an_nvme_ssd_disk_attached>`__                                     |
+|             | -  `Why Does the System Display a Question Mark When I                                                                                                              |
+|             |    Attempt to Obtain Console                                                                                                                                        |
+|             |    Logs? <faqs/ecs_management/why_does_the_system_display_a_question_mark_when_i_attempt_to_obtain_console_logs>`__                                                 |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Modified notes in `Enabling NIC                                                                                                                                  |
+|             |    Multi-Queue <nics/enabling_nic_multi-queue>`__.                                                                                                                  |
+|             | -  Added C3, M3, and P1 ECSs in `ECS                                                                                                                                |
+|             |    Types <service_overview/instances/ecs_types>`__.                                                                                                                 |
+|             | -  Added the function of creating a disk using DSS                                                                                                                  |
+|             |    resources.                                                                                                                                                       |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2017-10-27  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added computing I, computing II, and memory-optimized                                                                                                            |
+|             |    first-generation ECS types into the general-purpose                                                                                                              |
+|             |    ECS type in `ECS                                                                                                                                                 |
+|             |    Types <service_overview/instances/ecs_types>`__.                                                                                                                 |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2017-10-18  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Changed the OSs supported by H2 and HL1 ECSs in                                                                                                                  |
+|             |    `High-Performance Computing                                                                                                                                      |
+|             |    ECSs <service_overview/ecs_specifications_and_types/high-performance_computing_ecss>`__.                                                                         |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2017-10-06  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added constraints on detaching an EVS disk from a                                                                                                                |
+|             |    running Windows ECS in `Detaching an EVS Disk from a                                                                                                             |
+|             |    Running ECS <evs_disks/detaching_an_evs_disk_from_a_running_ecs>`__.                                                                                             |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2017-09-30  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  `(Optional) Configuring Mapping Between Hostnames and                                                                                                            |
+|             |    IP Addresses <instances/(optional)_configuring_mapping_between_hostnames_and_ip_addresses>`__                                                                    |
+|             | -  `How Can I Adjust System Disk                                                                                                                                    |
+|             |    Partitions? <faqs/disk_management/how_can_i_adjust_system_disk_partitions>`__                                                                                    |
+|             | -  `How Can I Add the Empty Partition of an Expanded                                                                                                                |
+|             |    System Disk to the End Root Partition                                                                                                                            |
+|             |    Online? <faqs/disk_management/how_can_i_add_the_empty_partition_of_an_expanded_system_disk_to_the_end_root_partition_online>`__                                  |
+|             | -  `How Can I Add the Empty Partition of an Expanded                                                                                                                |
+|             |    System Disk to the Non-end Root Partition                                                                                                                        |
+|             |    Online? <faqs/disk_management/how_can_i_add_the_empty_partition_of_an_expanded_system_disk_to_the_non-end_root_partition_online>`__                              |
+|             | -  `Which ECSs Can Be Attached with SCSI EVS                                                                                                                        |
+|             |    Disks? <faqs/disk_management/which_ecss_can_be_attached_with_scsi_evs_disks>`__                                                                                  |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added S2 ECSs in `General-Purpose                                                                                                                                |
+|             |    ECSs <service_overview/ecs_specifications_and_types/general-purpose_ecss>`__.                                                                                    |
+|             | -  Added EVS disk device types in `EVS                                                                                                                              |
+|             |    Disks <service_overview/evs_disks>`__.                                                                                                                           |
+|             | -  Modified description in `Reinstalling the                                                                                                                        |
+|             |    OS <instances/managing_ecss/reinstalling_the_os>`__ and `Changing the                                                                                            |
+|             |    OS <instances/managing_ecss/changing_the_os>`__, allowing you to                                                                                                 |
+|             |    inject user data during ECS OS reinstallation or                                                                                                                 |
+|             |    change.                                                                                                                                                          |
+|             | -  Modified the description of managing virtual IP                                                                                                                  |
+|             |    addresses in `General Operations for Modifying                                                                                                                   |
+|             |    Specifications <instances/modifying_ecs_vcpu_and_memory_specifications/general_operations_for_modifying_specifications>`__.                                      |
+|             | -  Allowed attaching up to 24 EVS disks to an ECS in `Can                                                                                                           |
+|             |    I Attach Multiple Disks to an                                                                                                                                    |
+|             |    ECS? <faqs/disk_management/can_i_attach_multiple_disks_to_an_ecs>`__                                                                                             |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2017-09-18  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Modified the overview, functions, and notes on using                                                                                                             |
+|             |    HL1 ECSs in `High-Performance Computing                                                                                                                          |
+|             |    ECSs <service_overview/ecs_specifications_and_types/high-performance_computing_ecss>`__.                                                                         |
+|             | -  Modified notes in "Automatically Recovering ECSs".                                                                                                               |
+|             | -  Added notes on using tools, such as ibstat in `How Can                                                                                                           |
+|             |    I Check Whether the Network Communication Is Normal                                                                                                              |
+|             |    Between Two ECSs Equipped with an InfiniBand NIC                                                                                                                 |
+|             |    Driver? <faqs/network_configurations/how_can_i_check_whether_the_network_communication_is_normal_between_two_ecss_equipped_with_an_infiniband_nic_driver>`__     |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2017-09-06  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Modified key description and added an image for the                                                                                                              |
+|             |    encryption process in `User                                                                                                                                      |
+|             |    Encryption <service_overview/security/user_encryption>`__.                                                                                                       |
+|             | -  Added the official website for downloading TightVNC in                                                                                                           |
+|             |    `Login Overview <instances/logging_in_to_a_linux_ecs/login_overview>`__.                                                                                         |
+|             | -  Added examples for configuring routing policies in                                                                                                               |
+|             |    `Can I Bind Multiple EIPs to an                                                                                                                                  |
+|             |    ECS? <faqs/network_configurations/can_i_bind_multiple_eips_to_an_ecs>`__                                                                                         |
+|             | -  Added description in `Will NICs Added to an ECS Start                                                                                                            |
+|             |    Automatically? <faqs/network_configurations/will_nics_added_to_an_ecs_start_automatically>`__,                                                                   |
+|             |    indicating that only the NICs added to an ECS running                                                                                                            |
+|             |    the CentOS 7.0 OS requires manual activation.                                                                                                                    |
+|             | -  `What Should I Do If I Cannot Use the German Keyboard                                                                                                            |
+|             |    to Enter Characters When I Log In to a Linux ECS Using                                                                                                           |
+|             |    VNC? <faqs/login_and_connection/what_should_i_do_if_i_cannot_use_the_german_keyboard_to_enter_characters_when_i_log_in_to_a_linux_ecs_using_vnc>`__              |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2017-08-22  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  Added automatic recovery.                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Modified description, indicating that SCSI EVS disks                                                                                                             |
+|             |    cannot be added during ECS creation.                                                                                                                             |
+|             |                                                                                                                                                                     |
+|             | -  Deleted the description of exporting the ECS list.                                                                                                               |
+|             | -  Changed the KVM ECS types to H2, M2, and HL1.                                                                                                                    |
+|             | -  Confirmed and modified all issues in this document.                                                                                                              |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2017-08-11  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  Supported the multi-project function in                                                                                                                          |
+|             |    `Project <service_overview/security/project>`__.                                                                                                                 |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2017-06-07  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Modified notes on using H2 ECSs in `High-Performance                                                                                                             |
+|             |    Computing ECSs <service_overview/ecs_specifications_and_types/high-performance_computing_ecss>`__.                                                               |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2017-06-05  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added the description of built-in tags in `General                                                                                                               |
+|             |    Operations for Modifying                                                                                                                                         |
+|             |    Specifications <instances/modifying_ecs_vcpu_and_memory_specifications/general_operations_for_modifying_specifications>`__.                                      |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2017-05-30  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Changed the OSs supported by large-memory ECSs in                                                                                                                |
+|             |    `Large-Memory ECSs <service_overview/ecs_specifications_and_types/large-memory_ecss>`__.                                                                         |
+|             | -  Changed the OSs supported by disk-intensive ECSs in                                                                                                              |
+|             |    `Disk-intensive ECSs <service_overview/ecs_specifications_and_types/disk-intensive_ecss>`__.                                                                     |
+|             | -  Added the **InfiniBand NIC status** metric in `Basic                                                                                                             |
+|             |    ECS Metrics <monitoring/basic_ecs_metrics>`__.                                                                                                                   |
+|             | -  Added the description of adding, viewing, modifying,                                                                                                             |
+|             |    and deleting tags in `General Operations for Modifying                                                                                                           |
+|             |    Specifications <instances/modifying_ecs_vcpu_and_memory_specifications/general_operations_for_modifying_specifications>`__.                                      |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2017-05-19  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added **Marketplace image** to **Image** in `Step 1:                                                                                                             |
+|             |    Configure Basic                                                                                                                                                  |
+|             |    Settings <getting_started/creating_an_ecs/step_1_configure_basic_settings>`__.                                                                                   |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2017-05-08  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  `Obtaining ECS Console                                                                                                                                           |
+|             |    Logs <instances/managing_ecss/obtaining_ecs_console_logs>`__                                                                                                     |
+|             | -  `Enabling NIC                                                                                                                                                    |
+|             |    Multi-Queue <nics/enabling_nic_multi-queue>`__                                                                                                                   |
+|             | -  `How Can I Check Whether the Network Communication Is                                                                                                            |
+|             |    Normal Between Two ECSs Equipped with an InfiniBand                                                                                                              |
+|             |    NIC Driver? <faqs/network_configurations/how_can_i_check_whether_the_network_communication_is_normal_between_two_ecss_equipped_with_an_infiniband_nic_driver>`__ |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2017-04-07  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  `How Can a Changed Static Hostname Take Effect                                                                                                                   |
+|             |    Permanently? <faqs/ecs_management/how_can_a_changed_static_hostname_take_effect_permanently>`__                                                                  |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added G2, M2, and H2 ECSs in `ECS                                                                                                                                |
+|             |    Types <service_overview/instances/ecs_types>`__.                                                                                                                 |
+|             |                                                                                                                                                                     |
+|             | -  Modified H1 ECS specifications in `High-Performance                                                                                                              |
+|             |    Computing ECSs <service_overview/ecs_specifications_and_types/high-performance_computing_ecss>`__.                                                               |
+|             |                                                                                                                                                                     |
+|             | -  Modified large-memory ECS specifications in                                                                                                                      |
+|             |    `Large-Memory ECSs <service_overview/ecs_specifications_and_types/large-memory_ecss>`__.                                                                         |
+|             |                                                                                                                                                                     |
+|             | -  Added the **System Status Check Failed** metric in                                                                                                               |
+|             |    `Basic ECS Metrics <monitoring/basic_ecs_metrics>`__.                                                                                                            |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2017-03-09  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Changed the maximum number of tags that can be added                                                                                                             |
+|             |    to an ECS to 11, where 1 is automatically added by the                                                                                                           |
+|             |    system and the other 10 must be manually added.                                                                                                                  |
+|             | -  Changed one tag-related screenshot due to GUI                                                                                                                    |
+|             |    optimization.                                                                                                                                                    |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2017-02-03  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  `Why Does a Key Pair Created Using puttygen.exe Fail                                                                                                             |
+|             |    to Be Imported on the Management                                                                                                                                 |
+|             |    Console? <faqs/passwords_and_key_pairs/why_does_a_key_pair_created_using_puttygen.exe_fail_to_be_imported_on_the_management_console>`__                          |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Modified the method of using **puttygen.exe** to                                                                                                                 |
+|             |    generate key pairs in `Creating a Key                                                                                                                            |
+|             |    Pair <passwords_and_key_pairs/creating_a_key_pair>`__.                                                                                                           |
+|             | -  Added description in `License                                                                                                                                    |
+|             |    Type <service_overview/security/license_type>`__, indicating that                                                                                                |
+|             |    the system does not support dynamic license type                                                                                                                 |
+|             |    changing.                                                                                                                                                        |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2017-01-27  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Deleted Ubuntu from the OSs supporting BYOL in                                                                                                                   |
+|             |    `License Type <service_overview/security/license_type>`__.                                                                                                       |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2017-01-26  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added full names of acronyms in `User                                                                                                                            |
+|             |    Encryption <service_overview/security/user_encryption>`__.                                                                                                       |
+|             | -  Changed the OSs supporting BYOL in `License                                                                                                                      |
+|             |    Type <service_overview/security/license_type>`__ and `Changing                                                                                                   |
+|             |    the OS <instances/managing_ecss/changing_the_os>`__.                                                                                                             |
+|             |                                                                                                                                                                     |
+|             |    -  Added Red Hat Enterprise Linux.                                                                                                                               |
+|             |    -  Added the scope of Windows OSs for using BYOL.                                                                                                                |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2017-01-20  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  `License Type <service_overview/security/license_type>`__                                                                                                        |
+|             | -  `User Encryption <service_overview/security/user_encryption>`__                                                                                                  |
+|             | -  `Can All Users Use the Encryption                                                                                                                                |
+|             |    Feature? <faqs/disk_management/can_all_users_use_the_encryption_feature>`__                                                                                      |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2017-01-16  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added Marketplace image in                                                                                                                                       |
+|             |    `Images <service_overview/images>`__ and `Step 1:                                                                                                                |
+|             |    Configure Basic                                                                                                                                                  |
+|             |    Settings <getting_started/creating_an_ecs/step_1_configure_basic_settings>`__.                                                                                   |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2016-10-09  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  `Managing ECS Groups <instances/managing_ecss/managing_ecs_groups>`__                                                                                            |
+|             | -  `Viewing ECS Creation                                                                                                                                            |
+|             |    Statuses <instances/viewing_ecs_information/viewing_ecs_creation_statuses>`__                                                                                    |
+|             | -  `Why Does the Failures Area Show an ECS Creation                                                                                                                 |
+|             |    Failure But the ECS List Displays the Created                                                                                                                    |
+|             |    ECS? <faqs/creation_and_deletion/why_does_the_failures_area_show_an_ecs_creation_failure_but_the_ecs_list_displays_the_created_ecs>`__                           |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added information for remotely logging in to ECSs in                                                                                                             |
+|             |    `Login Using VNC <instances/logging_in_to_a_windows_ecs/login_using_vnc>`__,                                                                                     |
+|             |    `Login Using an SSH                                                                                                                                              |
+|             |    Key <instances/logging_in_to_a_linux_ecs/login_using_an_ssh_key>`__, `Login Using an                                                                             |
+|             |    SSH Password <instances/logging_in_to_a_linux_ecs/login_using_an_ssh_password>`__, and                                                                           |
+|             |    `Login Using MSTSC <instances/logging_in_to_a_windows_ecs/login_using_mstsc>`__.                                                                                 |
+|             | -  Added document links to the default keyboard types of                                                                                                            |
+|             |    the ECSs created using public images in `Login Using                                                                                                             |
+|             |    VNC <instances/logging_in_to_a_windows_ecs/login_using_vnc>`__.                                                                                                  |
+|             | -  Added notes on keyboard language settings for                                                                                                                    |
+|             |    VNC-based ECS logins and the mapping between four                                                                                                                |
+|             |    types of keyboards in `Login Using                                                                                                                               |
+|             |    VNC <instances/logging_in_to_a_windows_ecs/login_using_vnc>`__. Provided                                                                                         |
+|             |    configuration examples and links to related FAQs.                                                                                                                |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2016-09-30  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added constraints in `Managing ECS                                                                                                                               |
+|             |    Groups <instances/managing_ecss/managing_ecs_groups>`__ because ECS                                                                                              |
+|             |    groups apply only to HANA ECSs and large-memory ECSs.                                                                                                            |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2016-09-28  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  `Can I Change the OS of an                                                                                                                                       |
+|             |    ECS? <faqs/os_management/can_i_change_the_os_of_an_ecs>`__                                                                                                       |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Deleted the FAQ that is not required any more because                                                                                                            |
+|             |    the preset Linux ECS username has been changed after                                                                                                             |
+|             |    Cloud-Init is supported.                                                                                                                                         |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2016-09-27  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  `Can I Attach Multiple Disks to an                                                                                                                               |
+|             |    ECS? <faqs/disk_management/can_i_attach_multiple_disks_to_an_ecs>`__                                                                                             |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Modified the instructions to configure keyboard                                                                                                                  |
+|             |    languages in VNC logins in `Login Using                                                                                                                          |
+|             |    VNC <instances/logging_in_to_a_windows_ecs/login_using_vnc>`__.                                                                                                  |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2016-09-26  | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added the instructions to configure keyboard languages                                                                                                           |
+|             |    in VNC logins in `Login Using                                                                                                                                    |
+|             |    VNC <instances/logging_in_to_a_windows_ecs/login_using_vnc>`__.                                                                                                  |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2016-09-23  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  `Large-Memory ECSs <service_overview/ecs_specifications_and_types/large-memory_ecss>`__                                                                          |
+|             | -  `Why Is the NIC Not                                                                                                                                              |
+|             |    Working? <faqs/network_configurations/why_is_the_nic_not_working>`__                                                                                             |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added encryption algorithms and the method of using                                                                                                              |
+|             |    PuTTYgen to generate key pairs in `Creating a Key                                                                                                                |
+|             |    Pair <passwords_and_key_pairs/creating_a_key_pair>`__.                                                                                                           |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2016-09-18  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  `Expanding the Local Disks of a Disk-intensive                                                                                                                   |
+|             |    ECS <evs_disks/expanding_the_local_disks_of_a_disk-intensive_ecs>`__                                                                                             |
+|             | -  `What Is the cloudbase-init Account in Windows ECSs                                                                                                              |
+|             |    Used for? <faqs/passwords_and_key_pairs/what_is_the_cloudbase-init_account_in_windows_ecss_used_for>`__                                                          |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  Added the description of interactive password reset                                                                                                              |
+|             |    scripts in `Resetting the Password for Logging In to a                                                                                                           |
+|             |    Linux ECS <passwords_and_key_pairs/resetting_a_login_password/resetting_the_password_for_logging_in_to_a_linux_ecs>`__                                           |
+|             | -  Added notes on using various ECSs in `Memory-optimized                                                                                                           |
+|             |    ECSs <service_overview/ecs_specifications_and_types/memory-optimized_ecss>`__, `Disk-intensive                                                                   |
+|             |    ECSs <service_overview/ecs_specifications_and_types/disk-intensive_ecss>`__, and                                                                                 |
+|             |    `High-Performance Computing                                                                                                                                      |
+|             |    ECSs <service_overview/ecs_specifications_and_types/high-performance_computing_ecss>`__.                                                                         |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2016-08-25  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  `GPU-accelerated ECSs <service_overview/ecs_specifications_and_types/gpu-accelerated_ecss>`__                                                                    |
+|             | -  `Disk-intensive ECSs <service_overview/ecs_specifications_and_types/disk-intensive_ecss>`__                                                                      |
+|             | -  `Why Is the NIC Not                                                                                                                                              |
+|             |    Working? <faqs/network_configurations/why_is_the_nic_not_working>`__                                                                                             |
+|             | -  `High-Performance Computing                                                                                                                                      |
+|             |    ECSs <service_overview/ecs_specifications_and_types/high-performance_computing_ecss>`__                                                                          |
+|             | -  `Detaching an EVS Disk from a Running                                                                                                                            |
+|             |    ECS <evs_disks/detaching_an_evs_disk_from_a_running_ecs>`__                                                                                                      |
+|             | -  `What Browser Version Is Required to Remotely Log In                                                                                                             |
+|             |    to an ECS? <faqs/login_and_connection/what_browser_version_is_required_to_remotely_log_in_to_an_ecs>`__                                                          |
+|             | -  `Why Does the Login to My Linux ECS Using a Key File                                                                                                             |
+|             |    Fail? <faqs/passwords_and_key_pairs/why_does_the_login_to_my_linux_ecs_using_a_key_file_fail>`__                                                                 |
+|             | -  `Why Does the System Display a Message Indicating that                                                                                                           |
+|             |    the Password for Logging In to a Windows ECS Cannot Be                                                                                                           |
+|             |    Viewed? <faqs/login_and_connection/why_does_the_system_display_a_message_indicating_that_the_password_for_logging_in_to_a_windows_ecs_cannot_be_viewed>`__       |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2016-07-15  | Added the following content:                                                                                                                                        |
+|             |                                                                                                                                                                     |
+|             | -  Cloud-Init                                                                                                                                                       |
+|             | -  Forcible ECS shutdown                                                                                                                                            |
+|             | -  Forcible ECS restarting                                                                                                                                          |
+|             | -  OS changing                                                                                                                                                      |
+|             |                                                                                                                                                                     |
+|             | Modified the following content:                                                                                                                                     |
+|             |                                                                                                                                                                     |
+|             | -  ECS login modes                                                                                                                                                  |
+|             | -  OS reinstallation                                                                                                                                                |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2016-03-14  | This issue is the first official release.                                                                                                                           |
++-------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+

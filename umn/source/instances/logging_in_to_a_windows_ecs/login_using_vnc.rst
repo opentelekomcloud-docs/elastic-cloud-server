@@ -11,7 +11,7 @@ Constraints
 
 -  The remote login function is implemented using customized ports. Therefore, before attempting to log in remotely, ensure that the port to be used is not blocked by the firewall. For example, if the remote login link is xxx:8002, ensure that port 8002 is not blocked by the firewall.
 -  If the client OS uses a local proxy and the firewall port cannot be configured on the local proxy, disable the proxy mode and then try logging in remotely.
--  Certain G series of ECSs do not support remote login provided by the management console. If you need to remotely log in to the ECSs, install the VNC server on them. For details, see `GPU-accelerated ECSs <en-us_topic_0097289624.html>`__. You are suggested to log in to the ECSs using MSTSC.
+-  Certain G series of ECSs do not support remote login provided by the management console. If you need to remotely log in to the ECSs, install the VNC server on them. For details, see `GPU-accelerated ECSs <service_overview/ecs_specifications_and_types/gpu-accelerated_ecss>`__. You are suggested to log in to the ECSs using MSTSC.
 
 Login Notes
 -----------
@@ -110,7 +110,7 @@ Log In to a Windows ECS Using an English Keyboard
 
    Before logging in to the ECS, you must have the login password.
 
-   For instructions about how to obtain the password for logging in to a Windows ECS, see `Obtaining the Password for Logging In to a Windows ECS <en-us_topic_0031107266.html>`__.
+   For instructions about how to obtain the password for logging in to a Windows ECS, see `Obtaining the Password for Logging In to a Windows ECS <passwords_and_key_pairs/obtaining_the_password_for_logging_in_to_a_windows_ecs>`__.
 
 #. In the search box above the upper right corner of the ECS list, enter the ECS name and click |image2| for search.
 
@@ -145,7 +145,7 @@ Log In to a Windows ECS Using a Non-English Keyboard
 
    Before logging in to the ECS, you must have the login password.
 
-   For instructions about how to obtain the password for logging in to a Windows ECS, see `Obtaining the Password for Logging In to a Windows ECS <en-us_topic_0031107266.html>`__.
+   For instructions about how to obtain the password for logging in to a Windows ECS, see `Obtaining the Password for Logging In to a Windows ECS <passwords_and_key_pairs/obtaining_the_password_for_logging_in_to_a_windows_ecs>`__.
 
 #. In the search box above the upper right corner of the ECS list, enter the ECS name, IP address, or ID, and click |image8| for search.
 
@@ -214,7 +214,7 @@ In this case, you must change the languages of the other three types of keyboard
 
 #. Log in to the ECS and change the ECS OS language to German.
 
-   For details, see `Changing the OS Keyboard Language <en-us_topic_0027268511.html#EN-US_TOPIC_0027268511__section66962382111459>`__.
+   For details, see `Changing the OS Keyboard Language <instances/logging_in_to_a_windows_ecs/login_using_vnc#EN-US_TOPIC_0027268511__section66962382111459>`__.
 
 #. Change the VNC keyboard language to German.
 
@@ -234,13 +234,13 @@ Helpful Links
 
 For FAQs about VNC-based ECS logins, see the following links:
 
--  `What Browser Version Is Required to Remotely Log In to an ECS? <en-us_topic_0035233718.html>`__
--  `What Should I Do If I Cannot Use the German Keyboard to Enter Characters When I Log In to a Linux ECS Using VNC? <en-us_topic_0030932496.html>`__
--  `Why Cannot I Use the MAC Keyboard to Enter Lowercase Characters When I Log In to an ECS Using VNC? <en-us_topic_0047624368.html>`__
--  `What Should I Do If the Page Does not Respond After I Log In to an ECS Using VNC and Do Not Perform Any Operation for a Long Period of Time? <en-us_topic_0030932497.html>`__
--  `What Should I Do If I Cannot View Data After Logging In to an ECS Using VNC? <en-us_topic_0030932499.html>`__
--  `Why Are Characters Entered Through VNC Still Incorrect After the Keyboard Language Is Switched? <en-us_topic_0030932500.html>`__
--  `Why Does a Blank Screen Appear While the System Displays a Message Indicating Successful Authentication After I Attempted to Log In to an ECS Using VNC? <en-us_topic_0032850906.html>`__
+-  `What Browser Version Is Required to Remotely Log In to an ECS? <faqs/login_and_connection/what_browser_version_is_required_to_remotely_log_in_to_an_ecs>`__
+-  `What Should I Do If I Cannot Use the German Keyboard to Enter Characters When I Log In to a Linux ECS Using VNC? <faqs/login_and_connection/what_should_i_do_if_i_cannot_use_the_german_keyboard_to_enter_characters_when_i_log_in_to_a_linux_ecs_using_vnc>`__
+-  `Why Cannot I Use the MAC Keyboard to Enter Lowercase Characters When I Log In to an ECS Using VNC? <faqs/login_and_connection/why_cannot_i_use_the_mac_keyboard_to_enter_lowercase_characters_when_i_log_in_to_an_ecs_using_vnc>`__
+-  `What Should I Do If the Page Does not Respond After I Log In to an ECS Using VNC and Do Not Perform Any Operation for a Long Period of Time? <faqs/login_and_connection/what_should_i_do_if_the_page_does_not_respond_after_i_log_in_to_an_ecs_using_vnc_and_do_not_perform_any_operation_for_a_long_period_of_time>`__
+-  `What Should I Do If I Cannot View Data After Logging In to an ECS Using VNC? <faqs/login_and_connection/what_should_i_do_if_i_cannot_view_data_after_logging_in_to_an_ecs_using_vnc>`__
+-  `Why Are Characters Entered Through VNC Still Incorrect After the Keyboard Language Is Switched? <faqs/login_and_connection/why_are_characters_entered_through_vnc_still_incorrect_after_the_keyboard_language_is_switched>`__
+-  `Why Does a Blank Screen Appear While the System Displays a Message Indicating Successful Authentication After I Attempted to Log In to an ECS Using VNC? <faqs/login_and_connection/why_does_a_blank_screen_appear_while_the_system_displays_a_message_indicating_successful_authentication_after_i_attempted_to_log_in_to_an_ecs_using_vnc>`__
 
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png

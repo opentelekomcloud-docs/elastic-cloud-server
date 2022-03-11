@@ -132,7 +132,7 @@ Notes on Using H2 ECSs
    -  Mellanox official website: http://www.mellanox.com/
    -  NIC driver download path: http://www.mellanox.com/page/products_dyn?product_family=26&mtag=linux_sw_drivers
 
--  For SUSE H2 ECSs, if IP over InfiniBand (IPoIB) is required, you must manually configure an IP address for the InfiniBand NIC after installing the InfiniBand driver. For details, see `How Can I Manually Configure an IP Address for an InfiniBand NIC? <en-us_topic_0083225171.html>`__
+-  For SUSE H2 ECSs, if IP over InfiniBand (IPoIB) is required, you must manually configure an IP address for the InfiniBand NIC after installing the InfiniBand driver. For details, see `How Can I Manually Configure an IP Address for an InfiniBand NIC? <faqs/network_configurations/how_can_i_manually_configure_an_ip_address_for_an_infiniband_nic>`__
 -  After you delete an H2 ECS, the data stored in SSDs is automatically cleared. Therefore, do not store persistence data into SSDs during ECS running.
 
 Notes on Using HL1 ECSs
@@ -151,7 +151,7 @@ Notes on Using HL1 ECSs
    -  InfiniBand NIC type: **Mellanox Technologies ConnectX-4 Infiniband HBA (MCX455A-ECAT)**
    -  Mellanox official website: http://www.mellanox.com/
 
--  For SUSE HL1 ECSs, if IPoIB is required, you must manually configure an IP address for the InfiniBand NIC after installing the InfiniBand driver. For details, see `How Can I Manually Configure an IP Address for an InfiniBand NIC? <en-us_topic_0083225171.html>`__
+-  For SUSE HL1 ECSs, if IPoIB is required, you must manually configure an IP address for the InfiniBand NIC after installing the InfiniBand driver. For details, see `How Can I Manually Configure an IP Address for an InfiniBand NIC? <faqs/network_configurations/how_can_i_manually_configure_an_ip_address_for_an_infiniband_nic>`__
 
 -  HL1 ECSs support the following OSs:
 
@@ -176,6 +176,6 @@ Notes on Using HL1 ECSs
 Related Links
 -------------
 
--  `Enabling NIC Multi-Queue <en-us_topic_0058758453.html>`__
--  `How Can I Check Whether the Network Communication Is Normal Between Two ECSs Equipped with an InfiniBand NIC Driver? <en-us_topic_0058747426.html>`__
+-  `Enabling NIC Multi-Queue <nics/enabling_nic_multi-queue>`__
+-  `How Can I Check Whether the Network Communication Is Normal Between Two ECSs Equipped with an InfiniBand NIC Driver? <faqs/network_configurations/how_can_i_check_whether_the_network_communication_is_normal_between_two_ecss_equipped_with_an_infiniband_nic_driver>`__
 

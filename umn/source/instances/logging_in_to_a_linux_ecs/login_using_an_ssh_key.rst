@@ -10,9 +10,9 @@ Prerequisites
 -------------
 
 -  You have obtained the private key file used during ECS creation.
--  You have bound an EIP to the ECS. For details, see `Viewing Details About an ECS <en-us_topic_0017130261.html>`__.
+-  You have bound an EIP to the ECS. For details, see `Viewing Details About an ECS <instances/viewing_ecs_information/viewing_details_about_an_ecs>`__.
 
--  You have configured the inbound rules of the security group. For details, see `Configuring Security Group Rules <en-us_topic_0030878383.html>`__.
+-  You have configured the inbound rules of the security group. For details, see `Configuring Security Group Rules <security/security_groups/configuring_security_group_rules>`__.
 -  The network connection between the login tool (PuTTY) and the target ECS is normal. For example, the default port 22 is not blocked by the firewall.
 
 Logging In to the Linux ECS from Local Windows

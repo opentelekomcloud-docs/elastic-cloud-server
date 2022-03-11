@@ -19,7 +19,7 @@ Solution
 
 Enable management console log obtaining on the ECS.
 
-For details, see step 1 in section `Obtaining ECS Console Logs <en-us_topic_0057711189.html>`__.
+For details, see step 1 in section `Obtaining ECS Console Logs <instances/managing_ecss/obtaining_ecs_console_logs>`__.
 
 
 .. |image1| image:: /_static/images/en-us_image_0088242234.jpg

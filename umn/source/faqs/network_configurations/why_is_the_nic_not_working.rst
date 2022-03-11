@@ -49,7 +49,7 @@ To install the passthrough NICE driver, do as follows:
 
 #. Log in to the ECS.
 
-   For more details, see `Login Overview <en-us_topic_0013771089.html>`__.
+   For more details, see `Login Overview <instances/logging_in_to_a_linux_ecs/login_overview>`__.
 
 #. Install the passthrough NIC driver on the ECS. In this procedure, Red Hat Enterprise Linux 7.2 64bit is used as an example.
 

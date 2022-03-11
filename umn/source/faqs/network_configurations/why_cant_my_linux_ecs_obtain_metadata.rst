@@ -4,7 +4,7 @@ Why Can't My Linux ECS Obtain Metadata?
 Symptom
 -------
 
-The security group of the Linux ECS has been configured based on the prerequisites in `Obtaining Metadata <en-us_topic_0042400609.html>`__ in the outbound direction, but the ECS still cannot obtain the metadata through the route with the destination of 169.254.169.254.
+The security group of the Linux ECS has been configured based on the prerequisites in `Obtaining Metadata <instances/obtaining_metadata_and_passing_user_data/obtaining_metadata>`__ in the outbound direction, but the ECS still cannot obtain the metadata through the route with the destination of 169.254.169.254.
 
 Root Cause
 ----------

@@ -19,7 +19,7 @@ A key pair that consists of a public key and a private key is required for authe
 
    If the public key of the existing key pair is stored by clicking **Save public key** of **puttygen.exe**, the public key cannot be imported to the management console.
 
-   If this key pair must be used for remote authentication, see `Why Does a Key Pair Created Using puttygen.exe Fail to Be Imported on the Management Console? <en-us_topic_0047654687.html>`__
+   If this key pair must be used for remote authentication, see `Why Does a Key Pair Created Using puttygen.exe Fail to Be Imported on the Management Console? <faqs/passwords_and_key_pairs/why_does_a_key_pair_created_using_puttygen.exe_fail_to_be_imported_on_the_management_console>`__
 
 Constraints
 -----------
@@ -108,7 +108,7 @@ Creating a Key Pair Using **puttygen.exe**
 Importing a Key Pair
 --------------------
 
-If you store a public key by clicking **Save public key** of **puttygen.exe**, the format of the public key content will change. Such a key cannot be imported to the management console. To resolve this issue, obtain the public key content in correct format and import the content to the management console. For details, see `Why Does a Key Pair Created Using puttygen.exe Fail to Be Imported on the Management Console? <en-us_topic_0047654687.html>`__
+If you store a public key by clicking **Save public key** of **puttygen.exe**, the format of the public key content will change. Such a key cannot be imported to the management console. To resolve this issue, obtain the public key content in correct format and import the content to the management console. For details, see `Why Does a Key Pair Created Using puttygen.exe Fail to Be Imported on the Management Console? <faqs/passwords_and_key_pairs/why_does_a_key_pair_created_using_puttygen.exe_fail_to_be_imported_on_the_management_console>`__
 
 #. Log in to the management console.
 #. Click |image11| in the upper left corner and select your region and project.
@@ -136,8 +136,8 @@ If you store a public key by clicking **Save public key** of **puttygen.exe**, t
 Helpful Links
 -------------
 
--  `What Should I Do If a Key Pair Cannot Be Imported? <en-us_topic_0019883415.html>`__
--  `Why Does a Key Pair Created Using puttygen.exe Fail to Be Imported on the Management Console? <en-us_topic_0047654687.html>`__
+-  `What Should I Do If a Key Pair Cannot Be Imported? <faqs/passwords_and_key_pairs/what_should_i_do_if_a_key_pair_cannot_be_imported>`__
+-  `Why Does a Key Pair Created Using puttygen.exe Fail to Be Imported on the Management Console? <faqs/passwords_and_key_pairs/why_does_a_key_pair_created_using_puttygen.exe_fail_to_be_imported_on_the_management_console>`__
 
 
 .. |image1| image:: /_static/images/note_3.0-en-us.png

@@ -1,7 +1,7 @@
 Adding Tags
 ===========
 
-Tags are used to identify cloud resources, such as ECSs, images, and disks. If you have multiple types of cloud resources which are associated with each other, you can add tags to the resources to classify and manage them easily. For more details, see `Overview <en-us_topic_0092499768.html>`__.
+Tags are used to identify cloud resources, such as ECSs, images, and disks. If you have multiple types of cloud resources which are associated with each other, you can add tags to the resources to classify and manage them easily. For more details, see `Overview <resources_and_tags/tag_management/overview>`__.
 
 You can add tags to ECSs in any of the following ways:
 
@@ -24,7 +24,7 @@ Adding Tags When Creating an ECS
 
 #. Configure ECS parameters.
 
-   Select **Configure now** for **Advanced Options**. Then, add a tag key and tag value. For the tag key and tag value requirements, see `Table 1 <en-us_topic_0092499768.html#EN-US_TOPIC_0092499768__table197401426182516>`__.
+   Select **Configure now** for **Advanced Options**. Then, add a tag key and tag value. For the tag key and tag value requirements, see `Table 1 <resources_and_tags/tag_management/overview#EN-US_TOPIC_0092499768__table197401426182516>`__.
 
    |image2|
 
@@ -43,7 +43,7 @@ Adding Tags on the Page Providing Details About an ECS
 
    The page providing details about the ECS is displayed.
 
-#. Click the **Tags** tab and then **Add Tag**. In the displayed dialog box, enter the tag key and tag value. For the tag key and tag value requirements, see `Table 1 <en-us_topic_0092499768.html#EN-US_TOPIC_0092499768__table197401426182516>`__.
+#. Click the **Tags** tab and then **Add Tag**. In the displayed dialog box, enter the tag key and tag value. For the tag key and tag value requirements, see `Table 1 <resources_and_tags/tag_management/overview#EN-US_TOPIC_0092499768__table197401426182516>`__.
 
    You can change the tag value after the tag is added.
 
