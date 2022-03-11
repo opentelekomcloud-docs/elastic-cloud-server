@@ -1,0 +1,41 @@
+How Can I Check Whether the Network Communication Is Normal Between Two ECSs Equipped with an InfiniBand NIC Driver?
+====================================================================================================================
+
+For high-performance H2 ECSs equipped with an InfiniBand NIC driver (InfiniBand ECSs for short), perform the following operations to check whether the driver installation is successful and whether the network communication between the ECSs is normal.
+
+|image1|
+
+During the check, if your ECS has no command tool installed, such as ibstat, obtain the tool from the installation package for the InfiniBand NIC driver and install the tool.
+
+#. Check whether the NICs of the InfiniBand ECSs are functional.
+
+   a. Log in to an ECS.
+   b. Run the following command to check whether the NIC is functional:**ibstat**
+
+      -  If it is functional, go to `2 <#EN-US_TOPIC_0058747426__li2420713023281>`__.
+      -  If it is not functional, contact customer service for technical support.
+
+#. Check whether the network communication between two InfiniBand ECSs is normal.
+
+   a. Log in to one InfiniBand ECS and run the following command:
+
+      **ib_write_bw -x 0 --pkey_index 0**
+
+   b. Log in to the other InfiniBand ECS and run the following command:
+
+      **ib_write_bw -x 0 --pkey_index 0**\ *ip_addr*
+
+      In the preceding command, *ip_addr* is the NIC IP address of the first InfiniBand ECS.
+
+   c. Check whether the terminal display is correct.\ **Figure 1** Normal network communication
+      |image2|
+
+      -  If the terminal display is shown in `Figure 1 <#EN-US_TOPIC_0058747426__fig13564645028>`__, the network communication between the two InfiniBand ECSs is normal.
+      -  If the InfiniBand network is inaccessible, contact customer service for technical support.
+
+
+
+.. |image1| image:: /_static/images/note_3.0-en-us.png
+.. |image2| image:: /_static/images/en-us_image_0058747512.jpg
+   :class: imgResize
+

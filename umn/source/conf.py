@@ -23,8 +23,8 @@ html_theme_options = {
 }
 otcdocs_auto_name = False
 otcdocs_auto_version = False
-project = 'Dummy Service'  # FIXME
-otcdocs_repo_name = 'opentelekomcloud-docs/template'  # FIXME
+project = 'Elastic Cloud Server Service'
+otcdocs_repo_name = 'opentelekomcloud-docs/elastic-cloud-server'
 
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -97,7 +97,7 @@ pygments_style = 'native'
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = "Dummy UMN"  # FIXME
+html_title = "Elastic Cloud Server UMN"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 # html_short_title = None
@@ -148,4 +148,4 @@ html_title = "Dummy UMN"  # FIXME
 # html_file_suffix = ''
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'dummydoc'  # FIXME
+htmlhelp_basename = 'ecsdoc'
