@@ -1,0 +1,68 @@
+Disk Management
+===============
+
+
+
+.. _ENUSTOPIC0103071514table88951955182420:
+
++--------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------------------------+-----------------------+
+| Permission                                                                     | API                                                                             | Action                             | Dependent Permission  |
++================================================================================+=================================================================================+====================================+=======================+
+| Detaching a Disk from a Specified ECS                                          | DELETE /v1/{project_id}/cloudservers/{server_id}/detachvolume/{attachment_id}   | ecs:cloudServers:detachVolume      | N/A                   |
++--------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------------------------+-----------------------+
+| Attaching a Disk to an ECS                                                     | POST /v1/{project_id}/cloudservers/{server_id}/attachvolume                     | ecs:cloudServers:attach            | evs:volumes:use       |
++--------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------------------------+-----------------------+
+| Attaching a Disk from an ECS (Native OpenStack API)                            | POST /v2/{project_id}/servers/{server_id}/os-volume_attachments                 | ecs:serverVolumeAttachments:create | ecs:serverVolumes:use |
+|                                                                                |                                                                                 |                                    |                       |
+|                                                                                | POST /v2.1/{project_id}/servers/{server_id}/os-volume_attachments               |                                    | evs:volumes:list      |
+|                                                                                |                                                                                 |                                    |                       |
+|                                                                                |                                                                                 |                                    | evs:volumes:get       |
+|                                                                                |                                                                                 |                                    |                       |
+|                                                                                |                                                                                 |                                    | evs:volumes:update    |
+|                                                                                |                                                                                 |                                    |                       |
+|                                                                                |                                                                                 |                                    | evs:volumes:attach    |
+|                                                                                |                                                                                 |                                    |                       |
+|                                                                                |                                                                                 |                                    | evs:volumes:manage    |
++--------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------------------------+-----------------------+
+| Detaching a Disk from an ECS (Native OpenStack API)                            | DELETE /v2/{project_id}/servers/{server_id}/os-volume_attachments/{volume_id}   | ecs:serverVolumeAttachments:delete | ecs:serverVolumes:use |
+|                                                                                |                                                                                 |                                    |                       |
+|                                                                                | DELETE /v2.1/{project_id}/servers/{server_id}/os-volume_attachments/{volume_id} |                                    | evs:volumes:list      |
+|                                                                                |                                                                                 |                                    |                       |
+|                                                                                |                                                                                 |                                    | evs:volumes:get       |
+|                                                                                |                                                                                 |                                    |                       |
+|                                                                                |                                                                                 |                                    | evs:volumes:update    |
+|                                                                                |                                                                                 |                                    |                       |
+|                                                                                |                                                                                 |                                    | evs:volumes:detach    |
+|                                                                                |                                                                                 |                                    |                       |
+|                                                                                |                                                                                 |                                    | evs:volumes:manage    |
++--------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------------------------+-----------------------+
+| Querying Information About the Disks Attached to an ECS (Native OpenStack API) | GET /v2/{project_id}/servers/{server_id}/os-volume_attachments                  | ecs:serverVolumeAttachments:list   | ecs:serverVolumes:use |
+|                                                                                |                                                                                 |                                    |                       |
+|                                                                                | GET /v2.1/{project_id}/servers/{server_id}/os-volume_attachments                |                                    | ecs:servers:get       |
++--------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------------------------+-----------------------+
+| Querying Information About a Disk Attached to an ECS (Native OpenStack API)    | GET /v2/{project_id}/servers/{server_id}/os-volume_attachments/{volume_id}      | ecs:serverVolumeAttachments:get    | ecs:serverVolumes:use |
+|                                                                                |                                                                                 |                                    |                       |
+|                                                                                | GET /v2.1/{project_id}/servers/{server_id}/os-volume_attachments/{volume_id}    |                                    |                       |
++--------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------------------------+-----------------------+
+| Creating a Disk (Native OpenStack API)                                         | POST /v2/{project_id}/os-volumes                                                | ecs:serverVolumes:use              | evs:volumes:create    |
+|                                                                                |                                                                                 |                                    |                       |
+|                                                                                | POST /v2.1/{project_id}/os-volumes                                              |                                    |                       |
++--------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------------------------+-----------------------+
+| Deleting a Disk (Native OpenStack API)                                         | DELETE /v2/{project_id}/os-volumes/{volume_id}                                  | ecs:serverVolumes:use              | evs:volumes:get       |
+|                                                                                |                                                                                 |                                    |                       |
+|                                                                                | DELETE /v2.1/{project_id}/os-volumes/{volume_id}                                |                                    | evs:volumes:delete    |
++--------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------------------------+-----------------------+
+| Querying a Disk (Native OpenStack API)                                         | GET /v2/{project_id}/os-volumes/{volume_id}                                     | ecs:serverVolumes:use              | evs:volumes:get       |
+|                                                                                |                                                                                 |                                    |                       |
+|                                                                                | GET /v2.1/{project_id}/os-volumes/{volume_id}                                   |                                    |                       |
++--------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------------------------+-----------------------+
+| Querying Disks (Native OpenStack API)                                          | GET /v2/{project_id}/os-volumes                                                 | ecs:serverVolumes:use              | evs:volumes:get       |
+|                                                                                |                                                                                 |                                    |                       |
+|                                                                                | GET /v2.1/{project_id}/os-volumes                                               |                                    | evs:volumes:list      |
++--------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------------------------+-----------------------+
+| Querying Detailed Disk Information (Native OpenStack API)                      | GET /v2/{project_id}/os-volumes/detail                                          | ecs:serverVolumes:use              | evs:volumes:get       |
+|                                                                                |                                                                                 |                                    |                       |
+|                                                                                | GET /v2.1/{project_id}/os-volumes/detail                                        |                                    | evs:volumes:list      |
++--------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------------------------+-----------------------+
+
+

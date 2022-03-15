@@ -1,0 +1,76 @@
+Obtaining ECS Metadata with a Specified Key
+===========================================
+
+Function
+--------
+
+This API is used to obtain ECS metadata with a specified key.
+
+URI
+---
+
+GET /v2.1/{project_id}/servers/{server_id}/metadata/{key}
+
+GET /v2/{project_id}/servers/{server_id}/metadata/{key}
+
+`Table 1 <#enustopic0065817714enustopic0057973169table32475667>`__ describes the parameters in the URI. 
+
+.. _ENUSTOPIC0065817714enustopic0057973169table32475667:
+
+.. table:: **Table 1** Parameter description
+
+   ========== ========= ===============================
+   Parameter  Mandatory Description
+   ========== ========= ===============================
+   project_id Yes       Specifies the project ID.
+   server_id  Yes       Specifies the ECS ID.
+   key        Yes       Specifies the ECS metadata key.
+   ========== ========= ===============================
+
+Request
+-------
+
+None
+
+Response
+--------
+
+`Table 2 <#enustopic0065817714enustopic0057973169table40140147>`__ describes the response parameters.
+
+
+
+.. _ENUSTOPIC0065817714enustopic0057973169table40140147:
+
+.. table:: **Table 2** Response parameters
+
+   ========= ====== ===================================================
+   Parameter Type   Description
+   ========= ====== ===================================================
+   meta      Object Specifies the user-defined metadata key-value pair.
+   ========= ====== ===================================================
+
+Example Request
+---------------
+
+.. code-block::
+
+   GET https://{endpoint}/v2/9c53a566cb3443ab910cf0daebca90c4/servers/998af54b-5762-4041-abc1-f98a2c27b3a2/metadata/key1
+   GET https://{endpoint}/v2.1/9c53a566cb3443ab910cf0daebca90c4/servers/998af54b-5762-4041-abc1-f98a2c27b3a2/metadata/key1
+
+Example Response
+----------------
+
+.. code-block::
+
+   {
+       "meta": {
+           "key1": "value1"
+       }
+   }
+
+Returned Values
+---------------
+
+See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+
+
