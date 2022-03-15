@@ -14,8 +14,14 @@ On the **Elastic Cloud Server** page, search for ECSs by tag key or value.
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
-#. Click **Search by Tag** above the upper right corner of the ECS list to expand the search area.\ **Figure 1** Searching for ECSs by tag
-   |image2|
+#. Click **Search by Tag** above the upper right corner of the ECS list to expand the search area.
+
+   .. figure:: /_static/images/en-us_image_0183030460.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 1** Searching for ECSs by tag
 
 #. Enter the tag of the ECS to be searched for.
 
@@ -45,7 +51,4 @@ Filtering Resources on the TMS Console
 
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-
-.. |image2| image:: /_static/images/en-us_image_0183030460.png
-   :class: imgResize
 

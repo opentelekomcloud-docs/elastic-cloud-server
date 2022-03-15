@@ -1,8 +1,14 @@
 ECS and Other Services
 ======================
 
-| `Figure 1 <#EN-US_TOPIC_0013771111__fig44795566546>`__ shows the relationships between ECS and other services.\ **Figure 1** Relationships between ECS and other services
-| |image1|
+`Figure 1 <#ENUSTOPIC0013771111fig44795566546>`__ shows the relationships between ECS and other services.
+
+.. figure:: /_static/images/en-us_image_0225439857.png
+   :alt: Click to enlarge
+   :figclass: imgResize
+
+
+   **Figure 1** Relationships between ECS and other services
 
 ECS-related Services
 --------------------
@@ -47,8 +53,4 @@ ECS-related Services
 
    A tag identifies an ECS. Adding tags to an ECS facilitates ECS identification and management.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0225439857.png
-   :class: imgResize
 

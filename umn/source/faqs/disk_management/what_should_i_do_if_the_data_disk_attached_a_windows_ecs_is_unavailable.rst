@@ -30,8 +30,16 @@ After the ECS OS is changed, data disks may become unavailable due to file syste
 
    Check whether the affected disk is offline.
 
-#. Set the affected disk to be online.In the disk list, right-click the affected disk and choose **Online** from the shortcut menu to make it online.\ **Figure 1** Setting disk online
-   |image2|
+#. Set the affected disk to be online.
+
+   In the disk list, right-click the affected disk and choose **Online** from the shortcut menu to make it online.
+
+   .. figure:: /_static/images/en-us_image_0251063932.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 1** Setting disk online
 
 #. In **My Computer**, check whether the data disk is displayed properly.
 
@@ -40,6 +48,3 @@ After the ECS OS is changed, data disks may become unavailable due to file syste
 
 
 .. |image1| image:: /_static/images/caution_3.0-en-us.png
-.. |image2| image:: /_static/images/en-us_image_0251063932.png
-   :class: imgResize
-

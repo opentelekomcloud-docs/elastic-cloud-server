@@ -43,14 +43,18 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 50 GB 
 
    **yum install cloud-utils-growpart**
 
-#. Run the following command to expand the root partition (the second partition) using growpart:**growpart /dev/xvda 2**
+#. Run the following command to expand the root partition (the second partition) using growpart:
+
+   **growpart /dev/xvda 2**
 
    .. code-block::
 
       [root@sluo-ecs-5e7d ~]# growpart /dev/xvda 2
       CHANGED: partition=2 start=8390656 old: size=75495424 end=83886080 new: size=96465599,end=104856255
 
-#. Run the following command to verify that online capacity expansion is successful:**parted -l /dev/xvda**
+#. Run the following command to verify that online capacity expansion is successful:
+
+   **parted -l /dev/xvda**
 
    .. code-block::
 

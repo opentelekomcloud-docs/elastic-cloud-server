@@ -21,9 +21,11 @@ Procedure
 
 #. Click the **EIPs** tab and then **Bind EIP**.
 
-#. Select an EIP and click **OK**.\ |image2|
+#. Select an EIP and click **OK**.
 
-   If no EIP is available in the current region, the EIP list is empty. In such a case, allocate an EIP and then bind it.
+   .. note::
+
+      If no EIP is available in the current region, the EIP list is empty. In such a case, allocate an EIP and then bind it.
 
 #. View the bound EIP on the **EIPs** tab.
 
@@ -31,4 +33,3 @@ Procedure
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 
-.. |image2| image:: /_static/images/note_3.0-en-us.png

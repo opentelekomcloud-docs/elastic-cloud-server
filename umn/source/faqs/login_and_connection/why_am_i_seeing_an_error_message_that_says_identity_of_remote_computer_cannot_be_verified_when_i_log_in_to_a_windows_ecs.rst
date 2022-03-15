@@ -6,8 +6,11 @@ Symptom
 
 An error message is displayed indicating that the identity of the remote computer cannot be verified. You are required to enter the password and log in again.
 
-| **Figure 1** Protocol error
-| |image1|
+.. figure:: /_static/images/en-us_image_0288997421.png
+   :alt: **Figure 1** Protocol error
+
+
+   **Figure 1** Protocol error
 
 Possible Causes
 ---------------
@@ -20,7 +23,4 @@ Solution
 -  Uninstall the security software.
 -  Open the security software and enable the default login mode.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0288997421.png
 

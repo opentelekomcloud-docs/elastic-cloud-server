@@ -15,8 +15,12 @@ When installing the Python library software, you need to configure the PIP sourc
 
 During the installation, the system displays the message "command ´gcc´ failed with exit status 1". However, GCC has been installed by running the yum command before the Python library software is installed using the PIP.
 
-| **Figure 1** Installation error
-| |image1|
+.. figure:: /_static/images/en-us_image_0107414257.png
+   :alt: Click to enlarge
+   :figclass: imgResize
+
+
+   **Figure 1** Installation error
 
 Possible Causes
 ---------------
@@ -32,14 +36,13 @@ The following operations use psutil as an example:
 
    **yum install gcc libffi-devel python-devel openssl-devel -y**
 
-#. Use PIP to install the Python library software again. The error message is cleared.\ **Figure 2** Successful installation
-   |image2|
+#. Use PIP to install the Python library software again. The error message is cleared.
 
+   .. figure:: /_static/images/en-us_image_0107415055.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
 
+      **Figure 2** Successful installation
 
-.. |image1| image:: /_static/images/en-us_image_0107414257.png
-   :class: imgResize
-
-.. |image2| image:: /_static/images/en-us_image_0107415055.png
-   :class: imgResize
 

@@ -35,18 +35,24 @@ Use Restrictions
 Passing User Data
 -----------------
 
-#. Create a user data script, the format of which complies with user data script specifications. For details, see `Helpful Links <#EN-US_TOPIC_0032380449__section54344118153243>`__.
+#. Create a user data script, the format of which complies with user data script specifications. For details, see `Helpful Links <#ENUSTOPIC0032380449section54344118153243>`__.
 
-#. When creating an ECS, set **Advanced Options** to **Configure now**, and paste the content of the user data script to the **User Data** text box or upload the user data file.\ |image1|
+#. When creating an ECS, set **Advanced Options** to **Configure now**, and paste the content of the user data script to the **User Data** text box or upload the user data file.
 
-   You can pass user data to an ECS as text or as a file.
+   .. note::
 
-   Text: Copy the content of the user data script to the text box.
+      You can pass user data to an ECS as text or as a file.
 
-   File: Save the user data script to a text file and then upload the file.
+      Text: Copy the content of the user data script to the text box.
 
-   | **Figure 1** User Data
-   | |image2|
+      File: Save the user data script to a text file and then upload the file.
+
+   .. figure:: /_static/images/en-us_image_0237026761.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 1** User Data
 
 #. The created ECS automatically runs Cloud-Init/Cloudbase-Init and reads the user data script upon startup.
 
@@ -55,13 +61,15 @@ User Data Scripts of Linux ECSs
 
 Customized user data scripts of Linux ECSs are based on the open-source Cloud-Init architecture. This architecture uses ECS metadata as the data source for automatically configuring the ECSs. The customized script types are compatible with open-source Cloud-Init. For details about Cloud-Init, see http://cloudinit.readthedocs.io/en/latest/topics/format.html.
 
--  Script execution time: A customized user data script is executed after the time when the status of the target ECS changes to **Running** and before the time when **/etc/init** is executed.\ |image3|
+-  Script execution time: A customized user data script is executed after the time when the status of the target ECS changes to **Running** and before the time when **/etc/init** is executed.
 
-   By default, the scripts are executed as user **root**.
+   .. note::
+
+      By default, the scripts are executed as user **root**.
 
 -  Script type: Both user-data scripts and Cloud-Config data scripts are supported. 
 
-.. _EN-US_TOPIC_0032380449__table039994053718:
+.. _ENUSTOPIC0032380449table039994053718:
 
    .. table:: **Table 1** Linux ECS script types
 
@@ -119,8 +127,12 @@ Customized user data scripts of Linux ECSs are based on the open-source Cloud-In
 
    After the ECS is created, start it and run the **cat /etc/hosts** command to check the script execution result.
 
-   | **Figure 2** Viewing operating results
-   | |image4|
+   .. figure:: /_static/images/en-us_image_0115931570.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 2** Viewing operating results
 
 User Data Scripts of Windows ECSs
 ---------------------------------
@@ -129,7 +141,7 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
 
 -  Script type: Both batch-processing program scripts and PowerShell scripts are supported. 
 
-.. _EN-US_TOPIC_0032380449__table17839134102219:
+.. _ENUSTOPIC0032380449table17839134102219:
 
    .. table:: **Table 2** Windows ECS script types
 
@@ -164,13 +176,21 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
 
    After the ECS is created, start it and check the script execution result. In this example, a text file named **1111** is added to disk C:\.
 
-   | **Figure 3** Creating text file (Batch)
-   | |image5|
+   .. figure:: /_static/images/en-us_image_0115932123.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 3** Creating text file (Batch)
 
    To view the user data passed to the Windows ECS, log in at http://169.254.169.254/openstack/latest/user_data.
 
-   | **Figure 4** Viewing user data (Batch)
-   | |image6|
+   .. figure:: /_static/images/en-us_image_0115932873.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 4** Viewing user data (Batch)
 
    **Example 2: Inject a PowerShell script.**
 
@@ -183,13 +203,21 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
 
    After the ECS is created, start it and check the script execution result. In this example, a text file named **aaaa** is added to disk C:\.
 
-   | **Figure 5** Creating text file (PowerShell)
-   | |image7|
+   .. figure:: /_static/images/en-us_image_0115933029.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 5** Creating text file (PowerShell)
 
    To view the user data passed to the Windows ECS, log in at http://169.254.169.254/openstack/latest/user_data.
 
-   | **Figure 6** Viewing user data (PowerShell)
-   | |image8|
+   .. figure:: /_static/images/en-us_image_0115934291.jpg
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 6** Viewing user data (PowerShell)
 
 Case 1
 ------
@@ -215,30 +243,30 @@ Case 2
 
 This case illustrates how to use the user data passing function to set the password for logging in to a Linux ECS.
 
-|image9|
+.. note::
 
-The new password must meet the password complexity requirements listed in `Table 3 <#EN-US_TOPIC_0032380449__en-us_topic_0021426802_table4381109318958>`__.
+   The new password must meet the password complexity requirements listed in `Table 3 <#ENUSTOPIC0032380449enustopic0021426802table4381109318958>`__.
 
 
 
-.. _EN-US_TOPIC_0032380449__en-us_topic_0021426802_table4381109318958:
+.. _ENUSTOPIC0032380449enustopic0021426802table4381109318958:
 
 .. table:: **Table 3** Password complexity requirements
 
-   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+
-   | Parameter             | Requirement                                                                                                                                                  | Example Value                                              |
-   +=======================+==============================================================================================================================================================+============================================================+
-   | Password              | -  Consists of 8 to 26 characters.                                                                                                                           | YNbUwp!dUc9MClnv                                           |
-   |                       | -  Contains at least three of the following character types:                                                                                                 |                                                            |
-   |                       |                                                                                                                                                              | NOTE:                                                      |
-   |                       |    -  Uppercase letters                                                                                                                                      | The example password is generated randomly. Do not use it. |
-   |                       |    -  Lowercase letters                                                                                                                                      |                                                            |
-   |                       |    -  Digits                                                                                                                                                 |                                                            |
-   |                       |    -  Special characters: $!@%-_=+[]:./^,{}?                                                                                                                 |                                                            |
-   |                       |                                                                                                                                                              |                                                            |
-   |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                            |
-   |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                            |
-   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+
+   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
+   | Parameter             | Requirement                                                                                                                                                  | Example Value                                                 |
+   +=======================+==============================================================================================================================================================+===============================================================+
+   | Password              | -  Consists of 8 to 26 characters.                                                                                                                           | YNbUwp!dUc9MClnv                                              |
+   |                       | -  Contains at least three of the following character types:                                                                                                 |                                                               |
+   |                       |                                                                                                                                                              | .. note::                                                     |
+   |                       |    -  Uppercase letters                                                                                                                                      |                                                               |
+   |                       |    -  Lowercase letters                                                                                                                                      |    The example password is generated randomly. Do not use it. |
+   |                       |    -  Digits                                                                                                                                                 |                                                               |
+   |                       |    -  Special characters: $!@%-_=+[]:./^,{}?                                                                                                                 |                                                               |
+   |                       |                                                                                                                                                              |                                                               |
+   |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                               |
+   |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                               |
+   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
 
 User data example:
 
@@ -280,30 +308,30 @@ This case illustrates how to use the user data passing function to reset the pas
 
 In this example, the password of user **root** is reset to **\*****\***.
 
-|image10|
+.. note::
 
-The new password must meet the password complexity requirements listed in `Table 4 <#EN-US_TOPIC_0032380449__table580060101120>`__.
+   The new password must meet the password complexity requirements listed in `Table 4 <#ENUSTOPIC0032380449table580060101120>`__.
 
 
 
-.. _EN-US_TOPIC_0032380449__table580060101120:
+.. _ENUSTOPIC0032380449table580060101120:
 
 .. table:: **Table 4** Password complexity requirements
 
-   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+
-   | Parameter             | Requirement                                                                                                                                                  | Example Value                                              |
-   +=======================+==============================================================================================================================================================+============================================================+
-   | Password              | -  Consists of 8 to 26 characters.                                                                                                                           | YNbUwp!dUc9MClnv                                           |
-   |                       | -  Contains at least three of the following character types:                                                                                                 |                                                            |
-   |                       |                                                                                                                                                              | NOTE:                                                      |
-   |                       |    -  Uppercase letters                                                                                                                                      | The example password is generated randomly. Do not use it. |
-   |                       |    -  Lowercase letters                                                                                                                                      |                                                            |
-   |                       |    -  Digits                                                                                                                                                 |                                                            |
-   |                       |    -  Special characters: $!@%-_=+[]:./^,{}?                                                                                                                 |                                                            |
-   |                       |                                                                                                                                                              |                                                            |
-   |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                            |
-   |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                            |
-   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+
+   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
+   | Parameter             | Requirement                                                                                                                                                  | Example Value                                                 |
+   +=======================+==============================================================================================================================================================+===============================================================+
+   | Password              | -  Consists of 8 to 26 characters.                                                                                                                           | YNbUwp!dUc9MClnv                                              |
+   |                       | -  Contains at least three of the following character types:                                                                                                 |                                                               |
+   |                       |                                                                                                                                                              | .. note::                                                     |
+   |                       |    -  Uppercase letters                                                                                                                                      |                                                               |
+   |                       |    -  Lowercase letters                                                                                                                                      |    The example password is generated randomly. Do not use it. |
+   |                       |    -  Digits                                                                                                                                                 |                                                               |
+   |                       |    -  Special characters: $!@%-_=+[]:./^,{}?                                                                                                                 |                                                               |
+   |                       |                                                                                                                                                              |                                                               |
+   |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                               |
+   |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                               |
+   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
 
 User data example (Retain the indentation in the following script):
 
@@ -324,9 +352,9 @@ This case illustrates how to use the user data passing function to create a user
 
 In this example, the user's username is **abc**, its password is **\*****\***, and the user is added to the **administrators** user group.
 
-|image11|
+.. note::
 
-The new password must meet the password complexity requirements listed in `Table 4 <#EN-US_TOPIC_0032380449__table580060101120>`__.
+   The new password must meet the password complexity requirements listed in `Table 4 <#ENUSTOPIC0032380449table580060101120>`__.
 
 User data example:
 
@@ -378,27 +406,3 @@ For more information about user data passing cases, visit the official Cloud-ini
 -  https://cloudbase-init.readthedocs.io/en/latest/
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/en-us_image_0237026761.png
-   :class: imgResize
-
-.. |image3| image:: /_static/images/note_3.0-en-us.png
-.. |image4| image:: /_static/images/en-us_image_0115931570.png
-   :class: imgResize
-
-.. |image5| image:: /_static/images/en-us_image_0115932123.png
-   :class: imgResize
-
-.. |image6| image:: /_static/images/en-us_image_0115932873.png
-   :class: imgResize
-
-.. |image7| image:: /_static/images/en-us_image_0115933029.png
-   :class: imgResize
-
-.. |image8| image:: /_static/images/en-us_image_0115934291.jpg
-   :class: imgResize
-
-.. |image9| image:: /_static/images/note_3.0-en-us.png
-.. |image10| image:: /_static/images/note_3.0-en-us.png
-.. |image11| image:: /_static/images/note_3.0-en-us.png

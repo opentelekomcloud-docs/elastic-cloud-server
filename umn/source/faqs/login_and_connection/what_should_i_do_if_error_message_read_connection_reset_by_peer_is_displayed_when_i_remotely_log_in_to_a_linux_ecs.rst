@@ -6,8 +6,12 @@ Symptom
 
 When I attempted to remotely log in to a Linux ECS, the system displayed error message "read: Connection reset by peer".
 
-| **Figure 1** read: Connection reset by peer
-| |image1|
+.. figure:: /_static/images/en-us_image_0240714761.png
+   :alt: Click to enlarge
+   :figclass: imgResize
+
+
+   **Figure 1** read: Connection reset by peer
 
 Possible Causes
 ---------------
@@ -62,8 +66,4 @@ Perform the following operations for troubleshooting:
 
       Try to remotely log in to the ECS again.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0240714761.png
-   :class: imgResize
 

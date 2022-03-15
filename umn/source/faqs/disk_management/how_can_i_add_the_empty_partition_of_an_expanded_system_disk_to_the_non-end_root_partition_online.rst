@@ -13,7 +13,9 @@ Procedure
 
 In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB system disk is used as an example. The system disk has two partitions, **/dev/xvda1: root** and **/dev/xvda2: swap**, and the root partition is not the end partition.
 
-#. Run the following command to view disk partitions:**parted -l /dev/xvda**
+#. Run the following command to view disk partitions:
+
+   **parted -l /dev/xvda**
 
    .. code-block::
 
@@ -61,7 +63,9 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
 
 #. Delete the swap partition.
 
-   a. Run the following command to view the partition:**parted /dev/xvda**
+   a. Run the following command to view the partition:
+
+      **parted /dev/xvda**
 
       .. code-block::
 
@@ -103,7 +107,9 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
           2      41.0GB  42.9GB  2000MB  primary  linux-swap(v1)
                                                                 
 
-   c. Run the following command to delete the partition:**rm 2**
+   c. Run the following command to delete the partition:
+
+      **rm 2**
 
       .. code-block::
 
@@ -122,7 +128,9 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
          Number  Start   End     Size    Type     File system  Flags
           1      1049kB  41.0GB  40.9GB  primary  ext4         boot
 
-   e. Run the following command to edit the fstab partition table:**quit**
+   e. Run the following command to edit the fstab partition table:
+
+      **quit**
 
       .. code-block::
 

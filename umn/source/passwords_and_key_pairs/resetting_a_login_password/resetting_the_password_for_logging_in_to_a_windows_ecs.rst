@@ -40,20 +40,17 @@ Procedure
 #. Stop the original ECS, detach the system disk from it, and attach the system disk to the temporary ECS.
 
    a. Log in to the management console.
-
    b. Click |image1| in the upper left corner and select your region and project.
-
    c. Under **Computing**, click **Elastic Cloud Server**.
+   d. Stop the original Windows ECS, switch to the page providing details about the ECS, and click the **Disks** tab.
 
-   d. Stop the original Windows ECS, switch to the page providing details about the ECS, and click the **Disks** tab.\ |image2|
+      .. note::
 
-      Do not forcibly stop the Windows ECS. Otherwise, password reset may fail.
+         Do not forcibly stop the Windows ECS. Otherwise, password reset may fail.
 
    e. Locate the row containing the system disk to be detached and click **Detach** to detach the system disk from the ECS.
-
    f. On the page providing details about the temporary ECS, click the **Disks** tab.
-
-   g. Click **Attach Disk**. In the displayed dialog box, select the system disk detached in step `1.e <#EN-US_TOPIC_0021426802__li49674320202157>`__ and attach it to the temporary ECS.
+   g. Click **Attach Disk**. In the displayed dialog box, select the system disk detached in step `1.e <#ENUSTOPIC0021426802li49674320202157>`__ and attach it to the temporary ECS.
 
 #. Log in to the temporary ECS remotely and attach the system disk.
 
@@ -63,9 +60,9 @@ Procedure
 
    b. Run the following command to mount the file system of the detached system disk to the temporary ECS:
 
-      **mount -t ntfs-3g /dev/**\ *Result obtained in step*\ `2.a <#EN-US_TOPIC_0021426802__li20334892202157>`__ **/mnt/**
+      **mount -t ntfs-3g /dev/**\ *Result obtained in step*\ `2.a <#ENUSTOPIC0021426802li20334892202157>`__ **/mnt/**
 
-      For example, if the result obtained in step `2.a <#EN-US_TOPIC_0021426802__li20334892202157>`__ is **xvde2**, run the following command:
+      For example, if the result obtained in step `2.a <#ENUSTOPIC0021426802li20334892202157>`__ is **xvde2**, run the following command:
 
       **mount -t ntfs-3g /dev/xvde2 /mnt/**
 
@@ -82,9 +79,9 @@ Procedure
 
       Back up the disk data, run the following command to rectify the NTFS file system inconsistency, and attach the system disk:
 
-      **ntfsfix /dev/**\ *Result obtained in step*\ `2.a <#EN-US_TOPIC_0021426802__li20334892202157>`__
+      **ntfsfix /dev/**\ *Result obtained in step*\ `2.a <#ENUSTOPIC0021426802li20334892202157>`__
 
-      For example, if the result obtained in step `2.a <#EN-US_TOPIC_0021426802__li20334892202157>`__ is **xvde2**, run the following command:
+      For example, if the result obtained in step `2.a <#ENUSTOPIC0021426802li20334892202157>`__ is **xvde2**, run the following command:
 
       **ntfsfix /dev/xvde2**
 
@@ -116,9 +113,9 @@ Procedure
 #. Stop the temporary ECS, detach the system disk, and attach the system disk to the original Windows ECS.
 
    a. Stop the temporary ECS, switch to the page providing details about the ECS, and click the **Disks** tab.
-   b. Click **Detach** to detach the data disk temporarily attached in step `1.g <#EN-US_TOPIC_0021426802__li32570973202157>`__.
+   b. Click **Detach** to detach the data disk temporarily attached in step `1.g <#ENUSTOPIC0021426802li32570973202157>`__.
    c. On the page providing details about the original Windows ECS, click the **Disks** tab.
-   d. Click **Attach Disk**. In the displayed dialog box, select the data disk detached in step `4.b <#EN-US_TOPIC_0021426802__li46368402202157>`__ and device name **/dev/sda**.
+   d. Click **Attach Disk**. In the displayed dialog box, select the data disk detached in step `4.b <#ENUSTOPIC0021426802li46368402202157>`__ and device name **/dev/sda**.
 
 #. Start the original Windows ECS and set a new login password.
 
@@ -126,33 +123,32 @@ Procedure
 
    b. Click **Start**. Enter **CMD** in the search box and press **Enter**.
 
-   c. Run the following command to change the password (the new password must meet the requirements described in `Table 1 <#EN-US_TOPIC_0021426802__en-us_topic_0021426802_table4381109318958>`__):
+   c. Run the following command to change the password (the new password must meet the requirements described in `Table 1 <#ENUSTOPIC0021426802enustopic0021426802table4381109318958>`__):
 
       **net user** **Administrator** *New password*
 
       
 
-.. _EN-US_TOPIC_0021426802__en-us_topic_0021426802_table4381109318958:
+.. _ENUSTOPIC0021426802enustopic0021426802table4381109318958:
 
       .. table:: **Table 1** Password complexity requirements
 
-         +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+
-         | Parameter             | Requirement                                                                                                                                                  | Example Value                                              |
-         +=======================+==============================================================================================================================================================+============================================================+
-         | Password              | -  Consists of 8 to 26 characters.                                                                                                                           | YNbUwp!dUc9MClnv                                           |
-         |                       | -  Contains at least three of the following character types:                                                                                                 |                                                            |
-         |                       |                                                                                                                                                              | NOTE:                                                      |
-         |                       |    -  Uppercase letters                                                                                                                                      | The example password is generated randomly. Do not use it. |
-         |                       |    -  Lowercase letters                                                                                                                                      |                                                            |
-         |                       |    -  Digits                                                                                                                                                 |                                                            |
-         |                       |    -  Special characters: $!@%-_=+[]:./^,{}?                                                                                                                 |                                                            |
-         |                       |                                                                                                                                                              |                                                            |
-         |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                            |
-         |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                            |
-         +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+
+         +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
+         | Parameter             | Requirement                                                                                                                                                  | Example Value                                                 |
+         +=======================+==============================================================================================================================================================+===============================================================+
+         | Password              | -  Consists of 8 to 26 characters.                                                                                                                           | YNbUwp!dUc9MClnv                                              |
+         |                       | -  Contains at least three of the following character types:                                                                                                 |                                                               |
+         |                       |                                                                                                                                                              | .. note::                                                     |
+         |                       |    -  Uppercase letters                                                                                                                                      |                                                               |
+         |                       |    -  Lowercase letters                                                                                                                                      |    The example password is generated randomly. Do not use it. |
+         |                       |    -  Digits                                                                                                                                                 |                                                               |
+         |                       |    -  Special characters: $!@%-_=+[]:./^,{}?                                                                                                                 |                                                               |
+         |                       |                                                                                                                                                              |                                                               |
+         |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                               |
+         |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                               |
+         +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
 
 
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 
-.. |image2| image:: /_static/images/note_3.0-en-us.png

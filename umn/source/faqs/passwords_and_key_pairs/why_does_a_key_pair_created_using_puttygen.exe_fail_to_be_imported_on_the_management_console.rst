@@ -18,22 +18,32 @@ Solution
 
 Use the locally stored private key and **PuTTY Key Generator** to restore the format of the public key content. Then, import the public key to the management console.
 
-#. Double-click **puttygen.exe** to switch to the **PuTTY Key Generator** page.\ **Figure 1** PuTTY Key Generator
-   |image1|
+#. Double-click **puttygen.exe** to switch to the **PuTTY Key Generator** page.
+
+   .. figure:: /_static/images/en-us_image_0272917695.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 1** PuTTY Key Generator
 
 #. Click **Load** and select the private key.
 
-   The system automatically loads the private key and restores the format of the public key content in **PuTTY Key Generator**. The content in the red box in `Figure 2 <#EN-US_TOPIC_0047654687__fig5530274016810>`__ is the public key whose format meets system requirements.
+   The system automatically loads the private key and restores the format of the public key content in **PuTTY Key Generator**. The content in the red box in `Figure 2 <#ENUSTOPIC0047654687fig5530274016810>`__ is the public key whose format meets system requirements.
 
-   | **Figure 2** Restoring the format of the public key content
-   | |image2|
+   .. figure:: /_static/images/en-us_image_0037982934.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 2** Restoring the format of the public key content
 
 #. Copy the public key content to a .txt file and save the file in a local directory.
 
 #. Import the public key to the management console.
 
    a. Log in to the management console.
-   b. Click |image3| in the upper left corner and select your region and project.
+   b. Click |image1| in the upper left corner and select your region and project.
    c. Under **Computing**, click **Elastic Cloud Server**.
    d. In the navigation pane on the left, choose **Key Pair**.
    e. On the right side of the page, click **Import Key Pair**.
@@ -41,11 +51,5 @@ Use the locally stored private key and **PuTTY Key Generator** to restore the fo
 
 
 
-.. |image1| image:: /_static/images/en-us_image_0272917695.png
-   :class: imgResize
-
-.. |image2| image:: /_static/images/en-us_image_0037982934.png
-   :class: imgResize
-
-.. |image3| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0210779229.png
 

@@ -14,7 +14,7 @@ Prerequisites
 
 -  Access to port 3389 is allowed in the inbound direction of the security group to which the ECS belongs.
 -  Data can be exchanged between the login tool and the target ECS. For example, the default port 3389 is not blocked by the firewall.
--  RDP has been enabled on the target ECS. By default, RDP has been enabled on the ECSs created using a public image. For instructions about how to enable RDP, see `Enabling RDP <#EN-US_TOPIC_0275383051__section65216898112059>`__.
+-  RDP has been enabled on the target ECS. By default, RDP has been enabled on the ECSs created using a public image. For instructions about how to enable RDP, see `Enabling RDP <#ENUSTOPIC0275383051section65216898112059>`__.
 
 Procedure
 ---------
@@ -35,7 +35,7 @@ To log in to a Windows ECS from a local Linux computer, use a remote access tool
 
    
 
-.. _EN-US_TOPIC_0275383051__table522016385618:
+.. _ENUSTOPIC0275383051table522016385618:
 
    .. table:: **Table 1** Parameters in the remote login command
 
@@ -56,9 +56,11 @@ To log in to a Windows ECS from a local Linux computer, use a remote access tool
 Enabling RDP
 ------------
 
-When you log in to an ECS for the first time, log in to it using VNC, enable RDP, and access the ECS using MSTSC.\ |image1|
+When you log in to an ECS for the first time, log in to it using VNC, enable RDP, and access the ECS using MSTSC.
 
-By default, RDP has been enabled on the ECSs created using a public image.
+.. note::
+
+   By default, RDP has been enabled on the ECSs created using a public image.
 
 #. Log in to the Windows ECS using VNC.
 
@@ -68,16 +70,15 @@ By default, RDP has been enabled on the ECSs created using a public image.
 
    The **System Properties** dialog box is displayed.
 
-   | **Figure 1** System Properties
-   | |image2|
+   .. figure:: /_static/images/en-us_image_0049287308.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 1** System Properties
 
 #. Click the **Remote** tab and select **Allow remote connections to this computer**.
 
 #. Click **OK**.
 
-
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/en-us_image_0049287308.png
-   :class: imgResize
 

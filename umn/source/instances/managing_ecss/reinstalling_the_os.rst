@@ -73,14 +73,18 @@ Procedure
 
 #. Click **OK**.
 
-#. On the **ECS OS Reinstallation** page, confirm the OS specifications, and click **Submit Application**.After the request is submitted, the ECS status changes to **Reinstalling**. The reinstallation has been completed when the ECS status changes to **Running**.\ |image2|
+#. On the **ECS OS Reinstallation** page, confirm the OS specifications, and click **Submit Application**.
 
-   A temporary ECS is created during the reinstallation process. After reinstallation, this ECS will be automatically deleted. Do not perform any operation on the temporary ECS during the reinstallation process.
+   After the request is submitted, the ECS status changes to **Reinstalling**. The reinstallation has been completed when the ECS status changes to **Running**.
+
+   .. note::
+
+      A temporary ECS is created during the reinstallation process. After reinstallation, this ECS will be automatically deleted. Do not perform any operation on the temporary ECS during the reinstallation process.
 
 Follow-up Procedure
 -------------------
 
-If the reinstallation is unsuccessful, perform steps `3 <#EN-US_TOPIC_0024911405__li20776247143354>`__ to `9 <#EN-US_TOPIC_0024911405__li31062819143541>`__ again to retry reinstalling the OS again.
+If the reinstallation is unsuccessful, perform steps `3 <#ENUSTOPIC0024911405li20776247143354>`__ to `9 <#ENUSTOPIC0024911405li31062819143541>`__ again to retry reinstalling the OS again.
 
 If the second reinstallation attempt is unsuccessful, contact customer service for manual recovery at the backend.
 
@@ -88,4 +92,3 @@ If the second reinstallation attempt is unsuccessful, contact customer service f
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 
-.. |image2| image:: /_static/images/note_3.0-en-us.png

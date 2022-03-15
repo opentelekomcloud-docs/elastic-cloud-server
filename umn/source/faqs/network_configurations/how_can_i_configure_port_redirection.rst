@@ -11,9 +11,9 @@ Windows
 
 For example, to redirect port 8080 on ECS 1 bound with EIP 192.168.10.43 to port 18080 on ECS 2 bound with EIP 192.168.10.222, perform the following operations on ECS 1.
 
-|image1|
+.. note::
 
-Ensure that the desired ports have been enabled on the ECS security group and firewall.
+   Ensure that the desired ports have been enabled on the ECS security group and firewall.
 
 #. Open the **cmd** window on the ECS and run the following command: The ECS running Windows Server 2012 is used as an example.
 
@@ -27,8 +27,12 @@ Ensure that the desired ports have been enabled on the ECS security group and fi
 
    **netsh interface portproxy show v4tov4**
 
-   | **Figure 1** Port redirections on Windows
-   | |image2|
+   .. figure:: /_static/images/en-us_image_0267133745.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 1** Port redirections on Windows
 
 Linux
 -----
@@ -39,15 +43,15 @@ Private IP address and EIP of ECS 1: 192.168.72.10 and 123.xxx.xxx.456
 
 Private IP address of ECS 2: 192.168.72.20
 
-|image3|
+.. note::
 
--  Ensure that the desired ports have been enabled on the ECS security group and firewall.
+   -  Ensure that the desired ports have been enabled on the ECS security group and firewall.
 
--  Ensure that the source/destination check function is disabled.
+   -  Ensure that the source/destination check function is disabled.
 
-   On the ECS details page, click **NICs** and disable **Source/Destination Check**.
+      On the ECS details page, click **NICs** and disable **Source/Destination Check**.
 
-   By default, the source/destination check is enabled, and the system checks whether source IP addresses contained in the packets sent by ECSs are correct. If the IP addresses are incorrect, the system does not allow the ECSs to send the packets. This mechanism prevents packet spoofing, thereby improving system security. However, this mechanism prevents the packet sender from receiving returned packets. Therefore, disable the source/destination check.
+      By default, the source/destination check is enabled, and the system checks whether source IP addresses contained in the packets sent by ECSs are correct. If the IP addresses are incorrect, the system does not allow the ECSs to send the packets. This mechanism prevents packet spoofing, thereby improving system security. However, this mechanism prevents the packet sender from receiving returned packets. Therefore, disable the source/destination check.
 
 #. Log in to Linux ECS 1.
 
@@ -71,23 +75,19 @@ Private IP address of ECS 2: 192.168.72.20
 
    **ssh -p 1080 123.xxx.xxx.456**
 
-   | **Figure 2** Port redirections on Linux
-   | |image4|
+   .. figure:: /_static/images/en-us_image_0121682390.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 2** Port redirections on Linux
 
    Enter the password to log in to ECS 2 with hostname **ecs-inner**.
 
-   | **Figure 3** Logging in to ECS 2
-   | |image5|
+   .. figure:: /_static/images/en-us_image_0121682392.png
+      :alt: **Figure 3** Logging in to ECS 2
+   
 
+      **Figure 3** Logging in to ECS 2
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/en-us_image_0267133745.png
-   :class: imgResize
-
-.. |image3| image:: /_static/images/note_3.0-en-us.png
-.. |image4| image:: /_static/images/en-us_image_0121682390.png
-   :class: imgResize
-
-.. |image5| image:: /_static/images/en-us_image_0121682392.png
 

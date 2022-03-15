@@ -15,7 +15,7 @@ Prerequisites
 
 -  Access to port 3389 is allowed in the inbound direction of the security group to which the ECS belongs. For details, see `Configuring Security Group Rules <../../security/security_groups/configuring_security_group_rules.html>`__.
 -  The network connection between the login tool and the target ECS is normal. For example, the default port 3389 is not blocked by the firewall.
--  RDP has been enabled on the target ECS. By default, RDP has been enabled on the ECSs created using a public image. For instructions about how to enable RDP, see `Enabling RDP <#EN-US_TOPIC_0017955381__section65216898112059>`__.
+-  RDP has been enabled on the target ECS. By default, RDP has been enabled on the ECSs created using a public image. For instructions about how to enable RDP, see `Enabling RDP <#ENUSTOPIC0017955381section65216898112059>`__.
 
 Logging In to a Windows ECS Using MSTSC
 ---------------------------------------
@@ -26,22 +26,56 @@ If your local server runs Windows, you can use the remote desktop connection too
 
 #. In the **Search programs and files** text box, enter **mstsc**.
 
-#. In the **Remote Desktop Connection** dialog box, click **Show Options**.\ **Figure 1** Show Options
-   |image1|
+#. In the **Remote Desktop Connection** dialog box, click **Show Options**.
 
-#. Enter the EIP and username (**Administrator** by default) of the target ECS.\ |image2|
+   .. figure:: /_static/images/en-us_image_0295941039.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
 
-   If you do not want to enter the username and password in follow-up logins, select **Allow me to save credentials**.
+      **Figure 1** Show Options
 
-   | **Figure 2** Remote Desktop Connection
-   | |image3|
+#. Enter the EIP and username (**Administrator** by default) of the target ECS.
 
-#. (Optional) To use local server resources in a remote session, configure parameters on the **Local Resources** tab.To copy data from the local server to your ECS, select **Clipboard**.\ **Figure 3** Clipboard
-   |image4| To copy files from the local server to your ECS, click **More** and select your desired disks.\ **Figure 4** Drives
-   |image5|
+   .. note::
 
-#. (Optional) Click the **Display** tab and then adjust the size of the remote desktop.\ **Figure 5** Adjusting the size of the desktop
-   |image6|
+      If you do not want to enter the username and password in follow-up logins, select **Allow me to save credentials**.
+
+   .. figure:: /_static/images/en-us_image_0295941040.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 2** Remote Desktop Connection
+
+#. (Optional) To use local server resources in a remote session, configure parameters on the **Local Resources** tab.
+
+   To copy data from the local server to your ECS, select **Clipboard**.
+
+   .. figure:: /_static/images/en-us_image_0295941041.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 3** Clipboard
+
+   To copy files from the local server to your ECS, click **More** and select your desired disks.
+
+   .. figure:: /_static/images/en-us_image_0295940977.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 4** Drives
+
+#. (Optional) Click the **Display** tab and then adjust the size of the remote desktop.
+
+   .. figure:: /_static/images/en-us_image_0295940978.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 5** Adjusting the size of the desktop
 
 #. Click **OK** and enter the login password as prompted to log in to the ECS.
 
@@ -54,9 +88,11 @@ If your local server runs Windows, you can use the remote desktop connection too
 Enabling RDP
 ------------
 
-When you log in to an ECS for the first time, log in to it using VNC, enable RDP, and access the ECS using MSTSC.\ |image7|
+When you log in to an ECS for the first time, log in to it using VNC, enable RDP, and access the ECS using MSTSC.
 
-By default, RDP has been enabled on the ECSs created using a public image.
+.. note::
+
+   By default, RDP has been enabled on the ECSs created using a public image.
 
 #. Log in to the Windows ECS using VNC.
 
@@ -66,32 +102,15 @@ By default, RDP has been enabled on the ECSs created using a public image.
 
    The **System Properties** dialog box is displayed.
 
-   | **Figure 6** System Properties
-   | |image8|
+   .. figure:: /_static/images/en-us_image_0049287308.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 6** System Properties
 
 #. Click the **Remote** tab and select **Allow remote connections to this computer**.
 
 #. Click **OK**.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0295941039.png
-   :class: imgResize
-
-.. |image2| image:: /_static/images/note_3.0-en-us.png
-.. |image3| image:: /_static/images/en-us_image_0295941040.png
-   :class: imgResize
-
-.. |image4| image:: /_static/images/en-us_image_0295941041.png
-   :class: imgResize
-
-.. |image5| image:: /_static/images/en-us_image_0295940977.png
-   :class: imgResize
-
-.. |image6| image:: /_static/images/en-us_image_0295940978.png
-   :class: imgResize
-
-.. |image7| image:: /_static/images/note_3.0-en-us.png
-.. |image8| image:: /_static/images/en-us_image_0049287308.png
-   :class: imgResize
 

@@ -17,7 +17,9 @@ Confirming the Order
 Follow-up Procedure
 -------------------
 
--  After an ECS with an EIP bound is created, the system automatically generates a reverse domain name in the format of "ecs-xx-xx-xx-xx.compute.xxx.com" for each EIP by default. In the format, "xx-xx-xx-xx" indicates the EIP, and "xxx" indicates the domain name of the cloud service provider. You can use the reverse domain name to access the ECS.Use one of the following commands to obtain the default reverse domain name of an EIP:
+-  After an ECS with an EIP bound is created, the system automatically generates a reverse domain name in the format of "ecs-xx-xx-xx-xx.compute.xxx.com" for each EIP by default. In the format, "xx-xx-xx-xx" indicates the EIP, and "xxx" indicates the domain name of the cloud service provider. You can use the reverse domain name to access the ECS.
+
+   Use one of the following commands to obtain the default reverse domain name of an EIP:
 
    -  ping -a *EIP*
    -  nslookup [-qt=ptr] *EIP*

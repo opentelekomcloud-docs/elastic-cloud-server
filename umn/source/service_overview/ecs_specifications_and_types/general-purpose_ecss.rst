@@ -15,7 +15,7 @@ Specifications
 
 
 
-.. _EN-US_TOPIC_0035470101__table131314023616:
+.. _ENUSTOPIC0035470101table131314023616:
 
 .. table:: **Table 1** S3 ECS specifications
 
@@ -73,7 +73,7 @@ Specifications
 
 
 
-.. _EN-US_TOPIC_0035470101__table477598401959:
+.. _ENUSTOPIC0035470101table477598401959:
 
 .. table:: **Table 2** S2 ECS specifications
 

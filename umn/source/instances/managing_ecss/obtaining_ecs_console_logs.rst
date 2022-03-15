@@ -39,9 +39,11 @@ Procedure
 
 #. Check and modify the grub file.
 
-   The configuration method varies depending on the OS.\ |image1|
+   The configuration method varies depending on the OS.
 
-   To prevent impact on the start of the recovery mode, you are advised to modify only the item used for the default start.
+   .. note::
+
+      To prevent impact on the start of the recovery mode, you are advised to modify only the item used for the default start.
 
    -  For CentOS and Red Hat 6, perform the following steps:
 
@@ -106,15 +108,15 @@ Procedure
          **cat /proc/cmdline \| grep ttyS0**
 
          -  If yes, **ttyS0** has been configured.
-         -  If no, **ttyS0** has not been configured. Go to `2.b <#EN-US_TOPIC_0057711189__en-us_topic_0057450886_li29451607172853>`__.
+         -  If no, **ttyS0** has not been configured. Go to `2.b <#ENUSTOPIC0057711189enustopic0057450886li29451607172853>`__.
 
       b. Run the following command to open the configuration file to be edited:
 
          **vi /usr/share/oem/grub.cfg**
 
-         |image2|
+         .. note::
 
-         If the **/usr/share/oem/grub.cfg** configuration file does not exist, manually create the file.
+            If the **/usr/share/oem/grub.cfg** configuration file does not exist, manually create the file.
 
       c. Add **set linux_append="console=ttyS0"**. If **set linux_append="console=ttyS0"** already exists, you do not need to add it. Save the change and exit.
 
@@ -124,7 +126,7 @@ Procedure
 
    a. Log in to the management console.
 
-   b. Click |image3| in the upper left corner and select your region and project.
+   b. Click |image1| in the upper left corner and select your region and project.
 
    c. Under **Computing**, click **Elastic Cloud Server**.
 
@@ -138,9 +140,9 @@ Procedure
 
       View details of the displayed log.
 
-      |image4|
+      .. note::
 
-      After you click **Query**, the system will not automatically update the displayed log. To view the latest log, click **Query** again.
+         After you click **Query**, the system will not automatically update the displayed log. To view the latest log, click **Query** again.
 
    h. (Optional) Click **Download** to download the information of the displayed log.
 
@@ -153,8 +155,5 @@ Related Links
 
 
 
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/note_3.0-en-us.png
-.. |image3| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0210779229.png
 
-.. |image4| image:: /_static/images/note_3.0-en-us.png

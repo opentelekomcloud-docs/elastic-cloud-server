@@ -13,8 +13,12 @@ If an ECS requires a long period of time to start, you can change the default ti
 
    **rpm -qa \| grep grub**
 
-   | **Figure 1** Viewing the grub version
-   | |image1|
+   .. figure:: /_static/images/en-us_image_0117031082.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 1** Viewing the grub version
 
 #. Change the timeout in the grub file to 0s.
 
@@ -26,14 +30,11 @@ If an ECS requires a long period of time to start, you can change the default ti
 
       Open the **/boot/grub2/grub.cfg** file and change the **timeout** value to **0**.
 
-   **Figure 2** Changing timeout duration
-   |image2|
+   .. figure:: /_static/images/en-us_image_0117031548.gif
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
 
+      **Figure 2** Changing timeout duration
 
-
-.. |image1| image:: /_static/images/en-us_image_0117031082.png
-   :class: imgResize
-
-.. |image2| image:: /_static/images/en-us_image_0117031548.gif
-   :class: imgResize
 

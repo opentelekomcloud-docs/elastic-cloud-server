@@ -27,22 +27,24 @@ Procedure
 
    b. Click **Modify** in the upper right corner of the page.
 
-   c. In the **Modify Alarm Rule** dialog box shown in `Figure 1 <#EN-US_TOPIC_0027371531__fig5398007222382>`__, set the parameters as prompted.\ **Figure 1** Modifying an alarm rule
-      |image2|
+   c. In the **Modify Alarm Rule** dialog box shown in `Figure 1 <#ENUSTOPIC0027371531fig5398007222382>`__, set the parameters as prompted.
+
+      .. figure:: /_static/images/en-us_image_0022382203.png
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 1** Modifying an alarm rule
 
    d. Click **OK**.
 
       After an alarm rule is modified, the system automatically notifies you of an alarm when the alarm complying with the alarm rule is generated.
 
-   |image3|
+   .. note::
 
-   For more information about ECS alarm rules, see *Cloud Eye User Guide*.
+      For more information about ECS alarm rules, see *Cloud Eye User Guide*.
 
 
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 
-.. |image2| image:: /_static/images/en-us_image_0022382203.png
-   :class: imgResize
-
-.. |image3| image:: /_static/images/note_3.0-en-us.png

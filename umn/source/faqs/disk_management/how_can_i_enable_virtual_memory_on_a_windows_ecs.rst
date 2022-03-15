@@ -3,9 +3,9 @@ How Can I Enable Virtual Memory on a Windows ECS?
 
 Enabling ECS virtual memory will deteriorate disk I/O performance. Therefore, the Windows ECSs provided by the platform do not have virtual memory enabled by default. If the memory size of an ECS is insufficient, you are advised to increase its memory size by modifying the ECS specifications. Perform the operations described in this section to enable virtual memory if required.
 
-|image1|
+.. note::
 
-If the memory usage is excessively high and the I/O performance is not as good as expected, you are not suggested to enable virtual memory. The reason is as follows: The excessively high memory usage limits the system performance improvement. Furthermore, frequent memory switching requires massive additional I/O operations, which will further deteriorate the I/O performance and the overall system performance.
+   If the memory usage is excessively high and the I/O performance is not as good as expected, you are not suggested to enable virtual memory. The reason is as follows: The excessively high memory usage limits the system performance improvement. Furthermore, frequent memory switching requires massive additional I/O operations, which will further deteriorate the I/O performance and the overall system performance.
 
 The operations described in this section are provided for the ECSs running Windows Server 2008 or later.
 
@@ -19,8 +19,12 @@ The operations described in this section are provided for the ECSs running Windo
 
    The **Performance Options** dialog box is displayed.
 
-   | **Figure 1** Performance Options
-   | |image2|
+   .. figure:: /_static/images/en-us_image_0120795956.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 1** Performance Options
 
 #. Click the **Advanced** tab and then **Background Services** in the **Processor scheduling** pane.
 
@@ -40,19 +44,15 @@ The operations described in this section are provided for the ECSs running Windo
 
       Considering **Memory.dmp** caused by blue screen of death (BSOD), you are advised to set **Initial size** to **16** and **Maximum size** to **4096**.
 
-   **Figure 2** Virtual Memory
-   |image3|
+   .. figure:: /_static/images/en-us_image_0120795935.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 2** Virtual Memory
 
 #. Click **Set** and then **OK** to complete the configuration.
 
 #. Restart the ECS for the configuration to take effect.
 
-
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/en-us_image_0120795956.png
-   :class: imgResize
-
-.. |image3| image:: /_static/images/en-us_image_0120795935.png
-   :class: imgResize
 

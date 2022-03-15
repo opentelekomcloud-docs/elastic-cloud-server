@@ -22,14 +22,18 @@ A security group is a collection of access control rules for ECSs that have the 
 
 Your account automatically comes with a default security group. The default security group allows all outbound data, denies all inbound data, and allows all data between ECSs in the group. Your ECSs in the security group can communicate with each other without the need to add rules.
 
-| **Figure 1** Default security group
-| |image1|
-
-`Table 1 <#EN-US_TOPIC_0030828257__table1580115155277>`__ describes default security group rules.
-
+.. figure:: /_static/images/en-us_image_0000001230120807.png
+   :alt: Click to enlarge
+   :figclass: imgResize
 
 
-.. _EN-US_TOPIC_0030828257__table1580115155277:
+   **Figure 1** Default security group
+
+`Table 1 <#ENUSTOPIC0030828257table1580115155277>`__ describes default security group rules.
+
+
+
+.. _ENUSTOPIC0030828257table1580115155277:
 
 .. table:: **Table 1** Default security group rules
 
@@ -48,8 +52,12 @@ The Elastic IP (EIP) service enables your cloud resources to communicate with th
 
 Each EIP can be used by only one cloud resource at a time.
 
-| **Figure 2** Accessing the Internet using an EIP
-| |image2|
+.. figure:: /_static/images/en-us_image_0178890066.png
+   :alt: Click to enlarge
+   :figclass: imgResize
+
+
+   **Figure 2** Accessing the Internet using an EIP
 
 Network QoS
 -----------
@@ -63,10 +71,12 @@ The intranet bandwidth and PPS of an ECS are determined by its flavor.
 -  Assured intranet bandwidth: indicates the guaranteed bandwidth allocated to an ECS
 -  Maximum intranet bandwidth: indicates the maximum bandwidth that can be allocated to an ECS
 -  Maximum intranet PPS: indicates the maximum ECS capability in transmitting and receiving packets.
--  NIC multi-queue: allocates NIC interrupt requests to multiple vCPUs for higher PPS performance and bandwidth.\ |image3|
+-  NIC multi-queue: allocates NIC interrupt requests to multiple vCPUs for higher PPS performance and bandwidth.
 
-   -  For instructions about how to test PPS, see `How Can I Test Network Performance? <../faqs/network_configurations/how_can_i_test_network_performance.html>`__
-   -  For instructions about how to enable NIC multi-queue, see `Enabling NIC Multi-Queue <../nics/enabling_nic_multi-queue.html>`__.
+   .. note::
+
+      -  For instructions about how to test PPS, see `How Can I Test Network Performance? <../faqs/network_configurations/how_can_i_test_network_performance.html>`__
+      -  For instructions about how to enable NIC multi-queue, see `Enabling NIC Multi-Queue <../nics/enabling_nic_multi-queue.html>`__.
 
 **Use case of network QoS:**
 
@@ -86,19 +96,10 @@ Network QoS:
 -  Network QoS has been applied to the existing KVM-based ECSs.
 -  ECSs of the same hypervisor are preferentially allocated with assured bandwidths. Only when other ECSs of the same hypervisor are not in use, an ECS in use in the hypervisor can have the maximum bandwidth.
 
-|image4|
+.. note::
 
--  Network QoS applies to any program running on an ECS.
--  Network QoS applies for both internal and external bandwidth.
--  The EIP bandwidth limits the external bandwidth, and the network QoS limits the internal bandwidth.
+   -  Network QoS applies to any program running on an ECS.
+   -  Network QoS applies for both internal and external bandwidth.
+   -  The EIP bandwidth limits the external bandwidth, and the network QoS limits the internal bandwidth.
 
 
-
-.. |image1| image:: /_static/images/en-us_image_0000001230120807.png
-   :class: imgResize
-
-.. |image2| image:: /_static/images/en-us_image_0178890066.png
-   :class: imgResize
-
-.. |image3| image:: /_static/images/note_3.0-en-us.png
-.. |image4| image:: /_static/images/note_3.0-en-us.png

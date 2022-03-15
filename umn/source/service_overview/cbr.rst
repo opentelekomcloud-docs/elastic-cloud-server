@@ -18,7 +18,7 @@ You can back up ECS data using the Cloud Server Backup or Cloud Disk Backup func
 
 
 
-.. _EN-US_TOPIC_0000001174675379__table1210762195612:
+.. _ENUSTOPIC0000001174675379table1210762195612:
 
 .. table:: **Table 1** Differences between cloud server backup and cloud disk backup
 

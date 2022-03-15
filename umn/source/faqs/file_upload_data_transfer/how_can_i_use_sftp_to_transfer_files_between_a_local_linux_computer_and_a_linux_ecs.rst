@@ -31,8 +31,12 @@ Procedure
 
    **passwd user1**
 
-   | **Figure 1** Setting a password
-   | |image1|
+   .. figure:: /_static/images/en-us_image_0263798009.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 1** Setting a password
 
 #. Assign permissions to directories.
 
@@ -67,8 +71,12 @@ Procedure
       AllowTcpForwarding no
       X11Forwarding no
 
-   | **Figure 2** sshd_config file with the added information
-   | |image2|
+   .. figure:: /_static/images/en-us_image_0000001071727803.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 2** sshd_config file with the added information
 
 #. Run the following command to restart the ECS:
 
@@ -84,32 +92,26 @@ Procedure
 
 #. Run the **sftp** command to check the connection.
 
-   |image3|
+   |image1|
 
 #. Transfer files or folders.
 
    To upload files or folders, run the **put -r** command.
 
-   |image4|
+   |image2|
 
    To download files or folders, run the **get -r** command.
 
-   |image5|
+   |image3|
 
 
 
-.. |image1| image:: /_static/images/en-us_image_0263798009.png
+.. |image1| image:: /_static/images/en-us_image_0263798010.png
    :class: imgResize
 
-.. |image2| image:: /_static/images/en-us_image_0000001071727803.png
+.. |image2| image:: /_static/images/en-us_image_0263798011.png
    :class: imgResize
 
-.. |image3| image:: /_static/images/en-us_image_0263798010.png
-   :class: imgResize
-
-.. |image4| image:: /_static/images/en-us_image_0263798011.png
-   :class: imgResize
-
-.. |image5| image:: /_static/images/en-us_image_0263798012.png
+.. |image3| image:: /_static/images/en-us_image_0263798012.png
    :class: imgResize
 

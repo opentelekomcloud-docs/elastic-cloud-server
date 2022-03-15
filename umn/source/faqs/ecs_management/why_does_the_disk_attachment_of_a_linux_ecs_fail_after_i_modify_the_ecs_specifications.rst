@@ -15,24 +15,32 @@ Procedure
 
    **fdisk -l** **\| grep 'Disk /dev/'**
 
-   | **Figure 1** Viewing disks attached before specifications modification
-   | |image1|
+   .. figure:: /_static/images/en-us_image_0214947581.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
 
-   As shown in `Figure 1 <#EN-US_TOPIC_0214940106__en-us_topic_0120890833_fig10595124010458>`__, the ECS has three disks attached: **/dev/vda**, **/dev/vdb**, and **/dev/vdc**.
+      **Figure 1** Viewing disks attached before specifications modification
+
+   As shown in `Figure 1 <#ENUSTOPIC0214940106enustopic0120890833fig10595124010458>`__, the ECS has three disks attached: **/dev/vda**, **/dev/vdb**, and **/dev/vdc**.
 
 #. Run the following command to view disks attached after specifications modification:
 
    **df -h\| grep '/dev/'**
 
-   | **Figure 2** Viewing disks attached after specifications modification
-   | |image2|
+   .. figure:: /_static/images/en-us_image_0214947582.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
 
-   As shown in `Figure 2 <#EN-US_TOPIC_0214940106__en-us_topic_0120890833_fig692535712437>`__, only one disk **/dev/vda** is attached to the ECS.
+      **Figure 2** Viewing disks attached after specifications modification
 
-#. Check whether the number of disks obtained in step `3 <#EN-US_TOPIC_0214940106__en-us_topic_0120890833_li161843557534>`__ is the same as that obtained in step `2 <#EN-US_TOPIC_0214940106__en-us_topic_0120890833_li218141135312>`__.
+   As shown in `Figure 2 <#ENUSTOPIC0214940106enustopic0120890833fig692535712437>`__, only one disk **/dev/vda** is attached to the ECS.
+
+#. Check whether the number of disks obtained in step `3 <#ENUSTOPIC0214940106enustopic0120890833li161843557534>`__ is the same as that obtained in step `2 <#ENUSTOPIC0214940106enustopic0120890833li218141135312>`__.
 
    -  If the numbers are the same, the disk attachment is successful. No further action is required.
-   -  If the numbers are different, the disk attachment failed. In this case, go to step `5 <#EN-US_TOPIC_0214940106__en-us_topic_0120890833_li1478325211557>`__.
+   -  If the numbers are different, the disk attachment failed. In this case, go to step `5 <#ENUSTOPIC0214940106enustopic0120890833li1478325211557>`__.
 
 #. Run the **mount** command to attach the affected disks.
 
@@ -42,7 +50,7 @@ Procedure
 
    In the preceding command, **/dev/vbd1** is the disk to be attached, and **/mnt/vbd1** is the path for disk attachment.
 
-   |image3|
+   |image1|
 
    Ensure that **/mnt/vbd1** is empty. Otherwise, the attachment will fail.
 
@@ -55,20 +63,15 @@ Procedure
    -  If the numbers are the same, no further action is required.
    -  If the numbers are different, contact customer service.
 
-   | **Figure 3** Checking the number of disks attached
-   | |image4|
+   .. figure:: /_static/images/en-us_image_0214947583.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
 
-   As shown in `Figure 3 <#EN-US_TOPIC_0214940106__en-us_topic_0120890833_fig722411124917>`__, the numbers of disks before and after specifications modification are the same. The disks are **/dev/vda**, **/dev/vdb**, and **/dev/vdc**.
+      **Figure 3** Checking the number of disks attached
+
+   As shown in `Figure 3 <#ENUSTOPIC0214940106enustopic0120890833fig722411124917>`__, the numbers of disks before and after specifications modification are the same. The disks are **/dev/vda**, **/dev/vdb**, and **/dev/vdc**.
 
 
 
-.. |image1| image:: /_static/images/en-us_image_0214947581.png
-   :class: imgResize
-
-.. |image2| image:: /_static/images/en-us_image_0214947582.png
-   :class: imgResize
-
-.. |image3| image:: /_static/images/notice_3.0-en-us.png
-.. |image4| image:: /_static/images/en-us_image_0214947583.png
-   :class: imgResize
-
+.. |image1| image:: /_static/images/notice_3.0-en-us.png

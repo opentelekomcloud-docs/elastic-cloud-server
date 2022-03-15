@@ -4,7 +4,7 @@ Obtaining Metadata
 Scenarios
 ---------
 
-ECS metadata includes basic information of an ECS on the cloud platform, such as the ECS ID, hostname, and network information. ECS metadata can be obtained using either OpenStack or EC2 compatible APIs, as shown in `Table 1 <#EN-US_TOPIC_0042400609__table273552371680>`__. The following describes the URI and methods of using the supported ECS metadata.
+ECS metadata includes basic information of an ECS on the cloud platform, such as the ECS ID, hostname, and network information. ECS metadata can be obtained using either OpenStack or EC2 compatible APIs, as shown in `Table 1 <#ENUSTOPIC0042400609table273552371680>`__. The following describes the URI and methods of using the supported ECS metadata.
 
 Notes
 -----
@@ -38,11 +38,11 @@ Perform the following configuration on the firewall:
 ECS Metadata Types
 ------------------
 
-`Table 1 <#EN-US_TOPIC_0042400609__table273552371680>`__ does not contain metadata items ami-id, ami-launch-index, ami-manifest-path, block-device-mapping/, instance-action, instance-id and reservation-id. These metadata items are not compatible with EC2 and are not recommended.
+`Table 1 <#ENUSTOPIC0042400609table273552371680>`__ does not contain metadata items ami-id, ami-launch-index, ami-manifest-path, block-device-mapping/, instance-action, instance-id and reservation-id. These metadata items are not compatible with EC2 and are not recommended.
 
 
 
-.. _EN-US_TOPIC_0042400609__table273552371680:
+.. _ENUSTOPIC0042400609table273552371680:
 
 .. table:: **Table 1** ECS metadata types
 
@@ -51,7 +51,7 @@ ECS Metadata Types
    +=======================+========================================+======================================================================================================================================================================================================================================+
    | OpenStack             | /meta_data.json                        | Displays ECS metadata.                                                                                                                                                                                                               |
    |                       |                                        |                                                                                                                                                                                                                                      |
-   |                       |                                        | For the key fields in the ECS metadata, see `Table 2 <#EN-US_TOPIC_0042400609__table2373623012315>`__.                                                                                                                               |
+   |                       |                                        | For the key fields in the ECS metadata, see `Table 2 <#ENUSTOPIC0042400609table2373623012315>`__.                                                                                                                                    |
    +-----------------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | OpenStack             | /password                              | Displays the password for logging in to an ECS.                                                                                                                                                                                      |
    |                       |                                        |                                                                                                                                                                                                                                      |
@@ -100,7 +100,7 @@ ECS Metadata Types
 
 
 
-.. _EN-US_TOPIC_0042400609__table2373623012315:
+.. _ENUSTOPIC0042400609table2373623012315:
 
 .. table:: **Table 2** Metadata key fields
 
@@ -124,20 +124,19 @@ Prerequisites
 -------------
 
 -  The target ECS has been logged in.
-
 -  Security group rules in the outbound direction meet the following requirements:
 
    -  **Protocol**: **TCP**
    -  **Port**: **80**
    -  **Destination**: **169.254.0.0/16**
 
-   |image1|
+   .. note::
 
-   If you use the default security group rules for the outbound direction, the preceding requirements are met. Then, the metadata can be accessed. Default security group rules for the outbound direction are as follows:
+      If you use the default security group rules for the outbound direction, the preceding requirements are met. Then, the metadata can be accessed. Default security group rules for the outbound direction are as follows:
 
-   -  **Protocol**: **All**
-   -  **Port**: **All**
-   -  **Destination**: **0.0.0.0/0**
+      -  **Protocol**: **All**
+      -  **Port**: **All**
+      -  **Destination**: **0.0.0.0/0**
 
 Metadata (OpenStack Metadata API)
 ---------------------------------
@@ -213,8 +212,16 @@ Displays ECS user data. The value is configured only when you create an ECS. It 
 
       ICAgICAgDQoiQSBjbG91ZCBkb2VzIG5vdCBrbm93IHdoeSBpdCBtb3ZlcyBpbiBqdXN0IHN1Y2ggYSBkaXJlY3Rpb24gYW5kIGF0IHN1Y2ggYSBzcGVlZC4uLkl0IGZlZWxzIGFuIGltcHVsc2lvbi4uLnRoaXMgaXMgdGhlIHBsYWNlIHRvIGdvIG5vdy4gQnV0IHRoZSBza3kga25vd3MgdGhlIHJlYXNvbnMgYW5kIHRoZSBwYXR0ZXJucyBiZWhpbmQgYWxsIGNsb3VkcywgYW5kIHlvdSB3aWxsIGtub3csIHRvbywgd2hlbiB5b3UgbGlmdCB5b3Vyc2VsZiBoaWdoIGVub3VnaCB0byBzZWUgYmV5b25kIGhvcml6b25zLiINCg0KLVJpY2hhcmQgQmFjaA==
 
-   | |image2|\ If user data was not passed to the ECS during ECS creation, the query result is 404.\ **Figure 1** 404 Not Found
-   | |image3|
+   .. note::
+
+      If user data was not passed to the ECS during ECS creation, the query result is 404.
+
+      .. figure:: /_static/images/en-us_image_0166755236.png
+         :alt: Click to enlarge
+         :figclass: imgResize
+
+
+         **Figure 1** 404 Not Found
 
 Network Data (OpenStack Metadata API)
 -------------------------------------
@@ -229,9 +236,11 @@ Displays information about all NICs attached to an ECS, including their DNS serv
 
    Supports GET requests.
 
--  Example\ |image4|
+-  Example
 
-   **instance_max_bandwidth** and **instance_min_bandwidth** are in the unit of Mbit/s. If the value is **-1**, the bandwidth is not limited.
+   .. note::
+
+      **instance_max_bandwidth** and **instance_min_bandwidth** are in the unit of Mbit/s. If the value is **-1**, the bandwidth is not limited.
 
    Linux:
 
@@ -279,11 +288,11 @@ Security Key (OpenStack Metadata API)
 
 Obtains temporary AKs and SKs.
 
-|image5|
+.. note::
 
--  If an ECS needs to obtain a temporary AK and SK, go to the ECS details page, and configure **Agency** for the ECS in the **Management Information** area so that the ECS is authorized on IAM.
--  The validity period of a temporary AK and SK is one hour. The temporary AK and SK are updated 10 minutes ahead of the expiration time. During the 10 minutes, both the new and old temporary AKs and SKs can be used.
--  When using temporary AKs and SKs, add **'X-Security-Token':{securitytoken}** in the message header. **securitytoken** is the value returned when a call is made to the API.
+   -  If an ECS needs to obtain a temporary AK and SK, go to the ECS details page, and configure **Agency** for the ECS in the **Management Information** area so that the ECS is authorized on IAM.
+   -  The validity period of a temporary AK and SK is one hour. The temporary AK and SK are updated 10 minutes ahead of the expiration time. During the 10 minutes, both the new and old temporary AKs and SKs can be used.
+   -  When using temporary AKs and SKs, add **'X-Security-Token':{securitytoken}** in the message header. **securitytoken** is the value returned when a call is made to the API.
 
 -  URI
 
@@ -498,11 +507,3 @@ Helpful Links
 `Why Can't My Linux ECS Obtain Metadata? <../../faqs/network_configurations/why_cant_my_linux_ecs_obtain_metadata.html>`__
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/note_3.0-en-us.png
-.. |image3| image:: /_static/images/en-us_image_0166755236.png
-   :class: imgResize
-
-.. |image4| image:: /_static/images/note_3.0-en-us.png
-.. |image5| image:: /_static/images/note_3.0-en-us.png

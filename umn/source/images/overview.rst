@@ -20,7 +20,7 @@ A private image contains an OS or service data, preinstalled public applications
 
 
 
-.. _EN-US_TOPIC_0177457773__table1567919914154:
+.. _ENUSTOPIC0177457773table1567919914154:
 
 .. table:: **Table 1** Private image types
 

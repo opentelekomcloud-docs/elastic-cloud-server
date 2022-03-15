@@ -15,6 +15,7 @@ Procedure
 ---------
 
 #. `Download FileZilla <https://filezilla-project.org/>`__ and install it on the local Windows computer.
+
 #. On the local Windows computer, open FileZilla, enter the information about the target ECS, and click **Quickconnect**.
 
    -  **Host**: EIP bound to the ECS
@@ -22,12 +23,13 @@ Procedure
    -  **Password**: password of the username
    -  **Port**: FTP access port, which is port 21 by default
 
-   **Figure 1** Setting connection parameters
-   |image1|
+   .. figure:: /_static/images/en-us_image_0263806339.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 1** Setting connection parameters
+
 #. Drag files from the local computer on the left to the target ECS on the right to transfer them.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0263806339.png
-   :class: imgResize
 

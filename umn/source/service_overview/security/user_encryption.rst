@@ -36,14 +36,18 @@ About Keys
 
 The key used for encryption relies on the Key Management Service (KMS). KMS uses a data encryption key (DEK) to encrypt data and a customer master key (CMK) to encrypt the DEK.
 
-| **Figure 1** Data encryption process
-| |image1|
-
-`Table 1 <#EN-US_TOPIC_0046912051__table58453122162120>`__ describes the keys involved in the data encryption process.
-
+.. figure:: /_static/images/en-us_image_0174076025.png
+   :alt: **Figure 1** Data encryption process
+   :figclass: vsd
 
 
-.. _EN-US_TOPIC_0046912051__table58453122162120:
+   **Figure 1** Data encryption process
+
+`Table 1 <#ENUSTOPIC0046912051table58453122162120>`__ describes the keys involved in the data encryption process.
+
+
+
+.. _ENUSTOPIC0046912051table58453122162120:
 
 .. table:: **Table 1** Keys
 
@@ -61,15 +65,10 @@ The key used for encryption relies on the Key Management Service (KMS). KMS uses
    |                       | The name extension of a default CMK is **/default**, for example, **evs/default**.                     |                                                                    |
    +-----------------------+--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+
 
-|image2|
+.. note::
 
-After disabling a CMK or scheduling the deletion of a CMK takes effect, the EVS disk encrypted using this CMK can still be used until the disk is detached from and then attached to an ECS again. During this process, the disk fails to be attached to the ECS because the CMK cannot be obtained. Therefore, the EVS disk becomes unavailable.
+   After disabling a CMK or scheduling the deletion of a CMK takes effect, the EVS disk encrypted using this CMK can still be used until the disk is detached from and then attached to an ECS again. During this process, the disk fails to be attached to the ECS because the CMK cannot be obtained. Therefore, the EVS disk becomes unavailable.
 
 For details about KMS, see *Key Management Service User Guide*.
 
 
-
-.. |image1| image:: /_static/images/en-us_image_0174076025.png
-   :class: vsd
-
-.. |image2| image:: /_static/images/note_3.0-en-us.png

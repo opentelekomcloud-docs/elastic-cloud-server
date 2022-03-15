@@ -37,8 +37,14 @@ Procedure
 
    -  **Time Range**: You can view traces generated during any time range of the last seven days.
 
-#. Expand the trace for details.\ **Figure 1** Expanding trace details
-   |image2|
+#. Expand the trace for details.
+
+   .. figure:: /_static/images/en-us_image_0116270059.jpg
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 1** Expanding trace details
 
 #. Click **View Trace**. A dialog box is displayed, in which the trace structure details are displayed.
 
@@ -47,7 +53,4 @@ Procedure
 
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-
-.. |image2| image:: /_static/images/en-us_image_0116270059.jpg
-   :class: imgResize
 

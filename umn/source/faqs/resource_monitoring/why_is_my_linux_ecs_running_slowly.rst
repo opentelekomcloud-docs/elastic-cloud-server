@@ -9,7 +9,9 @@ To handle this issue, perform the following operations:
 
    Identify the processes leading to high bandwidth or CPU usage.
 
-2. TroubleshootingCheck whether the processes are malicious and handle the issue accordingly.
+2. Troubleshooting
+
+   Check whether the processes are malicious and handle the issue accordingly.
 
    -  If the processes are not malicious, optimize their programs or modify ECS specifications.
    -  If the processes are malicious, use a third-party tool to automatically stop the processes or manually stop them.
@@ -48,35 +50,37 @@ Locating High CPU Usage
 
    -  The fourth line in the command output shows the overall memory usage.
 
-   -  The lower part of the command output shows the resource usage of each process.\ |image2|
+   -  The lower part of the command output shows the resource usage of each process.
 
-      a. On the **top** page, enter **q** or press **Ctrl+C** to exit.
+      .. note::
 
-      b. Alternatively, click **Input Command** in the upper right corner of the VNC login page, paste or enter commands in the displayed dialog box, and click **Send**.
+         a. On the **top** page, enter **q** or press **Ctrl+C** to exit.
 
-      c. Common parameters in top commands are as follows:
+         b. Alternatively, click **Input Command** in the upper right corner of the VNC login page, paste or enter commands in the displayed dialog box, and click **Send**.
 
-         **s**: Change the image update frequency.
+         c. Common parameters in top commands are as follows:
 
-         **l**: Show or hide the first line for the top information.
+            **s**: Change the image update frequency.
 
-         **t**: Show or hide the second line for tasks and the third line for CPUs.
+            **l**: Show or hide the first line for the top information.
 
-         **m**: Show or hide the fourth line for Mem and the fifth line for Swap.
+            **t**: Show or hide the second line for tasks and the third line for CPUs.
 
-         **N**: Sort processes by PID in ascending or descending order.
+            **m**: Show or hide the fourth line for Mem and the fifth line for Swap.
 
-         **P**: Sort processes by CPU usage in ascending or descending order.
+            **N**: Sort processes by PID in ascending or descending order.
 
-         **M**: Sort processes by memory usage in ascending or descending order.
+            **P**: Sort processes by CPU usage in ascending or descending order.
 
-         **h**: Show help for commands.
+            **M**: Sort processes by memory usage in ascending or descending order.
 
-         **n**: Set the number of processes displayed in the process list.
+            **h**: Show help for commands.
+
+            **n**: Set the number of processes displayed in the process list.
 
 #. Run the **ll /proc/**\ *PID*\ **/exe** command to obtain the program file specified by a PID.
 
-   |image3|
+   |image2|
 
 Troubleshooting High CPU Usage
 ------------------------------
@@ -95,11 +99,11 @@ If the processes leading to high CPU usage are malicious, run the top command to
 
       The PID of the process is the value in the first column of the top command output. For example, to stop the process with PID 52, enter **52** and press **Enter**.
 
-      |image4|
+      |image3|
 
    #. After the operation is successful, information similar to the following is displayed. Press **Enter**.
 
-      |image5|
+      |image4|
 
 -  For the **kswapd0** process
 
@@ -109,9 +113,11 @@ If the processes leading to high CPU usage are malicious, run the top command to
 
    #. If the process remains in non-sleeping state for a long period of time, you can preliminarily determine that the system is consistently paging. In such a case, the high CPU usage is caused by insufficient memory.
 
-      |image6|
+      |image5|
 
-   #. Run the **vmstat** command to check the virtual memory usage of the system.If the **si** and **so** values are large, the system is frequently paging and the physical memory of the system is insufficient.
+   #. Run the **vmstat** command to check the virtual memory usage of the system.
+
+      If the **si** and **so** values are large, the system is frequently paging and the physical memory of the system is insufficient.
 
       -  **si**: Volume of data written from the swap partition to the memory per second, which is transferred from the disk to the memory.
       -  **so**: Volume of data written from the memory to the swap partition per second, which is transferred from the memory to the disk.
@@ -153,7 +159,7 @@ If the high bandwidth usage is caused by normal service access of non-malicious 
 
       **nethogs** **eth1**
 
-      |image7|
+      |image6|
 
       The parameters in the command output are as follows:
 
@@ -175,19 +181,18 @@ If the high bandwidth usage is caused by normal service access of non-malicious 
 .. |image1| image:: /_static/images/en-us_image_0166736726.png
    :class: imgResize
 
-.. |image2| image:: /_static/images/note_3.0-en-us.png
-.. |image3| image:: /_static/images/en-us_image_0166945975.png
+.. |image2| image:: /_static/images/en-us_image_0166945975.png
    :class: imgResize
 
-.. |image4| image:: /_static/images/en-us_image_0166947771.png
+.. |image3| image:: /_static/images/en-us_image_0166947771.png
    :class: imgResize
 
-.. |image5| image:: /_static/images/en-us_image_0166947775.png
+.. |image4| image:: /_static/images/en-us_image_0166947775.png
    :class: imgResize
 
-.. |image6| image:: /_static/images/en-us_image_0167110971.png
+.. |image5| image:: /_static/images/en-us_image_0167110971.png
    :class: imgResize
 
-.. |image7| image:: /_static/images/en-us_image_0167295759.png
+.. |image6| image:: /_static/images/en-us_image_0167295759.png
    :class: imgResize
 

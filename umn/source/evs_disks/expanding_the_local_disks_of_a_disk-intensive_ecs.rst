@@ -33,11 +33,11 @@ Procedure
 
 #. Attach the EVS disk to the new disk-intensive ECS.
 
-   On the **Elastic Cloud Server** page, click the name of the ECS described in step `5 <#EN-US_TOPIC_0037470901__li5892076615240>`__. The page providing details about the ECS is displayed.
+   On the **Elastic Cloud Server** page, click the name of the ECS described in step `5 <#ENUSTOPIC0037470901li5892076615240>`__. The page providing details about the ECS is displayed.
 
 #. Click the **Disks** tab. Then, click **Attach Disk**.
 
-   In the displayed dialog box, select the EVS disk detached in step `4 <#EN-US_TOPIC_0037470901__li19170660143341>`__ and the device name.
+   In the displayed dialog box, select the EVS disk detached in step `4 <#ENUSTOPIC0037470901li19170660143341>`__ and the device name.
 
 #. Migrate the data from the EVS disk to the local disks of the new disk-intensive ECS.
 

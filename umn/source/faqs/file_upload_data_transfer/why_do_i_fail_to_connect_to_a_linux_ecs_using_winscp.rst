@@ -6,8 +6,12 @@ Symptom
 
 Connecting to a Linux ECS using WinSCP fails, while using SSH tools like Xshell succeeds.
 
-| **Figure 1** Connection error using WinSCP
-| |image1|
+.. figure:: /_static/images/en-us_image_0000001189705789.png
+   :alt: Click to enlarge
+   :figclass: imgResize
+
+
+   **Figure 1** Connection error using WinSCP
 
 Root Cause
 ----------
@@ -20,8 +24,12 @@ Run the following command to view the **/etc/ssh/sshd_config** file:
 
 Check the SFTP configuration and the configuration file is **/usr/libexec/openssh/sftp-server**.
 
-| **Figure 2** SFTP configuration file
-| |image2|
+.. figure:: /_static/images/en-us_image_0000001150707636.png
+   :alt: Click to enlarge
+   :figclass: imgResize
+
+
+   **Figure 2** SFTP configuration file
 
 If the SFTP configuration file does not exist or the file permission is not 755, connecting to a Linux ECS using WinSCP will fail.
 
@@ -34,11 +42,4 @@ Solution
 
    **chmod 755 -R** **/usr/libexec/openssh/sftp-server**
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0000001189705789.png
-   :class: imgResize
-
-.. |image2| image:: /_static/images/en-us_image_0000001150707636.png
-   :class: imgResize
 

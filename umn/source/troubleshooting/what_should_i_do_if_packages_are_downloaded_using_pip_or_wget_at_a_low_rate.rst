@@ -6,8 +6,12 @@ Symptom
 
 When a user runs the wget command to download software packages, the download rate is far less than the bandwidth.
 
-| **Figure 1** wget-based package downloading
-| |image1|
+.. figure:: /_static/images/en-us_image_0107505891.png
+   :alt: Click to enlarge
+   :figclass: imgResize
+
+
+   **Figure 1** wget-based package downloading
 
 Possible Causes
 ---------------
@@ -21,8 +25,4 @@ Run the following command to install openssl packages:
 
 **yum install openssl openssl-devel**
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0107505891.png
-   :class: imgResize
 

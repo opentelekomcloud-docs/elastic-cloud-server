@@ -6,8 +6,12 @@ Logging In to a Windows ECS
 
 You can log in to a Windows ECS using either VNC or MSTSC provided on the management console.
 
-| **Figure 1** Windows ECS login modes
-| |image1|
+.. figure:: /_static/images/en-us_image_0201719710.png
+   :alt: Click to enlarge
+   :figclass: imgResize
+
+
+   **Figure 1** Windows ECS login modes
 
 #. Obtain the password.
 
@@ -30,8 +34,12 @@ Logging In to a Linux ECS
 
 You can log in to a Linux ECS using either VNC or SSH key provided on the management console.
 
-| **Figure 2** Linux ECS login modes
-| |image2|
+.. figure:: /_static/images/en-us_image_0201719715.png
+   :alt: **Figure 2** Linux ECS login modes
+   :figclass: vsd
+
+
+   **Figure 2** Linux ECS login modes
 
 #. Select a login method and log in to the ECS.
 
@@ -54,11 +62,4 @@ Follow-up Procedure
 
 -  Certain ECSs require the installation of a driver after you log in to them. For details about available ECS types as well as their functions and usage, see "Notes" in `ECS Types <../service_overview/instances/ecs_types.html>`__.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0201719710.png
-   :class: imgResize
-
-.. |image2| image:: /_static/images/en-us_image_0201719715.png
-   :class: vsd
 

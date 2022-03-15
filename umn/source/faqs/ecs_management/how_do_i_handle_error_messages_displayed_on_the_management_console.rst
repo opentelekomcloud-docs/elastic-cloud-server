@@ -20,11 +20,11 @@ After you perform ECS-related operations on the management console, the system d
 Solution
 --------
 
-If an error occurs, check the error code and perform the corresponding operations listed in `Table 1 <#EN-US_TOPIC_0032398121__table52205309173837>`__.
+If an error occurs, check the error code and perform the corresponding operations listed in `Table 1 <#ENUSTOPIC0032398121table52205309173837>`__.
 
 
 
-.. _EN-US_TOPIC_0032398121__table52205309173837:
+.. _ENUSTOPIC0032398121table52205309173837:
 
 .. table:: **Table 1** Error codes and solution suggestions
 
@@ -35,8 +35,9 @@ If an error occurs, check the error code and perform the corresponding operation
    +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
    | Ecs.0001              | The maximum number of ECSs or EVS disks has been reached. Contact the customer service and request an ECS quota increase.             | Contact customer service and request an ECS quota increase.                                                                         |
    |                       |                                                                                                                                       |                                                                                                                                     |
-   |                       |                                                                                                                                       | NOTE:                                                                                                                               |
-   |                       |                                                                                                                                       | Before requesting for increasing your ECS quota, consider the number of to-be-added ECSs, vCPUs, and memory capacity required.      |
+   |                       |                                                                                                                                       | .. note::                                                                                                                           |
+   |                       |                                                                                                                                       |                                                                                                                                     |
+   |                       |                                                                                                                                       |    Before requesting for increasing your ECS quota, consider the number of to-be-added ECSs, vCPUs, and memory capacity required.   |
    +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
    | Ecs.0003              | You do not have the permission or your balance is insufficient.                                                                       | Contact customer service to check your account information.                                                                         |
    +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+

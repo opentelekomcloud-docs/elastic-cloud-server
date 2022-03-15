@@ -4,7 +4,7 @@ How Can I View and Modify Kernel Parameters of a Linux ECS?
 Modify the kernel parameters only if the parameter settings affect your services. Kernel parameters vary depending on OS versions. If the parameter settings must be modified,
 
 -  Ensure that the target parameter settings meet service requirements.
--  Modify the correct kernel parameters. For details about common kernel parameters, see `Table 1 <#EN-US_TOPIC_0107659745__table15253154115313>`__.
+-  Modify the correct kernel parameters. For details about common kernel parameters, see `Table 1 <#ENUSTOPIC0107659745table15253154115313>`__.
 -  Back up key ECS data before modifying kernel parameter settings.
 
 Background
@@ -12,7 +12,7 @@ Background
 
 
 
-.. _EN-US_TOPIC_0107659745__table15253154115313:
+.. _ENUSTOPIC0107659745table15253154115313:
 
 .. table:: **Table 1** Common Linux kernel parameters
 
@@ -75,13 +75,15 @@ Background
    +----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | net.ipv4.tcp_tw_reuse                              | Specifies whether a **TIME-WAIT** socket (**TIME-WAIT** port) can be used for new TCP connections.                                                                                                                                                                                                                                                                  |
    |                                                    |                                                                                                                                                                                                                                                                                                                                                                     |
-   |                                                    | NOTE:                                                                                                                                                                                                                                                                                                                                                               |
-   |                                                    | This parameter cannot be set to **1** if NAT is enabled. Otherwise, an error will occur in remote ECS logins.                                                                                                                                                                                                                                                       |
+   |                                                    | .. note::                                                                                                                                                                                                                                                                                                                                                           |
+   |                                                    |                                                                                                                                                                                                                                                                                                                                                                     |
+   |                                                    |    This parameter cannot be set to **1** if NAT is enabled. Otherwise, an error will occur in remote ECS logins.                                                                                                                                                                                                                                                    |
    +----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | net.ipv4.tcp_tw_recycle                            | Allows fast recycle of **TIME-WAIT** sockets.                                                                                                                                                                                                                                                                                                                       |
    |                                                    |                                                                                                                                                                                                                                                                                                                                                                     |
-   |                                                    | NOTE:                                                                                                                                                                                                                                                                                                                                                               |
-   |                                                    | Do not set this parameter to **1** if NAT is enabled. Otherwise, an error will occur during remote ECS logins.                                                                                                                                                                                                                                                      |
+   |                                                    | .. note::                                                                                                                                                                                                                                                                                                                                                           |
+   |                                                    |                                                                                                                                                                                                                                                                                                                                                                     |
+   |                                                    |    Do not set this parameter to **1** if NAT is enabled. Otherwise, an error will occur during remote ECS logins.                                                                                                                                                                                                                                                   |
    +----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | net.ipv4.tcp_fin_timeout                           | Specifies the time (in seconds) during which a socket TCP connection that is disconnected from the local end remains in the **FIN-WAIT-2** state. Process suspension may be caused by the disconnection from the peer end, continuous connection from the peer end, or other reasons.                                                                               |
    +----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -165,7 +167,9 @@ Modifying Kernel Parameter Settings
 
    **echo "0" > /proc/sys/net/ipv4/tcp_tw_recycle**
 
--  Method 2: Use the **/etc/sysctl.conf** file.The parameter values changed using this method take effect permanently.
+-  Method 2: Use the **/etc/sysctl.conf** file.
+
+   The parameter values changed using this method take effect permanently.
 
    #. Run the following command to change the value of a specified parameter:
 

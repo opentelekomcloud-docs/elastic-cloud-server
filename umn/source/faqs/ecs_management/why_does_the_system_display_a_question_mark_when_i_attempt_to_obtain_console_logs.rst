@@ -6,8 +6,12 @@ Symptom
 
 The system displays a question mark (?) when I attempt to obtain the console logs of an ECS.
 
-| **Figure 1** Obtaining console logs
-| |image1|
+.. figure:: /_static/images/en-us_image_0088242234.jpg
+   :alt: Click to enlarge
+   :figclass: imgResize
+
+
+   **Figure 1** Obtaining console logs
 
 Possible Causes
 ---------------
@@ -21,8 +25,4 @@ Enable management console log obtaining on the ECS.
 
 For details, see step 1 in section `Obtaining ECS Console Logs <../../instances/managing_ecss/obtaining_ecs_console_logs.html>`__.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0088242234.jpg
-   :class: imgResize
 

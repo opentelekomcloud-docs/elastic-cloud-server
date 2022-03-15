@@ -18,10 +18,25 @@ Solution
 #. Check system logs.
 
    a. Log in to the ECS using VNC.
-   b. Click |image1| to start the service manager and choose **Administrative Tools** > **Event Viewer** > **Windows Logs** > **System** > **Filter Current Logs**.\ **Figure 1** Event viewer
-      |image2|
-   c. In the **Event Level** pane, select event levels.\ **Figure 2** Filtering logs
-      |image3|
+
+   b. Click |image1| to start the service manager and choose **Administrative Tools** > **Event Viewer** > **Windows Logs** > **System** > **Filter Current Logs**.
+
+      .. figure:: /_static/images/en-us_image_0000001122000869.png
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 1** Event viewer
+
+   c. In the **Event Level** pane, select event levels.
+
+      .. figure:: /_static/images/en-us_image_0000001121886141.png
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 2** Filtering logs
+
    d. Search for login logs.
 
 #. Check the usage of host resources.
@@ -36,10 +51,4 @@ Solution
 
 
 .. |image1| image:: /_static/images/en-us_image_0000001122204571.png
-
-.. |image2| image:: /_static/images/en-us_image_0000001122000869.png
-   :class: imgResize
-
-.. |image3| image:: /_static/images/en-us_image_0000001121886141.png
-   :class: imgResize
 

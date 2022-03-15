@@ -23,7 +23,7 @@ Select a login mode as required and log in to the target ECS.
 
 
 
-.. _EN-US_TOPIC_0092494943__table8494562024:
+.. _ENUSTOPIC0092494943table8494562024:
 
 .. table:: **Table 1** Windows login modes
 

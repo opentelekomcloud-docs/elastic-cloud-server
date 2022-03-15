@@ -36,7 +36,9 @@ To do so, perform the following operations:
       lrwxrwxrwx. 1 root root 9 Nov 16 19:40 virtio-842dbfd3-9f2c-4273-9 -> ../../vdb
       lrwxrwxrwx. 1 root root 10 Nov 16 19:40 virtio-842dbfd3-9f2c-4273-9-part1 -> ../../vdb1
 
-#. Run the following command to change the disk ID to the desired one in the configuration files in **/etc/fstab** of ECS B:**vi /etc/fstab**
+#. Run the following command to change the disk ID to the desired one in the configuration files in **/etc/fstab** of ECS B:
+
+   **vi /etc/fstab**
 
    .. code-block::
 

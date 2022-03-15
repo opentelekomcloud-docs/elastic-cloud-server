@@ -34,10 +34,16 @@ Procedure
 
    You can click **+** to add more inbound rules.
 
-   | **Figure 1** Add Inbound Rule
-   | |image2| 
+   .. figure:: /_static/images/en-us_image_0284920908.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
 
-.. _EN-US_TOPIC_0030878383__en-us_topic_0118534005_table111445216564:
+      **Figure 1** Add Inbound Rule
+
+   
+
+.. _ENUSTOPIC0030878383enustopic0118534005table111445216564:
 
    .. table:: **Table 1** Inbound rule parameter description
 
@@ -66,10 +72,16 @@ Procedure
 
    You can click **+** to add more outbound rules.
 
-   | **Figure 2** Add Outbound Rule
-   | |image3| 
+   .. figure:: /_static/images/en-us_image_0284993717.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
 
-.. _EN-US_TOPIC_0030878383__en-us_topic_0118534005_table0614192319232:
+      **Figure 2** Add Outbound Rule
+
+   
+
+.. _ENUSTOPIC0030878383enustopic0118534005table0614192319232:
 
    .. table:: **Table 2** Outbound rule parameter description
 
@@ -97,10 +109,4 @@ Procedure
 
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-
-.. |image2| image:: /_static/images/en-us_image_0284920908.png
-   :class: imgResize
-
-.. |image3| image:: /_static/images/en-us_image_0284993717.png
-   :class: imgResize
 

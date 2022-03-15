@@ -9,11 +9,11 @@ The **Failures** area shows the tasks that failed to process due to an error, in
 Failure Types
 -------------
 
-`Table 1 <#EN-US_TOPIC_0108255889__table155141127195016>`__ lists the types of failures that can be recorded in the **Failures** area.
+`Table 1 <#ENUSTOPIC0108255889table155141127195016>`__ lists the types of failures that can be recorded in the **Failures** area.
 
 
 
-.. _EN-US_TOPIC_0108255889__table155141127195016:
+.. _ENUSTOPIC0108255889table155141127195016:
 
 .. table:: **Table 1** Failure types
 
@@ -31,10 +31,20 @@ Procedure
 ---------
 
 #. Log in to the management console.
+
 #. Click |image1| in the upper left corner and select your region and project.
+
 #. Under **Computing**, click **Elastic Cloud Server**.
-#. View **Failures** on the right side of common operations.\ **Figure 1** Failures
-   |image2|
+
+#. View **Failures** on the right side of common operations.
+
+   .. figure:: /_static/images/en-us_image_0152768827.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 1** Failures
+
 #. Click the number displayed in the **Failures** area to view details about the tasks.
 
    -  **Creation Failures**: show the tasks that are being created and those failed to create.
@@ -43,7 +53,4 @@ Procedure
 
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-
-.. |image2| image:: /_static/images/en-us_image_0152768827.png
-   :class: imgResize
 

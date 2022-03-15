@@ -13,7 +13,7 @@ Specifications
 
 
 
-.. _EN-US_TOPIC_0035550301__table285612469463:
+.. _ENUSTOPIC0035550301table285612469463:
 
 .. table:: **Table 1** M4 ECS specifications
 
@@ -39,7 +39,7 @@ Specifications
 
 
 
-.. _EN-US_TOPIC_0035550301__table10833218224040:
+.. _ENUSTOPIC0035550301table10833218224040:
 
 .. table:: **Table 2** M3 ECS specifications
 
@@ -61,7 +61,7 @@ Specifications
 
 
 
-.. _EN-US_TOPIC_0035550301__table38605135203957:
+.. _ENUSTOPIC0035550301table38605135203957:
 
 .. table:: **Table 3** M2 ECS specifications
 

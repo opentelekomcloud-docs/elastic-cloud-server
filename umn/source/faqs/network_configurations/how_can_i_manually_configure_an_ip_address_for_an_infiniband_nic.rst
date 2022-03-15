@@ -44,14 +44,12 @@ Procedure
 
    **STARTMODE=auto**
 
-   |image1|
+   .. note::
 
-   For instructions about how to obtain the IP address and subnet mask for an InfiniBand NIC, see `Background <#EN-US_TOPIC_0083225171__section42060912112551>`__.
+      For instructions about how to obtain the IP address and subnet mask for an InfiniBand NIC, see `Background <#ENUSTOPIC0083225171section42060912112551>`__.
 
 #. Run the following command to restart the network for the configuration to take effect:
 
    **service network restart**
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

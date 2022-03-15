@@ -44,10 +44,11 @@ Notes on Change Between Different OSs
 Change between different OSs indicates that the OS is changed between Windows and Linux.
 
 -  To change Windows to Linux, install an NTFS partition tool, such as NTFS-3G for data reading and writing on the Windows ECS.
+-  To change Linux to Windows, install software, such as Ext2Read or Ext2Fsd to identify ext3 or ext4.
 
--  To change Linux to Windows, install software, such as Ext2Read or Ext2Fsd to identify ext3 or ext4.\ |image1|
+   .. note::
 
-   You are not advised to change Linux to Window on the cloud platform. The reason is as follows: If there are LVM partitions on the Linux ECS, these partitions may fail after the OS is changed to Windows.
+      You are not advised to change Linux to Window on the cloud platform. The reason is as follows: If there are LVM partitions on the Linux ECS, these partitions may fail after the OS is changed to Windows.
 
 Prerequisites
 -------------
@@ -68,7 +69,7 @@ Procedure
 
 #. Log in to the management console.
 
-#. Click |image2| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select your region and project.
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
@@ -78,7 +79,7 @@ Procedure
 
 #. Modify related ECS parameters, such as **Image Type** and **Image**, based on service requirements.
 
-   For more details, see `Creating an ECS <../../getting_started/creating_an_ecs.html>`__.
+   For more details, see `Creating an ECS <../../getting_started/index.html>`__.
 
 #. (Optional) Select the **Encryption** option to encrypt the system disk during OS change.
 
@@ -92,7 +93,9 @@ Procedure
    -  **Xrole Name: EVSAccessKMS**: specifies that permissions have been assigned to EVS to obtain KMS keys for encrypting or decrypting EVS disks.
    -  **KMS Key ID**: specifies the ID of the key used by the encrypted data disk.
 
-#. (Optional) Select a **License Type** (**Use license from the system** or **Bring your own license (BYOL)**) if the changed OS running on your ECS is billed. For more details, see `License Type <../../service_overview/security/license_type.html>`__.The following OSs are billed:
+#. (Optional) Select a **License Type** (**Use license from the system** or **Bring your own license (BYOL)**) if the changed OS running on your ECS is billed. For more details, see `License Type <../../service_overview/security/license_type.html>`__.
+
+   The following OSs are billed:
 
    -  SUSE Linux Enterprise Server
    -  Oracle Enterprise Linux
@@ -108,9 +111,9 @@ Procedure
 
    After the application is submitted, the ECS status changes to **Changing OS**. The OS changing has been completed when **Changing OS** disappears.
 
-   |image3|
+   .. note::
 
-   A temporary ECS is created during the OS changing process. After the process is complete, this ECS will be automatically deleted.
+      A temporary ECS is created during the OS changing process. After the process is complete, this ECS will be automatically deleted.
 
 Follow-up Procedure
 -------------------
@@ -131,12 +134,10 @@ Follow-up Procedure
 
       **df -TH**
 
--  If the OS change is unsuccessful, perform steps `3 <#EN-US_TOPIC_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45082966143628>`__ to `10 <#EN-US_TOPIC_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45992498111556>`__ again to retry changing the OS again.
+-  If the OS change is unsuccessful, perform steps `3 <#ENUSTOPIC0031523135enustopic0031523135enustopic0024911405li45082966143628>`__ to `10 <#ENUSTOPIC0031523135enustopic0031523135enustopic0024911405li45992498111556>`__ again to retry changing the OS again.
 -  If the second OS change attempt is unsuccessful, contact customer service for manual recovery at the backend.
 
 
 
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0210779229.png
 
-.. |image3| image:: /_static/images/note_3.0-en-us.png

@@ -6,20 +6,22 @@ Overview
 
 A key pair that consists of a public key and a private key is required for authentication when you log in to an ECS. Both the public and private keys are used for authentication. Therefore, you must use an existing key pair or create a new one for remote login authentication.
 
--  Creating a key pairIf no key pair is available, create one, in which the private key is used for login authentication. You can use either of the following methods to create a key pair:
+-  Creating a key pair
 
-   -  (Recommended) Create a key pair on the management console. After the creation, the public key is automatically stored in the system, and the private key is manually stored in a local directory. For details, see `Creating a Key Pair on the Management Console <#EN-US_TOPIC_0014250631__section35336147204538>`__.
-   -  Create a key pair using **puttygen.exe**. After the creation, both the public key and private key are stored locally. For details, see `Creating a Key Pair Using puttygen.exe <#EN-US_TOPIC_0014250631__section38463609165715>`__. After the creation, import the key pair by following the instructions provided in `Importing a Key Pair <#EN-US_TOPIC_0014250631__section62005706143441>`__. Then, the key pair can be used.
+   If no key pair is available, create one, in which the private key is used for login authentication. You can use either of the following methods to create a key pair:
+
+   -  (Recommended) Create a key pair on the management console. After the creation, the public key is automatically stored in the system, and the private key is manually stored in a local directory. For details, see `Creating a Key Pair on the Management Console <#ENUSTOPIC0014250631section35336147204538>`__.
+   -  Create a key pair using **puttygen.exe**. After the creation, both the public key and private key are stored locally. For details, see `Creating a Key Pair Using puttygen.exe <#ENUSTOPIC0014250631section38463609165715>`__. After the creation, import the key pair by following the instructions provided in `Importing a Key Pair <#ENUSTOPIC0014250631section62005706143441>`__. Then, the key pair can be used.
 
 -  Using an existing key pair
 
-   If a key pair is available locally, for example, generated using PuTTYgen, you can import the public key on the management console so that the system maintains the public key file. For details, see `Importing a Key Pair <#EN-US_TOPIC_0014250631__section62005706143441>`__.
+   If a key pair is available locally, for example, generated using PuTTYgen, you can import the public key on the management console so that the system maintains the public key file. For details, see `Importing a Key Pair <#ENUSTOPIC0014250631section62005706143441>`__.
 
-   |image1|
+   .. note::
 
-   If the public key of the existing key pair is stored by clicking **Save public key** of **puttygen.exe**, the public key cannot be imported to the management console.
+      If the public key of the existing key pair is stored by clicking **Save public key** of **puttygen.exe**, the public key cannot be imported to the management console.
 
-   If this key pair must be used for remote authentication, see `Why Does a Key Pair Created Using puttygen.exe Fail to Be Imported on the Management Console? <../faqs/passwords_and_key_pairs/why_does_a_key_pair_created_using_puttygen.exe_fail_to_be_imported_on_the_management_console.html>`__
+      If this key pair must be used for remote authentication, see `Why Does a Key Pair Created Using puttygen.exe Fail to Be Imported on the Management Console? <../faqs/passwords_and_key_pairs/why_does_a_key_pair_created_using_puttygen.exe_fail_to_be_imported_on_the_management_console.html>`__
 
 Constraints
 -----------
@@ -37,7 +39,7 @@ Creating a Key Pair on the Management Console
 
 #. Log in to the management console.
 
-#. Click |image2| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select your region and project.
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
@@ -49,9 +51,11 @@ Creating a Key Pair on the Management Console
 
    An automatically allocated key name consists of **KeyPair-** and a 4-digit random number. Change it to an easy-to-remember one, for example, **KeyPair-xxxx_ecs**.
 
-#. Manually or automatically download the private key file. The file name is the specified key pair name with a suffix of .pem. Securely store the private key file. In the displayed dialog box, click **OK**.\ |image3|
+#. Manually or automatically download the private key file. The file name is the specified key pair name with a suffix of .pem. Securely store the private key file. In the displayed dialog box, click **OK**.
 
-   This is the only opportunity for you to save the private key file. Keep it secure. When creating an ECS, provide the name of your desired key pair. Each time you log in to the ECS using SSH, provide the private key.
+   .. note::
+
+      This is the only opportunity for you to save the private key file. Keep it secure. When creating an ECS, provide the name of your desired key pair. Each time you log in to the ECS using SSH, provide the private key.
 
 Creating a Key Pair Using **puttygen.exe**
 ------------------------------------------
@@ -60,50 +64,76 @@ Creating a Key Pair Using **puttygen.exe**
 
    https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
-   |image4|
+   .. note::
 
-   PuTTYgen is a key generator, which is used to create a key pair that consists of a public key and a private key for PuTTY.
+      PuTTYgen is a key generator, which is used to create a key pair that consists of a public key and a private key for PuTTY.
 
 #. Obtain the public and private keys.
 
-   a. Double-click **puttygen.exe** to switch to the **PuTTY Key Generator** page.\ **Figure 1** PuTTY Key Generator
-      |image5|
+   a. Double-click **puttygen.exe** to switch to the **PuTTY Key Generator** page.
+
+      .. figure:: /_static/images/en-us_image_0272917695.png
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 1** PuTTY Key Generator
 
    b. Click **Generate**.
 
-      The key generator automatically generates a key pair that consists of a public key and a private key. The public key is shown in the red box in `Figure 2 <#EN-US_TOPIC_0014250631__en-us_topic_0037960038_fig4678746517750>`__.
+      The key generator automatically generates a key pair that consists of a public key and a private key. The public key is shown in the red box in `Figure 2 <#ENUSTOPIC0014250631enustopic0037960038fig4678746517750>`__.
 
-      | **Figure 2** Obtaining the public and private keys
-      | |image6|
+      .. figure:: /_static/images/en-us_image_0272919399.png
+         :alt: **Figure 2** Obtaining the public and private keys
+      
+
+         **Figure 2** Obtaining the public and private keys
 
 #. Copy the public key content to a .txt file and save the file in a local directory.
 
-   |image7|
+   .. note::
 
-   Do not save the public key by clicking **Save public key**. Storing a public key by clicking **Save public key** of **puttygen.exe** will change the format of the public key content. Such a key cannot be imported to the management console.
+      Do not save the public key by clicking **Save public key**. Storing a public key by clicking **Save public key** of **puttygen.exe** will change the format of the public key content. Such a key cannot be imported to the management console.
 
 #. Save the private key and keep it secure. The private key can be downloaded only once.
 
    The format in which to save your private key varies depending on application scenarios:
 
-   -  Saving the private key in .ppk formatWhen you are required to log in to a Linux ECS using PuTTY, you must use the .ppk private key. To save the private key in .ppk format, perform the following operations:
+   -  Saving the private key in .ppk format
 
-      a. On the **PuTTY Key Generator** page, choose **File** > **Save private key**.\ **Figure 3** Save private key
-         |image8|
+      When you are required to log in to a Linux ECS using PuTTY, you must use the .ppk private key. To save the private key in .ppk format, perform the following operations:
+
+      a. On the **PuTTY Key Generator** page, choose **File** > **Save private key**.
+
+         .. figure:: /_static/images/en-us_image_0276033982.png
+            :alt: Click to enlarge
+            :figclass: imgResize
+         
+
+            **Figure 3** Save private key
+
       b. Save the converted private key, for example, **kp-123.ppk**, in a local directory.
 
-   -  Saving the private key in .pem formatWhen you are required to log in to a Linux ECS using Xshell or attempt to obtain the password for logging in to a Windows ECS, you must use the .pem private key for authentication. To save the private key in .pem format, perform the following operations:
+   -  Saving the private key in .pem format
 
-      a. Choose **Conversions** > **Export OpenSSH key**.\ |image9|
+      When you are required to log in to a Linux ECS using Xshell or attempt to obtain the password for logging in to a Windows ECS, you must use the .pem private key for authentication. To save the private key in .pem format, perform the following operations:
 
-         If you use this private file to obtain the password for logging in to a Windows ECS, when you choose **Export OpenSSH key**, do not configure **Key passphrase**. Otherwise, obtaining the password will fail.
+      a. Choose **Conversions** > **Export OpenSSH key**.
 
-         | **Figure 4** Export OpenSSH key
-         | |image10|
+         .. note::
+
+            If you use this private file to obtain the password for logging in to a Windows ECS, when you choose **Export OpenSSH key**, do not configure **Key passphrase**. Otherwise, obtaining the password will fail.
+
+         .. figure:: /_static/images/en-us_image_0272919409.png
+            :alt: Click to enlarge
+            :figclass: imgResize
+         
+
+            **Figure 4** Export OpenSSH key
 
       b. Save the private key, for example, **kp-123.pem**, in a local directory.
 
-#. Import the public key to the system. For details, see "Copying the public key content" in `Importing a Key Pair <#EN-US_TOPIC_0014250631__section62005706143441>`__.
+#. Import the public key to the system. For details, see "Copying the public key content" in `Importing a Key Pair <#ENUSTOPIC0014250631section62005706143441>`__.
 
 Importing a Key Pair
 --------------------
@@ -111,18 +141,31 @@ Importing a Key Pair
 If you store a public key by clicking **Save public key** of **puttygen.exe**, the format of the public key content will change. Such a key cannot be imported to the management console. To resolve this issue, obtain the public key content in correct format and import the content to the management console. For details, see `Why Does a Key Pair Created Using puttygen.exe Fail to Be Imported on the Management Console? <../faqs/passwords_and_key_pairs/why_does_a_key_pair_created_using_puttygen.exe_fail_to_be_imported_on_the_management_console.html>`__
 
 #. Log in to the management console.
-#. Click |image11| in the upper left corner and select your region and project.
+
+#. Click |image2| in the upper left corner and select your region and project.
+
 #. Under **Computing**, click **Elastic Cloud Server**.
+
 #. In the navigation pane on the left, choose **Key Pair**.
-#. On the right side of the page, click **Import Key Pair**.\ **Figure 5** Import Key Pair
-   |image12|
+
+#. On the right side of the page, click **Import Key Pair**.
+
+   .. figure:: /_static/images/en-us_image_0037980515.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 5** Import Key Pair
+
 #. Use either of the following methods to import the key pair:
 
    -  Selecting a file
 
-      a. On the **Import Key Pair** page of the management console, click **Select File** and select the local public key file, for example, the .txt file saved in `3 <#EN-US_TOPIC_0014250631__li24584709151818>`__.\ |image13|
+      a. On the **Import Key Pair** page of the management console, click **Select File** and select the local public key file, for example, the .txt file saved in `3 <#ENUSTOPIC0014250631li24584709151818>`__.
 
-         When importing a key pair, ensure that the public key is imported. Otherwise, the importing will fail.
+         .. note::
+
+            When importing a key pair, ensure that the public key is imported. Otherwise, the importing will fail.
 
       b. Click **OK**.
 
@@ -141,27 +184,7 @@ Helpful Links
 
 
 
-.. |image1| image:: /_static/images/note_3.0-en-us.png
+.. |image1| image:: /_static/images/en-us_image_0210779229.png
+
 .. |image2| image:: /_static/images/en-us_image_0210779229.png
 
-.. |image3| image:: /_static/images/note_3.0-en-us.png
-.. |image4| image:: /_static/images/note_3.0-en-us.png
-.. |image5| image:: /_static/images/en-us_image_0272917695.png
-   :class: imgResize
-
-.. |image6| image:: /_static/images/en-us_image_0272919399.png
-
-.. |image7| image:: /_static/images/note_3.0-en-us.png
-.. |image8| image:: /_static/images/en-us_image_0276033982.png
-   :class: imgResize
-
-.. |image9| image:: /_static/images/note_3.0-en-us.png
-.. |image10| image:: /_static/images/en-us_image_0272919409.png
-   :class: imgResize
-
-.. |image11| image:: /_static/images/en-us_image_0210779229.png
-
-.. |image12| image:: /_static/images/en-us_image_0037980515.png
-   :class: imgResize
-
-.. |image13| image:: /_static/images/note_3.0-en-us.png

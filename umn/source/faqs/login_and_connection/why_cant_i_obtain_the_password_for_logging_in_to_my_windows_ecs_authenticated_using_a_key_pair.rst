@@ -45,16 +45,24 @@ If logging in to an ECS with Cloudbase-Init enabled failed, perform the followin
 6. Check Cloudbase-Init logs to identify the cause.
 
    a. Stop the affected ECS and detach the system disk from it.
-   b. Use a public image to create a temporary Windows ECS and attach the system disk detached in `6.a <#EN-US_TOPIC_0081525054__li16969123912115>`__ to the ECS.
-   c. Log in to the temporary ECS, open the **Server Manager** page, choose **File and Storage Services** > **Volumes** > **Disks**, right-click the offline disk, and choose **Online** from the shortcut menu.\ **Figure 1** Setting disk online
-      |image1|
-   d. Switch to the **cloudbase-init** file in **/Program Files/Cloudbase Solution/Cloudbase-Init/log** of this disk to view the log for fault locating.\ **Figure 2** cloudbase-init
-      |image2|
 
+   b. Use a public image to create a temporary Windows ECS and attach the system disk detached in `6.a <#ENUSTOPIC0081525054li16969123912115>`__ to the ECS.
 
+   c. Log in to the temporary ECS, open the **Server Manager** page, choose **File and Storage Services** > **Volumes** > **Disks**, right-click the offline disk, and choose **Online** from the shortcut menu.
 
-.. |image1| image:: /_static/images/en-us_image_0275724694.png
-   :class: imgResize
+      .. figure:: /_static/images/en-us_image_0275724694.png
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
 
-.. |image2| image:: /_static/images/en-us_image_0275726221.png
+         **Figure 1** Setting disk online
+
+   d. Switch to the **cloudbase-init** file in **/Program Files/Cloudbase Solution/Cloudbase-Init/log** of this disk to view the log for fault locating.
+
+      .. figure:: /_static/images/en-us_image_0275726221.png
+         :alt: **Figure 2** cloudbase-init
+      
+
+         **Figure 2** cloudbase-init
+
 

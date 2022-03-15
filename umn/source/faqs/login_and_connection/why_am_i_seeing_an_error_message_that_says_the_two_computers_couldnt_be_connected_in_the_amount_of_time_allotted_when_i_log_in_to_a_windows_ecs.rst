@@ -6,8 +6,12 @@ Symptom
 
 An error message is displayed indicating that the computer cannot connect to the remote computer in the amount of time allotted.
 
-| **Figure 1** Error message
-| |image1|
+.. figure:: /_static/images/en-us_image_0288997357.png
+   :alt: Click to enlarge
+   :figclass: imgResize
+
+
+   **Figure 1** Error message
 
 Solution
 --------
@@ -16,8 +20,4 @@ Solution
 #. Run the **netsh winsock reset** command.
 #. Restart the local computer as prompted and reconnect to the ECS.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0288997357.png
-   :class: imgResize
 

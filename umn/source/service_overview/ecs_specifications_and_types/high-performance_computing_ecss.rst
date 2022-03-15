@@ -13,7 +13,7 @@ Specifications
 
 
 
-.. _EN-US_TOPIC_0035470100__table18256889221911:
+.. _ENUSTOPIC0035470100table18256889221911:
 
 .. table:: **Table 1** H2 ECS specifications
 
@@ -27,7 +27,7 @@ Specifications
 
 
 
-.. _EN-US_TOPIC_0035470100__table27568023202527:
+.. _ENUSTOPIC0035470100table27568023202527:
 
 .. table:: **Table 2** HL1 ECS specifications
 

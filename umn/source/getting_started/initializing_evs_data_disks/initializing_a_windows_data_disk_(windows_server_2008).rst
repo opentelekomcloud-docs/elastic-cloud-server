@@ -30,101 +30,119 @@ Procedure
 
    The **Disk Management** window is displayed.
 
-   -  If `Figure 1 <#EN-US_TOPIC_0085634796__en-us_topic_0044524740_fig40496387105554>`__ is displayed, the new disk is offline. Go to `3 <#EN-US_TOPIC_0085634796__en-us_topic_0044524740_li33296033102625>`__.
-   -  If `Figure 4 <#EN-US_TOPIC_0085634796__en-us_topic_0044524740_fig68332918241>`__ is displayed, the **Initialize Disk** window is prompted. Go to `5 <#EN-US_TOPIC_0085634796__en-us_topic_0044524740_li34991214122212>`__.
+   -  If `Figure 1 <#ENUSTOPIC0085634796enustopic0044524740fig40496387105554>`__ is displayed, the new disk is offline. Go to `3 <#ENUSTOPIC0085634796enustopic0044524740li33296033102625>`__.
+   -  If `Figure 4 <#ENUSTOPIC0085634796enustopic0044524740fig68332918241>`__ is displayed, the **Initialize Disk** window is prompted. Go to `5 <#ENUSTOPIC0085634796enustopic0044524740li34991214122212>`__.
 
-   | **Figure 1** Disk Management
-   | |image1|
+   .. figure:: /_static/images/en-us_image_0095024494.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 1** Disk Management
 
 #. Disks are displayed in the right pane. In the **Disk 1** area, right-click **Offline** and choose **Online** from the shortcut menu to online the disk.
 
-   | **Figure 2** Online the disk
-   | |image2| |image3|
+   .. figure:: /_static/images/en-us_image_0132359404.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
 
-   If the disk is offline, you need to online the disk before initializing it.
+      **Figure 2** Online the disk
 
-#. After making the disk online, the disk status changes from **Offline** to **Not Initialized**. Right-click the disk status and choose **Initialize Disk** from the shortcut menu, as shown in `Figure 3 <#EN-US_TOPIC_0085634796__en-us_topic_0044524740_fig409808111224>`__.
+   .. note::
 
-   | **Figure 3** Initialize Disk
-   | |image4|
+      If the disk is offline, you need to online the disk before initializing it.
 
-#. In the **Initialize Disk** dialog box, select the target disk, click **MBR (Master Boot Record)** or **GPT (GUID Partition Table)**, and click **OK**, as shown in `Figure 4 <#EN-US_TOPIC_0085634796__en-us_topic_0044524740_fig68332918241>`__.
+#. After making the disk online, the disk status changes from **Offline** to **Not Initialized**. Right-click the disk status and choose **Initialize Disk** from the shortcut menu, as shown in `Figure 3 <#ENUSTOPIC0085634796enustopic0044524740fig409808111224>`__.
 
-   | **Figure 4** Unallocated space
-   | |image5| |image6|
+   .. figure:: /_static/images/en-us_image_0132360430.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 3** Initialize Disk
+
+#. In the **Initialize Disk** dialog box, select the target disk, click **MBR (Master Boot Record)** or **GPT (GUID Partition Table)**, and click **OK**, as shown in `Figure 4 <#ENUSTOPIC0085634796enustopic0044524740fig68332918241>`__.
+
+   .. figure:: /_static/images/en-us_image_0097597141.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 4** Unallocated space
+
+   |image1|
 
    The maximum disk capacity supported by MBR is 2 TB, and that supported by GPT is 18 EB. Because a data disk currently supports up to 32 TB, use the GPT partition style if your disk capacity is larger than 2 TB.
 
    If you change the disk partition style after the disk has been used, the data on the disk will be cleared. Therefore, select a proper disk partition style when initializing the disk.
 
-#. Right-click at the unallocated space and choose **New Simple Volume** from the shortcut menu, as shown in `Figure 5 <#EN-US_TOPIC_0085634796__en-us_topic_0044524740_fig1945583522619>`__.
+#. Right-click at the unallocated space and choose **New Simple Volume** from the shortcut menu, as shown in `Figure 5 <#ENUSTOPIC0085634796enustopic0044524740fig1945583522619>`__.
 
-   | **Figure 5** New Simple Volume
-   | |image7|
+   .. figure:: /_static/images/en-us_image_0097597143.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 5** New Simple Volume
 
 #. On the displayed **New Simple Volume Wizard** window, click **Next**.
 
-   | **Figure 6** New Simple Volume Wizard
-   | |image8|
+   .. figure:: /_static/images/en-us_image_0097597145.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 6** New Simple Volume Wizard
 
 #. Specify the volume size and click **Next**. The default value is the maximum size.
 
-   | **Figure 7** Specify Volume Size
-   | |image9|
+   .. figure:: /_static/images/en-us_image_0097597147.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 7** Specify Volume Size
 
 #. Assign the driver letter and click **Next**.
 
-   | **Figure 8** Assign Driver Letter or Path
-   | |image10|
+   .. figure:: /_static/images/en-us_image_0097597149.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 8** Assign Driver Letter or Path
 
 #. Select **Format this volume with the following settings**, set parameters based on the actual requirements, and select **Perform a quick format**. Then, click **Next**.
 
-   | **Figure 9** Format Partition
-   | |image11| **Figure 10** Completing the partition creation
-   | |image12| |image13|
+   .. figure:: /_static/images/en-us_image_0097597151.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 9** Format Partition
+
+   .. figure:: /_static/images/en-us_image_0097597153.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 10** Completing the partition creation
+
+   |image2|
 
    The partition sizes supported by file systems vary. Therefore, you are advised to choose an appropriate file system based on your service requirements.
 
-#. Click **Finish**. Wait for the initialization to complete. When the volume status changes to **Healthy**, the initialization has finished successfully, as shown in `Figure 11 <#EN-US_TOPIC_0085634796__en-us_topic_0044524740_fig14464150329>`__.
+#. Click **Finish**. Wait for the initialization to complete. When the volume status changes to **Healthy**, the initialization has finished successfully, as shown in `Figure 11 <#ENUSTOPIC0085634796enustopic0044524740fig14464150329>`__.
 
-   | **Figure 11** Disk initialization succeeded
-   | |image14|
+   .. figure:: /_static/images/en-us_image_0097597155.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 11** Disk initialization succeeded
 
 
 
-.. |image1| image:: /_static/images/en-us_image_0095024494.png
-   :class: imgResize
-
-.. |image2| image:: /_static/images/en-us_image_0132359404.png
-   :class: imgResize
-
-.. |image3| image:: /_static/images/note_3.0-en-us.png
-.. |image4| image:: /_static/images/en-us_image_0132360430.png
-   :class: imgResize
-
-.. |image5| image:: /_static/images/en-us_image_0097597141.png
-   :class: imgResize
-
-.. |image6| image:: /_static/images/notice_3.0-en-us.png
-.. |image7| image:: /_static/images/en-us_image_0097597143.png
-   :class: imgResize
-
-.. |image8| image:: /_static/images/en-us_image_0097597145.png
-   :class: imgResize
-
-.. |image9| image:: /_static/images/en-us_image_0097597147.png
-   :class: imgResize
-
-.. |image10| image:: /_static/images/en-us_image_0097597149.png
-   :class: imgResize
-
-.. |image11| image:: /_static/images/en-us_image_0097597151.png
-   :class: imgResize
-
-.. |image12| image:: /_static/images/en-us_image_0097597153.png
-   :class: imgResize
-
-.. |image13| image:: /_static/images/notice_3.0-en-us.png
-.. |image14| image:: /_static/images/en-us_image_0097597155.png
-   :class: imgResize
-
+.. |image1| image:: /_static/images/notice_3.0-en-us.png
+.. |image2| image:: /_static/images/notice_3.0-en-us.png

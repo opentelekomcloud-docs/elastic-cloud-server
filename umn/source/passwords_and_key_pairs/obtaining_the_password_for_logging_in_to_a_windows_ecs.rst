@@ -37,13 +37,13 @@ Obtaining the Password Through APIs
 
    Call the password obtaining APIs to obtain the ciphertext password of the public key encrypted using RSA. The API URI is in the format "GET /v2/{*tenant_id*}/servers/{*server_id*}/os-server-password".
 
-   |image2|
+   .. note::
 
-   For instructions about how to call the APIs, see `Retrieving the Password for Logging In to a Windows ECS (Native OpenStack API) <https://docs.otc.t-systems.com/api/ecs/en-us_topic_0031176553.html>`__ in *Elastic Cloud Server API Reference*.
+      For instructions about how to call the APIs, see `Retrieving the Password for Logging In to a Windows ECS (Native OpenStack API) <https://docs.otc.t-systems.com/api/ecs/en-us_topic_0031176553.html>`__ in *Elastic Cloud Server API Reference*.
 
 #. Decrypt the ciphertext password.
 
-   Use the private key file used when you created the ECS to decrypt the ciphertext password obtained in step `4 <#EN-US_TOPIC_0031107266__li5770130102852>`__.
+   Use the private key file used when you created the ECS to decrypt the ciphertext password obtained in step `4 <#ENUSTOPIC0031107266li5770130102852>`__.
 
    a. Run the following command to convert the ciphertext password format to ".key -nocrypt" using OpenSSL:
 
@@ -55,4 +55,3 @@ Obtaining the Password Through APIs
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 
-.. |image2| image:: /_static/images/note_3.0-en-us.png

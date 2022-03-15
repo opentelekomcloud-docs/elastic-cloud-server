@@ -11,10 +11,10 @@ Cause Analysis
 
 If your full-ECS image is in the old backup format provided by CSBS, this issue occurs.
 
-|image1|
+.. note::
 
--  CSBS has a new backup format. You can rapidly create ECSs if the full-ECS image is in this format
--  This issue does not occur if a full-ECS image is created using a CBR backup.
+   -  CSBS has a new backup format. You can rapidly create ECSs if the full-ECS image is in this format
+   -  This issue does not occur if a full-ECS image is created using a CBR backup.
 
 Solution Using CBR
 ------------------
@@ -69,5 +69,3 @@ If you want to use a full-ECS image to rapidly create ECSs, ensure that the full
       You can use the full-ECS image to rapidly create ECSs.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

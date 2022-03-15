@@ -20,15 +20,17 @@ Solution
 
 #. Open the Windows search box, enter **services**, and select **Services**.
 
-#. In the **Services** window, restart **Remote Desktop Services**. Ensure that **Remote Desktop Services** is in the **Running** status.\ **Figure 1** Remote Desktop Services
-   |image1|
+#. In the **Services** window, restart **Remote Desktop Services**. Ensure that **Remote Desktop Services** is in the **Running** status.
+
+   .. figure:: /_static/images/en-us_image_0000001100835050.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 1** Remote Desktop Services
 
 #. Remotely connect to the ECS again.
 
    If the connection still fails, run the cmd command on the local server as the administrator, run the **netsh winsock reset** command to restore the default network connection configurations, and then retry the remote connection.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0000001100835050.png
-   :class: imgResize
 

@@ -6,7 +6,7 @@ General-Purpose
 
 
 
-.. _EN-US_TOPIC_0177512565__table1522642184116:
+.. _ENUSTOPIC0177512565table1522642184116:
 
 .. table:: **Table 1** S3 ECS specifications
 
@@ -64,7 +64,7 @@ General-Purpose
 
 
 
-.. _EN-US_TOPIC_0177512565__table49571410171116:
+.. _ENUSTOPIC0177512565table49571410171116:
 
 .. table:: **Table 2** S2 ECS specifications
 
@@ -125,7 +125,7 @@ Dedicated General-Purpose
 
 
 
-.. _EN-US_TOPIC_0177512565__table294293618458:
+.. _ENUSTOPIC0177512565table294293618458:
 
 .. table:: **Table 3** C4 ECS specifications
 
@@ -167,7 +167,7 @@ Dedicated General-Purpose
 
 
 
-.. _EN-US_TOPIC_0177512565__table3949605220464:
+.. _ENUSTOPIC0177512565table3949605220464:
 
 .. table:: **Table 4** C3 ECS specifications
 
@@ -204,7 +204,7 @@ Memory-optimized
 
 
 
-.. _EN-US_TOPIC_0177512565__table1787016596506:
+.. _ENUSTOPIC0177512565table1787016596506:
 
 .. table:: **Table 5** M4 ECS specifications
 
@@ -230,7 +230,7 @@ Memory-optimized
 
 
 
-.. _EN-US_TOPIC_0177512565__table10833218224040:
+.. _ENUSTOPIC0177512565table10833218224040:
 
 .. table:: **Table 6** M3 ECS specifications
 
@@ -252,7 +252,7 @@ Memory-optimized
 
 
 
-.. _EN-US_TOPIC_0177512565__table38605135203957:
+.. _ENUSTOPIC0177512565table38605135203957:
 
 .. table:: **Table 7** M2 ECS specifications
 
@@ -269,7 +269,7 @@ Large-Memory
 
 
 
-.. _EN-US_TOPIC_0177512565__table990906134813:
+.. _ENUSTOPIC0177512565table990906134813:
 
 .. table:: **Table 8** E3 ECS specifications
 
@@ -286,7 +286,7 @@ Disk-intensive
 
 
 
-.. _EN-US_TOPIC_0177512565__table47541937112515:
+.. _ENUSTOPIC0177512565table47541937112515:
 
 .. table:: **Table 9** D2 ECS specifications
 
@@ -311,7 +311,7 @@ High-Performance Computing
 
 
 
-.. _EN-US_TOPIC_0177512565__table27568023202527:
+.. _ENUSTOPIC0177512565table27568023202527:
 
 .. table:: **Table 10** HL1 ECS specifications
 
@@ -323,7 +323,7 @@ High-Performance Computing
 
 
 
-.. _EN-US_TOPIC_0177512565__table18256889221911:
+.. _ENUSTOPIC0177512565table18256889221911:
 
 .. table:: **Table 11** H2 ECS specifications
 
@@ -340,7 +340,7 @@ GPU-accelerated
 
 
 
-.. _EN-US_TOPIC_0177512565__table1583635621315:
+.. _ENUSTOPIC0177512565table1583635621315:
 
 .. table:: **Table 12** G6 ECS specifications
 
@@ -354,7 +354,7 @@ GPU-accelerated
 
 
 
-.. _EN-US_TOPIC_0177512565__table14117134511385:
+.. _ENUSTOPIC0177512565table14117134511385:
 
 .. table:: **Table 13** P2s ECS specifications
 
@@ -372,7 +372,7 @@ GPU-accelerated
 
 
 
-.. _EN-US_TOPIC_0177512565__table87321433202814:
+.. _ENUSTOPIC0177512565table87321433202814:
 
 .. table:: **Table 14** P2v ECS specifications
 
@@ -390,7 +390,7 @@ GPU-accelerated
 
 
 
-.. _EN-US_TOPIC_0177512565__table179717351266:
+.. _ENUSTOPIC0177512565table179717351266:
 
 .. table:: **Table 15** P2 ECS specifications
 
@@ -406,7 +406,7 @@ GPU-accelerated
 
 
 
-.. _EN-US_TOPIC_0177512565__table1888295812406:
+.. _ENUSTOPIC0177512565table1888295812406:
 
 .. table:: **Table 16** P1 ECS specifications
 
@@ -422,7 +422,7 @@ GPU-accelerated
 
 
 
-.. _EN-US_TOPIC_0177512565__table78391114112015:
+.. _ENUSTOPIC0177512565table78391114112015:
 
 .. table:: **Table 17** PI2 ECS specifications
 

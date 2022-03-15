@@ -28,8 +28,12 @@ Obtaining Specifications When Creating an ECS
 
 Specifications for the ECS being created are located in the specifications list.
 
-| **Figure 1** ECS specifications
-| |image1|
+.. figure:: /_static/images/en-us_image_0172453607.png
+   :alt: Click to enlarge
+   :figclass: imgResize
+
+
+   **Figure 1** ECS specifications
 
 Network QoS
 -----------
@@ -43,14 +47,11 @@ The intranet bandwidth and PPS of an ECS are determined based on ECS flavors.
 -  Assured intranet bandwidth: guaranteed bandwidth allocated to the ECS
 -  Maximum intranet bandwidth: maximum bandwidth that can be allocated to the ECS
 -  Maximum intranet PPS: maximum number of packets that the ECS can transmit and receive per second
--  NIC multi-queue: allocates NIC interrupt requests to multiple vCPUs for higher PPS performance and bandwidth.\ |image2|
+-  NIC multi-queue: allocates NIC interrupt requests to multiple vCPUs for higher PPS performance and bandwidth.
 
-   -  For instructions about how to test PPS, see `How Can I Test Network Performance? <../../faqs/network_configurations/how_can_i_test_network_performance.html>`__
-   -  For instructions about how to enable NIC multi-queue, see `Enabling NIC Multi-Queue <../../nics/enabling_nic_multi-queue.html>`__.
+   .. note::
+
+      -  For instructions about how to test PPS, see `How Can I Test Network Performance? <../../faqs/network_configurations/how_can_i_test_network_performance.html>`__
+      -  For instructions about how to enable NIC multi-queue, see `Enabling NIC Multi-Queue <../../nics/enabling_nic_multi-queue.html>`__.
 
 
-
-.. |image1| image:: /_static/images/en-us_image_0172453607.png
-   :class: imgResize
-
-.. |image2| image:: /_static/images/note_3.0-en-us.png

@@ -23,8 +23,12 @@ Log in to the management console. On the **Elastic Cloud Server** page, obtain t
 
    Enter the login password as prompted.
 
-   | **Figure 1** Setting file uploading
-   | |image1|
+   .. figure:: /_static/images/en-us_image_0263796649.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 1** Setting file uploading
 
 -  **Downloading files**
 
@@ -38,14 +42,11 @@ Log in to the management console. On the **Elastic Cloud Server** page, obtain t
 
    Enter the login password as prompted.
 
-   | **Figure 2** Setting file downloading
-   | |image2|
+   .. figure:: /_static/images/en-us_image_0263796651.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
 
+      **Figure 2** Setting file downloading
 
-
-.. |image1| image:: /_static/images/en-us_image_0263796649.png
-   :class: imgResize
-
-.. |image2| image:: /_static/images/en-us_image_0263796651.png
-   :class: imgResize
 

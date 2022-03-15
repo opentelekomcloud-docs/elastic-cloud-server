@@ -13,7 +13,7 @@ Downloading a Tesla Driver
 
 `Download a driver <https://www.nvidia.com/Download/index.aspx?lang=en-us>`__ based on your ECS type. 
 
-.. _EN-US_TOPIC_0213874991__table394113539174:
+.. _ENUSTOPIC0213874991table394113539174:
 
 .. table:: **Table 1** Mapping between Tesla drivers and ECS types
 
@@ -33,7 +33,7 @@ Downloading a CUDA Toolkit
 
 
 
-.. _EN-US_TOPIC_0213874991__table189141151993:
+.. _ENUSTOPIC0213874991table189141151993:
 
 .. table:: **Table 2** Path in which the CUDA toolkit is downloaded for P2s ECSs
 
@@ -59,7 +59,7 @@ Downloading a CUDA Toolkit
 
 
 
-.. _EN-US_TOPIC_0213874991__table6501649192616:
+.. _ENUSTOPIC0213874991table6501649192616:
 
 .. table:: **Table 3** Path in which the CUDA toolkit is downloaded for P2v ECSs
 
@@ -95,7 +95,7 @@ Downloading a CUDA Toolkit
 
 
 
-.. _EN-US_TOPIC_0213874991__table15666175112518:
+.. _ENUSTOPIC0213874991table15666175112518:
 
 .. table:: **Table 4** Path in which the CUDA toolkit is downloaded for P2 ECSs
 
@@ -109,7 +109,7 @@ Downloading a CUDA Toolkit
 
 
 
-.. _EN-US_TOPIC_0213874991__table10558744163515:
+.. _ENUSTOPIC0213874991table10558744163515:
 
 .. table:: **Table 5** Path in which the CUDA toolkit is downloaded for P1 ECSs
 
@@ -131,7 +131,7 @@ Downloading a CUDA Toolkit
 
 
 
-.. _EN-US_TOPIC_0213874991__table12527182514438:
+.. _ENUSTOPIC0213874991table12527182514438:
 
 .. table:: **Table 6** Path in which the CUDA toolkit is downloaded for PI2 ECSs
 
@@ -161,7 +161,7 @@ Downloading a CUDA Toolkit
 
 
 
-.. _EN-US_TOPIC_0213874991__table69013507215:
+.. _ENUSTOPIC0213874991table69013507215:
 
 .. table:: **Table 7** Path in which the CUDA toolkit is downloaded for G6 ECSs
 

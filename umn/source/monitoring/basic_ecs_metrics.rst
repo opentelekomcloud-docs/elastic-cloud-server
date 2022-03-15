@@ -14,11 +14,11 @@ SYS.ECS
 ECS Metrics
 -----------
 
-ECS metrics vary depending on ECS OSs and types. For details, see `Table 1 <#EN-US_TOPIC_0030911465__table1474714113454>`__. Y indicates that the metric is supported, and x indicates that the metric is not supported.
+ECS metrics vary depending on ECS OSs and types. For details, see `Table 1 <#ENUSTOPIC0030911465table1474714113454>`__. Y indicates that the metric is supported, and x indicates that the metric is not supported.
 
 
 
-.. _EN-US_TOPIC_0030911465__table1474714113454:
+.. _ENUSTOPIC0030911465table1474714113454:
 
 .. table:: **Table 1** ECS metrics
 
@@ -50,11 +50,11 @@ ECS metrics vary depending on ECS OSs and types. For details, see `Table 1 <#EN-
    | InfiniBand NIC Status | Supported (Only for H2 ECSs) | Supported (Only for H2 ECSs) |
    +-----------------------+------------------------------+------------------------------+
 
-|image1|
+.. note::
 
-The image based on which the target ECS is created must have OTC Tools installed (OTC Tools has been installed for public images by default). Otherwise, the **Memory Usage** and **Disk Usage** metrics are unavailable. For details about how to install the OTC Tools, visit https://github.com/UVP-Tools/UVP-Tools/.
+   The image based on which the target ECS is created must have OTC Tools installed (OTC Tools has been installed for public images by default). Otherwise, the **Memory Usage** and **Disk Usage** metrics are unavailable. For details about how to install the OTC Tools, visit https://github.com/UVP-Tools/UVP-Tools/.
 
-`Table 2 <#EN-US_TOPIC_0030911465__table64866324222846>`__ describes these ECS metrics.
+`Table 2 <#ENUSTOPIC0030911465table64866324222846>`__ describes these ECS metrics.
 
 The monitoring intervals for the following ECSs with raw monitoring metrics are as follows:
 
@@ -62,7 +62,7 @@ The monitoring intervals for the following ECSs with raw monitoring metrics are 
 
 
 
-.. _EN-US_TOPIC_0030911465__table64866324222846:
+.. _ENUSTOPIC0030911465table64866324222846:
 
 .. table:: **Table 2** Metric description
 
@@ -156,8 +156,9 @@ The monitoring intervals for the following ECSs with raw monitoring metrics are 
    |                                       |                       | -  **0**: The system is running properly. That is, the InfiniBand NIC is functional.                                                                                                                                                                                                                                                                  |                |                  |                                                |
    |                                       |                       | -  **1**: The system is not running properly. That is, the InfiniBand NIC malfunctions. When the physical NIC corresponding to a virtual NIC becomes faulty, for example, the network cable is not securely connected to the NIC, the switch or adapter is incompatible with the InfiniBand NIC, or the NIC is disabled, the returned value is **1**. |                |                  |                                                |
    |                                       |                       |                                                                                                                                                                                                                                                                                                                                                       |                |                  |                                                |
-   |                                       |                       | NOTE:                                                                                                                                                                                                                                                                                                                                                 |                |                  |                                                |
-   |                                       |                       | Only Mellanox EDR 100 GB single-port InfiniBand NICs are supported.                                                                                                                                                                                                                                                                                   |                |                  |                                                |
+   |                                       |                       | .. note::                                                                                                                                                                                                                                                                                                                                             |                |                  |                                                |
+   |                                       |                       |                                                                                                                                                                                                                                                                                                                                                       |                |                  |                                                |
+   |                                       |                       |    Only Mellanox EDR 100 GB single-port InfiniBand NICs are supported.                                                                                                                                                                                                                                                                                |                |                  |                                                |
    +---------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+------------------+------------------------------------------------+
 
 Dimensions
@@ -165,7 +166,7 @@ Dimensions
 
 
 
-.. _EN-US_TOPIC_0030911465__table41237041112133:
+.. _ENUSTOPIC0030911465table41237041112133:
 
 =========== =====================
 Key         Value
@@ -174,5 +175,3 @@ instance_id Specifies the ECS ID.
 =========== =====================
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

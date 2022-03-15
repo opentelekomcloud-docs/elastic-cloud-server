@@ -18,8 +18,12 @@ ECS works with other products and services to provide computing, storage, and ne
 -  Volume Backup Service (VBS) allows you to create data backups for EVS disks and use the backups to restore the EVS disks. This maximizes user data correctness and security.
 -  Cloud Server Backup Service (CSBS) backs up all EVS disks of an ECS, including the system disk and data disks, and uses the backup to restore the ECS.
 
-| **Figure 1** System architecture
-| |image1|
+.. figure:: /_static/images/en-us_image_0071898891.png
+   :alt: Click to enlarge
+   :figclass: imgResize
+
+
+   **Figure 1** System architecture
 
 Access Methods
 --------------
@@ -36,8 +40,4 @@ The public cloud provides a web-based service management platform. You can acces
 
    After registering on the public cloud platform, log in to the management console and click **Elastic Cloud Server** under **Compute** on the homepage.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0071898891.png
-   :class: imgResize
 

@@ -6,8 +6,12 @@ Symptom
 
 The system displays an error message indicating that a protocol error (code: 0x1104) is detected when you use MSTSC to access an ECS running Windows Server 2008.
 
-| **Figure 1** Protocol error (code: 0x1104)
-| |image1|
+.. figure:: /_static/images/en-us_image_0288997598.png
+   :alt: Click to enlarge
+   :figclass: imgResize
+
+
+   **Figure 1** Protocol error (code: 0x1104)
 
 Possible Causes
 ---------------
@@ -22,7 +26,7 @@ Solution
 
 #. Check security group settings.
 
-   Check whether port 3389 is allowed in inbound direction. If it is allowed, go to `2 <#EN-US_TOPIC_0264235942__en-us_topic_0138293293_li18622172719193>`__.
+   Check whether port 3389 is allowed in inbound direction. If it is allowed, go to `2 <#ENUSTOPIC0264235942enustopic0138293293li18622172719193>`__.
 
 #. Check whether the firewall is disabled:
 
@@ -30,15 +34,15 @@ Solution
 
    b. Click the Windows icon in the lower left corner of the desktop and choose **Control Panel** > **Windows Firewall**.
 
-      |image2|
+      |image1|
 
    c. Click **Turn Windows Firewall on or off**.
 
       View and set the firewall status.
 
-      |image3|
+      |image2|
 
-   If the firewall is enabled, go to `3 <#EN-US_TOPIC_0264235942__en-us_topic_0138293293_li15622182714191>`__.
+   If the firewall is enabled, go to `3 <#ENUSTOPIC0264235942enustopic0138293293li15622182714191>`__.
 
 #. Log in to the ECS using VNC and check the port.
 
@@ -46,10 +50,14 @@ Solution
 
       **netstat -ano \|findstr: 3389**
 
-      | **Figure 2** Checking port 3389
-      | |image4|
+      .. figure:: /_static/images/en-us_image_0288997604.png
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
 
-      As shown in `Figure 2 <#EN-US_TOPIC_0264235942__en-us_topic_0138293293_fig1562219275192>`__, port 3389 is used by the process with ID of 4.
+         **Figure 2** Checking port 3389
+
+      As shown in `Figure 2 <#ENUSTOPIC0264235942enustopic0138293293fig1562219275192>`__, port 3389 is used by the process with ID of 4.
 
    b. Open Task Manager and find the process with ID of 4 is the System process.
 
@@ -57,8 +65,12 @@ Solution
 
       **netsh http show servicestate**
 
-      | **Figure 3** Checking System process
-      | |image5|
+      .. figure:: /_static/images/en-us_image_0288997606.png
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 3** Checking System process
 
    d. If port 3389 is used by HTTP protocols, it indicates that the port is used by IIS.
 
@@ -66,7 +78,7 @@ Solution
 
    f. Change the port used by IIS and restart IIS.
 
-#. If no error occurs during the preceding steps, go to step `5 <#EN-US_TOPIC_0264235942__en-us_topic_0138293293_li19441439143520>`__ to check whether error 0x1104 is caused by the configuration of Remote Desktop Session Host.
+#. If no error occurs during the preceding steps, go to step `5 <#ENUSTOPIC0264235942enustopic0138293293li19441439143520>`__ to check whether error 0x1104 is caused by the configuration of Remote Desktop Session Host.
 
 #. Check the remote desktop session host configuration.
 
@@ -76,14 +88,32 @@ Solution
 
    c. Click **OK** to start Local Group Policy Editor.
 
-   d. Choose **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Remote Desktop Services**.\ **Figure 4** Remote Desktop Services
-      |image6|
+   d. Choose **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Remote Desktop Services**.
 
-   e. **Remote Desktop Session Host** > **Security**.\ **Figure 5** Remote (RDP) Connection requires the use of the specified security layer
-      |image7|
+      .. figure:: /_static/images/en-us_image_0288997608.png
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
 
-   f. Set **Require use of specific security layer for remote (RDP) connections** to **Enabled** and **Security layer** to **RDP**.\ **Figure 6** Setting security layer
-      |image8|
+         **Figure 4** Remote Desktop Services
+
+   e. **Remote Desktop Session Host** > **Security**.
+
+      .. figure:: /_static/images/en-us_image_0288997610.png
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 5** Remote (RDP) Connection requires the use of the specified security layer
+
+   f. Set **Require use of specific security layer for remote (RDP) connections** to **Enabled** and **Security layer** to **RDP**.
+
+      .. figure:: /_static/images/en-us_image_0288997612.png
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 6** Setting security layer
 
    g. Click **OK**.
 
@@ -93,35 +123,18 @@ Solution
 
       **gpupdate**
 
-      | **Figure 7** Updating the group policy
-      | |image9|
+      .. figure:: /_static/images/en-us_image_0288997614.png
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 7** Updating the group policy
 
 
 
-.. |image1| image:: /_static/images/en-us_image_0288997598.png
+.. |image1| image:: /_static/images/en-us_image_0288997600.png
    :class: imgResize
 
-.. |image2| image:: /_static/images/en-us_image_0288997600.png
-   :class: imgResize
-
-.. |image3| image:: /_static/images/en-us_image_0288997602.png
-   :class: imgResize
-
-.. |image4| image:: /_static/images/en-us_image_0288997604.png
-   :class: imgResize
-
-.. |image5| image:: /_static/images/en-us_image_0288997606.png
-   :class: imgResize
-
-.. |image6| image:: /_static/images/en-us_image_0288997608.png
-   :class: imgResize
-
-.. |image7| image:: /_static/images/en-us_image_0288997610.png
-   :class: imgResize
-
-.. |image8| image:: /_static/images/en-us_image_0288997612.png
-   :class: imgResize
-
-.. |image9| image:: /_static/images/en-us_image_0288997614.png
+.. |image2| image:: /_static/images/en-us_image_0288997602.png
    :class: imgResize
 

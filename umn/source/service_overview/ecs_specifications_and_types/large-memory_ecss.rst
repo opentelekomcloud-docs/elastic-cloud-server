@@ -19,7 +19,7 @@ Specifications
 
 
 
-.. _EN-US_TOPIC_0038024694__table990906134813:
+.. _ENUSTOPIC0038024694table990906134813:
 
 .. table:: **Table 1** E3 ECS specifications
 
@@ -44,9 +44,9 @@ Notes
 
 -  E3 ECSs can use ultra-high I/O EVS disks as the system disk and data disks.
 
--  The primary and extension NICs of a large-memory ECS have specified application scenarios. For details, see `Table 2 <#EN-US_TOPIC_0038024694__table1642803151326>`__. 
+-  The primary and extension NICs of a large-memory ECS have specified application scenarios. For details, see `Table 2 <#ENUSTOPIC0038024694table1642803151326>`__. 
 
-.. _EN-US_TOPIC_0038024694__table1642803151326:
+.. _ENUSTOPIC0038024694table1642803151326:
 
    .. table:: **Table 2** Application scenarios of the NICs of a large-memory ECS
 
@@ -67,10 +67,8 @@ Notes
    -  The number of system disks is 1.
    -  The number of EVS disks is at most 59.
 
-   |image1|
+   .. note::
 
-   The maximum number of disks attached to an existing large-memory ECS remains unchanged. To attach 60 disks, enable advanced disk. For details, see `Enabling Advanced Disk <../../evs_disks/enabling_advanced_disk.html>`__.
+      The maximum number of disks attached to an existing large-memory ECS remains unchanged. To attach 60 disks, enable advanced disk. For details, see `Enabling Advanced Disk <../../evs_disks/enabling_advanced_disk.html>`__.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

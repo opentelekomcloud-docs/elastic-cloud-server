@@ -11,10 +11,14 @@ The rights of users in a user group to use the encryption feature are as follows
 
 The following section uses a user group as an example to describe how to grant KMS access rights to EVS for using the encryption feature.
 
-For example, a user group shown in `Figure 1 <#EN-US_TOPIC_0047272493__fig10921739155249>`__ consists of four users, user 1 to user 4. User 1 has security administrator rights. Users 2, 3, and 4 are common users who do not have security administrator rights.
+For example, a user group shown in `Figure 1 <#ENUSTOPIC0047272493fig10921739155249>`__ consists of four users, user 1 to user 4. User 1 has security administrator rights. Users 2, 3, and 4 are common users who do not have security administrator rights.
 
-| **Figure 1** User group
-| |image1|
+.. figure:: /_static/images/en-us_image_0047273062.png
+   :alt: **Figure 1** User group
+   :figclass: vsd
+
+
+   **Figure 1** User group
 
 Scenario 1: User 1 Uses the Encryption Feature
 ----------------------------------------------
@@ -25,11 +29,13 @@ In this user group, if user 1 uses the encryption feature for the first time, th
 
    After user 1 grants permissions, the system automatically creates CMK **evs/default** for encrypting EVS disks.
 
-   |image2|
+   .. note::
 
-   When user 1 uses the encryption feature for the first time, the user must grant the KMS access permissions to EVS. Then, all the users in the user group can use the encryption feature by default.
+      When user 1 uses the encryption feature for the first time, the user must grant the KMS access permissions to EVS. Then, all the users in the user group can use the encryption feature by default.
 
-#. User 1 selects a key.One of the following keys can be used:
+#. User 1 selects a key.
+
+   One of the following keys can be used:
 
    -  Default CMK, **evs/default**
    -  CMK, the key created before using the EVS disk encryption feature
@@ -48,8 +54,3 @@ In this user group, when user 3 uses the encryption feature for the first time:
 After user 1 grants the permissions, user 3 and all other users in the user group can use the encryption feature by default.
 
 
-
-.. |image1| image:: /_static/images/en-us_image_0047273062.png
-   :class: vsd
-
-.. |image2| image:: /_static/images/note_3.0-en-us.png

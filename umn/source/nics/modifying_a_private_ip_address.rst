@@ -29,12 +29,12 @@ Procedure
 
    The **Modify Private IP** dialog box is displayed.
 
-#. Change the subnet and private IP address of the primary NIC as required.\ |image1|
+#. Change the subnet and private IP address of the primary NIC as required.
 
-   Subnets can be changed only within the same VPC.
+   .. note::
+
+      Subnets can be changed only within the same VPC.
 
    If the target private IP address is not specified, the system will automatically assign one to the primary NIC.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

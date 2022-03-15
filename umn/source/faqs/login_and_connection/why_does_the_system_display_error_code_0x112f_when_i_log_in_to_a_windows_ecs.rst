@@ -6,8 +6,11 @@ Symptom
 
 When you log in to a Windows ECS, the system displays error code 0x112f.
 
-| **Figure 1** Error message (code: 0x112f)
-| |image1|
+.. figure:: /_static/images/en-us_image_0120795776.jpg
+   :alt: **Figure 1** Error message (code: 0x112f)
+
+
+   **Figure 1** Error message (code: 0x112f)
 
 Possible Causes
 ---------------
@@ -27,12 +30,8 @@ Solution
 
    For instructions about how to enable virtual memory, see `How Can I Enable Virtual Memory on a Windows ECS? <../../faqs/disk_management/how_can_i_enable_virtual_memory_on_a_windows_ecs.html>`__
 
-   |image2|
+   .. note::
 
-   This method will deteriorate the disk I/O performance. Therefore, use this method only when necessary.
+      This method will deteriorate the disk I/O performance. Therefore, use this method only when necessary.
 
 
-
-.. |image1| image:: /_static/images/en-us_image_0120795776.jpg
-
-.. |image2| image:: /_static/images/note_3.0-en-us.png

@@ -58,8 +58,8 @@ The process of changing the time zone for a Linux ECS depends on the OS. In this
 
    **ls /etc/localtime**
 
-   -  If the file is available, go to step `7 <#EN-US_TOPIC_0040630518__li35115782151653>`__.
-   -  If the file is not available, go to step `8 <#EN-US_TOPIC_0040630518__li564938451108>`__.
+   -  If the file is available, go to step `7 <#ENUSTOPIC0040630518li35115782151653>`__.
+   -  If the file is not available, go to step `8 <#ENUSTOPIC0040630518li564938451108>`__.
 
 #. Run the following command to delete the existing **/etc/localtime** file:
 
@@ -93,8 +93,12 @@ For Windows ECSs
 
    The **Date and Time** page is displayed.
 
-   | **Figure 1** Date and Time
-   | |image1|
+   .. figure:: /_static/images/en-us_image_0224317546.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 1** Date and Time
 
 #. Click **Change time zone**.
 
@@ -104,8 +108,4 @@ For Windows ECSs
 
 #. Click **OK**.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0224317546.png
-   :class: imgResize
 

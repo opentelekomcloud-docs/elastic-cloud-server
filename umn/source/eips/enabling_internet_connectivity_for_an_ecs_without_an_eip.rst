@@ -6,9 +6,9 @@ Scenarios
 
 To ensure platform security and conserve EIPs, EIPs are assigned only to specified ECSs. ECSs without EIPs cannot access the Internet directly. If these ECSs need to access the Internet (for example, to perform a software upgrade or install a patch), you can select an ECS with an EIP bound to function as a proxy ECS, providing an access channel for these ECS.
 
-|image1|
+.. note::
 
-NAT Gateway is recommended, which provides both the SNAT and DNAT functions for your ECSs in a VPC and allows the ECSs to access or provide services accessible from the Internet.
+   NAT Gateway is recommended, which provides both the SNAT and DNAT functions for your ECSs in a VPC and allows the ECSs to access or provide services accessible from the Internet.
 
 Prerequisites
 -------------
@@ -23,7 +23,7 @@ In this example, the proxy ECS runs CentOS 6.5.
 
 #. Log in to the management console.
 
-#. Click |image2| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select your region and project.
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
@@ -31,7 +31,7 @@ In this example, the proxy ECS runs CentOS 6.5.
 
 #. Click the name of the proxy ECS. The page providing details about the ECS is displayed.
 
-#. Click the **Network Interfaces** tab and then |image3|. Then, disable **Source/Destination Check**.
+#. Click the **Network Interfaces** tab and then |image2|. Then, disable **Source/Destination Check**.
 
    By default, the source/destination check function is enabled. When this function is enabled, the system checks whether source IP addresses contained in the packets sent by ECSs are correct. If the IP addresses are incorrect, the system does not allow the ECSs to send the packets. This mechanism prevents packet spoofing, thereby improving system security. However, this mechanism prevents the packet sender from receiving returned packets. Therefore, disable the source/destination check.
 
@@ -55,8 +55,8 @@ In this example, the proxy ECS runs CentOS 6.5.
 
    **cat /proc/sys/net/ipv4/ip_forward**
 
-   -  If **0** (disabled) is displayed, go to `10 <#EN-US_TOPIC_0027157850__li51820417113959>`__.
-   -  If **1** (enabled), go to `16 <#EN-US_TOPIC_0027157850__li49419571113959>`__.
+   -  If **0** (disabled) is displayed, go to `10 <#ENUSTOPIC0027157850li51820417113959>`__.
+   -  If **1** (enabled), go to `16 <#ENUSTOPIC0027157850li49419571113959>`__.
 
 #. Run the following command to open the IP forwarding configuration file in the vi editor:
 
@@ -68,11 +68,11 @@ In this example, the proxy ECS runs CentOS 6.5.
 
    Set the **net.ipv4.ip_forward** value to **1**.
 
-   |image4|
+   .. note::
 
-   If the **sysctl.conf** file does not contain the **net.ipv4.ip_forward** parameter, run the following command to add it:
+      If the **sysctl.conf** file does not contain the **net.ipv4.ip_forward** parameter, run the following command to add it:
 
-   **echo net.ipv4.ip_forward=1 >> /etc/sysctl.conf**
+      **echo net.ipv4.ip_forward=1 >> /etc/sysctl.conf**
 
 #. Press **Esc**, type **:wq**, and press **Enter**.
 
@@ -90,7 +90,7 @@ In this example, the proxy ECS runs CentOS 6.5.
 
    **iptables -P FORWARD ACCEPT**
 
-   |image5|
+   |image3|
 
    Running **iptables -P INPUT ACCEPT** will set default INPUT policy to ACCEPT, which poses security risks. You are advised to set security group rules to restrict inbound access.
 
@@ -102,9 +102,9 @@ In this example, the proxy ECS runs CentOS 6.5.
 
    **iptables -t nat -A POSTROUTING -o eth0 -s** *192.168.125.0/24* **-j SNAT --to 192.168.125.4**
 
-   |image6|
+   .. note::
 
-   To retain the preceding configuration even after the ECS is restarted, run the **vi /etc/rc.local** command to edit the **rc.local** file. Specifically, copy the rule described in step `16 <#EN-US_TOPIC_0027157850__li49419571113959>`__ into **rc.local**, press **Esc** to exit the editing mode, and enter **:wq** to save and exit the file.
+      To retain the preceding configuration even after the ECS is restarted, run the **vi /etc/rc.local** command to edit the **rc.local** file. Specifically, copy the rule described in step `16 <#ENUSTOPIC0027157850li49419571113959>`__ into **rc.local**, press **Esc** to exit the editing mode, and enter **:wq** to save and exit the file.
 
 #. Run the following commands to save the iptables configuration and make it start up automatically upon ECS startup:
 
@@ -116,15 +116,19 @@ In this example, the proxy ECS runs CentOS 6.5.
 
    **iptables -t nat --list**
 
-   SNAT has been configured if information similar to `Figure 1 <#EN-US_TOPIC_0027157850__fig27598108113959>`__ is displayed.
+   SNAT has been configured if information similar to `Figure 1 <#ENUSTOPIC0027157850fig27598108113959>`__ is displayed.
 
-   | **Figure 1** Successful SNAT configuration
-   | |image7|
+   .. figure:: /_static/images/en-us_image_0027174005.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 1** Successful SNAT configuration
 
 #. Add a route.
 
    a. Log in to the management console.
-   b. Click |image8| in the upper left corner and select your region and project.
+   b. Click |image4| in the upper left corner and select your region and project.
    c. Under **Network**, click **Virtual Private Cloud**.
    d. Select a VPC to which a route is to be added and click **Route Tables**. On the **Route Tables** page, click **Add Route**.
    e. Set route information on the displayed page.
@@ -145,16 +149,10 @@ In this example, the proxy ECS runs CentOS 6.5.
 
 
 
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0210779229.png
 
-.. |image3| image:: /_static/images/en-us_image_0128851717.png
+.. |image2| image:: /_static/images/en-us_image_0128851717.png
 
-.. |image4| image:: /_static/images/note_3.0-en-us.png
-.. |image5| image:: /_static/images/caution_3.0-en-us.png
-.. |image6| image:: /_static/images/note_3.0-en-us.png
-.. |image7| image:: /_static/images/en-us_image_0027174005.png
-   :class: imgResize
-
-.. |image8| image:: /_static/images/en-us_image_0210779229.png
+.. |image3| image:: /_static/images/caution_3.0-en-us.png
+.. |image4| image:: /_static/images/en-us_image_0210779229.png
 

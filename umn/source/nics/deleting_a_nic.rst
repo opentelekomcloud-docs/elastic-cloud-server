@@ -19,17 +19,19 @@ Procedure
 
    The page providing details about the ECS is displayed.
 
-#. Click the **NICs** tab. Then, click **Delete** in the row of the target NIC.\ |image2|
+#. Click the **NICs** tab. Then, click **Delete** in the row of the target NIC.
 
-   You are not allowed to delete the primary ECS NIC. By default, the primary ECS NIC is the first NIC displayed in the NIC list.
+   .. note::
 
-#. Click **Yes** in the displayed dialog box.\ |image3|
+      You are not allowed to delete the primary ECS NIC. By default, the primary ECS NIC is the first NIC displayed in the NIC list.
 
-   Certain ECSs do not support NIC deletion when they are running. For details about these ECSs, see the GUI display. To delete a NIC from such an ECS, stop the ECS.
+#. Click **Yes** in the displayed dialog box.
+
+   .. note::
+
+      Certain ECSs do not support NIC deletion when they are running. For details about these ECSs, see the GUI display. To delete a NIC from such an ECS, stop the ECS.
 
 
 
 .. |image1| image:: /_static/images/en-us_image_0093507592.png
 
-.. |image2| image:: /_static/images/note_3.0-en-us.png
-.. |image3| image:: /_static/images/note_3.0-en-us.png

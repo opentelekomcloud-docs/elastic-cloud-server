@@ -5,7 +5,7 @@ The ECS lifecycle refers to the entire journey an ECS goes through, from creatio
 
 
 
-.. _EN-US_TOPIC_0140323150__table198821178160:
+.. _ENUSTOPIC0140323150table198821178160:
 
 .. table:: **Table 1** ECS statuses
 

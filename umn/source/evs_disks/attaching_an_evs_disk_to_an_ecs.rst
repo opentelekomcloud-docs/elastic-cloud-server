@@ -32,25 +32,35 @@ Procedure
 
    The **Attach Disk** dialog box is displayed.
 
-   | **Figure 1** Attach Disk
-   | |image2|
+   .. figure:: /_static/images/en-us_image_0096298046.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
 
-#. Select the target disk, specify the disk as the system disk or data disk.\ |image3|
+      **Figure 1** Attach Disk
 
-   -  If no EVS disks are available, click **Create Disk** in the lower part of the list.
-   -  For details about restrictions on attaching a disk, see `What Are the Requirements for Attaching an EVS Disk to an ECS? <../faqs/disk_management/what_are_the_requirements_for_attaching_an_evs_disk_to_an_ecs.html>`__
-   -  The device names for the local disks and EVS disks mounted to a disk-intensive ECS comply with the following rules:
+#. Select the target disk, specify the disk as the system disk or data disk.
 
-      -  System disk: Use sda or vda.
-      -  Local disk: Use the device name following sda or vda in alphabetical order.
-      -  EVS disk: Use the device name added in alphabetical order following those used by local disks.
+   .. note::
+
+      -  If no EVS disks are available, click **Create Disk** in the lower part of the list.
+      -  For details about restrictions on attaching a disk, see `What Are the Requirements for Attaching an EVS Disk to an ECS? <../faqs/disk_management/what_are_the_requirements_for_attaching_an_evs_disk_to_an_ecs.html>`__
+      -  The device names for the local disks and EVS disks mounted to a disk-intensive ECS comply with the following rules:
+
+         -  System disk: Use sda or vda.
+         -  Local disk: Use the device name following sda or vda in alphabetical order.
+         -  EVS disk: Use the device name added in alphabetical order following those used by local disks.
 
 #. Click **OK**.
 
    After the disk is attached, you can view the information about it on the **Disks** tab.
 
-   | **Figure 2** Viewing the newly attached disk
-   | |image4|
+   .. figure:: /_static/images/en-us_image_0096298123.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 2** Viewing the newly attached disk
 
 Follow-up Procedure
 -------------------
@@ -62,11 +72,4 @@ For instructions about how to initialize a data disk, see `Scenarios and Disk Pa
 
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-
-.. |image2| image:: /_static/images/en-us_image_0096298046.png
-   :class: imgResize
-
-.. |image3| image:: /_static/images/note_3.0-en-us.png
-.. |image4| image:: /_static/images/en-us_image_0096298123.png
-   :class: imgResize
 

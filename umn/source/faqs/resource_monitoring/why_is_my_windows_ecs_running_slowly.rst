@@ -11,7 +11,9 @@ To handle this issue, perform the following operations:
 
    Windows offer multiple tools to locate faults, including Task Manager, Performance Monitor, Resource Monitor, Process Explorer, Xperf (supported by versions later than Windows Server 2008), and full memory dump analysis.
 
-2. TroubleshootingCheck whether the processes are malicious and handle the issue accordingly.
+2. Troubleshooting
+
+   Check whether the processes are malicious and handle the issue accordingly.
 
    -  If the processes are not malicious, optimize them or modify ECS specifications.
    -  If the processes are malicious, stop these processes manually or use a third-party tool to stop them automatically.
@@ -21,11 +23,22 @@ Fault Locating
 
 #. Log in to the ECS using VNC available on the management console.
 
-#. Start the **Run** dialog box, and then enter **perfmon -res**.\ **Figure 1** Starting the Resource Monitor
-   |image1|
+#. Start the **Run** dialog box, and then enter **perfmon -res**.
 
-#. On the **Resource Monitor** page, click the **CPU** or **Network** tab to view the CPU or bandwidth usage.\ **Figure 2** Resource Monitor
-   |image2|
+   .. figure:: /_static/images/en-us_image_0281771106.png
+      :alt: **Figure 1** Starting the Resource Monitor
+   
+
+      **Figure 1** Starting the Resource Monitor
+
+#. On the **Resource Monitor** page, click the **CPU** or **Network** tab to view the CPU or bandwidth usage.
+
+   .. figure:: /_static/images/en-us_image_0281773972.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 2** Resource Monitor
 
 #. Obtain the IDs and names of the processes with high CPU or bandwidth usage.
 
@@ -36,10 +49,19 @@ Fault Locating
    The following describes how to display PIDs in **Windows Task Manager**, locate a process, and check whether it is malicious.
 
    a. Click the **Details** tab.
+
    b. Click **PID** to sort the data.
+
    c. Right-click the process with high CPU or bandwidth usage and choose **Open File Location** from the shortcut menu.
-   d. Check whether the process is malicious.\ **Figure 3** Checking the process
-      |image3|
+
+   d. Check whether the process is malicious.
+
+      .. figure:: /_static/images/en-us_image_0281775402.png
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 3** Checking the process
 
 Troubleshooting
 ---------------
@@ -62,13 +84,4 @@ If the high CPU or bandwidth usage is caused by viruses or Trojan horses, manual
 #. Install the latest patches for Windows.
 #. Run **MSconfig** to disable all drivers that are not delivered with Microsoft and check whether the fault is rectified. For details, see `How to perform a clean boot in Windows <https://support.microsoft.com/en-us/help/929135/how-to-perform-a-clean-boot-in-windows?spm=a2c4g.11186623.2.23.3fe9671c4mJYXV>`__.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0281771106.png
-
-.. |image2| image:: /_static/images/en-us_image_0281773972.png
-   :class: imgResize
-
-.. |image3| image:: /_static/images/en-us_image_0281775402.png
-   :class: imgResize
 

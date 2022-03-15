@@ -22,11 +22,11 @@ After a disk is attached to a server, you need to log in to the server to initia
 Disk Partition Styles
 ---------------------
 
-`Table 1 <#EN-US_TOPIC_0030831623__en-us_topic_0085245975_table2729705994129>`__ lists the common disk partition styles. In Linux, different disk partition styles require different partitioning tools.
+`Table 1 <#ENUSTOPIC0030831623enustopic0085245975table2729705994129>`__ lists the common disk partition styles. In Linux, different disk partition styles require different partitioning tools.
 
 
 
-.. _EN-US_TOPIC_0030831623__en-us_topic_0085245975_table2729705994129:
+.. _ENUSTOPIC0030831623enustopic0085245975table2729705994129:
 
 .. table:: **Table 1** Disk partition styles
 

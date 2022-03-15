@@ -6,8 +6,12 @@ Symptom
 
 When you run the **sudo** command to switch to user **root** on an Ubuntu or Debian ECS, the system prompts connection timeout.
 
-| **Figure 1** Connection timeout
-| |image1|
+.. figure:: /_static/images/en-us_image_0094801740.png
+   :alt: Click to enlarge
+   :figclass: imgResize
+
+
+   **Figure 1** Connection timeout
 
 Solution
 --------
@@ -36,13 +40,8 @@ Solution
 
    **:wq**
 
-|image2|
+.. note::
 
-To update the hostname of an Ubuntu or Debian ECS, set the value of parameter **manage_etc_hosts** in the **/etc/cloud/cloud.cfg** file to **false** and update the new hostname in the **/etc/hosts** file. When editing the **/etc/hosts** file, do not delete the statement in the line where **127.0.0.1** is located. Otherwise, switching from a non-root user to user **root** will time out.
+   To update the hostname of an Ubuntu or Debian ECS, set the value of parameter **manage_etc_hosts** in the **/etc/cloud/cloud.cfg** file to **false** and update the new hostname in the **/etc/hosts** file. When editing the **/etc/hosts** file, do not delete the statement in the line where **127.0.0.1** is located. Otherwise, switching from a non-root user to user **root** will time out.
 
 
-
-.. |image1| image:: /_static/images/en-us_image_0094801740.png
-   :class: imgResize
-
-.. |image2| image:: /_static/images/note_3.0-en-us.png

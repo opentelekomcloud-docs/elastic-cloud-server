@@ -19,8 +19,12 @@ Procedure
 
    The **Change Security Group** dialog box is displayed.
 
-   | **Figure 1** Change Security Group
-   | |image2|
+   .. figure:: /_static/images/en-us_image_0122999741.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 1** Change Security Group
 
 #. Select the target NIC and security groups as prompted.
 
@@ -28,9 +32,9 @@ Procedure
 
    To create a security group, click **Create Security Group**.
 
-   |image3|
+   .. note::
 
-   Using multiple security groups may deteriorate ECS network performance. You are suggested to select no more than five security groups.
+      Using multiple security groups may deteriorate ECS network performance. You are suggested to select no more than five security groups.
 
 #. Click **OK**.
 
@@ -38,7 +42,3 @@ Procedure
 
 .. |image1| image:: /_static/images/en-us_image_0093507575.png
 
-.. |image2| image:: /_static/images/en-us_image_0122999741.png
-   :class: imgResize
-
-.. |image3| image:: /_static/images/note_3.0-en-us.png

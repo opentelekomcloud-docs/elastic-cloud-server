@@ -14,28 +14,28 @@ The ECS can be logged in.
 Background
 ----------
 
-`Table 1 <#EN-US_TOPIC_0122627689__en-us_topic_0021426802_table4381109318958>`__ shows the ECS password complexity requirements.
+`Table 1 <#ENUSTOPIC0122627689enustopic0021426802table4381109318958>`__ shows the ECS password complexity requirements.
 
 
 
-.. _EN-US_TOPIC_0122627689__en-us_topic_0021426802_table4381109318958:
+.. _ENUSTOPIC0122627689enustopic0021426802table4381109318958:
 
 .. table:: **Table 1** Password complexity requirements
 
-   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+
-   | Parameter             | Requirement                                                                                                                                                  | Example Value                                              |
-   +=======================+==============================================================================================================================================================+============================================================+
-   | Password              | -  Consists of 8 to 26 characters.                                                                                                                           | YNbUwp!dUc9MClnv                                           |
-   |                       | -  Contains at least three of the following character types:                                                                                                 |                                                            |
-   |                       |                                                                                                                                                              | NOTE:                                                      |
-   |                       |    -  Uppercase letters                                                                                                                                      | The example password is generated randomly. Do not use it. |
-   |                       |    -  Lowercase letters                                                                                                                                      |                                                            |
-   |                       |    -  Digits                                                                                                                                                 |                                                            |
-   |                       |    -  Special characters: $!@%-_=+[]:./^,{}?                                                                                                                 |                                                            |
-   |                       |                                                                                                                                                              |                                                            |
-   |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                            |
-   |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                            |
-   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------+
+   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
+   | Parameter             | Requirement                                                                                                                                                  | Example Value                                                 |
+   +=======================+==============================================================================================================================================================+===============================================================+
+   | Password              | -  Consists of 8 to 26 characters.                                                                                                                           | YNbUwp!dUc9MClnv                                              |
+   |                       | -  Contains at least three of the following character types:                                                                                                 |                                                               |
+   |                       |                                                                                                                                                              | .. note::                                                     |
+   |                       |    -  Uppercase letters                                                                                                                                      |                                                               |
+   |                       |    -  Lowercase letters                                                                                                                                      |    The example password is generated randomly. Do not use it. |
+   |                       |    -  Digits                                                                                                                                                 |                                                               |
+   |                       |    -  Special characters: $!@%-_=+[]:./^,{}?                                                                                                                 |                                                               |
+   |                       |                                                                                                                                                              |                                                               |
+   |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                               |
+   |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                               |
+   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
 
 Windows
 -------
@@ -48,7 +48,7 @@ Windows
 
 #. Enter **cmd** to open the command-line interface (CLI) window.
 
-#. Run the following command to change the password (the new password must meet the requirements described in `Table 1 <#EN-US_TOPIC_0122627689__en-us_topic_0021426802_table4381109318958>`__):
+#. Run the following command to change the password (the new password must meet the requirements described in `Table 1 <#ENUSTOPIC0122627689enustopic0021426802table4381109318958>`__):
 
    **net user** **Administrator** *New password*
 
@@ -65,7 +65,7 @@ Linux
 
    To reset the password of another user, replace **passwd** with **passwd username**.
 
-#. Enter the new password as prompted. Ensure that the new password meets the requirements described in `Table 1 <#EN-US_TOPIC_0122627689__en-us_topic_0021426802_table4381109318958>`__.
+#. Enter the new password as prompted. Ensure that the new password meets the requirements described in `Table 1 <#ENUSTOPIC0122627689enustopic0021426802table4381109318958>`__.
 
    .. code-block::
 

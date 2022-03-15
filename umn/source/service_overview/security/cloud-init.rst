@@ -45,21 +45,18 @@ Notes
 -----
 
 -  When using Cloud-Init, enable DHCP in the VPC to which the ECS belongs.
-
 -  When using Cloud-Init, ensure that security group rules for the outbound direction meet the following requirements:
 
    -  **Protocol**: **TCP**
    -  **Port**: **80**
    -  **Destination**: **169.254.0.0/16**
 
-   |image1|
+   .. note::
 
-   If you use the default security group rules for the outbound direction, the preceding requirements are met. Then, the metadata can be accessed. Default security group rules for the outbound direction are as follows:
+      If you use the default security group rules for the outbound direction, the preceding requirements are met. Then, the metadata can be accessed. Default security group rules for the outbound direction are as follows:
 
-   -  **Protocol**: **All**
-   -  **Port**: **All**
-   -  **Destination**: **0.0.0.0/0**
+      -  **Protocol**: **All**
+      -  **Port**: **All**
+      -  **Destination**: **0.0.0.0/0**
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

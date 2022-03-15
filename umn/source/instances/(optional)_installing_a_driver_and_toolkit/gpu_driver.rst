@@ -22,7 +22,7 @@ GPU-accelerated ECSs support GRID and Tesla drivers.
 
 
 
-.. _EN-US_TOPIC_0234802636__table13621791684:
+.. _ENUSTOPIC0234802636table13621791684:
 
 .. table:: **Table 1** Acceleration supported by GPU drivers
 

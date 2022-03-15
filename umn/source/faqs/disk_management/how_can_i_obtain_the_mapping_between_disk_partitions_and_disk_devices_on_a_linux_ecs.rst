@@ -5,21 +5,31 @@ For a Linux ECS, its disk partitions correspond to disk devices. This section us
 
 #. Log in to the Linux ECS as user **root**.
 
-#. Right-click in the blank area of the desktop and choose **Open Terminal** from the shortcut menu.\ **Figure 1** open terminal
-   |image1|
+#. Right-click in the blank area of the desktop and choose **Open Terminal** from the shortcut menu.
+
+   .. figure:: /_static/images/en-us_image_0087903699.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 1** open terminal
 
 #. Run the following command to view disk partitions and disk devices:
 
    **fdisk -l**
 
-   | **Figure 2** Viewing disk partitions and disk devices
-   | |image2|
+   .. figure:: /_static/images/en-us_image_0087903704.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
 
-   `Table 1 <#EN-US_TOPIC_0087901488__table18572291102543>`__ lists the mapping between disk partitions and disk devices.
+      **Figure 2** Viewing disk partitions and disk devices
+
+   `Table 1 <#ENUSTOPIC0087901488table18572291102543>`__ lists the mapping between disk partitions and disk devices.
 
    
 
-.. _EN-US_TOPIC_0087901488__table18572291102543:
+.. _ENUSTOPIC0087901488table18572291102543:
 
    .. table:: **Table 1** Mapping between disk partitions and disk devices
 
@@ -52,11 +62,4 @@ For a Linux ECS, its disk partitions correspond to disk devices. This section us
       xvdx           xvdx
       ============== ===========
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0087903699.png
-   :class: imgResize
-
-.. |image2| image:: /_static/images/en-us_image_0087903704.png
-   :class: imgResize
 

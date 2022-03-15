@@ -21,8 +21,14 @@ Procedure
 
 #. Click the **NICs** tab. Then, click **Add NIC**.
 
-#. Select the subnet and security group to be added.\ **Figure 1** Selecting the security group and subnet
-   |image2|
+#. Select the subnet and security group to be added.
+
+   .. figure:: /_static/images/en-us_image_0093507600.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 1** Selecting the security group and subnet
 
    -  **Security Group**: You can select multiple security groups. In such a case, the access rules of all the selected security groups apply on the ECS.
    -  **Private IP Address**: If you want to add a NIC with a specified IP address, enter an IP address into the **Private IP Address** field.
@@ -66,18 +72,18 @@ Some OSs cannot identify newly added NICs. In this case, you must manually activ
 
    *X* in the preceding command indicates the NIC name and SN, for example, **ifup eth2**.
 
-#. Run the following command to check whether the NIC name obtained in step `2 <#EN-US_TOPIC_0093492518__li595089165210>`__ is displayed in the command output:
+#. Run the following command to check whether the NIC name obtained in step `2 <#ENUSTOPIC0093492518li595089165210>`__ is displayed in the command output:
 
    **ifconfig**
 
    For example, check whether **eth2** is displayed in the command output.
 
    -  If yes, the newly added NIC has been activated, and no further action is required.
-   -  If no, the newly added NIC failed to be activated. Go to step `9 <#EN-US_TOPIC_0093492518__li1695469165210>`__.
+   -  If no, the newly added NIC failed to be activated. Go to step `9 <#ENUSTOPIC0093492518li1695469165210>`__.
 
 #. Log in to the management console. Locate the row containing the target ECS, click **More** in the **Operation** column, and select **Restart**.
 
-#. Run the following command to check whether the NIC name obtained in step `2 <#EN-US_TOPIC_0093492518__li595089165210>`__ is displayed in the command output:
+#. Run the following command to check whether the NIC name obtained in step `2 <#ENUSTOPIC0093492518li595089165210>`__ is displayed in the command output:
 
    -  If yes, no further action is required.
    -  If no, contact customer service.
@@ -85,7 +91,4 @@ Some OSs cannot identify newly added NICs. In this case, you must manually activ
 
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-
-.. |image2| image:: /_static/images/en-us_image_0093507600.png
-   :class: imgResize
 

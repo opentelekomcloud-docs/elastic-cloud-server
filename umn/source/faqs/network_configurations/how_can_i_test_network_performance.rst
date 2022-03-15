@@ -7,10 +7,12 @@ Background
 ----------
 
 -  Tested ECS: an ECS that is tested for network performance. Such an ECS functions as the client (TX end) or server (RX end) in netperf tests.
--  Auxiliary ECS: an ECS that is used to exchange test data with the tested ECS. The auxiliary ECS functions as the client (TX end) or server (RX end) in netperf tests.
--  `Table 1 <#EN-US_TOPIC_0115820205__table15359114885218>`__ and `Table 2 <#EN-US_TOPIC_0115820205__table8470126153613>`__ list the common netperf and iperf3 parameters. 
 
-.. _EN-US_TOPIC_0115820205__table15359114885218:
+-  Auxiliary ECS: an ECS that is used to exchange test data with the tested ECS. The auxiliary ECS functions as the client (TX end) or server (RX end) in netperf tests.
+
+-  `Table 1 <#ENUSTOPIC0115820205table15359114885218>`__ and `Table 2 <#ENUSTOPIC0115820205table8470126153613>`__ list the common netperf and iperf3 parameters. 
+
+.. _ENUSTOPIC0115820205table15359114885218:
 
    .. table:: **Table 1** Common netperf parameters
 
@@ -30,7 +32,7 @@ Background
 
    
 
-.. _EN-US_TOPIC_0115820205__table8470126153613:
+.. _ENUSTOPIC0115820205table8470126153613:
 
    .. table:: **Table 2** Common iperf3 parameters
 
@@ -61,7 +63,7 @@ Test Preparations
 
    Ensure that both type and specifications of the tested ECS and auxiliary ECSs are the same. In addition, ensure that these ECSs are deployed in the same ECS group with anti-affinity enabled. 
 
-.. _EN-US_TOPIC_0115820205__table9726120145710:
+.. _ENUSTOPIC0115820205table9726120145710:
 
    .. table:: **Table 3** Preparations
 
@@ -75,11 +77,11 @@ Test Preparations
 
 #. Install the netperf, iperf3, and sar test tools on both the tested ECS and auxiliary ECSs.
 
-   `Table 4 <#EN-US_TOPIC_0115820205__table231811914413>`__ lists the procedures for installing these tools.
+   `Table 4 <#ENUSTOPIC0115820205table231811914413>`__ lists the procedures for installing these tools.
 
    
 
-.. _EN-US_TOPIC_0115820205__table231811914413:
+.. _ENUSTOPIC0115820205table231811914413:
 
    .. table:: **Table 4** Installing test tools
 
@@ -131,7 +133,7 @@ Test Preparations
 
       **ethtool -L eth0 combined** *X*
 
-      In the preceding command, *X* is the number of queues obtained in `3.a <#EN-US_TOPIC_0115820205__li162918018139>`__.
+      In the preceding command, *X* is the number of queues obtained in `3.a <#ENUSTOPIC0115820205li162918018139>`__.
 
 TCP Bandwidth Test (Using netperf)
 ----------------------------------
@@ -148,7 +150,7 @@ Perform the test on multiple flows. This section considers 16 flows that are eve
 
       In the preceding commands, **-p** specifies the listening port.
 
-   b. Start the netperf process on the tested ECS and specify a netserver port for each auxiliary ECS. For details about common netperf parameters, see `Table 1 <#EN-US_TOPIC_0115820205__table15359114885218>`__.
+   b. Start the netperf process on the tested ECS and specify a netserver port for each auxiliary ECS. For details about common netperf parameters, see `Table 1 <#ENUSTOPIC0115820205table15359114885218>`__.
 
       ##The IP address is for the first auxiliary ECS.
 
@@ -302,14 +304,19 @@ Perform the test on multiple flows. This section considers 16 flows that are eve
 
 #. Analyze the test result.
 
-   After the test is complete, the output of the netperf process on one TX end is shown in `Figure 1 <#EN-US_TOPIC_0115820205__fig333414318238>`__. The final result is the sum of the test results of the netperf processes on all TX ends.
+   After the test is complete, the output of the netperf process on one TX end is shown in `Figure 1 <#ENUSTOPIC0115820205fig333414318238>`__. The final result is the sum of the test results of the netperf processes on all TX ends.
 
-   | **Figure 1** Output of the netperf process on one TX end
-   | |image1| |image2|
+   .. figure:: /_static/images/en-us_image_0115873247.png
+      :alt: **Figure 1** Output of the netperf process on one TX end
+   
 
-   There are a large number of netperf processes. To facilitate statistics collection, it is a good practice to run the following command to view test data on the tested ECS using sar:
+      **Figure 1** Output of the netperf process on one TX end
 
-   **sar -n DEV 1 60**
+   .. note::
+
+      There are a large number of netperf processes. To facilitate statistics collection, it is a good practice to run the following command to view test data on the tested ECS using sar:
+
+      **sar -n DEV 1 60**
 
 UDP PPS Test (Using iperf3)
 ---------------------------
@@ -324,7 +331,7 @@ UDP PPS Test (Using iperf3)
 
       In the preceding commands, **-p** specifies the listening port.
 
-   b. Start the client process on the tested ECS. For details about common iperf3 parameters, see `Table 2 <#EN-US_TOPIC_0115820205__table8470126153613>`__.
+   b. Start the client process on the tested ECS. For details about common iperf3 parameters, see `Table 2 <#ENUSTOPIC0115820205table8470126153613>`__.
 
       ##Auxiliary ECS 1
 
@@ -376,7 +383,7 @@ UDP PPS Test (Using iperf3)
 
 #. Test the UDP RX PPS.
 
-   a. Start the server process on the tested ECS. For details about common iperf3 parameters, see `Table 2 <#EN-US_TOPIC_0115820205__table8470126153613>`__.
+   a. Start the server process on the tested ECS. For details about common iperf3 parameters, see `Table 2 <#ENUSTOPIC0115820205table8470126153613>`__.
 
       ##Auxiliary ECS 1
 
@@ -426,7 +433,7 @@ UDP PPS Test (Using iperf3)
 
       **iperf3 -s -p 12016 -A 15 -i 60 &**
 
-   b. Start the client process on all auxiliary ECSs. For details about common iperf3 parameters, see `Table 2 <#EN-US_TOPIC_0115820205__table8470126153613>`__.
+   b. Start the client process on all auxiliary ECSs. For details about common iperf3 parameters, see `Table 2 <#ENUSTOPIC0115820205table8470126153613>`__.
 
       Log in to auxiliary ECS 1.
 
@@ -478,14 +485,20 @@ UDP PPS Test (Using iperf3)
 
 #. Analyze the test result.
 
-   `Figure 2 <#EN-US_TOPIC_0115820205__fig166644134610>`__ shows an example of the UDP PPS test result.
+   `Figure 2 <#ENUSTOPIC0115820205fig166644134610>`__ shows an example of the UDP PPS test result.
 
-   | **Figure 2** UDP PPS test result
-   | |image3| |image4|
+   .. figure:: /_static/images/en-us_image_0115874559.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
 
-   There are a large number of iperf3 processes. To facilitate statistics collection, it is a good practice to run the following command to view test data on the tested ECS using sar:
+      **Figure 2** UDP PPS test result
 
-   **sar -n DEV 1 60**
+   .. note::
+
+      There are a large number of iperf3 processes. To facilitate statistics collection, it is a good practice to run the following command to view test data on the tested ECS using sar:
+
+      **sar -n DEV 1 60**
 
 Latency Test
 ------------
@@ -501,11 +514,3 @@ Latency Test
    After the test is complete, the **lat** value in the command output is the latency between ECSs.
 
 
-
-.. |image1| image:: /_static/images/en-us_image_0115873247.png
-
-.. |image2| image:: /_static/images/note_3.0-en-us.png
-.. |image3| image:: /_static/images/en-us_image_0115874559.png
-   :class: imgResize
-
-.. |image4| image:: /_static/images/note_3.0-en-us.png

@@ -28,15 +28,15 @@ Procedure
 
 #. Stop the original Linux ECS, detach the system disk from it, and attach the system disk to the temporary ECS.
 
-   a. Stop the original ECS, switch to the page providing details about the ECS, and click the **Disks** tab.\ |image1|
+   a. Stop the original ECS, switch to the page providing details about the ECS, and click the **Disks** tab.
 
-      Do not forcibly stop the original ECS. Otherwise, password reset may fail.
+      .. note::
+
+         Do not forcibly stop the original ECS. Otherwise, password reset may fail.
 
    b. Locate the row containing the system disk to be detached and click **Detach** to detach the system disk from the ECS.
-
    c. On the page providing details about the temporary ECS, click the **Disks** tab.
-
-   d. Click **Attach Disk**. In the displayed dialog box, select the system disk detached in step `2.b <#EN-US_TOPIC_0021427650__li5640121684418>`__ and attach it to the temporary ECS.
+   d. Click **Attach Disk**. In the displayed dialog box, select the system disk detached in step `2.b <#ENUSTOPIC0021427650li5640121684418>`__ and attach it to the temporary ECS.
 
 #. Log in to the temporary ECS remotely and reset the password.
 
@@ -54,11 +54,13 @@ Procedure
 
       When you run the password reset script, if the system displays a message indicating that there is no command related to logical volume manager (LVM), such as the message "no lvs command", install an LVM tool on the temporary ECS. The LVM2 tool is recommended, which can be installed by running the **yum install lvm2** command.
 
-      |image2|
+      .. note::
 
-      If the original ECS and the temporary ECS both run CentOS 7, a mount failure may occur during script execution. To resolve this issue, replace **mount $dev $mountPath** with **mount -o nouuid $dev $mountPath** in the script.
+         If the original ECS and the temporary ECS both run CentOS 7, a mount failure may occur during script execution. To resolve this issue, replace **mount $dev $mountPath** with **mount -o nouuid $dev $mountPath** in the script.
 
-   d. Enter the new password and the directory obtained in step `3.b <#EN-US_TOPIC_0021427650__li664021617445>`__ as prompted.If the following information is displayed, the password has been changed:
+   d. Enter the new password and the directory obtained in step `3.b <#ENUSTOPIC0021427650li664021617445>`__ as prompted.
+
+      If the following information is displayed, the password has been changed:
 
       .. code-block::
 
@@ -85,12 +87,9 @@ Procedure
 #. Stop the temporary ECS, detach the system disk, attach the system disk to the original Linux ECS, and restart the original Linux ECS.
 
    a. Stop the temporary ECS, switch to the page providing details about the ECS, and click the **Disks** tab.
-   b. Click **Detach** to detach the data disk attached in step `2 <#EN-US_TOPIC_0021427650__li19814359584>`__.
+   b. Click **Detach** to detach the data disk attached in step `2 <#ENUSTOPIC0021427650li19814359584>`__.
    c. On the page providing details about the original Linux ECS, click the **Disks** tab.
-   d. Click **Attach Disk**. In the displayed dialog box, select the data disk detached in step `5.b <#EN-US_TOPIC_0021427650__li964031614447>`__ and device name **/dev/sda**.
+   d. Click **Attach Disk**. In the displayed dialog box, select the data disk detached in step `5.b <#ENUSTOPIC0021427650li964031614447>`__ and device name **/dev/sda**.
    e. Restart the original Linux ECS.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/note_3.0-en-us.png

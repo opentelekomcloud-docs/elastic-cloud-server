@@ -90,11 +90,11 @@ The following example shows you how a new primary partition can be created on a 
    -  Choosing **p** creates a primary partition.
    -  Choosing **e** creates an extended partition.
 
-   |image1|
+   .. note::
 
-   If the MBR partition style is used, a maximum of 4 primary partitions, or 3 primary partitions and 1 extended partition can be created. The extended partition cannot be used directly and must be divided into logical partitions before use.
+      If the MBR partition style is used, a maximum of 4 primary partitions, or 3 primary partitions and 1 extended partition can be created. The extended partition cannot be used directly and must be divided into logical partitions before use.
 
-   Disk partitions created using GPT are not categorized.
+      Disk partitions created using GPT are not categorized.
 
 #. In this example, a primary partition is created. Therefore, enter **p** and press **Enter** to create a primary partition.
 
@@ -184,9 +184,9 @@ The following example shows you how a new primary partition can be created on a 
 
    The partition is created.
 
-   |image2|
+   .. note::
 
-   In case that you want to discard the changes made before, you can exit fdisk by entering **q**.
+      In case that you want to discard the changes made before, you can exit fdisk by entering **q**.
 
 #. Run the following command to synchronize the new partition table to the OS:
 
@@ -229,7 +229,7 @@ The following example shows you how a new primary partition can be created on a 
 
    The formatting takes a period of time. Observe the system running status and do not exit.
 
-   |image3|
+   |image1|
 
    The partition sizes supported by file systems vary. Therefore, you are advised to choose an appropriate file system based on your service requirements.
 
@@ -269,9 +269,9 @@ The following example shows you how a new primary partition can be created on a 
 
    New partition **/dev/vdb1** is mounted on **/mnt/sdc**.
 
-   |image4|
+   .. note::
 
-   If the server is restarted, the mounting will become invalid. You can set automatic mounting for partitions at system start by modifying the **/etc/fstab** file. For details, see `Setting Automatic Mounting at System Start <#EN-US_TOPIC_0085634797__en-us_topic_0044524669_section15839912195453>`__.
+      If the server is restarted, the mounting will become invalid. You can set automatic mounting for partitions at system start by modifying the **/etc/fstab** file. For details, see `Setting Automatic Mounting at System Start <#ENUSTOPIC0085634797enustopic0044524669section15839912195453>`__.
 
 Setting Automatic Mounting at System Start
 ------------------------------------------
@@ -280,9 +280,9 @@ Modify the **fstab** file to set automatic disk mounting at server start. You ca
 
 The following procedure shows how to set automatic disk mounting at server start by using UUIDs to identify disks in the **fstab** file. You are advised not to use device names to identify disks in the file because a device name may change (for example, from /dev/vdb1 to /dev/vdb2) during the server stop or start, resulting in improper server running after restart.
 
-|image5|
+.. note::
 
-UUID is the unique character string for disk partitions in a Linux system.
+   UUID is the unique character string for disk partitions in a Linux system.
 
 #. Run the following command to query the partition UUID:
 
@@ -348,8 +348,4 @@ UUID is the unique character string for disk partitions in a Linux system.
 
 
 
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/note_3.0-en-us.png
-.. |image3| image:: /_static/images/notice_3.0-en-us.png
-.. |image4| image:: /_static/images/note_3.0-en-us.png
-.. |image5| image:: /_static/images/note_3.0-en-us.png
+.. |image1| image:: /_static/images/notice_3.0-en-us.png

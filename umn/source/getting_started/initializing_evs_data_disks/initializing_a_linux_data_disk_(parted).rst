@@ -251,9 +251,9 @@ The following example shows you how a new partition can be created on a new data
 
    New partition **/dev/vdb1** is mounted on **/mnt/sdc**.
 
-   |image3|
+   .. note::
 
-   If the server is restarted, the mounting will become invalid. You can set automatic mounting for partitions at system start by modifying the **/etc/fstab** file. For details, see `Setting Automatic Mounting at System Start <#EN-US_TOPIC_0085634798__en-us_topic_0084935709_section15839912195453>`__.
+      If the server is restarted, the mounting will become invalid. You can set automatic mounting for partitions at system start by modifying the **/etc/fstab** file. For details, see `Setting Automatic Mounting at System Start <#ENUSTOPIC0085634798enustopic0084935709section15839912195453>`__.
 
 Setting Automatic Mounting at System Start
 ------------------------------------------
@@ -262,9 +262,9 @@ Modify the **fstab** file to set automatic disk mounting at server start. You ca
 
 The following procedure shows how to set automatic disk mounting at server start by using UUIDs to identify disks in the **fstab** file. You are advised not to use device names to identify disks in the file because a device name may change (for example, from /dev/vdb1 to /dev/vdb2) during the server stop or start, resulting in improper server running after restart.
 
-|image4|
+.. note::
 
-UUID is the unique character string for disk partitions in a Linux system.
+   UUID is the unique character string for disk partitions in a Linux system.
 
 #. Run the following command to query the partition UUID:
 
@@ -332,5 +332,3 @@ UUID is the unique character string for disk partitions in a Linux system.
 
 .. |image1| image:: /_static/images/notice_3.0-en-us.png
 .. |image2| image:: /_static/images/notice_3.0-en-us.png
-.. |image3| image:: /_static/images/note_3.0-en-us.png
-.. |image4| image:: /_static/images/note_3.0-en-us.png

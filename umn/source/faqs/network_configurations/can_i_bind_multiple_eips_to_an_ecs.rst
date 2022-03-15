@@ -11,11 +11,11 @@ To bind multiple EIPs to an ECS, you must manually configure routes.
 Configuration Example
 ---------------------
 
-`Table 1 <#EN-US_TOPIC_0018073216__table10449199163243>`__ lists ECS configurations.
+`Table 1 <#ENUSTOPIC0018073216table10449199163243>`__ lists ECS configurations.
 
 
 
-.. _EN-US_TOPIC_0018073216__table10449199163243:
+.. _ENUSTOPIC0018073216table10449199163243:
 
 .. table:: **Table 1** ECS configurations
 

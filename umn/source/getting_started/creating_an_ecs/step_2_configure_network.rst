@@ -12,18 +12,20 @@ Network Configurations
 
    For more information about VPC, see *Virtual Private Cloud User Guide*.
 
-   |image1|
+   .. note::
 
-   -  Ensure that DHCP is enabled in the VPC to which the ECS belongs.
-   -  When you use VPC for the first time, the system automatically creates a VPC for you, including the security group and NIC.
+      -  Ensure that DHCP is enabled in the VPC to which the ECS belongs.
+      -  When you use VPC for the first time, the system automatically creates a VPC for you, including the security group and NIC.
 
-#. (Optional) Add an extension NIC. You can add multiple extension NICs to an ECS and specify IP addresses for them (including primary NICs).\ |image2|
+#. (Optional) Add an extension NIC. You can add multiple extension NICs to an ECS and specify IP addresses for them (including primary NICs).
 
-   If you specify an IP address for a NIC when creating multiple ECSs in a batch:
+   .. note::
 
-   -  This IP address serves as the start IP address.
-   -  Ensure that the IP addresses required by the NICs are within the subnet, consecutive, and available.
-   -  The subnet with the specified IP address cannot overlap with other subnets.
+      If you specify an IP address for a NIC when creating multiple ECSs in a batch:
+
+      -  This IP address serves as the start IP address.
+      -  Ensure that the IP addresses required by the NICs are within the subnet, consecutive, and available.
+      -  The subnet with the specified IP address cannot overlap with other subnets.
 
    -  **MTU Settings**: This parameter is optional.
 
@@ -35,19 +37,19 @@ Network Configurations
 
    When creating an ECS, you can select multiple (recommended not more than five) security groups. In such a case, the access rules of all the selected security groups apply on the ECS.
 
-   |image3|
+   .. note::
 
-   Before initializing an ECS, ensure that the security group rules for the outbound direction meet the following requirements:
+      Before initializing an ECS, ensure that the security group rules for the outbound direction meet the following requirements:
 
-   -  **Protocol**: **TCP**
-   -  **Port Range**: **80**
-   -  **Remote End**: **169.254.0.0/16**
+      -  **Protocol**: **TCP**
+      -  **Port Range**: **80**
+      -  **Remote End**: **169.254.0.0/16**
 
-   If you use the default security group rules for the outbound direction, the preceding requirements are met, and the ECS can be initialized. The default security group rules for the outbound direction are as follows:
+      If you use the default security group rules for the outbound direction, the preceding requirements are met, and the ECS can be initialized. The default security group rules for the outbound direction are as follows:
 
-   -  **Protocol**: **ANY**
-   -  **Port Range**: **ANY**
-   -  **Remote End**: **0.0.0.0/16**
+      -  **Protocol**: **ANY**
+      -  **Port Range**: **ANY**
+      -  **Remote End**: **0.0.0.0/16**
 
 #. Set **EIP**.
 
@@ -70,7 +72,3 @@ Network Configurations
 #. Click **Next: Configure Advanced Settings**.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/note_3.0-en-us.png
-.. |image3| image:: /_static/images/note_3.0-en-us.png

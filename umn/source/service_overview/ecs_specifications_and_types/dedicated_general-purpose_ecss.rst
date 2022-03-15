@@ -13,7 +13,7 @@ Specifications
 
 
 
-.. _EN-US_TOPIC_0091224748__table8948953114219:
+.. _ENUSTOPIC0091224748table8948953114219:
 
 .. table:: **Table 1** C4 ECS specifications
 
@@ -55,7 +55,7 @@ Specifications
 
 
 
-.. _EN-US_TOPIC_0091224748__table3949605220464:
+.. _ENUSTOPIC0091224748table3949605220464:
 
 .. table:: **Table 2** C3 ECS specifications
 

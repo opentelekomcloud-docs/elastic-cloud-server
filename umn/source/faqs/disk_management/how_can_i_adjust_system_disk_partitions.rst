@@ -35,15 +35,23 @@ To use the 20 GB capacity, performing the following operations:
 
       In the following command output, **/dev/xvda** or **/dev/vda** indicates the system disk.
 
-      | **Figure 1** Viewing details about the disk
-      | |image1|
+      .. figure:: /_static/images/en-us_image_0076540987.png
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 1** Viewing details about the disk
 
    d. Run the following command to view disk partitions:
 
       **parted -l /dev/xvda**
 
-      | **Figure 2** Viewing disk partitions
-      | |image2|
+      .. figure:: /_static/images/en-us_image_0076598858.jpg
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 2** Viewing disk partitions
 
 #. Create a partition for the expanded system disk capacity.
 
@@ -69,29 +77,45 @@ To use the 20 GB capacity, performing the following operations:
 
       Information similar to the following is displayed.
 
-      | **Figure 3** Creating a new partition
-      | |image3|
+      .. figure:: /_static/images/en-us_image_0076540988.png
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 3** Creating a new partition
 
    c. Enter the new partition's start cylinder number and press **Enter**.
 
       The start cylinder number must be greater than the end cylinder numbers of existing partitions. In this example, use the default value for the new partition's start cylinder number and press **Enter**. Information similar to the following is displayed.
 
-      | **Figure 4** Specifying the new partition's start cylinder number
-      | |image4|
+      .. figure:: /_static/images/en-us_image_0076595619.jpg
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 4** Specifying the new partition's start cylinder number
 
    d. Enter the new partition's end cylinder number and press **Enter**.
 
       In this example, use the default value for the new partition's end cylinder number and press **Enter**. Information similar to the following is displayed.
 
-      | **Figure 5** Specifying the new partition's end cylinder number
-      | |image5|
+      .. figure:: /_static/images/en-us_image_0076595620.jpg
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 5** Specifying the new partition's end cylinder number
 
    e. Enter **p** and press **Enter** to view the created partition.
 
       Information similar to the following is displayed.
 
-      | **Figure 6** Viewing the created partition
-      | |image6|
+      .. figure:: /_static/images/en-us_image_0076596029.jpg
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 6** Viewing the created partition
 
    f. Enter **w** and press **Enter**. The system saves and exits the partition.
 
@@ -99,15 +123,23 @@ To use the 20 GB capacity, performing the following operations:
 
       Information similar to the following is displayed.
 
-      | **Figure 7** Completing the partition creation
-      | |image7|
+      .. figure:: /_static/images/en-us_image_0076596326.jpg
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 7** Completing the partition creation
 
    g. Run the following command to view disk partitions:
 
       **parted -l /dev/xvda**
 
-      | **Figure 8** Viewing disk partitions
-      | |image8|
+      .. figure:: /_static/images/en-us_image_0076600080.jpg
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 8** Viewing disk partitions
 
 #. Run the following command to synchronize the modifications in the partition list with the OS:
 
@@ -119,16 +151,20 @@ To use the 20 GB capacity, performing the following operations:
 
       **df -TH**
 
-      | **Figure 9** Viewing the file system type
-      | |image9|
+      .. figure:: /_static/images/en-us_image_0076541187.png
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 9** Viewing the file system type
 
    b. Run the following command to format the partition (taking the **ext4** type as an example):
 
       **mkfs -t ext4 /dev/xvda3**
 
-      |image10|
+      .. note::
 
-      Formatting the partition requires a period of time. During this time, observe the system running status and do not exit the system.
+         Formatting the partition requires a period of time. During this time, observe the system running status and do not exit the system.
 
       Information similar to the following is displayed:
 
@@ -184,28 +220,36 @@ To use the 20 GB capacity, performing the following operations:
 
       Information similar to the following is displayed:
 
-      | **Figure 10** Viewing the mounted file systems
-      | |image11|
+      .. figure:: /_static/images/en-us_image_0076543500.jpg
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 10** Viewing the mounted file systems
 
 #. Determine whether to set automatic mounting upon system startup for the new disk.
 
    If you do not set automatic mounting upon system startup, you must mount the new partition to the specified directory again after the ECS is restarted.
 
-   -  If automatic mounting is required, go to `7 <#EN-US_TOPIC_0076210995__li51885379162851>`__.
+   -  If automatic mounting is required, go to `7 <#ENUSTOPIC0076210995li51885379162851>`__.
    -  If automatic mounting is not required, no further action is required.
 
 #. Set automatic mounting upon system startup for the new disk.
 
-   |image12|
+   .. note::
 
-   Do not set automatic mounting upon system startup for unformatted disks because this will cause ECS startup failures.
+      Do not set automatic mounting upon system startup for unformatted disks because this will cause ECS startup failures.
 
    a. Run the following command to obtain the file system type and UUID:
 
       **blkid**
 
-      | **Figure 11** Viewing the file system type
-      | |image13|
+      .. figure:: /_static/images/en-us_image_0076543501.jpg
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 11** Viewing the file system type
 
       According to the preceding figure, the UUID of the new partition is 96e5e028-b0fb-4547-a82a-35ace1086c4f.
 
@@ -223,59 +267,22 @@ To use the 20 GB capacity, performing the following operations:
 
       **:wq**
 
-   |image14|
+   .. note::
 
-   If you want to detach a new disk for which automatic mounting upon system startup has been set, you must delete the automatic mounting configuration before you detach the disk. Otherwise, the ECS cannot be started after you detach the disk. To delete the automatic mounting configuration, perform the following operations:
+      If you want to detach a new disk for which automatic mounting upon system startup has been set, you must delete the automatic mounting configuration before you detach the disk. Otherwise, the ECS cannot be started after you detach the disk. To delete the automatic mounting configuration, perform the following operations:
 
-   a. Run the following command to open the **fstab** file using the vi editor:
+      a. Run the following command to open the **fstab** file using the vi editor:
 
-      **vi /etc/fstab**
+         **vi /etc/fstab**
 
-   b. Press **i** to enter editing mode.
+      b. Press **i** to enter editing mode.
 
-   c. Delete the following statement:
+      c. Delete the following statement:
 
-      **UUID=96e5e028-b0fb-4547-a82a-35ace1086c4f /root/new ext4 defaults 0 0**
+         **UUID=96e5e028-b0fb-4547-a82a-35ace1086c4f /root/new ext4 defaults 0 0**
 
-   d. Press **Esc**, run the following command, and press **Enter**. The system saves the configurations and exits the vi editor.
+      d. Press **Esc**, run the following command, and press **Enter**. The system saves the configurations and exits the vi editor.
 
-      **:wq**
+         **:wq**
 
 
-
-.. |image1| image:: /_static/images/en-us_image_0076540987.png
-   :class: imgResize
-
-.. |image2| image:: /_static/images/en-us_image_0076598858.jpg
-   :class: imgResize
-
-.. |image3| image:: /_static/images/en-us_image_0076540988.png
-   :class: imgResize
-
-.. |image4| image:: /_static/images/en-us_image_0076595619.jpg
-   :class: imgResize
-
-.. |image5| image:: /_static/images/en-us_image_0076595620.jpg
-   :class: imgResize
-
-.. |image6| image:: /_static/images/en-us_image_0076596029.jpg
-   :class: imgResize
-
-.. |image7| image:: /_static/images/en-us_image_0076596326.jpg
-   :class: imgResize
-
-.. |image8| image:: /_static/images/en-us_image_0076600080.jpg
-   :class: imgResize
-
-.. |image9| image:: /_static/images/en-us_image_0076541187.png
-   :class: imgResize
-
-.. |image10| image:: /_static/images/note_3.0-en-us.png
-.. |image11| image:: /_static/images/en-us_image_0076543500.jpg
-   :class: imgResize
-
-.. |image12| image:: /_static/images/note_3.0-en-us.png
-.. |image13| image:: /_static/images/en-us_image_0076543501.jpg
-   :class: imgResize
-
-.. |image14| image:: /_static/images/note_3.0-en-us.png

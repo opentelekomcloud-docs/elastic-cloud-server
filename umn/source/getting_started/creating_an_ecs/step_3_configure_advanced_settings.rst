@@ -12,23 +12,27 @@ Advanced Settings
 
    The **ECS Name** set in this step will be the initial host name in the ECS OS.
 
-   |image1|
+   .. note::
 
-   Consecutive periods (.) or hyphens (-) will be replaced with the first character to prevent unknown issues.
+      Consecutive periods (.) or hyphens (-) will be replaced with the first character to prevent unknown issues.
 
 #. (Optional) Specify the description of the ECS.
 
-#. Set **Login Mode**.\ **Key pair**: allows you to use a key pair for login authentication. You can select an existing key pair, or click **Create Key Pair** and create a desired one.\ |image2|
+#. Set **Login Mode**.
 
-   If you use an existing key pair, make sure that you have saved the key file locally. Otherwise, logging in to the ECS will fail.
+   **Key pair**: allows you to use a key pair for login authentication. You can select an existing key pair, or click **Create Key Pair** and create a desired one.
+
+   .. note::
+
+      If you use an existing key pair, make sure that you have saved the key file locally. Otherwise, logging in to the ECS will fail.
 
 #. Set **ECS Group**.
 
    An ECS group applies the anti-affinity policy to the ECSs in it so that the ECSs are automatically allocated to different hosts. This configuration is optional. For instructions about how to create an ECS group, see `Managing ECS Groups <../../instances/managing_ecss/managing_ecs_groups.html>`__.
 
-   |image3|
+   .. note::
 
-   An existing ECS attached with a local disk cannot be added to an ECS group. To use ECS group functions, select an ECS group when creating an ECS.
+      An existing ECS attached with a local disk cannot be added to an ECS group. To use ECS group functions, select an ECS group when creating an ECS.
 
 #. To use functions listed in **Advanced Options**, select **Configure now**. Otherwise, do not select it.
 
@@ -44,11 +48,11 @@ Advanced Settings
 
       Tagging an ECS to facilitate ECS identification and management. This configuration is optional. You can add up to 10 tags to an ECS.
 
-      |image4|
+      .. note::
 
-      Tags added during ECS creation will also be added to the created EIP and EVS disks (including the system disk and data disks) of the ECS. If the ECS uses an existing EIP, the tags will not be added to the EIP.
+         Tags added during ECS creation will also be added to the created EIP and EVS disks (including the system disk and data disks) of the ECS. If the ECS uses an existing EIP, the tags will not be added to the EIP.
 
-      After creating the ECS, you can view the tags on the pages providing details about the ECS, EIP, and EVS disks.
+         After creating the ECS, you can view the tags on the pages providing details about the ECS, EIP, and EVS disks.
 
       For detailed operations, see `Overview <../../resources_and_tags/tag_management/overview.html>`__.
 
@@ -61,8 +65,3 @@ Advanced Settings
 #. Click **Next: Confirm**.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/note_3.0-en-us.png
-.. |image3| image:: /_static/images/note_3.0-en-us.png
-.. |image4| image:: /_static/images/note_3.0-en-us.png

@@ -3,21 +3,25 @@ How Can I Obtain Data Disk Information If Tools Are Uninstalled?
 
 If you uninstall Tools from a Linux ECS in a non-PVOPS system, data disks cannot be identified. In such a case, you can create a new ECS and attach the data disks of the original ECS to the new ECS and view information about the data disks. The procedure is as follows:
 
-#. Log in to the management console and create a new ECS.\ |image1|
+#. Log in to the management console and create a new ECS.
 
-   Ensure that the new ECS is located in the same AZ and has the same parameter settings as the original ECS.
+   .. note::
+
+      Ensure that the new ECS is located in the same AZ and has the same parameter settings as the original ECS.
 
 #. (Optional) On the **Elastic Cloud Server** page, locate the row containing the original ECS, click **More** in the **Operation** column, and select **Stop**. On the **Stop ECS** page, select **Forcibly stop the preceding ECSs** and click **Yes** to forcibly stop the original ECS.
 
    Manually refresh the **Elastic Cloud Server** page. The original ECS is stopped once the **Status** changes to **Stopped**.
 
-   |image2|
+   .. note::
 
-   The ECSs running certain OSs support online data disk detaching. If your OS supports this feature, you can detach data disks from the running ECS.
+      The ECSs running certain OSs support online data disk detaching. If your OS supports this feature, you can detach data disks from the running ECS.
 
-#. View information about the data disks attached to the original ECS.\ |image3|
+#. View information about the data disks attached to the original ECS.
 
-   If the original ECS has multiple data disks attached, repeat steps `4 <#EN-US_TOPIC_0029806525__li3454282161441>`__ to `6 <#EN-US_TOPIC_0029806525__li3628995162045>`__ to attach each data disk to the new ECS.
+   .. note::
+
+      If the original ECS has multiple data disks attached, repeat steps `4 <#ENUSTOPIC0029806525li3454282161441>`__ to `6 <#ENUSTOPIC0029806525li3628995162045>`__ to attach each data disk to the new ECS.
 
 #. Click a data disk. The **Elastic Volume Service** page is displayed.
 
@@ -30,7 +34,3 @@ If you uninstall Tools from a Linux ECS in a non-PVOPS system, data disks cannot
    Manually refresh the EVS list. The data disk is attached to the new ECS once the **Status** value changes to **In-use**. You can then log in to the management console and view information about the data disk of the new ECS.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/note_3.0-en-us.png
-.. |image3| image:: /_static/images/note_3.0-en-us.png

@@ -1,3 +1,4 @@
+umn/source/service_overview/ecs_specifications_and_types/gpu-accelerated_ecss.rst
 GPU-accelerated ECSs
 ====================
 
@@ -15,23 +16,23 @@ GPU-accelerated ECSs are classified as graphics-accelerated (G series) and compu
 
 Recommended:
 
-`Inference-accelerated PI2 <#EN-US_TOPIC_0097289624__section1846114713182>`__
+`Inference-accelerated PI2 <#ENUSTOPIC0097289624section1846114713182>`__
 
-`Graphics-accelerated Enhancement G6 <#EN-US_TOPIC_0097289624__section131302034104515>`__
+`Graphics-accelerated Enhancement G6 <#ENUSTOPIC0097289624section131302034104515>`__
 
 Available now: All GPU models except the recommended ones.
 
 -  G series
 
-   -  `Graphics-accelerated Enhancement G6 <#EN-US_TOPIC_0097289624__section131302034104515>`__ (recommended)
+   -  `Graphics-accelerated Enhancement G6 <#ENUSTOPIC0097289624section131302034104515>`__ (recommended)
 
 -  P series
 
-   -  `Computing-accelerated P2s <#EN-US_TOPIC_0097289624__section1454714546567>`__ (recommended)
-   -  `Computing-accelerated P2v <#EN-US_TOPIC_0097289624__section208472383415>`__
-   -  `Computing-accelerated P2 <#EN-US_TOPIC_0097289624__section5477185118234>`__
-   -  `Computing-accelerated P1 <#EN-US_TOPIC_0097289624__section1124594913391>`__
-   -  `Inference-accelerated PI2 <#EN-US_TOPIC_0097289624__section1846114713182>`__ (recommended)
+   -  `Computing-accelerated P2s <#ENUSTOPIC0097289624section1454714546567>`__ (recommended)
+   -  `Computing-accelerated P2v <#ENUSTOPIC0097289624section208472383415>`__
+   -  `Computing-accelerated P2 <#ENUSTOPIC0097289624section5477185118234>`__
+   -  `Computing-accelerated P1 <#ENUSTOPIC0097289624section1124594913391>`__
+   -  `Inference-accelerated PI2 <#ENUSTOPIC0097289624section1846114713182>`__ (recommended)
 
 Helpful links:
 
@@ -51,7 +52,7 @@ Select your desired GPU-accelerated ECS type and specifications.
 
 
 
-.. _EN-US_TOPIC_0097289624__table19812808468:
+.. _ENUSTOPIC0097289624table19812808468:
 
 .. table:: **Table 1** G6 ECS specifications
 
@@ -63,9 +64,9 @@ Select your desired GPU-accelerated ECS type and specifications.
    | g6.20xlarge.7 | 80    | 560          | 30/30                              | 400               | 32              | 8            | 2 x T4 | 32               | KVM                 |                                     |
    +---------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+--------+------------------+---------------------+-------------------------------------+
 
-|image1|
+.. note::
 
-A G6.10xlarge.7 ECS exclusively uses a T4 GPU for professional graphics acceleration. Such an ECS can be used for heavy-load CPU inference.
+   A G6.10xlarge.7 ECS exclusively uses a T4 GPU for professional graphics acceleration. Such an ECS can be used for heavy-load CPU inference.
 
 **G6 ECS Features**
 
@@ -115,7 +116,7 @@ P2s ECSs use NVIDIA Tesla V100 GPUs to provide flexibility, high-performance com
 
 
 
-.. _EN-US_TOPIC_0097289624__table85474544565:
+.. _ENUSTOPIC0097289624table85474544565:
 
 .. table:: **Table 2** P2s ECS specifications
 
@@ -197,7 +198,7 @@ Compared with P2 ECSs, P2v ECSs use NVIDIA Tesla V100 GPUs to provide flexibilit
 
 
 
-.. _EN-US_TOPIC_0097289624__table87321433202814:
+.. _ENUSTOPIC0097289624table87321433202814:
 
 .. table:: **Table 3** P2v ECS specifications
 
@@ -275,7 +276,7 @@ Compared with P1 ECSs, P2 ECSs use NVIDIA Tesla V100 GPUs, which have improved b
 
 **Specifications** 
 
-.. _EN-US_TOPIC_0097289624__table179717351266:
+.. _ENUSTOPIC0097289624table179717351266:
 
 .. table:: **Table 4** P2 ECS specifications
 
@@ -330,9 +331,11 @@ P2 ECSs are used in computing acceleration scenarios, such as deep learning trai
 
 -  The system disk of a P2 ECS must be greater than or equal to 15 GiB. It is recommended that the system disk be greater than 40 GiB.
 
--  The local NVMe SSDs attached to P2 ECSs are dedicated for services with strict requirements on storage I/O performance, such as deep learning training and HPC. Local disks are attached to the ECSs of specified flavors and cannot be separately bought. In addition, you are not allowed to detach a local disk and then attach it to another ECS.\ |image2|
+-  The local NVMe SSDs attached to P2 ECSs are dedicated for services with strict requirements on storage I/O performance, such as deep learning training and HPC. Local disks are attached to the ECSs of specified flavors and cannot be separately bought. In addition, you are not allowed to detach a local disk and then attach it to another ECS.
 
-   Data may be lost on the local NVMe SSDs attached to P2 ECSs due to, for example, a disk or host fault. Therefore, you are suggested to store only temporary data in local NVMe SSDs. If you store important data in such a disk, securely back up the data.
+   .. note::
+
+      Data may be lost on the local NVMe SSDs attached to P2 ECSs due to, for example, a disk or host fault. Therefore, you are suggested to store only temporary data in local NVMe SSDs. If you store important data in such a disk, securely back up the data.
 
 -  P2 ECSs do not support specifications modification.
 
@@ -357,7 +360,7 @@ P1 ECSs use NVIDIA Tesla P100 GPUs and provide flexibility, high performance, an
 
 
 
-.. _EN-US_TOPIC_0097289624__table1888295812406:
+.. _ENUSTOPIC0097289624table1888295812406:
 
 .. table:: **Table 5** P1 ECS specifications
 
@@ -411,15 +414,14 @@ P1 ECSs are used in computing acceleration scenarios, such as deep learning trai
 **Notes**
 
 -  It is recommended that the system disk of a P1 ECS be greater than 40 GiB.
+-  The local NVMe SSDs attached to P1 ECSs are dedicated for services with strict requirements on storage I/O performance, such as deep learning training and HPC. Local disks are attached to the ECSs of specified flavors and cannot be separately bought. In addition, you are not allowed to detach a local disk and then attach it to another ECS.
 
--  The local NVMe SSDs attached to P1 ECSs are dedicated for services with strict requirements on storage I/O performance, such as deep learning training and HPC. Local disks are attached to the ECSs of specified flavors and cannot be separately bought. In addition, you are not allowed to detach a local disk and then attach it to another ECS.\ |image3|
+   .. note::
 
-   Data may be lost on the local NVMe SSDs attached to P1 ECSs due to a fault, for example, due to a disk or host fault. Therefore, you are suggested to store only temporary data in local NVMe SSDs. If you store important data in such a disk, securely back up the data.
+      Data may be lost on the local NVMe SSDs attached to P1 ECSs due to a fault, for example, due to a disk or host fault. Therefore, you are suggested to store only temporary data in local NVMe SSDs. If you store important data in such a disk, securely back up the data.
 
 -  After a P1 ECS is created, you must install the NVIDIA driver for computing acceleration. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <../../instances/(optional)_installing_a_driver_and_toolkit/installing_a_tesla_driver_and_cuda_toolkit_on_a_gpu-accelerated_ecs.html>`__.
-
 -  P1 ECSs do not support specifications modification.
-
 -  P1 ECSs support the following OSs:
 
    -  Windows Server 2012 R2 Standard 64bit
@@ -428,11 +430,8 @@ P1 ECSs are used in computing acceleration scenarios, such as deep learning trai
    -  Debian 9.0 64bit
 
 -  After you delete a P1 ECS, the data stored in local NVMe SSDs is automatically cleared.
-
 -  By default, P1 ECSs created using a Windows public image have the Tesla driver installed.
-
 -  By default, P1 ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <../../instances/(optional)_installing_a_driver_and_toolkit/installing_a_tesla_driver_and_cuda_toolkit_on_a_gpu-accelerated_ecs.html>`__.
-
 -  If a P1 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <../../instances/(optional)_installing_a_driver_and_toolkit/installing_a_tesla_driver_and_cuda_toolkit_on_a_gpu-accelerated_ecs.html>`__.
 
 Inference-accelerated PI2
@@ -446,7 +445,7 @@ PI2 ECSs use NVIDIA Tesla T4 GPUs dedicated for real-time AI inference. These EC
 
 
 
-.. _EN-US_TOPIC_0097289624__table029414915519:
+.. _ENUSTOPIC0097289624table029414915519:
 
 .. table:: **Table 6** PI2 ECS specifications
 
@@ -480,9 +479,11 @@ PI2 ECSs support the following commonly used software:
 
 **Notes**
 
--  After a PI2 ECS is stopped, basic resources including vCPUs, memory, and images are not billed, but its system disk is billed based on the disk capacity. If other products, such as EVS disks, EIP, and bandwidth are associated with the ECS, these products are billed separately.\ |image4|
+-  After a PI2 ECS is stopped, basic resources including vCPUs, memory, and images are not billed, but its system disk is billed based on the disk capacity. If other products, such as EVS disks, EIP, and bandwidth are associated with the ECS, these products are billed separately.
 
-   Resources are released after a PI2 ECS is stopped. If desired resources are insufficient when the PI2 ECS is started after being stopped, starting the ECS might fail. Therefore, if you need to use a PI2 ECS for a long time, keep the ECS running.
+   .. note::
+
+      Resources are released after a PI2 ECS is stopped. If desired resources are insufficient when the PI2 ECS is started after being stopped, starting the ECS might fail. Therefore, if you need to use a PI2 ECS for a long time, keep the ECS running.
 
 -  PI2 ECSs support the following OSs:
 
@@ -498,8 +499,3 @@ PI2 ECSs support the following commonly used software:
 -  If a PI2 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see `Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <../../instances/(optional)_installing_a_driver_and_toolkit/installing_a_tesla_driver_and_cuda_toolkit_on_a_gpu-accelerated_ecs.html>`__.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/note_3.0-en-us.png
-.. |image3| image:: /_static/images/note_3.0-en-us.png
-.. |image4| image:: /_static/images/note_3.0-en-us.png

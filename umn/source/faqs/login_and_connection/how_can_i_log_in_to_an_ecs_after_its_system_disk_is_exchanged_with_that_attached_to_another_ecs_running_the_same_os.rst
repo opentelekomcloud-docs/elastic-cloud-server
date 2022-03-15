@@ -6,26 +6,26 @@ Symptom
 
 Two ECSs run the same OS, for example, both run Windows or Linux. The system disks attached to the two ECSs are exchanged offline. After the exchanging, the login keys of the ECSs may change. In such a case, how can I log in to the ECSs?
 
-|image1|
+.. note::
 
-Before stopping an ECS for disk detachment, release the IP address assigned to the ECS using DHCP so that ECS can correctly obtain an IP address later. To do so, perform the following operations:
+   Before stopping an ECS for disk detachment, release the IP address assigned to the ECS using DHCP so that ECS can correctly obtain an IP address later. To do so, perform the following operations:
 
-#. Log in to the Windows ECS.
+   #. Log in to the Windows ECS.
 
-#. Run the following command to release the IP address:
+   #. Run the following command to release the IP address:
 
-   **ipconfig /release**
+      **ipconfig /release**
 
-   This operation will interrupt network connections and affect the use of the ECS. After the ECS is restarted, network connections will automatically recover.
+      This operation will interrupt network connections and affect the use of the ECS. After the ECS is restarted, network connections will automatically recover.
 
 Windows
 -------
 
-For example, there are two Windows ECSs with parameters configured in `Table 1 <#EN-US_TOPIC_0100005619__table1365540183310>`__.
+For example, there are two Windows ECSs with parameters configured in `Table 1 <#ENUSTOPIC0100005619table1365540183310>`__.
 
 
 
-.. _EN-US_TOPIC_0100005619__table1365540183310:
+.. _ENUSTOPIC0100005619table1365540183310:
 
 .. table:: **Table 1** Parameter configurations
 
@@ -44,9 +44,9 @@ The random password for logging in to ecs_02 must be resolved again. The procedu
 
    Locate the row containing ecs_02, click **More** in the **Operation** column, and select **Delete Password** from the drop-down list. Then, click **Delete**.
 
-   |image2|
+   .. note::
 
-   ecs_02 must be in **Stopped** state.
+      ecs_02 must be in **Stopped** state.
 
 #. Start ecs_02.
 
@@ -58,16 +58,16 @@ The random password for logging in to ecs_02 must be resolved again. The procedu
    b. Click **Select File** and upload private key file **Keypair_02** of ecs_02.
    c. Click **Get Password** to obtain a new random password.
 
-#. Use the random password obtained in step `3 <#EN-US_TOPIC_0100005619__li138721252141517>`__ to log in to ecs_02 with the system disk replaced.
+#. Use the random password obtained in step `3 <#ENUSTOPIC0100005619li138721252141517>`__ to log in to ecs_02 with the system disk replaced.
 
 Linux
 -----
 
-For example, there are two Linux ECSs with parameters configured in `Table 2 <#EN-US_TOPIC_0100005619__table9561950195614>`__.
+For example, there are two Linux ECSs with parameters configured in `Table 2 <#ENUSTOPIC0100005619table9561950195614>`__.
 
 
 
-.. _EN-US_TOPIC_0100005619__table9561950195614:
+.. _ENUSTOPIC0100005619table9561950195614:
 
 .. table:: **Table 2** Parameter configurations
 
@@ -86,6 +86,3 @@ Use either of the following methods to log in to ecs_02:
 -  Use private key file **Keypair_02** of ecs_02.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/note_3.0-en-us.png

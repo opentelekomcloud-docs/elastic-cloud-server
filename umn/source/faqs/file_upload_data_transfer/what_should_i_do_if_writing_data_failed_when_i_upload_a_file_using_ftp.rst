@@ -25,11 +25,21 @@ The public IP address must be associated with the private IP address using NAT. 
 
    Choose **Edit** > **Settings**.
 
-   | **Figure 1** Setting the public IP address
-   | |image1|
+   .. figure:: /_static/images/en-us_image_0171674763.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
 
-#. Choose **Passive mode settings**, set the port range (for example, 50000-50100) for transmitting data, and enter the target public IP address.\ **Figure 2** Setting the range of ports for data transmission
-   |image2|
+      **Figure 1** Setting the public IP address
+
+#. Choose **Passive mode settings**, set the port range (for example, 50000-50100) for transmitting data, and enter the target public IP address.
+
+   .. figure:: /_static/images/en-us_image_0182087025.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 2** Setting the range of ports for data transmission
 
 #. Click **OK**.
 
@@ -37,11 +47,4 @@ The public IP address must be associated with the private IP address using NAT. 
 
 #. Test the connection on the client.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0171674763.png
-   :class: imgResize
-
-.. |image2| image:: /_static/images/en-us_image_0182087025.png
-   :class: imgResize
 

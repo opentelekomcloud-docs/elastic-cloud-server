@@ -13,9 +13,9 @@ Prerequisites
 
    Cloud Eye does not display the monitoring data for a stopped, faulty, or deleted ECS. After such an ECS restarts or recovers, the monitoring data is available in Cloud Eye.
 
-   |image1|
+   .. note::
 
-   Cloud Eye discontinues monitoring ECSs that remain in **Stopped** or **Faulty** state for 24 hours and removes them from the monitoring list. However, the alarm rules for such ECSs are not automatically deleted.
+      Cloud Eye discontinues monitoring ECSs that remain in **Stopped** or **Faulty** state for 24 hours and removes them from the monitoring list. However, the alarm rules for such ECSs are not automatically deleted.
 
 -  Alarm rules have been configured in Cloud Eye for the target ECS.
 
@@ -30,7 +30,7 @@ Procedure
 
 #. Log in to the management console.
 
-#. Click |image2| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select your region and project.
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
@@ -46,6 +46,5 @@ Procedure
 
 
 
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0210779229.png
 

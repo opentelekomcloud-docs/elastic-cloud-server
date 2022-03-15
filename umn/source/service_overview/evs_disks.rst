@@ -26,9 +26,9 @@ EVS disks have two device types, Virtual Block Device (VBD) and Small Computer S
 
    You can create EVS disks whose **Device Type** is SCSI on the management console. These EVS disks support transparent SCSI command transmission, allowing ECS OS to directly access underlying storage media. SCSI EVS disks support both basic and advanced SCSI commands.
 
-   |image1|
+   .. note::
 
-   For more information about how to use SCSI EVS disks, for example, how to install the driver, see "Device Types and Usage Instructions" in *Elastic Volume Service User Guide*.
+      For more information about how to use SCSI EVS disks, for example, how to install the driver, see "Device Types and Usage Instructions" in *Elastic Volume Service User Guide*.
 
 Helpful Links
 -------------
@@ -36,5 +36,3 @@ Helpful Links
 -  `Which ECSs Can Be Attached with SCSI EVS Disks? <../faqs/disk_management/which_ecss_can_be_attached_with_scsi_evs_disks.html>`__
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

@@ -11,7 +11,7 @@ Specifications
 
 
 
-.. _EN-US_TOPIC_0035470099__table47541937112515:
+.. _ENUSTOPIC0035470099table47541937112515:
 
 .. table:: **Table 1** D2 ECS specifications
 
@@ -53,7 +53,7 @@ Features of D2 ECSs
 
 
 
-.. _EN-US_TOPIC_0035470099__table9670341181017:
+.. _ENUSTOPIC0035470099table9670341181017:
 
 .. table:: **Table 2** Specifications of a single SAS HDD disk attached to a D2 ECS
 
@@ -93,23 +93,25 @@ Notes on Using D2 ECSs
 
    -  Both EVS disks and local disks can be used as data disks of a D2 ECS.
 
-   -  A maximum of 60 disks (including VBD, SCSI, and local disks) can be attached to a D2 ECS. Among the 60 disks, the maximum number of SCSI disks is 30, and the VBD disks (including the system disk) is 24. For details, see `Can I Attach Multiple Disks to an ECS? <../../faqs/disk_management/can_i_attach_multiple_disks_to_an_ecs.html>`__\ |image1|
+   -  A maximum of 60 disks (including VBD, SCSI, and local disks) can be attached to a D2 ECS. Among the 60 disks, the maximum number of SCSI disks is 30, and the VBD disks (including the system disk) is 24. For details, see `Can I Attach Multiple Disks to an ECS? <../../faqs/disk_management/can_i_attach_multiple_disks_to_an_ecs.html>`__
 
-      The maximum number of disks attached to an existing D2 ECS remains unchanged. To attach 60 disks, enable advanced disk. For details, see `Enabling Advanced Disk <../../evs_disks/enabling_advanced_disk.html>`__.
+      .. note::
+
+         The maximum number of disks attached to an existing D2 ECS remains unchanged. To attach 60 disks, enable advanced disk. For details, see `Enabling Advanced Disk <../../evs_disks/enabling_advanced_disk.html>`__.
 
    -  You are advised to use World Wide Names (WWNs), but not drive letters, in applications to perform operations on local disks to prevent drive letter drift (low probability) on Linux. Take local disk attachment as an example:
 
       If the local disk WWN is wwn-0x50014ee2b14249f6, run the **mount /dev/disk/by-id/wwn-0x50014ee2b14249f6** command.
 
-      |image2|
+      .. note::
 
-      How can I view the local disk WWN?
+         How can I view the local disk WWN?
 
-      #. Log in to the ECS.
+         #. Log in to the ECS.
 
-      #. Run the following command:
+         #. Run the following command:
 
-         **ll /dev/disk/by-id**
+            **ll /dev/disk/by-id**
 
 -  The local disk data of a D2 ECS may be lost due to some reasons, such as physical server breakdown or local disk damage. If the data reliability of your application cannot be ensured, you are strongly advised to use EVS disks to build your ECS.
 -  When a D2 ECS is deleted, its local disk data is automatically deleted. Back up the data before deleting such an ECS. Deleting local disk data is time-consuming. Therefore, a D2 ECS requires a longer period of time than other ECSs for releasing resources.
@@ -117,6 +119,3 @@ Notes on Using D2 ECSs
 -  You are not allowed to buy additional local disks. The quantity and capacity of your local disks are determined according to your ECS flavor. For D2 ECSs, if additional local disks are required, buy them when creating the ECSs.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/note_3.0-en-us.png

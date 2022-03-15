@@ -72,10 +72,8 @@ The command output of **free -m** shows the available memory of the ECS, and tha
 
 Therefore, the memory obtained by running the **free -m** command is less than the memory configured for the ECS. This is a normal phenomenon.
 
-|image1|
+.. note::
 
-This is a normal phenomenon even for physical servers.
+   This is a normal phenomenon even for physical servers.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

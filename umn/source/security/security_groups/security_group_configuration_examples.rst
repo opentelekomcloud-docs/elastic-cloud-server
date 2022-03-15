@@ -3,14 +3,14 @@ Security Group Configuration Examples
 
 Common security group configuration examples are as follows: The following examples allow all outgoing data packets by default and only describe how to configure the inbound rules of a security group.
 
--  `Enabling ECSs in Different Security Groups to Communicate with Each Other Through an Internal Network <#EN-US_TOPIC_0140323152__en-us_topic_0118534011_section14197522283>`__
--  `Enabling Specified IP Addresses to Remotely Access ECSs in a Security Group <#EN-US_TOPIC_0140323152__en-us_topic_0118534011_section17693183118306>`__
--  `Remotely Connecting to Linux ECSs Using SSH <#EN-US_TOPIC_0140323152__en-us_topic_0118534011_section115069253338>`__
--  `Remotely Connecting to Windows ECSs Using RDP <#EN-US_TOPIC_0140323152__en-us_topic_0118534011_section168046312349>`__
--  `Enabling Communication Between ECSs <#EN-US_TOPIC_0140323152__en-us_topic_0118534011_section34721049193411>`__
--  `Hosting a Website on ECSs <#EN-US_TOPIC_0140323152__en-us_topic_0118534011_section1517991516357>`__
--  `Enabling an ECS to Function as a DNS Server <#EN-US_TOPIC_0140323152__en-us_topic_0118534011_section2910346123520>`__
--  `Uploading or Downloading Files Using FTP <#EN-US_TOPIC_0140323152__en-us_topic_0118534011_section5964121693610>`__
+-  `Enabling ECSs in Different Security Groups to Communicate with Each Other Through an Internal Network <#ENUSTOPIC0140323152enustopic0118534011section14197522283>`__
+-  `Enabling Specified IP Addresses to Remotely Access ECSs in a Security Group <#ENUSTOPIC0140323152enustopic0118534011section17693183118306>`__
+-  `Remotely Connecting to Linux ECSs Using SSH <#ENUSTOPIC0140323152enustopic0118534011section115069253338>`__
+-  `Remotely Connecting to Windows ECSs Using RDP <#ENUSTOPIC0140323152enustopic0118534011section168046312349>`__
+-  `Enabling Communication Between ECSs <#ENUSTOPIC0140323152enustopic0118534011section34721049193411>`__
+-  `Hosting a Website on ECSs <#ENUSTOPIC0140323152enustopic0118534011section1517991516357>`__
+-  `Enabling an ECS to Function as a DNS Server <#ENUSTOPIC0140323152enustopic0118534011section2910346123520>`__
+-  `Uploading or Downloading Files Using FTP <#ENUSTOPIC0140323152enustopic0118534011section5964121693610>`__
 
 Enabling ECSs in Different Security Groups to Communicate with Each Other Through an Internal Network
 -----------------------------------------------------------------------------------------------------
@@ -27,7 +27,7 @@ Enabling ECSs in Different Security Groups to Communicate with Each Other Throug
 
    
 
-.. _EN-US_TOPIC_0140323152__en-us_topic_0118534011_table854766319358:
+.. _ENUSTOPIC0140323152enustopic0118534011table854766319358:
 
    +---------------+----------------------------------------------------+--------------------+------------------------------+
    | **Direction** | **Protocol/Application**                           | **Port**           | **Source**                   |
@@ -48,7 +48,7 @@ Enabling Specified IP Addresses to Remotely Access ECSs in a Security Group
 
    
 
-.. _EN-US_TOPIC_0140323152__en-us_topic_0118534011_table2497622119555:
+.. _ENUSTOPIC0140323152enustopic0118534011table2497622119555:
 
    +-----------------+-----------------+-----------------+-------------------------------------------------+
    | **Direction**   | **Protocol**    | **Port**        | **Source**                                      |
@@ -67,7 +67,7 @@ Remotely Connecting to Linux ECSs Using SSH
 
 -  Security group rule: 
 
-.. _EN-US_TOPIC_0140323152__en-us_topic_0118534011_table16351717123312:
+.. _ENUSTOPIC0140323152enustopic0118534011table16351717123312:
 
    ============= ============ ======== ==========
    **Direction** **Protocol** **Port** **Source**
@@ -84,7 +84,7 @@ Remotely Connecting to Windows ECSs Using RDP
 
 -  Security group rule: 
 
-.. _EN-US_TOPIC_0140323152__en-us_topic_0118534011_table129650323711:
+.. _ENUSTOPIC0140323152enustopic0118534011table129650323711:
 
    ============= ============ ======== ==========
    **Direction** **Protocol** **Port** **Source**
@@ -101,7 +101,7 @@ Enabling Communication Between ECSs
 
 -  Security group rule: 
 
-.. _EN-US_TOPIC_0140323152__en-us_topic_0118534011_table810055173719:
+.. _ENUSTOPIC0140323152enustopic0118534011table810055173719:
 
    ============= ============ ======== ==========
    **Direction** **Protocol** **Port** **Source**
@@ -118,7 +118,7 @@ Hosting a Website on ECSs
 
 -  Security group rule: 
 
-.. _EN-US_TOPIC_0140323152__en-us_topic_0118534011_table30323767195135:
+.. _ENUSTOPIC0140323152enustopic0118534011table30323767195135:
 
    ============= ============ ======== ==========
    **Direction** **Protocol** **Port** **Source**
@@ -136,7 +136,7 @@ Enabling an ECS to Function as a DNS Server
 
 -  Security group rules: 
 
-.. _EN-US_TOPIC_0140323152__en-us_topic_0118534011_table9719143933517:
+.. _ENUSTOPIC0140323152enustopic0118534011table9719143933517:
 
    ============= ============ ======== ==========
    **Direction** **Protocol** **Port** **Source**
@@ -152,13 +152,13 @@ Uploading or Downloading Files Using FTP
 
    If you want to use File Transfer Protocol (FTP) to upload files to or download files from ECSs, you need to add a security group rule.
 
-   |image1|
+   .. note::
 
-   You must first install the FTP server program on the ECSs and check whether ports 20 and 21 are working properly.
+      You must first install the FTP server program on the ECSs and check whether ports 20 and 21 are working properly.
 
 -  Security group rule: 
 
-.. _EN-US_TOPIC_0140323152__en-us_topic_0118534011_table8479153013395:
+.. _ENUSTOPIC0140323152enustopic0118534011table8479153013395:
 
    ============= ============ ======== ==========
    **Direction** **Protocol** **Port** **Source**
@@ -167,5 +167,3 @@ Uploading or Downloading Files Using FTP
    ============= ============ ======== ==========
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

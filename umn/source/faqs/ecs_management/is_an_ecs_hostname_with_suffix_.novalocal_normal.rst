@@ -6,11 +6,11 @@ Symptom
 
 Hostnames of ECSs created based on some types of images have the suffix **.novalocal**, whereas others do not.
 
-For example, the hostname is set to **abc** during ECS creation. `Table 1 <#EN-US_TOPIC_0094874138__table168595206502>`__ lists the hostnames (obtained by running the **hostname** command) of ECSs created using different images and those displayed after the ECSs are restarted.
+For example, the hostname is set to **abc** during ECS creation. `Table 1 <#ENUSTOPIC0094874138table168595206502>`__ lists the hostnames (obtained by running the **hostname** command) of ECSs created using different images and those displayed after the ECSs are restarted.
 
 
 
-.. _EN-US_TOPIC_0094874138__table168595206502:
+.. _ENUSTOPIC0094874138table168595206502:
 
 .. table:: **Table 1** Hostnames of ECSs created from different images
 

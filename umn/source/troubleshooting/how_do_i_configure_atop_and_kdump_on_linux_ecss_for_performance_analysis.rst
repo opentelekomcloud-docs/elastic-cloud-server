@@ -10,18 +10,18 @@ The method for configuring atop varies with the OS version.
 
 atop
 
--  `Introduction to atop <#EN-US_TOPIC_0000001143214829__en-us_topic_0178319250_section0959133015350>`__
--  `Configuring atop for CentOS 8 or RHEL 8 <#EN-US_TOPIC_0000001143214829__en-us_topic_0178319250_section18897192721320>`__
--  `Configuring atop for CentOS 7, RHEL 7, or EulerOS <#EN-US_TOPIC_0000001143214829__en-us_topic_0178319250_section1972319582310>`__
--  `Configuring atop for SUSE 12 or SUSE 15 <#EN-US_TOPIC_0000001143214829__en-us_topic_0178319250_section3205824181917>`__
--  `Configuring atop Using Its Source Package for SUSE, Fedora, Debian or Ubuntu <#EN-US_TOPIC_0000001143214829__en-us_topic_0178319250_section012793312620>`__
+-  `Introduction to atop <#ENUSTOPIC0000001143214829enustopic0178319250section0959133015350>`__
+-  `Configuring atop for CentOS 8 or RHEL 8 <#ENUSTOPIC0000001143214829enustopic0178319250section18897192721320>`__
+-  `Configuring atop for CentOS 7, RHEL 7, or EulerOS <#ENUSTOPIC0000001143214829enustopic0178319250section1972319582310>`__
+-  `Configuring atop for SUSE 12 or SUSE 15 <#ENUSTOPIC0000001143214829enustopic0178319250section3205824181917>`__
+-  `Configuring atop Using Its Source Package for SUSE, Fedora, Debian or Ubuntu <#ENUSTOPIC0000001143214829enustopic0178319250section012793312620>`__
 
 kdump
 
--  `Precautions for Configuring kdump <#EN-US_TOPIC_0000001143214829__en-us_topic_0178319250_section1410131164120>`__
--  `Introduction to kdump <#EN-US_TOPIC_0000001143214829__en-us_topic_0178319250_section18450171174120>`__
--  `Configuring kdump <#EN-US_TOPIC_0000001143214829__en-us_topic_0178319250_section134381494320>`__
--  `Checking Whether kdump Configurations Have Taken Effect <#EN-US_TOPIC_0000001143214829__en-us_topic_0178319250_section1296112934412>`__
+-  `Precautions for Configuring kdump <#ENUSTOPIC0000001143214829enustopic0178319250section1410131164120>`__
+-  `Introduction to kdump <#ENUSTOPIC0000001143214829enustopic0178319250section18450171174120>`__
+-  `Configuring kdump <#ENUSTOPIC0000001143214829enustopic0178319250section134381494320>`__
+-  `Checking Whether kdump Configurations Have Taken Effect <#ENUSTOPIC0000001143214829enustopic0178319250section1296112934412>`__
 
 Introduction to atop
 --------------------
@@ -360,9 +360,9 @@ Configuring kdump
 
       path  /home/kdump
 
-   |image1|
+   .. note::
 
-   There must be enough space in the specified path for storing the vmcore file. It is recommended that the available space be greater than or equal to the RAM size. You can also store the vmcore file on a shared device such as SAN or NFS.
+      There must be enough space in the specified path for storing the vmcore file. It is recommended that the available space be greater than or equal to the RAM size. You can also store the vmcore file on a shared device such as SAN or NFS.
 
 #. Set the vmcore dump level.
 
@@ -479,5 +479,3 @@ Checking Whether kdump Configurations Have Taken Effect
    **# ll /var/crash/**
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

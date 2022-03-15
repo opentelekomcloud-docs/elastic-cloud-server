@@ -4,29 +4,49 @@ How Can I Obtain the Mapping Between Disk Partitions and Disk Devices on a Windo
 This section uses an ECS running Windows Server 2008 R2 64bit as an example to describe how to obtain the mapping between disk partitions and disk devices.
 
 #. Log in to the Windows ECS.
-#. Click **Start** in the lower left corner of the desktop.
-#. Choose **Control Panel** > **Administrative Tools** > **Computer Management**.
-#. In the navigation pane on the left, choose **Storage** > **Disk Management**.\ **Figure 1** Disk Management
-   |image1|
-#. Taking disk 1 marked in `Figure 1 <#EN-US_TOPIC_0087680813__fig63278226101115>`__ as an example, view the disk device for disk 1.
 
-   a. Right-click the gray area where disk 1 is located, as shown in the red box in `Figure 1 <#EN-US_TOPIC_0087680813__fig63278226101115>`__.
+#. Click **Start** in the lower left corner of the desktop.
+
+#. Choose **Control Panel** > **Administrative Tools** > **Computer Management**.
+
+#. In the navigation pane on the left, choose **Storage** > **Disk Management**.
+
+   .. figure:: /_static/images/en-us_image_0087906013.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 1** Disk Management
+
+#. Taking disk 1 marked in `Figure 1 <#ENUSTOPIC0087680813fig63278226101115>`__ as an example, view the disk device for disk 1.
+
+   a. Right-click the gray area where disk 1 is located, as shown in the red box in `Figure 1 <#ENUSTOPIC0087680813fig63278226101115>`__.
 
    b. Click **Properties**.
 
-      The **SCSI Disk Device Properties** dialog box is displayed, as shown in `Figure 2 <#EN-US_TOPIC_0087680813__fig22437283101545>`__.
+      The **SCSI Disk Device Properties** dialog box is displayed, as shown in `Figure 2 <#ENUSTOPIC0087680813fig22437283101545>`__.
 
-      | **Figure 2** Disk properties
-      | |image2|
+      .. figure:: /_static/images/en-us_image_0087906055.png
+         :alt: **Figure 2** Disk properties
+      
 
-   c. Click the **Details** tab and set **Property** to **Parent**.\ **Figure 3** Disk device details
-      |image3|
+         **Figure 2** Disk properties
+
+   c. Click the **Details** tab and set **Property** to **Parent**.
+
+      .. figure:: /_static/images/en-us_image_0087906067.png
+         :alt: **Figure 3** Disk device details
+      
+
+         **Figure 3** Disk device details
 
    d. Record the digits following **&** in the parameter value, for example, **51776**, which is the master and slave device number corresponding to the disk partition.
 
-   e. Obtain the disk device according to the information listed in `Table 1 <#EN-US_TOPIC_0087680813__table2257401020521>`__.The disk device corresponding to **51776** is **xvde**. The disk device used by disk 1 is xvde. 
+   e. Obtain the disk device according to the information listed in `Table 1 <#ENUSTOPIC0087680813table2257401020521>`__.
 
-.. _EN-US_TOPIC_0087680813__table2257401020521:
+      The disk device corresponding to **51776** is **xvde**. The disk device used by disk 1 is xvde. 
+
+.. _ENUSTOPIC0087680813table2257401020521:
 
       .. table:: **Table 1** Mapping between disk partitions and disk devices
 
@@ -59,12 +79,4 @@ This section uses an ECS running Windows Server 2008 R2 64bit as an example to d
          268441344                                           xvdx
          =================================================== ===========
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0087906013.png
-   :class: imgResize
-
-.. |image2| image:: /_static/images/en-us_image_0087906055.png
-
-.. |image3| image:: /_static/images/en-us_image_0087906067.png
 

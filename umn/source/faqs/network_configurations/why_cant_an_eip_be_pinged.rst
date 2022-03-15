@@ -13,28 +13,34 @@ The following fault causes are sequenced based on their occurrence probability.
 
 If the fault persists after you have ruled out a cause, check other causes.
 
-| **Figure 1** Method of locating the failure to ping an EIP
-| |image1| 
+.. figure:: /_static/images/en-us_image_0293553366.png
+   :alt: Click to enlarge
+   :figclass: imgResize
 
-.. _EN-US_TOPIC_0105130172__table6168184132811:
+
+   **Figure 1** Method of locating the failure to ping an EIP
+
+
+
+.. _ENUSTOPIC0105130172table6168184132811:
 
 .. table:: **Table 1** Method of locating the failure to ping an EIP
 
-   +--------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Possible Cause                                               | Solution                                                                                                                                                                                                                                                               |
-   +==============================================================+========================================================================================================================================================================================================================================================================+
-   | ICMP access rules are not added to the security group.       | Add ICMP access rules to the security group. For details, see `Checking Security Group Rules <#EN-US_TOPIC_0105130172__section1715910911214>`__.                                                                                                                       |
-   +--------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Ping operations are prohibited on the firewall.              | Allow ping operations on the firewall. For details, see `Checking Firewall Settings <#EN-US_TOPIC_0105130172__section774414326138>`__.                                                                                                                                 |
-   +--------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Ping operations are prohibited on the ECS.                   | Allow ping operations on the ECS. For details, see `Checking Whether Ping Operations Have Been Disabled on the ECS <#EN-US_TOPIC_0105130172__section42301821174115>`__.                                                                                                |
-   +--------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Network ACL is associated.                                   | If the VPC is associated with a network ACL, check the network ACL rules. For details, see `Checking ACL Rules <#EN-US_TOPIC_0105130172__en-us_topic_0096302298_section374314592329>`__.                                                                               |
-   +--------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | A network exception occurred.                                | Use another ECS in the same region to check whether the local network is functional. For details, see `Checking Whether the Network Is Functional <#EN-US_TOPIC_0105130172__section108152100162>`__.                                                                   |
-   +--------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Routes are incorrectly configured if multiple NICs are used. | If the network is inaccessible due to an extension NIC, the fault is generally caused by incorrect route configurations. To resolve this issue, see `Checking the ECS Route Configuration If Multiple NICs Are Used <#EN-US_TOPIC_0105130172__section175172388145>`__. |
-   +--------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Possible Cause                                               | Solution                                                                                                                                                                                                                                                          |
+   +==============================================================+===================================================================================================================================================================================================================================================================+
+   | ICMP access rules are not added to the security group.       | Add ICMP access rules to the security group. For details, see `Checking Security Group Rules <#ENUSTOPIC0105130172section1715910911214>`__.                                                                                                                       |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Ping operations are prohibited on the firewall.              | Allow ping operations on the firewall. For details, see `Checking Firewall Settings <#ENUSTOPIC0105130172section774414326138>`__.                                                                                                                                 |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Ping operations are prohibited on the ECS.                   | Allow ping operations on the ECS. For details, see `Checking Whether Ping Operations Have Been Disabled on the ECS <#ENUSTOPIC0105130172section42301821174115>`__.                                                                                                |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Network ACL is associated.                                   | If the VPC is associated with a network ACL, check the network ACL rules. For details, see `Checking ACL Rules <#ENUSTOPIC0105130172enustopic0096302298section374314592329>`__.                                                                                   |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | A network exception occurred.                                | Use another ECS in the same region to check whether the local network is functional. For details, see `Checking Whether the Network Is Functional <#ENUSTOPIC0105130172section108152100162>`__.                                                                   |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Routes are incorrectly configured if multiple NICs are used. | If the network is inaccessible due to an extension NIC, the fault is generally caused by incorrect route configurations. To resolve this issue, see `Checking the ECS Route Configuration If Multiple NICs Are Used <#ENUSTOPIC0105130172section175172388145>`__. |
+   +--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Checking Security Group Rules
 -----------------------------
@@ -43,7 +49,7 @@ The ping operations use the ICMP protocol. Check whether the security group acco
 
 #. Log in to the management console.
 
-#. Click |image2| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select your region and project.
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
@@ -59,7 +65,7 @@ The ping operations use the ICMP protocol. Check whether the security group acco
 
 #. On the **Inbound Rules** tab, click **Add Rule**. In the displayed dialog box, set required parameters to add an inbound rule. 
 
-.. _EN-US_TOPIC_0105130172__table156272235264:
+.. _ENUSTOPIC0105130172table156272235264:
 
    .. table:: **Table 2** Security group rules
 
@@ -90,10 +96,14 @@ If a firewall is enabled on the ECS, check whether the firewall blocks the ping 
 
    **iptables -L**
 
-   If the command output shown in `Figure 2 <#EN-US_TOPIC_0105130172__fig7244357113416>`__ is displayed, there is no ICMP rule blocking the ping operations.
+   If the command output shown in `Figure 2 <#ENUSTOPIC0105130172fig7244357113416>`__ is displayed, there is no ICMP rule blocking the ping operations.
 
-   | **Figure 2** Checking firewall rules
-   | |image3|
+   .. figure:: /_static/images/en-us_image_0250117342.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 2** Checking firewall rules
 
    If the ping operations are blocked by an ICMP rule, run the following commands to modify the rule for unblocking:
 
@@ -109,7 +119,7 @@ If a firewall is enabled on the ECS, check whether the firewall blocks the ping 
 
    View and set the firewall status.
 
-#. If the firewall is **On**, go to `4 <#EN-US_TOPIC_0105130172__li192824161474>`__.
+#. If the firewall is **On**, go to `4 <#ENUSTOPIC0105130172li192824161474>`__.
 
 #. Check the ICMP rule statuses in the firewall.
 
@@ -127,9 +137,19 @@ If a firewall is enabled on the ECS, check whether the firewall blocks the ping 
 
       **Outbound Rules**: **File and Printer Sharing (Echo Request - ICMPv6-Out)**
 
-      | **Figure 3** Inbound Rules
-      | |image4| **Figure 4** Outbound Rules
-      | |image5|
+      .. figure:: /_static/images/en-us_image_0250182352.png
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 3** Inbound Rules
+
+      .. figure:: /_static/images/en-us_image_0250182717.png
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 4** Outbound Rules
 
 Checking Whether Ping Operations Have Been Disabled on the ECS
 --------------------------------------------------------------
@@ -170,9 +190,11 @@ By default, no ACL is configured for a VPC. If a network ACL is associated with 
 
 #. Click the ACL name to view its status.
 
-#. If the network ACL is enabled, add an ICMP rule to allow traffic.\ |image6|
+#. If the network ACL is enabled, add an ICMP rule to allow traffic.
 
-   The default network ACL rule denies all incoming and outgoing packets. If a network ACL is disabled, the default rule is still effective.
+   .. note::
+
+      The default network ACL rule denies all incoming and outgoing packets. If a network ACL is disabled, the default rule is still effective.
 
 Checking Whether the Network Is Functional
 ------------------------------------------
@@ -196,37 +218,24 @@ Generally, the default route of an OS will preferentially select the primary NIC
 
       **ip route**
 
-      | **Figure 5** Default route
-      | |image7|
+      .. figure:: /_static/images/en-us_image_0250105611.png
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 5** Default route
 
    #. If the route is unavailable, run the following command to add it:
 
       **ip route add default via XXXX dev eth0**
 
-      |image8|
+      .. note::
 
-      In the preceding command, *XXXX* specifies a gateway IP address.
+         In the preceding command, *XXXX* specifies a gateway IP address.
 
 -  If the ECS has multiple NICs and the EIP is bound to an extension NIC, configure policy routing on the ECS for network communication with the extension NIC.
 
 
 
-.. |image1| image:: /_static/images/en-us_image_0293553366.png
-   :class: imgResize
+.. |image1| image:: /_static/images/en-us_image_0210779229.png
 
-.. |image2| image:: /_static/images/en-us_image_0210779229.png
-
-.. |image3| image:: /_static/images/en-us_image_0250117342.png
-   :class: imgResize
-
-.. |image4| image:: /_static/images/en-us_image_0250182352.png
-   :class: imgResize
-
-.. |image5| image:: /_static/images/en-us_image_0250182717.png
-   :class: imgResize
-
-.. |image6| image:: /_static/images/note_3.0-en-us.png
-.. |image7| image:: /_static/images/en-us_image_0250105611.png
-   :class: imgResize
-
-.. |image8| image:: /_static/images/note_3.0-en-us.png

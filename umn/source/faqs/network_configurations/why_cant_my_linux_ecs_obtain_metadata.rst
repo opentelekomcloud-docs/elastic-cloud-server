@@ -15,8 +15,11 @@ Run the following command on the Linux ECS configured with a static IP address:
 
 The route with the destination of 169.254.169.254 does not exist, but the route with the destination of 169.254.0.0/16 exists.
 
-| **Figure 1** Route information
-| |image1|
+.. figure:: /_static/images/en-us_image_0000001092174258.png
+   :alt: **Figure 1** Route information
+
+
+   **Figure 1** Route information
 
 After the network is restarted, the original route with the destination of 169.254.169.254 is changed to the route with the destination of 169.254.0.0/16 without a next hop. As a result, the Linux ECS cannot obtain metadata.
 
@@ -33,8 +36,12 @@ Solution
 
    **# curl** **http://169.254.169.254**
 
-   | **Figure 2** Obtaining metadata
-   | |image2|
+   .. figure:: /_static/images/en-us_image_0000001092045958.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 2** Obtaining metadata
 
 3. Run the following command to create or modify the **/etc/sysconfig/network-scripts/route-eth0** file to prevent the static route from being changed after network restart:
 
@@ -46,10 +53,4 @@ Solution
 
    **# 169.254.169.254 via 192.168.1.1**
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0000001092174258.png
-
-.. |image2| image:: /_static/images/en-us_image_0000001092045958.png
-   :class: imgResize
 

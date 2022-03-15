@@ -24,16 +24,17 @@ The following operations use EulerOS 2.2 as an example.
 
    *99999* is the password validity period, and *user_name* is the system user, for example, user **root**.
 
-   |image1|
+   .. note::
 
-   You are advised to configure the password validity period as needed and change it at a regular basis.
+      You are advised to configure the password validity period as needed and change it at a regular basis.
 
-#. Run command **vi /etc/login.defs** to verify that the configuration has taken effect.\ **Figure 1** Configuration verification
-   |image2|
+#. Run command **vi /etc/login.defs** to verify that the configuration has taken effect.
 
+   .. figure:: /_static/images/en-us_image_0079177144.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
 
+      **Figure 1** Configuration verification
 
-.. |image1| image:: /_static/images/note_3.0-en-us.png
-.. |image2| image:: /_static/images/en-us_image_0079177144.png
-   :class: imgResize
 

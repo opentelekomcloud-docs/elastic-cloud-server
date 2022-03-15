@@ -16,17 +16,35 @@ The following procedure uses an ECS running Windows Server 2012 as an example. T
 #. In **Registry Editor**, choose **HKEY_LOCAL_MACHINE** > **SYSTEM** > **CurrentControlSet** > **Control** > **Terminal Server** > **Wds** > **rdpwd** > **Tds** > **tcp** and double-click **PortNumber**.
 
    a. In the dialog box that is displayed, set **Base** to **Decimal**.
-   b. Change the value in **Value data** to the new port number, which is **2020** in this example.\ **Figure 1** Changing the port number to 2020
-      |image1|
+
+   b. Change the value in **Value data** to the new port number, which is **2020** in this example.
+
+      .. figure:: /_static/images/en-us_image_0244859999.png
+         :alt: **Figure 1** Changing the port number to 2020
+      
+
+         **Figure 1** Changing the port number to 2020
 
 #. In **Registry Editor**, choose **HKEY_LOCAL_MACHINE** > **SYSTEM** > **CurrentControlSet** > **Control** > **Terminal Server** > **WinStations** > **RDP-Tcp** and double-click **PortNumber**.
 
    a. In the dialog box that is displayed, set **Base** to **Decimal**.
-   b. Change the value in **Value data** to the new port number, which is **2020** in this example.\ **Figure 2** Changing the port number to 2020
-      |image2|
 
-#. Open the Windows search box, enter **services**, and select **Services**.\ **Figure 3** Services
-   |image3|
+   b. Change the value in **Value data** to the new port number, which is **2020** in this example.
+
+      .. figure:: /_static/images/en-us_image_0244859999.png
+         :alt: **Figure 2** Changing the port number to 2020
+      
+
+         **Figure 2** Changing the port number to 2020
+
+#. Open the Windows search box, enter **services**, and select **Services**.
+
+   .. figure:: /_static/images/en-us_image_0244860550.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 3** Services
 
 #. (Skip this step if the firewall is disabled.) Modify the inbound rules of the firewall.
 
@@ -58,8 +76,13 @@ The following procedure uses an ECS running CentOS 7.3 as an example. The defaul
 
    **vi /etc/ssh/sshd_config**
 
-#. Delete the comment tag (#) from the **#port 22** line and change **22** to **2020**.\ **Figure 4** Changing the port number to 2020
-   |image4|
+#. Delete the comment tag (#) from the **#port 22** line and change **22** to **2020**.
+
+   .. figure:: /_static/images/en-us_image_0244856480.png
+      :alt: **Figure 4** Changing the port number to 2020
+   
+
+      **Figure 4** Changing the port number to 2020
 
 #. Press **Esc** to exit the editing mode. Enter **:wq!** to save and exit the configuration.
 
@@ -105,14 +128,4 @@ The following procedure uses an ECS running CentOS 7.3 as an example. The defaul
 
    Use port 2020 to remotely log in to the ECS.
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0244859999.png
-
-.. |image2| image:: /_static/images/en-us_image_0244859999.png
-
-.. |image3| image:: /_static/images/en-us_image_0244860550.png
-   :class: imgResize
-
-.. |image4| image:: /_static/images/en-us_image_0244856480.png
 

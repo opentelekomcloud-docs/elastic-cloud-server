@@ -35,9 +35,9 @@ The changed hostname is assumed to be **new_hostname**.
 
       **HOSTNAME=**\ *Changed hostname*
 
-      |image1|
+      .. note::
 
-      If there is no **HOSTNAME** in the configuration file, manually add this parameter and set it to the changed hostname.
+         If there is no **HOSTNAME** in the configuration file, manually add this parameter and set it to the changed hostname.
 
       An example is provided as follows:
 
@@ -76,5 +76,3 @@ The changed hostname is assumed to be **new_hostname**.
    If the changed hostname is displayed in the command output, the hostname has been changed and the new name permanently takes effect.
 
 
-
-.. |image1| image:: /_static/images/note_3.0-en-us.png

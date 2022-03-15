@@ -13,8 +13,15 @@ Background
 
 To obtain the virtualization type of an ECS, perform the following operations:
 
-#. On the page providing details about the ECS, view the ECS specifications.\ **Figure 1** Viewing ECS specifications
-   |image1|
+#. On the page providing details about the ECS, view the ECS specifications.
+
+   .. figure:: /_static/images/en-us_image_0121090576.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+   
+
+      **Figure 1** Viewing ECS specifications
+
 #. Check the specifications tables in `ECS Types <../../service_overview/instances/ecs_types.html>`__ for the virtualization type.
 
 Notes
@@ -31,7 +38,7 @@ Step 1: Modify Specifications
 
 #. Log in to the management console.
 
-#. Click |image2| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select your region and project.
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
@@ -61,12 +68,12 @@ Step 1: Modify Specifications
 
    a. Check whether **Failures** is displayed on the management console. For details, see `Viewing Failures <../../instances/viewing_ecs_information/viewing_failures.html>`__.
 
-      -  If yes, go to step `10.b <#EN-US_TOPIC_0013771092__li6253192246>`__.
+      -  If yes, go to step `10.b <#ENUSTOPIC0013771092li6253192246>`__.
       -  If no, the specifications have been modified.
 
    b. Click **Failures**. Then, in the **Failures** dialog box, click **Operation Failures** and check whether the task is contained in the list by **Name/ID**, **Operated At**, or **Task**.
 
-      -  If yes, the specifications modification failed. See `Follow-up Procedure <#EN-US_TOPIC_0013771092__section9461027528>`__ for failure causes.
+      -  If yes, the specifications modification failed. See `Follow-up Procedure <#ENUSTOPIC0013771092section9461027528>`__ for failure causes.
       -  If no, the specifications have been modified.
 
 Step 2: Check Disk Attachment
@@ -103,8 +110,5 @@ Perform the following operations in the event of a specifications modification f
 
 
 
-.. |image1| image:: /_static/images/en-us_image_0121090576.png
-   :class: imgResize
-
-.. |image2| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0210779229.png
 

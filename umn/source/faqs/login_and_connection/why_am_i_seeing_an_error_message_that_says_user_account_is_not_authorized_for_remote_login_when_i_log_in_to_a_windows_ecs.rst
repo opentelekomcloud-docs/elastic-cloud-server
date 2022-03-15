@@ -6,8 +6,12 @@ Symptom
 
 An error message is displayed indicating that the connection is denied because the user account is not authorized for remote login.
 
-| **Figure 1** Error message
-| |image1|
+.. figure:: /_static/images/en-us_image_0288997346.png
+   :alt: Click to enlarge
+   :figclass: imgResize
+
+
+   **Figure 1** Error message
 
 Possible Causes
 ---------------
@@ -21,30 +25,54 @@ Solution
 
    a. In the **Run** dialog box, enter **secpol.msc** and click **OK** to open **Local Security Policy**.
 
-   b. Choose **Local Policies** > **User Rights Assignment** > **Allow log on through Remote Desktop Services**.\ **Figure 2** Local security policy
-      |image2|
+   b. Choose **Local Policies** > **User Rights Assignment** > **Allow log on through Remote Desktop Services**.
+
+      .. figure:: /_static/images/en-us_image_0288997347.png
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 2** Local security policy
 
    c. Check whether there are user groups or users that have been granted the remote login permission.
 
       If not, add required users or groups.
 
-      | **Figure 3** Allow log on through Remote Desktop Services properties
-      | |image3|
+      .. figure:: /_static/images/en-us_image_0288997348.png
+         :alt: **Figure 3** Allow log on through Remote Desktop Services properties
+      
+
+         **Figure 3** Allow log on through Remote Desktop Services properties
 
 #. Check the target user group.
 
    a. Open the **Run** dialog box, enter **lusrmgr.msc**, and click **OK** to open **Local Users and Groups**.
+
    b. Double-click **Users** on the left.
+
    c. Double-click the name of the user to whom the login error message was displayed.
-   d. In the displayed dialog box, click the **Member Of** tab. Ensure that the user belongs to the user group that is assigned with the remote login permission in `2.b <#EN-US_TOPIC_0264235948__en-us_topic_0173606024_li19821176204810>`__.\ **Figure 4** Checking the target user group
-      |image4|
+
+   d. In the displayed dialog box, click the **Member Of** tab. Ensure that the user belongs to the user group that is assigned with the remote login permission in `2.b <#ENUSTOPIC0264235948enustopic0173606024li19821176204810>`__.
+
+      .. figure:: /_static/images/en-us_image_0288997349.png
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 4** Checking the target user group
 
 #. Check the remote desktop session host configuration.
 
    a. In the **Run** dialog box, enter **tsconfig.msc** and click **OK** to open **Remote Desktop Session Host Configuration**.
 
-   b. Double-click **RDP-Tcp** or other connections added by a user under **Connections** and click the **Security** tab.\ **Figure 5** Security
-      |image5|
+   b. Double-click **RDP-Tcp** or other connections added by a user under **Connections** and click the **Security** tab.
+
+      .. figure:: /_static/images/en-us_image_0288997350.png
+         :alt: Click to enlarge
+         :figclass: imgResize
+      
+
+         **Figure 5** Security
 
    c. Check whether there are user groups or users that have been granted the remote login permission under **Group or user names**.
 
@@ -56,19 +84,4 @@ Solution
 
       **net start TermService**
 
-
-
-.. |image1| image:: /_static/images/en-us_image_0288997346.png
-   :class: imgResize
-
-.. |image2| image:: /_static/images/en-us_image_0288997347.png
-   :class: imgResize
-
-.. |image3| image:: /_static/images/en-us_image_0288997348.png
-
-.. |image4| image:: /_static/images/en-us_image_0288997349.png
-   :class: imgResize
-
-.. |image5| image:: /_static/images/en-us_image_0288997350.png
-   :class: imgResize
 
