@@ -229,9 +229,9 @@ The following example shows you how a new primary partition can be created on a 
 
    The formatting takes a period of time. Observe the system running status and do not exit.
 
-   |image1|
+   .. important::
 
-   The partition sizes supported by file systems vary. Therefore, you are advised to choose an appropriate file system based on your service requirements.
+      The partition sizes supported by file systems vary. Therefore, you are advised to choose an appropriate file system based on your service requirements.
 
 #. Run the following command to create a mount point:
 
@@ -347,5 +347,3 @@ The following procedure shows how to set automatic disk mounting at server start
          /dev/vdb1 on /mnt/sdc type ext4 (rw,relatime,data=ordered)
 
 
-
-.. |image1| image:: /_static/images/notice_3.0-en-us.png

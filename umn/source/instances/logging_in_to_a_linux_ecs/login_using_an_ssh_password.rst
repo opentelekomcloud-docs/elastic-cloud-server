@@ -6,9 +6,9 @@ Scenarios
 
 This section describes how to remotely log in to a Linux ECS using an SSH password from Windows and Linux, respectively.
 
-|image1|
+.. important::
 
-Logging in to a Linux ECS using SSH password authentication is disabled by default. If you require password authentication, configure it after logging in to the ECS. To ensure system security, reset the common user password for logging in to the Linux ECS after configuring SSH password authentication.
+   Logging in to a Linux ECS using SSH password authentication is disabled by default. If you require password authentication, configure it after logging in to the ECS. To ensure system security, reset the common user password for logging in to the Linux ECS after configuring SSH password authentication.
 
 Prerequisites
 -------------
@@ -119,5 +119,3 @@ To log in to the Linux ECS from a local Linux server, run the following command:
 **ssh** *EIP bound to the ECS*
 
 
-
-.. |image1| image:: /_static/images/notice_3.0-en-us.png

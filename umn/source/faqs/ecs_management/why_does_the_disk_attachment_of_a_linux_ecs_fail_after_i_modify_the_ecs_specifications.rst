@@ -50,9 +50,9 @@ Procedure
 
    In the preceding command, **/dev/vbd1** is the disk to be attached, and **/mnt/vbd1** is the path for disk attachment.
 
-   |image1|
+   .. important::
 
-   Ensure that **/mnt/vbd1** is empty. Otherwise, the attachment will fail.
+      Ensure that **/mnt/vbd1** is empty. Otherwise, the attachment will fail.
 
 #. Run the following commands to check whether the numbers of disks before and after specifications modification are the same:
 
@@ -73,5 +73,3 @@ Procedure
    As shown in `Figure 3 <#ENUSTOPIC0214940106enustopic0120890833fig722411124917>`__, the numbers of disks before and after specifications modification are the same. The disks are **/dev/vda**, **/dev/vdb**, and **/dev/vdc**.
 
 
-
-.. |image1| image:: /_static/images/notice_3.0-en-us.png

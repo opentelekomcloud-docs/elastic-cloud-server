@@ -83,11 +83,11 @@ The following example shows you how a new partition can be created on a new data
 
    **mklabel gpt**
 
-   |image1|
+   .. important::
 
-   The maximum disk capacity supported by MBR is 2 TB, and that supported by GPT is 18 EB. Because a data disk currently supports up to 32 TB, use the GPT partition style if your disk capacity is larger than 2 TB.
+      The maximum disk capacity supported by MBR is 2 TB, and that supported by GPT is 18 EB. Because a data disk currently supports up to 32 TB, use the GPT partition style if your disk capacity is larger than 2 TB.
 
-   If you change the disk partition style after the disk has been used, the data on the disk will be cleared. Therefore, select a proper disk partition style when initializing the disk.
+      If you change the disk partition style after the disk has been used, the data on the disk will be cleared. Therefore, select a proper disk partition style when initializing the disk.
 
 #. Enter **p** and press **Enter** to view the disk partition style.
 
@@ -211,9 +211,9 @@ The following example shows you how a new partition can be created on a new data
 
    The formatting takes a period of time. Observe the system running status and do not exit.
 
-   |image2|
+   .. important::
 
-   The partition sizes supported by file systems vary. Therefore, you are advised to choose an appropriate file system based on your service requirements.
+      The partition sizes supported by file systems vary. Therefore, you are advised to choose an appropriate file system based on your service requirements.
 
 #. Run the following command to create a mount point:
 
@@ -329,6 +329,3 @@ The following procedure shows how to set automatic disk mounting at server start
          /dev/vdb1 on /mnt/sdc type ext4 (rw,relatime,data=ordered)
 
 
-
-.. |image1| image:: /_static/images/notice_3.0-en-us.png
-.. |image2| image:: /_static/images/notice_3.0-en-us.png

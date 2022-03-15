@@ -1,4 +1,3 @@
-umn/source/service_overview/ecs_specifications_and_types/gpu-accelerated_ecss.rst
 GPU-accelerated ECSs
 ====================
 

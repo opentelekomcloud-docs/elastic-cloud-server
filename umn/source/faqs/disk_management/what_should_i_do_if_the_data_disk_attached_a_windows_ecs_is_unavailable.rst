@@ -6,9 +6,9 @@ Symptom
 
 After logging in to my Windows ECS, I cannot find the attached data disk.
 
-|image1|
+.. caution::
 
-Formatting a disk will cause data loss. Therefore, before formatting a disk, create a backup for it.
+   Formatting a disk will cause data loss. Therefore, before formatting a disk, create a backup for it.
 
 Possible Causes
 ---------------
@@ -46,5 +46,3 @@ After the ECS OS is changed, data disks may become unavailable due to file syste
    If the fault persists, initialize and partition the disk again. Before initializing the disk, create a backup for it.
 
 
-
-.. |image1| image:: /_static/images/caution_3.0-en-us.png

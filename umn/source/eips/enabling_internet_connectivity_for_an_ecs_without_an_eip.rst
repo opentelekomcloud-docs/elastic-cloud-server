@@ -90,9 +90,9 @@ In this example, the proxy ECS runs CentOS 6.5.
 
    **iptables -P FORWARD ACCEPT**
 
-   |image3|
+   .. caution::
 
-   Running **iptables -P INPUT ACCEPT** will set default INPUT policy to ACCEPT, which poses security risks. You are advised to set security group rules to restrict inbound access.
+      Running **iptables -P INPUT ACCEPT** will set default INPUT policy to ACCEPT, which poses security risks. You are advised to set security group rules to restrict inbound access.
 
 #. Run the following command to configure source network address translation (SNAT) to enable ECSs in the same network segment to access the Internet through the proxy ECS:
 
@@ -128,7 +128,7 @@ In this example, the proxy ECS runs CentOS 6.5.
 #. Add a route.
 
    a. Log in to the management console.
-   b. Click |image4| in the upper left corner and select your region and project.
+   b. Click |image3| in the upper left corner and select your region and project.
    c. Under **Network**, click **Virtual Private Cloud**.
    d. Select a VPC to which a route is to be added and click **Route Tables**. On the **Route Tables** page, click **Add Route**.
    e. Set route information on the displayed page.
@@ -153,6 +153,5 @@ In this example, the proxy ECS runs CentOS 6.5.
 
 .. |image2| image:: /_static/images/en-us_image_0128851717.png
 
-.. |image3| image:: /_static/images/caution_3.0-en-us.png
-.. |image4| image:: /_static/images/en-us_image_0210779229.png
+.. |image3| image:: /_static/images/en-us_image_0210779229.png
 

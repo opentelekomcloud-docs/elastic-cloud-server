@@ -46,9 +46,9 @@ Deleting a Tag on the TMS Console
 Batch Deleting Tags on the TMS Console
 --------------------------------------
 
-|image5|
+.. important::
 
-Exercise caution when deleting tags in a batch. After you delete the tags, they will be removed from all the associated ECSs and cannot be recovered.
+   Exercise caution when deleting tags in a batch. After you delete the tags, they will be removed from all the associated ECSs and cannot be recovered.
 
 #. Log in to the management console.
 
@@ -62,7 +62,7 @@ Exercise caution when deleting tags in a batch. After you delete the tags, they 
 
 #. In the displayed **Manage Tag** dialog box, click **Delete** in the **Operation** column. Click **OK**.
 
-#. (Optional) Click |image6| in the upper right of the **Search Result** area.
+#. (Optional) Click |image5| in the upper right of the **Search Result** area.
 
    The resource list is refreshed and the refresh time is updated.
 
@@ -76,6 +76,5 @@ Exercise caution when deleting tags in a batch. After you delete the tags, they 
 
 .. |image4| image:: /_static/images/en-us_image_0210875483.png
 
-.. |image5| image:: /_static/images/notice_3.0-en-us.png
-.. |image6| image:: /_static/images/en-us_image_0210875483.png
+.. |image5| image:: /_static/images/en-us_image_0210875483.png
 

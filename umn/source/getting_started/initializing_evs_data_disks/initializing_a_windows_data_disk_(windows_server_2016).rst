@@ -70,11 +70,11 @@ Procedure
 
       **Figure 4** Computer Management (Windows Server 2016)
 
-   |image1|
+   .. important::
 
-   The maximum disk capacity supported by MBR is 2 TB, and that supported by GPT is 18 EB. Because a data disk currently supports up to 32 TB, use the GPT partition style if your disk capacity is larger than 2 TB.
+      The maximum disk capacity supported by MBR is 2 TB, and that supported by GPT is 18 EB. Because a data disk currently supports up to 32 TB, use the GPT partition style if your disk capacity is larger than 2 TB.
 
-   If you change the disk partition style after the disk has been used, the data on the disk will be cleared. Therefore, select a proper disk partition style when initializing the disk.
+      If you change the disk partition style after the disk has been used, the data on the disk will be cleared. Therefore, select a proper disk partition style when initializing the disk.
 
 #. Right-click at the unallocated disk space and choose **New Simple Volume** from the shortcut menu.
 
@@ -131,9 +131,9 @@ Procedure
 
       **Figure 9** Completing the New Simple Volume Wizard (Windows Server 2016)
 
-   |image2|
+   .. important::
 
-   The partition sizes supported by file systems vary. Therefore, you are advised to choose an appropriate file system based on your service requirements.
+      The partition sizes supported by file systems vary. Therefore, you are advised to choose an appropriate file system based on your service requirements.
 
 #. Click **Finish**.
 
@@ -146,7 +146,7 @@ Procedure
 
       **Figure 10** Disk initialization succeeded (Windows Server 2016)
 
-#. After the volume is created, click |image3| on the task bar and check whether a new volume appears in **This PC**. In this example, New Volume (D:) is the new volume.
+#. After the volume is created, click |image1| on the task bar and check whether a new volume appears in **This PC**. In this example, New Volume (D:) is the new volume.
 
    If New Volume (D:) appears, the disk is successfully initialized and no further action is required.
 
@@ -159,7 +159,5 @@ Procedure
 
 
 
-.. |image1| image:: /_static/images/notice_3.0-en-us.png
-.. |image2| image:: /_static/images/notice_3.0-en-us.png
-.. |image3| image:: /_static/images/en-us_image_0238263336.png
+.. |image1| image:: /_static/images/en-us_image_0238263336.png
 
