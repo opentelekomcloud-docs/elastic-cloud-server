@@ -1,7 +1,7 @@
 ECS and Other Services
 ======================
 
-`Figure 1 <#ENUSTOPIC0013771111fig44795566546>`__ shows the relationships between ECS and other services.
+`Figure 1 <#enustopic0013771111fig44795566546>`__ shows the relationships between ECS and other services.
 
 .. figure:: /_static/images/en-us_image_0225439857.png
    :alt: Click to enlarge

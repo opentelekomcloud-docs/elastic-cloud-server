@@ -3,14 +3,14 @@ Security Group Configuration Examples
 
 Common security group configuration examples are as follows: The following examples allow all outgoing data packets by default and only describe how to configure the inbound rules of a security group.
 
--  `Enabling ECSs in Different Security Groups to Communicate with Each Other Through an Internal Network <#ENUSTOPIC0140323152enustopic0118534011section14197522283>`__
--  `Enabling Specified IP Addresses to Remotely Access ECSs in a Security Group <#ENUSTOPIC0140323152enustopic0118534011section17693183118306>`__
--  `Remotely Connecting to Linux ECSs Using SSH <#ENUSTOPIC0140323152enustopic0118534011section115069253338>`__
--  `Remotely Connecting to Windows ECSs Using RDP <#ENUSTOPIC0140323152enustopic0118534011section168046312349>`__
--  `Enabling Communication Between ECSs <#ENUSTOPIC0140323152enustopic0118534011section34721049193411>`__
--  `Hosting a Website on ECSs <#ENUSTOPIC0140323152enustopic0118534011section1517991516357>`__
--  `Enabling an ECS to Function as a DNS Server <#ENUSTOPIC0140323152enustopic0118534011section2910346123520>`__
--  `Uploading or Downloading Files Using FTP <#ENUSTOPIC0140323152enustopic0118534011section5964121693610>`__
+-  `Enabling ECSs in Different Security Groups to Communicate with Each Other Through an Internal Network <#enustopic0140323152enustopic0118534011section14197522283>`__
+-  `Enabling Specified IP Addresses to Remotely Access ECSs in a Security Group <#enustopic0140323152enustopic0118534011section17693183118306>`__
+-  `Remotely Connecting to Linux ECSs Using SSH <#enustopic0140323152enustopic0118534011section115069253338>`__
+-  `Remotely Connecting to Windows ECSs Using RDP <#enustopic0140323152enustopic0118534011section168046312349>`__
+-  `Enabling Communication Between ECSs <#enustopic0140323152enustopic0118534011section34721049193411>`__
+-  `Hosting a Website on ECSs <#enustopic0140323152enustopic0118534011section1517991516357>`__
+-  `Enabling an ECS to Function as a DNS Server <#enustopic0140323152enustopic0118534011section2910346123520>`__
+-  `Uploading or Downloading Files Using FTP <#enustopic0140323152enustopic0118534011section5964121693610>`__
 
 Enabling ECSs in Different Security Groups to Communicate with Each Other Through an Internal Network
 -----------------------------------------------------------------------------------------------------

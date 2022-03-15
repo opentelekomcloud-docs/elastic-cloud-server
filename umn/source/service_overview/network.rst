@@ -29,7 +29,7 @@ Your account automatically comes with a default security group. The default secu
 
    **Figure 1** Default security group
 
-`Table 1 <#ENUSTOPIC0030828257table1580115155277>`__ describes default security group rules.
+`Table 1 <#enustopic0030828257table1580115155277>`__ describes default security group rules.
 
 
 

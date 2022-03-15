@@ -48,7 +48,7 @@ Procedure
 
       **Figure 4** Security setting
 
-#. Remotely connect to the Windows ECS again. If the error message **Invalid certificate or associated chain** is still displayed, go to `4 <#ENUSTOPIC0264235944enustopic0138877154li19176131183810>`__.
+#. Remotely connect to the Windows ECS again. If the error message **Invalid certificate or associated chain** is still displayed, go to `4 <#enustopic0264235944enustopic0138877154li19176131183810>`__.
 
 #. Log in to the Windows ECS using VNC.
 

@@ -18,7 +18,7 @@ Prerequisites
 
 -  Access to port 22 is allowed in the inbound direction of the security group to which the ECS belongs. For details, see `Configuring Security Group Rules <../../security/security_groups/configuring_security_group_rules.html>`__.
 -  The network connection between the login tool (PuTTY) and the target ECS is normal. For example, the default port 22 is not blocked by the firewall.
--  You have obtained the SSH login permission and reset the common user password for logging in to the Linux ECS. For details, see `Configuring the Login Permission Using SSH Password Authentication <#ENUSTOPIC0017955633section6207684794951>`__.
+-  You have obtained the SSH login permission and reset the common user password for logging in to the Linux ECS. For details, see `Configuring the Login Permission Using SSH Password Authentication <#enustopic0017955633section6207684794951>`__.
 
 Configuring the Login Permission Using SSH Password Authentication
 ------------------------------------------------------------------

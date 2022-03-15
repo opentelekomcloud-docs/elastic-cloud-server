@@ -14,7 +14,7 @@ SYS.ECS
 ECS Metrics
 -----------
 
-ECS metrics vary depending on ECS OSs and types. For details, see `Table 1 <#ENUSTOPIC0030911465table1474714113454>`__. Y indicates that the metric is supported, and x indicates that the metric is not supported.
+ECS metrics vary depending on ECS OSs and types. For details, see `Table 1 <#enustopic0030911465table1474714113454>`__. Y indicates that the metric is supported, and x indicates that the metric is not supported.
 
 
 
@@ -54,7 +54,7 @@ ECS metrics vary depending on ECS OSs and types. For details, see `Table 1 <#ENU
 
    The image based on which the target ECS is created must have OTC Tools installed (OTC Tools has been installed for public images by default). Otherwise, the **Memory Usage** and **Disk Usage** metrics are unavailable. For details about how to install the OTC Tools, visit https://github.com/UVP-Tools/UVP-Tools/.
 
-`Table 2 <#ENUSTOPIC0030911465table64866324222846>`__ describes these ECS metrics.
+`Table 2 <#enustopic0030911465table64866324222846>`__ describes these ECS metrics.
 
 The monitoring intervals for the following ECSs with raw monitoring metrics are as follows:
 

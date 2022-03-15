@@ -24,7 +24,7 @@ To install the passthrough NICE driver, do as follows:
 
 #. Obtain the passthrough NIC driver.
 
-   Passthrough NIC driver versions vary depending on the OS. For details, see `Table 1 <#ENUSTOPIC0036068717table39612229174432>`__.
+   Passthrough NIC driver versions vary depending on the OS. For details, see `Table 1 <#enustopic0036068717table39612229174432>`__.
 
    
 

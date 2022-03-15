@@ -30,8 +30,8 @@ Procedure
 
    The **Disk Management** window is displayed.
 
-   -  If `Figure 1 <#ENUSTOPIC0085634796enustopic0044524740fig40496387105554>`__ is displayed, the new disk is offline. Go to `3 <#ENUSTOPIC0085634796enustopic0044524740li33296033102625>`__.
-   -  If `Figure 4 <#ENUSTOPIC0085634796enustopic0044524740fig68332918241>`__ is displayed, the **Initialize Disk** window is prompted. Go to `5 <#ENUSTOPIC0085634796enustopic0044524740li34991214122212>`__.
+   -  If `Figure 1 <#enustopic0085634796enustopic0044524740fig40496387105554>`__ is displayed, the new disk is offline. Go to `3 <#enustopic0085634796enustopic0044524740li33296033102625>`__.
+   -  If `Figure 4 <#enustopic0085634796enustopic0044524740fig68332918241>`__ is displayed, the **Initialize Disk** window is prompted. Go to `5 <#enustopic0085634796enustopic0044524740li34991214122212>`__.
 
    .. figure:: /_static/images/en-us_image_0095024494.png
       :alt: Click to enlarge
@@ -53,7 +53,7 @@ Procedure
 
       If the disk is offline, you need to online the disk before initializing it.
 
-#. After making the disk online, the disk status changes from **Offline** to **Not Initialized**. Right-click the disk status and choose **Initialize Disk** from the shortcut menu, as shown in `Figure 3 <#ENUSTOPIC0085634796enustopic0044524740fig409808111224>`__.
+#. After making the disk online, the disk status changes from **Offline** to **Not Initialized**. Right-click the disk status and choose **Initialize Disk** from the shortcut menu, as shown in `Figure 3 <#enustopic0085634796enustopic0044524740fig409808111224>`__.
 
    .. figure:: /_static/images/en-us_image_0132360430.png
       :alt: Click to enlarge
@@ -62,7 +62,7 @@ Procedure
 
       **Figure 3** Initialize Disk
 
-#. In the **Initialize Disk** dialog box, select the target disk, click **MBR (Master Boot Record)** or **GPT (GUID Partition Table)**, and click **OK**, as shown in `Figure 4 <#ENUSTOPIC0085634796enustopic0044524740fig68332918241>`__.
+#. In the **Initialize Disk** dialog box, select the target disk, click **MBR (Master Boot Record)** or **GPT (GUID Partition Table)**, and click **OK**, as shown in `Figure 4 <#enustopic0085634796enustopic0044524740fig68332918241>`__.
 
    .. figure:: /_static/images/en-us_image_0097597141.png
       :alt: Click to enlarge
@@ -77,7 +77,7 @@ Procedure
 
       If you change the disk partition style after the disk has been used, the data on the disk will be cleared. Therefore, select a proper disk partition style when initializing the disk.
 
-#. Right-click at the unallocated space and choose **New Simple Volume** from the shortcut menu, as shown in `Figure 5 <#ENUSTOPIC0085634796enustopic0044524740fig1945583522619>`__.
+#. Right-click at the unallocated space and choose **New Simple Volume** from the shortcut menu, as shown in `Figure 5 <#enustopic0085634796enustopic0044524740fig1945583522619>`__.
 
    .. figure:: /_static/images/en-us_image_0097597143.png
       :alt: Click to enlarge
@@ -133,7 +133,7 @@ Procedure
 
       The partition sizes supported by file systems vary. Therefore, you are advised to choose an appropriate file system based on your service requirements.
 
-#. Click **Finish**. Wait for the initialization to complete. When the volume status changes to **Healthy**, the initialization has finished successfully, as shown in `Figure 11 <#ENUSTOPIC0085634796enustopic0044524740fig14464150329>`__.
+#. Click **Finish**. Wait for the initialization to complete. When the volume status changes to **Healthy**, the initialization has finished successfully, as shown in `Figure 11 <#enustopic0085634796enustopic0044524740fig14464150329>`__.
 
    .. figure:: /_static/images/en-us_image_0097597155.png
       :alt: Click to enlarge

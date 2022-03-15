@@ -15,7 +15,7 @@ Prerequisites
 
 -  Access to port 3389 is allowed in the inbound direction of the security group to which the ECS belongs. For details, see `Configuring Security Group Rules <../../security/security_groups/configuring_security_group_rules.html>`__.
 -  The network connection between the login tool and the target ECS is normal. For example, the default port 3389 is not blocked by the firewall.
--  RDP has been enabled on the target ECS. By default, RDP has been enabled on the ECSs created using a public image. For instructions about how to enable RDP, see `Enabling RDP <#ENUSTOPIC0017955381section65216898112059>`__.
+-  RDP has been enabled on the target ECS. By default, RDP has been enabled on the ECSs created using a public image. For instructions about how to enable RDP, see `Enabling RDP <#enustopic0017955381section65216898112059>`__.
 
 Logging In to a Windows ECS Using MSTSC
 ---------------------------------------

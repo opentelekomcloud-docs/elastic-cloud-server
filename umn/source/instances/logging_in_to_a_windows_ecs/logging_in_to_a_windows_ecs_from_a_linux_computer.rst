@@ -14,7 +14,7 @@ Prerequisites
 
 -  Access to port 3389 is allowed in the inbound direction of the security group to which the ECS belongs.
 -  Data can be exchanged between the login tool and the target ECS. For example, the default port 3389 is not blocked by the firewall.
--  RDP has been enabled on the target ECS. By default, RDP has been enabled on the ECSs created using a public image. For instructions about how to enable RDP, see `Enabling RDP <#ENUSTOPIC0275383051section65216898112059>`__.
+-  RDP has been enabled on the target ECS. By default, RDP has been enabled on the ECSs created using a public image. For instructions about how to enable RDP, see `Enabling RDP <#enustopic0275383051section65216898112059>`__.
 
 Procedure
 ---------

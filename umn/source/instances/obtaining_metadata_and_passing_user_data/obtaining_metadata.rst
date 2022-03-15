@@ -4,7 +4,7 @@ Obtaining Metadata
 Scenarios
 ---------
 
-ECS metadata includes basic information of an ECS on the cloud platform, such as the ECS ID, hostname, and network information. ECS metadata can be obtained using either OpenStack or EC2 compatible APIs, as shown in `Table 1 <#ENUSTOPIC0042400609table273552371680>`__. The following describes the URI and methods of using the supported ECS metadata.
+ECS metadata includes basic information of an ECS on the cloud platform, such as the ECS ID, hostname, and network information. ECS metadata can be obtained using either OpenStack or EC2 compatible APIs, as shown in `Table 1 <#enustopic0042400609table273552371680>`__. The following describes the URI and methods of using the supported ECS metadata.
 
 Notes
 -----
@@ -38,7 +38,7 @@ Perform the following configuration on the firewall:
 ECS Metadata Types
 ------------------
 
-`Table 1 <#ENUSTOPIC0042400609table273552371680>`__ does not contain metadata items ami-id, ami-launch-index, ami-manifest-path, block-device-mapping/, instance-action, instance-id and reservation-id. These metadata items are not compatible with EC2 and are not recommended.
+`Table 1 <#enustopic0042400609table273552371680>`__ does not contain metadata items ami-id, ami-launch-index, ami-manifest-path, block-device-mapping/, instance-action, instance-id and reservation-id. These metadata items are not compatible with EC2 and are not recommended.
 
 
 
@@ -51,7 +51,7 @@ ECS Metadata Types
    +=======================+========================================+======================================================================================================================================================================================================================================+
    | OpenStack             | /meta_data.json                        | Displays ECS metadata.                                                                                                                                                                                                               |
    |                       |                                        |                                                                                                                                                                                                                                      |
-   |                       |                                        | For the key fields in the ECS metadata, see `Table 2 <#ENUSTOPIC0042400609table2373623012315>`__.                                                                                                                                    |
+   |                       |                                        | For the key fields in the ECS metadata, see `Table 2 <#enustopic0042400609table2373623012315>`__.                                                                                                                                    |
    +-----------------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | OpenStack             | /password                              | Displays the password for logging in to an ECS.                                                                                                                                                                                      |
    |                       |                                        |                                                                                                                                                                                                                                      |

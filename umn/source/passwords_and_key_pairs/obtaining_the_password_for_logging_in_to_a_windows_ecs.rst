@@ -43,7 +43,7 @@ Obtaining the Password Through APIs
 
 #. Decrypt the ciphertext password.
 
-   Use the private key file used when you created the ECS to decrypt the ciphertext password obtained in step `4 <#ENUSTOPIC0031107266li5770130102852>`__.
+   Use the private key file used when you created the ECS to decrypt the ciphertext password obtained in step `4 <#enustopic0031107266li5770130102852>`__.
 
    a. Run the following command to convert the ciphertext password format to ".key -nocrypt" using OpenSSL:
 

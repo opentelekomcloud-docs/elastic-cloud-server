@@ -14,10 +14,10 @@ This section describes how to install a GRID driver, purchase or apply for a GRI
 
 Process of installing a GRID driver:
 
-#. `Purchasing a GRID License <#ENUSTOPIC0149610914section1130184214229>`__
-#. `Downloading GRID Driver and Software License Packages <#ENUSTOPIC0149610914section91244318407>`__
-#. `Deploying and Configuring the License Server <#ENUSTOPIC0149610914section19229135113439>`__
-#. `Installing the GRID Driver and Configuring the License <#ENUSTOPIC0149610914section17545653184812>`__
+#. `Purchasing a GRID License <#enustopic0149610914section1130184214229>`__
+#. `Downloading GRID Driver and Software License Packages <#enustopic0149610914section91244318407>`__
+#. `Deploying and Configuring the License Server <#enustopic0149610914section19229135113439>`__
+#. `Installing the GRID Driver and Configuring the License <#enustopic0149610914section17545653184812>`__
 
 .. note::
 
@@ -35,7 +35,7 @@ Purchasing a GRID License
 
    Log in at the `official NVIDIA website <https://www.nvidia.com/object/nvidia-enterprise-account.html>`__ and enter desired information.
 
-   For details about how to register an account and apply for a trial license, see `official NVIDIA help page <https://nvid.nvidia.com/NvidiaUtilities/#/needHelp>`__.
+   For details about how to register an account and apply for a trial license, see `official NVIDIA help page <https://nvid.nvidia.com/NvidiaUtilities/#/needhelp>`__.
 
    .. note::
 
@@ -51,7 +51,7 @@ Purchasing a GRID License
 Downloading GRID Driver and Software License Packages
 -----------------------------------------------------
 
-#. Obtain the driver installation package required for an OS. For details, see `Table 1 <#ENUSTOPIC0149610914table188851534175019>`__.
+#. Obtain the driver installation package required for an OS. For details, see `Table 1 <#enustopic0149610914table188851534175019>`__.
 
    For more information about the GRID driver, see `NVIDIA vGPU Software Documentation <https://docs.nvidia.com/grid/index.html>`__.
 
@@ -109,8 +109,8 @@ Downloading GRID Driver and Software License Packages
 
 #. Check whether NVIDIA is used for the first time.
 
-   a. If yes, go to step `4 <#ENUSTOPIC0149610914li1859773663819>`__.
-   b. If no, go to step `6 <#ENUSTOPIC0149610914li0791101412396>`__.
+   a. If yes, go to step `4 <#enustopic0149610914li1859773663819>`__.
+   b. If no, go to step `6 <#enustopic0149610914li0791101412396>`__.
 
 #. Obtain the Product Activation Key (PAK) from the email indicating successful registration with NVIDIA.
 
@@ -121,7 +121,7 @@ Downloading GRID Driver and Software License Packages
 
       **Figure 2** PAK
 
-#. Enter the PAK obtained in step `4 <#ENUSTOPIC0149610914li1859773663819>`__ on the **Redeem Product Activation Keys** page and click **Redeem**.
+#. Enter the PAK obtained in step `4 <#enustopic0149610914li1859773663819>`__ on the **Redeem Product Activation Keys** page and click **Redeem**.
 
    .. figure:: /_static/images/en-us_image_0178334449.png
       :alt: Click to enlarge
@@ -147,7 +147,7 @@ Downloading GRID Driver and Software License Packages
 
       **Figure 5** **SOFTWARE DOWNLOADS** page
 
-#. Download the GRID driver of the required version. For details, see `Table 1 <#ENUSTOPIC0149610914table188851534175019>`__.
+#. Download the GRID driver of the required version. For details, see `Table 1 <#enustopic0149610914table188851534175019>`__.
 
 #. Decompress the GRID driver installation package and install the driver that matches your ECS OS.
 

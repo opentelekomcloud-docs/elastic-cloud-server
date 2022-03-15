@@ -15,7 +15,7 @@ For high-performance H2 ECSs equipped with an InfiniBand NIC driver (InfiniBand 
 
       **ibstat**
 
-      -  If it is functional, go to `2 <#ENUSTOPIC0058747426li2420713023281>`__.
+      -  If it is functional, go to `2 <#enustopic0058747426li2420713023281>`__.
       -  If it is not functional, contact customer service for technical support.
 
 #. Check whether the network communication between two InfiniBand ECSs is normal.
@@ -39,7 +39,7 @@ For high-performance H2 ECSs equipped with an InfiniBand NIC driver (InfiniBand 
 
          **Figure 1** Normal network communication
 
-      -  If the terminal display is shown in `Figure 1 <#ENUSTOPIC0058747426fig13564645028>`__, the network communication between the two InfiniBand ECSs is normal.
+      -  If the terminal display is shown in `Figure 1 <#enustopic0058747426fig13564645028>`__, the network communication between the two InfiniBand ECSs is normal.
       -  If the InfiniBand network is inaccessible, contact customer service for technical support.
 
 

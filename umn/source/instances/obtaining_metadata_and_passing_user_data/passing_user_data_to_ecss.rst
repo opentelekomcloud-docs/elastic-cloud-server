@@ -35,7 +35,7 @@ Use Restrictions
 Passing User Data
 -----------------
 
-#. Create a user data script, the format of which complies with user data script specifications. For details, see `Helpful Links <#ENUSTOPIC0032380449section54344118153243>`__.
+#. Create a user data script, the format of which complies with user data script specifications. For details, see `Helpful Links <#enustopic0032380449section54344118153243>`__.
 
 #. When creating an ECS, set **Advanced Options** to **Configure now**, and paste the content of the user data script to the **User Data** text box or upload the user data file.
 
@@ -245,7 +245,7 @@ This case illustrates how to use the user data passing function to set the passw
 
 .. note::
 
-   The new password must meet the password complexity requirements listed in `Table 3 <#ENUSTOPIC0032380449enustopic0021426802table4381109318958>`__.
+   The new password must meet the password complexity requirements listed in `Table 3 <#enustopic0032380449enustopic0021426802table4381109318958>`__.
 
 
 
@@ -310,7 +310,7 @@ In this example, the password of user **root** is reset to **\*****\***.
 
 .. note::
 
-   The new password must meet the password complexity requirements listed in `Table 4 <#ENUSTOPIC0032380449table580060101120>`__.
+   The new password must meet the password complexity requirements listed in `Table 4 <#enustopic0032380449table580060101120>`__.
 
 
 
@@ -354,7 +354,7 @@ In this example, the user's username is **abc**, its password is **\*****\***, a
 
 .. note::
 
-   The new password must meet the password complexity requirements listed in `Table 4 <#ENUSTOPIC0032380449table580060101120>`__.
+   The new password must meet the password complexity requirements listed in `Table 4 <#enustopic0032380449table580060101120>`__.
 
 User data example:
 

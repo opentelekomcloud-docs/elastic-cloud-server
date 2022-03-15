@@ -20,7 +20,7 @@ After you perform ECS-related operations on the management console, the system d
 Solution
 --------
 
-If an error occurs, check the error code and perform the corresponding operations listed in `Table 1 <#ENUSTOPIC0032398121table52205309173837>`__.
+If an error occurs, check the error code and perform the corresponding operations listed in `Table 1 <#enustopic0032398121table52205309173837>`__.
 
 
 

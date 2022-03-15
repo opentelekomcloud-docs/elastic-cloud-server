@@ -10,12 +10,12 @@ A key pair that consists of a public key and a private key is required for authe
 
    If no key pair is available, create one, in which the private key is used for login authentication. You can use either of the following methods to create a key pair:
 
-   -  (Recommended) Create a key pair on the management console. After the creation, the public key is automatically stored in the system, and the private key is manually stored in a local directory. For details, see `Creating a Key Pair on the Management Console <#ENUSTOPIC0014250631section35336147204538>`__.
-   -  Create a key pair using **puttygen.exe**. After the creation, both the public key and private key are stored locally. For details, see `Creating a Key Pair Using puttygen.exe <#ENUSTOPIC0014250631section38463609165715>`__. After the creation, import the key pair by following the instructions provided in `Importing a Key Pair <#ENUSTOPIC0014250631section62005706143441>`__. Then, the key pair can be used.
+   -  (Recommended) Create a key pair on the management console. After the creation, the public key is automatically stored in the system, and the private key is manually stored in a local directory. For details, see `Creating a Key Pair on the Management Console <#enustopic0014250631section35336147204538>`__.
+   -  Create a key pair using **puttygen.exe**. After the creation, both the public key and private key are stored locally. For details, see `Creating a Key Pair Using puttygen.exe <#enustopic0014250631section38463609165715>`__. After the creation, import the key pair by following the instructions provided in `Importing a Key Pair <#enustopic0014250631section62005706143441>`__. Then, the key pair can be used.
 
 -  Using an existing key pair
 
-   If a key pair is available locally, for example, generated using PuTTYgen, you can import the public key on the management console so that the system maintains the public key file. For details, see `Importing a Key Pair <#ENUSTOPIC0014250631section62005706143441>`__.
+   If a key pair is available locally, for example, generated using PuTTYgen, you can import the public key on the management console so that the system maintains the public key file. For details, see `Importing a Key Pair <#enustopic0014250631section62005706143441>`__.
 
    .. note::
 
@@ -81,7 +81,7 @@ Creating a Key Pair Using **puttygen.exe**
 
    b. Click **Generate**.
 
-      The key generator automatically generates a key pair that consists of a public key and a private key. The public key is shown in the red box in `Figure 2 <#ENUSTOPIC0014250631enustopic0037960038fig4678746517750>`__.
+      The key generator automatically generates a key pair that consists of a public key and a private key. The public key is shown in the red box in `Figure 2 <#enustopic0014250631enustopic0037960038fig4678746517750>`__.
 
       .. figure:: /_static/images/en-us_image_0272919399.png
          :alt: **Figure 2** Obtaining the public and private keys
@@ -133,7 +133,7 @@ Creating a Key Pair Using **puttygen.exe**
 
       b. Save the private key, for example, **kp-123.pem**, in a local directory.
 
-#. Import the public key to the system. For details, see "Copying the public key content" in `Importing a Key Pair <#ENUSTOPIC0014250631section62005706143441>`__.
+#. Import the public key to the system. For details, see "Copying the public key content" in `Importing a Key Pair <#enustopic0014250631section62005706143441>`__.
 
 Importing a Key Pair
 --------------------
@@ -161,7 +161,7 @@ If you store a public key by clicking **Save public key** of **puttygen.exe**, t
 
    -  Selecting a file
 
-      a. On the **Import Key Pair** page of the management console, click **Select File** and select the local public key file, for example, the .txt file saved in `3 <#ENUSTOPIC0014250631li24584709151818>`__.
+      a. On the **Import Key Pair** page of the management console, click **Select File** and select the local public key file, for example, the .txt file saved in `3 <#enustopic0014250631li24584709151818>`__.
 
          .. note::
 

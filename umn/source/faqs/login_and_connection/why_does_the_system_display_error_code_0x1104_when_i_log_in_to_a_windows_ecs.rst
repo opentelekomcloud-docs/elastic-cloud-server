@@ -26,7 +26,7 @@ Solution
 
 #. Check security group settings.
 
-   Check whether port 3389 is allowed in inbound direction. If it is allowed, go to `2 <#ENUSTOPIC0264235942enustopic0138293293li18622172719193>`__.
+   Check whether port 3389 is allowed in inbound direction. If it is allowed, go to `2 <#enustopic0264235942enustopic0138293293li18622172719193>`__.
 
 #. Check whether the firewall is disabled:
 
@@ -42,7 +42,7 @@ Solution
 
       |image2|
 
-   If the firewall is enabled, go to `3 <#ENUSTOPIC0264235942enustopic0138293293li15622182714191>`__.
+   If the firewall is enabled, go to `3 <#enustopic0264235942enustopic0138293293li15622182714191>`__.
 
 #. Log in to the ECS using VNC and check the port.
 
@@ -57,7 +57,7 @@ Solution
 
          **Figure 2** Checking port 3389
 
-      As shown in `Figure 2 <#ENUSTOPIC0264235942enustopic0138293293fig1562219275192>`__, port 3389 is used by the process with ID of 4.
+      As shown in `Figure 2 <#enustopic0264235942enustopic0138293293fig1562219275192>`__, port 3389 is used by the process with ID of 4.
 
    b. Open Task Manager and find the process with ID of 4 is the System process.
 
@@ -78,7 +78,7 @@ Solution
 
    f. Change the port used by IIS and restart IIS.
 
-#. If no error occurs during the preceding steps, go to step `5 <#ENUSTOPIC0264235942enustopic0138293293li19441439143520>`__ to check whether error 0x1104 is caused by the configuration of Remote Desktop Session Host.
+#. If no error occurs during the preceding steps, go to step `5 <#enustopic0264235942enustopic0138293293li19441439143520>`__ to check whether error 0x1104 is caused by the configuration of Remote Desktop Session Host.
 
 #. Check the remote desktop session host configuration.
 

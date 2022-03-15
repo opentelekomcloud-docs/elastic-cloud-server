@@ -26,8 +26,8 @@ The following operations use PuTTY as an example. Before logging in to the ECS u
 
 #. Check whether the private key file has been converted to .ppk format.
 
-   -  If yes, go to step `7 <#ENUSTOPIC0017955380li40879966111724>`__.
-   -  If no, go to step `2 <#ENUSTOPIC0017955380li8851985111724>`__.
+   -  If yes, go to step `7 <#enustopic0017955380li40879966111724>`__.
+   -  If no, go to step `2 <#enustopic0017955380li8851985111724>`__.
 
 #. Visit the following website and download PuTTY and PuTTYgen:
 
@@ -65,7 +65,7 @@ The following operations use PuTTY as an example. Before logging in to the ECS u
       -  If a public image is used, see `Public Images Introduction <https://docs.otc.t-systems.com/en-us/ims/index.html>`__ for the image username.
       -  If a private image is used, use the username of the private image.
 
-#. Choose **Connection** > **SSH** > **Auth**. In the last configuration item **Private key file for authentication**, click **Browse** and select the private key converted in step `6 <#ENUSTOPIC0017955380li56738001111724>`__.
+#. Choose **Connection** > **SSH** > **Auth**. In the last configuration item **Private key file for authentication**, click **Browse** and select the private key converted in step `6 <#enustopic0017955380li56738001111724>`__.
 
 #. Click **Open**.
 

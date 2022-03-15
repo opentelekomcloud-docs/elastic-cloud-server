@@ -21,7 +21,7 @@ If you uninstall Tools from a Linux ECS in a non-PVOPS system, data disks cannot
 
    .. note::
 
-      If the original ECS has multiple data disks attached, repeat steps `4 <#ENUSTOPIC0029806525li3454282161441>`__ to `6 <#ENUSTOPIC0029806525li3628995162045>`__ to attach each data disk to the new ECS.
+      If the original ECS has multiple data disks attached, repeat steps `4 <#enustopic0029806525li3454282161441>`__ to `6 <#enustopic0029806525li3628995162045>`__ to attach each data disk to the new ECS.
 
 #. Click a data disk. The **Elastic Volume Service** page is displayed.
 

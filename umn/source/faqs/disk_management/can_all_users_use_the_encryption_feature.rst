@@ -11,7 +11,7 @@ The rights of users in a user group to use the encryption feature are as follows
 
 The following section uses a user group as an example to describe how to grant KMS access rights to EVS for using the encryption feature.
 
-For example, a user group shown in `Figure 1 <#ENUSTOPIC0047272493fig10921739155249>`__ consists of four users, user 1 to user 4. User 1 has security administrator rights. Users 2, 3, and 4 are common users who do not have security administrator rights.
+For example, a user group shown in `Figure 1 <#enustopic0047272493fig10921739155249>`__ consists of four users, user 1 to user 4. User 1 has security administrator rights. Users 2, 3, and 4 are common users who do not have security administrator rights.
 
 .. figure:: /_static/images/en-us_image_0047273062.png
    :alt: **Figure 1** User group

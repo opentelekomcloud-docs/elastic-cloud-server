@@ -10,7 +10,7 @@ Background
 
 -  Auxiliary ECS: an ECS that is used to exchange test data with the tested ECS. The auxiliary ECS functions as the client (TX end) or server (RX end) in netperf tests.
 
--  `Table 1 <#ENUSTOPIC0115820205table15359114885218>`__ and `Table 2 <#ENUSTOPIC0115820205table8470126153613>`__ list the common netperf and iperf3 parameters. 
+-  `Table 1 <#enustopic0115820205table15359114885218>`__ and `Table 2 <#enustopic0115820205table8470126153613>`__ list the common netperf and iperf3 parameters. 
 
 .. _ENUSTOPIC0115820205table15359114885218:
 
@@ -77,7 +77,7 @@ Test Preparations
 
 #. Install the netperf, iperf3, and sar test tools on both the tested ECS and auxiliary ECSs.
 
-   `Table 4 <#ENUSTOPIC0115820205table231811914413>`__ lists the procedures for installing these tools.
+   `Table 4 <#enustopic0115820205table231811914413>`__ lists the procedures for installing these tools.
 
    
 
@@ -133,7 +133,7 @@ Test Preparations
 
       **ethtool -L eth0 combined** *X*
 
-      In the preceding command, *X* is the number of queues obtained in `3.a <#ENUSTOPIC0115820205li162918018139>`__.
+      In the preceding command, *X* is the number of queues obtained in `3.a <#enustopic0115820205li162918018139>`__.
 
 TCP Bandwidth Test (Using netperf)
 ----------------------------------
@@ -150,7 +150,7 @@ Perform the test on multiple flows. This section considers 16 flows that are eve
 
       In the preceding commands, **-p** specifies the listening port.
 
-   b. Start the netperf process on the tested ECS and specify a netserver port for each auxiliary ECS. For details about common netperf parameters, see `Table 1 <#ENUSTOPIC0115820205table15359114885218>`__.
+   b. Start the netperf process on the tested ECS and specify a netserver port for each auxiliary ECS. For details about common netperf parameters, see `Table 1 <#enustopic0115820205table15359114885218>`__.
 
       ##The IP address is for the first auxiliary ECS.
 
@@ -304,7 +304,7 @@ Perform the test on multiple flows. This section considers 16 flows that are eve
 
 #. Analyze the test result.
 
-   After the test is complete, the output of the netperf process on one TX end is shown in `Figure 1 <#ENUSTOPIC0115820205fig333414318238>`__. The final result is the sum of the test results of the netperf processes on all TX ends.
+   After the test is complete, the output of the netperf process on one TX end is shown in `Figure 1 <#enustopic0115820205fig333414318238>`__. The final result is the sum of the test results of the netperf processes on all TX ends.
 
    .. figure:: /_static/images/en-us_image_0115873247.png
       :alt: **Figure 1** Output of the netperf process on one TX end
@@ -331,7 +331,7 @@ UDP PPS Test (Using iperf3)
 
       In the preceding commands, **-p** specifies the listening port.
 
-   b. Start the client process on the tested ECS. For details about common iperf3 parameters, see `Table 2 <#ENUSTOPIC0115820205table8470126153613>`__.
+   b. Start the client process on the tested ECS. For details about common iperf3 parameters, see `Table 2 <#enustopic0115820205table8470126153613>`__.
 
       ##Auxiliary ECS 1
 
@@ -383,7 +383,7 @@ UDP PPS Test (Using iperf3)
 
 #. Test the UDP RX PPS.
 
-   a. Start the server process on the tested ECS. For details about common iperf3 parameters, see `Table 2 <#ENUSTOPIC0115820205table8470126153613>`__.
+   a. Start the server process on the tested ECS. For details about common iperf3 parameters, see `Table 2 <#enustopic0115820205table8470126153613>`__.
 
       ##Auxiliary ECS 1
 
@@ -433,7 +433,7 @@ UDP PPS Test (Using iperf3)
 
       **iperf3 -s -p 12016 -A 15 -i 60 &**
 
-   b. Start the client process on all auxiliary ECSs. For details about common iperf3 parameters, see `Table 2 <#ENUSTOPIC0115820205table8470126153613>`__.
+   b. Start the client process on all auxiliary ECSs. For details about common iperf3 parameters, see `Table 2 <#enustopic0115820205table8470126153613>`__.
 
       Log in to auxiliary ECS 1.
 
@@ -485,7 +485,7 @@ UDP PPS Test (Using iperf3)
 
 #. Analyze the test result.
 
-   `Figure 2 <#ENUSTOPIC0115820205fig166644134610>`__ shows an example of the UDP PPS test result.
+   `Figure 2 <#enustopic0115820205fig166644134610>`__ shows an example of the UDP PPS test result.
 
    .. figure:: /_static/images/en-us_image_0115874559.png
       :alt: Click to enlarge

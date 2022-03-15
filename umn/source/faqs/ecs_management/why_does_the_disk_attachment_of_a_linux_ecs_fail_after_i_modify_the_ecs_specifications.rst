@@ -22,7 +22,7 @@ Procedure
 
       **Figure 1** Viewing disks attached before specifications modification
 
-   As shown in `Figure 1 <#ENUSTOPIC0214940106enustopic0120890833fig10595124010458>`__, the ECS has three disks attached: **/dev/vda**, **/dev/vdb**, and **/dev/vdc**.
+   As shown in `Figure 1 <#enustopic0214940106enustopic0120890833fig10595124010458>`__, the ECS has three disks attached: **/dev/vda**, **/dev/vdb**, and **/dev/vdc**.
 
 #. Run the following command to view disks attached after specifications modification:
 
@@ -35,12 +35,12 @@ Procedure
 
       **Figure 2** Viewing disks attached after specifications modification
 
-   As shown in `Figure 2 <#ENUSTOPIC0214940106enustopic0120890833fig692535712437>`__, only one disk **/dev/vda** is attached to the ECS.
+   As shown in `Figure 2 <#enustopic0214940106enustopic0120890833fig692535712437>`__, only one disk **/dev/vda** is attached to the ECS.
 
-#. Check whether the number of disks obtained in step `3 <#ENUSTOPIC0214940106enustopic0120890833li161843557534>`__ is the same as that obtained in step `2 <#ENUSTOPIC0214940106enustopic0120890833li218141135312>`__.
+#. Check whether the number of disks obtained in step `3 <#enustopic0214940106enustopic0120890833li161843557534>`__ is the same as that obtained in step `2 <#enustopic0214940106enustopic0120890833li218141135312>`__.
 
    -  If the numbers are the same, the disk attachment is successful. No further action is required.
-   -  If the numbers are different, the disk attachment failed. In this case, go to step `5 <#ENUSTOPIC0214940106enustopic0120890833li1478325211557>`__.
+   -  If the numbers are different, the disk attachment failed. In this case, go to step `5 <#enustopic0214940106enustopic0120890833li1478325211557>`__.
 
 #. Run the **mount** command to attach the affected disks.
 
@@ -70,6 +70,6 @@ Procedure
 
       **Figure 3** Checking the number of disks attached
 
-   As shown in `Figure 3 <#ENUSTOPIC0214940106enustopic0120890833fig722411124917>`__, the numbers of disks before and after specifications modification are the same. The disks are **/dev/vda**, **/dev/vdb**, and **/dev/vdc**.
+   As shown in `Figure 3 <#enustopic0214940106enustopic0120890833fig722411124917>`__, the numbers of disks before and after specifications modification are the same. The disks are **/dev/vda**, **/dev/vdb**, and **/dev/vdc**.
 
 

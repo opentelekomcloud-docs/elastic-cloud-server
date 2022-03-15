@@ -84,7 +84,7 @@ Procedure
 Follow-up Procedure
 -------------------
 
-If the reinstallation is unsuccessful, perform steps `3 <#ENUSTOPIC0024911405li20776247143354>`__ to `9 <#ENUSTOPIC0024911405li31062819143541>`__ again to retry reinstalling the OS again.
+If the reinstallation is unsuccessful, perform steps `3 <#enustopic0024911405li20776247143354>`__ to `9 <#enustopic0024911405li31062819143541>`__ again to retry reinstalling the OS again.
 
 If the second reinstallation attempt is unsuccessful, contact customer service for manual recovery at the backend.
 

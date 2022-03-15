@@ -10,18 +10,18 @@ The method for configuring atop varies with the OS version.
 
 atop
 
--  `Introduction to atop <#ENUSTOPIC0000001143214829enustopic0178319250section0959133015350>`__
--  `Configuring atop for CentOS 8 or RHEL 8 <#ENUSTOPIC0000001143214829enustopic0178319250section18897192721320>`__
--  `Configuring atop for CentOS 7, RHEL 7, or EulerOS <#ENUSTOPIC0000001143214829enustopic0178319250section1972319582310>`__
--  `Configuring atop for SUSE 12 or SUSE 15 <#ENUSTOPIC0000001143214829enustopic0178319250section3205824181917>`__
--  `Configuring atop Using Its Source Package for SUSE, Fedora, Debian or Ubuntu <#ENUSTOPIC0000001143214829enustopic0178319250section012793312620>`__
+-  `Introduction to atop <#enustopic0000001143214829enustopic0178319250section0959133015350>`__
+-  `Configuring atop for CentOS 8 or RHEL 8 <#enustopic0000001143214829enustopic0178319250section18897192721320>`__
+-  `Configuring atop for CentOS 7, RHEL 7, or EulerOS <#enustopic0000001143214829enustopic0178319250section1972319582310>`__
+-  `Configuring atop for SUSE 12 or SUSE 15 <#enustopic0000001143214829enustopic0178319250section3205824181917>`__
+-  `Configuring atop Using Its Source Package for SUSE, Fedora, Debian or Ubuntu <#enustopic0000001143214829enustopic0178319250section012793312620>`__
 
 kdump
 
--  `Precautions for Configuring kdump <#ENUSTOPIC0000001143214829enustopic0178319250section1410131164120>`__
--  `Introduction to kdump <#ENUSTOPIC0000001143214829enustopic0178319250section18450171174120>`__
--  `Configuring kdump <#ENUSTOPIC0000001143214829enustopic0178319250section134381494320>`__
--  `Checking Whether kdump Configurations Have Taken Effect <#ENUSTOPIC0000001143214829enustopic0178319250section1296112934412>`__
+-  `Precautions for Configuring kdump <#enustopic0000001143214829enustopic0178319250section1410131164120>`__
+-  `Introduction to kdump <#enustopic0000001143214829enustopic0178319250section18450171174120>`__
+-  `Configuring kdump <#enustopic0000001143214829enustopic0178319250section134381494320>`__
+-  `Checking Whether kdump Configurations Have Taken Effect <#enustopic0000001143214829enustopic0178319250section1296112934412>`__
 
 Introduction to atop
 --------------------

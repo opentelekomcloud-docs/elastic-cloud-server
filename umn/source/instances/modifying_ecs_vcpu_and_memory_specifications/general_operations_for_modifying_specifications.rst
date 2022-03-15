@@ -68,12 +68,12 @@ Step 1: Modify Specifications
 
    a. Check whether **Failures** is displayed on the management console. For details, see `Viewing Failures <../../instances/viewing_ecs_information/viewing_failures.html>`__.
 
-      -  If yes, go to step `10.b <#ENUSTOPIC0013771092li6253192246>`__.
+      -  If yes, go to step `10.b <#enustopic0013771092li6253192246>`__.
       -  If no, the specifications have been modified.
 
    b. Click **Failures**. Then, in the **Failures** dialog box, click **Operation Failures** and check whether the task is contained in the list by **Name/ID**, **Operated At**, or **Task**.
 
-      -  If yes, the specifications modification failed. See `Follow-up Procedure <#ENUSTOPIC0013771092section9461027528>`__ for failure causes.
+      -  If yes, the specifications modification failed. See `Follow-up Procedure <#enustopic0013771092section9461027528>`__ for failure causes.
       -  If no, the specifications have been modified.
 
 Step 2: Check Disk Attachment

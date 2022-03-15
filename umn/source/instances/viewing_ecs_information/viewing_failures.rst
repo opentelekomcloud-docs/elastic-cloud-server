@@ -9,7 +9,7 @@ The **Failures** area shows the tasks that failed to process due to an error, in
 Failure Types
 -------------
 
-`Table 1 <#ENUSTOPIC0108255889table155141127195016>`__ lists the types of failures that can be recorded in the **Failures** area.
+`Table 1 <#enustopic0108255889table155141127195016>`__ lists the types of failures that can be recorded in the **Failures** area.
 
 
 

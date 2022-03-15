@@ -25,7 +25,7 @@ For a Linux ECS, its disk partitions correspond to disk devices. This section us
 
       **Figure 2** Viewing disk partitions and disk devices
 
-   `Table 1 <#ENUSTOPIC0087901488table18572291102543>`__ lists the mapping between disk partitions and disk devices.
+   `Table 1 <#enustopic0087901488table18572291102543>`__ lists the mapping between disk partitions and disk devices.
 
    
 

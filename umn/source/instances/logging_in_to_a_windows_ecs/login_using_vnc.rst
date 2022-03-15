@@ -16,7 +16,7 @@ Constraints
 Login Notes
 -----------
 
-#. When you log in to the ECS using VNC, four types of keyboards will be used. These are described in `Table 1 <#ENUSTOPIC0027268511enustopic0039525621table10692372181721>`__. 
+#. When you log in to the ECS using VNC, four types of keyboards will be used. These are described in `Table 1 <#enustopic0027268511enustopic0039525621table10692372181721>`__. 
 
 .. _ENUSTOPIC0027268511enustopic0039525621table10692372181721:
 
@@ -31,13 +31,13 @@ Login Notes
       +---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | VNC keyboard                          | Used for VNC logins. The VNC keyboard input method must comply with the physical keyboard language type. In this way, the entered data can be correctly transferred from the VNC client to the ECS OS.                                                                                      | Can be configured through the management console.                                                                                                                                                                                                                            |
       |                                       |                                                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                              |
-      |                                       | .. note::                                                                                                                                                                                                                                                                                   | For instructions about how to select a VNC keyboard language, see `Log In to a Windows ECS Using an English Keyboard <#ENUSTOPIC0027268511section46750509111459>`__ and `Log In to a Windows ECS Using a Non-English Keyboard <#ENUSTOPIC0027268511section5982347111459>`__. |
+      |                                       | .. note::                                                                                                                                                                                                                                                                                   | For instructions about how to select a VNC keyboard language, see `Log In to a Windows ECS Using an English Keyboard <#enustopic0027268511section46750509111459>`__ and `Log In to a Windows ECS Using a Non-English Keyboard <#enustopic0027268511section5982347111459>`__. |
       |                                       |                                                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                              |
       |                                       |    The English keyboard is used by default. The system also supports other keyboard languages.                                                                                                                                                                                              |                                                                                                                                                                                                                                                                              |
       +---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | ECS OS keyboard                       | Input method keyboard configured in the ECS OS. Ensure that this input method complies with the physical keyboard language type for correct response to the entered data transferred from the VNC client.                                                                                   | Configured by users locally.                                                                                                                                                                                                                                                 |
       |                                       |                                                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                              |
-      |                                       | .. note::                                                                                                                                                                                                                                                                                   | For instructions about how to change an ECS OS keyboard language, see `Changing the OS Keyboard Language <#ENUSTOPIC0027268511section66962382111459>`__.                                                                                                                     |
+      |                                       | .. note::                                                                                                                                                                                                                                                                                   | For instructions about how to change an ECS OS keyboard language, see `Changing the OS Keyboard Language <#enustopic0027268511section66962382111459>`__.                                                                                                                     |
       |                                       |                                                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                              |
       |                                       |    -  The default OS keyboard language of an ECS created using a public image is English. For additional information, see `Public Images Introduction <https://docs.otc.t-systems.com/en-us/ims/index.html>`__.                                                                             |                                                                                                                                                                                                                                                                              |
       |                                       |    -  The OS keyboard language of an ECS created using a private image is customized.                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                              |
@@ -45,7 +45,7 @@ Login Notes
 
 #. When you log in to the ECS using VNC, ensure that your configured keyboard language is correct.
 
-   The entered data is as expected only if the input method keyboard on the terminal, the VNC keyboard, and the ECS OS keyboard languages are the same as the physical keyboard language. For details about language configuration in the four types of keyboards, see `Table 2 <#ENUSTOPIC0027268511enustopic0039525621table31240733181814>`__. 
+   The entered data is as expected only if the input method keyboard on the terminal, the VNC keyboard, and the ECS OS keyboard languages are the same as the physical keyboard language. For details about language configuration in the four types of keyboards, see `Table 2 <#enustopic0027268511enustopic0039525621table31240733181814>`__. 
 
 .. _ENUSTOPIC0027268511enustopic0039525621table31240733181814:
 
@@ -208,8 +208,8 @@ Log In to a Windows ECS Using a Non-English Keyboard
 
 12. Enter the ECS password as prompted.
 
-    -  When logging in to the ECS using VNC for the first time, use the English keyboard to enter the password. After you have logged in to the ECS, see `Changing the OS Keyboard Language <#ENUSTOPIC0027268511section66962382111459>`__ to change the keyboard language of the ECS OS. You can then select the keyboard language and enter the password the next time you log in.
-    -  If you have changed the keyboard language of the ECS OS, ensure that the keyboard language in use, the keyboard language selected in step `7 <#ENUSTOPIC0027268511li17715715111459>`__, and the changed OS keyboard language are all the same.
+    -  When logging in to the ECS using VNC for the first time, use the English keyboard to enter the password. After you have logged in to the ECS, see `Changing the OS Keyboard Language <#enustopic0027268511section66962382111459>`__ to change the keyboard language of the ECS OS. You can then select the keyboard language and enter the password the next time you log in.
+    -  If you have changed the keyboard language of the ECS OS, ensure that the keyboard language in use, the keyboard language selected in step `7 <#enustopic0027268511li17715715111459>`__, and the changed OS keyboard language are all the same.
 
 Changing the OS Keyboard Language
 ---------------------------------
@@ -221,14 +221,14 @@ Configuration Example
 
 **Scenarios**
 
-If you attempt to log in to an ECS created using a public image for the first time, the languages of the four types of keyboards before the configuration are as follows (**Before configuration** row in `Table 3 <#ENUSTOPIC0027268511enustopic0039525621table18256759113132>`__):
+If you attempt to log in to an ECS created using a public image for the first time, the languages of the four types of keyboards before the configuration are as follows (**Before configuration** row in `Table 3 <#enustopic0027268511enustopic0039525621table18256759113132>`__):
 
 -  Physical keyboard: German
 -  Input method keyboard on the terminal: English
 -  VNC keyboard: English
 -  ECS OS keyboard: English
 
-In this case, you must change the languages of the other three types of keyboards to the same language as the physical keyboard for expected data entering. For details, see the **Solution 1** row in `Table 3 <#ENUSTOPIC0027268511enustopic0039525621table18256759113132>`__.
+In this case, you must change the languages of the other three types of keyboards to the same language as the physical keyboard for expected data entering. For details, see the **Solution 1** row in `Table 3 <#enustopic0027268511enustopic0039525621table18256759113132>`__.
 
 
 
@@ -258,17 +258,17 @@ In this case, you must change the languages of the other three types of keyboard
 
 #. Log in to the ECS and change the ECS OS language to German.
 
-   For details, see `Changing the OS Keyboard Language <../../instances/logging_in_to_a_windows_ecs/login_using_vnc.html#ENUSTOPIC0027268511section66962382111459>`__.
+   For details, see `Changing the OS Keyboard Language <../../instances/logging_in_to_a_windows_ecs/login_using_vnc.html#enustopic0027268511section66962382111459>`__.
 
 #. Change the VNC keyboard language to German.
 
-   For details, see `Log In to a Windows ECS Using a Non-English Keyboard <#ENUSTOPIC0027268511section5982347111459>`__.
+   For details, see `Log In to a Windows ECS Using a Non-English Keyboard <#enustopic0027268511section5982347111459>`__.
 
-To set the languages on the four types of keyboards to all be the same, repeat steps `1 <#ENUSTOPIC0027268511enustopic0039525621li55865773114331>`__ to `4 <#ENUSTOPIC0027268511enustopic0039525621li62706781115148>`__.
+To set the languages on the four types of keyboards to all be the same, repeat steps `1 <#enustopic0027268511enustopic0039525621li55865773114331>`__ to `4 <#enustopic0027268511enustopic0039525621li62706781115148>`__.
 
 .. note::
 
-   During the configuration, if English characters cannot be entered using the current physical keyboard, use the English soft keyboard to modify the configuration described in the **Solution 2** row of `Table 3 <#ENUSTOPIC0027268511enustopic0039525621table18256759113132>`__. In such a case, you only need to use the English soft keyboard to enter characters.
+   During the configuration, if English characters cannot be entered using the current physical keyboard, use the English soft keyboard to modify the configuration described in the **Solution 2** row of `Table 3 <#enustopic0027268511enustopic0039525621table18256759113132>`__. In such a case, you only need to use the English soft keyboard to enter characters.
 
    -  To enable the Windows English soft keyboard, choose **Start** > **Run**, enter **osk**, and press **Enter**.
    -  The method of enabling the Linux English soft keyboard varies depending on the OS version and is not described in this document.

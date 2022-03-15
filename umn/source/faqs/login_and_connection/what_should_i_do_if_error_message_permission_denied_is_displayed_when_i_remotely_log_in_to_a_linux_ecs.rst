@@ -74,7 +74,7 @@ Solution
 
    **sysctl fs.nr_open**
 
-3. Change the **nofile** value in **/etc/security/limits.conf** so that the value is smaller than the **fs.nr_open** value obtained in `2 <#ENUSTOPIC0240708483li12380124143314>`__.
+3. Change the **nofile** value in **/etc/security/limits.conf** so that the value is smaller than the **fs.nr_open** value obtained in `2 <#enustopic0240708483li12380124143314>`__.
 
    **vi /etc/security/limits.conf**
 

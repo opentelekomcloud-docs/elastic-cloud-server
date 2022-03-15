@@ -27,7 +27,7 @@ Procedure
 
    b. Click **Modify** in the upper right corner of the page.
 
-   c. In the **Modify Alarm Rule** dialog box shown in `Figure 1 <#ENUSTOPIC0027371531fig5398007222382>`__, set the parameters as prompted.
+   c. In the **Modify Alarm Rule** dialog box shown in `Figure 1 <#enustopic0027371531fig5398007222382>`__, set the parameters as prompted.
 
       .. figure:: /_static/images/en-us_image_0022382203.png
          :alt: Click to enlarge

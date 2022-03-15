@@ -21,7 +21,7 @@ Two ECSs run the same OS, for example, both run Windows or Linux. The system dis
 Windows
 -------
 
-For example, there are two Windows ECSs with parameters configured in `Table 1 <#ENUSTOPIC0100005619table1365540183310>`__.
+For example, there are two Windows ECSs with parameters configured in `Table 1 <#enustopic0100005619table1365540183310>`__.
 
 
 
@@ -58,12 +58,12 @@ The random password for logging in to ecs_02 must be resolved again. The procedu
    b. Click **Select File** and upload private key file **Keypair_02** of ecs_02.
    c. Click **Get Password** to obtain a new random password.
 
-#. Use the random password obtained in step `3 <#ENUSTOPIC0100005619li138721252141517>`__ to log in to ecs_02 with the system disk replaced.
+#. Use the random password obtained in step `3 <#enustopic0100005619li138721252141517>`__ to log in to ecs_02 with the system disk replaced.
 
 Linux
 -----
 
-For example, there are two Linux ECSs with parameters configured in `Table 2 <#ENUSTOPIC0100005619table9561950195614>`__.
+For example, there are two Linux ECSs with parameters configured in `Table 2 <#enustopic0100005619table9561950195614>`__.
 
 
 

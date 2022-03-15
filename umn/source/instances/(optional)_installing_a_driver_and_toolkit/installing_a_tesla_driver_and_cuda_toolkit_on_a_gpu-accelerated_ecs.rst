@@ -28,13 +28,13 @@ Installation process:
 -  `Obtaining a Tesla Driver and CUDA Toolkit <../../instances/(optional)_installing_a_driver_and_toolkit/obtaining_a_tesla_driver_and_cuda_toolkit.html>`__
 -  Installing a Tesla Driver
 
-   -  `Installing a Tesla Driver on a Linux ECS <#ENUSTOPIC0149470468section1728514576397>`__
-   -  `Installing a Tesla Driver on a Windows ECS <#ENUSTOPIC0149470468section244363219171>`__
+   -  `Installing a Tesla Driver on a Linux ECS <#enustopic0149470468section1728514576397>`__
+   -  `Installing a Tesla Driver on a Windows ECS <#enustopic0149470468section244363219171>`__
 
 -  Installing a CUDA Toolkit
 
-   -  `Installing the CUDA Toolkit on a Linux ECS <#ENUSTOPIC0149470468section1034245773916>`__
-   -  `Installing the CUDA Toolkit on a Windows ECS <#ENUSTOPIC0149470468section0337133719497>`__
+   -  `Installing the CUDA Toolkit on a Linux ECS <#enustopic0149470468section1034245773916>`__
+   -  `Installing the CUDA Toolkit on a Windows ECS <#enustopic0149470468section0337133719497>`__
 
 Installing a Tesla Driver on a Linux ECS
 ----------------------------------------
@@ -122,8 +122,8 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 
       **lsmod \| grep nouveau**
 
-      -  If the command output contains information about the Nouveau driver, the Nouveau driver has been installed and must be disabled. Then, go to step `9.b <#ENUSTOPIC0149470468li073251517124>`__.
-      -  If the command output does not contain information about the Nouveau driver, the Nouveau driver has been disabled. Then, go to step `9.d <#ENUSTOPIC0149470468li9819105753916>`__.
+      -  If the command output contains information about the Nouveau driver, the Nouveau driver has been installed and must be disabled. Then, go to step `9.b <#enustopic0149470468li073251517124>`__.
+      -  If the command output does not contain information about the Nouveau driver, the Nouveau driver has been disabled. Then, go to step `9.d <#enustopic0149470468li9819105753916>`__.
 
    b. Edit the **blacklist.conf** file.
 
@@ -406,7 +406,7 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
 
 #. Log in to the ECS.
 
-#. On the CUDA download page, set parameters according to the information shown in `Downloading a CUDA Toolkit <../../instances/(optional)_installing_a_driver_and_toolkit/obtaining_a_tesla_driver_and_cuda_toolkit.html#ENUSTOPIC0213874991section10203125783920>`__.
+#. On the CUDA download page, set parameters according to the information shown in `Downloading a CUDA Toolkit <../../instances/(optional)_installing_a_driver_and_toolkit/obtaining_a_tesla_driver_and_cuda_toolkit.html#enustopic0213874991section10203125783920>`__.
 
    .. figure:: /_static/images/en-us_image_0250288895.png
       :alt: Click to enlarge

@@ -55,8 +55,8 @@ In this example, the proxy ECS runs CentOS 6.5.
 
    **cat /proc/sys/net/ipv4/ip_forward**
 
-   -  If **0** (disabled) is displayed, go to `10 <#ENUSTOPIC0027157850li51820417113959>`__.
-   -  If **1** (enabled), go to `16 <#ENUSTOPIC0027157850li49419571113959>`__.
+   -  If **0** (disabled) is displayed, go to `10 <#enustopic0027157850li51820417113959>`__.
+   -  If **1** (enabled), go to `16 <#enustopic0027157850li49419571113959>`__.
 
 #. Run the following command to open the IP forwarding configuration file in the vi editor:
 
@@ -104,7 +104,7 @@ In this example, the proxy ECS runs CentOS 6.5.
 
    .. note::
 
-      To retain the preceding configuration even after the ECS is restarted, run the **vi /etc/rc.local** command to edit the **rc.local** file. Specifically, copy the rule described in step `16 <#ENUSTOPIC0027157850li49419571113959>`__ into **rc.local**, press **Esc** to exit the editing mode, and enter **:wq** to save and exit the file.
+      To retain the preceding configuration even after the ECS is restarted, run the **vi /etc/rc.local** command to edit the **rc.local** file. Specifically, copy the rule described in step `16 <#enustopic0027157850li49419571113959>`__ into **rc.local**, press **Esc** to exit the editing mode, and enter **:wq** to save and exit the file.
 
 #. Run the following commands to save the iptables configuration and make it start up automatically upon ECS startup:
 
@@ -116,7 +116,7 @@ In this example, the proxy ECS runs CentOS 6.5.
 
    **iptables -t nat --list**
 
-   SNAT has been configured if information similar to `Figure 1 <#ENUSTOPIC0027157850fig27598108113959>`__ is displayed.
+   SNAT has been configured if information similar to `Figure 1 <#enustopic0027157850fig27598108113959>`__ is displayed.
 
    .. figure:: /_static/images/en-us_image_0027174005.png
       :alt: Click to enlarge

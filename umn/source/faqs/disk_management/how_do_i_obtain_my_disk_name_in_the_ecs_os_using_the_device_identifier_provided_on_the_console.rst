@@ -29,11 +29,11 @@ Obtaining the Disk ID of an ECS on the Console
 
       -  If **Device Type** is **VBD**, use a serial number or BDF to obtain the disk device name.
 
-         If you use a serial number (recommended) to obtain the disk name, see `Using a Serial Number to Obtain the Disk Name (Windows) <#ENUSTOPIC0103285575section1549713815243>`__ and `Using a Serial Number to Obtain a Disk Device Name (Linux) <#ENUSTOPIC0103285575section1251215393317>`__.
+         If you use a serial number (recommended) to obtain the disk name, see `Using a Serial Number to Obtain the Disk Name (Windows) <#enustopic0103285575section1549713815243>`__ and `Using a Serial Number to Obtain a Disk Device Name (Linux) <#enustopic0103285575section1251215393317>`__.
 
-         If you use a BDF to obtain the disk device name, see `Using a VBD to Obtain a Disk Device Name (Linux) <#ENUSTOPIC0103285575section8901134753319>`__. (BDF cannot be used to obtain the disk name of Windows ECSs.)
+         If you use a BDF to obtain the disk device name, see `Using a VBD to Obtain a Disk Device Name (Linux) <#enustopic0103285575section8901134753319>`__. (BDF cannot be used to obtain the disk name of Windows ECSs.)
 
-      -  If **Device Type** is **SCSI**, use a WWN to obtain the disk name. For details, see `Using a WWN to Obtain the Disk Name (Windows) <#ENUSTOPIC0103285575section49041319248>`__ and `Using a WWN to Obtain a Disk Device Name (Linux) <#ENUSTOPIC0103285575section436018073419>`__.
+      -  If **Device Type** is **SCSI**, use a WWN to obtain the disk name. For details, see `Using a WWN to Obtain the Disk Name (Windows) <#enustopic0103285575section49041319248>`__ and `Using a WWN to Obtain a Disk Device Name (Linux) <#enustopic0103285575section436018073419>`__.
 
 Using a Serial Number to Obtain the Disk Name (Windows)
 -------------------------------------------------------
@@ -93,13 +93,13 @@ If a serial number is displayed on the console, use either of the following meth
 
          **Get-CimInstance -ClassName Win32_LogicalDiskToPartition \|select Antecedent, Dependent \|fl**
 
-         As shown in `Figure 3 <#ENUSTOPIC0103285575fig1960253814473>`__, the disk is **Disk 0**.
+         As shown in `Figure 3 <#enustopic0103285575fig1960253814473>`__, the disk is **Disk 0**.
 
       b. Run the following command to view the mapping between the serial number and the disk:
 
          **Get-Disk \|select Number, SerialNumber**
 
-         As shown in `Figure 3 <#ENUSTOPIC0103285575fig1960253814473>`__, the disk is **Disk 0**.
+         As shown in `Figure 3 <#enustopic0103285575fig1960253814473>`__, the disk is **Disk 0**.
 
          .. figure:: /_static/images/en-us_image_0000001127906793.png
             :alt: Click to enlarge
@@ -174,7 +174,7 @@ Using a VBD to Obtain a Disk Device Name (Linux)
 Using a WWN to Obtain the Disk Name (Windows)
 ---------------------------------------------
 
-#. Obtain the device identifier on the console by referring to `Obtaining the Disk ID of an ECS on the Console <#ENUSTOPIC0103285575section1041415015310>`__.
+#. Obtain the device identifier on the console by referring to `Obtaining the Disk ID of an ECS on the Console <#enustopic0103285575section1041415015310>`__.
 
 #. Manually convert the WWN.
 

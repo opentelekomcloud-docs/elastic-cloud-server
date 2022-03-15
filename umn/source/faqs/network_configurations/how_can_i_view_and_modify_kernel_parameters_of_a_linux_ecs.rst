@@ -4,7 +4,7 @@ How Can I View and Modify Kernel Parameters of a Linux ECS?
 Modify the kernel parameters only if the parameter settings affect your services. Kernel parameters vary depending on OS versions. If the parameter settings must be modified,
 
 -  Ensure that the target parameter settings meet service requirements.
--  Modify the correct kernel parameters. For details about common kernel parameters, see `Table 1 <#ENUSTOPIC0107659745table15253154115313>`__.
+-  Modify the correct kernel parameters. For details about common kernel parameters, see `Table 1 <#enustopic0107659745table15253154115313>`__.
 -  Back up key ECS data before modifying kernel parameter settings.
 
 Background

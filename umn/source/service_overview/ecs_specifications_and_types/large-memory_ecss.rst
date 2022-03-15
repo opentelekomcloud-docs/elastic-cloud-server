@@ -44,7 +44,7 @@ Notes
 
 -  E3 ECSs can use ultra-high I/O EVS disks as the system disk and data disks.
 
--  The primary and extension NICs of a large-memory ECS have specified application scenarios. For details, see `Table 2 <#ENUSTOPIC0038024694table1642803151326>`__. 
+-  The primary and extension NICs of a large-memory ECS have specified application scenarios. For details, see `Table 2 <#enustopic0038024694table1642803151326>`__. 
 
 .. _ENUSTOPIC0038024694table1642803151326:
 

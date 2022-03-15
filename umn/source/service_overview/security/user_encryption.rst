@@ -43,7 +43,7 @@ The key used for encryption relies on the Key Management Service (KMS). KMS uses
 
    **Figure 1** Data encryption process
 
-`Table 1 <#ENUSTOPIC0046912051table58453122162120>`__ describes the keys involved in the data encryption process.
+`Table 1 <#enustopic0046912051table58453122162120>`__ describes the keys involved in the data encryption process.
 
 
 

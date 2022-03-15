@@ -14,7 +14,7 @@ The ECS can be logged in.
 Background
 ----------
 
-`Table 1 <#ENUSTOPIC0122627689enustopic0021426802table4381109318958>`__ shows the ECS password complexity requirements.
+`Table 1 <#enustopic0122627689enustopic0021426802table4381109318958>`__ shows the ECS password complexity requirements.
 
 
 
@@ -48,7 +48,7 @@ Windows
 
 #. Enter **cmd** to open the command-line interface (CLI) window.
 
-#. Run the following command to change the password (the new password must meet the requirements described in `Table 1 <#ENUSTOPIC0122627689enustopic0021426802table4381109318958>`__):
+#. Run the following command to change the password (the new password must meet the requirements described in `Table 1 <#enustopic0122627689enustopic0021426802table4381109318958>`__):
 
    **net user** **Administrator** *New password*
 
@@ -65,7 +65,7 @@ Linux
 
    To reset the password of another user, replace **passwd** with **passwd username**.
 
-#. Enter the new password as prompted. Ensure that the new password meets the requirements described in `Table 1 <#ENUSTOPIC0122627689enustopic0021426802table4381109318958>`__.
+#. Enter the new password as prompted. Ensure that the new password meets the requirements described in `Table 1 <#enustopic0122627689enustopic0021426802table4381109318958>`__.
 
    .. code-block::
 

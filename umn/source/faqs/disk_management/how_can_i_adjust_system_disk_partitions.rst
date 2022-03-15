@@ -231,7 +231,7 @@ To use the 20 GB capacity, performing the following operations:
 
    If you do not set automatic mounting upon system startup, you must mount the new partition to the specified directory again after the ECS is restarted.
 
-   -  If automatic mounting is required, go to `7 <#ENUSTOPIC0076210995li51885379162851>`__.
+   -  If automatic mounting is required, go to `7 <#enustopic0076210995li51885379162851>`__.
    -  If automatic mounting is not required, no further action is required.
 
 #. Set automatic mounting upon system startup for the new disk.

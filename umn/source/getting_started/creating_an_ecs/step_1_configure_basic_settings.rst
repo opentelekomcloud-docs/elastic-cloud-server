@@ -116,8 +116,8 @@ Performing Basic Configurations
 
       For the disk types supported by an ECS, see `EVS Disks <../../service_overview/evs_disks.html>`__.
 
-      -  If the image based on which an ECS is created is not encrypted, the system disk of the ECS is not encrypted. If the image based on which an ECS is created is encrypted, the system disk of the ECS is automatically encrypted. For details, see `(Optional) Encryption-related parameters <#ENUSTOPIC0163572589enustopic0144542112li3286101316615>`__.
-      -  **Encryption**: indicates that the system disk is encrypted if you select this option. For details, see `(Optional) Encryption-related parameters <#ENUSTOPIC0163572589enustopic0144542112li3286101316615>`__.
+      -  If the image based on which an ECS is created is not encrypted, the system disk of the ECS is not encrypted. If the image based on which an ECS is created is encrypted, the system disk of the ECS is automatically encrypted. For details, see `(Optional) Encryption-related parameters <#enustopic0163572589enustopic0144542112li3286101316615>`__.
+      -  **Encryption**: indicates that the system disk is encrypted if you select this option. For details, see `(Optional) Encryption-related parameters <#enustopic0163572589enustopic0144542112li3286101316615>`__.
       -  For a P1 or P2 ECS, the system disk must be greater than or equal to 15 GB. It is recommended that the system disk be greater than 40 GB. A disk size must be an integer multiple of 10, for example, 60 GB or 70 GB. Otherwise, the system automatically rounds the value down, for example, 60 GB for value **68**.
 
    -  Data disk
@@ -130,7 +130,7 @@ Performing Basic Configurations
 
       -  **Share**: indicates that the EVS disk is sharable if you select this option. Such an EVS disk can be attached to multiple ECSs.
 
-      -  **Encryption**: indicates that the data disk is encrypted if you select this option. For details, see `(Optional) Encryption-related parameters <#ENUSTOPIC0163572589enustopic0144542112li3286101316615>`__.
+      -  **Encryption**: indicates that the data disk is encrypted if you select this option. For details, see `(Optional) Encryption-related parameters <#enustopic0163572589enustopic0144542112li3286101316615>`__.
 
       -  **Create Disk from Data Disk Image**: If you have created a data disk image on the **Image Management Service** page, when using a Windows or Linux image to create an ECS, you can use the data disk image to create data disks for the ECS.
 

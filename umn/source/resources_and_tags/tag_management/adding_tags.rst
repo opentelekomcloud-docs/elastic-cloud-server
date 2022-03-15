@@ -5,11 +5,11 @@ Tags are used to identify cloud resources, such as ECSs, images, and disks. If y
 
 You can add tags to ECSs in any of the following ways:
 
--  `Adding Tags When Creating an ECS <#ENUSTOPIC0183019669section619816351650>`__
--  `Adding Tags on the Page Providing Details About an ECS <#ENUSTOPIC0183019669section15164103015253>`__
--  `Adding Tags on the TMS Console <#ENUSTOPIC0183019669section115321623241>`__
+-  `Adding Tags When Creating an ECS <#enustopic0183019669section619816351650>`__
+-  `Adding Tags on the Page Providing Details About an ECS <#enustopic0183019669section15164103015253>`__
+-  `Adding Tags on the TMS Console <#enustopic0183019669section115321623241>`__
 
-For details about how to use predefined tags, see `Using Predefined Tags <#ENUSTOPIC0183019669section648015120456>`__.
+For details about how to use predefined tags, see `Using Predefined Tags <#enustopic0183019669section648015120456>`__.
 
 Adding Tags When Creating an ECS
 --------------------------------
@@ -24,7 +24,7 @@ Adding Tags When Creating an ECS
 
 #. Configure ECS parameters.
 
-   Select **Configure now** for **Advanced Options**. Then, add a tag key and tag value. For the tag key and tag value requirements, see `Table 1 <../../resources_and_tags/tag_management/overview.html#ENUSTOPIC0092499768table197401426182516>`__.
+   Select **Configure now** for **Advanced Options**. Then, add a tag key and tag value. For the tag key and tag value requirements, see `Table 1 <../../resources_and_tags/tag_management/overview.html#enustopic0092499768table197401426182516>`__.
 
    .. note::
 
@@ -43,7 +43,7 @@ Adding Tags on the Page Providing Details About an ECS
 
    The page providing details about the ECS is displayed.
 
-#. Click the **Tags** tab and then **Add Tag**. In the displayed dialog box, enter the tag key and tag value. For the tag key and tag value requirements, see `Table 1 <../../resources_and_tags/tag_management/overview.html#ENUSTOPIC0092499768table197401426182516>`__.
+#. Click the **Tags** tab and then **Add Tag**. In the displayed dialog box, enter the tag key and tag value. For the tag key and tag value requirements, see `Table 1 <../../resources_and_tags/tag_management/overview.html#enustopic0092499768table197401426182516>`__.
 
    You can change the tag value after the tag is added.
 
