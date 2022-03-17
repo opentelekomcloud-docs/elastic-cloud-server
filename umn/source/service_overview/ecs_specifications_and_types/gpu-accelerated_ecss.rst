@@ -15,23 +15,23 @@ GPU-accelerated ECSs are classified as graphics-accelerated (G series) and compu
 
 Recommended:
 
-`Inference-accelerated PI2 <#enustopic0097289624section1846114713182>`__
+`Inference-accelerated PI2 <#inference-accelerated-pi2>`__
 
-`Graphics-accelerated Enhancement G6 <#enustopic0097289624section131302034104515>`__
+`Graphics-accelerated Enhancement G6 <#graphics-accelerated-enhancement-g6>`__
 
 Available now: All GPU models except the recommended ones.
 
 -  G series
 
-   -  `Graphics-accelerated Enhancement G6 <#enustopic0097289624section131302034104515>`__ (recommended)
+   -  `Graphics-accelerated Enhancement G6 <#graphics-accelerated-enhancement-g6>`__ (recommended)
 
 -  P series
 
-   -  `Computing-accelerated P2s <#enustopic0097289624section1454714546567>`__ (recommended)
-   -  `Computing-accelerated P2v <#enustopic0097289624section208472383415>`__
-   -  `Computing-accelerated P2 <#enustopic0097289624section5477185118234>`__
-   -  `Computing-accelerated P1 <#enustopic0097289624section1124594913391>`__
-   -  `Inference-accelerated PI2 <#enustopic0097289624section1846114713182>`__ (recommended)
+   -  `Computing-accelerated P2s <#computing-accelerated-p2s>`__ (recommended)
+   -  `Computing-accelerated P2v <#computing-accelerated-p2v>`__
+   -  `Computing-accelerated P2 <#computing-accelerated-p2>`__
+   -  `Computing-accelerated P1 <#computing-accelerated-p1>`__
+   -  `Inference-accelerated PI2 <#inference-accelerated-pi2>`__ (recommended)
 
 Helpful links:
 

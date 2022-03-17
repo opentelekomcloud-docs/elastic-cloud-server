@@ -271,7 +271,7 @@ The following example shows you how a new primary partition can be created on a 
 
    .. note::
 
-      If the server is restarted, the mounting will become invalid. You can set automatic mounting for partitions at system start by modifying the **/etc/fstab** file. For details, see `Setting Automatic Mounting at System Start <#enustopic0085634797enustopic0044524669section15839912195453>`__.
+      If the server is restarted, the mounting will become invalid. You can set automatic mounting for partitions at system start by modifying the **/etc/fstab** file. For details, see `Setting Automatic Mounting at System Start <#setting-automatic-mounting-at-system-start>`__.
 
 Setting Automatic Mounting at System Start
 ------------------------------------------

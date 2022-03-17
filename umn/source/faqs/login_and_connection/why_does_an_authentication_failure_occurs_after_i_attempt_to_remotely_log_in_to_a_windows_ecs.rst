@@ -6,7 +6,7 @@ Symptom
 
 When a local computer running Windows attempts to access a Windows ECS using RDP (for example, MSTSC), an identity authentication failure occurs and the desired function is not supported.
 
--  If the error message contains only the information that an identity authentication failure occurs and that the desired function is not supported, rectify the fault by following the instructions provided in `Solution <#enustopic0018339851section9947102411203>`__.
+-  If the error message contains only the information that an identity authentication failure occurs and that the desired function is not supported, rectify the fault by following the instructions provided in `Solution <#solution>`__.
 
 -  If the error message shows that the fault was caused by "CredSSP Encryption Oracle Remediation", as shown in `Figure 1 <#enustopic0018339851fig18932134871212>`__, the fault may be caused by a security patch released by Microsoft in March 2018. This patch may affect RDP-based CredSSP connections. As a result, setting up RDP-based connections to ECSs failed. For details, see `Unable to RDP to Virtual Machine: CredSSP Encryption Oracle Remediation <https://blogs.technet.microsoft.com/mckittrick/unable-to-rdp-to-virtual-machine-credssp-encryption-oracle-remediation/>`__. Rectify the fault by following the instructions provided in `official Microsoft document <https://support.microsoft.com/en-us/help/4093492/credssp-updates-for-cve-2018-0886-march-13-2018>`__.
 

@@ -8,13 +8,13 @@ Single-core CPU performance cannot meet the requirement of processing NIC interr
 
 The ECS described in this section is assumed to comply with the requirements on specifications and virtualization type.
 
--  If the ECS was created using a public image listed in `Support of NIC Multi-Queue <#enustopic0058758453section892862210138>`__, NIC multi-queue has been enabled on the ECS by default. Therefore, you do not need to perform the operations described in this section.
--  If the ECS was created using a private image and the OS of the external image file is listed in `Support of NIC Multi-Queue <#enustopic0058758453section892862210138>`__, perform the following operations to enable NIC multi-queue:
+-  If the ECS was created using a public image listed in `Support of NIC Multi-Queue <#support-of-nic-multi-queue>`__, NIC multi-queue has been enabled on the ECS by default. Therefore, you do not need to perform the operations described in this section.
+-  If the ECS was created using a private image and the OS of the external image file is listed in `Support of NIC Multi-Queue <#support-of-nic-multi-queue>`__, perform the following operations to enable NIC multi-queue:
 
-   #. `Importing the External Image File to the IMS Console <#enustopic0058758453section1659682611504>`__
-   #. `Setting NIC Multi-Queue for the Image <#enustopic0058758453section1949113217282>`__
-   #. `Creating an ECS Using a Private Image <#enustopic0058758453section1841681225617>`__
-   #. `Enabling NIC Multi-Queue <#enustopic0058758453section214227201118>`__
+   #. `Importing the External Image File to the IMS Console <#importing-the-external-image-file-to-the-ims-console>`__
+   #. `Setting NIC Multi-Queue for the Image <#setting-nic-multi-queue-for-the-image>`__
+   #. `Creating an ECS Using a Private Image <#creating-an-ecs-using-a-private-image>`__
+   #. `Enabling NIC Multi-Queue <#enabling-nic-multi-queue>`__
 
 Support of NIC Multi-Queue
 --------------------------

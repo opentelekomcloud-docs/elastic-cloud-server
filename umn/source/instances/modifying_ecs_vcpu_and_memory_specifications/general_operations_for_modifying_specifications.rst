@@ -73,7 +73,7 @@ Step 1: Modify Specifications
 
    b. Click **Failures**. Then, in the **Failures** dialog box, click **Operation Failures** and check whether the task is contained in the list by **Name/ID**, **Operated At**, or **Task**.
 
-      -  If yes, the specifications modification failed. See `Follow-up Procedure <#enustopic0013771092section9461027528>`__ for failure causes.
+      -  If yes, the specifications modification failed. See `Follow-up Procedure <#follow-up-procedure>`__ for failure causes.
       -  If no, the specifications have been modified.
 
 Step 2: Check Disk Attachment

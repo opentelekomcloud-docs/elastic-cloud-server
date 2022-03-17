@@ -29,11 +29,11 @@ Obtaining the Disk ID of an ECS on the Console
 
       -  If **Device Type** is **VBD**, use a serial number or BDF to obtain the disk device name.
 
-         If you use a serial number (recommended) to obtain the disk name, see `Using a Serial Number to Obtain the Disk Name (Windows) <#enustopic0103285575section1549713815243>`__ and `Using a Serial Number to Obtain a Disk Device Name (Linux) <#enustopic0103285575section1251215393317>`__.
+         If you use a serial number (recommended) to obtain the disk name, see `Using a Serial Number to Obtain the Disk Name (Windows) <#using-a-serial-number-to-obtain-the-disk-name-(windows)>`__ and `Using a Serial Number to Obtain a Disk Device Name (Linux) <#using-a-serial-number-to-obtain-a-disk-device-name-(linux)>`__.
 
-         If you use a BDF to obtain the disk device name, see `Using a VBD to Obtain a Disk Device Name (Linux) <#enustopic0103285575section8901134753319>`__. (BDF cannot be used to obtain the disk name of Windows ECSs.)
+         If you use a BDF to obtain the disk device name, see `Using a VBD to Obtain a Disk Device Name (Linux) <#using-a-vbd-to-obtain-a-disk-device-name-(linux)>`__. (BDF cannot be used to obtain the disk name of Windows ECSs.)
 
-      -  If **Device Type** is **SCSI**, use a WWN to obtain the disk name. For details, see `Using a WWN to Obtain the Disk Name (Windows) <#enustopic0103285575section49041319248>`__ and `Using a WWN to Obtain a Disk Device Name (Linux) <#enustopic0103285575section436018073419>`__.
+      -  If **Device Type** is **SCSI**, use a WWN to obtain the disk name. For details, see `Using a WWN to Obtain the Disk Name (Windows) <#using-a-wwn-to-obtain-the-disk-name-(windows)>`__ and `Using a WWN to Obtain a Disk Device Name (Linux) <#using-a-wwn-to-obtain-a-disk-device-name-(linux)>`__.
 
 Using a Serial Number to Obtain the Disk Name (Windows)
 -------------------------------------------------------
@@ -174,7 +174,7 @@ Using a VBD to Obtain a Disk Device Name (Linux)
 Using a WWN to Obtain the Disk Name (Windows)
 ---------------------------------------------
 
-#. Obtain the device identifier on the console by referring to `Obtaining the Disk ID of an ECS on the Console <#enustopic0103285575section1041415015310>`__.
+#. Obtain the device identifier on the console by referring to `Obtaining the Disk ID of an ECS on the Console <#obtaining-the-disk-id-of-an-ecs-on-the-console>`__.
 
 #. Manually convert the WWN.
 

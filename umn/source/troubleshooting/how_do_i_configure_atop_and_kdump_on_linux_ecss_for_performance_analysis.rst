@@ -10,18 +10,18 @@ The method for configuring atop varies with the OS version.
 
 atop
 
--  `Introduction to atop <#enustopic0000001143214829enustopic0178319250section0959133015350>`__
--  `Configuring atop for CentOS 8 or RHEL 8 <#enustopic0000001143214829enustopic0178319250section18897192721320>`__
--  `Configuring atop for CentOS 7, RHEL 7, or EulerOS <#enustopic0000001143214829enustopic0178319250section1972319582310>`__
--  `Configuring atop for SUSE 12 or SUSE 15 <#enustopic0000001143214829enustopic0178319250section3205824181917>`__
--  `Configuring atop Using Its Source Package for SUSE, Fedora, Debian or Ubuntu <#enustopic0000001143214829enustopic0178319250section012793312620>`__
+-  `Introduction to atop <#introduction-to-atop>`__
+-  `Configuring atop for CentOS 8 or RHEL 8 <#configuring-atop-for-centos-8-or-rhel-8>`__
+-  `Configuring atop for CentOS 7, RHEL 7, or EulerOS <#configuring-atop-for-centos-7,-rhel-7,-or-euleros>`__
+-  `Configuring atop for SUSE 12 or SUSE 15 <#configuring-atop-for-suse-12-or-suse-15>`__
+-  `Configuring atop Using Its Source Package for SUSE, Fedora, Debian or Ubuntu <#configuring-atop-using-its-source-package-for-suse,-fedora,-debian-or-ubuntu>`__
 
 kdump
 
--  `Precautions for Configuring kdump <#enustopic0000001143214829enustopic0178319250section1410131164120>`__
--  `Introduction to kdump <#enustopic0000001143214829enustopic0178319250section18450171174120>`__
--  `Configuring kdump <#enustopic0000001143214829enustopic0178319250section134381494320>`__
--  `Checking Whether kdump Configurations Have Taken Effect <#enustopic0000001143214829enustopic0178319250section1296112934412>`__
+-  `Precautions for Configuring kdump <#precautions-for-configuring-kdump>`__
+-  `Introduction to kdump <#introduction-to-kdump>`__
+-  `Configuring kdump <#configuring-kdump>`__
+-  `Checking Whether kdump Configurations Have Taken Effect <#checking-whether-kdump-configurations-have-taken-effect>`__
 
 Introduction to atop
 --------------------

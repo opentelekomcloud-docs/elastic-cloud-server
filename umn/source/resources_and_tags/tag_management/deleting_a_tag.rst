@@ -3,9 +3,9 @@ Deleting a Tag
 
 If you no longer need a tag, delete it in any of the following ways:
 
--  `Deleting a Tag on the Page Providing Details About an ECS <#enustopic0183019671section8763326153815>`__
--  `Deleting a Tag on the TMS Console <#enustopic0183019671section167319315388>`__
--  `Batch Deleting Tags on the TMS Console <#enustopic0183019671section13142241209>`__
+-  `Deleting a Tag on the Page Providing Details About an ECS <#deleting-a-tag-on-the-page-providing-details-about-an-ecs>`__
+-  `Deleting a Tag on the TMS Console <#deleting-a-tag-on-the-tms-console>`__
+-  `Batch Deleting Tags on the TMS Console <#batch-deleting-tags-on-the-tms-console>`__
 
 Deleting a Tag on the Page Providing Details About an ECS
 ---------------------------------------------------------

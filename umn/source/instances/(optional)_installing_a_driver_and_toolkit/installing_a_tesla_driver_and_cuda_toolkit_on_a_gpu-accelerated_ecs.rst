@@ -28,13 +28,13 @@ Installation process:
 -  `Obtaining a Tesla Driver and CUDA Toolkit <../../instances/(optional)_installing_a_driver_and_toolkit/obtaining_a_tesla_driver_and_cuda_toolkit.html>`__
 -  Installing a Tesla Driver
 
-   -  `Installing a Tesla Driver on a Linux ECS <#enustopic0149470468section1728514576397>`__
-   -  `Installing a Tesla Driver on a Windows ECS <#enustopic0149470468section244363219171>`__
+   -  `Installing a Tesla Driver on a Linux ECS <#installing-a-tesla-driver-on-a-linux-ecs>`__
+   -  `Installing a Tesla Driver on a Windows ECS <#installing-a-tesla-driver-on-a-windows-ecs>`__
 
 -  Installing a CUDA Toolkit
 
-   -  `Installing the CUDA Toolkit on a Linux ECS <#enustopic0149470468section1034245773916>`__
-   -  `Installing the CUDA Toolkit on a Windows ECS <#enustopic0149470468section0337133719497>`__
+   -  `Installing the CUDA Toolkit on a Linux ECS <#installing-the-cuda-toolkit-on-a-linux-ecs>`__
+   -  `Installing the CUDA Toolkit on a Windows ECS <#installing-the-cuda-toolkit-on-a-windows-ecs>`__
 
 Installing a Tesla Driver on a Linux ECS
 ----------------------------------------
@@ -406,7 +406,7 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
 
 #. Log in to the ECS.
 
-#. On the CUDA download page, set parameters according to the information shown in `Downloading a CUDA Toolkit <../../instances/(optional)_installing_a_driver_and_toolkit/obtaining_a_tesla_driver_and_cuda_toolkit.html#enustopic0213874991section10203125783920>`__.
+#. On the CUDA download page, set parameters according to the information shown in `Downloading a CUDA Toolkit <../../instances/(optional)_installing_a_driver_and_toolkit/obtaining_a_tesla_driver_and_cuda_toolkit.html#downloading-a-cuda-toolkit>`__.
 
    .. figure:: /_static/images/en-us_image_0250288895.png
       :alt: Click to enlarge

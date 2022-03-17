@@ -253,7 +253,7 @@ The following example shows you how a new partition can be created on a new data
 
    .. note::
 
-      If the server is restarted, the mounting will become invalid. You can set automatic mounting for partitions at system start by modifying the **/etc/fstab** file. For details, see `Setting Automatic Mounting at System Start <#enustopic0085634798enustopic0084935709section15839912195453>`__.
+      If the server is restarted, the mounting will become invalid. You can set automatic mounting for partitions at system start by modifying the **/etc/fstab** file. For details, see `Setting Automatic Mounting at System Start <#setting-automatic-mounting-at-system-start>`__.
 
 Setting Automatic Mounting at System Start
 ------------------------------------------

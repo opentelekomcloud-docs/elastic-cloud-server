@@ -35,7 +35,7 @@ Use Restrictions
 Passing User Data
 -----------------
 
-#. Create a user data script, the format of which complies with user data script specifications. For details, see `Helpful Links <#enustopic0032380449section54344118153243>`__.
+#. Create a user data script, the format of which complies with user data script specifications. For details, see `Helpful Links <#helpful-links>`__.
 
 #. When creating an ECS, set **Advanced Options** to **Configure now**, and paste the content of the user data script to the **User Data** text box or upload the user data file.
 

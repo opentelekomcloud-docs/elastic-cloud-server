@@ -14,10 +14,10 @@ This section describes how to install a GRID driver, purchase or apply for a GRI
 
 Process of installing a GRID driver:
 
-#. `Purchasing a GRID License <#enustopic0149610914section1130184214229>`__
-#. `Downloading GRID Driver and Software License Packages <#enustopic0149610914section91244318407>`__
-#. `Deploying and Configuring the License Server <#enustopic0149610914section19229135113439>`__
-#. `Installing the GRID Driver and Configuring the License <#enustopic0149610914section17545653184812>`__
+#. `Purchasing a GRID License <#purchasing-a-grid-license>`__
+#. `Downloading GRID Driver and Software License Packages <#downloading-grid-driver-and-software-license-packages>`__
+#. `Deploying and Configuring the License Server <#deploying-and-configuring-the-license-server>`__
+#. `Installing the GRID Driver and Configuring the License <#installing-the-grid-driver-and-configuring-the-license>`__
 
 .. note::
 

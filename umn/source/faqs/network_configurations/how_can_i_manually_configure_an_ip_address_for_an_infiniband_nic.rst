@@ -46,7 +46,7 @@ Procedure
 
    .. note::
 
-      For instructions about how to obtain the IP address and subnet mask for an InfiniBand NIC, see `Background <#enustopic0083225171section42060912112551>`__.
+      For instructions about how to obtain the IP address and subnet mask for an InfiniBand NIC, see `Background <#background>`__.
 
 #. Run the following command to restart the network for the configuration to take effect:
 

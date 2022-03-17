@@ -16,11 +16,11 @@ An error message is displayed indicating that your local computer cannot connect
 Possible Causes
 ---------------
 
--  Port 3389 of the security group on the ECS is disabled. For details, see `Checking Port Configuration on the ECS <#enustopic0264235939enustopic0250947106section143451864405>`__.
--  The firewall on the ECS is disabled. For details, see `Checking Whether the Firewall Is Correctly Configured <#enustopic0264235939enustopic0250947106section1130118816394>`__.
--  The remote desktop connection is not correctly configured. For details, see `Checking Remote Desktop Connection Settings <#enustopic0264235939enustopic0250947106section1912111262434>`__.
--  Remote Desktop Services are not started. For solution, see `Checking Remote Desktop Services <#enustopic0264235939enustopic0250947106section42842535476>`__.
--  Remote Desktop Session Host is not correctly configured. For details, see `Checking Remote Desktop Session Host Configuration <#enustopic0264235939enustopic0250947106section108021655155012>`__.
+-  Port 3389 of the security group on the ECS is disabled. For details, see `Checking Port Configuration on the ECS <#checking-port-configuration-on-the-ecs>`__.
+-  The firewall on the ECS is disabled. For details, see `Checking Whether the Firewall Is Correctly Configured <#checking-whether-the-firewall-is-correctly-configured>`__.
+-  The remote desktop connection is not correctly configured. For details, see `Checking Remote Desktop Connection Settings <#checking-remote-desktop-connection-settings>`__.
+-  Remote Desktop Services are not started. For solution, see `Checking Remote Desktop Services <#checking-remote-desktop-services>`__.
+-  Remote Desktop Session Host is not correctly configured. For details, see `Checking Remote Desktop Session Host Configuration <#checking-remote-desktop-session-host-configuration>`__.
 
 Checking Port Configuration on the ECS
 --------------------------------------

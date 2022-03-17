@@ -46,7 +46,7 @@ Notes
       #. View the status of each EVS disk.
 
 -  Do not detach an EVS disk from an ECS that is being started, stopped, or restarted.
--  Do not detach an EVS disk from a running ECS whose OS does not support this feature. OSs supporting EVS disk detachment from a running ECS are listed in `OSs Supporting EVS Disk Detachment from a Running ECS <#enustopic0036046828section21417196143518>`__.
+-  Do not detach an EVS disk from a running ECS whose OS does not support this feature. OSs supporting EVS disk detachment from a running ECS are listed in `OSs Supporting EVS Disk Detachment from a Running ECS <#oss-supporting-evs-disk-detachment-from-a-running-ecs>`__.
 -  For a running Linux ECS, the drive letter may be changed after an EVS disk is detached from it and then attached to it again. This is a normal case due to the drive letter allocation mechanism of the Linux system.
 -  For a running Linux ECS, the drive letter may be changed after an EVS disk is detached from it and the ECS is restarted. This is a normal case due to the drive letter allocation mechanism of the Linux system.
 

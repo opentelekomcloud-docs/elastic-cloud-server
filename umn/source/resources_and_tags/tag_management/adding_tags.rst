@@ -5,11 +5,11 @@ Tags are used to identify cloud resources, such as ECSs, images, and disks. If y
 
 You can add tags to ECSs in any of the following ways:
 
--  `Adding Tags When Creating an ECS <#enustopic0183019669section619816351650>`__
--  `Adding Tags on the Page Providing Details About an ECS <#enustopic0183019669section15164103015253>`__
--  `Adding Tags on the TMS Console <#enustopic0183019669section115321623241>`__
+-  `Adding Tags When Creating an ECS <#adding-tags-when-creating-an-ecs>`__
+-  `Adding Tags on the Page Providing Details About an ECS <#adding-tags-on-the-page-providing-details-about-an-ecs>`__
+-  `Adding Tags on the TMS Console <#adding-tags-on-the-tms-console>`__
 
-For details about how to use predefined tags, see `Using Predefined Tags <#enustopic0183019669section648015120456>`__.
+For details about how to use predefined tags, see `Using Predefined Tags <#using-predefined-tags>`__.
 
 Adding Tags When Creating an ECS
 --------------------------------
