@@ -124,7 +124,7 @@ Follow-up Procedure
 
       It is a good practice to back up the **/etc/fstab** file before writing data into it.
 
-      To enable automatic partition mounting upon system startup, see `Initializing a Linux Data Disk (fdisk) <../../getting_started/initializing_evs_data_disks/initializing_a_linux_data_disk_(fdisk).html>`__.
+      To enable automatic partition mounting upon system startup, see `Initializing a Linux Data Disk (fdisk) <../../getting_started/initializing_evs_data_disks/initializing_a_linux_data_disk_fdisk.html>`__.
 
    #. Mount the partition so that you can use the data disk.
 

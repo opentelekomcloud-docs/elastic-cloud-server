@@ -25,7 +25,7 @@ Notes
 
 Installation process:
 
--  `Obtaining a Tesla Driver and CUDA Toolkit <../../instances/(optional)_installing_a_driver_and_toolkit/obtaining_a_tesla_driver_and_cuda_toolkit.html>`__
+-  `Obtaining a Tesla Driver and CUDA Toolkit <../../instances/optional_installing_a_driver_and_toolkit/obtaining_a_tesla_driver_and_cuda_toolkit.html>`__
 -  Installing a Tesla Driver
 
    -  `Installing a Tesla Driver on a Linux ECS <#installing-a-tesla-driver-on-a-linux-ecs>`__
@@ -292,7 +292,7 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 
       Install the desired program: **yum install -y kernel-devel-`uname -r\` gcc gcc-c++**
 
-#. On the CUDA download page, set parameters according to the information shown in `Obtaining a Tesla Driver and CUDA Toolkit <../../instances/(optional)_installing_a_driver_and_toolkit/obtaining_a_tesla_driver_and_cuda_toolkit.html>`__.
+#. On the CUDA download page, set parameters according to the information shown in `Obtaining a Tesla Driver and CUDA Toolkit <../../instances/optional_installing_a_driver_and_toolkit/obtaining_a_tesla_driver_and_cuda_toolkit.html>`__.
 
    .. figure:: /_static/images/en-us_image_0250288087.png
       :alt: Click to enlarge
@@ -406,7 +406,7 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
 
 #. Log in to the ECS.
 
-#. On the CUDA download page, set parameters according to the information shown in `Downloading a CUDA Toolkit <../../instances/(optional)_installing_a_driver_and_toolkit/obtaining_a_tesla_driver_and_cuda_toolkit.html#downloading-a-cuda-toolkit>`__.
+#. On the CUDA download page, set parameters according to the information shown in `Downloading a CUDA Toolkit <../../instances/optional_installing_a_driver_and_toolkit/obtaining_a_tesla_driver_and_cuda_toolkit.html#downloading-a-cuda-toolkit>`__.
 
    .. figure:: /_static/images/en-us_image_0250288895.png
       :alt: Click to enlarge
