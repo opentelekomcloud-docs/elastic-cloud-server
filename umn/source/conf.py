@@ -149,3 +149,10 @@ html_title = "Elastic Cloud Server UMN"
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'ecsdoc'
+
+latex_documents = [
+    ('index',
+     'umn-elastic-cloud-server.tex',
+     u'%s User Manual Documentation' % project,
+     u'OpenTelekomCloud', 'manual'),
+]
