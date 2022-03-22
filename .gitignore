@@ -19,6 +19,7 @@ dist
 doc/build
 api-ref/build
 umn/build
+*/build
 releasenotes/build
 # Development environment files
 .project
