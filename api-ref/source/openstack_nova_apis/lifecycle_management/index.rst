@@ -10,3 +10,4 @@ Lifecycle Management
    deleting_an_ecs
    querying_ecss
    querying_details_about_ecss
+   querying_details_about_ecs

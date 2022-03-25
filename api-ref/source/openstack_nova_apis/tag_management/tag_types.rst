@@ -12,7 +12,7 @@ Tag functions have been upgraded on the platform. After the upgrade, a tag consi
 After the tag function upgrade, tag management APIs are classified as the APIs for 1D tags and the APIs for 2D tags.
 
 -  A 1D tag contains a string. All APIs for 1D tags are native OpenStack APIs. For details, see this section.
--  A 2D tag consists of a key and a value. All APIs for 2D tags are ECS APIs. For details, see `Tag Management <../../apis_recommended/index.html>`__.
+-  A 2D tag consists of a key and a value. All APIs for 2D tags are ECS APIs. For details, see `Tag Management <../../apis_recommended/tag_management/index.html>`__.
 
 .. note::
 

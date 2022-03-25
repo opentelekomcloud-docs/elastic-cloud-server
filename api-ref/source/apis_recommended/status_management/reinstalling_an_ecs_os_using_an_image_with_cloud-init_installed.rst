@@ -21,7 +21,7 @@ URI
 
 POST /v2/{project_id}/cloudservers/{server_id}/reinstallos
 
-`Table 1 <#enustopic0067876349table55945983>`__ describes the parameters in the URI.
+`Table 1 <#enustopic0067876349table55945983>`__ describes the parameters in the URI. 
 
 .. _ENUSTOPIC0067876349table55945983:
 
@@ -37,7 +37,7 @@ POST /v2/{project_id}/cloudservers/{server_id}/reinstallos
 Request
 -------
 
-`Table 2 <#enustopic0067876349table2840889>`__ describes the request parameters.
+`Table 2 <#enustopic0067876349table2840889>`__ describes the request parameters. 
 
 .. _ENUSTOPIC0067876349table2840889:
 
@@ -73,67 +73,67 @@ Request
 
 .. table:: **Table 4** **metadata** field description
 
-   +----------------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter            | Mandatory | Type   | Description                                                                                                                                            |
-   +======================+===========+========+========================================================================================================================================================+
-   | BYOL                 | No        | String | Specifies whether a user has the license of an image.                                                                                                  |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        | -  If this parameter is set to **true**, the license file delivered with the image is used, indicating that BYOL is used.                              |
-   |                      |           |        | -  If this parameter is set to a value other than **true**, BYOL is not used, and the license file provided by the public cloud platform must be used. |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        | The default value is not **true**, indicating that BYOL is not used.                                                                                   |
-   +----------------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | user_data            | No        | String | Specifies the user data to be injected to the ECS during the creation. Text and text files can be injected.                                            |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        | .. note::                                                                                                                                              |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        |    -  The content of **user_data** must be encoded with base64.                                                                                        |
-   |                      |           |        |    -  The maximum size of the content to be injected (before encoding) is 32 KB.                                                                       |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        | For more details, see "Injecting User Data into ECSs" in *Elastic Cloud Server User Guide*.                                                            |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        | Examples                                                                                                                                               |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        | Before base64 encoding:                                                                                                                                |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        | -  Linux                                                                                                                                               |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        |    .. code-block::                                                                                                                                     |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        |       #! /bin/bash                                                                                                                                     |
-   |                      |           |        |       echo user_test >> /home/user.txt                                                                                                                 |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        | -  Windows                                                                                                                                             |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        |    .. code-block::                                                                                                                                     |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        |       rem cmd                                                                                                                                          |
-   |                      |           |        |       echo 111 > c:\aaa.txt                                                                                                                            |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        | After base64 encoding:                                                                                                                                 |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        | -  Linux                                                                                                                                               |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        |    .. code-block::                                                                                                                                     |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        |       IyEgL2Jpbi9iYXNoDQplY2hvIHVzZXJfdGVzdCAmZ3Q7Jmd0OyAvaG9tZS91c2VyLnR4dA==                                                                         |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        | -  Windows                                                                                                                                             |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        |    .. code-block::                                                                                                                                     |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        |       cmVtIGNtZA0KZWNobyAxMTEgJmd0OyBjOlxhYWEudHh0                                                                                                     |
-   +----------------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | \__system__encrypted | No        | String | Specifies encryption in **metadata**. The value can be **0** (encryption disabled) or **1** (encryption enabled).                                      |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        | If this parameter does not exist, the system disk will not be encrypted by default.                                                                    |
-   +----------------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | \__system__cmkid     | No        | String | Specifies the CMK ID, which indicates encryption in **metadata**. This parameter is used with **\__system__encrypted**.                                |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        | .. note::                                                                                                                                              |
-   |                      |           |        |                                                                                                                                                        |
-   |                      |           |        |    For details about how to obtain the CMK ID, see "Querying the List of CMKs" in *Key Management Service API Reference*.                              |
-   +----------------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +----------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter            | Mandatory       | Type            | Description                                                                                                                                            |
+   +======================+=================+=================+========================================================================================================================================================+
+   | BYOL                 | No              | String          | Specifies whether a user has the license of an image.                                                                                                  |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 | -  If this parameter is set to **true**, the license file delivered with the image is used, indicating that BYOL is used.                              |
+   |                      |                 |                 | -  If this parameter is set to a value other than **true**, BYOL is not used, and the license file provided by the public cloud platform must be used. |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 | The default value is not **true**, indicating that BYOL is not used.                                                                                   |
+   +----------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | user_data            | No              | String          | Specifies the user data to be injected to the ECS during the creation. Text and text files can be injected.                                            |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 | .. note::                                                                                                                                              |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 |    -  The content of **user_data** must be encoded with base64.                                                                                        |
+   |                      |                 |                 |    -  The maximum size of the content to be injected (before encoding) is 32 KB.                                                                       |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 | For more details, see "Injecting User Data into ECSs" in *Elastic Cloud Server User Guide*.                                                            |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 | Examples                                                                                                                                               |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 | Before base64 encoding:                                                                                                                                |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 | -  Linux                                                                                                                                               |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 |    .. code-block::                                                                                                                                     |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 |       #! /bin/bash                                                                                                                                     |
+   |                      |                 |                 |       echo user_test >> /home/user.txt                                                                                                                 |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 | -  Windows                                                                                                                                             |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 |    .. code-block::                                                                                                                                     |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 |       rem cmd                                                                                                                                          |
+   |                      |                 |                 |       echo 111 > c:\aaa.txt                                                                                                                            |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 | After base64 encoding:                                                                                                                                 |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 | -  Linux                                                                                                                                               |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 |    .. code-block::                                                                                                                                     |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 |       IyEgL2Jpbi9iYXNoDQplY2hvIHVzZXJfdGVzdCAmZ3Q7Jmd0OyAvaG9tZS91c2VyLnR4dA==                                                                         |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 | -  Windows                                                                                                                                             |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 |    .. code-block::                                                                                                                                     |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 |       cmVtIGNtZA0KZWNobyAxMTEgJmd0OyBjOlxhYWEudHh0                                                                                                     |
+   +----------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | \__system__encrypted | No              | String          | Specifies encryption in **metadata**. The value can be **0** (encryption disabled) or **1** (encryption enabled).                                      |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 | If this parameter does not exist, the system disk will not be encrypted by default.                                                                    |
+   +----------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | \__system__cmkid     | No              | String          | Specifies the CMK ID, which indicates encryption in **metadata**. This parameter is used with **\__system__encrypted**.                                |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 | .. note::                                                                                                                                              |
+   |                      |                 |                 |                                                                                                                                                        |
+   |                      |                 |                 |    For details about how to obtain the CMK ID, see "Querying the List of CMKs" in *Key Management Service API Reference*.                              |
+   +----------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response
 --------
@@ -155,7 +155,7 @@ Example Request
 
       {
           "os-reinstall": {
-              "adminpass": "!QAZxsw2",
+              "adminpass": "!QAZxsw2", 
               "userid": "7e25b1da389f4697a79df3a0e5bd494e",
               "mode": "withStopServer"
           }
@@ -167,7 +167,7 @@ Example Request
 
       {
           "os-reinstall": {
-              "keyname": "KeyPair-350b",
+              "keyname": "KeyPair-350b", 
               "userid": "7e25b1da389f4697a79df3a0e5bd494e"
           }
       }
@@ -178,7 +178,7 @@ Example Request
 
       {
           "os-reinstall": {
-              "adminpass": "!QAZxsw2",
+              "adminpass": "!QAZxsw2", 
               "userid": "7e25b1da389f4697a79df3a0e5bd494e",
               "metadata": {
                     "__system__encrypted": "1",
