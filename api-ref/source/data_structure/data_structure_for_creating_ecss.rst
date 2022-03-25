@@ -5,16 +5,16 @@ Contents
 --------
 
 -  `publicip Field Description <#publicip-field-description>`__
--  `security_groups Field Description <#security_groups-field-description>`__
+-  `security_groups Field Description <#security-groups-field-description>`__
 -  `eip Field Description <#eip-field-description>`__
 -  `bandwidth Field Description <#bandwidth-field-description>`__
 -  `extendparam Field Description for Creating Disks <#extendparam-field-description-for-creating-disks>`__
 -  `extendparam Field Description for Creating ECSs <#extendparam-field-description-for-creating-ecss>`__
 -  `metadata Field Description for Creating Disks <#metadata-field-description-for-creating-disks>`__
 -  `metadata Field Description for Creating ECSs <#metadata-field-description-for-creating-ecss>`__
--  `os:scheduler_hints Field Description <#os:scheduler_hints-field-description>`__
--  `binding:profile Field Description <#binding:profile-field-description>`__
--  `extra_dhcp_opts Field Description <#extra_dhcp_opts-field-description>`__
+-  `os:scheduler_hints Field Description <#os-scheduler-hints-field-description>`__
+-  `binding:profile Field Description <#binding-profile-field-description>`__
+-  `extra_dhcp_opts Field Description <#extra-dhcp-opts-field-description>`__
 
 **publicip** Field Description
 ------------------------------
