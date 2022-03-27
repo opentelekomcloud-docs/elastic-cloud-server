@@ -160,7 +160,7 @@ htmlhelp_basename = 'ecsdoc'
 
 latex_documents = [
     ('index',
-     'umn-ecs.tex',
+     'api-ref-ecs.tex',
      u'%s API Reference Documentation' % project,
      u'OpenTelekomCloud', 'manual'),
 ]
