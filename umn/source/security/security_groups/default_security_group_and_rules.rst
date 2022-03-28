@@ -3,7 +3,7 @@ Default Security Group and Rules
 
 Your account automatically comes with a default security group. The default security group allows all outbound traffic, denies all inbound traffic, and allows all traffic between cloud resources in the group. Your cloud resources in this security group can communicate with each other already without adding additional rules.
 
-`Figure 1 <#enustopic0140323154fig11890174421819>`__ shows the default security group.
+Figure 1 shows the default security group.
 
 .. figure:: /_static/images/en-us_image_0000001230120807.png
    :alt: Click to enlarge

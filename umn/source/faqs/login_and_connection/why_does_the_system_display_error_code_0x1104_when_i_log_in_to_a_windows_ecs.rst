@@ -57,7 +57,7 @@ Solution
 
          **Figure 2** Checking port 3389
 
-      As shown in `Figure 2 <#enustopic0264235942enustopic0138293293fig1562219275192>`__, port 3389 is used by the process with ID of 4.
+      As shown in Figure 2, port 3389 is used by the process with ID of 4.
 
    b. Open Task Manager and find the process with ID of 4 is the System process.
 

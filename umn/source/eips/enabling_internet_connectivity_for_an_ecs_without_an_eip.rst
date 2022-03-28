@@ -116,7 +116,7 @@ In this example, the proxy ECS runs CentOS 6.5.
 
    **iptables -t nat --list**
 
-   SNAT has been configured if information similar to `Figure 1 <#enustopic0027157850fig27598108113959>`__ is displayed.
+   SNAT has been configured if information similar to Figure 1 is displayed.
 
    .. figure:: /_static/images/en-us_image_0027174005.png
       :alt: Click to enlarge

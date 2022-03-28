@@ -137,7 +137,7 @@ Procedure
 
 #. Click **Finish**.
 
-   Wait for the initialization to complete. When the volume status changes to **Healthy**, the initialization has finished successfully, as shown in `Figure 10 <#enustopic0117490178enustopic0115255433fig14464150329>`__.
+   Wait for the initialization to complete. When the volume status changes to **Healthy**, the initialization has finished successfully, as shown in Figure 10.
 
    .. figure:: /_static/images/en-us_image_0175083513.png
       :alt: Click to enlarge

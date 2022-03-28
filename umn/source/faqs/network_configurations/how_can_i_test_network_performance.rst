@@ -304,7 +304,7 @@ Perform the test on multiple flows. This section considers 16 flows that are eve
 
 #. Analyze the test result.
 
-   After the test is complete, the output of the netperf process on one TX end is shown in `Figure 1 <#enustopic0115820205fig333414318238>`__. The final result is the sum of the test results of the netperf processes on all TX ends.
+   After the test is complete, the output of the netperf process on one TX end is shown in Figure 1. The final result is the sum of the test results of the netperf processes on all TX ends.
 
    .. figure:: /_static/images/en-us_image_0115873247.png
       :alt: **Figure 1** Output of the netperf process on one TX end
@@ -485,7 +485,7 @@ UDP PPS Test (Using iperf3)
 
 #. Analyze the test result.
 
-   `Figure 2 <#enustopic0115820205fig166644134610>`__ shows an example of the UDP PPS test result.
+   Figure 2 shows an example of the UDP PPS test result.
 
    .. figure:: /_static/images/en-us_image_0115874559.png
       :alt: Click to enlarge
