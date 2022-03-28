@@ -14,18 +14,18 @@ import os
 import sys
 
 extensions = [
-    'os_api_ref',
+    'otc_api_ref',
     'otcdocstheme'
 ]
 
 
 html_theme = 'otcdocs'
 html_theme_options = {
-    "sidebar_mode": "toctree"
+#    "sidebar_mode": "toctree"
 }
 otcdocs_auto_name = False
-project = 'Dummy Service'  # FIXME
-otcdocs_repo_name = 'opentelekomcloud-docs/template'  # FIXME
+project = 'Elastic Cloud Server Service'
+otcdocs_repo_name = 'opentelekomcloud-docs/elastic-cloud-server'
 
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -156,4 +156,11 @@ pygments_style = 'native'
 # html_file_suffix = ''
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'dummydoc'  # FIXME
+htmlhelp_basename = 'ecsdoc'
+
+latex_documents = [
+    ('index',
+     'api-ref-ecs.tex',
+     u'%s API Reference Documentation' % project,
+     u'OpenTelekomCloud', 'manual'),
+]
