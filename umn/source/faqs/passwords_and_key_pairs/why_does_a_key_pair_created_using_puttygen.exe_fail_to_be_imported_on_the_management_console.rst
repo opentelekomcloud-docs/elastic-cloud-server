@@ -29,7 +29,7 @@ Use the locally stored private key and **PuTTY Key Generator** to restore the fo
 
 #. Click **Load** and select the private key.
 
-   The system automatically loads the private key and restores the format of the public key content in **PuTTY Key Generator**. The content in the red box in `Figure 2 <#enustopic0047654687fig5530274016810>`__ is the public key whose format meets system requirements.
+   The system automatically loads the private key and restores the format of the public key content in **PuTTY Key Generator**. The content in the red box in Figure 2 is the public key whose format meets system requirements.
 
    .. figure:: /_static/images/en-us_image_0037982934.png
       :alt: Click to enlarge

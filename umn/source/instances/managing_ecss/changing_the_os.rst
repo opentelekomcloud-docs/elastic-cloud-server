@@ -79,7 +79,7 @@ Procedure
 
 #. Modify related ECS parameters, such as **Image Type** and **Image**, based on service requirements.
 
-   For more details, see `Creating an ECS <../../getting_started/index.html>`__.
+   For more details, see `Creating an ECS <../../getting_started/creating_an_ecs/index.html>`__.
 
 #. (Optional) Select the **Encryption** option to encrypt the system disk during OS change.
 

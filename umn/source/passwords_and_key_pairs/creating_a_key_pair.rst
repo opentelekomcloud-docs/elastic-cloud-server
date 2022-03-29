@@ -81,7 +81,7 @@ Creating a Key Pair Using **puttygen.exe**
 
    b. Click **Generate**.
 
-      The key generator automatically generates a key pair that consists of a public key and a private key. The public key is shown in the red box in `Figure 2 <#enustopic0014250631enustopic0037960038fig4678746517750>`__.
+      The key generator automatically generates a key pair that consists of a public key and a private key. The public key is shown in the red box in Figure 2.
 
       .. figure:: /_static/images/en-us_image_0272919399.png
          :alt: **Figure 2** Obtaining the public and private keys

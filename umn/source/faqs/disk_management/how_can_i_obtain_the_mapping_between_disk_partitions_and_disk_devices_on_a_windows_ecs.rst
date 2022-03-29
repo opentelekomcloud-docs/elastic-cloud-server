@@ -18,13 +18,13 @@ This section uses an ECS running Windows Server 2008 R2 64bit as an example to d
 
       **Figure 1** Disk Management
 
-#. Taking disk 1 marked in `Figure 1 <#enustopic0087680813fig63278226101115>`__ as an example, view the disk device for disk 1.
+#. Taking disk 1 marked in Figure 1 as an example, view the disk device for disk 1.
 
-   a. Right-click the gray area where disk 1 is located, as shown in the red box in `Figure 1 <#enustopic0087680813fig63278226101115>`__.
+   a. Right-click the gray area where disk 1 is located, as shown in the red box in Figure 1.
 
    b. Click **Properties**.
 
-      The **SCSI Disk Device Properties** dialog box is displayed, as shown in `Figure 2 <#enustopic0087680813fig22437283101545>`__.
+      The **SCSI Disk Device Properties** dialog box is displayed, as shown in Figure 2.
 
       .. figure:: /_static/images/en-us_image_0087906055.png
          :alt: **Figure 2** Disk properties

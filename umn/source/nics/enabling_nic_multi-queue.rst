@@ -21,7 +21,7 @@ Support of NIC Multi-Queue
 
 NIC multi-queue can be enabled on an ECS only when the ECS specifications, virtualization type, and image OS meet the requirements described in this section.
 
--  For details about the ECS specifications that support NIC multi-queue, see `ECS Specifications and Types <../service_overview/index.html>`__.
+-  For details about the ECS specifications that support NIC multi-queue, see `ECS Specifications and Types <../service_overview/ecs_specifications_and_types/index.html>`__.
 
    .. note::
 
@@ -150,7 +150,7 @@ Use one of the following methods to set the NIC multi-queue attribute:
                } 
        ]
 
-   `Figure 1 <#enustopic0058758453enustopic0085214115fig3215821216479>`__ shows an example request body for modifying the NIC multi-queue attribute.
+   Figure 1 shows an example request body for modifying the NIC multi-queue attribute.
 
    .. figure:: /_static/images/en-us_image_0193026956.png
       :alt: Click to enlarge
@@ -162,7 +162,7 @@ Use one of the following methods to set the NIC multi-queue attribute:
 Creating an ECS Using a Private Image
 -------------------------------------
 
-Create an ECS using a registered private image. For details, see `Creating an ECS <../getting_started/index.html>`__. Note the following when setting the parameters:
+Create an ECS using a registered private image. For details, see `Creating an ECS <../getting_started/creating_an_ecs/index.html>`__. Note the following when setting the parameters:
 
 -  **Region**: Select the region where the private image is located.
 -  **Image**: Select **Private image** and then the desired image from the drop-down list.

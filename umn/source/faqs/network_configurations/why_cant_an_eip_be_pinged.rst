@@ -96,7 +96,7 @@ If a firewall is enabled on the ECS, check whether the firewall blocks the ping 
 
    **iptables -L**
 
-   If the command output shown in `Figure 2 <#enustopic0105130172fig7244357113416>`__ is displayed, there is no ICMP rule blocking the ping operations.
+   If the command output shown in Figure 2 is displayed, there is no ICMP rule blocking the ping operations.
 
    .. figure:: /_static/images/en-us_image_0250117342.png
       :alt: Click to enlarge

@@ -93,13 +93,13 @@ If a serial number is displayed on the console, use either of the following meth
 
          **Get-CimInstance -ClassName Win32_LogicalDiskToPartition \|select Antecedent, Dependent \|fl**
 
-         As shown in `Figure 3 <#enustopic0103285575fig1960253814473>`__, the disk is **Disk 0**.
+         As shown in Figure 3, the disk is **Disk 0**.
 
       b. Run the following command to view the mapping between the serial number and the disk:
 
          **Get-Disk \|select Number, SerialNumber**
 
-         As shown in `Figure 3 <#enustopic0103285575fig1960253814473>`__, the disk is **Disk 0**.
+         As shown in Figure 3, the disk is **Disk 0**.
 
          .. figure:: /_static/images/en-us_image_0000001127906793.png
             :alt: Click to enlarge
