@@ -29,11 +29,11 @@ Enabling ECSs in Different Security Groups to Communicate with Each Other Throug
 
 .. _ENUSTOPIC0140323152enustopic0118534011table854766319358:
 
-   +---------------+----------------------------------------------------+--------------------+------------------------------+
-   | **Direction** | **Protocol/Application**                           | **Port**           | **Source**                   |
-   +===============+====================================================+====================+==============================+
-   | Inbound       | Used for communication through an internal network | Port or port range | ID of another security group |
-   +---------------+----------------------------------------------------+--------------------+------------------------------+
+   +-----------+----------------------------------------------------+--------------------+------------------------------+
+   | Direction | Protocol / Application                             | Port               | Source                       |
+   +===========+====================================================+====================+==============================+
+   | Inbound   | Used for communication through an internal network | Port or port range | ID of another security group |
+   +-----------+----------------------------------------------------+--------------------+------------------------------+
 
 Enabling Specified IP Addresses to Remotely Access ECSs in a Security Group
 ---------------------------------------------------------------------------
@@ -51,7 +51,7 @@ Enabling Specified IP Addresses to Remotely Access ECSs in a Security Group
 .. _ENUSTOPIC0140323152enustopic0118534011table2497622119555:
 
    +-----------------+-----------------+-----------------+-------------------------------------------------+
-   | **Direction**   | **Protocol**    | **Port**        | **Source**                                      |
+   | Direction       | Protocol        | Port            | Source                                          |
    +=================+=================+=================+=================================================+
    | Inbound         | SSH             | 22              | IPv4 CIDR block or ID of another security group |
    |                 |                 |                 |                                                 |
@@ -69,11 +69,11 @@ Remotely Connecting to Linux ECSs Using SSH
 
 .. _ENUSTOPIC0140323152enustopic0118534011table16351717123312:
 
-   ============= ============ ======== ==========
-   **Direction** **Protocol** **Port** **Source**
-   ============= ============ ======== ==========
-   Inbound       SSH          22       0.0.0.0/0
-   ============= ============ ======== ==========
+   ========= ======== ==== =========
+   Direction Protocol Port Source
+   ========= ======== ==== =========
+   Inbound   SSH      22   0.0.0.0/0
+   ========= ======== ==== =========
 
 Remotely Connecting to Windows ECSs Using RDP
 ---------------------------------------------
@@ -86,11 +86,11 @@ Remotely Connecting to Windows ECSs Using RDP
 
 .. _ENUSTOPIC0140323152enustopic0118534011table129650323711:
 
-   ============= ============ ======== ==========
-   **Direction** **Protocol** **Port** **Source**
-   ============= ============ ======== ==========
-   Inbound       RDP          3389     0.0.0.0/0
-   ============= ============ ======== ==========
+   ========= ======== ==== =========
+   Direction Protocol Port Source
+   ========= ======== ==== =========
+   Inbound   RDP      3389 0.0.0.0/0
+   ========= ======== ==== =========
 
 Enabling Communication Between ECSs
 -----------------------------------
@@ -103,11 +103,11 @@ Enabling Communication Between ECSs
 
 .. _ENUSTOPIC0140323152enustopic0118534011table810055173719:
 
-   ============= ============ ======== ==========
-   **Direction** **Protocol** **Port** **Source**
-   ============= ============ ======== ==========
-   Inbound       ICMP         All      0.0.0.0/0
-   ============= ============ ======== ==========
+   ========= ======== ==== =========
+   Direction Protocol Port Source
+   ========= ======== ==== =========
+   Inbound   ICMP     All  0.0.0.0/0
+   ========= ======== ==== =========
 
 Hosting a Website on ECSs
 -------------------------
@@ -120,12 +120,12 @@ Hosting a Website on ECSs
 
 .. _ENUSTOPIC0140323152enustopic0118534011table30323767195135:
 
-   ============= ============ ======== ==========
-   **Direction** **Protocol** **Port** **Source**
-   ============= ============ ======== ==========
-   Inbound       HTTP         80       0.0.0.0/0
-   Inbound       HTTPS        443      0.0.0.0/0
-   ============= ============ ======== ==========
+   ========= ======== ==== =========
+   Direction Protocol Port Source
+   ========= ======== ==== =========
+   Inbound   HTTP     80   0.0.0.0/0
+   Inbound   HTTPS    443  0.0.0.0/0
+   ========= ======== ==== =========
 
 Enabling an ECS to Function as a DNS Server
 -------------------------------------------
@@ -138,12 +138,12 @@ Enabling an ECS to Function as a DNS Server
 
 .. _ENUSTOPIC0140323152enustopic0118534011table9719143933517:
 
-   ============= ============ ======== ==========
-   **Direction** **Protocol** **Port** **Source**
-   ============= ============ ======== ==========
-   Inbound       TCP          53       0.0.0.0/0
-   Inbound       UDP          53       0.0.0.0/0
-   ============= ============ ======== ==========
+   ========= ======== ==== =========
+   Direction Protocol Port Source
+   ========= ======== ==== =========
+   Inbound   TCP      53   0.0.0.0/0
+   Inbound   UDP      53   0.0.0.0/0
+   ========= ======== ==== =========
 
 Uploading or Downloading Files Using FTP
 ----------------------------------------
@@ -160,10 +160,10 @@ Uploading or Downloading Files Using FTP
 
 .. _ENUSTOPIC0140323152enustopic0118534011table8479153013395:
 
-   ============= ============ ======== ==========
-   **Direction** **Protocol** **Port** **Source**
-   ============= ============ ======== ==========
-   Inbound       TCP          20-21    0.0.0.0/0
-   ============= ============ ======== ==========
+   ========= ======== ===== =========
+   Direction Protocol Port  Source
+   ========= ======== ===== =========
+   Inbound   TCP      20-21 0.0.0.0/0
+   ========= ======== ===== =========
 
 
