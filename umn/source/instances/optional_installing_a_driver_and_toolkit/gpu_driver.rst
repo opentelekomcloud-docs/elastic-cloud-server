@@ -24,14 +24,16 @@ GPU-accelerated ECSs support GRID and Tesla drivers.
 
 .. _ENUSTOPIC0234802636table13621791684:
 
-.. table:: **Table 1** Acceleration supported by GPU drivers
+.. container:: table-responsive
 
-   +--------+--------------+-----------+---------------+---------------+---------------+-------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+
-   | Driver | License      | CUDA      | OpenGL        | DirectX       | Vulkan        | Application Scenario                                        | Description                                                                                                                        |
-   +========+==============+===========+===============+===============+===============+=============================================================+====================================================================================================================================+
-   | GRID   | Required     | Supported | Supported     | Supported     | Supported     | 3D rendering, graphics workstation, and game acceleration   | The GRID driver must be paid and requires a license to accelerate graphics and image applications.                                 |
-   +--------+--------------+-----------+---------------+---------------+---------------+-------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+
-   | Tesla  | Not required | Supported | Not supported | Not supported | Not supported | Scientific computing, deep learning training, and inference | The Tesla driver is downloaded free of charge and usually used with NVIDIA CUDA SDKs to accelerate general computing applications. |
-   +--------+--------------+-----------+---------------+---------------+---------------+-------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+   .. table:: **Table 1** Acceleration supported by GPU drivers
+
+      +--------+--------------+-----------+---------------+---------------+---------------+-------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+      | Driver | License      | CUDA      | OpenGL        | DirectX       | Vulkan        | Application Scenario                                        | Description                                                                                                                        |
+      +========+==============+===========+===============+===============+===============+=============================================================+====================================================================================================================================+
+      | GRID   | Required     | Supported | Supported     | Supported     | Supported     | 3D rendering, graphics workstation, and game acceleration   | The GRID driver must be paid and requires a license to accelerate graphics and image applications.                                 |
+      +--------+--------------+-----------+---------------+---------------+---------------+-------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+
+      | Tesla  | Not required | Supported | Not supported | Not supported | Not supported | Scientific computing, deep learning training, and inference | The Tesla driver is downloaded free of charge and usually used with NVIDIA CUDA SDKs to accelerate general computing applications. |
+      +--------+--------------+-----------+---------------+---------------+---------------+-------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+
 
 

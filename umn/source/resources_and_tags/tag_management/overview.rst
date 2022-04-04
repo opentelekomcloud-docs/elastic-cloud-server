@@ -34,27 +34,26 @@ Tag Naming Rules
 ----------------
 
 -  Each tag consists of a key-value pair.
-
 -  Each ECS supports adding up to 10 tags.
-
 -  For each resource, a tag key must be unique and can have only one tag value.
-
 -  A tag consists of a tag key and a tag value. `Table 1 <#enustopic0092499768table197401426182516>`__ lists the tag key and value requirements. 
 
 .. _ENUSTOPIC0092499768table197401426182516:
 
-   .. table:: **Table 1** Tag key and value requirements
+   .. container:: table-responsive
 
-      +-----------------------+---------------------------------------------------------------------------+-----------------------+
-      | Parameter             | Requirement                                                               | Example Value         |
-      +=======================+===========================================================================+=======================+
-      | Key                   | -  Cannot be left blank.                                                  | Organization          |
-      |                       | -  The key value must be unique for an ECS.                               |                       |
-      |                       | -  Can contain a maximum of 36 characters.                                |                       |
-      |                       | -  Can only consist of digits, letters, hyphens (-), and underscores (_). |                       |
-      +-----------------------+---------------------------------------------------------------------------+-----------------------+
-      | Value                 | -  Can contain a maximum of 43 characters.                                | Apache                |
-      |                       | -  Can only consist of digits, letters, hyphens (-), and underscores (_). |                       |
-      +-----------------------+---------------------------------------------------------------------------+-----------------------+
+      .. table:: **Table 1** Tag key and value requirements
+
+         +-----------------------+---------------------------------------------------------------------------+-----------------------+
+         | Parameter             | Requirement                                                               | Example Value         |
+         +=======================+===========================================================================+=======================+
+         | Key                   | -  Cannot be left blank.                                                  | Organization          |
+         |                       | -  The key value must be unique for an ECS.                               |                       |
+         |                       | -  Can contain a maximum of 36 characters.                                |                       |
+         |                       | -  Can only consist of digits, letters, hyphens (-), and underscores (_). |                       |
+         +-----------------------+---------------------------------------------------------------------------+-----------------------+
+         | Value                 | -  Can contain a maximum of 43 characters.                                | Apache                |
+         |                       | -  Can only consist of digits, letters, hyphens (-), and underscores (_). |                       |
+         +-----------------------+---------------------------------------------------------------------------+-----------------------+
 
 

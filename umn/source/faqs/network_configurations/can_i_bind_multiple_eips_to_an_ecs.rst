@@ -17,17 +17,19 @@ Configuration Example
 
 .. _ENUSTOPIC0018073216table10449199163243:
 
-.. table:: **Table 1** ECS configurations
+.. container:: table-responsive
 
-   ============= ================
-   Parameter     Configuration
-   ============= ================
-   Name          ecs_test
-   Image         CentOS 6.5 64bit
-   EIP           2
-   Primary NIC   eth0
-   Secondary NIC eth1
-   ============= ================
+   .. table:: **Table 1** ECS configurations
+
+      ============= ================
+      Parameter     Configuration
+      ============= ================
+      Name          ecs_test
+      Image         CentOS 6.5 64bit
+      EIP           2
+      Primary NIC   eth0
+      Secondary NIC eth1
+      ============= ================
 
 **Example 1:**
 

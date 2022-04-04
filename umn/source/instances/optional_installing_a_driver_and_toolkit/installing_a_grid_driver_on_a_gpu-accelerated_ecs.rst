@@ -65,45 +65,47 @@ Downloading GRID Driver and Software License Packages
 
 .. _ENUSTOPIC0149610914table188851534175019:
 
-   .. table:: **Table 1** GRID driver versions supported by GPU-accelerated ECSs
+   .. container:: table-responsive
 
-      +-------------+-----------------+------------------------------------------+-------------------------------+------------------+
-      | ECS Type    | GPU Attachment  | OS                                       | Driver Version                | CPU Architecture |
-      +=============+=================+==========================================+===============================+==================+
-      | G6          | GPU passthrough | -  Windows Server 2016 Standard 64bit    | Select a version as required. | x86_64           |
-      +-------------+-----------------+------------------------------------------+-------------------------------+------------------+
-      | P2s         | GPU passthrough | -  Windows Server 2019 Standard 64bit    | Select a version as required. | x86_64           |
-      |             |                 | -  Windows Server 2016 Standard 64bit    |                               |                  |
-      |             |                 | -  Windows Server 2012 R2 Standard 64bit |                               |                  |
-      |             |                 | -  Ubuntu Server 20.04 64bit             |                               |                  |
-      |             |                 | -  Ubuntu Server 18.04 64bit             |                               |                  |
-      |             |                 | -  Ubuntu Server 16.04 64bit             |                               |                  |
-      |             |                 | -  CentOS 7.7 64bit                      |                               |                  |
-      |             |                 | -  CentOS 7.4 64bit                      |                               |                  |
-      |             |                 | -  EulerOS 2.5 64bit                     |                               |                  |
-      |             |                 | -  Oracle Linux 7.6 64bit                |                               |                  |
-      +-------------+-----------------+------------------------------------------+-------------------------------+------------------+
-      | P2v         | GPU passthrough | -  Windows Server 2019 Standard 64bit    | Select a version as required. | x86_64           |
-      |             |                 | -  Windows Server 2016 Standard 64bit    |                               |                  |
-      |             |                 | -  Windows Server 2012 R2 Standard 64bit |                               |                  |
-      |             |                 | -  Ubuntu Server 16.04 64bit             |                               |                  |
-      |             |                 | -  CentOS 7.7 64bit                      |                               |                  |
-      |             |                 | -  EulerOS 2.5 64bit                     |                               |                  |
-      |             |                 | -  Oracle Linux 7.6 64bit                |                               |                  |
-      +-------------+-----------------+------------------------------------------+-------------------------------+------------------+
-      | P2          | GPU passthrough | Ubuntu Server 16.04 64bit                | Select a version as required. | x86_64           |
-      +-------------+-----------------+------------------------------------------+-------------------------------+------------------+
-      | P1          | GPU passthrough | -  Windows Server 2012 R2 Standard 64bit | Select a version as required. | x86_64           |
-      |             |                 | -  Ubuntu Server 16.04 64bit             |                               |                  |
-      |             |                 | -  CentOS 7.4 64bit                      |                               |                  |
-      |             |                 | -  Debian 9.0 64bit                      |                               |                  |
-      +-------------+-----------------+------------------------------------------+-------------------------------+------------------+
-      | PI2         | GPU passthrough | -  Windows Server 2019 Standard 64bit    | Select a version as required. | x86_64           |
-      |             |                 | -  Windows Server 2016 Standard 64bit    |                               |                  |
-      |             |                 | -  Windows Server 2012 R2 Standard 64bit |                               |                  |
-      |             |                 | -  Ubuntu Server 16.04 64bit             |                               |                  |
-      |             |                 | -  CentOS 7.8 64bit                      |                               |                  |
-      +-------------+-----------------+------------------------------------------+-------------------------------+------------------+
+      .. table:: **Table 1** GRID driver versions supported by GPU-accelerated ECSs
+
+         +-------------+-----------------+------------------------------------------+-------------------------------+------------------+
+         | ECS Type    | GPU Attachment  | OS                                       | Driver Version                | CPU Architecture |
+         +=============+=================+==========================================+===============================+==================+
+         | G6          | GPU passthrough | -  Windows Server 2016 Standard 64bit    | Select a version as required. | x86_64           |
+         +-------------+-----------------+------------------------------------------+-------------------------------+------------------+
+         | P2s         | GPU passthrough | -  Windows Server 2019 Standard 64bit    | Select a version as required. | x86_64           |
+         |             |                 | -  Windows Server 2016 Standard 64bit    |                               |                  |
+         |             |                 | -  Windows Server 2012 R2 Standard 64bit |                               |                  |
+         |             |                 | -  Ubuntu Server 20.04 64bit             |                               |                  |
+         |             |                 | -  Ubuntu Server 18.04 64bit             |                               |                  |
+         |             |                 | -  Ubuntu Server 16.04 64bit             |                               |                  |
+         |             |                 | -  CentOS 7.7 64bit                      |                               |                  |
+         |             |                 | -  CentOS 7.4 64bit                      |                               |                  |
+         |             |                 | -  EulerOS 2.5 64bit                     |                               |                  |
+         |             |                 | -  Oracle Linux 7.6 64bit                |                               |                  |
+         +-------------+-----------------+------------------------------------------+-------------------------------+------------------+
+         | P2v         | GPU passthrough | -  Windows Server 2019 Standard 64bit    | Select a version as required. | x86_64           |
+         |             |                 | -  Windows Server 2016 Standard 64bit    |                               |                  |
+         |             |                 | -  Windows Server 2012 R2 Standard 64bit |                               |                  |
+         |             |                 | -  Ubuntu Server 16.04 64bit             |                               |                  |
+         |             |                 | -  CentOS 7.7 64bit                      |                               |                  |
+         |             |                 | -  EulerOS 2.5 64bit                     |                               |                  |
+         |             |                 | -  Oracle Linux 7.6 64bit                |                               |                  |
+         +-------------+-----------------+------------------------------------------+-------------------------------+------------------+
+         | P2          | GPU passthrough | Ubuntu Server 16.04 64bit                | Select a version as required. | x86_64           |
+         +-------------+-----------------+------------------------------------------+-------------------------------+------------------+
+         | P1          | GPU passthrough | -  Windows Server 2012 R2 Standard 64bit | Select a version as required. | x86_64           |
+         |             |                 | -  Ubuntu Server 16.04 64bit             |                               |                  |
+         |             |                 | -  CentOS 7.4 64bit                      |                               |                  |
+         |             |                 | -  Debian 9.0 64bit                      |                               |                  |
+         +-------------+-----------------+------------------------------------------+-------------------------------+------------------+
+         | PI2         | GPU passthrough | -  Windows Server 2019 Standard 64bit    | Select a version as required. | x86_64           |
+         |             |                 | -  Windows Server 2016 Standard 64bit    |                               |                  |
+         |             |                 | -  Windows Server 2012 R2 Standard 64bit |                               |                  |
+         |             |                 | -  Ubuntu Server 16.04 64bit             |                               |                  |
+         |             |                 | -  CentOS 7.8 64bit                      |                               |                  |
+         +-------------+-----------------+------------------------------------------+-------------------------------+------------------+
 
 #. After the registration, log in at the `official NVIDIA website <https://nvid.nvidia.com/dashboard/>`__ and enter the account.
 

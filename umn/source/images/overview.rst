@@ -22,17 +22,19 @@ A private image contains an OS or service data, preinstalled public applications
 
 .. _ENUSTOPIC0177457773table1567919914154:
 
-.. table:: **Table 1** Private image types
+.. container:: table-responsive
 
-   +-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Image Type        | Description                                                                                                                                          |
-   +===================+======================================================================================================================================================+
-   | System disk image | Contains an OS and application software for running services. You can use a system disk image to create ECSs and migrate your services to the cloud. |
-   +-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Data disk image   | Contains only service data. You can use a data disk image to create EVS disks and migrate your service data to the cloud.                            |
-   +-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Full-ECS image    | Contains an OS, application software, and data for running services. A full-ECS image contains the system disk and all data disks attached to it.    |
-   +-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
+   .. table:: **Table 1** Private image types
+
+      +-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Image Type        | Description                                                                                                                                          |
+      +===================+======================================================================================================================================================+
+      | System disk image | Contains an OS and application software for running services. You can use a system disk image to create ECSs and migrate your services to the cloud. |
+      +-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Data disk image   | Contains only service data. You can use a data disk image to create EVS disks and migrate your service data to the cloud.                            |
+      +-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Full-ECS image    | Contains an OS, application software, and data for running services. A full-ECS image contains the system disk and all data disks attached to it.    |
+      +-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 If you plan to use a private image to change the OS, ensure that the private image is available. For instructions about how to create a private image, see *Image Management Service User Guide*.
 

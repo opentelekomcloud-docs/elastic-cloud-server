@@ -22,17 +22,19 @@ Windows has three types of SAN policies: **OnlineAll**, **OfflineShared**, and *
 
 .. _ENUSTOPIC0114225937table28191141038:
 
-.. table:: **Table 1** SAN policies
+.. container:: table-responsive
 
-   +-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | SAN Policy      | Description                                                                                                                                             |
-   +=================+=========================================================================================================================================================+
-   | OnlineAll       | Indicates that all newly detected disks are automatically brought online.                                                                               |
-   +-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | OfflineShared   | Indicates that all newly detected disks on sharable buses, such as FC or iSCSI, are offline by default, whereas disks on non-sharable buses are online. |
-   +-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | OfflineInternal | Indicates that all newly detected disks are offline.                                                                                                    |
-   +-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+   .. table:: **Table 1** SAN policies
+
+      +-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | SAN Policy      | Description                                                                                                                                             |
+      +=================+=========================================================================================================================================================+
+      | OnlineAll       | Indicates that all newly detected disks are automatically brought online.                                                                               |
+      +-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | OfflineShared   | Indicates that all newly detected disks on sharable buses, such as FC or iSCSI, are offline by default, whereas disks on non-sharable buses are online. |
+      +-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | OfflineInternal | Indicates that all newly detected disks are offline.                                                                                                    |
+      +-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 The SAN policy of certain Windows OSs, such as Windows Server 2008/2012 Enterprise Edition and Data Center Edition, is **OfflineShared** by default.
 

@@ -71,21 +71,23 @@ Customized user data scripts of Linux ECSs are based on the open-source Cloud-In
 
 .. _ENUSTOPIC0032380449table039994053718:
 
-   .. table:: **Table 1** Linux ECS script types
+   .. container:: table-responsive
 
-      +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
-      | -                     | User-Data Script                                                                                                                             | Cloud-Config Data Script                                                                                                  |
-      +=======================+==============================================================================================================================================+===========================================================================================================================+
-      | Description           | Scripts, such as Shell and Python scripts, are used for custom configurations.                                                               | Methods pre-defined in Cloud-Init, such as the Yum source and SSH key, are used for configuring certain ECS applications. |
-      +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
-      | Format                | A script must be started with **#!**, for example, **#!/bin/bash** and **#!/usr/bin/env python**.                                            | The first line must be **#cloud-config**, and no space is allowed in front of it.                                         |
-      |                       |                                                                                                                                              |                                                                                                                           |
-      |                       | When a script is started for the first time, it will be executed at the rc.local-like level, indicating a low priority in the boot sequence. |                                                                                                                           |
-      +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
-      | Constraint            | Before Base64 encoding, the size of the script, including the first line, cannot exceed 32 KB.                                               | Before Base64 encoding, the size of the script, including the first line, cannot exceed 32 KB.                            |
-      +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
-      | Frequency             | The script is executed only once when the ECS is started for the first time.                                                                 | The execution frequency varies according to the applications configured on the ECS.                                       |
-      +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+      .. table:: **Table 1** Linux ECS script types
+
+         +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+         | -                     | User-Data Script                                                                                                                             | Cloud-Config Data Script                                                                                                  |
+         +=======================+==============================================================================================================================================+===========================================================================================================================+
+         | Description           | Scripts, such as Shell and Python scripts, are used for custom configurations.                                                               | Methods pre-defined in Cloud-Init, such as the Yum source and SSH key, are used for configuring certain ECS applications. |
+         +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+         | Format                | A script must be started with **#!**, for example, **#!/bin/bash** and **#!/usr/bin/env python**.                                            | The first line must be **#cloud-config**, and no space is allowed in front of it.                                         |
+         |                       |                                                                                                                                              |                                                                                                                           |
+         |                       | When a script is started for the first time, it will be executed at the rc.local-like level, indicating a low priority in the boot sequence. |                                                                                                                           |
+         +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+         | Constraint            | Before Base64 encoding, the size of the script, including the first line, cannot exceed 32 KB.                                               | Before Base64 encoding, the size of the script, including the first line, cannot exceed 32 KB.                            |
+         +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+         | Frequency             | The script is executed only once when the ECS is started for the first time.                                                                 | The execution frequency varies according to the applications configured on the ECS.                                       |
+         +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
 
 -  How can I view the customized user data passed to a Linux ECS?
 
@@ -143,15 +145,17 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
 
 .. _ENUSTOPIC0032380449table17839134102219:
 
-   .. table:: **Table 2** Windows ECS script types
+   .. container:: table-responsive
 
-      +------------+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-      | -          | Batch-Processing Program Script                                                                                                             | PowerShell Script                                                                                                                        |
-      +============+=============================================================================================================================================+==========================================================================================================================================+
-      | Format     | The script must be started with **rem cmd**, which is the first line of the script. No space is allowed at the beginning of the first line. | The script must be started with **#ps1**, which is the first line of the script. No space is allowed at the beginning of the first line. |
-      +------------+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-      | Constraint | Before Base64 encoding, the size of the script, including the first line, cannot exceed 32 KB.                                              | Before Base64 encoding, the size of the script, including the first line, cannot exceed 32 KB.                                           |
-      +------------+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+      .. table:: **Table 2** Windows ECS script types
+
+         +------------+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+         | -          | Batch-Processing Program Script                                                                                                             | PowerShell Script                                                                                                                        |
+         +============+=============================================================================================================================================+==========================================================================================================================================+
+         | Format     | The script must be started with **rem cmd**, which is the first line of the script. No space is allowed at the beginning of the first line. | The script must be started with **#ps1**, which is the first line of the script. No space is allowed at the beginning of the first line. |
+         +------------+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+         | Constraint | Before Base64 encoding, the size of the script, including the first line, cannot exceed 32 KB.                                              | Before Base64 encoding, the size of the script, including the first line, cannot exceed 32 KB.                                           |
+         +------------+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
 
 -  How can I view the customized user data passed into a Windows ECS?
 
@@ -251,22 +255,24 @@ This case illustrates how to use the user data passing function to set the passw
 
 .. _ENUSTOPIC0032380449enustopic0021426802table4381109318958:
 
-.. table:: **Table 3** Password complexity requirements
+.. container:: table-responsive
 
-   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
-   | Parameter             | Requirement                                                                                                                                                  | Example Value                                                 |
-   +=======================+==============================================================================================================================================================+===============================================================+
-   | Password              | -  Consists of 8 to 26 characters.                                                                                                                           | YNbUwp!dUc9MClnv                                              |
-   |                       | -  Contains at least three of the following character types:                                                                                                 |                                                               |
-   |                       |                                                                                                                                                              | .. note::                                                     |
-   |                       |    -  Uppercase letters                                                                                                                                      |                                                               |
-   |                       |    -  Lowercase letters                                                                                                                                      |    The example password is generated randomly. Do not use it. |
-   |                       |    -  Digits                                                                                                                                                 |                                                               |
-   |                       |    -  Special characters: $!@%-_=+[]:./^,{}?                                                                                                                 |                                                               |
-   |                       |                                                                                                                                                              |                                                               |
-   |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                               |
-   |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                               |
-   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
+   .. table:: **Table 3** Password complexity requirements
+
+      +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
+      | Parameter             | Requirement                                                                                                                                                  | Example Value                                                 |
+      +=======================+==============================================================================================================================================================+===============================================================+
+      | Password              | -  Consists of 8 to 26 characters.                                                                                                                           | YNbUwp!dUc9MClnv                                              |
+      |                       | -  Contains at least three of the following character types:                                                                                                 |                                                               |
+      |                       |                                                                                                                                                              | .. note::                                                     |
+      |                       |    -  Uppercase letters                                                                                                                                      |                                                               |
+      |                       |    -  Lowercase letters                                                                                                                                      |    The example password is generated randomly. Do not use it. |
+      |                       |    -  Digits                                                                                                                                                 |                                                               |
+      |                       |    -  Special characters: $!@%-_=+[]:./^,{}?                                                                                                                 |                                                               |
+      |                       |                                                                                                                                                              |                                                               |
+      |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                               |
+      |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                               |
+      +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
 
 User data example:
 
@@ -316,22 +322,24 @@ In this example, the password of user **root** is reset to **\*****\***.
 
 .. _ENUSTOPIC0032380449table580060101120:
 
-.. table:: **Table 4** Password complexity requirements
+.. container:: table-responsive
 
-   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
-   | Parameter             | Requirement                                                                                                                                                  | Example Value                                                 |
-   +=======================+==============================================================================================================================================================+===============================================================+
-   | Password              | -  Consists of 8 to 26 characters.                                                                                                                           | YNbUwp!dUc9MClnv                                              |
-   |                       | -  Contains at least three of the following character types:                                                                                                 |                                                               |
-   |                       |                                                                                                                                                              | .. note::                                                     |
-   |                       |    -  Uppercase letters                                                                                                                                      |                                                               |
-   |                       |    -  Lowercase letters                                                                                                                                      |    The example password is generated randomly. Do not use it. |
-   |                       |    -  Digits                                                                                                                                                 |                                                               |
-   |                       |    -  Special characters: $!@%-_=+[]:./^,{}?                                                                                                                 |                                                               |
-   |                       |                                                                                                                                                              |                                                               |
-   |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                               |
-   |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                               |
-   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
+   .. table:: **Table 4** Password complexity requirements
+
+      +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
+      | Parameter             | Requirement                                                                                                                                                  | Example Value                                                 |
+      +=======================+==============================================================================================================================================================+===============================================================+
+      | Password              | -  Consists of 8 to 26 characters.                                                                                                                           | YNbUwp!dUc9MClnv                                              |
+      |                       | -  Contains at least three of the following character types:                                                                                                 |                                                               |
+      |                       |                                                                                                                                                              | .. note::                                                     |
+      |                       |    -  Uppercase letters                                                                                                                                      |                                                               |
+      |                       |    -  Lowercase letters                                                                                                                                      |    The example password is generated randomly. Do not use it. |
+      |                       |    -  Digits                                                                                                                                                 |                                                               |
+      |                       |    -  Special characters: $!@%-_=+[]:./^,{}?                                                                                                                 |                                                               |
+      |                       |                                                                                                                                                              |                                                               |
+      |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                               |
+      |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                               |
+      +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
 
 User data example (Retain the indentation in the following script):
 

@@ -12,15 +12,17 @@ For example, the hostname is set to **abc** during ECS creation. `Table 1 <#enus
 
 .. _ENUSTOPIC0094874138table168595206502:
 
-.. table:: **Table 1** Hostnames of ECSs created from different images
+.. container:: table-responsive
 
-   ========== =========================== ==========================
-   Image      Hostname Before ECS Restart Hostname After ECS Restart
-   ========== =========================== ==========================
-   CentOS 6.8 abc                         abc.novalocal
-   CentOS 7.3 abc.novalocal               abc.novalocal
-   Ubuntu 16  abc                         abc
-   ========== =========================== ==========================
+   .. table:: **Table 1** Hostnames of ECSs created from different images
+
+      ========== =========================== ==========================
+      Image      Hostname Before ECS Restart Hostname After ECS Restart
+      ========== =========================== ==========================
+      CentOS 6.8 abc                         abc.novalocal
+      CentOS 7.3 abc.novalocal               abc.novalocal
+      Ubuntu 16  abc                         abc
+      ========== =========================== ==========================
 
 Troubleshooting
 ---------------

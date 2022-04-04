@@ -131,22 +131,24 @@ Procedure
 
 .. _ENUSTOPIC0021426802enustopic0021426802table4381109318958:
 
-      .. table:: **Table 1** Password complexity requirements
+      .. container:: table-responsive
 
-         +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
-         | Parameter             | Requirement                                                                                                                                                  | Example Value                                                 |
-         +=======================+==============================================================================================================================================================+===============================================================+
-         | Password              | -  Consists of 8 to 26 characters.                                                                                                                           | YNbUwp!dUc9MClnv                                              |
-         |                       | -  Contains at least three of the following character types:                                                                                                 |                                                               |
-         |                       |                                                                                                                                                              | .. note::                                                     |
-         |                       |    -  Uppercase letters                                                                                                                                      |                                                               |
-         |                       |    -  Lowercase letters                                                                                                                                      |    The example password is generated randomly. Do not use it. |
-         |                       |    -  Digits                                                                                                                                                 |                                                               |
-         |                       |    -  Special characters: $!@%-_=+[]:./^,{}?                                                                                                                 |                                                               |
-         |                       |                                                                                                                                                              |                                                               |
-         |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                               |
-         |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                               |
-         +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
+         .. table:: **Table 1** Password complexity requirements
+
+            +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
+            | Parameter             | Requirement                                                                                                                                                  | Example Value                                                 |
+            +=======================+==============================================================================================================================================================+===============================================================+
+            | Password              | -  Consists of 8 to 26 characters.                                                                                                                           | YNbUwp!dUc9MClnv                                              |
+            |                       | -  Contains at least three of the following character types:                                                                                                 |                                                               |
+            |                       |                                                                                                                                                              | .. note::                                                     |
+            |                       |    -  Uppercase letters                                                                                                                                      |                                                               |
+            |                       |    -  Lowercase letters                                                                                                                                      |    The example password is generated randomly. Do not use it. |
+            |                       |    -  Digits                                                                                                                                                 |                                                               |
+            |                       |    -  Special characters: $!@%-_=+[]:./^,{}?                                                                                                                 |                                                               |
+            |                       |                                                                                                                                                              |                                                               |
+            |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                               |
+            |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                               |
+            +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
 
 
 

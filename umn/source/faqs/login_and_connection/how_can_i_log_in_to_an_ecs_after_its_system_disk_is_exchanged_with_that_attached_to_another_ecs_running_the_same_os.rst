@@ -27,14 +27,16 @@ For example, there are two Windows ECSs with parameters configured in `Table 1 <
 
 .. _ENUSTOPIC0100005619table1365540183310:
 
-.. table:: **Table 1** Parameter configurations
+.. container:: table-responsive
 
-   ====== =========== ==========
-   ECS    System Disk Key Pair
-   ====== =========== ==========
-   ecs_01 vol_01      Keypair_01
-   ecs_02 vol_02      Keypair_02
-   ====== =========== ==========
+   .. table:: **Table 1** Parameter configurations
+
+      ====== =========== ==========
+      ECS    System Disk Key Pair
+      ====== =========== ==========
+      ecs_01 vol_01      Keypair_01
+      ecs_02 vol_02      Keypair_02
+      ====== =========== ==========
 
 System disk vol_01 is detached from ecs_01 offline and then attached to ecs_02 as the system disk. How can I log in to ecs_02?
 
@@ -69,14 +71,16 @@ For example, there are two Linux ECSs with parameters configured in `Table 2 <#e
 
 .. _ENUSTOPIC0100005619table9561950195614:
 
-.. table:: **Table 2** Parameter configurations
+.. container:: table-responsive
 
-   ====== =========== ==========
-   ECS    System Disk Key Pair
-   ====== =========== ==========
-   ecs_01 vol_01      Keypair_01
-   ecs_02 vol_02      Keypair_02
-   ====== =========== ==========
+   .. table:: **Table 2** Parameter configurations
+
+      ====== =========== ==========
+      ECS    System Disk Key Pair
+      ====== =========== ==========
+      ecs_01 vol_01      Keypair_01
+      ecs_02 vol_02      Keypair_02
+      ====== =========== ==========
 
 System disk vol_01 is detached from ecs_01 offline and then attached to ecs_02 as the system disk. How can I log in to ecs_02?
 

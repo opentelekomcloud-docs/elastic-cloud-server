@@ -48,35 +48,37 @@ This section uses an ECS running Windows Server 2008 R2 64bit as an example to d
 
 .. _ENUSTOPIC0087680813table2257401020521:
 
-      .. table:: **Table 1** Mapping between disk partitions and disk devices
+      .. container:: table-responsive
 
-         =================================================== ===========
-         Master and Slave Device Number for a Disk Partition Disk Device
-         =================================================== ===========
-         51712                                               xvda
-         51728                                               xvdb
-         51744                                               xvdc
-         51760                                               xvdd
-         51776                                               xvde
-         51792                                               xvdf
-         51808                                               xvdg
-         51824                                               xvdh
-         51840                                               xvdi
-         51856                                               xvdj
-         51872                                               xvdk
-         51888                                               xvdl
-         51904                                               xvdm
-         51920                                               xvdn
-         51936                                               xvdo
-         51952                                               xvdp
-         268439552                                           xvdq
-         268439808                                           xvdr
-         268440064                                           xvds
-         268440320                                           xvdt
-         268440576                                           xvdu
-         268440832                                           xvdv
-         268441088                                           xvdw
-         268441344                                           xvdx
-         =================================================== ===========
+         .. table:: **Table 1** Mapping between disk partitions and disk devices
+
+            =================================================== ===========
+            Master and Slave Device Number for a Disk Partition Disk Device
+            =================================================== ===========
+            51712                                               xvda
+            51728                                               xvdb
+            51744                                               xvdc
+            51760                                               xvdd
+            51776                                               xvde
+            51792                                               xvdf
+            51808                                               xvdg
+            51824                                               xvdh
+            51840                                               xvdi
+            51856                                               xvdj
+            51872                                               xvdk
+            51888                                               xvdl
+            51904                                               xvdm
+            51920                                               xvdn
+            51936                                               xvdo
+            51952                                               xvdp
+            268439552                                           xvdq
+            268439808                                           xvdr
+            268440064                                           xvds
+            268440320                                           xvdt
+            268440576                                           xvdu
+            268440832                                           xvdv
+            268441088                                           xvdw
+            268441344                                           xvdx
+            =================================================== ===========
 
 

@@ -45,28 +45,30 @@ Procedure
 
 .. _ENUSTOPIC0030878383enustopic0118534005table111445216564:
 
-   .. table:: **Table 1** Inbound rule parameter description
+   .. container:: table-responsive
 
-      +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-      | **Parameter**         | **Description**                                                                                                                                                                      | **Example Value**     |
-      +=======================+======================================================================================================================================================================================+=======================+
-      | Protocol & Port       | **Protocol**: The network protocol. Currently, the value can be **All**, **TCP**, **UDP**, **ICMP**, **GRE**, or others.                                                             | TCP                   |
-      +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-      |                       | **Port**: The port or port range over which the traffic can reach your ECS. The value ranges from 1 to 65535.                                                                        | 22, or 22-30          |
-      +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-      | Source                | The source of the security group rule. The value can be a single IP address or a security group to allow access from the IP address or instances in the security group. For example: | 0.0.0.0/0             |
-      |                       |                                                                                                                                                                                      |                       |
-      |                       | -  xxx.xxx.xxx.xxx/32 (IPv4 address)                                                                                                                                                 |                       |
-      |                       | -  xxx.xxx.xxx.0/24 (IP address range)                                                                                                                                               |                       |
-      |                       | -  0.0.0.0/0 (all IP addresses)                                                                                                                                                      |                       |
-      |                       | -  sg-abc (security group)                                                                                                                                                           |                       |
-      |                       |                                                                                                                                                                                      |                       |
-      |                       | If the source is a security group, this rule will apply to all instances associated with the selected security group.                                                                |                       |
-      +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-      | Description           | Supplementary information about the security group rule. This parameter is optional.                                                                                                 | N/A                   |
-      |                       |                                                                                                                                                                                      |                       |
-      |                       | The security group rule description can contain a maximum of 255 characters and cannot contain angle brackets (< or >).                                                              |                       |
-      +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+      .. table:: **Table 1** Inbound rule parameter description
+
+         +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+         | **Parameter**         | **Description**                                                                                                                                                                      | **Example Value**     |
+         +=======================+======================================================================================================================================================================================+=======================+
+         | Protocol & Port       | **Protocol**: The network protocol. Currently, the value can be **All**, **TCP**, **UDP**, **ICMP**, **GRE**, or others.                                                             | TCP                   |
+         +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+         |                       | **Port**: The port or port range over which the traffic can reach your ECS. The value ranges from 1 to 65535.                                                                        | 22, or 22-30          |
+         +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+         | Source                | The source of the security group rule. The value can be a single IP address or a security group to allow access from the IP address or instances in the security group. For example: | 0.0.0.0/0             |
+         |                       |                                                                                                                                                                                      |                       |
+         |                       | -  xxx.xxx.xxx.xxx/32 (IPv4 address)                                                                                                                                                 |                       |
+         |                       | -  xxx.xxx.xxx.0/24 (IP address range)                                                                                                                                               |                       |
+         |                       | -  0.0.0.0/0 (all IP addresses)                                                                                                                                                      |                       |
+         |                       | -  sg-abc (security group)                                                                                                                                                           |                       |
+         |                       |                                                                                                                                                                                      |                       |
+         |                       | If the source is a security group, this rule will apply to all instances associated with the selected security group.                                                                |                       |
+         +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+         | Description           | Supplementary information about the security group rule. This parameter is optional.                                                                                                 | N/A                   |
+         |                       |                                                                                                                                                                                      |                       |
+         |                       | The security group rule description can contain a maximum of 255 characters and cannot contain angle brackets (< or >).                                                              |                       |
+         +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
 #. On the **Outbound Rules** tab, click **Add Rule**. In the displayed dialog box, set required parameters to add an outbound rule.
 
@@ -83,26 +85,28 @@ Procedure
 
 .. _ENUSTOPIC0030878383enustopic0118534005table0614192319232:
 
-   .. table:: **Table 2** Outbound rule parameter description
+   .. container:: table-responsive
 
-      +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-      | **Parameter**         | **Description**                                                                                                                                                                         | **Example Value**     |
-      +=======================+=========================================================================================================================================================================================+=======================+
-      | Protocol & Port       | **Protocol**: The network protocol. Currently, the value can be **All**, **TCP**, **UDP**, **ICMP**, **GRE**, or others.                                                                | TCP                   |
-      +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-      |                       | **Port**: The port or port range over which the traffic can leave your ECS. The value ranges from 1 to 65535.                                                                           | 22, or 22-30          |
-      +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-      | Destination           | The destination of the security group rule. The value can be a single IP address or a security group to allow access to the IP address or instances in the security group. For example: | 0.0.0.0/0             |
-      |                       |                                                                                                                                                                                         |                       |
-      |                       | -  xxx.xxx.xxx.xxx/32 (IPv4 address)                                                                                                                                                    |                       |
-      |                       | -  xxx.xxx.xxx.0/24 (IP address range)                                                                                                                                                  |                       |
-      |                       | -  0.0.0.0/0 (all IP addresses)                                                                                                                                                         |                       |
-      |                       | -  sg-abc (security group)                                                                                                                                                              |                       |
-      +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-      | Description           | Supplementary information about the security group rule. This parameter is optional.                                                                                                    | N/A                   |
-      |                       |                                                                                                                                                                                         |                       |
-      |                       | The security group rule description can contain a maximum of 255 characters and cannot contain angle brackets (< or >).                                                                 |                       |
-      +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+      .. table:: **Table 2** Outbound rule parameter description
+
+         +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+         | **Parameter**         | **Description**                                                                                                                                                                         | **Example Value**     |
+         +=======================+=========================================================================================================================================================================================+=======================+
+         | Protocol & Port       | **Protocol**: The network protocol. Currently, the value can be **All**, **TCP**, **UDP**, **ICMP**, **GRE**, or others.                                                                | TCP                   |
+         +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+         |                       | **Port**: The port or port range over which the traffic can leave your ECS. The value ranges from 1 to 65535.                                                                           | 22, or 22-30          |
+         +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+         | Destination           | The destination of the security group rule. The value can be a single IP address or a security group to allow access to the IP address or instances in the security group. For example: | 0.0.0.0/0             |
+         |                       |                                                                                                                                                                                         |                       |
+         |                       | -  xxx.xxx.xxx.xxx/32 (IPv4 address)                                                                                                                                                    |                       |
+         |                       | -  xxx.xxx.xxx.0/24 (IP address range)                                                                                                                                                  |                       |
+         |                       | -  0.0.0.0/0 (all IP addresses)                                                                                                                                                         |                       |
+         |                       | -  sg-abc (security group)                                                                                                                                                              |                       |
+         +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+         | Description           | Supplementary information about the security group rule. This parameter is optional.                                                                                                    | N/A                   |
+         |                       |                                                                                                                                                                                         |                       |
+         |                       | The security group rule description can contain a maximum of 255 characters and cannot contain angle brackets (< or >).                                                                 |                       |
+         +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
 #. Click **OK** to complete the security rule configuration.
 

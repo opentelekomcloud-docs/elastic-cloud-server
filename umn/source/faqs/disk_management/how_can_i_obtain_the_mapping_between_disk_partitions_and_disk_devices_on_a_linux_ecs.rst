@@ -31,35 +31,37 @@ For a Linux ECS, its disk partitions correspond to disk devices. This section us
 
 .. _ENUSTOPIC0087901488table18572291102543:
 
-   .. table:: **Table 1** Mapping between disk partitions and disk devices
+   .. container:: table-responsive
 
-      ============== ===========
-      Disk Partition Disk Device
-      ============== ===========
-      xvda           xvda
-      xvdb           xvdb
-      xvdc           xvdc
-      xvdd           xvdd
-      xvde           xvde
-      xvdf           xvdf
-      xvdg           xvdg
-      xvdh           xvdh
-      xvdi           xvdi
-      xvdj           xvdj
-      xvdk           xvdk
-      xvdl           xvdl
-      xvdm           xvdm
-      xvdn           xvdn
-      xvdo           xvdo
-      xvdp           xvdp
-      xvdq           xvdq
-      xvdr           xvdr
-      xvds           xvds
-      xvdt           xvdt
-      xvdu           xvdu
-      xvdv           xvdv
-      xvdw           xvdw
-      xvdx           xvdx
-      ============== ===========
+      .. table:: **Table 1** Mapping between disk partitions and disk devices
+
+         ============== ===========
+         Disk Partition Disk Device
+         ============== ===========
+         xvda           xvda
+         xvdb           xvdb
+         xvdc           xvdc
+         xvdd           xvdd
+         xvde           xvde
+         xvdf           xvdf
+         xvdg           xvdg
+         xvdh           xvdh
+         xvdi           xvdi
+         xvdj           xvdj
+         xvdk           xvdk
+         xvdl           xvdl
+         xvdm           xvdm
+         xvdn           xvdn
+         xvdo           xvdo
+         xvdp           xvdp
+         xvdq           xvdq
+         xvdr           xvdr
+         xvds           xvds
+         xvdt           xvdt
+         xvdu           xvdu
+         xvdv           xvdv
+         xvdw           xvdw
+         xvdx           xvdx
+         ============== ===========
 
 
