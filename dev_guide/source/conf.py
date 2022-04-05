@@ -152,7 +152,7 @@ htmlhelp_basename = 'ecsdoc'
 
 latex_documents = [
     ('index',
-     'dev-elastic-cloud-server.tex',
+     'dev-guide-elastic-cloud-server.tex',
      u'%s Developer Documentation' % project,
      u'OpenTelekomCloud', 'manual'),
 ]
