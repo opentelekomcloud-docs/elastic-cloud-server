@@ -58,8 +58,8 @@ The process of changing the time zone for a Linux ECS depends on the OS. In this
 
    **ls /etc/localtime**
 
-   -  If the file is available, go to step `7 <#enustopic0040630518li35115782151653>`__.
-   -  If the file is not available, go to step `8 <#enustopic0040630518li564938451108>`__.
+   -  If the file is available, go to step 7.
+   -  If the file is not available, go to step 8.
 
 #. Run the following command to delete the existing **/etc/localtime** file:
 

@@ -40,7 +40,7 @@ Solution
 
    **/dev/disk/by-id/**\ *SCSI ID*
 
-   For example, if the SCSI ID obtained in step `3 <#enustopic0087382187li2064141120446>`__ is scsi-3688860300001436b005014f890338280, use the following data to replace **/dev/sdb**:
+   For example, if the SCSI ID obtained in step 3 is scsi-3688860300001436b005014f890338280, use the following data to replace **/dev/sdb**:
 
    **/dev/disk/by-id/scsi-3688860300001436b005014f890338280**
 

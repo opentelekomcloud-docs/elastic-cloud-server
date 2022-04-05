@@ -30,8 +30,8 @@ Procedure
 
    The **Disk Management** window is displayed.
 
-   -  If Figure 1 is displayed, the new disk is offline. Go to `3 <#enustopic0085634796enustopic0044524740li33296033102625>`__.
-   -  If Figure 4 is displayed, the **Initialize Disk** window is prompted. Go to `5 <#enustopic0085634796enustopic0044524740li34991214122212>`__.
+   -  If Figure 1 is displayed, the new disk is offline. Go to 3.
+   -  If Figure 4 is displayed, the **Initialize Disk** window is prompted. Go to 5.
 
    .. figure:: /_static/images/en-us_image_0095024494.png
       :alt: Click to enlarge

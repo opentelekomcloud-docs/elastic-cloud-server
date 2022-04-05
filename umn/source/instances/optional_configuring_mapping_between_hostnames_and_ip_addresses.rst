@@ -73,7 +73,7 @@ For example, there are two ECSs in a VPC, ecs-01 and ecs-02. Perform the followi
 
    h. Log in to ecs-02.
 
-   i. Repeat `3.b <#enustopic0074752335li6087483710276>`__ to `3.g <#enustopic0074752335li64061240102622>`__.
+   i. Repeat 3.b to 3.g.
 
 #. Check whether the ECSs can communicate with each other using hostnames.
 

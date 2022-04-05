@@ -52,7 +52,7 @@ Solution
 
    c. Double-click the name of the user to whom the login error message was displayed.
 
-   d. In the displayed dialog box, click the **Member Of** tab. Ensure that the user belongs to the user group that is assigned with the remote login permission in `2.b <#enustopic0264235948enustopic0173606024li19821176204810>`__.
+   d. In the displayed dialog box, click the **Member Of** tab. Ensure that the user belongs to the user group that is assigned with the remote login permission in 2.b.
 
       .. figure:: /_static/images/en-us_image_0288997349.png
          :alt: Click to enlarge

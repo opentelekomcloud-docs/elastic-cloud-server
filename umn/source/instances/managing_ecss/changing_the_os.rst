@@ -134,7 +134,7 @@ Follow-up Procedure
 
       **df -TH**
 
--  If the OS change is unsuccessful, perform steps `3 <#enustopic0031523135enustopic0031523135enustopic0024911405li45082966143628>`__ to `10 <#enustopic0031523135enustopic0031523135enustopic0024911405li45992498111556>`__ again to retry changing the OS again.
+-  If the OS change is unsuccessful, perform steps 3 to 10 again to retry changing the OS again.
 -  If the second OS change attempt is unsuccessful, contact customer service for manual recovery at the backend.
 
 

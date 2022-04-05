@@ -55,7 +55,7 @@ Use the disk partition management tool DiskPart to obtain and set the SAN policy
 
    -  If the SAN policy is **OnlineAll**, run the **exit** command to exit DiskPart.
 
-   -  If the SAN policy is not **OnlineAll**, go to step `5 <#enustopic0114225937li5934113914122>`__.
+   -  If the SAN policy is not **OnlineAll**, go to step 5.
 
 #. Run the following command to change the SAN policy to **OnlineAll**:
 

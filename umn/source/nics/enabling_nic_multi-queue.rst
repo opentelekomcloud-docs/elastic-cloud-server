@@ -128,7 +128,7 @@ Use one of the following methods to set the NIC multi-queue attribute:
 
 #. Add **X-Auth-Token** to the request header.
 
-   The value of **X-Auth-Token** is the token obtained in step `1 <#enustopic0058758453enustopic0085214115li13762086162643>`__.
+   The value of **X-Auth-Token** is the token obtained in step 1.
 
 #. Add **Content-Type** to the request header.
 

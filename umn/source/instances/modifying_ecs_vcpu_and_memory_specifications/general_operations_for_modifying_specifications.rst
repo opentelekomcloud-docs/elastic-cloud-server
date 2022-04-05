@@ -68,7 +68,7 @@ Step 1: Modify Specifications
 
    a. Check whether **Failures** is displayed on the management console. For details, see `Viewing Failures <../../instances/viewing_ecs_information/viewing_failures.html>`__.
 
-      -  If yes, go to step `10.b <#enustopic0013771092li6253192246>`__.
+      -  If yes, go to step 10.b.
       -  If no, the specifications have been modified.
 
    b. Click **Failures**. Then, in the **Failures** dialog box, click **Operation Failures** and check whether the task is contained in the list by **Name/ID**, **Operated At**, or **Task**.
