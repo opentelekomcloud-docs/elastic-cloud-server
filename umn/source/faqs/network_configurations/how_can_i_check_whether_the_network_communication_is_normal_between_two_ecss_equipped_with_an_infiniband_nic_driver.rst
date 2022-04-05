@@ -15,7 +15,7 @@ For high-performance H2 ECSs equipped with an InfiniBand NIC driver (InfiniBand 
 
       **ibstat**
 
-      -  If it is functional, go to `2 <#enustopic0058747426li2420713023281>`__.
+      -  If it is functional, go to 2.
       -  If it is not functional, contact customer service for technical support.
 
 #. Check whether the network communication between two InfiniBand ECSs is normal.

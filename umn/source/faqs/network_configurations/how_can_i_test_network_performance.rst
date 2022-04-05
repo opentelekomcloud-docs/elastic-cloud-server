@@ -133,7 +133,7 @@ Test Preparations
 
       **ethtool -L eth0 combined** *X*
 
-      In the preceding command, *X* is the number of queues obtained in `3.a <#enustopic0115820205li162918018139>`__.
+      In the preceding command, *X* is the number of queues obtained in 3.a.
 
 TCP Bandwidth Test (Using netperf)
 ----------------------------------

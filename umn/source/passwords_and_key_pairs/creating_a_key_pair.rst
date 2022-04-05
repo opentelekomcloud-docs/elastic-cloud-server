@@ -161,7 +161,7 @@ If you store a public key by clicking **Save public key** of **puttygen.exe**, t
 
    -  Selecting a file
 
-      a. On the **Import Key Pair** page of the management console, click **Select File** and select the local public key file, for example, the .txt file saved in `3 <#enustopic0014250631li24584709151818>`__.
+      a. On the **Import Key Pair** page of the management console, click **Select File** and select the local public key file, for example, the .txt file saved in 3.
 
          .. note::
 

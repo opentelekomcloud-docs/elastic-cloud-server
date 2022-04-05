@@ -122,8 +122,8 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 
       **lsmod \| grep nouveau**
 
-      -  If the command output contains information about the Nouveau driver, the Nouveau driver has been installed and must be disabled. Then, go to step `9.b <#enustopic0149470468li073251517124>`__.
-      -  If the command output does not contain information about the Nouveau driver, the Nouveau driver has been disabled. Then, go to step `9.d <#enustopic0149470468li9819105753916>`__.
+      -  If the command output contains information about the Nouveau driver, the Nouveau driver has been installed and must be disabled. Then, go to step 9.b.
+      -  If the command output does not contain information about the Nouveau driver, the Nouveau driver has been disabled. Then, go to step 9.d.
 
    b. Edit the **blacklist.conf** file.
 

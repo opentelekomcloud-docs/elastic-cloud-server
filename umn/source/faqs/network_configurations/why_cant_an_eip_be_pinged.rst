@@ -119,7 +119,7 @@ If a firewall is enabled on the ECS, check whether the firewall blocks the ping 
 
    View and set the firewall status.
 
-#. If the firewall is **On**, go to `4 <#enustopic0105130172li192824161474>`__.
+#. If the firewall is **On**, go to 4.
 
 #. Check the ICMP rule statuses in the firewall.
 

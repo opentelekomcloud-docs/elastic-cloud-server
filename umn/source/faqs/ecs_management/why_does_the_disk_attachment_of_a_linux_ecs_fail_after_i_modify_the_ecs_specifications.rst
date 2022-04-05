@@ -37,10 +37,10 @@ Procedure
 
    As shown in Figure 2, only one disk **/dev/vda** is attached to the ECS.
 
-#. Check whether the number of disks obtained in step `3 <#enustopic0214940106enustopic0120890833li161843557534>`__ is the same as that obtained in step `2 <#enustopic0214940106enustopic0120890833li218141135312>`__.
+#. Check whether the number of disks obtained in step 3 is the same as that obtained in step 2.
 
    -  If the numbers are the same, the disk attachment is successful. No further action is required.
-   -  If the numbers are different, the disk attachment failed. In this case, go to step `5 <#enustopic0214940106enustopic0120890833li1478325211557>`__.
+   -  If the numbers are different, the disk attachment failed. In this case, go to step 5.
 
 #. Run the **mount** command to attach the affected disks.
 

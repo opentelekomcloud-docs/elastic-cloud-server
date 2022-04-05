@@ -109,8 +109,8 @@ Downloading GRID Driver and Software License Packages
 
 #. Check whether NVIDIA is used for the first time.
 
-   a. If yes, go to step `4 <#enustopic0149610914li1859773663819>`__.
-   b. If no, go to step `6 <#enustopic0149610914li0791101412396>`__.
+   a. If yes, go to step 4.
+   b. If no, go to step 6.
 
 #. Obtain the Product Activation Key (PAK) from the email indicating successful registration with NVIDIA.
 
@@ -121,7 +121,7 @@ Downloading GRID Driver and Software License Packages
 
       **Figure 2** PAK
 
-#. Enter the PAK obtained in step `4 <#enustopic0149610914li1859773663819>`__ on the **Redeem Product Activation Keys** page and click **Redeem**.
+#. Enter the PAK obtained in step 4 on the **Redeem Product Activation Keys** page and click **Redeem**.
 
    .. figure:: /_static/images/en-us_image_0178334449.png
       :alt: Click to enlarge

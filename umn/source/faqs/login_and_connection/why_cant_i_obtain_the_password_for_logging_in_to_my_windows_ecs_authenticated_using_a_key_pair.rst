@@ -46,7 +46,7 @@ If logging in to an ECS with Cloudbase-Init enabled failed, perform the followin
 
    a. Stop the affected ECS and detach the system disk from it.
 
-   b. Use a public image to create a temporary Windows ECS and attach the system disk detached in `6.a <#enustopic0081525054li16969123912115>`__ to the ECS.
+   b. Use a public image to create a temporary Windows ECS and attach the system disk detached in 6.a to the ECS.
 
    c. Log in to the temporary ECS, open the **Server Manager** page, choose **File and Storage Services** > **Volumes** > **Disks**, right-click the offline disk, and choose **Online** from the shortcut menu.
 

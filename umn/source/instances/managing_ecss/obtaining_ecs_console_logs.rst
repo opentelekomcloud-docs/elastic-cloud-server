@@ -108,7 +108,7 @@ Procedure
          **cat /proc/cmdline \| grep ttyS0**
 
          -  If yes, **ttyS0** has been configured.
-         -  If no, **ttyS0** has not been configured. Go to `2.b <#enustopic0057711189enustopic0057450886li29451607172853>`__.
+         -  If no, **ttyS0** has not been configured. Go to 2.b.
 
       b. Run the following command to open the configuration file to be edited:
 

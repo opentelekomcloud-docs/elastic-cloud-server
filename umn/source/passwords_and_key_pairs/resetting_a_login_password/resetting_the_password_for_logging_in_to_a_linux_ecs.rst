@@ -36,7 +36,7 @@ Procedure
 
    b. Locate the row containing the system disk to be detached and click **Detach** to detach the system disk from the ECS.
    c. On the page providing details about the temporary ECS, click the **Disks** tab.
-   d. Click **Attach Disk**. In the displayed dialog box, select the system disk detached in step `2.b <#enustopic0021427650li5640121684418>`__ and attach it to the temporary ECS.
+   d. Click **Attach Disk**. In the displayed dialog box, select the system disk detached in step 2.b and attach it to the temporary ECS.
 
 #. Log in to the temporary ECS remotely and reset the password.
 
@@ -58,7 +58,7 @@ Procedure
 
          If the original ECS and the temporary ECS both run CentOS 7, a mount failure may occur during script execution. To resolve this issue, replace **mount $dev $mountPath** with **mount -o nouuid $dev $mountPath** in the script.
 
-   d. Enter the new password and the directory obtained in step `3.b <#enustopic0021427650li664021617445>`__ as prompted.
+   d. Enter the new password and the directory obtained in step 3.b as prompted.
 
       If the following information is displayed, the password has been changed:
 
@@ -87,9 +87,9 @@ Procedure
 #. Stop the temporary ECS, detach the system disk, attach the system disk to the original Linux ECS, and restart the original Linux ECS.
 
    a. Stop the temporary ECS, switch to the page providing details about the ECS, and click the **Disks** tab.
-   b. Click **Detach** to detach the data disk attached in step `2 <#enustopic0021427650li19814359584>`__.
+   b. Click **Detach** to detach the data disk attached in step 2.
    c. On the page providing details about the original Linux ECS, click the **Disks** tab.
-   d. Click **Attach Disk**. In the displayed dialog box, select the data disk detached in step `5.b <#enustopic0021427650li964031614447>`__ and device name **/dev/sda**.
+   d. Click **Attach Disk**. In the displayed dialog box, select the data disk detached in step 5.b and device name **/dev/sda**.
    e. Restart the original Linux ECS.
 
 

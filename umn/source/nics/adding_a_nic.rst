@@ -72,18 +72,18 @@ Some OSs cannot identify newly added NICs. In this case, you must manually activ
 
    *X* in the preceding command indicates the NIC name and SN, for example, **ifup eth2**.
 
-#. Run the following command to check whether the NIC name obtained in step `2 <#enustopic0093492518li595089165210>`__ is displayed in the command output:
+#. Run the following command to check whether the NIC name obtained in step 2 is displayed in the command output:
 
    **ifconfig**
 
    For example, check whether **eth2** is displayed in the command output.
 
    -  If yes, the newly added NIC has been activated, and no further action is required.
-   -  If no, the newly added NIC failed to be activated. Go to step `9 <#enustopic0093492518li1695469165210>`__.
+   -  If no, the newly added NIC failed to be activated. Go to step 9.
 
 #. Log in to the management console. Locate the row containing the target ECS, click **More** in the **Operation** column, and select **Restart**.
 
-#. Run the following command to check whether the NIC name obtained in step `2 <#enustopic0093492518li595089165210>`__ is displayed in the command output:
+#. Run the following command to check whether the NIC name obtained in step 2 is displayed in the command output:
 
    -  If yes, no further action is required.
    -  If no, contact customer service.

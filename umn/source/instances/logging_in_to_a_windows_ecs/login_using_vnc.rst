@@ -209,7 +209,7 @@ Log In to a Windows ECS Using a Non-English Keyboard
 12. Enter the ECS password as prompted.
 
     -  When logging in to the ECS using VNC for the first time, use the English keyboard to enter the password. After you have logged in to the ECS, see `Changing the OS Keyboard Language <#changing-the-os-keyboard-language>`__ to change the keyboard language of the ECS OS. You can then select the keyboard language and enter the password the next time you log in.
-    -  If you have changed the keyboard language of the ECS OS, ensure that the keyboard language in use, the keyboard language selected in step `7 <#enustopic0027268511li17715715111459>`__, and the changed OS keyboard language are all the same.
+    -  If you have changed the keyboard language of the ECS OS, ensure that the keyboard language in use, the keyboard language selected in step 7, and the changed OS keyboard language are all the same.
 
 Changing the OS Keyboard Language
 ---------------------------------
@@ -264,7 +264,7 @@ In this case, you must change the languages of the other three types of keyboard
 
    For details, see `Log In to a Windows ECS Using a Non-English Keyboard <#log-in-to-a-windows-ecs-using-a-non-english-keyboard>`__.
 
-To set the languages on the four types of keyboards to all be the same, repeat steps `1 <#enustopic0027268511enustopic0039525621li55865773114331>`__ to `4 <#enustopic0027268511enustopic0039525621li62706781115148>`__.
+To set the languages on the four types of keyboards to all be the same, repeat steps 1 to 4.
 
 .. note::
 
