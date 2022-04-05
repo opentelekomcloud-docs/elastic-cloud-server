@@ -79,8 +79,6 @@ add_module_names = False
 # output. They are ignored by default.
 show_authors = False
 
-# The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'native'
 
 # -- Options for man page output ----------------------------------------------
 

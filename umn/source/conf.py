@@ -71,8 +71,6 @@ copyright = u'2022-present, Open Telekom Cloud'
 # output. They are ignored by default.
 show_authors = False
 
-# The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'native'
 
 # -- Options for man page output ----------------------------------------------
 
