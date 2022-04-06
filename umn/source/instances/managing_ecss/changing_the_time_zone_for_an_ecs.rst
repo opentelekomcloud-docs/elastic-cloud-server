@@ -1,5 +1,11 @@
+.. _en-us_topic_0040630518:
+
 Changing the Time Zone for an ECS
 =================================
+
+
+
+.. _en-us_topic_0040630518__section2750020410549:
 
 Scenarios
 ---------
@@ -7,6 +13,10 @@ Scenarios
 The default time zone for an ECS is the one you selected when creating the image that was used to create the ECS. This section describes how to change the time zone for an ECS to the local one or to another time zone in your network.
 
 After you log in to your ECS, if you find that the time on the ECS is different from the local time, change the time zone for the ECS so that the time on the ECS is the same as the local time.
+
+
+
+.. _en-us_topic_0040630518__section1860378410555:
 
 For Linux ECSs
 --------------
@@ -84,6 +94,10 @@ The process of changing the time zone for a Linux ECS depends on the OS. In this
       # ls -lh /etc/localtime
       lrwxrwxrwx 1 root root 33 Nov 27 11:01 /etc/localtime -> /usr/share/zoneinfo/Asia/Shanghai
 
+
+
+.. _en-us_topic_0040630518__section77183612015:
+
 For Windows ECSs
 ----------------
 
@@ -92,6 +106,10 @@ For Windows ECSs
 #. Click the time display on the far right side of the task bar located at the bottom of your screen. In the dialog box that is displayed, click **Change date and time settings**.
 
    The **Date and Time** page is displayed.
+
+   
+
+.. _en-us_topic_0040630518__fig3371712915:
 
    .. figure:: /_static/images/en-us_image_0224317546.png
       :alt: Click to enlarge
@@ -107,5 +125,3 @@ For Windows ECSs
 #. In the **Set the time zone** pane, choose the target time zone from the **Time zone** drop-down list.
 
 #. Click **OK**.
-
-

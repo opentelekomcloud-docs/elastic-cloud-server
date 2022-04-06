@@ -1,12 +1,22 @@
+.. _en-us_topic_0074752335:
+
 (Optional) Configuring Mapping Between Hostnames and IP Addresses
 =================================================================
 
 ECSs in the same VPC can communicate with each other using hostnames. In such a case, you are required to configure the mapping between hostnames and IP addresses. The communication using hostnames is more convenient than that using IP addresses.
 
+
+
+.. _en-us_topic_0074752335__section1399111463019:
+
 Constraints
 -----------
 
 This method applies only to Linux ECSs.
+
+
+
+.. _en-us_topic_0074752335__section4184679493755:
 
 Procedure
 ---------
@@ -80,5 +90,3 @@ For example, there are two ECSs in a VPC, ecs-01 and ecs-02. Perform the followi
    Log in to an ECS in the same VPC, run the following command to ping the added host, and check whether the operation is successful:
 
    **ping** *Hostname*
-
-

@@ -1,3 +1,5 @@
+.. _en-us_topic_0018073212:
+
 How Quickly Can I Obtain an ECS?
 ================================
 
@@ -8,5 +10,3 @@ The time it takes to obtain an ECS depends on ECS specifications, available reso
 .. note::
 
    If it takes a long time to obtain your ECS, contact customer service.
-
-

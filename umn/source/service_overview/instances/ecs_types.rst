@@ -1,3 +1,5 @@
+.. _en-us_topic_0035470096:
+
 ECS Types
 =========
 
@@ -11,6 +13,10 @@ The public cloud provides the following ECS types for different application scen
 -  High-performance computing
 -  GPU-accelerated
 
+
+
+.. _en-us_topic_0035470096__section741930611313:
+
 ECS Flavor Naming Rules
 -----------------------
 
@@ -23,10 +29,18 @@ The format is defined as follows:
 -  **C** specifies the flavor size, such as medium, large, xlarge, 2xlarge, 4xlarge, or 8xlarge.
 -  **D** specifies the ratio of memory to vCPUs expressed in a digit. For example, value **4** indicates that the ratio of memory to vCPUs is 4.
 
+
+
+.. _en-us_topic_0035470096__section3154475711225:
+
 Obtaining Specifications When Creating an ECS
 ---------------------------------------------
 
 Specifications for the ECS being created are located in the specifications list.
+
+
+
+.. _en-us_topic_0035470096__fig64292023143619:
 
 .. figure:: /_static/images/en-us_image_0172453607.png
    :alt: Click to enlarge
@@ -35,12 +49,16 @@ Specifications for the ECS being created are located in the specifications list.
 
    **Figure 1** ECS specifications
 
+
+
+.. _en-us_topic_0035470096__section9843135016217:
+
 Network QoS
 -----------
 
 Network QoS uses basic technologies to improve the quality of network communication. A network with QoS enabled offers predictable network performance and effectively allocates network bandwidth to use network resources.
 
-To obtain the QoS data of an ECS flavor, including the maximum bandwidth, assured bandwidth, maximum PPS, and NIC multi-queue, see `ECS Specifications <../../service_overview/ecs_specifications_and_types/ecs_specifications.html>`__.
+To obtain the QoS data of an ECS flavor, including the maximum bandwidth, assured bandwidth, maximum PPS, and NIC multi-queue, see :ref:`ECS Specifications <en-us_topic_0177512565>`.
 
 The intranet bandwidth and PPS of an ECS are determined based on ECS flavors.
 
@@ -51,7 +69,5 @@ The intranet bandwidth and PPS of an ECS are determined based on ECS flavors.
 
    .. note::
 
-      -  For instructions about how to test PPS, see `How Can I Test Network Performance? <../../faqs/network_configurations/how_can_i_test_network_performance.html>`__
-      -  For instructions about how to enable NIC multi-queue, see `Enabling NIC Multi-Queue <../../nics/enabling_nic_multi-queue.html>`__.
-
-
+      -  For instructions about how to test PPS, see :ref:`How Can I Test Network Performance? <en-us_topic_0115820205>`
+      -  For instructions about how to enable NIC multi-queue, see :ref:`Enabling NIC Multi-Queue <en-us_topic_0058758453>`.

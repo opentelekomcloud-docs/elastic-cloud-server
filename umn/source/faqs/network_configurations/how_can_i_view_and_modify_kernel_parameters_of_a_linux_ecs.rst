@@ -1,18 +1,24 @@
+.. _en-us_topic_0107659745:
+
 How Can I View and Modify Kernel Parameters of a Linux ECS?
 ===========================================================
 
 Modify the kernel parameters only if the parameter settings affect your services. Kernel parameters vary depending on OS versions. If the parameter settings must be modified,
 
 -  Ensure that the target parameter settings meet service requirements.
--  Modify the correct kernel parameters. For details about common kernel parameters, see `Table 1 <#enustopic0107659745table15253154115313>`__.
+-  Modify the correct kernel parameters. For details about common kernel parameters, see :ref:`Table 1 <en-us_topic_0107659745__table15253154115313>`.
 -  Back up key ECS data before modifying kernel parameter settings.
+
+
+
+.. _en-us_topic_0107659745__section192621849125219:
 
 Background
 ----------
 
 
 
-.. _ENUSTOPIC0107659745table15253154115313:
+.. _en-us_topic_0107659745__table15253154115313:
 
 .. table:: **Table 1** Common Linux kernel parameters
 
@@ -116,6 +122,10 @@ Background
    | net.netfilter.nf_conntrack_max                     | Specifies the maximum value of hash entries.                                                                                                                                                                                                                                                                                                                        |
    +----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+
+
+.. _en-us_topic_0107659745__section68511530163412:
+
 Viewing Kernel Parameters
 -------------------------
 
@@ -152,6 +162,10 @@ Viewing Kernel Parameters
       net.ipv4.tcp_mem = 262144 524288 1048576
       ......
 
+
+
+.. _en-us_topic_0107659745__section1996094863415:
+
 Modifying Kernel Parameter Settings
 -----------------------------------
 
@@ -186,5 +200,3 @@ Modifying Kernel Parameter Settings
    #. Run the following command for the configuration to take effect:
 
       **/sbin/sysctl -p**
-
-

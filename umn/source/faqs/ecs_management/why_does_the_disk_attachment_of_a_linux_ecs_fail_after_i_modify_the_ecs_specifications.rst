@@ -1,10 +1,20 @@
+.. _en-us_topic_0214940106:
+
 Why Does the Disk Attachment of a Linux ECS Fail After I Modify the ECS Specifications?
 =======================================================================================
+
+
+
+.. _en-us_topic_0214940106__section18368526611:
 
 Scenarios
 ---------
 
 After you modify specifications of a Linux ECS, disk attachment may fail. Therefore, you need to check the disk attachment after you modify the specifications.
+
+
+
+.. _en-us_topic_0214940106__section17221430392:
 
 Procedure
 ---------
@@ -15,6 +25,10 @@ Procedure
 
    **fdisk -l** **\| grep 'Disk /dev/'**
 
+   
+
+.. _en-us_topic_0214940106__en-us_topic_0120890833_fig10595124010458:
+
    .. figure:: /_static/images/en-us_image_0214947581.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -22,11 +36,15 @@ Procedure
 
       **Figure 1** Viewing disks attached before specifications modification
 
-   As shown in Figure 1, the ECS has three disks attached: **/dev/vda**, **/dev/vdb**, and **/dev/vdc**.
+   As shown in :ref:`Figure 1 <en-us_topic_0214940106__en-us_topic_0120890833_fig10595124010458>`, the ECS has three disks attached: **/dev/vda**, **/dev/vdb**, and **/dev/vdc**.
 
 #. Run the following command to view disks attached after specifications modification:
 
    **df -h\| grep '/dev/'**
+
+   
+
+.. _en-us_topic_0214940106__en-us_topic_0120890833_fig692535712437:
 
    .. figure:: /_static/images/en-us_image_0214947582.png
       :alt: Click to enlarge
@@ -35,7 +53,7 @@ Procedure
 
       **Figure 2** Viewing disks attached after specifications modification
 
-   As shown in Figure 2, only one disk **/dev/vda** is attached to the ECS.
+   As shown in :ref:`Figure 2 <en-us_topic_0214940106__en-us_topic_0120890833_fig692535712437>`, only one disk **/dev/vda** is attached to the ECS.
 
 #. Check whether the number of disks obtained in step 3 is the same as that obtained in step 2.
 
@@ -63,6 +81,10 @@ Procedure
    -  If the numbers are the same, no further action is required.
    -  If the numbers are different, contact customer service.
 
+   
+
+.. _en-us_topic_0214940106__en-us_topic_0120890833_fig722411124917:
+
    .. figure:: /_static/images/en-us_image_0214947583.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -70,6 +92,4 @@ Procedure
 
       **Figure 3** Checking the number of disks attached
 
-   As shown in Figure 3, the numbers of disks before and after specifications modification are the same. The disks are **/dev/vda**, **/dev/vdb**, and **/dev/vdc**.
-
-
+   As shown in :ref:`Figure 3 <en-us_topic_0214940106__en-us_topic_0120890833_fig722411124917>`, the numbers of disks before and after specifications modification are the same. The disks are **/dev/vda**, **/dev/vdb**, and **/dev/vdc**.

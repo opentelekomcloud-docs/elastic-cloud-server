@@ -1,5 +1,11 @@
+.. _en-us_topic_0030828257:
+
 Network
 =======
+
+
+
+.. _en-us_topic_0030828257__section16625011109:
 
 VPC
 ---
@@ -8,12 +14,20 @@ Virtual Private Cloud (VPC) allows you to create customized virtual networks in 
 
 For more information about VPC, see *Virtual Private Cloud User Guide*.
 
+
+
+.. _en-us_topic_0030828257__section537721521012:
+
 Subnet
 ------
 
 A subnet is a range of IP addresses in your VPC and provides IP address management and DNS resolution functions for ECSs in it. The IP addresses of all ECSs in a subnet belong to the subnet.
 
 By default, ECSs in all subnets of the same VPC can communicate with each other, while ECSs in different VPCs cannot.
+
+
+
+.. _en-us_topic_0030828257__section15617142420109:
 
 Security Group
 --------------
@@ -22,6 +36,10 @@ A security group is a collection of access control rules for ECSs that have the 
 
 Your account automatically comes with a default security group. The default security group allows all outbound data, denies all inbound data, and allows all data between ECSs in the group. Your ECSs in the security group can communicate with each other without the need to add rules.
 
+
+
+.. _en-us_topic_0030828257__fig11890174421819:
+
 .. figure:: /_static/images/en-us_image_0000001230120807.png
    :alt: Click to enlarge
    :figclass: imgResize
@@ -29,11 +47,11 @@ Your account automatically comes with a default security group. The default secu
 
    **Figure 1** Default security group
 
-`Table 1 <#enustopic0030828257table1580115155277>`__ describes default security group rules.
+:ref:`Table 1 <en-us_topic_0030828257__table1580115155277>` describes default security group rules.
 
 
 
-.. _ENUSTOPIC0030828257table1580115155277:
+.. _en-us_topic_0030828257__table1580115155277:
 
 .. table:: **Table 1** Default security group rules
 
@@ -45,12 +63,20 @@ Your account automatically comes with a default security group. The default secu
    | Inbound   | All      | All        | Source: the current security group (for example, sg-*xxxxx*) | Allows communications among ECSs within the security group and denies all inbound traffic (incoming data packets). |
    +-----------+----------+------------+--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 
+
+
+.. _en-us_topic_0030828257__section2264152918101:
+
 EIP
 ---
 
 The Elastic IP (EIP) service enables your cloud resources to communicate with the Internet using static public IP addresses and scalable bandwidths. EIPs can be bound to or unbound from ECSs, BMSs, virtual IP addresses, NAT gateways, or load balancers.
 
 Each EIP can be used by only one cloud resource at a time.
+
+
+
+.. _en-us_topic_0030828257__fig15314318474:
 
 .. figure:: /_static/images/en-us_image_0178890066.png
    :alt: Click to enlarge
@@ -59,12 +85,16 @@ Each EIP can be used by only one cloud resource at a time.
 
    **Figure 2** Accessing the Internet using an EIP
 
+
+
+.. _en-us_topic_0030828257__section9843135016217:
+
 Network QoS
 -----------
 
 Network QoS uses basic technologies to improve the quality of network communication. A network with QoS enabled offers predictable network performance and effectively allocates network bandwidth to use network resources.
 
-To obtain the QoS data of an ECS flavor, including the maximum bandwidth, assured bandwidth, maximum PPS, and NIC multi-queue, see `ECS Specifications <../service_overview/ecs_specifications_and_types/ecs_specifications.html>`__.
+To obtain the QoS data of an ECS flavor, including the maximum bandwidth, assured bandwidth, maximum PPS, and NIC multi-queue, see :ref:`ECS Specifications <en-us_topic_0177512565>`.
 
 The intranet bandwidth and PPS of an ECS are determined by its flavor.
 
@@ -75,8 +105,8 @@ The intranet bandwidth and PPS of an ECS are determined by its flavor.
 
    .. note::
 
-      -  For instructions about how to test PPS, see `How Can I Test Network Performance? <../faqs/network_configurations/how_can_i_test_network_performance.html>`__
-      -  For instructions about how to enable NIC multi-queue, see `Enabling NIC Multi-Queue <../nics/enabling_nic_multi-queue.html>`__.
+      -  For instructions about how to test PPS, see :ref:`How Can I Test Network Performance? <en-us_topic_0115820205>`
+      -  For instructions about how to enable NIC multi-queue, see :ref:`Enabling NIC Multi-Queue <en-us_topic_0058758453>`.
 
 **Use case of network QoS:**
 
@@ -101,5 +131,3 @@ Network QoS:
    -  Network QoS applies to any program running on an ECS.
    -  Network QoS applies for both internal and external bandwidth.
    -  The EIP bandwidth limits the external bandwidth, and the network QoS limits the internal bandwidth.
-
-

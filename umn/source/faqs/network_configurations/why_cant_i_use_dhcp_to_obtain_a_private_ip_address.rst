@@ -1,5 +1,11 @@
+.. _en-us_topic_0105130173:
+
 Why Can't I Use DHCP to Obtain a Private IP Address?
 ====================================================
+
+
+
+.. _en-us_topic_0105130173__en-us_topic_0096302299_section52359121017:
 
 Symptom
 -------
@@ -8,6 +14,10 @@ You attempt to use DHCP to obtain a private IP address, but you cannot obtain th
 
 -  For Linux, a private IP address cannot be assigned.
 -  For Windows, a private IP address is changed to an IP address in the 169.254 network segment, which is different from the private IP address displayed on the ECS console.
+
+
+
+.. _en-us_topic_0105130173__en-us_topic_0096302299_section834015459186:
 
 Solution
 --------
@@ -65,8 +75,6 @@ Solution
 
 #. If the fault persists, obtain the messages in **/var/log/messages** on the affected ECS, use the MAC address of the affected NIC to filter the desired log, and check whether there is any process that prevents DHCP from obtaining an IP address.
 #. If the fault persists, contact customer service for technical support.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0121682580.png
 

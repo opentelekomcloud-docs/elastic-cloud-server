@@ -1,3 +1,5 @@
+.. _en-us_topic_0058747426:
+
 How Can I Check Whether the Network Communication Is Normal Between Two ECSs Equipped with an InfiniBand NIC Driver?
 ====================================================================================================================
 
@@ -32,6 +34,10 @@ For high-performance H2 ECSs equipped with an InfiniBand NIC driver (InfiniBand 
 
    c. Check whether the terminal display is correct.
 
+      
+
+.. _en-us_topic_0058747426__fig13564645028:
+
       .. figure:: /_static/images/en-us_image_0058747512.jpg
          :alt: Click to enlarge
          :figclass: imgResize
@@ -39,7 +45,5 @@ For high-performance H2 ECSs equipped with an InfiniBand NIC driver (InfiniBand 
 
          **Figure 1** Normal network communication
 
-      -  If the terminal display is shown in Figure 1, the network communication between the two InfiniBand ECSs is normal.
+      -  If the terminal display is shown in :ref:`Figure 1 <en-us_topic_0058747426__fig13564645028>`, the network communication between the two InfiniBand ECSs is normal.
       -  If the InfiniBand network is inaccessible, contact customer service for technical support.
-
-

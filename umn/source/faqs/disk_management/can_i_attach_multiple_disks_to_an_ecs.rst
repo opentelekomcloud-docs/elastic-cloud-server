@@ -1,13 +1,17 @@
+.. _en-us_topic_0018073215:
+
 Can I Attach Multiple Disks to an ECS?
 ======================================
 
 Yes. The ECSs created after the disk function upgrade can have up to 60 attached disks.
 
 -  When you create an ECS, you can attach 24 disks to it.
+
 -  After you create an ECS, you can attach up to 60 disks to it.
+
    
 
-.. _ENUSTOPIC0018073215table134132505508:
+.. _en-us_topic_0018073215__table134132505508:
 
    .. table:: **Table 1** Numbers of disks that can be attached to a newly created ECS
 
@@ -28,9 +32,11 @@ Yes. The ECSs created after the disk function upgrade can have up to 60 attached
       -  The system disk of an ECS is of VBD type. Therefore, the maximum number of SCSI disks is 59.
       -  For a D-series KVM ECS, its local disks use two SCSI controllers, indicating that 30 SCSI drive letters are used. Therefore, a maximum of 30 SCSI disks can be attached to such an ECS.
 
-The maximum number of disks that you can attach to an ECS that was created before the disk function upgrade remains unchanged, as shown in `Table 2 <#enustopic0018073215table3150162605720>`__. 
+The maximum number of disks that you can attach to an ECS that was created before the disk function upgrade remains unchanged, as shown in :ref:`Table 2 <en-us_topic_0018073215__table3150162605720>`.
 
-.. _ENUSTOPIC0018073215table3150162605720:
+
+
+.. _en-us_topic_0018073215__table3150162605720:
 
 .. table:: **Table 2** Numbers of disks that can be attached to an existing ECS
 
@@ -40,7 +46,11 @@ The maximum number of disks that you can attach to an ECS that was created befor
    | 24                | 23                 | 59                  | VBD disks + SCSI disks ≤ 24 |
    +-------------------+--------------------+---------------------+-----------------------------+
 
-To attach 60 disks, enable advanced disk. For details, see `Enabling Advanced Disk <../../evs_disks/enabling_advanced_disk.html>`__.
+To attach 60 disks, enable advanced disk. For details, see :ref:`Enabling Advanced Disk <en-us_topic_0122307169>`.
+
+
+
+.. _en-us_topic_0018073215__section137641439201:
 
 How Can I Check Whether an ECS Is Created Before or After the Disk Function Upgrade?
 ------------------------------------------------------------------------------------
@@ -51,7 +61,5 @@ How Can I Check Whether an ECS Is Created Before or After the Disk Function Upgr
 #. Click the **Disks** tab.
 #. Check the number of disks that can be attached to the ECS to determine the total number of disks.
 
-   -  If the total number of disks that can be attached is 24 (including the system disk), the ECS is created before the disk function upgrade. In such a case, you can enable advanced disk as prompted so that up to 60 disks can be attached to the ECS. For details, see `Enabling Advanced Disk <../../evs_disks/enabling_advanced_disk.html>`__.
+   -  If the total number of disks that can be attached is 24 (including the system disk), the ECS is created before the disk function upgrade. In such a case, you can enable advanced disk as prompted so that up to 60 disks can be attached to the ECS. For details, see :ref:`Enabling Advanced Disk <en-us_topic_0122307169>`.
    -  If the total number of disks that can be attached is 60 (including the system disk), the ECS is created after the disk function upgrade.
-
-

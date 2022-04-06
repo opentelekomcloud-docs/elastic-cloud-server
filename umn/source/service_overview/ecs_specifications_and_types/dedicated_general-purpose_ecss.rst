@@ -1,5 +1,11 @@
+.. _en-us_topic_0091224748:
+
 Dedicated General-Purpose ECSs
 ==============================
+
+
+
+.. _en-us_topic_0091224748__section78382481397:
 
 Overview
 --------
@@ -8,12 +14,16 @@ C4 ECSs use second-generation Intel® Xeon® Scalable processors with technologi
 
 C3 ECSs are newly released. They are developed based on KVM virtualization, use Intel® Xeon® Scalable processors and Data Plane Development Kit (DPDK) rapid packet processing mechanism, and feature high and stable computing performance. Equipped with high-performance NICs, the C3 ECSs provide high performance and stability, meeting enterprise-grade application requirements.
 
+
+
+.. _en-us_topic_0091224748__section375984364113:
+
 Specifications
 --------------
 
 
 
-.. _ENUSTOPIC0091224748table8948953114219:
+.. _en-us_topic_0091224748__table8948953114219:
 
 .. table:: **Table 1** C4 ECS specifications
 
@@ -55,7 +65,7 @@ Specifications
 
 
 
-.. _ENUSTOPIC0091224748table3949605220464:
+.. _en-us_topic_0091224748__table3949605220464:
 
 .. table:: **Table 2** C3 ECS specifications
 
@@ -87,10 +97,12 @@ Specifications
    | c3.15xlarge.4 | 60    | 256          | 16/16                              | 500                  | 16              | 12           | KVM                 |                                |
    +---------------+-------+--------------+------------------------------------+----------------------+-----------------+--------------+---------------------+--------------------------------+
 
+
+
+.. _en-us_topic_0091224748__section1212210247527:
+
 Scenarios
 ---------
 
 -  C4 ECSs: Websites and web applications, generalized databases and cache servers, and medium- and heavy-workload enterprise applications with strict requirements on computing and network performance
 -  C3 ECSs: Small- and medium-scale databases, cache servers, and search clusters with high requirements on stability; enterprise-grade applications of diverse types and in various scales
-
-

@@ -1,7 +1,13 @@
+.. _en-us_topic_0013771111:
+
 ECS and Other Services
 ======================
 
-Figure 1 shows the relationships between ECS and other services.
+:ref:`Figure 1 <en-us_topic_0013771111__fig44795566546>` shows the relationships between ECS and other services.
+
+
+
+.. _en-us_topic_0013771111__fig44795566546:
 
 .. figure:: /_static/images/en-us_image_0225439857.png
    :alt: Click to enlarge
@@ -9,6 +15,10 @@ Figure 1 shows the relationships between ECS and other services.
 
 
    **Figure 1** Relationships between ECS and other services
+
+
+
+.. _en-us_topic_0013771111__section5776601918:
 
 ECS-related Services
 --------------------
@@ -35,7 +45,7 @@ ECS-related Services
 
 -  Cloud Eye
 
-   Allows you to check the status of monitored service objects after you have obtained an ECS. This can be done without requiring additional plug-ins be installed. For details about ECS metrics supported by Cloud Eye, see `Basic ECS Metrics <../monitoring/basic_ecs_metrics.html>`__.
+   Allows you to check the status of monitored service objects after you have obtained an ECS. This can be done without requiring additional plug-ins be installed. For details about ECS metrics supported by Cloud Eye, see :ref:`Basic ECS Metrics <en-us_topic_0030911465>`.
 
 -  Key Management Service (KMS)
 
@@ -52,5 +62,3 @@ ECS-related Services
 -  Tag Management Service (TMS)
 
    A tag identifies an ECS. Adding tags to an ECS facilitates ECS identification and management.
-
-

@@ -1,5 +1,11 @@
+.. _en-us_topic_0107412162:
+
 What Should I Do If Error "command ´gcc´ failed with exit status 1" Occurs During PIP-based Software Installation
 =================================================================================================================
+
+
+
+.. _en-us_topic_0107412162__section4545101482614:
 
 Symptom
 -------
@@ -15,6 +21,10 @@ When installing the Python library software, you need to configure the PIP sourc
 
 During the installation, the system displays the message "command ´gcc´ failed with exit status 1". However, GCC has been installed by running the yum command before the Python library software is installed using the PIP.
 
+
+
+.. _en-us_topic_0107412162__fig15547217122815:
+
 .. figure:: /_static/images/en-us_image_0107414257.png
    :alt: Click to enlarge
    :figclass: imgResize
@@ -22,10 +32,18 @@ During the installation, the system displays the message "command ´gcc´ failed
 
    **Figure 1** Installation error
 
+
+
+.. _en-us_topic_0107412162__section2028651416307:
+
 Possible Causes
 ---------------
 
 openssl-devel is not supported.
+
+
+
+.. _en-us_topic_0107412162__section12023073012:
 
 Solution
 --------
@@ -38,11 +56,13 @@ The following operations use psutil as an example:
 
 #. Use PIP to install the Python library software again. The error message is cleared.
 
+   
+
+.. _en-us_topic_0107412162__fig850134793413:
+
    .. figure:: /_static/images/en-us_image_0107415055.png
       :alt: Click to enlarge
       :figclass: imgResize
    
 
       **Figure 2** Successful installation
-
-

@@ -1,3 +1,5 @@
+.. _en-us_topic_0140323150:
+
 ECS Lifecycle
 =============
 
@@ -5,7 +7,7 @@ The ECS lifecycle refers to the entire journey an ECS goes through, from creatio
 
 
 
-.. _ENUSTOPIC0140323150table198821178160:
+.. _en-us_topic_0140323150__table198821178160:
 
 .. table:: **Table 1** ECS statuses
 
@@ -48,5 +50,3 @@ The ECS lifecycle refers to the entire journey an ECS goes through, from creatio
    +------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
    | Rolling back resizing  | Intermediate          | The ECS is rolling back a resizing operation.                                                                                           |
    +------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-
-

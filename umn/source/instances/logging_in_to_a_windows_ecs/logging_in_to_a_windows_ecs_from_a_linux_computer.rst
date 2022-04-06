@@ -1,10 +1,20 @@
+.. _en-us_topic_0275383051:
+
 Logging In to a Windows ECS from a Linux Computer
 =================================================
+
+
+
+.. _en-us_topic_0275383051__en-us_topic_0017955381_section119451029135512:
 
 Scenarios
 ---------
 
 This section describes how to log in to a Windows ECS from a Linux computer.
+
+
+
+.. _en-us_topic_0275383051__en-us_topic_0017955381_section30111449112059:
 
 Prerequisites
 -------------
@@ -14,7 +24,11 @@ Prerequisites
 
 -  Access to port 3389 is allowed in the inbound direction of the security group to which the ECS belongs.
 -  Data can be exchanged between the login tool and the target ECS. For example, the default port 3389 is not blocked by the firewall.
--  RDP has been enabled on the target ECS. By default, RDP has been enabled on the ECSs created using a public image. For instructions about how to enable RDP, see `Enabling RDP <#enabling-rdp>`__.
+-  RDP has been enabled on the target ECS. By default, RDP has been enabled on the ECSs created using a public image. For instructions about how to enable RDP, see :ref:`Enabling RDP <en-us_topic_0275383051__section65216898112059>`.
+
+
+
+.. _en-us_topic_0275383051__section10475316119:
 
 Procedure
 ---------
@@ -35,7 +49,7 @@ To log in to a Windows ECS from a local Linux computer, use a remote access tool
 
    
 
-.. _ENUSTOPIC0275383051table522016385618:
+.. _en-us_topic_0275383051__table522016385618:
 
    .. table:: **Table 1** Parameters in the remote login command
 
@@ -53,6 +67,10 @@ To log in to a Windows ECS from a local Linux computer, use a remote access tool
       | EIP       | EIP of the Windows ECS to be remotely logged in. Replace it with the EIP bound to your Windows ECS.                                                                                                   |
       +-----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+
+
+.. _en-us_topic_0275383051__section65216898112059:
+
 Enabling RDP
 ------------
 
@@ -64,11 +82,15 @@ When you log in to an ECS for the first time, log in to it using VNC, enable RDP
 
 #. Log in to the Windows ECS using VNC.
 
-   For details, see `Login Using VNC <../../instances/logging_in_to_a_windows_ecs/login_using_vnc.html>`__.
+   For details, see :ref:`Login Using VNC <en-us_topic_0027268511>`.
 
 #. Click **Start** in the task bar and choose **Control Panel** > **System and Security** > **System** > **Remote settings**.
 
    The **System Properties** dialog box is displayed.
+
+   
+
+.. _en-us_topic_0275383051__en-us_topic_0017955381_fig276023113838:
 
    .. figure:: /_static/images/en-us_image_0049287308.png
       :alt: Click to enlarge
@@ -80,5 +102,3 @@ When you log in to an ECS for the first time, log in to it using VNC, enable RDP
 #. Click the **Remote** tab and select **Allow remote connections to this computer**.
 
 #. Click **OK**.
-
-

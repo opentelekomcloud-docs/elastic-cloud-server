@@ -1,10 +1,20 @@
+.. _en-us_topic_0042400609:
+
 Obtaining Metadata
 ==================
+
+
+
+.. _en-us_topic_0042400609__section1271521344918:
 
 Scenarios
 ---------
 
-ECS metadata includes basic information of an ECS on the cloud platform, such as the ECS ID, hostname, and network information. ECS metadata can be obtained using either OpenStack or EC2 compatible APIs, as shown in `Table 1 <#enustopic0042400609table273552371680>`__. The following describes the URI and methods of using the supported ECS metadata.
+ECS metadata includes basic information of an ECS on the cloud platform, such as the ECS ID, hostname, and network information. ECS metadata can be obtained using either OpenStack or EC2 compatible APIs, as shown in :ref:`Table 1 <en-us_topic_0042400609__table273552371680>`. The following describes the URI and methods of using the supported ECS metadata.
+
+
+
+.. _en-us_topic_0042400609__section3652133520518:
 
 Notes
 -----
@@ -35,90 +45,98 @@ Perform the following configuration on the firewall:
 
    **iptables --append OUTPUT --proto tcp --destination 169.254.169.254 --match owner ! --uid-owner root --jump REJECT**
 
+
+
+.. _en-us_topic_0042400609__section318043315019:
+
 ECS Metadata Types
 ------------------
 
-`Table 1 <#enustopic0042400609table273552371680>`__ does not contain metadata items ami-id, ami-launch-index, ami-manifest-path, block-device-mapping/, instance-action, instance-id and reservation-id. These metadata items are not compatible with EC2 and are not recommended.
+:ref:`Table 1 <en-us_topic_0042400609__table273552371680>` does not contain metadata items ami-id, ami-launch-index, ami-manifest-path, block-device-mapping/, instance-action, instance-id and reservation-id. These metadata items are not compatible with EC2 and are not recommended.
 
 
 
-.. _ENUSTOPIC0042400609table273552371680:
+.. _en-us_topic_0042400609__table273552371680:
 
 .. table:: **Table 1** ECS metadata types
 
-   +-----------------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Metadata Type         | Metadata Item                          | Description                                                                                                                                                                                                                          |
-   +=======================+========================================+======================================================================================================================================================================================================================================+
-   | OpenStack             | /meta_data.json                        | Displays ECS metadata.                                                                                                                                                                                                               |
-   |                       |                                        |                                                                                                                                                                                                                                      |
-   |                       |                                        | For the key fields in the ECS metadata, see `Table 2 <#enustopic0042400609table2373623012315>`__.                                                                                                                                    |
-   +-----------------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | OpenStack             | /password                              | Displays the password for logging in to an ECS.                                                                                                                                                                                      |
-   |                       |                                        |                                                                                                                                                                                                                                      |
-   |                       |                                        | This metadata is used by Cloudbase-Init to store ciphertext passwords during initialization of key-pair-authenticated Windows ECSs.                                                                                                  |
-   +-----------------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | OpenStack             | /user_data                             | Displays ECS user data.                                                                                                                                                                                                              |
-   |                       |                                        |                                                                                                                                                                                                                                      |
-   |                       |                                        | This metadata allows you to specify scripts and configuration files for initializing ECSs. For details, see `Passing User Data to ECSs <../../instances/obtaining_metadata_and_passing_user_data/passing_user_data_to_ecss.html>`__. |
-   |                       |                                        |                                                                                                                                                                                                                                      |
-   |                       |                                        | For password-authenticated Linux ECSs, this metadata is used to save password injection scripts.                                                                                                                                     |
-   +-----------------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | OpenStack             | /network_data.json                     | Displays ECS network information.                                                                                                                                                                                                    |
-   +-----------------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | OpenStack             | /securitykey                           | Obtains temporary AKs and SKs.                                                                                                                                                                                                       |
-   |                       |                                        |                                                                                                                                                                                                                                      |
-   |                       |                                        | Before enabling an ECS to obtain a temporary AK and SK, make sure that the **op_svc_ecs** account has been authorized on IAM and that the desired ECS resources have been authorized for management.                                 |
-   +-----------------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | EC2                   | /meta-data/hostname                    | Displays the name of the host accommodating an ECS.                                                                                                                                                                                  |
-   |                       |                                        |                                                                                                                                                                                                                                      |
-   |                       |                                        | To remove the suffix **.novalocal** from an ECS, see:                                                                                                                                                                                |
-   |                       |                                        |                                                                                                                                                                                                                                      |
-   |                       |                                        | `Is an ECS Hostname with Suffix .novalocal Normal? <../../faqs/ecs_management/is_an_ecs_hostname_with_suffix_.novalocal_normal.html>`__                                                                                              |
-   +-----------------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | EC2                   | /meta-data/local-hostname              | The meaning of this field is the same as that of hostname.                                                                                                                                                                           |
-   +-----------------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | EC2                   | /meta-data/public-hostname             | The meaning of this field is the same as that of hostname.                                                                                                                                                                           |
-   +-----------------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | EC2                   | /meta-data/instance-type               | Displays an ECS flavor.                                                                                                                                                                                                              |
-   +-----------------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | EC2                   | /meta-data/local-ipv4                  | Displays the fixed IP address of an ECS.                                                                                                                                                                                             |
-   |                       |                                        |                                                                                                                                                                                                                                      |
-   |                       |                                        | If there are multiple NICs, only the IP address of the primary NIC is displayed.                                                                                                                                                     |
-   +-----------------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | EC2                   | /meta-data/placement/availability-zone | Displays the AZ accommodating an ECS.                                                                                                                                                                                                |
-   +-----------------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | EC2                   | /meta-data/public-ipv4                 | Displays the EIP bound to an ECS.                                                                                                                                                                                                    |
-   |                       |                                        |                                                                                                                                                                                                                                      |
-   |                       |                                        | If there are multiple NICs, only the EIP of the primary NIC is displayed.                                                                                                                                                            |
-   +-----------------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | EC2                   | /meta-data/public-keys/0/openssh-key   | Displays the public key of an ECS.                                                                                                                                                                                                   |
-   +-----------------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | EC2                   | /user-data                             | Displays ECS user data.                                                                                                                                                                                                              |
-   +-----------------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | EC2                   | /meta-data/security-groups             | Displays the security group to which an ECS belongs.                                                                                                                                                                                 |
-   +-----------------------+----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Metadata Type         | Metadata Item                          | Description                                                                                                                                                                                          |
+   +=======================+========================================+======================================================================================================================================================================================================+
+   | OpenStack             | /meta_data.json                        | Displays ECS metadata.                                                                                                                                                                               |
+   |                       |                                        |                                                                                                                                                                                                      |
+   |                       |                                        | For the key fields in the ECS metadata, see :ref:`Table 2 <en-us_topic_0042400609__table2373623012315>`.                                                                                             |
+   +-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | OpenStack             | /password                              | Displays the password for logging in to an ECS.                                                                                                                                                      |
+   |                       |                                        |                                                                                                                                                                                                      |
+   |                       |                                        | This metadata is used by Cloudbase-Init to store ciphertext passwords during initialization of key-pair-authenticated Windows ECSs.                                                                  |
+   +-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | OpenStack             | /user_data                             | Displays ECS user data.                                                                                                                                                                              |
+   |                       |                                        |                                                                                                                                                                                                      |
+   |                       |                                        | This metadata allows you to specify scripts and configuration files for initializing ECSs. For details, see :ref:`Passing User Data to ECSs <en-us_topic_0032380449>`.                               |
+   |                       |                                        |                                                                                                                                                                                                      |
+   |                       |                                        | For password-authenticated Linux ECSs, this metadata is used to save password injection scripts.                                                                                                     |
+   +-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | OpenStack             | /network_data.json                     | Displays ECS network information.                                                                                                                                                                    |
+   +-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | OpenStack             | /securitykey                           | Obtains temporary AKs and SKs.                                                                                                                                                                       |
+   |                       |                                        |                                                                                                                                                                                                      |
+   |                       |                                        | Before enabling an ECS to obtain a temporary AK and SK, make sure that the **op_svc_ecs** account has been authorized on IAM and that the desired ECS resources have been authorized for management. |
+   +-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | EC2                   | /meta-data/hostname                    | Displays the name of the host accommodating an ECS.                                                                                                                                                  |
+   |                       |                                        |                                                                                                                                                                                                      |
+   |                       |                                        | To remove the suffix **.novalocal** from an ECS, see:                                                                                                                                                |
+   |                       |                                        |                                                                                                                                                                                                      |
+   |                       |                                        | :ref:`Is an ECS Hostname with Suffix .novalocal Normal? <en-us_topic_0094874138>`                                                                                                                    |
+   +-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | EC2                   | /meta-data/local-hostname              | The meaning of this field is the same as that of hostname.                                                                                                                                           |
+   +-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | EC2                   | /meta-data/public-hostname             | The meaning of this field is the same as that of hostname.                                                                                                                                           |
+   +-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | EC2                   | /meta-data/instance-type               | Displays an ECS flavor.                                                                                                                                                                              |
+   +-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | EC2                   | /meta-data/local-ipv4                  | Displays the fixed IP address of an ECS.                                                                                                                                                             |
+   |                       |                                        |                                                                                                                                                                                                      |
+   |                       |                                        | If there are multiple NICs, only the IP address of the primary NIC is displayed.                                                                                                                     |
+   +-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | EC2                   | /meta-data/placement/availability-zone | Displays the AZ accommodating an ECS.                                                                                                                                                                |
+   +-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | EC2                   | /meta-data/public-ipv4                 | Displays the EIP bound to an ECS.                                                                                                                                                                    |
+   |                       |                                        |                                                                                                                                                                                                      |
+   |                       |                                        | If there are multiple NICs, only the EIP of the primary NIC is displayed.                                                                                                                            |
+   +-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | EC2                   | /meta-data/public-keys/0/openssh-key   | Displays the public key of an ECS.                                                                                                                                                                   |
+   +-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | EC2                   | /user-data                             | Displays ECS user data.                                                                                                                                                                              |
+   +-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | EC2                   | /meta-data/security-groups             | Displays the security group to which an ECS belongs.                                                                                                                                                 |
+   +-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 
-.. _ENUSTOPIC0042400609table2373623012315:
+.. _en-us_topic_0042400609__table2373623012315:
 
 .. table:: **Table 2** Metadata key fields
 
-   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter             | Type                  | Description                                                                                                                             |
-   +=======================+=======================+=========================================================================================================================================+
-   | uuid                  | String                | Specifies an ECS ID.                                                                                                                    |
-   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | availability_zone     | String                | Specifies the AZ where an ECS locates.                                                                                                  |
-   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | meta                  | Dict                  | Specifies the metadata information, including the image name, image ID, and VPC ID.                                                     |
-   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | hostname              | String                | Specifies the name of the host accommodating an ECS.                                                                                    |
-   |                       |                       |                                                                                                                                         |
-   |                       |                       | To remove the suffix **.novalocal** from an ECS, see:                                                                                   |
-   |                       |                       |                                                                                                                                         |
-   |                       |                       | `Is an ECS Hostname with Suffix .novalocal Normal? <../../faqs/ecs_management/is_an_ecs_hostname_with_suffix_.novalocal_normal.html>`__ |
-   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                         |
+   +=======================+=======================+=====================================================================================+
+   | uuid                  | String                | Specifies an ECS ID.                                                                |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------+
+   | availability_zone     | String                | Specifies the AZ where an ECS locates.                                              |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------+
+   | meta                  | Dict                  | Specifies the metadata information, including the image name, image ID, and VPC ID. |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------+
+   | hostname              | String                | Specifies the name of the host accommodating an ECS.                                |
+   |                       |                       |                                                                                     |
+   |                       |                       | To remove the suffix **.novalocal** from an ECS, see:                               |
+   |                       |                       |                                                                                     |
+   |                       |                       | :ref:`Is an ECS Hostname with Suffix .novalocal Normal? <en-us_topic_0094874138>`   |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------+
+
+
+
+.. _en-us_topic_0042400609__section36703712181817:
 
 Prerequisites
 -------------
@@ -137,6 +155,10 @@ Prerequisites
       -  **Protocol**: **All**
       -  **Port**: **All**
       -  **Destination**: **0.0.0.0/0**
+
+
+
+.. _en-us_topic_0042400609__section29573104171554:
 
 Metadata (OpenStack Metadata API)
 ---------------------------------
@@ -185,6 +207,10 @@ Displays ECS metadata.
           "name": "ecs-ddd4-l00349281"
       }
 
+
+
+.. _en-us_topic_0042400609__section51339028173755:
+
 User Data (OpenStack Metadata API)
 ----------------------------------
 
@@ -216,12 +242,20 @@ Displays ECS user data. The value is configured only when you create an ECS. It 
 
       If user data was not passed to the ECS during ECS creation, the query result is 404.
 
+      
+
+.. _en-us_topic_0042400609__fig124601338153316:
+
       .. figure:: /_static/images/en-us_image_0166755236.png
          :alt: Click to enlarge
          :figclass: imgResize
-
+      
 
          **Figure 1** 404 Not Found
+
+
+
+.. _en-us_topic_0042400609__section374011381441:
 
 Network Data (OpenStack Metadata API)
 -------------------------------------
@@ -283,6 +317,10 @@ Displays information about all NICs attached to an ECS, including their DNS serv
           }
       }
 
+
+
+.. _en-us_topic_0042400609__section921029416614:
+
 Security Key (OpenStack Metadata API)
 -------------------------------------
 
@@ -312,6 +350,10 @@ Obtains temporary AKs and SKs.
 
    **Invoke-RestMethod http://169.254.169.254/openstack/latest/securitykey**
 
+
+
+.. _en-us_topic_0042400609__section1526795182322:
+
 User Data (EC2 Compatible API)
 ------------------------------
 
@@ -338,6 +380,10 @@ Displays ECS user data. The value is configured only when you create an ECS. It 
    .. code-block::
 
       ICAgICAgDQoiQSBjbG91ZCBkb2VzIG5vdCBrbm93IHdoeSBpdCBtb3ZlcyBpbiBqdXN0IHN1Y2ggYSBkaXJlY3Rpb24gYW5kIGF0IHN1Y2ggYSBzcGVlZC4uLkl0IGZlZWxzIGFuIGltcHVsc2lvbi4uLnRoaXMgaXMgdGhlIHBsYWNlIHRvIGdvIG5vdy4gQnV0IHRoZSBza3kga25vd3MgdGhlIHJlYXNvbnMgYW5kIHRoZSBwYXR0ZXJucyBiZWhpbmQgYWxsIGNsb3VkcywgYW5kIHlvdSB3aWxsIGtub3csIHRvbywgd2hlbiB5b3UgbGlmdCB5b3Vyc2VsZiBoaWdoIGVub3VnaCB0byBzZWUgYmV5b25kIGhvcml6b25zLiINCg0KLVJpY2hhcmQgQmFjaA==
+
+
+
+.. _en-us_topic_0042400609__section370431618033:
 
 Hostname (EC2 Compatible API)
 -----------------------------
@@ -366,6 +412,10 @@ Displays the name of the host accommodating an ECS. The .novalocal suffix will b
 
       vm-test.novalocal
 
+
+
+.. _en-us_topic_0042400609__section5678065318623:
+
 Instance Type (EC2 Compatible API)
 ----------------------------------
 
@@ -392,6 +442,10 @@ Displays an ECS flavor.
    .. code-block::
 
       s3.medium.1
+
+
+
+.. _en-us_topic_0042400609__section3229992918750:
 
 Local IPv4 (EC2 Compatible API)
 -------------------------------
@@ -420,6 +474,10 @@ Displays the fixed IP address of an ECS. If there are multiple NICs, only the IP
 
       192.1.1.2
 
+
+
+.. _en-us_topic_0042400609__section4087782618925:
+
 Availability Zone (EC2 Compatible API)
 --------------------------------------
 
@@ -446,6 +504,10 @@ Displays the AZ accommodating an ECS.
    .. code-block::
 
       az1.dc1
+
+
+
+.. _en-us_topic_0042400609__section5999198518129:
 
 Public IPv4 (EC2 Compatible API)
 --------------------------------
@@ -474,6 +536,10 @@ Displays the EIP bound to an ECS. If there are multiple NICs, only the EIP of th
 
       46.1.1.2
 
+
+
+.. _en-us_topic_0042400609__section51581190181532:
+
 Public Keys (EC2 Compatible API)
 --------------------------------
 
@@ -501,9 +567,11 @@ Displays the public key of an ECS.
 
       ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDI5Fw5k8Fgzajn1zJwLoV3+wMP+6CyvsSiIc/hioggSnYu/AD0Yqm8vVO0kWlun1rFbdO+QUZKyVr/OPUjQSw4SRh4qsTKf/+eFoWTjplFvd1WCBZzS/WRenxIwR00KkczHSJro763+wYcwKieb4eKRxaQoQvoFgVjLBULXAjH4eKoKTVNtMXAvPP9aMy2SLgsJNtMb9ArfziAiblQynq7UIfLnN3VclzPeiWrqtzjyOp6CPUXnL0lVPTvbLe8sUteBsJZwlL6K4i+Y0lf3ryqnmQgC21yW4Dzu+kwk8FVT2MgWkCwiZd8gQ/+uJzrJFyMfUOBIklOBfuUENIJUhAB Generated-by-Nova
 
+
+
+.. _en-us_topic_0042400609__section63251811173020:
+
 Helpful Links
 -------------
 
-`Why Can't My Linux ECS Obtain Metadata? <../../faqs/network_configurations/why_cant_my_linux_ecs_obtain_metadata.html>`__
-
-
+:ref:`Why Can't My Linux ECS Obtain Metadata? <en-us_topic_0000001138811177>`

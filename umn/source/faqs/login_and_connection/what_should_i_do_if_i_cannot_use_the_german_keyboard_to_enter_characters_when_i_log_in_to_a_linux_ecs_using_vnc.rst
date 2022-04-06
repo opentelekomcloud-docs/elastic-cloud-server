@@ -1,5 +1,11 @@
+.. _en-us_topic_0030932496:
+
 What Should I Do If I Cannot Use the German Keyboard to Enter Characters When I Log In to a Linux ECS Using VNC?
 ================================================================================================================
+
+
+
+.. _en-us_topic_0030932496__section37703913520:
 
 Changing the OS Keyboard Language
 ---------------------------------
@@ -12,7 +18,11 @@ Run the following command to change the OS keyboard language:
 
 For example, if the name of a German keyboard mapping file is **de**, run the **loadkeys de** command.
 
-For instructions about how to configure the keyboard language for a Linux ECS, see `Login Using VNC <../../instances/logging_in_to_a_linux_ecs/login_using_vnc.html>`__.
+For instructions about how to configure the keyboard language for a Linux ECS, see :ref:`Login Using VNC <en-us_topic_0093263550>`.
+
+
+
+.. _en-us_topic_0030932496__section4200153819516:
 
 Procedure
 ---------
@@ -52,5 +62,3 @@ Procedure
 -  For ECSs running CentOS 7, when **Caps Lock** is enabled, the following characters cannot be entered normally: Ö Ä Ü
 
    To enter these characters, hold **Shift** and press the letter key on the keyboard.
-
-

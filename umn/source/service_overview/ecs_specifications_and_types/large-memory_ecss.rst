@@ -1,5 +1,11 @@
+.. _en-us_topic_0038024694:
+
 Large-Memory ECSs
 =================
+
+
+
+.. _en-us_topic_0038024694__section25374905172644:
 
 Overview
 --------
@@ -14,12 +20,16 @@ Large-memory ECSs provide an even larger amount of memory than memory-optimized 
 
    E3 ECSs: OLAP and OLTP applications with hyper-threading enabled
 
+
+
+.. _en-us_topic_0038024694__section60740876172648:
+
 Specifications
 --------------
 
 
 
-.. _ENUSTOPIC0038024694table990906134813:
+.. _en-us_topic_0038024694__table990906134813:
 
 .. table:: **Table 1** E3 ECS specifications
 
@@ -30,6 +40,10 @@ Specifications
    +----------------+-------+--------------+------------------------------------+----------------------+-----------------+---------------------+--------------------------------+
    | e3.14xlarge.12 | 56    | 696          | 25/25                              | 500                  | 16              | KVM                 |                                |
    +----------------+-------+--------------+------------------------------------+----------------------+-----------------+---------------------+--------------------------------+
+
+
+
+.. _en-us_topic_0038024694__section3320087010555:
 
 Notes
 -----
@@ -44,9 +58,11 @@ Notes
 
 -  E3 ECSs can use ultra-high I/O EVS disks as the system disk and data disks.
 
--  The primary and extension NICs of a large-memory ECS have specified application scenarios. For details, see `Table 2 <#enustopic0038024694table1642803151326>`__. 
+-  The primary and extension NICs of a large-memory ECS have specified application scenarios. For details, see :ref:`Table 2 <en-us_topic_0038024694__table1642803151326>`.
 
-.. _ENUSTOPIC0038024694table1642803151326:
+   
+
+.. _en-us_topic_0038024694__table1642803151326:
 
    .. table:: **Table 2** Application scenarios of the NICs of a large-memory ECS
 
@@ -58,7 +74,7 @@ Notes
       | Extension NIC | Horizontal layer 2 communication | To improve network performance, you can set the MTU of an extension NIC to **8888**. |
       +---------------+----------------------------------+--------------------------------------------------------------------------------------+
 
--  An ECS can have a maximum of 60 attached disks, including the system disk. For details about constraints, see `Can I Attach Multiple Disks to an ECS? <../../faqs/disk_management/can_i_attach_multiple_disks_to_an_ecs.html>`__
+-  An ECS can have a maximum of 60 attached disks, including the system disk. For details about constraints, see :ref:`Can I Attach Multiple Disks to an ECS? <en-us_topic_0018073215>`
 
    An example is provided as follows:
 
@@ -69,6 +85,4 @@ Notes
 
    .. note::
 
-      The maximum number of disks attached to an existing large-memory ECS remains unchanged. To attach 60 disks, enable advanced disk. For details, see `Enabling Advanced Disk <../../evs_disks/enabling_advanced_disk.html>`__.
-
-
+      The maximum number of disks attached to an existing large-memory ECS remains unchanged. To attach 60 disks, enable advanced disk. For details, see :ref:`Enabling Advanced Disk <en-us_topic_0122307169>`.

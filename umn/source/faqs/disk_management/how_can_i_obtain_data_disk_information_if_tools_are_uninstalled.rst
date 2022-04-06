@@ -1,3 +1,5 @@
+.. _en-us_topic_0029806525:
+
 How Can I Obtain Data Disk Information If Tools Are Uninstalled?
 ================================================================
 
@@ -32,5 +34,3 @@ If you uninstall Tools from a Linux ECS in a non-PVOPS system, data disks cannot
 #. Select the detached data disk and click **Attach** in the **Operation** column. On the **Attach Disk** page, click the new ECS, select a device name, and click **OK** to attach the data disk to the new ECS.
 
    Manually refresh the EVS list. The data disk is attached to the new ECS once the **Status** value changes to **In-use**. You can then log in to the management console and view information about the data disk of the new ECS.
-
-

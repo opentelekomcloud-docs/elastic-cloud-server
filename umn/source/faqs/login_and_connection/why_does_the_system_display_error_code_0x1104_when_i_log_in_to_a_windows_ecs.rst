@@ -1,10 +1,20 @@
+.. _en-us_topic_0264235942:
+
 Why Does the System Display Error Code 0x1104 When I Log In to a Windows ECS?
 =============================================================================
+
+
+
+.. _en-us_topic_0264235942__en-us_topic_0138293293_section156431143115:
 
 Symptom
 -------
 
 The system displays an error message indicating that a protocol error (code: 0x1104) is detected when you use MSTSC to access an ECS running Windows Server 2008.
+
+
+
+.. _en-us_topic_0264235942__en-us_topic_0138293293_fig7560131184912:
 
 .. figure:: /_static/images/en-us_image_0288997598.png
    :alt: Click to enlarge
@@ -13,6 +23,10 @@ The system displays an error message indicating that a protocol error (code: 0x1
 
    **Figure 1** Protocol error (code: 0x1104)
 
+
+
+.. _en-us_topic_0264235942__en-us_topic_0138293293_section12863194019215:
+
 Possible Causes
 ---------------
 
@@ -20,6 +34,10 @@ Possible Causes
 -  The firewall on the ECS is disabled.
 -  Port 3389 on the ECS is used by other processes.
 -  The Remote Desktop Session Host is incorrectly configured.
+
+
+
+.. _en-us_topic_0264235942__en-us_topic_0138293293_section912415446217:
 
 Solution
 --------
@@ -50,6 +68,10 @@ Solution
 
       **netstat -ano \|findstr: 3389**
 
+      
+
+.. _en-us_topic_0264235942__en-us_topic_0138293293_fig1562219275192:
+
       .. figure:: /_static/images/en-us_image_0288997604.png
          :alt: Click to enlarge
          :figclass: imgResize
@@ -57,13 +79,17 @@ Solution
 
          **Figure 2** Checking port 3389
 
-      As shown in Figure 2, port 3389 is used by the process with ID of 4.
+      As shown in :ref:`Figure 2 <en-us_topic_0264235942__en-us_topic_0138293293_fig1562219275192>`, port 3389 is used by the process with ID of 4.
 
    b. Open Task Manager and find the process with ID of 4 is the System process.
 
    c. Generally, the IIS and SQL Server run as the System process. Run the following HTTP command for further check.
 
       **netsh http show servicestate**
+
+      
+
+.. _en-us_topic_0264235942__en-us_topic_0138293293_fig16426409265:
 
       .. figure:: /_static/images/en-us_image_0288997606.png
          :alt: Click to enlarge
@@ -90,6 +116,10 @@ Solution
 
    d. Choose **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Remote Desktop Services**.
 
+      
+
+.. _en-us_topic_0264235942__en-us_topic_0138293293_fig1072317112254:
+
       .. figure:: /_static/images/en-us_image_0288997608.png
          :alt: Click to enlarge
          :figclass: imgResize
@@ -99,6 +129,10 @@ Solution
 
    e. **Remote Desktop Session Host** > **Security**.
 
+      
+
+.. _en-us_topic_0264235942__en-us_topic_0138293293_fig64299268259:
+
       .. figure:: /_static/images/en-us_image_0288997610.png
          :alt: Click to enlarge
          :figclass: imgResize
@@ -107,6 +141,10 @@ Solution
          **Figure 5** Remote (RDP) Connection requires the use of the specified security layer
 
    f. Set **Require use of specific security layer for remote (RDP) connections** to **Enabled** and **Security layer** to **RDP**.
+
+      
+
+.. _en-us_topic_0264235942__en-us_topic_0138293293_fig6816237202719:
 
       .. figure:: /_static/images/en-us_image_0288997612.png
          :alt: Click to enlarge
@@ -123,14 +161,16 @@ Solution
 
       **gpupdate**
 
+      
+
+.. _en-us_topic_0264235942__en-us_topic_0138293293_fig1129272819299:
+
       .. figure:: /_static/images/en-us_image_0288997614.png
          :alt: Click to enlarge
          :figclass: imgResize
       
 
          **Figure 7** Updating the group policy
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0288997600.png
    :class: imgResize

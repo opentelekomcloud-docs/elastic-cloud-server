@@ -1,10 +1,20 @@
+.. _en-us_topic_0264235948:
+
 Why Am I Seeing an Error Message That Says User Account is not Authorized for Remote Login When I Log In to a Windows ECS?
 ==========================================================================================================================
+
+
+
+.. _en-us_topic_0264235948__en-us_topic_0173606024_section472713533172:
 
 Symptom
 -------
 
 An error message is displayed indicating that the connection is denied because the user account is not authorized for remote login.
+
+
+
+.. _en-us_topic_0264235948__en-us_topic_0173606024_en-us_topic_0120795668_fig1256612592310:
 
 .. figure:: /_static/images/en-us_image_0288997346.png
    :alt: Click to enlarge
@@ -13,10 +23,18 @@ An error message is displayed indicating that the connection is denied because t
 
    **Figure 1** Error message
 
+
+
+.. _en-us_topic_0264235948__en-us_topic_0173606024_section162024181815:
+
 Possible Causes
 ---------------
 
 The remote desktop connection permissions have been incorrectly configured.
+
+
+
+.. _en-us_topic_0264235948__en-us_topic_0173606024_section2388160183:
 
 Solution
 --------
@@ -26,6 +44,10 @@ Solution
    a. In the **Run** dialog box, enter **secpol.msc** and click **OK** to open **Local Security Policy**.
 
    b. Choose **Local Policies** > **User Rights Assignment** > **Allow log on through Remote Desktop Services**.
+
+      
+
+.. _en-us_topic_0264235948__en-us_topic_0173606024_fig1890412198313:
 
       .. figure:: /_static/images/en-us_image_0288997347.png
          :alt: Click to enlarge
@@ -37,6 +59,10 @@ Solution
    c. Check whether there are user groups or users that have been granted the remote login permission.
 
       If not, add required users or groups.
+
+      
+
+.. _en-us_topic_0264235948__en-us_topic_0173606024_fig1492115211134:
 
       .. figure:: /_static/images/en-us_image_0288997348.png
          :alt: **Figure 3** Allow log on through Remote Desktop Services properties
@@ -54,6 +80,10 @@ Solution
 
    d. In the displayed dialog box, click the **Member Of** tab. Ensure that the user belongs to the user group that is assigned with the remote login permission in 2.b.
 
+      
+
+.. _en-us_topic_0264235948__en-us_topic_0173606024_fig37037542514:
+
       .. figure:: /_static/images/en-us_image_0288997349.png
          :alt: Click to enlarge
          :figclass: imgResize
@@ -66,6 +96,10 @@ Solution
    a. In the **Run** dialog box, enter **tsconfig.msc** and click **OK** to open **Remote Desktop Session Host Configuration**.
 
    b. Double-click **RDP-Tcp** or other connections added by a user under **Connections** and click the **Security** tab.
+
+      
+
+.. _en-us_topic_0264235948__en-us_topic_0173606024_fig76712011540:
 
       .. figure:: /_static/images/en-us_image_0288997350.png
          :alt: Click to enlarge
@@ -83,5 +117,3 @@ Solution
       **net stop TermService**
 
       **net start TermService**
-
-

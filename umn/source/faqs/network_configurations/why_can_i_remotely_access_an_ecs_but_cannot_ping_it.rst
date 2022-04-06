@@ -1,15 +1,29 @@
+.. _en-us_topic_0018078505:
+
 Why Can I Remotely Access an ECS But Cannot Ping It?
 ====================================================
+
+
+
+.. _en-us_topic_0018078505__section112601346131:
 
 Symptom
 -------
 
 You can remotely access an ECS but when you ping the EIP bound to the ECS, the ping operation fails.
 
+
+
+.. _en-us_topic_0018078505__section20883121316810:
+
 Possible Causes
 ---------------
 
 A desired inbound rule is not added for the security group, and ICMP is not enabled.
+
+
+
+.. _en-us_topic_0018078505__section77204542:
 
 Solution
 --------
@@ -30,5 +44,3 @@ Solution
 
    -  **Protocol**: **ICMP**
    -  **Source**: **IP address** **0.0.0.0/0**
-
-

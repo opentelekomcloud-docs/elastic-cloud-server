@@ -1,5 +1,11 @@
+.. _en-us_topic_0031523135:
+
 Changing the OS
 ===============
+
+
+
+.. _en-us_topic_0031523135__section44633721195915:
 
 Scenarios
 ---------
@@ -10,12 +16,20 @@ If the OS running on an ECS cannot meet service requirements, change the ECS OS.
 
 The public cloud supports changing between image types (public images, private images, and shared images) and between OSs. You can change your OS by changing your ECS image.
 
+
+
+.. _en-us_topic_0031523135__section21723173114530:
+
 Constraints
 -----------
 
 -  The EVS disk quota must be greater than 0.
 -  H2 ECSs do not support OS change.
 -  If an ECS OS is to be changed using a full-ECS image, the ECS system disk can be encrypted.
+
+
+
+.. _en-us_topic_0031523135__section34193483165818:
 
 Notes
 -----
@@ -32,11 +46,15 @@ Notes
 -  Do not perform any operations on the ECS immediately after its OS is changed. Wait for several minutes until the system successfully injects the password or key. Otherwise, the injection may fail, and the ECS cannot be logged in to.
 -  After the OS is changed, the password for logging in to the ECS is reset. To retrieve the password, perform the following operations:
 
-   -  For a Linux ECS, log in to it using the key and set a new password. For instructions about how to log in to an ECS using a key pair, see `Login Using an SSH Key <../../instances/logging_in_to_a_linux_ecs/login_using_an_ssh_key.html>`__.
-   -  For a Windows ECS, retrieve the password by following the instructions provided in `Obtaining the Password for Logging In to a Windows ECS <../../passwords_and_key_pairs/obtaining_the_password_for_logging_in_to_a_windows_ecs.html>`__.
+   -  For a Linux ECS, log in to it using the key and set a new password. For instructions about how to log in to an ECS using a key pair, see :ref:`Login Using an SSH Key <en-us_topic_0017955380>`.
+   -  For a Windows ECS, retrieve the password by following the instructions provided in :ref:`Obtaining the Password for Logging In to a Windows ECS <en-us_topic_0031107266>`.
 
 -  The system disk capacity of an ECS with OS changed may change because the system disk capacity specified by the image of the changed OS may be changed.
 -  You can choose to encrypt the system disk of an ECS during OS change.
+
+
+
+.. _en-us_topic_0031523135__section1852122261012:
 
 Notes on Change Between Different OSs
 -------------------------------------
@@ -49,6 +67,10 @@ Change between different OSs indicates that the OS is changed between Windows an
    .. note::
 
       You are not advised to change Linux to Window on the cloud platform. The reason is as follows: If there are LVM partitions on the Linux ECS, these partitions may fail after the OS is changed to Windows.
+
+
+
+.. _en-us_topic_0031523135__section10065433195938:
 
 Prerequisites
 -------------
@@ -63,6 +85,10 @@ Prerequisites
    -  If a local image file is required, make sure that the image file has been imported to the cloud platform and registered as a private image.
    -  If a private image from another region is required, make sure that the image has been copied.
    -  If a private image from another user account is required, make sure that the image has been shared with you.
+
+
+
+.. _en-us_topic_0031523135__section208284422018:
 
 Procedure
 ---------
@@ -79,11 +105,11 @@ Procedure
 
 #. Modify related ECS parameters, such as **Image Type** and **Image**, based on service requirements.
 
-   For more details, see `Creating an ECS <../../getting_started/creating_an_ecs/index.html>`__.
+   For more details, see :ref:`Creating an ECS <en-us_topic_0021831611>`.
 
 #. (Optional) Select the **Encryption** option to encrypt the system disk during OS change.
 
-   To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permission, assign the KMS access permissions to EVS. If you do not have the permission, contact the user having the security administrator rights to assign the KMS access permissions. For more details, see `Can All Users Use the Encryption Feature? <../../faqs/disk_management/can_all_users_use_the_encryption_feature.html>`__
+   To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permission, assign the KMS access permissions to EVS. If you do not have the permission, contact the user having the security administrator rights to assign the KMS access permissions. For more details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
 
    Encryption parameters are as follows:
 
@@ -93,7 +119,7 @@ Procedure
    -  **Xrole Name: EVSAccessKMS**: specifies that permissions have been assigned to EVS to obtain KMS keys for encrypting or decrypting EVS disks.
    -  **KMS Key ID**: specifies the ID of the key used by the encrypted data disk.
 
-#. (Optional) Select a **License Type** (**Use license from the system** or **Bring your own license (BYOL)**) if the changed OS running on your ECS is billed. For more details, see `License Type <../../service_overview/security/license_type.html>`__.
+#. (Optional) Select a **License Type** (**Use license from the system** or **Bring your own license (BYOL)**) if the changed OS running on your ECS is billed. For more details, see :ref:`License Type <en-us_topic_0046566932>`.
 
    The following OSs are billed:
 
@@ -115,6 +141,10 @@ Procedure
 
       A temporary ECS is created during the OS changing process. After the process is complete, this ECS will be automatically deleted.
 
+
+
+.. _en-us_topic_0031523135__section6296573110114:
+
 Follow-up Procedure
 -------------------
 
@@ -124,7 +154,7 @@ Follow-up Procedure
 
       It is a good practice to back up the **/etc/fstab** file before writing data into it.
 
-      To enable automatic partition mounting upon system startup, see `Initializing a Linux Data Disk (fdisk) <../../getting_started/initializing_evs_data_disks/initializing_a_linux_data_disk_fdisk.html>`__.
+      To enable automatic partition mounting upon system startup, see :ref:`Initializing a Linux Data Disk (fdisk) <en-us_topic_0085634797>`.
 
    #. Mount the partition so that you can use the data disk.
 
@@ -136,8 +166,6 @@ Follow-up Procedure
 
 -  If the OS change is unsuccessful, perform steps 3 to 10 again to retry changing the OS again.
 -  If the second OS change attempt is unsuccessful, contact customer service for manual recovery at the backend.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

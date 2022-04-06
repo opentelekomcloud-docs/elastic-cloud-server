@@ -1,5 +1,11 @@
+.. _en-us_topic_0032398121:
+
 How Do I Handle Error Messages Displayed on the Management Console?
 ===================================================================
+
+
+
+.. _en-us_topic_0032398121__section4858569817051:
 
 Symptom
 -------
@@ -9,6 +15,10 @@ This section helps you resolve the following issues:
 -  An error message was displayed on the management console after you performed ECS-related operations.
 -  An error code was displayed after you used an ECS API (see *Elastic Cloud Server API Reference*).
 
+
+
+.. _en-us_topic_0032398121__section5832519917307:
+
 Background
 ----------
 
@@ -17,14 +27,18 @@ After you perform ECS-related operations on the management console, the system d
 -  If the operation request is executed, the system automatically clears the task prompt.
 -  If an error occurs during the request execution, the system displays an error code and its description in the taskbar.
 
+
+
+.. _en-us_topic_0032398121__section32147499165439:
+
 Solution
 --------
 
-If an error occurs, check the error code and perform the corresponding operations listed in `Table 1 <#enustopic0032398121table52205309173837>`__.
+If an error occurs, check the error code and perform the corresponding operations listed in :ref:`Table 1 <en-us_topic_0032398121__table52205309173837>`.
 
 
 
-.. _ENUSTOPIC0032398121table52205309173837:
+.. _en-us_topic_0032398121__table52205309173837:
 
 .. table:: **Table 1** Error codes and solution suggestions
 
@@ -65,5 +79,3 @@ If an error occurs, check the error code and perform the corresponding operation
    +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
    | Other error codes     | Other error messages                                                                                                                  | Initiate the request again. If the error persists, record the returned error code and contact customer service for troubleshooting. |
    +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-
-

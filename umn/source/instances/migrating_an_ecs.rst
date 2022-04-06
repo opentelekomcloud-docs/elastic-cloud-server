@@ -1,5 +1,11 @@
+.. _en-us_topic_0133365988:
+
 Migrating an ECS
 ================
+
+
+
+.. _en-us_topic_0133365988__section17761164816565:
 
 Scenarios
 ---------
@@ -10,12 +16,20 @@ ECSs can be migrated between DeHs and public resource pools.
 -  An ECS created on a DeH can be migrated to a public resource pool.
 -  An ECS deployed in a public resource pool can be migrated to a DeH.
 
+
+
+.. _en-us_topic_0133365988__section1213835718599:
+
 Notes
 -----
 
 -  Only a stopped ECS can be migrated.
 -  CBR and CSBS backups are not affected by cold migrations.
 -  ECS IDs remain unchanged after a cold migration.
+
+
+
+.. _en-us_topic_0133365988__section12638144614015:
 
 Procedure
 ---------
@@ -39,8 +53,6 @@ Procedure
 #. Click **OK**.
 
    The ECS is migrated as required.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

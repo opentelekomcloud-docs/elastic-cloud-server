@@ -1,5 +1,11 @@
+.. _en-us_topic_0093153741:
+
 Why Is the Memory of an ECS Obtained by Running the **free** Command Inconsistent with the Actual Memory?
 =========================================================================================================
+
+
+
+.. _en-us_topic_0093153741__section12699135717311:
 
 Symptom
 -------
@@ -63,6 +69,10 @@ Run the **dmidecode -t memory** command to check the actual memory configured fo
 
 The memory in the command output is the same as that configured during ECS creation.
 
+
+
+.. _en-us_topic_0093153741__section6131161331214:
+
 Possible Causes
 ---------------
 
@@ -75,5 +85,3 @@ Therefore, the memory obtained by running the **free -m** command is less than t
 .. note::
 
    This is a normal phenomenon even for physical servers.
-
-

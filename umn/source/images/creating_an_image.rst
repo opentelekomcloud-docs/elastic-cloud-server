@@ -1,5 +1,11 @@
+.. _en-us_topic_0101604508:
+
 Creating an Image
 =================
+
+
+
+.. _en-us_topic_0101604508__section87874817127:
 
 Scenarios
 ---------
@@ -11,6 +17,10 @@ You can use an existing ECS to create a system disk image, data disk image, and 
 -  Full-ECS image: contains all the data of an ECS, including the data on the data disks attached to the ECS. A full-ECS image can be used to rapidly create ECSs with service data.
 
 You can use a private image to change the OS. For instructions about how to create a private image, see *Image Management Service User Guide*.
+
+
+
+.. _en-us_topic_0101604508__section1685231310443:
 
 Procedure
 ---------
@@ -26,8 +36,6 @@ Procedure
    -  **Name**: Customize your image name.
 
 #. Click **Create Now**.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

@@ -1,3 +1,5 @@
+.. _en-us_topic_0048642616:
+
 Cloud-Init
 ==========
 
@@ -6,6 +8,10 @@ Cloud-Init is an open-source cloud initialization program, which initializes som
 All standard (Standard_xxx) and enterprise (Enterprise_xxx) images support Cloud-Init. Only certain community images (Community_xxx) do not support it.
 
 Using Cloud-Init to initialize your ECSs will affect your ECS, IMS, and AS services.
+
+
+
+.. _en-us_topic_0048642616__section1150469610136:
 
 Impact on IMS
 -------------
@@ -19,18 +25,26 @@ After Cloud-Init or Cloudbase-Init is installed in an image, Cloud-Init or Cloud
 
 For more information, see *Image Management Service User Guide*.
 
+
+
+.. _en-us_topic_0048642616__section2746706105950:
+
 Impact on ECS
 -------------
 
--  When creating an ECS, if the selected image supports Cloud-Init, you can use the **User Data** function to specify custom configuration, such as ECS login password to the ECS. Such custom settings will take effect upon ECS initialization. `Passing User Data to ECSs <../../instances/obtaining_metadata_and_passing_user_data/passing_user_data_to_ecss.html>`__\ For details, see `Passing User Data to ECSs <../../instances/obtaining_metadata_and_passing_user_data/passing_user_data_to_ecss.html>`__.
+-  When creating an ECS, if the selected image supports Cloud-Init, you can use the **User Data** function to specify custom configuration, such as ECS login password to the ECS. Such custom settings will take effect upon ECS initialization. :ref:`Passing User Data to ECSs <en-us_topic_0032380449>`\ For details, see :ref:`Passing User Data to ECSs <en-us_topic_0032380449>`.
 -  If Cloud-Init is supported, ECSs do not support password authentication anymore. All newly created ECSs use key pair authentication. This change will influence your ECS logins. For details, see the following sections:
 
-   -  `Login Overview <../../instances/logging_in_to_a_linux_ecs/login_overview.html>`__
-   -  `What Is the cloudbase-init Account in Windows ECSs Used for? <../../faqs/passwords_and_key_pairs/what_is_the_cloudbase-init_account_in_windows_ecss_used_for.html>`__
-   -  `Why Does the Login to My Linux ECS Using a Key File Fail? <../../faqs/passwords_and_key_pairs/why_does_the_login_to_my_linux_ecs_using_a_key_file_fail.html>`__
-   -  `Why Does the System Display a Message Indicating that the Password for Logging In to a Windows ECS Cannot Be Viewed? <../../faqs/login_and_connection/why_does_the_system_display_a_message_indicating_that_the_password_for_logging_in_to_a_windows_ecs_cannot_be_viewed.html>`__
+   -  :ref:`Login Overview <en-us_topic_0013771089>`
+   -  :ref:`What Is the cloudbase-init Account in Windows ECSs Used for? <en-us_topic_0037633087>`
+   -  :ref:`Why Does the Login to My Linux ECS Using a Key File Fail? <en-us_topic_0031734664>`
+   -  :ref:`Why Does the System Display a Message Indicating that the Password for Logging In to a Windows ECS Cannot Be Viewed? <en-us_topic_0031736846>`
 
--  If Cloud-Init is supported, you can view and use metadata to configure and manage running ECSs. `Obtaining Metadata <../../instances/obtaining_metadata_and_passing_user_data/obtaining_metadata.html>`__\ For more information, see `Obtaining Metadata <../../instances/obtaining_metadata_and_passing_user_data/obtaining_metadata.html>`__.
+-  If Cloud-Init is supported, you can view and use metadata to configure and manage running ECSs. :ref:`Obtaining Metadata <en-us_topic_0042400609>`\ For more information, see :ref:`Obtaining Metadata <en-us_topic_0042400609>`.
+
+
+
+.. _en-us_topic_0048642616__section4202207210118:
 
 Impact on AS
 ------------
@@ -40,6 +54,10 @@ Impact on AS
 -  For an existing AS configuration, if its private image does not have Cloud-Init or Cloudbase-Init installed, the login mode of the ECSs created in the AS group where the AS configuration takes effect may fail to take effect.
 
    To resolve this issue, see "How Does Cloud-Init Affect the AS Service?" in *Auto Scaling User Guide*.
+
+
+
+.. _en-us_topic_0048642616__section44995720162019:
 
 Notes
 -----
@@ -58,5 +76,3 @@ Notes
       -  **Protocol**: **All**
       -  **Port**: **All**
       -  **Destination**: **0.0.0.0/0**
-
-

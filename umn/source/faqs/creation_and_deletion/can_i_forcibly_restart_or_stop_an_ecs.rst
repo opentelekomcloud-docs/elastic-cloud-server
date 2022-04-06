@@ -1,3 +1,5 @@
+.. _en-us_topic_0029792884:
+
 Can I Forcibly Restart or Stop an ECS?
 ======================================
 
@@ -16,8 +18,6 @@ Yes. If an ECS remains in the **Restarting** or **Stopping** state for over 30 m
 #. Select **Forcibly restart the preceding ECSs** or **Forcibly stop the preceding ECSs**.
 
 #. Click **OK**.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

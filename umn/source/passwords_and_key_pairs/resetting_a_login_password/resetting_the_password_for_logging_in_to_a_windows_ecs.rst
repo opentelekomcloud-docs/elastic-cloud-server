@@ -1,5 +1,11 @@
+.. _en-us_topic_0021426802:
+
 Resetting the Password for Logging In to a Windows ECS
 ======================================================
+
+
+
+.. _en-us_topic_0021426802__section17131859112916:
 
 Scenarios
 ---------
@@ -10,6 +16,10 @@ You can reset your ECS password if:
 -  The password has expired.
 
 The method described in this section can only be used to change the password of a local Windows account, but not the password of a domain account.
+
+
+
+.. _en-us_topic_0021426802__section1344819634213:
 
 Prerequisites
 -------------
@@ -33,6 +43,10 @@ Prerequisites
    To obtain the ntfs-3g software package, log in at `www.tuxera.com/community/open-source-ntfs-3g/ <http://www.tuxera.com/community/open-source-ntfs-3g/>`__.
 
    To obtain the chntpw software package, log in at https://www.chntpw.com/download/.
+
+
+
+.. _en-us_topic_0021426802__section1052621215437:
 
 Procedure
 ---------
@@ -123,13 +137,13 @@ Procedure
 
    b. Click **Start**. Enter **CMD** in the search box and press **Enter**.
 
-   c. Run the following command to change the password (the new password must meet the requirements described in `Table 1 <#enustopic0021426802enustopic0021426802table4381109318958>`__):
+   c. Run the following command to change the password (the new password must meet the requirements described in :ref:`Table 1 <en-us_topic_0021426802__en-us_topic_0021426802_table4381109318958>`):
 
       **net user** **Administrator** *New password*
 
       
 
-.. _ENUSTOPIC0021426802enustopic0021426802table4381109318958:
+.. _en-us_topic_0021426802__en-us_topic_0021426802_table4381109318958:
 
       .. table:: **Table 1** Password complexity requirements
 
@@ -147,8 +161,6 @@ Procedure
          |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                               |
          |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                               |
          +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

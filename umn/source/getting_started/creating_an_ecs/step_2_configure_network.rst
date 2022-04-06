@@ -1,5 +1,11 @@
+.. _en-us_topic_0163572590:
+
 Step 2: Configure Network
 =========================
+
+
+
+.. _en-us_topic_0163572590__section13330112505510:
 
 Network Configurations
 ----------------------
@@ -70,5 +76,3 @@ Network Configurations
       An existing EIP is assigned for the ECS. When using an existing EIP, you are not allowed to create ECSs in a batch.
 
 #. Click **Next: Configure Advanced Settings**.
-
-

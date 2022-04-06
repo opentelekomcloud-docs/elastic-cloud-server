@@ -1,5 +1,11 @@
+.. _en-us_topic_0093492520:
+
 Managing Virtual IP Addresses
 =============================
+
+
+
+.. _en-us_topic_0093492520__section040919146466:
 
 Scenarios
 ---------
@@ -7,6 +13,10 @@ Scenarios
 A virtual IP address provides the second IP address for one or more ECS NICs, improving high availability between the ECSs.
 
 One NIC can be bound with up to 10 virtual IP addresses, and one virtual IP address can be bound to up to 10 NICs. Multiple ECSs deployed to work in active/standby mode can be bound with the same virtual IP address for disaster recovery.
+
+
+
+.. _en-us_topic_0093492520__section194113342460:
 
 Procedure
 ---------
@@ -30,8 +40,6 @@ Procedure
 #. Click **Bind to Instance** in the **Operation** column and select the target ECS name and the NIC to bind the virtual IP address to the ECS NIC.
 
    For more information about virtual IP addresses, see *Virtual Private Cloud User Guide*.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0093518909.png
 

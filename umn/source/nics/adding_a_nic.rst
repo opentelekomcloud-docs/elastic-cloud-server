@@ -1,10 +1,20 @@
+.. _en-us_topic_0093492518:
+
 Adding a NIC
 ============
+
+
+
+.. _en-us_topic_0093492518__section56491713122912:
 
 Scenarios
 ---------
 
 If multiple NICs are required by your ECS, you can add them to your ECS. To add a NIC to the ECS, perform the following operations:
+
+
+
+.. _en-us_topic_0093492518__section737852572918:
 
 Procedure
 ---------
@@ -23,6 +33,10 @@ Procedure
 
 #. Select the subnet and security group to be added.
 
+   
+
+.. _en-us_topic_0093492518__fig188071746111817:
+
    .. figure:: /_static/images/en-us_image_0093507600.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -34,6 +48,10 @@ Procedure
    -  **Private IP Address**: If you want to add a NIC with a specified IP address, enter an IP address into the **Private IP Address** field.
 
 #. Click **OK**.
+
+
+
+.. _en-us_topic_0093492518__section10882163016340:
 
 Follow-up Procedure
 -------------------
@@ -87,8 +105,6 @@ Some OSs cannot identify newly added NICs. In this case, you must manually activ
 
    -  If yes, no further action is required.
    -  If no, contact customer service.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

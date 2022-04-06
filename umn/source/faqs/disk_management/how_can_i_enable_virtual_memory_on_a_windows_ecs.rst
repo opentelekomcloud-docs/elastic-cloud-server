@@ -1,3 +1,5 @@
+.. _en-us_topic_0120795802:
+
 How Can I Enable Virtual Memory on a Windows ECS?
 =================================================
 
@@ -18,6 +20,10 @@ The operations described in this section are provided for the ECSs running Windo
 #. Click the **Advanced** tab and then **Settings** in the **Performance** pane.
 
    The **Performance Options** dialog box is displayed.
+
+   
+
+.. _en-us_topic_0120795802__fig862604114509:
 
    .. figure:: /_static/images/en-us_image_0120795956.png
       :alt: Click to enlarge
@@ -44,6 +50,10 @@ The operations described in this section are provided for the ECSs running Windo
 
       Considering **Memory.dmp** caused by blue screen of death (BSOD), you are advised to set **Initial size** to **16** and **Maximum size** to **4096**.
 
+   
+
+.. _en-us_topic_0120795802__fig68314916547:
+
    .. figure:: /_static/images/en-us_image_0120795935.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -54,5 +64,3 @@ The operations described in this section are provided for the ECSs running Windo
 #. Click **Set** and then **OK** to complete the configuration.
 
 #. Restart the ECS for the configuration to take effect.
-
-

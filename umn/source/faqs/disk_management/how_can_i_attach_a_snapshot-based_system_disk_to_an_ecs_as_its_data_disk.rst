@@ -1,15 +1,29 @@
+.. _en-us_topic_0152643976:
+
 How Can I Attach a Snapshot-based System Disk to an ECS as Its Data Disk?
 =========================================================================
+
+
+
+.. _en-us_topic_0152643976__section197654223381:
 
 Scenarios
 ---------
 
 To restore data, a system disk snapshot of ECS A is used to create disk A. Then, disk A is attached to ECS B as a data disk. However, after ECS B is restarted, data disk A may be attached as the root file system but not the system disk of ECS B. In such a case, the data of ECS A is contained in the root file system of ECS B.
 
+
+
+.. _en-us_topic_0152643976__section1441865134511:
+
 Possible Causes
 ---------------
 
 When Linux ECSs start, the root file systems to be mounted are identified by disk label but not UUID. However, system disk labels are the same, which may lead to a system disk attachment error.
+
+
+
+.. _en-us_topic_0152643976__section124901737203818:
 
 Solution
 --------
@@ -52,5 +66,3 @@ To do so, perform the following operations:
    **:wq**
 
 #. Restart the ECS for the modification to take effect.
-
-

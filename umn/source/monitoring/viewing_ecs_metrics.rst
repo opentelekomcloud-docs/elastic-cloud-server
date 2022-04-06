@@ -1,10 +1,20 @@
+.. _en-us_topic_0027371530:
+
 Viewing ECS Metrics
 ===================
+
+
+
+.. _en-us_topic_0027371530__section11121260224613:
 
 Scenarios
 ---------
 
 The public cloud platform provides Cloud Eye, which monitors the running statuses of your ECSs. You can obtain the monitoring metrics of each ECS on the management console.
+
+
+
+.. _en-us_topic_0027371530__section8439794224022:
 
 Prerequisites
 -------------
@@ -19,11 +29,15 @@ Prerequisites
 
 -  Alarm rules have been configured in Cloud Eye for the target ECS.
 
-   The monitoring data is unavailable for the ECSs without alarm rules configured in Cloud Eye. For details, see `Setting Alarm Rules <../monitoring/setting_alarm_rules.html>`__.
+   The monitoring data is unavailable for the ECSs without alarm rules configured in Cloud Eye. For details, see :ref:`Setting Alarm Rules <en-us_topic_0027371531>`.
 
 -  The target ECS has been properly running for at least 10 minutes.
 
    The monitoring data and graphics are available for a new ECS after the ECS runs for at least 10 minutes.
+
+
+
+.. _en-us_topic_0027371530__section44667294224513:
 
 Procedure
 ---------
@@ -43,8 +57,6 @@ Procedure
 #. In the ECS monitoring area, select a duration to view the monitoring data.
 
    You can view the monitoring data of the ECS in the last 1, 3, or 12 hours.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

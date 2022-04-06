@@ -1,15 +1,29 @@
+.. _en-us_topic_0032980085:
+
 Managing ECS Groups
 ===================
+
+
+
+.. _en-us_topic_0032980085__section33282082212946:
 
 Scenarios
 ---------
 
 An ECS group allows you to create ECSs on different physical servers, thereby improving service reliability. This function does not apply to existing ECSs. You cannot add existing ECSs to an ECS group.
 
+
+
+.. _en-us_topic_0032980085__section50994308215238:
+
 Notes
 -----
 
 An existing ECS cannot be added to an ECS group.
+
+
+
+.. _en-us_topic_0032980085__section5508038321333:
 
 Procedure
 ---------
@@ -30,14 +44,16 @@ Procedure
 
 #. Click **OK**.
 
+
+
+.. _en-us_topic_0032980085__section5656963010194:
+
 Follow-up Procedure
 -------------------
 
 Add an ECS to an ECS group only when creating the ECS.
 
 To do so, expand **Advanced Options** and select the target ECS group.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

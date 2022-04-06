@@ -1,5 +1,11 @@
+.. _en-us_topic_0163572592:
+
 Step 4: Confirm
 ===============
+
+
+
+.. _en-us_topic_0163572592__section11999172313116:
 
 Confirming the Order
 --------------------
@@ -14,6 +20,10 @@ Confirming the Order
 
 #. Confirm the configuration and click **Create Now**.
 
+
+
+.. _en-us_topic_0163572592__section71001031128:
+
 Follow-up Procedure
 -------------------
 
@@ -24,5 +34,3 @@ Follow-up Procedure
    -  ping -a *EIP*
    -  nslookup [-qt=ptr] *EIP*
    -  dig -x *EIP*
-
-

@@ -1,5 +1,11 @@
+.. _en-us_topic_0027157850:
+
 Enabling Internet Connectivity for an ECS Without an EIP
 ========================================================
+
+
+
+.. _en-us_topic_0027157850__section6427533194453:
 
 Scenarios
 ---------
@@ -10,11 +16,19 @@ To ensure platform security and conserve EIPs, EIPs are assigned only to specifi
 
    NAT Gateway is recommended, which provides both the SNAT and DNAT functions for your ECSs in a VPC and allows the ECSs to access or provide services accessible from the Internet.
 
+
+
+.. _en-us_topic_0027157850__section2608915610029:
+
 Prerequisites
 -------------
 
 -  A proxy ECS with an EIP bound is available.
 -  The IP address of the proxy ECS is in the same network and same security group as the ECSs that need to access the Internet.
+
+
+
+.. _en-us_topic_0027157850__section6907807103042:
 
 Linux Proxy ECS
 ---------------
@@ -37,7 +51,7 @@ In this example, the proxy ECS runs CentOS 6.5.
 
 #. Log in to the proxy ECS.
 
-   For more details, see `Login Overview <../instances/logging_in_to_a_linux_ecs/login_overview.html>`__.
+   For more details, see :ref:`Login Overview <en-us_topic_0013771089>`.
 
 #. Run the following command to check whether the proxy ECS can access the Internet:
 
@@ -116,7 +130,11 @@ In this example, the proxy ECS runs CentOS 6.5.
 
    **iptables -t nat --list**
 
-   SNAT has been configured if information similar to Figure 1 is displayed.
+   SNAT has been configured if information similar to :ref:`Figure 1 <en-us_topic_0027157850__fig27598108113959>` is displayed.
+
+   
+
+.. _en-us_topic_0027157850__fig27598108113959:
 
    .. figure:: /_static/images/en-us_image_0027174005.png
       :alt: Click to enlarge
@@ -146,8 +164,6 @@ In this example, the proxy ECS runs CentOS 6.5.
    For example, if the proxy ECS is in network segment 192.168.125.0, the subnet mask has 24 bits, and the private IP address is 192.168.125.4, run the following command:
 
    **iptables -t nat -D POSTROUTING -o eth0 -s 192.168.125.0/24 -j SNAT --to 192.168.125.4**
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

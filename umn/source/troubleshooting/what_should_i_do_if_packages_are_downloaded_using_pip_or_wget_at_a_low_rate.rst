@@ -1,10 +1,20 @@
+.. _en-us_topic_0107490388:
+
 What Should I Do If Packages Are Downloaded Using PIP or wget at a Low Rate?
 ============================================================================
+
+
+
+.. _en-us_topic_0107490388__section4323119112812:
 
 Symptom
 -------
 
 When a user runs the wget command to download software packages, the download rate is far less than the bandwidth.
+
+
+
+.. _en-us_topic_0107490388__fig17394493307:
 
 .. figure:: /_static/images/en-us_image_0107505891.png
    :alt: Click to enlarge
@@ -13,10 +23,18 @@ When a user runs the wget command to download software packages, the download ra
 
    **Figure 1** wget-based package downloading
 
+
+
+.. _en-us_topic_0107490388__section16898143618318:
+
 Possible Causes
 ---------------
 
 The official PIP website is accessed using HTTPS. Each time PIP is used to install a third-party Python module, the source code package must be downloaded at the official PIP website. Therefore, openssl packages are required.
+
+
+
+.. _en-us_topic_0107490388__section2477445336:
 
 Solution
 --------
@@ -24,5 +42,3 @@ Solution
 Run the following command to install openssl packages:
 
 **yum install openssl openssl-devel**
-
-

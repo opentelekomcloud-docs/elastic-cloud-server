@@ -1,5 +1,11 @@
+.. _en-us_topic_0076210995:
+
 How Can I Adjust System Disk Partitions?
 ========================================
+
+
+
+.. _en-us_topic_0076210995__section2442470814170:
 
 Scenarios
 ---------
@@ -11,8 +17,12 @@ There are two ways to expand a system disk:
 -  Consider the empty partition as a new partition and attach this partition to a directory in the root partition after formatting it. For details, see this section.
 -  Add the empty partition to the root partition to be expanded. For detailed operations, see the following:
 
-   -  `How Can I Add the Empty Partition of an Expanded System Disk to the End Root Partition Online? <../../faqs/disk_management/how_can_i_add_the_empty_partition_of_an_expanded_system_disk_to_the_end_root_partition_online.html>`__
-   -  `How Can I Add the Empty Partition of an Expanded System Disk to the Non-end Root Partition Online? <../../faqs/disk_management/how_can_i_add_the_empty_partition_of_an_expanded_system_disk_to_the_non-end_root_partition_online.html>`__
+   -  :ref:`How Can I Add the Empty Partition of an Expanded System Disk to the End Root Partition Online? <en-us_topic_0078300749>`
+   -  :ref:`How Can I Add the Empty Partition of an Expanded System Disk to the Non-end Root Partition Online? <en-us_topic_0078300750>`
+
+
+
+.. _en-us_topic_0076210995__section2876888014177:
 
 Procedure
 ---------
@@ -35,6 +45,10 @@ To use the 20 GB capacity, performing the following operations:
 
       In the following command output, **/dev/xvda** or **/dev/vda** indicates the system disk.
 
+      
+
+.. _en-us_topic_0076210995__fig30207295194414:
+
       .. figure:: /_static/images/en-us_image_0076540987.png
          :alt: Click to enlarge
          :figclass: imgResize
@@ -45,6 +59,10 @@ To use the 20 GB capacity, performing the following operations:
    d. Run the following command to view disk partitions:
 
       **parted -l /dev/xvda**
+
+      
+
+.. _en-us_topic_0076210995__fig61751392489:
 
       .. figure:: /_static/images/en-us_image_0076598858.jpg
          :alt: Click to enlarge
@@ -77,6 +95,10 @@ To use the 20 GB capacity, performing the following operations:
 
       Information similar to the following is displayed.
 
+      
+
+.. _en-us_topic_0076210995__fig8903145214811:
+
       .. figure:: /_static/images/en-us_image_0076540988.png
          :alt: Click to enlarge
          :figclass: imgResize
@@ -87,6 +109,10 @@ To use the 20 GB capacity, performing the following operations:
    c. Enter the new partition's start cylinder number and press **Enter**.
 
       The start cylinder number must be greater than the end cylinder numbers of existing partitions. In this example, use the default value for the new partition's start cylinder number and press **Enter**. Information similar to the following is displayed.
+
+      
+
+.. _en-us_topic_0076210995__fig181891453491:
 
       .. figure:: /_static/images/en-us_image_0076595619.jpg
          :alt: Click to enlarge
@@ -99,6 +125,10 @@ To use the 20 GB capacity, performing the following operations:
 
       In this example, use the default value for the new partition's end cylinder number and press **Enter**. Information similar to the following is displayed.
 
+      
+
+.. _en-us_topic_0076210995__fig1575842424919:
+
       .. figure:: /_static/images/en-us_image_0076595620.jpg
          :alt: Click to enlarge
          :figclass: imgResize
@@ -109,6 +139,10 @@ To use the 20 GB capacity, performing the following operations:
    e. Enter **p** and press **Enter** to view the created partition.
 
       Information similar to the following is displayed.
+
+      
+
+.. _en-us_topic_0076210995__fig313793614917:
 
       .. figure:: /_static/images/en-us_image_0076596029.jpg
          :alt: Click to enlarge
@@ -123,6 +157,10 @@ To use the 20 GB capacity, performing the following operations:
 
       Information similar to the following is displayed.
 
+      
+
+.. _en-us_topic_0076210995__fig31177535493:
+
       .. figure:: /_static/images/en-us_image_0076596326.jpg
          :alt: Click to enlarge
          :figclass: imgResize
@@ -133,6 +171,10 @@ To use the 20 GB capacity, performing the following operations:
    g. Run the following command to view disk partitions:
 
       **parted -l /dev/xvda**
+
+      
+
+.. _en-us_topic_0076210995__fig1821920725014:
 
       .. figure:: /_static/images/en-us_image_0076600080.jpg
          :alt: Click to enlarge
@@ -150,6 +192,10 @@ To use the 20 GB capacity, performing the following operations:
    a. Run the following command to view the type of the file system:
 
       **df -TH**
+
+      
+
+.. _en-us_topic_0076210995__fig0499732105012:
 
       .. figure:: /_static/images/en-us_image_0076541187.png
          :alt: Click to enlarge
@@ -220,6 +266,10 @@ To use the 20 GB capacity, performing the following operations:
 
       Information similar to the following is displayed:
 
+      
+
+.. _en-us_topic_0076210995__fig71852049155012:
+
       .. figure:: /_static/images/en-us_image_0076543500.jpg
          :alt: Click to enlarge
          :figclass: imgResize
@@ -243,6 +293,10 @@ To use the 20 GB capacity, performing the following operations:
    a. Run the following command to obtain the file system type and UUID:
 
       **blkid**
+
+      
+
+.. _en-us_topic_0076210995__fig124697122517:
 
       .. figure:: /_static/images/en-us_image_0076543501.jpg
          :alt: Click to enlarge
@@ -284,5 +338,3 @@ To use the 20 GB capacity, performing the following operations:
       d. Press **Esc**, run the following command, and press **Enter**. The system saves the configurations and exits the vi editor.
 
          **:wq**
-
-

@@ -1,5 +1,11 @@
+.. _en-us_topic_0018073216:
+
 Can I Bind Multiple EIPs to an ECS?
 ===================================
+
+
+
+.. _en-us_topic_0018073216__section1851945163017:
 
 Scenarios
 ---------
@@ -8,14 +14,18 @@ You can bind multiple EIPs to an ECS. However, this configuration is not recomme
 
 To bind multiple EIPs to an ECS, you must manually configure routes.
 
+
+
+.. _en-us_topic_0018073216__section32091531162222:
+
 Configuration Example
 ---------------------
 
-`Table 1 <#enustopic0018073216table10449199163243>`__ lists ECS configurations.
+:ref:`Table 1 <en-us_topic_0018073216__table10449199163243>` lists ECS configurations.
 
 
 
-.. _ENUSTOPIC0018073216table10449199163243:
+.. _en-us_topic_0018073216__table10449199163243:
 
 .. table:: **Table 1** ECS configurations
 
@@ -56,5 +66,3 @@ Based on example 1, if you are required to enable routing for default public net
    **ip route add 0.0.0.0/0 dev eth1 via 192.168.2.1**
 
    In the preceding command, **192.168.2.1** is the gateway IP address of standby NIC **eth1**.
-
-

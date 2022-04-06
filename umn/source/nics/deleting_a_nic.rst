@@ -1,10 +1,20 @@
+.. _en-us_topic_0093492519:
+
 Deleting a NIC
 ==============
+
+
+
+.. _en-us_topic_0093492519__section165134053512:
 
 Scenarios
 ---------
 
 An ECS can have up to 12 NICs, including one primary NIC that cannot be deleted and extension NICs. This section describes how to delete an extension NIC.
+
+
+
+.. _en-us_topic_0093492519__section226511133385:
 
 Procedure
 ---------
@@ -30,8 +40,6 @@ Procedure
    .. note::
 
       Certain ECSs do not support NIC deletion when they are running. For details about these ECSs, see the GUI display. To delete a NIC from such an ECS, stop the ECS.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0093507592.png
 

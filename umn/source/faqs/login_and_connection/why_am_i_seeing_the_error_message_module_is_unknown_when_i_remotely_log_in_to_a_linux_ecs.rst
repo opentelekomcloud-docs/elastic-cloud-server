@@ -1,10 +1,20 @@
+.. _en-us_topic_0240708482:
+
 Why Am I Seeing the Error Message "Module is unknown" When I Remotely Log In to a Linux ECS?
 ============================================================================================
+
+
+
+.. _en-us_topic_0240708482__section010521132615:
 
 Symptom
 -------
 
 When you attempt to remotely log in to a Linux ECS, the system displays the error message "Module is unknown".
+
+
+
+.. _en-us_topic_0240708482__fig17499319191716:
 
 .. figure:: /_static/images/en-us_image_0240710552.png
    :alt: Click to enlarge
@@ -18,10 +28,18 @@ When you attempt to remotely log in to a Linux ECS, the system displays the erro
    -  To resolve this issue, restart the ECS and enter the rescue mode.
    -  Restarting the ECS may interrupt services. Exercise caution when performing this operation.
 
+
+
+.. _en-us_topic_0240708482__section584171621515:
+
 Root Cause
 ----------
 
 The file in the **/etc/pam.d/** directory was modified by mistake.
+
+
+
+.. _en-us_topic_0240708482__section1269155618274:
 
 Solution
 --------
@@ -35,6 +53,10 @@ Solution
    b. Click **Ctrl+Alt+Del** in the upper part of the remote login panel to restart the ECS.
 
    c. Press the up arrow key to prevent automatic system startup. When the kernels are displayed, press **e** to enter the editing mode.
+
+      
+
+.. _en-us_topic_0240708482__fig1087511256811:
 
       .. figure:: /_static/images/en-us_image_0240711431.png
          :alt: Click to enlarge
@@ -53,12 +75,20 @@ Solution
 
    f. Add **rd.break** and press **Ctrl+X**.
 
+      
+
+.. _en-us_topic_0240708482__fig1654418212503:
+
       .. figure:: /_static/images/en-us_image_0260575520.png
          :alt: Click to enlarge
          :figclass: imgResize
       
 
          **Figure 3** Before the modification
+
+      
+
+.. _en-us_topic_0240708482__fig1954412105016:
 
       .. figure:: /_static/images/en-us_image_0260575521.png
          :alt: Click to enlarge
@@ -75,6 +105,10 @@ Solution
 
    **grep Module /var/log/messages**
 
+   
+
+.. _en-us_topic_0240708482__fig31081356162719:
+
    .. figure:: /_static/images/en-us_image_0240710554.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -85,6 +119,10 @@ Solution
 #. Comment out or modify the error line in the error files displayed in the system log.
 
    **vi /etc/pam.d/login**
+
+   
+
+.. _en-us_topic_0240708482__fig11081756172711:
 
    .. figure:: /_static/images/en-us_image_0240710555.png
       :alt: Click to enlarge
@@ -106,5 +144,3 @@ Solution
       -  Do not modify the files in the **/etc/pam.d/** directory. Run the following command for details about pam:
 
          **man pam.d**
-
-

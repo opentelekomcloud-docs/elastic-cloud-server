@@ -1,19 +1,33 @@
+.. _en-us_topic_0017955380:
+
 Login Using an SSH Key
 ======================
+
+
+
+.. _en-us_topic_0017955380__section1547194115913:
 
 Scenarios
 ---------
 
 This section describes how to remotely log in to a Linux ECS using an SSH key pair from Windows and Linux, respectively.
 
+
+
+.. _en-us_topic_0017955380__section6801971111724:
+
 Prerequisites
 -------------
 
 -  You have obtained the private key file used during ECS creation.
--  You have bound an EIP to the ECS. For details, see `Viewing Details About an ECS <../../instances/viewing_ecs_information/viewing_details_about_an_ecs.html>`__.
+-  You have bound an EIP to the ECS. For details, see :ref:`Viewing Details About an ECS <en-us_topic_0017130261>`.
 
--  You have configured the inbound rules of the security group. For details, see `Configuring Security Group Rules <../../security/security_groups/configuring_security_group_rules.html>`__.
+-  You have configured the inbound rules of the security group. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.
 -  The network connection between the login tool (PuTTY) and the target ECS is normal. For example, the default port 22 is not blocked by the firewall.
+
+
+
+.. _en-us_topic_0017955380__section47918167111724:
 
 Logging In to the Linux ECS from Local Windows
 ----------------------------------------------
@@ -51,6 +65,10 @@ The following operations use PuTTY as an example. Before logging in to the ECS u
 
 #. Choose **Session** and enter the EIP of the ECS under **Host Name (or IP address)**.
 
+   
+
+.. _en-us_topic_0017955380__fig3739272820239:
+
    .. figure:: /_static/images/en-us_image_0000001082643605.jpg
       :alt: Click to enlarge
       :figclass: imgResize
@@ -86,6 +104,10 @@ The following operations use PuTTY as an example. Before logging in to the ECS u
 
 #. (Optional) If the system displays the **SSH Security Warning** dialog box, click **Accept & Save**.
 
+   
+
+.. _en-us_topic_0017955380__fig680319562495:
+
    .. figure:: /_static/images/en-us_image_0178475901.png
       :alt: **Figure 2** SSH Security Warning
    
@@ -99,6 +121,10 @@ The following operations use PuTTY as an example. Before logging in to the ECS u
 #. Select the locally stored key file and click **Open**.
 
 #. Click **OK** to log in to the ECS.
+
+
+
+.. _en-us_topic_0017955380__section3666784111724:
 
 Logging In to the Linux ECS from Local Linux
 --------------------------------------------
@@ -127,5 +153,3 @@ To log in to the Linux ECS from local Linux, perform the operations described in
 
       -  *path* refers to the path under which the key file is stored.
       -  *EIP* is the EIP bound to the ECS.
-
-

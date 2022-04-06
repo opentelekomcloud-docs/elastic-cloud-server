@@ -1,10 +1,20 @@
+.. _en-us_topic_0174917535:
+
 Binding an EIP
 ==============
+
+
+
+.. _en-us_topic_0174917535__s974a02c09b8e44f59dcc9335de2d030a:
 
 Scenarios
 ---------
 
 You can assign an EIP and bind it to an ECS to enable the ECS to access the Internet.
+
+
+
+.. _en-us_topic_0174917535__section3958122041617:
 
 Procedure
 ---------
@@ -28,8 +38,6 @@ Procedure
       If no EIP is available in the current region, the EIP list is empty. In such a case, allocate an EIP and then bind it.
 
 #. View the bound EIP on the **EIPs** tab.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

@@ -1,5 +1,11 @@
+.. _en-us_topic_0057711189:
+
 Obtaining ECS Console Logs
 ==========================
+
+
+
+.. _en-us_topic_0057711189__section1826165816643:
 
 Scenarios
 ---------
@@ -7,6 +13,10 @@ Scenarios
 When an ECS cannot start or run properly, you can download and view ECS console logs for troubleshooting, for example, checking whether the kernel and service configuration are correct.
 
 The ECS console logs record ECS operations, such as ECS starting, stopping, restarting, or forcibly restarting. Through the management console, you can obtain the ECS logs within one hour.
+
+
+
+.. _en-us_topic_0057711189__section2426125161724:
 
 Notes
 -----
@@ -31,6 +41,10 @@ Notes
 
 -  The ECSs running Windows do not support console logs.
 -  The system can save up to 100 KB log files.
+
+
+
+.. _en-us_topic_0057711189__section24136850162414:
 
 Procedure
 ---------
@@ -148,12 +162,14 @@ Procedure
 
       Downloaded log files are in .txt format.
 
+
+
+.. _en-us_topic_0057711189__section42122526164622:
+
 Related Links
 -------------
 
-`Why Does the System Display a Question Mark When I Attempt to Obtain Console Logs? <../../faqs/ecs_management/why_does_the_system_display_a_question_mark_when_i_attempt_to_obtain_console_logs.html>`__
-
-
+:ref:`Why Does the System Display a Question Mark When I Attempt to Obtain Console Logs? <en-us_topic_0088241338>`
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

@@ -1,5 +1,11 @@
+.. _en-us_topic_0021427650:
+
 Resetting the Password for Logging In to a Linux ECS
 ====================================================
+
+
+
+.. _en-us_topic_0021427650__section17131859112916:
 
 Scenarios
 ---------
@@ -11,11 +17,19 @@ Keep your password secure. Reset the password if:
 
 This section describes how to reset the password of user **root**. After resetting the password, you can log in to the ECS, and change the private key or reset the password of a non-**root** user.
 
+
+
+.. _en-us_topic_0021427650__section35515688202027:
+
 Prerequisites
 -------------
 
 -  A temporary Linux ECS which locates in the same AZ as the target ECS is available.
 -  You have bound an EIP to the temporary ECS.
+
+
+
+.. _en-us_topic_0021427650__section9546131644416:
 
 Procedure
 ---------
@@ -91,5 +105,3 @@ Procedure
    c. On the page providing details about the original Linux ECS, click the **Disks** tab.
    d. Click **Attach Disk**. In the displayed dialog box, select the data disk detached in step 5.b and device name **/dev/sda**.
    e. Restart the original Linux ECS.
-
-

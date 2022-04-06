@@ -1,12 +1,22 @@
+.. _en-us_topic_0083225171:
+
 How Can I Manually Configure an IP Address for an InfiniBand NIC?
 =================================================================
 
 IP over InfiniBand (IPoIB) allows IP data transmission over InfiniBand. For SUSE high-performance H2 and HL1 ECSs, if IPoIB is required, you must manually configure an IP address for the InfiniBand NIC after installing the InfiniBand NIC driver.
 
+
+
+.. _en-us_topic_0083225171__section35761724112321:
+
 Prerequisites
 -------------
 
 The InfiniBand NIC driver has been installed on the high-performance H2 or HL1 ECSs.
+
+
+
+.. _en-us_topic_0083225171__section42060912112551:
 
 Background
 ----------
@@ -18,6 +28,10 @@ For example, if the first two eight-bits of the IP address (specified by **IPADD
 An example is provided as follows:
 
 If the IP address of the **eth0** NIC is 192.168.0.100/24, the IP address to be configured for the InfiniBand NIC is 169.254.0.100/24.
+
+
+
+.. _en-us_topic_0083225171__section25685995112359:
 
 Procedure
 ---------
@@ -46,10 +60,8 @@ Procedure
 
    .. note::
 
-      For instructions about how to obtain the IP address and subnet mask for an InfiniBand NIC, see `Background <#background>`__.
+      For instructions about how to obtain the IP address and subnet mask for an InfiniBand NIC, see :ref:`Background <en-us_topic_0083225171__section42060912112551>`.
 
 #. Run the following command to restart the network for the configuration to take effect:
 
    **service network restart**
-
-

@@ -1,5 +1,11 @@
+.. _en-us_topic_0100005619:
+
 How Can I Log In to an ECS After Its System Disk Is Exchanged with That Attached to Another ECS Running the Same OS?
 ====================================================================================================================
+
+
+
+.. _en-us_topic_0100005619__section1794885713568:
 
 Symptom
 -------
@@ -18,14 +24,18 @@ Two ECSs run the same OS, for example, both run Windows or Linux. The system dis
 
       This operation will interrupt network connections and affect the use of the ECS. After the ECS is restarted, network connections will automatically recover.
 
+
+
+.. _en-us_topic_0100005619__section129031037631:
+
 Windows
 -------
 
-For example, there are two Windows ECSs with parameters configured in `Table 1 <#enustopic0100005619table1365540183310>`__.
+For example, there are two Windows ECSs with parameters configured in :ref:`Table 1 <en-us_topic_0100005619__table1365540183310>`.
 
 
 
-.. _ENUSTOPIC0100005619table1365540183310:
+.. _en-us_topic_0100005619__table1365540183310:
 
 .. table:: **Table 1** Parameter configurations
 
@@ -60,14 +70,18 @@ The random password for logging in to ecs_02 must be resolved again. The procedu
 
 #. Use the random password obtained in step 3 to log in to ecs_02 with the system disk replaced.
 
+
+
+.. _en-us_topic_0100005619__section1756045025614:
+
 Linux
 -----
 
-For example, there are two Linux ECSs with parameters configured in `Table 2 <#enustopic0100005619table9561950195614>`__.
+For example, there are two Linux ECSs with parameters configured in :ref:`Table 2 <en-us_topic_0100005619__table9561950195614>`.
 
 
 
-.. _ENUSTOPIC0100005619table9561950195614:
+.. _en-us_topic_0100005619__table9561950195614:
 
 .. table:: **Table 2** Parameter configurations
 
@@ -84,5 +98,3 @@ Use either of the following methods to log in to ecs_02:
 
 -  Use private key file **Keypair_01** of ecs_01.
 -  Use private key file **Keypair_02** of ecs_02.
-
-

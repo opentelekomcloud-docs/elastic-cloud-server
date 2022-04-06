@@ -1,10 +1,20 @@
+.. _en-us_topic_0240714337:
+
 What Should I Do If Error Message "read: Connection reset by peer" Is Displayed When I Remotely Log In to a Linux ECS?
 ======================================================================================================================
+
+
+
+.. _en-us_topic_0240714337__section118312613216:
 
 Symptom
 -------
 
 When I attempted to remotely log in to a Linux ECS, the system displayed error message "read: Connection reset by peer".
+
+
+
+.. _en-us_topic_0240714337__fig5631046188:
 
 .. figure:: /_static/images/en-us_image_0240714761.png
    :alt: Click to enlarge
@@ -13,11 +23,19 @@ When I attempted to remotely log in to a Linux ECS, the system displayed error m
 
    **Figure 1** read: Connection reset by peer
 
+
+
+.. _en-us_topic_0240714337__section1851618545810:
+
 Possible Causes
 ---------------
 
 -  The remote login port is not permitted in the security group.
 -  The firewall is enabled on the ECS, but the remote login port is blocked by the firewall.
+
+
+
+.. _en-us_topic_0240714337__section18860584278:
 
 Solution
 --------
@@ -65,5 +83,3 @@ Perform the following operations for troubleshooting:
          22 (v6)                    ALLOW       Anywhere (v6)
 
       Try to remotely log in to the ECS again.
-
-

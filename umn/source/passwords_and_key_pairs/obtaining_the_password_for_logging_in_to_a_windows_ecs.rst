@@ -1,5 +1,11 @@
+.. _en-us_topic_0031107266:
+
 Obtaining the Password for Logging In to a Windows ECS
 ======================================================
+
+
+
+.. _en-us_topic_0031107266__section83915017466:
 
 Scenarios
 ---------
@@ -7,6 +13,10 @@ Scenarios
 Password authentication is required to log in to a Windows ECS. Therefore, you must use the key file used when you created the ECS to obtain the administrator password generated during ECS creation. The administrator user is **Administrator** or the user configured using Cloudbase-Init. This password is randomly generated, offering high security.
 
 You can obtain the initial password for logging in to a Windows ECS through the management console or APIs. For details, see this section.
+
+
+
+.. _en-us_topic_0031107266__section38475220193847:
 
 Obtaining the Password Through the Management Console
 -----------------------------------------------------
@@ -23,6 +33,10 @@ Obtaining the Password Through the Management Console
    -  Copy the key file content to the text field.
 
 #. Click **Get Password** to obtain a random password.
+
+
+
+.. _en-us_topic_0031107266__section1118765310423:
 
 Obtaining the Password Through APIs
 -----------------------------------
@@ -50,8 +64,6 @@ Obtaining the Password Through APIs
       **openssl pkcs8 -topk8 -inform PEM -outform DER -in rsa_pem.key -out pkcs8_der.key -nocrypt**
 
    b. Invoke the Java class library **org.bouncycastle.jce.provider.BouncyCastleProvider** and use the key file to edit the code decryption ciphertext.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

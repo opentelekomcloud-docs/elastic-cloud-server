@@ -1,16 +1,22 @@
+.. _en-us_topic_0094874138:
+
 Is an ECS Hostname with Suffix .novalocal Normal?
 =================================================
+
+
+
+.. _en-us_topic_0094874138__section10979141164416:
 
 Symptom
 -------
 
 Hostnames of ECSs created based on some types of images have the suffix **.novalocal**, whereas others do not.
 
-For example, the hostname is set to **abc** during ECS creation. `Table 1 <#enustopic0094874138table168595206502>`__ lists the hostnames (obtained by running the **hostname** command) of ECSs created using different images and those displayed after the ECSs are restarted.
+For example, the hostname is set to **abc** during ECS creation. :ref:`Table 1 <en-us_topic_0094874138__table168595206502>` lists the hostnames (obtained by running the **hostname** command) of ECSs created using different images and those displayed after the ECSs are restarted.
 
 
 
-.. _ENUSTOPIC0094874138table168595206502:
+.. _en-us_topic_0094874138__table168595206502:
 
 .. table:: **Table 1** Hostnames of ECSs created from different images
 
@@ -22,6 +28,10 @@ For example, the hostname is set to **abc** during ECS creation. `Table 1 <#enus
    Ubuntu 16  abc                         abc
    ========== =========================== ==========================
 
+
+
+.. _en-us_topic_0094874138__section6524112624111:
+
 Troubleshooting
 ---------------
 
@@ -29,6 +39,4 @@ This is a normal phenomenon.
 
 The static hostname of a Linux ECS is user defined and injected using Cloud-Init during the ECS creation. According to the test results, Cloud-Init adapts to OSs differently. As a result, hostnames of some ECSs have suffix **.novalocal**, whereas others do not.
 
-If you do not need suffix **.novalocal** in obtained hostnames, change the hostnames. For details, see `How Can a Changed Static Hostname Take Effect Permanently? <../../faqs/ecs_management/how_can_a_changed_static_hostname_take_effect_permanently.html>`__
-
-
+If you do not need suffix **.novalocal** in obtained hostnames, change the hostnames. For details, see :ref:`How Can a Changed Static Hostname Take Effect Permanently? <en-us_topic_0050735736>`

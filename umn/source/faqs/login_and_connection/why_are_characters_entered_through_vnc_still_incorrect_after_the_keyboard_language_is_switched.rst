@@ -1,3 +1,5 @@
+.. _en-us_topic_0030932500:
+
 Why Are Characters Entered Through VNC Still Incorrect After the Keyboard Language Is Switched?
 ===============================================================================================
 
@@ -18,5 +20,3 @@ For example, if the name of a German keyboard mapping file is **de**, run the **
 #. Click the **Option Menu** icon.
 #. Select **Soft Keyboard**.
 #. Select a keyboard layout.
-
-

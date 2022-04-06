@@ -1,5 +1,11 @@
+.. _en-us_topic_0000001143214829:
+
 How Do I Configure atop and kdump on Linux ECSs for Performance Analysis?
 =========================================================================
+
+
+
+.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section153594317569:
 
 Scenarios
 ---------
@@ -10,23 +16,31 @@ The method for configuring atop varies with the OS version.
 
 atop
 
--  `Introduction to atop <#introduction-to-atop>`__
--  `Configuring atop for CentOS 8 or RHEL 8 <#configuring-atop-for-centos-8-or-rhel-8>`__
--  `Configuring atop for CentOS 7, RHEL 7, or EulerOS <#configuring-atop-for-centos-7,-rhel-7,-or-euleros>`__
--  `Configuring atop for SUSE 12 or SUSE 15 <#configuring-atop-for-suse-12-or-suse-15>`__
--  `Configuring atop Using Its Source Package for SUSE, Fedora, Debian or Ubuntu <#configuring-atop-using-its-source-package-for-suse,-fedora,-debian-or-ubuntu>`__
+-  :ref:`Introduction to atop <en-us_topic_0000001143214829__en-us_topic_0178319250_section0959133015350>`
+-  :ref:`Configuring atop for CentOS 8 or RHEL 8 <en-us_topic_0000001143214829__en-us_topic_0178319250_section18897192721320>`
+-  :ref:`Configuring atop for CentOS 7, RHEL 7, or EulerOS <en-us_topic_0000001143214829__en-us_topic_0178319250_section1972319582310>`
+-  :ref:`Configuring atop for SUSE 12 or SUSE 15 <en-us_topic_0000001143214829__en-us_topic_0178319250_section3205824181917>`
+-  :ref:`Configuring atop Using Its Source Package for SUSE, Fedora, Debian or Ubuntu <en-us_topic_0000001143214829__en-us_topic_0178319250_section012793312620>`
 
 kdump
 
--  `Precautions for Configuring kdump <#precautions-for-configuring-kdump>`__
--  `Introduction to kdump <#introduction-to-kdump>`__
--  `Configuring kdump <#configuring-kdump>`__
--  `Checking Whether kdump Configurations Have Taken Effect <#checking-whether-kdump-configurations-have-taken-effect>`__
+-  :ref:`Precautions for Configuring kdump <en-us_topic_0000001143214829__en-us_topic_0178319250_section1410131164120>`
+-  :ref:`Introduction to kdump <en-us_topic_0000001143214829__en-us_topic_0178319250_section18450171174120>`
+-  :ref:`Configuring kdump <en-us_topic_0000001143214829__en-us_topic_0178319250_section134381494320>`
+-  :ref:`Checking Whether kdump Configurations Have Taken Effect <en-us_topic_0000001143214829__en-us_topic_0178319250_section1296112934412>`
+
+
+
+.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section0959133015350:
 
 Introduction to atop
 --------------------
 
 atop is a monitor for Linux that can report the activity of all processes and resource consumption by all processes at regular intervals. It shows system-level activity related to the CPU, memory, disks, and network layers for every process. It also logs system and process activities daily and saves the logs in disks for long-term analysis.
+
+
+
+.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section18897192721320:
 
 Configuring atop for CentOS 8 or RHEL 8
 ---------------------------------------
@@ -82,6 +96,10 @@ Configuring atop for CentOS 8 or RHEL 8
       Jun 19 14:46:10 ecs-centos8 systemd[1]: Starting Atop advanced performance monitor...
       Jun 19 14:46:10 ecs-centos8 systemd[1]: Started Atop advanced performance monitor.
 
+
+
+.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section1972319582310:
+
 Configuring atop for CentOS 7, RHEL 7, or EulerOS
 -------------------------------------------------
 
@@ -135,6 +153,10 @@ Configuring atop for CentOS 7, RHEL 7, or EulerOS
       Jun 19 11:49:47 ecs-centos7 systemd[1]: Stopped Atop advanced performance monitor.
       Jun 19 11:49:47 ecs-centos7 systemd[1]: Starting Atop advanced performance monitor...
       Jun 19 11:49:47 ecs-centos7 systemd[1]: Started Atop advanced performance monitor.
+
+
+
+.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section3205824181917:
 
 Configuring atop for SUSE 12 or SUSE 15
 ---------------------------------------
@@ -201,6 +223,10 @@ Configuring atop for SUSE 12 or SUSE 15
        
       Jun 19 16:50:01 ecs-suse15 systemd[1]: Starting Atop advanced performance monitor...
       Jun 19 16:50:01 ecs-suse15 systemd[1]: Started Atop advanced performance monitor. 
+
+
+
+.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section012793312620:
 
 Configuring atop Using Its Source Package for SUSE, Fedora, Debian or Ubuntu
 ----------------------------------------------------------------------------
@@ -295,15 +321,27 @@ Configuring atop Using Its Source Package for SUSE, Fedora, Debian or Ubuntu
       Jul 25 19:29:40 atop systemd[1]: Starting Atop advanced performance monitor...
       Jul 25 19:29:40 atop systemd[1]: Started Atop advanced performance monitor.
 
+
+
+.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section1410131164120:
+
 Precautions for Configuring kdump
 ---------------------------------
 
 The method for configuring kdump described in this section applies to KVM ECSs running EulerOS or CentOS 7.x. For details, see `Documentation for kdump <https://www.kernel.org/doc/Documentation/kdump/kdump.txt>`__.
 
+
+
+.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section18450171174120:
+
 Introduction to kdump
 ---------------------
 
 kdump is a feature of the Linux kernel that creates crash dumps in the event of a kernel crash. In the event of a kernel crash, kdump boots another Linux kernel and uses it to export an image of RAM, which is known as vmcore and can be used to debug and determine the cause of the crash.
+
+
+
+.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section134381494320:
 
 Configuring kdump
 -----------------
@@ -410,6 +448,10 @@ Configuring kdump
 
    **# reboot**
 
+
+
+.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section1296112934412:
+
 Checking Whether kdump Configurations Have Taken Effect
 -------------------------------------------------------
 
@@ -477,5 +519,3 @@ Checking Whether kdump Configurations Have Taken Effect
 #. Run the following command to check whether the vmcore file has been generated in the specified path, for example, **/var/crash/**:
 
    **# ll /var/crash/**
-
-

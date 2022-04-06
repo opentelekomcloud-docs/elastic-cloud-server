@@ -1,5 +1,11 @@
+.. _en-us_topic_0035550301:
+
 Memory-optimized ECSs
 =====================
+
+
+
+.. _en-us_topic_0035550301__section25374905172644:
 
 Overview
 --------
@@ -8,12 +14,16 @@ Overview
 -  M3 ECSs are developed based on the KVM virtualization platform and designed for processing large-scale data sets in the memory. They use Intel® Xeon® Scalable processors, network acceleration engines, and DPDK rapid packet processing mechanism to provide higher network performance and up to 512 GiB of DDR4 memory for memory-intensive computing applications.
 -  M2 ECSs use Intel Xeon E5-2690 v4 CPUs and are designed for memory-optimized applications.
 
+
+
+.. _en-us_topic_0035550301__section83746578616:
+
 Specifications
 --------------
 
 
 
-.. _ENUSTOPIC0035550301table285612469463:
+.. _en-us_topic_0035550301__table285612469463:
 
 .. table:: **Table 1** M4 ECS specifications
 
@@ -39,7 +49,7 @@ Specifications
 
 
 
-.. _ENUSTOPIC0035550301table10833218224040:
+.. _en-us_topic_0035550301__table10833218224040:
 
 .. table:: **Table 2** M3 ECS specifications
 
@@ -61,7 +71,7 @@ Specifications
 
 
 
-.. _ENUSTOPIC0035550301table38605135203957:
+.. _en-us_topic_0035550301__table38605135203957:
 
 .. table:: **Table 3** M2 ECS specifications
 
@@ -73,6 +83,10 @@ Specifications
    | m2.8xlarge.8 | 32    | 256          | 13/8                               | 60                   | 8               | KVM                 |                                        |
    +--------------+-------+--------------+------------------------------------+----------------------+-----------------+---------------------+----------------------------------------+
 
+
+
+.. _en-us_topic_0035550301__section2976132851911:
+
 Scenarios
 ---------
 
@@ -80,5 +94,3 @@ Scenarios
 -  Distributed web scale cache stores that provide in-memory caching of key-value type data (Memcached and Redis)
 -  Applications processing big unstructured data in real time (financial services, Hadoop/Spark clusters)
 -  High-performance computing (HPC) and electronic design automation (EDA)
-
-
