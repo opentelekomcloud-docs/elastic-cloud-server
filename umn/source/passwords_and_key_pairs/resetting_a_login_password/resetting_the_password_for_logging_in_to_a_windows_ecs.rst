@@ -3,10 +3,6 @@
 Resetting the Password for Logging In to a Windows ECS
 ======================================================
 
-
-
-.. _en-us_topic_0021426802__section17131859112916:
-
 Scenarios
 ---------
 
@@ -16,10 +12,6 @@ You can reset your ECS password if:
 -  The password has expired.
 
 The method described in this section can only be used to change the password of a local Windows account, but not the password of a domain account.
-
-
-
-.. _en-us_topic_0021426802__section1344819634213:
 
 Prerequisites
 -------------
@@ -44,39 +36,46 @@ Prerequisites
 
    To obtain the chntpw software package, log in at https://www.chntpw.com/download/.
 
-
-
-.. _en-us_topic_0021426802__section1052621215437:
-
 Procedure
 ---------
 
 #. Stop the original ECS, detach the system disk from it, and attach the system disk to the temporary ECS.
 
    a. Log in to the management console.
+
    b. Click |image1| in the upper left corner and select your region and project.
+
    c. Under **Computing**, click **Elastic Cloud Server**.
+
    d. Stop the original Windows ECS, switch to the page providing details about the ECS, and click the **Disks** tab.
 
       .. note::
 
          Do not forcibly stop the Windows ECS. Otherwise, password reset may fail.
 
-   e. Locate the row containing the system disk to be detached and click **Detach** to detach the system disk from the ECS.
+   e. .. _en-us_topic_0021426802__li49674320202157:
+
+      Locate the row containing the system disk to be detached and click **Detach** to detach the system disk from the ECS.
+
    f. On the page providing details about the temporary ECS, click the **Disks** tab.
-   g. Click **Attach Disk**. In the displayed dialog box, select the system disk detached in step 1.e and attach it to the temporary ECS.
+
+   g. .. _en-us_topic_0021426802__li32570973202157:
+
+      Click **Attach Disk**. In the displayed dialog box, select the system disk detached in step :ref:`1.e <en-us_topic_0021426802__li49674320202157>` and attach it to the temporary ECS.
 
 #. Log in to the temporary ECS remotely and attach the system disk.
 
-   a. Run the following command to view the directory of the system disk detached from the original Windows ECS now attached to the temporary ECS:
+   a. .. _en-us_topic_0021426802__li20334892202157:
+
+      Run the following command to view the directory of the system disk detached from the original Windows ECS now attached to the temporary ECS:
 
       **fdisk -l**
 
    b. Run the following command to mount the file system of the detached system disk to the temporary ECS:
 
-      **mount -t ntfs-3g /dev/**\ *Result obtained in step 2.a* **/mnt/**
+      **mount -t ntfs-3g /dev/**\ *Result obtained in step :ref:`2.a <en-us_topic_0021426802__li20334892202157>`* **/mnt/**
 
-      For example, if the result obtained in step 2.a is **xvde2**, run the following command:
+      For example, if the result obtained in step :ref:`2.a <en-us_topic_0021426802__li20334892202157>` is **xvde2**, run the following command:
 
       **mount -t ntfs-3g /dev/xvde2 /mnt/**
 
@@ -93,9 +92,9 @@ Procedure
 
       Back up the disk data, run the following command to rectify the NTFS file system inconsistency, and attach the system disk:
 
-      **ntfsfix /dev/**\ *Result obtained in step 2.a*
+      **ntfsfix /dev/**\ *Result obtained in step :ref:`2.a <en-us_topic_0021426802__li20334892202157>`*
 
-      For example, if the result obtained in step 2.a is **xvde2**, run the following command:
+      For example, if the result obtained in step :ref:`2.a <en-us_topic_0021426802__li20334892202157>` is **xvde2**, run the following command:
 
       **ntfsfix /dev/xvde2**
 
@@ -127,9 +126,14 @@ Procedure
 #. Stop the temporary ECS, detach the system disk, and attach the system disk to the original Windows ECS.
 
    a. Stop the temporary ECS, switch to the page providing details about the ECS, and click the **Disks** tab.
-   b. Click **Detach** to detach the data disk temporarily attached in step 1.g.
+
+   b. .. _en-us_topic_0021426802__li46368402202157:
+
+      Click **Detach** to detach the data disk temporarily attached in step :ref:`1.g <en-us_topic_0021426802__li32570973202157>`.
+
    c. On the page providing details about the original Windows ECS, click the **Disks** tab.
-   d. Click **Attach Disk**. In the displayed dialog box, select the data disk detached in step 4.b and device name **/dev/sda**.
+
+   d. Click **Attach Disk**. In the displayed dialog box, select the data disk detached in step :ref:`4.b <en-us_topic_0021426802__li46368402202157>` and device name **/dev/sda**.
 
 #. Start the original Windows ECS and set a new login password.
 
@@ -141,9 +145,7 @@ Procedure
 
       **net user** **Administrator** *New password*
 
-      
-
-.. _en-us_topic_0021426802__en-us_topic_0021426802_table4381109318958:
+      .. _en-us_topic_0021426802__en-us_topic_0021426802_table4381109318958:
 
       .. table:: **Table 1** Password complexity requirements
 

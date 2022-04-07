@@ -3,27 +3,15 @@
 How Can I Handle the Issue that a Windows 7 ECS Equipped with an Intel 82599 NIC Reports an Error in SR-IOV Scenarios?
 ======================================================================================================================
 
-
-
-.. _en-us_topic_0053287548__section395352320453:
-
 Symptom
 -------
 
 When the 20.4.1 driver package downloaded at Intel website `https://downloadcenter.intel.com/search?keyword=Intel++Ethernet+Connections+CD <https://downloadcenter.intel.com/search?keyword=Intel%2B%2BEthernet%2BConnections%2BCD>`__ was installed in a Windows 7 64bit ECS with SR-IOV passthrough enabled, the system displayed the message "No Intel adapter found".
 
-
-
-.. _en-us_topic_0053287548__section1422482320829:
-
 Cause Analysis
 --------------
 
 The OS identifies an Intel 82599 passthrough NIC without a driver installed as an Ethernet controller. When the 20.4.1 driver package was installed, the OS did not identify the Intel NIC, leading to the error.
-
-
-
-.. _en-us_topic_0053287548__section1276332720914:
 
 Solution
 --------

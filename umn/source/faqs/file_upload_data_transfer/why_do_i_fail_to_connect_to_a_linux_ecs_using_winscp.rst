@@ -3,16 +3,10 @@
 Why Do I Fail to Connect to a Linux ECS Using WinSCP?
 =====================================================
 
-
-
-.. _en-us_topic_0000001189572473__section17182131218710:
-
 Symptom
 -------
 
 Connecting to a Linux ECS using WinSCP fails, while using SSH tools like Xshell succeeds.
-
-
 
 .. _en-us_topic_0000001189572473__fig1580004542818:
 
@@ -22,10 +16,6 @@ Connecting to a Linux ECS using WinSCP fails, while using SSH tools like Xshell 
 
 
    **Figure 1** Connection error using WinSCP
-
-
-
-.. _en-us_topic_0000001189572473__section826114231988:
 
 Root Cause
 ----------
@@ -38,8 +28,6 @@ Run the following command to view the **/etc/ssh/sshd_config** file:
 
 Check the SFTP configuration and the configuration file is **/usr/libexec/openssh/sftp-server**.
 
-
-
 .. _en-us_topic_0000001189572473__fig6965144916501:
 
 .. figure:: /_static/images/en-us_image_0000001150707636.png
@@ -50,10 +38,6 @@ Check the SFTP configuration and the configuration file is **/usr/libexec/openss
    **Figure 2** SFTP configuration file
 
 If the SFTP configuration file does not exist or the file permission is not 755, connecting to a Linux ECS using WinSCP will fail.
-
-
-
-.. _en-us_topic_0000001189572473__section66451427981:
 
 Solution
 --------

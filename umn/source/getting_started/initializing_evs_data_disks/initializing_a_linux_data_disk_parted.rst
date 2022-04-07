@@ -3,10 +3,6 @@
 Initializing a Linux Data Disk (parted)
 =======================================
 
-
-
-.. _en-us_topic_0085634798__en-us_topic_0084935709_section31580524185332:
-
 Scenarios
 ---------
 
@@ -16,10 +12,6 @@ The maximum disk capacity supported by MBR is 2 TB, and that supported by GPT is
 
 The method for initializing a disk varies depending on the OS running on the server. This document is used for reference only. For the detailed operations and differences, see the product documents of the corresponding OS.
 
-
-
-.. _en-us_topic_0085634798__en-us_topic_0084935709_section36737034185332:
-
 Prerequisites
 -------------
 
@@ -28,10 +20,6 @@ Prerequisites
 
    -  For how to log in to an ECS, see the *Elastic Cloud Server User Guide*.
    -  For how to log in to a BMS, see the *Bare Metal Server User Guide*.
-
-
-
-.. _en-us_topic_0085634798__en-us_topic_0084935709_section36039836195351:
 
 Creating and Mounting a Partition
 ---------------------------------
@@ -268,8 +256,6 @@ The following example shows you how a new partition can be created on a new data
    .. note::
 
       If the server is restarted, the mounting will become invalid. You can set automatic mounting for partitions at system start by modifying the **/etc/fstab** file. For details, see :ref:`Setting Automatic Mounting at System Start <en-us_topic_0085634798__en-us_topic_0084935709_section15839912195453>`.
-
-
 
 .. _en-us_topic_0085634798__en-us_topic_0084935709_section15839912195453:
 

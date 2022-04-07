@@ -3,18 +3,10 @@
 Changing an EIP Bandwidth
 =========================
 
-
-
-.. _en-us_topic_0093492521__section111119587516:
-
 Scenarios
 ---------
 
 If an EIP has been bound to the ECS, the ECS can access the Internet using the bandwidth associated with the EIP. This section describes how to adjust the bandwidth of an ECS.
-
-
-
-.. _en-us_topic_0093492521__section133711110961:
 
 Procedure
 ---------

@@ -3,18 +3,10 @@
 Why Can't an EIP Be Pinged?
 ===========================
 
-
-
-.. _en-us_topic_0105130172__en-us_topic_0096302298_section33522024122612:
-
 Symptom
 -------
 
 After you purchase an EIP and bind it to an ECS, the ping operation to the EIP fails, or the ECS fails to access the Internet.
-
-
-
-.. _en-us_topic_0105130172__section1116655241118:
 
 Fault Locating
 --------------
@@ -22,8 +14,6 @@ Fault Locating
 The following fault causes are sequenced based on their occurrence probability.
 
 If the fault persists after you have ruled out a cause, check other causes.
-
-
 
 .. _en-us_topic_0105130172__en-us_topic_0118498854_fig257119102320:
 
@@ -33,10 +23,6 @@ If the fault persists after you have ruled out a cause, check other causes.
 
 
    **Figure 1** Method of locating the failure to ping an EIP
-
-
-
-.. _en-us_topic_0105130172__table6168184132811:
 
 .. table:: **Table 1** Method of locating the failure to ping an EIP
 
@@ -55,8 +41,6 @@ If the fault persists after you have ruled out a cause, check other causes.
    +--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Routes are incorrectly configured if multiple NICs are used. | If the network is inaccessible due to an extension NIC, the fault is generally caused by incorrect route configurations. To resolve this issue, see :ref:`Checking the ECS Route Configuration If Multiple NICs Are Used <en-us_topic_0105130172__section175172388145>`. |
    +--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
 
 .. _en-us_topic_0105130172__section1715910911214:
 
@@ -83,10 +67,6 @@ The ping operations use the ICMP protocol. Check whether the security group acco
 
 #. On the **Inbound Rules** tab, click **Add Rule**. In the displayed dialog box, set required parameters to add an inbound rule.
 
-   
-
-.. _en-us_topic_0105130172__table156272235264:
-
    .. table:: **Table 2** Security group rules
 
       +--------------------+-----------------+---------------------+---------------------------------------+
@@ -98,8 +78,6 @@ The ping operations use the ICMP protocol. Check whether the security group acco
       +--------------------+-----------------+---------------------+---------------------------------------+
 
 #. Click **OK** to complete the security rule configuration.
-
-
 
 .. _en-us_topic_0105130172__section774414326138:
 
@@ -122,9 +100,7 @@ If a firewall is enabled on the ECS, check whether the firewall blocks the ping 
 
    If the command output shown in :ref:`Figure 2 <en-us_topic_0105130172__fig7244357113416>` is displayed, there is no ICMP rule blocking the ping operations.
 
-   
-
-.. _en-us_topic_0105130172__fig7244357113416:
+   .. _en-us_topic_0105130172__fig7244357113416:
 
    .. figure:: /_static/images/en-us_image_0250117342.png
       :alt: Click to enlarge
@@ -147,9 +123,11 @@ If a firewall is enabled on the ECS, check whether the firewall blocks the ping 
 
    View and set the firewall status.
 
-#. If the firewall is **On**, go to 4.
+#. If the firewall is **On**, go to :ref:`4 <en-us_topic_0105130172__li192824161474>`.
 
-#. Check the ICMP rule statuses in the firewall.
+#. .. _en-us_topic_0105130172__li192824161474:
+
+   Check the ICMP rule statuses in the firewall.
 
    a. In the navigation pane on the **Windows Firewall** page, click **Advanced settings**.
 
@@ -165,9 +143,7 @@ If a firewall is enabled on the ECS, check whether the firewall blocks the ping 
 
       **Outbound Rules**: **File and Printer Sharing (Echo Request - ICMPv6-Out)**
 
-      
-
-.. _en-us_topic_0105130172__fig178326362544:
+      .. _en-us_topic_0105130172__fig178326362544:
 
       .. figure:: /_static/images/en-us_image_0250182352.png
          :alt: Click to enlarge
@@ -176,9 +152,7 @@ If a firewall is enabled on the ECS, check whether the firewall blocks the ping 
 
          **Figure 3** Inbound Rules
 
-      
-
-.. _en-us_topic_0105130172__fig5225320554:
+      .. _en-us_topic_0105130172__fig5225320554:
 
       .. figure:: /_static/images/en-us_image_0250182717.png
          :alt: Click to enlarge
@@ -186,8 +160,6 @@ If a firewall is enabled on the ECS, check whether the firewall blocks the ping 
       
 
          **Figure 4** Outbound Rules
-
-
 
 .. _en-us_topic_0105130172__section42301821174115:
 
@@ -219,8 +191,6 @@ Check the ECS kernel parameters.
 
       net.ipv4.icmp_echo_ignore_all=0
 
-
-
 .. _en-us_topic_0105130172__en-us_topic_0096302298_section374314592329:
 
 Checking ACL Rules
@@ -240,8 +210,6 @@ By default, no ACL is configured for a VPC. If a network ACL is associated with 
 
       The default network ACL rule denies all incoming and outgoing packets. If a network ACL is disabled, the default rule is still effective.
 
-
-
 .. _en-us_topic_0105130172__section108152100162:
 
 Checking Whether the Network Is Functional
@@ -254,8 +222,6 @@ Checking Whether the Network Is Functional
 #. Check whether the link is accessible.
 
    A ping failure is caused by packet loss or long delay, which may be caused by link congestion, link node faults, or heavy load on the ECS.
-
-
 
 .. _en-us_topic_0105130172__section175172388145:
 
@@ -270,9 +236,7 @@ Generally, the default route of an OS will preferentially select the primary NIC
 
       **ip route**
 
-      
-
-.. _en-us_topic_0105130172__fig7362102412018:
+      .. _en-us_topic_0105130172__fig7362102412018:
 
       .. figure:: /_static/images/en-us_image_0250105611.png
          :alt: Click to enlarge

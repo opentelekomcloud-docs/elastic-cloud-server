@@ -3,10 +3,6 @@
 Overview
 ========
 
-
-
-.. _en-us_topic_0092499768__section1577285115210:
-
 Scenarios
 ---------
 
@@ -20,16 +16,10 @@ You can add a tag to an ECS during the ECS creation or after the ECS creation (*
 
    After creating the ECS, you can view the tags on the pages providing details about the ECS, EIP, and EVS disks.
 
-
-
-.. _en-us_topic_0092499768__section1855512613159:
-
 Basics of Tags
 --------------
 
 Tags are used to identify cloud resources. When you have many cloud resources of the same type, you can use tags to classify cloud resources by dimension (for example, use, owner, or environment).
-
-
 
 .. _en-us_topic_0092499768__en-us_topic_0157874334_fig81911042564:
 
@@ -44,10 +34,6 @@ Tags are used to identify cloud resources. When you have many cloud resources of
 
 You can quickly search for and filter specific cloud resources based on the tags added to them. For example, you can define a set of tags for cloud resources in an account to track the owner and usage of each cloud resource, making resource management easier.
 
-
-
-.. _en-us_topic_0092499768__section992912468317:
-
 Tag Naming Rules
 ----------------
 
@@ -59,9 +45,7 @@ Tag Naming Rules
 
 -  A tag consists of a tag key and a tag value. :ref:`Table 1 <en-us_topic_0092499768__table197401426182516>` lists the tag key and value requirements.
 
-   
-
-.. _en-us_topic_0092499768__table197401426182516:
+   .. _en-us_topic_0092499768__table197401426182516:
 
    .. table:: **Table 1** Tag key and value requirements
 

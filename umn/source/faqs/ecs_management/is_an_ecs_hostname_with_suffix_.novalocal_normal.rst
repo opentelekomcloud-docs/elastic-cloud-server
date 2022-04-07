@@ -3,18 +3,12 @@
 Is an ECS Hostname with Suffix .novalocal Normal?
 =================================================
 
-
-
-.. _en-us_topic_0094874138__section10979141164416:
-
 Symptom
 -------
 
 Hostnames of ECSs created based on some types of images have the suffix **.novalocal**, whereas others do not.
 
 For example, the hostname is set to **abc** during ECS creation. :ref:`Table 1 <en-us_topic_0094874138__table168595206502>` lists the hostnames (obtained by running the **hostname** command) of ECSs created using different images and those displayed after the ECSs are restarted.
-
-
 
 .. _en-us_topic_0094874138__table168595206502:
 
@@ -27,10 +21,6 @@ For example, the hostname is set to **abc** during ECS creation. :ref:`Table 1 <
    CentOS 7.3 abc.novalocal               abc.novalocal
    Ubuntu 16  abc                         abc
    ========== =========================== ==========================
-
-
-
-.. _en-us_topic_0094874138__section6524112624111:
 
 Troubleshooting
 ---------------

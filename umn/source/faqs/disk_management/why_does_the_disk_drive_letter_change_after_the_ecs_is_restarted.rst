@@ -3,10 +3,6 @@
 Why Does the Disk Drive Letter Change After the ECS Is Restarted?
 =================================================================
 
-
-
-.. _en-us_topic_0240831198__section1577211401201:
-
 Symptom
 -------
 
@@ -23,10 +19,6 @@ cat /etc/fstab
    /dev/vdc1                       /data2   ext4  defaults  0  0
 
 If **/dev/vdb1** is detached, **/dev/vdc1** becomes **/dev/vdb1** and is mounted to **/data1** after the ECS is restarted. In such a case, no disk is mounted to **/data2**.
-
-
-
-.. _en-us_topic_0240831198__section21110971611:
 
 Solution
 --------

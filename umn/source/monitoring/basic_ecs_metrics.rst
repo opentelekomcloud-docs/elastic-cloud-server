@@ -3,34 +3,20 @@
 Basic ECS Metrics
 =================
 
-
-
-.. _en-us_topic_0030911465__section25901060112133:
-
 Description
 -----------
 
 This section describes monitoring metrics reported by ECS to Cloud Eye. You can use Cloud Eye to view these metrics and alarms generated for ECSs.
-
-
-
-.. _en-us_topic_0030911465__section24282572112133:
 
 Namespace
 ---------
 
 SYS.ECS
 
-
-
-.. _en-us_topic_0030911465__section1377504154:
-
 ECS Metrics
 -----------
 
 ECS metrics vary depending on ECS OSs and types. For details, see :ref:`Table 1 <en-us_topic_0030911465__table1474714113454>`. Y indicates that the metric is supported, and x indicates that the metric is not supported.
-
-
 
 .. _en-us_topic_0030911465__table1474714113454:
 
@@ -73,8 +59,6 @@ ECS metrics vary depending on ECS OSs and types. For details, see :ref:`Table 1 
 The monitoring intervals for the following ECSs with raw monitoring metrics are as follows:
 
 -  KVM ECS: 5 minutes
-
-
 
 .. _en-us_topic_0030911465__table64866324222846:
 
@@ -175,16 +159,8 @@ The monitoring intervals for the following ECSs with raw monitoring metrics are 
    |                                       |                       |    Only Mellanox EDR 100 GB single-port InfiniBand NICs are supported.                                                                                                                                                                                                                                                                                |                |                  |                                                |
    +---------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+------------------+------------------------------------------------+
 
-
-
-.. _en-us_topic_0030911465__section36963297112133:
-
 Dimensions
 ----------
-
-
-
-.. _en-us_topic_0030911465__table41237041112133:
 
 =========== =====================
 Key         Value

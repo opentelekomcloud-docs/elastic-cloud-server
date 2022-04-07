@@ -5,10 +5,6 @@ How Can I Test Network Performance?
 
 Use netperf and iperf3 to test network performance between ECSs. The test operations include preparations, TCP bandwidth test, UDP PPS test, and latency test.
 
-
-
-.. _en-us_topic_0115820205__section1048194415433:
-
 Background
 ----------
 
@@ -18,9 +14,7 @@ Background
 
 -  :ref:`Table 1 <en-us_topic_0115820205__table15359114885218>` and :ref:`Table 2 <en-us_topic_0115820205__table8470126153613>` list the common netperf and iperf3 parameters.
 
-   
-
-.. _en-us_topic_0115820205__table15359114885218:
+   .. _en-us_topic_0115820205__table15359114885218:
 
    .. table:: **Table 1** Common netperf parameters
 
@@ -38,9 +32,7 @@ Background
       | -m        | Data packet size, which is suggested to be **1440** in bandwidth tests                        |
       +-----------+-----------------------------------------------------------------------------------------------+
 
-   
-
-.. _en-us_topic_0115820205__table8470126153613:
+   .. _en-us_topic_0115820205__table8470126153613:
 
    .. table:: **Table 2** Common iperf3 parameters
 
@@ -64,20 +56,12 @@ Background
       |                                   | In this section, the maximum number of 16 vCPUs is used as an example for each ECS. If an ECS has 8 vCPUs, the **-A** value ranges from 0 to 7. |
       +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _en-us_topic_0115820205__section13811327193718:
-
 Test Preparations
 -----------------
 
 #. Prepare ECSs.
 
    Ensure that both type and specifications of the tested ECS and auxiliary ECSs are the same. In addition, ensure that these ECSs are deployed in the same ECS group with anti-affinity enabled.
-
-   
-
-.. _en-us_topic_0115820205__table9726120145710:
 
    .. table:: **Table 3** Preparations
 
@@ -93,9 +77,7 @@ Test Preparations
 
    :ref:`Table 4 <en-us_topic_0115820205__table231811914413>` lists the procedures for installing these tools.
 
-   
-
-.. _en-us_topic_0115820205__table231811914413:
+   .. _en-us_topic_0115820205__table231811914413:
 
    .. table:: **Table 4** Installing test tools
 
@@ -139,7 +121,9 @@ Test Preparations
 
    Perform the following operations on both tested ECS and auxiliary ECSs.
 
-   a. Run the following command to check the number of queues supported by the ECSs:
+   a. .. _en-us_topic_0115820205__li162918018139:
+
+      Run the following command to check the number of queues supported by the ECSs:
 
       **ethtool -l eth0 \| grep -i Pre -A 5 \| grep Combined**
 
@@ -147,11 +131,7 @@ Test Preparations
 
       **ethtool -L eth0 combined** *X*
 
-      In the preceding command, *X* is the number of queues obtained in 3.a.
-
-
-
-.. _en-us_topic_0115820205__section877203363715:
+      In the preceding command, *X* is the number of queues obtained in :ref:`3.a <en-us_topic_0115820205__li162918018139>`.
 
 TCP Bandwidth Test (Using netperf)
 ----------------------------------
@@ -324,9 +304,7 @@ Perform the test on multiple flows. This section considers 16 flows that are eve
 
    After the test is complete, the output of the netperf process on one TX end is shown in :ref:`Figure 1 <en-us_topic_0115820205__fig333414318238>`. The final result is the sum of the test results of the netperf processes on all TX ends.
 
-   
-
-.. _en-us_topic_0115820205__fig333414318238:
+   .. _en-us_topic_0115820205__fig333414318238:
 
    .. figure:: /_static/images/en-us_image_0115873247.png
       :alt: **Figure 1** Output of the netperf process on one TX end
@@ -339,10 +317,6 @@ Perform the test on multiple flows. This section considers 16 flows that are eve
       There are a large number of netperf processes. To facilitate statistics collection, it is a good practice to run the following command to view test data on the tested ECS using sar:
 
       **sar -n DEV 1 60**
-
-
-
-.. _en-us_topic_0115820205__section2827154113378:
 
 UDP PPS Test (Using iperf3)
 ---------------------------
@@ -513,9 +487,7 @@ UDP PPS Test (Using iperf3)
 
    :ref:`Figure 2 <en-us_topic_0115820205__fig166644134610>` shows an example of the UDP PPS test result.
 
-   
-
-.. _en-us_topic_0115820205__fig166644134610:
+   .. _en-us_topic_0115820205__fig166644134610:
 
    .. figure:: /_static/images/en-us_image_0115874559.png
       :alt: Click to enlarge
@@ -529,10 +501,6 @@ UDP PPS Test (Using iperf3)
       There are a large number of iperf3 processes. To facilitate statistics collection, it is a good practice to run the following command to view test data on the tested ECS using sar:
 
       **sar -n DEV 1 60**
-
-
-
-.. _en-us_topic_0115820205__section63171353123719:
 
 Latency Test
 ------------

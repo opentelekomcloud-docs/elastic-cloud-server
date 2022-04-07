@@ -3,10 +3,6 @@
 Login Using an SSH Password
 ===========================
 
-
-
-.. _en-us_topic_0017955633__section193261132111117:
-
 Scenarios
 ---------
 
@@ -15,10 +11,6 @@ This section describes how to remotely log in to a Linux ECS using an SSH passwo
 .. important::
 
    Logging in to a Linux ECS using SSH password authentication is disabled by default. If you require password authentication, configure it after logging in to the ECS. To ensure system security, reset the common user password for logging in to the Linux ECS after configuring SSH password authentication.
-
-
-
-.. _en-us_topic_0017955633__section58260650112020:
 
 Prerequisites
 -------------
@@ -29,8 +21,6 @@ Prerequisites
 -  Access to port 22 is allowed in the inbound direction of the security group to which the ECS belongs. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.
 -  The network connection between the login tool (PuTTY) and the target ECS is normal. For example, the default port 22 is not blocked by the firewall.
 -  You have obtained the SSH login permission and reset the common user password for logging in to the Linux ECS. For details, see :ref:`Configuring the Login Permission Using SSH Password Authentication <en-us_topic_0017955633__section6207684794951>`.
-
-
 
 .. _en-us_topic_0017955633__section6207684794951:
 
@@ -87,8 +77,6 @@ Configuring the Login Permission Using SSH Password Authentication
 
       passwd: all authentication tokens updated successfully.
 
-
-
 .. _en-us_topic_0017955633__section62068112020:
 
 Logging In to the Linux ECS from a Local Windows Server
@@ -114,9 +102,7 @@ The following operations use PuTTY as an example to log in to the ECS.
 
    d. **Saved Sessions**: Task name, which can be clicked for remote connection when you use PuTTY next time
 
-      
-
-.. _en-us_topic_0017955633__fig74247114018:
+      .. _en-us_topic_0017955633__fig74247114018:
 
       .. figure:: /_static/images/en-us_image_0159943784.png
          :alt: Click to enlarge
@@ -132,8 +118,6 @@ The following operations use PuTTY as an example to log in to the ECS.
    If you log in to the ECS for the first time, PuTTY displays a security warning dialog box, asking you whether to accept the ECS security certificate. Click **Yes** to save the certificate to your local registry.
 
 #. After the SSH connection to the ECS is set up, enter the username and password as prompted to log in to the ECS.
-
-
 
 .. _en-us_topic_0017955633__section20811823174313:
 

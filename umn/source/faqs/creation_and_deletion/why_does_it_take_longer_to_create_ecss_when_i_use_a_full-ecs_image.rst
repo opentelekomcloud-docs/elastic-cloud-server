@@ -3,18 +3,10 @@
 Why Does It Take Longer to Create ECSs When I Use a Full-ECS Image?
 ===================================================================
 
-
-
-.. _en-us_topic_0102391480__section949111527416:
-
 Symptom
 -------
 
 When you use a full-ECS image that was created using a CSBS backup to create ECSs, the process is time-consuming or the system displays a message indicating that the image cannot be used to rapidly create ECSs.
-
-
-
-.. _en-us_topic_0102391480__section1463615352495:
 
 Cause Analysis
 --------------
@@ -25,10 +17,6 @@ If your full-ECS image is in the old backup format provided by CSBS, this issue 
 
    -  CSBS has a new backup format. You can rapidly create ECSs if the full-ECS image is in this format
    -  This issue does not occur if a full-ECS image is created using a CBR backup.
-
-
-
-.. _en-us_topic_0102391480__section599094765813:
 
 Solution Using CBR
 ------------------
@@ -55,10 +43,6 @@ If you want to use a full-ECS image to rapidly create ECSs, ensure that the full
       For details, see *Image Management Service User Guide*.
 
       You can use the full-ECS image to rapidly create ECSs.
-
-
-
-.. _en-us_topic_0102391480__section14961317195115:
 
 Solution( Using CSBS)
 ---------------------

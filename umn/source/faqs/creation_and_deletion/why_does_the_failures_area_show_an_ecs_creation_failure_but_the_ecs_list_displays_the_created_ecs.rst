@@ -3,18 +3,10 @@
 Why Does the Failures Area Show an ECS Creation Failure But the ECS List Displays the Created ECS?
 ==================================================================================================
 
-
-
-.. _en-us_topic_0039524582__section6720837161158:
-
 Symptom
 -------
 
 After you created an ECS bound with an EIP on the management console, the ECS creation was successful but binding the EIP failed due to insufficient EIPs. Although the **Failures** area showed that the ECS creation failed, the ECS was displayed in the ECS list. The results of the ECS creation task were inconsistent.
-
-
-
-.. _en-us_topic_0039524582__section26118472161749:
 
 Root Cause
 ----------

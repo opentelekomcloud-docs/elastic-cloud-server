@@ -5,10 +5,6 @@ ECS Lifecycle
 
 The ECS lifecycle refers to the entire journey an ECS goes through, from creation to deletion (or release).
 
-
-
-.. _en-us_topic_0140323150__table198821178160:
-
 .. table:: **Table 1** ECS statuses
 
    +------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------+

@@ -3,18 +3,10 @@
 How Can I Transfer Files from a Local Mac to a Windows ECS?
 ===========================================================
 
-
-
-.. _en-us_topic_0295091738__section17416155834:
-
 Scenarios
 ---------
 
 This section describes how to use Microsoft Remote Desktop for Mac to transfer files from a local Mac to a Windows ECS.
-
-
-
-.. _en-us_topic_0295091738__section9604182132119:
 
 Prerequisites
 -------------
@@ -27,10 +19,6 @@ Prerequisites
 
       By default, RDP has been enabled on the ECSs created using a public image.
 
-
-
-.. _en-us_topic_0295091738__section171715462341:
-
 Procedure
 ---------
 
@@ -38,9 +26,7 @@ Procedure
 
 #. Click **Add Desktop**.
 
-   
-
-.. _en-us_topic_0295091738__fig276023113838:
+   .. _en-us_topic_0295091738__fig276023113838:
 
    .. figure:: /_static/images/en-us_image_0295099237.png
       :alt: Click to enlarge
@@ -59,9 +45,7 @@ Procedure
 
       a. Enter username **administrator** and password for logging in to the Windows ECS and click **Add**.
 
-         
-
-.. _en-us_topic_0295091738__fig332991311254:
+         .. _en-us_topic_0295091738__fig332991311254:
 
          .. figure:: /_static/images/en-us_image_0295099238.png
             :alt: **Figure 2** Add user account
@@ -69,9 +53,7 @@ Procedure
 
             **Figure 2** Add user account
 
-         
-
-.. _en-us_topic_0295091738__fig6992121711259:
+         .. _en-us_topic_0295091738__fig6992121711259:
 
          .. figure:: /_static/images/en-us_image_0295099198.png
             :alt: Click to enlarge
@@ -80,21 +62,14 @@ Procedure
 
             **Figure 3** Add PC
 
-#. 
+#. Select the folder to be uploaded.
 
-   .. container::
-   
-
-      Select the folder to be uploaded.
-
-      a. Click **Folders** and switch to the folder list.
-      b. Click |image1| in the lower left corner, select the folder to be uploaded, and click **Add**.
+   a. Click **Folders** and switch to the folder list.
+   b. Click |image1| in the lower left corner, select the folder to be uploaded, and click **Add**.
 
 #. On the **Remote Desktop** page, double-click the icon of the target Windows ECS.
 
-   
-
-.. _en-us_topic_0295091738__fig020423384416:
+   .. _en-us_topic_0295091738__fig020423384416:
 
    .. figure:: /_static/images/en-us_image_0295099239.png
       :alt: Click to enlarge

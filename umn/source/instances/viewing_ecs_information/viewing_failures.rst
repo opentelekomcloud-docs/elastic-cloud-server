@@ -3,25 +3,15 @@
 Viewing Failures
 ================
 
-
-
-.. _en-us_topic_0108255889__section49701611171023:
-
 Scenarios
 ---------
 
 The **Failures** area shows the tasks that failed to process due to an error, including the task name and status. **Failures** is displayed on the management console if a task failed. This section describes how to view failures.
 
-
-
-.. _en-us_topic_0108255889__section10360181317498:
-
 Failure Types
 -------------
 
 :ref:`Table 1 <en-us_topic_0108255889__table155141127195016>` lists the types of failures that can be recorded in the **Failures** area.
-
-
 
 .. _en-us_topic_0108255889__table155141127195016:
 
@@ -37,10 +27,6 @@ Failure Types
    |                                   |    If an ECS specifications modification failed, this operation is recorded in **Failures**.                                                                                                                                                                                  |
    +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _en-us_topic_0108255889__section40936232171845:
-
 Procedure
 ---------
 
@@ -52,9 +38,7 @@ Procedure
 
 #. View **Failures** on the right side of common operations.
 
-   
-
-.. _en-us_topic_0108255889__fig1678913358104:
+   .. _en-us_topic_0108255889__fig1678913358104:
 
    .. figure:: /_static/images/en-us_image_0152768827.png
       :alt: Click to enlarge

@@ -3,18 +3,10 @@
 How Can a Changed Static Hostname Take Effect Permanently?
 ==========================================================
 
-
-
-.. _en-us_topic_0050735736__section319352620019:
-
 Symptom
 -------
 
 The static hostname of a Linux ECS is user defined and injected using Cloud-Init during the ECS creation. Although the hostname can be changed by running the **hostname** command, the changed hostname is restored after the ECS is restarted.
-
-
-
-.. _en-us_topic_0050735736__section14535183616249:
 
 Changing the Hostname on the ECS
 --------------------------------

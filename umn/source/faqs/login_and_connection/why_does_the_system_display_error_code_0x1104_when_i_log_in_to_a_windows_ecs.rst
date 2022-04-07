@@ -3,16 +3,10 @@
 Why Does the System Display Error Code 0x1104 When I Log In to a Windows ECS?
 =============================================================================
 
-
-
-.. _en-us_topic_0264235942__en-us_topic_0138293293_section156431143115:
-
 Symptom
 -------
 
 The system displays an error message indicating that a protocol error (code: 0x1104) is detected when you use MSTSC to access an ECS running Windows Server 2008.
-
-
 
 .. _en-us_topic_0264235942__en-us_topic_0138293293_fig7560131184912:
 
@@ -23,10 +17,6 @@ The system displays an error message indicating that a protocol error (code: 0x1
 
    **Figure 1** Protocol error (code: 0x1104)
 
-
-
-.. _en-us_topic_0264235942__en-us_topic_0138293293_section12863194019215:
-
 Possible Causes
 ---------------
 
@@ -35,18 +25,16 @@ Possible Causes
 -  Port 3389 on the ECS is used by other processes.
 -  The Remote Desktop Session Host is incorrectly configured.
 
-
-
-.. _en-us_topic_0264235942__en-us_topic_0138293293_section912415446217:
-
 Solution
 --------
 
 #. Check security group settings.
 
-   Check whether port 3389 is allowed in inbound direction. If it is allowed, go to 2.
+   Check whether port 3389 is allowed in inbound direction. If it is allowed, go to :ref:`2 <en-us_topic_0264235942__en-us_topic_0138293293_li18622172719193>`.
 
-#. Check whether the firewall is disabled:
+#. .. _en-us_topic_0264235942__en-us_topic_0138293293_li18622172719193:
+
+   Check whether the firewall is disabled:
 
    a. Log in to the Windows ECS.
 
@@ -60,17 +48,17 @@ Solution
 
       |image2|
 
-   If the firewall is enabled, go to 3.
+   If the firewall is enabled, go to :ref:`3 <en-us_topic_0264235942__en-us_topic_0138293293_li15622182714191>`.
 
-#. Log in to the ECS using VNC and check the port.
+#. .. _en-us_topic_0264235942__en-us_topic_0138293293_li15622182714191:
+
+   Log in to the ECS using VNC and check the port.
 
    a. Open the **cmd** window and run the following command:
 
       **netstat -ano \|findstr: 3389**
 
-      
-
-.. _en-us_topic_0264235942__en-us_topic_0138293293_fig1562219275192:
+      .. _en-us_topic_0264235942__en-us_topic_0138293293_fig1562219275192:
 
       .. figure:: /_static/images/en-us_image_0288997604.png
          :alt: Click to enlarge
@@ -87,9 +75,7 @@ Solution
 
       **netsh http show servicestate**
 
-      
-
-.. _en-us_topic_0264235942__en-us_topic_0138293293_fig16426409265:
+      .. _en-us_topic_0264235942__en-us_topic_0138293293_fig16426409265:
 
       .. figure:: /_static/images/en-us_image_0288997606.png
          :alt: Click to enlarge
@@ -104,9 +90,11 @@ Solution
 
    f. Change the port used by IIS and restart IIS.
 
-#. If no error occurs during the preceding steps, go to step 5 to check whether error 0x1104 is caused by the configuration of Remote Desktop Session Host.
+#. If no error occurs during the preceding steps, go to step :ref:`5 <en-us_topic_0264235942__en-us_topic_0138293293_li19441439143520>` to check whether error 0x1104 is caused by the configuration of Remote Desktop Session Host.
 
-#. Check the remote desktop session host configuration.
+#. .. _en-us_topic_0264235942__en-us_topic_0138293293_li19441439143520:
+
+   Check the remote desktop session host configuration.
 
    a. Log in to the ECS using VNC.
 
@@ -116,9 +104,7 @@ Solution
 
    d. Choose **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Remote Desktop Services**.
 
-      
-
-.. _en-us_topic_0264235942__en-us_topic_0138293293_fig1072317112254:
+      .. _en-us_topic_0264235942__en-us_topic_0138293293_fig1072317112254:
 
       .. figure:: /_static/images/en-us_image_0288997608.png
          :alt: Click to enlarge
@@ -129,9 +115,7 @@ Solution
 
    e. **Remote Desktop Session Host** > **Security**.
 
-      
-
-.. _en-us_topic_0264235942__en-us_topic_0138293293_fig64299268259:
+      .. _en-us_topic_0264235942__en-us_topic_0138293293_fig64299268259:
 
       .. figure:: /_static/images/en-us_image_0288997610.png
          :alt: Click to enlarge
@@ -142,9 +126,7 @@ Solution
 
    f. Set **Require use of specific security layer for remote (RDP) connections** to **Enabled** and **Security layer** to **RDP**.
 
-      
-
-.. _en-us_topic_0264235942__en-us_topic_0138293293_fig6816237202719:
+      .. _en-us_topic_0264235942__en-us_topic_0138293293_fig6816237202719:
 
       .. figure:: /_static/images/en-us_image_0288997612.png
          :alt: Click to enlarge
@@ -161,9 +143,7 @@ Solution
 
       **gpupdate**
 
-      
-
-.. _en-us_topic_0264235942__en-us_topic_0138293293_fig1129272819299:
+      .. _en-us_topic_0264235942__en-us_topic_0138293293_fig1129272819299:
 
       .. figure:: /_static/images/en-us_image_0288997614.png
          :alt: Click to enlarge

@@ -3,18 +3,10 @@
 Viewing ECS Metrics
 ===================
 
-
-
-.. _en-us_topic_0027371530__section11121260224613:
-
 Scenarios
 ---------
 
 The public cloud platform provides Cloud Eye, which monitors the running statuses of your ECSs. You can obtain the monitoring metrics of each ECS on the management console.
-
-
-
-.. _en-us_topic_0027371530__section8439794224022:
 
 Prerequisites
 -------------
@@ -34,10 +26,6 @@ Prerequisites
 -  The target ECS has been properly running for at least 10 minutes.
 
    The monitoring data and graphics are available for a new ECS after the ECS runs for at least 10 minutes.
-
-
-
-.. _en-us_topic_0027371530__section44667294224513:
 
 Procedure
 ---------

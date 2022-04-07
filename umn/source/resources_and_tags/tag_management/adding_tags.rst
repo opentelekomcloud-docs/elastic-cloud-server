@@ -13,8 +13,6 @@ You can add tags to ECSs in any of the following ways:
 
 For details about how to use predefined tags, see :ref:`Using Predefined Tags <en-us_topic_0183019669__section648015120456>`.
 
-
-
 .. _en-us_topic_0183019669__section619816351650:
 
 Adding Tags When Creating an ECS
@@ -36,8 +34,6 @@ Adding Tags When Creating an ECS
 
       -  For details about other parameters, see "Purchasing an ECS with Customized Configurations".
 
-
-
 .. _en-us_topic_0183019669__section15164103015253:
 
 Adding Tags on the Page Providing Details About an ECS
@@ -56,8 +52,6 @@ Adding Tags on the Page Providing Details About an ECS
 #. Click the **Tags** tab and then **Add Tag**. In the displayed dialog box, enter the tag key and tag value. For the tag key and tag value requirements, see :ref:`Table 1 <en-us_topic_0092499768__table197401426182516>`.
 
    You can change the tag value after the tag is added.
-
-
 
 .. _en-us_topic_0183019669__section115321623241:
 
@@ -87,8 +81,6 @@ Adding Tags on the TMS Console
 #. Locate the row containing the target ECS, click |image4|, and enter a value (for example **A**).
 
    After a value is set for a tag key, the number of tags is incremented by 1. Repeat the preceding steps to add tag values for other ECSs.
-
-
 
 .. _en-us_topic_0183019669__section648015120456:
 

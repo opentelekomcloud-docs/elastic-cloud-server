@@ -3,18 +3,10 @@
 Login Using an SSH Key
 ======================
 
-
-
-.. _en-us_topic_0017955380__section1547194115913:
-
 Scenarios
 ---------
 
 This section describes how to remotely log in to a Linux ECS using an SSH key pair from Windows and Linux, respectively.
-
-
-
-.. _en-us_topic_0017955380__section6801971111724:
 
 Prerequisites
 -------------
@@ -24,8 +16,6 @@ Prerequisites
 
 -  You have configured the inbound rules of the security group. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.
 -  The network connection between the login tool (PuTTY) and the target ECS is normal. For example, the default port 22 is not blocked by the firewall.
-
-
 
 .. _en-us_topic_0017955380__section47918167111724:
 
@@ -40,10 +30,12 @@ The following operations use PuTTY as an example. Before logging in to the ECS u
 
 #. Check whether the private key file has been converted to .ppk format.
 
-   -  If yes, go to step 7.
-   -  If no, go to step 2.
+   -  If yes, go to step :ref:`7 <en-us_topic_0017955380__li40879966111724>`.
+   -  If no, go to step :ref:`2 <en-us_topic_0017955380__li8851985111724>`.
 
-#. Visit the following website and download PuTTY and PuTTYgen:
+#. .. _en-us_topic_0017955380__li8851985111724:
+
+   Visit the following website and download PuTTY and PuTTYgen:
 
    https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
@@ -59,15 +51,17 @@ The following operations use PuTTY as an example. Before logging in to the ECS u
 
 #. Click **Save private key**.
 
-#. Save the converted private key, for example, **kp-123.ppk**, to the local computer.
+#. .. _en-us_topic_0017955380__li56738001111724:
 
-#. Double-click **PUTTY.EXE**. The **PuTTY Configuration** page is displayed.
+   Save the converted private key, for example, **kp-123.ppk**, to the local computer.
+
+#. .. _en-us_topic_0017955380__li40879966111724:
+
+   Double-click **PUTTY.EXE**. The **PuTTY Configuration** page is displayed.
 
 #. Choose **Session** and enter the EIP of the ECS under **Host Name (or IP address)**.
 
-   
-
-.. _en-us_topic_0017955380__fig3739272820239:
+   .. _en-us_topic_0017955380__fig3739272820239:
 
    .. figure:: /_static/images/en-us_image_0000001082643605.jpg
       :alt: Click to enlarge
@@ -83,7 +77,7 @@ The following operations use PuTTY as an example. Before logging in to the ECS u
       -  If a public image is used, see `Public Images Introduction <https://docs.otc.t-systems.com/en-us/ims/index.html>`__ for the image username.
       -  If a private image is used, use the username of the private image.
 
-#. Choose **Connection** > **SSH** > **Auth**. In the last configuration item **Private key file for authentication**, click **Browse** and select the private key converted in step 6.
+#. Choose **Connection** > **SSH** > **Auth**. In the last configuration item **Private key file for authentication**, click **Browse** and select the private key converted in step :ref:`6 <en-us_topic_0017955380__li56738001111724>`.
 
 #. Click **Open**.
 
@@ -104,9 +98,7 @@ The following operations use PuTTY as an example. Before logging in to the ECS u
 
 #. (Optional) If the system displays the **SSH Security Warning** dialog box, click **Accept & Save**.
 
-   
-
-.. _en-us_topic_0017955380__fig680319562495:
+   .. _en-us_topic_0017955380__fig680319562495:
 
    .. figure:: /_static/images/en-us_image_0178475901.png
       :alt: **Figure 2** SSH Security Warning
@@ -121,8 +113,6 @@ The following operations use PuTTY as an example. Before logging in to the ECS u
 #. Select the locally stored key file and click **Open**.
 
 #. Click **OK** to log in to the ECS.
-
-
 
 .. _en-us_topic_0017955380__section3666784111724:
 

@@ -3,20 +3,12 @@
 CBR
 ===
 
-
-
-.. _en-us_topic_0000001174675379__section4212145215467:
-
 What Is CBR?
 ------------
 
 Cloud Backup and Recovery (CBR) enables you to back up cloud servers and disks with ease. In case of a virus attack, accidental deletion, or software or hardware fault, you can restore data to any point in the past when the data was backed up.
 
 CBR protects your services by ensuring the security and consistency of your data.
-
-
-
-.. _en-us_topic_0000001174675379__section1660873164114:
 
 Differences Between Cloud Server Backup and Cloud Disk Backup
 -------------------------------------------------------------
@@ -25,10 +17,6 @@ You can back up ECS data using the Cloud Server Backup or Cloud Disk Backup func
 
 -  Cloud Server Backup (recommended): Use this backup function if you want to back up the data of all EVS disks (system and data disks) on an ECS. This prevents data inconsistency caused by time difference in creating a backup.
 -  Cloud Disk Backup: Use this backup function if you want to back up the data of one or more EVS disks (system or data disk) on an ECS. This minimizes backup costs on the basis of data security.
-
-
-
-.. _en-us_topic_0000001174675379__table1210762195612:
 
 .. table:: **Table 1** Differences between cloud server backup and cloud disk backup
 

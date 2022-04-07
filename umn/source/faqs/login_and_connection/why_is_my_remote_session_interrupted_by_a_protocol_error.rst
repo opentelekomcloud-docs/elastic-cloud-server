@@ -3,16 +3,10 @@
 Why Is My Remote Session Interrupted by a Protocol Error?
 =========================================================
 
-
-
-.. _en-us_topic_0264235945__en-us_topic_0173587265_section472713533172:
-
 Symptom
 -------
 
 An error message is displayed indicating that the remote session will be disconnected because of a protocol error.
-
-
 
 .. _en-us_topic_0264235945__en-us_topic_0173587265_en-us_topic_0120795668_fig1256612592310:
 
@@ -22,27 +16,17 @@ An error message is displayed indicating that the remote session will be disconn
 
    **Figure 1** Protocol error
 
-
-
-.. _en-us_topic_0264235945__en-us_topic_0173587265_section162024181815:
-
 Possible Causes
 ---------------
 
 The registry subkey Certificate is damaged.
-
-
-
-.. _en-us_topic_0264235945__en-us_topic_0173587265_section2388160183:
 
 Solution
 --------
 
 #. In the **Run** dialog box, enter **regedit** and click **OK** to open the registry editor.
 
-   
-
-.. _en-us_topic_0264235945__en-us_topic_0173587265_fig429554874215:
+   .. _en-us_topic_0264235945__en-us_topic_0173587265_fig429554874215:
 
    .. figure:: /_static/images/en-us_image_0288997424.png
       :alt: Click to enlarge
@@ -55,9 +39,7 @@ Solution
 
 #. Delete **Certificate**.
 
-   
-
-.. _en-us_topic_0264235945__en-us_topic_0173587265_fig134336512282:
+   .. _en-us_topic_0264235945__en-us_topic_0173587265_fig134336512282:
 
    .. figure:: /_static/images/en-us_image_0288997425.png
       :alt: Click to enlarge
@@ -70,9 +52,7 @@ Solution
 
 #. Choose **Start** > **Administrative Tools** > **Remote Desktop Services** > **Remote Desktop Session Host Configuration**.
 
-   
-
-.. _en-us_topic_0264235945__en-us_topic_0173587265_fig15551901388:
+   .. _en-us_topic_0264235945__en-us_topic_0173587265_fig15551901388:
 
    .. figure:: /_static/images/en-us_image_0288997426.png
       :alt: Click to enlarge
@@ -83,9 +63,7 @@ Solution
 
 #. Right-click **RDP-Tcp** and choose **Properties**. In the displayed dialog box, click **General** and set **Security layer** to **RDP Security Layer**.
 
-   
-
-.. _en-us_topic_0264235945__en-us_topic_0173587265_fig538416200307:
+   .. _en-us_topic_0264235945__en-us_topic_0173587265_fig538416200307:
 
    .. figure:: /_static/images/en-us_image_0288997427.png
       :alt: Click to enlarge

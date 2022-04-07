@@ -3,10 +3,6 @@
 Overview
 ========
 
-
-
-.. _en-us_topic_0000001128445638__section4212145215467:
-
 What Is CBR?
 ------------
 
@@ -14,20 +10,12 @@ Cloud Backup and Recovery (CBR) enables you to back up cloud servers and disks w
 
 CBR protects your services by ensuring the security and consistency of your data.
 
-
-
-.. _en-us_topic_0000001128445638__section19946833164711:
-
 What Are the Differences Between Backup, Snapshot, and Image?
 -------------------------------------------------------------
 
 You can use the cloud server backup function to create ECSs and the cloud disk backup function to create EVS disks.
 
 An image can be a system disk image, data disk image, or full-ECS image.
-
-
-
-.. _en-us_topic_0000001128445638__table178211453578:
 
 +---------------------+----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Backup Type         | Backup Object                                      | Application Scenario                                                                                                                                                                                                                                                                           | Differences and Advantages                                                                                                                                                                                             |
@@ -98,8 +86,6 @@ An image can be a system disk image, data disk image, or full-ECS image.
 |                     |                                                    |    You can use a full-ECS image to quickly create multiple ECSs with the same OS and data, thereby quickly deploying services these ECSs.                                                                                                                                                      |                                                                                                                                                                                                                        |
 +---------------------+----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
 .. _en-us_topic_0000001128445638__section10399144613501:
 
 CBR Architecture
@@ -129,8 +115,6 @@ CBR consists of backups, vaults, and policies.
    -  Backup policies: To perform automatic backups, configure a backup policy by setting the execution times of backup tasks, the backup cycle, and retention rules, and then apply the policy to a vault.
    -  Replication policies: To automatically replicate backups or vaults, configure a replication policy by setting the execution times of replication tasks, the replication cycle, and retention rules, and then apply the policy to a vault. Replicas of backups must be stored in replication vaults.
 
-
-
 .. _en-us_topic_0000001128445638__section696712594578:
 
 Backup Mechanism
@@ -148,18 +132,12 @@ When creating a backup of a disk, CBR also creates a snapshot for it. Every time
 
 CBR stores backup data in OBS, enhancing backup data security.
 
-
-
 .. _en-us_topic_0000001128445638__section533362013:
 
 Backup Options
 --------------
 
 CBR supports one-off backup and periodic backup. A one-off backup task is manually created by users and is executed only once. Periodic backup tasks are automatically executed based on a user-defined backup policy.
-
-
-
-.. _en-us_topic_0000001128445638__table427813140219:
 
 .. table:: **Table 1** One-off backup and periodic backup
 

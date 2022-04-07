@@ -3,10 +3,6 @@
 High-Performance Computing ECSs
 ===============================
 
-
-
-.. _en-us_topic_0035470100__section13984653191338:
-
 Overview
 --------
 
@@ -14,16 +10,8 @@ H2 ECSs are designed to meet high-end computational needs, such as molecular mod
 
 HL1 ECSs are the second generation of high-computing ECSs, featuring large memory capacity. They are interconnected with each other using 100 Gbit/s RDMA InfiniBand NICs and support 56 Gbit/s shared high I/O storage.
 
-
-
-.. _en-us_topic_0035470100__section43299283191352:
-
 Specifications
 --------------
-
-
-
-.. _en-us_topic_0035470100__table18256889221911:
 
 .. table:: **Table 1** H2 ECS specifications
 
@@ -35,10 +23,6 @@ Specifications
    | h2.3xlarge.20 | 16    | 256          | 13/13                              | 90                | 8               | KVM                 | 1           | 3.2                             | 100 Gbit/s EDR InfiniBand |                              |
    +---------------+-------+--------------+------------------------------------+-------------------+-----------------+---------------------+-------------+---------------------------------+---------------------------+------------------------------+
 
-
-
-.. _en-us_topic_0035470100__table27568023202527:
-
 .. table:: **Table 2** HL1 ECS specifications
 
    +---------------+-------+--------------+------------------------------------+-------------------+-----------------+---------------------+---------------------------+----------------------------------------+
@@ -46,10 +30,6 @@ Specifications
    +===============+=======+==============+====================================+===================+=================+=====================+===========================+========================================+
    | hl1.8xlarge.8 | 32    | 256          | 9/9                                | 90                | 8               | KVM                 | 100 Gbit/s EDR InfiniBand | CPU: Intel® Xeon® Processor E5-2690 v4 |
    +---------------+-------+--------------+------------------------------------+-------------------+-----------------+---------------------+---------------------------+----------------------------------------+
-
-
-
-.. _en-us_topic_0035470100__section1792295234211:
 
 Scenarios
 ---------
@@ -72,10 +52,6 @@ Scenarios
 
    For example, in HPC scenario, H2 ECSs can be used as compute nodes, and HL1 ECSs can be used as storage nodes.
 
-
-
-.. _en-us_topic_0035470100__section3551415510283:
-
 Features
 --------
 
@@ -96,10 +72,6 @@ High-performance computing ECSs have the following features:
 -  HL1 ECSs support 56 Gbit/s shared high I/O storage.
 
    To support 56 Gbit/s shared high I/O storage, you only need to attach high I/O (performance-optimized I) or ultra-high I/O (latency-optimized) EVS disks to target HL1 ECSs.
-
-
-
-.. _en-us_topic_0035470100__section11683564103115:
 
 Notes on Using H2 ECSs
 ----------------------
@@ -135,10 +107,6 @@ Notes on Using H2 ECSs
 
 -  For SUSE H2 ECSs, if IP over InfiniBand (IPoIB) is required, you must manually configure an IP address for the InfiniBand NIC after installing the InfiniBand driver. For details, see :ref:`How Can I Manually Configure an IP Address for an InfiniBand NIC? <en-us_topic_0083225171>`
 -  After you delete an H2 ECS, the data stored in SSDs is automatically cleared. Therefore, do not store persistence data into SSDs during ECS running.
-
-
-
-.. _en-us_topic_0035470100__section10721258203459:
 
 Notes on Using HL1 ECSs
 -----------------------
@@ -177,10 +145,6 @@ Notes on Using HL1 ECSs
       -  Red Hat Enterprise Linux 7.3 64bit
 
 -  Charging an HL1 ECS is stopped when it is stopped.
-
-
-
-.. _en-us_topic_0035470100__section26607449225539:
 
 Related Links
 -------------

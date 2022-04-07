@@ -3,10 +3,6 @@
 Login Using VNC
 ===============
 
-
-
-.. _en-us_topic_0093263550__section1657615471270:
-
 Scenarios
 ---------
 
@@ -18,28 +14,18 @@ For instructions about how to copy and paste data on VNC pages after the ECS log
 
    Before using remote login (VNC) provided on the management console to log in to a Linux ECS authenticated using a key pair, log in to the ECS :ref:`using an SSH key <en-us_topic_0017955380>` and set a login password.
 
-
-
-.. _en-us_topic_0093263550__en-us_topic_0027268511_section19897287191525:
-
 Constraints
 -----------
 
 -  The remote login function is implemented using customized ports. Therefore, before attempting to log in remotely, ensure that the port to be used is not blocked by the firewall. For example, if the remote login link is xxx:8002, ensure that port 8002 is not blocked by the firewall.
 -  If the client OS uses a local proxy and the firewall port cannot be configured on the local proxy, disable the proxy mode and then try logging in remotely.
 
-
-
-.. _en-us_topic_0093263550__en-us_topic_0027268511_section3272280121431:
-
 Login Notes
 -----------
 
 #. When you log in to the ECS using VNC, four types of keyboards will be used, as described in :ref:`Table 1 <en-us_topic_0093263550__en-us_topic_0027268511_en-us_topic_0039525621_table10692372181721>`.
 
-   
-
-.. _en-us_topic_0093263550__en-us_topic_0027268511_en-us_topic_0039525621_table10692372181721:
+   .. _en-us_topic_0093263550__en-us_topic_0027268511_en-us_topic_0039525621_table10692372181721:
 
    .. table:: **Table 1** Keyboard types
 
@@ -68,9 +54,7 @@ Login Notes
 
    The entered data is as expected only if the input method keyboard on the terminal, the VNC keyboard, and the ECS OS keyboard languages are the same as the physical keyboard language. For details about language configuration in the four types of keyboards, see :ref:`Table 2 <en-us_topic_0093263550__en-us_topic_0027268511_en-us_topic_0039525621_table31240733181814>`.
 
-   
-
-.. _en-us_topic_0093263550__en-us_topic_0027268511_en-us_topic_0039525621_table31240733181814:
+   .. _en-us_topic_0093263550__en-us_topic_0027268511_en-us_topic_0039525621_table31240733181814:
 
    .. table:: **Table 2** Language configuration in the four types of keyboards
 
@@ -112,8 +96,6 @@ Login Notes
 
 #. If the password used when you create the ECS is entered using the English keyboard, you must use the English keyboard to enter the password when logging in to the ECS later.
 
-
-
 .. _en-us_topic_0093263550__en-us_topic_0027268511_section46750509111459:
 
 Logging In to an ECS Using an English Keyboard
@@ -129,11 +111,11 @@ Logging In to an ECS Using an English Keyboard
 
 #. Locate the row containing the ECS and click **Remote Login** in the **Operation** column.
 
-#. In the displayed **Configure Keyboard Layout for Remote Login** dialog box, select the English keyboard.
+#. .. _en-us_topic_0093263550__en-us_topic_0027268511_li17715715111459:
 
-   
+   In the displayed **Configure Keyboard Layout for Remote Login** dialog box, select the English keyboard.
 
-.. _en-us_topic_0093263550__en-us_topic_0027268511_fig25223713111459:
+   .. _en-us_topic_0093263550__en-us_topic_0027268511_fig25223713111459:
 
    .. figure:: /_static/images/en-us_image_0030874270.png
       :alt: Click to enlarge
@@ -146,9 +128,7 @@ Logging In to an ECS Using an English Keyboard
 
 #. (Optional) If you have changed the system language, in the dialog box that is displayed, click **Start Remote Login**.
 
-   
-
-.. _en-us_topic_0093263550__en-us_topic_0027268511_fig54376817111459:
+   .. _en-us_topic_0093263550__en-us_topic_0027268511_fig54376817111459:
 
    .. figure:: /_static/images/en-us_image_0030874271.png
       :alt: Click to enlarge
@@ -159,9 +139,7 @@ Logging In to an ECS Using an English Keyboard
 
 #. (Optional) When the system displays "Press CTRL+ALT+DELETE to log on", click **Send CtrlAltDel** in the upper part of the remote login page to log in to the ECS.
 
-   
-
-.. _en-us_topic_0093263550__fig51941916112020:
+   .. _en-us_topic_0093263550__fig51941916112020:
 
    .. figure:: /_static/images/en-us_image_0201100229.png
       :alt: **Figure 3** Send CtrlAltDel
@@ -171,9 +149,7 @@ Logging In to an ECS Using an English Keyboard
 
 #. (Optional) If you need your cursor to be displayed on the remote login page, click **Local Cursor**.
 
-   
-
-.. _en-us_topic_0093263550__en-us_topic_0027268511_fig3022163194924:
+   .. _en-us_topic_0093263550__en-us_topic_0027268511_fig3022163194924:
 
    .. figure:: /_static/images/en-us_image_0093469181.png
       :alt: Click to enlarge
@@ -183,8 +159,6 @@ Logging In to an ECS Using an English Keyboard
       **Figure 4** Local Cursor
 
 #. Enter the ECS password as prompted.
-
-
 
 .. _en-us_topic_0093263550__en-us_topic_0027268511_section5982347111459:
 
@@ -203,9 +177,7 @@ Logging In to an ECS Using a Non-English Keyboard
 
 #. In the displayed **Configure Keyboard Layout for Remote Login** dialog box, select the English keyboard.
 
-   
-
-.. _en-us_topic_0093263550__en-us_topic_0093263550_en-us_topic_0027268511_fig25223713111459:
+   .. _en-us_topic_0093263550__en-us_topic_0093263550_en-us_topic_0027268511_fig25223713111459:
 
    .. figure:: /_static/images/en-us_image_0030874270.png
       :alt: Click to enlarge
@@ -218,9 +190,7 @@ Logging In to an ECS Using a Non-English Keyboard
 
 8.  (Optional) If you have changed the system language, in the dialog box that is displayed, click **Start Remote Login**.
 
-    
-
-.. _en-us_topic_0093263550__en-us_topic_0093263550_en-us_topic_0027268511_fig54376817111459:
+    .. _en-us_topic_0093263550__en-us_topic_0093263550_en-us_topic_0027268511_fig54376817111459:
 
     .. figure:: /_static/images/en-us_image_0030874271.png
        :alt: Click to enlarge
@@ -231,9 +201,7 @@ Logging In to an ECS Using a Non-English Keyboard
 
 9.  (Optional) When the system displays "Press CTRL+ALT+DELETE to log on", click **Send CtrlAltDel** in the upper part of the remote login page to log in to the ECS.
 
-    
-
-.. _en-us_topic_0093263550__en-us_topic_0027290684_fig22996848191913:
+    .. _en-us_topic_0093263550__en-us_topic_0027290684_fig22996848191913:
 
     .. figure:: /_static/images/en-us_image_0201103161.png
        :alt: **Figure 7** Send CtrlAltDel
@@ -243,9 +211,7 @@ Logging In to an ECS Using a Non-English Keyboard
 
 10. (Optional) If you need your cursor to be displayed on the remote login page, click **Local Cursor**.
 
-    
-
-.. _en-us_topic_0093263550__en-us_topic_0093263550_en-us_topic_0027268511_fig3022163194924:
+    .. _en-us_topic_0093263550__en-us_topic_0093263550_en-us_topic_0027268511_fig3022163194924:
 
     .. figure:: /_static/images/en-us_image_0093469181.png
        :alt: Click to enlarge
@@ -257,9 +223,7 @@ Logging In to an ECS Using a Non-English Keyboard
 11. Enter the ECS password as prompted.
 
     -  When logging in to the ECS using VNC for the first time, use the English keyboard to enter the password. After you have logged in to the ECS, see :ref:`Changing the OS Keyboard Language <en-us_topic_0093263550__en-us_topic_0027268511_section66962382111459>` to change the keyboard language of the ECS OS. You can then select the keyboard language and enter the password the next time you log in.
-    -  If you have changed the keyboard language of the ECS OS, ensure that the keyboard language in use, the keyboard language selected in step 6, and the changed OS keyboard language are all the same.
-
-
+    -  If you have changed the keyboard language of the ECS OS, ensure that the keyboard language in use, the keyboard language selected in step :ref:`6 <en-us_topic_0093263550__en-us_topic_0027268511_li17715715111459>`, and the changed OS keyboard language are all the same.
 
 .. _en-us_topic_0093263550__en-us_topic_0027268511_section66962382111459:
 
@@ -274,10 +238,6 @@ The *keymapfile* parameter indicates the name of the file containing the mapping
 
 For example, if the name of a German keyboard mapping file is **de**, run the **loadkeys de** command.
 
-
-
-.. _en-us_topic_0093263550__en-us_topic_0027268511_section11831862125315:
-
 Configuration Example
 ---------------------
 
@@ -291,8 +251,6 @@ If you attempt to log in to an ECS created using a public image for the first ti
 -  ECS OS keyboard: English
 
 In this case, you must change the languages of the other three types of keyboards to the same language as the physical keyboard for expected data entering. For details, see the **Solution 1** row in :ref:`Table 3 <en-us_topic_0093263550__en-us_topic_0027268511_en-us_topic_0039525621_table18256759113132>`.
-
-
 
 .. _en-us_topic_0093263550__en-us_topic_0027268511_en-us_topic_0039525621_table18256759113132:
 
@@ -310,7 +268,9 @@ In this case, you must change the languages of the other three types of keyboard
 
 **Procedure**
 
-#. Locally configure the language, for example, German, in the input method keyboard on the terminal.
+#. .. _en-us_topic_0093263550__en-us_topic_0027268511_en-us_topic_0039525621_li55865773114331:
+
+   Locally configure the language, for example, German, in the input method keyboard on the terminal.
 
 #. Set the VNC keyboard language to English.
 
@@ -322,11 +282,13 @@ In this case, you must change the languages of the other three types of keyboard
 
    For details, see :ref:`Changing the OS Keyboard Language <en-us_topic_0093263550__en-us_topic_0027268511_section66962382111459>`.
 
-#. Change the VNC keyboard language to German.
+#. .. _en-us_topic_0093263550__en-us_topic_0027268511_en-us_topic_0039525621_li62706781115148:
+
+   Change the VNC keyboard language to German.
 
    For details, see :ref:`Logging In to an ECS Using a Non-English Keyboard <en-us_topic_0093263550__en-us_topic_0027268511_section5982347111459>`.
 
-To set the languages on the four types of keyboards to all be the same, perform 1 to 4.
+To set the languages on the four types of keyboards to all be the same, perform :ref:`1 <en-us_topic_0093263550__en-us_topic_0027268511_en-us_topic_0039525621_li55865773114331>` to :ref:`4 <en-us_topic_0093263550__en-us_topic_0027268511_en-us_topic_0039525621_li62706781115148>`.
 
 .. note::
 
@@ -334,8 +296,6 @@ To set the languages on the four types of keyboards to all be the same, perform 
 
    -  To enable the Windows English soft keyboard, choose **Start** > **Run**, enter **osk**, and press **Enter**.
    -  The method of enabling the Linux English soft keyboard varies depending on the OS version and is not described in this document.
-
-
 
 .. _en-us_topic_0093263550__section322133015286:
 
@@ -348,9 +308,7 @@ Local commands can be copied to an ECS. To do so, perform the following operatio
 
 #. Click **Input Commands** in the upper right corner of the page.
 
-   
-
-.. _en-us_topic_0093263550__en-us_topic_0093263548_fig18993162320449:
+   .. _en-us_topic_0093263550__en-us_topic_0093263548_fig18993162320449:
 
    .. figure:: /_static/images/en-us_image_0109039483.png
       :alt: Click to enlarge
@@ -370,10 +328,6 @@ Local commands can be copied to an ECS. To do so, perform the following operatio
 .. note::
 
    There is a low probability that data is lost when you use Input Commands on the VNC page of a GUI-based Linux ECS. This is because the number of ECS vCPUs fails to meet GUI requirements. In such a case, it is a good practice to send a maximum of 5 characters at a time or switch from GUI to CLI (also called text interface), and then use the command input function.
-
-
-
-.. _en-us_topic_0093263550__en-us_topic_0027268511_section32612662143917:
 
 Helpful Links
 -------------

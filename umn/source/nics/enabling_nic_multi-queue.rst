@@ -3,10 +3,6 @@
 Enabling NIC Multi-Queue
 ========================
 
-
-
-.. _en-us_topic_0058758453__section2585561135:
-
 Scenarios
 ---------
 
@@ -21,8 +17,6 @@ The ECS described in this section is assumed to comply with the requirements on 
    #. :ref:`Setting NIC Multi-Queue for the Image <en-us_topic_0058758453__section1949113217282>`
    #. :ref:`Creating an ECS Using a Private Image <en-us_topic_0058758453__section1841681225617>`
    #. :ref:`Enabling NIC Multi-Queue <en-us_topic_0058758453__section214227201118>`
-
-
 
 .. _en-us_topic_0058758453__section892862210138:
 
@@ -48,10 +42,6 @@ NIC multi-queue can be enabled on an ECS only when the ECS specifications, virtu
 
          Run the **uname -r** command to obtain the kernel version. If the kernel version is earlier than 2.6.35, contact customer service to upgrade the kernel.
 
-
-
-.. _en-us_topic_0058758453__table732581623820:
-
 .. table:: **Table 1** Support of NIC multi-queue for Linux ECSs
 
    +----------------------------------------------------+----------------------------+------------------------------------+
@@ -71,8 +61,6 @@ NIC multi-queue can be enabled on an ECS only when the ECS specifications, virtu
    +----------------------------------------------------+----------------------------+------------------------------------+
    | EulerOS 2.2/2.3/2.5 64bit                          | Yes                        | Yes                                |
    +----------------------------------------------------+----------------------------+------------------------------------+
-
-
 
 .. _en-us_topic_0058758453__table1572993710538:
 
@@ -104,16 +92,12 @@ NIC multi-queue can be enabled on an ECS only when the ECS specifications, virtu
    |         | EulerOS 2.2 64bit                                           | Supported                      |
    +---------+-------------------------------------------------------------+--------------------------------+
 
-
-
 .. _en-us_topic_0058758453__section1659682611504:
 
 Importing the External Image File to the IMS Console
 ----------------------------------------------------
 
 For details, see "Registering an Image File as a Private Image" in *Image Management Service User Guide*.
-
-
 
 .. _en-us_topic_0058758453__section1949113217282:
 
@@ -140,13 +124,15 @@ Use one of the following methods to set the NIC multi-queue attribute:
 
 **Method 3:** Add **hw_vif_multiqueue_enabled** to an image through the API.
 
-#. For instructions about how to obtain the token, see `Token Authentication <https://docs.otc.t-systems.com/en-us/api/apiug/apig-en-api-180328003.html>`__.
+#. .. _en-us_topic_0058758453__en-us_topic_0085214115_li13762086162643:
+
+   For instructions about how to obtain the token, see `Token Authentication <https://docs.otc.t-systems.com/en-us/api/apiug/apig-en-api-180328003.html>`__.
 
 #. For instructions about how to call an API to update image information, see "Updating Image Information (Native OpenStack API)" in *Image Management Service API Reference*.
 
 #. Add **X-Auth-Token** to the request header.
 
-   The value of **X-Auth-Token** is the token obtained in step 1.
+   The value of **X-Auth-Token** is the token obtained in step :ref:`1 <en-us_topic_0058758453__en-us_topic_0085214115_li13762086162643>`.
 
 #. Add **Content-Type** to the request header.
 
@@ -170,9 +156,7 @@ Use one of the following methods to set the NIC multi-queue attribute:
 
    :ref:`Figure 1 <en-us_topic_0058758453__en-us_topic_0085214115_fig3215821216479>` shows an example request body for modifying the NIC multi-queue attribute.
 
-   
-
-.. _en-us_topic_0058758453__en-us_topic_0085214115_fig3215821216479:
+   .. _en-us_topic_0058758453__en-us_topic_0085214115_fig3215821216479:
 
    .. figure:: /_static/images/en-us_image_0193026956.png
       :alt: Click to enlarge
@@ -180,8 +164,6 @@ Use one of the following methods to set the NIC multi-queue attribute:
    
 
       **Figure 1** Example request body
-
-
 
 .. _en-us_topic_0058758453__section1841681225617:
 
@@ -192,8 +174,6 @@ Create an ECS using a registered private image. For details, see :ref:`Creating 
 
 -  **Region**: Select the region where the private image is located.
 -  **Image**: Select **Private image** and then the desired image from the drop-down list.
-
-
 
 .. _en-us_topic_0058758453__section214227201118:
 
@@ -249,9 +229,7 @@ This section uses a Linux ECS running CentOS 7.4 as an example to describe how t
 
       If the **Active** value in the command output contains **active (running)**, irqbalance has been enabled.
 
-      
-
-.. _en-us_topic_0058758453__fig165114253253:
+      .. _en-us_topic_0058758453__fig165114253253:
 
       .. figure:: /_static/images/en-us_image_0126402833.png
          :alt: Click to enlarge

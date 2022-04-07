@@ -7,10 +7,6 @@ If an ECS cannot be logged in because of expired image password, you can contact
 
 If the ECS can still be logged in, you can perform the following operations to set the password validity period.
 
-
-
-.. _en-us_topic_0079176727__section3242177619526:
-
 Procedure
 ---------
 
@@ -36,9 +32,7 @@ The following operations use EulerOS 2.2 as an example.
 
 #. Run command **vi /etc/login.defs** to verify that the configuration has taken effect.
 
-   
-
-.. _en-us_topic_0079176727__fig36880073194742:
+   .. _en-us_topic_0079176727__fig36880073194742:
 
    .. figure:: /_static/images/en-us_image_0079177144.png
       :alt: Click to enlarge

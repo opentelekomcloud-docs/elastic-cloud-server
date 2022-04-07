@@ -7,10 +7,6 @@ An Elastic Cloud Server (ECS) is a basic computing unit that consists of vCPUs, 
 
 ECSs support self-service creation, modification, and operation. You can create an ECS by specifying its vCPUs, memory, OS, and login mode. After an ECS is created, you can modify its specifications if necessary. ECS works with other services to provide a reliable, secure, efficient computing environment.
 
-
-
-.. _en-us_topic_0013771112__section25920740113331:
-
 System Architecture
 -------------------
 
@@ -24,8 +20,6 @@ ECS works with other products and services to provide computing, storage, and ne
 -  Volume Backup Service (VBS) allows you to create data backups for EVS disks and use the backups to restore the EVS disks. This maximizes user data correctness and security.
 -  Cloud Server Backup Service (CSBS) backs up all EVS disks of an ECS, including the system disk and data disks, and uses the backup to restore the ECS.
 
-
-
 .. _en-us_topic_0013771112__fig36062790113621:
 
 .. figure:: /_static/images/en-us_image_0071898891.png
@@ -34,10 +28,6 @@ ECS works with other products and services to provide computing, storage, and ne
 
 
    **Figure 1** System architecture
-
-
-
-.. _en-us_topic_0013771112__section4598730144410:
 
 Access Methods
 --------------

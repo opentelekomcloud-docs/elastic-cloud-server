@@ -3,10 +3,6 @@
 Why Does an Authentication Failure Occurs After I Attempt to Remotely Log In to a Windows ECS?
 ==============================================================================================
 
-
-
-.. _en-us_topic_0018339851__section142338358917:
-
 Symptom
 -------
 
@@ -16,17 +12,13 @@ When a local computer running Windows attempts to access a Windows ECS using RDP
 
 -  If the error message shows that the fault was caused by "CredSSP Encryption Oracle Remediation", as shown in :ref:`Figure 1 <en-us_topic_0018339851__fig18932134871212>`, the fault may be caused by a security patch released by Microsoft in March 2018. This patch may affect RDP-based CredSSP connections. As a result, setting up RDP-based connections to ECSs failed. For details, see `Unable to RDP to Virtual Machine: CredSSP Encryption Oracle Remediation <https://blogs.technet.microsoft.com/mckittrick/unable-to-rdp-to-virtual-machine-credssp-encryption-oracle-remediation/>`__. Rectify the fault by following the instructions provided in `official Microsoft document <https://support.microsoft.com/en-us/help/4093492/credssp-updates-for-cve-2018-0886-march-13-2018>`__.
 
-   
-
-.. _en-us_topic_0018339851__fig18932134871212:
+   .. _en-us_topic_0018339851__fig18932134871212:
 
    .. figure:: /_static/images/en-us_image_0117334497.png
       :alt: **Figure 1** Failed to set up a remote desktop connection
    
 
       **Figure 1** Failed to set up a remote desktop connection
-
-
 
 .. _en-us_topic_0018339851__section9947102411203:
 
@@ -43,9 +35,7 @@ Modify the remote desktop connection settings on the Windows ECS:
 
 #. Click the **Remote** tab. In the **Remote Desktop** pane, select **Allow connections from computers running any version of Remote Desktop (less secure)**.
 
-   
-
-.. _en-us_topic_0018339851__fig62503556467:
+   .. _en-us_topic_0018339851__fig62503556467:
 
    .. figure:: /_static/images/en-us_image_0253037157.png
       :alt: Click to enlarge

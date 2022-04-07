@@ -15,8 +15,6 @@ The following section uses a user group as an example to describe how to grant K
 
 For example, a user group shown in :ref:`Figure 1 <en-us_topic_0047272493__fig10921739155249>` consists of four users, user 1 to user 4. User 1 has security administrator rights. Users 2, 3, and 4 are common users who do not have security administrator rights.
 
-
-
 .. _en-us_topic_0047272493__fig10921739155249:
 
 .. figure:: /_static/images/en-us_image_0047273062.png
@@ -25,10 +23,6 @@ For example, a user group shown in :ref:`Figure 1 <en-us_topic_0047272493__fig10
 
 
    **Figure 1** User group
-
-
-
-.. _en-us_topic_0047272493__section30754477152516:
 
 Scenario 1: User 1 Uses the Encryption Feature
 ----------------------------------------------
@@ -52,10 +46,6 @@ In this user group, if user 1 uses the encryption feature for the first time, th
    -  Newly created key (For instructions about how to create a key, see "Creating a Key Pair" in *Key Management Service User Guide*.)
 
 After user 1 uses the encryption feature, all other users in the user group can use this feature, without requiring to contact user 1 for rights granting.
-
-
-
-.. _en-us_topic_0047272493__section56229731153025:
 
 Scenario 2: Common User Uses the Encryption Feature
 ---------------------------------------------------

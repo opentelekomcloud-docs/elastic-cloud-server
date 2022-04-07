@@ -3,16 +3,10 @@
 How Can I Obtain the Permission to Remotely Log In to a Windows ECS?
 ====================================================================
 
-
-
-.. _en-us_topic_0264235940__en-us_topic_0250966366_section109471547124311:
-
 Symptom
 -------
 
 When you connect a remote desktop to a Windows ECS, the system prompts that you need to be granted the right to sign in through Remote Desktop Services.
-
-
 
 .. _en-us_topic_0264235940__en-us_topic_0250966366_fig4498153973513:
 
@@ -23,10 +17,6 @@ When you connect a remote desktop to a Windows ECS, the system prompts that you 
 
    **Figure 1** Remote login right missing.
 
-
-
-.. _en-us_topic_0264235940__en-us_topic_0250966366_section3956122665:
-
 Solution
 --------
 
@@ -36,9 +26,7 @@ Solution
 
    a. Locate and double-click **Allow log on through Remote Desktop Services**. Ensure that **Administrators** and **Remote Desktop Users** have been added.
 
-      
-
-.. _en-us_topic_0264235940__en-us_topic_0250966366_fig597875822711:
+      .. _en-us_topic_0264235940__en-us_topic_0250966366_fig597875822711:
 
       .. figure:: /_static/images/en-us_image_0288997258.png
          :alt: Click to enlarge
@@ -49,9 +37,7 @@ Solution
 
    b. Locate and double-click **Deny log on through Remote Desktop Services**. If the administrator account exists, delete it.
 
-      
-
-.. _en-us_topic_0264235940__en-us_topic_0250966366_fig1693533120329:
+      .. _en-us_topic_0264235940__en-us_topic_0250966366_fig1693533120329:
 
       .. figure:: /_static/images/en-us_image_0288997259.png
          :alt: Click to enlarge

@@ -3,18 +3,10 @@
 Attaching an EVS Disk to an ECS
 ===============================
 
-
-
-.. _en-us_topic_0096293655__section159718590193:
-
 Scenarios
 ---------
 
 If the existing disks of an ECS fail to meet service requirements, for example, due to insufficient disk space or poor disk performance, you can attach more available EVS disks to the ECS, or create more disks (**Storage** > **Elastic Volume Service**) and attach them to the ECS.
-
-
-
-.. _en-us_topic_0096293655__section3374323231:
 
 Prerequisites
 -------------
@@ -22,10 +14,6 @@ Prerequisites
 -  EVS disks are available.
 
    For instructions about how to create an EVS disk, see "Creating an EVS Disk" in *Elastic Volume Service User Guide*.
-
-
-
-.. _en-us_topic_0096293655__section188614152411:
 
 Procedure
 ---------
@@ -46,9 +34,7 @@ Procedure
 
    The **Attach Disk** dialog box is displayed.
 
-   
-
-.. _en-us_topic_0096293655__fig1332144315348:
+   .. _en-us_topic_0096293655__fig1332144315348:
 
    .. figure:: /_static/images/en-us_image_0096298046.png
       :alt: Click to enlarge
@@ -73,9 +59,7 @@ Procedure
 
    After the disk is attached, you can view the information about it on the **Disks** tab.
 
-   
-
-.. _en-us_topic_0096293655__fig18788918132718:
+   .. _en-us_topic_0096293655__fig18788918132718:
 
    .. figure:: /_static/images/en-us_image_0096298123.png
       :alt: Click to enlarge
@@ -83,10 +67,6 @@ Procedure
    
 
       **Figure 2** Viewing the newly attached disk
-
-
-
-.. _en-us_topic_0096293655__section76311616163518:
 
 Follow-up Procedure
 -------------------

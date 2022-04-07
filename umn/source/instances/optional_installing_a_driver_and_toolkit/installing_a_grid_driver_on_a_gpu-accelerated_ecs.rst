@@ -3,10 +3,6 @@
 Installing a GRID Driver on a GPU-accelerated ECS
 =================================================
 
-
-
-.. _en-us_topic_0149610914__section18938132731610:
-
 Scenarios
 ---------
 
@@ -30,8 +26,6 @@ Process of installing a GRID driver:
    -  NVIDIA allows you to apply for a 90-day trial license.
    -  For details about GPU-accelerated ECSs with different specifications and application scenarios, see :ref:`GPU-accelerated ECSs <en-us_topic_0097289624>`.
 
-
-
 .. _en-us_topic_0149610914__section1130184214229:
 
 Purchasing a GRID License
@@ -51,9 +45,7 @@ Purchasing a GRID License
 
       The method of using a trial license is the same as that of using an official license. You can use an official license to activate an account with a trial license to prevent repetitive registration. The trial license has a validity period of 90 days. After the trial license expires, it cannot be used anymore. Purchase an official license then.
 
-   
-
-.. _en-us_topic_0149610914__fig45088922717:
+   .. _en-us_topic_0149610914__fig45088922717:
 
    .. figure:: /_static/images/en-us_image_0178069404.png
       :alt: Click to enlarge
@@ -61,8 +53,6 @@ Purchasing a GRID License
    
 
       **Figure 1** Applying for a trial license
-
-
 
 .. _en-us_topic_0149610914__section91244318407:
 
@@ -79,9 +69,7 @@ Downloading GRID Driver and Software License Packages
 
       For a GPU virtualization ECS, select a driver version based on the following table.
 
-   
-
-.. _en-us_topic_0149610914__table188851534175019:
+   .. _en-us_topic_0149610914__table188851534175019:
 
    .. table:: **Table 1** GRID driver versions supported by GPU-accelerated ECSs
 
@@ -127,14 +115,14 @@ Downloading GRID Driver and Software License Packages
 
 #. Check whether NVIDIA is used for the first time.
 
-   a. If yes, go to step 4.
-   b. If no, go to step 6.
+   a. If yes, go to step :ref:`4 <en-us_topic_0149610914__li1859773663819>`.
+   b. If no, go to step :ref:`6 <en-us_topic_0149610914__li0791101412396>`.
 
-#. Obtain the Product Activation Key (PAK) from the email indicating successful registration with NVIDIA.
+#. .. _en-us_topic_0149610914__li1859773663819:
 
-   
+   Obtain the Product Activation Key (PAK) from the email indicating successful registration with NVIDIA.
 
-.. _en-us_topic_0149610914__fig133361216153817:
+   .. _en-us_topic_0149610914__fig133361216153817:
 
    .. figure:: /_static/images/en-us_image_0178334448.png
       :alt: Click to enlarge
@@ -143,11 +131,9 @@ Downloading GRID Driver and Software License Packages
 
       **Figure 2** PAK
 
-#. Enter the PAK obtained in step 4 on the **Redeem Product Activation Keys** page and click **Redeem**.
+#. Enter the PAK obtained in step :ref:`4 <en-us_topic_0149610914__li1859773663819>` on the **Redeem Product Activation Keys** page and click **Redeem**.
 
-   
-
-.. _en-us_topic_0149610914__fig16617143616380:
+   .. _en-us_topic_0149610914__fig16617143616380:
 
    .. figure:: /_static/images/en-us_image_0178334449.png
       :alt: Click to enlarge
@@ -156,11 +142,11 @@ Downloading GRID Driver and Software License Packages
 
       **Figure 3** Redeem Product Activation Keys
 
-#. Specify **Username** and **Password** and click **LOGIN**.
+#. .. _en-us_topic_0149610914__li0791101412396:
 
-   
+   Specify **Username** and **Password** and click **LOGIN**.
 
-.. _en-us_topic_0149610914__fig1367291114395:
+   .. _en-us_topic_0149610914__fig1367291114395:
 
    .. figure:: /_static/images/en-us_image_0178334450.png
       :alt: **Figure 4** Logging in to the official NVIDIA website
@@ -170,9 +156,7 @@ Downloading GRID Driver and Software License Packages
 
 #. Log in at the official NVIDIA website as prompted and select **SOFTWARE DOWNLOADS**.
 
-   
-
-.. _en-us_topic_0149610914__fig028419910169:
+   .. _en-us_topic_0149610914__fig028419910169:
 
    .. figure:: /_static/images/en-us_image_0000001093447741.png
       :alt: Click to enlarge
@@ -187,9 +171,7 @@ Downloading GRID Driver and Software License Packages
 
 #. On the **SOFTWARE DOWNLOADS** page, click **ADDITIONAL SOFTWARE** to download the license software package.
 
-   
-
-.. _en-us_topic_0149610914__fig13215124318392:
+   .. _en-us_topic_0149610914__fig13215124318392:
 
    .. figure:: /_static/images/en-us_image_0000001093667097.png
       :alt: Click to enlarge
@@ -197,8 +179,6 @@ Downloading GRID Driver and Software License Packages
    
 
       **Figure 6** ADDITIONAL SOFTWARE
-
-
 
 .. _en-us_topic_0149610914__section19229135113439:
 
@@ -226,9 +206,7 @@ The following uses an ECS running CentOS 7.5 as an example to describe how to de
 
    a. Log in to the `NVIDIA website <http://nvid.nvidia.com/dashboard/>`__ on a new tab and select **LICENSE SERVERS**.
 
-      
-
-.. _en-us_topic_0149610914__fig1319854518598:
+      .. _en-us_topic_0149610914__fig1319854518598:
 
       .. figure:: /_static/images/en-us_image_0000001093449637.png
          :alt: Click to enlarge
@@ -247,9 +225,7 @@ The following uses an ECS running CentOS 7.5 as an example to describe how to de
 
    e. Click **CREATE LICENSE SERVER**.
 
-      
-
-.. _en-us_topic_0149610914__fig1865418576181:
+      .. _en-us_topic_0149610914__fig1865418576181:
 
       .. figure:: /_static/images/en-us_image_0000001093450009.png
          :alt: Click to enlarge
@@ -260,9 +236,7 @@ The following uses an ECS running CentOS 7.5 as an example to describe how to de
 
    f. Download the license file.
 
-      
-
-.. _en-us_topic_0149610914__fig19995314613:
+      .. _en-us_topic_0149610914__fig19995314613:
 
       .. figure:: /_static/images/en-us_image_0000001093310123.png
          :alt: Click to enlarge
@@ -277,9 +251,7 @@ The following uses an ECS running CentOS 7.5 as an example to describe how to de
 
 5. Choose **License Server** > **License Management**, select the .bin license file to be uploaded, and click **Upload**.
 
-   
-
-.. _en-us_topic_0149610914__fig101141159980:
+   .. _en-us_topic_0149610914__fig101141159980:
 
    .. figure:: /_static/images/en-us_image_0178325096.png
       :alt: Click to enlarge
@@ -287,8 +259,6 @@ The following uses an ECS running CentOS 7.5 as an example to describe how to de
    
 
       **Figure 10** Uploading a license file
-
-
 
 .. _en-us_topic_0149610914__section17545653184812:
 
@@ -305,9 +275,7 @@ Installing the GRID Driver and Configuring the License
 
 #. Enter the IP address and port number of the deployed license server in the level-1 license server, and then click **Apply**. If the message indicating that you have obtained a GRID license, the installation is successful. Additionally, the MAC address of the GPU-accelerated ECS with the GRID driver installed is displayed on the **Licensed Clients** page of the license server management console.
 
-   
-
-.. _en-us_topic_0149610914__fig7104162713349:
+   .. _en-us_topic_0149610914__fig7104162713349:
 
    .. figure:: /_static/images/en-us_image_0178370293.png
       :alt: Click to enlarge

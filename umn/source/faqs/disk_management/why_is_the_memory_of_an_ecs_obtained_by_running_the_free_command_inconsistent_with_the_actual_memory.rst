@@ -3,10 +3,6 @@
 Why Is the Memory of an ECS Obtained by Running the **free** Command Inconsistent with the Actual Memory?
 =========================================================================================================
 
-
-
-.. _en-us_topic_0093153741__section12699135717311:
-
 Symptom
 -------
 
@@ -68,10 +64,6 @@ Run the **dmidecode -t memory** command to check the actual memory configured fo
    Configured Voltage: Unknown
 
 The memory in the command output is the same as that configured during ECS creation.
-
-
-
-.. _en-us_topic_0093153741__section6131161331214:
 
 Possible Causes
 ---------------

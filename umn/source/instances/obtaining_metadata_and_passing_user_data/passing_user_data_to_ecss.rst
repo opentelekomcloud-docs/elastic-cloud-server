@@ -3,10 +3,6 @@
 Passing User Data to ECSs
 =========================
 
-
-
-.. _en-us_topic_0032380449__section59120639141539:
-
 Scenarios
 ---------
 
@@ -16,10 +12,6 @@ Use the **User Data** function to pass user data to ECSs to:
 -  Initialize the ECS OS configuration.
 -  Upload your scripts to ECSs during ECS creation.
 -  Perform other tasks using scripts.
-
-
-
-.. _en-us_topic_0032380449__section31714110141539:
 
 Use Restrictions
 ----------------
@@ -42,10 +34,6 @@ Use Restrictions
    -  The image that is used to create ECSs must be a public image, a private image created based on a public image, or a private image with Cloudbase-Init installed.
    -  DHCP must be enabled on the VPC network, and port 80 must be enabled for the security group in the outbound direction.
 
-
-
-.. _en-us_topic_0032380449__section60709488141539:
-
 Passing User Data
 -----------------
 
@@ -61,9 +49,7 @@ Passing User Data
 
       File: Save the user data script to a text file and then upload the file.
 
-   
-
-.. _en-us_topic_0032380449__fig87313493915:
+   .. _en-us_topic_0032380449__fig87313493915:
 
    .. figure:: /_static/images/en-us_image_0237026761.png
       :alt: Click to enlarge
@@ -73,10 +59,6 @@ Passing User Data
       **Figure 1** User Data
 
 #. The created ECS automatically runs Cloud-Init/Cloudbase-Init and reads the user data script upon startup.
-
-
-
-.. _en-us_topic_0032380449__section0609912614:
 
 User Data Scripts of Linux ECSs
 -------------------------------
@@ -90,10 +72,6 @@ Customized user data scripts of Linux ECSs are based on the open-source Cloud-In
       By default, the scripts are executed as user **root**.
 
 -  Script type: Both user-data scripts and Cloud-Config data scripts are supported.
-
-   
-
-.. _en-us_topic_0032380449__table039994053718:
 
    .. table:: **Table 1** Linux ECS script types
 
@@ -151,9 +129,7 @@ Customized user data scripts of Linux ECSs are based on the open-source Cloud-In
 
    After the ECS is created, start it and run the **cat /etc/hosts** command to check the script execution result.
 
-   
-
-.. _en-us_topic_0032380449__fig1787242875415:
+   .. _en-us_topic_0032380449__fig1787242875415:
 
    .. figure:: /_static/images/en-us_image_0115931570.png
       :alt: Click to enlarge
@@ -162,20 +138,12 @@ Customized user data scripts of Linux ECSs are based on the open-source Cloud-In
 
       **Figure 2** Viewing operating results
 
-
-
-.. _en-us_topic_0032380449__section104417127157:
-
 User Data Scripts of Windows ECSs
 ---------------------------------
 
 Customized user data scripts of Windows ECSs are based on the open-source Cloudbase-Init architecture. This architecture uses ECS metadata as the data source for initializing and automatically configuring the ECSs. The customized script types are compatible with open-source Cloudbase-Init. For details about Cloudbase-Init, see https://cloudbase-init.readthedocs.io/en/latest/userdata.html.
 
 -  Script type: Both batch-processing program scripts and PowerShell scripts are supported.
-
-   
-
-.. _en-us_topic_0032380449__table17839134102219:
 
    .. table:: **Table 2** Windows ECS script types
 
@@ -210,9 +178,7 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
 
    After the ECS is created, start it and check the script execution result. In this example, a text file named **1111** is added to disk C:\.
 
-   
-
-.. _en-us_topic_0032380449__fig8622411077:
+   .. _en-us_topic_0032380449__fig8622411077:
 
    .. figure:: /_static/images/en-us_image_0115932123.png
       :alt: Click to enlarge
@@ -223,9 +189,7 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
 
    To view the user data passed to the Windows ECS, log in at http://169.254.169.254/openstack/latest/user_data.
 
-   
-
-.. _en-us_topic_0032380449__fig14281122141212:
+   .. _en-us_topic_0032380449__fig14281122141212:
 
    .. figure:: /_static/images/en-us_image_0115932873.png
       :alt: Click to enlarge
@@ -245,9 +209,7 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
 
    After the ECS is created, start it and check the script execution result. In this example, a text file named **aaaa** is added to disk C:\.
 
-   
-
-.. _en-us_topic_0032380449__fig103618447159:
+   .. _en-us_topic_0032380449__fig103618447159:
 
    .. figure:: /_static/images/en-us_image_0115933029.png
       :alt: Click to enlarge
@@ -258,9 +220,7 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
 
    To view the user data passed to the Windows ECS, log in at http://169.254.169.254/openstack/latest/user_data.
 
-   
-
-.. _en-us_topic_0032380449__fig124617204176:
+   .. _en-us_topic_0032380449__fig124617204176:
 
    .. figure:: /_static/images/en-us_image_0115934291.jpg
       :alt: Click to enlarge
@@ -268,10 +228,6 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
    
 
       **Figure 6** Viewing user data (PowerShell)
-
-
-
-.. _en-us_topic_0032380449__section24296060141539:
 
 Case 1
 ------
@@ -292,10 +248,6 @@ User data example:
          set tabstop=4
          set number      
 
-
-
-.. _en-us_topic_0032380449__section378450257:
-
 Case 2
 ------
 
@@ -304,8 +256,6 @@ This case illustrates how to use the user data passing function to set the passw
 .. note::
 
    The new password must meet the password complexity requirements listed in :ref:`Table 3 <en-us_topic_0032380449__en-us_topic_0021426802_table4381109318958>`.
-
-
 
 .. _en-us_topic_0032380449__en-us_topic_0021426802_table4381109318958:
 
@@ -359,10 +309,6 @@ User data example:
 
 After the ECS is created, you can use the password to log in to it.
 
-
-
-.. _en-us_topic_0032380449__section852885517018:
-
 Case 3
 ------
 
@@ -373,8 +319,6 @@ In this example, the password of user **root** is reset to **\*****\***.
 .. note::
 
    The new password must meet the password complexity requirements listed in :ref:`Table 4 <en-us_topic_0032380449__table580060101120>`.
-
-
 
 .. _en-us_topic_0032380449__table580060101120:
 
@@ -407,10 +351,6 @@ User data example (Retain the indentation in the following script):
 
 After the ECS is created, you can use the reset password to log in to it. To ensure system security, change the password of user **root** after logging in to the ECS for the first time.
 
-
-
-.. _en-us_topic_0032380449__section2212289417182:
-
 Case 4
 ------
 
@@ -432,10 +372,6 @@ User data example:
 
 After the ECS is created, you can use the created username and password to log in to it.
 
-
-
-.. _en-us_topic_0032380449__section19429115512011:
-
 Case 5
 ------
 
@@ -449,10 +385,6 @@ User data example:
    yum update -y
    service httpd start
    chkconfig httpd on
-
-
-
-.. _en-us_topic_0032380449__section22603169194910:
 
 Case 6
 ------
@@ -469,8 +401,6 @@ User data example:
    - sed -i 's/^PermitRootLogin.*$/PermitRootLogin without-password/' /etc/ssh/sshd_config
    - sed -i '/^KexAlgorithms.*$/d' /etc/ssh/sshd_config
    - service sshd restart
-
-
 
 .. _en-us_topic_0032380449__section54344118153243:
 

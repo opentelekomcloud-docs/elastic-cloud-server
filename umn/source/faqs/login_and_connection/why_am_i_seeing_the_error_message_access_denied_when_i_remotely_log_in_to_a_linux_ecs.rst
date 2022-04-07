@@ -3,28 +3,16 @@
 Why Am I Seeing the Error Message "Access denied" When I Remotely Log In to a Linux ECS?
 ========================================================================================
 
-
-
-.. _en-us_topic_0277097520__section118312613216:
-
 Symptom
 -------
 
 When you attempt to remotely log in to a Linux ECS, the system displays the error message "Access denied".
-
-
-
-.. _en-us_topic_0277097520__section1851618545810:
 
 Possible Causes
 ---------------
 
 -  Incorrect username or password.
 -  A policy that denies logins from user **root** is enabled on the SSH server.
-
-
-
-.. _en-us_topic_0277097520__section1286672717516:
 
 Solution
 --------

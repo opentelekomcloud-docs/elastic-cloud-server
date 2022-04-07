@@ -3,27 +3,15 @@
 Managing ECS Groups
 ===================
 
-
-
-.. _en-us_topic_0032980085__section33282082212946:
-
 Scenarios
 ---------
 
 An ECS group allows you to create ECSs on different physical servers, thereby improving service reliability. This function does not apply to existing ECSs. You cannot add existing ECSs to an ECS group.
 
-
-
-.. _en-us_topic_0032980085__section50994308215238:
-
 Notes
 -----
 
 An existing ECS cannot be added to an ECS group.
-
-
-
-.. _en-us_topic_0032980085__section5508038321333:
 
 Procedure
 ---------
@@ -43,10 +31,6 @@ Procedure
    The **Anti-affinity** policy is used by default.
 
 #. Click **OK**.
-
-
-
-.. _en-us_topic_0032980085__section5656963010194:
 
 Follow-up Procedure
 -------------------

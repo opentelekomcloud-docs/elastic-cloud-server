@@ -3,10 +3,6 @@
 Dedicated General-Purpose ECSs
 ==============================
 
-
-
-.. _en-us_topic_0091224748__section78382481397:
-
 Overview
 --------
 
@@ -14,16 +10,8 @@ C4 ECSs use second-generation Intel® Xeon® Scalable processors with technologi
 
 C3 ECSs are newly released. They are developed based on KVM virtualization, use Intel® Xeon® Scalable processors and Data Plane Development Kit (DPDK) rapid packet processing mechanism, and feature high and stable computing performance. Equipped with high-performance NICs, the C3 ECSs provide high performance and stability, meeting enterprise-grade application requirements.
 
-
-
-.. _en-us_topic_0091224748__section375984364113:
-
 Specifications
 --------------
-
-
-
-.. _en-us_topic_0091224748__table8948953114219:
 
 .. table:: **Table 1** C4 ECS specifications
 
@@ -63,10 +51,6 @@ Specifications
    | c4.16xlarge.4 | 64    | 256          | 40/36                              | 1000                 | 32              | 8            | KVM                 |                                     |
    +---------------+-------+--------------+------------------------------------+----------------------+-----------------+--------------+---------------------+-------------------------------------+
 
-
-
-.. _en-us_topic_0091224748__table3949605220464:
-
 .. table:: **Table 2** C3 ECS specifications
 
    +---------------+-------+--------------+------------------------------------+----------------------+-----------------+--------------+---------------------+--------------------------------+
@@ -96,10 +80,6 @@ Specifications
    +---------------+-------+--------------+------------------------------------+----------------------+-----------------+--------------+---------------------+--------------------------------+
    | c3.15xlarge.4 | 60    | 256          | 16/16                              | 500                  | 16              | 12           | KVM                 |                                |
    +---------------+-------+--------------+------------------------------------+----------------------+-----------------+--------------+---------------------+--------------------------------+
-
-
-
-.. _en-us_topic_0091224748__section1212210247527:
 
 Scenarios
 ---------

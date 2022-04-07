@@ -3,10 +3,6 @@
 Login Overview
 ==============
 
-
-
-.. _en-us_topic_0092494943__section2984424226:
-
 Constraints
 -----------
 
@@ -22,18 +18,10 @@ Constraints
 
    To download TightVNC, log in at https://www.tightvnc.com/download.php.
 
-
-
-.. _en-us_topic_0092494943__section15582182172010:
-
 Login Modes
 -----------
 
 Select a login mode as required and log in to the target ECS.
-
-
-
-.. _en-us_topic_0092494943__table8494562024:
 
 .. table:: **Table 1** Windows login modes
 

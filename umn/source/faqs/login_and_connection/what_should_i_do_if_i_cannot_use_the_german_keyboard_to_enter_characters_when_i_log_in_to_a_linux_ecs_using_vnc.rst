@@ -3,10 +3,6 @@
 What Should I Do If I Cannot Use the German Keyboard to Enter Characters When I Log In to a Linux ECS Using VNC?
 ================================================================================================================
 
-
-
-.. _en-us_topic_0030932496__section37703913520:
-
 Changing the OS Keyboard Language
 ---------------------------------
 
@@ -19,10 +15,6 @@ Run the following command to change the OS keyboard language:
 For example, if the name of a German keyboard mapping file is **de**, run the **loadkeys de** command.
 
 For instructions about how to configure the keyboard language for a Linux ECS, see :ref:`Login Using VNC <en-us_topic_0093263550>`.
-
-
-
-.. _en-us_topic_0030932496__section4200153819516:
 
 Procedure
 ---------

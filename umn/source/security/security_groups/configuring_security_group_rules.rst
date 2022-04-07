@@ -3,10 +3,6 @@
 Configuring Security Group Rules
 ================================
 
-
-
-.. _en-us_topic_0030878383__en-us_topic_0029320966_section35030493215147:
-
 Scenarios
 ---------
 
@@ -16,10 +12,6 @@ Similar to firewall, a security group is a logical group used to control network
 -  Outbound: Outbound rules allow network traffic from the ECSs in the security group to be sent out of the security group.
 
 For details about the default security group rules, see *Virtual Private Cloud User Guide*. For details about configuration examples for security group rules, see :ref:`Security Group Configuration Examples <en-us_topic_0140323152>`.
-
-
-
-.. _en-us_topic_0030878383__en-us_topic_0029320966_section40712064223843:
 
 Procedure
 ---------
@@ -44,9 +36,7 @@ Procedure
 
    You can click **+** to add more inbound rules.
 
-   
-
-.. _en-us_topic_0030878383__en-us_topic_0118534005_fig1786518124129:
+   .. _en-us_topic_0030878383__en-us_topic_0118534005_fig1786518124129:
 
    .. figure:: /_static/images/en-us_image_0284920908.png
       :alt: Click to enlarge
@@ -54,10 +44,6 @@ Procedure
    
 
       **Figure 1** Add Inbound Rule
-
-   
-
-.. _en-us_topic_0030878383__en-us_topic_0118534005_table111445216564:
 
    .. table:: **Table 1** Inbound rule parameter description
 
@@ -86,9 +72,7 @@ Procedure
 
    You can click **+** to add more outbound rules.
 
-   
-
-.. _en-us_topic_0030878383__en-us_topic_0118534005_fig11809848184019:
+   .. _en-us_topic_0030878383__en-us_topic_0118534005_fig11809848184019:
 
    .. figure:: /_static/images/en-us_image_0284993717.png
       :alt: Click to enlarge
@@ -96,10 +80,6 @@ Procedure
    
 
       **Figure 2** Add Outbound Rule
-
-   
-
-.. _en-us_topic_0030878383__en-us_topic_0118534005_table0614192319232:
 
    .. table:: **Table 2** Outbound rule parameter description
 

@@ -3,16 +3,10 @@
 What Can I Do If Switching from a Non-root User to User root Times Out?
 =======================================================================
 
-
-
-.. _en-us_topic_0094801708__section174441551144120:
-
 Symptom
 -------
 
 When you run the **sudo** command to switch to user **root** on an Ubuntu or Debian ECS, the system prompts connection timeout.
-
-
 
 .. _en-us_topic_0094801708__fig727412824411:
 
@@ -22,10 +16,6 @@ When you run the **sudo** command to switch to user **root** on an Ubuntu or Deb
 
 
    **Figure 1** Connection timeout
-
-
-
-.. _en-us_topic_0094801708__section1933384114410:
 
 Solution
 --------

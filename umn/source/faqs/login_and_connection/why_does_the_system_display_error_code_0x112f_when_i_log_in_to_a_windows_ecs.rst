@@ -3,16 +3,10 @@
 Why Does the System Display Error Code 0x112f When I Log In to a Windows ECS?
 =============================================================================
 
-
-
-.. _en-us_topic_0120795668__section98881979313:
-
 Symptom
 -------
 
 When you log in to a Windows ECS, the system displays error code 0x112f.
-
-
 
 .. _en-us_topic_0120795668__fig1256612592310:
 
@@ -22,18 +16,10 @@ When you log in to a Windows ECS, the system displays error code 0x112f.
 
    **Figure 1** Error message (code: 0x112f)
 
-
-
-.. _en-us_topic_0120795668__section121093216419:
-
 Possible Causes
 ---------------
 
 The ECS memory is insufficient.
-
-
-
-.. _en-us_topic_0120795668__section1299216522414:
 
 Solution
 --------

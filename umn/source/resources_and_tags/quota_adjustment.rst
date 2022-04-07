@@ -3,20 +3,12 @@
 Quota Adjustment
 ================
 
-
-
-.. _en-us_topic_0000001210881033__section15918030161717:
-
 What Is Quota?
 --------------
 
 Quotas can limit the number or amount of resources available to users, such as the maximum number of ECSs or EVS disks that can be created.
 
 If the existing resource quota cannot meet your service requirements, you can apply for a higher quota.
-
-
-
-.. _en-us_topic_0000001210881033__section1738715171810:
 
 How Do I View My Quotas?
 ------------------------
@@ -32,10 +24,6 @@ How Do I View My Quotas?
 #. View the used and total quota of each type of resources on the displayed page.
 
    If a quota cannot meet service requirements, apply for a higher quota.
-
-
-
-.. _en-us_topic_0000001210881033__section44761618172016:
 
 How Do I Apply for a Higher Quota?
 ----------------------------------

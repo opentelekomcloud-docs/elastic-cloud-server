@@ -5,8 +5,6 @@ What Browser Version Is Required to Remotely Log In to an ECS?
 
 When you use a browser to remotely log in to an ECS, ensure that the browser version meets the requirements listed in :ref:`Table 1 <en-us_topic_0035233718__table1532118512038>`.
 
-
-
 .. _en-us_topic_0035233718__table1532118512038:
 
 .. table:: **Table 1** Browser version requirements

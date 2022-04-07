@@ -5,18 +5,10 @@
 
 ECSs in the same VPC can communicate with each other using hostnames. In such a case, you are required to configure the mapping between hostnames and IP addresses. The communication using hostnames is more convenient than that using IP addresses.
 
-
-
-.. _en-us_topic_0074752335__section1399111463019:
-
 Constraints
 -----------
 
 This method applies only to Linux ECSs.
-
-
-
-.. _en-us_topic_0074752335__section4184679493755:
 
 Procedure
 ---------
@@ -55,7 +47,9 @@ For example, there are two ECSs in a VPC, ecs-01 and ecs-02. Perform the followi
 
    a. Log in to ecs-01.
 
-   b. Run the following command to switch to user **root**:
+   b. .. _en-us_topic_0074752335__li6087483710276:
+
+      Run the following command to switch to user **root**:
 
       **sudo su -**
 
@@ -77,13 +71,15 @@ For example, there are two ECSs in a VPC, ecs-01 and ecs-02. Perform the followi
 
    f. Press **Esc** to exit editing mode.
 
-   g. Run the following command to save the configuration and exit:
+   g. .. _en-us_topic_0074752335__li64061240102622:
+
+      Run the following command to save the configuration and exit:
 
       **:wq**
 
    h. Log in to ecs-02.
 
-   i. Repeat 3.b to 3.g.
+   i. Repeat :ref:`3.b <en-us_topic_0074752335__li6087483710276>` to :ref:`3.g <en-us_topic_0074752335__li64061240102622>`.
 
 #. Check whether the ECSs can communicate with each other using hostnames.
 

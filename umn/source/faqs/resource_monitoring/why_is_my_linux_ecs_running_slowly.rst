@@ -18,10 +18,6 @@ To handle this issue, perform the following operations:
    -  If the processes are not malicious, optimize their programs or modify ECS specifications.
    -  If the processes are malicious, use a third-party tool to automatically stop the processes or manually stop them.
 
-
-
-.. _en-us_topic_0167429329__en-us_topic_0166724219_section1035582183916:
-
 Common Commands
 ---------------
 
@@ -32,10 +28,6 @@ The common commands for checking Linux ECS performance metrics, such as CPU usag
 -  **ps -aux**
 -  **ps -ef**
 -  **top**
-
-
-
-.. _en-us_topic_0167429329__en-us_topic_0166724219_section8342340123810:
 
 Locating High CPU Usage
 -----------------------
@@ -92,10 +84,6 @@ Locating High CPU Usage
 
    |image2|
 
-
-
-.. _en-us_topic_0167429329__en-us_topic_0166724219_section166059871116:
-
 Troubleshooting High CPU Usage
 ------------------------------
 
@@ -141,10 +129,6 @@ If the processes leading to high CPU usage are malicious, run the top command to
    #. Restart the application or release the memory when traffic is light.
 
       To handle this issue, expand the ECS memory. If memory expansion is not allowed, optimize the application and enable hugepage memory.
-
-
-
-.. _en-us_topic_0167429329__en-us_topic_0166724219_section6120176163316:
 
 Handling High Bandwidth Usage
 -----------------------------

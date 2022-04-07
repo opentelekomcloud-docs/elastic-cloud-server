@@ -3,18 +3,10 @@
 License Type
 ============
 
-
-
-.. _en-us_topic_0046566932__section23816398221412:
-
 Using License from the System
 -----------------------------
 
 You can use the license provided by the public cloud platform. After creating an ECS with a license authorized, you can use the authorized OS. The platform manages license compliance for you.
-
-
-
-.. _en-us_topic_0046566932__section19960063221428:
 
 BYOL
 ----

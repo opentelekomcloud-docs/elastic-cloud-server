@@ -3,27 +3,15 @@
 Why Is the NIC Not Working?
 ===========================
 
-
-
-.. _en-us_topic_0036068717__section17904250171325:
-
 Symptom
 -------
 
 The NIC equipped on a disk-intensive or large-memory ECS does not work.
 
-
-
-.. _en-us_topic_0036068717__section50053646171330:
-
 Possible Causes
 ---------------
 
 The NIC driver has not been correctly installed.
-
-
-
-.. _en-us_topic_0036068717__section38560614171337:
 
 Solution
 --------
@@ -40,9 +28,7 @@ To install the passthrough NICE driver, do as follows:
 
    Passthrough NIC driver versions vary depending on the OS. For details, see :ref:`Table 1 <en-us_topic_0036068717__table39612229174432>`.
 
-   
-
-.. _en-us_topic_0036068717__table39612229174432:
+   .. _en-us_topic_0036068717__table39612229174432:
 
    .. table:: **Table 1** NIC driver versions and OSs
 

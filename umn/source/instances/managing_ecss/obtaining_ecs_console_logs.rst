@@ -3,20 +3,12 @@
 Obtaining ECS Console Logs
 ==========================
 
-
-
-.. _en-us_topic_0057711189__section1826165816643:
-
 Scenarios
 ---------
 
 When an ECS cannot start or run properly, you can download and view ECS console logs for troubleshooting, for example, checking whether the kernel and service configuration are correct.
 
 The ECS console logs record ECS operations, such as ECS starting, stopping, restarting, or forcibly restarting. Through the management console, you can obtain the ECS logs within one hour.
-
-
-
-.. _en-us_topic_0057711189__section2426125161724:
 
 Notes
 -----
@@ -41,10 +33,6 @@ Notes
 
 -  The ECSs running Windows do not support console logs.
 -  The system can save up to 100 KB log files.
-
-
-
-.. _en-us_topic_0057711189__section24136850162414:
 
 Procedure
 ---------
@@ -122,9 +110,11 @@ Procedure
          **cat /proc/cmdline \| grep ttyS0**
 
          -  If yes, **ttyS0** has been configured.
-         -  If no, **ttyS0** has not been configured. Go to 2.b.
+         -  If no, **ttyS0** has not been configured. Go to :ref:`2.b <en-us_topic_0057711189__en-us_topic_0057450886_li29451607172853>`.
 
-      b. Run the following command to open the configuration file to be edited:
+      b. .. _en-us_topic_0057711189__en-us_topic_0057450886_li29451607172853:
+
+         Run the following command to open the configuration file to be edited:
 
          **vi /usr/share/oem/grub.cfg**
 
@@ -161,10 +151,6 @@ Procedure
    h. (Optional) Click **Download** to download the information of the displayed log.
 
       Downloaded log files are in .txt format.
-
-
-
-.. _en-us_topic_0057711189__section42122526164622:
 
 Related Links
 -------------

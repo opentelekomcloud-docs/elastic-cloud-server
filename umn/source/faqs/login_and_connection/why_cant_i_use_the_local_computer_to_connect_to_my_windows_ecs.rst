@@ -3,16 +3,10 @@
 Why Can't I Use the Local Computer to Connect to My Windows ECS?
 ================================================================
 
-
-
-.. _en-us_topic_0264235939__en-us_topic_0250947106_section109471547124311:
-
 Symptom
 -------
 
 An error message is displayed indicating that your local computer cannot connect to the remote computer.
-
-
 
 .. _en-us_topic_0264235939__en-us_topic_0250947106_fig4931341421:
 
@@ -23,10 +17,6 @@ An error message is displayed indicating that your local computer cannot connect
 
    **Figure 1** Cannot connect to the remote computer
 
-
-
-.. _en-us_topic_0264235939__en-us_topic_0250947106_section1848234274613:
-
 Possible Causes
 ---------------
 
@@ -35,8 +25,6 @@ Possible Causes
 -  The remote desktop connection is not correctly configured. For details, see :ref:`Checking Remote Desktop Connection Settings <en-us_topic_0264235939__en-us_topic_0250947106_section1912111262434>`.
 -  Remote Desktop Services are not started. For solution, see :ref:`Checking Remote Desktop Services <en-us_topic_0264235939__en-us_topic_0250947106_section42842535476>`.
 -  Remote Desktop Session Host is not correctly configured. For details, see :ref:`Checking Remote Desktop Session Host Configuration <en-us_topic_0264235939__en-us_topic_0250947106_section108021655155012>`.
-
-
 
 .. _en-us_topic_0264235939__en-us_topic_0250947106_section143451864405:
 
@@ -49,8 +37,6 @@ Ensure that port 3389 has been added in the inbound rule.
 
 On the page providing details about the ECS, click the **Security Groups** tab and view port 3389 in the inbound rule of the security group.
 
-
-
 .. _en-us_topic_0264235939__en-us_topic_0250947106_section1130118816394:
 
 Checking Whether the Firewall Is Correctly Configured
@@ -62,9 +48,7 @@ Check whether the firewall is enabled on the ECS.
 
 #. Click the Windows icon in the lower left corner of the desktop and choose **Control Panel** > **Windows Firewall**.
 
-   
-
-.. _en-us_topic_0264235939__en-us_topic_0250947106_fig7767914202818:
+   .. _en-us_topic_0264235939__en-us_topic_0250947106_fig7767914202818:
 
    .. figure:: /_static/images/en-us_image_0288997243.png
       :alt: Click to enlarge
@@ -77,9 +61,7 @@ Check whether the firewall is enabled on the ECS.
 
    View and set the firewall status.
 
-   
-
-.. _en-us_topic_0264235939__en-us_topic_0250947106_fig919195822713:
+   .. _en-us_topic_0264235939__en-us_topic_0250947106_fig919195822713:
 
    .. figure:: /_static/images/en-us_image_0288997244.png
       :alt: Click to enlarge
@@ -97,9 +79,7 @@ Check whether the firewall is enabled on the ECS.
    -  Remote Desktop - User Mode (TCP-In), Public
    -  Remote Desktop - User Mode (TCP-In), Domain, Private
 
-   
-
-.. _en-us_topic_0264235939__en-us_topic_0250947106_fig3823135463718:
+   .. _en-us_topic_0264235939__en-us_topic_0250947106_fig3823135463718:
 
    .. figure:: /_static/images/en-us_image_0288997245.png
       :alt: Click to enlarge
@@ -116,8 +96,6 @@ Check whether the firewall is enabled on the ECS.
 
 After you perform the preceding operations, try to remotely log in to the ECS again.
 
-
-
 .. _en-us_topic_0264235939__en-us_topic_0250947106_section1912111262434:
 
 Checking Remote Desktop Connection Settings
@@ -133,9 +111,7 @@ Modify the remote desktop connection settings on the Windows ECS:
 
 #. Click the **Remote** tab. In the **Remote Desktop** pane, select **Allow connections from computers running any version of Remote Desktop (less secure)**.
 
-   
-
-.. _en-us_topic_0264235939__en-us_topic_0250947106_en-us_topic_0018339851_fig62503556467:
+   .. _en-us_topic_0264235939__en-us_topic_0250947106_en-us_topic_0018339851_fig62503556467:
 
    .. figure:: /_static/images/en-us_image_0288997246.png
       :alt: Click to enlarge
@@ -146,8 +122,6 @@ Modify the remote desktop connection settings on the Windows ECS:
 
 #. Click **OK**.
 
-
-
 .. _en-us_topic_0264235939__en-us_topic_0250947106_section42842535476:
 
 Checking Remote Desktop Services
@@ -157,9 +131,7 @@ Checking Remote Desktop Services
 
 #. In the **Services** window, restart **Remote Desktop Services**. Ensure that **Remote Desktop Services** is in the **Running** status.
 
-   
-
-.. _en-us_topic_0264235939__en-us_topic_0250947106_fig1355354132417:
+   .. _en-us_topic_0264235939__en-us_topic_0250947106_fig1355354132417:
 
    .. figure:: /_static/images/en-us_image_0288997248.png
       :alt: Click to enlarge
@@ -167,8 +139,6 @@ Checking Remote Desktop Services
    
 
       **Figure 6** Remote Desktop Services
-
-
 
 .. _en-us_topic_0264235939__en-us_topic_0250947106_section108021655155012:
 
@@ -183,9 +153,7 @@ Checking Remote Desktop Session Host Configuration
 
 #. Choose **Remote Desktop Session Host** > **Security** > **Require use of specific security layer for remote (RDP) connections**.
 
-   
-
-.. _en-us_topic_0264235939__en-us_topic_0250947106_fig179713287534:
+   .. _en-us_topic_0264235939__en-us_topic_0250947106_fig179713287534:
 
    .. figure:: /_static/images/en-us_image_0288997249.png
       :alt: Click to enlarge
@@ -196,9 +164,7 @@ Checking Remote Desktop Session Host Configuration
 
 #. Set **Require use of specific security layer for remote (RDP) connections** to **Enabled** and **Security layer** to **RDP**.
 
-   
-
-.. _en-us_topic_0264235939__en-us_topic_0250947106_fig1437792312541:
+   .. _en-us_topic_0264235939__en-us_topic_0250947106_fig1437792312541:
 
    .. figure:: /_static/images/en-us_image_0288997250.png
       :alt: Click to enlarge

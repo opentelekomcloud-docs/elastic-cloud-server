@@ -3,28 +3,16 @@
 Why Does the System Display Error Code 122.112.\ *.* When I Log In to a Windows ECS?
 ====================================================================================
 
-
-
-.. _en-us_topic_0264235943__en-us_topic_0138293296_section138274312216:
-
 Symptom
 -------
 
 The system displays error 122.112... when you use RDC to locally access an ECS running Windows Server 2012. The ECS is frequently disconnected and the Windows login process is unexpectedly interrupted.
-
-
-
-.. _en-us_topic_0264235943__en-us_topic_0138293296_section0893911142214:
 
 Possible Causes
 ---------------
 
 #. System resources are insufficient or unavailable.
 #. The services cannot be started.
-
-
-
-.. _en-us_topic_0264235943__en-us_topic_0138293296_section6777111520224:
 
 Solution
 --------
@@ -35,9 +23,7 @@ Solution
 
    b. Click |image1| to start the service manager and choose **Administrative Tools** > **Event Viewer** > **Windows Logs** > **System** > **Filter Current Logs**.
 
-      
-
-.. _en-us_topic_0264235943__en-us_topic_0138293296_fig1129272819299:
+      .. _en-us_topic_0264235943__en-us_topic_0138293296_fig1129272819299:
 
       .. figure:: /_static/images/en-us_image_0000001122000869.png
          :alt: Click to enlarge
@@ -48,9 +34,7 @@ Solution
 
    c. In the **Event Level** pane, select event levels.
 
-      
-
-.. _en-us_topic_0264235943__en-us_topic_0138293296_fig13103521154816:
+      .. _en-us_topic_0264235943__en-us_topic_0138293296_fig13103521154816:
 
       .. figure:: /_static/images/en-us_image_0000001121886141.png
          :alt: Click to enlarge

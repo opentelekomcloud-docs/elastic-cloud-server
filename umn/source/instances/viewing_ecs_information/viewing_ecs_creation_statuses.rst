@@ -3,18 +3,10 @@
 Viewing ECS Creation Statuses
 =============================
 
-
-
-.. _en-us_topic_0039588795__section52267161284:
-
 Scenarios
 ---------
 
 After submitting the request for creating an ECS, you can view the creation status. This section describes how to view the creation status of an ECS.
-
-
-
-.. _en-us_topic_0039588795__section40936232171845:
 
 Procedure
 ---------

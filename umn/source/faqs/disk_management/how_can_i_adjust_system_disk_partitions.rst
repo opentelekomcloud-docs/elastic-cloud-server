@@ -3,10 +3,6 @@
 How Can I Adjust System Disk Partitions?
 ========================================
 
-
-
-.. _en-us_topic_0076210995__section2442470814170:
-
 Scenarios
 ---------
 
@@ -19,10 +15,6 @@ There are two ways to expand a system disk:
 
    -  :ref:`How Can I Add the Empty Partition of an Expanded System Disk to the End Root Partition Online? <en-us_topic_0078300749>`
    -  :ref:`How Can I Add the Empty Partition of an Expanded System Disk to the Non-end Root Partition Online? <en-us_topic_0078300750>`
-
-
-
-.. _en-us_topic_0076210995__section2876888014177:
 
 Procedure
 ---------
@@ -45,9 +37,7 @@ To use the 20 GB capacity, performing the following operations:
 
       In the following command output, **/dev/xvda** or **/dev/vda** indicates the system disk.
 
-      
-
-.. _en-us_topic_0076210995__fig30207295194414:
+      .. _en-us_topic_0076210995__fig30207295194414:
 
       .. figure:: /_static/images/en-us_image_0076540987.png
          :alt: Click to enlarge
@@ -60,9 +50,7 @@ To use the 20 GB capacity, performing the following operations:
 
       **parted -l /dev/xvda**
 
-      
-
-.. _en-us_topic_0076210995__fig61751392489:
+      .. _en-us_topic_0076210995__fig61751392489:
 
       .. figure:: /_static/images/en-us_image_0076598858.jpg
          :alt: Click to enlarge
@@ -95,9 +83,7 @@ To use the 20 GB capacity, performing the following operations:
 
       Information similar to the following is displayed.
 
-      
-
-.. _en-us_topic_0076210995__fig8903145214811:
+      .. _en-us_topic_0076210995__fig8903145214811:
 
       .. figure:: /_static/images/en-us_image_0076540988.png
          :alt: Click to enlarge
@@ -110,9 +96,7 @@ To use the 20 GB capacity, performing the following operations:
 
       The start cylinder number must be greater than the end cylinder numbers of existing partitions. In this example, use the default value for the new partition's start cylinder number and press **Enter**. Information similar to the following is displayed.
 
-      
-
-.. _en-us_topic_0076210995__fig181891453491:
+      .. _en-us_topic_0076210995__fig181891453491:
 
       .. figure:: /_static/images/en-us_image_0076595619.jpg
          :alt: Click to enlarge
@@ -125,9 +109,7 @@ To use the 20 GB capacity, performing the following operations:
 
       In this example, use the default value for the new partition's end cylinder number and press **Enter**. Information similar to the following is displayed.
 
-      
-
-.. _en-us_topic_0076210995__fig1575842424919:
+      .. _en-us_topic_0076210995__fig1575842424919:
 
       .. figure:: /_static/images/en-us_image_0076595620.jpg
          :alt: Click to enlarge
@@ -140,9 +122,7 @@ To use the 20 GB capacity, performing the following operations:
 
       Information similar to the following is displayed.
 
-      
-
-.. _en-us_topic_0076210995__fig313793614917:
+      .. _en-us_topic_0076210995__fig313793614917:
 
       .. figure:: /_static/images/en-us_image_0076596029.jpg
          :alt: Click to enlarge
@@ -157,9 +137,7 @@ To use the 20 GB capacity, performing the following operations:
 
       Information similar to the following is displayed.
 
-      
-
-.. _en-us_topic_0076210995__fig31177535493:
+      .. _en-us_topic_0076210995__fig31177535493:
 
       .. figure:: /_static/images/en-us_image_0076596326.jpg
          :alt: Click to enlarge
@@ -172,9 +150,7 @@ To use the 20 GB capacity, performing the following operations:
 
       **parted -l /dev/xvda**
 
-      
-
-.. _en-us_topic_0076210995__fig1821920725014:
+      .. _en-us_topic_0076210995__fig1821920725014:
 
       .. figure:: /_static/images/en-us_image_0076600080.jpg
          :alt: Click to enlarge
@@ -193,9 +169,7 @@ To use the 20 GB capacity, performing the following operations:
 
       **df -TH**
 
-      
-
-.. _en-us_topic_0076210995__fig0499732105012:
+      .. _en-us_topic_0076210995__fig0499732105012:
 
       .. figure:: /_static/images/en-us_image_0076541187.png
          :alt: Click to enlarge
@@ -266,9 +240,7 @@ To use the 20 GB capacity, performing the following operations:
 
       Information similar to the following is displayed:
 
-      
-
-.. _en-us_topic_0076210995__fig71852049155012:
+      .. _en-us_topic_0076210995__fig71852049155012:
 
       .. figure:: /_static/images/en-us_image_0076543500.jpg
          :alt: Click to enlarge
@@ -281,10 +253,12 @@ To use the 20 GB capacity, performing the following operations:
 
    If you do not set automatic mounting upon system startup, you must mount the new partition to the specified directory again after the ECS is restarted.
 
-   -  If automatic mounting is required, go to 7.
+   -  If automatic mounting is required, go to :ref:`7 <en-us_topic_0076210995__li51885379162851>`.
    -  If automatic mounting is not required, no further action is required.
 
-#. Set automatic mounting upon system startup for the new disk.
+#. .. _en-us_topic_0076210995__li51885379162851:
+
+   Set automatic mounting upon system startup for the new disk.
 
    .. note::
 
@@ -294,9 +268,7 @@ To use the 20 GB capacity, performing the following operations:
 
       **blkid**
 
-      
-
-.. _en-us_topic_0076210995__fig124697122517:
+      .. _en-us_topic_0076210995__fig124697122517:
 
       .. figure:: /_static/images/en-us_image_0076543501.jpg
          :alt: Click to enlarge

@@ -3,18 +3,10 @@
 How Can I Transfer Files from a Local Windows Computer to a Windows ECS?
 ========================================================================
 
-
-
-.. _en-us_topic_0166284970__section35026221326:
-
 Scenarios
 ---------
 
 You want to transfer files from a local Windows computer to a Windows ECS through an MSTSC-based remote desktop connection.
-
-
-
-.. _en-us_topic_0166284970__section69111948104914:
 
 Prerequisites
 -------------
@@ -23,10 +15,6 @@ Prerequisites
 -  The ECS has an EIP bound. For details, see :ref:`Binding an EIP <en-us_topic_0174917535>`.
 
 -  The security group of the ECS allows traffic on port 3389. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.
-
-
-
-.. _en-us_topic_0166284970__section628216511377:
 
 Solution
 --------

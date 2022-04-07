@@ -7,8 +7,6 @@ Your account automatically comes with a default security group. The default secu
 
 :ref:`Figure 1 <en-us_topic_0140323154__fig11890174421819>` shows the default security group.
 
-
-
 .. _en-us_topic_0140323154__fig11890174421819:
 
 .. figure:: /_static/images/en-us_image_0000001230120807.png
@@ -19,8 +17,6 @@ Your account automatically comes with a default security group. The default secu
    **Figure 1** Default security group
 
 :ref:`Table 1 <en-us_topic_0140323154__table542641118503>` describes the rules for the default security group.
-
-
 
 .. _en-us_topic_0140323154__table542641118503:
 

@@ -9,10 +9,6 @@ All standard (Standard_xxx) and enterprise (Enterprise_xxx) images support Cloud
 
 Using Cloud-Init to initialize your ECSs will affect your ECS, IMS, and AS services.
 
-
-
-.. _en-us_topic_0048642616__section1150469610136:
-
 Impact on IMS
 -------------
 
@@ -24,10 +20,6 @@ To ensure that ECSs created using a private image support customized configurati
 After Cloud-Init or Cloudbase-Init is installed in an image, Cloud-Init or Cloudbase-Init automatically configures initial attributes for the ECSs created using this image.
 
 For more information, see *Image Management Service User Guide*.
-
-
-
-.. _en-us_topic_0048642616__section2746706105950:
 
 Impact on ECS
 -------------
@@ -42,10 +34,6 @@ Impact on ECS
 
 -  If Cloud-Init is supported, you can view and use metadata to configure and manage running ECSs. :ref:`Obtaining Metadata <en-us_topic_0042400609>`\ For more information, see :ref:`Obtaining Metadata <en-us_topic_0042400609>`.
 
-
-
-.. _en-us_topic_0048642616__section4202207210118:
-
 Impact on AS
 ------------
 
@@ -54,10 +42,6 @@ Impact on AS
 -  For an existing AS configuration, if its private image does not have Cloud-Init or Cloudbase-Init installed, the login mode of the ECSs created in the AS group where the AS configuration takes effect may fail to take effect.
 
    To resolve this issue, see "How Does Cloud-Init Affect the AS Service?" in *Auto Scaling User Guide*.
-
-
-
-.. _en-us_topic_0048642616__section44995720162019:
 
 Notes
 -----

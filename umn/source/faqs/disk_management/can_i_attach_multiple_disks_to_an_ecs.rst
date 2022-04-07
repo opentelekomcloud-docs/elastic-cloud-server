@@ -6,12 +6,7 @@ Can I Attach Multiple Disks to an ECS?
 Yes. The ECSs created after the disk function upgrade can have up to 60 attached disks.
 
 -  When you create an ECS, you can attach 24 disks to it.
-
 -  After you create an ECS, you can attach up to 60 disks to it.
-
-   
-
-.. _en-us_topic_0018073215__table134132505508:
 
    .. table:: **Table 1** Numbers of disks that can be attached to a newly created ECS
 
@@ -34,8 +29,6 @@ Yes. The ECSs created after the disk function upgrade can have up to 60 attached
 
 The maximum number of disks that you can attach to an ECS that was created before the disk function upgrade remains unchanged, as shown in :ref:`Table 2 <en-us_topic_0018073215__table3150162605720>`.
 
-
-
 .. _en-us_topic_0018073215__table3150162605720:
 
 .. table:: **Table 2** Numbers of disks that can be attached to an existing ECS
@@ -47,10 +40,6 @@ The maximum number of disks that you can attach to an ECS that was created befor
    +-------------------+--------------------+---------------------+-----------------------------+
 
 To attach 60 disks, enable advanced disk. For details, see :ref:`Enabling Advanced Disk <en-us_topic_0122307169>`.
-
-
-
-.. _en-us_topic_0018073215__section137641439201:
 
 How Can I Check Whether an ECS Is Created Before or After the Disk Function Upgrade?
 ------------------------------------------------------------------------------------

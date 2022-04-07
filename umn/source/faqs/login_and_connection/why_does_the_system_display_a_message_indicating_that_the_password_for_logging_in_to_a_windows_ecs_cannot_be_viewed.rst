@@ -3,18 +3,10 @@
 Why Does the System Display a Message Indicating that the Password for Logging In to a Windows ECS Cannot Be Viewed?
 ====================================================================================================================
 
-
-
-.. _en-us_topic_0031736846__en-us_topic_0031703610_section563002281179:
-
 Symptom
 -------
 
 Password authentication is required to log in to a Windows ECS. Therefore, you require a key file to obtain the initial password for logging in to the ECS. However, after you click **Get Password** (see :ref:`Obtaining the Password for Logging In to a Windows ECS <en-us_topic_0031107266>`), the system displays a message indicating that the password cannot be viewed. ECS login was therefore unsuccessful.
-
-
-
-.. _en-us_topic_0031736846__en-us_topic_0031703610_section379062211192:
 
 Possible Causes
 ---------------
@@ -23,10 +15,6 @@ Possible causes vary depending on the image used to create the Windows ECS.
 
 -  Cause 1: The image used to create the Windows ECS is a private image, on which Cloudbase-Init has not been installed.
 -  Cause 2: Cloudbase-Init has been installed on the image, but the key pair has not been obtained when the Windows ECS was created.
-
-
-
-.. _en-us_topic_0031736846__en-us_topic_0031703610_section32757467113923:
 
 Solution
 --------

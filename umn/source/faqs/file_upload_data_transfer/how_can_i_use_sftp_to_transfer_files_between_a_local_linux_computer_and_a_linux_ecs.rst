@@ -3,18 +3,10 @@
 How Can I Use SFTP to Transfer Files Between a Local Linux Computer and a Linux ECS?
 ====================================================================================
 
-
-
-.. _en-us_topic_0170139796__en-us_topic_0138882178_section121841025124610:
-
 Scenarios
 ---------
 
 You want to use SFTP to transfer files between a local Linux computer and a Linux ECS. The following uses CentOS as an example.
-
-
-
-.. _en-us_topic_0170139796__en-us_topic_0138882178_section10475181212712:
 
 Procedure
 ---------
@@ -41,9 +33,7 @@ Procedure
 
    **passwd user1**
 
-   
-
-.. _en-us_topic_0170139796__en-us_topic_0138882178_fig282551904413:
+   .. _en-us_topic_0170139796__en-us_topic_0138882178_fig282551904413:
 
    .. figure:: /_static/images/en-us_image_0263798009.png
       :alt: Click to enlarge
@@ -85,9 +75,7 @@ Procedure
       AllowTcpForwarding no
       X11Forwarding no
 
-   
-
-.. _en-us_topic_0170139796__fig8395112141418:
+   .. _en-us_topic_0170139796__fig8395112141418:
 
    .. figure:: /_static/images/en-us_image_0000001071727803.png
       :alt: Click to enlarge

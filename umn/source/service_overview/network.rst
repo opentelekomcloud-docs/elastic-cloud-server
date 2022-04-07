@@ -3,20 +3,12 @@
 Network
 =======
 
-
-
-.. _en-us_topic_0030828257__section16625011109:
-
 VPC
 ---
 
 Virtual Private Cloud (VPC) allows you to create customized virtual networks in your logically isolated AZ. Such networks are dedicated zones that are logically isolated, providing secure network environments for your ECSs. You can define security groups, virtual private networks (VPNs), IP address segments, and bandwidth for a VPC. This facilitates internal network configuration and management and allows you to change your network in a secure and convenient network manner. You can also customize the ECS access rules within a security group and between security groups to improve ECS security.
 
 For more information about VPC, see *Virtual Private Cloud User Guide*.
-
-
-
-.. _en-us_topic_0030828257__section537721521012:
 
 Subnet
 ------
@@ -25,18 +17,12 @@ A subnet is a range of IP addresses in your VPC and provides IP address manageme
 
 By default, ECSs in all subnets of the same VPC can communicate with each other, while ECSs in different VPCs cannot.
 
-
-
-.. _en-us_topic_0030828257__section15617142420109:
-
 Security Group
 --------------
 
 A security group is a collection of access control rules for ECSs that have the same security protection requirements and that are mutually trusted. By adding an ECS to a security group, you apply all the rules defined for this security group to this ECS.
 
 Your account automatically comes with a default security group. The default security group allows all outbound data, denies all inbound data, and allows all data between ECSs in the group. Your ECSs in the security group can communicate with each other without the need to add rules.
-
-
 
 .. _en-us_topic_0030828257__fig11890174421819:
 
@@ -48,8 +34,6 @@ Your account automatically comes with a default security group. The default secu
    **Figure 1** Default security group
 
 :ref:`Table 1 <en-us_topic_0030828257__table1580115155277>` describes default security group rules.
-
-
 
 .. _en-us_topic_0030828257__table1580115155277:
 
@@ -63,18 +47,12 @@ Your account automatically comes with a default security group. The default secu
    | Inbound   | All      | All        | Source: the current security group (for example, sg-*xxxxx*) | Allows communications among ECSs within the security group and denies all inbound traffic (incoming data packets). |
    +-----------+----------+------------+--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _en-us_topic_0030828257__section2264152918101:
-
 EIP
 ---
 
 The Elastic IP (EIP) service enables your cloud resources to communicate with the Internet using static public IP addresses and scalable bandwidths. EIPs can be bound to or unbound from ECSs, BMSs, virtual IP addresses, NAT gateways, or load balancers.
 
 Each EIP can be used by only one cloud resource at a time.
-
-
 
 .. _en-us_topic_0030828257__fig15314318474:
 
@@ -84,10 +62,6 @@ Each EIP can be used by only one cloud resource at a time.
 
 
    **Figure 2** Accessing the Internet using an EIP
-
-
-
-.. _en-us_topic_0030828257__section9843135016217:
 
 Network QoS
 -----------

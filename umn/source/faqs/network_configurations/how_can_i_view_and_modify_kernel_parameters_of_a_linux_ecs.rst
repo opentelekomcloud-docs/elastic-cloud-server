@@ -9,14 +9,8 @@ Modify the kernel parameters only if the parameter settings affect your services
 -  Modify the correct kernel parameters. For details about common kernel parameters, see :ref:`Table 1 <en-us_topic_0107659745__table15253154115313>`.
 -  Back up key ECS data before modifying kernel parameter settings.
 
-
-
-.. _en-us_topic_0107659745__section192621849125219:
-
 Background
 ----------
-
-
 
 .. _en-us_topic_0107659745__table15253154115313:
 
@@ -122,10 +116,6 @@ Background
    | net.netfilter.nf_conntrack_max                     | Specifies the maximum value of hash entries.                                                                                                                                                                                                                                                                                                                        |
    +----------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _en-us_topic_0107659745__section68511530163412:
-
 Viewing Kernel Parameters
 -------------------------
 
@@ -161,10 +151,6 @@ Viewing Kernel Parameters
       net.ipv4.tcp_wmem = 16384 131072 262144
       net.ipv4.tcp_mem = 262144 524288 1048576
       ......
-
-
-
-.. _en-us_topic_0107659745__section1996094863415:
 
 Modifying Kernel Parameter Settings
 -----------------------------------

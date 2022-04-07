@@ -3,10 +3,6 @@
 Region and AZ
 =============
 
-
-
-.. _en-us_topic_0186645877__en-us_topic_0184026189_section388255972712:
-
 Concept
 -------
 
@@ -17,8 +13,6 @@ A region and availability zone (AZ) identify the location of a data center. You 
 
 :ref:`Figure 1 <en-us_topic_0186645877__en-us_topic_0184026189_fig8747114281212>` shows the relationship between regions and AZs.
 
-
-
 .. _en-us_topic_0186645877__en-us_topic_0184026189_fig8747114281212:
 
 .. figure:: /_static/images/en-us_image_0184026531.png
@@ -28,18 +22,10 @@ A region and availability zone (AZ) identify the location of a data center. You 
 
    **Figure 1** Regions and AZs
 
-
-
-.. _en-us_topic_0186645877__en-us_topic_0184026189_section67281149192216:
-
 Selecting a Region
 ------------------
 
 Select a region closest to your target users for lower network latency and quick access.
-
-
-
-.. _en-us_topic_0186645877__en-us_topic_0184026189_section193971112578:
 
 Selecting an AZ
 ---------------
@@ -48,10 +34,6 @@ When deploying resources, consider your applications' requirements on disaster r
 
 -  For high DR capability, deploy resources in different AZs within the same region.
 -  For lower network latency, deploy resources in the same AZ.
-
-
-
-.. _en-us_topic_0186645877__en-us_topic_0184026189_section1110135820407:
 
 Regions and Endpoints
 ---------------------

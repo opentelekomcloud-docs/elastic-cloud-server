@@ -3,10 +3,6 @@
 Creating a Key Pair
 ===================
 
-
-
-.. _en-us_topic_0014250631__section4859995204421:
-
 Overview
 --------
 
@@ -29,10 +25,6 @@ A key pair that consists of a public key and a private key is required for authe
 
       If this key pair must be used for remote authentication, see :ref:`Why Does a Key Pair Created Using puttygen.exe Fail to Be Imported on the Management Console? <en-us_topic_0047654687>`
 
-
-
-.. _en-us_topic_0014250631__section57670118165256:
-
 Constraints
 -----------
 
@@ -43,8 +35,6 @@ Constraints
    -  SSH-2 (RSA, 4096)
 
 -  The private key is one of the most important functions for protecting your ECS during remote login. Save the private key to your local directory and keep it secure. The private key can be downloaded only once.
-
-
 
 .. _en-us_topic_0014250631__section35336147204538:
 
@@ -71,8 +61,6 @@ Creating a Key Pair on the Management Console
 
       This is the only opportunity for you to save the private key file. Keep it secure. When creating an ECS, provide the name of your desired key pair. Each time you log in to the ECS using SSH, provide the private key.
 
-
-
 .. _en-us_topic_0014250631__section38463609165715:
 
 Creating a Key Pair Using **puttygen.exe**
@@ -90,9 +78,7 @@ Creating a Key Pair Using **puttygen.exe**
 
    a. Double-click **puttygen.exe** to switch to the **PuTTY Key Generator** page.
 
-      
-
-.. _en-us_topic_0014250631__en-us_topic_0037960038_fig4490538015580:
+      .. _en-us_topic_0014250631__en-us_topic_0037960038_fig4490538015580:
 
       .. figure:: /_static/images/en-us_image_0272917695.png
          :alt: Click to enlarge
@@ -105,9 +91,7 @@ Creating a Key Pair Using **puttygen.exe**
 
       The key generator automatically generates a key pair that consists of a public key and a private key. The public key is shown in the red box in :ref:`Figure 2 <en-us_topic_0014250631__en-us_topic_0037960038_fig4678746517750>`.
 
-      
-
-.. _en-us_topic_0014250631__en-us_topic_0037960038_fig4678746517750:
+      .. _en-us_topic_0014250631__en-us_topic_0037960038_fig4678746517750:
 
       .. figure:: /_static/images/en-us_image_0272919399.png
          :alt: **Figure 2** Obtaining the public and private keys
@@ -115,7 +99,9 @@ Creating a Key Pair Using **puttygen.exe**
 
          **Figure 2** Obtaining the public and private keys
 
-#. Copy the public key content to a .txt file and save the file in a local directory.
+#. .. _en-us_topic_0014250631__li24584709151818:
+
+   Copy the public key content to a .txt file and save the file in a local directory.
 
    .. note::
 
@@ -131,9 +117,7 @@ Creating a Key Pair Using **puttygen.exe**
 
       a. On the **PuTTY Key Generator** page, choose **File** > **Save private key**.
 
-         
-
-.. _en-us_topic_0014250631__fig1031955919299:
+         .. _en-us_topic_0014250631__fig1031955919299:
 
          .. figure:: /_static/images/en-us_image_0276033982.png
             :alt: Click to enlarge
@@ -154,9 +138,7 @@ Creating a Key Pair Using **puttygen.exe**
 
             If you use this private file to obtain the password for logging in to a Windows ECS, when you choose **Export OpenSSH key**, do not configure **Key passphrase**. Otherwise, obtaining the password will fail.
 
-         
-
-.. _en-us_topic_0014250631__fig15752222153016:
+         .. _en-us_topic_0014250631__fig15752222153016:
 
          .. figure:: /_static/images/en-us_image_0272919409.png
             :alt: Click to enlarge
@@ -168,8 +150,6 @@ Creating a Key Pair Using **puttygen.exe**
       b. Save the private key, for example, **kp-123.pem**, in a local directory.
 
 #. Import the public key to the system. For details, see "Copying the public key content" in :ref:`Importing a Key Pair <en-us_topic_0014250631__section62005706143441>`.
-
-
 
 .. _en-us_topic_0014250631__section62005706143441:
 
@@ -188,9 +168,7 @@ If you store a public key by clicking **Save public key** of **puttygen.exe**, t
 
 #. On the right side of the page, click **Import Key Pair**.
 
-   
-
-.. _en-us_topic_0014250631__fig30209536143442:
+   .. _en-us_topic_0014250631__fig30209536143442:
 
    .. figure:: /_static/images/en-us_image_0037980515.png
       :alt: Click to enlarge
@@ -203,7 +181,7 @@ If you store a public key by clicking **Save public key** of **puttygen.exe**, t
 
    -  Selecting a file
 
-      a. On the **Import Key Pair** page of the management console, click **Select File** and select the local public key file, for example, the .txt file saved in 3.
+      a. On the **Import Key Pair** page of the management console, click **Select File** and select the local public key file, for example, the .txt file saved in :ref:`3 <en-us_topic_0014250631__li24584709151818>`.
 
          .. note::
 
@@ -217,10 +195,6 @@ If you store a public key by clicking **Save public key** of **puttygen.exe**, t
 
       a. Copy the content of the public key in .txt file into the **Public Key Content** text box.
       b. Click **OK**.
-
-
-
-.. _en-us_topic_0014250631__section6289800511384:
 
 Helpful Links
 -------------

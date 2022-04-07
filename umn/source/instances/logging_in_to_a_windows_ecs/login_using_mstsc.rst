@@ -3,18 +3,10 @@
 Login Using MSTSC
 =================
 
-
-
-.. _en-us_topic_0017955381__section119451029135512:
-
 Scenarios
 ---------
 
 This section describes how to use the remote login tool MSTSC to log in to a Windows ECS from a local computer.
-
-
-
-.. _en-us_topic_0017955381__section30111449112059:
 
 Prerequisites
 -------------
@@ -27,10 +19,6 @@ Prerequisites
 -  The network connection between the login tool and the target ECS is normal. For example, the default port 3389 is not blocked by the firewall.
 -  RDP has been enabled on the target ECS. By default, RDP has been enabled on the ECSs created using a public image. For instructions about how to enable RDP, see :ref:`Enabling RDP <en-us_topic_0017955381__section65216898112059>`.
 
-
-
-.. _en-us_topic_0017955381__section1011913410314:
-
 Logging In to a Windows ECS Using MSTSC
 ---------------------------------------
 
@@ -42,9 +30,7 @@ If your local server runs Windows, you can use the remote desktop connection too
 
 #. In the **Remote Desktop Connection** dialog box, click **Show Options**.
 
-   
-
-.. _en-us_topic_0017955381__en-us_topic_0027290684_fig22996848191913:
+   .. _en-us_topic_0017955381__en-us_topic_0027290684_fig22996848191913:
 
    .. figure:: /_static/images/en-us_image_0295941039.png
       :alt: Click to enlarge
@@ -59,9 +45,7 @@ If your local server runs Windows, you can use the remote desktop connection too
 
       If you do not want to enter the username and password in follow-up logins, select **Allow me to save credentials**.
 
-   
-
-.. _en-us_topic_0017955381__fig61897111106:
+   .. _en-us_topic_0017955381__fig61897111106:
 
    .. figure:: /_static/images/en-us_image_0295941040.png
       :alt: Click to enlarge
@@ -74,9 +58,7 @@ If your local server runs Windows, you can use the remote desktop connection too
 
    To copy data from the local server to your ECS, select **Clipboard**.
 
-   
-
-.. _en-us_topic_0017955381__fig5308424112111:
+   .. _en-us_topic_0017955381__fig5308424112111:
 
    .. figure:: /_static/images/en-us_image_0295941041.png
       :alt: Click to enlarge
@@ -87,9 +69,7 @@ If your local server runs Windows, you can use the remote desktop connection too
 
    To copy files from the local server to your ECS, click **More** and select your desired disks.
 
-   
-
-.. _en-us_topic_0017955381__fig2016145215213:
+   .. _en-us_topic_0017955381__fig2016145215213:
 
    .. figure:: /_static/images/en-us_image_0295940977.png
       :alt: Click to enlarge
@@ -100,9 +80,7 @@ If your local server runs Windows, you can use the remote desktop connection too
 
 #. (Optional) Click the **Display** tab and then adjust the size of the remote desktop.
 
-   
-
-.. _en-us_topic_0017955381__fig45767599405:
+   .. _en-us_topic_0017955381__fig45767599405:
 
    .. figure:: /_static/images/en-us_image_0295940978.png
       :alt: Click to enlarge
@@ -118,8 +96,6 @@ If your local server runs Windows, you can use the remote desktop connection too
 #. (Optional) After logging in to the ECS using RDP, handle the issue that local files larger than 2 GB cannot be copied to a remote Windows ECS.
 
    For details, see `troubleshooting cases <https://support.microsoft.com/en-us/help/2258090/copying-files-larger-than-2-gb-over-a-remote-desktop-services-or-termi>`__.
-
-
 
 .. _en-us_topic_0017955381__section65216898112059:
 
@@ -140,9 +116,7 @@ When you log in to an ECS for the first time, log in to it using VNC, enable RDP
 
    The **System Properties** dialog box is displayed.
 
-   
-
-.. _en-us_topic_0017955381__fig276023113838:
+   .. _en-us_topic_0017955381__fig276023113838:
 
    .. figure:: /_static/images/en-us_image_0049287308.png
       :alt: Click to enlarge

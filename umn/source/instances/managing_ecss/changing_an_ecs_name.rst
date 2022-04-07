@@ -3,20 +3,12 @@
 Changing an ECS Name
 ====================
 
-
-
-.. _en-us_topic_0142266317__section16259932121511:
-
 Scenarios
 ---------
 
 The name of a created ECS can be changed to meet your service requirements.
 
 Multiple ECS names can be changed in a batch. After the change, the ECS names are the same.
-
-
-
-.. _en-us_topic_0142266317__section147834671520:
 
 Procedure for a Single ECS
 --------------------------
@@ -34,10 +26,6 @@ Procedure for a Single ECS
    **Allow duplicate ECS name**: allows ECS names to be duplicate. If **Allow duplicate ECS name** is not selected and the target name is the same as an existing ECS name, the system displays a message indicating that the name has been used and you need to change another name.
 
 #. Click **OK**.
-
-
-
-.. _en-us_topic_0142266317__section523142043912:
 
 Procedure for Batch Operations
 ------------------------------

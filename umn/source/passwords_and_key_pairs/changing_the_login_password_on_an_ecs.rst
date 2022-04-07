@@ -3,34 +3,20 @@
 Changing the Login Password on an ECS
 =====================================
 
-
-
-.. _en-us_topic_0122627689__section11722115773514:
-
 Scenarios
 ---------
 
 This section describes how to change the password for logging in to an ECS when the password is about to expire, the password is forgotten, or you are logging in to the ECS for the first time. It is a good practice to change the initial password upon the first login.
-
-
-
-.. _en-us_topic_0122627689__section3844435019:
 
 Prerequisites
 -------------
 
 The ECS can be logged in.
 
-
-
-.. _en-us_topic_0122627689__section8845441181739:
-
 Background
 ----------
 
 :ref:`Table 1 <en-us_topic_0122627689__en-us_topic_0021426802_table4381109318958>` shows the ECS password complexity requirements.
-
-
 
 .. _en-us_topic_0122627689__en-us_topic_0021426802_table4381109318958:
 
@@ -51,10 +37,6 @@ Background
    |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                               |
    +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
 
-
-
-.. _en-us_topic_0122627689__section5482101418386:
-
 Windows
 -------
 
@@ -69,10 +51,6 @@ Windows
 #. Run the following command to change the password (the new password must meet the requirements described in :ref:`Table 1 <en-us_topic_0122627689__en-us_topic_0021426802_table4381109318958>`):
 
    **net user** **Administrator** *New password*
-
-
-
-.. _en-us_topic_0122627689__section114862031133811:
 
 Linux
 -----

@@ -3,10 +3,6 @@
 Step 4: Confirm
 ===============
 
-
-
-.. _en-us_topic_0163572592__section11999172313116:
-
 Confirming the Order
 --------------------
 
@@ -19,10 +15,6 @@ Confirming the Order
    After the configuration, click **Price Calculator** to view the ECS configuration fee.
 
 #. Confirm the configuration and click **Create Now**.
-
-
-
-.. _en-us_topic_0163572592__section71001031128:
 
 Follow-up Procedure
 -------------------

@@ -3,18 +3,10 @@
 Expanding the Capacity of an EVS Disk
 =====================================
 
-
-
-.. _en-us_topic_0093492522__section127252030132218:
-
 Scenarios
 ---------
 
 When your disk capacity is insufficient, you can handle the insufficiency by expanding the disk capacity.
-
-
-
-.. _en-us_topic_0093492522__section718121118257:
 
 Procedure
 ---------

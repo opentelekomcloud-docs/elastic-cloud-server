@@ -13,9 +13,7 @@ This section uses an ECS running Windows Server 2008 R2 64bit as an example to d
 
 #. In the navigation pane on the left, choose **Storage** > **Disk Management**.
 
-   
-
-.. _en-us_topic_0087680813__fig63278226101115:
+   .. _en-us_topic_0087680813__fig63278226101115:
 
    .. figure:: /_static/images/en-us_image_0087906013.png
       :alt: Click to enlarge
@@ -32,9 +30,7 @@ This section uses an ECS running Windows Server 2008 R2 64bit as an example to d
 
       The **SCSI Disk Device Properties** dialog box is displayed, as shown in :ref:`Figure 2 <en-us_topic_0087680813__fig22437283101545>`.
 
-      
-
-.. _en-us_topic_0087680813__fig22437283101545:
+      .. _en-us_topic_0087680813__fig22437283101545:
 
       .. figure:: /_static/images/en-us_image_0087906055.png
          :alt: **Figure 2** Disk properties
@@ -44,9 +40,7 @@ This section uses an ECS running Windows Server 2008 R2 64bit as an example to d
 
    c. Click the **Details** tab and set **Property** to **Parent**.
 
-      
-
-.. _en-us_topic_0087680813__fig2821199710173:
+      .. _en-us_topic_0087680813__fig2821199710173:
 
       .. figure:: /_static/images/en-us_image_0087906067.png
          :alt: **Figure 3** Disk device details
@@ -60,9 +54,7 @@ This section uses an ECS running Windows Server 2008 R2 64bit as an example to d
 
       The disk device corresponding to **51776** is **xvde**. The disk device used by disk 1 is xvde.
 
-      
-
-.. _en-us_topic_0087680813__table2257401020521:
+      .. _en-us_topic_0087680813__table2257401020521:
 
       .. table:: **Table 1** Mapping between disk partitions and disk devices
 

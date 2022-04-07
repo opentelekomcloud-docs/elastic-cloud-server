@@ -3,18 +3,10 @@
 Why Does the Login to My Linux ECS Using a Key File Fail?
 =========================================================
 
-
-
-.. _en-us_topic_0031734664__en-us_topic_0031703610_section563002281179:
-
 Symptom
 -------
 
 When you use the key file created during your Linux ECS creation to log in to the ECS, the login fails.
-
-
-
-.. _en-us_topic_0031734664__en-us_topic_0031703610_section379062211192:
 
 Possible Causes
 ---------------
@@ -23,10 +15,6 @@ Possible causes vary depending on the image used to create the Linux ECS.
 
 -  Cause 1: The image that you used to create the Linux ECS is a private image, on which Cloud-Init is not installed.
 -  Cause 2: Cloud-Init is installed on the image, but you did not obtain the key pair when you created the ECS.
-
-
-
-.. _en-us_topic_0031734664__en-us_topic_0031703610_section32757467113923:
 
 Solution
 --------

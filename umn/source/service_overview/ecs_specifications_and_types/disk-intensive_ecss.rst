@@ -3,25 +3,13 @@
 Disk-intensive ECSs
 ===================
 
-
-
-.. _en-us_topic_0035470099__section28296694191148:
-
 Overview
 --------
 
 D2 ECSs are developed based on KVM virtualization. They use local storage and provide high storage performance and intranet bandwidth for distributed Hadoop computing, large data warehouse, distributed file system, and log/data processing.
 
-
-
-.. _en-us_topic_0035470099__section31415995191246:
-
 Specifications
 --------------
-
-
-
-.. _en-us_topic_0035470099__table47541937112515:
 
 .. table:: **Table 1** D2 ECS specifications
 
@@ -41,10 +29,6 @@ Specifications
    | d2.15xlarge.9 | 60    | 540          | 17/17                              | 500                  | 16              | KVM                 | 24×1675           |                             |
    +---------------+-------+--------------+------------------------------------+----------------------+-----------------+---------------------+-------------------+-----------------------------+
 
-
-
-.. _en-us_topic_0035470099__section107991967319:
-
 Scenarios
 ---------
 
@@ -56,10 +40,6 @@ Scenarios
 
    Big data computing, network file systems, data processing, MapReduce, Hadoop, and data-intensive computing
 
-
-
-.. _en-us_topic_0035470099__section9344849161910:
-
 Features of D2 ECSs
 -------------------
 
@@ -68,10 +48,6 @@ Features of D2 ECSs
 -  D2 ECSs with a vCPU/memory ratio of 1:8 process large volumes of data.
 -  D2 ECSs provide high intranet performance, including high intranet bandwidth and PPS, meeting requirements for data exchange between ECSs during peak hours.
 -  Each D2 ECS supports a maximum configuration of 24 local disks, 60 vCPUs, and 540 GiB memory.
-
-
-
-.. _en-us_topic_0035470099__table9670341181017:
 
 .. table:: **Table 2** Specifications of a single SAS HDD disk attached to a D2 ECS
 
@@ -82,10 +58,6 @@ Features of D2 ECSs
    Maximum throughput 230 MB/s
    Access latency     Millisecond-level
    ================== =================
-
-
-
-.. _en-us_topic_0035470099__section1749014919186:
 
 Notes on Using D2 ECSs
 ----------------------

@@ -3,10 +3,6 @@
 Obtaining a Tesla Driver and CUDA Toolkit
 =========================================
 
-
-
-.. _en-us_topic_0213874991__section11831857193910:
-
 Scenarios
 ---------
 
@@ -14,18 +10,10 @@ Before using a GPU-accelerated ECS, make sure that the desired Tesla driver and 
 
 For instructions about how to install the Tesla driver and CUDA toolkit, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 
-
-
-.. _en-us_topic_0213874991__section28901217266:
-
 Downloading a Tesla Driver
 --------------------------
 
 `Download a driver <https://www.nvidia.com/Download/index.aspx?lang=en-us>`__ based on your ECS type.
-
-
-
-.. _en-us_topic_0213874991__table394113539174:
 
 .. table:: **Table 1** Mapping between Tesla drivers and ECS types
 
@@ -40,16 +28,10 @@ Downloading a Tesla Driver
    G6       Tesla  T              T4
    ======== ====== ============== =======
 
-
-
 .. _en-us_topic_0213874991__section10203125783920:
 
 Downloading a CUDA Toolkit
 --------------------------
-
-
-
-.. _en-us_topic_0213874991__table189141151993:
 
 .. table:: **Table 2** Path in which the CUDA toolkit is downloaded for P2s ECSs
 
@@ -72,10 +54,6 @@ Downloading a CUDA Toolkit
    |             |                                       |                                                                                                         |                                             |                  |
    | (V100)      |                                       |                                                                                                         |                                             |                  |
    +-------------+---------------------------------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------+------------------+
-
-
-
-.. _en-us_topic_0213874991__table6501649192616:
 
 .. table:: **Table 3** Path in which the CUDA toolkit is downloaded for P2v ECSs
 
@@ -109,10 +87,6 @@ Downloading a CUDA Toolkit
    | (V100)      |                                       |                                                                                                         |                                                                    |                  |
    +-------------+---------------------------------------+---------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+------------------+
 
-
-
-.. _en-us_topic_0213874991__table15666175112518:
-
 .. table:: **Table 4** Path in which the CUDA toolkit is downloaded for P2 ECSs
 
    +-------------+---------------------------+--------------+-------------------------------------------------------+------------------+
@@ -122,10 +96,6 @@ Downloading a CUDA Toolkit
    |             |                           |              |                                                       |                  |
    | (V100)      |                           |              |                                                       |                  |
    +-------------+---------------------------+--------------+-------------------------------------------------------+------------------+
-
-
-
-.. _en-us_topic_0213874991__table10558744163515:
 
 .. table:: **Table 5** Path in which the CUDA toolkit is downloaded for P1 ECSs
 
@@ -144,10 +114,6 @@ Downloading a CUDA Toolkit
    |             |                                       |              |                                                       |                  |
    | (P100)      |                                       |              |                                                       |                  |
    +-------------+---------------------------------------+--------------+-------------------------------------------------------+------------------+
-
-
-
-.. _en-us_topic_0213874991__table12527182514438:
 
 .. table:: **Table 6** Path in which the CUDA toolkit is downloaded for PI2 ECSs
 
@@ -174,10 +140,6 @@ Downloading a CUDA Toolkit
    |             |                                       |              |                                                              |                  |
    | (T4)        |                                       |              |                                                              |                  |
    +-------------+---------------------------------------+--------------+--------------------------------------------------------------+------------------+
-
-
-
-.. _en-us_topic_0213874991__table69013507215:
 
 .. table:: **Table 7** Path in which the CUDA toolkit is downloaded for G6 ECSs
 

@@ -3,20 +3,12 @@
 Viewing Tracing Logs
 ====================
 
-
-
-.. _en-us_topic_0116266207__section348215012500:
-
 Scenarios
 ---------
 
 CTS starts to record ECS operations after it is provisioned. You can view the operation records of the last seven days on the management console.
 
 This section describes how to view the operation records.
-
-
-
-.. _en-us_topic_0116266207__section19713162125313:
 
 Procedure
 ---------
@@ -49,9 +41,7 @@ Procedure
 
 #. Expand the trace for details.
 
-   
-
-.. _en-us_topic_0116266207__fig16725521195316:
+   .. _en-us_topic_0116266207__fig16725521195316:
 
    .. figure:: /_static/images/en-us_image_0116270059.jpg
       :alt: Click to enlarge

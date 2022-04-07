@@ -3,10 +3,6 @@
 Backing Up ECS Data
 ===================
 
-
-
-.. _en-us_topic_0000001128604648__section1650061192010:
-
 Scenarios
 ---------
 
@@ -18,10 +14,6 @@ You can back up ECS data using the Cloud Server Backup or Cloud Disk Backup func
 
 -  Cloud Server Backup (recommended): Use this backup function if you want to back up the data of all EVS disks (system and data disks) on an ECS. This prevents data inconsistency caused by time difference in creating a backup.
 -  Cloud Disk Backup: Use this backup function if you want to back up the data of one or more EVS disks (system or data disk) on an ECS. This minimizes backup costs on the basis of data security.
-
-
-
-.. _en-us_topic_0000001128604648__section1685231310443:
 
 ECS Backup Procedure
 --------------------
@@ -50,10 +42,6 @@ ECS Backup Procedure
    On the **Backups** tab page, if the status of the backup is **Available**, the backup task is successful.
 
    The ECS can be restarted if the backup progress of an ECS exceeds 10%. However, to ensure data integrity, restart it after the backup is complete.
-
-
-
-.. _en-us_topic_0000001128604648__section7890518132019:
 
 EVS Disk Backup Procedure
 -------------------------

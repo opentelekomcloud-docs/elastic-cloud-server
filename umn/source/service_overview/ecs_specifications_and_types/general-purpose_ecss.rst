@@ -3,10 +3,6 @@
 General-Purpose ECSs
 ====================
 
-
-
-.. _en-us_topic_0035470101__section21906772103453:
-
 Overview
 --------
 
@@ -16,16 +12,8 @@ S3 ECSs are suitable for applications that require moderate performance generall
 
 S2 ECSs use Intel® Xeon® Scalable processors, which significantly improve the comprehensive performance. They provide a balance of computing, memory, and network resources and a baseline level of vCPU performance with the ability to burst above the baseline. These ECSs are suitable for many applications.
 
-
-
-.. _en-us_topic_0035470101__section26311304103459:
-
 Specifications
 --------------
-
-
-
-.. _en-us_topic_0035470101__table131314023616:
 
 .. table:: **Table 1** S3 ECS specifications
 
@@ -81,10 +69,6 @@ Specifications
    | s3.8xlarge.8 | 32    | 256          | 8/2                                | 200               | 8               | 4            | KVM                 |                                     |
    +--------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+---------------------+-------------------------------------+
 
-
-
-.. _en-us_topic_0035470101__table477598401959:
-
 .. table:: **Table 2** S2 ECS specifications
 
    +--------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+---------------------+--------------------------------+
@@ -139,10 +123,6 @@ Specifications
    | s2.8xlarge.8 | 32    | 256          | 6/3                                | 50                | 8               | 12           | KVM                 |                                |
    +--------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+---------------------+--------------------------------+
 
-
-
-.. _en-us_topic_0035470101__section19143182213303:
-
 Scenarios
 ---------
 
@@ -153,10 +133,6 @@ Scenarios
 -  Application scenarios
 
    Enterprise website deployment, enterprise office environment setup, enterprise R&D and testing activities, web servers, R&D and testing environments, and small-scale databases
-
-
-
-.. _en-us_topic_0035470101__section19230673185147:
 
 Notes
 -----

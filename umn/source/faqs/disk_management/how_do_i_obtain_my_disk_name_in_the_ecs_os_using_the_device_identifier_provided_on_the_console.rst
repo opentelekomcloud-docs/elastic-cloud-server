@@ -3,16 +3,10 @@
 How Do I Obtain My Disk Name in the ECS OS Using the Device Identifier Provided on the Console?
 ===============================================================================================
 
-
-
-.. _en-us_topic_0103285575__section1021919499213:
-
 Scenarios
 ---------
 
 You find that the disk name displayed on the ECS OS is different from that displayed on the management console and you cannot determine which disk name is correct. This section describes how to obtain the disk name used on an ECS OS according to the device identifier on the console.
-
-
 
 .. _en-us_topic_0103285575__section1041415015310:
 
@@ -45,8 +39,6 @@ Obtaining the Disk ID of an ECS on the Console
 
       -  If **Device Type** is **SCSI**, use a WWN to obtain the disk name. For details, see :ref:`Using a WWN to Obtain the Disk Name (Windows) <en-us_topic_0103285575__section49041319248>` and :ref:`Using a WWN to Obtain a Disk Device Name (Linux) <en-us_topic_0103285575__section436018073419>`.
 
-
-
 .. _en-us_topic_0103285575__section1549713815243:
 
 Using a Serial Number to Obtain the Disk Name (Windows)
@@ -78,9 +70,7 @@ If a serial number is displayed on the console, use either of the following meth
 
    Information similar to the following is displayed:
 
-   
-
-.. _en-us_topic_0103285575__fig141513348195:
+   .. _en-us_topic_0103285575__fig141513348195:
 
    .. figure:: /_static/images/en-us_image_0000001127902463.png
       :alt: Click to enlarge
@@ -93,9 +83,7 @@ If a serial number is displayed on the console, use either of the following meth
 
    **wmic** **diskdrive get Name, SerialNumber**
 
-   
-
-.. _en-us_topic_0103285575__fig499418565481:
+   .. _en-us_topic_0103285575__fig499418565481:
 
    .. figure:: /_static/images/en-us_image_0000001081131958.png
       :alt: Click to enlarge
@@ -123,9 +111,7 @@ If a serial number is displayed on the console, use either of the following meth
 
          As shown in :ref:`Figure 3 <en-us_topic_0103285575__fig1960253814473>`, the disk is **Disk 0**.
 
-         
-
-.. _en-us_topic_0103285575__fig1960253814473:
+         .. _en-us_topic_0103285575__fig1960253814473:
 
          .. figure:: /_static/images/en-us_image_0000001127906793.png
             :alt: Click to enlarge
@@ -143,8 +129,6 @@ If a serial number is displayed on the console, use either of the following meth
       b. Run the following command to view the mapping between the serial number and the disk:
 
          **Get-WmiObject -Class Win32_LogicalDiskToPartition \|select Antecedent, Dependent \|fl**
-
-
 
 .. _en-us_topic_0103285575__section1251215393317:
 
@@ -180,8 +164,6 @@ The following information is displayed:
 
 **/dev/vdb** is the disk device name.
 
-
-
 .. _en-us_topic_0103285575__section8901134753319:
 
 Using a VBD to Obtain a Disk Device Name (Linux)
@@ -205,8 +187,6 @@ Using a VBD to Obtain a Disk Device Name (Linux)
 
    **/dev/vdb** is the disk device name.
 
-
-
 .. _en-us_topic_0103285575__section49041319248:
 
 Using a WWN to Obtain the Disk Name (Windows)
@@ -229,9 +209,7 @@ Using a WWN to Obtain the Disk Name (Windows)
 
 #. In the command output, the disk whose serial number ends with **206127** is the disk corresponding to the WWN.
 
-   
-
-.. _en-us_topic_0103285575__fig3430181417335:
+   .. _en-us_topic_0103285575__fig3430181417335:
 
    .. figure:: /_static/images/en-us_image_0000001128111323.png
       :alt: Click to enlarge
@@ -239,8 +217,6 @@ Using a WWN to Obtain the Disk Name (Windows)
    
 
       **Figure 4** Disk with the serial number ending with **206127**
-
-
 
 .. _en-us_topic_0103285575__section436018073419:
 

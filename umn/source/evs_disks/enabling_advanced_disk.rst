@@ -3,10 +3,6 @@
 Enabling Advanced Disk
 ======================
 
-
-
-.. _en-us_topic_0122307169__section3591191571:
-
 Scenarios
 ---------
 
@@ -14,10 +10,6 @@ Scenarios
 -  After advanced disk is enabled, you can view the mapping between device names and disks. For details, see :ref:`How Do I Obtain My Disk Name in the ECS OS Using the Device Identifier Provided on the Console? <en-us_topic_0103285575>`
 
 This section describes how to enable advanced disk on an ECS.
-
-
-
-.. _en-us_topic_0122307169__section12913133110717:
 
 Procedure
 ---------

@@ -3,10 +3,6 @@
 Resetting the Password for Logging In to a Linux ECS
 ====================================================
 
-
-
-.. _en-us_topic_0021427650__section17131859112916:
-
 Scenarios
 ---------
 
@@ -17,19 +13,11 @@ Keep your password secure. Reset the password if:
 
 This section describes how to reset the password of user **root**. After resetting the password, you can log in to the ECS, and change the private key or reset the password of a non-**root** user.
 
-
-
-.. _en-us_topic_0021427650__section35515688202027:
-
 Prerequisites
 -------------
 
 -  A temporary Linux ECS which locates in the same AZ as the target ECS is available.
 -  You have bound an EIP to the temporary ECS.
-
-
-
-.. _en-us_topic_0021427650__section9546131644416:
 
 Procedure
 ---------
@@ -40,7 +28,9 @@ Procedure
 
    To download WinSCP, log in at https://winscp.net/.
 
-#. Stop the original Linux ECS, detach the system disk from it, and attach the system disk to the temporary ECS.
+#. .. _en-us_topic_0021427650__li19814359584:
+
+   Stop the original Linux ECS, detach the system disk from it, and attach the system disk to the temporary ECS.
 
    a. Stop the original ECS, switch to the page providing details about the ECS, and click the **Disks** tab.
 
@@ -48,15 +38,21 @@ Procedure
 
          Do not forcibly stop the original ECS. Otherwise, password reset may fail.
 
-   b. Locate the row containing the system disk to be detached and click **Detach** to detach the system disk from the ECS.
+   b. .. _en-us_topic_0021427650__li5640121684418:
+
+      Locate the row containing the system disk to be detached and click **Detach** to detach the system disk from the ECS.
+
    c. On the page providing details about the temporary ECS, click the **Disks** tab.
-   d. Click **Attach Disk**. In the displayed dialog box, select the system disk detached in step 2.b and attach it to the temporary ECS.
+
+   d. Click **Attach Disk**. In the displayed dialog box, select the system disk detached in step :ref:`2.b <en-us_topic_0021427650__li5640121684418>` and attach it to the temporary ECS.
 
 #. Log in to the temporary ECS remotely and reset the password.
 
    a. Locate the row containing the temporary ECS and click **Remote Login** in the **Operation** column.
 
-   b. Run the following command to view the directory of the system disk detached from the original Linux ECS now attached to the temporary ECS:
+   b. .. _en-us_topic_0021427650__li664021617445:
+
+      Run the following command to view the directory of the system disk detached from the original Linux ECS now attached to the temporary ECS:
 
       **fdisk -l**
 
@@ -72,7 +68,7 @@ Procedure
 
          If the original ECS and the temporary ECS both run CentOS 7, a mount failure may occur during script execution. To resolve this issue, replace **mount $dev $mountPath** with **mount -o nouuid $dev $mountPath** in the script.
 
-   d. Enter the new password and the directory obtained in step 3.b as prompted.
+   d. Enter the new password and the directory obtained in step :ref:`3.b <en-us_topic_0021427650__li664021617445>` as prompted.
 
       If the following information is displayed, the password has been changed:
 
@@ -101,7 +97,13 @@ Procedure
 #. Stop the temporary ECS, detach the system disk, attach the system disk to the original Linux ECS, and restart the original Linux ECS.
 
    a. Stop the temporary ECS, switch to the page providing details about the ECS, and click the **Disks** tab.
-   b. Click **Detach** to detach the data disk attached in step 2.
+
+   b. .. _en-us_topic_0021427650__li964031614447:
+
+      Click **Detach** to detach the data disk attached in step :ref:`2 <en-us_topic_0021427650__li19814359584>`.
+
    c. On the page providing details about the original Linux ECS, click the **Disks** tab.
-   d. Click **Attach Disk**. In the displayed dialog box, select the data disk detached in step 5.b and device name **/dev/sda**.
+
+   d. Click **Attach Disk**. In the displayed dialog box, select the data disk detached in step :ref:`5.b <en-us_topic_0021427650__li964031614447>` and device name **/dev/sda**.
+
    e. Restart the original Linux ECS.

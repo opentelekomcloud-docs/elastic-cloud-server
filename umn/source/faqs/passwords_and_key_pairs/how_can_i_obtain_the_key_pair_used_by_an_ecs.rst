@@ -3,18 +3,10 @@
 How Can I Obtain the Key Pair Used by an ECS?
 =============================================
 
-
-
-.. _en-us_topic_0081525053__section13810316174650:
-
 Symptom
 -------
 
 You have created multiple key pairs, and you are trying to find the key pair to log in to the target ECS.
-
-
-
-.. _en-us_topic_0081525053__section41592750174656:
 
 Procedure
 ---------

@@ -3,20 +3,12 @@
 Obtaining the Password for Logging In to a Windows ECS
 ======================================================
 
-
-
-.. _en-us_topic_0031107266__section83915017466:
-
 Scenarios
 ---------
 
 Password authentication is required to log in to a Windows ECS. Therefore, you must use the key file used when you created the ECS to obtain the administrator password generated during ECS creation. The administrator user is **Administrator** or the user configured using Cloudbase-Init. This password is randomly generated, offering high security.
 
 You can obtain the initial password for logging in to a Windows ECS through the management console or APIs. For details, see this section.
-
-
-
-.. _en-us_topic_0031107266__section38475220193847:
 
 Obtaining the Password Through the Management Console
 -----------------------------------------------------
@@ -34,10 +26,6 @@ Obtaining the Password Through the Management Console
 
 #. Click **Get Password** to obtain a random password.
 
-
-
-.. _en-us_topic_0031107266__section1118765310423:
-
 Obtaining the Password Through APIs
 -----------------------------------
 
@@ -47,7 +35,9 @@ Obtaining the Password Through APIs
 
 #. Call APIs. For details, see `API Usage Guidelines <https://docs.otc.t-systems.com/api/ecs/en-us_topic_0020805967.html>`__ in *Elastic Cloud Server API Reference*.
 
-#. Obtain the ciphertext password.
+#. .. _en-us_topic_0031107266__li5770130102852:
+
+   Obtain the ciphertext password.
 
    Call the password obtaining APIs to obtain the ciphertext password of the public key encrypted using RSA. The API URI is in the format "GET /v2/{*tenant_id*}/servers/{*server_id*}/os-server-password".
 
@@ -57,7 +47,7 @@ Obtaining the Password Through APIs
 
 #. Decrypt the ciphertext password.
 
-   Use the private key file used when you created the ECS to decrypt the ciphertext password obtained in step 4.
+   Use the private key file used when you created the ECS to decrypt the ciphertext password obtained in step :ref:`4 <en-us_topic_0031107266__li5770130102852>`.
 
    a. Run the following command to convert the ciphertext password format to ".key -nocrypt" using OpenSSL:
 

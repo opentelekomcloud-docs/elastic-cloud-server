@@ -5,8 +5,6 @@ ECS and Other Services
 
 :ref:`Figure 1 <en-us_topic_0013771111__fig44795566546>` shows the relationships between ECS and other services.
 
-
-
 .. _en-us_topic_0013771111__fig44795566546:
 
 .. figure:: /_static/images/en-us_image_0225439857.png
@@ -15,10 +13,6 @@ ECS and Other Services
 
 
    **Figure 1** Relationships between ECS and other services
-
-
-
-.. _en-us_topic_0013771111__section5776601918:
 
 ECS-related Services
 --------------------

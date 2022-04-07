@@ -3,10 +3,6 @@
 Initializing a Windows Data Disk (Windows Server 2008)
 ======================================================
 
-
-
-.. _en-us_topic_0085634796__en-us_topic_0044524740_section29374781163839:
-
 Scenarios
 ---------
 
@@ -16,10 +12,6 @@ The maximum disk capacity supported by MBR is 2 TB, and that supported by GPT is
 
 The method for initializing a disk varies depending on the OS running on the server. This document is used for reference only. For the detailed operations and differences, see the product documents of the corresponding OS.
 
-
-
-.. _en-us_topic_0085634796__en-us_topic_0044524740_section51503350171737:
-
 Prerequisites
 -------------
 
@@ -28,10 +20,6 @@ Prerequisites
 
    -  For how to log in to an ECS, see the *Elastic Cloud Server User Guide*.
    -  For how to log in to a BMS, see the *Bare Metal Server User Guide*.
-
-
-
-.. _en-us_topic_0085634796__en-us_topic_0044524740_section425805916427:
 
 Procedure
 ---------
@@ -44,12 +32,10 @@ Procedure
 
    The **Disk Management** window is displayed.
 
-   -  If :ref:`Figure 1 <en-us_topic_0085634796__en-us_topic_0044524740_fig40496387105554>` is displayed, the new disk is offline. Go to 3.
-   -  If :ref:`Figure 4 <en-us_topic_0085634796__en-us_topic_0044524740_fig68332918241>` is displayed, the **Initialize Disk** window is prompted. Go to 5.
+   -  If :ref:`Figure 1 <en-us_topic_0085634796__en-us_topic_0044524740_fig40496387105554>` is displayed, the new disk is offline. Go to :ref:`3 <en-us_topic_0085634796__en-us_topic_0044524740_li33296033102625>`.
+   -  If :ref:`Figure 4 <en-us_topic_0085634796__en-us_topic_0044524740_fig68332918241>` is displayed, the **Initialize Disk** window is prompted. Go to :ref:`5 <en-us_topic_0085634796__en-us_topic_0044524740_li34991214122212>`.
 
-   
-
-.. _en-us_topic_0085634796__en-us_topic_0044524740_fig40496387105554:
+   .. _en-us_topic_0085634796__en-us_topic_0044524740_fig40496387105554:
 
    .. figure:: /_static/images/en-us_image_0095024494.png
       :alt: Click to enlarge
@@ -58,11 +44,11 @@ Procedure
 
       **Figure 1** Disk Management
 
-#. Disks are displayed in the right pane. In the **Disk 1** area, right-click **Offline** and choose **Online** from the shortcut menu to online the disk.
+#. .. _en-us_topic_0085634796__en-us_topic_0044524740_li33296033102625:
 
-   
+   Disks are displayed in the right pane. In the **Disk 1** area, right-click **Offline** and choose **Online** from the shortcut menu to online the disk.
 
-.. _en-us_topic_0085634796__en-us_topic_0044524740_fig102484362217:
+   .. _en-us_topic_0085634796__en-us_topic_0044524740_fig102484362217:
 
    .. figure:: /_static/images/en-us_image_0132359404.png
       :alt: Click to enlarge
@@ -77,9 +63,7 @@ Procedure
 
 #. After making the disk online, the disk status changes from **Offline** to **Not Initialized**. Right-click the disk status and choose **Initialize Disk** from the shortcut menu, as shown in :ref:`Figure 3 <en-us_topic_0085634796__en-us_topic_0044524740_fig409808111224>`.
 
-   
-
-.. _en-us_topic_0085634796__en-us_topic_0044524740_fig409808111224:
+   .. _en-us_topic_0085634796__en-us_topic_0044524740_fig409808111224:
 
    .. figure:: /_static/images/en-us_image_0132360430.png
       :alt: Click to enlarge
@@ -88,11 +72,11 @@ Procedure
 
       **Figure 3** Initialize Disk
 
-#. In the **Initialize Disk** dialog box, select the target disk, click **MBR (Master Boot Record)** or **GPT (GUID Partition Table)**, and click **OK**, as shown in :ref:`Figure 4 <en-us_topic_0085634796__en-us_topic_0044524740_fig68332918241>`.
+#. .. _en-us_topic_0085634796__en-us_topic_0044524740_li34991214122212:
 
-   
+   In the **Initialize Disk** dialog box, select the target disk, click **MBR (Master Boot Record)** or **GPT (GUID Partition Table)**, and click **OK**, as shown in :ref:`Figure 4 <en-us_topic_0085634796__en-us_topic_0044524740_fig68332918241>`.
 
-.. _en-us_topic_0085634796__en-us_topic_0044524740_fig68332918241:
+   .. _en-us_topic_0085634796__en-us_topic_0044524740_fig68332918241:
 
    .. figure:: /_static/images/en-us_image_0097597141.png
       :alt: Click to enlarge
@@ -109,9 +93,7 @@ Procedure
 
 #. Right-click at the unallocated space and choose **New Simple Volume** from the shortcut menu, as shown in :ref:`Figure 5 <en-us_topic_0085634796__en-us_topic_0044524740_fig1945583522619>`.
 
-   
-
-.. _en-us_topic_0085634796__en-us_topic_0044524740_fig1945583522619:
+   .. _en-us_topic_0085634796__en-us_topic_0044524740_fig1945583522619:
 
    .. figure:: /_static/images/en-us_image_0097597143.png
       :alt: Click to enlarge
@@ -122,9 +104,7 @@ Procedure
 
 #. On the displayed **New Simple Volume Wizard** window, click **Next**.
 
-   
-
-.. _en-us_topic_0085634796__en-us_topic_0044524740_fig1388010596281:
+   .. _en-us_topic_0085634796__en-us_topic_0044524740_fig1388010596281:
 
    .. figure:: /_static/images/en-us_image_0097597145.png
       :alt: Click to enlarge
@@ -135,9 +115,7 @@ Procedure
 
 #. Specify the volume size and click **Next**. The default value is the maximum size.
 
-   
-
-.. _en-us_topic_0085634796__en-us_topic_0044524740_fig311184311294:
+   .. _en-us_topic_0085634796__en-us_topic_0044524740_fig311184311294:
 
    .. figure:: /_static/images/en-us_image_0097597147.png
       :alt: Click to enlarge
@@ -148,9 +126,7 @@ Procedure
 
 #. Assign the driver letter and click **Next**.
 
-   
-
-.. _en-us_topic_0085634796__en-us_topic_0044524740_fig1400313143015:
+   .. _en-us_topic_0085634796__en-us_topic_0044524740_fig1400313143015:
 
    .. figure:: /_static/images/en-us_image_0097597149.png
       :alt: Click to enlarge
@@ -161,9 +137,7 @@ Procedure
 
 #. Select **Format this volume with the following settings**, set parameters based on the actual requirements, and select **Perform a quick format**. Then, click **Next**.
 
-   
-
-.. _en-us_topic_0085634796__en-us_topic_0044524740_fig19840335173018:
+   .. _en-us_topic_0085634796__en-us_topic_0044524740_fig19840335173018:
 
    .. figure:: /_static/images/en-us_image_0097597151.png
       :alt: Click to enlarge
@@ -172,9 +146,7 @@ Procedure
 
       **Figure 9** Format Partition
 
-   
-
-.. _en-us_topic_0085634796__en-us_topic_0044524740_fig183312171318:
+   .. _en-us_topic_0085634796__en-us_topic_0044524740_fig183312171318:
 
    .. figure:: /_static/images/en-us_image_0097597153.png
       :alt: Click to enlarge
@@ -189,9 +161,7 @@ Procedure
 
 #. Click **Finish**. Wait for the initialization to complete. When the volume status changes to **Healthy**, the initialization has finished successfully, as shown in :ref:`Figure 11 <en-us_topic_0085634796__en-us_topic_0044524740_fig14464150329>`.
 
-   
-
-.. _en-us_topic_0085634796__en-us_topic_0044524740_fig14464150329:
+   .. _en-us_topic_0085634796__en-us_topic_0044524740_fig14464150329:
 
    .. figure:: /_static/images/en-us_image_0097597155.png
       :alt: Click to enlarge

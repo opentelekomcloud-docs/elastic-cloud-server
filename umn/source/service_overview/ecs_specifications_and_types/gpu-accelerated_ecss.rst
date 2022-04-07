@@ -10,10 +10,6 @@ GPU-accelerated ECSs are classified as G series and P series of ECSs.
 -  G series: Graphics-accelerated ECSs, which are suitable for 3D animation rendering and CAD
 -  P series: Computing-accelerated or inference-accelerated ECSs, which are suitable for deep learning, scientific computing, and CAE
 
-
-
-.. _en-us_topic_0097289624__section106800321171:
-
 GPU-accelerated ECS Types
 -------------------------
 
@@ -44,8 +40,6 @@ Helpful links:
 -  :ref:`Installing a GRID Driver on a GPU-accelerated ECS <en-us_topic_0149610914>`
 -  :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`
 
-
-
 .. _en-us_topic_0097289624__section131302034104515:
 
 Graphics-accelerated Enhancement G6
@@ -58,10 +52,6 @@ G6 ECSs use NVIDIA Tesla T4 GPUs to support DirectX, OpenGL, and Vulkan and prov
 Select your desired GPU-accelerated ECS type and specifications.
 
 **Specifications**
-
-
-
-.. _en-us_topic_0097289624__table19812808468:
 
 .. table:: **Table 1** G6 ECS specifications
 
@@ -114,8 +104,6 @@ G6 ECSs are used in graphics acceleration scenarios, such as video rendering, cl
 
 -  If a G6 ECS is created using a private image, make sure that the GRID driver was installed during the private image creation. If not, install the driver for graphics acceleration after the ECS is created.
 
-
-
 .. _en-us_topic_0097289624__section1454714546567:
 
 Computing-accelerated P2s
@@ -126,10 +114,6 @@ Computing-accelerated P2s
 P2s ECSs use NVIDIA Tesla V100 GPUs to provide flexibility, high-performance computing, and cost-effectiveness. P2s ECSs provide outstanding general computing capabilities and have strengths in AI-based deep learning, scientific computing, Computational Fluid Dynamics (CFD), computing finance, seismic analysis, molecular modeling, and genomics.
 
 **Specifications**
-
-
-
-.. _en-us_topic_0097289624__table85474544565:
 
 .. table:: **Table 2** P2s ECS specifications
 
@@ -200,8 +184,6 @@ P2s ECSs are used in computing acceleration scenarios, such as deep learning tra
 -  By default, P2s ECSs created using a Windows public image have the Tesla driver installed.
 -  If a P2s ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 
-
-
 .. _en-us_topic_0097289624__section208472383415:
 
 Computing-accelerated P2v
@@ -212,10 +194,6 @@ Computing-accelerated P2v
 Compared with P2 ECSs, P2v ECSs use NVIDIA Tesla V100 GPUs to provide flexibility, high-performance computing, and cost-effectiveness. These ECSs use GPU NVLink for direct communication between GPUs, improving data transmission efficiency. P2v ECSs provide outstanding general computing capabilities and have strengths in AI-based deep learning, scientific computing, Computational Fluid Dynamics (CFD), computing finance, seismic analysis, molecular modeling, and genomics.
 
 **Specifications**
-
-
-
-.. _en-us_topic_0097289624__table87321433202814:
 
 .. table:: **Table 3** P2v ECS specifications
 
@@ -284,8 +262,6 @@ P2v ECSs are used in computing acceleration scenarios, such as deep learning tra
 -  By default, P2v ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 -  If a P2v ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 
-
-
 .. _en-us_topic_0097289624__section5477185118234:
 
 Computing-accelerated P2
@@ -296,10 +272,6 @@ Computing-accelerated P2
 Compared with P1 ECSs, P2 ECSs use NVIDIA Tesla V100 GPUs, which have improved both single- and double-precision computing capabilities by 50% and offer 112 TFLOPS of deep learning.
 
 **Specifications**
-
-
-
-.. _en-us_topic_0097289624__table179717351266:
 
 .. table:: **Table 4** P2 ECS specifications
 
@@ -372,8 +344,6 @@ P2 ECSs are used in computing acceleration scenarios, such as deep learning trai
 
 -  If a P2 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 
-
-
 .. _en-us_topic_0097289624__section1124594913391:
 
 Computing-accelerated P1
@@ -384,10 +354,6 @@ Computing-accelerated P1
 P1 ECSs use NVIDIA Tesla P100 GPUs and provide flexibility, high performance, and cost-effectiveness. These ECSs support GPU Direct for direct communication between GPUs, improving data transmission efficiency. P1 ECSs provide outstanding general computing capabilities and have strengths in deep learning, graphic databases, high-performance databases, Computational Fluid Dynamics (CFD), computing finance, seismic analysis, molecular modeling, and genomics. They are designed for scientific computing.
 
 **Specifications**
-
-
-
-.. _en-us_topic_0097289624__table1888295812406:
 
 .. table:: **Table 5** P1 ECS specifications
 
@@ -461,8 +427,6 @@ P1 ECSs are used in computing acceleration scenarios, such as deep learning trai
 -  By default, P1 ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 -  If a P1 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 
-
-
 .. _en-us_topic_0097289624__section1846114713182:
 
 Inference-accelerated PI2
@@ -473,10 +437,6 @@ Inference-accelerated PI2
 PI2 ECSs use NVIDIA Tesla T4 GPUs dedicated for real-time AI inference. These ECSs use the T4 INT8 calculator for up to 130 TOPS of INT8 computing. The PI2 ECSs can also be used for light-load training.
 
 **Specifications**
-
-
-
-.. _en-us_topic_0097289624__table029414915519:
 
 .. table:: **Table 6** PI2 ECS specifications
 

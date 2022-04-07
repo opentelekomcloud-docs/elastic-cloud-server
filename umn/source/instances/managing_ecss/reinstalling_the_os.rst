@@ -3,18 +3,10 @@
 Reinstalling the OS
 ===================
 
-
-
-.. _en-us_topic_0024911405__section60394636111543:
-
 Scenarios
 ---------
 
 If the OS of an ECS fails to start or requires optimization, reinstall the OS.
-
-
-
-.. _en-us_topic_0024911405__section37447471165714:
 
 Notes
 -----
@@ -30,10 +22,6 @@ Notes
 
 -  You can choose to encrypt the system disk of an ECS during OS reinstallation.
 
-
-
-.. _en-us_topic_0024911405__section4500313111616:
-
 Constraints
 -----------
 
@@ -42,19 +30,11 @@ Constraints
 -  H2 ECSs do not support OS reinstallation.
 -  If an ECS OS is to be reinstalled using a full-ECS image, the ECS system disk can be encrypted.
 
-
-
-.. _en-us_topic_0024911405__section2641260214160:
-
 Prerequisites
 -------------
 
 -  The target ECS is stopped.
 -  The target ECS has a system disk attached.
-
-
-
-.. _en-us_topic_0024911405__section58299059111554:
 
 Procedure
 ---------
@@ -63,7 +43,9 @@ Procedure
 
 #. Click |image1| in the upper left corner and select your region and project.
 
-#. Under **Computing**, click **Elastic Cloud Server**.
+#. .. _en-us_topic_0024911405__li20776247143354:
+
+   Under **Computing**, click **Elastic Cloud Server**.
 
 #. Locate the row containing the target ECS. Click **More** in the **Operation** column and select **Manage Image/Disk** > **Reinstall OS**.
 
@@ -95,7 +77,9 @@ Procedure
 
 #. Click **OK**.
 
-#. On the **ECS OS Reinstallation** page, confirm the OS specifications, and click **Submit Application**.
+#. .. _en-us_topic_0024911405__li31062819143541:
+
+   On the **ECS OS Reinstallation** page, confirm the OS specifications, and click **Submit Application**.
 
    After the request is submitted, the ECS status changes to **Reinstalling**. The reinstallation has been completed when the ECS status changes to **Running**.
 
@@ -103,14 +87,10 @@ Procedure
 
       A temporary ECS is created during the reinstallation process. After reinstallation, this ECS will be automatically deleted. Do not perform any operation on the temporary ECS during the reinstallation process.
 
-
-
-.. _en-us_topic_0024911405__section12556769105440:
-
 Follow-up Procedure
 -------------------
 
-If the reinstallation is unsuccessful, perform steps 3 to 9 again to retry reinstalling the OS again.
+If the reinstallation is unsuccessful, perform steps :ref:`3 <en-us_topic_0024911405__li20776247143354>` to :ref:`9 <en-us_topic_0024911405__li31062819143541>` again to retry reinstalling the OS again.
 
 If the second reinstallation attempt is unsuccessful, contact customer service for manual recovery at the backend.
 

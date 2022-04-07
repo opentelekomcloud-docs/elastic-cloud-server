@@ -3,10 +3,6 @@
 Changing the OS
 ===============
 
-
-
-.. _en-us_topic_0031523135__section44633721195915:
-
 Scenarios
 ---------
 
@@ -16,20 +12,12 @@ If the OS running on an ECS cannot meet service requirements, change the ECS OS.
 
 The public cloud supports changing between image types (public images, private images, and shared images) and between OSs. You can change your OS by changing your ECS image.
 
-
-
-.. _en-us_topic_0031523135__section21723173114530:
-
 Constraints
 -----------
 
 -  The EVS disk quota must be greater than 0.
 -  H2 ECSs do not support OS change.
 -  If an ECS OS is to be changed using a full-ECS image, the ECS system disk can be encrypted.
-
-
-
-.. _en-us_topic_0031523135__section34193483165818:
 
 Notes
 -----
@@ -52,10 +40,6 @@ Notes
 -  The system disk capacity of an ECS with OS changed may change because the system disk capacity specified by the image of the changed OS may be changed.
 -  You can choose to encrypt the system disk of an ECS during OS change.
 
-
-
-.. _en-us_topic_0031523135__section1852122261012:
-
 Notes on Change Between Different OSs
 -------------------------------------
 
@@ -67,10 +51,6 @@ Change between different OSs indicates that the OS is changed between Windows an
    .. note::
 
       You are not advised to change Linux to Window on the cloud platform. The reason is as follows: If there are LVM partitions on the Linux ECS, these partitions may fail after the OS is changed to Windows.
-
-
-
-.. _en-us_topic_0031523135__section10065433195938:
 
 Prerequisites
 -------------
@@ -86,10 +66,6 @@ Prerequisites
    -  If a private image from another region is required, make sure that the image has been copied.
    -  If a private image from another user account is required, make sure that the image has been shared with you.
 
-
-
-.. _en-us_topic_0031523135__section208284422018:
-
 Procedure
 ---------
 
@@ -97,7 +73,9 @@ Procedure
 
 #. Click |image1| in the upper left corner and select your region and project.
 
-#. Under **Computing**, click **Elastic Cloud Server**.
+#. .. _en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45082966143628:
+
+   Under **Computing**, click **Elastic Cloud Server**.
 
 #. Locate the row containing the target ECS. Click **More** in the **Operation** column and select **Manage Image/Disk** > **Change OS**.
 
@@ -133,17 +111,15 @@ Procedure
 
 #. Click **OK**.
 
-#. On the **Change ECS OS** page, confirm the specifications, and click **Submit Application**.
+#. .. _en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45992498111556:
+
+   On the **Change ECS OS** page, confirm the specifications, and click **Submit Application**.
 
    After the application is submitted, the ECS status changes to **Changing OS**. The OS changing has been completed when **Changing OS** disappears.
 
    .. note::
 
       A temporary ECS is created during the OS changing process. After the process is complete, this ECS will be automatically deleted.
-
-
-
-.. _en-us_topic_0031523135__section6296573110114:
 
 Follow-up Procedure
 -------------------
@@ -164,7 +140,7 @@ Follow-up Procedure
 
       **df -TH**
 
--  If the OS change is unsuccessful, perform steps 3 to 10 again to retry changing the OS again.
+-  If the OS change is unsuccessful, perform steps :ref:`3 <en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45082966143628>` to :ref:`10 <en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45992498111556>` again to retry changing the OS again.
 -  If the second OS change attempt is unsuccessful, contact customer service for manual recovery at the backend.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png

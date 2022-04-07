@@ -3,16 +3,10 @@
 What Should I Do If Error Message "Disconnected: No supported authentication methods available" Is Displayed When I Remotely Log In to a Linux ECS?
 ===================================================================================================================================================
 
-
-
-.. _en-us_topic_0277132844__section118312613216:
-
 Symptom
 -------
 
 When I attempted to remotely log in to a Linux ECS, the system displayed error message "Disconnected: No supported authentication methods available".
-
-
 
 .. _en-us_topic_0277132844__fig2069165133516:
 
@@ -23,18 +17,10 @@ When I attempted to remotely log in to a Linux ECS, the system displayed error m
 
    **Figure 1** No supported authentication methods available
 
-
-
-.. _en-us_topic_0277132844__section1851618545810:
-
 Possible Causes
 ---------------
 
 A policy that denies password-authenticated logins is enabled on the SSH server.
-
-
-
-.. _en-us_topic_0277132844__section1286672717516:
 
 Solution
 --------

@@ -3,10 +3,6 @@
 How Do I Configure atop and kdump on Linux ECSs for Performance Analysis?
 =========================================================================
 
-
-
-.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section153594317569:
-
 Scenarios
 ---------
 
@@ -29,16 +25,12 @@ kdump
 -  :ref:`Configuring kdump <en-us_topic_0000001143214829__en-us_topic_0178319250_section134381494320>`
 -  :ref:`Checking Whether kdump Configurations Have Taken Effect <en-us_topic_0000001143214829__en-us_topic_0178319250_section1296112934412>`
 
-
-
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section0959133015350:
 
 Introduction to atop
 --------------------
 
 atop is a monitor for Linux that can report the activity of all processes and resource consumption by all processes at regular intervals. It shows system-level activity related to the CPU, memory, disks, and network layers for every process. It also logs system and process activities daily and saves the logs in disks for long-term analysis.
-
-
 
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section18897192721320:
 
@@ -96,8 +88,6 @@ Configuring atop for CentOS 8 or RHEL 8
       Jun 19 14:46:10 ecs-centos8 systemd[1]: Starting Atop advanced performance monitor...
       Jun 19 14:46:10 ecs-centos8 systemd[1]: Started Atop advanced performance monitor.
 
-
-
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section1972319582310:
 
 Configuring atop for CentOS 7, RHEL 7, or EulerOS
@@ -153,8 +143,6 @@ Configuring atop for CentOS 7, RHEL 7, or EulerOS
       Jun 19 11:49:47 ecs-centos7 systemd[1]: Stopped Atop advanced performance monitor.
       Jun 19 11:49:47 ecs-centos7 systemd[1]: Starting Atop advanced performance monitor...
       Jun 19 11:49:47 ecs-centos7 systemd[1]: Started Atop advanced performance monitor.
-
-
 
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section3205824181917:
 
@@ -223,8 +211,6 @@ Configuring atop for SUSE 12 or SUSE 15
        
       Jun 19 16:50:01 ecs-suse15 systemd[1]: Starting Atop advanced performance monitor...
       Jun 19 16:50:01 ecs-suse15 systemd[1]: Started Atop advanced performance monitor. 
-
-
 
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section012793312620:
 
@@ -321,8 +307,6 @@ Configuring atop Using Its Source Package for SUSE, Fedora, Debian or Ubuntu
       Jul 25 19:29:40 atop systemd[1]: Starting Atop advanced performance monitor...
       Jul 25 19:29:40 atop systemd[1]: Started Atop advanced performance monitor.
 
-
-
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section1410131164120:
 
 Precautions for Configuring kdump
@@ -330,16 +314,12 @@ Precautions for Configuring kdump
 
 The method for configuring kdump described in this section applies to KVM ECSs running EulerOS or CentOS 7.x. For details, see `Documentation for kdump <https://www.kernel.org/doc/Documentation/kdump/kdump.txt>`__.
 
-
-
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section18450171174120:
 
 Introduction to kdump
 ---------------------
 
 kdump is a feature of the Linux kernel that creates crash dumps in the event of a kernel crash. In the event of a kernel crash, kdump boots another Linux kernel and uses it to export an image of RAM, which is known as vmcore and can be used to debug and determine the cause of the crash.
-
-
 
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section134381494320:
 
@@ -447,8 +427,6 @@ Configuring kdump
 #. Run the following command to restart the system for the configurations to take effect:
 
    **# reboot**
-
-
 
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section1296112934412:
 

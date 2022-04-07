@@ -3,28 +3,16 @@
 Login Overview
 ==============
 
-
-
-.. _en-us_topic_0013771089__section15584113212291:
-
 Constraints
 -----------
 
 -  Only a running ECS can be logged in.
 -  For ECSs created using public images, login usernames, passwords, and constraints vary depending on OSs running on the ECSs. For details, see `Public Images Introduction <https://docs.otc.t-systems.com/en-us/ims/index.html>`__.
 
-
-
-.. _en-us_topic_0013771089__section95820318444:
-
 Login Modes
 -----------
 
 Select a login mode as required and log in to the target ECS.
-
-
-
-.. _en-us_topic_0013771089__table69409501234:
 
 .. table:: **Table 1** Linux ECS login modes
 

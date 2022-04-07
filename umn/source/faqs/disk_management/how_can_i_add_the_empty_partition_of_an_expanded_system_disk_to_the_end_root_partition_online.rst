@@ -3,20 +3,12 @@
 How Can I Add the Empty Partition of an Expanded System Disk to the End Root Partition Online?
 ==============================================================================================
 
-
-
-.. _en-us_topic_0078300749__section17790838205214:
-
 Scenarios
 ---------
 
 If the capacity of system disk partitions is inconsistent with the actual system disk capacity after an ECS is created, you can add the empty partition to the root partition of the system disk.
 
 This section describes how to add the empty partition to the end root partition online.
-
-
-
-.. _en-us_topic_0078300749__section2534605521644:
 
 Procedure
 ---------

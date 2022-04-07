@@ -5,10 +5,6 @@ Scenarios and Disk Partitions
 
 If you have added a data disk during ECS creation, you must initialize the data disk after logging in to the ECS.
 
-
-
-.. _en-us_topic_0030831623__section087915417241:
-
 Scenarios
 ---------
 
@@ -25,16 +21,10 @@ After a disk is attached to a server, you need to log in to the server to initia
 
    In both cases, you must initialize the data disk before using it. Choose a proper disk partition style based on your service plan.
 
-
-
-.. _en-us_topic_0030831623__section141622112299:
-
 Disk Partition Styles
 ---------------------
 
 :ref:`Table 1 <en-us_topic_0030831623__en-us_topic_0085245975_table2729705994129>` lists the common disk partition styles. In Linux, different disk partition styles require different partitioning tools.
-
-
 
 .. _en-us_topic_0030831623__en-us_topic_0085245975_table2729705994129:
 

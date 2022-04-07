@@ -3,10 +3,6 @@
 What Is the **cloudbase-init** Account in Windows ECSs Used for?
 ================================================================
 
-
-
-.. _en-us_topic_0037633087__section109001326192819:
-
 Description
 -----------
 
@@ -17,10 +13,6 @@ In Windows ECSs, **cloudbase-init** is the default account of the Cloudbase-Init
    This account is unavailable on Linux ECSs.
 
 Do not modify or delete this account or uninstall the Cloudbase-Init agent program. Otherwise, you will be unable to insert data to initialize an ECS created using a Windows private image.
-
-
-
-.. _en-us_topic_0037633087__section4690554122811:
 
 Security Hardening for Randomized **cloudbase-init** Passwords
 --------------------------------------------------------------
@@ -40,9 +32,7 @@ Use an image to create two ECSs, ecs01 and ecs02. Then, verify that the hash val
 
 -  LM-HASH and NTLM-HASH values of the **cloudbase-init** account for ecs01
 
-   
-
-.. _en-us_topic_0037633087__fig311825713493:
+   .. _en-us_topic_0037633087__fig311825713493:
 
    .. figure:: /_static/images/en-us_image_0202311481.gif
       :alt: Click to enlarge
@@ -53,9 +43,7 @@ Use an image to create two ECSs, ecs01 and ecs02. Then, verify that the hash val
 
 -  LM-HASH and NTLM-HASH values of the **cloudbase-init** account for ecs02
 
-   
-
-.. _en-us_topic_0037633087__fig19275102321818:
+   .. _en-us_topic_0037633087__fig19275102321818:
 
    .. figure:: /_static/images/en-us_image_0202311491.gif
       :alt: Click to enlarge

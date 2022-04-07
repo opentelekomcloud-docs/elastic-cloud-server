@@ -3,10 +3,6 @@
 Overview
 ========
 
-
-
-.. _en-us_topic_0163572588__section177116315480:
-
 Scenarios
 ---------
 

@@ -3,20 +3,12 @@
 General Operations for Modifying Specifications
 ===============================================
 
-
-
-.. _en-us_topic_0013771092__en-us_topic_0013859511_section14602858172718:
-
 Scenarios
 ---------
 
 If ECS specifications do not meet service requirements, you can modify the ECS specifications, including vCPUs and memory. Certain ECSs allow you to change their types when you modify their specifications.
 
 -  For instructions about how to modify the specifications of other ECSs, for example, between KVM ECSs, see this section.
-
-
-
-.. _en-us_topic_0013771092__section15710213610:
 
 Background
 ----------
@@ -25,9 +17,7 @@ To obtain the virtualization type of an ECS, perform the following operations:
 
 #. On the page providing details about the ECS, view the ECS specifications.
 
-   
-
-.. _en-us_topic_0013771092__fig14561414141716:
+   .. _en-us_topic_0013771092__fig14561414141716:
 
    .. figure:: /_static/images/en-us_image_0121090576.png
       :alt: Click to enlarge
@@ -38,10 +28,6 @@ To obtain the virtualization type of an ECS, perform the following operations:
 
 #. Check the specifications tables in :ref:`ECS Types <en-us_topic_0035470096>` for the virtualization type.
 
-
-
-.. _en-us_topic_0013771092__en-us_topic_0013859511_section57753505172833:
-
 Notes
 -----
 
@@ -50,10 +36,6 @@ Notes
 -  When the disk status is **Expanding**, you are not allowed to modify the specifications of the ECS where the disk is attached.
 -  Before modifying the specifications of a Windows ECS, modify the SAN policy by following the instructions provided in :ref:`Why Does a Disk Attached to a Windows ECS Go Offline? <en-us_topic_0114225937>` to prevent disks from going offline after the specifications are modified.
 -  Before modifying specifications, make sure that the ECS has been stopped.
-
-
-
-.. _en-us_topic_0013771092__section997143905215:
 
 Step 1: Modify Specifications
 -----------------------------
@@ -90,17 +72,15 @@ Step 1: Modify Specifications
 
    a. Check whether **Failures** is displayed on the management console. For details, see :ref:`Viewing Failures <en-us_topic_0108255889>`.
 
-      -  If yes, go to step 10.b.
+      -  If yes, go to step :ref:`10.b <en-us_topic_0013771092__li6253192246>`.
       -  If no, the specifications have been modified.
 
-   b. Click **Failures**. Then, in the **Failures** dialog box, click **Operation Failures** and check whether the task is contained in the list by **Name/ID**, **Operated At**, or **Task**.
+   b. .. _en-us_topic_0013771092__li6253192246:
+
+      Click **Failures**. Then, in the **Failures** dialog box, click **Operation Failures** and check whether the task is contained in the list by **Name/ID**, **Operated At**, or **Task**.
 
       -  If yes, the specifications modification failed. See :ref:`Follow-up Procedure <en-us_topic_0013771092__section9461027528>` for failure causes.
       -  If no, the specifications have been modified.
-
-
-
-.. _en-us_topic_0013771092__section88041642132813:
 
 Step 2: Check Disk Attachment
 -----------------------------
@@ -114,8 +94,6 @@ After specifications are modified, disk attachment may fail. Therefore, check di
 -  Linux ECS
 
    For details, see :ref:`Why Does the Disk Attachment of a Linux ECS Fail After I Modify the ECS Specifications? <en-us_topic_0214940106>`
-
-
 
 .. _en-us_topic_0013771092__section9461027528:
 

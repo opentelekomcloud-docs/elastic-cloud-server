@@ -3,18 +3,10 @@
 Why Can't My Linux ECS Obtain Metadata?
 =======================================
 
-
-
-.. _en-us_topic_0000001138811177__section340483518125:
-
 Symptom
 -------
 
 The security group of the Linux ECS has been configured based on the prerequisites in :ref:`Obtaining Metadata <en-us_topic_0042400609>` in the outbound direction, but the ECS still cannot obtain the metadata through the route with the destination of 169.254.169.254.
-
-
-
-.. _en-us_topic_0000001138811177__section16976155420131:
 
 Root Cause
 ----------
@@ -25,8 +17,6 @@ Run the following command on the Linux ECS configured with a static IP address:
 
 The route with the destination of 169.254.169.254 does not exist, but the route with the destination of 169.254.0.0/16 exists.
 
-
-
 .. _en-us_topic_0000001138811177__fig538615619196:
 
 .. figure:: /_static/images/en-us_image_0000001092174258.png
@@ -36,10 +26,6 @@ The route with the destination of 169.254.169.254 does not exist, but the route 
    **Figure 1** Route information
 
 After the network is restarted, the original route with the destination of 169.254.169.254 is changed to the route with the destination of 169.254.0.0/16 without a next hop. As a result, the Linux ECS cannot obtain metadata.
-
-
-
-.. _en-us_topic_0000001138811177__section259432911413:
 
 Solution
 --------
@@ -54,9 +40,7 @@ Solution
 
    **# curl** **http://169.254.169.254**
 
-   
-
-.. _en-us_topic_0000001138811177__fig813563852216:
+   .. _en-us_topic_0000001138811177__fig813563852216:
 
    .. figure:: /_static/images/en-us_image_0000001092045958.png
       :alt: Click to enlarge

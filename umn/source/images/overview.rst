@@ -3,10 +3,6 @@
 Overview
 ========
 
-
-
-.. _en-us_topic_0177457773__section2063511219582:
-
 Image
 -----
 
@@ -14,27 +10,15 @@ An image is an ECS or BMS template that contains an OS or service data and may a
 
 Image Management Service (IMS) allows you to easily create and manage images. You can create an ECS using a public image, private image, or shared image. You can also use an existing ECS or external image file to create a private image.
 
-
-
-.. _en-us_topic_0177457773__section1685231310443:
-
 Public Image
 ------------
 
 A public image is a standard, widely used image that contains a common OS, such as Ubuntu, CentOS, or Debian, and preinstalled public applications. This image is available to all users. Select your desired public image. Alternatively, create a private image based on a public image to copy an existing ECS or rapidly create ECSs in a batch. You can customize a public image by configuring the application environment and software.
 
-
-
-.. _en-us_topic_0177457773__section46132514116:
-
 Private Image
 -------------
 
 A private image contains an OS or service data, preinstalled public applications, and private applications. It is available only to the user who created it.
-
-
-
-.. _en-us_topic_0177457773__table1567919914154:
 
 .. table:: **Table 1** Private image types
 
@@ -54,10 +38,6 @@ If you plan to use a private image to change the OS, ensure that the private ima
 -  If a local image file is required, make sure that the image file has been imported to the cloud platform and registered as a private image.
 -  If a private image from another region is required, make sure that the image has been copied.
 -  If a private image from another user account is required, make sure that the image has been shared with you.
-
-
-
-.. _en-us_topic_0177457773__section6342194217116:
 
 Shared Image
 ------------

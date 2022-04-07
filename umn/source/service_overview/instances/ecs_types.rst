@@ -13,10 +13,6 @@ The public cloud provides the following ECS types for different application scen
 -  High-performance computing
 -  GPU-accelerated
 
-
-
-.. _en-us_topic_0035470096__section741930611313:
-
 ECS Flavor Naming Rules
 -----------------------
 
@@ -29,16 +25,10 @@ The format is defined as follows:
 -  **C** specifies the flavor size, such as medium, large, xlarge, 2xlarge, 4xlarge, or 8xlarge.
 -  **D** specifies the ratio of memory to vCPUs expressed in a digit. For example, value **4** indicates that the ratio of memory to vCPUs is 4.
 
-
-
-.. _en-us_topic_0035470096__section3154475711225:
-
 Obtaining Specifications When Creating an ECS
 ---------------------------------------------
 
 Specifications for the ECS being created are located in the specifications list.
-
-
 
 .. _en-us_topic_0035470096__fig64292023143619:
 
@@ -48,10 +38,6 @@ Specifications for the ECS being created are located in the specifications list.
 
 
    **Figure 1** ECS specifications
-
-
-
-.. _en-us_topic_0035470096__section9843135016217:
 
 Network QoS
 -----------

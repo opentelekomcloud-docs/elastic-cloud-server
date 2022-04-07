@@ -3,18 +3,10 @@
 Modifying a Private IP Address
 ==============================
 
-
-
-.. _en-us_topic_0133339807__section8230202916388:
-
 Scenarios
 ---------
 
 You can modify the private IP address of the primary NIC. If you want to modify the private IP address of an extension NIC, delete the NIC and attach a new NIC.
-
-
-
-.. _en-us_topic_0133339807__section205851733132119:
 
 Constraints
 -----------
@@ -23,10 +15,6 @@ Constraints
 -  If a virtual IP address or DNAT rule has been configured for the NIC, cancel the configuration before modifying the private IP address.
 -  If the NIC has an IPv6 address, its private IP address (IPv4 or IPv6 address) cannot be modified.
 -  Before changing the private IP address of an ELB backend server, delete the backend server group.
-
-
-
-.. _en-us_topic_0133339807__section101008535219:
 
 Procedure
 ---------

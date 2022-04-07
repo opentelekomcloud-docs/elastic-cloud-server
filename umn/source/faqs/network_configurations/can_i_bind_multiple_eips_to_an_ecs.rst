@@ -3,10 +3,6 @@
 Can I Bind Multiple EIPs to an ECS?
 ===================================
 
-
-
-.. _en-us_topic_0018073216__section1851945163017:
-
 Scenarios
 ---------
 
@@ -14,16 +10,10 @@ You can bind multiple EIPs to an ECS. However, this configuration is not recomme
 
 To bind multiple EIPs to an ECS, you must manually configure routes.
 
-
-
-.. _en-us_topic_0018073216__section32091531162222:
-
 Configuration Example
 ---------------------
 
 :ref:`Table 1 <en-us_topic_0018073216__table10449199163243>` lists ECS configurations.
-
-
 
 .. _en-us_topic_0018073216__table10449199163243:
 

@@ -3,10 +3,6 @@
 Step 3: Configure Advanced Settings
 ===================================
 
-
-
-.. _en-us_topic_0163572591__section127442165919:
-
 Advanced Settings
 -----------------
 

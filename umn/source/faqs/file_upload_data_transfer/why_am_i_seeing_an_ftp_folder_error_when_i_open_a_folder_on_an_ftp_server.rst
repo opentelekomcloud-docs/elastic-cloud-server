@@ -3,16 +3,10 @@
 Why Am I Seeing an FTP Folder Error When I Open a Folder on an FTP Server?
 ==========================================================================
 
-
-
-.. _en-us_topic_0247282819__section226253062213:
-
 Symptom
 -------
 
 An error occurs when you open a folder on an FTP server. The system displays a message asking you to check permissions.
-
-
 
 .. _en-us_topic_0247282819__fig15936343121612:
 
@@ -23,18 +17,10 @@ An error occurs when you open a folder on an FTP server. The system displays a m
 
    **Figure 1** FTP Folder Error
 
-
-
-.. _en-us_topic_0247282819__section106367595225:
-
 Possible Causes
 ---------------
 
 The FTP firewall configured for the browser does not allow you to open the folder.
-
-
-
-.. _en-us_topic_0247282819__section124527412236:
 
 Solution
 --------
@@ -47,9 +33,7 @@ The following uses Internet Explorer as an example.
 
 #. Deselect **Use Passive FTP (for firewall and DSL modem compatibility)**.
 
-   
-
-.. _en-us_topic_0247282819__fig9581026194412:
+   .. _en-us_topic_0247282819__fig9581026194412:
 
    .. figure:: /_static/images/en-us_image_0247293312.png
       :alt: Click to enlarge

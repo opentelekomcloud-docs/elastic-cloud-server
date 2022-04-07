@@ -3,18 +3,10 @@
 Binding an EIP
 ==============
 
-
-
-.. _en-us_topic_0174917535__s974a02c09b8e44f59dcc9335de2d030a:
-
 Scenarios
 ---------
 
 You can assign an EIP and bind it to an ECS to enable the ECS to access the Internet.
-
-
-
-.. _en-us_topic_0174917535__section3958122041617:
 
 Procedure
 ---------

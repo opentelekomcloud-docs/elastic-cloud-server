@@ -3,18 +3,10 @@
 Adding a NIC
 ============
 
-
-
-.. _en-us_topic_0093492518__section56491713122912:
-
 Scenarios
 ---------
 
 If multiple NICs are required by your ECS, you can add them to your ECS. To add a NIC to the ECS, perform the following operations:
-
-
-
-.. _en-us_topic_0093492518__section737852572918:
 
 Procedure
 ---------
@@ -33,9 +25,7 @@ Procedure
 
 #. Select the subnet and security group to be added.
 
-   
-
-.. _en-us_topic_0093492518__fig188071746111817:
+   .. _en-us_topic_0093492518__fig188071746111817:
 
    .. figure:: /_static/images/en-us_image_0093507600.png
       :alt: Click to enlarge
@@ -49,10 +39,6 @@ Procedure
 
 #. Click **OK**.
 
-
-
-.. _en-us_topic_0093492518__section10882163016340:
-
 Follow-up Procedure
 -------------------
 
@@ -62,7 +48,9 @@ Some OSs cannot identify newly added NICs. In this case, you must manually activ
 
    Log in to the ECS.
 
-#. Run the following command to view the NIC name:
+#. .. _en-us_topic_0093492518__li595089165210:
+
+   Run the following command to view the NIC name:
 
    **ifconfig -a**
 
@@ -90,18 +78,20 @@ Some OSs cannot identify newly added NICs. In this case, you must manually activ
 
    *X* in the preceding command indicates the NIC name and SN, for example, **ifup eth2**.
 
-#. Run the following command to check whether the NIC name obtained in step 2 is displayed in the command output:
+#. Run the following command to check whether the NIC name obtained in step :ref:`2 <en-us_topic_0093492518__li595089165210>` is displayed in the command output:
 
    **ifconfig**
 
    For example, check whether **eth2** is displayed in the command output.
 
    -  If yes, the newly added NIC has been activated, and no further action is required.
-   -  If no, the newly added NIC failed to be activated. Go to step 9.
+   -  If no, the newly added NIC failed to be activated. Go to step :ref:`9 <en-us_topic_0093492518__li1695469165210>`.
 
-#. Log in to the management console. Locate the row containing the target ECS, click **More** in the **Operation** column, and select **Restart**.
+#. .. _en-us_topic_0093492518__li1695469165210:
 
-#. Run the following command to check whether the NIC name obtained in step 2 is displayed in the command output:
+   Log in to the management console. Locate the row containing the target ECS, click **More** in the **Operation** column, and select **Restart**.
+
+#. Run the following command to check whether the NIC name obtained in step :ref:`2 <en-us_topic_0093492518__li595089165210>` is displayed in the command output:
 
    -  If yes, no further action is required.
    -  If no, contact customer service.

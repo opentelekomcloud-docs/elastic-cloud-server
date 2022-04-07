@@ -3,27 +3,15 @@
 How Can I Use FTP to Transfer Files Between a Local Linux Computer and a Linux ECS?
 ===================================================================================
 
-
-
-.. _en-us_topic_0263806054__section145801229121516:
-
 Scenarios
 ---------
 
 You want to use FTP on a local Linux computer to transfer files between the computer and a Linux ECS.
 
-
-
-.. _en-us_topic_0263806054__section03701453154:
-
 Prerequisites
 -------------
 
 You have enabled FTP on the target ECS. If you have not enabled FTP, check the following links to know how to set up an FTP site:
-
-
-
-.. _en-us_topic_0263806054__section1152091415132:
 
 Procedure
 ---------

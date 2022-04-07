@@ -3,10 +3,6 @@
 Step 2: Configure Network
 =========================
 
-
-
-.. _en-us_topic_0163572590__section13330112505510:
-
 Network Configurations
 ----------------------
 

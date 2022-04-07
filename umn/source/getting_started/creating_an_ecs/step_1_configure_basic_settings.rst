@@ -3,10 +3,6 @@
 Step 1: Configure Basic Settings
 ================================
 
-
-
-.. _en-us_topic_0163572589__section636471910536:
-
 Accessing the ECS Creation Page
 -------------------------------
 
@@ -27,10 +23,6 @@ Accessing the ECS Creation Page
       HANA ECSs are dedicated for SAP HANA. If you want to deploy SAP HANA on cloud servers, create HANA ECSs.
 
       For more information about HANA ECS application scenarios and creation methods, see *SAP HANA User Guide*.
-
-
-
-.. _en-us_topic_0163572589__section4570625145413:
 
 Performing Basic Configurations
 -------------------------------
@@ -126,8 +118,8 @@ Performing Basic Configurations
 
       For the disk types supported by an ECS, see :ref:`EVS Disks <en-us_topic_0030828256>`.
 
-      -  If the image based on which an ECS is created is not encrypted, the system disk of the ECS is not encrypted. If the image based on which an ECS is created is encrypted, the system disk of the ECS is automatically encrypted. For details, see (Optional) Encryption-related parameters.
-      -  **Encryption**: indicates that the system disk is encrypted if you select this option. For details, see (Optional) Encryption-related parameters.
+      -  If the image based on which an ECS is created is not encrypted, the system disk of the ECS is not encrypted. If the image based on which an ECS is created is encrypted, the system disk of the ECS is automatically encrypted. For details, see :ref:`(Optional) Encryption-related parameters <en-us_topic_0163572589__en-us_topic_0144542112_li3286101316615>`.
+      -  **Encryption**: indicates that the system disk is encrypted if you select this option. For details, see :ref:`(Optional) Encryption-related parameters <en-us_topic_0163572589__en-us_topic_0144542112_li3286101316615>`.
       -  For a P1 or P2 ECS, the system disk must be greater than or equal to 15 GB. It is recommended that the system disk be greater than 40 GB. A disk size must be an integer multiple of 10, for example, 60 GB or 70 GB. Otherwise, the system automatically rounds the value down, for example, 60 GB for value **68**.
 
    -  Data disk
@@ -140,7 +132,7 @@ Performing Basic Configurations
 
       -  **Share**: indicates that the EVS disk is sharable if you select this option. Such an EVS disk can be attached to multiple ECSs.
 
-      -  **Encryption**: indicates that the data disk is encrypted if you select this option. For details, see (Optional) Encryption-related parameters.
+      -  **Encryption**: indicates that the data disk is encrypted if you select this option. For details, see :ref:`(Optional) Encryption-related parameters <en-us_topic_0163572589__en-us_topic_0144542112_li3286101316615>`.
 
       -  **Create Disk from Data Disk Image**: If you have created a data disk image on the **Image Management Service** page, when using a Windows or Linux image to create an ECS, you can use the data disk image to create data disks for the ECS.
 
@@ -152,7 +144,9 @@ Performing Basic Configurations
             -  When you use a data disk image to create a disk, **SCSI**, **Encryption**, and **Share** are unavailable.
             -  For instructions about how to create a data disk image, see *Image Management Service User Guide*.
 
-   -  (Optional) Encryption-related parameters
+   -  .. _en-us_topic_0163572589__en-us_topic_0144542112_li3286101316615:
+
+      (Optional) Encryption-related parameters
 
       To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permission, assign the KMS access permissions to EVS. If you do not have the permission, contact the user having the security administrator rights to assign the KMS access permissions. For more details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
 

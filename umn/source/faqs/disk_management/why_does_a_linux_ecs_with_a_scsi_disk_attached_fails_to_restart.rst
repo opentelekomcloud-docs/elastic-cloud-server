@@ -3,18 +3,10 @@
 Why Does a Linux ECS with a SCSI Disk Attached Fails to Restart?
 ================================================================
 
-
-
-.. _en-us_topic_0087382187__section3414486317516:
-
 Symptom
 -------
 
 For a Linux ECS with a SCSI disk attached, if you have enabled automatic SCSI disk attachment upon ECS startup in **/etc/fstab** and the disk drive letter (for example, **/dev/sdb**) is used, the ECS fails to restart.
-
-
-
-.. _en-us_topic_0087382187__section20153596175411:
 
 Possible Causes
 ---------------
@@ -22,10 +14,6 @@ Possible Causes
 SCSI disk allocation is determined based on the ID of the slot accommodating the disk as well as the available drive letter in the ECS. Each time you attach a disk to the ECS, an idle drive letter is automatically allocated in sequence. When the ECS starts, the disks are loaded in slot sequence. Therefore, a slot ID corresponds to a drive letter.
 
 After the SCSI disk is detached from the running ECS, the slot sequence for disks may change, leading to the disk drive letter being changed after the ECS is restarted. As a result, the slot IDs do not correspond to the drive letters, and the ECS fails to restart.
-
-
-
-.. _en-us_topic_0087382187__section17730319204351:
 
 Solution
 --------
@@ -36,7 +24,9 @@ Solution
 
    **sudo su -**
 
-#. Run the following command to obtain the SCSI ID according to the drive letter of the SCSI disk:
+#. .. _en-us_topic_0087382187__li2064141120446:
+
+   Run the following command to obtain the SCSI ID according to the drive letter of the SCSI disk:
 
    **ll /dev/disk/by-id/|grep** *Disk drive letter*
 
@@ -54,6 +44,6 @@ Solution
 
    **/dev/disk/by-id/**\ *SCSI ID*
 
-   For example, if the SCSI ID obtained in step 3 is scsi-3688860300001436b005014f890338280, use the following data to replace **/dev/sdb**:
+   For example, if the SCSI ID obtained in step :ref:`3 <en-us_topic_0087382187__li2064141120446>` is scsi-3688860300001436b005014f890338280, use the following data to replace **/dev/sdb**:
 
    **/dev/disk/by-id/scsi-3688860300001436b005014f890338280**

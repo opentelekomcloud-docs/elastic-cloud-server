@@ -3,20 +3,12 @@
 Setting Alarm Rules
 ===================
 
-
-
-.. _en-us_topic_0027371531__section38299792222911:
-
 Scenarios
 ---------
 
 Setting ECS alarm rules allows you to customize the monitored objects and notification policies so that you can closely monitor your ECSs.
 
 This section describes how to set ECS alarm rules, including alarm rule names, monitoring objects, monitoring metrics, alarm thresholds, monitoring intervals, and notifications.
-
-
-
-.. _en-us_topic_0027371531__section7969360222918:
 
 Procedure
 ---------
@@ -39,9 +31,7 @@ Procedure
 
    c. In the **Modify Alarm Rule** dialog box shown in :ref:`Figure 1 <en-us_topic_0027371531__fig5398007222382>`, set the parameters as prompted.
 
-      
-
-.. _en-us_topic_0027371531__fig5398007222382:
+      .. _en-us_topic_0027371531__fig5398007222382:
 
       .. figure:: /_static/images/en-us_image_0022382203.png
          :alt: Click to enlarge

@@ -3,10 +3,6 @@
 How Do I Upload Files to My ECS?
 ================================
 
-
-
-.. _en-us_topic_0236302789__section882155414336:
-
 Windows
 -------
 
@@ -30,10 +26,6 @@ Windows
 
    If your local computer runs Mac, use Microsoft Remote Desktop for Mac to transfer files to the Windows ECS For details, see :ref:`How Can I Transfer Files from a Local Mac to a Windows ECS? <en-us_topic_0295091738>`.
 
-
-
-.. _en-us_topic_0236302789__section1365319445420:
-
 Linux
 -----
 
@@ -50,10 +42,6 @@ Linux
    Use SFTP to transfer the files to the Linux ECS. For details, see :ref:`How Can I Use SFTP to Transfer Files Between a Local Linux Computer and a Linux ECS? <en-us_topic_0170139796>`
 
    Use FTP to transfer the files to the Linux ECS. For details, see :ref:`How Can I Use FTP to Transfer Files Between a Local Linux Computer and a Linux ECS? <en-us_topic_0263806054>`
-
-
-
-.. _en-us_topic_0236302789__section2775123023213:
 
 Does an ECS Support FTP-based File Transferring by Default?
 -----------------------------------------------------------

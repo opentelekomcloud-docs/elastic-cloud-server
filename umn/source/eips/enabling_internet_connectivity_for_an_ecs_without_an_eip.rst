@@ -3,10 +3,6 @@
 Enabling Internet Connectivity for an ECS Without an EIP
 ========================================================
 
-
-
-.. _en-us_topic_0027157850__section6427533194453:
-
 Scenarios
 ---------
 
@@ -16,19 +12,11 @@ To ensure platform security and conserve EIPs, EIPs are assigned only to specifi
 
    NAT Gateway is recommended, which provides both the SNAT and DNAT functions for your ECSs in a VPC and allows the ECSs to access or provide services accessible from the Internet.
 
-
-
-.. _en-us_topic_0027157850__section2608915610029:
-
 Prerequisites
 -------------
 
 -  A proxy ECS with an EIP bound is available.
 -  The IP address of the proxy ECS is in the same network and same security group as the ECSs that need to access the Internet.
-
-
-
-.. _en-us_topic_0027157850__section6907807103042:
 
 Linux Proxy ECS
 ---------------
@@ -69,10 +57,12 @@ In this example, the proxy ECS runs CentOS 6.5.
 
    **cat /proc/sys/net/ipv4/ip_forward**
 
-   -  If **0** (disabled) is displayed, go to 10.
-   -  If **1** (enabled), go to 16.
+   -  If **0** (disabled) is displayed, go to :ref:`10 <en-us_topic_0027157850__li51820417113959>`.
+   -  If **1** (enabled), go to :ref:`16 <en-us_topic_0027157850__li49419571113959>`.
 
-#. Run the following command to open the IP forwarding configuration file in the vi editor:
+#. .. _en-us_topic_0027157850__li51820417113959:
+
+   Run the following command to open the IP forwarding configuration file in the vi editor:
 
    **vi /etc/sysctl.conf**
 
@@ -108,7 +98,9 @@ In this example, the proxy ECS runs CentOS 6.5.
 
       Running **iptables -P INPUT ACCEPT** will set default INPUT policy to ACCEPT, which poses security risks. You are advised to set security group rules to restrict inbound access.
 
-#. Run the following command to configure source network address translation (SNAT) to enable ECSs in the same network segment to access the Internet through the proxy ECS:
+#. .. _en-us_topic_0027157850__li49419571113959:
+
+   Run the following command to configure source network address translation (SNAT) to enable ECSs in the same network segment to access the Internet through the proxy ECS:
 
    **iptables -t nat -A POSTROUTING -o eth0 -s** *subnet/netmask-bits* **-j SNAT --to** *nat-instance-ip*
 
@@ -118,7 +110,7 @@ In this example, the proxy ECS runs CentOS 6.5.
 
    .. note::
 
-      To retain the preceding configuration even after the ECS is restarted, run the **vi /etc/rc.local** command to edit the **rc.local** file. Specifically, copy the rule described in step 16 into **rc.local**, press **Esc** to exit the editing mode, and enter **:wq** to save and exit the file.
+      To retain the preceding configuration even after the ECS is restarted, run the **vi /etc/rc.local** command to edit the **rc.local** file. Specifically, copy the rule described in step :ref:`16 <en-us_topic_0027157850__li49419571113959>` into **rc.local**, press **Esc** to exit the editing mode, and enter **:wq** to save and exit the file.
 
 #. Run the following commands to save the iptables configuration and make it start up automatically upon ECS startup:
 
@@ -132,9 +124,7 @@ In this example, the proxy ECS runs CentOS 6.5.
 
    SNAT has been configured if information similar to :ref:`Figure 1 <en-us_topic_0027157850__fig27598108113959>` is displayed.
 
-   
-
-.. _en-us_topic_0027157850__fig27598108113959:
+   .. _en-us_topic_0027157850__fig27598108113959:
 
    .. figure:: /_static/images/en-us_image_0027174005.png
       :alt: Click to enlarge

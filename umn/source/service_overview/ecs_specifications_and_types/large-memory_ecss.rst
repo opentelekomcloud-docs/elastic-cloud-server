@@ -3,10 +3,6 @@
 Large-Memory ECSs
 =================
 
-
-
-.. _en-us_topic_0038024694__section25374905172644:
-
 Overview
 --------
 
@@ -20,16 +16,8 @@ Large-memory ECSs provide an even larger amount of memory than memory-optimized 
 
    E3 ECSs: OLAP and OLTP applications with hyper-threading enabled
 
-
-
-.. _en-us_topic_0038024694__section60740876172648:
-
 Specifications
 --------------
-
-
-
-.. _en-us_topic_0038024694__table990906134813:
 
 .. table:: **Table 1** E3 ECS specifications
 
@@ -40,10 +28,6 @@ Specifications
    +----------------+-------+--------------+------------------------------------+----------------------+-----------------+---------------------+--------------------------------+
    | e3.14xlarge.12 | 56    | 696          | 25/25                              | 500                  | 16              | KVM                 |                                |
    +----------------+-------+--------------+------------------------------------+----------------------+-----------------+---------------------+--------------------------------+
-
-
-
-.. _en-us_topic_0038024694__section3320087010555:
 
 Notes
 -----
@@ -60,9 +44,7 @@ Notes
 
 -  The primary and extension NICs of a large-memory ECS have specified application scenarios. For details, see :ref:`Table 2 <en-us_topic_0038024694__table1642803151326>`.
 
-   
-
-.. _en-us_topic_0038024694__table1642803151326:
+   .. _en-us_topic_0038024694__table1642803151326:
 
    .. table:: **Table 2** Application scenarios of the NICs of a large-memory ECS
 

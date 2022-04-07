@@ -3,10 +3,6 @@
 How Can I Create and Delete Tags and Search for ECSs by Tag?
 ============================================================
 
-
-
-.. _en-us_topic_0101604501__en-us_topic_0096502436_section156771452162320:
-
 Creating a Tag
 --------------
 
@@ -24,10 +20,6 @@ Creating a Tag
 
 #. Enter the tag key and value, and click **OK**.
 
-
-
-.. _en-us_topic_0101604501__en-us_topic_0096502436_section43273216546:
-
 Searching for ECSs by Tag
 -------------------------
 
@@ -35,10 +27,6 @@ Searching for ECSs by Tag
 #. Select the region where the ECS is located.
 #. On the **Elastic Cloud Server** page, search for ECSs by tag.
 #. In the search bar, select **Tag** and then the tag key and value, and click **OK**.
-
-
-
-.. _en-us_topic_0101604501__en-us_topic_0096502436_section1894192155410:
 
 Deleting a Tag
 --------------

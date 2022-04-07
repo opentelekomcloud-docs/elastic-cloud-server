@@ -5,10 +5,6 @@ User Encryption
 
 User encryption allows you to use the encryption feature provided on the public cloud platform to encrypt ECS resources, improving data security. User encryption includes image encryption and EVS disk encryption.
 
-
-
-.. _en-us_topic_0046912051__section1150469610136:
-
 Image Encryption
 ----------------
 
@@ -21,10 +17,6 @@ Use either of the following methods to create an encrypted image:
 
 For more information about image encryption, see *Image Management Service User Guide*.
 
-
-
-.. _en-us_topic_0046912051__section2746706105950:
-
 EVS Disk Encryption
 -------------------
 
@@ -36,25 +28,15 @@ EVS disk encryption supports system disk encryption and data disk encryption.
 
 For more information about EVS disk encryption, see *Elastic Volume Service User Guide*.
 
-
-
-.. _en-us_topic_0046912051__section4202207210118:
-
 Impact on AS
 ------------
 
 If you use an encrypted ECS to create an Auto Scaling (AS) configuration, the encryption mode of the created AS configuration complies with the ECS encryption mode.
 
-
-
-.. _en-us_topic_0046912051__section19557327144021:
-
 About Keys
 ----------
 
 The key used for encryption relies on the Key Management Service (KMS). KMS uses a data encryption key (DEK) to encrypt data and a customer master key (CMK) to encrypt the DEK.
-
-
 
 .. _en-us_topic_0046912051__fig66853906172350:
 
@@ -66,8 +48,6 @@ The key used for encryption relies on the Key Management Service (KMS). KMS uses
    **Figure 1** Data encryption process
 
 :ref:`Table 1 <en-us_topic_0046912051__table58453122162120>` describes the keys involved in the data encryption process.
-
-
 
 .. _en-us_topic_0046912051__table58453122162120:
 
