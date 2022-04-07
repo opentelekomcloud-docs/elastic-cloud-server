@@ -29,11 +29,11 @@ Enabling ECSs in Different Security Groups to Communicate with Each Other Throug
 
    You can add an inbound rule to the security groups containing the ECSs to allow access from ECSs in the other security group. The required rule is as follows.
 
-   +---------------+----------------------------------------------------+--------------------+------------------------------+
-   | **Direction** | **Protocol/Application**                           | **Port**           | **Source**                   |
-   +===============+====================================================+====================+==============================+
-   | Inbound       | Used for communication through an internal network | Port or port range | ID of another security group |
-   +---------------+----------------------------------------------------+--------------------+------------------------------+
+   +-----------+----------------------------------------------------+--------------------+------------------------------+
+   | Direction | Protocol/Application                               | Port               | Source                       |
+   +===========+====================================================+====================+==============================+
+   | Inbound   | Used for communication through an internal network | Port or port range | ID of another security group |
+   +-----------+----------------------------------------------------+--------------------+------------------------------+
 
 .. _en-us_topic_0140323152__en-us_topic_0118534011_section17693183118306:
 
@@ -49,7 +49,7 @@ Enabling Specified IP Addresses to Remotely Access ECSs in a Security Group
    To allow IP address **192.168.20.2** to remotely access Linux ECSs in a security group over the SSH protocol (port 22), you can configure the following security group rule.
 
    +-----------------+-----------------+-----------------+-------------------------------------------------+
-   | **Direction**   | **Protocol**    | **Port**        | **Source**                                      |
+   | Direction       | Protocol        | Port            | Source                                          |
    +=================+=================+=================+=================================================+
    | Inbound         | SSH             | 22              | IPv4 CIDR block or ID of another security group |
    |                 |                 |                 |                                                 |
@@ -67,11 +67,11 @@ Remotely Connecting to Linux ECSs Using SSH
 
 -  Security group rule:
 
-   ============= ============ ======== ==========
-   **Direction** **Protocol** **Port** **Source**
-   ============= ============ ======== ==========
-   Inbound       SSH          22       0.0.0.0/0
-   ============= ============ ======== ==========
+   ========= ======== ==== =========
+   Direction Protocol Port Source
+   ========= ======== ==== =========
+   Inbound   SSH      22   0.0.0.0/0
+   ========= ======== ==== =========
 
 .. _en-us_topic_0140323152__en-us_topic_0118534011_section168046312349:
 
@@ -84,11 +84,11 @@ Remotely Connecting to Windows ECSs Using RDP
 
 -  Security group rule:
 
-   ============= ============ ======== ==========
-   **Direction** **Protocol** **Port** **Source**
-   ============= ============ ======== ==========
-   Inbound       RDP          3389     0.0.0.0/0
-   ============= ============ ======== ==========
+   ========= ======== ==== =========
+   Direction Protocol Port Source
+   ========= ======== ==== =========
+   Inbound   RDP      3389 0.0.0.0/0
+   ========= ======== ==== =========
 
 .. _en-us_topic_0140323152__en-us_topic_0118534011_section34721049193411:
 
@@ -101,11 +101,11 @@ Enabling Communication Between ECSs
 
 -  Security group rule:
 
-   ============= ============ ======== ==========
-   **Direction** **Protocol** **Port** **Source**
-   ============= ============ ======== ==========
-   Inbound       ICMP         All      0.0.0.0/0
-   ============= ============ ======== ==========
+   ========= ======== ==== =========
+   Direction Protocol Port Source
+   ========= ======== ==== =========
+   Inbound   ICMP     All  0.0.0.0/0
+   ========= ======== ==== =========
 
 .. _en-us_topic_0140323152__en-us_topic_0118534011_section1517991516357:
 
@@ -118,12 +118,12 @@ Hosting a Website on ECSs
 
 -  Security group rule:
 
-   ============= ============ ======== ==========
-   **Direction** **Protocol** **Port** **Source**
-   ============= ============ ======== ==========
-   Inbound       HTTP         80       0.0.0.0/0
-   Inbound       HTTPS        443      0.0.0.0/0
-   ============= ============ ======== ==========
+   ========= ======== ==== =========
+   Direction Protocol Port Source
+   ========= ======== ==== =========
+   Inbound   HTTP     80   0.0.0.0/0
+   Inbound   HTTPS    443  0.0.0.0/0
+   ========= ======== ==== =========
 
 .. _en-us_topic_0140323152__en-us_topic_0118534011_section2910346123520:
 
@@ -136,12 +136,12 @@ Enabling an ECS to Function as a DNS Server
 
 -  Security group rules:
 
-   ============= ============ ======== ==========
-   **Direction** **Protocol** **Port** **Source**
-   ============= ============ ======== ==========
-   Inbound       TCP          53       0.0.0.0/0
-   Inbound       UDP          53       0.0.0.0/0
-   ============= ============ ======== ==========
+   ========= ======== ==== =========
+   Direction Protocol Port Source
+   ========= ======== ==== =========
+   Inbound   TCP      53   0.0.0.0/0
+   Inbound   UDP      53   0.0.0.0/0
+   ========= ======== ==== =========
 
 .. _en-us_topic_0140323152__en-us_topic_0118534011_section5964121693610:
 
@@ -158,8 +158,8 @@ Uploading or Downloading Files Using FTP
 
 -  Security group rule:
 
-   ============= ============ ======== ==========
-   **Direction** **Protocol** **Port** **Source**
-   ============= ============ ======== ==========
-   Inbound       TCP          20-21    0.0.0.0/0
-   ============= ============ ======== ==========
+   ========= ======== ===== =========
+   Direction Protocol Port  Source
+   ========= ======== ===== =========
+   Inbound   TCP      20-21 0.0.0.0/0
+   ========= ======== ===== =========
