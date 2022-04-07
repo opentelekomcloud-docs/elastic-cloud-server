@@ -1,3 +1,5 @@
+.. _en-us_topic_0175597847:
+
 Querying Details About an ECS Group
 ===================================
 
@@ -11,9 +13,9 @@ URI
 
 GET /v1/{project_id}/cloudservers/os-server-groups/{server_group_id}
 
-`Table 1 <#enustopic0175597847table050833691012>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0175597847__table050833691012>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0175597847table050833691012:
+.. _en-us_topic_0175597847__table050833691012:
 
 .. table:: **Table 1** Parameter description
 
@@ -32,23 +34,19 @@ None
 Response
 --------
 
-`Table 2 <#enustopic0175597847table4683214181116>`__ describes the response parameters.
+:ref:`Table 2 <en-us_topic_0175597847__table4683214181116>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0175597847table4683214181116:
+.. _en-us_topic_0175597847__table4683214181116:
 
 .. table:: **Table 2** Response parameters
 
-   +--------------+--------+--------------------------------------------------------------------------------------------------------------------------+
-   | Parameter    | Type   | Description                                                                                                              |
-   +==============+========+==========================================================================================================================+
-   | server_group | Object | Specifies the ECS group information. For details, see `Table 3 <#enustopic0175597847enustopic0057973159table5520021>`__. |
-   +--------------+--------+--------------------------------------------------------------------------------------------------------------------------+
+   +--------------+--------+-------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter    | Type   | Description                                                                                                                         |
+   +==============+========+=====================================================================================================================================+
+   | server_group | Object | Specifies the ECS group information. For details, see :ref:`Table 3 <en-us_topic_0175597847__en-us_topic_0057973159_table5520021>`. |
+   +--------------+--------+-------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0175597847enustopic0057973159table5520021:
+.. _en-us_topic_0175597847__en-us_topic_0057973159_table5520021:
 
 .. table:: **Table 3** **server_group** parameters
 
@@ -91,11 +89,9 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

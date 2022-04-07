@@ -1,3 +1,5 @@
+.. _en-us_topic_0020212662:
+
 Querying NICs of an ECS
 =======================
 
@@ -13,9 +15,9 @@ GET /v2.1/{project_id}/servers/{server_id}/os-interface/{id}
 
 GET /v2/{project_id}/servers/{server_id}/os-interface/{id}
 
-`Table 1 <#enustopic0020212662table25654779>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0020212662__table25654779>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0020212662table25654779:
+.. _en-us_topic_0020212662__table25654779:
 
 .. table:: **Table 1** Parameter description
 
@@ -35,41 +37,37 @@ None
 Response
 --------
 
-`Table 2 <#enustopic0020212662table59131099>`__ describes the response parameters. 
+:ref:`Table 2 <en-us_topic_0020212662__table59131099>` describes the response parameters.
 
-.. _ENUSTOPIC0020212662table59131099:
+.. _en-us_topic_0020212662__table59131099:
 
 .. table:: **Table 2** Response parameters
 
-   +---------------------+--------+---------------------------------------------------------------------------------------+
-   | Parameter           | Type   | Description                                                                           |
-   +=====================+========+=======================================================================================+
-   | interfaceAttachment | Object | Specifies ECS NICs. For details, see `Table 3 <#enustopic0020212662table24005299>`__. |
-   +---------------------+--------+---------------------------------------------------------------------------------------+
+   +---------------------+--------+----------------------------------------------------------------------------------------------+
+   | Parameter           | Type   | Description                                                                                  |
+   +=====================+========+==============================================================================================+
+   | interfaceAttachment | Object | Specifies ECS NICs. For details, see :ref:`Table 3 <en-us_topic_0020212662__table24005299>`. |
+   +---------------------+--------+----------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0020212662table24005299:
+.. _en-us_topic_0020212662__table24005299:
 
 .. table:: **Table 3** **interfaceAttachment** field description
 
-   +------------+------------------+----------------------------------------------------------------------------------------------------+
-   | Parameter  | Type             | Description                                                                                        |
-   +============+==================+====================================================================================================+
-   | port_state | String           | Specifies the NIC port status.                                                                     |
-   +------------+------------------+----------------------------------------------------------------------------------------------------+
-   | fixed_ips  | Array of objects | Specifies IP addresses for NICs. For details, see `Table 4 <#enustopic0020212662table53180163>`__. |
-   +------------+------------------+----------------------------------------------------------------------------------------------------+
-   | net_id     | String           | Specifies the network ID to which the NIC port belongs.                                            |
-   +------------+------------------+----------------------------------------------------------------------------------------------------+
-   | port_id    | String           | Specifies the ID of the NIC port.                                                                  |
-   +------------+------------------+----------------------------------------------------------------------------------------------------+
-   | mac_addr   | String           | Specifies the MAC address of the NIC.                                                              |
-   +------------+------------------+----------------------------------------------------------------------------------------------------+
+   +------------+------------------+-----------------------------------------------------------------------------------------------------------+
+   | Parameter  | Type             | Description                                                                                               |
+   +============+==================+===========================================================================================================+
+   | port_state | String           | Specifies the NIC port status.                                                                            |
+   +------------+------------------+-----------------------------------------------------------------------------------------------------------+
+   | fixed_ips  | Array of objects | Specifies IP addresses for NICs. For details, see :ref:`Table 4 <en-us_topic_0020212662__table53180163>`. |
+   +------------+------------------+-----------------------------------------------------------------------------------------------------------+
+   | net_id     | String           | Specifies the network ID to which the NIC port belongs.                                                   |
+   +------------+------------------+-----------------------------------------------------------------------------------------------------------+
+   | port_id    | String           | Specifies the ID of the NIC port.                                                                         |
+   +------------+------------------+-----------------------------------------------------------------------------------------------------------+
+   | mac_addr   | String           | Specifies the MAC address of the NIC.                                                                     |
+   +------------+------------------+-----------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0020212662table53180163:
+.. _en-us_topic_0020212662__table53180163:
 
 .. table:: **Table 4** **fixed_ips** field description
 
@@ -112,6 +110,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

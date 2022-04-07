@@ -1,3 +1,5 @@
+.. _en-us_topic_0077847902:
+
 Configuring ECS Metadata
 ========================
 
@@ -20,9 +22,9 @@ PUT /v2.1/{project_id}/servers/{server_id}/metadata
 
 PUT /v2/{project_id}/servers/{server_id}/metadata
 
-`Table 1 <#enustopic0077847902enustopic0057973166table32475667>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0077847902__en-us_topic_0057973166_table32475667>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0077847902enustopic0057973166table32475667:
+.. _en-us_topic_0077847902__en-us_topic_0057973166_table32475667:
 
 .. table:: **Table 1** Parameter description
 
@@ -36,11 +38,9 @@ PUT /v2/{project_id}/servers/{server_id}/metadata
 Request
 -------
 
-`Table 2 <#enustopic0077847902enustopic0057973166table58874912>`__ describes the request parameters.
+:ref:`Table 2 <en-us_topic_0077847902__en-us_topic_0057973166_table58874912>` describes the request parameters.
 
-
-
-.. _ENUSTOPIC0077847902enustopic0057973166table58874912:
+.. _en-us_topic_0077847902__en-us_topic_0057973166_table58874912:
 
 .. table:: **Table 2** Request
 
@@ -61,11 +61,9 @@ Request
 Response
 --------
 
-`Table 3 <#enustopic0077847902enustopic0057973166table52843024>`__ describes the response parameters.
+:ref:`Table 3 <en-us_topic_0077847902__en-us_topic_0057973166_table52843024>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0077847902enustopic0057973166table52843024:
+.. _en-us_topic_0077847902__en-us_topic_0057973166_table52843024:
 
 .. table:: **Table 3** Response parameters
 
@@ -107,6 +105,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

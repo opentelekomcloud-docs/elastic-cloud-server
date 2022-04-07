@@ -1,3 +1,5 @@
+.. _en-us_topic_0067876349:
+
 Reinstalling an ECS OS (Using an Image with Cloud-Init Installed)
 =================================================================
 
@@ -21,9 +23,9 @@ URI
 
 POST /v2/{project_id}/cloudservers/{server_id}/reinstallos
 
-`Table 1 <#enustopic0067876349table55945983>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0067876349__table55945983>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0067876349table55945983:
+.. _en-us_topic_0067876349__table55945983:
 
 .. table:: **Table 1** Parameter description
 
@@ -37,39 +39,35 @@ POST /v2/{project_id}/cloudservers/{server_id}/reinstallos
 Request
 -------
 
-`Table 2 <#enustopic0067876349table2840889>`__ describes the request parameters. 
+:ref:`Table 2 <en-us_topic_0067876349__table2840889>` describes the request parameters.
 
-.. _ENUSTOPIC0067876349table2840889:
+.. _en-us_topic_0067876349__table2840889:
 
 .. table:: **Table 2** Request parameters
 
-   +--------------+-----------+--------+-----------------------------------------------------------------------------------------+
-   | Parameter    | Mandatory | Type   | Description                                                                             |
-   +==============+===========+========+=========================================================================================+
-   | os-reinstall | Yes       | Object | Reinstalls an ECS OS. For details, see `Table 3 <#enustopic0067876349table32200631>`__. |
-   +--------------+-----------+--------+-----------------------------------------------------------------------------------------+
+   +--------------+-----------+--------+------------------------------------------------------------------------------------------------+
+   | Parameter    | Mandatory | Type   | Description                                                                                    |
+   +==============+===========+========+================================================================================================+
+   | os-reinstall | Yes       | Object | Reinstalls an ECS OS. For details, see :ref:`Table 3 <en-us_topic_0067876349__table32200631>`. |
+   +--------------+-----------+--------+------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0067876349table32200631:
+.. _en-us_topic_0067876349__table32200631:
 
 .. table:: **Table 3** **os-reinstall** field description
 
-   +-----------------+-----------------+-----------------+------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                                  |
-   +=================+=================+=================+==============================================================================+
-   | keyname         | Yes             | String          | Specifies the key pair name.                                                 |
-   +-----------------+-----------------+-----------------+------------------------------------------------------------------------------+
-   | userid          | Yes             | String          | Specifies the user ID. This parameter is mandatory when **keyname** is used. |
-   +-----------------+-----------------+-----------------+------------------------------------------------------------------------------+
-   | metadata        | No              | Object          | Specifies metadata of the reinstalled ECS.                                   |
-   |                 |                 |                 |                                                                              |
-   |                 |                 |                 | For more information, see `Table 4 <#enustopic0067876349table9120223>`__.    |
-   +-----------------+-----------------+-----------------+------------------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                      |
+   +=================+=================+=================+==================================================================================+
+   | keyname         | Yes             | String          | Specifies the key pair name.                                                     |
+   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------+
+   | userid          | Yes             | String          | Specifies the user ID. This parameter is mandatory when **keyname** is used.     |
+   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------+
+   | metadata        | No              | Object          | Specifies metadata of the reinstalled ECS.                                       |
+   |                 |                 |                 |                                                                                  |
+   |                 |                 |                 | For more information, see :ref:`Table 4 <en-us_topic_0067876349__table9120223>`. |
+   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0067876349table9120223:
+.. _en-us_topic_0067876349__table9120223:
 
 .. table:: **Table 4** **metadata** field description
 
@@ -138,7 +136,7 @@ Request
 Response
 --------
 
-See `Responses (Task) <../../common_parameters/task_request_result/responses_task.html>`__.
+See :ref:`Responses (Task) <en-us_topic_0022067714>`.
 
 Example Request
 ---------------
@@ -190,16 +188,14 @@ Example Request
 Example Response
 ----------------
 
-See `Responses (Task) <../../common_parameters/task_request_result/responses_task.html>`__.
+See :ref:`Responses (Task) <en-us_topic_0022067714>`.
 
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

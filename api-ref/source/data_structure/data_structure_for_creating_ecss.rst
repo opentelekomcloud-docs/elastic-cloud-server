@@ -1,20 +1,24 @@
+.. _en-us_topic_0167957246:
+
 Data Structure for Creating ECSs
 ================================
 
 Contents
 --------
 
--  `publicip Field Description <#publicip-field-description>`__
--  `security_groups Field Description <#security-groups-field-description>`__
--  `eip Field Description <#eip-field-description>`__
--  `bandwidth Field Description <#bandwidth-field-description>`__
--  `extendparam Field Description for Creating Disks <#extendparam-field-description-for-creating-disks>`__
--  `extendparam Field Description for Creating ECSs <#extendparam-field-description-for-creating-ecss>`__
--  `metadata Field Description for Creating Disks <#metadata-field-description-for-creating-disks>`__
--  `metadata Field Description for Creating ECSs <#metadata-field-description-for-creating-ecss>`__
--  `os:scheduler_hints Field Description <#os-scheduler-hints-field-description>`__
--  `binding:profile Field Description <#binding-profile-field-description>`__
--  `extra_dhcp_opts Field Description <#extra-dhcp-opts-field-description>`__
+-  :ref:`publicip Field Description <en-us_topic_0167957246__section1846944811410>`
+-  :ref:`security_groups Field Description <en-us_topic_0167957246__section332191084315>`
+-  :ref:`eip Field Description <en-us_topic_0167957246__section1840318312449>`
+-  :ref:`bandwidth Field Description <en-us_topic_0167957246__section172789339448>`
+-  :ref:`extendparam Field Description for Creating Disks <en-us_topic_0167957246__section1361484104817>`
+-  :ref:`extendparam Field Description for Creating ECSs <en-us_topic_0167957246__section1373711413505>`
+-  :ref:`metadata Field Description for Creating Disks <en-us_topic_0167957246__section1228814491353>`
+-  :ref:`metadata Field Description for Creating ECSs <en-us_topic_0167957246__section1574435185018>`
+-  :ref:`os:scheduler_hints Field Description <en-us_topic_0167957246__section16585034175117>`
+-  :ref:`binding:profile Field Description <en-us_topic_0167957246__section681114217434>`
+-  :ref:`extra_dhcp_opts Field Description <en-us_topic_0167957246__section12781010134512>`
+
+.. _en-us_topic_0167957246__section1846944811410:
 
 **publicip** Field Description
 ------------------------------
@@ -23,9 +27,7 @@ This field is used by the following APIs:
 
 -  Creating ECSs /v1/{project_id}/cloudservers
 
-
-
-.. _ENUSTOPIC0167957246table2785183710710:
+.. _en-us_topic_0167957246__table2785183710710:
 
 .. table:: **Table 1** **publicip** field description
 
@@ -38,7 +40,7 @@ This field is used by the following APIs:
    +-----------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------+
    | eip                   | No              | Object          | Specifies an EIP that will be automatically assigned to an ECS.                                      |
    |                       |                 |                 |                                                                                                      |
-   |                       |                 |                 | For details, see `Table 3 <#enustopic0167957246table020717438159>`__.                                |
+   |                       |                 |                 | For details, see :ref:`Table 3 <en-us_topic_0167957246__table020717438159>`.                         |
    +-----------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------+
    | delete_on_termination | No              | Boolean         | Specifies whether the EIP is released when the ECS where the EIP is bound is deleted.                |
    |                       |                 |                 |                                                                                                      |
@@ -56,6 +58,8 @@ This field is used by the following APIs:
 
    Either **id** or **eip** in the **publicip** field can be configured.
 
+.. _en-us_topic_0167957246__section332191084315:
+
 **security_groups** Field Description
 -------------------------------------
 
@@ -63,9 +67,7 @@ This field is used by the following APIs:
 
 -  Creating ECSs /v1/{project_id}/cloudservers
 
-
-
-.. _ENUSTOPIC0167957246table1698566599:
+.. _en-us_topic_0167957246__table1698566599:
 
 .. table:: **Table 2** **security_groups** field description
 
@@ -75,6 +77,8 @@ This field is used by the following APIs:
    | id        | No        | String | Specifies the ID of the security group to which an ECS is to be added. The configuration will take effect on the NICs of the ECS. You need to specify the ID of an existing security group in UUID format. Otherwise, the default security group will be used at the underlying layer. |
    +-----------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+.. _en-us_topic_0167957246__section1840318312449:
+
 **eip** Field Description
 -------------------------
 
@@ -82,23 +86,23 @@ This field is used by the following APIs:
 
 -  Creating ECSs /v1/{project_id}/cloudservers
 
-
-
-.. _ENUSTOPIC0167957246table020717438159:
+.. _en-us_topic_0167957246__table020717438159:
 
 .. table:: **Table 3** **eip** field description
 
-   +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                                                                                             |
-   +=================+=================+=================+=========================================================================================================================================+
-   | iptype          | Yes             | String          | Specifies the EIP type.                                                                                                                 |
-   |                 |                 |                 |                                                                                                                                         |
-   |                 |                 |                 | For details about the enumerated values, see the **publicip** field in "Assigning an EIP" in *Virtual Private Cloud API Reference*.     |
-   +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | bandwidth       | Yes             | Object          | Specifies the EIP bandwidth.                                                                                                            |
-   |                 |                 |                 |                                                                                                                                         |
-   |                 |                 |                 | For details, see `bandwidth Field Description <../data_structure/data_structure_for_creating_ecss.html#bandwidth-field-description>`__. |
-   +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                                                                         |
+   +=================+=================+=================+=====================================================================================================================================+
+   | iptype          | Yes             | String          | Specifies the EIP type.                                                                                                             |
+   |                 |                 |                 |                                                                                                                                     |
+   |                 |                 |                 | For details about the enumerated values, see the **publicip** field in "Assigning an EIP" in *Virtual Private Cloud API Reference*. |
+   +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
+   | bandwidth       | Yes             | Object          | Specifies the EIP bandwidth.                                                                                                        |
+   |                 |                 |                 |                                                                                                                                     |
+   |                 |                 |                 | For details, see :ref:`bandwidth Field Description <en-us_topic_0167957246__section172789339448>`.                                  |
+   +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
+
+.. _en-us_topic_0167957246__section172789339448:
 
 **bandwidth** Field Description
 -------------------------------
@@ -106,10 +110,6 @@ This field is used by the following APIs:
 This field is used by the following APIs:
 
 -  Creating ECSs /v1/{project_id}/cloudservers
-
-
-
-.. _ENUSTOPIC0167957246table16301415102451:
 
 .. table:: **Table 4** **bandwidth** field description
 
@@ -132,6 +132,8 @@ This field is used by the following APIs:
    |                 |                 |                 | -  If the field value is others, creating the ECS will fail.                                                                                         |
    +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+.. _en-us_topic_0167957246__section1361484104817:
+
 **extendparam** Field Description for Creating Disks
 ----------------------------------------------------
 
@@ -139,9 +141,7 @@ This field is used by the following APIs:
 
 -  Creating ECSs /v1/{project_id}/cloudservers
 
-
-
-.. _ENUSTOPIC0167957246table7562101331712:
+.. _en-us_topic_0167957246__table7562101331712:
 
 .. table:: **Table 5** **extendparam** field description for creating disks
 
@@ -177,6 +177,8 @@ This field is used by the following APIs:
    |                 |                 |                 | -  If CSBS backup is used, use the CSBS backup ID to obtain the backup. The **source_volume_id** or **snapshot_id** contained in the **volume_backups** field in the response is the desired **snapshotId**. For details, see the API for "Querying a Single Backup" in *Cloud Server Backup Service User Guide*. |
    +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+.. _en-us_topic_0167957246__section1373711413505:
+
 **extendparam** Field Description for Creating ECSs
 ---------------------------------------------------
 
@@ -184,32 +186,32 @@ This field is used by the following APIs:
 
 -  Creating ECSs /v1/{project_id}/cloudservers
 
-
-
-.. _ENUSTOPIC0167957246table1137234112314:
+.. _en-us_topic_0167957246__table1137234112314:
 
 .. table:: **Table 6** extendparam field description for creating ECSs (for V1 APIs)
 
-   +-----------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter             | Mandatory       | Type            | Description                                                                                                                                                                                                                                                                          |
-   +=======================+=================+=================+======================================================================================================================================================================================================================================================================================+
-   | regionID              | No              | String          | Specifies the ID of the region where the ECS resides.                                                                                                                                                                                                                                |
-   +-----------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | support_auto_recovery | No              | Boolean         | Specifies whether automatic recovery is enabled on the ECS.                                                                                                                                                                                                                          |
-   |                       |                 |                 |                                                                                                                                                                                                                                                                                      |
-   |                       |                 |                 | -  **true**: enables this function.                                                                                                                                                                                                                                                  |
-   |                       |                 |                 | -  **false**: disables this function.                                                                                                                                                                                                                                                |
-   |                       |                 |                 |                                                                                                                                                                                                                                                                                      |
-   |                       |                 |                 | .. note::                                                                                                                                                                                                                                                                            |
-   |                       |                 |                 |                                                                                                                                                                                                                                                                                      |
-   |                       |                 |                 |    This parameter is of boolean type. If a non-boolean character is imported, the parameter value is set to **false**.                                                                                                                                                               |
-   |                       |                 |                 |                                                                                                                                                                                                                                                                                      |
-   |                       |                 |                 |    When **support_auto_recovery** is set to **false** and **"cond:compute": autorecovery** is unavailable in the flavor, automatic recovery is not supported.                                                                                                                        |
-   |                       |                 |                 |                                                                                                                                                                                                                                                                                      |
-   |                       |                 |                 |    When **support_auto_recovery** is set to **false** and **"cond:compute": autorecovery** is available in the flavor, automatic recovery is supported.                                                                                                                              |
-   |                       |                 |                 |                                                                                                                                                                                                                                                                                      |
-   |                       |                 |                 |    You can query whether **"cond:compute": autorecovery** is available in the flavor by referring to `Querying Details About Flavors and Extended Flavor Information <../apis_recommended/flavor_management/querying_details_about_flavors_and_extended_flavor_information.html>`__. |
-   +-----------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Mandatory       | Type            | Description                                                                                                                                                                                          |
+   +=======================+=================+=================+======================================================================================================================================================================================================+
+   | regionID              | No              | String          | Specifies the ID of the region where the ECS resides.                                                                                                                                                |
+   +-----------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | support_auto_recovery | No              | Boolean         | Specifies whether automatic recovery is enabled on the ECS.                                                                                                                                          |
+   |                       |                 |                 |                                                                                                                                                                                                      |
+   |                       |                 |                 | -  **true**: enables this function.                                                                                                                                                                  |
+   |                       |                 |                 | -  **false**: disables this function.                                                                                                                                                                |
+   |                       |                 |                 |                                                                                                                                                                                                      |
+   |                       |                 |                 | .. note::                                                                                                                                                                                            |
+   |                       |                 |                 |                                                                                                                                                                                                      |
+   |                       |                 |                 |    This parameter is of boolean type. If a non-boolean character is imported, the parameter value is set to **false**.                                                                               |
+   |                       |                 |                 |                                                                                                                                                                                                      |
+   |                       |                 |                 |    When **support_auto_recovery** is set to **false** and **"cond:compute": autorecovery** is unavailable in the flavor, automatic recovery is not supported.                                        |
+   |                       |                 |                 |                                                                                                                                                                                                      |
+   |                       |                 |                 |    When **support_auto_recovery** is set to **false** and **"cond:compute": autorecovery** is available in the flavor, automatic recovery is supported.                                              |
+   |                       |                 |                 |                                                                                                                                                                                                      |
+   |                       |                 |                 |    You can query whether **"cond:compute": autorecovery** is available in the flavor by referring to :ref:`Querying Details About Flavors and Extended Flavor Information <en-us_topic_0020212656>`. |
+   +-----------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. _en-us_topic_0167957246__section1228814491353:
 
 **metadata** Field Description for Creating Disks
 -------------------------------------------------
@@ -221,10 +223,6 @@ This field is used by the following APIs:
 .. note::
 
    -  When you create an ECS, both **root_volume** and **data_volume** contain the **metadata** field.
-
-
-
-.. _ENUSTOPIC0167957246table1028814491351:
 
 .. table:: **Table 7** **metadata** field description for creating disks
 
@@ -242,6 +240,8 @@ This field is used by the following APIs:
    |                      |                 |                 |    For details about how to obtain the CMK ID, see "Querying the List of CMKs" in *Key Management Service API Reference*. |
    +----------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------+
 
+.. _en-us_topic_0167957246__section1574435185018:
+
 metadata Field Description for Creating ECSs
 --------------------------------------------
 
@@ -249,16 +249,14 @@ This field is used by the following APIs:
 
 -  Creating ECSs /v1/{project_id}/cloudservers
 
-
-
-.. _ENUSTOPIC0167957246table2373623012315:
+.. _en-us_topic_0167957246__table2373623012315:
 
 .. table:: **Table 8** **metadata** reserved field description
 
    +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter       | Mandatory       | Type            | Description                                                                                                                                                                                                                 |
    +=================+=================+=================+=============================================================================================================================================================================================================================+
-   | admin_pass      | No              | String          | Specifies the password of user **Administrator** for logging in to a Windows ECS. For details, see `Function <../apis_recommended/lifecycle_management/creating_an_ecs.html#function>`__.                                   |
+   | admin_pass      | No              | String          | Specifies the password of user **Administrator** for logging in to a Windows ECS. For details, see :ref:`Function <en-us_topic_0020212668__section61372619>`.                                                               |
    |                 |                 |                 |                                                                                                                                                                                                                             |
    |                 |                 |                 | .. note::                                                                                                                                                                                                                   |
    |                 |                 |                 |                                                                                                                                                                                                                             |
@@ -276,6 +274,8 @@ This field is used by the following APIs:
    |                 |                 |                 | -  **False**: System licenses are used.                                                                                                                                                                                     |
    +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+.. _en-us_topic_0167957246__section16585034175117:
+
 **os:scheduler_hints** Field Description
 ----------------------------------------
 
@@ -284,57 +284,53 @@ This field is used by the following APIs:
 -  Creating ECSs /v1/{project_id}/cloudservers
 -  Creating ECSs (native API): /v2.1/{project_id}/servers
 
-
-
-.. _ENUSTOPIC0167957246table24430409172542:
+.. _en-us_topic_0167957246__table24430409172542:
 
 .. table:: **Table 9** **os:scheduler_hints** field description (request parameters)
 
-   +-------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter         | Mandatory       | Type            | Description                                                                                                                                                                         |
-   +===================+=================+=================+=====================================================================================================================================================================================+
-   | group             | No              | String          | Specifies an ECS group ID, which is in UUID format.                                                                                                                                 |
-   |                   |                 |                 |                                                                                                                                                                                     |
-   |                   |                 |                 | Obtain the parameter value from the console or by performing operations provided in `Querying ECS Groups <../openstack_nova_apis/ecs_group_management/querying_ecs_groups.html>`__. |
-   |                   |                 |                 |                                                                                                                                                                                     |
-   |                   |                 |                 | .. note::                                                                                                                                                                           |
-   |                   |                 |                 |                                                                                                                                                                                     |
-   |                   |                 |                 |    Ensure that the ECS group uses the anti-affinity policy. You are not advised to use other policies.                                                                              |
-   +-------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | tenancy           | No              | String          | Creates ECSs on a dedicated or shared host.                                                                                                                                         |
-   |                   |                 |                 |                                                                                                                                                                                     |
-   |                   |                 |                 | The value of this parameter can be **dedicated** or **shared**.                                                                                                                     |
-   +-------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | dedicated_host_id | No              | String          | Specifies the dedicated host ID.                                                                                                                                                    |
-   |                   |                 |                 |                                                                                                                                                                                     |
-   |                   |                 |                 | .. note::                                                                                                                                                                           |
-   |                   |                 |                 |                                                                                                                                                                                     |
-   |                   |                 |                 |    A DeH ID takes effect only when **tenancy** is set to **dedicated**.                                                                                                             |
-   +-------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-
-.. _ENUSTOPIC0167957246table3756175217341:
+   +-------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter         | Mandatory       | Type            | Description                                                                                                                              |
+   +===================+=================+=================+==========================================================================================================================================+
+   | group             | No              | String          | Specifies an ECS group ID, which is in UUID format.                                                                                      |
+   |                   |                 |                 |                                                                                                                                          |
+   |                   |                 |                 | Obtain the parameter value from the console or by performing operations provided in :ref:`Querying ECS Groups <en-us_topic_0065817721>`. |
+   |                   |                 |                 |                                                                                                                                          |
+   |                   |                 |                 | .. note::                                                                                                                                |
+   |                   |                 |                 |                                                                                                                                          |
+   |                   |                 |                 |    Ensure that the ECS group uses the anti-affinity policy. You are not advised to use other policies.                                   |
+   +-------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------+
+   | tenancy           | No              | String          | Creates ECSs on a dedicated or shared host.                                                                                              |
+   |                   |                 |                 |                                                                                                                                          |
+   |                   |                 |                 | The value of this parameter can be **dedicated** or **shared**.                                                                          |
+   +-------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------+
+   | dedicated_host_id | No              | String          | Specifies the dedicated host ID.                                                                                                         |
+   |                   |                 |                 |                                                                                                                                          |
+   |                   |                 |                 | .. note::                                                                                                                                |
+   |                   |                 |                 |                                                                                                                                          |
+   |                   |                 |                 |    A DeH ID takes effect only when **tenancy** is set to **dedicated**.                                                                  |
+   +-------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. table:: **Table 10** **os:scheduler_hints** field description (response parameters)
 
-   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter             | Type                  | Description                                                                                                                                                                         |
-   +=======================+=======================+=====================================================================================================================================================================================+
-   | group                 | Array of strings      | Specifies an ECS group ID, which is in UUID format.                                                                                                                                 |
-   |                       |                       |                                                                                                                                                                                     |
-   |                       |                       | Obtain the parameter value from the console or by performing operations provided in `Querying ECS Groups <../openstack_nova_apis/ecs_group_management/querying_ecs_groups.html>`__. |
-   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | tenancy               | Array of strings      | Creates ECSs on a dedicated or shared host.                                                                                                                                         |
-   |                       |                       |                                                                                                                                                                                     |
-   |                       |                       | The value of this parameter can be **dedicated** or **shared**.                                                                                                                     |
-   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | dedicated_host_id     | Array of strings      | Specifies the dedicated host ID.                                                                                                                                                    |
-   |                       |                       |                                                                                                                                                                                     |
-   |                       |                       | .. note::                                                                                                                                                                           |
-   |                       |                       |                                                                                                                                                                                     |
-   |                       |                       |    A DeH ID takes effect only when **tenancy** is set to **dedicated**.                                                                                                             |
-   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                                                              |
+   +=======================+=======================+==========================================================================================================================================+
+   | group                 | Array of strings      | Specifies an ECS group ID, which is in UUID format.                                                                                      |
+   |                       |                       |                                                                                                                                          |
+   |                       |                       | Obtain the parameter value from the console or by performing operations provided in :ref:`Querying ECS Groups <en-us_topic_0065817721>`. |
+   +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+   | tenancy               | Array of strings      | Creates ECSs on a dedicated or shared host.                                                                                              |
+   |                       |                       |                                                                                                                                          |
+   |                       |                       | The value of this parameter can be **dedicated** or **shared**.                                                                          |
+   +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+   | dedicated_host_id     | Array of strings      | Specifies the dedicated host ID.                                                                                                         |
+   |                       |                       |                                                                                                                                          |
+   |                       |                       | .. note::                                                                                                                                |
+   |                       |                       |                                                                                                                                          |
+   |                       |                       |    A DeH ID takes effect only when **tenancy** is set to **dedicated**.                                                                  |
+   +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. _en-us_topic_0167957246__section681114217434:
 
 **binding:profile** Field Description
 -------------------------------------
@@ -343,9 +339,7 @@ This field is used by the following APIs:
 
 -  Creating ECSs: /v1/{project_id}/cloudservers
 
-
-
-.. _ENUSTOPIC0167957246table42451440577:
+.. _en-us_topic_0167957246__table42451440577:
 
 .. table:: **Table 11** **binding:profile** field description
 
@@ -360,6 +354,8 @@ This field is used by the following APIs:
    |                         |                 |                 |    -  At most one HANA ECS NIC is allowed not to add to any security group. |
    +-------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+
 
+.. _en-us_topic_0167957246__section12781010134512:
+
 **extra_dhcp_opts** Field Description
 -------------------------------------
 
@@ -367,9 +363,7 @@ This field is used by the following APIs:
 
 -  Creating ECSs: /v1/{project_id}/cloudservers
 
-
-
-.. _ENUSTOPIC0167957246table93959401279:
+.. _en-us_topic_0167957246__table93959401279:
 
 .. table:: **Table 12** **extra_dhcp_opts** field description
 
@@ -380,5 +374,3 @@ This field is used by the following APIs:
    +-----------+-----------+---------+--------------------------------------------------------+
    | opt_name  | Yes       | String  | Set the parameter value to **26**.                     |
    +-----------+-----------+---------+--------------------------------------------------------+
-
-

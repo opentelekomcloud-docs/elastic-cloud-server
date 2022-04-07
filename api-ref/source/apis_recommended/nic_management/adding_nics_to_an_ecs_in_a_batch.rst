@@ -1,3 +1,5 @@
+.. _en-us_topic_0020212663:
+
 Adding NICs to an ECS in a Batch
 ================================
 
@@ -11,9 +13,9 @@ URI
 
 POST /v1/{project_id}/cloudservers/{server_id}/nics
 
-`Table 1 <#enustopic0020212663table54800025>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0020212663__table54800025>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0020212663table54800025:
+.. _en-us_topic_0020212663__table54800025:
 
 .. table:: **Table 1** Parameter description
 
@@ -27,39 +29,35 @@ POST /v1/{project_id}/cloudservers/{server_id}/nics
 Request
 -------
 
-`Table 2 <#enustopic0020212663table23831236>`__ describes the request parameters. 
+:ref:`Table 2 <en-us_topic_0020212663__table23831236>` describes the request parameters.
 
-.. _ENUSTOPIC0020212663table23831236:
+.. _en-us_topic_0020212663__table23831236:
 
 .. table:: **Table 2** Request parameters
 
-   +-----------+-----------+------------------+---------------------------------------------------------------------------------------------------+
-   | Parameter | Mandatory | Type             | Description                                                                                       |
-   +===========+===========+==================+===================================================================================================+
-   | nics      | Yes       | Array of objects | Specifies the NICs to be added. For details, see `Table 3 <#enustopic0020212663table58396974>`__. |
-   +-----------+-----------+------------------+---------------------------------------------------------------------------------------------------+
+   +-----------+-----------+------------------+----------------------------------------------------------------------------------------------------------+
+   | Parameter | Mandatory | Type             | Description                                                                                              |
+   +===========+===========+==================+==========================================================================================================+
+   | nics      | Yes       | Array of objects | Specifies the NICs to be added. For details, see :ref:`Table 3 <en-us_topic_0020212663__table58396974>`. |
+   +-----------+-----------+------------------+----------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0020212663table58396974:
+.. _en-us_topic_0020212663__table58396974:
 
 .. table:: **Table 3** **nics** field description
 
-   +-----------------+-----------------+------------------+-----------------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type             | Description                                                                                               |
-   +=================+=================+==================+===========================================================================================================+
-   | subnet_id       | Yes             | String           | Specifies the information about the NICs to be added to an ECS.                                           |
-   |                 |                 |                  |                                                                                                           |
-   |                 |                 |                  | The value must be the ID of a created network in UUID format.                                             |
-   +-----------------+-----------------+------------------+-----------------------------------------------------------------------------------------------------------+
-   | security_groups | No              | Array of objects | Specifies the security groups for NICs. For details, see `Table 4 <#enustopic0020212663table16100147>`__. |
-   +-----------------+-----------------+------------------+-----------------------------------------------------------------------------------------------------------+
-   | ip_address      | No              | String           | Specifies the IP address. If this parameter is unavailable, the IP address is automatically assigned.     |
-   +-----------------+-----------------+------------------+-----------------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+------------------+------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type             | Description                                                                                                      |
+   +=================+=================+==================+==================================================================================================================+
+   | subnet_id       | Yes             | String           | Specifies the information about the NICs to be added to an ECS.                                                  |
+   |                 |                 |                  |                                                                                                                  |
+   |                 |                 |                  | The value must be the ID of a created network in UUID format.                                                    |
+   +-----------------+-----------------+------------------+------------------------------------------------------------------------------------------------------------------+
+   | security_groups | No              | Array of objects | Specifies the security groups for NICs. For details, see :ref:`Table 4 <en-us_topic_0020212663__table16100147>`. |
+   +-----------------+-----------------+------------------+------------------------------------------------------------------------------------------------------------------+
+   | ip_address      | No              | String           | Specifies the IP address. If this parameter is unavailable, the IP address is automatically assigned.            |
+   +-----------------+-----------------+------------------+------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0020212663table16100147:
+.. _en-us_topic_0020212663__table16100147:
 
 .. table:: **Table 4** **security_groups** field description
 
@@ -72,7 +70,7 @@ Request
 Response
 --------
 
-See `Responses (Task) <../../common_parameters/task_request_result/responses_task.html>`__.
+See :ref:`Responses (Task) <en-us_topic_0022067714>`.
 
 Example Request
 ---------------
@@ -104,11 +102,9 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

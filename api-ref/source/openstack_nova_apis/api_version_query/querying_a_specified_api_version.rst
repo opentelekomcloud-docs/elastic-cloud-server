@@ -1,3 +1,5 @@
+.. _en-us_topic_0065792794:
+
 Querying a Specified API Version
 ================================
 
@@ -22,9 +24,9 @@ URI
 
 GET /{api_version}
 
-`Table 1 <#enustopic0065792794table46110007>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065792794__table46110007>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065792794table46110007:
+.. _en-us_topic_0065792794__table46110007:
 
 .. table:: **Table 1** Parameter description
 
@@ -44,21 +46,15 @@ Response
 
 The following table describes the response parameters.
 
-
-
-.. _ENUSTOPIC0065792794table1456520231001:
-
 .. table:: **Table 2** Response parameters
 
-   +-----------+--------+------------------------------------------------------------------------------------------------+
-   | Parameter | Type   | Description                                                                                    |
-   +===========+========+================================================================================================+
-   | versions  | Object | Specifies the versions. For details, see `Table 3 <#enustopic0065792794table1970522313484>`__. |
-   +-----------+--------+------------------------------------------------------------------------------------------------+
+   +-----------+--------+-------------------------------------------------------------------------------------------------------+
+   | Parameter | Type   | Description                                                                                           |
+   +===========+========+=======================================================================================================+
+   | versions  | Object | Specifies the versions. For details, see :ref:`Table 3 <en-us_topic_0065792794__table1970522313484>`. |
+   +-----------+--------+-------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0065792794table1970522313484:
+.. _en-us_topic_0065792794__table1970522313484:
 
 .. table:: **Table 3** **versions** field description
 
@@ -69,9 +65,9 @@ The following table describes the response parameters.
    +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | links                 | Object                | Specifies the links to resources. For more information, see the `OpenStack Documentation <https://docs.openstack.org/api-guide/compute/links_and_references.html>`__.                  |
    |                       |                       |                                                                                                                                                                                        |
-   |                       |                       | For details, see `Table 4 <#enustopic0065792794table1586318199718>`__.                                                                                                                 |
+   |                       |                       | For details, see :ref:`Table 4 <en-us_topic_0065792794__table1586318199718>`.                                                                                                          |
    +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | media-types           | Object                | Specifies the media types. For details, see `Table 5 <#enustopic0065792794table1242753025619>`__.                                                                                      |
+   | media-types           | Object                | Specifies the media types. For details, see :ref:`Table 5 <en-us_topic_0065792794__table1242753025619>`.                                                                               |
    +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | min_version           | string                | -  Specifies the microversion. If the APIs of this version support microversions, set this parameter to the supported minimum microversion.                                            |
    |                       |                       | -  If the microversion is not supported, leave this parameter blank.                                                                                                                   |
@@ -88,9 +84,7 @@ The following table describes the response parameters.
    |                       |                       | -  If the microversion is not supported, leave this parameter blank.                                                                                                                   |
    +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0065792794table1586318199718:
+.. _en-us_topic_0065792794__table1586318199718:
 
 .. table:: **Table 4** **links** field description
 
@@ -104,9 +98,7 @@ The following table describes the response parameters.
    |                       |                       | -  **alternate**: An alternate link can contain an alternate representation of the resource. For example, an OpenStack Compute image might have an alternate representation in the OpenStack Image service. |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0065792794table1242753025619:
+.. _en-us_topic_0065792794__table1242753025619:
 
 .. table:: **Table 5** **media-types** field description
 
@@ -155,6 +147,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

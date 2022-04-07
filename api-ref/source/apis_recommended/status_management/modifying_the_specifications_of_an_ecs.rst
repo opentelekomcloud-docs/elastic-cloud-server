@@ -1,3 +1,5 @@
+.. _en-us_topic_0020212653:
+
 Modifying the Specifications of an ECS
 ======================================
 
@@ -6,7 +8,7 @@ Function
 
 ECS specifications can be modified, for example, upgrading the vCPUs and memory, to meet service requirements. This API is used to modify ECS specifications.
 
-An ECS flavor cannot be changed to certain flavors. For details, see `Querying the Target Flavors to Which an ECS Flavor Can Be Changed <../../apis_recommended/flavor_management/querying_the_target_flavors_to_which_an_ecs_flavor_can_be_changed.html>`__.
+An ECS flavor cannot be changed to certain flavors. For details, see :ref:`Querying the Target Flavors to Which an ECS Flavor Can Be Changed <en-us_topic_0110472767>`.
 
 Constraints
 -----------
@@ -18,9 +20,9 @@ URI
 
 POST /v1/{project_id}/cloudservers/{server_id}/resize
 
-`Table 1 <#enustopic0020212653table29396722>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0020212653__table29396722>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0020212653table29396722:
+.. _en-us_topic_0020212653__table29396722:
 
 .. table:: **Table 1** Parameter description
 
@@ -34,21 +36,19 @@ POST /v1/{project_id}/cloudservers/{server_id}/resize
 Request
 -------
 
-`Table 2 <#enustopic0020212653table6742880>`__ describes the request parameters. 
+:ref:`Table 2 <en-us_topic_0020212653__table6742880>` describes the request parameters.
 
-.. _ENUSTOPIC0020212653table6742880:
+.. _en-us_topic_0020212653__table6742880:
 
 .. table:: **Table 2** Request parameters
 
-   +-----------+-----------+--------+------------------------------------------------------------------------------------------------------------------------+
-   | Parameter | Mandatory | Type   | Description                                                                                                            |
-   +===========+===========+========+========================================================================================================================+
-   | resize    | Yes       | Object | Specifies the operation to modify ECS specifications. For details, see `Table 3 <#enustopic0020212653table7657338>`__. |
-   +-----------+-----------+--------+------------------------------------------------------------------------------------------------------------------------+
+   +-----------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter | Mandatory | Type   | Description                                                                                                                   |
+   +===========+===========+========+===============================================================================================================================+
+   | resize    | Yes       | Object | Specifies the operation to modify ECS specifications. For details, see :ref:`Table 3 <en-us_topic_0020212653__table7657338>`. |
+   +-----------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0020212653table7657338:
+.. _en-us_topic_0020212653__table7657338:
 
 .. table:: **Table 3** **resize** field description
 
@@ -61,7 +61,7 @@ Request
 Response
 --------
 
-See `Responses (Task) <../../common_parameters/task_request_result/responses_task.html>`__.
+See :ref:`Responses (Task) <en-us_topic_0022067714>`.
 
 Example Request
 ---------------
@@ -86,11 +86,9 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

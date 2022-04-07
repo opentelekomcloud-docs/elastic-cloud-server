@@ -1,3 +1,5 @@
+.. _en-us_topic_0101860613:
+
 Querying Disk Attachment of an ECS
 ==================================
 
@@ -11,9 +13,9 @@ URI
 
 GET /v2.1/servers/{server_id}/block_device
 
-`Table 1 <#enustopic0101860613table35893824>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0101860613__table35893824>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0101860613table35893824:
+.. _en-us_topic_0101860613__table35893824:
 
 .. table:: **Table 1** Parameter description
 
@@ -31,23 +33,21 @@ None
 Response
 --------
 
-`Table 2 <#enustopic0101860613table57959838>`__ describes the response parameters. 
+:ref:`Table 2 <en-us_topic_0101860613__table57959838>` describes the response parameters.
 
-.. _ENUSTOPIC0101860613table57959838:
+.. _en-us_topic_0101860613__table57959838:
 
 .. table:: **Table 2** Response parameters
 
-   +--------------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter          | Type             | Description                                                                                                                          |
-   +====================+==================+======================================================================================================================================+
-   | volumeAttachments  | Array of objects | Specifies the disks attached to an ECS. For details, see `Table 3 <#enustopic0101860613table7886611>`__.                             |
-   +--------------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------+
-   | attachableQuantity | Object           | Specifies the number of disks that can be attached to an ECS. For details, see `Table 4 <#enustopic0101860613table1635814953813>`__. |
-   +--------------------+------------------+--------------------------------------------------------------------------------------------------------------------------------------+
+   +--------------------+------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter          | Type             | Description                                                                                                                                 |
+   +====================+==================+=============================================================================================================================================+
+   | volumeAttachments  | Array of objects | Specifies the disks attached to an ECS. For details, see :ref:`Table 3 <en-us_topic_0101860613__table7886611>`.                             |
+   +--------------------+------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+   | attachableQuantity | Object           | Specifies the number of disks that can be attached to an ECS. For details, see :ref:`Table 4 <en-us_topic_0101860613__table1635814953813>`. |
+   +--------------------+------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0101860613table7886611:
+.. _en-us_topic_0101860613__table7886611:
 
 .. table:: **Table 3** **volumeAttachments** parameters
 
@@ -78,9 +78,7 @@ Response
    |                       |                       | Options: **virtio** and **scsi**                                                      |
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0101860613table1635814953813:
+.. _en-us_topic_0101860613__table1635814953813:
 
 .. table:: **Table 4** **attachableQuantity** parameters
 
@@ -139,11 +137,9 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

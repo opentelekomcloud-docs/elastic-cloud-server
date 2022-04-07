@@ -1,3 +1,5 @@
+.. _en-us_topic_0065792793:
+
 Querying All API Versions
 =========================
 
@@ -26,21 +28,15 @@ Response
 
 The following table describes the response parameters.
 
-
-
-.. _ENUSTOPIC0065792793table1456520231001:
-
 .. table:: **Table 1** Response parameters
 
-   +-----------+--------+--------------------------------------------------------------------------------------------------+
-   | Parameter | Type   | Description                                                                                      |
-   +===========+========+==================================================================================================+
-   | versions  | Object | Specifies the API versions. For details, see `Table 2 <#enustopic0065792793table16114143917>`__. |
-   +-----------+--------+--------------------------------------------------------------------------------------------------+
+   +-----------+--------+---------------------------------------------------------------------------------------------------------+
+   | Parameter | Type   | Description                                                                                             |
+   +===========+========+=========================================================================================================+
+   | versions  | Object | Specifies the API versions. For details, see :ref:`Table 2 <en-us_topic_0065792793__table16114143917>`. |
+   +-----------+--------+---------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0065792793table16114143917:
+.. _en-us_topic_0065792793__table16114143917:
 
 .. table:: **Table 2** **versions** field description
 
@@ -49,7 +45,7 @@ The following table describes the response parameters.
    +=======================+=======================+=============================================================================================================================================+
    | id                    | string                | Specifies the version ID.                                                                                                                   |
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
-   | links                 | Object                | Specifies shortcut links for versions. For details, see `Table 3 <#enustopic0065792793table1586318199718>`__.                               |
+   | links                 | Object                | Specifies shortcut links for versions. For details, see :ref:`Table 3 <en-us_topic_0065792793__table1586318199718>`.                        |
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
    | min_version           | string                | -  Specifies the microversion. If the APIs of this version support microversions, set this parameter to the supported minimum microversion. |
    |                       |                       | -  If the microversion is not supported, leave this parameter blank.                                                                        |
@@ -68,9 +64,7 @@ The following table describes the response parameters.
    |                       |                       | If the API version is 2.0, the value is **2011-01-21T11:33:21Z**. If the API version is 2.1, the value is **2013-07-23T11:33:21Z**.         |
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0065792793table1586318199718:
+.. _en-us_topic_0065792793__table1586318199718:
 
 .. table:: **Table 3** **links** field description
 
@@ -115,6 +109,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

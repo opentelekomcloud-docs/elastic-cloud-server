@@ -1,3 +1,5 @@
+.. _en-us_topic_0132905656:
+
 Cold Migrating an ECS
 =====================
 
@@ -20,9 +22,9 @@ URI
 
 POST /v1/{project_id}/cloudservers/{server_id}/migrate
 
-`Table 1 <#enustopic0132905656table29396722>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0132905656__table29396722>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0132905656table29396722:
+.. _en-us_topic_0132905656__table29396722:
 
 .. table:: **Table 1** Parameter description
 
@@ -36,23 +38,21 @@ POST /v1/{project_id}/cloudservers/{server_id}/migrate
 Request
 -------
 
-`Table 2 <#enustopic0132905656table6742880>`__ describes the request parameters. 
+:ref:`Table 2 <en-us_topic_0132905656__table6742880>` describes the request parameters.
 
-.. _ENUSTOPIC0132905656table6742880:
+.. _en-us_topic_0132905656__table6742880:
 
 .. table:: **Table 2** Request parameters
 
-   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                                                        |
-   +=================+=================+=================+====================================================================================================+
-   | migrate         | Yes             | Object          | Specifies the ECS to be migrated. For details, see `Table 3 <#enustopic0132905656table7657338>`__. |
-   |                 |                 |                 |                                                                                                    |
-   |                 |                 |                 | When migrating an ECS from a DeH to a public resource pool, the **migrate** value is null.         |
-   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                                               |
+   +=================+=================+=================+===========================================================================================================+
+   | migrate         | Yes             | Object          | Specifies the ECS to be migrated. For details, see :ref:`Table 3 <en-us_topic_0132905656__table7657338>`. |
+   |                 |                 |                 |                                                                                                           |
+   |                 |                 |                 | When migrating an ECS from a DeH to a public resource pool, the **migrate** value is null.                |
+   +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0132905656table7657338:
+.. _en-us_topic_0132905656__table7657338:
 
 .. table:: **Table 3** **migrate** field description
 
@@ -67,7 +67,7 @@ Request
 Response
 --------
 
-See `Responses (Task) <../../common_parameters/task_request_result/responses_task.html>`__.
+See :ref:`Responses (Task) <en-us_topic_0022067714>`.
 
 Example Request
 ---------------
@@ -96,11 +96,9 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

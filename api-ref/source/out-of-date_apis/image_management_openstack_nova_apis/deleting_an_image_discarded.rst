@@ -1,3 +1,5 @@
+.. _en-us_topic_0065817699:
+
 Deleting an Image (Discarded)
 =============================
 
@@ -15,9 +17,9 @@ DELETE /v2/{project_id}/images/{image_id}
 
 DELETE /v2.1/{project_id}/images/{image_id}
 
-`Table 1 <#enustopic0065817699table148747347424>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065817699__table148747347424>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065817699table148747347424:
+.. _en-us_topic_0065817699__table148747347424:
 
 .. table:: **Table 1** Parameter description
 
@@ -54,6 +56,4 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

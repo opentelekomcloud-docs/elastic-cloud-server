@@ -1,3 +1,5 @@
+.. _en-us_topic_0081950549:
+
 Disassociating an FPGA Image from an ECS Image
 ==============================================
 
@@ -11,11 +13,9 @@ URI
 
 DELETE /v1/{project_id}/cloudservers/fpga_image/{fpga_image_id}/association
 
-`Table 1 <#enustopic0081950549table28107133211632>`__ describes the parameters in the URI.
+:ref:`Table 1 <en-us_topic_0081950549__table28107133211632>` describes the parameters in the URI.
 
-
-
-.. _ENUSTOPIC0081950549table28107133211632:
+.. _en-us_topic_0081950549__table28107133211632:
 
 .. table:: **Table 1** Parameter description
 
@@ -29,11 +29,9 @@ DELETE /v1/{project_id}/cloudservers/fpga_image/{fpga_image_id}/association
 Request
 -------
 
-`Table 2 <#enustopic0081950549table41782128362>`__ describes the request parameters.
+:ref:`Table 2 <en-us_topic_0081950549__table41782128362>` describes the request parameters.
 
-
-
-.. _ENUSTOPIC0081950549table41782128362:
+.. _en-us_topic_0081950549__table41782128362:
 
 .. table:: **Table 2** Request parameters
 
@@ -42,10 +40,6 @@ Request
    ========= ====== ========= ========================
    image     Object Yes       Specifies the ECS image.
    ========= ====== ========= ========================
-
-
-
-.. _ENUSTOPIC0081950549table9461983324:
 
 .. table:: **Table 3** **image** field description
 
@@ -83,11 +77,9 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

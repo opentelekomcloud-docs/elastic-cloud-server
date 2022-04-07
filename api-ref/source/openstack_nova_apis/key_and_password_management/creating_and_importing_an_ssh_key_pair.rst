@@ -1,3 +1,5 @@
+.. _en-us_topic_0020212678:
+
 Creating and Importing an SSH Key Pair
 ======================================
 
@@ -17,9 +19,9 @@ POST /v2.1/{project_id}/os-keypairs
 
 POST /v2/{project_id}/os-keypairs
 
-`Table 1 <#enustopic0020212678table909717>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0020212678__table909717>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0020212678table909717:
+.. _en-us_topic_0020212678__table909717:
 
 .. table:: **Table 1** Parameter description
 
@@ -32,27 +34,23 @@ POST /v2/{project_id}/os-keypairs
 Request
 -------
 
-`Table 2 <#enustopic0020212678table8287277>`__ describes the request parameters.
+:ref:`Table 2 <en-us_topic_0020212678__table8287277>` describes the request parameters.
 
 .. note::
 
    When creating an SSH key, you only need to configure **name**. When importing an SSH key, you must configure **public_key**.
 
-
-
-.. _ENUSTOPIC0020212678table8287277:
+.. _en-us_topic_0020212678__table8287277:
 
 .. table:: **Table 2** Request parameters
 
-   +-----------+-----------+--------+-------------------------------------------------------------------------------------------------------------------+
-   | Parameter | Mandatory | Type   | Description                                                                                                       |
-   +===========+===========+========+===================================================================================================================+
-   | keypair   | Yes       | Object | Specifies the created or imported SSH key pair. For details, see `Table 3 <#enustopic0020212678table54046809>`__. |
-   +-----------+-----------+--------+-------------------------------------------------------------------------------------------------------------------+
+   +-----------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------+
+   | Parameter | Mandatory | Type   | Description                                                                                                              |
+   +===========+===========+========+==========================================================================================================================+
+   | keypair   | Yes       | Object | Specifies the created or imported SSH key pair. For details, see :ref:`Table 3 <en-us_topic_0020212678__table54046809>`. |
+   +-----------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0020212678table54046809:
+.. _en-us_topic_0020212678__table54046809:
 
 .. table:: **Table 3** **keypair** field description
 
@@ -83,21 +81,19 @@ Request
 Response
 --------
 
-`Table 4 <#enustopic0020212678table51598880>`__ describes the response parameters. 
+:ref:`Table 4 <en-us_topic_0020212678__table51598880>` describes the response parameters.
 
-.. _ENUSTOPIC0020212678table51598880:
+.. _en-us_topic_0020212678__table51598880:
 
 .. table:: **Table 4** Response parameters
 
-   +-----------+--------+-----------------------------------------------------------------------------------------------+
-   | Parameter | Type   | Description                                                                                   |
-   +===========+========+===============================================================================================+
-   | keypair   | Object | Specifies the SSH key pair. For details, see `Table 5 <#enustopic0020212678table51079899>`__. |
-   +-----------+--------+-----------------------------------------------------------------------------------------------+
+   +-----------+--------+------------------------------------------------------------------------------------------------------+
+   | Parameter | Type   | Description                                                                                          |
+   +===========+========+======================================================================================================+
+   | keypair   | Object | Specifies the SSH key pair. For details, see :ref:`Table 5 <en-us_topic_0020212678__table51079899>`. |
+   +-----------+--------+------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0020212678table51079899:
+.. _en-us_topic_0020212678__table51079899:
 
 .. table:: **Table 5** **keypair** field description
 
@@ -190,6 +186,4 @@ Example Response (Creating an SSH Key)
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

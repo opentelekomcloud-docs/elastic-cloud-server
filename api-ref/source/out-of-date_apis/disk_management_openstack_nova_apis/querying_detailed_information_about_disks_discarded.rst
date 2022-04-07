@@ -1,3 +1,5 @@
+.. _en-us_topic_0065817710:
+
 Querying Detailed Information About Disks (Discarded)
 =====================================================
 
@@ -15,9 +17,9 @@ GET /v2/{project_id}/os-volumes/detail
 
 GET /v2.1/{project_id}/os-volumes/detail
 
-`Table 1 <#enustopic0065817710enustopic0057973210table2814978410562>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065817710__en-us_topic_0057973210_table2814978410562>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065817710enustopic0057973210table2814978410562:
+.. _en-us_topic_0065817710__en-us_topic_0057973210_table2814978410562:
 
 .. table:: **Table 1** Parameter description
 
@@ -35,11 +37,9 @@ N/A
 Response
 --------
 
-`Table 2 <#enustopic0065817710enustopic0057973210table20675657>`__ describes the response parameters.
+:ref:`Table 2 <en-us_topic_0065817710__en-us_topic_0057973210_table20675657>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0065817710enustopic0057973210table20675657:
+.. _en-us_topic_0065817710__en-us_topic_0057973210_table20675657:
 
 .. table:: **Table 2** Response parameters
 
@@ -68,10 +68,6 @@ Response
    +--------------------+------------------+----------------------------------------------------+
    | size               | Integer          | Specifies the disk size.                           |
    +--------------------+------------------+----------------------------------------------------+
-
-
-
-.. _ENUSTOPIC0065817710enustopic0057973210table10694153118228:
 
 .. table:: **Table 3** **attachments** field description
 
@@ -118,6 +114,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

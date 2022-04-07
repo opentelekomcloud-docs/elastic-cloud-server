@@ -1,3 +1,5 @@
+.. _en-us_topic_0065820823:
+
 Adding Tags to an ECS
 =====================
 
@@ -10,9 +12,9 @@ URI
 
 PUT /v2.1/{project_id}/servers/{server_id}/tags
 
-`Table 1 <#enustopic0065820823enustopic0057972838table32475667>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065820823__en-us_topic_0057972838_table32475667>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065820823enustopic0057972838table32475667:
+.. _en-us_topic_0065820823__en-us_topic_0057972838_table32475667:
 
 .. table:: **Table 1** Parameter description
 
@@ -26,11 +28,9 @@ PUT /v2.1/{project_id}/servers/{server_id}/tags
 Request
 -------
 
-`Table 2 <#enustopic0065820823enustopic0057972838table28387752>`__ describes the request parameters.
+:ref:`Table 2 <en-us_topic_0065820823__en-us_topic_0057972838_table28387752>` describes the request parameters.
 
-
-
-.. _ENUSTOPIC0065820823enustopic0057972838table28387752:
+.. _en-us_topic_0065820823__en-us_topic_0057972838_table28387752:
 
 .. table:: **Table 2** Request parameters
 
@@ -47,10 +47,6 @@ Request
 Response
 --------
 
-
-
-.. _ENUSTOPIC0065820823table1481741123815:
-
 .. table:: **Table 3** Response parameters
 
    ========= ========= ================ ===================
@@ -58,10 +54,6 @@ Response
    ========= ========= ================ ===================
    tags      Yes       Array of strings Specifies ECS tags.
    ========= ========= ================ ===================
-
-
-
-.. _ENUSTOPIC0065820823table5668174110389:
 
 .. table:: **Table 4** Reserved tag parameters
 
@@ -97,6 +89,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

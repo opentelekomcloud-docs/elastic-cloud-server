@@ -1,3 +1,5 @@
+.. _en-us_topic_0065817689:
+
 Obtaining ECS Management Console Logs
 =====================================
 
@@ -13,9 +15,9 @@ POST /v2.1/{project_id}/servers/{server_id}/action
 
 POST /v2/{project_id}/servers/{server_id}/action
 
-`Table 1 <#enustopic0065817689table10917102617186>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065817689__table10917102617186>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065817689table10917102617186:
+.. _en-us_topic_0065817689__table10917102617186:
 
 .. table:: **Table 1** Parameter description
 
@@ -34,23 +36,19 @@ This API will be discarded since a version later than microversion 2.5. When usi
 Request
 -------
 
-`Table 2 <#enustopic0065817689table168291156125012>`__ describes the request parameters.
+:ref:`Table 2 <en-us_topic_0065817689__table168291156125012>` describes the request parameters.
 
-
-
-.. _ENUSTOPIC0065817689table168291156125012:
+.. _en-us_topic_0065817689__table168291156125012:
 
 .. table:: **Table 2** Request parameters
 
-   +---------------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter           | Mandatory | Type   | Description                                                                                                                    |
-   +=====================+===========+========+================================================================================================================================+
-   | os-getConsoleOutput | Yes       | Object | Obtains ECS management console logs. For details, see `Table 3 <#enustopic0065817689enustopic0062473752table1919246111545>`__. |
-   +---------------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------------+
+   +---------------------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter           | Mandatory | Type   | Description                                                                                                                               |
+   +=====================+===========+========+===========================================================================================================================================+
+   | os-getConsoleOutput | Yes       | Object | Obtains ECS management console logs. For details, see :ref:`Table 3 <en-us_topic_0065817689__en-us_topic_0062473752_table1919246111545>`. |
+   +---------------------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0065817689enustopic0062473752table1919246111545:
+.. _en-us_topic_0065817689__en-us_topic_0062473752_table1919246111545:
 
 .. table:: **Table 3** os-getConsoleOutput parameter description
 
@@ -63,11 +61,9 @@ Request
 Response
 --------
 
-`Table 4 <#enustopic0065817689table18130192135217>`__ describes the response parameter.
+:ref:`Table 4 <en-us_topic_0065817689__table18130192135217>` describes the response parameter.
 
-
-
-.. _ENUSTOPIC0065817689table18130192135217:
+.. _en-us_topic_0065817689__table18130192135217:
 
 .. table:: **Table 4** Response parameter
 
@@ -105,6 +101,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

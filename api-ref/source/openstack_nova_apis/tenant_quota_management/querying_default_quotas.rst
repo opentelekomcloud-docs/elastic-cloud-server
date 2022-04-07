@@ -1,3 +1,5 @@
+.. _en-us_topic_0065817716:
+
 Querying Default Quotas
 =======================
 
@@ -13,9 +15,9 @@ GET /v2.1/{project_id}/os-quota-sets/{project_id}/defaults
 
 GET /v2/{project_id}/os-quota-sets/{project_id}/defaults
 
-`Table 1 <#enustopic0065817716enustopic0057973201table258804192629>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065817716__en-us_topic_0057973201_table258804192629>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065817716enustopic0057973201table258804192629:
+.. _en-us_topic_0065817716__en-us_topic_0057973201_table258804192629:
 
 .. table:: **Table 1** Parameter description
 
@@ -33,23 +35,19 @@ None
 Response
 --------
 
-`Table 2 <#enustopic0065817716enustopic0057973201enustopic0057973197table62068690>`__ describes the response parameters.
+:ref:`Table 2 <en-us_topic_0065817716__en-us_topic_0057973201_en-us_topic_0057973197_table62068690>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0065817716enustopic0057973201enustopic0057973197table62068690:
+.. _en-us_topic_0065817716__en-us_topic_0057973201_en-us_topic_0057973197_table62068690:
 
 .. table:: **Table 2** Response parameters
 
-   +-----------+--------+--------------------------------------------------------------------------------------------------------------------------+
-   | Parameter | Type   | Description                                                                                                              |
-   +===========+========+==========================================================================================================================+
-   | quota_set | Object | Specifies the **quota_set** object. For details, see `Table 3 <#enustopic0065817716enustopic0057973201table29589013>`__. |
-   +-----------+--------+--------------------------------------------------------------------------------------------------------------------------+
+   +-----------+--------+-------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter | Type   | Description                                                                                                                         |
+   +===========+========+=====================================================================================================================================+
+   | quota_set | Object | Specifies the **quota_set** object. For details, see :ref:`Table 3 <en-us_topic_0065817716__en-us_topic_0057973201_table29589013>`. |
+   +-----------+--------+-------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0065817716enustopic0057973201table29589013:
+.. _en-us_topic_0065817716__en-us_topic_0057973201_table29589013:
 
 .. table:: **Table 3** **quota_set** parameter description
 
@@ -137,6 +135,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

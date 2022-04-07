@@ -1,3 +1,5 @@
+.. _en-us_topic_0065817707:
+
 Detaching a Disk from an ECS
 ============================
 
@@ -21,9 +23,9 @@ When an ECS is in the **active** state, pay attention to the following constrain
 
    -  For the first part, see `Formats and OSs Supported for External Image Files <https://docs.otc.t-systems.com/en-us/usermanual/ims/en-us_topic_0030713143.html>`__.
 
-   -  `Table 1 <#enustopic0065817707enustopic0036046828table9271324195455>`__ lists the second part of supported OSs. 
+   -  :ref:`Table 1 <en-us_topic_0065817707__en-us_topic_0036046828_table9271324195455>` lists the second part of supported OSs.
 
-.. _ENUSTOPIC0065817707enustopic0036046828table9271324195455:
+      .. _en-us_topic_0065817707__en-us_topic_0036046828_table9271324195455:
 
       .. table:: **Table 1** OSs supporting EVS disk detachment from a running ECS
 
@@ -90,9 +92,9 @@ DELETE /v2.1/{project_id}/servers/{server_id}/os-volume_attachments/{volume_id}
 
 DELETE /v2/{project_id}/servers/{server_id}/os-volume_attachments/{volume_id}
 
-`Table 2 <#enustopic0065817707enustopic0057973182table2814978410562>`__ describes the parameters in the URI. 
+:ref:`Table 2 <en-us_topic_0065817707__en-us_topic_0057973182_table2814978410562>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065817707enustopic0057973182table2814978410562:
+.. _en-us_topic_0065817707__en-us_topic_0057973182_table2814978410562:
 
 .. table:: **Table 2** Parameter description
 
@@ -132,6 +134,4 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

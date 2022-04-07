@@ -1,3 +1,5 @@
+.. _en-us_topic_0133622596:
+
 Removing an ECS from an ECS Group
 =================================
 
@@ -16,9 +18,9 @@ URI
 
 POST /v1/{project_id}/cloudservers/os-server-groups/{server_group_id}/action
 
-`Table 1 <#enustopic0133622596table10769113472410>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0133622596__table10769113472410>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0133622596table10769113472410:
+.. _en-us_topic_0133622596__table10769113472410:
 
 .. table:: **Table 1** Parameter description
 
@@ -32,11 +34,9 @@ POST /v1/{project_id}/cloudservers/os-server-groups/{server_group_id}/action
 Request
 -------
 
-`Table 2 <#enustopic0133622596table45526613251>`__ describes the request parameters.
+:ref:`Table 2 <en-us_topic_0133622596__table45526613251>` describes the request parameters.
 
-
-
-.. _ENUSTOPIC0133622596table45526613251:
+.. _en-us_topic_0133622596__table45526613251:
 
 .. table:: **Table 2** Request parameters
 
@@ -45,10 +45,6 @@ Request
    +===============+===========+========+=======================================================================+
    | remove_member | Yes       | Object | Specifies the information of the ECS to be removed from an ECS group. |
    +---------------+-----------+--------+-----------------------------------------------------------------------+
-
-
-
-.. _ENUSTOPIC0133622596enustopic0057973153table19917766:
 
 .. table:: **Table 3** **remove_member** parameters
 
@@ -86,11 +82,9 @@ Status code 200, indicating that the operation is successful
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

@@ -1,3 +1,5 @@
+.. _en-us_topic_0022472987:
+
 Attaching a Disk to an ECS
 ==========================
 
@@ -11,9 +13,9 @@ URI
 
 POST /v1/{project_id}/cloudservers/{server_id}/attachvolume
 
-`Table 1 <#enustopic0022472987table35528365105553>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0022472987__table35528365105553>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0022472987table35528365105553:
+.. _en-us_topic_0022472987__table35528365105553:
 
 .. table:: **Table 1** Parameter description
 
@@ -27,21 +29,15 @@ POST /v1/{project_id}/cloudservers/{server_id}/attachvolume
 Request
 -------
 
-
-
-.. _ENUSTOPIC0022472987table55654045105553:
-
 .. table:: **Table 2** Request parameters
 
-   +------------------+-----------+--------+-------------------------------------------------------------------------------------------------------------------+
-   | Parameter        | Mandatory | Type   | Description                                                                                                       |
-   +==================+===========+========+===================================================================================================================+
-   | volumeAttachment | Yes       | Object | Specifies the ECS attachment information. For details, see `Table 3 <#enustopic0022472987table40707503151632>`__. |
-   +------------------+-----------+--------+-------------------------------------------------------------------------------------------------------------------+
+   +------------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------+
+   | Parameter        | Mandatory | Type   | Description                                                                                                              |
+   +==================+===========+========+==========================================================================================================================+
+   | volumeAttachment | Yes       | Object | Specifies the ECS attachment information. For details, see :ref:`Table 3 <en-us_topic_0022472987__table40707503151632>`. |
+   +------------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0022472987table40707503151632:
+.. _en-us_topic_0022472987__table40707503151632:
 
 .. table:: **Table 3** **volumeAttachment** field description
 
@@ -61,7 +57,7 @@ Request
 Response
 --------
 
-See `Responses (Task) <../../common_parameters/task_request_result/responses_task.html>`__.
+See :ref:`Responses (Task) <en-us_topic_0022067714>`.
 
 Example Request
 ---------------
@@ -91,11 +87,9 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

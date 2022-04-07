@@ -1,3 +1,5 @@
+.. _en-us_topic_0065817717:
+
 Querying Tenant Quota Limits
 ============================
 
@@ -15,9 +17,9 @@ GET /v2.1/{project_id}/limits?project_id={project_id}
 
 GET /v2/{project_id}/limits?project_id={project_id}
 
-`Table 1 <#enustopic0065817717enustopic0057973197table258804192629>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065817717__en-us_topic_0057973197_table258804192629>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065817717enustopic0057973197table258804192629:
+.. _en-us_topic_0065817717__en-us_topic_0057973197_table258804192629:
 
 .. table:: **Table 1** Parameter description
 
@@ -35,37 +37,31 @@ None
 Response
 --------
 
-`Table 2 <#enustopic0065817717enustopic0057973197table62068690>`__ describes the response parameters.
+:ref:`Table 2 <en-us_topic_0065817717__en-us_topic_0057973197_table62068690>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0065817717enustopic0057973197table62068690:
+.. _en-us_topic_0065817717__en-us_topic_0057973197_table62068690:
 
 .. table:: **Table 2** Response parameters
 
-   +-----------+--------+---------------------------------------------------------------------------------------------------------------+
-   | Parameter | Type   | Description                                                                                                   |
-   +===========+========+===============================================================================================================+
-   | limits    | Object | Specifies tenant limits. For details, see `Table 3 <#enustopic0065817717enustopic0057973197table35022095>`__. |
-   +-----------+--------+---------------------------------------------------------------------------------------------------------------+
+   +-----------+--------+--------------------------------------------------------------------------------------------------------------------------+
+   | Parameter | Type   | Description                                                                                                              |
+   +===========+========+==========================================================================================================================+
+   | limits    | Object | Specifies tenant limits. For details, see :ref:`Table 3 <en-us_topic_0065817717__en-us_topic_0057973197_table35022095>`. |
+   +-----------+--------+--------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0065817717enustopic0057973197table35022095:
+.. _en-us_topic_0065817717__en-us_topic_0057973197_table35022095:
 
 .. table:: **Table 3** **limits** parameter information
 
-   +-----------+--------+---------------------------------------------------------------------------------------------------------------------+
-   | Parameter | Type   | Description                                                                                                         |
-   +===========+========+=====================================================================================================================+
-   | rate      | List   | The value is empty.                                                                                                 |
-   +-----------+--------+---------------------------------------------------------------------------------------------------------------------+
-   | absolute  | Object | Specifies tenant quota limits. For details, see `Table 4 <#enustopic0065817717enustopic0057973197table37171349>`__. |
-   +-----------+--------+---------------------------------------------------------------------------------------------------------------------+
+   +-----------+--------+--------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter | Type   | Description                                                                                                                    |
+   +===========+========+================================================================================================================================+
+   | rate      | List   | The value is empty.                                                                                                            |
+   +-----------+--------+--------------------------------------------------------------------------------------------------------------------------------+
+   | absolute  | Object | Specifies tenant quota limits. For details, see :ref:`Table 4 <en-us_topic_0065817717__en-us_topic_0057973197_table37171349>`. |
+   +-----------+--------+--------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0065817717enustopic0057973197table37171349:
+.. _en-us_topic_0065817717__en-us_topic_0057973197_table37171349:
 
 .. table:: **Table 4** **absolute** parameter information
 
@@ -194,6 +190,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

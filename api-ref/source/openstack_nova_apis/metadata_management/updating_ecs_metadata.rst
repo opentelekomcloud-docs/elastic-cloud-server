@@ -1,3 +1,5 @@
+.. _en-us_topic_0025560298:
+
 Updating ECS Metadata
 =====================
 
@@ -22,9 +24,9 @@ POST /v2.1/{project_id}/servers/{server_id}/metadata
 
 POST /v2/{project_id}/servers/{server_id}/metadata
 
-`Table 1 <#enustopic0025560298table18618337185333>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0025560298__table18618337185333>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0025560298table18618337185333:
+.. _en-us_topic_0025560298__table18618337185333:
 
 .. table:: **Table 1** Parameter description
 
@@ -38,9 +40,9 @@ POST /v2/{project_id}/servers/{server_id}/metadata
 Request
 -------
 
-`Table 2 <#enustopic0025560298table52485804185333>`__ describes the request parameters. 
+:ref:`Table 2 <en-us_topic_0025560298__table52485804185333>` describes the request parameters.
 
-.. _ENUSTOPIC0025560298table52485804185333:
+.. _en-us_topic_0025560298__table52485804185333:
 
 .. table:: **Table 2** Request parameters
 
@@ -61,9 +63,9 @@ Request
 Response
 --------
 
-`Table 3 <#enustopic0025560298table48150236185333>`__ describes the response parameters. 
+:ref:`Table 3 <en-us_topic_0025560298__table48150236185333>` describes the response parameters.
 
-.. _ENUSTOPIC0025560298table48150236185333:
+.. _en-us_topic_0025560298__table48150236185333:
 
 .. table:: **Table 3** Response parameters
 
@@ -103,6 +105,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

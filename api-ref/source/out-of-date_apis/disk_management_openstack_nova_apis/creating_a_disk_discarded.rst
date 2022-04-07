@@ -1,3 +1,5 @@
+.. _en-us_topic_0065817708:
+
 Creating a Disk (Discarded)
 ===========================
 
@@ -15,9 +17,9 @@ POST /v2/{project_id}/os-volumes
 
 POST /v2.1/{project_id}/os-volumes
 
-`Table 1 <#enustopic0065817708enustopic0057973208table2814978410562>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065817708__en-us_topic_0057973208_table2814978410562>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065817708enustopic0057973208table2814978410562:
+.. _en-us_topic_0065817708__en-us_topic_0057973208_table2814978410562:
 
 .. table:: **Table 1** Parameter description
 
@@ -30,11 +32,9 @@ POST /v2.1/{project_id}/os-volumes
 Request
 -------
 
-`Table 2 <#enustopic0065817708enustopic0057973208table34804632>`__ describes the request parameters.
+:ref:`Table 2 <en-us_topic_0065817708__en-us_topic_0057973208_table34804632>` describes the request parameters.
 
-
-
-.. _ENUSTOPIC0065817708enustopic0057973208table34804632:
+.. _en-us_topic_0065817708__en-us_topic_0057973208_table34804632:
 
 .. table:: **Table 2** Request parameters
 
@@ -79,11 +79,9 @@ Request
 Response
 --------
 
-`Table 3 <#enustopic0065817708enustopic0057973208table36305920>`__ describes the response parameters.
+:ref:`Table 3 <en-us_topic_0065817708__en-us_topic_0057973208_table36305920>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0065817708enustopic0057973208table36305920:
+.. _en-us_topic_0065817708__en-us_topic_0057973208_table36305920:
 
 .. table:: **Table 3** Response parameters
 
@@ -166,6 +164,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

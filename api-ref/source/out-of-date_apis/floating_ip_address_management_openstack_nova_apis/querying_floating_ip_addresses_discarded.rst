@@ -1,3 +1,5 @@
+.. _en-us_topic_0065820817:
+
 Querying Floating IP Addresses (Discarded)
 ==========================================
 
@@ -15,9 +17,9 @@ GET /v2/{project_id}/os-floating-ips
 
 GET /v2.1/{project_id}/os-floating-ips
 
-`Table 1 <#enustopic0065820817enustopic0057972671table32475667>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065820817__en-us_topic_0057972671_table32475667>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065820817enustopic0057972671table32475667:
+.. _en-us_topic_0065820817__en-us_topic_0057972671_table32475667:
 
 .. table:: **Table 1** Parameter description
 
@@ -35,11 +37,9 @@ None
 Response
 --------
 
-`Table 2 <#enustopic0065820817enustopic0057972671table49535170>`__ describes the response parameters.
+:ref:`Table 2 <en-us_topic_0065820817__en-us_topic_0057972671_table49535170>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0065820817enustopic0057972671table49535170:
+.. _en-us_topic_0065820817__en-us_topic_0057972671_table49535170:
 
 .. table:: **Table 2** Response parameters
 
@@ -49,10 +49,6 @@ Response
    | floating_ips | Yes       | Array of objects | Specifies the floating IP addresses. |
    +--------------+-----------+------------------+--------------------------------------+
 
-
-
-.. _ENUSTOPIC0065820817enustopic0057972671table9705331:
-
 .. table:: **Table 3** **floating_ip** objects
 
    =========== ========= ====== ==================================
@@ -60,10 +56,6 @@ Response
    =========== ========= ====== ==================================
    floating_ip Yes       Object Specifies the floating IP address.
    =========== ========= ====== ==================================
-
-
-
-.. _ENUSTOPIC0065820817enustopic0057972671table44403789:
 
 .. table:: **Table 4** **floating_ip** attributes
 
@@ -116,6 +108,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

@@ -1,3 +1,5 @@
+.. _en-us_topic_0020212666:
+
 Deleting a NIC from an ECS
 ==========================
 
@@ -20,9 +22,9 @@ DELETE /v2.1/{project_id}/servers/{server_id}/os-interface/{port_id}{?reserve_po
 
 DELETE /v2/{project_id}/servers/{server_id}/os-interface/{port_id}{?reserve_port}
 
-`Table 1 <#enustopic0020212666table34333880>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0020212666__table34333880>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0020212666table34333880:
+.. _en-us_topic_0020212666__table34333880:
 
 .. table:: **Table 1** Parameter description
 
@@ -72,6 +74,4 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

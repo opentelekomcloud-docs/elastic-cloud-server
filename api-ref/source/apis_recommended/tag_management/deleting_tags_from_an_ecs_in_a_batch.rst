@@ -1,3 +1,5 @@
+.. _en-us_topic_0167811964:
+
 Deleting Tags from an ECS in a Batch
 ====================================
 
@@ -21,9 +23,9 @@ URI
 
 POST /v1/{project_id}/cloudservers/{server_id}/tags/action
 
-`Table 1 <#enustopic0167811964table1320245602220>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0167811964__table1320245602220>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0167811964table1320245602220:
+.. _en-us_topic_0167811964__table1320245602220:
 
 .. table:: **Table 1** Parameter description
 
@@ -37,25 +39,21 @@ POST /v1/{project_id}/cloudservers/{server_id}/tags/action
 Request
 -------
 
-`Table 2 <#enustopic0167811964table105531424192318>`__ describes the request parameters.
+:ref:`Table 2 <en-us_topic_0167811964__table105531424192318>` describes the request parameters.
 
-
-
-.. _ENUSTOPIC0167811964table105531424192318:
+.. _en-us_topic_0167811964__table105531424192318:
 
 .. table:: **Table 2** Request parameters
 
    +-----------+-----------+------------------+----------------------------------------------------------------------------------------------------------------------------+
    | Parameter | Mandatory | Type             | Description                                                                                                                |
    +===========+===========+==================+============================================================================================================================+
-   | tags      | Yes       | Array of objects | Specifies tags. For details, see `Table 3 <#enustopic0167811964table6449181462417>`__.                                     |
+   | tags      | Yes       | Array of objects | Specifies tags. For details, see :ref:`Table 3 <en-us_topic_0167811964__table6449181462417>`.                              |
    +-----------+-----------+------------------+----------------------------------------------------------------------------------------------------------------------------+
    | action    | Yes       | String           | Specifies the operation. (Only lowercase letters are supported.) For example, **delete** indicates the deletion operation. |
    +-----------+-----------+------------------+----------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0167811964table6449181462417:
+.. _en-us_topic_0167811964__table6449181462417:
 
 .. table:: **Table 3** **tags** field description
 
@@ -109,11 +107,9 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

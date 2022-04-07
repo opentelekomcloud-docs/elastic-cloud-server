@@ -1,3 +1,5 @@
+.. _en-us_topic_0025560299:
+
 Deleting Specified ECS Metadata
 ===============================
 
@@ -18,9 +20,9 @@ DELETE /v2.1/{project_id}/servers/{server_id}/metadata/{key}
 
 DELETE /v2/{project_id}/servers/{server_id}/metadata/{key}
 
-`Table 1 <#enustopic0025560299table14014174185439>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0025560299__table14014174185439>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0025560299table14014174185439:
+.. _en-us_topic_0025560299__table14014174185439:
 
 .. table:: **Table 1** Parameter description
 
@@ -58,6 +60,4 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

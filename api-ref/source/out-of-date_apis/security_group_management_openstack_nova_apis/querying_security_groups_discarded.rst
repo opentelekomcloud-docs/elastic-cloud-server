@@ -1,3 +1,5 @@
+.. _en-us_topic_0090187679:
+
 Querying Security Groups (Discarded)
 ====================================
 
@@ -15,9 +17,9 @@ GET /v2/{project_id}/os-security-groups
 
 GET /v2.1/{project_id}/os-security-groups
 
-`Table 1 <#enustopic0090187679enustopic0057973221table55945983>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0090187679__en-us_topic_0057973221_table55945983>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0090187679enustopic0057973221table55945983:
+.. _en-us_topic_0090187679__en-us_topic_0057973221_table55945983:
 
 .. table:: **Table 1** Parameter description
 
@@ -39,43 +41,37 @@ N/A
 Response
 --------
 
-`Table 2 <#enustopic0090187679enustopic0057973221table66376806>`__ describes the response parameters.
+:ref:`Table 2 <en-us_topic_0090187679__en-us_topic_0057973221_table66376806>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0090187679enustopic0057973221table66376806:
+.. _en-us_topic_0090187679__en-us_topic_0057973221_table66376806:
 
 .. table:: **Table 2** Response parameters
 
-   +-----------------+------------------+-----------------------------------------------------------------------------------------------------------------+
-   | Parameter       | Type             | Description                                                                                                     |
-   +=================+==================+=================================================================================================================+
-   | security_groups | Array of objects | Specifies security groups. For details, see `Table 3 <#enustopic0090187679enustopic0057973221table12520187>`__. |
-   +-----------------+------------------+-----------------------------------------------------------------------------------------------------------------+
+   +-----------------+------------------+----------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Type             | Description                                                                                                                |
+   +=================+==================+============================================================================================================================+
+   | security_groups | Array of objects | Specifies security groups. For details, see :ref:`Table 3 <en-us_topic_0090187679__en-us_topic_0057973221_table12520187>`. |
+   +-----------------+------------------+----------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0090187679enustopic0057973221table12520187:
+.. _en-us_topic_0090187679__en-us_topic_0057973221_table12520187:
 
 .. table:: **Table 3** **security_group** objects
 
-   +-------------+------------------+----------------------------------------------------------------------------------------------------------------------+
-   | Parameter   | Type             | Description                                                                                                          |
-   +=============+==================+======================================================================================================================+
-   | description | String           | Specifies information about a security group. It must contain 0 to 255 characters.                                   |
-   +-------------+------------------+----------------------------------------------------------------------------------------------------------------------+
-   | id          | String           | Specifies the security group ID in UUID format.                                                                      |
-   +-------------+------------------+----------------------------------------------------------------------------------------------------------------------+
-   | name        | String           | Specifies the security group name. It must contain 0 to 255 characters.                                              |
-   +-------------+------------------+----------------------------------------------------------------------------------------------------------------------+
-   | rules       | Array of objects | Specifies security group rules. For details, see `Table 4 <#enustopic0090187679enustopic0057973221table34485122>`__. |
-   +-------------+------------------+----------------------------------------------------------------------------------------------------------------------+
-   | tenant_id   | String           | Specifies the tenant or project ID.                                                                                  |
-   +-------------+------------------+----------------------------------------------------------------------------------------------------------------------+
+   +-------------+------------------+---------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter   | Type             | Description                                                                                                                     |
+   +=============+==================+=================================================================================================================================+
+   | description | String           | Specifies information about a security group. It must contain 0 to 255 characters.                                              |
+   +-------------+------------------+---------------------------------------------------------------------------------------------------------------------------------+
+   | id          | String           | Specifies the security group ID in UUID format.                                                                                 |
+   +-------------+------------------+---------------------------------------------------------------------------------------------------------------------------------+
+   | name        | String           | Specifies the security group name. It must contain 0 to 255 characters.                                                         |
+   +-------------+------------------+---------------------------------------------------------------------------------------------------------------------------------+
+   | rules       | Array of objects | Specifies security group rules. For details, see :ref:`Table 4 <en-us_topic_0090187679__en-us_topic_0057973221_table34485122>`. |
+   +-------------+------------------+---------------------------------------------------------------------------------------------------------------------------------+
+   | tenant_id   | String           | Specifies the tenant or project ID.                                                                                             |
+   +-------------+------------------+---------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0090187679enustopic0057973221table34485122:
+.. _en-us_topic_0090187679__en-us_topic_0057973221_table34485122:
 
 .. table:: **Table 4** **security_group_rule** objects
 
@@ -102,20 +98,18 @@ Response
    |                       |                       |                                                                                                                                                                                                                                                                                                                 |
    |                       |                       |    The ICMP message type is determined by the type field and code field in the packet. For details, see **Appendix** > **ICMP-Port Range Relationship Table** in *Virtual Private Cloud API Reference*. **port_range_min** indicates the ICMP type, and **port_range_max** indicates the ICMP code.             |
    +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | ip_range              | Object                | Specifies the peer IP segment in CIDR format. For details, see `Table 5 <#enustopic0090187679enustopic0057973221table4101480163218>`__.                                                                                                                                                                         |
+   | ip_range              | Object                | Specifies the peer IP segment in CIDR format. For details, see :ref:`Table 5 <en-us_topic_0090187679__en-us_topic_0057973221_table4101480163218>`.                                                                                                                                                              |
    |                       |                       |                                                                                                                                                                                                                                                                                                                 |
    |                       |                       | Specify either **ip_range** or **group**.                                                                                                                                                                                                                                                                       |
    +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | group                 | Object                | Specifies the name of the peer security group and the ID of the tenant in the peer security group. For details, see `Table 6 <#enustopic0090187679enustopic0057973221table9527961163416>`__.                                                                                                                    |
+   | group                 | Object                | Specifies the name of the peer security group and the ID of the tenant in the peer security group. For details, see :ref:`Table 6 <en-us_topic_0090187679__en-us_topic_0057973221_table9527961163416>`.                                                                                                         |
    |                       |                       |                                                                                                                                                                                                                                                                                                                 |
    |                       |                       | Specify either **ip_range** or **group**.                                                                                                                                                                                                                                                                       |
    +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | id                    | String                | Specifies the security group rule ID in UUID format.                                                                                                                                                                                                                                                            |
    +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0090187679enustopic0057973221table4101480163218:
+.. _en-us_topic_0090187679__en-us_topic_0057973221_table4101480163218:
 
 .. table:: **Table 5** **ip_range** objects
 
@@ -125,9 +119,7 @@ Response
    cidr      String Specifies the peer IP segment in CIDR format.
    ========= ====== =============================================
 
-
-
-.. _ENUSTOPIC0090187679enustopic0057973221table9527961163416:
+.. _en-us_topic_0090187679__en-us_topic_0057973221_table9527961163416:
 
 .. table:: **Table 6** **group** objects
 
@@ -222,6 +214,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

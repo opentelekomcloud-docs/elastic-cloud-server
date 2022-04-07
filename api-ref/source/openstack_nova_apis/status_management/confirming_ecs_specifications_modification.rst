@@ -1,3 +1,5 @@
+.. _en-us_topic_0028714262:
+
 Confirming ECS Specifications Modification
 ==========================================
 
@@ -24,9 +26,9 @@ POST /v2.1/{project_id}/servers/{server_id}/action
 
 POST /v2/{project_id}/servers/{server_id}/action
 
-`Table 1 <#enustopic0028714262table54458463165029>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0028714262__table54458463165029>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0028714262table54458463165029:
+.. _en-us_topic_0028714262__table54458463165029:
 
 .. table:: **Table 1** Parameter description
 
@@ -40,9 +42,9 @@ POST /v2/{project_id}/servers/{server_id}/action
 Request
 -------
 
-`Table 2 <#enustopic0028714262table47783938165029>`__ describes the request parameters. 
+:ref:`Table 2 <en-us_topic_0028714262__table47783938165029>` describes the request parameters.
 
-.. _ENUSTOPIC0028714262table47783938165029:
+.. _en-us_topic_0028714262__table47783938165029:
 
 .. table:: **Table 2** Request parameters
 
@@ -79,6 +81,4 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

@@ -1,3 +1,5 @@
+.. _en-us_topic_0065817720:
+
 Creating an ECS Group
 =====================
 
@@ -18,9 +20,9 @@ POST /v2.1/{project_id}/os-server-groups
 
 POST /v2/{project_id}/os-server-groups
 
-`Table 1 <#enustopic0065817720table1334523718138>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065817720__table1334523718138>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065817720table1334523718138:
+.. _en-us_topic_0065817720__table1334523718138:
 
 .. table:: **Table 1** Parameter description
 
@@ -33,23 +35,19 @@ POST /v2/{project_id}/os-server-groups
 Request
 -------
 
-`Table 2 <#enustopic0065817720table173242991418>`__ describes the request parameters.
+:ref:`Table 2 <en-us_topic_0065817720__table173242991418>` describes the request parameters.
 
-
-
-.. _ENUSTOPIC0065817720table173242991418:
+.. _en-us_topic_0065817720__table173242991418:
 
 .. table:: **Table 2** Request parameters
 
-   +--------------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------+
-   | Parameter    | Mandatory | Type   | Description                                                                                                               |
-   +==============+===========+========+===========================================================================================================================+
-   | server_group | Yes       | Object | Specifies the ECS group information. For details, see `Table 3 <#enustopic0065817720enustopic0057973153table19917766>`__. |
-   +--------------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------+
+   +--------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter    | Mandatory | Type   | Description                                                                                                                          |
+   +==============+===========+========+======================================================================================================================================+
+   | server_group | Yes       | Object | Specifies the ECS group information. For details, see :ref:`Table 3 <en-us_topic_0065817720__en-us_topic_0057973153_table19917766>`. |
+   +--------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0065817720enustopic0057973153table19917766:
+.. _en-us_topic_0065817720__en-us_topic_0057973153_table19917766:
 
 .. table:: **Table 3** **server_group** field description
 
@@ -69,29 +67,25 @@ Request
    |                 |                 |                  |                                                                                                                                                                                                                      |
    |                 |                 |                  |    Only the anti-affinity policy is supported. The other three policies are retained to be compatible with native APIs. However, you are not advised to use the other three policies.                                |
    |                 |                 |                  |                                                                                                                                                                                                                      |
-   |                 |                 |                  |    You are suggested to use the policy described in `Creating an ECS Group <../../apis_recommended/ecs_group_management/creating_an_ecs_group.html>`__.                                                              |
+   |                 |                 |                  |    You are suggested to use the policy described in :ref:`Creating an ECS Group <en-us_topic_0161097718>`.                                                                                                           |
    +-----------------+-----------------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response
 --------
 
-`Table 4 <#enustopic0065817720table14250354151412>`__ describes the response parameters.
+:ref:`Table 4 <en-us_topic_0065817720__table14250354151412>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0065817720table14250354151412:
+.. _en-us_topic_0065817720__table14250354151412:
 
 .. table:: **Table 4** Response parameters
 
-   +--------------+--------+--------------------------------------------------------------------------------------------------------------------------+
-   | Parameter    | Type   | Description                                                                                                              |
-   +==============+========+==========================================================================================================================+
-   | server_group | Object | Specifies the ECS group information. For details, see `Table 5 <#enustopic0065817720enustopic0057973153table7944126>`__. |
-   +--------------+--------+--------------------------------------------------------------------------------------------------------------------------+
+   +--------------+--------+-------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter    | Type   | Description                                                                                                                         |
+   +==============+========+=====================================================================================================================================+
+   | server_group | Object | Specifies the ECS group information. For details, see :ref:`Table 5 <en-us_topic_0065817720__en-us_topic_0057973153_table7944126>`. |
+   +--------------+--------+-------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0065817720enustopic0057973153table7944126:
+.. _en-us_topic_0065817720__en-us_topic_0057973153_table7944126:
 
 .. table:: **Table 5** **server_group** field description
 
@@ -162,6 +156,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

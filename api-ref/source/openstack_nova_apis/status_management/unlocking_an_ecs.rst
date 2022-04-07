@@ -1,3 +1,5 @@
+.. _en-us_topic_0065817691:
+
 Unlocking an ECS
 ================
 
@@ -15,9 +17,9 @@ POST /v2.1/{project_id}/servers/{server_id}/action
 
 POST /v2/{project_id}/servers/{server_id}/action
 
-`Table 1 <#enustopic0065817691enustopic0057973176table32475667>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065817691__en-us_topic_0057973176_table32475667>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065817691enustopic0057973176table32475667:
+.. _en-us_topic_0065817691__en-us_topic_0057973176_table32475667:
 
 .. table:: **Table 1** Parameter description
 
@@ -31,11 +33,9 @@ POST /v2/{project_id}/servers/{server_id}/action
 Request
 -------
 
-`Table 2 <#enustopic0065817691enustopic0057973176table65978805>`__ describes the request parameters.
+:ref:`Table 2 <en-us_topic_0065817691__en-us_topic_0057973176_table65978805>` describes the request parameters.
 
-
-
-.. _ENUSTOPIC0065817691enustopic0057973176table65978805:
+.. _en-us_topic_0065817691__en-us_topic_0057973176_table65978805:
 
 .. table:: **Table 2** Request parameters
 
@@ -72,6 +72,4 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

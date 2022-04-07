@@ -1,3 +1,5 @@
+.. _en-us_topic_0065817719:
+
 Unbinding a Floating IP Address (Discarded)
 ===========================================
 
@@ -15,9 +17,9 @@ POST /v2/{project_id}/servers/{server_id}/action
 
 POST /v2.1/{project_id}/servers/{server_id}/action
 
-`Table 1 <#enustopic0065817719enustopic0057973008table32475667>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065817719__en-us_topic_0057973008_table32475667>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065817719enustopic0057973008table32475667:
+.. _en-us_topic_0065817719__en-us_topic_0057973008_table32475667:
 
 .. table:: **Table 1** Parameter description
 
@@ -31,11 +33,9 @@ POST /v2.1/{project_id}/servers/{server_id}/action
 Request
 -------
 
-`Table 2 <#enustopic0065817719enustopic0057973008table20592177>`__ describes the request parameters.
+:ref:`Table 2 <en-us_topic_0065817719__en-us_topic_0057973008_table20592177>` describes the request parameters.
 
-
-
-.. _ENUSTOPIC0065817719enustopic0057973008table20592177:
+.. _en-us_topic_0065817719__en-us_topic_0057973008_table20592177:
 
 .. table:: **Table 2** Request parameter
 
@@ -44,10 +44,6 @@ Request
    +==================+===========+========+============================================+
    | removeFloatingIp | Yes       | Object | Unbinds a floating IP address from an ECS. |
    +------------------+-----------+--------+--------------------------------------------+
-
-
-
-.. _ENUSTOPIC0065817719enustopic0057973008table12214371:
 
 .. table:: **Table 3** **removeFloatingIp** parameter information
 
@@ -86,6 +82,4 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

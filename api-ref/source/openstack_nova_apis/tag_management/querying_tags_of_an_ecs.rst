@@ -1,3 +1,5 @@
+.. _en-us_topic_0065820822:
+
 Querying Tags of an ECS
 =======================
 
@@ -10,9 +12,9 @@ URI
 
 GET /v2.1/{project_id}/servers/{server_id}/tags
 
-`Table 1 <#enustopic0065820822enustopic0057972837table32475667>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065820822__en-us_topic_0057972837_table32475667>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065820822enustopic0057972837table32475667:
+.. _en-us_topic_0065820822__en-us_topic_0057972837_table32475667:
 
 .. table:: **Table 1** Parameter description
 
@@ -31,11 +33,9 @@ None
 Response
 --------
 
-`Table 2 <#enustopic0065820822enustopic0057972838table28387752>`__ describes the response parameters.
+:ref:`Table 2 <en-us_topic_0065820822__en-us_topic_0057972838_table28387752>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0065820822enustopic0057972838table28387752:
+.. _en-us_topic_0065820822__en-us_topic_0057972838_table28387752:
 
 .. table:: **Table 2** Response parameters
 
@@ -49,7 +49,7 @@ Response
    |                       |                       | -  The key and value of a tag are connected using an equal sign (=), for example, key=value.                                                    |
    |                       |                       | -  If the value is empty, only the key is returned.                                                                                             |
    |                       |                       |                                                                                                                                                 |
-   |                       |                       | For more details about upgraded tag functions, see `Tag Types <../../openstack_nova_apis/tag_management/tag_types.html>`__.                     |
+   |                       |                       | For more details about upgraded tag functions, see :ref:`Tag Types <en-us_topic_0065817686>`.                                                   |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Example Request
@@ -73,6 +73,4 @@ Example response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

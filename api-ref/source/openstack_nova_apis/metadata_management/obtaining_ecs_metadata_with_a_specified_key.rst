@@ -1,3 +1,5 @@
+.. _en-us_topic_0065817714:
+
 Obtaining ECS Metadata with a Specified Key
 ===========================================
 
@@ -13,9 +15,9 @@ GET /v2.1/{project_id}/servers/{server_id}/metadata/{key}
 
 GET /v2/{project_id}/servers/{server_id}/metadata/{key}
 
-`Table 1 <#enustopic0065817714enustopic0057973169table32475667>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065817714__en-us_topic_0057973169_table32475667>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065817714enustopic0057973169table32475667:
+.. _en-us_topic_0065817714__en-us_topic_0057973169_table32475667:
 
 .. table:: **Table 1** Parameter description
 
@@ -35,11 +37,9 @@ None
 Response
 --------
 
-`Table 2 <#enustopic0065817714enustopic0057973169table40140147>`__ describes the response parameters.
+:ref:`Table 2 <en-us_topic_0065817714__en-us_topic_0057973169_table40140147>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0065817714enustopic0057973169table40140147:
+.. _en-us_topic_0065817714__en-us_topic_0057973169_table40140147:
 
 .. table:: **Table 2** Response parameters
 
@@ -71,6 +71,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

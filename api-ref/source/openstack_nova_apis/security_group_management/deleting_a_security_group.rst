@@ -1,3 +1,5 @@
+.. _en-us_topic_0067161717:
+
 Deleting a Security Group
 =========================
 
@@ -13,9 +15,9 @@ POST /v2.1/{project_id}/servers/{server_id}/action
 
 POST /v2/{project_id}/servers/{server_id}/action
 
-`Table 1 <#enustopic0067161717table55945983>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0067161717__table55945983>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0067161717table55945983:
+.. _en-us_topic_0067161717__table55945983:
 
 .. table:: **Table 1** Parameter description
 
@@ -29,23 +31,19 @@ POST /v2/{project_id}/servers/{server_id}/action
 Request
 -------
 
-`Table 2 <#enustopic0067161717enustopic0058745339table44724688204850>`__ describes the request parameters.
+:ref:`Table 2 <en-us_topic_0067161717__en-us_topic_0058745339_table44724688204850>` describes the request parameters.
 
-
-
-.. _ENUSTOPIC0067161717enustopic0058745339table44724688204850:
+.. _en-us_topic_0067161717__en-us_topic_0058745339_table44724688204850:
 
 .. table:: **Table 2** Request parameter
 
-   +---------------------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter           | Mandatory | Type   | Description                                                                                                                                       |
-   +=====================+===========+========+===================================================================================================================================================+
-   | removeSecurityGroup | Yes       | Object | Specifies the security group to be deleted for an ECS. For details, see `Table 3 <#enustopic0067161717enustopic0058745339table59377750205027>`__. |
-   +---------------------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+   +---------------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter           | Mandatory | Type   | Description                                                                                                                                                  |
+   +=====================+===========+========+==============================================================================================================================================================+
+   | removeSecurityGroup | Yes       | Object | Specifies the security group to be deleted for an ECS. For details, see :ref:`Table 3 <en-us_topic_0067161717__en-us_topic_0058745339_table59377750205027>`. |
+   +---------------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0067161717enustopic0058745339table59377750205027:
+.. _en-us_topic_0067161717__en-us_topic_0058745339_table59377750205027:
 
 .. table:: **Table 3** **removeSecurityGroup** parameter description
 
@@ -83,6 +81,4 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

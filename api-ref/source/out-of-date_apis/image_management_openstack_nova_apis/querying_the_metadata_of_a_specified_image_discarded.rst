@@ -1,3 +1,5 @@
+.. _en-us_topic_0065817698:
+
 Querying the Metadata of a Specified Image (Discarded)
 ======================================================
 
@@ -15,9 +17,9 @@ GET /v2/{project_id}/images/{image_id}/metadata
 
 GET /v2.1/{project_id}/images/{image_id}/metadata
 
-`Table 1 <#enustopic0065817698table5587311174112>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065817698__table5587311174112>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065817698table5587311174112:
+.. _en-us_topic_0065817698__table5587311174112:
 
 .. table:: **Table 1** Parameter description
 
@@ -36,11 +38,9 @@ None
 Response
 --------
 
-`Table 2 <#enustopic0065817698table10666498410>`__ describes the response parameters.
+:ref:`Table 2 <en-us_topic_0065817698__table10666498410>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0065817698table10666498410:
+.. _en-us_topic_0065817698__table10666498410:
 
 .. table:: **Table 2** Response parameters
 
@@ -81,6 +81,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

@@ -1,3 +1,5 @@
+.. _en-us_topic_0031169059:
+
 Querying the Specified Network of an ECS
 ========================================
 
@@ -18,9 +20,9 @@ GET /v2.1/{project_id}/servers/{server_id}/ips/{networkName}
 
 GET /v2/{project_id}/servers/{server_id}/ips/{networkName}
 
-`Table 1 <#enustopic0031169059table60562285165259>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0031169059__table60562285165259>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0031169059table60562285165259:
+.. _en-us_topic_0031169059__table60562285165259:
 
 .. table:: **Table 1** Path parameters
 
@@ -29,10 +31,6 @@ GET /v2/{project_id}/servers/{server_id}/ips/{networkName}
    ========== ========= =========================
    project_id Yes       Specifies the project ID.
    ========== ========= =========================
-
-
-
-.. _ENUSTOPIC0031169059table1051945864112:
 
 .. table:: **Table 2** Request parameters
 
@@ -51,23 +49,19 @@ None
 Response
 --------
 
-`Table 3 <#enustopic0031169059table56891490143956>`__ describes the response parameters.
+:ref:`Table 3 <en-us_topic_0031169059__table56891490143956>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0031169059table56891490143956:
+.. _en-us_topic_0031169059__table56891490143956:
 
 .. table:: **Table 3** Response parameters
 
-   +--------------------------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter                                  | Type       | Description                                                                                                                             |
-   +============================================+============+=========================================================================================================================================+
-   | Name of the network where the ECS accesses | List(Dict) | Specifies the network where the ECS accesses. For details about the network, see `Table 4 <#enustopic0031169059table22651992144025>`__. |
-   +--------------------------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------+
+   +--------------------------------------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter                                  | Type       | Description                                                                                                                                    |
+   +============================================+============+================================================================================================================================================+
+   | Name of the network where the ECS accesses | List(Dict) | Specifies the network where the ECS accesses. For details about the network, see :ref:`Table 4 <en-us_topic_0031169059__table22651992144025>`. |
+   +--------------------------------------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0031169059table22651992144025:
+.. _en-us_topic_0031169059__table22651992144025:
 
 .. table:: **Table 4** ECS network parameter structure description
 
@@ -108,6 +102,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

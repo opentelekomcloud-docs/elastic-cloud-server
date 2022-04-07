@@ -1,3 +1,5 @@
+.. _en-us_topic_0022472988:
+
 Detaching an EVS Disk from an ECS
 =================================
 
@@ -11,9 +13,9 @@ URI
 
 DELETE /v1/{project_id}/cloudservers/{server_id}/detachvolume/{volume_id}?delete_flag=0
 
-`Table 1 <#enustopic0022472988table2814978410562>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0022472988__table2814978410562>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0022472988table2814978410562:
+.. _en-us_topic_0022472988__table2814978410562:
 
 .. table:: **Table 1** Parameter description
 
@@ -42,7 +44,7 @@ None
 Response
 --------
 
-See `Responses (Task) <../../common_parameters/task_request_result/responses_task.html>`__.
+See :ref:`Responses (Task) <en-us_topic_0022067714>`.
 
 Example Request
 ---------------
@@ -59,11 +61,9 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

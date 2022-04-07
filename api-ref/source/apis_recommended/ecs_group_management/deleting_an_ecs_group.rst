@@ -1,3 +1,5 @@
+.. _en-us_topic_0161097719:
+
 Deleting an ECS Group
 =====================
 
@@ -11,9 +13,9 @@ URI
 
 DELETE /v1/{project_id}/cloudservers/os-server-groups/{server_group_id}
 
-`Table 1 <#enustopic0161097719table1962114910318>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0161097719__table1962114910318>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0161097719table1962114910318:
+.. _en-us_topic_0161097719__table1962114910318:
 
 .. table:: **Table 1** Parameter description
 
@@ -49,11 +51,9 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

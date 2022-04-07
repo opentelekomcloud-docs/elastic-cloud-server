@@ -1,3 +1,5 @@
+.. _en-us_topic_0065817713:
+
 Querying ECS Metadata
 =====================
 
@@ -13,9 +15,9 @@ GET /v2.1/{project_id}/servers/{server_id}/metadata
 
 GET /v2/{project_id}/servers/{server_id}/metadata
 
-`Table 1 <#enustopic0065817713enustopic0057973165table32475667>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065817713__en-us_topic_0057973165_table32475667>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065817713enustopic0057973165table32475667:
+.. _en-us_topic_0065817713__en-us_topic_0057973165_table32475667:
 
 .. table:: **Table 1** Parameter description
 
@@ -38,11 +40,9 @@ None
 Response
 --------
 
-`Table 2 <#enustopic0065817713enustopic0057973165table48538422>`__ describes the response parameters.
+:ref:`Table 2 <en-us_topic_0065817713__en-us_topic_0057973165_table48538422>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0065817713enustopic0057973165table48538422:
+.. _en-us_topic_0065817713__en-us_topic_0057973165_table48538422:
 
 .. table:: **Table 2** Response parameters
 
@@ -74,6 +74,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
