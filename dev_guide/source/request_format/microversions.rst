@@ -1,3 +1,5 @@
+.. _en-us_topic_0134193006:
+
 Microversions
 =============
 
@@ -69,9 +71,7 @@ For example, you are required to use the API for details about an ECS to view th
 
       Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
 
-   -  Headers 
-
-.. _ENUSTOPIC0134193006table19387710:
+   -  Headers
 
       ============ ================
       Content-Type application/json
@@ -175,9 +175,7 @@ For example, you are required to use the API for details about an ECS to view th
 
       Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
 
-   -  Headers 
-
-.. _ENUSTOPIC0134193006table41684430:
+   -  Headers
 
       ============================ ================
       Content-Type                 application/json
@@ -287,5 +285,3 @@ For example, you are required to use the API for details about an ECS to view th
          }
 
    -  Conclusion: The response body contains the **OS-EXT-SRV-ATTR:hostname** field.
-
-

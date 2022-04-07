@@ -1,13 +1,15 @@
+.. _en-us_topic_0134192984:
+
 Request Example
 ===============
 
-#. Obtain a token.
+#. .. _en-us_topic_0134192984__li1785204217617:
+
+   Obtain a token.
 
    -  POST: https://*{endpoint}*/v3/auth/tokens
 
-   -  Headers 
-
-.. _ENUSTOPIC0134192984table10584511115:
+   -  Headers
 
       .. table:: **Table 1** Parameter description
 
@@ -47,6 +49,8 @@ Request Example
 
    Obtain the token (**x-subject-token**) in **Headers**
 
+   .. _en-us_topic_0134192984__fig71433122328:
+
    .. figure:: /_static/images/en-us_image_0173496405.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -62,14 +66,13 @@ Request Example
       -  tenant_id: fb770eb43f934b5a8bda955642b954b9
       -  The fields, **changes-since,image,flavor,name,status,limit,marker,not-tags,reservation_id,all_tenants**, following the question mark (?) are optional for viewing an ECS.
 
-   -  Headers 
+   -  Headers
 
-.. _ENUSTOPIC0134192984table32846409:
-
-      ============ =======================================================
-      Content-Type application/json
-      X-Auth-Token Obtained in `1 <#enustopic0134192984li1785204217617>`__
-      ============ =======================================================
+      +--------------+----------------------------------------------------------------+
+      | Content-Type | application/json                                               |
+      +--------------+----------------------------------------------------------------+
+      | X-Auth-Token | Obtained in :ref:`1 <en-us_topic_0134192984__li1785204217617>` |
+      +--------------+----------------------------------------------------------------+
 
    -  Response body: JSON data in UTF-8 code format
 
@@ -239,5 +242,3 @@ Request Example
              }
            ]
          }
-
-
