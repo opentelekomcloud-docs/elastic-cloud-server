@@ -1,3 +1,5 @@
+.. _en-us_topic_0024911405:
+
 Reinstalling the OS
 ===================
 
@@ -15,8 +17,8 @@ Notes
 -  Do not perform any operations on the ECS immediately after its OS is reinstalled. Wait for several minutes until the system successfully injects the password or key. Otherwise, the injection may fail, and the ECS cannot be logged in to.
 -  After the OS is reinstalled, the password for logging in to the ECS will be reset. To retrieve the password, perform the following operations:
 
-   -  For a Linux ECS, log in to it using the key and set a new password. For instructions about how to log in to an ECS using a key pair, see `Login Using an SSH Key <../../instances/logging_in_to_a_linux_ecs/login_using_an_ssh_key.html>`__.
-   -  For a Windows ECS, retrieve the password by following the instructions provided in `Obtaining the Password for Logging In to a Windows ECS <../../passwords_and_key_pairs/obtaining_the_password_for_logging_in_to_a_windows_ecs.html>`__.
+   -  For a Linux ECS, log in to it using the key and set a new password. For instructions about how to log in to an ECS using a key pair, see :ref:`Login Using an SSH Key <en-us_topic_0017955380>`.
+   -  For a Windows ECS, retrieve the password by following the instructions provided in :ref:`Obtaining the Password for Logging In to a Windows ECS <en-us_topic_0031107266>`.
 
 -  You can choose to encrypt the system disk of an ECS during OS reinstallation.
 
@@ -41,7 +43,9 @@ Procedure
 
 #. Click |image1| in the upper left corner and select your region and project.
 
-#. Under **Computing**, click **Elastic Cloud Server**.
+#. .. _en-us_topic_0024911405__li20776247143354:
+
+   Under **Computing**, click **Elastic Cloud Server**.
 
 #. Locate the row containing the target ECS. Click **More** in the **Operation** column and select **Manage Image/Disk** > **Reinstall OS**.
 
@@ -49,7 +53,7 @@ Procedure
 
 #. (Optional) Select the **Encryption** option to encrypt the system disk during OS reinstallation.
 
-   To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permission, assign the KMS access permissions to EVS. If you do not have the permission, contact the user having the security administrator rights to assign the KMS access permissions. For more details, see `Can All Users Use the Encryption Feature? <../../faqs/disk_management/can_all_users_use_the_encryption_feature.html>`__
+   To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permission, assign the KMS access permissions to EVS. If you do not have the permission, contact the user having the security administrator rights to assign the KMS access permissions. For more details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
 
    Encryption parameters are as follows:
 
@@ -59,7 +63,7 @@ Procedure
    -  **Xrole Name: EVSAccessKMS**: specifies that permissions have been assigned to EVS to obtain KMS keys for encrypting or decrypting EVS disks.
    -  **KMS Key ID**: specifies the ID of the key used by the encrypted data disk.
 
-#. (Optional) Select a **License Type** (**Use license from the system** or **Bring your own license (BYOL)**) if the reinstalled OS running on your ECS is billed. For more details, see `License Type <../../service_overview/security/license_type.html>`__.
+#. (Optional) Select a **License Type** (**Use license from the system** or **Bring your own license (BYOL)**) if the reinstalled OS running on your ECS is billed. For more details, see :ref:`License Type <en-us_topic_0046566932>`.
 
    The following OSs are billed:
 
@@ -73,7 +77,9 @@ Procedure
 
 #. Click **OK**.
 
-#. On the **ECS OS Reinstallation** page, confirm the OS specifications, and click **Submit Application**.
+#. .. _en-us_topic_0024911405__li31062819143541:
+
+   On the **ECS OS Reinstallation** page, confirm the OS specifications, and click **Submit Application**.
 
    After the request is submitted, the ECS status changes to **Reinstalling**. The reinstallation has been completed when the ECS status changes to **Running**.
 
@@ -84,11 +90,9 @@ Procedure
 Follow-up Procedure
 -------------------
 
-If the reinstallation is unsuccessful, perform steps 3 to 9 again to retry reinstalling the OS again.
+If the reinstallation is unsuccessful, perform steps :ref:`3 <en-us_topic_0024911405__li20776247143354>` to :ref:`9 <en-us_topic_0024911405__li31062819143541>` again to retry reinstalling the OS again.
 
 If the second reinstallation attempt is unsuccessful, contact customer service for manual recovery at the backend.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

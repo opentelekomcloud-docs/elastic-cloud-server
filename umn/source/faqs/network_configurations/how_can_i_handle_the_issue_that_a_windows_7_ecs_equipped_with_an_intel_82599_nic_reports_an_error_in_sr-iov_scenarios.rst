@@ -1,3 +1,5 @@
+.. _en-us_topic_0053287548:
+
 How Can I Handle the Issue that a Windows 7 ECS Equipped with an Intel 82599 NIC Reports an Error in SR-IOV Scenarios?
 ======================================================================================================================
 
@@ -29,5 +31,3 @@ Run **Autorun.exe** in the folder where the 20.4.1 driver package is stored. Ins
    #. Click **Browse**, select the path where the driver package is stored, and click **Next**.
    #. Locate the NIC in **Network Adapter** of **Device Manager**.
    #. Run **Autorun.exe** to install the 20.4.1 driver package.
-
-

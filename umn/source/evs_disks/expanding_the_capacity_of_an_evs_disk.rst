@@ -1,3 +1,5 @@
+.. _en-us_topic_0093492522:
+
 Expanding the Capacity of an EVS Disk
 =====================================
 
@@ -23,5 +25,3 @@ The capacity of an EVS disk can be expanded in either of the following ways:
 .. note::
 
    After the capacity is expanded through the management console, only the storage capacity of the EVS disk is expanded. To use the expanded capacity, you also need to log in to the ECS and expand the partition and file system.
-
-

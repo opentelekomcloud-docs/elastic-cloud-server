@@ -1,3 +1,5 @@
+.. _en-us_topic_0087901488:
+
 How Can I Obtain the Mapping Between Disk Partitions and Disk Devices on a Linux ECS?
 =====================================================================================
 
@@ -6,6 +8,8 @@ For a Linux ECS, its disk partitions correspond to disk devices. This section us
 #. Log in to the Linux ECS as user **root**.
 
 #. Right-click in the blank area of the desktop and choose **Open Terminal** from the shortcut menu.
+
+   .. _en-us_topic_0087901488__fig63278226101115:
 
    .. figure:: /_static/images/en-us_image_0087903699.png
       :alt: Click to enlarge
@@ -18,6 +22,8 @@ For a Linux ECS, its disk partitions correspond to disk devices. This section us
 
    **fdisk -l**
 
+   .. _en-us_topic_0087901488__fig101265111168:
+
    .. figure:: /_static/images/en-us_image_0087903704.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -25,11 +31,9 @@ For a Linux ECS, its disk partitions correspond to disk devices. This section us
 
       **Figure 2** Viewing disk partitions and disk devices
 
-   `Table 1 <#enustopic0087901488table18572291102543>`__ lists the mapping between disk partitions and disk devices.
+   :ref:`Table 1 <en-us_topic_0087901488__table18572291102543>` lists the mapping between disk partitions and disk devices.
 
-   
-
-.. _ENUSTOPIC0087901488table18572291102543:
+   .. _en-us_topic_0087901488__table18572291102543:
 
    .. table:: **Table 1** Mapping between disk partitions and disk devices
 
@@ -61,5 +65,3 @@ For a Linux ECS, its disk partitions correspond to disk devices. This section us
       xvdw           xvdw
       xvdx           xvdx
       ============== ===========
-
-

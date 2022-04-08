@@ -1,3 +1,5 @@
+.. _en-us_topic_0093153741:
+
 Why Is the Memory of an ECS Obtained by Running the **free** Command Inconsistent with the Actual Memory?
 =========================================================================================================
 
@@ -75,5 +77,3 @@ Therefore, the memory obtained by running the **free -m** command is less than t
 .. note::
 
    This is a normal phenomenon even for physical servers.
-
-

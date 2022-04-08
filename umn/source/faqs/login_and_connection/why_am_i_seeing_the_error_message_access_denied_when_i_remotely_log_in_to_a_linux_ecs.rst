@@ -1,3 +1,5 @@
+.. _en-us_topic_0277097520:
+
 Why Am I Seeing the Error Message "Access denied" When I Remotely Log In to a Linux ECS?
 ========================================================================================
 
@@ -36,5 +38,3 @@ Solution
       -  CentOS 7
 
          **systemctl restart sshd**
-
-

@@ -1,3 +1,5 @@
+.. _en-us_topic_0037633087:
+
 What Is the **cloudbase-init** Account in Windows ECSs Used for?
 ================================================================
 
@@ -30,6 +32,8 @@ Use an image to create two ECSs, ecs01 and ecs02. Then, verify that the hash val
 
 -  LM-HASH and NTLM-HASH values of the **cloudbase-init** account for ecs01
 
+   .. _en-us_topic_0037633087__fig311825713493:
+
    .. figure:: /_static/images/en-us_image_0202311481.gif
       :alt: Click to enlarge
       :figclass: imgResize
@@ -39,11 +43,11 @@ Use an image to create two ECSs, ecs01 and ecs02. Then, verify that the hash val
 
 -  LM-HASH and NTLM-HASH values of the **cloudbase-init** account for ecs02
 
+   .. _en-us_topic_0037633087__fig19275102321818:
+
    .. figure:: /_static/images/en-us_image_0202311491.gif
       :alt: Click to enlarge
       :figclass: imgResize
    
 
       **Figure 2** ecs02
-
-

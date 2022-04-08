@@ -1,3 +1,5 @@
+.. _en-us_topic_0018124779:
+
 Why Does an ECS Fail to Be Remotely Connected Using RDP and Internal Error Code 4 Is Displayed?
 ===============================================================================================
 
@@ -22,6 +24,8 @@ Solution
 
 #. In the **Services** window, restart **Remote Desktop Services**. Ensure that **Remote Desktop Services** is in the **Running** status.
 
+   .. _en-us_topic_0018124779__en-us_topic_0250947106_fig1355354132417:
+
    .. figure:: /_static/images/en-us_image_0000001100835050.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -32,5 +36,3 @@ Solution
 #. Remotely connect to the ECS again.
 
    If the connection still fails, run the cmd command on the local server as the administrator, run the **netsh winsock reset** command to restore the default network connection configurations, and then retry the remote connection.
-
-

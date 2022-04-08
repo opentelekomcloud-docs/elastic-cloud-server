@@ -1,3 +1,5 @@
+.. _en-us_topic_0081525054:
+
 Why Can't I Obtain the Password for Logging In to My Windows ECS Authenticated Using a Key Pair?
 ================================================================================================
 
@@ -44,11 +46,15 @@ If logging in to an ECS with Cloudbase-Init enabled failed, perform the followin
 
 6. Check Cloudbase-Init logs to identify the cause.
 
-   a. Stop the affected ECS and detach the system disk from it.
+   a. .. _en-us_topic_0081525054__li16969123912115:
 
-   b. Use a public image to create a temporary Windows ECS and attach the system disk detached in 6.a to the ECS.
+      Stop the affected ECS and detach the system disk from it.
+
+   b. Use a public image to create a temporary Windows ECS and attach the system disk detached in :ref:`6.a <en-us_topic_0081525054__li16969123912115>` to the ECS.
 
    c. Log in to the temporary ECS, open the **Server Manager** page, choose **File and Storage Services** > **Volumes** > **Disks**, right-click the offline disk, and choose **Online** from the shortcut menu.
+
+      .. _en-us_topic_0081525054__fig12301902519:
 
       .. figure:: /_static/images/en-us_image_0275724694.png
          :alt: Click to enlarge
@@ -59,10 +65,10 @@ If logging in to an ECS with Cloudbase-Init enabled failed, perform the followin
 
    d. Switch to the **cloudbase-init** file in **/Program Files/Cloudbase Solution/Cloudbase-Init/log** of this disk to view the log for fault locating.
 
+      .. _en-us_topic_0081525054__fig9250818165110:
+
       .. figure:: /_static/images/en-us_image_0275726221.png
          :alt: **Figure 2** cloudbase-init
       
 
          **Figure 2** cloudbase-init
-
-

@@ -1,3 +1,5 @@
+.. _en-us_topic_0013771092:
+
 General Operations for Modifying Specifications
 ===============================================
 
@@ -15,6 +17,8 @@ To obtain the virtualization type of an ECS, perform the following operations:
 
 #. On the page providing details about the ECS, view the ECS specifications.
 
+   .. _en-us_topic_0013771092__fig14561414141716:
+
    .. figure:: /_static/images/en-us_image_0121090576.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -22,15 +26,15 @@ To obtain the virtualization type of an ECS, perform the following operations:
 
       **Figure 1** Viewing ECS specifications
 
-#. Check the specifications tables in `ECS Types <../../service_overview/instances/ecs_types.html>`__ for the virtualization type.
+#. Check the specifications tables in :ref:`ECS Types <en-us_topic_0035470096>` for the virtualization type.
 
 Notes
 -----
 
 -  If ECS specifications are downgraded, the ECS performance will deteriorate.
--  Certain ECSs do not support specifications modification currently. For details about available ECS types as well as their functions and usage, see "Notes" in `ECS Types <../../service_overview/instances/ecs_types.html>`__.
+-  Certain ECSs do not support specifications modification currently. For details about available ECS types as well as their functions and usage, see "Notes" in :ref:`ECS Types <en-us_topic_0035470096>`.
 -  When the disk status is **Expanding**, you are not allowed to modify the specifications of the ECS where the disk is attached.
--  Before modifying the specifications of a Windows ECS, modify the SAN policy by following the instructions provided in `Why Does a Disk Attached to a Windows ECS Go Offline? <../../faqs/disk_management/why_does_a_disk_attached_to_a_windows_ecs_go_offline.html>`__ to prevent disks from going offline after the specifications are modified.
+-  Before modifying the specifications of a Windows ECS, modify the SAN policy by following the instructions provided in :ref:`Why Does a Disk Attached to a Windows ECS Go Offline? <en-us_topic_0114225937>` to prevent disks from going offline after the specifications are modified.
 -  Before modifying specifications, make sure that the ECS has been stopped.
 
 Step 1: Modify Specifications
@@ -66,14 +70,16 @@ Step 1: Modify Specifications
 
    After modifying the specifications, you can check whether the specifications have been modified in **Failures**.
 
-   a. Check whether **Failures** is displayed on the management console. For details, see `Viewing Failures <../../instances/viewing_ecs_information/viewing_failures.html>`__.
+   a. Check whether **Failures** is displayed on the management console. For details, see :ref:`Viewing Failures <en-us_topic_0108255889>`.
 
-      -  If yes, go to step 10.b.
+      -  If yes, go to step :ref:`10.b <en-us_topic_0013771092__li6253192246>`.
       -  If no, the specifications have been modified.
 
-   b. Click **Failures**. Then, in the **Failures** dialog box, click **Operation Failures** and check whether the task is contained in the list by **Name/ID**, **Operated At**, or **Task**.
+   b. .. _en-us_topic_0013771092__li6253192246:
 
-      -  If yes, the specifications modification failed. See `Follow-up Procedure <#follow-up-procedure>`__ for failure causes.
+      Click **Failures**. Then, in the **Failures** dialog box, click **Operation Failures** and check whether the task is contained in the list by **Name/ID**, **Operated At**, or **Task**.
+
+      -  If yes, the specifications modification failed. See :ref:`Follow-up Procedure <en-us_topic_0013771092__section9461027528>` for failure causes.
       -  If no, the specifications have been modified.
 
 Step 2: Check Disk Attachment
@@ -83,11 +89,13 @@ After specifications are modified, disk attachment may fail. Therefore, check di
 
 -  Windows ECS
 
-   For details, see `Why Do the Disks of a Windows ECS Go Offline After I Modify the ECS Specifications? <../../faqs/ecs_management/why_do_the_disks_of_a_windows_ecs_go_offline_after_i_modify_the_ecs_specifications.html>`__
+   For details, see :ref:`Why Do the Disks of a Windows ECS Go Offline After I Modify the ECS Specifications? <en-us_topic_0214940105>`
 
 -  Linux ECS
 
-   For details, see `Why Does the Disk Attachment of a Linux ECS Fail After I Modify the ECS Specifications? <../../faqs/ecs_management/why_does_the_disk_attachment_of_a_linux_ecs_fail_after_i_modify_the_ecs_specifications.html>`__
+   For details, see :ref:`Why Does the Disk Attachment of a Linux ECS Fail After I Modify the ECS Specifications? <en-us_topic_0214940106>`
+
+.. _en-us_topic_0013771092__section9461027528:
 
 Follow-up Procedure
 -------------------
@@ -107,8 +115,6 @@ Perform the following operations in the event of a specifications modification f
 #. Click **View Trace** in the **Operation** column to view the failure cause.
 
    If the fault cannot be rectified based on logs, contact customer service.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

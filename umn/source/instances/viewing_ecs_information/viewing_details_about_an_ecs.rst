@@ -1,3 +1,5 @@
+.. _en-us_topic_0017130261:
+
 Viewing Details About an ECS
 ============================
 
@@ -28,8 +30,6 @@ Procedure
 #. View the ECS details.
 
    You can modify ECS configurations, for example, change its security group, add a NIC or tag to it, or bind an EIP to it, by clicking corresponding links or buttons.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

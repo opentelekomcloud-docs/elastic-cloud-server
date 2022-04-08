@@ -1,3 +1,5 @@
+.. _en-us_topic_0047654687:
+
 Why Does a Key Pair Created Using **puttygen.exe** Fail to Be Imported on the Management Console?
 =================================================================================================
 
@@ -20,6 +22,8 @@ Use the locally stored private key and **PuTTY Key Generator** to restore the fo
 
 #. Double-click **puttygen.exe** to switch to the **PuTTY Key Generator** page.
 
+   .. _en-us_topic_0047654687__en-us_topic_0014250631_en-us_topic_0037960038_fig4490538015580:
+
    .. figure:: /_static/images/en-us_image_0272917695.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -29,7 +33,9 @@ Use the locally stored private key and **PuTTY Key Generator** to restore the fo
 
 #. Click **Load** and select the private key.
 
-   The system automatically loads the private key and restores the format of the public key content in **PuTTY Key Generator**. The content in the red box in Figure 2 is the public key whose format meets system requirements.
+   The system automatically loads the private key and restores the format of the public key content in **PuTTY Key Generator**. The content in the red box in :ref:`Figure 2 <en-us_topic_0047654687__fig5530274016810>` is the public key whose format meets system requirements.
+
+   .. _en-us_topic_0047654687__fig5530274016810:
 
    .. figure:: /_static/images/en-us_image_0037982934.png
       :alt: Click to enlarge
@@ -48,8 +54,6 @@ Use the locally stored private key and **PuTTY Key Generator** to restore the fo
    d. In the navigation pane on the left, choose **Key Pair**.
    e. On the right side of the page, click **Import Key Pair**.
    f. Copy the public key content in the .txt file to **Public Key Content** and click **OK**.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

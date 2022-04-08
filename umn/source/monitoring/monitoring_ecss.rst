@@ -1,3 +1,5 @@
+.. _en-us_topic_0027371529:
+
 Monitoring ECSs
 ===============
 
@@ -8,5 +10,3 @@ This section covers the following content:
 -  Viewing basic ECS metrics
 -  Customizing ECS alarm rules
 -  Viewing ECS running statuses for routine monitoring
-
-

@@ -1,3 +1,5 @@
+.. _en-us_topic_0094801708:
+
 What Can I Do If Switching from a Non-root User to User root Times Out?
 =======================================================================
 
@@ -5,6 +7,8 @@ Symptom
 -------
 
 When you run the **sudo** command to switch to user **root** on an Ubuntu or Debian ECS, the system prompts connection timeout.
+
+.. _en-us_topic_0094801708__fig727412824411:
 
 .. figure:: /_static/images/en-us_image_0094801740.png
    :alt: Click to enlarge
@@ -43,5 +47,3 @@ Solution
 .. note::
 
    To update the hostname of an Ubuntu or Debian ECS, set the value of parameter **manage_etc_hosts** in the **/etc/cloud/cloud.cfg** file to **false** and update the new hostname in the **/etc/hosts** file. When editing the **/etc/hosts** file, do not delete the statement in the line where **127.0.0.1** is located. Otherwise, switching from a non-root user to user **root** will time out.
-
-

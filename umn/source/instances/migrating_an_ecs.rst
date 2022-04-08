@@ -1,3 +1,5 @@
+.. _en-us_topic_0133365988:
+
 Migrating an ECS
 ================
 
@@ -39,8 +41,6 @@ Procedure
 #. Click **OK**.
 
    The ECS is migrated as required.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

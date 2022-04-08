@@ -1,3 +1,5 @@
+.. _en-us_topic_0263806054:
+
 How Can I Use FTP to Transfer Files Between a Local Linux Computer and a Linux ECS?
 ===================================================================================
 
@@ -45,5 +47,3 @@ Procedure
       For example, to download the **test.txt** file on the ECS to the local Linux computer, run the following command:
 
       **get /home/test.txt**
-
-

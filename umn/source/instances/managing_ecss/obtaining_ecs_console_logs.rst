@@ -1,3 +1,5 @@
+.. _en-us_topic_0057711189:
+
 Obtaining ECS Console Logs
 ==========================
 
@@ -108,9 +110,11 @@ Procedure
          **cat /proc/cmdline \| grep ttyS0**
 
          -  If yes, **ttyS0** has been configured.
-         -  If no, **ttyS0** has not been configured. Go to 2.b.
+         -  If no, **ttyS0** has not been configured. Go to :ref:`2.b <en-us_topic_0057711189__en-us_topic_0057450886_li29451607172853>`.
 
-      b. Run the following command to open the configuration file to be edited:
+      b. .. _en-us_topic_0057711189__en-us_topic_0057450886_li29451607172853:
+
+         Run the following command to open the configuration file to be edited:
 
          **vi /usr/share/oem/grub.cfg**
 
@@ -151,9 +155,7 @@ Procedure
 Related Links
 -------------
 
-`Why Does the System Display a Question Mark When I Attempt to Obtain Console Logs? <../../faqs/ecs_management/why_does_the_system_display_a_question_mark_when_i_attempt_to_obtain_console_logs.html>`__
-
-
+:ref:`Why Does the System Display a Question Mark When I Attempt to Obtain Console Logs? <en-us_topic_0088241338>`
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

@@ -1,3 +1,5 @@
+.. _en-us_topic_0087382187:
+
 Why Does a Linux ECS with a SCSI Disk Attached Fails to Restart?
 ================================================================
 
@@ -22,7 +24,9 @@ Solution
 
    **sudo su -**
 
-#. Run the following command to obtain the SCSI ID according to the drive letter of the SCSI disk:
+#. .. _en-us_topic_0087382187__li2064141120446:
+
+   Run the following command to obtain the SCSI ID according to the drive letter of the SCSI disk:
 
    **ll /dev/disk/by-id/|grep** *Disk drive letter*
 
@@ -40,8 +44,6 @@ Solution
 
    **/dev/disk/by-id/**\ *SCSI ID*
 
-   For example, if the SCSI ID obtained in step 3 is scsi-3688860300001436b005014f890338280, use the following data to replace **/dev/sdb**:
+   For example, if the SCSI ID obtained in step :ref:`3 <en-us_topic_0087382187__li2064141120446>` is scsi-3688860300001436b005014f890338280, use the following data to replace **/dev/sdb**:
 
    **/dev/disk/by-id/scsi-3688860300001436b005014f890338280**
-
-

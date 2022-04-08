@@ -1,3 +1,5 @@
+.. _en-us_topic_0093492517:
+
 Changing a Security Group
 =========================
 
@@ -19,6 +21,8 @@ Procedure
 
    The **Change Security Group** dialog box is displayed.
 
+   .. _en-us_topic_0093492517__fig1673733486:
+
    .. figure:: /_static/images/en-us_image_0122999741.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -37,8 +41,6 @@ Procedure
       Using multiple security groups may deteriorate ECS network performance. You are suggested to select no more than five security groups.
 
 #. Click **OK**.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0093507575.png
 

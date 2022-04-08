@@ -1,3 +1,5 @@
+.. _en-us_topic_0170139796:
+
 How Can I Use SFTP to Transfer Files Between a Local Linux Computer and a Linux ECS?
 ====================================================================================
 
@@ -30,6 +32,8 @@ Procedure
 #. Set a password for the user.
 
    **passwd user1**
+
+   .. _en-us_topic_0170139796__en-us_topic_0138882178_fig282551904413:
 
    .. figure:: /_static/images/en-us_image_0263798009.png
       :alt: Click to enlarge
@@ -71,6 +75,8 @@ Procedure
       AllowTcpForwarding no
       X11Forwarding no
 
+   .. _en-us_topic_0170139796__fig8395112141418:
+
    .. figure:: /_static/images/en-us_image_0000001071727803.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -103,8 +109,6 @@ Procedure
    To download files or folders, run the **get -r** command.
 
    |image3|
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0263798010.png
    :class: imgResize

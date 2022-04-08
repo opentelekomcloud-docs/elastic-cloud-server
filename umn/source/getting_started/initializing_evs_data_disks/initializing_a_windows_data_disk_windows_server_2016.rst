@@ -1,3 +1,5 @@
+.. _en-us_topic_0117490178:
+
 Initializing a Windows Data Disk (Windows Server 2016)
 ======================================================
 
@@ -6,7 +8,7 @@ Scenarios
 
 This section uses Windows Server 2016 Standard 64bit to describe how to initialize a data disk attached to a server running Windows.
 
-The maximum disk capacity supported by MBR is 2 TB, and that supported by GPT is 18 EB. Therefore, use the GPT partition style if your disk capacity is larger than 2 TB. For details about disk partition styles, see `Scenarios and Disk Partitions <../../getting_started/initializing_evs_data_disks/scenarios_and_disk_partitions.html>`__.
+The maximum disk capacity supported by MBR is 2 TB, and that supported by GPT is 18 EB. Therefore, use the GPT partition style if your disk capacity is larger than 2 TB. For details about disk partition styles, see :ref:`Scenarios and Disk Partitions <en-us_topic_0030831623>`.
 
 The method for initializing a disk varies depending on the OS running on the server. This document is used for reference only. For the detailed operations and differences, see the product documents of the corresponding OS.
 
@@ -30,6 +32,8 @@ Procedure
 
    The **Server Manager** window is displayed.
 
+   .. _en-us_topic_0117490178__en-us_topic_0115255433_fig128445136715:
+
    .. figure:: /_static/images/en-us_image_0132368216.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -40,6 +44,8 @@ Procedure
 #. In the upper right corner, choose **Tools** > **Computer Management**.
 
    The **Computer Management** window is displayed.
+
+   .. _en-us_topic_0117490178__en-us_topic_0115255433_fig11577433192617:
 
    .. figure:: /_static/images/en-us_image_0175083503.png
       :alt: Click to enlarge
@@ -52,6 +58,8 @@ Procedure
 
    Disks are displayed in the right pane. If there is a disk that is not initialized, the system will prompt you with the **Initialize Disk** dialog box.
 
+   .. _en-us_topic_0117490178__en-us_topic_0115255433_fig11358119588:
+
    .. figure:: /_static/images/en-us_image_0175083504.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -62,6 +70,8 @@ Procedure
 #. In the **Initialize Disk** dialog box, the to-be-initialized disk is selected. Select a disk partition style and click **OK**. In this example, **GPT (GUID Partition Table)** is selected.
 
    The **Computer Management** window is displayed.
+
+   .. _en-us_topic_0117490178__en-us_topic_0115255433_fig68332918241:
 
    .. figure:: /_static/images/en-us_image_0175083507.png
       :alt: Click to enlarge
@@ -80,6 +90,8 @@ Procedure
 
    The **New Simple Volume Wizard** window is displayed.
 
+   .. _en-us_topic_0117490178__en-us_topic_0115255433_fig19509202633615:
+
    .. figure:: /_static/images/en-us_image_0175083508.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -90,6 +102,8 @@ Procedure
 #. Follow the prompts and click **Next**.
 
    The **Specify Volume Size** page is displayed.
+
+   .. _en-us_topic_0117490178__en-us_topic_0115255433_fig209619215384:
 
    .. figure:: /_static/images/en-us_image_0175083509.png
       :alt: Click to enlarge
@@ -102,6 +116,8 @@ Procedure
 
    The **Assign Drive Letter or Path** page is displayed.
 
+   .. _en-us_topic_0117490178__en-us_topic_0115255433_fig631143204114:
+
    .. figure:: /_static/images/en-us_image_0175083510.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -113,6 +129,8 @@ Procedure
 
    The **Format Partition** page is displayed.
 
+   .. _en-us_topic_0117490178__en-us_topic_0115255433_fig1400313143015:
+
    .. figure:: /_static/images/en-us_image_0175083511.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -123,6 +141,8 @@ Procedure
 #. Specify format settings and click **Next**. The system selects the NTFS file system by default. You can specify the file system type as required. In this example, the default setting is used.
 
    The **Completing the New Simple Volume Wizard** page is displayed.
+
+   .. _en-us_topic_0117490178__en-us_topic_0115255433_fig380162213463:
 
    .. figure:: /_static/images/en-us_image_0175083512.png
       :alt: Click to enlarge
@@ -137,7 +157,9 @@ Procedure
 
 #. Click **Finish**.
 
-   Wait for the initialization to complete. When the volume status changes to **Healthy**, the initialization has finished successfully, as shown in Figure 10.
+   Wait for the initialization to complete. When the volume status changes to **Healthy**, the initialization has finished successfully, as shown in :ref:`Figure 10 <en-us_topic_0117490178__en-us_topic_0115255433_fig14464150329>`.
+
+   .. _en-us_topic_0117490178__en-us_topic_0115255433_fig14464150329:
 
    .. figure:: /_static/images/en-us_image_0175083513.png
       :alt: Click to enlarge
@@ -150,14 +172,14 @@ Procedure
 
    If New Volume (D:) appears, the disk is successfully initialized and no further action is required.
 
+   .. _en-us_topic_0117490178__en-us_topic_0115255433_fig4958111374510:
+
    .. figure:: /_static/images/en-us_image_0175083515.png
       :alt: Click to enlarge
       :figclass: imgResize
    
 
       **Figure 11** This PC (Windows Server 2016)
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0238263336.png
 

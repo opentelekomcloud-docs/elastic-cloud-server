@@ -1,3 +1,5 @@
+.. _en-us_topic_0093492521:
+
 Changing an EIP Bandwidth
 =========================
 
@@ -14,8 +16,6 @@ Procedure
 #. Under **Computing**, click **Elastic Cloud Server**.
 #. Locate the row containing the target ECS. Click **More** in the **Operation** column and select **Manage Network** > **Modify Bandwidth**.
 #. Change the bandwidth name, billing mode, or bandwidth size as prompted.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

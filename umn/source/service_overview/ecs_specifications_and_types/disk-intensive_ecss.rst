@@ -1,3 +1,5 @@
+.. _en-us_topic_0035470099:
+
 Disk-intensive ECSs
 ===================
 
@@ -8,10 +10,6 @@ D2 ECSs are developed based on KVM virtualization. They use local storage and pr
 
 Specifications
 --------------
-
-
-
-.. _ENUSTOPIC0035470099table47541937112515:
 
 .. table:: **Table 1** D2 ECS specifications
 
@@ -51,10 +49,6 @@ Features of D2 ECSs
 -  D2 ECSs provide high intranet performance, including high intranet bandwidth and PPS, meeting requirements for data exchange between ECSs during peak hours.
 -  Each D2 ECS supports a maximum configuration of 24 local disks, 60 vCPUs, and 540 GiB memory.
 
-
-
-.. _ENUSTOPIC0035470099table9670341181017:
-
 .. table:: **Table 2** Specifications of a single SAS HDD disk attached to a D2 ECS
 
    ================== =================
@@ -93,11 +87,11 @@ Notes on Using D2 ECSs
 
    -  Both EVS disks and local disks can be used as data disks of a D2 ECS.
 
-   -  A maximum of 60 disks (including VBD, SCSI, and local disks) can be attached to a D2 ECS. Among the 60 disks, the maximum number of SCSI disks is 30, and the VBD disks (including the system disk) is 24. For details, see `Can I Attach Multiple Disks to an ECS? <../../faqs/disk_management/can_i_attach_multiple_disks_to_an_ecs.html>`__
+   -  A maximum of 60 disks (including VBD, SCSI, and local disks) can be attached to a D2 ECS. Among the 60 disks, the maximum number of SCSI disks is 30, and the VBD disks (including the system disk) is 24. For details, see :ref:`Can I Attach Multiple Disks to an ECS? <en-us_topic_0018073215>`
 
       .. note::
 
-         The maximum number of disks attached to an existing D2 ECS remains unchanged. To attach 60 disks, enable advanced disk. For details, see `Enabling Advanced Disk <../../evs_disks/enabling_advanced_disk.html>`__.
+         The maximum number of disks attached to an existing D2 ECS remains unchanged. To attach 60 disks, enable advanced disk. For details, see :ref:`Enabling Advanced Disk <en-us_topic_0122307169>`.
 
    -  You are advised to use World Wide Names (WWNs), but not drive letters, in applications to perform operations on local disks to prevent drive letter drift (low probability) on Linux. Take local disk attachment as an example:
 
@@ -117,5 +111,3 @@ Notes on Using D2 ECSs
 -  When a D2 ECS is deleted, its local disk data is automatically deleted. Back up the data before deleting such an ECS. Deleting local disk data is time-consuming. Therefore, a D2 ECS requires a longer period of time than other ECSs for releasing resources.
 -  Do not store long-term service data in local disks. Instead, back up data in a timely manner and use a high availability data architecture. Store long-term service data in EVS disks.
 -  You are not allowed to buy additional local disks. The quantity and capacity of your local disks are determined according to your ECS flavor. For D2 ECSs, if additional local disks are required, buy them when creating the ECSs.
-
-

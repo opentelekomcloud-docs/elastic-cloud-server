@@ -1,3 +1,5 @@
+.. _en-us_topic_0174917535:
+
 Binding an EIP
 ==============
 
@@ -28,8 +30,6 @@ Procedure
       If no EIP is available in the current region, the EIP list is empty. In such a case, allocate an EIP and then bind it.
 
 #. View the bound EIP on the **EIPs** tab.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

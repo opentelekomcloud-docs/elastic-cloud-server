@@ -1,3 +1,5 @@
+.. _en-us_topic_0019883415:
+
 What Should I Do If a Key Pair Cannot Be Imported?
 ==================================================
 
@@ -12,8 +14,6 @@ If you use Internet Explorer 9 to access the management console, the key pair ma
 #. Click **Custom Level**.
 #. Set **Initialize and script ActiveX controls not marked as safe for scripting** to **Prompt**.
 #. Click **Yes**.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0146087803.png
 

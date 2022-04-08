@@ -1,3 +1,5 @@
+.. _en-us_topic_0046912051:
+
 User Encryption
 ===============
 
@@ -36,6 +38,8 @@ About Keys
 
 The key used for encryption relies on the Key Management Service (KMS). KMS uses a data encryption key (DEK) to encrypt data and a customer master key (CMK) to encrypt the DEK.
 
+.. _en-us_topic_0046912051__fig66853906172350:
+
 .. figure:: /_static/images/en-us_image_0174076025.png
    :alt: **Figure 1** Data encryption process
    :figclass: vsd
@@ -43,11 +47,9 @@ The key used for encryption relies on the Key Management Service (KMS). KMS uses
 
    **Figure 1** Data encryption process
 
-`Table 1 <#enustopic0046912051table58453122162120>`__ describes the keys involved in the data encryption process.
+:ref:`Table 1 <en-us_topic_0046912051__table58453122162120>` describes the keys involved in the data encryption process.
 
-
-
-.. _ENUSTOPIC0046912051table58453122162120:
+.. _en-us_topic_0046912051__table58453122162120:
 
 .. table:: **Table 1** Keys
 
@@ -70,5 +72,3 @@ The key used for encryption relies on the Key Management Service (KMS). KMS uses
    After disabling a CMK or scheduling the deletion of a CMK takes effect, the EVS disk encrypted using this CMK can still be used until the disk is detached from and then attached to an ECS again. During this process, the disk fails to be attached to the ECS because the CMK cannot be obtained. Therefore, the EVS disk becomes unavailable.
 
 For details about KMS, see *Key Management Service User Guide*.
-
-

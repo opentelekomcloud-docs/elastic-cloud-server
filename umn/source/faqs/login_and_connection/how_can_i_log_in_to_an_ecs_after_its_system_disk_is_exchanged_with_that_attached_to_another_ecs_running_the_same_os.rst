@@ -1,3 +1,5 @@
+.. _en-us_topic_0100005619:
+
 How Can I Log In to an ECS After Its System Disk Is Exchanged with That Attached to Another ECS Running the Same OS?
 ====================================================================================================================
 
@@ -21,11 +23,9 @@ Two ECSs run the same OS, for example, both run Windows or Linux. The system dis
 Windows
 -------
 
-For example, there are two Windows ECSs with parameters configured in `Table 1 <#enustopic0100005619table1365540183310>`__.
+For example, there are two Windows ECSs with parameters configured in :ref:`Table 1 <en-us_topic_0100005619__table1365540183310>`.
 
-
-
-.. _ENUSTOPIC0100005619table1365540183310:
+.. _en-us_topic_0100005619__table1365540183310:
 
 .. table:: **Table 1** Parameter configurations
 
@@ -52,22 +52,22 @@ The random password for logging in to ecs_02 must be resolved again. The procedu
 
    Locate the row containing ecs_02, click **More** in the **Operation** column, and select **Start** from the drop-down list. Then, in the **Start ECS** dialog box, click **OK**.
 
-#. Obtain the password for logging in to ecs_02.
+#. .. _en-us_topic_0100005619__li138721252141517:
+
+   Obtain the password for logging in to ecs_02.
 
    a. Locate the row containing ecs_02, click **More** in the **Operation** column, and select **Get Password** from the drop-down list.
    b. Click **Select File** and upload private key file **Keypair_02** of ecs_02.
    c. Click **Get Password** to obtain a new random password.
 
-#. Use the random password obtained in step 3 to log in to ecs_02 with the system disk replaced.
+#. Use the random password obtained in step :ref:`3 <en-us_topic_0100005619__li138721252141517>` to log in to ecs_02 with the system disk replaced.
 
 Linux
 -----
 
-For example, there are two Linux ECSs with parameters configured in `Table 2 <#enustopic0100005619table9561950195614>`__.
+For example, there are two Linux ECSs with parameters configured in :ref:`Table 2 <en-us_topic_0100005619__table9561950195614>`.
 
-
-
-.. _ENUSTOPIC0100005619table9561950195614:
+.. _en-us_topic_0100005619__table9561950195614:
 
 .. table:: **Table 2** Parameter configurations
 
@@ -84,5 +84,3 @@ Use either of the following methods to log in to ecs_02:
 
 -  Use private key file **Keypair_01** of ecs_01.
 -  Use private key file **Keypair_02** of ecs_02.
-
-

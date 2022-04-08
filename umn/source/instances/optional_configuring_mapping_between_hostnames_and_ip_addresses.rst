@@ -1,3 +1,5 @@
+.. _en-us_topic_0074752335:
+
 (Optional) Configuring Mapping Between Hostnames and IP Addresses
 =================================================================
 
@@ -45,7 +47,9 @@ For example, there are two ECSs in a VPC, ecs-01 and ecs-02. Perform the followi
 
    a. Log in to ecs-01.
 
-   b. Run the following command to switch to user **root**:
+   b. .. _en-us_topic_0074752335__li6087483710276:
+
+      Run the following command to switch to user **root**:
 
       **sudo su -**
 
@@ -67,18 +71,18 @@ For example, there are two ECSs in a VPC, ecs-01 and ecs-02. Perform the followi
 
    f. Press **Esc** to exit editing mode.
 
-   g. Run the following command to save the configuration and exit:
+   g. .. _en-us_topic_0074752335__li64061240102622:
+
+      Run the following command to save the configuration and exit:
 
       **:wq**
 
    h. Log in to ecs-02.
 
-   i. Repeat 3.b to 3.g.
+   i. Repeat :ref:`3.b <en-us_topic_0074752335__li6087483710276>` to :ref:`3.g <en-us_topic_0074752335__li64061240102622>`.
 
 #. Check whether the ECSs can communicate with each other using hostnames.
 
    Log in to an ECS in the same VPC, run the following command to ping the added host, and check whether the operation is successful:
 
    **ping** *Hostname*
-
-

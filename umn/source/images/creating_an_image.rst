@@ -1,3 +1,5 @@
+.. _en-us_topic_0101604508:
+
 Creating an Image
 =================
 
@@ -26,8 +28,6 @@ Procedure
    -  **Name**: Customize your image name.
 
 #. Click **Create Now**.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

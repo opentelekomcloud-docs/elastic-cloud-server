@@ -1,3 +1,5 @@
+.. _en-us_topic_0040863659:
+
 What Are the Requirements for Attaching an EVS Disk to an ECS?
 ==============================================================
 
@@ -11,6 +13,4 @@ What Are the Requirements for Attaching an EVS Disk to an ECS?
 
 -  A SCSI EVS disk cannot be used as an ECS system disk.
 
--  Certain ECSs support SCSI EVS disk attachment. For details, see `Which ECSs Can Be Attached with SCSI EVS Disks? <../../faqs/disk_management/which_ecss_can_be_attached_with_scsi_evs_disks.html>`__
-
-
+-  Certain ECSs support SCSI EVS disk attachment. For details, see :ref:`Which ECSs Can Be Attached with SCSI EVS Disks? <en-us_topic_0077938284>`

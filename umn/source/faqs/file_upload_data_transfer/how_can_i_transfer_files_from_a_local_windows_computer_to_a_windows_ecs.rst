@@ -1,3 +1,5 @@
+.. _en-us_topic_0166284970:
+
 How Can I Transfer Files from a Local Windows Computer to a Windows ECS?
 ========================================================================
 
@@ -10,9 +12,9 @@ Prerequisites
 -------------
 
 -  The target ECS is running.
--  The ECS has an EIP bound. For details, see `Binding an EIP <../../eips/binding_an_eip.html>`__.
+-  The ECS has an EIP bound. For details, see :ref:`Binding an EIP <en-us_topic_0174917535>`.
 
--  The security group of the ECS allows traffic on port 3389. For details, see `Configuring Security Group Rules <../../security/security_groups/configuring_security_group_rules.html>`__.
+-  The security group of the ECS allows traffic on port 3389. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.
 
 Solution
 --------
@@ -46,8 +48,6 @@ Solution
    The local disk is displayed on the Windows ECS.
 
 #. Double-click the local disk to access it and copy the file to be transferred to the Windows ECS.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0166287347.png
 

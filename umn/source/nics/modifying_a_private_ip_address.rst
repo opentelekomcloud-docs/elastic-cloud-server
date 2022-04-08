@@ -1,3 +1,5 @@
+.. _en-us_topic_0133339807:
+
 Modifying a Private IP Address
 ==============================
 
@@ -36,5 +38,3 @@ Procedure
       Subnets can be changed only within the same VPC.
 
    If the target private IP address is not specified, the system will automatically assign one to the primary NIC.
-
-

@@ -1,3 +1,5 @@
+.. _en-us_topic_0142266317:
+
 Changing an ECS Name
 ====================
 
@@ -43,8 +45,6 @@ Procedure for Batch Operations
 #. Click **OK**.
 
    If you change ECS names in a batch, the new ECS names are the same, for example, all are **ecs-test**.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

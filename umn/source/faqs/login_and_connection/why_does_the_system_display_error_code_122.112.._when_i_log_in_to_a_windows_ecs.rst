@@ -1,3 +1,5 @@
+.. _en-us_topic_0264235943:
+
 Why Does the System Display Error Code 122.112.\ *.* When I Log In to a Windows ECS?
 ====================================================================================
 
@@ -21,6 +23,8 @@ Solution
 
    b. Click |image1| to start the service manager and choose **Administrative Tools** > **Event Viewer** > **Windows Logs** > **System** > **Filter Current Logs**.
 
+      .. _en-us_topic_0264235943__en-us_topic_0138293296_fig1129272819299:
+
       .. figure:: /_static/images/en-us_image_0000001122000869.png
          :alt: Click to enlarge
          :figclass: imgResize
@@ -29,6 +33,8 @@ Solution
          **Figure 1** Event viewer
 
    c. In the **Event Level** pane, select event levels.
+
+      .. _en-us_topic_0264235943__en-us_topic_0138293296_fig13103521154816:
 
       .. figure:: /_static/images/en-us_image_0000001121886141.png
          :alt: Click to enlarge
@@ -47,8 +53,6 @@ Solution
 #. Check whether the purchased Windows ECS is with 1 vCPU and 1 GB of memory.
 
    If it is, change the flavor or stop unnecessary processes.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0000001122204571.png
 

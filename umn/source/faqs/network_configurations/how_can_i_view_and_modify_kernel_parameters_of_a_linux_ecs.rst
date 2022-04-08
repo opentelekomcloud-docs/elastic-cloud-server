@@ -1,18 +1,18 @@
+.. _en-us_topic_0107659745:
+
 How Can I View and Modify Kernel Parameters of a Linux ECS?
 ===========================================================
 
 Modify the kernel parameters only if the parameter settings affect your services. Kernel parameters vary depending on OS versions. If the parameter settings must be modified,
 
 -  Ensure that the target parameter settings meet service requirements.
--  Modify the correct kernel parameters. For details about common kernel parameters, see `Table 1 <#enustopic0107659745table15253154115313>`__.
+-  Modify the correct kernel parameters. For details about common kernel parameters, see :ref:`Table 1 <en-us_topic_0107659745__table15253154115313>`.
 -  Back up key ECS data before modifying kernel parameter settings.
 
 Background
 ----------
 
-
-
-.. _ENUSTOPIC0107659745table15253154115313:
+.. _en-us_topic_0107659745__table15253154115313:
 
 .. table:: **Table 1** Common Linux kernel parameters
 
@@ -186,5 +186,3 @@ Modifying Kernel Parameter Settings
    #. Run the following command for the configuration to take effect:
 
       **/sbin/sysctl -p**
-
-

@@ -1,3 +1,5 @@
+.. _en-us_topic_0092494193:
+
 Logging In to an ECS
 ====================
 
@@ -5,6 +7,8 @@ Logging In to a Windows ECS
 ---------------------------
 
 You can log in to a Windows ECS using either VNC or MSTSC provided on the management console.
+
+.. _en-us_topic_0092494193__en-us_topic_0144542149_fig297212219553:
 
 .. figure:: /_static/images/en-us_image_0201719710.png
    :alt: Click to enlarge
@@ -17,22 +21,24 @@ You can log in to a Windows ECS using either VNC or MSTSC provided on the manage
 
    Use the password obtaining function provided by the management console to decrypt the key file to obtain a password.
 
-   For details, see `Obtaining the Password for Logging In to a Windows ECS <../passwords_and_key_pairs/obtaining_the_password_for_logging_in_to_a_windows_ecs.html>`__.
+   For details, see :ref:`Obtaining the Password for Logging In to a Windows ECS <en-us_topic_0031107266>`.
 
 #. Select a login method and log in to the ECS.
 
    -  Management console (VNC)
 
-      For details, see `Login Using VNC <../instances/logging_in_to_a_windows_ecs/login_using_vnc.html>`__.
+      For details, see :ref:`Login Using VNC <en-us_topic_0027268511>`.
 
    -  Remote desktop connection (MSTSC)
 
-      For details, see `Login Using MSTSC <../instances/logging_in_to_a_windows_ecs/login_using_mstsc.html>`__.
+      For details, see :ref:`Login Using MSTSC <en-us_topic_0017955381>`.
 
 Logging In to a Linux ECS
 -------------------------
 
 You can log in to a Linux ECS using either VNC or SSH key provided on the management console.
+
+.. _en-us_topic_0092494193__en-us_topic_0144542149_fig51588342172524:
 
 .. figure:: /_static/images/en-us_image_0201719715.png
    :alt: **Figure 2** Linux ECS login modes
@@ -45,21 +51,19 @@ You can log in to a Linux ECS using either VNC or SSH key provided on the manage
 
    -  VNC
 
-      For details, see `Login Using VNC <../instances/logging_in_to_a_linux_ecs/login_using_vnc.html>`__.
+      For details, see :ref:`Login Using VNC <en-us_topic_0093263550>`.
 
    -  SSH key
 
       When you log in to the ECS using the SSH key, bind an EIP to the ECS.
 
-      For details, see `Login Using an SSH Key <../instances/logging_in_to_a_linux_ecs/login_using_an_ssh_key.html>`__.
+      For details, see :ref:`Login Using an SSH Key <en-us_topic_0017955380>`.
 
 Follow-up Procedure
 -------------------
 
 -  If you have added a data disk during ECS creation, you must initialize the data disk after logging in to the ECS.
 
-   For details, see `Scenarios and Disk Partitions <../getting_started/initializing_evs_data_disks/scenarios_and_disk_partitions.html>`__.
+   For details, see :ref:`Scenarios and Disk Partitions <en-us_topic_0030831623>`.
 
--  Certain ECSs require the installation of a driver after you log in to them. For details about available ECS types as well as their functions and usage, see "Notes" in `ECS Types <../service_overview/instances/ecs_types.html>`__.
-
-
+-  Certain ECSs require the installation of a driver after you log in to them. For details about available ECS types as well as their functions and usage, see "Notes" in :ref:`ECS Types <en-us_topic_0035470096>`.

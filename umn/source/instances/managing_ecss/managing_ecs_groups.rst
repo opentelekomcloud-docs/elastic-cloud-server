@@ -1,3 +1,5 @@
+.. _en-us_topic_0032980085:
+
 Managing ECS Groups
 ===================
 
@@ -36,8 +38,6 @@ Follow-up Procedure
 Add an ECS to an ECS group only when creating the ECS.
 
 To do so, expand **Advanced Options** and select the target ECS group.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

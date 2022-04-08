@@ -1,3 +1,5 @@
+.. _en-us_topic_0240708483:
+
 What Should I Do If Error Message "Permission denied" Is Displayed When I Remotely Log In to a Linux ECS?
 =========================================================================================================
 
@@ -5,6 +7,8 @@ Symptom
 -------
 
 When I attempted to remotely log in to a Linux ECS, the system displayed error Message "Permission denied".
+
+.. _en-us_topic_0240708483__fig5631046188:
 
 .. figure:: /_static/images/en-us_image_0240710556.png
    :alt: **Figure 1** Permission denied
@@ -35,6 +39,8 @@ Solution
 
    c. Press the up arrow key to prevent automatic system startup. When the kernels are displayed, press **e** to enter the editing mode.
 
+      .. _en-us_topic_0240708483__en-us_topic_0240708482_fig1087511256811:
+
       .. figure:: /_static/images/en-us_image_0240711431.png
          :alt: Click to enlarge
          :figclass: imgResize
@@ -52,12 +58,16 @@ Solution
 
    f. Add **rd.break** and press **Ctrl+X**.
 
+      .. _en-us_topic_0240708483__en-us_topic_0240708482_fig1654418212503:
+
       .. figure:: /_static/images/en-us_image_0260575520.png
          :alt: Click to enlarge
          :figclass: imgResize
       
 
          **Figure 3** Before the modification
+
+      .. _en-us_topic_0240708483__en-us_topic_0240708482_fig1954412105016:
 
       .. figure:: /_static/images/en-us_image_0260575521.png
          :alt: Click to enlarge
@@ -70,11 +80,13 @@ Solution
 
       **# chroot /sysroot**
 
-2. Run the following command to view the **fs.nr_open** value:
+2. .. _en-us_topic_0240708483__li12380124143314:
+
+   Run the following command to view the **fs.nr_open** value:
 
    **sysctl fs.nr_open**
 
-3. Change the **nofile** value in **/etc/security/limits.conf** so that the value is smaller than the **fs.nr_open** value obtained in 2.
+3. Change the **nofile** value in **/etc/security/limits.conf** so that the value is smaller than the **fs.nr_open** value obtained in :ref:`2 <en-us_topic_0240708483__li12380124143314>`.
 
    **vi /etc/security/limits.conf**
 
@@ -85,5 +97,3 @@ Solution
       **man limits.conf**
 
 4. Restart the ECS and try to log in to it again.
-
-

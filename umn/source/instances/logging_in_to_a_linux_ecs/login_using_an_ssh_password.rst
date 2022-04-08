@@ -1,3 +1,5 @@
+.. _en-us_topic_0017955633:
+
 Login Using an SSH Password
 ===========================
 
@@ -14,18 +16,20 @@ Prerequisites
 -------------
 
 -  The target ECS is running.
--  You have bound an EIP to the ECS. For details, see `Binding an EIP <../../eips/binding_an_eip.html>`__.
+-  You have bound an EIP to the ECS. For details, see :ref:`Binding an EIP <en-us_topic_0174917535>`.
 
--  Access to port 22 is allowed in the inbound direction of the security group to which the ECS belongs. For details, see `Configuring Security Group Rules <../../security/security_groups/configuring_security_group_rules.html>`__.
+-  Access to port 22 is allowed in the inbound direction of the security group to which the ECS belongs. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.
 -  The network connection between the login tool (PuTTY) and the target ECS is normal. For example, the default port 22 is not blocked by the firewall.
--  You have obtained the SSH login permission and reset the common user password for logging in to the Linux ECS. For details, see `Configuring the Login Permission Using SSH Password Authentication <#configuring-the-login-permission-using-ssh-password-authentication>`__.
+-  You have obtained the SSH login permission and reset the common user password for logging in to the Linux ECS. For details, see :ref:`Configuring the Login Permission Using SSH Password Authentication <en-us_topic_0017955633__section6207684794951>`.
+
+.. _en-us_topic_0017955633__section6207684794951:
 
 Configuring the Login Permission Using SSH Password Authentication
 ------------------------------------------------------------------
 
 **Assigning the remote login permission using SSH key authentication**
 
-#. Use the SSH key to log in to the Linux ECS. For details, see `Login Using an SSH Key <../../instances/logging_in_to_a_linux_ecs/login_using_an_ssh_key.html>`__.
+#. Use the SSH key to log in to the Linux ECS. For details, see :ref:`Login Using an SSH Key <en-us_topic_0017955380>`.
 
 #. Run the following command to change the value of **PasswordAuthentication** in **/etc/ssh/sshd_config** to **yes**:
 
@@ -73,6 +77,8 @@ Configuring the Login Permission Using SSH Password Authentication
 
       passwd: all authentication tokens updated successfully.
 
+.. _en-us_topic_0017955633__section62068112020:
+
 Logging In to the Linux ECS from a Local Windows Server
 -------------------------------------------------------
 
@@ -96,6 +102,8 @@ The following operations use PuTTY as an example to log in to the ECS.
 
    d. **Saved Sessions**: Task name, which can be clicked for remote connection when you use PuTTY next time
 
+      .. _en-us_topic_0017955633__fig74247114018:
+
       .. figure:: /_static/images/en-us_image_0159943784.png
          :alt: Click to enlarge
          :figclass: imgResize
@@ -111,11 +119,11 @@ The following operations use PuTTY as an example to log in to the ECS.
 
 #. After the SSH connection to the ECS is set up, enter the username and password as prompted to log in to the ECS.
 
+.. _en-us_topic_0017955633__section20811823174313:
+
 Logging In to the Linux ECS from a Local Linux Server
 -----------------------------------------------------
 
 To log in to the Linux ECS from a local Linux server, run the following command:
 
 **ssh** *EIP bound to the ECS*
-
-

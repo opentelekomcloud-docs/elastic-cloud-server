@@ -1,3 +1,5 @@
+.. _en-us_topic_0013771112:
+
 What Is ECS?
 ============
 
@@ -17,6 +19,8 @@ ECS works with other products and services to provide computing, storage, and ne
 -  Cloud Eye lets you keep a close eye on the performance and resource utilization of ECSs, ensuring ECS reliability and availability.
 -  Volume Backup Service (VBS) allows you to create data backups for EVS disks and use the backups to restore the EVS disks. This maximizes user data correctness and security.
 -  Cloud Server Backup Service (CSBS) backs up all EVS disks of an ECS, including the system disk and data disks, and uses the backup to restore the ECS.
+
+.. _en-us_topic_0013771112__fig36062790113621:
 
 .. figure:: /_static/images/en-us_image_0071898891.png
    :alt: Click to enlarge
@@ -39,5 +43,3 @@ The public cloud provides a web-based service management platform. You can acces
    Use this method if you are not required to integrate ECSs with a third-party system.
 
    After registering on the public cloud platform, log in to the management console and click **Elastic Cloud Server** under **Compute** on the homepage.
-
-

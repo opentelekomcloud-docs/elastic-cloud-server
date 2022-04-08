@@ -1,3 +1,5 @@
+.. _en-us_topic_0088241338:
+
 Why Does the System Display a Question Mark When I Attempt to Obtain Console Logs?
 ==================================================================================
 
@@ -5,6 +7,8 @@ Symptom
 -------
 
 The system displays a question mark (?) when I attempt to obtain the console logs of an ECS.
+
+.. _en-us_topic_0088241338__fig5159771161128:
 
 .. figure:: /_static/images/en-us_image_0088242234.jpg
    :alt: Click to enlarge
@@ -23,6 +27,4 @@ Solution
 
 Enable management console log obtaining on the ECS.
 
-For details, see step 1 in section `Obtaining ECS Console Logs <../../instances/managing_ecss/obtaining_ecs_console_logs.html>`__.
-
-
+For details, see step 1 in section :ref:`Obtaining ECS Console Logs <en-us_topic_0057711189>`.

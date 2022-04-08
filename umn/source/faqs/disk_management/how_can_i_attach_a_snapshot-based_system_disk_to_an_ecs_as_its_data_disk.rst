@@ -1,3 +1,5 @@
+.. _en-us_topic_0152643976:
+
 How Can I Attach a Snapshot-based System Disk to an ECS as Its Data Disk?
 =========================================================================
 
@@ -52,5 +54,3 @@ To do so, perform the following operations:
    **:wq**
 
 #. Restart the ECS for the modification to take effect.
-
-

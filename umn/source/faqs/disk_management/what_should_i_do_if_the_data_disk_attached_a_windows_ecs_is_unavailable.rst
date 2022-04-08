@@ -1,3 +1,5 @@
+.. _en-us_topic_0251012483:
+
 What Should I Do If the Data Disk Attached a Windows ECS Is Unavailable?
 ========================================================================
 
@@ -34,6 +36,8 @@ After the ECS OS is changed, data disks may become unavailable due to file syste
 
    In the disk list, right-click the affected disk and choose **Online** from the shortcut menu to make it online.
 
+   .. _en-us_topic_0251012483__fig1869603017195:
+
    .. figure:: /_static/images/en-us_image_0251063932.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -44,5 +48,3 @@ After the ECS OS is changed, data disks may become unavailable due to file syste
 #. In **My Computer**, check whether the data disk is displayed properly.
 
    If the fault persists, initialize and partition the disk again. Before initializing the disk, create a backup for it.
-
-

@@ -1,3 +1,5 @@
+.. _en-us_topic_0114225937:
+
 Why Does a Disk Attached to a Windows ECS Go Offline?
 =====================================================
 
@@ -5,6 +7,8 @@ Symptom
 -------
 
 A disk attached to a Windows ECS goes offline, and the system displays the message "The disk is offline because of policy set by an administrator."
+
+.. _en-us_topic_0114225937__fig1167510561578:
 
 .. figure:: /_static/images/en-us_image_0114229858.png
    :alt: Click to enlarge
@@ -17,10 +21,6 @@ Possible Causes
 ---------------
 
 Windows has three types of SAN policies: **OnlineAll**, **OfflineShared**, and **OfflineInternal**.
-
-
-
-.. _ENUSTOPIC0114225937table28191141038:
 
 .. table:: **Table 1** SAN policies
 
@@ -55,12 +55,12 @@ Use the disk partition management tool DiskPart to obtain and set the SAN policy
 
    -  If the SAN policy is **OnlineAll**, run the **exit** command to exit DiskPart.
 
-   -  If the SAN policy is not **OnlineAll**, go to step 5.
+   -  If the SAN policy is not **OnlineAll**, go to step :ref:`5 <en-us_topic_0114225937__li5934113914122>`.
 
-#. Run the following command to change the SAN policy to **OnlineAll**:
+#. .. _en-us_topic_0114225937__li5934113914122:
+
+   Run the following command to change the SAN policy to **OnlineAll**:
 
    **san policy=onlineall**
 
 #. (Optional) Use the ECS with the SAN policy changed to create a private image so that the configuration takes effect permanently. After an ECS is created using this private image, the disks attached to the ECS are online by default. You only need to initialize them.
-
-

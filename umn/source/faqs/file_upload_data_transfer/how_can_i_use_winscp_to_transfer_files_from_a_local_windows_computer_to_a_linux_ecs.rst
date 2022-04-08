@@ -1,3 +1,5 @@
+.. _en-us_topic_0166284971:
+
 How Can I Use WinSCP to Transfer Files from a Local Windows Computer to a Linux ECS?
 ====================================================================================
 
@@ -12,9 +14,9 @@ Prerequisites
 -------------
 
 -  The target ECS is running.
--  The ECS has an EIP bound. For details, see `Binding an EIP <../../eips/binding_an_eip.html>`__.
+-  The ECS has an EIP bound. For details, see :ref:`Binding an EIP <en-us_topic_0174917535>`.
 
--  The security group of the ECS allows traffic on port 22. For details, see `Configuring Security Group Rules <../../security/security_groups/configuring_security_group_rules.html>`__.
+-  The security group of the ECS allows traffic on port 22. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.
 
 Solution
 --------
@@ -46,8 +48,6 @@ Solution
 4. Click **Login**.
 
 5. Drag a file from the local computer on the left to the remotely logged in ECS on the right to transfer the file.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0166287336.png
    :class: imgResize

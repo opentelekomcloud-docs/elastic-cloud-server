@@ -1,3 +1,5 @@
+.. _en-us_topic_0000001174675379:
+
 CBR
 ===
 
@@ -16,10 +18,6 @@ You can back up ECS data using the Cloud Server Backup or Cloud Disk Backup func
 -  Cloud Server Backup (recommended): Use this backup function if you want to back up the data of all EVS disks (system and data disks) on an ECS. This prevents data inconsistency caused by time difference in creating a backup.
 -  Cloud Disk Backup: Use this backup function if you want to back up the data of one or more EVS disks (system or data disk) on an ECS. This minimizes backup costs on the basis of data security.
 
-
-
-.. _ENUSTOPIC0000001174675379table1210762195612:
-
 .. table:: **Table 1** Differences between cloud server backup and cloud disk backup
 
    +---------------------------------------+----------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
@@ -31,5 +29,3 @@ You can back up ECS data using the Cloud Server Backup or Cloud Disk Backup func
    +---------------------------------------+----------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
    | Advantages                            | All disks on a server are backed up at the same time, ensuring data consistency. | Backup cost is reduced without compromising data security.                                              |
    +---------------------------------------+----------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-
-

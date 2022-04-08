@@ -1,3 +1,5 @@
+.. _en-us_topic_0163572589:
+
 Step 1: Configure Basic Settings
 ================================
 
@@ -58,7 +60,7 @@ Performing Basic Configurations
 
    .. note::
 
-      -  Before selecting an ECS type, learn the introduction and notes on each type of ECSs. For details, see `ECS Types <../../service_overview/instances/ecs_types.html>`__.
+      -  Before selecting an ECS type, learn the introduction and notes on each type of ECSs. For details, see :ref:`ECS Types <en-us_topic_0035470096>`.
 
       -  **Local Disk**: specifies the local storage of the physical server where the ECS is deployed. Only Hard Disk Driver (HDD) disks are supported. If the ECS of the selected type (such as **Disk-intensive**) uses local disks, the system automatically attaches the local disks to the ECS and displays the information of the local disks.
 
@@ -108,16 +110,16 @@ Performing Basic Configurations
 
       Allows you to use your existing OS license. In such a case, you do not need to apply for a license again.
 
-   For more details, see `License Type <../../service_overview/security/license_type.html>`__.
+   For more details, see :ref:`License Type <en-us_topic_0046566932>`.
 
 #. Set **System Disk** and **Data Disk** if required.
 
    -  System disk
 
-      For the disk types supported by an ECS, see `EVS Disks <../../service_overview/evs_disks.html>`__.
+      For the disk types supported by an ECS, see :ref:`EVS Disks <en-us_topic_0030828256>`.
 
-      -  If the image based on which an ECS is created is not encrypted, the system disk of the ECS is not encrypted. If the image based on which an ECS is created is encrypted, the system disk of the ECS is automatically encrypted. For details, see `(Optional) Encryption-related parameters <#enustopic0163572589enustopic0144542112li3286101316615>`__.
-      -  **Encryption**: indicates that the system disk is encrypted if you select this option. For details, see `(Optional) Encryption-related parameters <#enustopic0163572589enustopic0144542112li3286101316615>`__.
+      -  If the image based on which an ECS is created is not encrypted, the system disk of the ECS is not encrypted. If the image based on which an ECS is created is encrypted, the system disk of the ECS is automatically encrypted. For details, see :ref:`(Optional) Encryption-related parameters <en-us_topic_0163572589__en-us_topic_0144542112_li3286101316615>`.
+      -  **Encryption**: indicates that the system disk is encrypted if you select this option. For details, see :ref:`(Optional) Encryption-related parameters <en-us_topic_0163572589__en-us_topic_0144542112_li3286101316615>`.
       -  For a P1 or P2 ECS, the system disk must be greater than or equal to 15 GB. It is recommended that the system disk be greater than 40 GB. A disk size must be an integer multiple of 10, for example, 60 GB or 70 GB. Otherwise, the system automatically rounds the value down, for example, 60 GB for value **68**.
 
    -  Data disk
@@ -126,11 +128,11 @@ Performing Basic Configurations
 
       Click |image2| and set the following functions if required:
 
-      -  **SCSI**: indicates that the device type of the data disk is SCSI if you select this option. For more information about SCSI disks and the ECSs that can be attached with SCSI disks, see `EVS Disks <../../service_overview/evs_disks.html>`__.
+      -  **SCSI**: indicates that the device type of the data disk is SCSI if you select this option. For more information about SCSI disks and the ECSs that can be attached with SCSI disks, see :ref:`EVS Disks <en-us_topic_0030828256>`.
 
       -  **Share**: indicates that the EVS disk is sharable if you select this option. Such an EVS disk can be attached to multiple ECSs.
 
-      -  **Encryption**: indicates that the data disk is encrypted if you select this option. For details, see `(Optional) Encryption-related parameters <#enustopic0163572589enustopic0144542112li3286101316615>`__.
+      -  **Encryption**: indicates that the data disk is encrypted if you select this option. For details, see :ref:`(Optional) Encryption-related parameters <en-us_topic_0163572589__en-us_topic_0144542112_li3286101316615>`.
 
       -  **Create Disk from Data Disk Image**: If you have created a data disk image on the **Image Management Service** page, when using a Windows or Linux image to create an ECS, you can use the data disk image to create data disks for the ECS.
 
@@ -142,9 +144,11 @@ Performing Basic Configurations
             -  When you use a data disk image to create a disk, **SCSI**, **Encryption**, and **Share** are unavailable.
             -  For instructions about how to create a data disk image, see *Image Management Service User Guide*.
 
-   -  (Optional) Encryption-related parameters
+   -  .. _en-us_topic_0163572589__en-us_topic_0144542112_li3286101316615:
 
-      To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permission, assign the KMS access permissions to EVS. If you do not have the permission, contact the user having the security administrator rights to assign the KMS access permissions. For more details, see `Can All Users Use the Encryption Feature? <../../faqs/disk_management/can_all_users_use_the_encryption_feature.html>`__
+      (Optional) Encryption-related parameters
+
+      To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permission, assign the KMS access permissions to EVS. If you do not have the permission, contact the user having the security administrator rights to assign the KMS access permissions. For more details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
 
       -  **Encryption**: indicates that the EVS disk has been encrypted.
       -  **Create Xrole**: assigns KMS access permissions to EVS to obtain KMS keys. After the permissions are assigned, follow-up operations do not require assigning permissions again.
@@ -153,8 +157,6 @@ Performing Basic Configurations
       -  **KMS Key ID**: specifies the ID of the key used by the encrypted data disk.
 
 #. Click **Next: Configure Network**.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0171575801.png
 

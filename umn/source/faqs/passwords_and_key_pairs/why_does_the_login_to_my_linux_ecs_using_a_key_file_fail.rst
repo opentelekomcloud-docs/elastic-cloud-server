@@ -1,3 +1,5 @@
+.. _en-us_topic_0031734664:
+
 Why Does the Login to My Linux ECS Using a Key File Fail?
 =========================================================
 
@@ -30,5 +32,3 @@ Solution
 
       -  If the login is successful, no further action is required.
       -  If the login fails, contact customer service for technical support.
-
-

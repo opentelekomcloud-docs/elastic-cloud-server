@@ -1,3 +1,5 @@
+.. _en-us_topic_0263796591:
+
 How Can I Use SCP to Transfer Files Between a Local Linux Computer and a Linux ECS?
 ===================================================================================
 
@@ -23,6 +25,8 @@ Log in to the management console. On the **Elastic Cloud Server** page, obtain t
 
    Enter the login password as prompted.
 
+   .. _en-us_topic_0263796591__fig14448226162016:
+
    .. figure:: /_static/images/en-us_image_0263796649.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -42,11 +46,11 @@ Log in to the management console. On the **Elastic Cloud Server** page, obtain t
 
    Enter the login password as prompted.
 
+   .. _en-us_topic_0263796591__fig1437792312541:
+
    .. figure:: /_static/images/en-us_image_0263796651.png
       :alt: Click to enlarge
       :figclass: imgResize
    
 
       **Figure 2** Setting file downloading
-
-

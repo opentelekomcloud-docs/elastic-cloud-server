@@ -1,3 +1,5 @@
+.. _en-us_topic_0163572591:
+
 Step 3: Configure Advanced Settings
 ===================================
 
@@ -28,7 +30,7 @@ Advanced Settings
 
 #. Set **ECS Group**.
 
-   An ECS group applies the anti-affinity policy to the ECSs in it so that the ECSs are automatically allocated to different hosts. This configuration is optional. For instructions about how to create an ECS group, see `Managing ECS Groups <../../instances/managing_ecss/managing_ecs_groups.html>`__.
+   An ECS group applies the anti-affinity policy to the ECSs in it so that the ECSs are automatically allocated to different hosts. This configuration is optional. For instructions about how to create an ECS group, see :ref:`Managing ECS Groups <en-us_topic_0032980085>`.
 
    .. note::
 
@@ -42,7 +44,7 @@ Advanced Settings
 
       For example, if you activate user **root** permission by passing a script, you can log in to the ECS as user **root**.
 
-      For details, see `Passing User Data to ECSs <../../instances/obtaining_metadata_and_passing_user_data/passing_user_data_to_ecss.html>`__.
+      For details, see :ref:`Passing User Data to ECSs <en-us_topic_0032380449>`.
 
    -  Tag
 
@@ -54,7 +56,7 @@ Advanced Settings
 
          After creating the ECS, you can view the tags on the pages providing details about the ECS, EIP, and EVS disks.
 
-      For detailed operations, see `Overview <../../resources_and_tags/tag_management/overview.html>`__.
+      For detailed operations, see :ref:`Overview <en-us_topic_0092499768>`.
 
    -  Agency
 
@@ -63,5 +65,3 @@ Advanced Settings
       If you have created an agency in IAM, you can select the agency from the drop-down list and obtain specified operation permissions. For instructions about how to create an agency, see *Identity and Access Management User Guide*.
 
 #. Click **Next: Confirm**.
-
-

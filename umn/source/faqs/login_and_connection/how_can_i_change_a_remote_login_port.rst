@@ -1,3 +1,5 @@
+.. _en-us_topic_0244854543:
+
 How Can I Change a Remote Login Port?
 =====================================
 
@@ -19,6 +21,8 @@ The following procedure uses an ECS running Windows Server 2012 as an example. T
 
    b. Change the value in **Value data** to the new port number, which is **2020** in this example.
 
+      .. _en-us_topic_0244854543__fig6797745202319:
+
       .. figure:: /_static/images/en-us_image_0244859999.png
          :alt: **Figure 1** Changing the port number to 2020
       
@@ -31,6 +35,8 @@ The following procedure uses an ECS running Windows Server 2012 as an example. T
 
    b. Change the value in **Value data** to the new port number, which is **2020** in this example.
 
+      .. _en-us_topic_0244854543__en-us_topic_0244854543_fig6797745202319:
+
       .. figure:: /_static/images/en-us_image_0244859999.png
          :alt: **Figure 2** Changing the port number to 2020
       
@@ -38,6 +44,8 @@ The following procedure uses an ECS running Windows Server 2012 as an example. T
          **Figure 2** Changing the port number to 2020
 
 #. Open the Windows search box, enter **services**, and select **Services**.
+
+   .. _en-us_topic_0244854543__fig178235222919:
 
    .. figure:: /_static/images/en-us_image_0244860550.png
       :alt: Click to enlarge
@@ -77,6 +85,8 @@ The following procedure uses an ECS running CentOS 7.3 as an example. The defaul
    **vi /etc/ssh/sshd_config**
 
 #. Delete the comment tag (#) from the **#port 22** line and change **22** to **2020**.
+
+   .. _en-us_topic_0244854543__fig188937250516:
 
    .. figure:: /_static/images/en-us_image_0244856480.png
       :alt: **Figure 4** Changing the port number to 2020
@@ -127,5 +137,3 @@ The following procedure uses an ECS running CentOS 7.3 as an example. The defaul
    Add an inbound rule in which **Protocol** is set to **TCP** and **Port Range** is set to **2020**.
 
    Use port 2020 to remotely log in to the ECS.
-
-

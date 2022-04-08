@@ -1,3 +1,5 @@
+.. _en-us_topic_0105130173:
+
 Why Can't I Use DHCP to Obtain a Private IP Address?
 ====================================================
 
@@ -65,8 +67,6 @@ Solution
 
 #. If the fault persists, obtain the messages in **/var/log/messages** on the affected ECS, use the MAC address of the affected NIC to filter the desired log, and check whether there is any process that prevents DHCP from obtaining an IP address.
 #. If the fault persists, contact customer service for technical support.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0121682580.png
 

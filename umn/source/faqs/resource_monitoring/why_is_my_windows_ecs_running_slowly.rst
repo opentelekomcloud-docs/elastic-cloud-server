@@ -1,3 +1,5 @@
+.. _en-us_topic_0167429328:
+
 Why Is My Windows ECS Running Slowly?
 =====================================
 
@@ -25,6 +27,8 @@ Fault Locating
 
 #. Start the **Run** dialog box, and then enter **perfmon -res**.
 
+   .. _en-us_topic_0167429328__en-us_topic_0166311836_fig18932134871212:
+
    .. figure:: /_static/images/en-us_image_0281771106.png
       :alt: **Figure 1** Starting the Resource Monitor
    
@@ -32,6 +36,8 @@ Fault Locating
       **Figure 1** Starting the Resource Monitor
 
 #. On the **Resource Monitor** page, click the **CPU** or **Network** tab to view the CPU or bandwidth usage.
+
+   .. _en-us_topic_0167429328__en-us_topic_0166311836_fig42857506323:
 
    .. figure:: /_static/images/en-us_image_0281773972.png
       :alt: Click to enlarge
@@ -55,6 +61,8 @@ Fault Locating
    c. Right-click the process with high CPU or bandwidth usage and choose **Open File Location** from the shortcut menu.
 
    d. Check whether the process is malicious.
+
+      .. _en-us_topic_0167429328__en-us_topic_0166311836_fig138318464320:
 
       .. figure:: /_static/images/en-us_image_0281775402.png
          :alt: Click to enlarge
@@ -83,5 +91,3 @@ If the high CPU or bandwidth usage is caused by viruses or Trojan horses, manual
 #. Use the commercial-edition antivirus software or install `Microsoft Safety Scanner <https://docs.microsoft.com/en-us/windows/security/threat-protection/intelligence/safety-scanner-download?spm=a2c4g.11186623.2.22.3fe9671c4mJYXV>`__ to scan for viruses in security mode.
 #. Install the latest patches for Windows.
 #. Run **MSconfig** to disable all drivers that are not delivered with Microsoft and check whether the fault is rectified. For details, see `How to perform a clean boot in Windows <https://support.microsoft.com/en-us/help/929135/how-to-perform-a-clean-boot-in-windows?spm=a2c4g.11186623.2.23.3fe9671c4mJYXV>`__.
-
-

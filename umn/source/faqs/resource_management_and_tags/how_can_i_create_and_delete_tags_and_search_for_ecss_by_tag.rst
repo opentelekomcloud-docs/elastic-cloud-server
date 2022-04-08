@@ -1,3 +1,5 @@
+.. _en-us_topic_0101604501:
+
 How Can I Create and Delete Tags and Search for ECSs by Tag?
 ============================================================
 
@@ -34,5 +36,3 @@ Deleting a Tag
 #. Click **Elastic Cloud Server**.
 #. Click the name of the target ECS.
 #. On the page providing details about the ECS, click **Tags**, locate the row containing the target tag, and click **Delete** in the **Operation** column.
-
-

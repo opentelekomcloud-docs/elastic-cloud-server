@@ -1,3 +1,5 @@
+.. _en-us_topic_0083225171:
+
 How Can I Manually Configure an IP Address for an InfiniBand NIC?
 =================================================================
 
@@ -7,6 +9,8 @@ Prerequisites
 -------------
 
 The InfiniBand NIC driver has been installed on the high-performance H2 or HL1 ECSs.
+
+.. _en-us_topic_0083225171__section42060912112551:
 
 Background
 ----------
@@ -46,10 +50,8 @@ Procedure
 
    .. note::
 
-      For instructions about how to obtain the IP address and subnet mask for an InfiniBand NIC, see `Background <#background>`__.
+      For instructions about how to obtain the IP address and subnet mask for an InfiniBand NIC, see :ref:`Background <en-us_topic_0083225171__section42060912112551>`.
 
 #. Run the following command to restart the network for the configuration to take effect:
 
    **service network restart**
-
-

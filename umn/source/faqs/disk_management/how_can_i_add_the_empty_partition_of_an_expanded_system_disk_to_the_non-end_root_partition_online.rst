@@ -1,3 +1,5 @@
+.. _en-us_topic_0078300750:
+
 How Can I Add the Empty Partition of an Expanded System Disk to the Non-end Root Partition Online?
 ==================================================================================================
 
@@ -194,5 +196,3 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
       old_desc_blocks = 3, new_desc_blocks = 3
       ....
       [root@sluo-ecs-a611 ~] # df -hT     //Check file system capacity expansion
-
-

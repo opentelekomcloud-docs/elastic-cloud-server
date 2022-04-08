@@ -1,3 +1,5 @@
+.. _en-us_topic_0107490388:
+
 What Should I Do If Packages Are Downloaded Using PIP or wget at a Low Rate?
 ============================================================================
 
@@ -5,6 +7,8 @@ Symptom
 -------
 
 When a user runs the wget command to download software packages, the download rate is far less than the bandwidth.
+
+.. _en-us_topic_0107490388__fig17394493307:
 
 .. figure:: /_static/images/en-us_image_0107505891.png
    :alt: Click to enlarge
@@ -24,5 +28,3 @@ Solution
 Run the following command to install openssl packages:
 
 **yum install openssl openssl-devel**
-
-

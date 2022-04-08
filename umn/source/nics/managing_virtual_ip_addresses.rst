@@ -1,3 +1,5 @@
+.. _en-us_topic_0093492520:
+
 Managing Virtual IP Addresses
 =============================
 
@@ -30,8 +32,6 @@ Procedure
 #. Click **Bind to Instance** in the **Operation** column and select the target ECS name and the NIC to bind the virtual IP address to the ECS NIC.
 
    For more information about virtual IP addresses, see *Virtual Private Cloud User Guide*.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0093518909.png
 

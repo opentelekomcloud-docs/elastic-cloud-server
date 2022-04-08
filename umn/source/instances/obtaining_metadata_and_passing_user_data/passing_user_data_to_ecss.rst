@@ -1,3 +1,5 @@
+.. _en-us_topic_0032380449:
+
 Passing User Data to ECSs
 =========================
 
@@ -35,7 +37,7 @@ Use Restrictions
 Passing User Data
 -----------------
 
-#. Create a user data script, the format of which complies with user data script specifications. For details, see `Helpful Links <#helpful-links>`__.
+#. Create a user data script, the format of which complies with user data script specifications. For details, see :ref:`Helpful Links <en-us_topic_0032380449__section54344118153243>`.
 
 #. When creating an ECS, set **Advanced Options** to **Configure now**, and paste the content of the user data script to the **User Data** text box or upload the user data file.
 
@@ -46,6 +48,8 @@ Passing User Data
       Text: Copy the content of the user data script to the text box.
 
       File: Save the user data script to a text file and then upload the file.
+
+   .. _en-us_topic_0032380449__fig87313493915:
 
    .. figure:: /_static/images/en-us_image_0237026761.png
       :alt: Click to enlarge
@@ -67,9 +71,7 @@ Customized user data scripts of Linux ECSs are based on the open-source Cloud-In
 
       By default, the scripts are executed as user **root**.
 
--  Script type: Both user-data scripts and Cloud-Config data scripts are supported. 
-
-.. _ENUSTOPIC0032380449table039994053718:
+-  Script type: Both user-data scripts and Cloud-Config data scripts are supported.
 
    .. table:: **Table 1** Linux ECS script types
 
@@ -127,6 +129,8 @@ Customized user data scripts of Linux ECSs are based on the open-source Cloud-In
 
    After the ECS is created, start it and run the **cat /etc/hosts** command to check the script execution result.
 
+   .. _en-us_topic_0032380449__fig1787242875415:
+
    .. figure:: /_static/images/en-us_image_0115931570.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -139,9 +143,7 @@ User Data Scripts of Windows ECSs
 
 Customized user data scripts of Windows ECSs are based on the open-source Cloudbase-Init architecture. This architecture uses ECS metadata as the data source for initializing and automatically configuring the ECSs. The customized script types are compatible with open-source Cloudbase-Init. For details about Cloudbase-Init, see https://cloudbase-init.readthedocs.io/en/latest/userdata.html.
 
--  Script type: Both batch-processing program scripts and PowerShell scripts are supported. 
-
-.. _ENUSTOPIC0032380449table17839134102219:
+-  Script type: Both batch-processing program scripts and PowerShell scripts are supported.
 
    .. table:: **Table 2** Windows ECS script types
 
@@ -176,6 +178,8 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
 
    After the ECS is created, start it and check the script execution result. In this example, a text file named **1111** is added to disk C:\.
 
+   .. _en-us_topic_0032380449__fig8622411077:
+
    .. figure:: /_static/images/en-us_image_0115932123.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -184,6 +188,8 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
       **Figure 3** Creating text file (Batch)
 
    To view the user data passed to the Windows ECS, log in at http://169.254.169.254/openstack/latest/user_data.
+
+   .. _en-us_topic_0032380449__fig14281122141212:
 
    .. figure:: /_static/images/en-us_image_0115932873.png
       :alt: Click to enlarge
@@ -203,6 +209,8 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
 
    After the ECS is created, start it and check the script execution result. In this example, a text file named **aaaa** is added to disk C:\.
 
+   .. _en-us_topic_0032380449__fig103618447159:
+
    .. figure:: /_static/images/en-us_image_0115933029.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -211,6 +219,8 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
       **Figure 5** Creating text file (PowerShell)
 
    To view the user data passed to the Windows ECS, log in at http://169.254.169.254/openstack/latest/user_data.
+
+   .. _en-us_topic_0032380449__fig124617204176:
 
    .. figure:: /_static/images/en-us_image_0115934291.jpg
       :alt: Click to enlarge
@@ -245,11 +255,9 @@ This case illustrates how to use the user data passing function to set the passw
 
 .. note::
 
-   The new password must meet the password complexity requirements listed in `Table 3 <#enustopic0032380449enustopic0021426802table4381109318958>`__.
+   The new password must meet the password complexity requirements listed in :ref:`Table 3 <en-us_topic_0032380449__en-us_topic_0021426802_table4381109318958>`.
 
-
-
-.. _ENUSTOPIC0032380449enustopic0021426802table4381109318958:
+.. _en-us_topic_0032380449__en-us_topic_0021426802_table4381109318958:
 
 .. table:: **Table 3** Password complexity requirements
 
@@ -310,11 +318,9 @@ In this example, the password of user **root** is reset to **\*****\***.
 
 .. note::
 
-   The new password must meet the password complexity requirements listed in `Table 4 <#enustopic0032380449table580060101120>`__.
+   The new password must meet the password complexity requirements listed in :ref:`Table 4 <en-us_topic_0032380449__table580060101120>`.
 
-
-
-.. _ENUSTOPIC0032380449table580060101120:
+.. _en-us_topic_0032380449__table580060101120:
 
 .. table:: **Table 4** Password complexity requirements
 
@@ -354,7 +360,7 @@ In this example, the user's username is **abc**, its password is **\*****\***, a
 
 .. note::
 
-   The new password must meet the password complexity requirements listed in `Table 4 <#enustopic0032380449table580060101120>`__.
+   The new password must meet the password complexity requirements listed in :ref:`Table 4 <en-us_topic_0032380449__table580060101120>`.
 
 User data example:
 
@@ -396,6 +402,8 @@ User data example:
    - sed -i '/^KexAlgorithms.*$/d' /etc/ssh/sshd_config
    - service sshd restart
 
+.. _en-us_topic_0032380449__section54344118153243:
+
 Helpful Links
 -------------
 
@@ -404,5 +412,3 @@ For more information about user data passing cases, visit the official Cloud-ini
 -  https://cloudinit.readthedocs.io/en/latest/
 
 -  https://cloudbase-init.readthedocs.io/en/latest/
-
-

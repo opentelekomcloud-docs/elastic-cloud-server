@@ -1,11 +1,15 @@
+.. _en-us_topic_0183019671:
+
 Deleting a Tag
 ==============
 
 If you no longer need a tag, delete it in any of the following ways:
 
--  `Deleting a Tag on the Page Providing Details About an ECS <#deleting-a-tag-on-the-page-providing-details-about-an-ecs>`__
--  `Deleting a Tag on the TMS Console <#deleting-a-tag-on-the-tms-console>`__
--  `Batch Deleting Tags on the TMS Console <#batch-deleting-tags-on-the-tms-console>`__
+-  :ref:`Deleting a Tag on the Page Providing Details About an ECS <en-us_topic_0183019671__section8763326153815>`
+-  :ref:`Deleting a Tag on the TMS Console <en-us_topic_0183019671__section167319315388>`
+-  :ref:`Batch Deleting Tags on the TMS Console <en-us_topic_0183019671__section13142241209>`
+
+.. _en-us_topic_0183019671__section8763326153815:
 
 Deleting a Tag on the Page Providing Details About an ECS
 ---------------------------------------------------------
@@ -21,6 +25,8 @@ Deleting a Tag on the Page Providing Details About an ECS
    The page providing details about the ECS is displayed.
 
 #. Click the **Tags** tab. Locate the row containing the tag to be deleted and click **Delete** in the **Operation** column. In the **Delete Tag** dialog box, click **Yes**.
+
+.. _en-us_topic_0183019671__section167319315388:
 
 Deleting a Tag on the TMS Console
 ---------------------------------
@@ -42,6 +48,8 @@ Deleting a Tag on the TMS Console
 #. (Optional) Click |image4| in the upper right of the **Search Result** area.
 
    The resource list is refreshed and the refresh time is updated.
+
+.. _en-us_topic_0183019671__section13142241209:
 
 Batch Deleting Tags on the TMS Console
 --------------------------------------
@@ -65,8 +73,6 @@ Batch Deleting Tags on the TMS Console
 #. (Optional) Click |image5| in the upper right of the **Search Result** area.
 
    The resource list is refreshed and the refresh time is updated.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

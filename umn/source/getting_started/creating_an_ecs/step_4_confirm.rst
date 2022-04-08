@@ -1,3 +1,5 @@
+.. _en-us_topic_0163572592:
+
 Step 4: Confirm
 ===============
 
@@ -24,5 +26,3 @@ Follow-up Procedure
    -  ping -a *EIP*
    -  nslookup [-qt=ptr] *EIP*
    -  dig -x *EIP*
-
-

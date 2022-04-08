@@ -1,3 +1,5 @@
+.. _en-us_topic_0058758453:
+
 Enabling NIC Multi-Queue
 ========================
 
@@ -8,27 +10,29 @@ Single-core CPU performance cannot meet the requirement of processing NIC interr
 
 The ECS described in this section is assumed to comply with the requirements on specifications and virtualization type.
 
--  If the ECS was created using a public image listed in `Support of NIC Multi-Queue <#support-of-nic-multi-queue>`__, NIC multi-queue has been enabled on the ECS by default. Therefore, you do not need to perform the operations described in this section.
--  If the ECS was created using a private image and the OS of the external image file is listed in `Support of NIC Multi-Queue <#support-of-nic-multi-queue>`__, perform the following operations to enable NIC multi-queue:
+-  If the ECS was created using a public image listed in :ref:`Support of NIC Multi-Queue <en-us_topic_0058758453__section892862210138>`, NIC multi-queue has been enabled on the ECS by default. Therefore, you do not need to perform the operations described in this section.
+-  If the ECS was created using a private image and the OS of the external image file is listed in :ref:`Support of NIC Multi-Queue <en-us_topic_0058758453__section892862210138>`, perform the following operations to enable NIC multi-queue:
 
-   #. `Importing the External Image File to the IMS Console <#importing-the-external-image-file-to-the-ims-console>`__
-   #. `Setting NIC Multi-Queue for the Image <#setting-nic-multi-queue-for-the-image>`__
-   #. `Creating an ECS Using a Private Image <#creating-an-ecs-using-a-private-image>`__
-   #. `Enabling NIC Multi-Queue <#enabling-nic-multi-queue>`__
+   #. :ref:`Importing the External Image File to the IMS Console <en-us_topic_0058758453__section1659682611504>`
+   #. :ref:`Setting NIC Multi-Queue for the Image <en-us_topic_0058758453__section1949113217282>`
+   #. :ref:`Creating an ECS Using a Private Image <en-us_topic_0058758453__section1841681225617>`
+   #. :ref:`Enabling NIC Multi-Queue <en-us_topic_0058758453__section214227201118>`
+
+.. _en-us_topic_0058758453__section892862210138:
 
 Support of NIC Multi-Queue
 --------------------------
 
 NIC multi-queue can be enabled on an ECS only when the ECS specifications, virtualization type, and image OS meet the requirements described in this section.
 
--  For details about the ECS specifications that support NIC multi-queue, see `ECS Specifications and Types <../service_overview/ecs_specifications_and_types/index.html>`__.
+-  For details about the ECS specifications that support NIC multi-queue, see :ref:`ECS Specifications and Types <en-us_topic_0132345719>`.
 
    .. note::
 
       If the number of NIC queues is greater than 1, NIC multi-queue is supported.
 
 -  The virtualization type must be KVM.
--  The Linux public images listed in `Table 2 <#enustopic0058758453table1572993710538>`__ support NIC multi-queue.
+-  The Linux public images listed in :ref:`Table 2 <en-us_topic_0058758453__table1572993710538>` support NIC multi-queue.
 
    .. note::
 
@@ -37,10 +41,6 @@ NIC multi-queue can be enabled on an ECS only when the ECS specifications, virtu
       -  It is a good practice to upgrade the kernel version of the Linux ECS to 2.6.35 or later. Otherwise, NIC multi-queue is not supported.
 
          Run the **uname -r** command to obtain the kernel version. If the kernel version is earlier than 2.6.35, contact customer service to upgrade the kernel.
-
-
-
-.. _ENUSTOPIC0058758453table732581623820:
 
 .. table:: **Table 1** Support of NIC multi-queue for Linux ECSs
 
@@ -62,9 +62,7 @@ NIC multi-queue can be enabled on an ECS only when the ECS specifications, virtu
    | EulerOS 2.2/2.3/2.5 64bit                          | Yes                        | Yes                                |
    +----------------------------------------------------+----------------------------+------------------------------------+
 
-
-
-.. _ENUSTOPIC0058758453table1572993710538:
+.. _en-us_topic_0058758453__table1572993710538:
 
 .. table:: **Table 2** Support of NIC multi-queue for KVM ECSs
 
@@ -94,10 +92,14 @@ NIC multi-queue can be enabled on an ECS only when the ECS specifications, virtu
    |         | EulerOS 2.2 64bit                                           | Supported                      |
    +---------+-------------------------------------------------------------+--------------------------------+
 
+.. _en-us_topic_0058758453__section1659682611504:
+
 Importing the External Image File to the IMS Console
 ----------------------------------------------------
 
 For details, see "Registering an Image File as a Private Image" in *Image Management Service User Guide*.
+
+.. _en-us_topic_0058758453__section1949113217282:
 
 Setting NIC Multi-Queue for the Image
 -------------------------------------
@@ -122,13 +124,15 @@ Use one of the following methods to set the NIC multi-queue attribute:
 
 **Method 3:** Add **hw_vif_multiqueue_enabled** to an image through the API.
 
-#. For instructions about how to obtain the token, see `Token Authentication <https://docs.otc.t-systems.com/en-us/api/apiug/apig-en-api-180328003.html>`__.
+#. .. _en-us_topic_0058758453__en-us_topic_0085214115_li13762086162643:
+
+   For instructions about how to obtain the token, see `Token Authentication <https://docs.otc.t-systems.com/en-us/api/apiug/apig-en-api-180328003.html>`__.
 
 #. For instructions about how to call an API to update image information, see "Updating Image Information (Native OpenStack API)" in *Image Management Service API Reference*.
 
 #. Add **X-Auth-Token** to the request header.
 
-   The value of **X-Auth-Token** is the token obtained in step 1.
+   The value of **X-Auth-Token** is the token obtained in step :ref:`1 <en-us_topic_0058758453__en-us_topic_0085214115_li13762086162643>`.
 
 #. Add **Content-Type** to the request header.
 
@@ -150,7 +154,9 @@ Use one of the following methods to set the NIC multi-queue attribute:
                } 
        ]
 
-   Figure 1 shows an example request body for modifying the NIC multi-queue attribute.
+   :ref:`Figure 1 <en-us_topic_0058758453__en-us_topic_0085214115_fig3215821216479>` shows an example request body for modifying the NIC multi-queue attribute.
+
+   .. _en-us_topic_0058758453__en-us_topic_0085214115_fig3215821216479:
 
    .. figure:: /_static/images/en-us_image_0193026956.png
       :alt: Click to enlarge
@@ -159,13 +165,17 @@ Use one of the following methods to set the NIC multi-queue attribute:
 
       **Figure 1** Example request body
 
+.. _en-us_topic_0058758453__section1841681225617:
+
 Creating an ECS Using a Private Image
 -------------------------------------
 
-Create an ECS using a registered private image. For details, see `Creating an ECS <../getting_started/creating_an_ecs/index.html>`__. Note the following when setting the parameters:
+Create an ECS using a registered private image. For details, see :ref:`Creating an ECS <en-us_topic_0021831611>`. Note the following when setting the parameters:
 
 -  **Region**: Select the region where the private image is located.
 -  **Image**: Select **Private image** and then the desired image from the drop-down list.
+
+.. _en-us_topic_0058758453__section214227201118:
 
 .. _enabling-nic-multi-queue-1:
 
@@ -218,6 +228,8 @@ This section uses a Linux ECS running CentOS 7.4 as an example to describe how t
       **service irqbalance status**
 
       If the **Active** value in the command output contains **active (running)**, irqbalance has been enabled.
+
+      .. _en-us_topic_0058758453__fig165114253253:
 
       .. figure:: /_static/images/en-us_image_0126402833.png
          :alt: Click to enlarge
@@ -307,5 +319,3 @@ This section uses a Linux ECS running CentOS 7.4 as an example to describe how t
               let cpu_id=cpu_id*2
           done
       done
-
-

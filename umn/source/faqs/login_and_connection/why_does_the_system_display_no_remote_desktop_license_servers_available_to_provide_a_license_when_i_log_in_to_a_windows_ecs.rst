@@ -1,3 +1,5 @@
+.. _en-us_topic_0264235941:
+
 Why Does the System Display No Remote Desktop License Servers Available to Provide a License When I Log In to a Windows ECS?
 ============================================================================================================================
 
@@ -5,6 +7,8 @@ Symptom
 -------
 
 An error message is displayed indicating that there are no Remote Desktop License Servers available to provide a license and asks you to contact the administrator.
+
+.. _en-us_topic_0264235941__en-us_topic_0128065575_fig1693533120329:
 
 .. figure:: /_static/images/en-us_image_0288997286.png
    :alt: **Figure 1** No Remote Desktop License Servers available to provide a license
@@ -32,6 +36,8 @@ Windows Server 2008
 
 #. Open **Server Manager**, right-click **Remote Desktop Services** under **Roles**, and choose **Remove Roles** from the shortcut menu.
 
+   .. _en-us_topic_0264235941__en-us_topic_0128065575_fig16121213182410:
+
    .. figure:: /_static/images/en-us_image_0288997287.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -40,6 +46,8 @@ Windows Server 2008
       **Figure 2** Deleting roles
 
 #. In the displayed dialog box, deselect **Remote Desktop Session Host** and keep clicking **Next** till you finish the operation.
+
+   .. _en-us_topic_0264235941__en-us_topic_0128065575_fig199398290243:
 
    .. figure:: /_static/images/en-us_image_0288997288.png
       :alt: Click to enlarge
@@ -59,6 +67,8 @@ Windows Server 2012
 
 #. Open **Server Manager**, choose **Manage** > **Remove Roles and Features**, and click **Next**.
 
+   .. _en-us_topic_0264235941__en-us_topic_0128065575_en-us_topic_0018339851_fig18932134871212:
+
    .. figure:: /_static/images/en-us_image_0288997289.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -70,6 +80,8 @@ Windows Server 2012
 
 #. Deselect **Remote Desktop Services**.
 
+   .. _en-us_topic_0264235941__en-us_topic_0128065575_fig1386565415529:
+
    .. figure:: /_static/images/en-us_image_0288997290.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -80,5 +92,3 @@ Windows Server 2012
 #. Click **Delete**.
 
 #. Restart the ECS.
-
-

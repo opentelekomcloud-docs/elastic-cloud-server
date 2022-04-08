@@ -1,3 +1,5 @@
+.. _en-us_topic_0170139798:
+
 What Should I Do If Writing Data Failed When I Upload a File Using FTP?
 =======================================================================
 
@@ -25,6 +27,8 @@ The public IP address must be associated with the private IP address using NAT. 
 
    Choose **Edit** > **Settings**.
 
+   .. _en-us_topic_0170139798__fig1124882045115:
+
    .. figure:: /_static/images/en-us_image_0171674763.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -33,6 +37,8 @@ The public IP address must be associated with the private IP address using NAT. 
       **Figure 1** Setting the public IP address
 
 #. Choose **Passive mode settings**, set the port range (for example, 50000-50100) for transmitting data, and enter the target public IP address.
+
+   .. _en-us_topic_0170139798__fig5351324135118:
 
    .. figure:: /_static/images/en-us_image_0182087025.png
       :alt: Click to enlarge
@@ -46,5 +52,3 @@ The public IP address must be associated with the private IP address using NAT. 
 #. Allow traffic on TCP ports 50000-50100 and 21 in the security group in the inbound direction.
 
 #. Test the connection on the client.
-
-

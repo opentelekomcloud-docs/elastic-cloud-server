@@ -1,3 +1,5 @@
+.. _en-us_topic_0095020344:
+
 Can ECSs Automatically Recover After the Physical Host Accommodating the ECSs Becomes Faulty?
 =============================================================================================
 
@@ -23,5 +25,3 @@ The cloud platform provides automatic recovery by default to restart ECSs throug
       -  Local disk
       -  Passthrough FPGA card
       -  Passthrough InfiniBand NIC
-
-

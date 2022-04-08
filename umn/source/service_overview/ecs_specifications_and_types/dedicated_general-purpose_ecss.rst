@@ -1,3 +1,5 @@
+.. _en-us_topic_0091224748:
+
 Dedicated General-Purpose ECSs
 ==============================
 
@@ -10,10 +12,6 @@ C3 ECSs are newly released. They are developed based on KVM virtualization, use 
 
 Specifications
 --------------
-
-
-
-.. _ENUSTOPIC0091224748table8948953114219:
 
 .. table:: **Table 1** C4 ECS specifications
 
@@ -53,10 +51,6 @@ Specifications
    | c4.16xlarge.4 | 64    | 256          | 40/36                              | 1000                 | 32              | 8            | KVM                 |                                     |
    +---------------+-------+--------------+------------------------------------+----------------------+-----------------+--------------+---------------------+-------------------------------------+
 
-
-
-.. _ENUSTOPIC0091224748table3949605220464:
-
 .. table:: **Table 2** C3 ECS specifications
 
    +---------------+-------+--------------+------------------------------------+----------------------+-----------------+--------------+---------------------+--------------------------------+
@@ -92,5 +86,3 @@ Scenarios
 
 -  C4 ECSs: Websites and web applications, generalized databases and cache servers, and medium- and heavy-workload enterprise applications with strict requirements on computing and network performance
 -  C3 ECSs: Small- and medium-scale databases, cache servers, and search clusters with high requirements on stability; enterprise-grade applications of diverse types and in various scales
-
-

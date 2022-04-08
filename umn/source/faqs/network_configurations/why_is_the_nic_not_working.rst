@@ -1,3 +1,5 @@
+.. _en-us_topic_0036068717:
+
 Why Is the NIC Not Working?
 ===========================
 
@@ -24,11 +26,9 @@ To install the passthrough NICE driver, do as follows:
 
 #. Obtain the passthrough NIC driver.
 
-   Passthrough NIC driver versions vary depending on the OS. For details, see `Table 1 <#enustopic0036068717table39612229174432>`__.
+   Passthrough NIC driver versions vary depending on the OS. For details, see :ref:`Table 1 <en-us_topic_0036068717__table39612229174432>`.
 
-   
-
-.. _ENUSTOPIC0036068717table39612229174432:
+   .. _en-us_topic_0036068717__table39612229174432:
 
    .. table:: **Table 1** NIC driver versions and OSs
 
@@ -46,7 +46,7 @@ To install the passthrough NICE driver, do as follows:
 
 #. Log in to the ECS.
 
-   For more details, see `Login Overview <../../instances/logging_in_to_a_linux_ecs/login_overview.html>`__.
+   For more details, see :ref:`Login Overview <en-us_topic_0013771089>`.
 
 #. Install the passthrough NIC driver on the ECS. In this procedure, Red Hat Enterprise Linux 7.2 64bit is used as an example.
 
@@ -127,5 +127,3 @@ To install the passthrough NICE driver, do as follows:
    i. Check the driver status based on the displayed information.
 
       In this example, the driver is installed if **driver** is **ixgbevf** and **version** is **2.16.4**.
-
-

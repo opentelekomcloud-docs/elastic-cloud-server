@@ -1,3 +1,5 @@
+.. _en-us_topic_0054121392:
+
 User Permissions
 ================
 
@@ -7,5 +9,3 @@ Two types of permissions are provided by default: user management and resource m
 -  Resource management refers to the control operations that can be performed by users on cloud service resources.
 
 For further details, see `Permissions <https://docs.otc.t-systems.com/en-us/permissions/index.html>`__.
-
-

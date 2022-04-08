@@ -1,3 +1,5 @@
+.. _en-us_topic_0030013188:
+
 Can an ECS Without an EIP Access the Internet?
 ==============================================
 
@@ -14,5 +16,3 @@ Yes.
    If a large number of concurrent connections are required, it is a good practice to use the NAT Gateway service provided by the cloud platform.
 
    The NAT Gateway service offers the NAT function for ECSs in a VPC, allowing these ECSs to access the Internet using an EIP. For more information about NAT Gateway, see *NAT Gateway User Guide*.
-
-

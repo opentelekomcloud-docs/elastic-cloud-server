@@ -1,3 +1,5 @@
+.. _en-us_topic_0122627689:
+
 Changing the Login Password on an ECS
 =====================================
 
@@ -14,11 +16,9 @@ The ECS can be logged in.
 Background
 ----------
 
-`Table 1 <#enustopic0122627689enustopic0021426802table4381109318958>`__ shows the ECS password complexity requirements.
+:ref:`Table 1 <en-us_topic_0122627689__en-us_topic_0021426802_table4381109318958>` shows the ECS password complexity requirements.
 
-
-
-.. _ENUSTOPIC0122627689enustopic0021426802table4381109318958:
+.. _en-us_topic_0122627689__en-us_topic_0021426802_table4381109318958:
 
 .. table:: **Table 1** Password complexity requirements
 
@@ -42,13 +42,13 @@ Windows
 
 #. Log in to the ECS.
 
-   For details, see `Login Overview <../instances/logging_in_to_a_windows_ecs/login_overview.html>`__.
+   For details, see :ref:`Login Overview <en-us_topic_0092494943>`.
 
 #. Press **Win+R** to start the **Run** dialog box.
 
 #. Enter **cmd** to open the command-line interface (CLI) window.
 
-#. Run the following command to change the password (the new password must meet the requirements described in `Table 1 <#enustopic0122627689enustopic0021426802table4381109318958>`__):
+#. Run the following command to change the password (the new password must meet the requirements described in :ref:`Table 1 <en-us_topic_0122627689__en-us_topic_0021426802_table4381109318958>`):
 
    **net user** **Administrator** *New password*
 
@@ -57,7 +57,7 @@ Linux
 
 #. Use the existing key file to log in to the ECS as user **root** through SSH.
 
-   For details, see `Login Using an SSH Key <../instances/logging_in_to_a_linux_ecs/login_using_an_ssh_key.html>`__.
+   For details, see :ref:`Login Using an SSH Key <en-us_topic_0017955380>`.
 
 #. Run the following command to reset the password of user **root**:
 
@@ -65,7 +65,7 @@ Linux
 
    To reset the password of another user, replace **passwd** with **passwd username**.
 
-#. Enter the new password as prompted. Ensure that the new password meets the requirements described in `Table 1 <#enustopic0122627689enustopic0021426802table4381109318958>`__.
+#. Enter the new password as prompted. Ensure that the new password meets the requirements described in :ref:`Table 1 <en-us_topic_0122627689__en-us_topic_0021426802_table4381109318958>`.
 
    .. code-block::
 
@@ -77,5 +77,3 @@ Linux
    .. code-block::
 
       passwd: password updated successfully
-
-

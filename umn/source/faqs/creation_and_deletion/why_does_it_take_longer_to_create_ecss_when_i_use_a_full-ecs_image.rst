@@ -1,3 +1,5 @@
+.. _en-us_topic_0102391480:
+
 Why Does It Take Longer to Create ECSs When I Use a Full-ECS Image?
 ===================================================================
 
@@ -67,5 +69,3 @@ If you want to use a full-ECS image to rapidly create ECSs, ensure that the full
       For details, see *Image Management Service User Guide*.
 
       You can use the full-ECS image to rapidly create ECSs.
-
-

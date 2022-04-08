@@ -1,3 +1,5 @@
+.. _en-us_topic_0030831623:
+
 Scenarios and Disk Partitions
 =============================
 
@@ -22,11 +24,9 @@ After a disk is attached to a server, you need to log in to the server to initia
 Disk Partition Styles
 ---------------------
 
-`Table 1 <#enustopic0030831623enustopic0085245975table2729705994129>`__ lists the common disk partition styles. In Linux, different disk partition styles require different partitioning tools.
+:ref:`Table 1 <en-us_topic_0030831623__en-us_topic_0085245975_table2729705994129>` lists the common disk partition styles. In Linux, different disk partition styles require different partitioning tools.
 
-
-
-.. _ENUSTOPIC0030831623enustopic0085245975table2729705994129:
+.. _en-us_topic_0030831623__en-us_topic_0085245975_table2729705994129:
 
 .. table:: **Table 1** Disk partition styles
 
@@ -51,5 +51,3 @@ Disk Partition Styles
    The maximum disk capacity supported by MBR is 2 TB, and that supported by GPT is 18 EB. Because a data disk currently supports up to 32 TB, use the GPT partition style if your disk capacity is larger than 2 TB.
 
    If you change the disk partition style after the disk has been used, the data on the disk will be cleared. Therefore, select a proper disk partition style when initializing the disk.
-
-

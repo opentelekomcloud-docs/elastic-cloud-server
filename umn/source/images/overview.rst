@@ -1,3 +1,5 @@
+.. _en-us_topic_0177457773:
+
 Overview
 ========
 
@@ -17,10 +19,6 @@ Private Image
 -------------
 
 A private image contains an OS or service data, preinstalled public applications, and private applications. It is available only to the user who created it.
-
-
-
-.. _ENUSTOPIC0177457773table1567919914154:
 
 .. table:: **Table 1** Private image types
 
@@ -51,5 +49,3 @@ A shared image is a private image shared by another user and can be used as your
 -  You can stop sharing images anytime without notifying the recipient.
 -  You can delete shared image anytime without notifying the recipient.
 -  Full-ECS images cannot be shared.
-
-

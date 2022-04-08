@@ -1,3 +1,5 @@
+.. _en-us_topic_0081525053:
+
 How Can I Obtain the Key Pair Used by an ECS?
 =============================================
 
@@ -24,8 +26,6 @@ Procedure
 #. Obtain the **Key Pair** value.
 
    The value is the key pair used by the ECS.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

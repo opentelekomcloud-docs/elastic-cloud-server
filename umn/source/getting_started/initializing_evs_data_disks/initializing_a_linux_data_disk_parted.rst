@@ -1,3 +1,5 @@
+.. _en-us_topic_0085634798:
+
 Initializing a Linux Data Disk (parted)
 =======================================
 
@@ -6,7 +8,7 @@ Scenarios
 
 This section uses CentOS 7.4 64bit to describe how to initialize a data disk attached to a server running Linux and use parted to partition the data disk.
 
-The maximum disk capacity supported by MBR is 2 TB, and that supported by GPT is 18 EB. Therefore, use the GPT partition style if your disk capacity is larger than 2 TB. In Linux, if you choose to use the GPT partition style, the fdisk partitioning tool cannot be used. Use the parted partitioning tool instead. For details about disk partition styles, see `Scenarios and Disk Partitions <../../getting_started/initializing_evs_data_disks/scenarios_and_disk_partitions.html>`__.
+The maximum disk capacity supported by MBR is 2 TB, and that supported by GPT is 18 EB. Therefore, use the GPT partition style if your disk capacity is larger than 2 TB. In Linux, if you choose to use the GPT partition style, the fdisk partitioning tool cannot be used. Use the parted partitioning tool instead. For details about disk partition styles, see :ref:`Scenarios and Disk Partitions <en-us_topic_0030831623>`.
 
 The method for initializing a disk varies depending on the OS running on the server. This document is used for reference only. For the detailed operations and differences, see the product documents of the corresponding OS.
 
@@ -253,7 +255,9 @@ The following example shows you how a new partition can be created on a new data
 
    .. note::
 
-      If the server is restarted, the mounting will become invalid. You can set automatic mounting for partitions at system start by modifying the **/etc/fstab** file. For details, see `Setting Automatic Mounting at System Start <#setting-automatic-mounting-at-system-start>`__.
+      If the server is restarted, the mounting will become invalid. You can set automatic mounting for partitions at system start by modifying the **/etc/fstab** file. For details, see :ref:`Setting Automatic Mounting at System Start <en-us_topic_0085634798__en-us_topic_0084935709_section15839912195453>`.
+
+.. _en-us_topic_0085634798__en-us_topic_0084935709_section15839912195453:
 
 Setting Automatic Mounting at System Start
 ------------------------------------------
@@ -327,5 +331,3 @@ The following procedure shows how to set automatic disk mounting at server start
 
          root@ecs-test-0001 ~]# mount | grep /mnt/sdc
          /dev/vdb1 on /mnt/sdc type ext4 (rw,relatime,data=ordered)
-
-

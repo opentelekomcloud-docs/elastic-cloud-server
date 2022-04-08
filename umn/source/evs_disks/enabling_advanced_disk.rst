@@ -1,3 +1,5 @@
+.. _en-us_topic_0122307169:
+
 Enabling Advanced Disk
 ======================
 
@@ -5,7 +7,7 @@ Scenarios
 ---------
 
 -  Disk functions have been upgraded on the platform. Newly created ECSs can have up to 60 attached disks. However, an existing ECS can still have a maximum of 24 attached disks (40 for certain ECSs). To allow such ECSs to have up to 60 attached disks, enable advanced disk.
--  After advanced disk is enabled, you can view the mapping between device names and disks. For details, see `How Do I Obtain My Disk Name in the ECS OS Using the Device Identifier Provided on the Console? <../faqs/disk_management/how_do_i_obtain_my_disk_name_in_the_ecs_os_using_the_device_identifier_provided_on_the_console.html>`__
+-  After advanced disk is enabled, you can view the mapping between device names and disks. For details, see :ref:`How Do I Obtain My Disk Name in the ECS OS Using the Device Identifier Provided on the Console? <en-us_topic_0103285575>`
 
 This section describes how to enable advanced disk on an ECS.
 
@@ -36,8 +38,6 @@ Procedure
 
    -  If yes, advanced disk has been enabled.
    -  If no, enabling advanced disk failed. In such a case, try again later or contact customer service.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

@@ -1,3 +1,5 @@
+.. _en-us_topic_0050735736:
+
 How Can a Changed Static Hostname Take Effect Permanently?
 ==========================================================
 
@@ -74,5 +76,3 @@ The changed hostname is assumed to be **new_hostname**.
    **sudo hostname**
 
    If the changed hostname is displayed in the command output, the hostname has been changed and the new name permanently takes effect.
-
-

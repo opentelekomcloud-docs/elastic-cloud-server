@@ -1,3 +1,5 @@
+.. _en-us_topic_0030911465:
+
 Basic ECS Metrics
 =================
 
@@ -14,11 +16,9 @@ SYS.ECS
 ECS Metrics
 -----------
 
-ECS metrics vary depending on ECS OSs and types. For details, see `Table 1 <#enustopic0030911465table1474714113454>`__. Y indicates that the metric is supported, and x indicates that the metric is not supported.
+ECS metrics vary depending on ECS OSs and types. For details, see :ref:`Table 1 <en-us_topic_0030911465__table1474714113454>`. Y indicates that the metric is supported, and x indicates that the metric is not supported.
 
-
-
-.. _ENUSTOPIC0030911465table1474714113454:
+.. _en-us_topic_0030911465__table1474714113454:
 
 .. table:: **Table 1** ECS metrics
 
@@ -54,15 +54,13 @@ ECS metrics vary depending on ECS OSs and types. For details, see `Table 1 <#enu
 
    The image based on which the target ECS is created must have OTC Tools installed (OTC Tools has been installed for public images by default). Otherwise, the **Memory Usage** and **Disk Usage** metrics are unavailable. For details about how to install the OTC Tools, visit https://github.com/UVP-Tools/UVP-Tools/.
 
-`Table 2 <#enustopic0030911465table64866324222846>`__ describes these ECS metrics.
+:ref:`Table 2 <en-us_topic_0030911465__table64866324222846>` describes these ECS metrics.
 
 The monitoring intervals for the following ECSs with raw monitoring metrics are as follows:
 
 -  KVM ECS: 5 minutes
 
-
-
-.. _ENUSTOPIC0030911465table64866324222846:
+.. _en-us_topic_0030911465__table64866324222846:
 
 .. table:: **Table 2** Metric description
 
@@ -164,14 +162,8 @@ The monitoring intervals for the following ECSs with raw monitoring metrics are 
 Dimensions
 ----------
 
-
-
-.. _ENUSTOPIC0030911465table41237041112133:
-
 =========== =====================
 Key         Value
 =========== =====================
 instance_id Specifies the ECS ID.
 =========== =====================
-
-

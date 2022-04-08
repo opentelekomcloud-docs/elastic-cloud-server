@@ -1,3 +1,5 @@
+.. _en-us_topic_0263806053:
+
 How Can I Use FTP to Transfer Files from a Local Windows Computer to a Windows or Linux ECS?
 ============================================================================================
 
@@ -23,6 +25,8 @@ Procedure
    -  **Password**: password of the username
    -  **Port**: FTP access port, which is port 21 by default
 
+   .. _en-us_topic_0263806053__fig1437792312541:
+
    .. figure:: /_static/images/en-us_image_0263806339.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -31,5 +35,3 @@ Procedure
       **Figure 1** Setting connection parameters
 
 #. Drag files from the local computer on the left to the target ECS on the right to transfer them.
-
-

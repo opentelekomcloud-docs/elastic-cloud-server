@@ -1,3 +1,5 @@
+.. _en-us_topic_0027371531:
+
 Setting Alarm Rules
 ===================
 
@@ -27,7 +29,9 @@ Procedure
 
    b. Click **Modify** in the upper right corner of the page.
 
-   c. In the **Modify Alarm Rule** dialog box shown in Figure 1, set the parameters as prompted.
+   c. In the **Modify Alarm Rule** dialog box shown in :ref:`Figure 1 <en-us_topic_0027371531__fig5398007222382>`, set the parameters as prompted.
+
+      .. _en-us_topic_0027371531__fig5398007222382:
 
       .. figure:: /_static/images/en-us_image_0022382203.png
          :alt: Click to enlarge
@@ -43,8 +47,6 @@ Procedure
    .. note::
 
       For more information about ECS alarm rules, see *Cloud Eye User Guide*.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

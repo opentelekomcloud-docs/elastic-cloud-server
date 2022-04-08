@@ -1,3 +1,5 @@
+.. _en-us_topic_0035550301:
+
 Memory-optimized ECSs
 =====================
 
@@ -10,10 +12,6 @@ Overview
 
 Specifications
 --------------
-
-
-
-.. _ENUSTOPIC0035550301table285612469463:
 
 .. table:: **Table 1** M4 ECS specifications
 
@@ -37,10 +35,6 @@ Specifications
    | m4.16xlarge.8 | 64    | 512          | 40/36                              | 1000                 | 32              | 8            | KVM                 |                                     |
    +---------------+-------+--------------+------------------------------------+----------------------+-----------------+--------------+---------------------+-------------------------------------+
 
-
-
-.. _ENUSTOPIC0035550301table10833218224040:
-
 .. table:: **Table 2** M3 ECS specifications
 
    +---------------+-------+--------------+------------------------------------+----------------------+-----------------+--------------+---------------------+--------------------------------+
@@ -59,10 +53,6 @@ Specifications
    | m3.15xlarge.8 | 60    | 512          | 17/17                              | 500                  | 16              | 12           | KVM                 |                                |
    +---------------+-------+--------------+------------------------------------+----------------------+-----------------+--------------+---------------------+--------------------------------+
 
-
-
-.. _ENUSTOPIC0035550301table38605135203957:
-
 .. table:: **Table 3** M2 ECS specifications
 
    +--------------+-------+--------------+------------------------------------+----------------------+-----------------+---------------------+----------------------------------------+
@@ -80,5 +70,3 @@ Scenarios
 -  Distributed web scale cache stores that provide in-memory caching of key-value type data (Memcached and Redis)
 -  Applications processing big unstructured data in real time (financial services, Hadoop/Spark clusters)
 -  High-performance computing (HPC) and electronic design automation (EDA)
-
-

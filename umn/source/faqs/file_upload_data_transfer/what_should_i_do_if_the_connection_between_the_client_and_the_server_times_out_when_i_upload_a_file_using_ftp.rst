@@ -1,3 +1,5 @@
+.. _en-us_topic_0170139797:
+
 What Should I Do If the Connection Between the Client and the Server Times Out When I Upload a File Using FTP?
 ==============================================================================================================
 
@@ -21,5 +23,3 @@ Solution
 
 #. Check the firewall settings on the server.
 #. Disable the firewall or add desired rules to the security group.
-
-

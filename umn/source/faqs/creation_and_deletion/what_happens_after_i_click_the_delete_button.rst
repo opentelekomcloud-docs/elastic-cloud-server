@@ -1,3 +1,5 @@
+.. _en-us_topic_0018073218:
+
 What Happens After I Click the **Delete** Button?
 =================================================
 
@@ -9,5 +11,3 @@ To delete an ECS, perform the following operations:
 #. Under **Computing**, click **Elastic Cloud Server**.
 #. Select the ECS to be deleted.
 #. In the upper part of the ECS list, click **Delete**.
-
-

@@ -1,3 +1,5 @@
+.. _en-us_topic_0030878383:
+
 Configuring Security Group Rules
 ================================
 
@@ -9,7 +11,7 @@ Similar to firewall, a security group is a logical group used to control network
 -  Inbound: Inbound rules allow external network traffic to be sent to the ECSs in the security group.
 -  Outbound: Outbound rules allow network traffic from the ECSs in the security group to be sent out of the security group.
 
-For details about the default security group rules, see *Virtual Private Cloud User Guide*. For details about configuration examples for security group rules, see `Security Group Configuration Examples <../../security/security_groups/security_group_configuration_examples.html>`__.
+For details about the default security group rules, see *Virtual Private Cloud User Guide*. For details about configuration examples for security group rules, see :ref:`Security Group Configuration Examples <en-us_topic_0140323152>`.
 
 Procedure
 ---------
@@ -34,6 +36,8 @@ Procedure
 
    You can click **+** to add more inbound rules.
 
+   .. _en-us_topic_0030878383__en-us_topic_0118534005_fig1786518124129:
+
    .. figure:: /_static/images/en-us_image_0284920908.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -41,14 +45,10 @@ Procedure
 
       **Figure 1** Add Inbound Rule
 
-   
-
-.. _ENUSTOPIC0030878383enustopic0118534005table111445216564:
-
    .. table:: **Table 1** Inbound rule parameter description
 
       +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-      | **Parameter**         | **Description**                                                                                                                                                                      | **Example Value**     |
+      | Parameter             | Description                                                                                                                                                                          | Example Value         |
       +=======================+======================================================================================================================================================================================+=======================+
       | Protocol & Port       | **Protocol**: The network protocol. Currently, the value can be **All**, **TCP**, **UDP**, **ICMP**, **GRE**, or others.                                                             | TCP                   |
       +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
@@ -72,6 +72,8 @@ Procedure
 
    You can click **+** to add more outbound rules.
 
+   .. _en-us_topic_0030878383__en-us_topic_0118534005_fig11809848184019:
+
    .. figure:: /_static/images/en-us_image_0284993717.png
       :alt: Click to enlarge
       :figclass: imgResize
@@ -79,14 +81,10 @@ Procedure
 
       **Figure 2** Add Outbound Rule
 
-   
-
-.. _ENUSTOPIC0030878383enustopic0118534005table0614192319232:
-
    .. table:: **Table 2** Outbound rule parameter description
 
       +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-      | **Parameter**         | **Description**                                                                                                                                                                         | **Example Value**     |
+      | Parameter             | Description                                                                                                                                                                             | Example Value         |
       +=======================+=========================================================================================================================================================================================+=======================+
       | Protocol & Port       | **Protocol**: The network protocol. Currently, the value can be **All**, **TCP**, **UDP**, **ICMP**, **GRE**, or others.                                                                | TCP                   |
       +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
@@ -105,8 +103,6 @@ Procedure
       +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
 #. Click **OK** to complete the security rule configuration.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

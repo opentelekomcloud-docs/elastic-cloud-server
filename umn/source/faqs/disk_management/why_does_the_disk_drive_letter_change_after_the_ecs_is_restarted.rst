@@ -1,3 +1,5 @@
+.. _en-us_topic_0240831198:
+
 Why Does the Disk Drive Letter Change After the ECS Is Restarted?
 =================================================================
 
@@ -63,5 +65,3 @@ To prevent this issue, use a UUID, a unique character string provided by the Lin
       UUID=b9a07b7b-9322-4e05-ab9b-14b8050bdc8a  /  ext4  defaults  0  1 
       UUID=b9a07b7b-9322-4e05-ab9b-14b8050cd8cc   /data1   ext4  defaults  0  0 
       UUID=b9a07b7b-9322-4e05-ab9b-14b8050ab6bb   /data2   ext4  defaults  0  0
-
-

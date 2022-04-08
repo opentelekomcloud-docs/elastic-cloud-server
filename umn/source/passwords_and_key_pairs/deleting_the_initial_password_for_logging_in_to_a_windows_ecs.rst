@@ -1,3 +1,5 @@
+.. _en-us_topic_0031107267:
+
 Deleting the Initial Password for Logging In to a Windows ECS
 =============================================================
 
@@ -24,8 +26,6 @@ Procedure
    The system displays a message, asking you whether you want to delete the password.
 
 #. Click **OK** to delete the password.
-
-
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 
