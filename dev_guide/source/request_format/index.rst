@@ -1,3 +1,5 @@
+.. _en-us_topic_0134193004:
+
 ==============
 Request Format
 ==============
@@ -6,10 +8,10 @@ Public cloud APIs follow RESTful API design rules.
 
 Representational State Transfer (REST) allocates Uniform Resource Identifiers (URIs) to dispersed resources so that resources can be located. Applications on clients use Uniform Resource Locators (URLs) to obtain resources.
 
-URLs are in the format of https://Endpoint/uri. `Table 1 <#enustopic0134193004table64845234>`__ describes the parameters in a URL.
+URLs are in the format of https://Endpoint/uri. :ref:`Table 1 <enustopic0134193004table64845234>` describes the parameters in a URL.
 
 
-.. _ENUSTOPIC0134193004table64845234:
+.. _enustopic0134193004table64845234:
 
 .. table:: **Table 1** Parameter description
 
