@@ -1,3 +1,5 @@
+.. _en-us_topic_0000001207783562:
+
 Querying Tags of an ECS (Discarded)
 ===================================
 
@@ -9,16 +11,16 @@ Function
 
 .. note::
 
-   This API has been discarded. Use the API described in `Querying Tags of an ECS <../../apis_recommended/tag_management/querying_tags_of_an_ecs.html>`__.
+   This API has been discarded. Use the API described in :ref:`Querying Tags of an ECS <en-us_topic_0167811967>`.
 
 URI
 ---
 
 GET /v1/{project_id}/servers/{server_id}/tags
 
-`Table 1 <#enustopic0000001207783562table431622145919>`__ lists the parameters. 
+:ref:`Table 1 <en-us_topic_0000001207783562__table431622145919>` lists the parameters.
 
-.. _ENUSTOPIC0000001207783562table431622145919:
+.. _en-us_topic_0000001207783562__table431622145919:
 
 .. table:: **Table 1** Parameter description
 
@@ -37,11 +39,9 @@ None
 Response
 --------
 
-`Table 2 <#enustopic0000001207783562table725495518449>`__ describes the response parameter.
+:ref:`Table 2 <en-us_topic_0000001207783562__table725495518449>` describes the response parameter.
 
-
-
-.. _ENUSTOPIC0000001207783562table725495518449:
+.. _en-us_topic_0000001207783562__table725495518449:
 
 .. table:: **Table 2** Response parameter
 
@@ -50,10 +50,6 @@ Response
    ========= ================ ===============
    tags      Array of objects Specifies tags.
    ========= ================ ===============
-
-
-
-.. _ENUSTOPIC0000001207783562table109271241135919:
 
 .. table:: **Table 3** **resource_tag** field description
 
@@ -92,11 +88,9 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

@@ -1,3 +1,5 @@
+.. _en-us_topic_0065962600:
+
 Viewing Details of FPGA Images
 ==============================
 
@@ -11,11 +13,9 @@ URI
 
 GET /v1/{project_id}/cloudservers/fpga_image/detail?fpga_image_id={fpga_image_id}&page={page}&size={size}
 
-`Table 1 <#enustopic0065962600table972014396283>`__ describes the parameters in the URI.
+:ref:`Table 1 <en-us_topic_0065962600__table972014396283>` describes the parameters in the URI.
 
-
-
-.. _ENUSTOPIC0065962600table972014396283:
+.. _en-us_topic_0065962600__table972014396283:
 
 .. table:: **Table 1** Parameter description
 
@@ -54,11 +54,9 @@ None
 Response
 --------
 
-`Table 2 <#enustopic0065962600table41782128362>`__ describes the response parameters.
+:ref:`Table 2 <en-us_topic_0065962600__table41782128362>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0065962600table41782128362:
+.. _en-us_topic_0065962600__table41782128362:
 
 .. table:: **Table 2** Response parameters
 
@@ -69,10 +67,6 @@ Response
    +------------+------------------+----------------------------------------------------+
    | fpgaimages | Array of objects | Specifies details of FPGA images.                  |
    +------------+------------------+----------------------------------------------------+
-
-
-
-.. _ENUSTOPIC0065962600table41296006211756:
 
 .. table:: **Table 3** **fpgaimages** field description
 
@@ -163,11 +157,9 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

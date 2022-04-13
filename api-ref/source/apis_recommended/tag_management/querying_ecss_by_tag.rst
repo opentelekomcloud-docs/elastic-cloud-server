@@ -1,3 +1,5 @@
+.. _en-us_topic_0102606095:
+
 Querying ECSs by Tag
 ====================
 
@@ -11,9 +13,9 @@ URI
 
 POST /v1/{project_id}/servers/resource_instances/action
 
-`Table 1 <#enustopic0102606095table10820175118131>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0102606095__table10820175118131>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0102606095table10820175118131:
+.. _en-us_topic_0102606095__table10820175118131:
 
 .. table:: **Table 1** Parameter description
 
@@ -26,16 +28,16 @@ POST /v1/{project_id}/servers/resource_instances/action
 Request
 -------
 
-`Table 2 <#enustopic0102606095table195321356132718>`__ describes the request parameters. 
+:ref:`Table 2 <en-us_topic_0102606095__table195321356132718>` describes the request parameters.
 
-.. _ENUSTOPIC0102606095table195321356132718:
+.. _en-us_topic_0102606095__table195321356132718:
 
 .. table:: **Table 2** Request parameters
 
    +-----------------+-----------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter       | Mandatory       | Type             | Description                                                                                                                                                                                                                   |
    +=================+=================+==================+===============================================================================================================================================================================================================================+
-   | tags            | No              | Array of objects | Displays the ECSs with all the specified tags. For details, see `Table 3 <#enustopic0102606095table8638721112919>`__.                                                                                                         |
+   | tags            | No              | Array of objects | Displays the ECSs with all the specified tags. For details, see :ref:`Table 3 <en-us_topic_0102606095__table8638721112919>`.                                                                                                  |
    |                 |                 |                  |                                                                                                                                                                                                                               |
    |                 |                 |                  | -  A maximum of 10 keys are included. Each key can have a maximum of 10 values.                                                                                                                                               |
    |                 |                 |                  | -  The structure body must be included.                                                                                                                                                                                       |
@@ -70,12 +72,10 @@ Request
    +-----------------+-----------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | matches         | No              | Array of objects | Specifies the search field, which is used to search for ECSs.                                                                                                                                                                 |
    |                 |                 |                  |                                                                                                                                                                                                                               |
-   |                 |                 |                  | Currently, only **resource_name** can be used for search. For more information, see `Table 4 <#enustopic0102606095table2075564419352>`__.                                                                                     |
+   |                 |                 |                  | Currently, only **resource_name** can be used for search. For more information, see :ref:`Table 4 <en-us_topic_0102606095__table2075564419352>`.                                                                              |
    +-----------------+-----------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0102606095table8638721112919:
+.. _en-us_topic_0102606095__table8638721112919:
 
 .. table:: **Table 3** **tag** field description
 
@@ -96,9 +96,7 @@ Request
    |                 |                 |                  | -  The values are in the OR relationship.                     |
    +-----------------+-----------------+------------------+---------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0102606095table2075564419352:
+.. _en-us_topic_0102606095__table2075564419352:
 
 .. table:: **Table 4** **match** field description
 
@@ -124,25 +122,21 @@ Request
 Response
 --------
 
-`Table 5 <#enustopic0102606095table725495518449>`__ describes the response parameters.
+:ref:`Table 5 <en-us_topic_0102606095__table725495518449>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0102606095table725495518449:
+.. _en-us_topic_0102606095__table725495518449:
 
 .. table:: **Table 5** Response parameters
 
-   +-------------+------------------+------------------------------------------------------------------------------------------------+
-   | Parameter   | Type             | Description                                                                                    |
-   +=============+==================+================================================================================================+
-   | resources   | Array of objects | Specifies returned ECSs. For details, see `Table 6 <#enustopic0102606095table790793515528>`__. |
-   +-------------+------------------+------------------------------------------------------------------------------------------------+
-   | total_count | Integer          | Specifies the total number of queried ECSs.                                                    |
-   +-------------+------------------+------------------------------------------------------------------------------------------------+
+   +-------------+------------------+-------------------------------------------------------------------------------------------------------+
+   | Parameter   | Type             | Description                                                                                           |
+   +=============+==================+=======================================================================================================+
+   | resources   | Array of objects | Specifies returned ECSs. For details, see :ref:`Table 6 <en-us_topic_0102606095__table790793515528>`. |
+   +-------------+------------------+-------------------------------------------------------------------------------------------------------+
+   | total_count | Integer          | Specifies the total number of queried ECSs.                                                           |
+   +-------------+------------------+-------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0102606095table790793515528:
+.. _en-us_topic_0102606095__table790793515528:
 
 .. table:: **Table 6** **resource** field description
 
@@ -157,10 +151,6 @@ Response
    +-----------------+------------------+-----------------------------------------------------+
    | resource_name   | String           | Specifies the resource name, which is the ECS name. |
    +-----------------+------------------+-----------------------------------------------------+
-
-
-
-.. _ENUSTOPIC0102606095table173144214534:
 
 .. table:: **Table 7** **resource_tag** field description
 
@@ -243,11 +233,9 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

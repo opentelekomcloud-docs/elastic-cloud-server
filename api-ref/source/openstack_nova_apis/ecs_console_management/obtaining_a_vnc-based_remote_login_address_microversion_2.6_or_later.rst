@@ -1,3 +1,5 @@
+.. _en-us_topic_0142763126:
+
 Obtaining a VNC-based Remote Login Address (Microversion 2.6 or Later)
 ======================================================================
 
@@ -11,9 +13,9 @@ URI
 
 POST /v2.1/{project_id}/servers/{server_id}/remote-consoles
 
-`Table 1 <#enustopic0142763126enustopic0092803065table55945983>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0142763126__en-us_topic_0092803065_table55945983>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0142763126enustopic0092803065table55945983:
+.. _en-us_topic_0142763126__en-us_topic_0092803065_table55945983:
 
 .. table:: **Table 1** Parameter description
 
@@ -38,21 +40,15 @@ Constraints
 Request
 -------
 
-
-
-.. _ENUSTOPIC0142763126table2421133916364:
-
 .. table:: **Table 2** Request parameters
 
-   +----------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter      | Mandatory | Type   | Description                                                                                                                              |
-   +================+===========+========+==========================================================================================================================================+
-   | remote_console | Yes       | Object | Obtains the address for remotely logging in to an ECS using VNC. For details, see `Table 3 <#enustopic0142763126table19959184318164>`__. |
-   +----------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------+
+   +----------------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter      | Mandatory | Type   | Description                                                                                                                                     |
+   +================+===========+========+=================================================================================================================================================+
+   | remote_console | Yes       | Object | Obtains the address for remotely logging in to an ECS using VNC. For details, see :ref:`Table 3 <en-us_topic_0142763126__table19959184318164>`. |
+   +----------------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0142763126table19959184318164:
+.. _en-us_topic_0142763126__table19959184318164:
 
 .. table:: **Table 3** **remote_console** parameters
 
@@ -67,23 +63,19 @@ Request
 Response
 --------
 
-`Table 4 <#enustopic0142763126table8420447171011>`__ describes the response parameters.
+:ref:`Table 4 <en-us_topic_0142763126__table8420447171011>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0142763126table8420447171011:
+.. _en-us_topic_0142763126__table8420447171011:
 
 .. table:: **Table 4** Response parameters
 
-   +----------------+--------+--------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter      | Type   | Description                                                                                                                    |
-   +================+========+================================================================================================================================+
-   | remote_console | Object | Obtains the address for remotely logging in to an ECS. For details, see `Table 5 <#enustopic0142763126table12434194718104>`__. |
-   +----------------+--------+--------------------------------------------------------------------------------------------------------------------------------+
+   +----------------+--------+---------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter      | Type   | Description                                                                                                                           |
+   +================+========+=======================================================================================================================================+
+   | remote_console | Object | Obtains the address for remotely logging in to an ECS. For details, see :ref:`Table 5 <en-us_topic_0142763126__table12434194718104>`. |
+   +----------------+--------+---------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0142763126table12434194718104:
+.. _en-us_topic_0142763126__table12434194718104:
 
 .. table:: **Table 5** **remote_console** parameters
 
@@ -131,11 +123,9 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

@@ -1,3 +1,5 @@
+.. _en-us_topic_0020212674:
+
 Querying Tenant Quotas
 ======================
 
@@ -11,9 +13,9 @@ URI
 
 GET /v1/{project_id}/cloudservers/limits
 
-`Table 1 <#enustopic0020212674table23262209>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0020212674__table23262209>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0020212674table23262209:
+.. _en-us_topic_0020212674__table23262209:
 
 .. table:: **Table 1** Parameter description
 
@@ -31,21 +33,19 @@ None
 Response
 --------
 
-`Table 2 <#enustopic0020212674table6147620>`__ describes the response parameters. 
+:ref:`Table 2 <en-us_topic_0020212674__table6147620>` describes the response parameters.
 
-.. _ENUSTOPIC0020212674table6147620:
+.. _en-us_topic_0020212674__table6147620:
 
 .. table:: **Table 2** Response parameters
 
-   +-----------+--------+-------------------------------------------------------------------------------------------+
-   | Parameter | Type   | Description                                                                               |
-   +===========+========+===========================================================================================+
-   | absolute  | Object | Specifies tenant quotas. For details, see `Table 3 <#enustopic0020212674table7714075>`__. |
-   +-----------+--------+-------------------------------------------------------------------------------------------+
+   +-----------+--------+--------------------------------------------------------------------------------------------------+
+   | Parameter | Type   | Description                                                                                      |
+   +===========+========+==================================================================================================+
+   | absolute  | Object | Specifies tenant quotas. For details, see :ref:`Table 3 <en-us_topic_0020212674__table7714075>`. |
+   +-----------+--------+--------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0020212674table7714075:
+.. _en-us_topic_0020212674__table7714075:
 
 .. table:: **Table 3** **absolute** field description
 
@@ -140,11 +140,9 @@ Example response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

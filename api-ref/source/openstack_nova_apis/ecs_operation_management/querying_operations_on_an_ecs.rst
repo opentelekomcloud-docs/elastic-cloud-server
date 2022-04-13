@@ -1,3 +1,5 @@
+.. _en-us_topic_0065817692:
+
 Querying Operations on an ECS
 =============================
 
@@ -13,9 +15,9 @@ GET /v2.1/{project_id}/servers/{server_id}/os-instance-actions?limit={limit}&mar
 
 GET /v2/{project_id}/servers/{server_id}/os-instance-actions?limit={limit}&marker={marker}
 
-`Table 1 <#enustopic0065817692enustopic0057973177table32475667>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065817692__en-us_topic_0057973177_table32475667>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065817692enustopic0057973177table32475667:
+.. _en-us_topic_0065817692__en-us_topic_0057973177_table32475667:
 
 .. table:: **Table 1** Path parameters
 
@@ -29,10 +31,6 @@ GET /v2/{project_id}/servers/{server_id}/os-instance-actions?limit={limit}&marke
 .. note::
 
    Pagination query is supported in microversion 2.58 and later. The query results are displayed by the creation time (**created_at**) of the records in descending order. If the creation time is not provided, the results are displayed by object ID in descending order. The number of records displayed on each page is **limit**. If the value of **limit** exceeds the maximum number configured in Nova, the maximum number configured in Nova is returned.
-
-
-
-.. _ENUSTOPIC0065817692enustopic0057973177table25375307161212:
 
 .. table:: **Table 2** Query parameters
 
@@ -56,23 +54,19 @@ None
 Response
 --------
 
-`Table 3 <#enustopic0065817692enustopic0057973153table55529076>`__ describes the response parameters.
+:ref:`Table 3 <en-us_topic_0065817692__en-us_topic_0057973153_table55529076>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0065817692enustopic0057973153table55529076:
+.. _en-us_topic_0065817692__en-us_topic_0057973153_table55529076:
 
 .. table:: **Table 3** Response parameters
 
-   +-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter       | Type            | Description                                                                                                                    |
-   +=================+=================+================================================================================================================================+
-   | instanceActions | Array of Object | Specifies operations performed on the ECS. For details, see `Table 4 <#enustopic0065817692enustopic0057973177table2407422>`__. |
-   +-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Type            | Description                                                                                                                               |
+   +=================+=================+===========================================================================================================================================+
+   | instanceActions | Array of Object | Specifies operations performed on the ECS. For details, see :ref:`Table 4 <en-us_topic_0065817692__en-us_topic_0057973177_table2407422>`. |
+   +-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0065817692enustopic0057973177table2407422:
+.. _en-us_topic_0065817692__en-us_topic_0057973177_table2407422:
 
 .. table:: **Table 4** **instanceActions** field description
 
@@ -137,6 +131,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

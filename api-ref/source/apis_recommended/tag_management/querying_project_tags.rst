@@ -1,3 +1,5 @@
+.. _en-us_topic_0167811966:
+
 Querying Project Tags
 =====================
 
@@ -13,9 +15,9 @@ URI
 
 GET /v1/{project_id}/cloudservers/tags
 
-`Table 1 <#enustopic0167811966table1169019216279>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0167811966__table1169019216279>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0167811966table1169019216279:
+.. _en-us_topic_0167811966__table1169019216279:
 
 .. table:: **Table 1** Parameter description
 
@@ -33,23 +35,19 @@ None
 Response
 --------
 
-`Table 2 <#enustopic0167811966table14618153352714>`__ describes the response parameters.
+:ref:`Table 2 <en-us_topic_0167811966__table14618153352714>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0167811966table14618153352714:
+.. _en-us_topic_0167811966__table14618153352714:
 
 .. table:: **Table 2** Response parameters
 
-   +-----------+------------------+---------------------------------------------------------------------------------------------------------------------+
-   | Parameter | Type             | Description                                                                                                         |
-   +===========+==================+=====================================================================================================================+
-   | tags      | Array of objects | Specifies the tag list. For details, see `Table 3 <#enustopic0167811966enustopic0102606094table207611141174713>`__. |
-   +-----------+------------------+---------------------------------------------------------------------------------------------------------------------+
+   +-----------+------------------+--------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter | Type             | Description                                                                                                                    |
+   +===========+==================+================================================================================================================================+
+   | tags      | Array of objects | Specifies the tag list. For details, see :ref:`Table 3 <en-us_topic_0167811966__en-us_topic_0102606094_table207611141174713>`. |
+   +-----------+------------------+--------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0167811966enustopic0102606094table207611141174713:
+.. _en-us_topic_0167811966__en-us_topic_0102606094_table207611141174713:
 
 .. table:: **Table 3** **tag** field description
 
@@ -102,11 +100,9 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

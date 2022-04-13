@@ -1,3 +1,5 @@
+.. _en-us_topic_0065817718:
+
 Binding a Floating IP Address (Discarded)
 =========================================
 
@@ -15,9 +17,9 @@ POST /v2/{project_id}/servers/{server_id}/action
 
 POST /v2.1/{project_id}/servers/{server_id}/action
 
-`Table 1 <#enustopic0065817718enustopic0057972997table32475667>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065817718__en-us_topic_0057972997_table32475667>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065817718enustopic0057972997table32475667:
+.. _en-us_topic_0065817718__en-us_topic_0057972997_table32475667:
 
 .. table:: **Table 1** Parameter description
 
@@ -31,11 +33,9 @@ POST /v2.1/{project_id}/servers/{server_id}/action
 Request
 -------
 
-`Table 2 <#enustopic0065817718enustopic0057972997table49322741>`__ describes the request parameters.
+:ref:`Table 2 <en-us_topic_0065817718__en-us_topic_0057972997_table49322741>` describes the request parameters.
 
-
-
-.. _ENUSTOPIC0065817718enustopic0057972997table49322741:
+.. _en-us_topic_0065817718__en-us_topic_0057972997_table49322741:
 
 .. table:: **Table 2** Request parameter
 
@@ -44,10 +44,6 @@ Request
    +===============+===========+========+==========================================================+
    | addFloatingIp | Yes       | Object | Specifies the floating IP address to be bound to an ECS. |
    +---------------+-----------+--------+----------------------------------------------------------+
-
-
-
-.. _ENUSTOPIC0065817718enustopic0057972997table58252101:
 
 .. table:: **Table 3** **addFloatingIp** parameter information
 
@@ -89,6 +85,4 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

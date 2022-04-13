@@ -1,3 +1,5 @@
+.. _en-us_topic_0133622595:
+
 Adding an ECS to an ECS Group
 =============================
 
@@ -18,9 +20,9 @@ URI
 
 POST /v1/{project_id}/cloudservers/os-server-groups/{server_group_id}/action
 
-`Table 1 <#enustopic0133622595table042161072218>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0133622595__table042161072218>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0133622595table042161072218:
+.. _en-us_topic_0133622595__table042161072218:
 
 .. table:: **Table 1** Parameter description
 
@@ -34,25 +36,21 @@ POST /v1/{project_id}/cloudservers/os-server-groups/{server_group_id}/action
 Request
 -------
 
-`Table 2 <#enustopic0133622595table125642531229>`__ describes the request parameters.
+:ref:`Table 2 <en-us_topic_0133622595__table125642531229>` describes the request parameters.
 
-
-
-.. _ENUSTOPIC0133622595table125642531229:
+.. _en-us_topic_0133622595__table125642531229:
 
 .. table:: **Table 2** Request parameters
 
-   +-----------------+-----------------+-----------------+-----------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                           |
-   +=================+=================+=================+=======================================================================+
-   | add_member      | Yes             | Object          | Specifies the information of the ECS to be added to an ECS group.     |
-   |                 |                 |                 |                                                                       |
-   |                 |                 |                 | For details, see `Table 3 <#enustopic0133622595table532112610239>`__. |
-   +-----------------+-----------------+-----------------+-----------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                  |
+   +=================+=================+=================+==============================================================================+
+   | add_member      | Yes             | Object          | Specifies the information of the ECS to be added to an ECS group.            |
+   |                 |                 |                 |                                                                              |
+   |                 |                 |                 | For details, see :ref:`Table 3 <en-us_topic_0133622595__table532112610239>`. |
+   +-----------------+-----------------+-----------------+------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0133622595table532112610239:
+.. _en-us_topic_0133622595__table532112610239:
 
 .. table:: **Table 3** **add_member** parameters
 
@@ -90,11 +88,9 @@ Status code 200, indicating that the operation is successful
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

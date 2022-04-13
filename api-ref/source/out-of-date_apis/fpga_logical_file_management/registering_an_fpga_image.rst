@@ -1,3 +1,5 @@
+.. _en-us_topic_0065962597:
+
 Registering an FPGA Image
 =========================
 
@@ -13,11 +15,9 @@ URI
 
 POST /v1/{project_id}/cloudservers/fpga_image
 
-`Table 1 <#enustopic0065962597table10080802211311>`__ describes the parameters in the URI.
+:ref:`Table 1 <en-us_topic_0065962597__table10080802211311>` describes the parameters in the URI.
 
-
-
-.. _ENUSTOPIC0065962597table10080802211311:
+.. _en-us_topic_0065962597__table10080802211311:
 
 .. table:: **Table 1** Parameter description
 
@@ -30,11 +30,9 @@ POST /v1/{project_id}/cloudservers/fpga_image
 Request
 -------
 
-`Table 2 <#enustopic0065962597table5698154011375>`__ describes the request parameters.
+:ref:`Table 2 <en-us_topic_0065962597__table5698154011375>` describes the request parameters.
 
-
-
-.. _ENUSTOPIC0065962597table5698154011375:
+.. _en-us_topic_0065962597__table5698154011375:
 
 .. table:: **Table 2** Request parameters
 
@@ -43,10 +41,6 @@ Request
    ========== ====== ========= ======================================
    fpga_image Object Yes       Indicates details about an FPGA image.
    ========== ====== ========= ======================================
-
-
-
-.. _ENUSTOPIC0065962597table36632723211311:
 
 .. table:: **Table 3** **fpga_image** field description
 
@@ -86,11 +80,9 @@ Request
 Response
 --------
 
-`Table 4 <#enustopic0065962597table551653634018>`__ describes the response parameters.
+:ref:`Table 4 <en-us_topic_0065962597__table551653634018>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0065962597table551653634018:
+.. _en-us_topic_0065962597__table551653634018:
 
 .. table:: **Table 4** Response parameters
 
@@ -99,10 +91,6 @@ Response
    ========== ====== ======================================
    fpga_image Object Indicates details about an FPGA image.
    ========== ====== ======================================
-
-
-
-.. _ENUSTOPIC0065962597table8648200211311:
 
 .. table:: **Table 5** **fpga_image** field description
 
@@ -155,11 +143,9 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

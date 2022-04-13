@@ -1,3 +1,5 @@
+.. _en-us_topic_0065820818:
+
 Querying Details About a Floating IP Address (Discarded)
 ========================================================
 
@@ -15,9 +17,9 @@ GET /v2/{project_id}/os-floating-ips/{floating_ip_id}
 
 GET /v2.1/{project_id}/os-floating-ips/{floating_ip_id}
 
-`Table 1 <#enustopic0065820818enustopic0057972673table32475667>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065820818__en-us_topic_0057972673_table32475667>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065820818enustopic0057972673table32475667:
+.. _en-us_topic_0065820818__en-us_topic_0057972673_table32475667:
 
 .. table:: **Table 1** Parameter description
 
@@ -36,23 +38,19 @@ None
 Response
 --------
 
-`Table 2 <#enustopic0065820818enustopic0057972673table38246063>`__ describes the response parameters.
+:ref:`Table 2 <en-us_topic_0065820818__en-us_topic_0057972673_table38246063>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0065820818enustopic0057972673table38246063:
+.. _en-us_topic_0065820818__en-us_topic_0057972673_table38246063:
 
 .. table:: **Table 2** Response parameters
 
-   +-------------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------+
-   | Parameter   | Mandatory | Type   | Description                                                                                                             |
-   +=============+===========+========+=========================================================================================================================+
-   | floating_ip | Yes       | Object | Specifies the floating IP address. For details, see `Table 3 <#enustopic0065820818enustopic0057972673table65314517>`__. |
-   +-------------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------+
+   +-------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter   | Mandatory | Type   | Description                                                                                                                        |
+   +=============+===========+========+====================================================================================================================================+
+   | floating_ip | Yes       | Object | Specifies the floating IP address. For details, see :ref:`Table 3 <en-us_topic_0065820818__en-us_topic_0057972673_table65314517>`. |
+   +-------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0065820818enustopic0057972673table65314517:
+.. _en-us_topic_0065820818__en-us_topic_0057972673_table65314517:
 
 .. table:: **Table 3** **floating_ip** objects
 
@@ -96,6 +94,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

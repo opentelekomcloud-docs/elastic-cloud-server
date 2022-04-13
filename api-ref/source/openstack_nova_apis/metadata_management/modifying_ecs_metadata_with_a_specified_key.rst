@@ -1,3 +1,5 @@
+.. _en-us_topic_0025567413:
+
 Modifying ECS Metadata with a Specified Key
 ===========================================
 
@@ -21,9 +23,9 @@ PUT /v2.1/{project_id}/servers/{server_id}/metadata/{key}
 
 PUT /v2/{project_id}/servers/{server_id}/metadata/{key}
 
-`Table 1 <#enustopic0025567413table258804192629>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0025567413__table258804192629>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0025567413table258804192629:
+.. _en-us_topic_0025567413__table258804192629:
 
 .. table:: **Table 1** Parameter description
 
@@ -38,11 +40,9 @@ PUT /v2/{project_id}/servers/{server_id}/metadata/{key}
 Request
 -------
 
-`Table 2 <#enustopic0025567413table21113531192629>`__ describes the request parameters.
+:ref:`Table 2 <en-us_topic_0025567413__table21113531192629>` describes the request parameters.
 
-
-
-.. _ENUSTOPIC0025567413table21113531192629:
+.. _en-us_topic_0025567413__table21113531192629:
 
 .. table:: **Table 2** Request parameters
 
@@ -63,9 +63,9 @@ Request
 Response
 --------
 
-`Table 3 <#enustopic0025567413table34681280192629>`__ describes the response parameters. 
+:ref:`Table 3 <en-us_topic_0025567413__table34681280192629>` describes the response parameters.
 
-.. _ENUSTOPIC0025567413table34681280192629:
+.. _en-us_topic_0025567413__table34681280192629:
 
 .. table:: **Table 3** Response parameters
 
@@ -105,6 +105,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

@@ -1,3 +1,5 @@
+.. _en-us_topic_0067600148:
+
 Querying Automatic Recovery of an ECS
 =====================================
 
@@ -11,9 +13,9 @@ URI
 
 GET /v1/{project_id}/cloudservers/{server_id}/autorecovery
 
-`Table 1 <#enustopic0067600148table32475667>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0067600148__table32475667>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0067600148table32475667:
+.. _en-us_topic_0067600148__table32475667:
 
 .. table:: **Table 1** Parameter description
 
@@ -32,11 +34,9 @@ None
 Response
 --------
 
-`Table 2 <#enustopic0067600148enustopic0057973216table30138413>`__ describes the response parameters.
+:ref:`Table 2 <en-us_topic_0067600148__en-us_topic_0057973216_table30138413>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0067600148enustopic0057973216table30138413:
+.. _en-us_topic_0067600148__en-us_topic_0057973216_table30138413:
 
 .. table:: **Table 2** Response parameters
 
@@ -70,11 +70,9 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

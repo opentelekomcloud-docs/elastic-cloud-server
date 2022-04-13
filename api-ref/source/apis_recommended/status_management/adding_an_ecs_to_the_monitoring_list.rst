@@ -1,3 +1,5 @@
+.. _en-us_topic_0081529857:
+
 Adding an ECS to the Monitoring List
 ====================================
 
@@ -13,9 +15,9 @@ URI
 
 POST /v1.0/servers/{server_id}/action
 
-`Table 1 <#enustopic0081529857table3713317418952>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0081529857__table3713317418952>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0081529857table3713317418952:
+.. _en-us_topic_0081529857__table3713317418952:
 
 .. table:: **Table 1** Parameter description
 
@@ -28,9 +30,9 @@ POST /v1.0/servers/{server_id}/action
 Request
 -------
 
-`Table 2 <#enustopic0081529857table20892986181041>`__ describes the request parameters. 
+:ref:`Table 2 <en-us_topic_0081529857__table20892986181041>` describes the request parameters.
 
-.. _ENUSTOPIC0081529857table20892986181041:
+.. _en-us_topic_0081529857__table20892986181041:
 
 .. table:: **Table 2** Request parameters
 
@@ -66,11 +68,9 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

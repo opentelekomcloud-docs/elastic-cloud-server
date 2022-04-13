@@ -1,3 +1,5 @@
+.. _en-us_topic_0020212688:
+
 Querying ECSs
 =============
 
@@ -13,9 +15,9 @@ GET /v2.1/{project_id}/servers?changes-since={changes-since}&image={image}&flavo
 
 GET /v2/{project_id}/servers?changes-since={changes-since}&image={image}&flavor={flavor}&name={name}&status={status}&limit={limit}&marker={marker}&not-tags={not-tags}&reservation_id={eservation_id}&ip={ip}
 
-`Table 1 <#enustopic0020212688table5536817>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0020212688__table5536817>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0020212688table5536817:
+.. _en-us_topic_0020212688__table5536817:
 
 .. table:: **Table 1** Path parameters
 
@@ -24,10 +26,6 @@ GET /v2/{project_id}/servers?changes-since={changes-since}&image={image}&flavor=
    ========== ========= =========================
    project_id Yes       Specifies the project ID.
    ========== ========= =========================
-
-
-
-.. _ENUSTOPIC0020212688table34603472320:
 
 .. table:: **Table 2** Query parameters
 
@@ -52,7 +50,7 @@ GET /v2/{project_id}/servers?changes-since={changes-since}&image={image}&flavor=
    |                 |                 |                 |                                                                                                                                                                                                                                                                                                          |
    |                 |                 |                 | In microversion 2.37, the system will return an empty list for the **status** field out of the preceding options. In microversion 2.38 and later, the system will return error 400.                                                                                                                      |
    |                 |                 |                 |                                                                                                                                                                                                                                                                                                          |
-   |                 |                 |                 | For details, see `ECS Statuses <../../appendix/ecs_statuses.html>`__.                                                                                                                                                                                                                                    |
+   |                 |                 |                 | For details, see :ref:`ECS Statuses <en-us_topic_0178420672>`.                                                                                                                                                                                                                                           |
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | limit           | No              | Integer         | Specifies the upper limit on the number of returned results.                                                                                                                                                                                                                                             |
    |                 |                 |                 |                                                                                                                                                                                                                                                                                                          |
@@ -64,7 +62,7 @@ GET /v2/{project_id}/servers?changes-since={changes-since}&image={image}&flavor=
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | not-tags        | No              | String          | Queries ECSs with tags not containing the specified value. The value is the tag key.                                                                                                                                                                                                                     |
    |                 |                 |                 |                                                                                                                                                                                                                                                                                                          |
-   |                 |                 |                 | For details about key rules, see `Tag Types <../../openstack_nova_apis/tag_management/tag_types.html>`__.                                                                                                                                                                                                |
+   |                 |                 |                 | For details about key rules, see :ref:`Tag Types <en-us_topic_0065817686>`.                                                                                                                                                                                                                              |
    |                 |                 |                 |                                                                                                                                                                                                                                                                                                          |
    |                 |                 |                 | .. note::                                                                                                                                                                                                                                                                                                |
    |                 |                 |                 |                                                                                                                                                                                                                                                                                                          |
@@ -89,41 +87,35 @@ None
 Response
 --------
 
-`Table 3 <#enustopic0020212688table44736746>`__ describes the response parameters.
+:ref:`Table 3 <en-us_topic_0020212688__table44736746>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0020212688table44736746:
+.. _en-us_topic_0020212688__table44736746:
 
 .. table:: **Table 3** Response parameters
 
-   +---------------+------------------+----------------------------------------------------------------------------------------------------------------------------+
-   | Parameter     | Type             | Description                                                                                                                |
-   +===============+==================+============================================================================================================================+
-   | servers       | Array of objects | Specifies the ECSs to be queried. For details, see `Table 4 <#enustopic0020212688table11253402>`__.                        |
-   +---------------+------------------+----------------------------------------------------------------------------------------------------------------------------+
-   | servers_links | Array of objects | Specifies the link of the next page in pagination query. For details, see `Table 5 <#enustopic0020212688table64121649>`__. |
-   +---------------+------------------+----------------------------------------------------------------------------------------------------------------------------+
+   +---------------+------------------+-----------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter     | Type             | Description                                                                                                                       |
+   +===============+==================+===================================================================================================================================+
+   | servers       | Array of objects | Specifies the ECSs to be queried. For details, see :ref:`Table 4 <en-us_topic_0020212688__table11253402>`.                        |
+   +---------------+------------------+-----------------------------------------------------------------------------------------------------------------------------------+
+   | servers_links | Array of objects | Specifies the link of the next page in pagination query. For details, see :ref:`Table 5 <en-us_topic_0020212688__table64121649>`. |
+   +---------------+------------------+-----------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0020212688table11253402:
+.. _en-us_topic_0020212688__table11253402:
 
 .. table:: **Table 4** **servers** field description
 
-   +-----------+------------------+-------------------------------------------------------------------------------------------------+
-   | Parameter | Type             | Description                                                                                     |
-   +===========+==================+=================================================================================================+
-   | name      | String           | Specifies the ECS name.                                                                         |
-   +-----------+------------------+-------------------------------------------------------------------------------------------------+
-   | id        | String           | Specifies an ECS uniquely.                                                                      |
-   +-----------+------------------+-------------------------------------------------------------------------------------------------+
-   | links     | Array of objects | Specifies ECS shortcut links. For details, see `Table 5 <#enustopic0020212688table64121649>`__. |
-   +-----------+------------------+-------------------------------------------------------------------------------------------------+
+   +-----------+------------------+--------------------------------------------------------------------------------------------------------+
+   | Parameter | Type             | Description                                                                                            |
+   +===========+==================+========================================================================================================+
+   | name      | String           | Specifies the ECS name.                                                                                |
+   +-----------+------------------+--------------------------------------------------------------------------------------------------------+
+   | id        | String           | Specifies an ECS uniquely.                                                                             |
+   +-----------+------------------+--------------------------------------------------------------------------------------------------------+
+   | links     | Array of objects | Specifies ECS shortcut links. For details, see :ref:`Table 5 <en-us_topic_0020212688__table64121649>`. |
+   +-----------+------------------+--------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0020212688table64121649:
+.. _en-us_topic_0020212688__table64121649:
 
 .. table:: **Table 5** **servers_links** and **links** field description
 
@@ -169,6 +161,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

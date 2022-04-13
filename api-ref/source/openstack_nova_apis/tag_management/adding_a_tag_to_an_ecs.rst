@@ -1,3 +1,5 @@
+.. _en-us_topic_0065820825:
+
 Adding a Tag to an ECS
 ======================
 
@@ -18,9 +20,9 @@ URI
 
 PUT /v2.1/{project_id}/servers/{server_id}/tags/{tag}
 
-`Table 1 <#enustopic0065820825enustopic0057972840table32475667>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065820825__en-us_topic_0057972840_table32475667>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065820825enustopic0057972840table32475667:
+.. _en-us_topic_0065820825__en-us_topic_0057972840_table32475667:
 
 .. table:: **Table 1** Parameter description
 
@@ -33,7 +35,7 @@ PUT /v2.1/{project_id}/servers/{server_id}/tags/{tag}
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | tag                   | Yes                   | Specifies the key of the tag to be added.                                                                                                                           |
    |                       |                       |                                                                                                                                                                     |
-   |                       |                       | For details about key rules, see `Tag Types <../../openstack_nova_apis/tag_management/tag_types.html>`__.                                                           |
+   |                       |                       | For details about key rules, see :ref:`Tag Types <en-us_topic_0065817686>`.                                                                                         |
    |                       |                       |                                                                                                                                                                     |
    |                       |                       | .. note::                                                                                                                                                           |
    |                       |                       |                                                                                                                                                                     |
@@ -49,10 +51,6 @@ None
 
 Response
 --------
-
-
-
-.. _ENUSTOPIC0065820825table1481741123815:
 
 .. table:: **Table 2** Response parameters
 
@@ -104,6 +102,4 @@ JSON format
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

@@ -1,3 +1,5 @@
+.. _en-us_topic_0067876971:
+
 Changing an ECS OS (Using an Image with Cloud-Init Installed)
 =============================================================
 
@@ -21,9 +23,9 @@ URI
 
 POST /v2/{project_id}/cloudservers/{server_id}/changeos
 
-`Table 1 <#enustopic0067876971table55945983>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0067876971__table55945983>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0067876971table55945983:
+.. _en-us_topic_0067876971__table55945983:
 
 .. table:: **Table 1** Parameter description
 
@@ -37,21 +39,19 @@ POST /v2/{project_id}/cloudservers/{server_id}/changeos
 Request
 -------
 
-`Table 2 <#enustopic0067876971table2840889>`__ describes the request parameters. 
+:ref:`Table 2 <en-us_topic_0067876971__table2840889>` describes the request parameters.
 
-.. _ENUSTOPIC0067876971table2840889:
+.. _en-us_topic_0067876971__table2840889:
 
 .. table:: **Table 2** Request parameters
 
-   +-----------+-----------+--------+--------------------------------------------------------------------------------------+
-   | Parameter | Mandatory | Type   | Description                                                                          |
-   +===========+===========+========+======================================================================================+
-   | os-change | Yes       | Object | Changes an ECS OS. For details, see `Table 3 <#enustopic0067876971table32200631>`__. |
-   +-----------+-----------+--------+--------------------------------------------------------------------------------------+
+   +-----------+-----------+--------+---------------------------------------------------------------------------------------------+
+   | Parameter | Mandatory | Type   | Description                                                                                 |
+   +===========+===========+========+=============================================================================================+
+   | os-change | Yes       | Object | Changes an ECS OS. For details, see :ref:`Table 3 <en-us_topic_0067876971__table32200631>`. |
+   +-----------+-----------+--------+---------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0067876971table32200631:
+.. _en-us_topic_0067876971__table32200631:
 
 .. table:: **Table 3** **os-change** field description
 
@@ -68,12 +68,10 @@ Request
    +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | metadata        | No              | Object          | Specifies the metadata of the ECS for which the OS is to be changed.                                                                                                                                        |
    |                 |                 |                 |                                                                                                                                                                                                             |
-   |                 |                 |                 | For more information, see `Table 4 <#enustopic0067876971table9120223>`__.                                                                                                                                   |
+   |                 |                 |                 | For more information, see :ref:`Table 4 <en-us_topic_0067876971__table9120223>`.                                                                                                                            |
    +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0067876971table9120223:
+.. _en-us_topic_0067876971__table9120223:
 
 .. table:: **Table 4** **metadata** field description
 
@@ -142,7 +140,7 @@ Request
 Response
 --------
 
-See `Responses (Task) <../../common_parameters/task_request_result/responses_task.html>`__.
+See :ref:`Responses (Task) <en-us_topic_0022067714>`.
 
 Example Request
 ---------------
@@ -196,16 +194,14 @@ Example Request
 Example Response
 ----------------
 
-See `Responses (Task) <../../common_parameters/task_request_result/responses_task.html>`__.
+See :ref:`Responses (Task) <en-us_topic_0022067714>`.
 
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

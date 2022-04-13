@@ -1,3 +1,5 @@
+.. _en-us_topic_0020212677:
+
 Querying a Specified SSH Key Pair
 =================================
 
@@ -13,9 +15,9 @@ GET /v2.1/{project_id}/os-keypairs/{keypair_name}
 
 GET /v2/{project_id}/os-keypairs/{keypair_name}
 
-`Table 1 <#enustopic0020212677table51931981>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0020212677__table51931981>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0020212677table51931981:
+.. _en-us_topic_0020212677__table51931981:
 
 .. table:: **Table 1** Parameter description
 
@@ -34,21 +36,19 @@ None
 Response
 --------
 
-`Table 2 <#enustopic0020212677table49096623>`__ describes the response parameters. 
+:ref:`Table 2 <en-us_topic_0020212677__table49096623>` describes the response parameters.
 
-.. _ENUSTOPIC0020212677table49096623:
+.. _en-us_topic_0020212677__table49096623:
 
 .. table:: **Table 2** Response parameters
 
-   +-----------+--------+-----------------------------------------------------------------------------------------------+
-   | Parameter | Type   | Description                                                                                   |
-   +===========+========+===============================================================================================+
-   | keypair   | Object | Specifies the SSH key pair. For details, see `Table 3 <#enustopic0020212677table32323009>`__. |
-   +-----------+--------+-----------------------------------------------------------------------------------------------+
+   +-----------+--------+------------------------------------------------------------------------------------------------------+
+   | Parameter | Type   | Description                                                                                          |
+   +===========+========+======================================================================================================+
+   | keypair   | Object | Specifies the SSH key pair. For details, see :ref:`Table 3 <en-us_topic_0020212677__table32323009>`. |
+   +-----------+--------+------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0020212677table32323009:
+.. _en-us_topic_0020212677__table32323009:
 
 .. table:: **Table 3** **keypair** field description
 
@@ -111,6 +111,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

@@ -1,3 +1,5 @@
+.. _en-us_topic_0065817694:
+
 Creating an Image Using an ECS
 ==============================
 
@@ -32,9 +34,9 @@ POST /v2.1/{project_id}/servers/{server_id}/action
 
 POST /v2/{project_id}/servers/{server_id}/action
 
-`Table 1 <#enustopic0065817694table9179610161220>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065817694__table9179610161220>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065817694table9179610161220:
+.. _en-us_topic_0065817694__table9179610161220:
 
 .. table:: **Table 1** Parameter description
 
@@ -48,23 +50,19 @@ POST /v2/{project_id}/servers/{server_id}/action
 Request
 -------
 
-`Table 2 <#enustopic0065817694table3529164221216>`__ describes the request parameters.
+:ref:`Table 2 <en-us_topic_0065817694__table3529164221216>` describes the request parameters.
 
-
-
-.. _ENUSTOPIC0065817694table3529164221216:
+.. _en-us_topic_0065817694__table3529164221216:
 
 .. table:: **Table 2** Request parameters
 
-   +-------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
-   | Parameter   | Mandatory | Type   | Description                                                                                                                 |
-   +=============+===========+========+=============================================================================================================================+
-   | createImage | Yes       | Object | Specifies the image created using ECS. For details, see `Table 3 <#enustopic0065817694enustopic0057972976table47198018>`__. |
-   +-------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------+
+   +-------------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter   | Mandatory | Type   | Description                                                                                                                            |
+   +=============+===========+========+========================================================================================================================================+
+   | createImage | Yes       | Object | Specifies the image created using ECS. For details, see :ref:`Table 3 <en-us_topic_0065817694__en-us_topic_0057972976_table47198018>`. |
+   +-------------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0065817694enustopic0057972976table47198018:
+.. _en-us_topic_0065817694__en-us_topic_0057972976_table47198018:
 
 .. table:: **Table 3** **createImage** field description
 
@@ -78,10 +76,6 @@ Request
 
 Response
 --------
-
-
-
-.. _ENUSTOPIC0065817694table194321619184818:
 
 +-----------------+-----------------+-----------------+--------------------------------------------------------------------------------+
 | Parameter       | Mandatory       | Type            | Description                                                                    |
@@ -123,6 +117,4 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

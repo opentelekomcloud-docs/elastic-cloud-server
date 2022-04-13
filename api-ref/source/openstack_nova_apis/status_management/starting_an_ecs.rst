@@ -1,3 +1,5 @@
+.. _en-us_topic_0020212648:
+
 Starting an ECS
 ===============
 
@@ -13,9 +15,9 @@ POST /v2.1/{project_id}/servers/{server_id}/action
 
 POST /v2/{project_id}/servers/{server_id}/action
 
-`Table 1 <#enustopic0020212648table48630964>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0020212648__table48630964>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0020212648table48630964:
+.. _en-us_topic_0020212648__table48630964:
 
 .. table:: **Table 1** Parameter description
 
@@ -29,9 +31,9 @@ POST /v2/{project_id}/servers/{server_id}/action
 Request
 -------
 
-`Table 2 <#enustopic0020212648table48180537>`__ describes the request parameters. 
+:ref:`Table 2 <en-us_topic_0020212648__table48180537>` describes the request parameters.
 
-.. _ENUSTOPIC0020212648table48180537:
+.. _en-us_topic_0020212648__table48180537:
 
 .. table:: **Table 2** Request parameters
 
@@ -67,6 +69,4 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

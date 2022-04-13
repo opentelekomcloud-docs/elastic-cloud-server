@@ -1,3 +1,5 @@
+.. _en-us_topic_0000001252263549:
+
 Deleting Tags from an ECS in a Batch (Discarded)
 ================================================
 
@@ -10,7 +12,7 @@ Function
 
 .. note::
 
-   This API has been discarded. Use the API described in `Deleting Tags from an ECS in a Batch <../../apis_recommended/tag_management/deleting_tags_from_an_ecs_in_a_batch.html>`__.
+   This API has been discarded. Use the API described in :ref:`Deleting Tags from an ECS in a Batch <en-us_topic_0167811964>`.
 
 Constraints
 -----------
@@ -22,9 +24,9 @@ URI
 
 POST /v1/{project_id}/servers/{server_id}/tags/action
 
-`Table 1 <#enustopic0000001252263549enustopic0096282701table19484740133714>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0000001252263549__en-us_topic_0096282701_table19484740133714>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0000001252263549enustopic0096282701table19484740133714:
+.. _en-us_topic_0000001252263549__en-us_topic_0096282701_table19484740133714:
 
 .. table:: **Table 1** Parameter description
 
@@ -38,11 +40,9 @@ POST /v1/{project_id}/servers/{server_id}/tags/action
 Request
 -------
 
-`Table 2 <#enustopic0000001252263549table787034194212>`__ describes the request parameters.
+:ref:`Table 2 <en-us_topic_0000001252263549__table787034194212>` describes the request parameters.
 
-
-
-.. _ENUSTOPIC0000001252263549table787034194212:
+.. _en-us_topic_0000001252263549__table787034194212:
 
 .. table:: **Table 2** Request parameters
 
@@ -53,10 +53,6 @@ Request
    +-----------+-----------+------------------+---------------------------------------------------------------------------------------------------------------------------+
    | action    | Yes       | String           | Specifies the operation (only lowercase letters are supported). For example, **delete** indicates the deletion operation. |
    +-----------+-----------+------------------+---------------------------------------------------------------------------------------------------------------------------+
-
-
-
-.. _ENUSTOPIC0000001252263549table3147055191316:
 
 .. table:: **Table 3** **resource_tag** field description
 
@@ -110,11 +106,9 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

@@ -1,3 +1,5 @@
+.. _en-us_topic_0065817705:
+
 Querying ECS Flavors
 ====================
 
@@ -13,9 +15,9 @@ GET /v2.1/{project_id}/flavors?minDisk={minDisk}&minRam={minRam}&sort_key={sort_
 
 GET /v2/{project_id}/flavors?minDisk={minDisk}&minRam={minRam}&sort_key={sort_key}&sort_dir={sort_dir}
 
-`Table 1 <#enustopic0065817705enustopic0057973030table32475667>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065817705__en-us_topic_0057973030_table32475667>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065817705enustopic0057973030table32475667:
+.. _en-us_topic_0065817705__en-us_topic_0057973030_table32475667:
 
 .. table:: **Table 1** Path parameters
 
@@ -27,11 +29,9 @@ GET /v2/{project_id}/flavors?minDisk={minDisk}&minRam={minRam}&sort_key={sort_ke
 
 Parameters in the following table can be used as URI parameters to filter query results. Usage: /v2/{project_id}/flavors?minDisk={minDisk}&minRam={minRam}
 
-`Table 2 <#enustopic0065817705enustopic0057973030table714692>`__ describes the query parameters.
+:ref:`Table 2 <en-us_topic_0065817705__en-us_topic_0057973030_table714692>` describes the query parameters.
 
-
-
-.. _ENUSTOPIC0065817705enustopic0057973030table714692:
+.. _en-us_topic_0065817705__en-us_topic_0057973030_table714692:
 
 .. table:: **Table 2** Query parameters
 
@@ -57,43 +57,35 @@ None
 Response
 --------
 
-`Table 4 <#enustopic0065817705enustopic0057973030table56222540>`__ describes the response parameters.
-
-
-
-.. _ENUSTOPIC0065817705table23477058:
+:ref:`Table 4 <en-us_topic_0065817705__en-us_topic_0057973030_table56222540>` describes the response parameters.
 
 .. table:: **Table 3** Response parameters
 
-   +---------------+------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter     | Type             | Description                                                                                                                                                      |
-   +===============+==================+==================================================================================================================================================================+
-   | flavors       | Array of objects | Specifies ECS flavors. For details, see `Table 4 <#enustopic0065817705enustopic0057973030table56222540>`__.                                                      |
-   +---------------+------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | flavors_links | Array of objects | Specifies data links for querying the next pages in pagination query. For details, see `Table 5 <#enustopic0065817705enustopic0057973030table15913898194628>`__. |
-   +---------------+------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +---------------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter     | Type             | Description                                                                                                                                                                 |
+   +===============+==================+=============================================================================================================================================================================+
+   | flavors       | Array of objects | Specifies ECS flavors. For details, see :ref:`Table 4 <en-us_topic_0065817705__en-us_topic_0057973030_table56222540>`.                                                      |
+   +---------------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | flavors_links | Array of objects | Specifies data links for querying the next pages in pagination query. For details, see :ref:`Table 5 <en-us_topic_0065817705__en-us_topic_0057973030_table15913898194628>`. |
+   +---------------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0065817705enustopic0057973030table56222540:
+.. _en-us_topic_0065817705__en-us_topic_0057973030_table56222540:
 
 .. table:: **Table 4** **flavors** field description
 
-   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------+
-   | Parameter             | Type                  | Description                                                                                |
-   +=======================+=======================+============================================================================================+
-   | id                    | String                | Specifies the flavor ID.                                                                   |
-   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------+
-   | links                 | Array of objects      | Specifies the shortcut link of the ECS flavor.                                             |
-   |                       |                       |                                                                                            |
-   |                       |                       | For details, see `Table 5 <#enustopic0065817705enustopic0057973030table15913898194628>`__. |
-   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------+
-   | name                  | String                | Specifies the flavor name.                                                                 |
-   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                           |
+   +=======================+=======================+=======================================================================================================+
+   | id                    | String                | Specifies the flavor ID.                                                                              |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------+
+   | links                 | Array of objects      | Specifies the shortcut link of the ECS flavor.                                                        |
+   |                       |                       |                                                                                                       |
+   |                       |                       | For details, see :ref:`Table 5 <en-us_topic_0065817705__en-us_topic_0057973030_table15913898194628>`. |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------+
+   | name                  | String                | Specifies the flavor name.                                                                            |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0065817705enustopic0057973030table15913898194628:
+.. _en-us_topic_0065817705__en-us_topic_0057973030_table15913898194628:
 
 .. table:: **Table 5** **links** field description
 
@@ -153,6 +145,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

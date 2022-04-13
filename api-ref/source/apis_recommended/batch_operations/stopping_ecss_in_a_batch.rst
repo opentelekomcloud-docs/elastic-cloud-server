@@ -1,3 +1,5 @@
+.. _en-us_topic_0020212651:
+
 Stopping ECSs in a Batch
 ========================
 
@@ -11,9 +13,9 @@ URI
 
 POST /v1/{project_id}/cloudservers/action
 
-`Table 1 <#enustopic0020212651table66418347>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0020212651__table66418347>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0020212651table66418347:
+.. _en-us_topic_0020212651__table66418347:
 
 .. table:: **Table 1** Parameter description
 
@@ -26,39 +28,31 @@ POST /v1/{project_id}/cloudservers/action
 Request
 -------
 
-
-
-.. _ENUSTOPIC0020212651table12156768:
-
 .. table:: **Table 2** Request parameters
 
-   +-----------+-----------+--------+------------------------------------------------------------------------------------------------------------------+
-   | Parameter | Mandatory | Type   | Description                                                                                                      |
-   +===========+===========+========+==================================================================================================================+
-   | os-stop   | Yes       | Object | Specifies the operation to stop the ECS. For details, see `Table 3 <#enustopic0020212651table51053190162024>`__. |
-   +-----------+-----------+--------+------------------------------------------------------------------------------------------------------------------+
+   +-----------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------+
+   | Parameter | Mandatory | Type   | Description                                                                                                             |
+   +===========+===========+========+=========================================================================================================================+
+   | os-stop   | Yes       | Object | Specifies the operation to stop the ECS. For details, see :ref:`Table 3 <en-us_topic_0020212651__table51053190162024>`. |
+   +-----------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0020212651table51053190162024:
+.. _en-us_topic_0020212651__table51053190162024:
 
 .. table:: **Table 3** **os-stop** field description
 
-   +-----------------+-----------------+------------------+--------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type             | Description                                                                          |
-   +=================+=================+==================+======================================================================================+
-   | servers         | Yes             | Array of objects | Specifies ECS IDs. For details, see `Table 4 <#enustopic0020212651table48932206>`__. |
-   +-----------------+-----------------+------------------+--------------------------------------------------------------------------------------+
-   | type            | No              | String           | Specifies an ECS stop type. The default value is **SOFT**.                           |
-   |                 |                 |                  |                                                                                      |
-   |                 |                 |                  | **SOFT**: normal ECS stop (default)                                                  |
-   |                 |                 |                  |                                                                                      |
-   |                 |                 |                  | **HARD**: forcible ECS stop                                                          |
-   +-----------------+-----------------+------------------+--------------------------------------------------------------------------------------+
+   +-----------------+-----------------+------------------+---------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type             | Description                                                                                 |
+   +=================+=================+==================+=============================================================================================+
+   | servers         | Yes             | Array of objects | Specifies ECS IDs. For details, see :ref:`Table 4 <en-us_topic_0020212651__table48932206>`. |
+   +-----------------+-----------------+------------------+---------------------------------------------------------------------------------------------+
+   | type            | No              | String           | Specifies an ECS stop type. The default value is **SOFT**.                                  |
+   |                 |                 |                  |                                                                                             |
+   |                 |                 |                  | **SOFT**: normal ECS stop (default)                                                         |
+   |                 |                 |                  |                                                                                             |
+   |                 |                 |                  | **HARD**: forcible ECS stop                                                                 |
+   +-----------------+-----------------+------------------+---------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0020212651table48932206:
+.. _en-us_topic_0020212651__table48932206:
 
 .. table:: **Table 4** **servers** field description
 
@@ -71,7 +65,7 @@ Request
 Response
 --------
 
-See `Responses (Task) <../../common_parameters/task_request_result/responses_task.html>`__.
+See :ref:`Responses (Task) <en-us_topic_0022067714>`.
 
 Example Request
 ---------------
@@ -107,11 +101,9 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

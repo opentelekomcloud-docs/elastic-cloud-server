@@ -1,3 +1,5 @@
+.. _en-us_topic_0000001252143577:
+
 Adding Tags to an ECS in a Batch (Discarded)
 ============================================
 
@@ -9,7 +11,7 @@ Function
 
 .. note::
 
-   This API has been discarded. Use the API described in `Adding Tags to an ECS in a Batch <../../apis_recommended/tag_management/adding_tags_to_an_ecs_in_a_batch.html>`__.
+   This API has been discarded. Use the API described in :ref:`Adding Tags to an ECS in a Batch <en-us_topic_0167811963>`.
 
 Constraints
 -----------
@@ -27,9 +29,9 @@ URI
 
 POST /v1/{project_id}/servers/{server_id}/tags/action
 
-`Table 1 <#enustopic0000001252143577table19484740133714>`__ lists the parameters. 
+:ref:`Table 1 <en-us_topic_0000001252143577__table19484740133714>` lists the parameters.
 
-.. _ENUSTOPIC0000001252143577table19484740133714:
+.. _en-us_topic_0000001252143577__table19484740133714:
 
 .. table:: **Table 1** Parameter description
 
@@ -43,11 +45,9 @@ POST /v1/{project_id}/servers/{server_id}/tags/action
 Request
 -------
 
-`Table 2 <#enustopic0000001252143577table1349994618388>`__ describes the request parameters.
+:ref:`Table 2 <en-us_topic_0000001252143577__table1349994618388>` describes the request parameters.
 
-
-
-.. _ENUSTOPIC0000001252143577table1349994618388:
+.. _en-us_topic_0000001252143577__table1349994618388:
 
 .. table:: **Table 2** Request parameters
 
@@ -58,10 +58,6 @@ Request
    +-----------+-----------+------------------+---------------------------------------------------------------------------------------------------------------------------+
    | action    | Yes       | String           | Specifies the operation (only lowercase letters are supported). For example, **create** indicates the creation operation. |
    +-----------+-----------+------------------+---------------------------------------------------------------------------------------------------------------------------+
-
-
-
-.. _ENUSTOPIC0000001252143577table1751454617383:
 
 .. table:: **Table 3** **resource_tag** field description
 
@@ -118,11 +114,9 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

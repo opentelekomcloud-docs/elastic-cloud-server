@@ -1,3 +1,5 @@
+.. _en-us_topic_0000001207623588:
+
 Querying Project Tags (Discarded)
 =================================
 
@@ -10,16 +12,16 @@ This API is used to query all tags used by a user in a specified project.
 
 .. note::
 
-   This API has been discarded. Use the API described in `Querying Project Tags <../../apis_recommended/tag_management/querying_project_tags.html>`__.
+   This API has been discarded. Use the API described in :ref:`Querying Project Tags <en-us_topic_0167811966>`.
 
 URI
 ---
 
 GET /v1/{project_id}/servers/tags
 
-`Table 1 <#enustopic0000001207623588table144382516421>`__ lists the parameter. 
+:ref:`Table 1 <en-us_topic_0000001207623588__table144382516421>` lists the parameter.
 
-.. _ENUSTOPIC0000001207623588table144382516421:
+.. _en-us_topic_0000001207623588__table144382516421:
 
 .. table:: **Table 1** Parameter description
 
@@ -37,11 +39,9 @@ None
 Response
 --------
 
-`Table 2 <#enustopic0000001207623588table725495518449>`__ describes the response parameter.
+:ref:`Table 2 <en-us_topic_0000001207623588__table725495518449>` describes the response parameter.
 
-
-
-.. _ENUSTOPIC0000001207623588table725495518449:
+.. _en-us_topic_0000001207623588__table725495518449:
 
 .. table:: **Table 2** Response parameter
 
@@ -50,10 +50,6 @@ Response
    ========= ================ ===============
    tags      Array of objects Specifies tags.
    ========= ================ ===============
-
-
-
-.. _ENUSTOPIC0000001207623588table207611141174713:
 
 .. table:: **Table 3** **tag** field description
 
@@ -107,11 +103,9 @@ Examples
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

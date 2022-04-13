@@ -1,3 +1,5 @@
+.. _en-us_topic_0020212671:
+
 Querying Disks Attached to an ECS
 =================================
 
@@ -13,9 +15,9 @@ GET /v2.1/{project_id}/servers/{server_id}/os-volume_attachments
 
 GET /v2/{project_id}/servers/{server_id}/os-volume_attachments
 
-`Table 1 <#enustopic0020212671table35893824>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0020212671__table35893824>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0020212671table35893824:
+.. _en-us_topic_0020212671__table35893824:
 
 .. table:: **Table 1** Parameter description
 
@@ -36,21 +38,19 @@ Response
 
 **Response parameters**
 
-`Table 2 <#enustopic0020212671table57959838>`__ describes the response parameters. 
+:ref:`Table 2 <en-us_topic_0020212671__table57959838>` describes the response parameters.
 
-.. _ENUSTOPIC0020212671table57959838:
+.. _en-us_topic_0020212671__table57959838:
 
 .. table:: **Table 2** Response parameters
 
-   +-------------------+------------------+----------------------------------------------------------------------------------------------------------+
-   | Parameter         | Type             | Description                                                                                              |
-   +===================+==================+==========================================================================================================+
-   | volumeAttachments | Array of objects | Specifies the disks attached to an ECS. For details, see `Table 3 <#enustopic0020212671table7886611>`__. |
-   +-------------------+------------------+----------------------------------------------------------------------------------------------------------+
+   +-------------------+------------------+-----------------------------------------------------------------------------------------------------------------+
+   | Parameter         | Type             | Description                                                                                                     |
+   +===================+==================+=================================================================================================================+
+   | volumeAttachments | Array of objects | Specifies the disks attached to an ECS. For details, see :ref:`Table 3 <en-us_topic_0020212671__table7886611>`. |
+   +-------------------+------------------+-----------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0020212671table7886611:
+.. _en-us_topic_0020212671__table7886611:
 
 .. table:: **Table 3** **volumeAttachments** field description
 
@@ -96,6 +96,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

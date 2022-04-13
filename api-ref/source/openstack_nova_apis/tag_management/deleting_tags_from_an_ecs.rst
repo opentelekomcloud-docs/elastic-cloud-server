@@ -1,3 +1,5 @@
+.. _en-us_topic_0065820824:
+
 Deleting Tags from an ECS
 =========================
 
@@ -10,9 +12,9 @@ URI
 
 DELETE /v2.1/{project_id}/servers/{server_id}/tags
 
-`Table 1 <#enustopic0065820824enustopic0057972839table32475667>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065820824__en-us_topic_0057972839_table32475667>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065820824enustopic0057972839table32475667:
+.. _en-us_topic_0065820824__en-us_topic_0057972839_table32475667:
 
 .. table:: **Table 1** Parameter description
 
@@ -48,6 +50,4 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

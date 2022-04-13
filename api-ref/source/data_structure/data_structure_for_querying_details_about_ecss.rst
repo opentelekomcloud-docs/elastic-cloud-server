@@ -1,9 +1,7 @@
+.. _en-us_topic_0169494074:
+
 Data Structure for Querying Details About ECSs
 ==============================================
-
-
-
-.. _ENUSTOPIC0169494074enustopic0057972887table23553967:
 
 .. table:: **Table 1** **address** parameters
 
@@ -27,10 +25,6 @@ Data Structure for Querying Details About ECSs
    | OS-EXT-IPS:port_id      | String                | Specifies the port ID corresponding to the IP address. |
    +-------------------------+-----------------------+--------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0169494074enustopic0057972887table41869715:
-
 .. table:: **Table 2** **flavor** parameters
 
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------+
@@ -49,10 +43,6 @@ Data Structure for Querying Details About ECSs
    | ram                   | String                | Specifies the memory size (MB) in the ECS flavor.                                                          |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0169494074enustopic0057972887table38168783:
-
 .. table:: **Table 3** **security_groups** parameters
 
    ========= ====== ==========================================
@@ -63,10 +53,6 @@ Data Structure for Querying Details About ECSs
    ========= ====== ==========================================
 
 The following table lists parameters involved in the fault information attribute.
-
-
-
-.. _ENUSTOPIC0169494074enustopic0057972887table37121720:
 
 .. table:: **Table 4** **fault** parameters
 
@@ -81,10 +67,6 @@ The following table lists parameters involved in the fault information attribute
    +-----------+---------+----------------------------------------------------------------------------------+
    | created   | String  | Specifies the time when the fault occurred. The time is in ISO 8601 time format. |
    +-----------+---------+----------------------------------------------------------------------------------+
-
-
-
-.. _ENUSTOPIC0169494074enustopic0057972887table33871262:
 
 .. table:: **Table 5** **os-extended-volumes:volumes_attached** parameters
 
@@ -107,10 +89,6 @@ The following table lists parameters involved in the fault information attribute
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
    | device                | String                | Specifies the drive letter of the EVS disk, which is the device name of the EVS disk. |
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
-
-
-
-.. _ENUSTOPIC0169494074table537485761711:
 
 .. table:: **Table 6** **metadata** parameters
 
@@ -181,10 +159,6 @@ The following table lists parameters involved in the fault information attribute
    |                             |                       |    -  The **virtual_env_type** cannot be added, deleted, or modified.                                                                                                                                  |
    +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0169494074table6690227839:
-
 .. table:: **Table 7** **sys_tags** parameters
 
    ========= ====== ===============================
@@ -194,10 +168,6 @@ The following table lists parameters involved in the fault information attribute
    value     String Specifies the system tag value.
    ========= ====== ===============================
 
-
-
-.. _ENUSTOPIC0169494074table173259974818:
-
 .. table:: **Table 8** **image** parameters
 
    ========= ====== =======================
@@ -205,5 +175,3 @@ The following table lists parameters involved in the fault information attribute
    ========= ====== =======================
    id        String Specifies the image ID.
    ========= ====== =======================
-
-

@@ -1,3 +1,5 @@
+.. _en-us_topic_0081950550:
+
 Querying Associations Between an FPGA Image and an ECS Image
 ============================================================
 
@@ -11,11 +13,9 @@ URI
 
 GET /v1/{project_id}/cloudservers/fpga_image/associations?image_id={image_id}&fpga_image_id={fpga_image_id}&page={page}&size={size}
 
-`Table 1 <#enustopic0081950550table35325481211756>`__ describes the parameters in the URI.
+:ref:`Table 1 <en-us_topic_0081950550__table35325481211756>` describes the parameters in the URI.
 
-
-
-.. _ENUSTOPIC0081950550table35325481211756:
+.. _en-us_topic_0081950550__table35325481211756:
 
 .. table:: **Table 1** Parameter description
 
@@ -56,11 +56,9 @@ None
 Response
 --------
 
-`Table 2 <#enustopic0081950550table41782128362>`__ describes the response parameters.
+:ref:`Table 2 <en-us_topic_0081950550__table41782128362>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0081950550table41782128362:
+.. _en-us_topic_0081950550__table41782128362:
 
 .. table:: **Table 2** Response parameters
 
@@ -70,10 +68,6 @@ Response
    associations Array of objects Specifies queried associations.
    ============ ================ ===============================
 
-
-
-.. _ENUSTOPIC0081950550table41296006211756:
-
 .. table:: **Table 3** **associations** field description
 
    ========== ================ ============================================
@@ -82,10 +76,6 @@ Response
    image_id   String           Specifies the ECS ID.
    fpgaimages Array of objects Specifies details of associated FPGA images.
    ========== ================ ============================================
-
-
-
-.. _ENUSTOPIC0081950550table8516581556:
 
 .. table:: **Table 4** **fpgaimages** field description
 
@@ -174,11 +164,9 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

@@ -1,3 +1,5 @@
+.. _en-us_topic_0065820819:
+
 Releasing a Floating IP Address (Discarded)
 ===========================================
 
@@ -15,9 +17,9 @@ DELETE /v2/{project_id}/os-floating-ips/{floating_ip_id}
 
 DELETE /v2.1/{project_id}/os-floating-ips/{floating_ip_id}
 
-`Table 1 <#enustopic0065820819enustopic0057972674table32475667>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065820819__en-us_topic_0057972674_table32475667>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065820819enustopic0057972674table32475667:
+.. _en-us_topic_0065820819__en-us_topic_0057972674_table32475667:
 
 .. table:: **Table 1** Parameter description
 
@@ -54,6 +56,4 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

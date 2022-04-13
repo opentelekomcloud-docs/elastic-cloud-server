@@ -1,3 +1,5 @@
+.. _en-us_topic_0170710254:
+
 Data Structure for Query Details About Specifications
 =====================================================
 
@@ -8,10 +10,6 @@ This field is used by the following APIs:
 
 -  Querying details about flavors and extended flavor information: /v1/{project_id}/cloudservers/flavors
 -  Querying details about the extended ECS flavor field: /v1/{project_id}/flavors/{flavor_id}/os-extra_specs
-
-
-
-.. _ENUSTOPIC0170710254table11980152734419:
 
 .. table:: **Table 1** **os_extra_specs** field description
 
@@ -138,5 +136,3 @@ This field is used by the following APIs:
    |                                  |                       | -  **autorecovery**: indicates that automatic recovery is supported.                                                                                                                                                                                                                                                                                                                                                       |
    |                                  |                       | -  If this parameter does not exist, automatic recovery is not supported.                                                                                                                                                                                                                                                                                                                                                  |
    +----------------------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-

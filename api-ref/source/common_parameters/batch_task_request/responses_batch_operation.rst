@@ -1,21 +1,19 @@
+.. _en-us_topic_0142195139:
+
 Responses (Batch Operation)
 ===========================
 
-The following responses are only for resetting the passwords for logging in to ECSs in a batch and for modifying ECS specifications in a batch. For details about the responses of other batch operations, see `Responses (Task) <../../common_parameters/task_request_result/responses_task.html>`__.
+The following responses are only for resetting the passwords for logging in to ECSs in a batch and for modifying ECS specifications in a batch. For details about the responses of other batch operations, see :ref:`Responses (Task) <en-us_topic_0022067714>`.
 
--  Normal responses 
+-  Normal responses
 
-.. _ENUSTOPIC0142195139table757167711151:
+   +-----------+------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter | Type             | Description                                                                                                                                             |
+   +===========+==================+=========================================================================================================================================================+
+   | response  | Array of objects | Specifies the response returned after a request is successfully submitted. For details, see :ref:`Table 1 <en-us_topic_0142195139__table849372311389>`. |
+   +-----------+------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   +-----------+------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter | Type             | Description                                                                                                                                      |
-   +===========+==================+==================================================================================================================================================+
-   | response  | Array of objects | Specifies the response returned after a request is successfully submitted. For details, see `Table 1 <#enustopic0142195139table849372311389>`__. |
-   +-----------+------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-
-   
-
-.. _ENUSTOPIC0142195139table849372311389:
+   .. _en-us_topic_0142195139__table849372311389:
 
    .. table:: **Table 1** **response** field description
 
@@ -25,21 +23,17 @@ The following responses are only for resetting the passwords for logging in to E
       | id        | String | Specifies the ID of the ECS on which the operation has been successfully performed. |
       +-----------+--------+-------------------------------------------------------------------------------------+
 
--  Abnormal responses 
+-  Abnormal responses
 
-.. _ENUSTOPIC0142195139table6467239411151:
+   +---------------+------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter     | Type             | Description                                                                                                                                                |
+   +===============+==================+============================================================================================================================================================+
+   | error         | Object           | Specifies the error in a batch request. For details, see :ref:`Table 2 <en-us_topic_0142195139__table6409189311151>`.                                      |
+   +---------------+------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | internalError | Array of objects | Specifies the error in each request among the requests submitted in a batch. For details, see :ref:`Table 3 <en-us_topic_0142195139__table1540134517514>`. |
+   +---------------+------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   +---------------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter     | Type             | Description                                                                                                                                         |
-   +===============+==================+=====================================================================================================================================================+
-   | error         | Object           | Specifies the error in a batch request. For details, see `Table 2 <#enustopic0142195139table6409189311151>`__.                                      |
-   +---------------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-   | internalError | Array of objects | Specifies the error in each request among the requests submitted in a batch. For details, see `Table 3 <#enustopic0142195139table1540134517514>`__. |
-   +---------------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-
-   
-
-.. _ENUSTOPIC0142195139table6409189311151:
+   .. _en-us_topic_0142195139__table6409189311151:
 
    .. table:: **Table 2** **error** field structure
 
@@ -50,9 +44,7 @@ The following responses are only for resetting the passwords for logging in to E
       code      String Specifies the code for a batch operation error.
       ========= ====== ===============================================
 
-   
-
-.. _ENUSTOPIC0142195139table1540134517514:
+   .. _en-us_topic_0142195139__table1540134517514:
 
    .. table:: **Table 3** **internalEroCMM.0101r** field description
 
@@ -105,5 +97,3 @@ The following responses are only for resetting the passwords for logging in to E
                        }
                     ]
       }
-
-

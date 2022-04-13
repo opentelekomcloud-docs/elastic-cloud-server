@@ -1,3 +1,5 @@
+.. _en-us_topic_0175597846:
+
 Querying ECS Groups
 ===================
 
@@ -11,9 +13,9 @@ URI
 
 GET /v1/{project_id}/cloudservers/os-server-groups?limit={limit}&marker={marker}
 
-`Table 1 <#enustopic0175597846table566015531780>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0175597846__table566015531780>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0175597846table566015531780:
+.. _en-us_topic_0175597846__table566015531780:
 
 .. table:: **Table 1** Path parameters
 
@@ -22,10 +24,6 @@ GET /v1/{project_id}/cloudservers/os-server-groups?limit={limit}&marker={marker}
    ========== ========= =========================
    project_id Yes       Specifies the project ID.
    ========== ========= =========================
-
-
-
-.. _ENUSTOPIC0175597846enustopic0057973158table7928881:
 
 .. table:: **Table 2** Query parameters
 
@@ -47,23 +45,21 @@ None
 Response
 --------
 
-`Table 3 <#enustopic0175597846table696924014912>`__ describes the response parameters. 
+:ref:`Table 3 <en-us_topic_0175597846__table696924014912>` describes the response parameters.
 
-.. _ENUSTOPIC0175597846table696924014912:
+.. _en-us_topic_0175597846__table696924014912:
 
 .. table:: **Table 3** Response parameters
 
-   +---------------+------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter     | Type             | Description                                                                                                                                                                  |
-   +===============+==================+==============================================================================================================================================================================+
-   | server_groups | Array of objects | Specifies ECS groups. For details, see `Table 4 <#enustopic0175597846enustopic0057973158table47937085>`__.                                                                   |
-   +---------------+------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | page_info     | Object           | If the pagination function is enabled, the UUID of the last ECS group on the current page is returned. For details, see `Table 5 <#enustopic0175597846table139805663519>`__. |
-   +---------------+------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +---------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter     | Type             | Description                                                                                                                                                                         |
+   +===============+==================+=====================================================================================================================================================================================+
+   | server_groups | Array of objects | Specifies ECS groups. For details, see :ref:`Table 4 <en-us_topic_0175597846__en-us_topic_0057973158_table47937085>`.                                                               |
+   +---------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | page_info     | Object           | If the pagination function is enabled, the UUID of the last ECS group on the current page is returned. For details, see :ref:`Table 5 <en-us_topic_0175597846__table139805663519>`. |
+   +---------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0175597846enustopic0057973158table47937085:
+.. _en-us_topic_0175597846__en-us_topic_0057973158_table47937085:
 
 .. table:: **Table 4** **server_groups** parameter information
 
@@ -90,9 +86,7 @@ Response
    |                       |                       |    Only anti-affinity policies are supported. You are not advised to use other policies. If other policies are used, creating the ECS group will fail.                                                               |
    +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0175597846table139805663519:
+.. _en-us_topic_0175597846__table139805663519:
 
 .. table:: **Table 5** **page_info** field description
 
@@ -132,11 +126,9 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

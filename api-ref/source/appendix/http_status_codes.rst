@@ -1,9 +1,7 @@
+.. _en-us_topic_0065827313:
+
 HTTP Status Codes
 =================
-
-
-
-.. _ENUSTOPIC0065827313enustopic0057973167table48365715151533:
 
 ================== ===========
 Normal Status Code Description
@@ -13,10 +11,6 @@ Normal Status Code Description
 202                Accepted
 204                No Content
 ================== ===========
-
-
-
-.. _ENUSTOPIC0065827313enustopic0057973167table28267100:
 
 ================= ========================
 Error Status Code Description
@@ -33,5 +27,3 @@ Error Status Code Description
 501               Not Implemented
 503               Service Unavailable
 ================= ========================
-
-

@@ -1,3 +1,5 @@
+.. _en-us_topic_0065817688:
+
 Rebuilding an ECS
 =================
 
@@ -25,9 +27,9 @@ POST /v2.1/{project_id}/servers/{server_id}/action
 
 POST /v2/{project_id}/servers/{server_id}/action
 
-`Table 1 <#enustopic0065817688enustopic0058745339table46110007>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065817688__en-us_topic_0058745339_table46110007>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065817688enustopic0058745339table46110007:
+.. _en-us_topic_0065817688__en-us_topic_0058745339_table46110007:
 
 .. table:: **Table 1** Parameter description
 
@@ -41,23 +43,19 @@ POST /v2/{project_id}/servers/{server_id}/action
 Request
 -------
 
-`Table 2 <#enustopic0065817688enustopic0058745339table44724688204850>`__ describes the request parameters.
+:ref:`Table 2 <en-us_topic_0065817688__en-us_topic_0058745339_table44724688204850>` describes the request parameters.
 
-
-
-.. _ENUSTOPIC0065817688enustopic0058745339table44724688204850:
+.. _en-us_topic_0065817688__en-us_topic_0058745339_table44724688204850:
 
 .. table:: **Table 2** Request parameter
 
-   +-----------+-----------+--------+-------------------------------------------------------------------------------------------------------------+
-   | Parameter | Mandatory | Type   | Description                                                                                                 |
-   +===========+===========+========+=============================================================================================================+
-   | rebuild   | Yes       | Object | Rebuilds an ECS. For details, see `Table 3 <#enustopic0065817688enustopic0058745339table59377750205027>`__. |
-   +-----------+-----------+--------+-------------------------------------------------------------------------------------------------------------+
+   +-----------+-----------+--------+------------------------------------------------------------------------------------------------------------------------+
+   | Parameter | Mandatory | Type   | Description                                                                                                            |
+   +===========+===========+========+========================================================================================================================+
+   | rebuild   | Yes       | Object | Rebuilds an ECS. For details, see :ref:`Table 3 <en-us_topic_0065817688__en-us_topic_0058745339_table59377750205027>`. |
+   +-----------+-----------+--------+------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0065817688enustopic0058745339table59377750205027:
+.. _en-us_topic_0065817688__en-us_topic_0058745339_table59377750205027:
 
 .. table:: **Table 3** **rebuild** parameters
 
@@ -127,11 +125,9 @@ Request
 Response
 --------
 
-`Table 4 <#enustopic0065817688enustopic0058745339table49173801205341>`__ describes the response parameters.
+:ref:`Table 4 <en-us_topic_0065817688__en-us_topic_0058745339_table49173801205341>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0065817688enustopic0058745339table49173801205341:
+.. _en-us_topic_0065817688__en-us_topic_0058745339_table49173801205341:
 
 .. table:: **Table 4** Response parameters
 
@@ -154,7 +150,7 @@ Response
    |                       |                       | -  **ERROR**                                                                                                               |
    |                       |                       | -  **DELETED**                                                                                                             |
    |                       |                       |                                                                                                                            |
-   |                       |                       | For details, see `ECS Statuses <../../appendix/ecs_statuses.html>`__.                                                      |
+   |                       |                       | For details, see :ref:`ECS Statuses <en-us_topic_0178420672>`.                                                             |
    +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------+
    | updated               | String                | Specifies the time when the ECS was updated last time.                                                                     |
    +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------+
@@ -275,6 +271,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

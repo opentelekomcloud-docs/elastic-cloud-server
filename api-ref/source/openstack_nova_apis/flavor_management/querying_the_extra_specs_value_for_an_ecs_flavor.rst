@@ -1,3 +1,5 @@
+.. _en-us_topic_0065817706:
+
 Querying the extra_specs Value for an ECS Flavor
 ================================================
 
@@ -13,9 +15,9 @@ GET /v2.1/{project_id}/flavors/{flavor_id}/os-extra_specs
 
 GET /v2/{project_id}/flavors/{flavor_id}/os-extra_specs
 
-`Table 1 <#enustopic0065817706enustopic0057973064table47154420>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065817706__en-us_topic_0057973064_table47154420>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065817706enustopic0057973064table47154420:
+.. _en-us_topic_0065817706__en-us_topic_0057973064_table47154420:
 
 .. table:: **Table 1** Parameter description
 
@@ -34,11 +36,9 @@ None
 Response
 --------
 
-`Table 2 <#enustopic0065817706enustopic0057973064table28168569>`__ describes the response parameters.
+:ref:`Table 2 <en-us_topic_0065817706__en-us_topic_0057973064_table28168569>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0065817706enustopic0057973064table28168569:
+.. _en-us_topic_0065817706__en-us_topic_0057973064_table28168569:
 
 .. table:: **Table 2** Response parameters
 
@@ -73,6 +73,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

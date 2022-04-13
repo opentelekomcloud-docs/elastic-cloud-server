@@ -1,3 +1,5 @@
+.. _en-us_topic_0065817703:
+
 Creating a Security Group Rule (Discarded)
 ==========================================
 
@@ -15,9 +17,9 @@ POST /v2/{project_id}/os-security-group-rules
 
 POST /v2.1/{project_id}/os-security-group-rules
 
-`Table 1 <#enustopic0065817703enustopic0057972667table32475667>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065817703__en-us_topic_0057972667_table32475667>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065817703enustopic0057972667table32475667:
+.. _en-us_topic_0065817703__en-us_topic_0057972667_table32475667:
 
 .. table:: **Table 1** Parameter description
 
@@ -30,23 +32,19 @@ POST /v2.1/{project_id}/os-security-group-rules
 Request
 -------
 
-`Table 2 <#enustopic0065817703enustopic0057972667table58520811>`__ describes the request parameters.
+:ref:`Table 2 <en-us_topic_0065817703__en-us_topic_0057972667_table58520811>` describes the request parameters.
 
-
-
-.. _ENUSTOPIC0065817703enustopic0057972667table58520811:
+.. _en-us_topic_0065817703__en-us_topic_0057972667_table58520811:
 
 .. table:: **Table 2** Request parameters
 
-   +---------------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter           | Mandatory | Type   | Description                                                                                                                                                      |
-   +=====================+===========+========+==================================================================================================================================================================+
-   | security_group_rule | Yes       | Object | Specifies the security group rule, which is configured in the message body. For details, see `Table 3 <#enustopic0065817703enustopic0057972667table46685187>`__. |
-   +---------------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +---------------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter           | Mandatory | Type   | Description                                                                                                                                                                 |
+   +=====================+===========+========+=============================================================================================================================================================================+
+   | security_group_rule | Yes       | Object | Specifies the security group rule, which is configured in the message body. For details, see :ref:`Table 3 <en-us_topic_0065817703__en-us_topic_0057972667_table46685187>`. |
+   +---------------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0065817703enustopic0057972667table46685187:
+.. _en-us_topic_0065817703__en-us_topic_0057972667_table46685187:
 
 .. table:: **Table 3** Objects of request parameter **security_group_rule**
 
@@ -73,23 +71,19 @@ Request
 Response
 --------
 
-`Table 4 <#enustopic0065817703enustopic0057972667table37057034>`__ describes the response parameters.
+:ref:`Table 4 <en-us_topic_0065817703__en-us_topic_0057972667_table37057034>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0065817703enustopic0057972667table37057034:
+.. _en-us_topic_0065817703__en-us_topic_0057972667_table37057034:
 
 .. table:: **Table 4** Response parameters
 
-   +---------------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter           | Mandatory | Type   | Description                                                                                                                                                      |
-   +=====================+===========+========+==================================================================================================================================================================+
-   | security_group_rule | Yes       | Object | Specifies the security group rule, which is configured in the message body. For details, see `Table 5 <#enustopic0065817703enustopic0057972667table64243102>`__. |
-   +---------------------+-----------+--------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +---------------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter           | Mandatory | Type   | Description                                                                                                                                                                 |
+   +=====================+===========+========+=============================================================================================================================================================================+
+   | security_group_rule | Yes       | Object | Specifies the security group rule, which is configured in the message body. For details, see :ref:`Table 5 <en-us_topic_0065817703__en-us_topic_0057972667_table64243102>`. |
+   +---------------------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0065817703enustopic0057972667table64243102:
+.. _en-us_topic_0065817703__en-us_topic_0057972667_table64243102:
 
 .. table:: **Table 5** Objects of response parameter **security_group_rule**
 
@@ -115,10 +109,6 @@ Response
    +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
    | id              | Yes             | String          | Specifies the security group rule ID in UUID format.                                                                                                 |
    +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-
-.. _ENUSTOPIC0065817703enustopic0057972667table35443891:
 
 .. table:: **Table 6** **ip_range** objects
 
@@ -172,6 +162,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

@@ -1,3 +1,5 @@
+.. _en-us_topic_0167811963:
+
 Adding Tags to an ECS in a Batch
 ================================
 
@@ -23,9 +25,9 @@ URI
 
 POST /v1/{project_id}/cloudservers/{server_id}/tags/action
 
-`Table 1 <#enustopic0167811963table73051127201915>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0167811963__table73051127201915>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0167811963table73051127201915:
+.. _en-us_topic_0167811963__table73051127201915:
 
 .. table:: **Table 1** Parameter description
 
@@ -39,25 +41,21 @@ POST /v1/{project_id}/cloudservers/{server_id}/tags/action
 Request
 -------
 
-`Table 2 <#enustopic0167811963table69204518218>`__ describes the request parameters.
+:ref:`Table 2 <en-us_topic_0167811963__table69204518218>` describes the request parameters.
 
-
-
-.. _ENUSTOPIC0167811963table69204518218:
+.. _en-us_topic_0167811963__table69204518218:
 
 .. table:: **Table 2** Request parameters
 
    +-----------+-----------+------------------+----------------------------------------------------------------------------------------------------------------------------+
    | Parameter | Mandatory | Type             | Description                                                                                                                |
    +===========+===========+==================+============================================================================================================================+
-   | tags      | Yes       | Array of objects | Specifies tags. For details, see `Table 3 <#enustopic0167811963table1534514266207>`__.                                     |
+   | tags      | Yes       | Array of objects | Specifies tags. For details, see :ref:`Table 3 <en-us_topic_0167811963__table1534514266207>`.                              |
    +-----------+-----------+------------------+----------------------------------------------------------------------------------------------------------------------------+
    | action    | Yes       | String           | Specifies the operation. (Only lowercase letters are supported.) For example, **create** indicates the creation operation. |
    +-----------+-----------+------------------+----------------------------------------------------------------------------------------------------------------------------+
 
-
-
-.. _ENUSTOPIC0167811963table1534514266207:
+.. _en-us_topic_0167811963__table1534514266207:
 
 .. table:: **Table 3** **tags** field description
 
@@ -114,11 +112,9 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
 
 Error Codes
 -----------
 
-See `Error Codes <../../appendix/error_codes.html>`__.
-
-
+See :ref:`Error Codes <en-us_topic_0022067717>`.

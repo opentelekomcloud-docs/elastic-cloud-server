@@ -1,3 +1,5 @@
+.. _en-us_topic_0020212680:
+
 Deleting an SSH Key Pair
 ========================
 
@@ -13,9 +15,9 @@ DELETE /v2.1/{project_id}/os-keypairs/{keypair_name}
 
 DELETE /v2/{project_id}/os-keypairs/{keypair_name}
 
-`Table 1 <#enustopic0020212680table48776445>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0020212680__table48776445>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0020212680table48776445:
+.. _en-us_topic_0020212680__table48776445:
 
 .. table:: **Table 1** Parameter description
 
@@ -52,6 +54,4 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

@@ -1,3 +1,5 @@
+.. _en-us_topic_0065820826:
+
 Querying a Specified Tag for an ECS
 ===================================
 
@@ -10,9 +12,9 @@ URI
 
 GET /v2.1/{project_id}/servers/{server_id}/tags/{tag}
 
-`Table 1 <#enustopic0065820826enustopic0057972841table32475667>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065820826__en-us_topic_0057972841_table32475667>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065820826enustopic0057972841table32475667:
+.. _en-us_topic_0065820826__en-us_topic_0057972841_table32475667:
 
 .. table:: **Table 1** Parameter description
 
@@ -25,7 +27,7 @@ GET /v2.1/{project_id}/servers/{server_id}/tags/{tag}
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | tag                   | Yes                   | Specifies the key of the tag to be queried. If no key is specified, all tags of the ECS will be displayed.                                                          |
    |                       |                       |                                                                                                                                                                     |
-   |                       |                       | For details about key rules, see `Tag Types <../../openstack_nova_apis/tag_management/tag_types.html>`__.                                                           |
+   |                       |                       | For details about key rules, see :ref:`Tag Types <en-us_topic_0065817686>`.                                                                                         |
    |                       |                       |                                                                                                                                                                     |
    |                       |                       | .. note::                                                                                                                                                           |
    |                       |                       |                                                                                                                                                                     |
@@ -59,6 +61,4 @@ None
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

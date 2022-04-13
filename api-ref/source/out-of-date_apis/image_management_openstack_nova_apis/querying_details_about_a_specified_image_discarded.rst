@@ -1,3 +1,5 @@
+.. _en-us_topic_0065817697:
+
 Querying Details About a Specified Image (Discarded)
 ====================================================
 
@@ -15,9 +17,9 @@ GET /v2/{project_id}/images/{image_id}
 
 GET /v2.1/{project_id}/images/{image_id}
 
-`Table 1 <#enustopic0065817697table105393143396>`__ describes the parameters in the URI. 
+:ref:`Table 1 <en-us_topic_0065817697__table105393143396>` describes the parameters in the URI.
 
-.. _ENUSTOPIC0065817697table105393143396:
+.. _en-us_topic_0065817697__table105393143396:
 
 .. table:: **Table 1** Parameter description
 
@@ -36,11 +38,9 @@ None
 Response
 --------
 
-`Table 2 <#enustopic0065817697table128661753193915>`__ describes the response parameters.
+:ref:`Table 2 <en-us_topic_0065817697__table128661753193915>` describes the response parameters.
 
-
-
-.. _ENUSTOPIC0065817697table128661753193915:
+.. _en-us_topic_0065817697__table128661753193915:
 
 .. table:: **Table 2** Response parameters
 
@@ -69,10 +69,6 @@ Response
    +----------------------+------------------+------------------------------------------------------------------------------------------------------+
    | updated              | String           | Specifies the image update time. The value is in ISO8601 format, such as **2013-06-09T06:42:18Z**.   |
    +----------------------+------------------+------------------------------------------------------------------------------------------------------+
-
-
-
-.. _ENUSTOPIC0065817697table82851550164111:
 
 .. table:: **Table 3** **links** parameter description
 
@@ -144,6 +140,4 @@ Example Response
 Returned Values
 ---------------
 
-See `Returned Values for General Requests <../../common_parameters/returned_values_for_general_requests.html>`__.
-
-
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.
