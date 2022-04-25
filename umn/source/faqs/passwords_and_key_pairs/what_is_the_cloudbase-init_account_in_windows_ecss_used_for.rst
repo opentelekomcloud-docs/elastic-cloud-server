@@ -23,7 +23,7 @@ In Cloudbase-Init 0.9.10, the security of randomized **cloudbase-init** password
 
 In Windows, the hash passwords are in the format of "Username:RID:LM-HASH value:NT-HASH value".
 
-For example, in "Administrator:500:C8825DB10F2590EAAAD3B435B51404EE:683020925C5D8569C23AA724774CE9CC\ ``:::"``,
+For example, in "Administrator:500:C8825DB10F2590EAAAD3B435B51404EE:683020925C5D8569C23AA724774CE9CC:::",
 
 -  Username: **Administrator**
 -  RID: **500**
@@ -39,7 +39,7 @@ Use an image to create two ECSs, ecs01 and ecs02. Then, verify that the hash val
    .. figure:: /_static/images/en-us_image_0202311481.gif
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** ecs01
 
@@ -50,6 +50,6 @@ Use an image to create two ECSs, ecs01 and ecs02. Then, verify that the hash val
    .. figure:: /_static/images/en-us_image_0202311491.gif
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** ecs02
