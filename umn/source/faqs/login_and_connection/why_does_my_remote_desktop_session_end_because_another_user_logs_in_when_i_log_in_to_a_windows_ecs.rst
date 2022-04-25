@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0264235950.html
+
 .. _en-us_topic_0264235950:
 
 Why Does My Remote Desktop Session End Because Another User Logs In When I Log In to a Windows ECS?

@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0214940105.html
+
 .. _en-us_topic_0214940105:
 
 Why Do the Disks of a Windows ECS Go Offline After I Modify the ECS Specifications?

@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0093492518.html
+
 .. _en-us_topic_0093492518:
 
 Adding a NIC

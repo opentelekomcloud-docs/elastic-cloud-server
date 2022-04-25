@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0077938284.html
+
 .. _en-us_topic_0077938284:
 
 Which ECSs Can Be Attached with SCSI EVS Disks?

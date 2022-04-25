@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0020212658.html
+
 .. _en-us_topic_0020212658:
 
 Querying Details About ECS Flavors

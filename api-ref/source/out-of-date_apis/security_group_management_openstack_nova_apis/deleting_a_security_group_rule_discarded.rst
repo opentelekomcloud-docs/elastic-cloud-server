@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065817704.html
+
 .. _en-us_topic_0065817704:
 
 Deleting a Security Group Rule (Discarded)

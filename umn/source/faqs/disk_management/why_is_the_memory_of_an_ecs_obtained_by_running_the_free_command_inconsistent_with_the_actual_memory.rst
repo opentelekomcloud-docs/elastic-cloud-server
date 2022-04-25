@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0093153741.html
+
 .. _en-us_topic_0093153741:
 
 Why Is the Memory of an ECS Obtained by Running the **free** Command Inconsistent with the Actual Memory?

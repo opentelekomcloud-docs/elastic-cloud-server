@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0167811964.html
+
 .. _en-us_topic_0167811964:
 
 Deleting Tags from an ECS in a Batch

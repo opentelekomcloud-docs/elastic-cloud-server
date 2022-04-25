@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0037633087.html
+
 .. _en-us_topic_0037633087:
 
 What Is the **cloudbase-init** Account in Windows ECSs Used for?
@@ -21,7 +23,7 @@ In Cloudbase-Init 0.9.10, the security of randomized **cloudbase-init** password
 
 In Windows, the hash passwords are in the format of "Username:RID:LM-HASH value:NT-HASH value".
 
-For example, in "Administrator:500:C8825DB10F2590EAAAD3B435B51404EE:683020925C5D8569C23AA724774CE9CC:::",
+For example, in "Administrator:500:C8825DB10F2590EAAAD3B435B51404EE:683020925C5D8569C23AA724774CE9CC\ ``:::"``,
 
 -  Username: **Administrator**
 -  RID: **500**

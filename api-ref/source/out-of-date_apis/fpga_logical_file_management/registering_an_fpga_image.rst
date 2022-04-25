@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065962597.html
+
 .. _en-us_topic_0065962597:
 
 Registering an FPGA Image

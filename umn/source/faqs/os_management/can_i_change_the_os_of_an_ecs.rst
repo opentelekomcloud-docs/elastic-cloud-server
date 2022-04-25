@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0018078522.html
+
 .. _en-us_topic_0018078522:
 
 Can I Change the OS of an ECS?

@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0029806525.html
+
 .. _en-us_topic_0029806525:
 
 How Can I Obtain Data Disk Information If Tools Are Uninstalled?

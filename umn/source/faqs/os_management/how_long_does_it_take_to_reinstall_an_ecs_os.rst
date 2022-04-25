@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0101604512.html
+
 .. _en-us_topic_0101604512:
 
 How Long Does It Take to Reinstall an ECS OS?

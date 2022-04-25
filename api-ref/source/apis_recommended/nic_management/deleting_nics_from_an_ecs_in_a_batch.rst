@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0020212665.html
+
 .. _en-us_topic_0020212665:
 
 Deleting NICs from an ECS in a Batch

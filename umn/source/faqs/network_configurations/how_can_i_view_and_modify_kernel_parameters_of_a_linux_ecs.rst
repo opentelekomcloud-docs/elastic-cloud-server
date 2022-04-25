@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0107659745.html
+
 .. _en-us_topic_0107659745:
 
 How Can I View and Modify Kernel Parameters of a Linux ECS?

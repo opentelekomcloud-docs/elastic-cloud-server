@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065817694.html
+
 .. _en-us_topic_0065817694:
 
 Creating an Image Using an ECS

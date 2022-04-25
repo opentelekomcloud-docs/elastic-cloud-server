@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0117490178.html
+
 .. _en-us_topic_0117490178:
 
 Initializing a Windows Data Disk (Windows Server 2016)

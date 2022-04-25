@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0090187681.html
+
 .. _en-us_topic_0090187681:
 
 Querying Details About a Security Group (Discarded)

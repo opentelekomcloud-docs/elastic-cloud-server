@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0030932500.html
+
 .. _en-us_topic_0030932500:
 
 Why Are Characters Entered Through VNC Still Incorrect After the Keyboard Language Is Switched?

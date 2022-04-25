@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0053287548.html
+
 .. _en-us_topic_0053287548:
 
 How Can I Handle the Issue that a Windows 7 ECS Equipped with an Intel 82599 NIC Reports an Error in SR-IOV Scenarios?

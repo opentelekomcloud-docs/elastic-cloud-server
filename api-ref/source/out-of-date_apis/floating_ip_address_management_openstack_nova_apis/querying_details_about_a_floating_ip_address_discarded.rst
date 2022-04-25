@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065820818.html
+
 .. _en-us_topic_0065820818:
 
 Querying Details About a Floating IP Address (Discarded)

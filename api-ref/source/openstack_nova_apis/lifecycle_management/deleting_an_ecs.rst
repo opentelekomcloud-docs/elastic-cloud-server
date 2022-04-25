@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0025560296.html
+
 .. _en-us_topic_0025560296:
 
 Deleting an ECS

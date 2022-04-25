@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0020212656.html
+
 .. _en-us_topic_0020212656:
 
 Querying Details About Flavors and Extended Flavor Information

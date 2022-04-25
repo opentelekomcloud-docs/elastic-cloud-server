@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0103285575.html
+
 .. _en-us_topic_0103285575:
 
 How Do I Obtain My Disk Name in the ECS OS Using the Device Identifier Provided on the Console?

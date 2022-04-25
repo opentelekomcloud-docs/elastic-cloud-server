@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065962600.html
+
 .. _en-us_topic_0065962600:
 
 Viewing Details of FPGA Images

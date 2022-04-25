@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0079176727.html
+
 .. _en-us_topic_0079176727:
 
 How Can I Set the Validity Period of the Image Password?

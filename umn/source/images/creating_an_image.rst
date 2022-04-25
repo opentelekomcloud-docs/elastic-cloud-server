@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0101604508.html
+
 .. _en-us_topic_0101604508:
 
 Creating an Image

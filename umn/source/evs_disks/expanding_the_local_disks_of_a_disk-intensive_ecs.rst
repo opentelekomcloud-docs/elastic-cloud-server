@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0037470901.html
+
 .. _en-us_topic_0037470901:
 
 Expanding the Local Disks of a Disk-intensive ECS

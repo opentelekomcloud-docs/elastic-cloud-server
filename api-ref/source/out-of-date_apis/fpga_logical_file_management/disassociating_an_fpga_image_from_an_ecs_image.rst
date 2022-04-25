@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0081950549.html
+
 .. _en-us_topic_0081950549:
 
 Disassociating an FPGA Image from an ECS Image

@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0020212674.html
+
 .. _en-us_topic_0020212674:
 
 Querying Tenant Quotas

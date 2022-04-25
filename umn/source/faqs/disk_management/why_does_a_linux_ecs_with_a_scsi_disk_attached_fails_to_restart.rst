@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0087382187.html
+
 .. _en-us_topic_0087382187:
 
 Why Does a Linux ECS with a SCSI Disk Attached Fails to Restart?

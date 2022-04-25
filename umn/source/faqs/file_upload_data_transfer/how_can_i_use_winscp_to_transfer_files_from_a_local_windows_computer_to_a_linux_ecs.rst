@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0166284971.html
+
 .. _en-us_topic_0166284971:
 
 How Can I Use WinSCP to Transfer Files from a Local Windows Computer to a Linux ECS?

@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0000001189572473.html
+
 .. _en-us_topic_0000001189572473:
 
 Why Do I Fail to Connect to a Linux ECS Using WinSCP?

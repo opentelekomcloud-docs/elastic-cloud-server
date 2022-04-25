@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0058747426.html
+
 .. _en-us_topic_0058747426:
 
 How Can I Check Whether the Network Communication Is Normal Between Two ECSs Equipped with an InfiniBand NIC Driver?

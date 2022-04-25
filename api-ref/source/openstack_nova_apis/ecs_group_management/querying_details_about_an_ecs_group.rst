@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065817722.html
+
 .. _en-us_topic_0065817722:
 
 Querying Details About an ECS Group

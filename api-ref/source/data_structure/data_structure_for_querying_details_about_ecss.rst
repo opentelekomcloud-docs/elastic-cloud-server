@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0169494074.html
+
 .. _en-us_topic_0169494074:
 
 Data Structure for Querying Details About ECSs

@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0085634798.html
+
 .. _en-us_topic_0085634798:
 
 Initializing a Linux Data Disk (parted)

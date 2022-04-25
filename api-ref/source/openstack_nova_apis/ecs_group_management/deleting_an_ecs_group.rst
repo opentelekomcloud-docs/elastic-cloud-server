@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065817723.html
+
 .. _en-us_topic_0065817723:
 
 Deleting an ECS Group

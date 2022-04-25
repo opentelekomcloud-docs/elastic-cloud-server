@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0264235948.html
+
 .. _en-us_topic_0264235948:
 
 Why Am I Seeing an Error Message That Says User Account is not Authorized for Remote Login When I Log In to a Windows ECS?

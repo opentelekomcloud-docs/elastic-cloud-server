@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0024912311.html
+
 .. _en-us_topic_0024912311:
 
 Can I Select Another OS During ECS OS Reinstallation?

@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0085634797.html
+
 .. _en-us_topic_0085634797:
 
 Initializing a Linux Data Disk (fdisk)

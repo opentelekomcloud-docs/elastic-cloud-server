@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0076210995.html
+
 .. _en-us_topic_0076210995:
 
 How Can I Adjust System Disk Partitions?

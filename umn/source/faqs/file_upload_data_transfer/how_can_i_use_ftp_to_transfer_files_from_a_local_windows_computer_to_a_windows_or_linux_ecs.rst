@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0263806053.html
+
 .. _en-us_topic_0263806053:
 
 How Can I Use FTP to Transfer Files from a Local Windows Computer to a Windows or Linux ECS?

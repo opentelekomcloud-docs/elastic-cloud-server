@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0085634796.html
+
 .. _en-us_topic_0085634796:
 
 Initializing a Windows Data Disk (Windows Server 2008)

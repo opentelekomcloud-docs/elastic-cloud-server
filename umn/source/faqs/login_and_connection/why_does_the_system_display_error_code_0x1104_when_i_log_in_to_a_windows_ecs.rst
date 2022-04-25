@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0264235942.html
+
 .. _en-us_topic_0264235942:
 
 Why Does the System Display Error Code 0x1104 When I Log In to a Windows ECS?

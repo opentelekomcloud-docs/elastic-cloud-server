@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0088241338.html
+
 .. _en-us_topic_0088241338:
 
 Why Does the System Display a Question Mark When I Attempt to Obtain Console Logs?

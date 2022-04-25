@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065817716.html
+
 .. _en-us_topic_0065817716:
 
 Querying Default Quotas

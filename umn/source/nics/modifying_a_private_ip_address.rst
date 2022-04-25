@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0133339807.html
+
 .. _en-us_topic_0133339807:
 
 Modifying a Private IP Address

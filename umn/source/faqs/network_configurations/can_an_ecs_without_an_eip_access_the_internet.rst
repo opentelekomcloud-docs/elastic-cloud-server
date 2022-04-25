@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0030013188.html
+
 .. _en-us_topic_0030013188:
 
 Can an ECS Without an EIP Access the Internet?

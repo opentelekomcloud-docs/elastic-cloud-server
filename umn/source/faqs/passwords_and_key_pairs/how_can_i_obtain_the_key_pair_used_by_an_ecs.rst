@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0081525053.html
+
 .. _en-us_topic_0081525053:
 
 How Can I Obtain the Key Pair Used by an ECS?

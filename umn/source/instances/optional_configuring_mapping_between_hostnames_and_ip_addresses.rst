@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0074752335.html
+
 .. _en-us_topic_0074752335:
 
 (Optional) Configuring Mapping Between Hostnames and IP Addresses

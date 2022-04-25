@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0032380449.html
+
 .. _en-us_topic_0032380449:
 
 Passing User Data to ECSs
@@ -314,7 +316,7 @@ Case 3
 
 This case illustrates how to use the user data passing function to reset the password for logging in to a Linux ECS.
 
-In this example, the password of user **root** is reset to **\*****\***.
+In this example, the password of user **root** is reset to **``******``**.
 
 .. note::
 
@@ -356,7 +358,7 @@ Case 4
 
 This case illustrates how to use the user data passing function to create a user on a Windows ECS and configure the password for the user.
 
-In this example, the user's username is **abc**, its password is **\*****\***, and the user is added to the **administrators** user group.
+In this example, the user's username is **abc**, its password is **``******``**, and the user is added to the **administrators** user group.
 
 .. note::
 

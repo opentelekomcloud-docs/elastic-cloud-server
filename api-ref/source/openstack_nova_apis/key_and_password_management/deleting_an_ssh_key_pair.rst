@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0020212680.html
+
 .. _en-us_topic_0020212680:
 
 Deleting an SSH Key Pair

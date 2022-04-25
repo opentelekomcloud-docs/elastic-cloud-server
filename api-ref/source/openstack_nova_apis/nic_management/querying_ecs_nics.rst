@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0020212661.html
+
 .. _en-us_topic_0020212661:
 
 Querying ECS NICs

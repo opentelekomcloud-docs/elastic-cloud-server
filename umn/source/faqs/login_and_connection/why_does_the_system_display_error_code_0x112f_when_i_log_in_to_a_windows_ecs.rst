@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0120795668.html
+
 .. _en-us_topic_0120795668:
 
 Why Does the System Display Error Code 0x112f When I Log In to a Windows ECS?

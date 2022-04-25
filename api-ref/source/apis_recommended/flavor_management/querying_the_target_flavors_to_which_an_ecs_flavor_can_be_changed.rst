@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0110472767.html
+
 .. _en-us_topic_0110472767:
 
 Querying the Target Flavors to Which an ECS Flavor Can Be Changed

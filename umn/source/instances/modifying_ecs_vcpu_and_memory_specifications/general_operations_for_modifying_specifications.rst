@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0013771092.html
+
 .. _en-us_topic_0013771092:
 
 General Operations for Modifying Specifications

@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0030932496.html
+
 .. _en-us_topic_0030932496:
 
 What Should I Do If I Cannot Use the German Keyboard to Enter Characters When I Log In to a Linux ECS Using VNC?

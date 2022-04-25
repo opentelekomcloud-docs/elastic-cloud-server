@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065817706.html
+
 .. _en-us_topic_0065817706:
 
 Querying the extra_specs Value for an ECS Flavor

@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0264235947.html
+
 .. _en-us_topic_0264235947:
 
 Why Am I Seeing An Error Message That Says The Two Computers Couldn't Be Connected in the Amount of Time Allotted When I Log In to a Windows ECS?

@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0295091738.html
+
 .. _en-us_topic_0295091738:
 
 How Can I Transfer Files from a Local Mac to a Windows ECS?

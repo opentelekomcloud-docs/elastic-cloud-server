@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065817707.html
+
 .. _en-us_topic_0065817707:
 
 Detaching a Disk from an ECS

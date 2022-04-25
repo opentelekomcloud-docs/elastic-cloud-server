@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0067600148.html
+
 .. _en-us_topic_0067600148:
 
 Querying Automatic Recovery of an ECS

@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0047624368.html
+
 .. _en-us_topic_0047624368:
 
 Why Cannot I Use the MAC Keyboard to Enter Lowercase Characters When I Log In to an ECS Using VNC?

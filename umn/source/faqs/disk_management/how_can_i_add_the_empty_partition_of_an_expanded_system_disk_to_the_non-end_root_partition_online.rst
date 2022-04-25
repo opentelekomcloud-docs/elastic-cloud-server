@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0078300750.html
+
 .. _en-us_topic_0078300750:
 
 How Can I Add the Empty Partition of an Expanded System Disk to the Non-end Root Partition Online?

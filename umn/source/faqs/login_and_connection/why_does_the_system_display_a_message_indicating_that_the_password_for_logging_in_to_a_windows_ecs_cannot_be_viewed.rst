@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0031736846.html
+
 .. _en-us_topic_0031736846:
 
 Why Does the System Display a Message Indicating that the Password for Logging In to a Windows ECS Cannot Be Viewed?

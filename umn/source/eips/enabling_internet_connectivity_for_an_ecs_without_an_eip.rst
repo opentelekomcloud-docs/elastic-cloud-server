@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0027157850.html
+
 .. _en-us_topic_0027157850:
 
 Enabling Internet Connectivity for an ECS Without an EIP

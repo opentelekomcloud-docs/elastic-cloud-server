@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0103072348.html
+
 .. _en-us_topic_0103072348:
 
 Image Management

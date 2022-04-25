@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0163572590.html
+
 .. _en-us_topic_0163572590:
 
 Step 2: Configure Network

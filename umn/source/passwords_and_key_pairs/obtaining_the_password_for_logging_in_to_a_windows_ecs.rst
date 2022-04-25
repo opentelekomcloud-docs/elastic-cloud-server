@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0031107266.html
+
 .. _en-us_topic_0031107266:
 
 Obtaining the Password for Logging In to a Windows ECS
