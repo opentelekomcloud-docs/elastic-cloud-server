@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0170139796.html
+
 .. _en-us_topic_0170139796:
 
 How Can I Use SFTP to Transfer Files Between a Local Linux Computer and a Linux ECS?

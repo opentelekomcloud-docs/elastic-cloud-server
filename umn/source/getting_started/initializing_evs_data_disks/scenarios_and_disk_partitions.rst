@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0030831623.html
+
 .. _en-us_topic_0030831623:
 
 Scenarios and Disk Partitions

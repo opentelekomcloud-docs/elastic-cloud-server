@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065817697.html
+
 .. _en-us_topic_0065817697:
 
 Querying Details About a Specified Image (Discarded)

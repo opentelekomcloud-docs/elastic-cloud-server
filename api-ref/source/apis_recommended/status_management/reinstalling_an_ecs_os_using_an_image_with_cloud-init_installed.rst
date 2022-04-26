@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0067876349.html
+
 .. _en-us_topic_0067876349:
 
 Reinstalling an ECS OS (Using an Image with Cloud-Init Installed)

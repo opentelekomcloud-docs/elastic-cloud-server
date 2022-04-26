@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065817710.html
+
 .. _en-us_topic_0065817710:
 
 Querying Detailed Information About Disks (Discarded)

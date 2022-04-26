@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0017130261.html
+
 .. _en-us_topic_0017130261:
 
 Viewing Details About an ECS

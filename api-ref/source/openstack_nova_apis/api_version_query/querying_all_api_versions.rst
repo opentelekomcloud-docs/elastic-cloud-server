@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065792793.html
+
 .. _en-us_topic_0065792793:
 
 Querying All API Versions

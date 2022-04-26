@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0030932499.html
+
 .. _en-us_topic_0030932499:
 
 What Should I Do If I Cannot View Data After Logging In to an ECS Using VNC?

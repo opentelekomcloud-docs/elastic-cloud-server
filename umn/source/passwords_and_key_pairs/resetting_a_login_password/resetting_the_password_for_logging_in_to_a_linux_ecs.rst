@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0021427650.html
+
 .. _en-us_topic_0021427650:
 
 Resetting the Password for Logging In to a Linux ECS

@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0081525054.html
+
 .. _en-us_topic_0081525054:
 
 Why Can't I Obtain the Password for Logging In to My Windows ECS Authenticated Using a Key Pair?

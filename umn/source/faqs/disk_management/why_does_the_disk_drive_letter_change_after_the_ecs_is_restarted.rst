@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0240831198.html
+
 .. _en-us_topic_0240831198:
 
 Why Does the Disk Drive Letter Change After the ECS Is Restarted?

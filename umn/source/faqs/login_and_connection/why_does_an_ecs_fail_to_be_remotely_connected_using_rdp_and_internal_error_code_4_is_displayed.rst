@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0018124779.html
+
 .. _en-us_topic_0018124779:
 
 Why Does an ECS Fail to Be Remotely Connected Using RDP and Internal Error Code 4 Is Displayed?

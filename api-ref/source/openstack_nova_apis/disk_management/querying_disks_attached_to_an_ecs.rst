@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0020212671.html
+
 .. _en-us_topic_0020212671:
 
 Querying Disks Attached to an ECS

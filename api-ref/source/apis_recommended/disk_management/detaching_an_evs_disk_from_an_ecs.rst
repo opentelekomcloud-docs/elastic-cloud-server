@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0022472988.html
+
 .. _en-us_topic_0022472988:
 
 Detaching an EVS Disk from an ECS

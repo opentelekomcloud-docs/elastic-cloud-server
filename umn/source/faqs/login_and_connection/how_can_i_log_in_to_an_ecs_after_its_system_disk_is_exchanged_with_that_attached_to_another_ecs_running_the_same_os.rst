@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0100005619.html
+
 .. _en-us_topic_0100005619:
 
 How Can I Log In to an ECS After Its System Disk Is Exchanged with That Attached to Another ECS Running the Same OS?

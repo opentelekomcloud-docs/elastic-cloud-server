@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0101604506.html
+
 .. _en-us_topic_0101604506:
 
 How Can I Obtain the MAC Address of My ECS?

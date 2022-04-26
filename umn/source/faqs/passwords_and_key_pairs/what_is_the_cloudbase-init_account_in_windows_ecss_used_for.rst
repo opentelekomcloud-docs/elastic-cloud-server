@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0037633087.html
+
 .. _en-us_topic_0037633087:
 
 What Is the **cloudbase-init** Account in Windows ECSs Used for?
@@ -37,7 +39,7 @@ Use an image to create two ECSs, ecs01 and ecs02. Then, verify that the hash val
    .. figure:: /_static/images/en-us_image_0202311481.gif
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** ecs01
 
@@ -48,6 +50,6 @@ Use an image to create two ECSs, ecs01 and ecs02. Then, verify that the hash val
    .. figure:: /_static/images/en-us_image_0202311491.gif
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** ecs02

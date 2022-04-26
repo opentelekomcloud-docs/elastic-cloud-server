@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065817698.html
+
 .. _en-us_topic_0065817698:
 
 Querying the Metadata of a Specified Image (Discarded)

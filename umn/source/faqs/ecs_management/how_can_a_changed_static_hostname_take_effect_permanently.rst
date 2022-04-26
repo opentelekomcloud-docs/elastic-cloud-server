@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0050735736.html
+
 .. _en-us_topic_0050735736:
 
 How Can a Changed Static Hostname Take Effect Permanently?

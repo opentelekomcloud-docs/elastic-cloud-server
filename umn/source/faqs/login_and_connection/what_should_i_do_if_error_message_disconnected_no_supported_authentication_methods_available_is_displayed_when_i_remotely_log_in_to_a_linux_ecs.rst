@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0277132844.html
+
 .. _en-us_topic_0277132844:
 
 What Should I Do If Error Message "Disconnected: No supported authentication methods available" Is Displayed When I Remotely Log In to a Linux ECS?

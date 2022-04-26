@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0035550301.html
+
 .. _en-us_topic_0035550301:
 
 Memory-optimized ECSs

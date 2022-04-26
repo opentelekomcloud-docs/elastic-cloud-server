@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065817699.html
+
 .. _en-us_topic_0065817699:
 
 Deleting an Image (Discarded)

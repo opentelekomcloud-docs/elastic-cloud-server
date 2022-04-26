@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065817718.html
+
 .. _en-us_topic_0065817718:
 
 Binding a Floating IP Address (Discarded)

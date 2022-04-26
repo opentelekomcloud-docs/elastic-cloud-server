@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0039588795.html
+
 .. _en-us_topic_0039588795:
 
 Viewing ECS Creation Statuses

@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0018073215.html
+
 .. _en-us_topic_0018073215:
 
 Can I Attach Multiple Disks to an ECS?

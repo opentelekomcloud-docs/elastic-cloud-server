@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0264235944.html
+
 .. _en-us_topic_0264235944:
 
 Why Does the System Display Invalid Certificate or Associated Chain When I Log In to a Windows ECS from a Mac?

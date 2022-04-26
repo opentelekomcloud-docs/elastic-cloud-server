@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0105130173.html
+
 .. _en-us_topic_0105130173:
 
 Why Can't I Use DHCP to Obtain a Private IP Address?

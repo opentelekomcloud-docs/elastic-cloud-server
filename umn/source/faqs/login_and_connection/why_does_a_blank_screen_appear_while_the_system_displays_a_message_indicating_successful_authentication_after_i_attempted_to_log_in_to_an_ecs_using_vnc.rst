@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0032850906.html
+
 .. _en-us_topic_0032850906:
 
 Why Does a Blank Screen Appear While the System Displays a Message Indicating Successful Authentication After I Attempted to Log In to an ECS Using VNC?

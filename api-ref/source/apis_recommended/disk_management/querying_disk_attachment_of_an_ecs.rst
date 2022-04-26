@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0101860613.html
+
 .. _en-us_topic_0101860613:
 
 Querying Disk Attachment of an ECS

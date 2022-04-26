@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0039524582.html
+
 .. _en-us_topic_0039524582:
 
 Why Does the Failures Area Show an ECS Creation Failure But the ECS List Displays the Created ECS?

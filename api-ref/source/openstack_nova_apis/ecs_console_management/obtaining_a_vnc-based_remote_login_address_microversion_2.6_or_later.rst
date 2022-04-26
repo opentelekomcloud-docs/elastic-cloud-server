@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0142763126.html
+
 .. _en-us_topic_0142763126:
 
 Obtaining a VNC-based Remote Login Address (Microversion 2.6 or Later)

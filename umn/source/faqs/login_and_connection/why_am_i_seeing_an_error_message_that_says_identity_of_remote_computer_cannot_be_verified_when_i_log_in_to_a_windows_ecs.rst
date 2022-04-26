@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0264235946.html
+
 .. _en-us_topic_0264235946:
 
 Why Am I Seeing an Error Message That Says Identity of Remote Computer Cannot be Verified When I Log In to a Windows ECS?

@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0047272493.html
+
 .. _en-us_topic_0047272493:
 
 Can All Users Use the Encryption Feature?

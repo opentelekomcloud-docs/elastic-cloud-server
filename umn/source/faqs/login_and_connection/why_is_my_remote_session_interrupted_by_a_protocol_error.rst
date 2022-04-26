@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0264235945.html
+
 .. _en-us_topic_0264235945:
 
 Why Is My Remote Session Interrupted by a Protocol Error?

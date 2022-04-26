@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0083225171.html
+
 .. _en-us_topic_0083225171:
 
 How Can I Manually Configure an IP Address for an InfiniBand NIC?

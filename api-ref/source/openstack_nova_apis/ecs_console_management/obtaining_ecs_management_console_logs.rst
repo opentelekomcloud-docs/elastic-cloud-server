@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065817689.html
+
 .. _en-us_topic_0065817689:
 
 Obtaining ECS Management Console Logs

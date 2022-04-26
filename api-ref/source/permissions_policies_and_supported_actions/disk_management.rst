@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0103071514.html
+
 .. _en-us_topic_0103071514:
 
 Disk Management

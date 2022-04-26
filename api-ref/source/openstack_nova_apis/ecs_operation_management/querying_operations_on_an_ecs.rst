@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065817692.html
+
 .. _en-us_topic_0065817692:
 
 Querying Operations on an ECS

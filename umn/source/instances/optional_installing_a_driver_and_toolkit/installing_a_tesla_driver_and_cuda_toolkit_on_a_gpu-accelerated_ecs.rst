@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0149470468.html
+
 .. _en-us_topic_0149470468:
 
 Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS

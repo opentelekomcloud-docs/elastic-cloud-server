@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065820817.html
+
 .. _en-us_topic_0065820817:
 
 Querying Floating IP Addresses (Discarded)

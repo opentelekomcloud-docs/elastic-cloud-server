@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0264235939.html
+
 .. _en-us_topic_0264235939:
 
 Why Can't I Use the Local Computer to Connect to My Windows ECS?

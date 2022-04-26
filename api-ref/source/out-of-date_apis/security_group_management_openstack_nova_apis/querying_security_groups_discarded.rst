@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0090187679.html
+
 .. _en-us_topic_0090187679:
 
 Querying Security Groups (Discarded)

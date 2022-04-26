@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065817717.html
+
 .. _en-us_topic_0065817717:
 
 Querying Tenant Quota Limits

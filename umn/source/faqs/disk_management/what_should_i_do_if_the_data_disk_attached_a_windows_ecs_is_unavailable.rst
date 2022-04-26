@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0251012483.html
+
 .. _en-us_topic_0251012483:
 
 What Should I Do If the Data Disk Attached a Windows ECS Is Unavailable?

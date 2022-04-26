@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0024911405.html
+
 .. _en-us_topic_0024911405:
 
 Reinstalling the OS

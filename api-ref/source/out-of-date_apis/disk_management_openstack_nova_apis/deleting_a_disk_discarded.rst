@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065817712.html
+
 .. _en-us_topic_0065817712:
 
 Deleting a Disk (Discarded)

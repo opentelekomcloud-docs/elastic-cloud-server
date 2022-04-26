@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0142195139.html
+
 .. _en-us_topic_0142195139:
 
 Responses (Batch Operation)

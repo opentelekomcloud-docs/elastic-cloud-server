@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0087901488.html
+
 .. _en-us_topic_0087901488:
 
 How Can I Obtain the Mapping Between Disk Partitions and Disk Devices on a Linux ECS?

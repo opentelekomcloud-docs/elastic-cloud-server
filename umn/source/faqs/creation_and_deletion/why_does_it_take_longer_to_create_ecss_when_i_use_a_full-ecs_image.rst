@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0102391480.html
+
 .. _en-us_topic_0102391480:
 
 Why Does It Take Longer to Create ECSs When I Use a Full-ECS Image?

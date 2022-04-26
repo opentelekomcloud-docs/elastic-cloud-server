@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0018073218.html
+
 .. _en-us_topic_0018073218:
 
 What Happens After I Click the **Delete** Button?

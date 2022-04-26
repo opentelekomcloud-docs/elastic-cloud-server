@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0095020344.html
+
 .. _en-us_topic_0095020344:
 
 Can ECSs Automatically Recover After the Physical Host Accommodating the ECSs Becomes Faulty?

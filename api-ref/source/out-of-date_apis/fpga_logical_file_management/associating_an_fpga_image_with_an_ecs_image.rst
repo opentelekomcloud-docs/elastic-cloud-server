@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065962598.html
+
 .. _en-us_topic_0065962598:
 
 Associating an FPGA Image with an ECS Image

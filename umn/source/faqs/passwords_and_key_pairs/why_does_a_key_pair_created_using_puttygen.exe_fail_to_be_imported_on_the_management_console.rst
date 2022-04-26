@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0047654687.html
+
 .. _en-us_topic_0047654687:
 
 Why Does a Key Pair Created Using **puttygen.exe** Fail to Be Imported on the Management Console?

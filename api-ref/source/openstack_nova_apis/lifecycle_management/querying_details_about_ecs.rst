@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0020212690.html
+
 .. _en-us_topic_0020212690:
 
 Querying Details About ECSs

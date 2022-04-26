@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0134192997.html
+
 .. _en-us_topic_0134192997:
 
 Binding a NIC to an ECS

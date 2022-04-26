@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0170710254.html
+
 .. _en-us_topic_0170710254:
 
 Data Structure for Query Details About Specifications

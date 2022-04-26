@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0029792884.html
+
 .. _en-us_topic_0029792884:
 
 Can I Forcibly Restart or Stop an ECS?

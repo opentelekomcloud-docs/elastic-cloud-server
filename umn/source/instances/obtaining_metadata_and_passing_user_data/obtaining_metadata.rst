@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0042400609.html
+
 .. _en-us_topic_0042400609:
 
 Obtaining Metadata

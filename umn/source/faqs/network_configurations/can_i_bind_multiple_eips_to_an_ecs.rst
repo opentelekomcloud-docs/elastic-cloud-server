@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0018073216.html
+
 .. _en-us_topic_0018073216:
 
 Can I Bind Multiple EIPs to an ECS?

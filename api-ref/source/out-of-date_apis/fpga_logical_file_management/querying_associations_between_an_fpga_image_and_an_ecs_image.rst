@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0081950550.html
+
 .. _en-us_topic_0081950550:
 
 Querying Associations Between an FPGA Image and an ECS Image

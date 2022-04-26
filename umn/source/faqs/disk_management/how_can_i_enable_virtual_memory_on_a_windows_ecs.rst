@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0120795802.html
+
 .. _en-us_topic_0120795802:
 
 How Can I Enable Virtual Memory on a Windows ECS?

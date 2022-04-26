@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0065820819.html
+
 .. _en-us_topic_0065820819:
 
 Releasing a Floating IP Address (Discarded)

@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0103072349.html
+
 .. _en-us_topic_0103072349:
 
 Floating IP Address Management

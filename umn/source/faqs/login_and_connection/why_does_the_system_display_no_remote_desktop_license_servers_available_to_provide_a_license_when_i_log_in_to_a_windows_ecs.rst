@@ -1,3 +1,5 @@
+:original_name: en-us_topic_0264235941.html
+
 .. _en-us_topic_0264235941:
 
 Why Does the System Display No Remote Desktop License Servers Available to Provide a License When I Log In to a Windows ECS?
