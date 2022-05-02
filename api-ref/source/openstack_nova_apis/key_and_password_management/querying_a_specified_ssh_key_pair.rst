@@ -86,7 +86,7 @@ Response
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/{project_id}/os-keypairs/{keypair_name}
    GET https://{endpoint}/v2.1/{project_id}/os-keypairs/{keypair_name}

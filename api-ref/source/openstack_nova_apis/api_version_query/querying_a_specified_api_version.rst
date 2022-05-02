@@ -114,7 +114,7 @@ The following table describes the response parameters.
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2
 

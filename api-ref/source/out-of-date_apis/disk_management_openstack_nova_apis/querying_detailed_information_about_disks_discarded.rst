@@ -85,7 +85,7 @@ Response
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/b84c367e4d1047fc9b54f28b400ddbc2/os-volumes/detail
    GET https://{endpoint}/v2.1/b84c367e4d1047fc9b54f28b400ddbc2/os-volumes/detail

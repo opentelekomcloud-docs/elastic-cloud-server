@@ -149,7 +149,7 @@ Example Request
 
 -  Example URL request
 
-   .. code-block::
+   .. code-block:: text
 
       POST https://{endpoint}/v2/{project_id}/cloudservers/{server_id}/changeos
 

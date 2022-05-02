@@ -49,7 +49,7 @@ None
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    DELETE https://{endpoint}/v2/{project_id}/servers/{server_id}/metadata/{key}
    DELETE https://{endpoint}/v2.1/{project_id}/servers/{server_id}/metadata/{key}

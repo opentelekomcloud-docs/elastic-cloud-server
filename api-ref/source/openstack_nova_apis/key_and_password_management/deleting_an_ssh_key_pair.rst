@@ -43,7 +43,7 @@ None
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    DELETE https://{endpoint}/v2/{project_id}/os-keypairs/{keypair_name}
    DELETE https://{endpoint}/v2.1/{project_id}/os-keypairs/{keypair_name}

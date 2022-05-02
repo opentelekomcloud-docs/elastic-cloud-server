@@ -41,7 +41,7 @@ None
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    DELETE https://{endpoint}/v1/{project_id}/cloudservers/os-server-groups/{server_group_id}
 
