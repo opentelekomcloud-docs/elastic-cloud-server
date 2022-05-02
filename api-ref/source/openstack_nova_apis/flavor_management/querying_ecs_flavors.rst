@@ -101,7 +101,7 @@ Response
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/743b4c0428d94531b9f2add666642e6b/flavors
    GET https://{endpoint}/v2.1/743b4c0428d94531b9f2add666642e6b/flavors

@@ -48,7 +48,7 @@ Example Request
 
 Example request
 
-.. code-block::
+.. code-block:: text
 
    DELETE https://{endpoint}/v2/3d72597871904daeb6887f75f848b531/os-security-group-rules/012fa2c6-bf4a-4b0b-b893-70d0caee81c7
    DELETE https://{endpoint}/v2.1/3d72597871904daeb6887f75f848b531/os-security-group-rules/012fa2c6-bf4a-4b0b-b893-70d0caee81c7

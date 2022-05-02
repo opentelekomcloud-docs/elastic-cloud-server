@@ -71,7 +71,7 @@ Response
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v1/{project_id}/cloudservers/tags
 

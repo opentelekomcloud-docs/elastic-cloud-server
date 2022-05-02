@@ -175,7 +175,7 @@ Response
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    POST https://{endpoint}/v1/{project_id}/servers/resource_instances/action
 

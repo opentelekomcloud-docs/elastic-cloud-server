@@ -52,7 +52,7 @@ None
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    POST https://{endpoint}/v1.0/servers/{server_id}/action
 
