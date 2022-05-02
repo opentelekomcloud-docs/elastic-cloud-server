@@ -114,7 +114,7 @@ Customized user data scripts of Linux ECSs are based on the open-source Cloud-In
 
    After the ECS is created, start it and run the **cat** *[file]* command to check the script execution result.
 
-   .. code-block::
+   .. code-block:: console
 
       [root@XXXXXXXX ~]# cat /root/output.txt
       Hello, the time is now Mon, 16 Jul 2016 16:03:18+0800
