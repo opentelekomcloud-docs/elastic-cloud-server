@@ -152,7 +152,7 @@ Response
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    PUT https://{endpoint}/v2/bb1118612ba64af3a6ea63a1bdcaa5ae/os-security-groups/3d02312d-0764-49c9-8244-2368ddce0045
    PUT https://{endpoint}/v2.1/bb1118612ba64af3a6ea63a1bdcaa5ae/os-security-groups/3d02312d-0764-49c9-8244-2368ddce0045

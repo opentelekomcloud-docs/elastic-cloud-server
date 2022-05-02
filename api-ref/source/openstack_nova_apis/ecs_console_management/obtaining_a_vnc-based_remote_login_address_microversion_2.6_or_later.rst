@@ -96,7 +96,7 @@ Response
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    POST https://{endpoint}/v2.1/13c67a214ced4afb88d911ae4bd5721a/servers/47bc79ae-df61-4ade-9197-283a74e5d70e/remote-consoles
 

@@ -438,7 +438,7 @@ The public cloud platform provides various ECS types. The flavor name/ID varies 
 
 -  Example URL request
 
-   .. code-block::
+   .. code-block:: text
 
       POST https://{endpoint}/v1/{project_id}/cloudservers
 

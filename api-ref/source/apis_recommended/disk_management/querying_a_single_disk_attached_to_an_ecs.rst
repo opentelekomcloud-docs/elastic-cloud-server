@@ -82,7 +82,7 @@ Response
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2.1/servers/{server_id}/block_device/{volume_id}
 

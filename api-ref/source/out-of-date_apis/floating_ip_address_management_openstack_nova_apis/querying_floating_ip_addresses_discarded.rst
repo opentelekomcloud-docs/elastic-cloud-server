@@ -78,7 +78,7 @@ Response
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/e73621affb8f44e1bc01898747ca09d4/os-floating-ips
    GET https://{endpoint}/v2.1/e73621affb8f44e1bc01898747ca09d4/os-floating-ips
