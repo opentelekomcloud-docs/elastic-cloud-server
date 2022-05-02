@@ -10,7 +10,7 @@ Symptom
 
 When installing the Python library software, you need to configure the PIP source. Take the official image source as an example:
 
-.. code-block::
+.. code-block:: console
 
    [root@test home]# cat /root/.pip/pip.conf 
    [global]

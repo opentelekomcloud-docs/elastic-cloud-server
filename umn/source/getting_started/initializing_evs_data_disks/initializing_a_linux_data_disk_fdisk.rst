@@ -34,7 +34,7 @@ The following example shows you how a new primary partition can be created on a 
 
    Information similar to the following is displayed:
 
-   .. code-block::
+   .. code-block:: console
 
       [root@ecs-test-0001 ~]# fdisk -l
 
@@ -65,7 +65,7 @@ The following example shows you how a new primary partition can be created on a 
 
    Information similar to the following is displayed:
 
-   .. code-block::
+   .. code-block:: console
 
       [root@ecs-test-0001 ~]# fdisk /dev/vdb
       Welcome to fdisk (util-linux 2.23.2).
@@ -206,7 +206,7 @@ The following example shows you how a new primary partition can be created on a 
 
    Information similar to the following is displayed:
 
-   .. code-block::
+   .. code-block:: console
 
       [root@ecs-test-0001 ~]# mkfs -t ext4 /dev/vdb1
       mke2fs 1.42.9 (28-Dec-2013)
@@ -259,7 +259,7 @@ The following example shows you how a new primary partition can be created on a 
 
    Information similar to the following is displayed:
 
-   .. code-block::
+   .. code-block:: console
 
       [root@ecs-test-0001 ~]# df -TH
       Filesystem     Type      Size  Used Avail Use% Mounted on
@@ -300,7 +300,7 @@ The following procedure shows how to set automatic disk mounting at server start
 
    Information similar to the following is displayed:
 
-   .. code-block::
+   .. code-block:: console
 
       [root@ecs-test-0001 ~]# blkid /dev/vdb1
       /dev/vdb1: UUID="0b3040e2-1367-4abb-841d-ddb0b92693df" TYPE="ext4"

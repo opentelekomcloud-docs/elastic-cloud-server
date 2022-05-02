@@ -14,7 +14,7 @@ An example is provided as follows:
 
 For example, you configure the memory as 4,194,304 KB (4,096 MB) when you create the ECS. After the ECS is created, you run the **free -m** command to view its memory. The command output is as follows:
 
-.. code-block::
+.. code-block:: console
 
    [root@localhost ~]# free -m
    total used free shared buff/cache available
@@ -25,7 +25,7 @@ The memory in the command output is 3790 MB, which is less than the configured 4
 
 Run the **dmidecode -t memory** command to check the actual memory configured for the ECS. The command output is as follows:
 
-.. code-block::
+.. code-block:: console
 
    [root@localhost ~]# dmidecode -t memory
    # dmidecode 3.0
