@@ -19,7 +19,7 @@ Constraints
 
 The API parameter is as follows: router:external=True
 
-.. code-block::
+.. code-block:: text
 
    GET /networks?router:external=True //Name in the result is returned.
 
@@ -67,7 +67,7 @@ Response
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/e73621affb8f44e1bc01898747ca09d4/os-floating-ip-pools
    GET https://{endpoint}/v2.1/e73621affb8f44e1bc01898747ca09d4/os-floating-ip-pools

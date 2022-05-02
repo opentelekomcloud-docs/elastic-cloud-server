@@ -123,7 +123,7 @@ Response
 Example Request (Importing an SSH Key)
 --------------------------------------
 
-.. code-block::
+.. code-block:: text
 
    POST https://{endpoint}/v2/{project_id}/os-keypairs
    POST https://{endpoint}/v2.1/{project_id}/os-keypairs
@@ -142,7 +142,7 @@ Example Request (Importing an SSH Key)
 Example Request (Creating an SSH Key)
 -------------------------------------
 
-.. code-block::
+.. code-block:: text
 
    POST https://{endpoint}/v2/{project_id}/os-keypairs
    POST https://{endpoint}/v2.1/{project_id}/os-keypairs

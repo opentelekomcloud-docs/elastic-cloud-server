@@ -53,7 +53,7 @@ None
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    DELETE https://{endpoint}/v2/b84c367e4d1047fc9b54f28b400ddbc2/os-volumes/0cf90bab-c513-46df-8559-45ba6de80e3f
    DELETE https://{endpoint}/v2.1/b84c367e4d1047fc9b54f28b400ddbc2/os-volumes/0cf90bab-c513-46df-8559-45ba6de80e3f

@@ -123,7 +123,7 @@ Response
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/e73621affb8f44e1bc01898747ca09d4/servers/65fae4c2-3a09-46c6-af12-3b04f1fdba1e/os-security-groups
    GET https://{endpoint}/v2.1/e73621affb8f44e1bc01898747ca09d4/servers/65fae4c2-3a09-46c6-af12-3b04f1fdba1e/os-security-groups

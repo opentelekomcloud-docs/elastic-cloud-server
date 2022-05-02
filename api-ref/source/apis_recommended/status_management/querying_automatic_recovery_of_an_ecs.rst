@@ -59,7 +59,7 @@ None
 Example Response
 ----------------
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v1/{project_id}/cloudservers/{server_id}/autorecovery
 

@@ -94,7 +94,7 @@ Response
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    POST https://{endpoint}/v2/bb1118612ba64af3a6ea63a1bdcaa5ae/os-security-groups
    POST https://{endpoint}/v2.1/bb1118612ba64af3a6ea63a1bdcaa5ae/os-security-groups

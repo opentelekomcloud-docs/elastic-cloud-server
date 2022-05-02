@@ -131,7 +131,7 @@ Response
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    GET https://{endpoint}/v2/9c53a566cb3443ab910cf0daebca90c4/images
    GET https://{endpoint}/v2.1/9c53a566cb3443ab910cf0daebca90c4/images

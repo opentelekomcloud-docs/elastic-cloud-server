@@ -64,7 +64,7 @@ See :ref:`Responses (Task) <en-us_topic_0022067714>`.
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    POST https://{endpoint}/v1/{project_id}/cloudservers/{server_id}/attachvolume
 

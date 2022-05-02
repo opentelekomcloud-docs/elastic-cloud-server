@@ -74,7 +74,7 @@ Example Request
 
 In the request parameters, the request for stopping the ECS must be issued with field **os-stop**, as shown in the example request.
 
-.. code-block::
+.. code-block:: text
 
    POST https://{endpoint}/v1/{project_id}/cloudservers/action
 
