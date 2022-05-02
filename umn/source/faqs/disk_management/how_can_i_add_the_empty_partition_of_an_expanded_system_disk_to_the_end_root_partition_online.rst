@@ -21,7 +21,7 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 50 GB 
 
    **parted -l /dev/xvda**
 
-   .. code-block::
+   .. code-block:: console
 
       [root@sluo-ecs-5e7d ~]# parted -l /dev/xvda
       Disk /dev/xvda: 53.7GB
@@ -51,7 +51,7 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 50 GB 
 
    **growpart /dev/xvda 2**
 
-   .. code-block::
+   .. code-block:: console
 
       [root@sluo-ecs-5e7d ~]# growpart /dev/xvda 2
       CHANGED: partition=2 start=8390656 old: size=75495424 end=83886080 new: size=96465599,end=104856255
@@ -60,7 +60,7 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 50 GB 
 
    **parted -l /dev/xvda**
 
-   .. code-block::
+   .. code-block:: console
 
       [root@sluo-ecs-5e7d ~]# parted -l /dev/xvda
       Disk /dev/xvda: 53.7GB
@@ -77,7 +77,7 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 50 GB 
 
    Suppose the partition name is **/dev/xvda2**, run the following command:
 
-   .. code-block::
+   .. code-block:: console
 
       [root@sluo-ecs-a611 ~]# resize2fs -f /dev/xvda2
       resize2fs 1.42.9 (28-Dec-2013)

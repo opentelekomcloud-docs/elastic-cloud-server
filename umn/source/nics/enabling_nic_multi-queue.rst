@@ -202,7 +202,7 @@ This section uses a Linux ECS running CentOS 7.4 as an example to describe how t
 
    An example is provided as follows:
 
-   .. code-block::
+   .. code-block:: console
 
       [root@localhost ~]# ethtool -l eth0  #View the number of queues used by NIC eth0.
       Channel parameters for eth0:
