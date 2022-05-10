@@ -56,7 +56,7 @@ Request Example
    .. figure:: /_static/images/en-us_image_0173496405.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** Obtaining the token
 
