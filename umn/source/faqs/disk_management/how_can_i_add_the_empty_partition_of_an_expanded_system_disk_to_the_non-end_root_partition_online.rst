@@ -27,7 +27,7 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
       Disk /dev/xvda: 107GB
       Sector size (logical/physical): 512B/512B
       Partition Table: msdos
-      Disk Flags: 
+      Disk Flags:
 
       Number  Start   End     Size    Type     File system     Flags
        1      1049kB  41.0GB  40.9GB  primary  ext4            boot
@@ -77,7 +77,7 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
          GNU Parted 3.1
          Using /dev/xvda
          Welcome to GNU Parted! Type ´help´ to view a list of commands.
-         (parted) help                                                             
+         (parted) help
            align-check TYPE N                        check partition N for TYPE(min|opt) alignment
            help [COMMAND]                           print general help, or help on COMMAND
            mklabel,mktable LABEL-TYPE               create a new disklabel (partition table)
@@ -95,7 +95,7 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
            toggle [NUMBER [FLAG]]                   toggle the state of FLAG on partition NUMBER
            unit UNIT                                set the default unit to UNIT
            version                                  display the version number and copyright information of GNU Parted
-         (parted)                                                         
+         (parted)
 
    b. Press **p**.
 
@@ -104,12 +104,12 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
          Disk /dev/xvda: 107GB
          Sector size (logical/physical): 512B/512B
          Partition Table: msdos
-         Disk Flags: 
+         Disk Flags:
 
          Number  Start   End     Size    Type     File system     Flags
           1      1049kB  41.0GB  40.9GB  primary  ext4            boot
           2      41.0GB  42.9GB  2000MB  primary  linux-swap(v1)
-                                                                
+
 
    c. Run the following command to delete the partition:
 
@@ -117,17 +117,17 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
 
       .. code-block::
 
-         (parted) rm2   
+         (parted) rm2
 
    d. Press **p**.
 
       .. code-block::
 
-         (parted) p 
+         (parted) p
          Disk /dev/xvda: 107GB
          Sector size (logical/physical): 512B/512B
          Partition Table: msdos
-         Disk Flags: 
+         Disk Flags:
 
          Number  Start   End     Size    Type     File system  Flags
           1      1049kB  41.0GB  40.9GB  primary  ext4         boot
@@ -138,7 +138,7 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
 
       .. code-block::
 
-         (parted) quit                                                     
+         (parted) quit
          Information: You may need to update /etc/fstab.
 
 #. Run the following command to view partition after the swap partition is deleted:
@@ -151,7 +151,7 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
       Disk /dev/xvda: 107GB
       Sector size (logical/physical): 512B/512B
       Partition Table: msdos
-      Disk Flags: 
+      Disk Flags:
 
       Number  Start   End     Size    Type     File system  Flags
        1      1049kB  41.0GB  40.9GB  primary  ext4         boot
@@ -179,7 +179,7 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
       Disk /dev/xvda: 107GB
       Sector size (logical/physical): 512B/512B
       Partition Table: msdos
-      Disk Flags: 
+      Disk Flags:
 
       Number  Start   End    Size   Type     File system  Flags
        1      1049kB  107GB  107GB  primary  ext4         boot

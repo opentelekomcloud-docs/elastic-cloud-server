@@ -56,7 +56,7 @@ Passing User Data
    .. figure:: /_static/images/en-us_image_0237026761.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** User Data
 
@@ -136,7 +136,7 @@ Customized user data scripts of Linux ECSs are based on the open-source Cloud-In
    .. figure:: /_static/images/en-us_image_0115931570.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** Viewing operating results
 
@@ -185,7 +185,7 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
    .. figure:: /_static/images/en-us_image_0115932123.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 3** Creating text file (Batch)
 
@@ -196,7 +196,7 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
    .. figure:: /_static/images/en-us_image_0115932873.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 4** Viewing user data (Batch)
 
@@ -216,7 +216,7 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
    .. figure:: /_static/images/en-us_image_0115933029.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 5** Creating text file (PowerShell)
 
@@ -227,7 +227,7 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
    .. figure:: /_static/images/en-us_image_0115934291.jpg
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 6** Viewing user data (PowerShell)
 
@@ -248,7 +248,7 @@ User data example:
        content: |
          syntax on
          set tabstop=4
-         set number      
+         set number
 
 Case 2
 ------
@@ -284,7 +284,7 @@ User data example:
 
    .. code-block::
 
-      #!/bin/bash 
+      #!/bin/bash
       echo 'root:$6$V6azyeLwcD3CHlpY$BN3VVq18fmCkj66B4zdHLWevqcxlig' | chpasswd -e;
 
    In the preceding command output, **$6$V6azyeLwcD3CHlpY$BN3VVq18fmCkj66B4zdHLWevqcxlig** is the ciphertext password, which can be generated as follows:

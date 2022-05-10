@@ -77,7 +77,7 @@ If a serial number is displayed on the console, use either of the following meth
    .. figure:: /_static/images/en-us_image_0000001127902463.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** Obtaining the disk serial number
 
@@ -90,7 +90,7 @@ If a serial number is displayed on the console, use either of the following meth
    .. figure:: /_static/images/en-us_image_0000001081131958.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** Checking the disk corresponding to the serial number
 
@@ -118,7 +118,7 @@ If a serial number is displayed on the console, use either of the following meth
          .. figure:: /_static/images/en-us_image_0000001127906793.png
             :alt: Click to enlarge
             :figclass: imgResize
-         
+
 
             **Figure 3** Viewing the disk on which the logical disk is created
 
@@ -216,7 +216,7 @@ Using a WWN to Obtain the Disk Name (Windows)
    .. figure:: /_static/images/en-us_image_0000001128111323.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 4** Disk with the serial number ending with **206127**
 

@@ -33,7 +33,7 @@ Solution
       .. figure:: /_static/images/en-us_image_0288997258.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 2** Allow log on through Remote Desktop Services properties
 
@@ -44,6 +44,6 @@ Solution
       .. figure:: /_static/images/en-us_image_0288997259.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 3** Deny log on through Remote Desktop Services properties

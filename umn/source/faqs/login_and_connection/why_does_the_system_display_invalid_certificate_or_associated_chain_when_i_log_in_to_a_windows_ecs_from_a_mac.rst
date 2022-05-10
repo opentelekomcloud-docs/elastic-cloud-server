@@ -45,7 +45,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0000001122204675.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 3** Preferences setting
 
@@ -56,7 +56,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0000001122000977.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 4** Security setting
 
@@ -77,7 +77,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0000001122000979.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 5** Remote Desktop Session Host
 
@@ -90,7 +90,7 @@ Procedure
       .. figure:: /_static/images/en-us_image_0000001121886253.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 6** Require use of specific security layer for remote (RDP) connections
 
@@ -101,7 +101,7 @@ Procedure
       .. figure:: /_static/images/en-us_image_0000001122204677.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 7** Remote connection authentication
 

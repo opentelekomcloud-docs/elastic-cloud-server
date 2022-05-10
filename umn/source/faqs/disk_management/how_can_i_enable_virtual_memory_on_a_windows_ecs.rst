@@ -28,7 +28,7 @@ The operations described in this section are provided for the ECSs running Windo
    .. figure:: /_static/images/en-us_image_0120795956.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** Performance Options
 
@@ -55,7 +55,7 @@ The operations described in this section are provided for the ECSs running Windo
    .. figure:: /_static/images/en-us_image_0120795935.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** Virtual Memory
 

@@ -40,7 +40,7 @@ The following uses Internet Explorer as an example.
    .. figure:: /_static/images/en-us_image_0247293312.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** Internet Options
 

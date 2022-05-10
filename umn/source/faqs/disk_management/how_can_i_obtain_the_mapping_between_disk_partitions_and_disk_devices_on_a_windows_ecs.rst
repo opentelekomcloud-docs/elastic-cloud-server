@@ -20,7 +20,7 @@ This section uses an ECS running Windows Server 2008 R2 64bit as an example to d
    .. figure:: /_static/images/en-us_image_0087906013.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** Disk Management
 
@@ -36,7 +36,7 @@ This section uses an ECS running Windows Server 2008 R2 64bit as an example to d
 
       .. figure:: /_static/images/en-us_image_0087906055.png
          :alt: **Figure 2** Disk properties
-      
+
 
          **Figure 2** Disk properties
 
@@ -46,7 +46,7 @@ This section uses an ECS running Windows Server 2008 R2 64bit as an example to d
 
       .. figure:: /_static/images/en-us_image_0087906067.png
          :alt: **Figure 3** Disk device details
-      
+
 
          **Figure 3** Disk device details
 

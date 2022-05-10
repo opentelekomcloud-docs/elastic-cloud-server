@@ -27,7 +27,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0214947577.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** Disks before modifying ECS specifications
 
@@ -38,7 +38,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0214947578.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** Disks after modifying ECS specifications
 
@@ -63,7 +63,7 @@ Procedure
       .. figure:: /_static/images/en-us_image_0214947579.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 3** Bringing the disk online
 
@@ -77,6 +77,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0214947580.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 4** Disks after you bring the disks online

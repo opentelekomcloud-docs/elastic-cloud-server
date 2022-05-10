@@ -28,7 +28,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0122999741.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** Change Security Group
 

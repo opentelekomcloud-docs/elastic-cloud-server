@@ -28,7 +28,7 @@ Windows Server 2008
    .. figure:: /_static/images/en-us_image_0288997371.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** Remote Desktop Session Host Configuration
 
@@ -39,7 +39,7 @@ Windows Server 2008
    .. figure:: /_static/images/en-us_image_0288997372.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 3** Modifying the configuration
 
@@ -55,7 +55,7 @@ Windows Server 2012
    .. figure:: /_static/images/en-us_image_0288997374.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 4** Connections
 
@@ -66,7 +66,7 @@ Windows Server 2012
    .. figure:: /_static/images/en-us_image_0288997375.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 5** Modifying the configuration
 

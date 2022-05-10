@@ -68,7 +68,7 @@ The following operations use PuTTY as an example. Before logging in to the ECS u
    .. figure:: /_static/images/en-us_image_0000001082643605.jpg
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** Configuring the EIP
 
@@ -104,7 +104,7 @@ The following operations use PuTTY as an example. Before logging in to the ECS u
 
    .. figure:: /_static/images/en-us_image_0178475901.png
       :alt: **Figure 2** SSH Security Warning
-   
+
 
       **Figure 2** SSH Security Warning
 

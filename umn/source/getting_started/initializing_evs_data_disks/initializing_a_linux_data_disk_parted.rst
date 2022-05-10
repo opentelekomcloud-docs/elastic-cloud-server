@@ -60,7 +60,7 @@ The following example shows you how a new partition can be created on a new data
       GNU Parted 3.1
       Using /dev/vdb
       Welcome to GNU Parted! Type 'help' to view a list of commands.
-      (parted) 
+      (parted)
 
 #. Enter **p** and press **Enter** to view the current disk partition style.
 
@@ -75,7 +75,7 @@ The following example shows you how a new partition can be created on a new data
       Sector size (logical/physical): 512B/512B
       Partition Table: unknown
       Disk Flags:
-      (parted) 
+      (parted)
 
    In the command output, the **Partition Table** value is **unknown**, indicating that no partition style is set for the new disk.
 
@@ -109,7 +109,7 @@ The following example shows you how a new partition can be created on a new data
 
       Number  Start  End  Size  File system  Name  Flags
 
-      (parted) 
+      (parted)
 
    In the command output, the **Partition Table** value is **gpt**, indicating that the disk partition style is GPT.
 
@@ -148,7 +148,7 @@ The following example shows you how a new partition can be created on a new data
       Number  Start  End         Size        File system  Name  Flags
        1      2048s  209713151s  209711104s               test
 
-      (parted) 
+      (parted)
 
 #. Enter **q** and press **Enter** to exit parted.
 

@@ -39,7 +39,7 @@ Solution
    .. figure:: /_static/images/en-us_image_0087631679.jpg
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** Logging in to the ECS
 
@@ -54,7 +54,7 @@ Solution
    .. figure:: /_static/images/en-us_image_0087632786.jpg
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 3** Deleting the automatic attaching information
 
@@ -69,6 +69,6 @@ Solution
    .. figure:: /_static/images/en-us_image_0087632787.jpg
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 4** Logging in to the ECS

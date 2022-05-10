@@ -43,7 +43,7 @@ For high-performance H2 ECSs equipped with an InfiniBand NIC driver (InfiniBand 
       .. figure:: /_static/images/en-us_image_0058747512.jpg
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 1** Normal network communication
 

@@ -31,7 +31,7 @@ Solution
    .. figure:: /_static/images/en-us_image_0000001100835050.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** Remote Desktop Services
 

@@ -85,7 +85,7 @@ Creating a Key Pair Using **puttygen.exe**
       .. figure:: /_static/images/en-us_image_0272917695.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 1** PuTTY Key Generator
 
@@ -97,7 +97,7 @@ Creating a Key Pair Using **puttygen.exe**
 
       .. figure:: /_static/images/en-us_image_0272919399.png
          :alt: **Figure 2** Obtaining the public and private keys
-      
+
 
          **Figure 2** Obtaining the public and private keys
 
@@ -124,7 +124,7 @@ Creating a Key Pair Using **puttygen.exe**
          .. figure:: /_static/images/en-us_image_0276033982.png
             :alt: Click to enlarge
             :figclass: imgResize
-         
+
 
             **Figure 3** Save private key
 
@@ -145,7 +145,7 @@ Creating a Key Pair Using **puttygen.exe**
          .. figure:: /_static/images/en-us_image_0272919409.png
             :alt: Click to enlarge
             :figclass: imgResize
-         
+
 
             **Figure 4** Export OpenSSH key
 
@@ -175,7 +175,7 @@ If you store a public key by clicking **Save public key** of **puttygen.exe**, t
    .. figure:: /_static/images/en-us_image_0037980515.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 5** Import Key Pair
 

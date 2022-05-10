@@ -49,6 +49,6 @@ The following operations use psutil as an example:
    .. figure:: /_static/images/en-us_image_0107415055.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** Successful installation

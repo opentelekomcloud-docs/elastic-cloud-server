@@ -43,7 +43,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0284920908.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** Add Inbound Rule
 
@@ -79,7 +79,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0284993717.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** Add Outbound Rule
 

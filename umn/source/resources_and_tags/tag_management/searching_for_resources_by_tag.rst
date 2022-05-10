@@ -25,7 +25,7 @@ On the **Elastic Cloud Server** page, search for ECSs by tag key or value.
    .. figure:: /_static/images/en-us_image_0183030460.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** Searching for ECSs by tag
 

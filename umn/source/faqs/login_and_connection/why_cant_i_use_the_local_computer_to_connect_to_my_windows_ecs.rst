@@ -55,7 +55,7 @@ Check whether the firewall is enabled on the ECS.
    .. figure:: /_static/images/en-us_image_0288997243.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** Windows Firewall
 
@@ -68,7 +68,7 @@ Check whether the firewall is enabled on the ECS.
    .. figure:: /_static/images/en-us_image_0288997244.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 3** Checking firewall status
 
@@ -86,7 +86,7 @@ Check whether the firewall is enabled on the ECS.
    .. figure:: /_static/images/en-us_image_0288997245.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 4** Inbound Rules
 
@@ -118,7 +118,7 @@ Modify the remote desktop connection settings on the Windows ECS:
    .. figure:: /_static/images/en-us_image_0288997246.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 5** Remote settings
 
@@ -138,7 +138,7 @@ Checking Remote Desktop Services
    .. figure:: /_static/images/en-us_image_0288997248.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 6** Remote Desktop Services
 
@@ -160,7 +160,7 @@ Checking Remote Desktop Session Host Configuration
    .. figure:: /_static/images/en-us_image_0288997249.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 7** Require use of specific security layer for remote (RDP) connections
 
@@ -171,6 +171,6 @@ Checking Remote Desktop Session Host Configuration
    .. figure:: /_static/images/en-us_image_0288997250.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 8** Setting security layer to RDP
