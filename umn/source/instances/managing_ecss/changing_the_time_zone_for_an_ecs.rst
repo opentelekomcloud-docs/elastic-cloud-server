@@ -106,7 +106,7 @@ For Windows ECSs
    .. figure:: /_static/images/en-us_image_0224317546.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** Date and Time
 

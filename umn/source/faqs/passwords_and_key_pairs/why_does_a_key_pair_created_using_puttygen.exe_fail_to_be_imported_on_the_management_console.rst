@@ -29,7 +29,7 @@ Use the locally stored private key and **PuTTY Key Generator** to restore the fo
    .. figure:: /_static/images/en-us_image_0272917695.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** PuTTY Key Generator
 
@@ -42,7 +42,7 @@ Use the locally stored private key and **PuTTY Key Generator** to restore the fo
    .. figure:: /_static/images/en-us_image_0037982934.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** Restoring the format of the public key content
 

@@ -38,7 +38,7 @@ Solution
       .. figure:: /_static/images/en-us_image_0288997347.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 2** Local security policy
 
@@ -50,7 +50,7 @@ Solution
 
       .. figure:: /_static/images/en-us_image_0288997348.png
          :alt: **Figure 3** Allow log on through Remote Desktop Services properties
-      
+
 
          **Figure 3** Allow log on through Remote Desktop Services properties
 
@@ -71,7 +71,7 @@ Solution
       .. figure:: /_static/images/en-us_image_0288997349.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 4** Checking the target user group
 
@@ -86,7 +86,7 @@ Solution
       .. figure:: /_static/images/en-us_image_0288997350.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 5** Security
 

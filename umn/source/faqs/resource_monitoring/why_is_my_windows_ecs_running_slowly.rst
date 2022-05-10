@@ -33,7 +33,7 @@ Fault Locating
 
    .. figure:: /_static/images/en-us_image_0281771106.png
       :alt: **Figure 1** Starting the Resource Monitor
-   
+
 
       **Figure 1** Starting the Resource Monitor
 
@@ -44,7 +44,7 @@ Fault Locating
    .. figure:: /_static/images/en-us_image_0281773972.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** Resource Monitor
 
@@ -69,7 +69,7 @@ Fault Locating
       .. figure:: /_static/images/en-us_image_0281775402.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 3** Checking the process
 

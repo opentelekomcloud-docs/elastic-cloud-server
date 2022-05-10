@@ -34,7 +34,7 @@ The public IP address must be associated with the private IP address using NAT. 
    .. figure:: /_static/images/en-us_image_0171674763.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** Setting the public IP address
 
@@ -45,7 +45,7 @@ The public IP address must be associated with the private IP address using NAT. 
    .. figure:: /_static/images/en-us_image_0182087025.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** Setting the range of ports for data transmission
 

@@ -33,7 +33,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0295099237.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** Add Desktop
 
@@ -51,7 +51,7 @@ Procedure
 
          .. figure:: /_static/images/en-us_image_0295099238.png
             :alt: **Figure 2** Add user account
-         
+
 
             **Figure 2** Add user account
 
@@ -60,7 +60,7 @@ Procedure
          .. figure:: /_static/images/en-us_image_0295099198.png
             :alt: Click to enlarge
             :figclass: imgResize
-         
+
 
             **Figure 3** Add PC
 
@@ -76,7 +76,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0295099239.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 4** Double-click for login
 

@@ -30,7 +30,7 @@ Solution
       .. figure:: /_static/images/en-us_image_0000001122000869.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 1** Event viewer
 
@@ -41,7 +41,7 @@ Solution
       .. figure:: /_static/images/en-us_image_0000001121886141.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 2** Filtering logs
 

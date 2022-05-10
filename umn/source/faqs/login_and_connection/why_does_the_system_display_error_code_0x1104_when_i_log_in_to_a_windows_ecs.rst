@@ -65,7 +65,7 @@ Solution
       .. figure:: /_static/images/en-us_image_0288997604.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 2** Checking port 3389
 
@@ -82,7 +82,7 @@ Solution
       .. figure:: /_static/images/en-us_image_0288997606.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 3** Checking System process
 
@@ -111,7 +111,7 @@ Solution
       .. figure:: /_static/images/en-us_image_0288997608.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 4** Remote Desktop Services
 
@@ -122,7 +122,7 @@ Solution
       .. figure:: /_static/images/en-us_image_0288997610.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 5** Remote (RDP) Connection requires the use of the specified security layer
 
@@ -133,7 +133,7 @@ Solution
       .. figure:: /_static/images/en-us_image_0288997612.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 6** Setting security layer
 
@@ -150,7 +150,7 @@ Solution
       .. figure:: /_static/images/en-us_image_0288997614.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 7** Updating the group policy
 

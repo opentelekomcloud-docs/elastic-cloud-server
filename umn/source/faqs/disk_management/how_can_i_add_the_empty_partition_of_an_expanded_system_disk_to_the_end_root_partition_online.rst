@@ -38,8 +38,8 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 50 GB 
 
    .. code-block::
 
-      /dev/xvda1: UUID="25ec3bdb-ba24-4561-bcdc-802edf42b85f" TYPE="swap" 
-      /dev/xvda2: UUID="1a1ce4de-e56a-4e1f-864d-31b7d9dfb547" TYPE="ext4" 
+      /dev/xvda1: UUID="25ec3bdb-ba24-4561-bcdc-802edf42b85f" TYPE="swap"
+      /dev/xvda2: UUID="1a1ce4de-e56a-4e1f-864d-31b7d9dfb547" TYPE="ext4"
 
 #. Run the following command to install the growpart tool:
 

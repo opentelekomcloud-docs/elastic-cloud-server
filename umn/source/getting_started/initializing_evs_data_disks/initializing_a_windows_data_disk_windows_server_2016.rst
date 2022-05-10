@@ -39,7 +39,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0132368216.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** Server Manager
 
@@ -52,7 +52,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0175083503.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** Computer Management
 
@@ -65,7 +65,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0175083504.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 3** Disk list
 
@@ -78,7 +78,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0175083507.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 4** Computer Management (Windows Server 2016)
 
@@ -97,7 +97,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0175083508.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 5** New Simple Volume Wizard (Windows Server 2016)
 
@@ -110,7 +110,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0175083509.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 6** Specify Volume Size (Windows Server 2016)
 
@@ -123,7 +123,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0175083510.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 7** Assign Driver Letter or Path (Windows Server 2016)
 
@@ -136,7 +136,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0175083511.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 8** Format Partition (Windows Server 2016)
 
@@ -149,7 +149,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0175083512.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 9** Completing the New Simple Volume Wizard (Windows Server 2016)
 
@@ -166,7 +166,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0175083513.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 10** Disk initialization succeeded (Windows Server 2016)
 
@@ -179,7 +179,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0175083515.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 11** This PC (Windows Server 2016)
 

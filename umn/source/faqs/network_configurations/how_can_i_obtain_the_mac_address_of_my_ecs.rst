@@ -25,7 +25,7 @@ Linux (CentOS 6)
    .. figure:: /_static/images/en-us_image_0121682272.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** Obtaining the MAC address
 
@@ -43,7 +43,7 @@ Linux (CentOS 7)
    .. figure:: /_static/images/en-us_image_0268824628.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** Obtaining the NIC information
 
@@ -56,7 +56,7 @@ Linux (CentOS 7)
    .. figure:: /_static/images/en-us_image_0268825353.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 3** Obtaining the MAC address of eth0
 
@@ -69,7 +69,7 @@ Linux (CentOS 7)
    .. figure:: /_static/images/en-us_image_0268826092.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 4** Obtaining the MAC address of eth0
 

@@ -44,7 +44,7 @@ To use the 20 GB capacity, performing the following operations:
       .. figure:: /_static/images/en-us_image_0076540987.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 1** Viewing details about the disk
 
@@ -57,7 +57,7 @@ To use the 20 GB capacity, performing the following operations:
       .. figure:: /_static/images/en-us_image_0076598858.jpg
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 2** Viewing disk partitions
 
@@ -90,7 +90,7 @@ To use the 20 GB capacity, performing the following operations:
       .. figure:: /_static/images/en-us_image_0076540988.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 3** Creating a new partition
 
@@ -103,7 +103,7 @@ To use the 20 GB capacity, performing the following operations:
       .. figure:: /_static/images/en-us_image_0076595619.jpg
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 4** Specifying the new partition's start cylinder number
 
@@ -116,7 +116,7 @@ To use the 20 GB capacity, performing the following operations:
       .. figure:: /_static/images/en-us_image_0076595620.jpg
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 5** Specifying the new partition's end cylinder number
 
@@ -129,7 +129,7 @@ To use the 20 GB capacity, performing the following operations:
       .. figure:: /_static/images/en-us_image_0076596029.jpg
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 6** Viewing the created partition
 
@@ -144,7 +144,7 @@ To use the 20 GB capacity, performing the following operations:
       .. figure:: /_static/images/en-us_image_0076596326.jpg
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 7** Completing the partition creation
 
@@ -157,7 +157,7 @@ To use the 20 GB capacity, performing the following operations:
       .. figure:: /_static/images/en-us_image_0076600080.jpg
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 8** Viewing disk partitions
 
@@ -176,7 +176,7 @@ To use the 20 GB capacity, performing the following operations:
       .. figure:: /_static/images/en-us_image_0076541187.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 9** Viewing the file system type
 
@@ -247,7 +247,7 @@ To use the 20 GB capacity, performing the following operations:
       .. figure:: /_static/images/en-us_image_0076543500.jpg
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 10** Viewing the mounted file systems
 
@@ -275,7 +275,7 @@ To use the 20 GB capacity, performing the following operations:
       .. figure:: /_static/images/en-us_image_0076543501.jpg
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 11** Viewing the file system type
 

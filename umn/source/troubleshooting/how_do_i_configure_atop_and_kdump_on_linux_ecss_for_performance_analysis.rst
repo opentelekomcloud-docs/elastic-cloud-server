@@ -60,7 +60,7 @@ Configuring atop for CentOS 8 or RHEL 8
       .. code-block::
 
          LOGINTERVAL=15
-         LOGGENERATIONS=28 
+         LOGGENERATIONS=28
 
 4. Run the following command to restart atop:
 
@@ -84,7 +84,7 @@ Configuring atop for CentOS 8 or RHEL 8
       Memory: 4.1M
       CGroup: /system.slice/atop.service
                └─6390 /usr/bin/atop -w /var/log/atop/atop_20210619 15
-       
+
       Jun 19 14:46:10 ecs-centos8 systemd[1]: atop.service: Succeeded.
       Jun 19 14:46:10 ecs-centos8 systemd[1]: Stopped Atop advanced performance monitor.
       Jun 19 14:46:10 ecs-centos8 systemd[1]: Starting Atop advanced performance monitor...
@@ -117,7 +117,7 @@ Configuring atop for CentOS 7, RHEL 7, or EulerOS
    .. code-block::
 
       LOGINTERVAL=15
-      LOGGENERATIONS=28 
+      LOGGENERATIONS=28
 
 #. Run the following command to start atop:
 
@@ -141,7 +141,7 @@ Configuring atop for CentOS 7, RHEL 7, or EulerOS
       Main PID: 8229 (atop)
       CGroup: /system.slice/atop.service
                └─8229 /usr/bin/atop -w /var/log/atop/atop_20210619 15
-       
+
       Jun 19 11:49:47 ecs-centos7 systemd[1]: Stopped Atop advanced performance monitor.
       Jun 19 11:49:47 ecs-centos7 systemd[1]: Starting Atop advanced performance monitor...
       Jun 19 11:49:47 ecs-centos7 systemd[1]: Started Atop advanced performance monitor.
@@ -187,7 +187,7 @@ Configuring atop for SUSE 12 or SUSE 15
    .. code-block::
 
       LOGINTERVAL=15
-      LOGGENERATIONS=28 
+      LOGGENERATIONS=28
 
 7. Run the following command to restart atop:
 
@@ -210,9 +210,9 @@ Configuring atop for SUSE 12 or SUSE 15
       Tasks: 1 (limit: 4915)
       CGroup: /system.slice/atop.service
                └─2241 /usr/bin/atop -w /var/log/atop/atop_20210619 15
-       
+
       Jun 19 16:50:01 ecs-suse15 systemd[1]: Starting Atop advanced performance monitor...
-      Jun 19 16:50:01 ecs-suse15 systemd[1]: Started Atop advanced performance monitor. 
+      Jun 19 16:50:01 ecs-suse15 systemd[1]: Started Atop advanced performance monitor.
 
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section012793312620:
 
@@ -283,7 +283,7 @@ Configuring atop Using Its Source Package for SUSE, Fedora, Debian or Ubuntu
          LOGOPTS=""
          LOGINTERVAL=15
          LOGGENERATIONS=28
-         LOGPATH=/var/log/atop 
+         LOGPATH=/var/log/atop
 
 7. Restart atop.
 
@@ -305,7 +305,7 @@ Configuring atop Using Its Source Package for SUSE, Fedora, Debian or Ubuntu
        Main PID: 5191 (atop)
          CGroup: /system.slice/atop.service
                  └─5191 /usr/bin/atop -w /var/log/atop/atop_20210725 15
-       
+
       Jul 25 19:29:40 atop systemd[1]: Starting Atop advanced performance monitor...
       Jul 25 19:29:40 atop systemd[1]: Started Atop advanced performance monitor.
 

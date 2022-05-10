@@ -27,7 +27,7 @@ The following procedure uses an ECS running Windows Server 2012 as an example. T
 
       .. figure:: /_static/images/en-us_image_0244859999.png
          :alt: **Figure 1** Changing the port number to 2020
-      
+
 
          **Figure 1** Changing the port number to 2020
 
@@ -41,7 +41,7 @@ The following procedure uses an ECS running Windows Server 2012 as an example. T
 
       .. figure:: /_static/images/en-us_image_0244859999.png
          :alt: **Figure 2** Changing the port number to 2020
-      
+
 
          **Figure 2** Changing the port number to 2020
 
@@ -52,7 +52,7 @@ The following procedure uses an ECS running Windows Server 2012 as an example. T
    .. figure:: /_static/images/en-us_image_0244860550.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 3** Services
 
@@ -92,7 +92,7 @@ The following procedure uses an ECS running CentOS 7.3 as an example. The defaul
 
    .. figure:: /_static/images/en-us_image_0244856480.png
       :alt: **Figure 4** Changing the port number to 2020
-   
+
 
       **Figure 4** Changing the port number to 2020
 

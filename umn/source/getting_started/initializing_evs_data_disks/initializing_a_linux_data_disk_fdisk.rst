@@ -76,7 +76,7 @@ The following example shows you how a new primary partition can be created on a 
       Device does not contain a recognized partition table
       Building a new DOS disklabel with disk identifier 0x38717fc1.
 
-      Command (m for help): 
+      Command (m for help):
 
 #. Enter **n** and press **Enter** to create a new partition.
 
@@ -107,7 +107,7 @@ The following example shows you how a new primary partition can be created on a 
    .. code-block::
 
       Select (default p): p
-      Partition number (1-4, default 1): 
+      Partition number (1-4, default 1):
 
    **Partition number** indicates the serial number of the primary partition. The value ranges from **1** to **4**.
 

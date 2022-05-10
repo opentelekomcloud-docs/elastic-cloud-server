@@ -77,7 +77,7 @@ When you log in to an ECS for the first time, log in to it using VNC, enable RDP
    .. figure:: /_static/images/en-us_image_0049287308.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** System Properties
 

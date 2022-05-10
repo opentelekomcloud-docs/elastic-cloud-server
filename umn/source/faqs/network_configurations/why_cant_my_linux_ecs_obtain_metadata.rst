@@ -47,7 +47,7 @@ Solution
    .. figure:: /_static/images/en-us_image_0000001092045958.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** Obtaining metadata
 

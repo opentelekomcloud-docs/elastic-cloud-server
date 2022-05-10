@@ -40,7 +40,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0263798009.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** Setting a password
 
@@ -72,7 +72,7 @@ Procedure
 
       Subsystem sftp internal-sftp
       Match Group sftp
-      ChrootDirectory /home/%u 
+      ChrootDirectory /home/%u
       ForceCommand internal-sftp
       AllowTcpForwarding no
       X11Forwarding no
@@ -82,7 +82,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0000001071727803.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** sshd_config file with the added information
 

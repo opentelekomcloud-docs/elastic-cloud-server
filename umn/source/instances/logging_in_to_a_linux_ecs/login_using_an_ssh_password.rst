@@ -109,7 +109,7 @@ The following operations use PuTTY as an example to log in to the ECS.
       .. figure:: /_static/images/en-us_image_0159943784.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 1** Session
 

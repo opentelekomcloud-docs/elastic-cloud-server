@@ -42,7 +42,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0095024494.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** Disk Management
 
@@ -55,7 +55,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0132359404.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** Online the disk
 
@@ -70,7 +70,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0132360430.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 3** Initialize Disk
 
@@ -83,7 +83,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0097597141.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 4** Unallocated space
 
@@ -100,7 +100,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0097597143.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 5** New Simple Volume
 
@@ -111,7 +111,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0097597145.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 6** New Simple Volume Wizard
 
@@ -122,7 +122,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0097597147.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 7** Specify Volume Size
 
@@ -133,7 +133,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0097597149.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 8** Assign Driver Letter or Path
 
@@ -144,7 +144,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0097597151.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 9** Format Partition
 
@@ -153,7 +153,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0097597153.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 10** Completing the partition creation
 
@@ -168,6 +168,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0097597155.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 11** Disk initialization succeeded

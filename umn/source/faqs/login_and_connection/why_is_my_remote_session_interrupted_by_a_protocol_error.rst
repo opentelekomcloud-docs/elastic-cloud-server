@@ -33,7 +33,7 @@ Solution
    .. figure:: /_static/images/en-us_image_0288997424.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** Opening the registry editor
 
@@ -46,7 +46,7 @@ Solution
    .. figure:: /_static/images/en-us_image_0288997425.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 3** Deleting Certificate
 
@@ -59,7 +59,7 @@ Solution
    .. figure:: /_static/images/en-us_image_0288997426.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 4** Opening Remote Desktop Session Host Configuration
 
@@ -70,6 +70,6 @@ Solution
    .. figure:: /_static/images/en-us_image_0288997427.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 5** RDP-Tcp properties

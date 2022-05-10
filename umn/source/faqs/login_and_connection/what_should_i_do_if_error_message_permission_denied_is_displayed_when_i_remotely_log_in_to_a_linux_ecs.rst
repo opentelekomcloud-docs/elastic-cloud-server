@@ -46,7 +46,7 @@ Solution
       .. figure:: /_static/images/en-us_image_0240711431.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 2** Entering the kernel editing mode
 
@@ -65,7 +65,7 @@ Solution
       .. figure:: /_static/images/en-us_image_0260575520.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 3** Before the modification
 
@@ -74,7 +74,7 @@ Solution
       .. figure:: /_static/images/en-us_image_0260575521.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 4** After the modification
 

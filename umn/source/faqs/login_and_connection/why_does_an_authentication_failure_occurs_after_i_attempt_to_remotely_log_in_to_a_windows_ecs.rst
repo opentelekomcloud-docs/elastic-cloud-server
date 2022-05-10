@@ -18,7 +18,7 @@ When a local computer running Windows attempts to access a Windows ECS using RDP
 
    .. figure:: /_static/images/en-us_image_0117334497.png
       :alt: **Figure 1** Failed to set up a remote desktop connection
-   
+
 
       **Figure 1** Failed to set up a remote desktop connection
 
@@ -42,7 +42,7 @@ Modify the remote desktop connection settings on the Windows ECS:
    .. figure:: /_static/images/en-us_image_0253037157.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** Remote settings
 

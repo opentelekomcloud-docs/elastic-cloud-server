@@ -32,7 +32,7 @@ Log in to the management console. On the **Elastic Cloud Server** page, obtain t
    .. figure:: /_static/images/en-us_image_0263796649.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** Setting file uploading
 
@@ -53,6 +53,6 @@ Log in to the management console. On the **Elastic Cloud Server** page, obtain t
    .. figure:: /_static/images/en-us_image_0263796651.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** Setting file downloading

@@ -122,7 +122,7 @@ Logging In to an ECS Using an English Keyboard
    .. figure:: /_static/images/en-us_image_0030874270.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** Keyboard layout configuration
 
@@ -135,7 +135,7 @@ Logging In to an ECS Using an English Keyboard
    .. figure:: /_static/images/en-us_image_0030874271.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** Remote Login
 
@@ -145,7 +145,7 @@ Logging In to an ECS Using an English Keyboard
 
    .. figure:: /_static/images/en-us_image_0201100229.png
       :alt: **Figure 3** Send CtrlAltDel
-   
+
 
       **Figure 3** Send CtrlAltDel
 
@@ -156,7 +156,7 @@ Logging In to an ECS Using an English Keyboard
    .. figure:: /_static/images/en-us_image_0093469181.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 4** Local Cursor
 
@@ -184,7 +184,7 @@ Logging In to an ECS Using a Non-English Keyboard
    .. figure:: /_static/images/en-us_image_0030874270.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 5** Keyboard layout configuration
 
@@ -197,7 +197,7 @@ Logging In to an ECS Using a Non-English Keyboard
     .. figure:: /_static/images/en-us_image_0030874271.png
        :alt: Click to enlarge
        :figclass: imgResize
-    
+
 
        **Figure 6** Remote Login
 
@@ -207,7 +207,7 @@ Logging In to an ECS Using a Non-English Keyboard
 
     .. figure:: /_static/images/en-us_image_0201103161.png
        :alt: **Figure 7** Send CtrlAltDel
-    
+
 
        **Figure 7** Send CtrlAltDel
 
@@ -218,7 +218,7 @@ Logging In to an ECS Using a Non-English Keyboard
     .. figure:: /_static/images/en-us_image_0093469181.png
        :alt: Click to enlarge
        :figclass: imgResize
-    
+
 
        **Figure 8** Local Cursor
 
@@ -315,7 +315,7 @@ Local commands can be copied to an ECS. To do so, perform the following operatio
    .. figure:: /_static/images/en-us_image_0109039483.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 9** Input Commands
 

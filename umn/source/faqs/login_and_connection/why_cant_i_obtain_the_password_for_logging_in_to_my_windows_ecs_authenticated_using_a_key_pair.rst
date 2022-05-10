@@ -61,7 +61,7 @@ If logging in to an ECS with Cloudbase-Init enabled failed, perform the followin
       .. figure:: /_static/images/en-us_image_0275724694.png
          :alt: Click to enlarge
          :figclass: imgResize
-      
+
 
          **Figure 1** Setting disk online
 
@@ -71,6 +71,6 @@ If logging in to an ECS with Cloudbase-Init enabled failed, perform the followin
 
       .. figure:: /_static/images/en-us_image_0275726221.png
          :alt: **Figure 2** cloudbase-init
-      
+
 
          **Figure 2** cloudbase-init

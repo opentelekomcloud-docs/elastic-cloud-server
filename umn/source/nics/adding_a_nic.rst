@@ -32,7 +32,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0093507600.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** Selecting the security group and subnet
 

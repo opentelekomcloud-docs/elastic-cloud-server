@@ -26,7 +26,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0214947581.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 1** Viewing disks attached before specifications modification
 
@@ -43,7 +43,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0214947582.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 2** Viewing disks attached after specifications modification
 
@@ -82,7 +82,7 @@ Procedure
    .. figure:: /_static/images/en-us_image_0214947583.png
       :alt: Click to enlarge
       :figclass: imgResize
-   
+
 
       **Figure 3** Checking the number of disks attached
 
