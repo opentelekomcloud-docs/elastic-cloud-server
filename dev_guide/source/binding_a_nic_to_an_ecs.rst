@@ -50,9 +50,9 @@ Procedure
 
             {
               "network": {
-                "shared": false, 
-                "name": "demo-net", 
-                "admin_state_up": true, 
+                "shared": false,
+                "name": "demo-net",
+                "admin_state_up": true,
                 "tenant_id": "74610f3a5ad941998e91f076297ecf27"
               }
             }
@@ -171,14 +171,14 @@ Procedure
 
             {
                 "port": {
-                    "admin_state_up": true, 
+                    "admin_state_up": true,
 
                     "fixed_ips": [
                         {
                             "subnet_id": "877b5567-e8c6-4a0d-aabf-0f13da225fe5"
                         }
-                    ], 
-                    "name": "test", 
+                    ],
+                    "name": "test",
                     "network_id": "c4a3019d-1ac0-4cfb-a838-2342eb992e6b",
                     "tenant_id": "74610f3a5ad941998e91f076297ecf27"
                 }

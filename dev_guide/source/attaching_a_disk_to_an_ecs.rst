@@ -48,10 +48,10 @@ Procedure
 
             {
                 "volume": {
-                    "name": "openapi_vol02", 
-                    "availability_zone": "eu-de-01", 
-                    "description": "create for api test", 
-                    "volume_type": "SATA", 
+                    "name": "openapi_vol02",
+                    "availability_zone": "eu-de-01",
+                    "description": "create for api test",
+                    "volume_type": "SATA",
                     "size": 40
                 }
             }
