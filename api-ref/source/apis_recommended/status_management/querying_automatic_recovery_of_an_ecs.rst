@@ -65,7 +65,7 @@ Example Response
 
 .. code-block::
 
-   { 
+   {
       "support_auto_recovery": "true"
    }
 

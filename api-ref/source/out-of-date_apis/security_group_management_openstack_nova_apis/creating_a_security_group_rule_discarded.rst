@@ -155,7 +155,7 @@ Example Response
            "to_port": 443,
            "ip_protocol": "tcp",
            "group": {
-               
+
            },
            "from_port": 443
        }

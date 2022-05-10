@@ -66,16 +66,16 @@ The following responses are only for resetting the passwords for logging in to E
 
    .. code-block::
 
-      { 
+      {
           "response": [
                         {
-                          "id": "616fb98f-46ca-475e-917e-2563e5a8cd19"   
+                          "id": "616fb98f-46ca-475e-917e-2563e5a8cd19"
                         },
                         {
-                          "id": "516fb98f-46ca-475e-917e-2563e5a8cd12"   
+                          "id": "516fb98f-46ca-475e-917e-2563e5a8cd12"
                         }
                      ]
-      } 
+      }
 
    Abnormal response
 
@@ -84,18 +84,18 @@ The following responses are only for resetting the passwords for logging in to E
       {
            "error": {
                        "code": "Ecs.xxxx",
-                       "message": "xxxxxxxxxxxxxxx" 
+                       "message": "xxxxxxxxxxxxxxx"
                      },
            "internalError": [
                        {
                           "id": "616fb98f-46ca-475e-917e-2563e5a8cd19",
                           "error_code": "ECS.XXXX",
-                          "error_message": "xxxxxxxxxxxxxxx" 
+                          "error_message": "xxxxxxxxxxxxxxx"
                         },
                        {
                            "id": "516fb98f-46ca-475e-917e-2563e5a8cd12",
                            "error_code": "ECS.XXXX",
-                           "error_message": "xxxxxxxxxxxxxxx" 
+                           "error_message": "xxxxxxxxxxxxxxx"
                        }
                     ]
       }

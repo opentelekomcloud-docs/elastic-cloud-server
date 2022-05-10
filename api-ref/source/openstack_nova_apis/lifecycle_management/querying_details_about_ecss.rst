@@ -442,40 +442,40 @@ Example Response
                "addresses": {
                    "68269e6e-4a27-441b-8029-35373ad50bd9": [
                        {
-                           "addr": "192.168.0.3", 
+                           "addr": "192.168.0.3",
                            "version": 4
                        }
                    ]
-               }, 
-               "created": "2012-09-07T16:56:37Z", 
+               },
+               "created": "2012-09-07T16:56:37Z",
                "flavor": {
-                   "id": "1", 
+                   "id": "1",
                    "links": [
                        {
-                           "href": "http://openstack.example.com/openstack/flavors/1", 
+                           "href": "http://openstack.example.com/openstack/flavors/1",
                            "rel": "bookmark"
                        }
                    ]
-               }, 
-               "hostId": "16d193736a5cfdb60c697ca27ad071d6126fa13baeb670fc9d10645e", 
-               "id": "05184ba3-00ba-4fbc-b7a2-03b62b884931", 
-               "image": "", 
+               },
+               "hostId": "16d193736a5cfdb60c697ca27ad071d6126fa13baeb670fc9d10645e",
+               "id": "05184ba3-00ba-4fbc-b7a2-03b62b884931",
+               "image": "",
                "links": [
                    {
-                       "href": "http://openstack.example.com/v2/openstack/servers/05184ba3-00ba-4fbc-b7a2-03b62b884931", 
+                       "href": "http://openstack.example.com/v2/openstack/servers/05184ba3-00ba-4fbc-b7a2-03b62b884931",
                        "rel": "self"
-                   }, 
+                   },
                    {
-                       "href": "http://openstack.example.com/openstack/servers/05184ba3-00ba-4fbc-b7a2-03b62b884931", 
+                       "href": "http://openstack.example.com/openstack/servers/05184ba3-00ba-4fbc-b7a2-03b62b884931",
                        "rel": "bookmark"
                    }
-               ], 
-               "metadata": {},                         
-               "name": "new-server-test", 
-               "progress": 0, 
-               "status": "ACTIVE", 
-               "tenant_id": "openstack", 
-               "updated": "2012-09-07T16:56:37Z", 
+               ],
+               "metadata": {},
+               "name": "new-server-test",
+               "progress": 0,
+               "status": "ACTIVE",
+               "tenant_id": "openstack",
+               "updated": "2012-09-07T16:56:37Z",
                "user_id": "fake"
            }
        ]

@@ -102,7 +102,7 @@ Example Response
        "metadata":{
            "key":"value"
        }
-   } 
+   }
 
 Returned Values
 ---------------

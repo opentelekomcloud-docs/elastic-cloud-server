@@ -379,42 +379,42 @@ Example Response
            "addresses": {
                "68269e6e-4a27-441b-8029-35373ad50bd9": [
                    {
-                       "addr": "192.168.0.3", 
+                       "addr": "192.168.0.3",
                        "version": 4,
                        "OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:1b:35:78",
                        "OS-EXT-IPS:type": "fixed"
                    }
                ]
-           }, 
-           "created": "2012-08-20T21:11:09Z", 
+           },
+           "created": "2012-08-20T21:11:09Z",
            "flavor": {
-               "id": "1", 
+               "id": "1",
                "links": [
                    {
-                       "href": "http://openstack.example.com/openstack/flavors/1", 
+                       "href": "http://openstack.example.com/openstack/flavors/1",
                        "rel": "bookmark"
                    }
                ]
-           }, 
-           "hostId": "65201c14a29663e06d0748e561207d998b343e1d164bfa0aafa9c45d", 
-           "id": "893c7791-f1df-4c3d-8383-3caae9656c62", 
-           "image": "", 
+           },
+           "hostId": "65201c14a29663e06d0748e561207d998b343e1d164bfa0aafa9c45d",
+           "id": "893c7791-f1df-4c3d-8383-3caae9656c62",
+           "image": "",
            "links": [
                {
-                   "href": "http://openstack.example.com/v2/openstack/servers/893c7791-f1df-4c3d-8383-3caae9656c62", 
+                   "href": "http://openstack.example.com/v2/openstack/servers/893c7791-f1df-4c3d-8383-3caae9656c62",
                    "rel": "self"
-               }, 
+               },
                {
-                   "href": "http://openstack.example.com/openstack/servers/893c7791-f1df-4c3d-8383-3caae9656c62", 
+                   "href": "http://openstack.example.com/openstack/servers/893c7791-f1df-4c3d-8383-3caae9656c62",
                    "rel": "bookmark"
                }
-           ], 
+           ],
            "metadata": {},
-           "name": "new-server-test", 
-           "progress": 0, 
-           "status": "ACTIVE", 
-           "tenant_id": "openstack", 
-           "updated": "2012-08-20T21:11:09Z", 
+           "name": "new-server-test",
+           "progress": 0,
+           "status": "ACTIVE",
+           "tenant_id": "openstack",
+           "updated": "2012-08-20T21:11:09Z",
            "user_id": "fake"
        }
    }

@@ -94,8 +94,8 @@ Example request
            {
                "id": "616fb98f-46ca-475e-917e-2563e5a8cd19"
            }
-       ], 
-       "delete_publicip": false, 
+       ],
+       "delete_publicip": false,
        "delete_volume": false
       }
 
@@ -114,7 +114,7 @@ Or
 
    {
        "error": {
-           "message": "request body is illegal.", 
+           "message": "request body is illegal.",
            "code": "Ecs.0005"
        }
    }

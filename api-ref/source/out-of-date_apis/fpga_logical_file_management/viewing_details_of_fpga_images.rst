@@ -120,40 +120,40 @@ Example Response
 
 .. code-block::
 
-   { 
-     "count": 2, 
-     "fpgaimages": [ 
-       { 
-         "id": "4010a32c5c7d7711015c81ac714c009d", 
-         "name": "FPGA001", 
-         "description": "fpga test", 
-         "status": "active", 
-         "size": 40, 
-         "createdAt": "2017-06-07 08:29:41", 
-         "protected": false, 
-         "message": null, 
-         "metadata": { 
-           "shell_type": "OCL", 
-           "shell_version": "1.0" 
-         },
-         "log_directory": "obs-fpga:vu9p/log"
-       }, 
-       { 
-         "id": "4010a32c5c7d7711015c813e69bd002c", 
-         "name": "FPGA002", 
-         "description": "fpga test", 
-         "status": "active", 
-         "size": 43, 
-         "createdAt": "2017-06-07 16:29:30", 
-         "protected": true, 
+   {
+     "count": 2,
+     "fpgaimages": [
+       {
+         "id": "4010a32c5c7d7711015c81ac714c009d",
+         "name": "FPGA001",
+         "description": "fpga test",
+         "status": "active",
+         "size": 40,
+         "createdAt": "2017-06-07 08:29:41",
+         "protected": false,
          "message": null,
-         "metadata": { 
-           "shell_type": "OCL", 
-           "shell_version": "1.0" 
+         "metadata": {
+           "shell_type": "OCL",
+           "shell_version": "1.0"
          },
          "log_directory": "obs-fpga:vu9p/log"
-       } 
-     ] 
+       },
+       {
+         "id": "4010a32c5c7d7711015c813e69bd002c",
+         "name": "FPGA002",
+         "description": "fpga test",
+         "status": "active",
+         "size": 43,
+         "createdAt": "2017-06-07 16:29:30",
+         "protected": true,
+         "message": null,
+         "metadata": {
+           "shell_type": "OCL",
+           "shell_version": "1.0"
+         },
+         "log_directory": "obs-fpga:vu9p/log"
+       }
+     ]
    }
 
 Returned Values

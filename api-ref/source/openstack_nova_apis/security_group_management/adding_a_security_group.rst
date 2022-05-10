@@ -71,8 +71,8 @@ Example Request
 
 .. code-block::
 
-   { 
-       "addSecurityGroup": { 
+   {
+       "addSecurityGroup": {
            "name": "sg-test"
        }
    }

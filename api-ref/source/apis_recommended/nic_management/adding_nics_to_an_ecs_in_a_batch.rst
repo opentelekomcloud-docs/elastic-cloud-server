@@ -86,7 +86,7 @@ Example Request
    {
        "nics": [
            {
-               "subnet_id": "d32019d3-bc6e-4319-9c1d-6722fc136a23", 
+               "subnet_id": "d32019d3-bc6e-4319-9c1d-6722fc136a23",
                "security_groups": [
                    {
                        "id": "f0ac4394-7e4a-4409-9701-ba8be283dbc3"

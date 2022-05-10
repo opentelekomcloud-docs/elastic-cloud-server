@@ -123,44 +123,44 @@ Example Response
 
 .. code-block::
 
-   { 
-     "associations": [ 
-       { 
-         "image_id": "89e38a0a-de83-4f3d-83b9-a2df2c605487", 
-         "fpgaimages": [ 
-           { 
-             "id": "4010a32b5f231f04015f24259efd0429", 
-             "name": "relate-test", 
-             "description": "relate-test", 
-             "status": "active", 
-             "size": 40, 
-             "createdAt": "2017-10-16 07:46:06", 
-             "protected": true, 
-             "message": null, 
-             "metadata": { 
-               "shell_type": "OCL", 
-               "shell_version": "1.0" 
+   {
+     "associations": [
+       {
+         "image_id": "89e38a0a-de83-4f3d-83b9-a2df2c605487",
+         "fpgaimages": [
+           {
+             "id": "4010a32b5f231f04015f24259efd0429",
+             "name": "relate-test",
+             "description": "relate-test",
+             "status": "active",
+             "size": 40,
+             "createdAt": "2017-10-16 07:46:06",
+             "protected": true,
+             "message": null,
+             "metadata": {
+               "shell_type": "OCL",
+               "shell_version": "1.0"
              },
              "log_directory": "obs-fpga:vu9p/log"
-           }, 
-           { 
-             "id": "4010a32b5f231f04015f23f0c07c041a", 
-             "name": "name123", 
-             "description": "desc123", 
-             "status": "active", 
-             "size": 60, 
-             "createdAt": "2017-10-16 06:48:21", 
-             "protected": true, 
-             "message": null, 
-             "metadata": { 
-               "shell_type": "OCL", 
-               "shell_version": "1.0" 
+           },
+           {
+             "id": "4010a32b5f231f04015f23f0c07c041a",
+             "name": "name123",
+             "description": "desc123",
+             "status": "active",
+             "size": 60,
+             "createdAt": "2017-10-16 06:48:21",
+             "protected": true,
+             "message": null,
+             "metadata": {
+               "shell_type": "OCL",
+               "shell_version": "1.0"
              },
              "log_directory": "obs-fpga:vu9p/log"
-           } 
-         ] 
-       } 
-     ] 
+           }
+         ]
+       }
+     ]
    }
 
 Returned Values

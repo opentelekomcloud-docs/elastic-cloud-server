@@ -58,8 +58,8 @@ Example Request
 
 .. code-block::
 
-   {  
-      "monitorMetrics" : null 
+   {
+      "monitorMetrics" : null
    }
 
 Example Response

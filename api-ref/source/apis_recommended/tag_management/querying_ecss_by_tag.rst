@@ -182,19 +182,19 @@ Example Request
 .. code-block::
 
    {
-       "offset": "100", 
-       "limit": "100", 
-       "action": "filter", 
+       "offset": "100",
+       "limit": "100",
+       "action": "filter",
        "matches":[
        {
-           "key": "resource_name", 
+           "key": "resource_name",
            "value": "ecs_test"
-        }], 
+        }],
        "tags": [
        {
-           "key": "key1", 
+           "key": "key1",
            "values": [
-               "value1", 
+               "value1",
                "value2"
            ]
        }]
@@ -210,9 +210,9 @@ Example Response
       {
             "resources": [
                {
-                  "resource_detail": null, 
-                  "resource_id": "cdfs_cefs_wesas_12_dsad", 
-                  "resource_name": "ecs_test", 
+                  "resource_detail": null,
+                  "resource_id": "cdfs_cefs_wesas_12_dsad",
+                  "resource_name": "ecs_test",
                   "tags": [
                       {
                          "key": "key1",
@@ -220,7 +220,7 @@ Example Response
                       }
                    ]
                }
-             ], 
+             ],
             "total_count": 1000
       }
 

@@ -63,7 +63,7 @@ Example Request
 .. code-block::
 
    {
-      "unlock": null 
+      "unlock": null
    }
 
 Example Response

@@ -462,35 +462,35 @@ Example URL request
 
 .. code-block::
 
-    { 
-       "server": { 
-           "flavorRef": "2", 
-           "name": "wjvm48", 
-           "metadata": { 
-               "name": "name_xx1", 
-               "id": "id_xxxx1" 
-           }, 
-           "block_device_mapping_v2": [{ 
-               "source_type": "image", 
-               "destination_type": "volume", 
-               "uuid": "b023fe17-11db-4efb-b800-78882a0e394b", 
-               "delete_on_termination": "False", 
+    {
+       "server": {
+           "flavorRef": "2",
+           "name": "wjvm48",
+           "metadata": {
+               "name": "name_xx1",
+               "id": "id_xxxx1"
+           },
+           "block_device_mapping_v2": [{
+               "source_type": "image",
+               "destination_type": "volume",
+               "uuid": "b023fe17-11db-4efb-b800-78882a0e394b",
+               "delete_on_termination": "False",
                "boot_index": "0",
                "volume_type": "SAS",
                "volume_size": "40"
-           }], 
-           "security_groups": [{ 
-               "name": "name_xx5_sg" 
-           }], 
-           "networks": [{ 
-               "uuid": "fd40e6f8-942d-4b4e-a7ae-465287b02a2c", 
-               "port": "e730a11c-1a19-49cc-8797-cee2ad67af6f", 
-               "fixed_ip": "10.20.30.137" 
-           }], 
-           "key_name": "test", 
-           "user_data": "ICAgICAgDQoiQSBjbG91ZCBkb2VzIG5vdCBrbm93IHdoeSBpdCBtb3ZlcyBpbiBqdXN0IHN1Y2ggYSBkaXJlY3Rpb24gYW5kIGF0IHN1Y2ggYSBzcGVlZC4uLkl0IGZlZWxzIGFuIGltcHVsc2lvbi4uLnRoaXMgaXMgdGhlIHBsYWNlIHRvIGdvIG5vdy4gQnV0IHRoZSBza3kga25vd3MgdGhlIHJlYXNvbnMgYW5kIHRoZSBwYXR0ZXJucyBiZWhpbmQgYWxsIGNsb3VkcywgYW5kIHlvdSB3aWxsIGtub3csIHRvbywgd2hlbiB5b3UgbGlmdCB5b3Vyc2VsZiBoaWdoIGVub3VnaCB0byBzZWUgYmV5b25kIGhvcml6b25zLiINCg0KLVJpY2hhcmQgQmFjaA==", 
+           }],
+           "security_groups": [{
+               "name": "name_xx5_sg"
+           }],
+           "networks": [{
+               "uuid": "fd40e6f8-942d-4b4e-a7ae-465287b02a2c",
+               "port": "e730a11c-1a19-49cc-8797-cee2ad67af6f",
+               "fixed_ip": "10.20.30.137"
+           }],
+           "key_name": "test",
+           "user_data": "ICAgICAgDQoiQSBjbG91ZCBkb2VzIG5vdCBrbm93IHdoeSBpdCBtb3ZlcyBpbiBqdXN0IHN1Y2ggYSBkaXJlY3Rpb24gYW5kIGF0IHN1Y2ggYSBzcGVlZC4uLkl0IGZlZWxzIGFuIGltcHVsc2lvbi4uLnRoaXMgaXMgdGhlIHBsYWNlIHRvIGdvIG5vdy4gQnV0IHRoZSBza3kga25vd3MgdGhlIHJlYXNvbnMgYW5kIHRoZSBwYXR0ZXJucyBiZWhpbmQgYWxsIGNsb3VkcywgYW5kIHlvdSB3aWxsIGtub3csIHRvbywgd2hlbiB5b3UgbGlmdCB5b3Vyc2VsZiBoaWdoIGVub3VnaCB0byBzZWUgYmV5b25kIGhvcml6b25zLiINCg0KLVJpY2hhcmQgQmFjaA==",
            "availability_zone":"az1-dc1"
-       } 
+       }
    }
 
 **Example 2: Use a snapshot to create an ECS through the API block_device_mapping_v2.**
@@ -520,71 +520,71 @@ Example URL request
                {
                    "uuid":"79a68cef-0936-4e21-b1f4-b800ecb70246"
                }
-           ] 
-       } 
+           ]
+       }
    }
 
 **Example 3: Use a disk to create an ECS through the API block_device_mapping_v2.**
 
 .. code-block::
 
-   { 
-       "server": { 
-           "flavorRef": "2", 
-           "name": "wjvm48", 
-           "metadata": { 
-               "name": "name_xx1", 
-               "id": "id_xxxx1" 
-           }, 
-           "block_device_mapping_v2": [{ 
-               "source_type": "volume", 
-               "destination_type": "volume", 
-               "uuid": "bd7e4f86-b004-4745-bea2-a55b1085f107", 
-               "delete_on_termination": "False", 
-               "boot_index": "0", 
+   {
+       "server": {
+           "flavorRef": "2",
+           "name": "wjvm48",
+           "metadata": {
+               "name": "name_xx1",
+               "id": "id_xxxx1"
+           },
+           "block_device_mapping_v2": [{
+               "source_type": "volume",
+               "destination_type": "volume",
+               "uuid": "bd7e4f86-b004-4745-bea2-a55b1085f107",
+               "delete_on_termination": "False",
+               "boot_index": "0",
                "volume_type": "dsware",
                "volume_size": "40"
-           }], 
-           "security_groups": [{ 
-               "name": "name_xx5_sg" 
-           }], 
-           "networks": [{ 
-               "uuid": "fd40e6f8-942d-4b4e-a7ae-465287b02a2c", 
-               "port": "e730a11c-1a19-49cc-8797-cee2ad67af6f", 
-               "fixed_ip": "10.20.30.137" 
-           }], 
-           "key_name": "test", 
-           "user_data": "ICAgICAgDQoiQSBjbG91ZCBkb2VzIG5vdCBrbm93IHdoeSBpdCBtb3ZlcyBpbiBqdXN0IHN1Y2ggYSBkaXJlY3Rpb24gYW5kIGF0IHN1Y2ggYSBzcGVlZC4uLkl0IGZlZWxzIGFuIGltcHVsc2lvbi4uLnRoaXMgaXMgdGhlIHBsYWNlIHRvIGdvIG5vdy4gQnV0IHRoZSBza3kga25vd3MgdGhlIHJlYXNvbnMgYW5kIHRoZSBwYXR0ZXJucyBiZWhpbmQgYWxsIGNsb3VkcywgYW5kIHlvdSB3aWxsIGtub3csIHRvbywgd2hlbiB5b3UgbGlmdCB5b3Vyc2VsZiBoaWdoIGVub3VnaCB0byBzZWUgYmV5b25kIGhvcml6b25zLiINCg0KLVJpY2hhcmQgQmFjaA==", 
+           }],
+           "security_groups": [{
+               "name": "name_xx5_sg"
+           }],
+           "networks": [{
+               "uuid": "fd40e6f8-942d-4b4e-a7ae-465287b02a2c",
+               "port": "e730a11c-1a19-49cc-8797-cee2ad67af6f",
+               "fixed_ip": "10.20.30.137"
+           }],
+           "key_name": "test",
+           "user_data": "ICAgICAgDQoiQSBjbG91ZCBkb2VzIG5vdCBrbm93IHdoeSBpdCBtb3ZlcyBpbiBqdXN0IHN1Y2ggYSBkaXJlY3Rpb24gYW5kIGF0IHN1Y2ggYSBzcGVlZC4uLkl0IGZlZWxzIGFuIGltcHVsc2lvbi4uLnRoaXMgaXMgdGhlIHBsYWNlIHRvIGdvIG5vdy4gQnV0IHRoZSBza3kga25vd3MgdGhlIHJlYXNvbnMgYW5kIHRoZSBwYXR0ZXJucyBiZWhpbmQgYWxsIGNsb3VkcywgYW5kIHlvdSB3aWxsIGtub3csIHRvbywgd2hlbiB5b3UgbGlmdCB5b3Vyc2VsZiBoaWdoIGVub3VnaCB0byBzZWUgYmV5b25kIGhvcml6b25zLiINCg0KLVJpY2hhcmQgQmFjaA==",
            "availability_zone":"az1-dc1"
-       } 
+       }
    }
 
 **Example 4: Create an ECS through the API imageRef.**
 
 .. code-block::
 
-   { 
-       "server": { 
-           "flavorRef": "2", 
-           "name": "wjvm48", 
-           "metadata": { 
-               "name": "name_xx1", 
-               "id": "id_xxxx1" 
-           }, 
-           "adminPass": "name_xx1", 
+   {
+       "server": {
+           "flavorRef": "2",
+           "name": "wjvm48",
+           "metadata": {
+               "name": "name_xx1",
+               "id": "id_xxxx1"
+           },
+           "adminPass": "name_xx1",
            "imageRef": "6b344c54-d606-4e1a-a99e-a7d0250c3d14",
-           "security_groups": [{ 
-               "name": "name_xx5_sg" 
-           }], 
-           "networks": [{ 
+           "security_groups": [{
+               "name": "name_xx5_sg"
+           }],
+           "networks": [{
                "uuid": "fd40e6f8-942d-4b4e-a7ae-465287b02a2c",
                "port": "e730a11c-1a19-49cc-8797-cee2ad67af6f",
-               "fixed_ip": "10.20.30.137" 
-           }], 
-           "key_name": "test", 
-           "user_data": "ICAgICAgDQoiQSBjbG91ZCBkb2VzIG5vdCBrbm93IHdoeSBpdCBtb3ZlcyBpbiBqdXN0IHN1Y2ggYSBkaXJlY3Rpb24gYW5kIGF0IHN1Y2ggYSBzcGVlZC4uLkl0IGZlZWxzIGFuIGltcHVsc2lvbi4uLnRoaXMgaXMgdGhlIHBsYWNlIHRvIGdvIG5vdy4gQnV0IHRoZSBza3kga25vd3MgdGhlIHJlYXNvbnMgYW5kIHRoZSBwYXR0ZXJucyBiZWhpbmQgYWxsIGNsb3VkcywgYW5kIHlvdSB3aWxsIGtub3csIHRvbywgd2hlbiB5b3UgbGlmdCB5b3Vyc2VsZiBoaWdoIGVub3VnaCB0byBzZWUgYmV5b25kIGhvcml6b25zLiINCg0KLVJpY2hhcmQgQmFjaA==", 
+               "fixed_ip": "10.20.30.137"
+           }],
+           "key_name": "test",
+           "user_data": "ICAgICAgDQoiQSBjbG91ZCBkb2VzIG5vdCBrbm93IHdoeSBpdCBtb3ZlcyBpbiBqdXN0IHN1Y2ggYSBkaXJlY3Rpb24gYW5kIGF0IHN1Y2ggYSBzcGVlZC4uLkl0IGZlZWxzIGFuIGltcHVsc2lvbi4uLnRoaXMgaXMgdGhlIHBsYWNlIHRvIGdvIG5vdy4gQnV0IHRoZSBza3kga25vd3MgdGhlIHJlYXNvbnMgYW5kIHRoZSBwYXR0ZXJucyBiZWhpbmQgYWxsIGNsb3VkcywgYW5kIHlvdSB3aWxsIGtub3csIHRvbywgd2hlbiB5b3UgbGlmdCB5b3Vyc2VsZiBoaWdoIGVub3VnaCB0byBzZWUgYmV5b25kIGhvcml6b25zLiINCg0KLVJpY2hhcmQgQmFjaA==",
            "availability_zone":"az1-dc1"
-       } 
+       }
    }
 
 Example Response (Creating an ECS)

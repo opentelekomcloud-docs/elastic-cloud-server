@@ -103,38 +103,38 @@ Example Response
 
    {
        "image": {
-           "status": "ACTIVE", 
-           "updated": "2015-12-27T02:52:25Z", 
-           "name": "cirror", 
+           "status": "ACTIVE",
+           "updated": "2015-12-27T02:52:25Z",
+           "name": "cirror",
            "links": [
                {
-                   "href": "https://compute.localdomain.com:8001/v2/719e9483f42d4784a089862ac4c3e8d0/images/17a1890b-0fa4-485e-8505-14e294017988", 
+                   "href": "https://compute.localdomain.com:8001/v2/719e9483f42d4784a089862ac4c3e8d0/images/17a1890b-0fa4-485e-8505-14e294017988",
                    "rel": "self"
-               }, 
+               },
                {
-                   "href": "https://compute.localdomain.com:8001/719e9483f42d4784a089862ac4c3e8d0/images/17a1890b-0fa4-485e-8505-14e294017988", 
+                   "href": "https://compute.localdomain.com:8001/719e9483f42d4784a089862ac4c3e8d0/images/17a1890b-0fa4-485e-8505-14e294017988",
                    "rel": "bookmark"
-               }, 
+               },
                {
-                   "href": "https://https://image.az2.dc1.domainname.com:443/719e9483f42d4784a089862ac4c3e8d0/images/17a1890b-0fa4-485e-8505-14e294017988", 
-                   "type": "application/vnd.openstack.image", 
+                   "href": "https://https://image.az2.dc1.domainname.com:443/719e9483f42d4784a089862ac4c3e8d0/images/17a1890b-0fa4-485e-8505-14e294017988",
+                   "type": "application/vnd.openstack.image",
                    "rel": "alternate"
                }
-           ], 
-           "created": "2015-12-27T02:52:24Z", 
-           "minDisk": 0, 
-           "progress": 100, 
-           "minRam": 0, 
+           ],
+           "created": "2015-12-27T02:52:24Z",
+           "minDisk": 0,
+           "progress": 100,
+           "minRam": 0,
            "metadata": {
-               "__os_version": "CentOS 4.4 32bit", 
-               "file_format": "img", 
-               "file_name": "**.img", 
-               "describe": "", 
-               "__os_type": "Linux", 
-               "virtual_env_type": "KVM", 
+               "__os_version": "CentOS 4.4 32bit",
+               "file_format": "img",
+               "file_name": "**.img",
+               "describe": "",
+               "__os_type": "Linux",
+               "virtual_env_type": "KVM",
                "hw_disk_bus": "scsi"
-           }, 
-           "id": "17a1890b-0fa4-485e-8505-14e294017988", 
+           },
+           "id": "17a1890b-0fa4-485e-8505-14e294017988",
            "OS-EXT-IMG-SIZE:size": 13167616
        }
    }

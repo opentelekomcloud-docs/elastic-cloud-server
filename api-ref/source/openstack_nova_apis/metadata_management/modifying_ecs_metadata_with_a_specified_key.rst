@@ -91,7 +91,7 @@ Example Request
        "meta":{
            "key":"value"
        }
-   } 
+   }
 
 Example Response
 ----------------
@@ -102,7 +102,7 @@ Example Response
        "meta":{
            "key":"value"
        }
-   } 
+   }
 
 Returned Values
 ---------------

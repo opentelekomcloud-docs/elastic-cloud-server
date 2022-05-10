@@ -118,16 +118,16 @@ Example Request
 
 .. code-block::
 
-   { 
-     "fpga_image": { 
-       "location": "obs-fpga:fpga.bin", 
-       "name": "fpga-image-test", 
-       "description": "fpga description", 
-       "metadata": { 
-         "shell_type": "OCL", 
-         "shell_version": "1.0" 
-       } 
-     } 
+   {
+     "fpga_image": {
+       "location": "obs-fpga:fpga.bin",
+       "name": "fpga-image-test",
+       "description": "fpga description",
+       "metadata": {
+         "shell_type": "OCL",
+         "shell_version": "1.0"
+       }
+     }
    }
 
 Example Response
