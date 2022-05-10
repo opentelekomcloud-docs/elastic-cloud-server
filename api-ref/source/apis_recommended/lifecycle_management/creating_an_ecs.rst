@@ -449,52 +449,52 @@ The public cloud platform provides various ECS types. The flavor name/ID varies 
       {
           "server": {
               "availability_zone":"az1-dc1",
-              "name": "newserver", 
-              "imageRef": "imageid_123", 
+              "name": "newserver",
+              "imageRef": "imageid_123",
               "root_volume": {
                   "volumetype": "SSD"
-              }, 
+              },
               "data_volumes": [
                   {
-                      "volumetype": "SSD", 
+                      "volumetype": "SSD",
                       "size": 100
-                  }, 
+                  },
                   {
-                      "volumetype": "SSD", 
+                      "volumetype": "SSD",
                       "size": 100,
                       "multiattach": true,
                       "hw:passthrough": true
                   }
-              ], 
-              "flavorRef": "m3.larger", 
-              "vpcid": "0dae26c9-9a70-4392-93f3-87d53115d171", 
+              ],
+              "flavorRef": "m3.larger",
+              "vpcid": "0dae26c9-9a70-4392-93f3-87d53115d171",
               "security_groups": [
                   {
                       "id": "507ca48f-814c-4293-8706-300564d54620"
                   }
-              ], 
+              ],
               "nics": [
                   {
-                      "subnet_id": "157ee789-03ea-45b1-a698-76c92660dd83", 
+                      "subnet_id": "157ee789-03ea-45b1-a698-76c92660dd83",
                       "extra_dhcp_opts":[
                            {
-                                 "opt_value": 8888, 
+                                 "opt_value": 8888,
                                  "opt_name": "26"
                            }
                       ]
                   }
-              ], 
+              ],
               "publicip": {
                   "eip": {
                       "iptype": "5_bgp",
                       "bandwidth": {
-                          "size": 10, 
+                          "size": 10,
                           "sharetype": "PER"
                       }
                   }
-              }, 
-              "key_name": "sshkey-123", 
-              "count": 1 
+              },
+              "key_name": "sshkey-123",
+              "count": 1
           }
       }
 
@@ -510,36 +510,36 @@ The public cloud platform provides various ECS types. The flavor name/ID varies 
 
       {
           "server": {
-              "availability_zone":"az1-dc1", 
-              "name": "wholeImageServer", 
-              "imageRef": "ff49b1f1-3e3e-4913-89c6-a026041661e8", 
+              "availability_zone":"az1-dc1",
+              "name": "wholeImageServer",
+              "imageRef": "ff49b1f1-3e3e-4913-89c6-a026041661e8",
               "root_volume": {
                   "volumetype": "SSD",
                   "metadata": {
                        "__system__encrypted": "1",
                        "__system__cmkid": "83cdb52d-9ebf-4469-9cfa-e7b5b80da846"
                    }
-              }, 
+              },
               "data_volumes": [
                   {
-                      "volumetype": "SSD", 
+                      "volumetype": "SSD",
                       "size": 100,
                       "extendparam":{
                           "snapshotId": "ef020653-9742-4d24-8672-10af42c9702b"
                       }
-                  }, 
+                  },
                   {
-                      "volumetype": "SSD", 
+                      "volumetype": "SSD",
                       "size": 50
                   }
-              ], 
-              "flavorRef": "s2.large.2", 
-              "vpcid": "0dae26c9-9a70-4392-93f3-87d53115d171", 
+              ],
+              "flavorRef": "s2.large.2",
+              "vpcid": "0dae26c9-9a70-4392-93f3-87d53115d171",
               "security_groups": [
                   {
                       "id": "507ca48f-814c-4293-8706-300564d54620"
                   }
-              ], 
+              ],
               "nics": [
                   {
                       "subnet_id": "157ee789-03ea-45b1-a698-76c92660dd83"
@@ -554,28 +554,28 @@ The public cloud platform provides various ECS types. The flavor name/ID varies 
    .. code-block::
 
       {
-          "dry_run": true 
+          "dry_run": true
           "server": {
               "availability_zone":"az1-dc1",
-              "name": "newserver", 
-              "imageRef": "1189efbf-d48b-46ad-a823-94b942e2a000", 
+              "name": "newserver",
+              "imageRef": "1189efbf-d48b-46ad-a823-94b942e2a000",
               "root_volume": {
                   "volumetype": "SSD"
-              }, 
-              "data_volumes": [ ], 
-              "flavorRef": "s3.xlarge.2", 
-              "vpcid": "0dae26c9-9a70-4392-93f3-87d53115d171", 
+              },
+              "data_volumes": [ ],
+              "flavorRef": "s3.xlarge.2",
+              "vpcid": "0dae26c9-9a70-4392-93f3-87d53115d171",
               "security_groups": [
                   {
                       "id": "507ca48f-814c-4293-8706-300564d54620"
                   }
-              ], 
+              ],
               "nics": [
                   {
                       "subnet_id": "157ee789-03ea-45b1-a698-76c92660dd83"
                   }
-              ], 
-              "key_name": "sshkey-123", 
+              ],
+              "key_name": "sshkey-123",
               "count": 1
           }
       }
@@ -595,7 +595,7 @@ Or
 
    {
        "error": {
-           "code": "request body is illegal.", 
+           "code": "request body is illegal.",
            "message": "Ecs.0005"
        }
    }

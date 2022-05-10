@@ -59,14 +59,14 @@ Responses (Task)
 
    .. code-block::
 
-      { 
+      {
           "job_id": "70a599e0-31e7-49b7-b260-868f441e862b"
-      } 
+      }
 
    Abnormal response
 
    .. code-block::
 
-      { 
+      {
           "error": {"message": "", "code": XXX,""}
-      } 
+      }

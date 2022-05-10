@@ -155,7 +155,7 @@ Example Request
 
       {
           "os-reinstall": {
-              "adminpass": "!QAZxsw2", 
+              "adminpass": "!QAZxsw2",
               "userid": "7e25b1da389f4697a79df3a0e5bd494e",
               "mode": "withStopServer"
           }
@@ -167,7 +167,7 @@ Example Request
 
       {
           "os-reinstall": {
-              "keyname": "KeyPair-350b", 
+              "keyname": "KeyPair-350b",
               "userid": "7e25b1da389f4697a79df3a0e5bd494e"
           }
       }
@@ -178,7 +178,7 @@ Example Request
 
       {
           "os-reinstall": {
-              "adminpass": "!QAZxsw2", 
+              "adminpass": "!QAZxsw2",
               "userid": "7e25b1da389f4697a79df3a0e5bd494e",
               "metadata": {
                     "__system__encrypted": "1",

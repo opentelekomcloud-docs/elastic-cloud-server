@@ -159,8 +159,8 @@ Example Request
 
       {
           "os-change": {
-              "adminpass": "1qazXSW@", 
-              "userid": "7e25b1da389f4697a79df3a0e5bd494e", 
+              "adminpass": "1qazXSW@",
+              "userid": "7e25b1da389f4697a79df3a0e5bd494e",
               "imageid": "e215580f-73ad-429d-b6f2-5433947433b0"
           }
       }
@@ -171,8 +171,8 @@ Example Request
 
       {
           "os-change": {
-              "keyname": "KeyPair-350b", 
-              "userid": "7e25b1da389f4697a79df3a0e5bd494e", 
+              "keyname": "KeyPair-350b",
+              "userid": "7e25b1da389f4697a79df3a0e5bd494e",
               "imageid": "e215580f-73ad-429d-b6f2-5433947433b0"
           }
       }
@@ -183,9 +183,9 @@ Example Request
 
       {
           "os-change": {
-              "adminpass": "1qazXSW@", 
-              "userid": "7e25b1da389f4697a79df3a0e5bd494e", 
-              "imageid": "e215580f-73ad-429d-b6f2-5433947433b0", 
+              "adminpass": "1qazXSW@",
+              "userid": "7e25b1da389f4697a79df3a0e5bd494e",
+              "imageid": "e215580f-73ad-429d-b6f2-5433947433b0",
               "metadata": {
                     "__system__encrypted": "1",
                     "__system__cmkid": "83cdb52d-9ebf-4469-9cfa-e7b5b80da846"

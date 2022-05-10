@@ -68,7 +68,7 @@ Example response
 
 .. code-block::
 
-   { 
+   {
        "tags": ["baz=xyy", "foo", "qux"]
    }
 

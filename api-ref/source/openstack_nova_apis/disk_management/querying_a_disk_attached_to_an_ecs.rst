@@ -78,7 +78,7 @@ Example Response
 .. code-block::
 
    {
-       "volumeAttachment": 
+       "volumeAttachment":
            {
                "device": "/dev/sdd",
                "id": "a26887c6-c47b-4654-abb5-dfadf7d3f803",

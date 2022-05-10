@@ -97,7 +97,7 @@ Example Response
 .. code-block::
 
    {
-       "volume": 
+       "volume":
        {
            "status": "available",
            "attachments": [{}],
@@ -109,7 +109,7 @@ Example Response
            "snapshotId": null,
            "metadata": {},
            "id": "70b14513-faad-4646-b7ab-a065cef282b4",
-           "size": 1    
+           "size": 1
        }
    }
 

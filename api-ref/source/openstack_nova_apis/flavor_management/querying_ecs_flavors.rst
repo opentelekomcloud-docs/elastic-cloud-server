@@ -142,7 +142,7 @@ Example Response
                "name": "c3.xlarge"
            }
        ]
-   }     
+   }
 
 Returned Values
 ---------------

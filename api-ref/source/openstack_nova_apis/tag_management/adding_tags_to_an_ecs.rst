@@ -75,7 +75,7 @@ Example Request
 
 .. code-block::
 
-   { 
+   {
       "tags": ["baz", "foo", "qux"]
    }
 
@@ -84,7 +84,7 @@ Example Response
 
 .. code-block::
 
-   { 
+   {
       "tags": ["baz", "foo", "qux"]
    }
 

@@ -69,8 +69,8 @@ Example Request
 
 .. code-block::
 
-   { 
-       "removeSecurityGroup": { 
+   {
+       "removeSecurityGroup": {
            "name": "sg-test"
        }
    }
