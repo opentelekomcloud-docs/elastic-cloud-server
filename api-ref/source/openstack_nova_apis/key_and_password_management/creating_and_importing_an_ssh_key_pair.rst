@@ -8,7 +8,7 @@ Creating and Importing an SSH Key Pair
 Function
 --------
 
-This API is used to create an SSH key pair or import a public key to generate a key pair.
+This xxxx API is used to create an SSH key pair or import a public key to generate a key pair.
 
 After a private SSH key is created, download the private key to a local directory. Then, you can use this private key to log in to the ECS. To ensure ECS security, the private key can be downloaded only once. Keep it secure.
 
