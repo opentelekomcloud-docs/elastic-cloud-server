@@ -69,7 +69,7 @@ To use the 20 GB capacity, performing the following operations:
 
       Information similar to the following is displayed:
 
-      .. code-block::
+      .. code-block:: console
 
          [root@ecs-8d6c ]# fdisk /dev/xvda
          Welcome to fdisk (util-linux 2.23.2).
@@ -190,7 +190,7 @@ To use the 20 GB capacity, performing the following operations:
 
       Information similar to the following is displayed:
 
-      .. code-block::
+      .. code-block:: console
 
          [root@ecs-86dc ]# mkfs -t ext4 /dev/xvda3
          mke2fs 1.42.9 (28-Dec-2013)
@@ -231,7 +231,7 @@ To use the 20 GB capacity, performing the following operations:
 
       Information similar to the following is displayed:
 
-      .. code-block::
+      .. code-block:: console
 
          [root@ecs-86dc ]# mount /dev/xvda3 /root/new
          [root@ecs-86dc ]#

@@ -54,7 +54,7 @@ The following example shows you how a new partition can be created on a new data
 
    Information similar to the following is displayed:
 
-   .. code-block::
+   .. code-block:: console
 
       [root@ecs-test-0001 ~]# parted /dev/vdb
       GNU Parted 3.1
@@ -167,7 +167,7 @@ The following example shows you how a new partition can be created on a new data
 
    Information similar to the following is displayed:
 
-   .. code-block::
+   .. code-block:: console
 
       [root@ecs-test-0001 ~]# lsblk
       NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
@@ -188,7 +188,7 @@ The following example shows you how a new partition can be created on a new data
 
    Information similar to the following is displayed:
 
-   .. code-block::
+   .. code-block:: console
 
       [root@ecs-test-0001 ~]# mkfs -t ext4 /dev/vdb1
       mke2fs 1.42.9 (28-Dec-2013)
@@ -241,7 +241,7 @@ The following example shows you how a new partition can be created on a new data
 
    Information similar to the following is displayed:
 
-   .. code-block::
+   .. code-block:: console
 
       [root@ecs-test-0001 ~]# df -TH
       Filesystem     Type      Size  Used Avail Use% Mounted on
@@ -282,7 +282,7 @@ The following procedure shows how to set automatic disk mounting at server start
 
    Information similar to the following is displayed:
 
-   .. code-block::
+   .. code-block:: console
 
       [root@ecs-test-0001 ~]# blkid /dev/vdb1
       /dev/vdb1: UUID="0b3040e2-1367-4abb-841d-ddb0b92693df" TYPE="ext4"

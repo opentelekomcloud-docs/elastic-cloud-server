@@ -21,7 +21,7 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
 
    **parted -l /dev/xvda**
 
-   .. code-block::
+   .. code-block:: console
 
       [root@sluo-ecs-a611 ~]# parted -l /dev/xvda
       Disk /dev/xvda: 107GB
@@ -41,7 +41,7 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
 
       **tail -n 3 /etc/fstab**
 
-      .. code-block::
+      .. code-block:: console
 
          [root@sluo-ecs-a611 ~]# tail -n 3 /etc/fstab 
          #
@@ -54,7 +54,7 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
 
       **tail -n 3 /etc/fstab**
 
-      .. code-block::
+      .. code-block:: console
 
          [root@sluo-ecs-a611 ~]# vi /etc/fstab 
          [root@sluo-ecs-a611 ~]# tail -n 3 /etc/fstab 
@@ -71,7 +71,7 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
 
       **parted /dev/xvda**
 
-      .. code-block::
+      .. code-block:: console
 
          [root@sluo-ecs-a611 ~]# parted /dev/xvda
          GNU Parted 3.1
@@ -145,7 +145,7 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
 
    **parted -l /dev/xvda**
 
-   .. code-block::
+   .. code-block:: console
 
       [root@sluo-ecs-a611 ~]# parted -l /dev/xvda
       Disk /dev/xvda: 107GB
@@ -166,14 +166,14 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
 
    **growpart /dev/xvda 1**
 
-   .. code-block::
+   .. code-block:: console
 
       [root@sluo-ecs-a611 ~]# growpart /dev/xvda 1
       CHANGED: partition=1 start=2048 old: size=79978496 end=79980544 new: size=209710462,end=209712510
 
 #. Run the following command to verify that online capacity expansion is successful:
 
-   .. code-block::
+   .. code-block:: console
 
       [root@sluo-ecs-a611 ~]# parted -l /dev/xvda
       Disk /dev/xvda: 107GB
@@ -190,7 +190,7 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
 
    Suppose the partition name is **/dev/xvda1**, run the following command:
 
-   .. code-block::
+   .. code-block:: console
 
       [root@sluo-ecs-a611 ~]# resize2fs -f /dev/xvda1
       resize2fs 1.42.9 (28-Dec-2013)

@@ -155,7 +155,7 @@ For example, if the serial number of the VBD disk is 62f0d06b-808d-480d-8, run e
 
 The following information is displayed:
 
-.. code-block::
+.. code-block:: console
 
    [root@ecs-ab63 ~]# udevadm info --query=all --name=/dev/vdb | grep ID_SERIAL
    E: ID_SERIAL=62f0d06b-808d-480d-8
@@ -181,7 +181,7 @@ Using a VBD to Obtain a Disk Device Name (Linux)
 
    The following information is displayed:
 
-   .. code-block::
+   .. code-block:: console
 
       [root@ecs-ab63 ~]# ll /sys/bus/pci/devices/0000:02:02.0/virtio*/block
       total 0
@@ -237,7 +237,7 @@ Using a WWN to Obtain a Disk Device Name (Linux)
 
    The following information is displayed:
 
-   .. code-block::
+   .. code-block:: console
 
       [root@host-192-168-133-148 block]# ll /dev/disk/by-id/ |grep 6888603000008b32fa16688d09368506 |grep scsi-3
       lrwxrwxrwx 1 root root  9 May 21 20:22 scsi-36888603000008b32fa16688d09368506 -> ../../sda
