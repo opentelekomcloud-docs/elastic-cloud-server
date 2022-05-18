@@ -77,7 +77,7 @@ Example Request
 
 In the request, the parameters to restart ECSs must be sent with field **reboot**. For details, see the example request.
 
-.. code-block::
+.. code-block:: text
 
    POST https://{endpoint}/v1/{project_id}/cloudservers/action
 

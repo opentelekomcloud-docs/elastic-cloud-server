@@ -123,7 +123,7 @@ Response
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    POST https://{endpoint}/v2/{project_id}/os-security-group-rules
    POST https://{endpoint}/v2.1/{project_id}/os-security-group-rules

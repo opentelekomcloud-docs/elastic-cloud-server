@@ -123,7 +123,7 @@ None
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    DELETE https://{endpoint}/v2/6fbe9263116a4b68818cf1edce16bc4f/servers/ab258e25-e351-47c7-b6e3-0749c5d9ed6a/os-volume_attachments/54667652-3029-4af8-9222-2d53066fd61c
    DELETE https://{endpoint}/v2.1/6fbe9263116a4b68818cf1edce16bc4f/servers/ab258e25-e351-47c7-b6e3-0749c5d9ed6a/os-volume_attachments/54667652-3029-4af8-9222-2d53066fd61c

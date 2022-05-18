@@ -83,7 +83,7 @@ Example Request
 
 Example request
 
-.. code-block::
+.. code-block:: text
 
    POST https://{endpoint}/v1/{project_id}/cloudservers/delete
 

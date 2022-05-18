@@ -68,7 +68,7 @@ Example Request
 
 In the request, the parameters to start ECSs must be sent with field **os-start**. For details, see the example request.
 
-.. code-block::
+.. code-block:: text
 
    POST https://{endpoint}/v1/{project_id}/cloudservers/action
 

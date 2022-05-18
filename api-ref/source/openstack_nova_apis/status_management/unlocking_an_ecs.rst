@@ -55,7 +55,7 @@ None
 Example Request
 ---------------
 
-.. code-block::
+.. code-block:: text
 
    POST https://{endpoint}/v2/{project_id}/servers/{server_id}/action
    POST https://{endpoint}/v2.1/{project_id}/servers/{server_id}/action
