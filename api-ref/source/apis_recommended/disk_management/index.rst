@@ -7,6 +7,7 @@ Disk Management
 .. toctree::
    :maxdepth: 1
 
+   querying_information_about_disks_attached_to_an_ecs
    attaching_a_disk_to_an_ecs
    detaching_an_evs_disk_from_an_ecs
    querying_disk_attachment_of_an_ecs

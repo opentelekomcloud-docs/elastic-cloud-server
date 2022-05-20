@@ -147,15 +147,15 @@ Example Response
                "id": "ee10f19c-503c-44af-af2f-73d5e42f7a17",
                "links": [
                    {
-                       "href": "http://172.25.150.84:8774/v2/d9ebe43510414ef590a4aa158605329e/images/ee10f19c-503c-44af-af2f-73d5e42f7a17",
+                       "href": "http://xxx/v2/d9ebe43510414ef590a4aa158605329e/images/ee10f19c-503c-44af-af2f-73d5e42f7a17",
                        "rel": "self"
                    },
                    {
-                       "href": "http://172.25.150.84:8774/d9ebe43510414ef590a4aa158605329e/images/ee10f19c-503c-44af-af2f-73d5e42f7a17",
+                       "href": "http://xxx/d9ebe43510414ef590a4aa158605329e/images/ee10f19c-503c-44af-af2f-73d5e42f7a17",
                        "rel": "bookmark"
                    },
                    {
-                       "href": "http://172.25.150.84:9292/d9ebe43510414ef590a4aa158605329e/images/ee10f19c-503c-44af-af2f-73d5e42f7a17",
+                       "href": "http://xxx/d9ebe43510414ef590a4aa158605329e/images/ee10f19c-503c-44af-af2f-73d5e42f7a17",
                        "rel": "alternate",
                        "type": "application/vnd.openstack.image"
                    }

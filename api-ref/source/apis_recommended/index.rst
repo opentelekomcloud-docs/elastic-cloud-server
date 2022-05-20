@@ -13,6 +13,7 @@ APIs (Recommended)
    flavor_management/index
    nic_management/index
    disk_management/index
+   metadata_management/index
    tenant_quota_management/index
    task_status_management/index
    tag_management/index

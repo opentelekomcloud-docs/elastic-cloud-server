@@ -192,26 +192,11 @@ This field is used by the following APIs:
 
 .. table:: **Table 6** extendparam field description for creating ECSs (for V1 APIs)
 
-   +-----------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter             | Mandatory       | Type            | Description                                                                                                                                                                                          |
-   +=======================+=================+=================+======================================================================================================================================================================================================+
-   | regionID              | No              | String          | Specifies the ID of the region where the ECS resides.                                                                                                                                                |
-   +-----------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | support_auto_recovery | No              | Boolean         | Specifies whether automatic recovery is enabled on the ECS.                                                                                                                                          |
-   |                       |                 |                 |                                                                                                                                                                                                      |
-   |                       |                 |                 | -  **true**: enables this function.                                                                                                                                                                  |
-   |                       |                 |                 | -  **false**: disables this function.                                                                                                                                                                |
-   |                       |                 |                 |                                                                                                                                                                                                      |
-   |                       |                 |                 | .. note::                                                                                                                                                                                            |
-   |                       |                 |                 |                                                                                                                                                                                                      |
-   |                       |                 |                 |    This parameter is of boolean type. If a non-boolean character is imported, the parameter value is set to **false**.                                                                               |
-   |                       |                 |                 |                                                                                                                                                                                                      |
-   |                       |                 |                 |    When **support_auto_recovery** is set to **false** and **"cond:compute": autorecovery** is unavailable in the flavor, automatic recovery is not supported.                                        |
-   |                       |                 |                 |                                                                                                                                                                                                      |
-   |                       |                 |                 |    When **support_auto_recovery** is set to **false** and **"cond:compute": autorecovery** is available in the flavor, automatic recovery is supported.                                              |
-   |                       |                 |                 |                                                                                                                                                                                                      |
-   |                       |                 |                 |    You can query whether **"cond:compute": autorecovery** is available in the flavor by referring to :ref:`Querying Details About Flavors and Extended Flavor Information <en-us_topic_0020212656>`. |
-   +-----------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------+-----------+--------+-------------------------------------------------------+
+   | Parameter | Mandatory | Type   | Description                                           |
+   +===========+===========+========+=======================================================+
+   | regionID  | No        | String | Specifies the ID of the region where the ECS resides. |
+   +-----------+-----------+--------+-------------------------------------------------------+
 
 .. _en-us_topic_0167957246__section1228814491353:
 

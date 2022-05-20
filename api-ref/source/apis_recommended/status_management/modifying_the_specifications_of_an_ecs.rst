@@ -44,11 +44,20 @@ Request
 
 .. table:: **Table 2** Request parameters
 
-   +-----------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter | Mandatory | Type   | Description                                                                                                                   |
-   +===========+===========+========+===============================================================================================================================+
-   | resize    | Yes       | Object | Specifies the operation to modify ECS specifications. For details, see :ref:`Table 3 <en-us_topic_0020212653__table7657338>`. |
-   +-----------+-----------+--------+-------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                                                                                 |
+   +=================+=================+=================+=============================================================================================================================================+
+   | resize          | Yes             | Object          | Specifies the operation to modify ECS specifications. For details, see :ref:`Table 3 <en-us_topic_0020212653__table7657338>`.               |
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+   | dry_run         | No              | Boolean         | Specifies whether to only check the request and not modify the ECS specifications.                                                          |
+   |                 |                 |                 |                                                                                                                                             |
+   |                 |                 |                 | **true**: The request is sent and the ECS specifications will not be modified. Check items include mandatory parameters and request format. |
+   |                 |                 |                 |                                                                                                                                             |
+   |                 |                 |                 | -  If the check fails, the system returns an error.                                                                                         |
+   |                 |                 |                 | -  If the check is successful, the system returns status code 202.                                                                          |
+   |                 |                 |                 |                                                                                                                                             |
+   |                 |                 |                 | **false**: The request is sent and the ECS specifications will be modified if the check is successful.                                      |
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0020212653__table7657338:
 
