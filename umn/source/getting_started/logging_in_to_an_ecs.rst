@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0092494193:
 
-Logging In to an ECS
-====================
+Logging into an ECS
+===================
 
 Logging In to a Windows ECS
 ---------------------------
