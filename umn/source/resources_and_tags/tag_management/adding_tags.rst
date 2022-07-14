@@ -94,7 +94,7 @@ If you want to add the same tag to multiple ECSs or other resources, you can cre
 #. Log in to the management console.
 #. Under **Management & Deployment**, click **Tag Management Service**.
 #. In the navigation pane on the left, choose **Predefined Tags**. In the right pane, click **Create Tag** enter a key (for example **project**) and a value (for example **A**) in the displayed dialog box.
-#. Choose **Service List** > **Computing** > **Elastic Cloud Server**, and select the predefined tag by following the procedure for adding a tag.
+#. Choose **Service List** > **Compute** > **Elastic Cloud Server**, and select the predefined tag by following the procedure for adding a tag.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 

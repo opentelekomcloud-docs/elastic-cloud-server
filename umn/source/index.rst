@@ -11,10 +11,10 @@ Main Index
    images/index
    evs_disks/index
    cbr/index
-   passwords_and_key_pairs/index
    nics/index
-   security/index
    eips/index
+   security/index
+   passwords_and_key_pairs/index
    resources_and_tags/index
    monitoring/index
    cts/index

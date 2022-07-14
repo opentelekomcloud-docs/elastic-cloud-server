@@ -57,13 +57,15 @@ Select your desired GPU-accelerated ECS type and specifications.
 
 .. table:: **Table 1** G6 ECS specifications
 
-   +---------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+--------+------------------+---------------------+-------------------------------------+
-   | Flavor        | vCPUs | Memory (GiB) | Maximum/Assured Bandwidth (Gbit/s) | Max. PPS (10,000) | NIC Multi-Queue | Maximum NICs | GPUs   | GPU Memory (GiB) | Virtualization Type | Hardware                            |
-   +===============+=======+==============+====================================+===================+=================+==============+========+==================+=====================+=====================================+
-   | g6.10xlarge.7 | 40    | 280          | 25/15                              | 200               | 16              | 8            | 1 x T4 | 16               | KVM                 | CPU: Intel® Xeon® Cascade Lake 6266 |
-   +---------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+--------+------------------+---------------------+-------------------------------------+
-   | g6.20xlarge.7 | 80    | 560          | 30/30                              | 400               | 32              | 8            | 2 x T4 | 32               | KVM                 |                                     |
-   +---------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+--------+------------------+---------------------+-------------------------------------+
+   +---------------+-------+--------+---------------------------+-------------+-----------------+--------------+--------+------------+---------------------+-------------------------------------+
+   | Flavor        | vCPUs | Memory | Maximum/Assured Bandwidth | Maximum PPS | NIC Multi-Queue | Maximum NICs | GPUs   | GPU Memory | Virtualization Type | Hardware                            |
+   |               |       |        |                           |             |                 |              |        |            |                     |                                     |
+   |               |       | (GiB)  | (Gbit/s)                  | (10,000)    |                 |              |        | (GiB)      |                     |                                     |
+   +===============+=======+========+===========================+=============+=================+==============+========+============+=====================+=====================================+
+   | g6.10xlarge.7 | 40    | 280    | 25/15                     | 200         | 16              | 8            | 1 x T4 | 16         | KVM                 | CPU: Intel® Xeon® Cascade Lake 6266 |
+   +---------------+-------+--------+---------------------------+-------------+-----------------+--------------+--------+------------+---------------------+-------------------------------------+
+   | g6.20xlarge.7 | 80    | 560    | 30/30                     | 400         | 32              | 16           | 2 x T4 | 32         | KVM                 |                                     |
+   +---------------+-------+--------+---------------------------+-------------+-----------------+--------------+--------+------------+---------------------+-------------------------------------+
 
 .. note::
 
@@ -98,9 +100,21 @@ G6 ECSs are used in graphics acceleration scenarios, such as video rendering, cl
 
 **Notes**
 
--  G6 ECSs support the following OS:
+-  :ref:`Table 2 <en-us_topic_0097289624__table192771727112217>` lists the OSs supported by G6 ECSs.
 
-   -  Windows Server 2016 Standard 64bit
+   .. _en-us_topic_0097289624__table192771727112217:
+
+   .. table:: **Table 2** Supported OS versions
+
+      +-----------------------------------+------------------------------------------+
+      | OS                                | Version                                  |
+      +===================================+==========================================+
+      | EulerOS                           | EulerOS 2.5 64bit                        |
+      +-----------------------------------+------------------------------------------+
+      | Windows                           | -  Windows Server 2019 Standard 64bit    |
+      |                                   | -  Windows Server 2016 Standard 64bit    |
+      |                                   | -  Windows Server 2012 R2 Standard 64bit |
+      +-----------------------------------+------------------------------------------+
 
 -  G6 ECSs created using a public image have had the GRID driver of a specific version installed by default. However, you need to purchase and configure the GRID license by yourself. Ensure that the GRID driver version meets service requirements.
 
@@ -117,19 +131,21 @@ P2s ECSs use NVIDIA Tesla V100 GPUs to provide flexibility, high-performance com
 
 **Specifications**
 
-.. table:: **Table 2** P2s ECS specifications
+.. table:: **Table 3** P2s ECS specifications
 
-   +----------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+----------+----------------+------------------+---------------------+----------------------------------------------------------+
-   | Flavor         | vCPUs | Memory (GiB) | Maximum/Assured Bandwidth (Gbit/s) | Max. PPS (10,000) | NIC Multi-Queue | Maximum NICs | GPUs     | GPU Connection | GPU Memory (GiB) | Virtualization Type | Hardware                                                 |
-   +================+=======+==============+====================================+===================+=================+==============+==========+================+==================+=====================+==========================================================+
-   | p2s.2xlarge.8  | 8     | 64           | 10/4                               | 50                | 4               | 4            | 1 x V100 | PCIe Gen3      | 1 x 32 GiB       | KVM                 | CPU: 2nd Generation Intel® Xeon® Scalable Processor 6278 |
-   +----------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+----------+----------------+------------------+---------------------+----------------------------------------------------------+
-   | p2s.4xlarge.8  | 16    | 128          | 15/8                               | 100               | 8               | 8            | 2 x V100 | PCIe Gen3      | 2 x 32 GiB       | KVM                 |                                                          |
-   +----------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+----------+----------------+------------------+---------------------+----------------------------------------------------------+
-   | p2s.8xlarge.8  | 32    | 256          | 25/15                              | 200               | 16              | 8            | 4 x V100 | PCIe Gen3      | 4 x 32 GiB       | KVM                 |                                                          |
-   +----------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+----------+----------------+------------------+---------------------+----------------------------------------------------------+
-   | p2s.16xlarge.8 | 64    | 512          | 30/30                              | 400               | 32              | 8            | 8 x V100 | PCIe Gen3      | 8 x 32 GiB       | KVM                 |                                                          |
-   +----------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+----------+----------------+------------------+---------------------+----------------------------------------------------------+
+   +----------------+-------+--------+---------------------------+-------------+-----------------+--------------+----------+----------------+------------+---------------------+----------------------------------------------------------+
+   | Flavor         | vCPUs | Memory | Maximum/Assured Bandwidth | Maximum PPS | NIC Multi-Queue | Maximum NICs | GPUs     | GPU Connection | GPU Memory | Virtualization Type | Hardware                                                 |
+   |                |       |        |                           |             |                 |              |          |                |            |                     |                                                          |
+   |                |       | (GiB)  | (Gbit/s)                  | (10,000)    |                 |              |          |                | (GiB)      |                     |                                                          |
+   +================+=======+========+===========================+=============+=================+==============+==========+================+============+=====================+==========================================================+
+   | p2s.2xlarge.8  | 8     | 64     | 10/4                      | 50          | 4               | 4            | 1 x V100 | PCIe Gen3      | 1 x 32 GiB | KVM                 | CPU: 2nd Generation Intel® Xeon® Scalable Processor 6278 |
+   +----------------+-------+--------+---------------------------+-------------+-----------------+--------------+----------+----------------+------------+---------------------+----------------------------------------------------------+
+   | p2s.4xlarge.8  | 16    | 128    | 15/8                      | 100         | 8               | 8            | 2 x V100 | PCIe Gen3      | 2 x 32 GiB | KVM                 |                                                          |
+   +----------------+-------+--------+---------------------------+-------------+-----------------+--------------+----------+----------------+------------+---------------------+----------------------------------------------------------+
+   | p2s.8xlarge.8  | 32    | 256    | 25/15                     | 200         | 16              | 8            | 4 x V100 | PCIe Gen3      | 4 x 32 GiB | KVM                 |                                                          |
+   +----------------+-------+--------+---------------------------+-------------+-----------------+--------------+----------+----------------+------------+---------------------+----------------------------------------------------------+
+   | p2s.16xlarge.8 | 64    | 512    | 30/30                     | 400         | 32              | 8            | 8 x V100 | PCIe Gen3      | 8 x 32 GiB | KVM                 |                                                          |
+   +----------------+-------+--------+---------------------------+-------------+-----------------+--------------+----------+----------------+------------+---------------------+----------------------------------------------------------+
 
 **P2s ECS Features**
 
@@ -170,20 +186,31 @@ P2s ECSs are used in computing acceleration scenarios, such as deep learning tra
 
 **Notes**
 
--  P2s ECSs support the following OSs:
+-  :ref:`Table 4 <en-us_topic_0097289624__table1613585194612>` lists the OSs supported by P2s ECSs.
 
-   -  Windows Server 2019 Standard 64bit
-   -  Windows Server 2016 Standard 64bit
-   -  Windows Server 2012 R2 Standard 64bit
-   -  Ubuntu Server 20.04 64bit
-   -  Ubuntu Server 18.04 64bit
-   -  Ubuntu Server 16.04 64bit
-   -  CentOS 7.7 64bit
-   -  CentOS 7.4 64bit
-   -  EulerOS 2.5 64bit
-   -  Oracle Linux 7.6 64bit
+   .. _en-us_topic_0097289624__table1613585194612:
+
+   .. table:: **Table 4** Supported OS versions
+
+      +-----------------------------------+------------------------------------------+
+      | OS                                | Version                                  |
+      +===================================+==========================================+
+      | CentOS                            | CentOS 7.9 64bit                         |
+      +-----------------------------------+------------------------------------------+
+      | EulerOS                           | EulerOS 2.5 64bit                        |
+      +-----------------------------------+------------------------------------------+
+      | Oracle Linux                      | Oracle Linux Server release 7.6 64bit    |
+      +-----------------------------------+------------------------------------------+
+      | Ubuntu                            | -  Ubuntu 20.04 server 64bit             |
+      |                                   | -  Ubuntu 18.04 server 64bit             |
+      +-----------------------------------+------------------------------------------+
+      | Windows                           | -  Windows Server 2019 Standard 64bit    |
+      |                                   | -  Windows Server 2016 Standard 64bit    |
+      |                                   | -  Windows Server 2012 R2 Standard 64bit |
+      +-----------------------------------+------------------------------------------+
 
 -  By default, P2s ECSs created using a Windows public image have the Tesla driver installed.
+
 -  If a P2s ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 
 .. _en-us_topic_0097289624__section208472383415:
@@ -193,23 +220,25 @@ Computing-accelerated P2v
 
 **Overview**
 
-Compared with P2 ECSs, P2v ECSs use NVIDIA Tesla V100 GPUs to provide flexibility, high-performance computing, and cost-effectiveness. These ECSs use GPU NVLink for direct communication between GPUs, improving data transmission efficiency. P2v ECSs provide outstanding general computing capabilities and have strengths in AI-based deep learning, scientific computing, Computational Fluid Dynamics (CFD), computing finance, seismic analysis, molecular modeling, and genomics.
+P2v ECSs use NVIDIA Tesla V100 GPUs and deliver high flexibility, high-performance computing, and high cost-effectiveness. These ECSs use GPU NVLink for direct communication between GPUs, improving data transmission efficiency. P2v ECSs provide outstanding general computing capabilities and have strengths in AI-based deep learning, scientific computing, Computational Fluid Dynamics (CFD), computing finance, seismic analysis, molecular modeling, and genomics.
 
 **Specifications**
 
-.. table:: **Table 3** P2v ECS specifications
+.. table:: **Table 5** P2v ECS specifications
 
-   +----------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+----------+----------------+------------------+---------------------+-------------------------------------------+
-   | Flavor         | vCPUs | Memory (GiB) | Maximum/Assured Bandwidth (Gbit/s) | Max. PPS (10,000) | NIC Multi-Queue | Maximum NICs | GPUs     | GPU Connection | GPU Memory (GiB) | Virtualization Type | Hardware                                  |
-   +================+=======+==============+====================================+===================+=================+==============+==========+================+==================+=====================+===========================================+
-   | p2v.2xlarge.8  | 8     | 64           | 10/4                               | 50                | 4               | 4            | 1 x V100 | N/A            | 1 × 16 GiB       | KVM                 | CPU: Intel® Xeon® Skylake-SP Gold 6151 v5 |
-   +----------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+----------+----------------+------------------+---------------------+-------------------------------------------+
-   | p2v.4xlarge.8  | 16    | 128          | 15/8                               | 100               | 8               | 8            | 2 x V100 | NVLink         | 2 × 16 GiB       | KVM                 |                                           |
-   +----------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+----------+----------------+------------------+---------------------+-------------------------------------------+
-   | p2v.8xlarge.8  | 32    | 256          | 25/15                              | 200               | 16              | 8            | 4 x V100 | NVLink         | 4 × 16 GiB       | KVM                 |                                           |
-   +----------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+----------+----------------+------------------+---------------------+-------------------------------------------+
-   | p2v.16xlarge.8 | 64    | 512          | 30/30                              | 400               | 32              | 8            | 8 x V100 | NVLink         | 8 × 16 GiB       | KVM                 |                                           |
-   +----------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+----------+----------------+------------------+---------------------+-------------------------------------------+
+   +----------------+-------+--------+---------------------------+-------------+-----------------+--------------+----------+----------------+------------+---------------------+-------------------------------------------+
+   | Flavor         | vCPUs | Memory | Maximum/Assured Bandwidth | Maximum PPS | NIC Multi-Queue | Maximum NICs | GPUs     | GPU Connection | GPU Memory | Virtualization Type | Hardware                                  |
+   |                |       |        |                           |             |                 |              |          |                |            |                     |                                           |
+   |                |       | (GiB)  | (Gbit/s)                  | (10,000)    |                 |              |          |                | (GiB)      |                     |                                           |
+   +================+=======+========+===========================+=============+=================+==============+==========+================+============+=====================+===========================================+
+   | p2v.2xlarge.8  | 8     | 64     | 10/4                      | 50          | 4               | 4            | 1 x V100 | N/A            | 1 × 16 GiB | KVM                 | CPU: Intel® Xeon® Skylake-SP Gold 6151 v5 |
+   +----------------+-------+--------+---------------------------+-------------+-----------------+--------------+----------+----------------+------------+---------------------+-------------------------------------------+
+   | p2v.4xlarge.8  | 16    | 128    | 15/8                      | 100         | 8               | 8            | 2 x V100 | NVLink         | 2 × 16 GiB | KVM                 |                                           |
+   +----------------+-------+--------+---------------------------+-------------+-----------------+--------------+----------+----------------+------------+---------------------+-------------------------------------------+
+   | p2v.8xlarge.8  | 32    | 256    | 25/15                     | 200         | 16              | 8            | 4 x V100 | NVLink         | 4 × 16 GiB | KVM                 |                                           |
+   +----------------+-------+--------+---------------------------+-------------+-----------------+--------------+----------+----------------+------------+---------------------+-------------------------------------------+
+   | p2v.16xlarge.8 | 64    | 512    | 30/30                     | 400         | 32              | 8            | 8 x V100 | NVLink         | 8 × 16 GiB | KVM                 |                                           |
+   +----------------+-------+--------+---------------------------+-------------+-----------------+--------------+----------+----------------+------------+---------------------+-------------------------------------------+
 
 **P2v ECS Features**
 
@@ -250,18 +279,33 @@ P2v ECSs are used in computing acceleration scenarios, such as deep learning tra
 
 **Notes**
 
--  P2v ECSs support the following OSs:
+-  :ref:`Table 6 <en-us_topic_0097289624__table1793214116522>` lists the OSs supported by P2v ECSs.
 
-   -  Windows Server 2019 Standard 64bit
-   -  Windows Server 2016 Standard 64bit
-   -  Windows Server 2012 R2 Standard 64bit
-   -  Ubuntu Server 16.04 64bit
-   -  CentOS 7.7 64bit
-   -  EulerOS 2.5 64bit
-   -  Oracle Linux 7.6 64bit
+   .. _en-us_topic_0097289624__table1793214116522:
+
+   .. table:: **Table 6** Supported OS versions
+
+      +-----------------------------------+------------------------------------------+
+      | OS                                | Version                                  |
+      +===================================+==========================================+
+      | CentOS                            | CentOS 7.9 64bit                         |
+      +-----------------------------------+------------------------------------------+
+      | EulerOS                           | EulerOS 2.5 64bit                        |
+      +-----------------------------------+------------------------------------------+
+      | Oracle Linux                      | Oracle Linux Server release 7.6 64bit    |
+      +-----------------------------------+------------------------------------------+
+      | Ubuntu                            | -  Ubuntu 20.04 server 64bit             |
+      |                                   | -  Ubuntu 18.04 server 64bit             |
+      +-----------------------------------+------------------------------------------+
+      | Windows                           | -  Windows Server 2019 Standard 64bit    |
+      |                                   | -  Windows Server 2016 Standard 64bit    |
+      |                                   | -  Windows Server 2012 R2 Standard 64bit |
+      +-----------------------------------+------------------------------------------+
 
 -  By default, P2v ECSs created using a Windows public image have the Tesla driver installed.
+
 -  By default, P2v ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+
 -  If a P2v ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 
 .. _en-us_topic_0097289624__section5477185118234:
@@ -275,17 +319,19 @@ Compared with P1 ECSs, P2 ECSs use NVIDIA Tesla V100 GPUs, which have improved b
 
 **Specifications**
 
-.. table:: **Table 4** P2 ECS specifications
+.. table:: **Table 7** P2 ECS specifications
 
-   +--------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+----------+------------------+------------------+---------------------+----------------------------------------+
-   | Flavor       | vCPUs | Memory (GiB) | Maximum/Assured Bandwidth (Gbit/s) | Max. PPS (10,000) | NIC Multi-Queue | Maximum NICs | GPUs     | GPU Memory (GiB) | Local Disks      | Virtualization Type | Hardware                               |
-   +==============+=======+==============+====================================+===================+=================+==============+==========+==================+==================+=====================+========================================+
-   | p2.2xlarge.8 | 8     | 64           | 5/1.6                              | 35                | 2               | 12           | 1 x V100 | 1 x 16           | 1 × 800 GiB NVMe | KVM                 | CPU: Intel® Xeon® Processor E5-2690 v4 |
-   +--------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+----------+------------------+------------------+---------------------+----------------------------------------+
-   | p2.4xlarge.8 | 16    | 128          | 8/3.2                              | 70                | 4               | 12           | 2 x V100 | 2 x 16           | 2 × 800 GiB NVMe | KVM                 |                                        |
-   +--------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+----------+------------------+------------------+---------------------+----------------------------------------+
-   | p2.8xlarge.8 | 32    | 256          | 10/6.5                             | 140               | 8               | 12           | 4 x V100 | 4 x 16           | 4 × 800 GiB NVMe | KVM                 |                                        |
-   +--------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+----------+------------------+------------------+---------------------+----------------------------------------+
+   +--------------+-------+--------+---------------------------+-------------+-----------------+--------------+----------+------------+------------------+---------------------+----------------------------------------+
+   | Flavor       | vCPUs | Memory | Maximum/Assured Bandwidth | Maximum PPS | NIC Multi-Queue | Maximum NICs | GPUs     | GPU Memory | Local Disks      | Virtualization Type | Hardware                               |
+   |              |       |        |                           |             |                 |              |          |            |                  |                     |                                        |
+   |              |       | (GiB)  | (Gbit/s)                  | (10,000)    |                 |              |          | (GiB)      |                  |                     |                                        |
+   +==============+=======+========+===========================+=============+=================+==============+==========+============+==================+=====================+========================================+
+   | p2.2xlarge.8 | 8     | 64     | 5/1.6                     | 35          | 2               | 12           | 1 x V100 | 1 x 16     | 1 × 800 GiB NVMe | KVM                 | CPU: Intel® Xeon® Processor E5-2690 v4 |
+   +--------------+-------+--------+---------------------------+-------------+-----------------+--------------+----------+------------+------------------+---------------------+----------------------------------------+
+   | p2.4xlarge.8 | 16    | 128    | 8/3.2                     | 70          | 4               | 12           | 2 x V100 | 2 x 16     | 2 × 800 GiB NVMe | KVM                 |                                        |
+   +--------------+-------+--------+---------------------------+-------------+-----------------+--------------+----------+------------+------------------+---------------------+----------------------------------------+
+   | p2.8xlarge.8 | 32    | 256    | 10/6.5                    | 140         | 8               | 12           | 4 x V100 | 4 x 16     | 4 × 800 GiB NVMe | KVM                 |                                        |
+   +--------------+-------+--------+---------------------------+-------------+-----------------+--------------+----------+------------+------------------+---------------------+----------------------------------------+
 
 **P2 ECS Features**
 
@@ -336,9 +382,28 @@ P2 ECSs are used in computing acceleration scenarios, such as deep learning trai
 
 -  P2 ECSs do not support specifications modification.
 
--  P2 ECSs support the following OSs:
+-  :ref:`Table 8 <en-us_topic_0097289624__table3436728145315>` lists the OSs supported by P2 ECSs.
 
-   Ubuntu Server 16.04 64bit
+   .. _en-us_topic_0097289624__table3436728145315:
+
+   .. table:: **Table 8** Supported OS versions
+
+      +-----------------------------------+------------------------------------------+
+      | OS                                | Version                                  |
+      +===================================+==========================================+
+      | CentOS                            | CentOS 7.9 64bit                         |
+      +-----------------------------------+------------------------------------------+
+      | EulerOS                           | EulerOS 2.5 64bit                        |
+      +-----------------------------------+------------------------------------------+
+      | Oracle Linux                      | Oracle Linux Server release 7.6 64bit    |
+      +-----------------------------------+------------------------------------------+
+      | Ubuntu                            | -  Ubuntu 20.04 server 64bit             |
+      |                                   | -  Ubuntu 18.04 server 64bit             |
+      +-----------------------------------+------------------------------------------+
+      | Windows                           | -  Windows Server 2019 Standard 64bit    |
+      |                                   | -  Windows Server 2016 Standard 64bit    |
+      |                                   | -  Windows Server 2012 R2 Standard 64bit |
+      +-----------------------------------+------------------------------------------+
 
 -  After you delete a P2 ECS, the data stored in local NVMe SSDs is automatically cleared.
 
@@ -357,21 +422,23 @@ P1 ECSs use NVIDIA Tesla P100 GPUs and provide flexibility, high performance, an
 
 **Specifications**
 
-.. table:: **Table 5** P1 ECS specifications
+.. table:: **Table 9** P1 ECS specifications
 
-   +--------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+----------+------------------+-------------------+---------------------+----------------------------------------+
-   | Flavor       | vCPUs | Memory (GiB) | Maximum/Assured Bandwidth (Gbit/s) | Max. PPS (10,000) | NIC Multi-Queue | Maximum NICs | GPUs     | GPU Memory (GiB) | Local Disks (GiB) | Virtualization Type | Hardware                               |
-   +==============+=======+==============+====================================+===================+=================+==============+==========+==================+===================+=====================+========================================+
-   | p1.2xlarge.8 | 8     | 64           | 5/1.6                              | 35                | 2               | 12           | 1 x P100 | 1 x 16           | 1×800             | KVM                 | CPU: Intel® Xeon® Processor E5-2690 v4 |
-   +--------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+----------+------------------+-------------------+---------------------+----------------------------------------+
-   | p1.4xlarge.8 | 16    | 128          | 8/3.2                              | 70                | 4               | 12           | 2 x P100 | 2 x 16           | 2×800             | KVM                 |                                        |
-   +--------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+----------+------------------+-------------------+---------------------+----------------------------------------+
-   | p1.8xlarge.8 | 32    | 256          | 10/6.5                             | 140               | 8               | 12           | 4 x P100 | 4 x 16           | 4×800             | KVM                 |                                        |
-   +--------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+----------+------------------+-------------------+---------------------+----------------------------------------+
+   +--------------+-------+--------+---------------------------+-------------+-----------------+--------------+----------+------------+-------------+---------------------+----------------------------------------+
+   | Flavor       | vCPUs | Memory | Maximum/Assured Bandwidth | Maximum PPS | NIC Multi-Queue | Maximum NICs | GPUs     | GPU Memory | Local Disks | Virtualization Type | Hardware                               |
+   |              |       |        |                           |             |                 |              |          |            |             |                     |                                        |
+   |              |       | (GiB)  | (Gbit/s)                  | (10,000)    |                 |              |          | (GiB)      | (GiB)       |                     |                                        |
+   +==============+=======+========+===========================+=============+=================+==============+==========+============+=============+=====================+========================================+
+   | p1.2xlarge.8 | 8     | 64     | 5/1.6                     | 35          | 2               | 12           | 1 x P100 | 1 x 16     | 1×800       | KVM                 | CPU: Intel® Xeon® Processor E5-2690 v4 |
+   +--------------+-------+--------+---------------------------+-------------+-----------------+--------------+----------+------------+-------------+---------------------+----------------------------------------+
+   | p1.4xlarge.8 | 16    | 128    | 8/3.2                     | 70          | 4               | 12           | 2 x P100 | 2 x 16     | 2×800       | KVM                 |                                        |
+   +--------------+-------+--------+---------------------------+-------------+-----------------+--------------+----------+------------+-------------+---------------------+----------------------------------------+
+   | p1.8xlarge.8 | 32    | 256    | 10/6.5                    | 140         | 8               | 12           | 4 x P100 | 4 x 16     | 4×800       | KVM                 |                                        |
+   +--------------+-------+--------+---------------------------+-------------+-----------------+--------------+----------+------------+-------------+---------------------+----------------------------------------+
 
 **P1 ECS Features**
 
--  CPU: Intel® Xeon® Processor E5-2690 v4 (2.6 GHz)
+-  CPU: Intel® Xeon® E5-2690 v4 processors (2.6 GHz of base frequency and 3.5 GHz of turbo frequency)
 
 -  Up to four NVIDIA Tesla P100 GPUs on a P1 ECS (If eight P100 GPUs are required on an instance, use BMS.)
 
@@ -409,6 +476,7 @@ P1 ECSs are used in computing acceleration scenarios, such as deep learning trai
 **Notes**
 
 -  It is recommended that the system disk of a P1 ECS be greater than 40 GiB.
+
 -  The local NVMe SSDs attached to P1 ECSs are dedicated for services with strict requirements on storage I/O performance, such as deep learning training and HPC. Local disks are attached to the ECSs of specified flavors and cannot be separately bought. In addition, you are not allowed to detach a local disk and then attach it to another ECS.
 
    .. note::
@@ -416,17 +484,35 @@ P1 ECSs are used in computing acceleration scenarios, such as deep learning trai
       Data may be lost on the local NVMe SSDs attached to P1 ECSs due to a fault, for example, due to a disk or host fault. Therefore, you are suggested to store only temporary data in local NVMe SSDs. If you store important data in such a disk, securely back up the data.
 
 -  After a P1 ECS is created, you must install the NVIDIA driver for computing acceleration. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
--  P1 ECSs do not support specifications modification.
--  P1 ECSs support the following OSs:
 
-   -  Windows Server 2012 R2 Standard 64bit
-   -  Ubuntu Server 16.04 64bit
-   -  CentOS 7.4 64bit
-   -  Debian 9.0 64bit
+-  P1 ECSs do not support specifications modification.
+
+-  :ref:`Table 10 <en-us_topic_0097289624__table8704181020556>` lists the OSs supported by P1 ECSs.
+
+   .. _en-us_topic_0097289624__table8704181020556:
+
+   .. table:: **Table 10** Supported OS versions
+
+      +-----------------------------------+---------------------------------------+
+      | OS                                | Version                               |
+      +===================================+=======================================+
+      | CentOS                            | CentOS 7.9 64bit                      |
+      +-----------------------------------+---------------------------------------+
+      | Debian                            | -  Debian GNU/Linux 11 64bit          |
+      |                                   | -  Debian GNU/Linux 10 64bit          |
+      +-----------------------------------+---------------------------------------+
+      | Oracle Linux                      | Oracle Linux Server release 7.6 64bit |
+      +-----------------------------------+---------------------------------------+
+      | Ubuntu                            | -  Ubuntu 20.04 server 64bit          |
+      |                                   | -  Ubuntu 18.04 server 64bit          |
+      +-----------------------------------+---------------------------------------+
 
 -  After you delete a P1 ECS, the data stored in local NVMe SSDs is automatically cleared.
+
 -  By default, P1 ECSs created using a Windows public image have the Tesla driver installed.
+
 -  By default, P1 ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+
 -  If a P1 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 
 .. _en-us_topic_0097289624__section1846114713182:
@@ -440,17 +526,21 @@ PI2 ECSs use NVIDIA Tesla T4 GPUs dedicated for real-time AI inference. These EC
 
 **Specifications**
 
-.. table:: **Table 6** PI2 ECS specifications
+.. table:: **Table 11** PI2 ECS specifications
 
-   +---------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+--------+------------------+-------------+---------------------+----------------------------------------------------------------------------------+
-   | Flavor        | vCPUs | Memory (GiB) | Maximum/Assured Bandwidth (Gbit/s) | Max. PPS (10,000) | NIC Multi-Queue | Maximum NICs | GPUs   | GPU Memory (GiB) | Local Disks | Virtualization Type | Hardware                                                                         |
-   +===============+=======+==============+====================================+===================+=================+==============+========+==================+=============+=====================+==================================================================================+
-   | pi2.2xlarge.4 | 8     | 32           | 10/4                               | 50                | 4               | 4            | 1 x T4 | 1 × 16 GiB       | N/A         | KVM                 | CPU: Intel® Xeon® Skylake 6151 3.0 GHz or Intel® Xeon® Cascade Lake 6278 2.6 GHz |
-   +---------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+--------+------------------+-------------+---------------------+----------------------------------------------------------------------------------+
-   | pi2.4xlarge.4 | 16    | 64           | 15/8                               | 100               | 8               | 8            | 2 x T4 | 2 × 16 GiB       | N/A         | KVM                 |                                                                                  |
-   +---------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+--------+------------------+-------------+---------------------+----------------------------------------------------------------------------------+
-   | pi2.8xlarge.4 | 32    | 128          | 25/15                              | 200               | 16              | 8            | 4 x T4 | 4 × 16 GiB       | N/A         | KVM                 |                                                                                  |
-   +---------------+-------+--------------+------------------------------------+-------------------+-----------------+--------------+--------+------------------+-------------+---------------------+----------------------------------------------------------------------------------+
+   +----------------+-------+--------+---------------------------+-------------+-----------------+--------------+--------+------------+-------------+---------------------+----------------------------------------------------------------------------------+
+   | Flavor         | vCPUs | Memory | Maximum/Assured Bandwidth | Maximum PPS | NIC Multi-Queue | Maximum NICs | GPUs   | GPU Memory | Local Disks | Virtualization Type | Hardware                                                                         |
+   |                |       |        |                           |             |                 |              |        |            |             |                     |                                                                                  |
+   |                |       | (GiB)  | (Gbit/s)                  | (10,000)    |                 |              |        | (GiB)      |             |                     |                                                                                  |
+   +================+=======+========+===========================+=============+=================+==============+========+============+=============+=====================+==================================================================================+
+   | pi2.2xlarge.4  | 8     | 32     | 10/4                      | 50          | 4               | 4            | 1 x T4 | 1 × 16 GiB | N/A         | KVM                 | CPU: Intel® Xeon® Skylake 6151 3.0 GHz or Intel® Xeon® Cascade Lake 6278 2.6 GHz |
+   +----------------+-------+--------+---------------------------+-------------+-----------------+--------------+--------+------------+-------------+---------------------+----------------------------------------------------------------------------------+
+   | pi2.4xlarge.4  | 16    | 64     | 15/8                      | 100         | 8               | 8            | 2 x T4 | 2 × 16 GiB | N/A         | KVM                 |                                                                                  |
+   +----------------+-------+--------+---------------------------+-------------+-----------------+--------------+--------+------------+-------------+---------------------+----------------------------------------------------------------------------------+
+   | pi2.8xlarge.4  | 32    | 128    | 25/15                     | 200         | 16              | 8            | 4 x T4 | 4 × 16 GiB | N/A         | KVM                 |                                                                                  |
+   +----------------+-------+--------+---------------------------+-------------+-----------------+--------------+--------+------------+-------------+---------------------+----------------------------------------------------------------------------------+
+   | pi2.16xlarge.4 | 64    | 256    | 30/30                     | 400         | 32              | 8            | 8 × T4 | 8 × 16 GiB | N/A         | KVM                 |                                                                                  |
+   +----------------+-------+--------+---------------------------+-------------+-----------------+--------------+--------+------------+-------------+---------------------+----------------------------------------------------------------------------------+
 
 **PI2 ECS Features**
 
@@ -478,15 +568,31 @@ PI2 ECSs support the following commonly used software:
 
       Resources are released after a PI2 ECS is stopped. If desired resources are insufficient when the PI2 ECS is started after being stopped, starting the ECS might fail. Therefore, if you need to use a PI2 ECS for a long time, keep the ECS running.
 
--  PI2 ECSs support the following OSs:
+-  :ref:`Table 12 <en-us_topic_0097289624__table576493295720>` lists the OSs supported by PI2 ECSs.
 
-   -  Windows Server 2019 Standard 64bit
-   -  Windows Server 2016 Standard 64bit
-   -  Windows Server 2012 R2 Standard 64bit
-   -  Ubuntu Server 16.04 64bit
-   -  CentOS 7.8 64bit
+   .. _en-us_topic_0097289624__table576493295720:
+
+   .. table:: **Table 12** Supported OS versions
+
+      +-----------------------------------+------------------------------------------+
+      | OS                                | Version                                  |
+      +===================================+==========================================+
+      | CentOS                            | CentOS 7.9 64bit                         |
+      +-----------------------------------+------------------------------------------+
+      | Oracle Linux                      | Oracle Linux Server release 7.6 64bit    |
+      +-----------------------------------+------------------------------------------+
+      | Ubuntu                            | -  Ubuntu 20.04 server 64bit             |
+      |                                   | -  Ubuntu 18.04 server 64bit             |
+      +-----------------------------------+------------------------------------------+
+      | Windows                           | -  Windows Server 2019 Standard 64bit    |
+      |                                   | -  Windows Server 2016 Standard 64bit    |
+      |                                   | -  Windows Server 2012 R2 Standard 64bit |
+      +-----------------------------------+------------------------------------------+
 
 -  PI2 ECSs support automatic recovery when the hosts accommodating such ECSs become faulty.
+
 -  By default, PI2 ECSs created using a Windows public image have the Tesla driver installed.
+
 -  By default, PI2 ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+
 -  If a PI2 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
