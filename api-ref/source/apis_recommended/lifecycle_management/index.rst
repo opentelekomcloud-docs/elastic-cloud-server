@@ -9,3 +9,6 @@ Lifecycle Management
 
    creating_an_ecs
    deleting_ecss
+   querying_details_about_an_ecs
+   querying_details_about_ecss
+   modifying_an_ecs

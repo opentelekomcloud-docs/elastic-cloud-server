@@ -16,17 +16,19 @@ ECS Status Management
 +---------------------------------------------------------------+------------------------------------------------------------+---------------------------+----------------------+
 | Cold Migrating an ECS                                         | POST /v1/{project_id}/cloudservers/{server_id}/migrate     | ecs:cloudServers:migrate  | N/A                  |
 +---------------------------------------------------------------+------------------------------------------------------------+---------------------------+----------------------+
-| Stopping an ECS (Native OpenStack API)                        | POST /v2/{project_id}/servers/{server_id}/action           | ecs:servers:stop          | ecs:servers:get      |
+| Stopping an ECS (Native OpenStack API)                        | POST /v2/{project_id}/servers/{server_id}/action           | ecs:servers:stop          | ecs:servers:list     |
 |                                                               |                                                            |                           |                      |
 |                                                               | POST /v2.1/{project_id}/servers/{server_id}/action         |                           |                      |
 +---------------------------------------------------------------+------------------------------------------------------------+---------------------------+----------------------+
-| Restarting an ECS (Native OpenStack API)                      | POST /v2/{project_id}/servers/{server_id}/action           | ecs:servers:reboot        | ecs:servers:get      |
+| Restarting an ECS (Native OpenStack API)                      | POST /v2/{project_id}/servers/{server_id}/action           | ecs:servers:reboot        | ecs:servers:list     |
 |                                                               |                                                            |                           |                      |
 |                                                               | POST /v2.1/{project_id}/servers/{server_id}/action         |                           |                      |
 +---------------------------------------------------------------+------------------------------------------------------------+---------------------------+----------------------+
-| Modifying the Specifications of an ECS (Native OpenStack API) | POST /v2.1/{project_id}/servers/{server_id}/action         | ecs:servers:resize        | ecs:servers:get      |
+| Modifying the Specifications of an ECS (Native OpenStack API) | POST /v2.1/{project_id}/servers/{server_id}/action         | ecs:servers:resize        | ecs:servers:list     |
 |                                                               |                                                            |                           |                      |
-|                                                               | POST /v2.1/{project_id}/servers/{server_id}/action         |                           | evs:volumes:list     |
+|                                                               | POST /v2.1/{project_id}/servers/{server_id}/action         |                           | ecs:flavors:get      |
+|                                                               |                                                            |                           |                      |
+|                                                               |                                                            |                           | evs:volumes:list     |
 |                                                               |                                                            |                           |                      |
 |                                                               |                                                            |                           | evs:volumes:create   |
 |                                                               |                                                            |                           |                      |
@@ -46,7 +48,7 @@ ECS Status Management
 |                                                               |                                                            |                           |                      |
 |                                                               |                                                            |                           | vpc:ports:delete     |
 +---------------------------------------------------------------+------------------------------------------------------------+---------------------------+----------------------+
-| Rebuilding an ECS (Native OpenStack API)                      | POST /v2/{project_id}/servers/{server_id}/action           | ecs:servers:rebuild       | ecs:servers:get      |
+| Rebuilding an ECS (Native OpenStack API)                      | POST /v2/{project_id}/servers/{server_id}/action           | ecs:servers:rebuild       | ecs:servers:list     |
 |                                                               |                                                            |                           |                      |
 |                                                               | POST /v2.1/{project_id}/servers/{server_id}/action         |                           | ecs:servers:update   |
 |                                                               |                                                            |                           |                      |
@@ -56,11 +58,11 @@ ECS Status Management
 |                                                               |                                                            |                           |                      |
 |                                                               |                                                            |                           | ims:images:update    |
 +---------------------------------------------------------------+------------------------------------------------------------+---------------------------+----------------------+
-| Locking an ECS (Native OpenStack API)                         | POST /v2/{project_id}/servers/{server_id}/action           | ecs:servers:lock          | ecs:servers:get      |
+| Locking an ECS (Native OpenStack API)                         | POST /v2/{project_id}/servers/{server_id}/action           | ecs:servers:lock          | ecs:servers:list     |
 |                                                               |                                                            |                           |                      |
 |                                                               | POST /v2.1/{project_id}/servers/{server_id}/action         |                           |                      |
 +---------------------------------------------------------------+------------------------------------------------------------+---------------------------+----------------------+
-| Unlocking an ECS (Native OpenStack API)                       | POST /v2/{project_id}/servers/{server_id}/action           | ecs:servers:unlock        | ecs:servers:get      |
+| Unlocking an ECS (Native OpenStack API)                       | POST /v2/{project_id}/servers/{server_id}/action           | ecs:servers:unlock        | ecs:servers:list     |
 |                                                               |                                                            |                           |                      |
 |                                                               | POST /v2.1/{project_id}/servers/{server_id}/action         |                           |                      |
 +---------------------------------------------------------------+------------------------------------------------------------+---------------------------+----------------------+

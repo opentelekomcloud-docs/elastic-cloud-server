@@ -51,22 +51,15 @@ Request
 
 .. table:: **Table 3** **server_group** parameters
 
-   +-----------------+-----------------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type             | Description                                                                                                                                                                                                          |
-   +=================+=================+==================+======================================================================================================================================================================================================================+
-   | name            | Yes             | String           | Specifies the ECS group name. The value contains 1 to 255 characters.                                                                                                                                                |
-   +-----------------+-----------------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | policies        | Yes             | Array of strings | Specifies the policies associated with the ECS group. Options:                                                                                                                                                       |
-   |                 |                 |                  |                                                                                                                                                                                                                      |
-   |                 |                 |                  | -  **anti-affinity**: ECSs in this group must be deployed on different hosts.                                                                                                                                        |
-   |                 |                 |                  | -  **affinity**: ECSs in this group must be deployed on the same host.                                                                                                                                               |
-   |                 |                 |                  | -  **soft-anti-affinity**: ECSs in this group are deployed on different hosts if possible. If the ECSs cannot be deployed on different hosts, deploy them based on the actual condition for successful ECS creation. |
-   |                 |                 |                  | -  **soft-affinity**: ECSs in this group are deployed on the same host if possible. If the ECSs cannot be deployed on the same host, deploy them based on the actual condition for successful ECS creation.          |
-   |                 |                 |                  |                                                                                                                                                                                                                      |
-   |                 |                 |                  | .. note::                                                                                                                                                                                                            |
-   |                 |                 |                  |                                                                                                                                                                                                                      |
-   |                 |                 |                  |    Only anti-affinity policies are supported. You are not advised to use other policies. If other policies are used, creating the ECS group will fail.                                                               |
-   +-----------------+-----------------+------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+------------------+-------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type             | Description                                                                   |
+   +=================+=================+==================+===============================================================================+
+   | name            | Yes             | String           | Specifies the ECS group name. The value contains 1 to 255 characters.         |
+   +-----------------+-----------------+------------------+-------------------------------------------------------------------------------+
+   | policies        | Yes             | Array of strings | Specifies the policies associated with the ECS group. Options:                |
+   |                 |                 |                  |                                                                               |
+   |                 |                 |                  | -  **anti-affinity**: ECSs in this group must be deployed on different hosts. |
+   +-----------------+-----------------+------------------+-------------------------------------------------------------------------------+
 
 Response
 --------
@@ -87,24 +80,21 @@ Response
 
 .. table:: **Table 5** **server_group** parameters
 
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter             | Type                  | Description                                                                                                                                                                                                          |
-   +=======================+=======================+======================================================================================================================================================================================================================+
-   | id                    | String                | Specifies the ECS group UUID.                                                                                                                                                                                        |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | name                  | String                | Specifies the ECS group name.                                                                                                                                                                                        |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | policies              | Array of strings      | Specifies the policies associated with the ECS group. Options:                                                                                                                                                       |
-   |                       |                       |                                                                                                                                                                                                                      |
-   |                       |                       | -  **anti-affinity**: ECSs in this group must be deployed on different hosts.                                                                                                                                        |
-   |                       |                       | -  **affinity**: ECSs in this group must be deployed on the same host.                                                                                                                                               |
-   |                       |                       | -  **soft-anti-affinity**: ECSs in this group are deployed on different hosts if possible. If the ECSs cannot be deployed on different hosts, deploy them based on the actual condition for successful ECS creation. |
-   |                       |                       | -  **soft-affinity**: ECSs in this group are deployed on the same host if possible. If the ECSs cannot be deployed on the same host, deploy them based on the actual condition for successful ECS creation.          |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | members               | Array of strings      | Specifies the IDs of the ECSs in an ECS group.                                                                                                                                                                       |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | metadata              | Object                | Specifies the ECS group metadata.                                                                                                                                                                                    |
-   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                   |
+   +=======================+=======================+===============================================================================+
+   | id                    | String                | Specifies the ECS group UUID.                                                 |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------+
+   | name                  | String                | Specifies the ECS group name.                                                 |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------+
+   | policies              | Array of strings      | Specifies the policies associated with the ECS group. Options:                |
+   |                       |                       |                                                                               |
+   |                       |                       | -  **anti-affinity**: ECSs in this group must be deployed on different hosts. |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------+
+   | members               | Array of strings      | Specifies the IDs of the ECSs in an ECS group.                                |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------+
+   | metadata              | Object                | Specifies the ECS group metadata.                                             |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------+
 
 Example Request
 ---------------

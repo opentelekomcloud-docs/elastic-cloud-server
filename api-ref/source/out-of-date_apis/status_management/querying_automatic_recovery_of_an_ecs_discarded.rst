@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0067600148:
 
-Querying Automatic Recovery of an ECS
-=====================================
+Querying Automatic Recovery of an ECS (Discarded)
+=================================================
 
 Function
 --------

@@ -122,7 +122,7 @@ Request
    |                      |                 |                 |                                                                                                                                                        |
    |                      |                 |                 |    .. code-block::                                                                                                                                     |
    |                      |                 |                 |                                                                                                                                                        |
-   |                      |                 |                 |       cmVtIGNtZA0KZWNobyAxMTEgJmd0OyBjOlxhYWEudHh0                                                                                                     |
+   |                      |                 |                 |       cmVtIGNtZAplY2hvIDExMSA+IGM6XGFhYS50eHQ=                                                                                                         |
    +----------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
    | \__system__encrypted | No              | String          | Specifies encryption in **metadata**. The value can be **0** (encryption disabled) or **1** (encryption enabled).                                      |
    |                      |                 |                 |                                                                                                                                                        |

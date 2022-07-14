@@ -9,7 +9,6 @@ Status Management
 
    reinstalling_an_ecs_os_using_an_image_with_cloud-init_installed
    changing_an_ecs_os_using_an_image_with_cloud-init_installed
-   querying_automatic_recovery_of_an_ecs
    cold_migrating_an_ecs
    modifying_the_specifications_of_an_ecs
    adding_an_ecs_to_the_monitoring_list
