@@ -15,7 +15,7 @@ Disk-intensive ECSs do not support modifying specifications. Therefore, when the
 Procedure
 ---------
 
-#. `Create an EVS disk <https://docs.otc.t-systems.com/usermanual/evs/en-us_topic_0021738346.html>`__ according to the volume of data to be migrated.
+#. `Create an EVS Disk <https://docs.otc.t-systems.com/usermanual/evs/en-us_topic_0021738346.html>`__ according to the volume of data to be migrated.
 
 #. Attach the EVS disk to the disk-intensive ECS.
 

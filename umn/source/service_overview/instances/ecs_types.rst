@@ -53,7 +53,8 @@ The intranet bandwidth and PPS of an ECS are determined based on ECS flavors.
 -  Assured intranet bandwidth: guaranteed bandwidth allocated to the ECS
 -  Maximum intranet bandwidth: maximum bandwidth that can be allocated to the ECS
 -  Maximum intranet PPS: maximum number of packets that the ECS can transmit and receive per second
--  NIC multi-queue: allocates NIC interrupt requests to multiple vCPUs for higher PPS performance and bandwidth.
+-  NIC multi-queues: allocates NIC interrupt requests to multiple vCPUs for higher PPS performance and bandwidth
+-  Maximum NICs: maximum number of NICs that can be attached to an ECS.
 
    .. note::
 

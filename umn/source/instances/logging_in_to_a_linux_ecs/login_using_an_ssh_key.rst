@@ -13,7 +13,7 @@ This section describes how to remotely log in to a Linux ECS using an SSH key pa
 Prerequisites
 -------------
 
--  You have obtained the private key file used during ECS creation.
+-  You have obtained the private key file used for creating the ECS. For details about how to create a key pair, see :ref:`(Recommended) Creating a Key Pair on the Management Console <en-us_topic_0000001278350057>`.
 -  You have bound an EIP to the ECS. For details, see :ref:`Viewing Details About an ECS <en-us_topic_0017130261>`.
 
 -  You have configured the inbound rules of the security group. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.

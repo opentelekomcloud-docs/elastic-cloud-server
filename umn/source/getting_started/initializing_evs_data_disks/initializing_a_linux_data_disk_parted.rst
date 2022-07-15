@@ -227,6 +227,10 @@ The following example shows you how a new partition can be created on a new data
 
    **mkdir /mnt/sdc**
 
+   .. note::
+
+      The **/mnt** directory exists on all Linux systems. If the mount point fails to create, it may be that the **/mnt** directory has been accidentally deleted. Run the **mkdir -p /mnt/sdc** command to create the mount point.
+
 #. Run the following command to mount the new partition on the created mount point:
 
    **mount** *Disk partition* *Mount point*

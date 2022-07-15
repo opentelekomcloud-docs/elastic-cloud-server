@@ -41,7 +41,7 @@ Purchasing a GRID License
 
    Log in at the `official NVIDIA website <https://www.nvidia.com/object/nvidia-enterprise-account.html>`__ and enter desired information.
 
-   For details about how to register an account and apply for a trial license, see `official NVIDIA help page <https://nvid.nvidia.com/NvidiaUtilities/#/needHelp>`__.
+   For details about how to register for an account and apply for a trial license, see `official NVIDIA help page <https://nvid.nvidia.com/NvidiaUtilities/#/needHelp>`__.
 
    .. note::
 
@@ -75,43 +75,16 @@ Downloading GRID Driver and Software License Packages
 
    .. table:: **Table 1** GRID driver versions supported by GPU-accelerated ECSs
 
-      +-------------+-----------------+------------------------------------------+-------------------------------+------------------+
-      | ECS Type    | GPU Attachment  | OS                                       | Driver Version                | CPU Architecture |
-      +=============+=================+==========================================+===============================+==================+
-      | G6          | GPU passthrough | -  Windows Server 2016 Standard 64bit    | Select a version as required. | x86_64           |
-      +-------------+-----------------+------------------------------------------+-------------------------------+------------------+
-      | P2s         | GPU passthrough | -  Windows Server 2019 Standard 64bit    | Select a version as required. | x86_64           |
-      |             |                 | -  Windows Server 2016 Standard 64bit    |                               |                  |
-      |             |                 | -  Windows Server 2012 R2 Standard 64bit |                               |                  |
-      |             |                 | -  Ubuntu Server 20.04 64bit             |                               |                  |
-      |             |                 | -  Ubuntu Server 18.04 64bit             |                               |                  |
-      |             |                 | -  Ubuntu Server 16.04 64bit             |                               |                  |
-      |             |                 | -  CentOS 7.7 64bit                      |                               |                  |
-      |             |                 | -  CentOS 7.4 64bit                      |                               |                  |
-      |             |                 | -  EulerOS 2.5 64bit                     |                               |                  |
-      |             |                 | -  Oracle Linux 7.6 64bit                |                               |                  |
-      +-------------+-----------------+------------------------------------------+-------------------------------+------------------+
-      | P2v         | GPU passthrough | -  Windows Server 2019 Standard 64bit    | Select a version as required. | x86_64           |
-      |             |                 | -  Windows Server 2016 Standard 64bit    |                               |                  |
-      |             |                 | -  Windows Server 2012 R2 Standard 64bit |                               |                  |
-      |             |                 | -  Ubuntu Server 16.04 64bit             |                               |                  |
-      |             |                 | -  CentOS 7.7 64bit                      |                               |                  |
-      |             |                 | -  EulerOS 2.5 64bit                     |                               |                  |
-      |             |                 | -  Oracle Linux 7.6 64bit                |                               |                  |
-      +-------------+-----------------+------------------------------------------+-------------------------------+------------------+
-      | P2          | GPU passthrough | Ubuntu Server 16.04 64bit                | Select a version as required. | x86_64           |
-      +-------------+-----------------+------------------------------------------+-------------------------------+------------------+
-      | P1          | GPU passthrough | -  Windows Server 2012 R2 Standard 64bit | Select a version as required. | x86_64           |
-      |             |                 | -  Ubuntu Server 16.04 64bit             |                               |                  |
-      |             |                 | -  CentOS 7.4 64bit                      |                               |                  |
-      |             |                 | -  Debian 9.0 64bit                      |                               |                  |
-      +-------------+-----------------+------------------------------------------+-------------------------------+------------------+
-      | PI2         | GPU passthrough | -  Windows Server 2019 Standard 64bit    | Select a version as required. | x86_64           |
-      |             |                 | -  Windows Server 2016 Standard 64bit    |                               |                  |
-      |             |                 | -  Windows Server 2012 R2 Standard 64bit |                               |                  |
-      |             |                 | -  Ubuntu Server 16.04 64bit             |                               |                  |
-      |             |                 | -  CentOS 7.8 64bit                      |                               |                  |
-      +-------------+-----------------+------------------------------------------+-------------------------------+------------------+
+      ======== =============== ============================= ================
+      ECS Type GPU Attachment  Driver Version                CPU Architecture
+      ======== =============== ============================= ================
+      G6       GPU passthrough Select a version as required. x86_64
+      P2s      GPU passthrough Select a version as required. x86_64
+      P2v      GPU passthrough Select a version as required. x86_64
+      P2       GPU passthrough Select a version as required. x86_64
+      P1       GPU passthrough Select a version as required. x86_64
+      PI2      GPU passthrough Select a version as required. x86_64
+      ======== =============== ============================= ================
 
 #. After the registration, log in at the `official NVIDIA website <https://nvid.nvidia.com/dashboard/>`__ and enter the account.
 
@@ -275,7 +248,7 @@ Installing the GRID Driver and Configuring the License
 
 #. Open the NVIDIA control panel on the Windows control panel.
 
-#. Enter the IP address and port number of the deployed license server in the level-1 license server, and then click **Apply**. If the message indicating that you have obtained a GRID license, the installation is successful. Additionally, the MAC address of the GPU-accelerated ECS with the GRID driver installed is displayed on the **Licensed Clients** page of the license server management console.
+#. Enter the IP address and port number of the deployed license server in the level-1 license server, and then click **Apply**. If the message indicating that you have obtained a GRID license is displayed, the installation is successful. Additionally, the MAC address of the GPU-accelerated ECS with the GRID driver installed is displayed on the **Licensed Clients** page of the license server management console.
 
    .. _en-us_topic_0149610914__fig7104162713349:
 

@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0018073221:
 
-Can I Provision an ECS I Deleted?
-=================================
+Can a Deleted ECS Be Provisioned Again?
+=======================================
 
 No. ECSs in the **Deleted** state cannot provide services and are soon removed from the system.
 

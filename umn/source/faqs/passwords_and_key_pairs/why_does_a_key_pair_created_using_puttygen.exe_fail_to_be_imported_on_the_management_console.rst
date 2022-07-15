@@ -15,18 +15,18 @@ Possible Causes
 
 The format of the public key content does not meet system requirements.
 
-If you store a public key by clicking **Save public key** of **puttygen.exe**, the format of the public key content will change. Therefore, you cannot import the key on the management console.
+If you store a public key by clicking **Save public key** on PuTTY Key Generator, the format of the public key content will change. Therefore, you cannot import the key on the management console.
 
 Solution
 --------
 
 Use the locally stored private key and **PuTTY Key Generator** to restore the format of the public key content. Then, import the public key to the management console.
 
-#. Double-click **puttygen.exe** to switch to the **PuTTY Key Generator** page.
+#. Double-click **puttygen.exe** to open **PuTTY Key Generator**.
 
-   .. _en-us_topic_0047654687__en-us_topic_0014250631_en-us_topic_0037960038_fig4490538015580:
+   .. _en-us_topic_0047654687__en-us_topic_0000001234335274_en-us_topic_0037960038_fig4490538015580:
 
-   .. figure:: /_static/images/en-us_image_0272917695.png
+   .. figure:: /_static/images/en-us_image_0000001234512206.png
       :alt: Click to enlarge
       :figclass: imgResize
 
@@ -54,7 +54,7 @@ Use the locally stored private key and **PuTTY Key Generator** to restore the fo
    b. Click |image1| in the upper left corner and select your region and project.
    c. Under **Computing**, click **Elastic Cloud Server**.
    d. In the navigation pane on the left, choose **Key Pair**.
-   e. On the right side of the page, click **Import Key Pair**.
+   e. On the key pair page, click **Import Key Pair**.
    f. Copy the public key content in the .txt file to **Public Key Content** and click **OK**.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png

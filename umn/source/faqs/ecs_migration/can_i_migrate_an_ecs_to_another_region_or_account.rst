@@ -5,4 +5,4 @@
 Can I Migrate an ECS to Another Region or Account?
 ==================================================
 
-Yes.
+After an ECS is created, it cannot be directly migrated to another region or account.

@@ -17,21 +17,25 @@ Specifications
 
 .. table:: **Table 1** H2 ECS specifications
 
-   +---------------+-------+--------------+------------------------------------+-------------------+-----------------+---------------------+-------------+---------------------------------+---------------------------+------------------------------+
-   | Flavor        | vCPUs | Memory (GiB) | Maximum/Assured Bandwidth (Gbit/s) | Max. PPS (10,000) | NIC Multi-Queue | Virtualization Type | Local Disks | Capacity of One Local Disk (TB) | Network Type              | Hardware                     |
-   +===============+=======+==============+====================================+===================+=================+=====================+=============+=================================+===========================+==============================+
-   | h2.3xlarge.10 | 16    | 128          | 13/13                              | 90                | 8               | KVM                 | 1           | 3.2                             | 100 Gbit/s EDR InfiniBand | CPU: Intel® Xeon® E5-2667 v4 |
-   +---------------+-------+--------------+------------------------------------+-------------------+-----------------+---------------------+-------------+---------------------------------+---------------------------+------------------------------+
-   | h2.3xlarge.20 | 16    | 256          | 13/13                              | 90                | 8               | KVM                 | 1           | 3.2                             | 100 Gbit/s EDR InfiniBand |                              |
-   +---------------+-------+--------------+------------------------------------+-------------------+-----------------+---------------------+-------------+---------------------------------+---------------------------+------------------------------+
+   +---------------+-------+--------+---------------------------+-------------+-----------------+--------------+---------------------+-------------+---------------------------------+---------------------------+------------------------------+
+   | Flavor        | vCPUs | Memory | Maximum/Assured Bandwidth | Maximum PPS | NIC Multi-Queue | Maximum NICs | Virtualization Type | Local Disks | Capacity of One Local Disk (TB) | Network Type              | Hardware                     |
+   |               |       |        |                           |             |                 |              |                     |             |                                 |                           |                              |
+   |               |       | (GiB)  | (Gbit/s)                  | (10,000)    |                 |              |                     |             |                                 |                           |                              |
+   +===============+=======+========+===========================+=============+=================+==============+=====================+=============+=================================+===========================+==============================+
+   | h2.3xlarge.10 | 16    | 128    | 13/13                     | 90          | 8               | 12           | KVM                 | 1           | 3.2                             | 100 Gbit/s EDR InfiniBand | CPU: Intel® Xeon® E5-2667 v4 |
+   +---------------+-------+--------+---------------------------+-------------+-----------------+--------------+---------------------+-------------+---------------------------------+---------------------------+------------------------------+
+   | h2.3xlarge.20 | 16    | 256    | 13/13                     | 90          | 8               | 12           | KVM                 | 1           | 3.2                             | 100 Gbit/s EDR InfiniBand |                              |
+   +---------------+-------+--------+---------------------------+-------------+-----------------+--------------+---------------------+-------------+---------------------------------+---------------------------+------------------------------+
 
 .. table:: **Table 2** HL1 ECS specifications
 
-   +---------------+-------+--------------+------------------------------------+-------------------+-----------------+---------------------+---------------------------+----------------------------------------+
-   | Flavor        | vCPUs | Memory (GiB) | Maximum/Assured Bandwidth (Gbit/s) | Max. PPS (10,000) | NIC Multi-Queue | Virtualization Type | Network Type              | Hardware                               |
-   +===============+=======+==============+====================================+===================+=================+=====================+===========================+========================================+
-   | hl1.8xlarge.8 | 32    | 256          | 9/9                                | 90                | 8               | KVM                 | 100 Gbit/s EDR InfiniBand | CPU: Intel® Xeon® Processor E5-2690 v4 |
-   +---------------+-------+--------------+------------------------------------+-------------------+-----------------+---------------------+---------------------------+----------------------------------------+
+   +---------------+-------+--------+---------------------------+-------------+-----------------+--------------+---------------------+---------------------------+----------------------------------------+
+   | Flavor        | vCPUs | Memory | Maximum/Assured Bandwidth | Maximum PPS | NIC Multi-Queue | Maximum NICs | Virtualization Type | Network Type              | Hardware                               |
+   |               |       |        |                           |             |                 |              |                     |                           |                                        |
+   |               |       | (GiB)  | (Gbit/s)                  | (10,000)    |                 |              |                     |                           |                                        |
+   +===============+=======+========+===========================+=============+=================+==============+=====================+===========================+========================================+
+   | hl1.8xlarge.8 | 32    | 256    | 9/9                       | 90          | 8               | 12           | KVM                 | 100 Gbit/s EDR InfiniBand | CPU: Intel® Xeon® Processor E5-2690 v4 |
+   +---------------+-------+--------+---------------------------+-------------+-----------------+--------------+---------------------+---------------------------+----------------------------------------+
 
 Scenarios
 ---------
@@ -79,35 +83,46 @@ Notes on Using H2 ECSs
 ----------------------
 
 -  H2 ECSs do not support OS reinstallation or change.
+
 -  H2 ECSs do not support specifications modification.
+
 -  H2 ECSs do not support cold migration, live migration, or HA.
--  H2 ECSs support the following OSs:
 
-   -  For public images:
+-  :ref:`Table 3 <en-us_topic_0035470100__table192771727112217>` lists the OSs supported by H2 ECSs.
 
-      -  CentOS 7.3 64bit
-      -  SUSE Linux Enterprise Server 11 SP4 64bit
-      -  SUSE Linux Enterprise Server 12 SP2 64bit
+   .. _en-us_topic_0035470100__table192771727112217:
 
-   -  For private images:
+   .. table:: **Table 3** Supported OS versions
 
-      -  CentOS 6.5 64bit
-      -  CentOS 7.2 64bit
-      -  CentOS 7.3 64bit
-      -  SUSE Linux Enterprise Server 11 SP4 64bit
-      -  SUSE Linux Enterprise Server 12 SP2 64bit
-      -  Red Hat Enterprise Linux 7.2 64bit
-      -  Red Hat Enterprise Linux 7.3 64bit
+      +-----------------------------------+-----------------------------------------------------+
+      | OS                                | Version                                             |
+      +===================================+=====================================================+
+      | CentOS                            | -  CentOS 7.9 64bit                                 |
+      |                                   | -  CentOS 7.7 64bit                                 |
+      +-----------------------------------+-----------------------------------------------------+
+      | Oracle Linux                      | -  Oracle Linux Server release 8.4 64bit            |
+      |                                   | -  Oracle Linux Server release 7.6 64bit            |
+      +-----------------------------------+-----------------------------------------------------+
+      | RedHat                            | Redhat Linux Enterprise 7.9 64bit                   |
+      +-----------------------------------+-----------------------------------------------------+
+      | SUSE                              | -  Novell SUSE Linux Enterprise Server 15 SP3 64bit |
+      |                                   | -  Novell SUSE Linux Enterprise Server 15 SP2 64bit |
+      |                                   | -  Novell SUSE Linux Enterprise Server 12 SP4 64bit |
+      |                                   | -  Novell SUSE Linux Enterprise Server 12 SP3 64bit |
+      +-----------------------------------+-----------------------------------------------------+
 
 -  H2 ECSs use InfiniBand NICs that provide a bandwidth of 100 Gbit/s.
+
 -  Each H2 ECS uses one PCIe 3.2 TB SSD card for temporary local storage.
+
 -  If an H2 ECS is created using a private image, install an InfiniBand NIC driver on the ECS after the ECS creation following the instructions provided by Mellanox. Download the required version (4.2-1.0.0.0) of InfiniBand NIC driver from the official Mellanox website and install the driver by following the instructions provided by Mellanox.
 
    -  InfiniBand NIC type: **Mellanox Technologies ConnectX-4 Infiniband HBA (MCX455A-ECAT)**
    -  Mellanox official website: http://www.mellanox.com/
-   -  NIC driver download path: http://www.mellanox.com/page/products_dyn?product_family=26&mtag=linux_sw_drivers
+   -  NIC driver download path: https://network.nvidia.com/products/infiniband-drivers/linux/mlnx_ofed/
 
 -  For SUSE H2 ECSs, if IP over InfiniBand (IPoIB) is required, you must manually configure an IP address for the InfiniBand NIC after installing the InfiniBand driver. For details, see :ref:`How Can I Manually Configure an IP Address for an InfiniBand NIC? <en-us_topic_0083225171>`
+
 -  After you delete an H2 ECS, the data stored in SSDs is automatically cleared. Therefore, do not store persistence data into SSDs during ECS running.
 
 Notes on Using HL1 ECSs
@@ -128,23 +143,28 @@ Notes on Using HL1 ECSs
 
 -  For SUSE HL1 ECSs, if IPoIB is required, you must manually configure an IP address for the InfiniBand NIC after installing the InfiniBand driver. For details, see :ref:`How Can I Manually Configure an IP Address for an InfiniBand NIC? <en-us_topic_0083225171>`
 
--  HL1 ECSs support the following OSs:
+-  :ref:`Table 4 <en-us_topic_0035470100__table204972196287>` lists the OSs supported by HL1 ECSs.
 
-   -  For public images:
+   .. _en-us_topic_0035470100__table204972196287:
 
-      -  CentOS 7.3 64bit
-      -  SUSE Linux Enterprise Server 11 SP4 64bit
-      -  SUSE Linux Enterprise Server 12 SP2 64bit
+   .. table:: **Table 4** Supported OS versions
 
-   -  For private images:
-
-      -  CentOS 6.5 64bit
-      -  CentOS 7.2 64bit
-      -  CentOS 7.3 64bit
-      -  SUSE Linux Enterprise Server 11 SP4 64bit
-      -  SUSE Linux Enterprise Server 12 SP2 64bit
-      -  Red Hat Enterprise Linux 7.2 64bit
-      -  Red Hat Enterprise Linux 7.3 64bit
+      +-----------------------------------+-----------------------------------------------------+
+      | OS                                | Version                                             |
+      +===================================+=====================================================+
+      | CentOS                            | -  CentOS 7.9 64bit                                 |
+      |                                   | -  CentOS 7.7 64bit                                 |
+      +-----------------------------------+-----------------------------------------------------+
+      | Oracle Linux                      | -  Oracle Linux Server release 8.4 64bit            |
+      |                                   | -  Oracle Linux Server release 7.6 64bit            |
+      +-----------------------------------+-----------------------------------------------------+
+      | RedHat                            | Redhat Linux Enterprise 7.9 64bit                   |
+      +-----------------------------------+-----------------------------------------------------+
+      | SUSE                              | -  Novell SUSE Linux Enterprise Server 15 SP3 64bit |
+      |                                   | -  Novell SUSE Linux Enterprise Server 15 SP2 64bit |
+      |                                   | -  Novell SUSE Linux Enterprise Server 12 SP4 64bit |
+      |                                   | -  Novell SUSE Linux Enterprise Server 12 SP3 64bit |
+      +-----------------------------------+-----------------------------------------------------+
 
 -  Charging an HL1 ECS is stopped when it is stopped.
 

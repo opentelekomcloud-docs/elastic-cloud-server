@@ -7,4 +7,4 @@ CTS
 .. toctree::
    :maxdepth: 1
 
-   viewing_tracing_logs
+   viewing_audit_logs

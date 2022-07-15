@@ -34,10 +34,6 @@ Prerequisites
 
    Download the ntfs-3g and chntpw software packages of the version required by the temporary ECS OS.
 
-   To obtain the ntfs-3g software package, log in at `www.tuxera.com/community/open-source-ntfs-3g/ <http://www.tuxera.com/community/open-source-ntfs-3g/>`__.
-
-   To obtain the chntpw software package, log in at https://www.chntpw.com/download/.
-
 Procedure
 ---------
 

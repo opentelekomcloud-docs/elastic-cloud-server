@@ -8,7 +8,7 @@ Obtaining a Tesla Driver and CUDA Toolkit
 Scenarios
 ---------
 
-Before using a GPU-accelerated ECS, make sure that the desired Tesla driver and CUDA toolkit have been installed on the EIP. Otherwise, computing acceleration will not take effect. This section describes how to obtain a Tesla driver and CUDA toolkit. Select a driver version based on your ECS type.
+Before using a GPU-accelerated ECS, make sure that the desired Tesla driver and CUDA toolkit have been installed on the ECS. Otherwise, computing acceleration will not take effect. This section describes how to obtain a Tesla driver and CUDA toolkit. Select a driver version based on your ECS type.
 
 For instructions about how to install the Tesla driver and CUDA toolkit, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 

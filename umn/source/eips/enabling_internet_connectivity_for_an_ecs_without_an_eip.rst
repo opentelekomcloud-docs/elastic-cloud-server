@@ -8,7 +8,7 @@ Enabling Internet Connectivity for an ECS Without an EIP
 Scenarios
 ---------
 
-To ensure platform security and conserve EIPs, EIPs are assigned only to specified ECSs. ECSs without EIPs cannot access the Internet directly. If these ECSs need to access the Internet (for example, to perform a software upgrade or install a patch), you can select an ECS with an EIP bound to function as a proxy ECS, providing an access channel for these ECS.
+To ensure platform security and conserve EIPs, EIPs are assigned only to specified ECSs. ECSs without EIPs cannot access the Internet directly. If these ECSs need to access the Internet (for example, to perform a software upgrade or install a patch), you can select an ECS with an EIP bound to function as a proxy ECS, providing an access channel for these ECSs.
 
 .. note::
 
@@ -112,7 +112,7 @@ In this example, the proxy ECS runs CentOS 6.5.
 
    .. note::
 
-      To retain the preceding configuration even after the ECS is restarted, run the **vi /etc/rc.local** command to edit the **rc.local** file. Specifically, copy the rule described in step :ref:`16 <en-us_topic_0027157850__li49419571113959>` into **rc.local**, press **Esc** to exit the editing mode, and enter **:wq** to save and exit the file.
+      To retain the preceding configuration even after the ECS is restarted, run the **vi /etc/rc.local** command to edit the **rc.local** file. Specifically, copy the rule described in step :ref:`16 <en-us_topic_0027157850__li49419571113959>` into **rc.local**, press **Esc** to exit Insert mode, and enter **:wq** to save the settings and exit.
 
 #. Run the following commands to save the iptables configuration and make it start up automatically upon ECS startup:
 
@@ -140,7 +140,7 @@ In this example, the proxy ECS runs CentOS 6.5.
    a. Log in to the management console.
    b. Click |image3| in the upper left corner and select your region and project.
    c. Under **Network**, click **Virtual Private Cloud**.
-   d. Select a VPC to which a route is to be added and click **Route Tables**. On the **Route Tables** page, click **Add Route**.
+   d. Choose **Route Tables** in the left navigation pane. On the displayed page, click a VPC which a route is to be added to. On the displayed page, click **Add Route**.
    e. Set route information on the displayed page.
 
       -  **Destination**: indicates the destination network segment. The default value is **0.0.0.0/0**.
