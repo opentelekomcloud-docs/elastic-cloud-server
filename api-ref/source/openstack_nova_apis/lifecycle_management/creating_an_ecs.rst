@@ -186,7 +186,7 @@ Request
    |                         |                 |                    |                                                                                                                                                                                                                                                                                                                                                                             |
    |                         |                 |                    |    .. code-block::                                                                                                                                                                                                                                                                                                                                                          |
    |                         |                 |                    |                                                                                                                                                                                                                                                                                                                                                                             |
-   |                         |                 |                    |       cmVtIGNtZA0KZWNobyAxMTEgJmd0OyBjOlxhYWEudHh0                                                                                                                                                                                                                                                                                                                          |
+   |                         |                 |                    |       cmVtIGNtZAplY2hvIDExMSA+IGM6XGFhYS50eHQ=                                                                                                                                                                                                                                                                                                                              |
    +-------------------------+-----------------+--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | availability_zone       | No              | String             | Specifies the AZ of a specified ECS. This is an extended attribute.                                                                                                                                                                                                                                                                                                         |
    |                         |                 |                    |                                                                                                                                                                                                                                                                                                                                                                             |
@@ -603,11 +603,11 @@ Example Response (Creating an ECS)
            "id": "567c1557-0eca-422c-bfce-149d6b8f1bb8",
            "links": [
                {
-                   "href": "http://192.168.82.230:8774/v2/dc4059e8e7994f2498b514ca04cdaf44/servers/567c1557-0eca-422c-bfce-149d6b8f1bb8",
+                   "href": "http://xxx/v2/dc4059e8e7994f2498b514ca04cdaf44/servers/567c1557-0eca-422c-bfce-149d6b8f1bb8",
                    "rel": "self"
                },
                {
-                   "href": "http://192.168.82.230:8774/dc4059e8e7994f2498b514ca04cdaf44/servers/567c1557-0eca-422c-bfce-149d6b8f1bb8",
+                   "href": "http://xxx/dc4059e8e7994f2498b514ca04cdaf44/servers/567c1557-0eca-422c-bfce-149d6b8f1bb8",
                    "rel": "bookmark"
                }
            ],

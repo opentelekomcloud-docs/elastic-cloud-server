@@ -82,79 +82,79 @@ Response
 
 .. table:: **Table 3** Response parameters
 
-   +-----------------+-----------------+------------------+--------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type             | Description                                                                    |
-   +=================+=================+==================+================================================================================+
-   | flavors         | Yes             | Array of objects | Specifies ECS flavors.                                                         |
-   |                 |                 |                  |                                                                                |
-   |                 |                 |                  | For details, see :ref:`Table 4 <en-us_topic_0110472767__table68941918122818>`. |
-   +-----------------+-----------------+------------------+--------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                    |
+   +=======================+=======================+================================================================================+
+   | flavors               | Array of objects      | Specifies ECS flavors.                                                         |
+   |                       |                       |                                                                                |
+   |                       |                       | For details, see :ref:`Table 4 <en-us_topic_0110472767__table68941918122818>`. |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------+
 
 .. _en-us_topic_0110472767__table68941918122818:
 
 .. table:: **Table 4** **flavors** field description
 
-   +----------------------------+-----------------+------------------+------------------------------------------------------------------------------------------+
-   | Parameter                  | Mandatory       | Type             | Description                                                                              |
-   +============================+=================+==================+==========================================================================================+
-   | id                         | Yes             | String           | Specifies the ECS flavor ID.                                                             |
-   +----------------------------+-----------------+------------------+------------------------------------------------------------------------------------------+
-   | name                       | Yes             | String           | Specifies the name of the ECS flavor.                                                    |
-   +----------------------------+-----------------+------------------+------------------------------------------------------------------------------------------+
-   | vcpus                      | Yes             | Integer          | Specifies the number of vCPUs in the ECS flavor.                                         |
-   +----------------------------+-----------------+------------------+------------------------------------------------------------------------------------------+
-   | ram                        | Yes             | Integer          | Specifies the memory size (MB) in the ECS flavor.                                        |
-   +----------------------------+-----------------+------------------+------------------------------------------------------------------------------------------+
-   | disk                       | Yes             | Integer          | Specifies the system disk size in the ECS flavor.                                        |
-   |                            |                 |                  |                                                                                          |
-   |                            |                 |                  | This parameter has not been used. Its default value is **0**.                            |
-   +----------------------------+-----------------+------------------+------------------------------------------------------------------------------------------+
-   | swap                       | No              | String           | Specifies the swap partition size required by the ECS flavor.                            |
-   |                            |                 |                  |                                                                                          |
-   |                            |                 |                  | This parameter has not been used. Its default value is **""**.                           |
-   +----------------------------+-----------------+------------------+------------------------------------------------------------------------------------------+
-   | OS-FLV-EXT-DATA:ephemeral  | Yes             | Integer          | Specifies the temporary disk size. This is an extended attribute.                        |
-   |                            |                 |                  |                                                                                          |
-   |                            |                 |                  | This parameter has not been used. Its default value is **0**.                            |
-   +----------------------------+-----------------+------------------+------------------------------------------------------------------------------------------+
-   | OS-FLV-DISABLED:disabled   | Yes             | Boolean          | This is an extended attribute, specifying whether a flavor is available.                 |
-   |                            |                 |                  |                                                                                          |
-   |                            |                 |                  | -  **true**: indicates that a flavor is available.                                       |
-   |                            |                 |                  | -  **false**: indicates that a flavor is unavailable.                                    |
-   |                            |                 |                  |                                                                                          |
-   |                            |                 |                  | .. note::                                                                                |
-   |                            |                 |                  |                                                                                          |
-   |                            |                 |                  |    This parameter is not used.                                                           |
-   +----------------------------+-----------------+------------------+------------------------------------------------------------------------------------------+
-   | rxtx_factor                | Yes             | Float            | This is an extended attribute.                                                           |
-   |                            |                 |                  |                                                                                          |
-   |                            |                 |                  | .. note::                                                                                |
-   |                            |                 |                  |                                                                                          |
-   |                            |                 |                  |    This parameter is not used.                                                           |
-   +----------------------------+-----------------+------------------+------------------------------------------------------------------------------------------+
-   | rxtx_quota                 | Yes             | String           | Specifies the software constraints of the network bandwidth that can be used by the ECS. |
-   |                            |                 |                  |                                                                                          |
-   |                            |                 |                  | This parameter has not been used. Its default value is **null**.                         |
-   +----------------------------+-----------------+------------------+------------------------------------------------------------------------------------------+
-   | rxtx_cap                   | Yes             | String           | Specifies the hardware constraints of the network bandwidth that can be used by the ECS. |
-   |                            |                 |                  |                                                                                          |
-   |                            |                 |                  | This parameter has not been used. Its default value is **null**.                         |
-   +----------------------------+-----------------+------------------+------------------------------------------------------------------------------------------+
-   | os-flavor-access:is_public | Yes             | Boolean          | Specifies whether a flavor is available to all tenants. This is an extended attribute.   |
-   |                            |                 |                  |                                                                                          |
-   |                            |                 |                  | -  **true**: indicates that a flavor is available to all tenants.                        |
-   |                            |                 |                  | -  **false**: indicates that a flavor is available only to certain tenants.              |
-   |                            |                 |                  |                                                                                          |
-   |                            |                 |                  | Default value: **true**                                                                  |
-   +----------------------------+-----------------+------------------+------------------------------------------------------------------------------------------+
-   | links                      | Yes             | Array of objects | Specifies the shortcut link of the ECS flavor.                                           |
-   |                            |                 |                  |                                                                                          |
-   |                            |                 |                  | For details, see :ref:`Table 5 <en-us_topic_0110472767__table15913898194628>`.           |
-   +----------------------------+-----------------+------------------+------------------------------------------------------------------------------------------+
-   | extra_specs                | Yes             | Array of objects | Specifies the extended field of the ECS specifications.                                  |
-   |                            |                 |                  |                                                                                          |
-   |                            |                 |                  | For details, see :ref:`Table 6 <en-us_topic_0020212656__table59078165>`.                 |
-   +----------------------------+-----------------+------------------+------------------------------------------------------------------------------------------+
+   +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
+   | Parameter                  | Type                  | Description                                                                              |
+   +============================+=======================+==========================================================================================+
+   | id                         | String                | Specifies the ECS flavor ID.                                                             |
+   +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
+   | name                       | String                | Specifies the name of the ECS flavor.                                                    |
+   +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
+   | vcpus                      | Integer               | Specifies the number of vCPUs in the ECS flavor.                                         |
+   +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
+   | ram                        | Integer               | Specifies the memory size (MB) in the ECS flavor.                                        |
+   +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
+   | disk                       | Integer               | Specifies the system disk size in the ECS flavor.                                        |
+   |                            |                       |                                                                                          |
+   |                            |                       | This parameter has not been used. Its default value is **0**.                            |
+   +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
+   | swap                       | String                | Specifies the swap partition size required by the ECS flavor.                            |
+   |                            |                       |                                                                                          |
+   |                            |                       | This parameter has not been used. Its default value is **""**.                           |
+   +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
+   | OS-FLV-EXT-DATA:ephemeral  | Integer               | Specifies the temporary disk size. This is an extended attribute.                        |
+   |                            |                       |                                                                                          |
+   |                            |                       | This parameter has not been used. Its default value is **0**.                            |
+   +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
+   | OS-FLV-DISABLED:disabled   | Boolean               | This is an extended attribute, specifying whether a flavor is available.                 |
+   |                            |                       |                                                                                          |
+   |                            |                       | -  **true**: indicates that a flavor is available.                                       |
+   |                            |                       | -  **false**: indicates that a flavor is unavailable.                                    |
+   |                            |                       |                                                                                          |
+   |                            |                       | .. note::                                                                                |
+   |                            |                       |                                                                                          |
+   |                            |                       |    This parameter is not used.                                                           |
+   +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
+   | rxtx_factor                | Float                 | This is an extended attribute.                                                           |
+   |                            |                       |                                                                                          |
+   |                            |                       | .. note::                                                                                |
+   |                            |                       |                                                                                          |
+   |                            |                       |    This parameter is not used.                                                           |
+   +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
+   | rxtx_quota                 | String                | Specifies the software constraints of the network bandwidth that can be used by the ECS. |
+   |                            |                       |                                                                                          |
+   |                            |                       | This parameter has not been used. Its default value is **null**.                         |
+   +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
+   | rxtx_cap                   | String                | Specifies the hardware constraints of the network bandwidth that can be used by the ECS. |
+   |                            |                       |                                                                                          |
+   |                            |                       | This parameter has not been used. Its default value is **null**.                         |
+   +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
+   | os-flavor-access:is_public | Boolean               | Specifies whether a flavor is available to all tenants. This is an extended attribute.   |
+   |                            |                       |                                                                                          |
+   |                            |                       | -  **true**: indicates that a flavor is available to all tenants.                        |
+   |                            |                       | -  **false**: indicates that a flavor is available only to certain tenants.              |
+   |                            |                       |                                                                                          |
+   |                            |                       | Default value: **true**                                                                  |
+   +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
+   | links                      | Array of objects      | Specifies the shortcut link of the ECS flavor.                                           |
+   |                            |                       |                                                                                          |
+   |                            |                       | For details, see :ref:`Table 5 <en-us_topic_0110472767__table15913898194628>`.           |
+   +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
+   | extra_specs                | Array of objects      | Specifies the extended field of the ECS specifications.                                  |
+   |                            |                       |                                                                                          |
+   |                            |                       | For details, see :ref:`Table 6 <en-us_topic_0020212656__table59078165>`.                 |
+   +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0110472767__table15913898194628:
 

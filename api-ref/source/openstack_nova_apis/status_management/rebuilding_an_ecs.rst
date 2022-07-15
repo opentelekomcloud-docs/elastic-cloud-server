@@ -121,7 +121,7 @@ Request
    |                    |                 |                 |                                                                                                                                     |
    |                    |                 |                 |    .. code-block::                                                                                                                  |
    |                    |                 |                 |                                                                                                                                     |
-   |                    |                 |                 |       cmVtIGNtZA0KZWNobyAxMTEgJmd0OyBjOlxhYWEudHh0                                                                                  |
+   |                    |                 |                 |       cmVtIGNtZAplY2hvIDExMSA+IGM6XGFhYS50eHQ=                                                                                      |
    +--------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
 
 Response
@@ -220,7 +220,7 @@ Example Response
                "links": [
                    {
                        "rel": "bookmark",
-                       "href": "https://172.30.32.132:443/7459f9935ed2422eb9800fea1d4d9378/images/3ed456f5-3d8f-4383-a6c9-312032afcd1a"
+                       "href": "https://xxx/7459f9935ed2422eb9800fea1d4d9378/images/3ed456f5-3d8f-4383-a6c9-312032afcd1a"
                    }
                ],
                "id": "3ed456f5-3d8f-4383-a6c9-312032afcd1a"
@@ -245,7 +245,7 @@ Example Response
                "links": [
                    {
                        "rel": "bookmark",
-                       "href": "https://172.30.32.132:443/7459f9935ed2422eb9800fea1d4d9378/flavors/normal1"
+                       "href": "https://xxx/7459f9935ed2422eb9800fea1d4d9378/flavors/normal1"
                    }
                ],
                "id": "normal1"
@@ -257,11 +257,11 @@ Example Response
            "links": [
                {
                    "rel": "self",
-                   "href": "https://172.30.32.132:443/v2/7459f9935ed2422eb9800fea1d4d9378/servers/ea681a24-9b24-4f49-98ef-8e1f73acf19e"
+                   "href": "https://xxx/v2/7459f9935ed2422eb9800fea1d4d9378/servers/ea681a24-9b24-4f49-98ef-8e1f73acf19e"
                },
                {
                    "rel": "bookmark",
-                   "href": "https://172.30.32.132:443/7459f9935ed2422eb9800fea1d4d9378/servers/ea681a24-9b24-4f49-98ef-8e1f73acf19e"
+                   "href": "https://xxx/7459f9935ed2422eb9800fea1d4d9378/servers/ea681a24-9b24-4f49-98ef-8e1f73acf19e"
                }
            ],
            "id": "ea681a24-9b24-4f49-98ef-8e1f73acf19e",

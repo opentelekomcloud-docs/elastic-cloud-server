@@ -23,9 +23,9 @@ Constraints
 URI
 ---
 
-POST /v2/{project_id}/servers/{server_id}/os-volume_attachments
-
 POST /v2.1/{project_id}/servers/{server_id}/os-volume_attachments
+
+POST /v2/{project_id}/servers/{server_id}/os-volume_attachments
 
 :ref:`Table 1 <en-us_topic_0031167350__table60562285165259>` describes the parameters in the URI.
 
