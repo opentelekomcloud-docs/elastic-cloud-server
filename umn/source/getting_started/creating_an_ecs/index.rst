@@ -12,3 +12,5 @@ Creating an ECS
    step_2_configure_network
    step_3_configure_advanced_settings
    step_4_confirm
+
+Hi, Assuming if I am a hacker, how do you deal with this?
