@@ -43,7 +43,7 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
 
       .. code-block:: console
 
-         [root@sluo-ecs-a611 ~]# tail -n 3 /etc/fstab 
+         [root@sluo-ecs-a611 ~]# tail -n 3 /etc/fstab
          #
          UUID=7c4fce5d-f8f7-4ed6-8463-f2bd22d0ddea /                       ext4    defaults        1 1
          UUID=5de3cf2c-30c6-4fb2-9e63-830439d4e674 swap                    swap    defaults        0 0
@@ -56,8 +56,8 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
 
       .. code-block:: console
 
-         [root@sluo-ecs-a611 ~]# vi /etc/fstab 
-         [root@sluo-ecs-a611 ~]# tail -n 3 /etc/fstab 
+         [root@sluo-ecs-a611 ~]# vi /etc/fstab
+         [root@sluo-ecs-a611 ~]# tail -n 3 /etc/fstab
          #
          UUID=7c4fce5d-f8f7-4ed6-8463-f2bd22d0ddea /                       ext4    defaults        1 1
 

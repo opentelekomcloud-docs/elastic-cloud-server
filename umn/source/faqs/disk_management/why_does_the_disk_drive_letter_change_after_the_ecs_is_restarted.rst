@@ -39,7 +39,7 @@ To prevent this issue, use a UUID, a unique character string provided by the Lin
 
    .. code-block:: console
 
-      [root@ecs-test-0001 ~]# blkid /dev/vdb1 
+      [root@ecs-test-0001 ~]# blkid /dev/vdb1
       /dev/vdb1: UUID="b9a07b7b-9322-4e05-ab9b-14b8050cd8cc" TYPE="ext4"
 
    The UUID of the **/dev/vdb1** partition is displayed.

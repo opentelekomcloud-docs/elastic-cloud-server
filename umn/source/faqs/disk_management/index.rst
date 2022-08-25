@@ -1,11 +1,33 @@
+:original_name: en-us_topic_0018124786.html
+
 .. _en-us_topic_0018124786:
 
-===============
 Disk Management
 ===============
 
+-  :ref:`What Should I Do If the Data Disk Attached a Windows ECS Is Unavailable? <en-us_topic_0251012483>`
+-  :ref:`How Can I Adjust System Disk Partitions? <en-us_topic_0076210995>`
+-  :ref:`How Can I Obtain the Mapping Between Disk Partitions and Disk Devices on a Windows ECS? <en-us_topic_0087680813>`
+-  :ref:`How Can I Obtain the Mapping Between Disk Partitions and Disk Devices on a Linux ECS? <en-us_topic_0087901488>`
+-  :ref:`How Can I Enable Virtual Memory on a Windows ECS? <en-us_topic_0120795802>`
+-  :ref:`Why Is the Memory of an ECS Obtained by Running the free Command Inconsistent with the Actual Memory? <en-us_topic_0093153741>`
+-  :ref:`How Can I Add the Empty Partition of an Expanded System Disk to the End Root Partition Online? <en-us_topic_0078300749>`
+-  :ref:`How Can I Add the Empty Partition of an Expanded System Disk to the Non-end Root Partition Online? <en-us_topic_0078300750>`
+-  :ref:`Can I Attach Multiple Disks to an ECS? <en-us_topic_0018073215>`
+-  :ref:`What Are the Requirements for Attaching an EVS Disk to an ECS? <en-us_topic_0040863659>`
+-  :ref:`Which ECSs Can Be Attached with SCSI EVS Disks? <en-us_topic_0077938284>`
+-  :ref:`How Do I Obtain My Disk Name in the ECS OS Using the Device Identifier Provided on the Console? <en-us_topic_0103285575>`
+-  :ref:`How Can I Attach a Snapshot-based System Disk to an ECS as Its Data Disk? <en-us_topic_0152643976>`
+-  :ref:`Why Does a Linux ECS with a SCSI Disk Attached Fails to Restart? <en-us_topic_0087382187>`
+-  :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
+-  :ref:`Why Does a Disk Attached to a Windows ECS Go Offline? <en-us_topic_0114225937>`
+-  :ref:`Why Does the Disk Drive Letter Change After the ECS Is Restarted? <en-us_topic_0240831198>`
+-  :ref:`How Can I Obtain Data Disk Information If Tools Are Uninstalled? <en-us_topic_0029806525>`
+-  :ref:`How Can I Rectify the Fault That May Occur on a Linux ECS with an NVMe SSD Disk Attached? <en-us_topic_0087622835>`
+
 .. toctree::
    :maxdepth: 1
+   :hidden: 
 
    what_should_i_do_if_the_data_disk_attached_a_windows_ecs_is_unavailable
    how_can_i_adjust_system_disk_partitions

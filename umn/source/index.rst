@@ -1,6 +1,6 @@
-==========
-Main Index
-==========
+=================================
+Elastic Cloud Server - User Guide
+=================================
 
 .. toctree::
    :maxdepth: 1
