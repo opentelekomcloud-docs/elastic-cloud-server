@@ -54,8 +54,7 @@ Request Example
    .. _en-us_topic_0134192984__fig71433122328:
 
    .. figure:: /_static/images/en-us_image_0173496405.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Obtaining the token
 
 
       **Figure 1** Obtaining the token
