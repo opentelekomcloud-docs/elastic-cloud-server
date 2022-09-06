@@ -78,5 +78,4 @@ EVS Disk Backup Procedure
 .. |image2| image:: /_static/images/en-us_image_0210779229.png
 
 .. |image3| image:: /_static/images/en-us_image_0000001128656892.png
-   :class: imgResize
 

@@ -104,8 +104,7 @@ For Windows ECSs
    .. _en-us_topic_0040630518__fig3371712915:
 
    .. figure:: /_static/images/en-us_image_0224317546.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Date and Time
 
 
       **Figure 1** Date and Time

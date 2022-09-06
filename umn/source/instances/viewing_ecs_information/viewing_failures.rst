@@ -43,8 +43,7 @@ Procedure
    .. _en-us_topic_0108255889__fig1678913358104:
 
    .. figure:: /_static/images/en-us_image_0152768827.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Failures
 
 
       **Figure 1** Failures

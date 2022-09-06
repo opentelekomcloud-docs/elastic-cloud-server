@@ -54,8 +54,7 @@ Passing User Data
    .. _en-us_topic_0032380449__fig87313493915:
 
    .. figure:: /_static/images/en-us_image_0237026761.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** User Data
 
 
       **Figure 1** User Data
@@ -134,8 +133,7 @@ Customized user data scripts of Linux ECSs are based on the open-source Cloud-In
    .. _en-us_topic_0032380449__fig1787242875415:
 
    .. figure:: /_static/images/en-us_image_0115931570.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Viewing operating results
 
 
       **Figure 2** Viewing operating results
@@ -183,8 +181,7 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
    .. _en-us_topic_0032380449__fig8622411077:
 
    .. figure:: /_static/images/en-us_image_0115932123.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 3** Creating text file (Batch)
 
 
       **Figure 3** Creating text file (Batch)
@@ -194,8 +191,7 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
    .. _en-us_topic_0032380449__fig14281122141212:
 
    .. figure:: /_static/images/en-us_image_0115932873.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 4** Viewing user data (Batch)
 
 
       **Figure 4** Viewing user data (Batch)
@@ -214,8 +210,7 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
    .. _en-us_topic_0032380449__fig103618447159:
 
    .. figure:: /_static/images/en-us_image_0115933029.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 5** Creating text file (PowerShell)
 
 
       **Figure 5** Creating text file (PowerShell)
@@ -225,8 +220,7 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
    .. _en-us_topic_0032380449__fig124617204176:
 
    .. figure:: /_static/images/en-us_image_0115934291.jpg
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 6** Viewing user data (PowerShell)
 
 
       **Figure 6** Viewing user data (PowerShell)

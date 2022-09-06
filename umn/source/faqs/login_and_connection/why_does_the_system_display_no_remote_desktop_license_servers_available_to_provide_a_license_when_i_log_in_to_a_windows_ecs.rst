@@ -41,8 +41,7 @@ Windows Server 2008
    .. _en-us_topic_0264235941__en-us_topic_0128065575_fig16121213182410:
 
    .. figure:: /_static/images/en-us_image_0288997287.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Deleting roles
 
 
       **Figure 2** Deleting roles
@@ -52,8 +51,7 @@ Windows Server 2008
    .. _en-us_topic_0264235941__en-us_topic_0128065575_fig199398290243:
 
    .. figure:: /_static/images/en-us_image_0288997288.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 3** Deselecting Remote Desktop Session Host
 
 
       **Figure 3** Deselecting Remote Desktop Session Host
@@ -72,8 +70,7 @@ Windows Server 2012
    .. _en-us_topic_0264235941__en-us_topic_0128065575_en-us_topic_0018339851_fig18932134871212:
 
    .. figure:: /_static/images/en-us_image_0288997289.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 4** Deleting roles and features
 
 
       **Figure 4** Deleting roles and features
@@ -85,8 +82,7 @@ Windows Server 2012
    .. _en-us_topic_0264235941__en-us_topic_0128065575_fig1386565415529:
 
    .. figure:: /_static/images/en-us_image_0288997290.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 5** Deselecting Remote Desktop Services
 
 
       **Figure 5** Deselecting Remote Desktop Services

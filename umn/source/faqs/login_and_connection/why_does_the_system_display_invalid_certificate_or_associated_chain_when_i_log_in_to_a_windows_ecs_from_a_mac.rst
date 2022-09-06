@@ -13,8 +13,7 @@ When you use Microsoft Remote Desktop for Mac to remotely access a Windows ECS, 
 .. _en-us_topic_0264235944__en-us_topic_0138877154_fig13103521154816:
 
 .. figure:: /_static/images/en-us_image_0000001122204673.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 1** Microsoft Remote Desktop for Mac
 
 
    **Figure 1** Microsoft Remote Desktop for Mac
@@ -24,8 +23,7 @@ Due to the particularity of the Mac system, you need to perform internal configu
 .. _en-us_topic_0264235944__en-us_topic_0138877154_fig135204375528:
 
 .. figure:: /_static/images/en-us_image_0000001122141457.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 2** Invalid certificate or associated chain
 
 
    **Figure 2** Invalid certificate or associated chain
@@ -43,8 +41,7 @@ Procedure
    .. _en-us_topic_0264235944__en-us_topic_0138877154_fig1018664945218:
 
    .. figure:: /_static/images/en-us_image_0000001122204675.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 3** Preferences setting
 
 
       **Figure 3** Preferences setting
@@ -54,8 +51,7 @@ Procedure
    .. _en-us_topic_0264235944__en-us_topic_0138877154_fig121513225316:
 
    .. figure:: /_static/images/en-us_image_0000001122000977.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 4** Security setting
 
 
       **Figure 4** Security setting
@@ -75,8 +71,7 @@ Procedure
    .. _en-us_topic_0264235944__en-us_topic_0138877154_fig113613152539:
 
    .. figure:: /_static/images/en-us_image_0000001122000979.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 5** Remote Desktop Session Host
 
 
       **Figure 5** Remote Desktop Session Host
@@ -88,8 +83,7 @@ Procedure
       .. _en-us_topic_0264235944__en-us_topic_0138877154_fig1461293695320:
 
       .. figure:: /_static/images/en-us_image_0000001121886253.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 6** Require use of specific security layer for remote (RDP) connections
 
 
          **Figure 6** Require use of specific security layer for remote (RDP) connections
@@ -99,8 +93,7 @@ Procedure
       .. _en-us_topic_0264235944__en-us_topic_0138877154_fig135815477530:
 
       .. figure:: /_static/images/en-us_image_0000001122204677.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 7** Remote connection authentication
 
 
          **Figure 7** Remote connection authentication

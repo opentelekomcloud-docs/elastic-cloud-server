@@ -25,8 +25,7 @@ ECS works with other products and services to provide computing, storage, and ne
 .. _en-us_topic_0013771112__fig36062790113621:
 
 .. figure:: /_static/images/en-us_image_0071898891.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 1** System architecture
 
 
    **Figure 1** System architecture

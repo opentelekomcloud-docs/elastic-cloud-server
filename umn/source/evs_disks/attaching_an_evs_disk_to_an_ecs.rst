@@ -39,8 +39,7 @@ Procedure
    .. _en-us_topic_0096293655__fig1332144315348:
 
    .. figure:: /_static/images/en-us_image_0096298046.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Attach Disk
 
 
       **Figure 1** Attach Disk
@@ -64,8 +63,7 @@ Procedure
    .. _en-us_topic_0096293655__fig18788918132718:
 
    .. figure:: /_static/images/en-us_image_0096298123.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Viewing the newly attached disk
 
 
       **Figure 2** Viewing the newly attached disk

@@ -66,8 +66,7 @@ The following operations use PuTTY as an example. Before logging in to the ECS u
    .. _en-us_topic_0017955380__fig3739272820239:
 
    .. figure:: /_static/images/en-us_image_0000001082643605.jpg
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Configuring the EIP
 
 
       **Figure 1** Configuring the EIP

@@ -219,8 +219,7 @@ Displays ECS user data. The value is configured only when you create an ECS. It 
       .. _en-us_topic_0042400609__fig124601338153316:
 
       .. figure:: /_static/images/en-us_image_0166755236.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 1** 404 Not Found
 
 
          **Figure 1** 404 Not Found

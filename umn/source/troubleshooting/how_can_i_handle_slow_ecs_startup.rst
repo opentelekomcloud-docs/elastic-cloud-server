@@ -20,8 +20,7 @@ If an ECS requires a long period of time to start, you can change the default ti
    .. _en-us_topic_0117006217__fig165801156121217:
 
    .. figure:: /_static/images/en-us_image_0117031082.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Viewing the grub version
 
 
       **Figure 1** Viewing the grub version
@@ -39,8 +38,7 @@ If an ECS requires a long period of time to start, you can change the default ti
    .. _en-us_topic_0117006217__fig109003411818:
 
    .. figure:: /_static/images/en-us_image_0117031548.gif
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Changing timeout duration
 
 
       **Figure 2** Changing timeout duration

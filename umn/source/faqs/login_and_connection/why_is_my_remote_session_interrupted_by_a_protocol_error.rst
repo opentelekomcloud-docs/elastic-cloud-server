@@ -31,8 +31,7 @@ Solution
    .. _en-us_topic_0264235945__en-us_topic_0173587265_fig429554874215:
 
    .. figure:: /_static/images/en-us_image_0288997424.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Opening the registry editor
 
 
       **Figure 2** Opening the registry editor
@@ -44,8 +43,7 @@ Solution
    .. _en-us_topic_0264235945__en-us_topic_0173587265_fig134336512282:
 
    .. figure:: /_static/images/en-us_image_0288997425.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 3** Deleting Certificate
 
 
       **Figure 3** Deleting Certificate
@@ -57,8 +55,7 @@ Solution
    .. _en-us_topic_0264235945__en-us_topic_0173587265_fig15551901388:
 
    .. figure:: /_static/images/en-us_image_0288997426.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 4** Opening Remote Desktop Session Host Configuration
 
 
       **Figure 4** Opening Remote Desktop Session Host Configuration
@@ -68,8 +65,7 @@ Solution
    .. _en-us_topic_0264235945__en-us_topic_0173587265_fig538416200307:
 
    .. figure:: /_static/images/en-us_image_0288997427.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 5** RDP-Tcp properties
 
 
       **Figure 5** RDP-Tcp properties

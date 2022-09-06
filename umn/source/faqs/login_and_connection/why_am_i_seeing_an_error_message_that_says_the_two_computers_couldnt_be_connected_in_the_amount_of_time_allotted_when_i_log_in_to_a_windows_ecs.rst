@@ -13,8 +13,7 @@ An error message is displayed indicating that the computer cannot connect to the
 .. _en-us_topic_0264235947__en-us_topic_0173599485_en-us_topic_0120795668_fig1256612592310:
 
 .. figure:: /_static/images/en-us_image_0288997357.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 1** Error message
 
 
    **Figure 1** Error message

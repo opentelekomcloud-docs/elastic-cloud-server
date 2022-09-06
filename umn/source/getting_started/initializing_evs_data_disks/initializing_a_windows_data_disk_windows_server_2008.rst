@@ -40,8 +40,7 @@ Procedure
    .. _en-us_topic_0085634796__en-us_topic_0044524740_fig40496387105554:
 
    .. figure:: /_static/images/en-us_image_0095024494.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Disk Management
 
 
       **Figure 1** Disk Management
@@ -53,8 +52,7 @@ Procedure
    .. _en-us_topic_0085634796__en-us_topic_0044524740_fig102484362217:
 
    .. figure:: /_static/images/en-us_image_0132359404.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Online the disk
 
 
       **Figure 2** Online the disk
@@ -68,8 +66,7 @@ Procedure
    .. _en-us_topic_0085634796__en-us_topic_0044524740_fig409808111224:
 
    .. figure:: /_static/images/en-us_image_0132360430.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 3** Initialize Disk
 
 
       **Figure 3** Initialize Disk
@@ -81,8 +78,7 @@ Procedure
    .. _en-us_topic_0085634796__en-us_topic_0044524740_fig68332918241:
 
    .. figure:: /_static/images/en-us_image_0097597141.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 4** Unallocated space
 
 
       **Figure 4** Unallocated space
@@ -98,8 +94,7 @@ Procedure
    .. _en-us_topic_0085634796__en-us_topic_0044524740_fig1945583522619:
 
    .. figure:: /_static/images/en-us_image_0097597143.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 5** New Simple Volume
 
 
       **Figure 5** New Simple Volume
@@ -109,8 +104,7 @@ Procedure
    .. _en-us_topic_0085634796__en-us_topic_0044524740_fig1388010596281:
 
    .. figure:: /_static/images/en-us_image_0097597145.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 6** New Simple Volume Wizard
 
 
       **Figure 6** New Simple Volume Wizard
@@ -120,8 +114,7 @@ Procedure
    .. _en-us_topic_0085634796__en-us_topic_0044524740_fig311184311294:
 
    .. figure:: /_static/images/en-us_image_0097597147.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 7** Specify Volume Size
 
 
       **Figure 7** Specify Volume Size
@@ -131,8 +124,7 @@ Procedure
    .. _en-us_topic_0085634796__en-us_topic_0044524740_fig1400313143015:
 
    .. figure:: /_static/images/en-us_image_0097597149.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 8** Assign Driver Letter or Path
 
 
       **Figure 8** Assign Driver Letter or Path
@@ -142,8 +134,7 @@ Procedure
    .. _en-us_topic_0085634796__en-us_topic_0044524740_fig19840335173018:
 
    .. figure:: /_static/images/en-us_image_0097597151.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 9** Format Partition
 
 
       **Figure 9** Format Partition
@@ -151,8 +142,7 @@ Procedure
    .. _en-us_topic_0085634796__en-us_topic_0044524740_fig183312171318:
 
    .. figure:: /_static/images/en-us_image_0097597153.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 10** Completing the partition creation
 
 
       **Figure 10** Completing the partition creation
@@ -166,8 +156,7 @@ Procedure
    .. _en-us_topic_0085634796__en-us_topic_0044524740_fig14464150329:
 
    .. figure:: /_static/images/en-us_image_0097597155.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 11** Disk initialization succeeded
 
 
       **Figure 11** Disk initialization succeeded

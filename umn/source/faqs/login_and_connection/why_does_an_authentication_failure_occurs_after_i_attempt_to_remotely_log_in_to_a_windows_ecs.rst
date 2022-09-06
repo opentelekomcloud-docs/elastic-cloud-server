@@ -40,8 +40,7 @@ Modify the remote desktop connection settings on the Windows ECS:
    .. _en-us_topic_0018339851__fig62503556467:
 
    .. figure:: /_static/images/en-us_image_0253037157.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Remote settings
 
 
       **Figure 2** Remote settings

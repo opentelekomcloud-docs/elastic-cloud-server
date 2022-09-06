@@ -29,8 +29,7 @@ Solution
    .. _en-us_topic_0018124779__en-us_topic_0250947106_fig1355354132417:
 
    .. figure:: /_static/images/en-us_image_0000001100835050.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Remote Desktop Services
 
 
       **Figure 1** Remote Desktop Services

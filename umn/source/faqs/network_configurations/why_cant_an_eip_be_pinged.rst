@@ -105,8 +105,7 @@ If a firewall is enabled on the ECS, check whether the firewall blocks the ping 
    .. _en-us_topic_0105130172__fig7244357113416:
 
    .. figure:: /_static/images/en-us_image_0250117342.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Checking firewall rules
 
 
       **Figure 2** Checking firewall rules
@@ -148,8 +147,7 @@ If a firewall is enabled on the ECS, check whether the firewall blocks the ping 
       .. _en-us_topic_0105130172__fig178326362544:
 
       .. figure:: /_static/images/en-us_image_0250182352.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 3** Inbound Rules
 
 
          **Figure 3** Inbound Rules
@@ -157,8 +155,7 @@ If a firewall is enabled on the ECS, check whether the firewall blocks the ping 
       .. _en-us_topic_0105130172__fig5225320554:
 
       .. figure:: /_static/images/en-us_image_0250182717.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 4** Outbound Rules
 
 
          **Figure 4** Outbound Rules
@@ -241,8 +238,7 @@ Generally, the default route of an OS will preferentially select the primary NIC
       .. _en-us_topic_0105130172__fig7362102412018:
 
       .. figure:: /_static/images/en-us_image_0250105611.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 5** Default route
 
 
          **Figure 5** Default route
