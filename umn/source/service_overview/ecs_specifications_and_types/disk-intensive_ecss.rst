@@ -15,21 +15,23 @@ Specifications
 
 .. table:: **Table 1** D2 ECS specifications
 
-   +---------------+-------+--------------+------------------------------------+----------------------+-----------------+---------------------+-------------------+-----------------------------+
-   | Flavor        | vCPUs | Memory (GiB) | Maximum/Assured Bandwidth (Gbit/s) | Maximum PPS (10,000) | NIC Multi-Queue | Virtualization Type | Local Disks (GiB) | Hardware                    |
-   +===============+=======+==============+====================================+======================+=================+=====================+===================+=============================+
-   | d2.xlarge.8   | 4     | 32           | 4/1.4                              | 40                   | 2               | KVM                 | 2×1675            | CPU: Intel® Xeon® Gold 6151 |
-   +---------------+-------+--------------+------------------------------------+----------------------+-----------------+---------------------+-------------------+-----------------------------+
-   | d2.2xlarge.8  | 8     | 64           | 6/2.8                              | 80                   | 4               | KVM                 | 4×1675            |                             |
-   +---------------+-------+--------------+------------------------------------+----------------------+-----------------+---------------------+-------------------+-----------------------------+
-   | d2.4xlarge.8  | 16    | 128          | 10/5.6                             | 160                  | 6               | KVM                 | 8×1675            |                             |
-   +---------------+-------+--------------+------------------------------------+----------------------+-----------------+---------------------+-------------------+-----------------------------+
-   | d2.6xlarge.8  | 24    | 192          | 15/8.5                             | 250                  | 8               | KVM                 | 12×1675           |                             |
-   +---------------+-------+--------------+------------------------------------+----------------------+-----------------+---------------------+-------------------+-----------------------------+
-   | d2.8xlarge.8  | 32    | 256          | 17/11                              | 320                  | 8               | KVM                 | 16×1675           |                             |
-   +---------------+-------+--------------+------------------------------------+----------------------+-----------------+---------------------+-------------------+-----------------------------+
-   | d2.15xlarge.9 | 60    | 540          | 17/17                              | 500                  | 16              | KVM                 | 24×1675           |                             |
-   +---------------+-------+--------------+------------------------------------+----------------------+-----------------+---------------------+-------------------+-----------------------------+
+   +---------------+-------+--------+------------------------+----------+-----------------+----------------+-------------+-----------------------------+
+   | Flavor        | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Virtualization | Local Disks | Hardware                    |
+   |               |       |        |                        |          |                 |                |             |                             |
+   |               |       | (GiB)  | (Gbit/s)               | (10,000) |                 |                | (GiB)       |                             |
+   +===============+=======+========+========================+==========+=================+================+=============+=============================+
+   | d2.xlarge.8   | 4     | 32     | 4/1.4                  | 40       | 2               | KVM            | 2×1675      | CPU: Intel® Xeon® Gold 6151 |
+   +---------------+-------+--------+------------------------+----------+-----------------+----------------+-------------+-----------------------------+
+   | d2.2xlarge.8  | 8     | 64     | 6/2.8                  | 80       | 4               | KVM            | 4×1675      |                             |
+   +---------------+-------+--------+------------------------+----------+-----------------+----------------+-------------+-----------------------------+
+   | d2.4xlarge.8  | 16    | 128    | 10/5.6                 | 160      | 6               | KVM            | 8×1675      |                             |
+   +---------------+-------+--------+------------------------+----------+-----------------+----------------+-------------+-----------------------------+
+   | d2.6xlarge.8  | 24    | 192    | 15/8.5                 | 250      | 8               | KVM            | 12×1675     |                             |
+   +---------------+-------+--------+------------------------+----------+-----------------+----------------+-------------+-----------------------------+
+   | d2.8xlarge.8  | 32    | 256    | 17/11                  | 320      | 8               | KVM            | 16×1675     |                             |
+   +---------------+-------+--------+------------------------+----------+-----------------+----------------+-------------+-----------------------------+
+   | d2.15xlarge.9 | 60    | 540    | 17/17                  | 500      | 16              | KVM            | 24×1675     |                             |
+   +---------------+-------+--------+------------------------+----------+-----------------+----------------+-------------+-----------------------------+
 
 Scenarios
 ---------
@@ -61,28 +63,79 @@ Features of D2 ECSs
    Access latency     Millisecond-level
    ================== =================
 
-Notes on Using D2 ECSs
-----------------------
+Notes
+-----
 
--  Currently, the following operating systems are supported (subject to the information displayed on the console):
+-  :ref:`Table 3 <en-us_topic_0035470099__table192771727112217>` lists the OSs supported by disk-intensive ECSs.
 
-   -  CentOS 6.7/6.8/7.2/7.3/7.4 64bit
-   -  SUSE Enterprise Linux Server 11 SP3/SP4 64bit
-   -  SUSE Enterprise Linux Server 12 SP1/SP2 64bit
-   -  Red Hat Enterprise Linux 6.8/7.3 64bit
-   -  Windows Server 2008 R2 Enterprise 64bit
-   -  Windows Server 2012 R2 Standard 64bit
-   -  Windows Server 2016 Standard 64bit
-   -  Debian 8.7/9/9.0.0 64bit
-   -  EulerOS 2.2 64bit
-   -  Fedora 25/26 64bit
-   -  OpenSUSE 42.2/42.3 64bit
+   .. _en-us_topic_0035470099__table192771727112217:
+
+   .. table:: **Table 3** Supported OS versions
+
+      +-----------------------------------+-----------------------------------------------------+
+      | OS                                | Version                                             |
+      +===================================+=====================================================+
+      | Alma                              | Alma 8 64bit                                        |
+      +-----------------------------------+-----------------------------------------------------+
+      | CentOS                            | -  CentOS Stream 8.6 64bit                          |
+      |                                   | -  CentOS 7.9 64bit                                 |
+      |                                   | -  CentOS 7.7 64bit                                 |
+      +-----------------------------------+-----------------------------------------------------+
+      | Debian                            | -  Debian GNU/Linux 11 64bit                        |
+      |                                   | -  Debian GNU/Linux 10 64bit                        |
+      +-----------------------------------+-----------------------------------------------------+
+      | EulerOS                           | EulerOS 2.5 64bit                                   |
+      +-----------------------------------+-----------------------------------------------------+
+      | Fedora                            | -  Fedora 35 64bit                                  |
+      |                                   | -  Fedora 34 64bit                                  |
+      |                                   | -  Fedora 33 64bit                                  |
+      +-----------------------------------+-----------------------------------------------------+
+      | OpenSUSE                          | OpenSUSE 15.3 64bit                                 |
+      +-----------------------------------+-----------------------------------------------------+
+      | Oracle Linux                      | -  Oracle Linux Server release 8.4 64bit            |
+      |                                   | -  Oracle Linux Server release 7.6 64bit            |
+      +-----------------------------------+-----------------------------------------------------+
+      | RedHat                            | -  Redhat Linux Enterprise 7.9 64bit                |
+      |                                   | -  Redhat Linux Enterprise 6.10 64bit               |
+      +-----------------------------------+-----------------------------------------------------+
+      | Rocky                             | Rocky 8 64bit                                       |
+      +-----------------------------------+-----------------------------------------------------+
+      | SUSE                              | -  Novell SUSE Linux Enterprise Server 15 SP3 64bit |
+      |                                   | -  Novell SUSE Linux Enterprise Server 15 SP2 64bit |
+      |                                   | -  Novell SUSE Linux Enterprise Server 15 SP1 64bit |
+      |                                   | -  Novell SUSE Linux Enterprise Server 15 64bit     |
+      |                                   | -  Novell SUSE Linux Enterprise Server 12 SP5 64bit |
+      |                                   | -  Novell SUSE Linux Enterprise Server 12 SP4 64bit |
+      |                                   | -  Novell SUSE Linux Enterprise Server 12 SP3 64bit |
+      +-----------------------------------+-----------------------------------------------------+
+      | SUSE-SAP                          | -  Novell SUSE Linux Enterprise Server 15 SP3 64bit |
+      |                                   | -  Novell SUSE Linux Enterprise Server 15 SP2 64bit |
+      |                                   | -  Novell SUSE Linux Enterprise Server 15 SP1 64bit |
+      |                                   | -  Novell SUSE Linux Enterprise Server 15 64bit     |
+      |                                   | -  Novell SUSE Linux Enterprise Server 12 SP5 64bit |
+      |                                   | -  Novell SUSE Linux Enterprise Server 12 SP4 64bit |
+      |                                   | -  Novell SUSE Linux Enterprise Server 12 SP3 64bit |
+      +-----------------------------------+-----------------------------------------------------+
+      | Ubuntu                            | -  Ubuntu 20.04 server 64bit                        |
+      |                                   | -  Ubuntu 18.04 server 64bit                        |
+      +-----------------------------------+-----------------------------------------------------+
+      | Windows                           | -  Windows Server 2019 Standard 64bit               |
+      |                                   | -  Windows Server 2016 Standard 64bit               |
+      |                                   | -  Windows Server 2012 R2 Standard 64bit            |
+      +-----------------------------------+-----------------------------------------------------+
+      | openEuler                         | openEuler 20.03 64bit                               |
+      +-----------------------------------+-----------------------------------------------------+
 
 -  When the physical host where a D2 ECS is deployed becomes faulty, the ECS cannot be migrated.
+
 -  To improve network performance, you can set the NIC MTU of a D2 ECS to **8888**.
+
 -  D2 ECSs do not support modifying specifications.
+
 -  D2 ECSs do not support local disk snapshots or backups.
+
 -  D2 ECSs do not support OS reinstallation or change.
+
 -  D2 ECSs can use both local disks and EVS disks to store data. In addition, they can have EVS disks attached to provide a larger storage size. Use restrictions on the two types of storage media are as follows:
 
    -  Only an EVS disk, not a local disk, can be used as the system disk of a D2 ECS.
@@ -110,6 +163,9 @@ Notes on Using D2 ECSs
             **ll /dev/disk/by-id**
 
 -  The local disk data of a D2 ECS may be lost due to some reasons, such as physical server breakdown or local disk damage. If the data reliability of your application cannot be ensured, you are strongly advised to use EVS disks to build your ECS.
+
 -  When a D2 ECS is deleted, its local disk data is automatically deleted. Back up the data before deleting such an ECS. Deleting local disk data is time-consuming. Therefore, a D2 ECS requires a longer period of time than other ECSs for releasing resources.
+
 -  Do not store long-term service data in local disks. Instead, back up data in a timely manner and use a high availability data architecture. Store long-term service data in EVS disks.
+
 -  You are not allowed to buy additional local disks. The quantity and capacity of your local disks are determined according to your ECS flavor. For D2 ECSs, if additional local disks are required, buy them when creating the ECSs.

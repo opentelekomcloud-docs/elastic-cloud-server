@@ -172,7 +172,7 @@ Displays ECS metadata.
           "meta": {
               "metering.image_id": "3a64bd37-955e-40cd-ab9e-129db56bc05d",
               "metering.imagetype": "gold",
-              "metering.resourcespeccode": "s3.medium.1.linux",
+              "metering.resourcespeccode": "s6.medium.2.linux",
               "image_name": "CentOS 7.6 64bit",
               "os_bit": "64",
               "vpc_id": "3b6c201f-aeb3-4bce-b841-64756e66cb49",
@@ -393,7 +393,7 @@ Displays an ECS flavor.
 
    .. code-block::
 
-      s3.medium.1
+      s6.medium.2
 
 Local IPv4 (EC2 Compatible API)
 -------------------------------

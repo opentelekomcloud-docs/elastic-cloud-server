@@ -31,11 +31,6 @@ The process of changing the time zone for a Linux ECS depends on the OS. In this
 
    The directory structure shown in **/user/share/zoneinfo** includes both time zones and directories. The directories contain time zone files for specific cities. Locate the time zone for the city in which the ECS is located.
 
-   For example:
-
-   -  If you are to use the time zone for Shanghai, China, run the **ls /usr/share/zoneinfo/Asia** command to obtain the directory **/usr/share/zoneinfo/Asia/Shanghai**.
-   -  If you are to use the time zone for Paris, France, run the **ls /usr/share/zoneinfo/Europe** command to obtain the directory **/usr/share/zoneinfo/Europe/Paris**.
-
 #. Set the target time zone.
 
    a. Run the following command to open the **/etc/sysconfig/clock** file:
@@ -43,16 +38,6 @@ The process of changing the time zone for a Linux ECS depends on the OS. In this
       **vim /etc/sysconfig/clock**
 
    b. Locate the **ZONE** entry and change its value to the name of the desired time zone file.
-
-      For example:
-
-      -  If the target time zone is for Shanghai, China, change the **ZONE** entry value as follows:
-
-         ZONE="Asia/Shanghai"
-
-      -  If the target time zone is for Paris, France, change the **ZONE** entry value as follows:
-
-         ZONE="Europe/Paris"
 
 #. Press **Esc**. Then, run the following command to save and exit the **/etc/sysconfig/clock** file:
 
@@ -75,7 +60,7 @@ The process of changing the time zone for a Linux ECS depends on the OS. In this
 
    Run the following command to create a symbolic link between **/etc/localtime** and your time zone file so that the ECS can find this time zone file when it references the local time:
 
-   **ln -sf /usr/share/zoneinfo/A\ sia/Shanghai** **/etc/localtime**
+   **ln -sf /usr/share/zoneinfo/A\ sia/city1/etc/localtime**
 
 #. Run the following command to restart the ECS so that all services and applications running on the ECS use the new time zone:
 
@@ -90,7 +75,7 @@ The process of changing the time zone for a Linux ECS depends on the OS. In this
    .. code-block::
 
       # ls -lh /etc/localtime
-      lrwxrwxrwx 1 root root 33 Nov 27 11:01 /etc/localtime -> /usr/share/zoneinfo/Asia/Shanghai
+      lrwxrwxrwx 1 root root 33 Nov 27 11:01 /etc/localtime -> /usr/share/zoneinfo/Asia/city1
 
 For Windows ECSs
 ----------------

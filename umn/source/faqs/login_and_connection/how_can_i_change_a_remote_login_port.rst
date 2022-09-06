@@ -26,7 +26,8 @@ The following procedure uses an ECS running Windows Server 2012 as an example. T
       .. _en-us_topic_0244854543__fig6797745202319:
 
       .. figure:: /_static/images/en-us_image_0244859999.png
-         :alt: **Figure 1** Changing the port number to 2020
+         :alt: Click to enlarge
+         :figclass: imgResize
 
 
          **Figure 1** Changing the port number to 2020
@@ -40,21 +41,11 @@ The following procedure uses an ECS running Windows Server 2012 as an example. T
       .. _en-us_topic_0244854543__en-us_topic_0244854543_fig6797745202319:
 
       .. figure:: /_static/images/en-us_image_0244859999.png
-         :alt: **Figure 2** Changing the port number to 2020
+         :alt: Click to enlarge
+         :figclass: imgResize
 
 
          **Figure 2** Changing the port number to 2020
-
-#. Open the Windows search box, enter **services**, and select **Services**.
-
-   .. _en-us_topic_0244854543__fig178235222919:
-
-   .. figure:: /_static/images/en-us_image_0244860550.png
-      :alt: Click to enlarge
-      :figclass: imgResize
-
-
-      **Figure 3** Services
 
 #. (Skip this step if the firewall is disabled.) Modify the inbound rules of the firewall.
 
@@ -73,9 +64,24 @@ The following procedure uses an ECS running Windows Server 2012 as an example. T
 
    Add an inbound rule in which **Protocol** is set to **TCP** and **Port Range** is set to **2020**.
 
+   For details, see "Adding a Security Group Rule" in the *Virtual Private Cloud User Guide*.
+
    Use port 2020 to remotely log in to the ECS.
 
+#. Open the Windows search box, enter **services**, and select **Services**.
+
+   .. _en-us_topic_0244854543__fig10290145619416:
+
+   .. figure:: /_static/images/en-us_image_0000001292832517.png
+      :alt: Click to enlarge
+      :figclass: imgResize
+
+
+      **Figure 3** Selecting Services
+
 #. In the **Services** window, restart **Remote Desktop Services** or the ECS.
+
+#. Use "IP address:Port" to remotely access the ECS.
 
 Linux
 -----
@@ -91,12 +97,13 @@ The following procedure uses an ECS running CentOS 7.3 as an example. The defaul
    .. _en-us_topic_0244854543__fig188937250516:
 
    .. figure:: /_static/images/en-us_image_0244856480.png
-      :alt: **Figure 4** Changing the port number to 2020
+      :alt: Click to enlarge
+      :figclass: imgResize
 
 
       **Figure 4** Changing the port number to 2020
 
-#. Press **Esc** to exit the editing mode. Enter **:wq!** to save and exit the configuration.
+#. Press **Esc** to exit Insert mode and enter **:wq!** to save the settings and exit.
 
 #. Run either of the following commands to restart sshd:
 
@@ -138,4 +145,8 @@ The following procedure uses an ECS running CentOS 7.3 as an example. The defaul
 
    Add an inbound rule in which **Protocol** is set to **TCP** and **Port Range** is set to **2020**.
 
+   For details, see "Adding a Security Group Rule" in the *Virtual Private Cloud User Guide*.
+
    Use port 2020 to remotely log in to the ECS.
+
+#. Use "IP address:Port" to remotely access the ECS.

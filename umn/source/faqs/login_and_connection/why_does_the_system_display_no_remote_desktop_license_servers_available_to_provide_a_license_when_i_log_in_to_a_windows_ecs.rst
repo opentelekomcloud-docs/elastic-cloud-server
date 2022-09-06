@@ -13,7 +13,8 @@ An error message is displayed indicating that there are no Remote Desktop Licens
 .. _en-us_topic_0264235941__en-us_topic_0128065575_fig1693533120329:
 
 .. figure:: /_static/images/en-us_image_0288997286.png
-   :alt: **Figure 1** No Remote Desktop License Servers available to provide a license
+   :alt: Click to enlarge
+   :figclass: imgResize
 
 
    **Figure 1** No Remote Desktop License Servers available to provide a license

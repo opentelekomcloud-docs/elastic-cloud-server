@@ -113,14 +113,14 @@ Use one of the following methods to set the NIC multi-queue attribute:
 **Method 1:**
 
 #. Log in to the management console.
-#. Under Computing, click **Image Management Service**.
+#. Under **Computing**, click **Image Management Service**.
 #. Click the **Private Images** tab, locate the row containing the target image, click **Modify** in the **Operation** column.
 #. Set the NIC multi-queue attribute of the image.
 
 **Method 2:**
 
 #. Log in to the management console.
-#. Under Computing, click **Image Management Service**.
+#. Under **Computing**, click **Image Management Service**.
 #. Click the **Private Images** tab. In the image list, click the name of the target image to switch to the page providing details about the image.
 #. Click **Modify** in the upper right corner. In the displayed **Modify Image** dialog box, set the NIC multi-queue attribute.
 

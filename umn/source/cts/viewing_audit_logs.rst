@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0116266207:
 
-Viewing Tracing Logs
-====================
+Viewing Audit Logs
+==================
 
 Scenarios
 ---------
@@ -19,11 +19,11 @@ Procedure
 
 #. Click |image1| in the upper left corner and select your region and project.
 
-#. Click **Service List**. Under **Management & Deployment**, click **Cloud Trace Service**.
+#. Click **Service List**. Under **Management & Deployment**, select **Cloud Trace Service**.
 
 #. In the navigation pane on the left, choose **Trace List**.
 
-#. Click **Filter** and specify filter criteria as needed. The following four filter criteria are available:
+#. Specify filter criteria as needed. The following filter criteria are available:
 
    -  **Trace Source**, **Resource Type**, and **Search By**
 
