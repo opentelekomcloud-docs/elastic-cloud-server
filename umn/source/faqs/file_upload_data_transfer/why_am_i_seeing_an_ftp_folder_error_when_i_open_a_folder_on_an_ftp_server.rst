@@ -13,8 +13,7 @@ An error occurs when you open a folder on an FTP server. The system displays a m
 .. _en-us_topic_0247282819__fig15936343121612:
 
 .. figure:: /_static/images/en-us_image_0247338934.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 1** FTP Folder Error
 
 
    **Figure 1** FTP Folder Error
@@ -38,8 +37,7 @@ The following uses Internet Explorer as an example.
    .. _en-us_topic_0247282819__fig9581026194412:
 
    .. figure:: /_static/images/en-us_image_0247293312.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Internet Options
 
 
       **Figure 2** Internet Options

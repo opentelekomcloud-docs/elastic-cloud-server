@@ -13,8 +13,7 @@ An error message is displayed indicating that your local computer cannot connect
 .. _en-us_topic_0264235939__en-us_topic_0250947106_fig4931341421:
 
 .. figure:: /_static/images/en-us_image_0288997242.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 1** Cannot connect to the remote computer
 
 
    **Figure 1** Cannot connect to the remote computer
@@ -53,8 +52,7 @@ Check whether the firewall is enabled on the ECS.
    .. _en-us_topic_0264235939__en-us_topic_0250947106_fig7767914202818:
 
    .. figure:: /_static/images/en-us_image_0288997243.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Windows Firewall
 
 
       **Figure 2** Windows Firewall
@@ -66,8 +64,7 @@ Check whether the firewall is enabled on the ECS.
    .. _en-us_topic_0264235939__en-us_topic_0250947106_fig919195822713:
 
    .. figure:: /_static/images/en-us_image_0288997244.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 3** Checking firewall status
 
 
       **Figure 3** Checking firewall status
@@ -84,8 +81,7 @@ Check whether the firewall is enabled on the ECS.
    .. _en-us_topic_0264235939__en-us_topic_0250947106_fig3823135463718:
 
    .. figure:: /_static/images/en-us_image_0288997245.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 4** Inbound Rules
 
 
       **Figure 4** Inbound Rules
@@ -116,8 +112,7 @@ Modify the remote desktop connection settings on the Windows ECS:
    .. _en-us_topic_0264235939__en-us_topic_0250947106_en-us_topic_0018339851_fig62503556467:
 
    .. figure:: /_static/images/en-us_image_0288997246.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 5** Remote settings
 
 
       **Figure 5** Remote settings
@@ -136,8 +131,7 @@ Checking Remote Desktop Services
    .. _en-us_topic_0264235939__en-us_topic_0250947106_fig1355354132417:
 
    .. figure:: /_static/images/en-us_image_0288997248.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 6** Remote Desktop Services
 
 
       **Figure 6** Remote Desktop Services
@@ -158,8 +152,7 @@ Checking Remote Desktop Session Host Configuration
    .. _en-us_topic_0264235939__en-us_topic_0250947106_fig179713287534:
 
    .. figure:: /_static/images/en-us_image_0288997249.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 7** Require use of specific security layer for remote (RDP) connections
 
 
       **Figure 7** Require use of specific security layer for remote (RDP) connections
@@ -169,8 +162,7 @@ Checking Remote Desktop Session Host Configuration
    .. _en-us_topic_0264235939__en-us_topic_0250947106_fig1437792312541:
 
    .. figure:: /_static/images/en-us_image_0288997250.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 8** Setting security layer to RDP
 
 
       **Figure 8** Setting security layer to RDP

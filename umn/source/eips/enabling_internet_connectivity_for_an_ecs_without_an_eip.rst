@@ -129,8 +129,7 @@ In this example, the proxy ECS runs CentOS 6.5.
    .. _en-us_topic_0027157850__fig27598108113959:
 
    .. figure:: /_static/images/en-us_image_0027174005.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Successful SNAT configuration
 
 
       **Figure 1** Successful SNAT configuration

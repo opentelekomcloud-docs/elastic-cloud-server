@@ -40,8 +40,7 @@ Use the locally stored private key and **PuTTY Key Generator** to restore the fo
    .. _en-us_topic_0047654687__fig5530274016810:
 
    .. figure:: /_static/images/en-us_image_0037982934.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Restoring the format of the public key content
 
 
       **Figure 2** Restoring the format of the public key content

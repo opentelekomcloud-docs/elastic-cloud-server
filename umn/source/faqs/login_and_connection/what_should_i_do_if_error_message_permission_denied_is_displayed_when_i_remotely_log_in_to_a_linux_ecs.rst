@@ -44,8 +44,7 @@ Solution
       .. _en-us_topic_0240708483__en-us_topic_0240708482_fig1087511256811:
 
       .. figure:: /_static/images/en-us_image_0240711431.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 2** Entering the kernel editing mode
 
 
          **Figure 2** Entering the kernel editing mode
@@ -63,8 +62,7 @@ Solution
       .. _en-us_topic_0240708483__en-us_topic_0240708482_fig1654418212503:
 
       .. figure:: /_static/images/en-us_image_0260575520.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 3** Before the modification
 
 
          **Figure 3** Before the modification
@@ -72,8 +70,7 @@ Solution
       .. _en-us_topic_0240708483__en-us_topic_0240708482_fig1954412105016:
 
       .. figure:: /_static/images/en-us_image_0260575521.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 4** After the modification
 
 
          **Figure 4** After the modification

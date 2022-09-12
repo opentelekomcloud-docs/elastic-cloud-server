@@ -18,8 +18,7 @@ This section uses an ECS running Windows Server 2008 R2 64bit as an example to d
    .. _en-us_topic_0087680813__fig63278226101115:
 
    .. figure:: /_static/images/en-us_image_0087906013.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Disk Management
 
 
       **Figure 1** Disk Management

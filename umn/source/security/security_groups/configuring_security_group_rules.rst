@@ -41,8 +41,7 @@ Procedure
    .. _en-us_topic_0030878383__en-us_topic_0118534005_fig1786518124129:
 
    .. figure:: /_static/images/en-us_image_0284920908.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Add Inbound Rule
 
 
       **Figure 1** Add Inbound Rule
@@ -77,8 +76,7 @@ Procedure
    .. _en-us_topic_0030878383__en-us_topic_0118534005_fig11809848184019:
 
    .. figure:: /_static/images/en-us_image_0284993717.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Add Outbound Rule
 
 
       **Figure 2** Add Outbound Rule

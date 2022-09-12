@@ -26,8 +26,7 @@ Tags are used to identify cloud resources. When you have many cloud resources of
 .. _en-us_topic_0092499768__en-us_topic_0157874334_fig81911042564:
 
 .. figure:: /_static/images/en-us_image_0157904965.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 1** Example tags
 
 
    **Figure 1** Example tags

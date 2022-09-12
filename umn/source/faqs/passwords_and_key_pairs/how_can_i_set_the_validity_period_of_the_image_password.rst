@@ -37,8 +37,7 @@ The following operations use EulerOS 2.2 as an example.
    .. _en-us_topic_0079176727__fig36880073194742:
 
    .. figure:: /_static/images/en-us_image_0079177144.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Configuration verification
 
 
       **Figure 1** Configuration verification

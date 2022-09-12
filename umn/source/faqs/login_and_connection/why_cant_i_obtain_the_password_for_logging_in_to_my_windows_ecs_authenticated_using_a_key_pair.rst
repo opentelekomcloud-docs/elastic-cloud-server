@@ -59,8 +59,7 @@ If logging in to an ECS with Cloudbase-Init enabled failed, perform the followin
       .. _en-us_topic_0081525054__fig12301902519:
 
       .. figure:: /_static/images/en-us_image_0275724694.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 1** Setting disk online
 
 
          **Figure 1** Setting disk online

@@ -36,8 +36,7 @@ Procedure
       .. _en-us_topic_0027371531__fig5398007222382:
 
       .. figure:: /_static/images/en-us_image_0022382203.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 1** Modifying an alarm rule
 
 
          **Figure 1** Modifying an alarm rule

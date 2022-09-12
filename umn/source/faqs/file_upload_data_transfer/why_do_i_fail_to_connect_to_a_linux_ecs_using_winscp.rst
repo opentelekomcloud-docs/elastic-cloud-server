@@ -13,8 +13,7 @@ Connecting to a Linux ECS using WinSCP fails, while using SSH tools like Xshell 
 .. _en-us_topic_0000001189572473__fig1580004542818:
 
 .. figure:: /_static/images/en-us_image_0000001189705789.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 1** Connection error using WinSCP
 
 
    **Figure 1** Connection error using WinSCP
@@ -33,8 +32,7 @@ Check the SFTP configuration and the configuration file is **/usr/libexec/openss
 .. _en-us_topic_0000001189572473__fig6965144916501:
 
 .. figure:: /_static/images/en-us_image_0000001150707636.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 2** SFTP configuration file
 
 
    **Figure 2** SFTP configuration file

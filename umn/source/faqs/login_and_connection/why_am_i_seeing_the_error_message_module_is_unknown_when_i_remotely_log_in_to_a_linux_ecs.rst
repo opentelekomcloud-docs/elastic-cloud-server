@@ -13,8 +13,7 @@ When you attempt to remotely log in to a Linux ECS, the system displays the erro
 .. _en-us_topic_0240708482__fig17499319191716:
 
 .. figure:: /_static/images/en-us_image_0240710552.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 1** Module is unknown
 
 
    **Figure 1** Module is unknown
@@ -45,8 +44,7 @@ Solution
       .. _en-us_topic_0240708482__fig1087511256811:
 
       .. figure:: /_static/images/en-us_image_0240711431.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 2** Entering the kernel editing mode
 
 
          **Figure 2** Entering the kernel editing mode
@@ -64,8 +62,7 @@ Solution
       .. _en-us_topic_0240708482__fig1654418212503:
 
       .. figure:: /_static/images/en-us_image_0260575520.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 3** Before the modification
 
 
          **Figure 3** Before the modification
@@ -73,8 +70,7 @@ Solution
       .. _en-us_topic_0240708482__fig1954412105016:
 
       .. figure:: /_static/images/en-us_image_0260575521.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 4** After the modification
 
 
          **Figure 4** After the modification
@@ -90,8 +86,7 @@ Solution
    .. _en-us_topic_0240708482__fig31081356162719:
 
    .. figure:: /_static/images/en-us_image_0240710554.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 5** System log
 
 
       **Figure 5** System log
@@ -103,8 +98,7 @@ Solution
    .. _en-us_topic_0240708482__fig11081756172711:
 
    .. figure:: /_static/images/en-us_image_0240710555.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 6** Modifying the error information
 
 
       **Figure 6** Modifying the error information

@@ -13,8 +13,7 @@ When you run the **sudo** command to switch to user **root** on an Ubuntu or Deb
 .. _en-us_topic_0094801708__fig727412824411:
 
 .. figure:: /_static/images/en-us_image_0094801740.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 1** Connection timeout
 
 
    **Figure 1** Connection timeout
