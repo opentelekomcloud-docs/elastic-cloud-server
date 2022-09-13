@@ -29,7 +29,6 @@ Constraints
 
 -  The EVS disk quota must be greater than 0.
 -  If the target ECS is created using a private image, ensure that the private image is available.
--  H2 ECSs do not support OS reinstallation.
 -  If an ECS OS is to be reinstalled using a full-ECS image, the ECS system disk can be encrypted.
 
 Prerequisites

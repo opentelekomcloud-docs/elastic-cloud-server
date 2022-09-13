@@ -73,5 +73,4 @@ Solution
 .. |image1| image:: /_static/images/en-us_image_0121682580.png
 
 .. |image2| image:: /_static/images/en-us_image_0121682602.png
-   :class: imgResize
 

@@ -8,7 +8,7 @@ Viewing Failures
 Scenarios
 ---------
 
-The **Failures** area shows the tasks that failed to process due to an error, including the task name and status. **Failures** is displayed on the management console if a task failed. This section describes how to view failures.
+The **Failures** area shows the tasks that failed due to an error, including the task name and status. **Failures** is displayed on the management console if a task failed. This section describes how to view failures.
 
 Failure Types
 -------------
@@ -19,15 +19,15 @@ Failure Types
 
 .. table:: **Table 1** Failure types
 
-   +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Failure Type                      | Description                                                                                                                                                                                                                                                                   |
-   +===================================+===============================================================================================================================================================================================================================================================================+
-   | Creation failures                 | A task failed to process. For a failed task, the system rolls back and displays an error code, for example, **Ecs.0013 Insufficient EIP quota**. See :ref:`How Do I Handle Error Messages Displayed on the Management Console? <en-us_topic_0032398121>` for troubleshooting. |
-   +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Operation failures                | -  Modifying ECS specifications                                                                                                                                                                                                                                               |
-   |                                   |                                                                                                                                                                                                                                                                               |
-   |                                   |    If an ECS specifications modification failed, this operation is recorded in **Failures**.                                                                                                                                                                                  |
-   +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Failure Type                      | Description                                                                                                                                                                                                                                                        |
+   +===================================+====================================================================================================================================================================================================================================================================+
+   | Creation failures                 | A task failed. For a failed task, the system rolls back and displays an error code, for example, **Ecs.0013 Insufficient EIP quota**. See :ref:`How Do I Handle Error Messages Displayed on the Management Console? <en-us_topic_0032398121>` for troubleshooting. |
+   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Operation failures                | -  Modifying ECS specifications                                                                                                                                                                                                                                    |
+   |                                   |                                                                                                                                                                                                                                                                    |
+   |                                   |    If an ECS specifications modification failed, this operation is recorded in **Failures**.                                                                                                                                                                       |
+   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Procedure
 ---------
@@ -43,8 +43,7 @@ Procedure
    .. _en-us_topic_0108255889__fig1678913358104:
 
    .. figure:: /_static/images/en-us_image_0152768827.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Failures
 
 
       **Figure 1** Failures

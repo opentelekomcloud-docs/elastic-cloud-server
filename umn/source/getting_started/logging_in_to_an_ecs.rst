@@ -13,8 +13,7 @@ You can log in to a Windows ECS using either VNC or MSTSC provided on the manage
 .. _en-us_topic_0092494193__en-us_topic_0144542149_fig297212219553:
 
 .. figure:: /_static/images/en-us_image_0201719710.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 1** Windows ECS login modes
 
 
    **Figure 1** Windows ECS login modes
@@ -44,7 +43,6 @@ You can log in to a Linux ECS using either VNC or SSH key provided on the manage
 
 .. figure:: /_static/images/en-us_image_0201719715.png
    :alt: **Figure 2** Linux ECS login modes
-   :figclass: vsd
 
 
    **Figure 2** Linux ECS login modes

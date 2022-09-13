@@ -9,7 +9,7 @@ Yes.
 
 ECSs run on physical hosts. Although there are multiple mechanisms to ensure system reliability, fault tolerance, and high availability, host hardware might be damaged or power failures might occur. If physical hosts cannot be powered on or restarted due to damage, CPU and memory data will lose and live migration cannot be used to recovery ECSs.
 
-The cloud platform provides automatic recovery by default to restart ECSs through cold migration, ensuring high availability and dynamic ECS migration. Once a physical host accommodating ECSs breaks down, the ECSs will automatically migrate to a functional physical host to minimize the impact on your services. During the process, the ECSs will restart.
+The cloud platform provides automatic recovery by default to restart ECSs through cold migration, ensuring high availability and dynamic ECS migration. If a physical host accommodating ECSs breaks down, the ECSs will automatically be migrated to a functional physical host to minimize the impact on your services. During the process, the ECSs will restart.
 
 .. note::
 

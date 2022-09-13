@@ -13,8 +13,7 @@ The system displays an error message indicating that a protocol error (code: 0x1
 .. _en-us_topic_0264235942__en-us_topic_0138293293_fig7560131184912:
 
 .. figure:: /_static/images/en-us_image_0288997598.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 1** Protocol error (code: 0x1104)
 
 
    **Figure 1** Protocol error (code: 0x1104)
@@ -63,8 +62,7 @@ Solution
       .. _en-us_topic_0264235942__en-us_topic_0138293293_fig1562219275192:
 
       .. figure:: /_static/images/en-us_image_0288997604.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 2** Checking port 3389
 
 
          **Figure 2** Checking port 3389
@@ -80,8 +78,7 @@ Solution
       .. _en-us_topic_0264235942__en-us_topic_0138293293_fig16426409265:
 
       .. figure:: /_static/images/en-us_image_0288997606.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 3** Checking System process
 
 
          **Figure 3** Checking System process
@@ -109,8 +106,7 @@ Solution
       .. _en-us_topic_0264235942__en-us_topic_0138293293_fig1072317112254:
 
       .. figure:: /_static/images/en-us_image_0288997608.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 4** Remote Desktop Services
 
 
          **Figure 4** Remote Desktop Services
@@ -120,8 +116,7 @@ Solution
       .. _en-us_topic_0264235942__en-us_topic_0138293293_fig64299268259:
 
       .. figure:: /_static/images/en-us_image_0288997610.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 5** Remote (RDP) Connection requires the use of the specified security layer
 
 
          **Figure 5** Remote (RDP) Connection requires the use of the specified security layer
@@ -131,8 +126,7 @@ Solution
       .. _en-us_topic_0264235942__en-us_topic_0138293293_fig6816237202719:
 
       .. figure:: /_static/images/en-us_image_0288997612.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 6** Setting security layer
 
 
          **Figure 6** Setting security layer
@@ -148,15 +142,12 @@ Solution
       .. _en-us_topic_0264235942__en-us_topic_0138293293_fig1129272819299:
 
       .. figure:: /_static/images/en-us_image_0288997614.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 7** Updating the group policy
 
 
          **Figure 7** Updating the group policy
 
 .. |image1| image:: /_static/images/en-us_image_0288997600.png
-   :class: imgResize
 
 .. |image2| image:: /_static/images/en-us_image_0288997602.png
-   :class: imgResize
 

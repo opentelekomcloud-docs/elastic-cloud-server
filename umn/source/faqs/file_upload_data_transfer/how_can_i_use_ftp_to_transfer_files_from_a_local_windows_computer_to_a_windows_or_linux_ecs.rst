@@ -30,8 +30,7 @@ Procedure
    .. _en-us_topic_0263806053__fig1437792312541:
 
    .. figure:: /_static/images/en-us_image_0263806339.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Setting connection parameters
 
 
       **Figure 1** Setting connection parameters

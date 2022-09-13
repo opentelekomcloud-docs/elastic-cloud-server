@@ -28,8 +28,7 @@ Solution
       .. _en-us_topic_0264235943__en-us_topic_0138293296_fig1129272819299:
 
       .. figure:: /_static/images/en-us_image_0000001122000869.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 1** Event viewer
 
 
          **Figure 1** Event viewer
@@ -39,8 +38,7 @@ Solution
       .. _en-us_topic_0264235943__en-us_topic_0138293296_fig13103521154816:
 
       .. figure:: /_static/images/en-us_image_0000001121886141.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 2** Filtering logs
 
 
          **Figure 2** Filtering logs

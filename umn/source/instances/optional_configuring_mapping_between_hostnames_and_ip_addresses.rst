@@ -45,7 +45,7 @@ For example, there are two ECSs in a VPC, ecs-01 and ecs-02. Perform the followi
 
       ecs-02: hostname02
 
-#. Create mapping between the hostnames and IP addresses and add information about other ECSs in the same VPC.
+#. Create a mapping between the hostnames and IP addresses and add information about other ECSs in the same VPC.
 
    a. Log in to ecs-01.
 

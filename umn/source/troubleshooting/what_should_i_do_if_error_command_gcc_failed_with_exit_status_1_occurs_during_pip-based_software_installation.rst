@@ -12,7 +12,7 @@ When installing the Python library software, you need to configure the PIP sourc
 
 .. code-block:: console
 
-   [root@test home]# cat /root/.pip/pip.conf 
+   [root@test home]# cat /root/.pip/pip.conf
    [global]
    index-url = https://pypi.python.org/simple
    trusted-host = pypi.python.org
@@ -22,8 +22,7 @@ During the installation, the system displays the message "command ´gcc´ failed
 .. _en-us_topic_0107412162__fig15547217122815:
 
 .. figure:: /_static/images/en-us_image_0107414257.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 1** Installation error
 
 
    **Figure 1** Installation error
@@ -47,8 +46,7 @@ The following operations use psutil as an example:
    .. _en-us_topic_0107412162__fig850134793413:
 
    .. figure:: /_static/images/en-us_image_0107415055.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Successful installation
 
 
       **Figure 2** Successful installation

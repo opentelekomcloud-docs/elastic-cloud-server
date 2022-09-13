@@ -13,8 +13,7 @@ When you connect a remote desktop to a Windows ECS, the system prompts that you 
 .. _en-us_topic_0264235940__en-us_topic_0250966366_fig4498153973513:
 
 .. figure:: /_static/images/en-us_image_0288997257.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 1** Remote login right missing.
 
 
    **Figure 1** Remote login right missing.
@@ -31,8 +30,7 @@ Solution
       .. _en-us_topic_0264235940__en-us_topic_0250966366_fig597875822711:
 
       .. figure:: /_static/images/en-us_image_0288997258.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 2** Allow log on through Remote Desktop Services properties
 
 
          **Figure 2** Allow log on through Remote Desktop Services properties
@@ -42,8 +40,7 @@ Solution
       .. _en-us_topic_0264235940__en-us_topic_0250966366_fig1693533120329:
 
       .. figure:: /_static/images/en-us_image_0288997259.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 3** Deny log on through Remote Desktop Services properties
 
 
          **Figure 3** Deny log on through Remote Desktop Services properties

@@ -45,8 +45,7 @@ Solution
    .. _en-us_topic_0000001138811177__fig813563852216:
 
    .. figure:: /_static/images/en-us_image_0000001092045958.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Obtaining metadata
 
 
       **Figure 2** Obtaining metadata

@@ -31,8 +31,7 @@ Procedure
    .. _en-us_topic_0295091738__fig276023113838:
 
    .. figure:: /_static/images/en-us_image_0295099237.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Add Desktop
 
 
       **Figure 1** Add Desktop
@@ -58,8 +57,7 @@ Procedure
          .. _en-us_topic_0295091738__fig6992121711259:
 
          .. figure:: /_static/images/en-us_image_0295099198.png
-            :alt: Click to enlarge
-            :figclass: imgResize
+            :alt: **Figure 3** Add PC
 
 
             **Figure 3** Add PC
@@ -74,8 +72,7 @@ Procedure
    .. _en-us_topic_0295091738__fig020423384416:
 
    .. figure:: /_static/images/en-us_image_0295099239.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 4** Double-click for login
 
 
       **Figure 4** Double-click for login
