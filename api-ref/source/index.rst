@@ -1,6 +1,6 @@
-==========
-Main Index
-==========
+====================================
+Elastic Cloud Server - API Reference
+====================================
 
 .. toctree::
    :maxdepth: 1
