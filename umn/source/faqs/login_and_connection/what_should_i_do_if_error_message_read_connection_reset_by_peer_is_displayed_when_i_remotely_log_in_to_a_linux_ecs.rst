@@ -13,8 +13,7 @@ When I attempted to remotely log in to a Linux ECS, the system displayed error m
 .. _en-us_topic_0240714337__fig5631046188:
 
 .. figure:: /_static/images/en-us_image_0240714761.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 1** read: Connection reset by peer
 
 
    **Figure 1** read: Connection reset by peer

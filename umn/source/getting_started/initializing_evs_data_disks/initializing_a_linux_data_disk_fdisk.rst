@@ -10,7 +10,9 @@ Scenarios
 
 This section uses CentOS 7.4 64bit to describe how to initialize a data disk attached to a server running Linux and use fdisk to partition the data disk.
 
-The maximum disk capacity supported by MBR is 2 TB, and that supported by GPT is 18 EB. Therefore, use the GPT partition style if your disk capacity is larger than 2 TB. In Linux, if you choose to use the GPT partition style, the fdisk partitioning tool cannot be used. Use the parted partitioning tool instead. For details about disk partition styles, see :ref:`Scenarios and Disk Partitions <en-us_topic_0030831623>`.
+The maximum partition size that MBR supports is 2 TB and that GPT supports is 18 EB. If the disk size you need to partition is greater than 2 TB, partition the disk using GPT.
+
+The partitioning tool fdisk is suitable only for MBR partitions, and parted is suitable for both MBR and GPT partitions. For more information, see :ref:`Scenarios and Disk Partitions <en-us_topic_0030831623>`.
 
 The method for initializing a disk varies depending on the OS running on the server. This document is used for reference only. For the detailed operations and differences, see the product documents of the corresponding OS.
 
@@ -26,11 +28,9 @@ Prerequisites
 Creating and Mounting a Partition
 ---------------------------------
 
-The following example shows you how a new primary partition can be created on a new data disk that has been attached to a server. The primary partition will be created using fdisk, and MBR is the default partition style. Furthermore, the partition will be formatted using the ext4 file system, mounted on **/mnt/sdc**, and configured with automatic mounting at system start.
+The following example shows you how a new primary partition can be created on a new data disk that has been attached to a server. The primary partition will be created using fdisk, and MBR will be used. Furthermore, the partition will be formatted using the ext4 file system, mounted on **/mnt/sdc**, and configured with automatic mounting at system start.
 
-#. Run the following command to query information about the new data disk:
-
-   **fdisk -l**
+#. **fdisk -l**
 
    Information similar to the following is displayed:
 
@@ -245,6 +245,10 @@ The following example shows you how a new primary partition can be created on a 
 
    **mkdir /mnt/sdc**
 
+   .. note::
+
+      The **/mnt** directory exists on all Linux systems. If the mount point fails to create, it may be that the **/mnt** directory has been accidentally deleted. Run the **mkdir -p /mnt/sdc** command to create the mount point.
+
 #. Run the following command to mount the new partition on the created mount point:
 
    **mount** *Disk partition* *Mount point*
@@ -311,7 +315,7 @@ The following procedure shows how to set automatic disk mounting at server start
 
    **vi /etc/fstab**
 
-#. Press **i** to enter the editing mode.
+#. Press **i** to enter editing mode.
 
 #. Move the cursor to the end of the file and press **Enter**. Then, add the following information:
 
@@ -345,7 +349,7 @@ The following procedure shows how to set automatic disk mounting at server start
 
       **mount** **\|** **grep** **/mnt/sdc**
 
-      If information similar to the following is displayed, the automatic mounting function takes effect:
+      If information similar to the following is displayed, automatic mounting has been configured:
 
       .. code-block::
 

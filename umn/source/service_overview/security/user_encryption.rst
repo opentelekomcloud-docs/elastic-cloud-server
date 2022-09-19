@@ -44,7 +44,6 @@ The key used for encryption relies on the Key Management Service (KMS). KMS uses
 
 .. figure:: /_static/images/en-us_image_0174076025.png
    :alt: **Figure 1** Data encryption process
-   :figclass: vsd
 
 
    **Figure 1** Data encryption process

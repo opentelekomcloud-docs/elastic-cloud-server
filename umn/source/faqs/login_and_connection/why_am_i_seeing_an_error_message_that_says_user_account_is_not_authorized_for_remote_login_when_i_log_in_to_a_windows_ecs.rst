@@ -13,8 +13,7 @@ An error message is displayed indicating that the connection is denied because t
 .. _en-us_topic_0264235948__en-us_topic_0173606024_en-us_topic_0120795668_fig1256612592310:
 
 .. figure:: /_static/images/en-us_image_0288997346.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 1** Error message
 
 
    **Figure 1** Error message
@@ -36,8 +35,7 @@ Solution
       .. _en-us_topic_0264235948__en-us_topic_0173606024_fig1890412198313:
 
       .. figure:: /_static/images/en-us_image_0288997347.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 2** Local security policy
 
 
          **Figure 2** Local security policy
@@ -69,8 +67,7 @@ Solution
       .. _en-us_topic_0264235948__en-us_topic_0173606024_fig37037542514:
 
       .. figure:: /_static/images/en-us_image_0288997349.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 4** Checking the target user group
 
 
          **Figure 4** Checking the target user group
@@ -84,8 +81,7 @@ Solution
       .. _en-us_topic_0264235948__en-us_topic_0173606024_fig76712011540:
 
       .. figure:: /_static/images/en-us_image_0288997350.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 5** Security
 
 
          **Figure 5** Security

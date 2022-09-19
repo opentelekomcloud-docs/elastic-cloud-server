@@ -45,7 +45,7 @@ Obtaining the Password Through APIs
 
    .. note::
 
-      For instructions about how to call the APIs, see `Retrieving the Password for Logging In to a Windows ECS (Native OpenStack API) <https://docs.otc.t-systems.com/api/ecs/en-us_topic_0031176553.html>`__ in *Elastic Cloud Server API Reference*.
+      For details, see `Obtaining the Password for Logging In to an ECS <https://docs.otc.t-systems.com/api/ecs/en-us_topic_0031176553.html>`__.
 
 #. Decrypt the ciphertext password.
 

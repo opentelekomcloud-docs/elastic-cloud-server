@@ -1,11 +1,21 @@
+:original_name: en-us_topic_0105215483.html
+
 .. _en-us_topic_0105215483:
 
-=======================
 Passwords and Key Pairs
 =======================
 
+-  :ref:`How Can I Set the Validity Period of the Image Password? <en-us_topic_0079176727>`
+-  :ref:`How Can I Obtain the Key Pair Used by an ECS? <en-us_topic_0081525053>`
+-  :ref:`What Should I Do If a Key Pair Cannot Be Imported? <en-us_topic_0019883415>`
+-  :ref:`Why Does the Login to My Linux ECS Using a Key File Fail? <en-us_topic_0031734664>`
+-  :ref:`Why Does a Key Pair Created Using puttygen.exe Fail to Be Imported on the Management Console? <en-us_topic_0047654687>`
+-  :ref:`What Is the cloudbase-init Account in Windows ECSs Used for? <en-us_topic_0037633087>`
+-  :ref:`What Should I Do If Cloud-Init Does Not Work After Python Is Upgraded? <en-us_topic_0118224527>`
+
 .. toctree::
    :maxdepth: 1
+   :hidden: 
 
    how_can_i_set_the_validity_period_of_the_image_password
    how_can_i_obtain_the_key_pair_used_by_an_ecs

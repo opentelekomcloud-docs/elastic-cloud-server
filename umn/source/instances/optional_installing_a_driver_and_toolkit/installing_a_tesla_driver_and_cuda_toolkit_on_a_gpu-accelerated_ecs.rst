@@ -74,8 +74,7 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
    .. _en-us_topic_0149470468__fig545554125711:
 
    .. figure:: /_static/images/en-us_image_0234354896.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Selecting a NVIDIA driver version
 
 
       **Figure 1** Selecting a NVIDIA driver version
@@ -85,8 +84,7 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
    .. _en-us_topic_0149470468__fig52351103310:
 
    .. figure:: /_static/images/en-us_image_0234354931.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Selecting a driver version
 
 
       **Figure 2** Selecting a driver version
@@ -98,8 +96,7 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
    .. _en-us_topic_0149470468__fig123801538205720:
 
    .. figure:: /_static/images/en-us_image_0234355284.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 3** Copying the download link
 
 
       **Figure 3** Copying the download link
@@ -113,8 +110,7 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
    .. _en-us_topic_0149470468__fig187219205141:
 
    .. figure:: /_static/images/en-us_image_0234355299.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 4** Obtaining the installation package
 
 
       **Figure 4** Obtaining the installation package
@@ -128,8 +124,7 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
    .. _en-us_topic_0149470468__fig2682182345814:
 
    .. figure:: /_static/images/en-us_image_0250287387.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 5** Disabling the Nouveau driver
 
 
       **Figure 5** Disabling the Nouveau driver
@@ -179,8 +174,7 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
    .. _en-us_topic_0149470468__fig1643713142594:
 
    .. figure:: /_static/images/en-us_image_0250287611.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 6** Completing the NVIDIA driver installation
 
 
       **Figure 6** Completing the NVIDIA driver installation
@@ -196,8 +190,7 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
    .. _en-us_topic_0149470468__fig61971535809:
 
    .. figure:: /_static/images/en-us_image_0234355305.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 7** Viewing the NVIDIA driver version
 
 
       **Figure 7** Viewing the NVIDIA driver version
@@ -218,8 +211,7 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
    .. _en-us_topic_0149470468__fig62897581106:
 
    .. figure:: /_static/images/en-us_image_0234356929.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 8** Selecting a driver type (Windows)
 
 
       **Figure 8** Selecting a driver type (Windows)
@@ -229,8 +221,7 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
    .. _en-us_topic_0149470468__fig5291626204819:
 
    .. figure:: /_static/images/en-us_image_0234356990.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 9** Selecting a driver version (Windows)
 
 
       **Figure 9** Selecting a driver version (Windows)
@@ -242,8 +233,7 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
    .. _en-us_topic_0149470468__fig37451434818:
 
    .. figure:: /_static/images/en-us_image_0234357031.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 10** Downloading the driver installation package
 
 
       **Figure 10** Downloading the driver installation package
@@ -253,8 +243,7 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
    .. _en-us_topic_0149470468__fig177611624821:
 
    .. figure:: /_static/images/en-us_image_0234357053.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 11** Running the NVIDIA driver installation program
 
 
       **Figure 11** Running the NVIDIA driver installation program
@@ -264,8 +253,7 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
    .. _en-us_topic_0149470468__fig1378440121:
 
    .. figure:: /_static/images/en-us_image_0234357336.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 12** Selecting an installation path
 
 
       **Figure 12** Selecting an installation path
@@ -275,8 +263,7 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
    .. _en-us_topic_0149470468__fig46181053128:
 
    .. figure:: /_static/images/en-us_image_0234357355.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 13** Completing the driver installation
 
 
       **Figure 13** Completing the driver installation
@@ -290,8 +277,7 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
       .. _en-us_topic_0149470468__fig8540781030:
 
       .. figure:: /_static/images/en-us_image_0234357385.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 14** Display adapters
 
 
          **Figure 14** Display adapters
@@ -307,8 +293,7 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
       .. _en-us_topic_0149470468__fig125251621439:
 
       .. figure:: /_static/images/en-us_image_0234357365.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 15** Viewing the NVIDIA driver version
 
 
          **Figure 15** Viewing the NVIDIA driver version
@@ -341,8 +326,7 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
    .. _en-us_topic_0149470468__fig1930101643513:
 
    .. figure:: /_static/images/en-us_image_0250288087.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 16** Selecting a CUDA version
 
 
       **Figure 16** Selecting a CUDA version
@@ -352,8 +336,7 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
    .. _en-us_topic_0149470468__fig970482862918:
 
    .. figure:: /_static/images/en-us_image_0250288474.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 17** Copying the link for downloading CUDA
 
 
       **Figure 17** Copying the link for downloading CUDA
@@ -367,8 +350,7 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
    .. _en-us_topic_0149470468__fig8354143184612:
 
    .. figure:: /_static/images/en-us_image_0234358619.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 18** Downloading CUDA
 
 
       **Figure 18** Downloading CUDA
@@ -380,8 +362,7 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
     .. _en-us_topic_0149470468__fig11827757103913:
 
     .. figure:: /_static/images/en-us_image_0250288371.png
-       :alt: Click to enlarge
-       :figclass: imgResize
+       :alt: **Figure 19** Installing CUDA
 
 
        **Figure 19** Installing CUDA
@@ -395,8 +376,7 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
     .. _en-us_topic_0149470468__fig514958145414:
 
     .. figure:: /_static/images/en-us_image_0234358634.png
-       :alt: Click to enlarge
-       :figclass: imgResize
+       :alt: **Figure 20** Installing CUDA_1
 
 
        **Figure 20** Installing CUDA_1
@@ -406,8 +386,7 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
     .. _en-us_topic_0149470468__fig20943181255411:
 
     .. figure:: /_static/images/en-us_image_0234358642.png
-       :alt: Click to enlarge
-       :figclass: imgResize
+       :alt: **Figure 21** Installing CUDA_2
 
 
        **Figure 21** Installing CUDA_2
@@ -415,8 +394,7 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
     .. _en-us_topic_0149470468__fig148915619526:
 
     .. figure:: /_static/images/en-us_image_0234358704.png
-       :alt: Click to enlarge
-       :figclass: imgResize
+       :alt: **Figure 22** Completing the installation
 
 
        **Figure 22** Completing the installation
@@ -436,8 +414,7 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
     .. _en-us_topic_0149470468__fig1282815711392:
 
     .. figure:: /_static/images/en-us_image_0234358719.png
-       :alt: Click to enlarge
-       :figclass: imgResize
+       :alt: **Figure 23** deviceQuery common output
 
 
        **Figure 23** deviceQuery common output
@@ -449,8 +426,7 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
     .. _en-us_topic_0149470468__fig18749997817:
 
     .. figure:: /_static/images/en-us_image_0234358804.png
-       :alt: Click to enlarge
-       :figclass: imgResize
+       :alt: **Figure 24** Checking the CUDA version
 
 
        **Figure 24** Checking the CUDA version
@@ -475,8 +451,7 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
    .. _en-us_topic_0149470468__fig17127316719:
 
    .. figure:: /_static/images/en-us_image_0250288895.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 25** Selecting a CUDA version
 
 
       **Figure 25** Selecting a CUDA version
@@ -486,8 +461,7 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
    .. _en-us_topic_0149470468__fig22798411673:
 
    .. figure:: /_static/images/en-us_image_0250289123.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 26** Finding the link for downloading CUDA
 
 
       **Figure 26** Finding the link for downloading CUDA
@@ -509,8 +483,7 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
    .. _en-us_topic_0149470468__fig18644103851215:
 
    .. figure:: /_static/images/en-us_image_0234360274.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 28** Selecting an installation path
 
 
       **Figure 28** Selecting an installation path
@@ -520,8 +493,7 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
    .. _en-us_topic_0149470468__fig2266175711165:
 
    .. figure:: /_static/images/en-us_image_0234360255.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 29** Completing the installation
 
 
       **Figure 29** Completing the installation

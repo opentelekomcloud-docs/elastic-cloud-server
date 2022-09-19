@@ -2,15 +2,15 @@
 
 .. _en-us_topic_0117490178:
 
-Initializing a Windows Data Disk (Windows Server 2016)
+Initializing a Windows Data Disk (Windows Server 2019)
 ======================================================
 
 Scenarios
 ---------
 
-This section uses Windows Server 2016 Standard 64bit to describe how to initialize a data disk attached to a server running Windows.
+This section uses Windows Server 2019 Standard 64bit to describe how to initialize a data disk attached to a server running Windows.
 
-The maximum disk capacity supported by MBR is 2 TB, and that supported by GPT is 18 EB. Therefore, use the GPT partition style if your disk capacity is larger than 2 TB. For details about disk partition styles, see :ref:`Scenarios and Disk Partitions <en-us_topic_0030831623>`.
+The maximum disk capacity supported by MBR is 2 TB, and that supported by GPT is 18 EB. Therefore, use the GPT partition style if your disk capacity is larger than 2 TB. To learn more about disk partition styles, see :ref:`Scenarios and Disk Partitions <en-us_topic_0030831623>`.
 
 The method for initializing a disk varies depending on the OS running on the server. This document is used for reference only. For the detailed operations and differences, see the product documents of the corresponding OS.
 
@@ -37,8 +37,7 @@ Procedure
    .. _en-us_topic_0117490178__en-us_topic_0115255433_fig128445136715:
 
    .. figure:: /_static/images/en-us_image_0132368216.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Server Manager
 
 
       **Figure 1** Server Manager
@@ -50,8 +49,7 @@ Procedure
    .. _en-us_topic_0117490178__en-us_topic_0115255433_fig11577433192617:
 
    .. figure:: /_static/images/en-us_image_0175083503.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Computer Management
 
 
       **Figure 2** Computer Management
@@ -63,8 +61,7 @@ Procedure
    .. _en-us_topic_0117490178__en-us_topic_0115255433_fig11358119588:
 
    .. figure:: /_static/images/en-us_image_0175083504.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 3** Disk list
 
 
       **Figure 3** Disk list
@@ -76,11 +73,10 @@ Procedure
    .. _en-us_topic_0117490178__en-us_topic_0115255433_fig68332918241:
 
    .. figure:: /_static/images/en-us_image_0175083507.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 4** Computer Management
 
 
-      **Figure 4** Computer Management (Windows Server 2016)
+      **Figure 4** Computer Management
 
    .. important::
 
@@ -95,11 +91,10 @@ Procedure
    .. _en-us_topic_0117490178__en-us_topic_0115255433_fig19509202633615:
 
    .. figure:: /_static/images/en-us_image_0175083508.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 5** New Simple Volume Wizard
 
 
-      **Figure 5** New Simple Volume Wizard (Windows Server 2016)
+      **Figure 5** New Simple Volume Wizard
 
 #. Follow the prompts and click **Next**.
 
@@ -108,11 +103,10 @@ Procedure
    .. _en-us_topic_0117490178__en-us_topic_0115255433_fig209619215384:
 
    .. figure:: /_static/images/en-us_image_0175083509.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 6** Specify Volume Size
 
 
-      **Figure 6** Specify Volume Size (Windows Server 2016)
+      **Figure 6** Specify Volume Size
 
 #. Specify the volume size and click **Next**. The system selects the maximum volume size by default. You can specify the volume size as required. In this example, the default setting is used.
 
@@ -121,11 +115,10 @@ Procedure
    .. _en-us_topic_0117490178__en-us_topic_0115255433_fig631143204114:
 
    .. figure:: /_static/images/en-us_image_0175083510.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 7** Assign Driver Letter or Path
 
 
-      **Figure 7** Assign Driver Letter or Path (Windows Server 2016)
+      **Figure 7** Assign Driver Letter or Path
 
 #. Assign a drive letter or path to your partition and click **Next**. The system assigns drive letter D by default. In this example, the default setting is used.
 
@@ -134,11 +127,10 @@ Procedure
    .. _en-us_topic_0117490178__en-us_topic_0115255433_fig1400313143015:
 
    .. figure:: /_static/images/en-us_image_0175083511.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 8** Format Partition
 
 
-      **Figure 8** Format Partition (Windows Server 2016)
+      **Figure 8** Format Partition
 
 #. Specify format settings and click **Next**. The system selects the NTFS file system by default. You can specify the file system type as required. In this example, the default setting is used.
 
@@ -147,11 +139,10 @@ Procedure
    .. _en-us_topic_0117490178__en-us_topic_0115255433_fig380162213463:
 
    .. figure:: /_static/images/en-us_image_0175083512.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 9** Completing the New Simple Volume Wizard
 
 
-      **Figure 9** Completing the New Simple Volume Wizard (Windows Server 2016)
+      **Figure 9** Completing the New Simple Volume Wizard
 
    .. important::
 
@@ -164,11 +155,10 @@ Procedure
    .. _en-us_topic_0117490178__en-us_topic_0115255433_fig14464150329:
 
    .. figure:: /_static/images/en-us_image_0175083513.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 10** Disk initialized
 
 
-      **Figure 10** Disk initialization succeeded (Windows Server 2016)
+      **Figure 10** Disk initialized
 
 #. After the volume is created, click |image1| on the task bar and check whether a new volume appears in **This PC**. In this example, New Volume (D:) is the new volume.
 
@@ -177,11 +167,10 @@ Procedure
    .. _en-us_topic_0117490178__en-us_topic_0115255433_fig4958111374510:
 
    .. figure:: /_static/images/en-us_image_0175083515.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 11** This PC
 
 
-      **Figure 11** This PC (Windows Server 2016)
+      **Figure 11** This PC
 
 .. |image1| image:: /_static/images/en-us_image_0238263336.png
 

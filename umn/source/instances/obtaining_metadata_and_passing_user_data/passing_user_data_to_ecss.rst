@@ -54,8 +54,7 @@ Passing User Data
    .. _en-us_topic_0032380449__fig87313493915:
 
    .. figure:: /_static/images/en-us_image_0237026761.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** User Data
 
 
       **Figure 1** User Data
@@ -77,19 +76,19 @@ Customized user data scripts of Linux ECSs are based on the open-source Cloud-In
 
    .. table:: **Table 1** Linux ECS script types
 
-      +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
-      | -                     | User-Data Script                                                                                                                             | Cloud-Config Data Script                                                                                                  |
-      +=======================+==============================================================================================================================================+===========================================================================================================================+
-      | Description           | Scripts, such as Shell and Python scripts, are used for custom configurations.                                                               | Methods pre-defined in Cloud-Init, such as the Yum source and SSH key, are used for configuring certain ECS applications. |
-      +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
-      | Format                | A script must be started with **#!**, for example, **#!/bin/bash** and **#!/usr/bin/env python**.                                            | The first line must be **#cloud-config**, and no space is allowed in front of it.                                         |
-      |                       |                                                                                                                                              |                                                                                                                           |
-      |                       | When a script is started for the first time, it will be executed at the rc.local-like level, indicating a low priority in the boot sequence. |                                                                                                                           |
-      +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
-      | Constraint            | Before Base64 encoding, the size of the script, including the first line, cannot exceed 32 KB.                                               | Before Base64 encoding, the size of the script, including the first line, cannot exceed 32 KB.                            |
-      +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
-      | Frequency             | The script is executed only once when the ECS is started for the first time.                                                                 | The execution frequency varies according to the applications configured on the ECS.                                       |
-      +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+      +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+      | -                     | User-Data Script                                                                                                                             | Cloud-Config Data Script                                                                                                      |
+      +=======================+==============================================================================================================================================+===============================================================================================================================+
+      | Description           | Scripts, such as Shell and Python scripts, are used for custom configurations.                                                               | Methods pre-defined in Cloud-Init, such as the yum repository and SSH key, are used for configuring certain ECS applications. |
+      +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+      | Format                | A script must be started with **#!**, for example, **#!/bin/bash** and **#!/usr/bin/env python**.                                            | The first line must be **#cloud-config**, and no space is allowed in front of it.                                             |
+      |                       |                                                                                                                                              |                                                                                                                               |
+      |                       | When a script is started for the first time, it will be executed at the rc.local-like level, indicating a low priority in the boot sequence. |                                                                                                                               |
+      +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+      | Constraint            | Before Base64 encoding, the size of the script, including the first line, cannot exceed 32 KB.                                               | Before Base64 encoding, the size of the script, including the first line, cannot exceed 32 KB.                                |
+      +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+      | Frequency             | The script is executed only once when the ECS is started for the first time.                                                                 | The execution frequency varies according to the applications configured on the ECS.                                           |
+      +-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
 
 -  How can I view the customized user data passed to a Linux ECS?
 
@@ -134,8 +133,7 @@ Customized user data scripts of Linux ECSs are based on the open-source Cloud-In
    .. _en-us_topic_0032380449__fig1787242875415:
 
    .. figure:: /_static/images/en-us_image_0115931570.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Viewing operating results
 
 
       **Figure 2** Viewing operating results
@@ -183,8 +181,7 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
    .. _en-us_topic_0032380449__fig8622411077:
 
    .. figure:: /_static/images/en-us_image_0115932123.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 3** Creating text file (Batch)
 
 
       **Figure 3** Creating text file (Batch)
@@ -194,8 +191,7 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
    .. _en-us_topic_0032380449__fig14281122141212:
 
    .. figure:: /_static/images/en-us_image_0115932873.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 4** Viewing user data (Batch)
 
 
       **Figure 4** Viewing user data (Batch)
@@ -214,8 +210,7 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
    .. _en-us_topic_0032380449__fig103618447159:
 
    .. figure:: /_static/images/en-us_image_0115933029.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 5** Creating text file (PowerShell)
 
 
       **Figure 5** Creating text file (PowerShell)
@@ -225,8 +220,7 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
    .. _en-us_topic_0032380449__fig124617204176:
 
    .. figure:: /_static/images/en-us_image_0115934291.jpg
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 6** Viewing user data (PowerShell)
 
 
       **Figure 6** Viewing user data (PowerShell)

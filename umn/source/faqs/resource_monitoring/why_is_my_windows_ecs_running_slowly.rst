@@ -42,8 +42,7 @@ Fault Locating
    .. _en-us_topic_0167429328__en-us_topic_0166311836_fig42857506323:
 
    .. figure:: /_static/images/en-us_image_0281773972.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Resource Monitor
 
 
       **Figure 2** Resource Monitor
@@ -67,8 +66,7 @@ Fault Locating
       .. _en-us_topic_0167429328__en-us_topic_0166311836_fig138318464320:
 
       .. figure:: /_static/images/en-us_image_0281775402.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 3** Checking the process
 
 
          **Figure 3** Checking the process

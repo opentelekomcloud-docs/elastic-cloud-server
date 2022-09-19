@@ -172,7 +172,7 @@ Displays ECS metadata.
           "meta": {
               "metering.image_id": "3a64bd37-955e-40cd-ab9e-129db56bc05d",
               "metering.imagetype": "gold",
-              "metering.resourcespeccode": "s3.medium.1.linux",
+              "metering.resourcespeccode": "s6.medium.2.linux",
               "image_name": "CentOS 7.6 64bit",
               "os_bit": "64",
               "vpc_id": "3b6c201f-aeb3-4bce-b841-64756e66cb49",
@@ -219,8 +219,7 @@ Displays ECS user data. The value is configured only when you create an ECS. It 
       .. _en-us_topic_0042400609__fig124601338153316:
 
       .. figure:: /_static/images/en-us_image_0166755236.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 1** 404 Not Found
 
 
          **Figure 1** 404 Not Found
@@ -393,7 +392,7 @@ Displays an ECS flavor.
 
    .. code-block::
 
-      s3.medium.1
+      s6.medium.2
 
 Local IPv4 (EC2 Compatible API)
 -------------------------------

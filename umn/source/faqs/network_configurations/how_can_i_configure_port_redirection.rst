@@ -34,8 +34,7 @@ For example, to redirect port 8080 on ECS 1 bound with EIP 192.168.10.43 to port
    .. _en-us_topic_0101604507__en-us_topic_0206596992_en-us_topic_0206596992_fig147071411162911:
 
    .. figure:: /_static/images/en-us_image_0267133745.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Port redirections on Windows
 
 
       **Figure 1** Port redirections on Windows
@@ -57,7 +56,7 @@ Private IP address of ECS 2: 192.168.72.20
 
       On the ECS details page, click **NICs** and disable **Source/Destination Check**.
 
-      By default, the source/destination check is enabled, and the system checks whether source IP addresses contained in the packets sent by ECSs are correct. If the IP addresses are incorrect, the system does not allow the ECSs to send the packets. This mechanism prevents packet spoofing, thereby improving system security. However, this mechanism prevents the packet sender from receiving returned packets. Therefore, disable the source/destination check.
+      By default, the source/destination check function is enabled. When this function is enabled, the system checks whether source IP addresses contained in the packets sent by ECSs are correct. If the IP addresses are incorrect, the system does not allow the ECSs to send the packets. This mechanism prevents packet spoofing, thereby improving system security. However, this mechanism prevents the packet sender from receiving returned packets. Therefore, disable the source/destination check.
 
 #. Log in to Linux ECS 1.
 
@@ -84,8 +83,7 @@ Private IP address of ECS 2: 192.168.72.20
    .. _en-us_topic_0101604507__fig11283122115016:
 
    .. figure:: /_static/images/en-us_image_0121682390.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Port redirections on Linux
 
 
       **Figure 2** Port redirections on Linux

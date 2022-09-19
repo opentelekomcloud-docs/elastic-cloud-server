@@ -37,8 +37,7 @@ Use an image to create two ECSs, ecs01 and ecs02. Then, verify that the hash val
    .. _en-us_topic_0037633087__fig311825713493:
 
    .. figure:: /_static/images/en-us_image_0202311481.gif
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** ecs01
 
 
       **Figure 1** ecs01
@@ -48,8 +47,7 @@ Use an image to create two ECSs, ecs01 and ecs02. Then, verify that the hash val
    .. _en-us_topic_0037633087__fig19275102321818:
 
    .. figure:: /_static/images/en-us_image_0202311491.gif
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** ecs02
 
 
       **Figure 2** ecs02

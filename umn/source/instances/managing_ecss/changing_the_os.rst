@@ -18,14 +18,13 @@ Constraints
 -----------
 
 -  The EVS disk quota must be greater than 0.
--  H2 ECSs do not support OS change.
 -  If an ECS OS is to be changed using a full-ECS image, the ECS system disk can be encrypted.
 
 Notes
 -----
 
 -  After the OS is changed, the original OS is not retained, and the original system disk is deleted, including the data in all partitions of the system disk.
--  Back up data before changing the OS. For details, see .
+-  Back up data before changing the OS.
 -  Changing the OS does not affect data in data disks.
 -  After the OS is changed, your service running environment must be deployed in the new OS again.
 -  After the OS is changed, the ECS will be automatically started.
@@ -63,7 +62,7 @@ Prerequisites
 -  If the original ECS uses password authentication while the new ECS uses key pair authentication, ensure that a key pair is available.
 -  If a private image is required for changing the ECS OS, create the desired private image by following the instructions provided in *Image Management Service User Guide*.
 
-   -  If an ECS image is required, make sure that a private image has been created using the ECS.
+   -  If the image of an ECS is required, make sure that a private image has been created using the ECS.
    -  If a local image file is required, make sure that the image file has been imported to the cloud platform and registered as a private image.
    -  If a private image from another region is required, make sure that the image has been copied.
    -  If a private image from another user account is required, make sure that the image has been shared with you.

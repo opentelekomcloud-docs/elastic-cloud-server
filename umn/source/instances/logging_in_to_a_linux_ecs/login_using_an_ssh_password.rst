@@ -107,8 +107,7 @@ The following operations use PuTTY as an example to log in to the ECS.
       .. _en-us_topic_0017955633__fig74247114018:
 
       .. figure:: /_static/images/en-us_image_0159943784.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 1** Session
 
 
          **Figure 1** Session

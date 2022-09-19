@@ -121,8 +121,7 @@ Log In to a Windows ECS Using an English Keyboard
    .. _en-us_topic_0027268511__fig25223713111459:
 
    .. figure:: /_static/images/en-us_image_0030874270.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Keyboard layout configuration
 
 
       **Figure 1** Keyboard layout configuration
@@ -134,8 +133,7 @@ Log In to a Windows ECS Using an English Keyboard
    .. _en-us_topic_0027268511__fig54376817111459:
 
    .. figure:: /_static/images/en-us_image_0030874271.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Remote Login
 
 
       **Figure 2** Remote Login
@@ -155,8 +153,7 @@ Log In to a Windows ECS Using an English Keyboard
    .. _en-us_topic_0027268511__fig3022163194924:
 
    .. figure:: /_static/images/en-us_image_0036068239.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 4** Local Cursor
 
 
       **Figure 4** Local Cursor
@@ -192,8 +189,7 @@ Log In to a Windows ECS Using a Non-English Keyboard
    .. _en-us_topic_0027268511__fig46762780111459:
 
    .. figure:: /_static/images/en-us_image_0030874270.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 5** Keyboard layout configuration
 
 
       **Figure 5** Keyboard layout configuration
@@ -205,8 +201,7 @@ Log In to a Windows ECS Using a Non-English Keyboard
     .. _en-us_topic_0027268511__en-us_topic_0027268511_fig54376817111459:
 
     .. figure:: /_static/images/en-us_image_0030874271.png
-       :alt: Click to enlarge
-       :figclass: imgResize
+       :alt: **Figure 6** Remote Login
 
 
        **Figure 6** Remote Login
@@ -226,8 +221,7 @@ Log In to a Windows ECS Using a Non-English Keyboard
     .. _en-us_topic_0027268511__en-us_topic_0027268511_fig3022163194924:
 
     .. figure:: /_static/images/en-us_image_0036068239.png
-       :alt: Click to enlarge
-       :figclass: imgResize
+       :alt: **Figure 8** Local Cursor
 
 
        **Figure 8** Local Cursor

@@ -8,7 +8,7 @@ Why Can't an EIP Be Pinged?
 Symptom
 -------
 
-After you purchase an EIP and bind it to an ECS, the ping operation to the EIP fails, or the ECS fails to access the Internet.
+After you purchase an EIP and bind it to an ECS, the EIP cannot be pinged on a local server or other cloud servers.
 
 Fault Locating
 --------------
@@ -19,9 +19,8 @@ If the fault persists after you have ruled out a cause, check other causes.
 
 .. _en-us_topic_0105130172__en-us_topic_0118498854_fig257119102320:
 
-.. figure:: /_static/images/en-us_image_0293553366.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+.. figure:: /_static/images/en-us_image_0000001223659800.png
+   :alt: **Figure 1** Method of locating the failure to ping an EIP
 
 
    **Figure 1** Method of locating the failure to ping an EIP
@@ -49,7 +48,7 @@ If the fault persists after you have ruled out a cause, check other causes.
 Checking Security Group Rules
 -----------------------------
 
-The ping operations use the ICMP protocol. Check whether the security group accommodating the ECS allows ICMP traffic in the inbound direction.
+ICMP is used for the ping command. Check whether the security group accommodating the ECS allows ICMP traffic.
 
 #. Log in to the management console.
 
@@ -67,9 +66,21 @@ The ping operations use the ICMP protocol. Check whether the security group acco
 
    The system automatically switches to the **Security Group** page.
 
-#. On the **Inbound Rules** tab, click **Add Rule**. In the displayed dialog box, set required parameters to add an inbound rule.
+#. On the **Outbound Rules** page, click **Add Rule**. In the displayed dialog box, set required parameters to add an outbound rule.
 
    .. table:: **Table 2** Security group rules
+
+      +--------------------+-----------------+---------------------+---------------------------------------+
+      | Transfer Direction | Type            | Protocol/Port Range | Source                                |
+      +====================+=================+=====================+=======================================+
+      | Outbound           | IPv4            | ICMP/Any            | 0.0.0.0/0                             |
+      |                    |                 |                     |                                       |
+      |                    |                 |                     | 0.0.0.0/0 indicates all IP addresses. |
+      +--------------------+-----------------+---------------------+---------------------------------------+
+
+#. On the **Inbound Rules** tab, click **Add Rule**. In the displayed dialog box, set required parameters to add an inbound rule.
+
+   .. table:: **Table 3** Security group rules
 
       +--------------------+-----------------+---------------------+---------------------------------------+
       | Transfer Direction | Type            | Protocol/Port Range | Source                                |
@@ -105,8 +116,7 @@ If a firewall is enabled on the ECS, check whether the firewall blocks the ping 
    .. _en-us_topic_0105130172__fig7244357113416:
 
    .. figure:: /_static/images/en-us_image_0250117342.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Checking firewall rules
 
 
       **Figure 2** Checking firewall rules
@@ -148,8 +158,7 @@ If a firewall is enabled on the ECS, check whether the firewall blocks the ping 
       .. _en-us_topic_0105130172__fig178326362544:
 
       .. figure:: /_static/images/en-us_image_0250182352.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 3** Inbound Rules
 
 
          **Figure 3** Inbound Rules
@@ -157,8 +166,7 @@ If a firewall is enabled on the ECS, check whether the firewall blocks the ping 
       .. _en-us_topic_0105130172__fig5225320554:
 
       .. figure:: /_static/images/en-us_image_0250182717.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 4** Outbound Rules
 
 
          **Figure 4** Outbound Rules
@@ -241,8 +249,7 @@ Generally, the default route of an OS will preferentially select the primary NIC
       .. _en-us_topic_0105130172__fig7362102412018:
 
       .. figure:: /_static/images/en-us_image_0250105611.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 5** Default route
 
 
          **Figure 5** Default route

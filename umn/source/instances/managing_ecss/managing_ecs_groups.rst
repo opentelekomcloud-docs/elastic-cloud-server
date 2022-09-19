@@ -8,7 +8,7 @@ Managing ECS Groups
 Scenarios
 ---------
 
-An ECS group allows you to create ECSs on different physical servers, thereby improving service reliability. This function does not apply to existing ECSs. You cannot add existing ECSs to an ECS group.
+An ECS group allows you to create ECSs on different hosts, thereby improving service reliability. This function does not apply to existing ECSs. You cannot add existing ECSs to an ECS group.
 
 Notes
 -----

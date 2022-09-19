@@ -9,6 +9,9 @@ An Elastic Cloud Server (ECS) is a basic computing unit that consists of vCPUs, 
 
 ECSs support self-service creation, modification, and operation. You can create an ECS by specifying its vCPUs, memory, OS, and login mode. After an ECS is created, you can modify its specifications if necessary. ECS works with other services to provide a reliable, secure, efficient computing environment.
 
+-  For details about the operating systems supported by ECS, see :ref:`Image Types <en-us_topic_0030828254>`.
+-  For details about login modes, see :ref:`Logging In to an ECS <en-us_topic_0092494193>`.
+
 System Architecture
 -------------------
 
@@ -25,8 +28,7 @@ ECS works with other products and services to provide computing, storage, and ne
 .. _en-us_topic_0013771112__fig36062790113621:
 
 .. figure:: /_static/images/en-us_image_0071898891.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 1** System architecture
 
 
    **Figure 1** System architecture

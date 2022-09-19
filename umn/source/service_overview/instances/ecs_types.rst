@@ -35,8 +35,7 @@ Specifications for the ECS being created are located in the specifications list.
 .. _en-us_topic_0035470096__fig64292023143619:
 
 .. figure:: /_static/images/en-us_image_0172453607.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 1** ECS specifications
 
 
    **Figure 1** ECS specifications
@@ -53,7 +52,8 @@ The intranet bandwidth and PPS of an ECS are determined based on ECS flavors.
 -  Assured intranet bandwidth: guaranteed bandwidth allocated to the ECS
 -  Maximum intranet bandwidth: maximum bandwidth that can be allocated to the ECS
 -  Maximum intranet PPS: maximum number of packets that the ECS can transmit and receive per second
--  NIC multi-queue: allocates NIC interrupt requests to multiple vCPUs for higher PPS performance and bandwidth.
+-  NIC multi-queues: allocates NIC interrupt requests to multiple vCPUs for higher PPS performance and bandwidth
+-  Maximum NICs: maximum number of NICs that can be attached to an ECS.
 
    .. note::
 
