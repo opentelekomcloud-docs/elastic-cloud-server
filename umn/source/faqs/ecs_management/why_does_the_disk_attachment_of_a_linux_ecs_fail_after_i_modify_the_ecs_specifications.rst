@@ -24,8 +24,7 @@ Procedure
    .. _en-us_topic_0214940106__en-us_topic_0120890833_fig10595124010458:
 
    .. figure:: /_static/images/en-us_image_0214947581.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Viewing disks attached before specifications modification
 
 
       **Figure 1** Viewing disks attached before specifications modification
@@ -41,8 +40,7 @@ Procedure
    .. _en-us_topic_0214940106__en-us_topic_0120890833_fig692535712437:
 
    .. figure:: /_static/images/en-us_image_0214947582.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Viewing disks attached after specifications modification
 
 
       **Figure 2** Viewing disks attached after specifications modification
@@ -80,8 +78,7 @@ Procedure
    .. _en-us_topic_0214940106__en-us_topic_0120890833_fig722411124917:
 
    .. figure:: /_static/images/en-us_image_0214947583.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 3** Checking the number of disks attached
 
 
       **Figure 3** Checking the number of disks attached

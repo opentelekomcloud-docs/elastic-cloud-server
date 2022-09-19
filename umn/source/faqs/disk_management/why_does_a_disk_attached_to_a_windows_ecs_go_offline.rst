@@ -13,8 +13,7 @@ A disk attached to a Windows ECS goes offline, and the system displays the messa
 .. _en-us_topic_0114225937__fig1167510561578:
 
 .. figure:: /_static/images/en-us_image_0114229858.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 1** Offline disk
 
 
    **Figure 1** Offline disk

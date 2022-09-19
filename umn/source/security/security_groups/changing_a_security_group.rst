@@ -26,8 +26,7 @@ Procedure
    .. _en-us_topic_0093492517__fig1673733486:
 
    .. figure:: /_static/images/en-us_image_0122999741.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Change Security Group
 
 
       **Figure 1** Change Security Group

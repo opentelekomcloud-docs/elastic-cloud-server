@@ -38,9 +38,9 @@ Performing Basic Configurations
 
    .. note::
 
-      Random AZ allocation is available on the console when you create an ECS. The system will use a hash algorithm to select a default AZ based on your universally unique identifier (UUID).
+      Random AZ allocation is available on the console when you create an ECS. The system will use a hash algorithm to select an AZ as the default AZ based on your universally unique identifier (UUID).
 
-      The released ECS types and flavors vary depending on AZs. To view all supported ECS types and flavors on the cloud service platform, set **AZ** to **Random**. Then, the system automatically allocates an AZ according to your selected ECS flavor.
+      The available ECS types and flavors vary depending on AZs. To view all supported ECS types and flavors on the cloud service platform, set **AZ** to **Random**. Then, the system automatically allocates an AZ according to your selected ECS flavor.
 
       For example, S3 ECSs are available only in AZ 1; S2 ECSs are available in AZ 2 and AZ 3 and have been sold out in AZ 1. If you set **AZ** to **Random**, you can view both S3 and S2 ECSs. If you create an S3 ECS, the system automatically allocates it to AZ 1. If you create an S2 ECS, the system randomly allocates it to AZ 2 or AZ 3.
 
@@ -56,13 +56,13 @@ Performing Basic Configurations
 
 #. Set **Specifications**.
 
-   The public cloud provides various ECS types for different application scenarios. You can choose from existing ECS types and flavors in the list. Alternatively, you can enter a flavor (such as c3) or specify vCPUs and memory size to search for the flavor suited to your needs.
+   The public cloud provides various ECS types for different application scenarios. You can choose from existing ECS types and flavors in the list. Alternatively, you can enter a flavor or specify vCPUs and memory size to search for the flavor suited to your needs.
 
    **Latest generation** shows the types and flavors of newly released ECSs, and **All generations** show the types and flavors of all ECSs provided by the public cloud.
 
    .. note::
 
-      -  Before selecting an ECS type, learn the introduction and notes on each type of ECSs. For details, see :ref:`ECS Types <en-us_topic_0035470096>`.
+      -  Before selecting an ECS type, learn about the introduction and notes on each type of ECSs. For details, see :ref:`ECS Types <en-us_topic_0035470096>`.
 
       -  **Local Disk**: specifies the local storage of the physical server where the ECS is deployed. Only Hard Disk Driver (HDD) disks are supported. If the ECS of the selected type (such as **Disk-intensive**) uses local disks, the system automatically attaches the local disks to the ECS and displays the information of the local disks.
 
@@ -82,7 +82,7 @@ Performing Basic Configurations
 
       A private image is an image available only to the user who created it. It contains an OS, preinstalled public applications, and the user's private applications. Using a customized private image, you can create ECSs tailored to your needs in batches.
 
-      You can also select an encrypted image. For details, see *Image Management Service User Guide*.
+      You can also select an encrypted image. For more information about encrypted images, see *Image Management Service User Guide*.
 
       .. note::
 

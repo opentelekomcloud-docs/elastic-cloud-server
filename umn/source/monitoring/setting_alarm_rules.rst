@@ -19,13 +19,13 @@ Procedure
 
 #. Click |image1| in the upper left corner and select your region and project.
 
-#. Under **Management & Deployment**, click **Cloud Eye**.
+#. Click **Service List**. Under **Management & Deployment**, select **Cloud Eye**.
 
 #. In the navigation pane on the left, choose **Alarm Management** > **Alarm Rules**.
 
 #. On the **Alarm Rules** page, click **Create Alarm Rule** to create an alarm rule, or modify an existing alarm rule.
 
-   The following operations use modifying an existing alarm rule as an example.
+   The following uses modifying an existing alarm rule as an example.
 
    a. Click the target alarm rule.
 
@@ -36,13 +36,12 @@ Procedure
       .. _en-us_topic_0027371531__fig5398007222382:
 
       .. figure:: /_static/images/en-us_image_0022382203.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 1** Modifying an alarm rule
 
 
          **Figure 1** Modifying an alarm rule
 
-   d. Click **OK**.
+   d. Click **Modify**.
 
       After an alarm rule is modified, the system automatically notifies you of an alarm when the alarm complying with the alarm rule is generated.
 

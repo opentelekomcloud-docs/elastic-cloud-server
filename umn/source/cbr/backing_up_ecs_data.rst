@@ -12,7 +12,7 @@ CBR enhances data integrity and service continuity. For example, if an ECS or a 
 
 For more information, :ref:`CBR Architecture <en-us_topic_0000001128445638__section10399144613501>`, :ref:`Backup Mechanism <en-us_topic_0000001128445638__section696712594578>`, and :ref:`Backup Options <en-us_topic_0000001128445638__section533362013>`.
 
-You can back up ECS data using the Cloud Server Backup or Cloud Disk Backup function.
+You can back up ECS data using Cloud Server Backup or Cloud Disk Backup.
 
 -  Cloud Server Backup (recommended): Use this backup function if you want to back up the data of all EVS disks (system and data disks) on an ECS. This prevents data inconsistency caused by time difference in creating a backup.
 -  Cloud Disk Backup: Use this backup function if you want to back up the data of one or more EVS disks (system or data disk) on an ECS. This minimizes backup costs on the basis of data security.
@@ -78,5 +78,4 @@ EVS Disk Backup Procedure
 .. |image2| image:: /_static/images/en-us_image_0210779229.png
 
 .. |image3| image:: /_static/images/en-us_image_0000001128656892.png
-   :class: imgResize
 

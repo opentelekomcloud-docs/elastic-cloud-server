@@ -16,7 +16,7 @@ Procedure
 #. Log in to the management console.
 #. Click |image1| in the upper left corner and select your region and project.
 #. Under **Computing**, click **Elastic Cloud Server**.
-#. After creating an ECS, view the creation status in the task status area on the right side of common operations (**Start**, **Stop**, and **More**).
+#. After creating an ECS, view the creation status above the ECS list beside the common operations (**Start**, **Stop**, and **More**).
 #. Click the number displayed above **Creating** and view details about the tasks.
 
    .. note::

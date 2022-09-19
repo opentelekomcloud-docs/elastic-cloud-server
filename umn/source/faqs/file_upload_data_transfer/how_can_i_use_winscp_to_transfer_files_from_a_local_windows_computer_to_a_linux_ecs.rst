@@ -52,5 +52,4 @@ Solution
 5. Drag a file from the local computer on the left to the remotely logged in ECS on the right to transfer the file.
 
 .. |image1| image:: /_static/images/en-us_image_0166287336.png
-   :class: imgResize
 

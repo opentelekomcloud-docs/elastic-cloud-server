@@ -22,8 +22,7 @@ To obtain the virtualization type of an ECS, perform the following operations:
    .. _en-us_topic_0013771092__fig14561414141716:
 
    .. figure:: /_static/images/en-us_image_0121090576.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Viewing ECS specifications
 
 
       **Figure 1** Viewing ECS specifications
@@ -34,7 +33,7 @@ Notes
 -----
 
 -  If ECS specifications are downgraded, the ECS performance will deteriorate.
--  Certain ECSs do not support specifications modification currently. For details about available ECS types as well as their functions and usage, see "Notes" in :ref:`ECS Types <en-us_topic_0035470096>`.
+-  Certain ECS types do not support specifications modification currently. For details about available ECS types as well as their functions and usage, see "Notes" in :ref:`ECS Types <en-us_topic_0035470096>`.
 -  When the disk status is **Expanding**, you are not allowed to modify the specifications of the ECS where the disk is attached.
 -  Before modifying the specifications of a Windows ECS, modify the SAN policy by following the instructions provided in :ref:`Why Does a Disk Attached to a Windows ECS Go Offline? <en-us_topic_0114225937>` to prevent disks from going offline after the specifications are modified.
 -  Before modifying specifications, make sure that the ECS has been stopped.

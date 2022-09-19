@@ -35,8 +35,7 @@ If your local server runs Windows, you can use the remote desktop connection too
    .. _en-us_topic_0017955381__en-us_topic_0027290684_fig22996848191913:
 
    .. figure:: /_static/images/en-us_image_0295941039.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Show Options
 
 
       **Figure 1** Show Options
@@ -50,8 +49,7 @@ If your local server runs Windows, you can use the remote desktop connection too
    .. _en-us_topic_0017955381__fig61897111106:
 
    .. figure:: /_static/images/en-us_image_0295941040.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Remote Desktop Connection
 
 
       **Figure 2** Remote Desktop Connection
@@ -63,8 +61,7 @@ If your local server runs Windows, you can use the remote desktop connection too
    .. _en-us_topic_0017955381__fig5308424112111:
 
    .. figure:: /_static/images/en-us_image_0295941041.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 3** Clipboard
 
 
       **Figure 3** Clipboard
@@ -74,8 +71,7 @@ If your local server runs Windows, you can use the remote desktop connection too
    .. _en-us_topic_0017955381__fig2016145215213:
 
    .. figure:: /_static/images/en-us_image_0295940977.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 4** Drives
 
 
       **Figure 4** Drives
@@ -85,8 +81,7 @@ If your local server runs Windows, you can use the remote desktop connection too
    .. _en-us_topic_0017955381__fig45767599405:
 
    .. figure:: /_static/images/en-us_image_0295940978.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 5** Adjusting the size of the desktop
 
 
       **Figure 5** Adjusting the size of the desktop
@@ -121,8 +116,7 @@ When you log in to an ECS for the first time, log in to it using VNC, enable RDP
    .. _en-us_topic_0017955381__fig276023113838:
 
    .. figure:: /_static/images/en-us_image_0049287308.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 6** System Properties
 
 
       **Figure 6** System Properties

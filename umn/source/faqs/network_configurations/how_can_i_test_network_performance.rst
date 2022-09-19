@@ -492,8 +492,7 @@ UDP PPS Test (Using iperf3)
    .. _en-us_topic_0115820205__fig166644134610:
 
    .. figure:: /_static/images/en-us_image_0115874559.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** UDP PPS test result
 
 
       **Figure 2** UDP PPS test result

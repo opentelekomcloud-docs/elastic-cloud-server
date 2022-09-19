@@ -1,6 +1,6 @@
-====================================
-Elasitc Cloud Server Developer Guide
-====================================
+======================================
+Elastic Cloud Server - Developer Guide
+======================================
 
 .. toctree::
    :maxdepth: 1

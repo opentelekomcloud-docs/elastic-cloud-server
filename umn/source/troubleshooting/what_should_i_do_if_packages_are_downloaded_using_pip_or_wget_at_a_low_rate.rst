@@ -13,8 +13,7 @@ When a user runs the wget command to download software packages, the download ra
 .. _en-us_topic_0107490388__fig17394493307:
 
 .. figure:: /_static/images/en-us_image_0107505891.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 1** wget-based package downloading
 
 
    **Figure 1** wget-based package downloading

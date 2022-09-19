@@ -12,8 +12,7 @@ Your account automatically comes with a default security group. The default secu
 .. _en-us_topic_0140323154__fig11890174421819:
 
 .. figure:: /_static/images/en-us_image_0000001230120807.png
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 1** Default security group
 
 
    **Figure 1** Default security group

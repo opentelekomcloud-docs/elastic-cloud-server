@@ -53,6 +53,10 @@ Based on example 1, if you are required to enable routing for default public net
 
    **ip route delete default**
 
+   .. important::
+
+      Exercise caution when deleting the default route because this operation will interrupt the network and result in SSH login failures.
+
 #. Run the following command to configure a new default route:
 
    **ip route add 0.0.0.0/0 dev eth1 via 192.168.2.1**

@@ -1,11 +1,31 @@
+:original_name: en-us_topic_0018124785.html
+
 .. _en-us_topic_0018124785:
 
-======================
 Network Configurations
 ======================
 
+-  :ref:`Can I Bind Multiple EIPs to an ECS? <en-us_topic_0018073216>`
+-  :ref:`Can an ECS Without an EIP Access the Internet? <en-us_topic_0030013188>`
+-  :ref:`Why Can't an EIP Be Pinged? <en-us_topic_0105130172>`
+-  :ref:`Why Can I Remotely Access an ECS But Cannot Ping It? <en-us_topic_0018078505>`
+-  :ref:`Will NICs Added to an ECS Start Automatically? <en-us_topic_0025445670>`
+-  :ref:`How Can I Check Whether the Network Communication Is Normal Between Two ECSs Equipped with an InfiniBand NIC Driver? <en-us_topic_0058747426>`
+-  :ref:`How Can I Manually Configure an IP Address for an InfiniBand NIC? <en-us_topic_0083225171>`
+-  :ref:`Why Is the NIC Not Working? <en-us_topic_0036068717>`
+-  :ref:`How Can I Handle the Issue that a Windows 7 ECS Equipped with an Intel 82599 NIC Reports an Error in SR-IOV Scenarios? <en-us_topic_0053287548>`
+-  :ref:`Why Can't My Linux ECS Obtain Metadata? <en-us_topic_0000001138811177>`
+-  :ref:`How Can I Obtain the MAC Address of My ECS? <en-us_topic_0101604506>`
+-  :ref:`How Can I Test Network Performance? <en-us_topic_0115820205>`
+-  :ref:`Why Can't I Use DHCP to Obtain a Private IP Address? <en-us_topic_0105130173>`
+-  :ref:`How Can I View and Modify Kernel Parameters of a Linux ECS? <en-us_topic_0107659745>`
+-  :ref:`How Can I Configure Port Redirection? <en-us_topic_0101604507>`
+-  :ref:`Can the ECSs of Different Accounts Communicate over an Intranet? <en-us_topic_0018078501>`
+-  :ref:`Will ECSs That I Purchased Deployed in the Same Subnet? <en-us_topic_0018078503>`
+
 .. toctree::
    :maxdepth: 1
+   :hidden: 
 
    can_i_bind_multiple_eips_to_an_ecs
    can_an_ecs_without_an_eip_access_the_internet

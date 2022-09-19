@@ -33,8 +33,7 @@ Change the Python version used by Cloud-Init to the source version. To do so, ch
 .. _en-us_topic_0118224527__fig11465133314219:
 
 .. figure:: /_static/images/en-us_image_0123417484.jpg
-   :alt: Click to enlarge
-   :figclass: imgResize
+   :alt: **Figure 2** Changing the Python version
 
 
    **Figure 2** Changing the Python version

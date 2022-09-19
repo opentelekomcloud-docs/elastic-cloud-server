@@ -120,8 +120,7 @@ Logging In to an ECS Using an English Keyboard
    .. _en-us_topic_0093263550__en-us_topic_0027268511_fig25223713111459:
 
    .. figure:: /_static/images/en-us_image_0030874270.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 1** Keyboard layout configuration
 
 
       **Figure 1** Keyboard layout configuration
@@ -133,8 +132,7 @@ Logging In to an ECS Using an English Keyboard
    .. _en-us_topic_0093263550__en-us_topic_0027268511_fig54376817111459:
 
    .. figure:: /_static/images/en-us_image_0030874271.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 2** Remote Login
 
 
       **Figure 2** Remote Login
@@ -154,8 +152,7 @@ Logging In to an ECS Using an English Keyboard
    .. _en-us_topic_0093263550__en-us_topic_0027268511_fig3022163194924:
 
    .. figure:: /_static/images/en-us_image_0093469181.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 4** Local Cursor
 
 
       **Figure 4** Local Cursor
@@ -182,8 +179,7 @@ Logging In to an ECS Using a Non-English Keyboard
    .. _en-us_topic_0093263550__en-us_topic_0093263550_en-us_topic_0027268511_fig25223713111459:
 
    .. figure:: /_static/images/en-us_image_0030874270.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 5** Keyboard layout configuration
 
 
       **Figure 5** Keyboard layout configuration
@@ -195,8 +191,7 @@ Logging In to an ECS Using a Non-English Keyboard
     .. _en-us_topic_0093263550__en-us_topic_0093263550_en-us_topic_0027268511_fig54376817111459:
 
     .. figure:: /_static/images/en-us_image_0030874271.png
-       :alt: Click to enlarge
-       :figclass: imgResize
+       :alt: **Figure 6** Remote Login
 
 
        **Figure 6** Remote Login
@@ -216,8 +211,7 @@ Logging In to an ECS Using a Non-English Keyboard
     .. _en-us_topic_0093263550__en-us_topic_0093263550_en-us_topic_0027268511_fig3022163194924:
 
     .. figure:: /_static/images/en-us_image_0093469181.png
-       :alt: Click to enlarge
-       :figclass: imgResize
+       :alt: **Figure 8** Local Cursor
 
 
        **Figure 8** Local Cursor
@@ -313,8 +307,7 @@ Local commands can be copied to an ECS. To do so, perform the following operatio
    .. _en-us_topic_0093263550__en-us_topic_0093263548_fig18993162320449:
 
    .. figure:: /_static/images/en-us_image_0109039483.png
-      :alt: Click to enlarge
-      :figclass: imgResize
+      :alt: **Figure 9** Input Commands
 
 
       **Figure 9** Input Commands

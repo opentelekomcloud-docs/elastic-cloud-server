@@ -42,8 +42,7 @@ To use the 20 GB capacity, performing the following operations:
       .. _en-us_topic_0076210995__fig30207295194414:
 
       .. figure:: /_static/images/en-us_image_0076540987.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 1** Viewing details about the disk
 
 
          **Figure 1** Viewing details about the disk
@@ -55,8 +54,7 @@ To use the 20 GB capacity, performing the following operations:
       .. _en-us_topic_0076210995__fig61751392489:
 
       .. figure:: /_static/images/en-us_image_0076598858.jpg
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 2** Viewing disk partitions
 
 
          **Figure 2** Viewing disk partitions
@@ -88,8 +86,7 @@ To use the 20 GB capacity, performing the following operations:
       .. _en-us_topic_0076210995__fig8903145214811:
 
       .. figure:: /_static/images/en-us_image_0076540988.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 3** Creating a new partition
 
 
          **Figure 3** Creating a new partition
@@ -101,8 +98,7 @@ To use the 20 GB capacity, performing the following operations:
       .. _en-us_topic_0076210995__fig181891453491:
 
       .. figure:: /_static/images/en-us_image_0076595619.jpg
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 4** Specifying the new partition's start cylinder number
 
 
          **Figure 4** Specifying the new partition's start cylinder number
@@ -114,8 +110,7 @@ To use the 20 GB capacity, performing the following operations:
       .. _en-us_topic_0076210995__fig1575842424919:
 
       .. figure:: /_static/images/en-us_image_0076595620.jpg
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 5** Specifying the new partition's end cylinder number
 
 
          **Figure 5** Specifying the new partition's end cylinder number
@@ -127,8 +122,7 @@ To use the 20 GB capacity, performing the following operations:
       .. _en-us_topic_0076210995__fig313793614917:
 
       .. figure:: /_static/images/en-us_image_0076596029.jpg
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 6** Viewing the created partition
 
 
          **Figure 6** Viewing the created partition
@@ -142,8 +136,7 @@ To use the 20 GB capacity, performing the following operations:
       .. _en-us_topic_0076210995__fig31177535493:
 
       .. figure:: /_static/images/en-us_image_0076596326.jpg
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 7** Completing the partition creation
 
 
          **Figure 7** Completing the partition creation
@@ -155,8 +148,7 @@ To use the 20 GB capacity, performing the following operations:
       .. _en-us_topic_0076210995__fig1821920725014:
 
       .. figure:: /_static/images/en-us_image_0076600080.jpg
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 8** Viewing disk partitions
 
 
          **Figure 8** Viewing disk partitions
@@ -174,8 +166,7 @@ To use the 20 GB capacity, performing the following operations:
       .. _en-us_topic_0076210995__fig0499732105012:
 
       .. figure:: /_static/images/en-us_image_0076541187.png
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 9** Viewing the file system type
 
 
          **Figure 9** Viewing the file system type
@@ -245,8 +236,7 @@ To use the 20 GB capacity, performing the following operations:
       .. _en-us_topic_0076210995__fig71852049155012:
 
       .. figure:: /_static/images/en-us_image_0076543500.jpg
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 10** Viewing the mounted file systems
 
 
          **Figure 10** Viewing the mounted file systems
@@ -273,8 +263,7 @@ To use the 20 GB capacity, performing the following operations:
       .. _en-us_topic_0076210995__fig124697122517:
 
       .. figure:: /_static/images/en-us_image_0076543501.jpg
-         :alt: Click to enlarge
-         :figclass: imgResize
+         :alt: **Figure 11** Viewing the file system type
 
 
          **Figure 11** Viewing the file system type
