@@ -19,7 +19,6 @@ To obtain the virtualization type of an ECS, perform the following operations:
 
 #. On the page providing details about the ECS, view the ECS specifications.
 
-   .. _en-us_topic_0013771092__fig14561414141716:
 
    .. figure:: /_static/images/en-us_image_0121090576.png
       :alt: **Figure 1** Viewing ECS specifications
@@ -118,4 +117,3 @@ Perform the following operations in the event of a specifications modification f
    If the fault cannot be rectified based on logs, contact customer service.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

@@ -27,7 +27,6 @@ Procedure
 
 #. Select the subnet and security group to be added.
 
-   .. _en-us_topic_0093492518__fig188071746111817:
 
    .. figure:: /_static/images/en-us_image_0093507600.png
       :alt: **Figure 1** Selecting the security group and subnet
@@ -98,4 +97,3 @@ Some OSs cannot identify newly added NICs. In this case, you must manually activ
    -  If no, contact customer service.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

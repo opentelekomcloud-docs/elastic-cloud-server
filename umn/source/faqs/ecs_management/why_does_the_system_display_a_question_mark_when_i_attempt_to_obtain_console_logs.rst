@@ -10,7 +10,6 @@ Symptom
 
 The system displays a question mark (?) when I attempt to obtain the console logs of an ECS.
 
-.. _en-us_topic_0088241338__fig5159771161128:
 
 .. figure:: /_static/images/en-us_image_0088242234.jpg
    :alt: **Figure 1** Obtaining console logs

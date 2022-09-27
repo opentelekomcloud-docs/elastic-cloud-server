@@ -156,11 +156,10 @@ Procedure
          |                       |    -  Uppercase letters                                                                                                                                      |                                                               |
          |                       |    -  Lowercase letters                                                                                                                                      |    The example password is generated randomly. Do not use it. |
          |                       |    -  Digits                                                                                                                                                 |                                                               |
-         |                       |    -  Special characters: $!@%-_=+[]:./^,{}?                                                                                                                 |                                                               |
+         |                       |    -  Special characters: ``$!@%-_=+[]:./^,{}?``                                                                                                             |                                                               |
          |                       |                                                                                                                                                              |                                                               |
          |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                               |
          |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                               |
          +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

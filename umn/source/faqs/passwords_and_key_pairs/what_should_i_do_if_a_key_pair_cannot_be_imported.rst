@@ -18,4 +18,3 @@ If you use Internet Explorer 9 to access the management console, the key pair ma
 #. Click **Yes**.
 
 .. |image1| image:: /_static/images/en-us_image_0146087803.png
-

@@ -32,4 +32,3 @@ Procedure
 #. Click **Create Now**.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

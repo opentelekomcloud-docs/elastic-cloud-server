@@ -30,4 +30,3 @@ Procedure
 #. Click **OK** to delete the password.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

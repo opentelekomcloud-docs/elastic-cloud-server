@@ -42,4 +42,3 @@ Procedure
    -  If no, enabling advanced disk failed. In such a case, try again later or contact customer service.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

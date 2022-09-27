@@ -36,4 +36,3 @@ Procedure
    For more information about virtual IP addresses, see *Virtual Private Cloud User Guide*.
 
 .. |image1| image:: /_static/images/en-us_image_0093518909.png
-

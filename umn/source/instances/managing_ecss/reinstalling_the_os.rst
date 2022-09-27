@@ -96,4 +96,3 @@ If the reinstallation is unsuccessful, perform steps :ref:`3 <en-us_topic_002491
 If the second reinstallation attempt is unsuccessful, contact customer service for manual recovery at the backend.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

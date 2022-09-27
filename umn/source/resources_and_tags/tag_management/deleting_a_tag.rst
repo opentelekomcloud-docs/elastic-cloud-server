@@ -77,12 +77,7 @@ Batch Deleting Tags on the TMS Console
    The resource list is refreshed and the refresh time is updated.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-
 .. |image2| image:: /_static/images/en-us_image_0210875481.png
-
 .. |image3| image:: /_static/images/en-us_image_0210875482.png
-
 .. |image4| image:: /_static/images/en-us_image_0210875483.png
-
 .. |image5| image:: /_static/images/en-us_image_0210875483.png
-

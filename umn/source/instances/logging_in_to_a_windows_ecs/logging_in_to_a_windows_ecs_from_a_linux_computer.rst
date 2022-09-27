@@ -72,7 +72,6 @@ When you log in to an ECS for the first time, log in to it using VNC, enable RDP
 
    The **System Properties** dialog box is displayed.
 
-   .. _en-us_topic_0275383051__en-us_topic_0017955381_fig276023113838:
 
    .. figure:: /_static/images/en-us_image_0049287308.png
       :alt: **Figure 1** System Properties

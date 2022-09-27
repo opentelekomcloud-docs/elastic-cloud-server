@@ -157,8 +157,5 @@ In this example, the proxy ECS runs CentOS 6.5.
    **iptables -t nat -D POSTROUTING -o eth0 -s 192.168.125.0/24 -j SNAT --to 192.168.125.4**
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-
 .. |image2| image:: /_static/images/en-us_image_0128851717.png
-
 .. |image3| image:: /_static/images/en-us_image_0210779229.png
-

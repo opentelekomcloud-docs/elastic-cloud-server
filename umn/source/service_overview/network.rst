@@ -26,7 +26,6 @@ A security group is a collection of access control rules for ECSs that have the 
 
 Your account automatically comes with a default security group. The default security group allows all outbound data, denies all inbound data, and allows all data between ECSs in the group. Your ECSs in the security group can communicate with each other without the need to add rules.
 
-.. _en-us_topic_0030828257__fig11890174421819:
 
 .. figure:: /_static/images/en-us_image_0000001230120807.png
    :alt: **Figure 1** Default security group
@@ -55,7 +54,6 @@ The Elastic IP (EIP) service enables your cloud resources to communicate with th
 
 Each EIP can be used by only one cloud resource at a time.
 
-.. _en-us_topic_0030828257__fig15314318474:
 
 .. figure:: /_static/images/en-us_image_0178890066.png
    :alt: **Figure 2** Accessing the Internet using an EIP

@@ -56,7 +56,6 @@ If logging in to an ECS with Cloudbase-Init enabled failed, perform the followin
 
    c. Log in to the temporary ECS, open the **Server Manager** page, choose **File and Storage Services** > **Volumes** > **Disks**, right-click the offline disk, and choose **Online** from the shortcut menu.
 
-      .. _en-us_topic_0081525054__fig12301902519:
 
       .. figure:: /_static/images/en-us_image_0275724694.png
          :alt: **Figure 1** Setting disk online
@@ -66,7 +65,6 @@ If logging in to an ECS with Cloudbase-Init enabled failed, perform the followin
 
    d. Switch to the **cloudbase-init** file in **/Program Files/Cloudbase Solution/Cloudbase-Init/log** of this disk to view the log for fault locating.
 
-      .. _en-us_topic_0081525054__fig9250818165110:
 
       .. figure:: /_static/images/en-us_image_0275726221.png
          :alt: **Figure 2** cloudbase-init

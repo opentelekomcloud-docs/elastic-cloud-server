@@ -10,7 +10,6 @@ Symptom
 
 An error message is displayed indicating that the computer cannot connect to the remote computer in the amount of time allotted.
 
-.. _en-us_topic_0264235947__en-us_topic_0173599485_en-us_topic_0120795668_fig1256612592310:
 
 .. figure:: /_static/images/en-us_image_0288997357.png
    :alt: **Figure 1** Error message

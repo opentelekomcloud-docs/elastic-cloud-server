@@ -72,7 +72,6 @@ If a serial number is displayed on the console, use either of the following meth
 
    Information similar to the following is displayed:
 
-   .. _en-us_topic_0103285575__fig141513348195:
 
    .. figure:: /_static/images/en-us_image_0000001127902463.png
       :alt: **Figure 1** Obtaining the disk serial number
@@ -84,7 +83,6 @@ If a serial number is displayed on the console, use either of the following meth
 
    **wmic** **diskdrive get Name, SerialNumber**
 
-   .. _en-us_topic_0103285575__fig499418565481:
 
    .. figure:: /_static/images/en-us_image_0000001081131958.png
       :alt: **Figure 2** Checking the disk corresponding to the serial number
@@ -208,7 +206,6 @@ Using a WWN to Obtain the Disk Name (Windows)
 
 #. In the command output, the disk whose serial number ends with **206127** is the disk corresponding to the WWN.
 
-   .. _en-us_topic_0103285575__fig3430181417335:
 
    .. figure:: /_static/images/en-us_image_0000001128111323.png
       :alt: **Figure 4** Disk with the serial number ending with **206127**
@@ -239,4 +236,3 @@ Using a WWN to Obtain a Disk Device Name (Linux)
       lrwxrwxrwx 1 root root  9 May 21 20:22 scsi-36888603000008b32fa16688d09368506 -> ../../sda
 
 .. |image1| image:: /_static/images/en-us_image_0216898618.png
-

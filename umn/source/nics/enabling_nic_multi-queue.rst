@@ -178,7 +178,6 @@ Create an ECS using a registered private image. For details, see :ref:`Creating 
 
 .. _en-us_topic_0058758453__section214227201118:
 
-.. _enabling-nic-multi-queue-1:
 
 Enabling NIC Multi-Queue
 ------------------------
@@ -230,7 +229,6 @@ This section uses a Linux ECS running CentOS 7.4 as an example to describe how t
 
       If the **Active** value in the command output contains **active (running)**, irqbalance has been enabled.
 
-      .. _en-us_topic_0058758453__fig165114253253:
 
       .. figure:: /_static/images/en-us_image_0126402833.png
          :alt: **Figure 2** Enabled irqbalance

@@ -31,7 +31,6 @@ For example, to redirect port 8080 on ECS 1 bound with EIP 192.168.10.43 to port
 
    **netsh interface portproxy show v4tov4**
 
-   .. _en-us_topic_0101604507__en-us_topic_0206596992_en-us_topic_0206596992_fig147071411162911:
 
    .. figure:: /_static/images/en-us_image_0267133745.png
       :alt: **Figure 1** Port redirections on Windows
@@ -80,7 +79,6 @@ Private IP address of ECS 2: 192.168.72.20
 
    **ssh -p 1080 123.xxx.xxx.456**
 
-   .. _en-us_topic_0101604507__fig11283122115016:
 
    .. figure:: /_static/images/en-us_image_0121682390.png
       :alt: **Figure 2** Port redirections on Linux
@@ -90,7 +88,6 @@ Private IP address of ECS 2: 192.168.72.20
 
    Enter the password to log in to ECS 2 with hostname **ecs-inner**.
 
-   .. _en-us_topic_0101604507__fig19311141225012:
 
    .. figure:: /_static/images/en-us_image_0121682392.png
       :alt: **Figure 3** Logging in to ECS 2

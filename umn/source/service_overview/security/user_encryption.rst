@@ -40,7 +40,6 @@ About Keys
 
 The key used for encryption relies on the Key Management Service (KMS). KMS uses a data encryption key (DEK) to encrypt data and a customer master key (CMK) to encrypt the DEK.
 
-.. _en-us_topic_0046912051__fig66853906172350:
 
 .. figure:: /_static/images/en-us_image_0174076025.png
    :alt: **Figure 1** Data encryption process

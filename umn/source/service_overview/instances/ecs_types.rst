@@ -32,7 +32,6 @@ Obtaining Specifications When Creating an ECS
 
 Specifications for the ECS being created are located in the specifications list.
 
-.. _en-us_topic_0035470096__fig64292023143619:
 
 .. figure:: /_static/images/en-us_image_0172453607.png
    :alt: **Figure 1** ECS specifications

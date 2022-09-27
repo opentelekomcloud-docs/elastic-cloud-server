@@ -11,7 +11,6 @@ For a Linux ECS, its disk partitions correspond to disk devices. This section us
 
 #. Right-click in the blank area of the desktop and choose **Open Terminal** from the shortcut menu.
 
-   .. _en-us_topic_0087901488__fig63278226101115:
 
    .. figure:: /_static/images/en-us_image_0087903699.png
       :alt: **Figure 1** open terminal
@@ -23,7 +22,6 @@ For a Linux ECS, its disk partitions correspond to disk devices. This section us
 
    **fdisk -l**
 
-   .. _en-us_topic_0087901488__fig101265111168:
 
    .. figure:: /_static/images/en-us_image_0087903704.png
       :alt: **Figure 2** Viewing disk partitions and disk devices
