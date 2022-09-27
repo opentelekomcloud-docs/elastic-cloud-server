@@ -51,7 +51,6 @@ Request Example
 
    Obtain the token (**x-subject-token**) in **Headers**
 
-   .. _en-us_topic_0134192984__fig71433122328:
 
    .. figure:: /_static/images/en-us_image_0173496405.png
       :alt: **Figure 1** Obtaining the token
