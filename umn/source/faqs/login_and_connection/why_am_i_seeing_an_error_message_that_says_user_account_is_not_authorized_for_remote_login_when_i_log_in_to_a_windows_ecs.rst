@@ -10,7 +10,6 @@ Symptom
 
 An error message is displayed indicating that the connection is denied because the user account is not authorized for remote login.
 
-.. _en-us_topic_0264235948__en-us_topic_0173606024_en-us_topic_0120795668_fig1256612592310:
 
 .. figure:: /_static/images/en-us_image_0288997346.png
    :alt: **Figure 1** Error message
@@ -32,7 +31,6 @@ Solution
 
    b. Choose **Local Policies** > **User Rights Assignment** > **Allow log on through Remote Desktop Services**.
 
-      .. _en-us_topic_0264235948__en-us_topic_0173606024_fig1890412198313:
 
       .. figure:: /_static/images/en-us_image_0288997347.png
          :alt: **Figure 2** Local security policy
@@ -44,7 +42,6 @@ Solution
 
       If not, add required users or groups.
 
-      .. _en-us_topic_0264235948__en-us_topic_0173606024_fig1492115211134:
 
       .. figure:: /_static/images/en-us_image_0288997348.png
          :alt: **Figure 3** Allow log on through Remote Desktop Services properties
@@ -64,7 +61,6 @@ Solution
 
    d. In the displayed dialog box, click the **Member Of** tab. Ensure that the user belongs to the user group that is assigned with the remote login permission in :ref:`2.b <en-us_topic_0264235948__en-us_topic_0173606024_li19821176204810>`.
 
-      .. _en-us_topic_0264235948__en-us_topic_0173606024_fig37037542514:
 
       .. figure:: /_static/images/en-us_image_0288997349.png
          :alt: **Figure 4** Checking the target user group
@@ -78,7 +74,6 @@ Solution
 
    b. Double-click **RDP-Tcp** or other connections added by a user under **Connections** and click the **Security** tab.
 
-      .. _en-us_topic_0264235948__en-us_topic_0173606024_fig76712011540:
 
       .. figure:: /_static/images/en-us_image_0288997350.png
          :alt: **Figure 5** Security

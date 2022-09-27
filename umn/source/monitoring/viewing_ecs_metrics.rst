@@ -49,4 +49,3 @@ Procedure
    You can view the monitoring data of the ECS in the last 1, 3, or 12 hours.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

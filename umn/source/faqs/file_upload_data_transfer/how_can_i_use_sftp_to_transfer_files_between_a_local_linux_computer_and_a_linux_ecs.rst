@@ -35,7 +35,6 @@ Procedure
 
    **passwd user1**
 
-   .. _en-us_topic_0170139796__en-us_topic_0138882178_fig282551904413:
 
    .. figure:: /_static/images/en-us_image_0263798009.png
       :alt: **Figure 1** Setting a password
@@ -76,7 +75,6 @@ Procedure
       AllowTcpForwarding no
       X11Forwarding no
 
-   .. _en-us_topic_0170139796__fig8395112141418:
 
    .. figure:: /_static/images/en-us_image_0000001071727803.png
       :alt: **Figure 2** sshd_config file with the added information
@@ -111,8 +109,5 @@ Procedure
    |image3|
 
 .. |image1| image:: /_static/images/en-us_image_0263798010.png
-
 .. |image2| image:: /_static/images/en-us_image_0263798011.png
-
 .. |image3| image:: /_static/images/en-us_image_0263798012.png
-

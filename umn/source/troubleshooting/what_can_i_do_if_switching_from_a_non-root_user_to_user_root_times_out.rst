@@ -10,7 +10,6 @@ Symptom
 
 When you run the **sudo** command to switch to user **root** on an Ubuntu or Debian ECS, the system prompts connection timeout.
 
-.. _en-us_topic_0094801708__fig727412824411:
 
 .. figure:: /_static/images/en-us_image_0094801740.png
    :alt: **Figure 1** Connection timeout

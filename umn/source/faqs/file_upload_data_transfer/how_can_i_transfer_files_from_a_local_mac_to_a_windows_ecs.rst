@@ -28,7 +28,6 @@ Procedure
 
 #. Click **Add Desktop**.
 
-   .. _en-us_topic_0295091738__fig276023113838:
 
    .. figure:: /_static/images/en-us_image_0295099237.png
       :alt: **Figure 1** Add Desktop
@@ -46,7 +45,6 @@ Procedure
 
       a. Enter username **administrator** and password for logging in to the Windows ECS and click **Add**.
 
-         .. _en-us_topic_0295091738__fig332991311254:
 
          .. figure:: /_static/images/en-us_image_0295099238.png
             :alt: **Figure 2** Add user account
@@ -54,7 +52,6 @@ Procedure
 
             **Figure 2** Add user account
 
-         .. _en-us_topic_0295091738__fig6992121711259:
 
          .. figure:: /_static/images/en-us_image_0295099198.png
             :alt: **Figure 3** Add PC
@@ -69,7 +66,6 @@ Procedure
 
 #. On the **Remote Desktop** page, double-click the icon of the target Windows ECS.
 
-   .. _en-us_topic_0295091738__fig020423384416:
 
    .. figure:: /_static/images/en-us_image_0295099239.png
       :alt: **Figure 4** Double-click for login
@@ -86,4 +82,3 @@ Procedure
    Copy the files to be uploaded to the ECS. Alternatively, download the files from the ECS to your local Mac.
 
 .. |image1| image:: /_static/images/en-us_image_0295095212.png
-

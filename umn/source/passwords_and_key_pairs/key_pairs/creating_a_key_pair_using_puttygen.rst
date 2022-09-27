@@ -29,7 +29,6 @@ Procedure
 
    a. Double-click **puttygen.exe** to open **PuTTY Key Generator**.
 
-      .. _en-us_topic_0000001234335274__en-us_topic_0037960038_fig4490538015580:
 
       .. figure:: /_static/images/en-us_image_0000001234512206.png
          :alt: **Figure 1** PuTTY Key Generator
@@ -67,7 +66,6 @@ Procedure
 
       a. On the **PuTTY Key Generator** page, choose **File** > **Save private key**.
 
-         .. _en-us_topic_0000001234335274__fig1031955919299:
 
          .. figure:: /_static/images/en-us_image_0000001278352685.png
             :alt: **Figure 3** Saving a private key
@@ -87,7 +85,6 @@ Procedure
 
             If you use this private file to obtain the password for logging in to a Windows ECS, do not specify **Key passphrase** for **Export OpenSSH key** so that you can obtain the password successfully.
 
-         .. _en-us_topic_0000001234335274__fig15752222153016:
 
          .. figure:: /_static/images/en-us_image_0000001278751917.png
             :alt: **Figure 4** Saving a private key

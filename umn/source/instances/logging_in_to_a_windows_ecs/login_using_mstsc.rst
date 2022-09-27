@@ -32,7 +32,6 @@ If your local server runs Windows, you can use the remote desktop connection too
 
 #. In the **Remote Desktop Connection** dialog box, click **Show Options**.
 
-   .. _en-us_topic_0017955381__en-us_topic_0027290684_fig22996848191913:
 
    .. figure:: /_static/images/en-us_image_0295941039.png
       :alt: **Figure 1** Show Options
@@ -46,7 +45,6 @@ If your local server runs Windows, you can use the remote desktop connection too
 
       If you do not want to enter the username and password in follow-up logins, select **Allow me to save credentials**.
 
-   .. _en-us_topic_0017955381__fig61897111106:
 
    .. figure:: /_static/images/en-us_image_0295941040.png
       :alt: **Figure 2** Remote Desktop Connection
@@ -58,7 +56,6 @@ If your local server runs Windows, you can use the remote desktop connection too
 
    To copy data from the local server to your ECS, select **Clipboard**.
 
-   .. _en-us_topic_0017955381__fig5308424112111:
 
    .. figure:: /_static/images/en-us_image_0295941041.png
       :alt: **Figure 3** Clipboard
@@ -68,7 +65,6 @@ If your local server runs Windows, you can use the remote desktop connection too
 
    To copy files from the local server to your ECS, click **More** and select your desired disks.
 
-   .. _en-us_topic_0017955381__fig2016145215213:
 
    .. figure:: /_static/images/en-us_image_0295940977.png
       :alt: **Figure 4** Drives
@@ -78,7 +74,6 @@ If your local server runs Windows, you can use the remote desktop connection too
 
 #. (Optional) Click the **Display** tab and then adjust the size of the remote desktop.
 
-   .. _en-us_topic_0017955381__fig45767599405:
 
    .. figure:: /_static/images/en-us_image_0295940978.png
       :alt: **Figure 5** Adjusting the size of the desktop
@@ -113,7 +108,6 @@ When you log in to an ECS for the first time, log in to it using VNC, enable RDP
 
    The **System Properties** dialog box is displayed.
 
-   .. _en-us_topic_0017955381__fig276023113838:
 
    .. figure:: /_static/images/en-us_image_0049287308.png
       :alt: **Figure 6** System Properties

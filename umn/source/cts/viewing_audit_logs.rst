@@ -43,7 +43,6 @@ Procedure
 
 #. Expand the trace for details.
 
-   .. _en-us_topic_0116266207__fig16725521195316:
 
    .. figure:: /_static/images/en-us_image_0116270059.jpg
       :alt: **Figure 1** Expanding trace details
@@ -56,4 +55,3 @@ Procedure
    For more information about CTS, see *Cloud Trace Service User Guide*.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

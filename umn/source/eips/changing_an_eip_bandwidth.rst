@@ -20,4 +20,3 @@ Procedure
 #. Change the bandwidth name, billing mode, or bandwidth size as prompted.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

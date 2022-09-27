@@ -160,4 +160,3 @@ Related Links
 :ref:`Why Does the System Display a Question Mark When I Attempt to Obtain Console Logs? <en-us_topic_0088241338>`
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

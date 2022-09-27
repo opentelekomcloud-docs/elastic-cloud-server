@@ -10,7 +10,6 @@ Symptom
 
 An error message is displayed indicating that your local computer cannot connect to the remote computer.
 
-.. _en-us_topic_0264235939__en-us_topic_0250947106_fig4931341421:
 
 .. figure:: /_static/images/en-us_image_0288997242.png
    :alt: **Figure 1** Cannot connect to the remote computer
@@ -49,7 +48,6 @@ Check whether the firewall is enabled on the ECS.
 
 #. Click the Windows icon in the lower left corner of the desktop and choose **Control Panel** > **Windows Firewall**.
 
-   .. _en-us_topic_0264235939__en-us_topic_0250947106_fig7767914202818:
 
    .. figure:: /_static/images/en-us_image_0288997243.png
       :alt: **Figure 2** Windows Firewall
@@ -61,7 +59,6 @@ Check whether the firewall is enabled on the ECS.
 
    View and set the firewall status.
 
-   .. _en-us_topic_0264235939__en-us_topic_0250947106_fig919195822713:
 
    .. figure:: /_static/images/en-us_image_0288997244.png
       :alt: **Figure 3** Checking firewall status
@@ -78,7 +75,6 @@ Check whether the firewall is enabled on the ECS.
    -  Remote Desktop - User Mode (TCP-In), Public
    -  Remote Desktop - User Mode (TCP-In), Domain, Private
 
-   .. _en-us_topic_0264235939__en-us_topic_0250947106_fig3823135463718:
 
    .. figure:: /_static/images/en-us_image_0288997245.png
       :alt: **Figure 4** Inbound Rules
@@ -109,7 +105,6 @@ Modify the remote desktop connection settings on the Windows ECS:
 
 #. Click the **Remote** tab. In the **Remote Desktop** pane, select **Allow connections from computers running any version of Remote Desktop (less secure)**.
 
-   .. _en-us_topic_0264235939__en-us_topic_0250947106_en-us_topic_0018339851_fig62503556467:
 
    .. figure:: /_static/images/en-us_image_0288997246.png
       :alt: **Figure 5** Remote settings
@@ -128,7 +123,6 @@ Checking Remote Desktop Services
 
 #. In the **Services** window, restart **Remote Desktop Services**. Ensure that **Remote Desktop Services** is in the **Running** status.
 
-   .. _en-us_topic_0264235939__en-us_topic_0250947106_fig1355354132417:
 
    .. figure:: /_static/images/en-us_image_0288997248.png
       :alt: **Figure 6** Remote Desktop Services
@@ -149,7 +143,6 @@ Checking Remote Desktop Session Host Configuration
 
 #. Choose **Remote Desktop Session Host** > **Security** > **Require use of specific security layer for remote (RDP) connections**.
 
-   .. _en-us_topic_0264235939__en-us_topic_0250947106_fig179713287534:
 
    .. figure:: /_static/images/en-us_image_0288997249.png
       :alt: **Figure 7** Require use of specific security layer for remote (RDP) connections
@@ -159,7 +152,6 @@ Checking Remote Desktop Session Host Configuration
 
 #. Set **Require use of specific security layer for remote (RDP) connections** to **Enabled** and **Security layer** to **RDP**.
 
-   .. _en-us_topic_0264235939__en-us_topic_0250947106_fig1437792312541:
 
    .. figure:: /_static/images/en-us_image_0288997250.png
       :alt: **Figure 8** Setting security layer to RDP

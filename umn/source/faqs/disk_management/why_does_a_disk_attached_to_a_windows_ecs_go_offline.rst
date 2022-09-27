@@ -10,7 +10,6 @@ Symptom
 
 A disk attached to a Windows ECS goes offline, and the system displays the message "The disk is offline because of policy set by an administrator."
 
-.. _en-us_topic_0114225937__fig1167510561578:
 
 .. figure:: /_static/images/en-us_image_0114229858.png
    :alt: **Figure 1** Offline disk

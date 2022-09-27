@@ -23,7 +23,6 @@ The following procedure uses an ECS running Windows Server 2012 as an example. T
 
    b. Change the value in **Value data** to the new port number, which is **2020** in this example.
 
-      .. _en-us_topic_0244854543__fig6797745202319:
 
       .. figure:: /_static/images/en-us_image_0244859999.png
          :alt: **Figure 1** Changing the port number to 2020
@@ -37,7 +36,6 @@ The following procedure uses an ECS running Windows Server 2012 as an example. T
 
    b. Change the value in **Value data** to the new port number, which is **2020** in this example.
 
-      .. _en-us_topic_0244854543__en-us_topic_0244854543_fig6797745202319:
 
       .. figure:: /_static/images/en-us_image_0244859999.png
          :alt: **Figure 2** Changing the port number to 2020
@@ -68,7 +66,6 @@ The following procedure uses an ECS running Windows Server 2012 as an example. T
 
 #. Open the Windows search box, enter **services**, and select **Services**.
 
-   .. _en-us_topic_0244854543__fig10290145619416:
 
    .. figure:: /_static/images/en-us_image_0000001292832517.png
       :alt: **Figure 3** Selecting Services
@@ -91,7 +88,6 @@ The following procedure uses an ECS running CentOS 7.3 as an example. The defaul
 
 #. Delete the comment tag (#) from the **#port 22** line and change **22** to **2020**.
 
-   .. _en-us_topic_0244854543__fig188937250516:
 
    .. figure:: /_static/images/en-us_image_0244856480.png
       :alt: **Figure 4** Changing the port number to 2020

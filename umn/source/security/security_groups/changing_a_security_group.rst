@@ -23,7 +23,6 @@ Procedure
 
    The **Change Security Group** dialog box is displayed.
 
-   .. _en-us_topic_0093492517__fig1673733486:
 
    .. figure:: /_static/images/en-us_image_0122999741.png
       :alt: **Figure 1** Change Security Group
@@ -44,4 +43,3 @@ Procedure
 #. Click **OK**.
 
 .. |image1| image:: /_static/images/en-us_image_0093507575.png
-

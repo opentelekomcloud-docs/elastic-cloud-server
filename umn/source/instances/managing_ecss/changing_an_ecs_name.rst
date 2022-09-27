@@ -49,8 +49,5 @@ Procedure for Batch Operations
    If you change ECS names in a batch, the new ECS names are the same, for example, all are **ecs-test**.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-
 .. |image2| image:: /_static/images/en-us_image_0142359884.png
-
 .. |image3| image:: /_static/images/en-us_image_0210779229.png
-

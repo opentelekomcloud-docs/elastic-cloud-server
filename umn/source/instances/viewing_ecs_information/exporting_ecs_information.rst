@@ -26,6 +26,4 @@ Procedure
 #. In the lower left corner of your local computer desktop, obtain the exported file **servers.csv**.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-
 .. |image2| image:: /_static/images/en-us_image_0142360062.png
-

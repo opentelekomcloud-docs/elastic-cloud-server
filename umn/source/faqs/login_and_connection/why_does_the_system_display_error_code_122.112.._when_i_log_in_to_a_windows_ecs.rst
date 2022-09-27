@@ -25,7 +25,6 @@ Solution
 
    b. Click |image1| to start the service manager and choose **Administrative Tools** > **Event Viewer** > **Windows Logs** > **System** > **Filter Current Logs**.
 
-      .. _en-us_topic_0264235943__en-us_topic_0138293296_fig1129272819299:
 
       .. figure:: /_static/images/en-us_image_0000001122000869.png
          :alt: **Figure 1** Event viewer
@@ -35,7 +34,6 @@ Solution
 
    c. In the **Event Level** pane, select event levels.
 
-      .. _en-us_topic_0264235943__en-us_topic_0138293296_fig13103521154816:
 
       .. figure:: /_static/images/en-us_image_0000001121886141.png
          :alt: **Figure 2** Filtering logs
@@ -55,4 +53,3 @@ Solution
    If it is, change the flavor or stop unnecessary processes.
 
 .. |image1| image:: /_static/images/en-us_image_0000001122204571.png
-

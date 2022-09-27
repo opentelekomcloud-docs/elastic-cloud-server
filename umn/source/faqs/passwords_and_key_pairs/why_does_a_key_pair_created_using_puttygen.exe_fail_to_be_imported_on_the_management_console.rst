@@ -24,7 +24,6 @@ Use the locally stored private key and **PuTTY Key Generator** to restore the fo
 
 #. Double-click **puttygen.exe** to open **PuTTY Key Generator**.
 
-   .. _en-us_topic_0047654687__en-us_topic_0000001234335274_en-us_topic_0037960038_fig4490538015580:
 
    .. figure:: /_static/images/en-us_image_0000001234512206.png
       :alt: **Figure 1** PuTTY Key Generator
@@ -56,4 +55,3 @@ Use the locally stored private key and **PuTTY Key Generator** to restore the fo
    f. Copy the public key content in the .txt file to **Public Key Content** and click **OK**.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

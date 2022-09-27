@@ -39,7 +39,6 @@ To use the 20 GB capacity, performing the following operations:
 
       In the following command output, **/dev/xvda** or **/dev/vda** indicates the system disk.
 
-      .. _en-us_topic_0076210995__fig30207295194414:
 
       .. figure:: /_static/images/en-us_image_0076540987.png
          :alt: **Figure 1** Viewing details about the disk
@@ -51,7 +50,6 @@ To use the 20 GB capacity, performing the following operations:
 
       **parted -l /dev/xvda**
 
-      .. _en-us_topic_0076210995__fig61751392489:
 
       .. figure:: /_static/images/en-us_image_0076598858.jpg
          :alt: **Figure 2** Viewing disk partitions
@@ -83,7 +81,6 @@ To use the 20 GB capacity, performing the following operations:
 
       Information similar to the following is displayed.
 
-      .. _en-us_topic_0076210995__fig8903145214811:
 
       .. figure:: /_static/images/en-us_image_0076540988.png
          :alt: **Figure 3** Creating a new partition
@@ -95,7 +92,6 @@ To use the 20 GB capacity, performing the following operations:
 
       The start cylinder number must be greater than the end cylinder numbers of existing partitions. In this example, use the default value for the new partition's start cylinder number and press **Enter**. Information similar to the following is displayed.
 
-      .. _en-us_topic_0076210995__fig181891453491:
 
       .. figure:: /_static/images/en-us_image_0076595619.jpg
          :alt: **Figure 4** Specifying the new partition's start cylinder number
@@ -107,7 +103,6 @@ To use the 20 GB capacity, performing the following operations:
 
       In this example, use the default value for the new partition's end cylinder number and press **Enter**. Information similar to the following is displayed.
 
-      .. _en-us_topic_0076210995__fig1575842424919:
 
       .. figure:: /_static/images/en-us_image_0076595620.jpg
          :alt: **Figure 5** Specifying the new partition's end cylinder number
@@ -119,7 +114,6 @@ To use the 20 GB capacity, performing the following operations:
 
       Information similar to the following is displayed.
 
-      .. _en-us_topic_0076210995__fig313793614917:
 
       .. figure:: /_static/images/en-us_image_0076596029.jpg
          :alt: **Figure 6** Viewing the created partition
@@ -133,7 +127,6 @@ To use the 20 GB capacity, performing the following operations:
 
       Information similar to the following is displayed.
 
-      .. _en-us_topic_0076210995__fig31177535493:
 
       .. figure:: /_static/images/en-us_image_0076596326.jpg
          :alt: **Figure 7** Completing the partition creation
@@ -145,7 +138,6 @@ To use the 20 GB capacity, performing the following operations:
 
       **parted -l /dev/xvda**
 
-      .. _en-us_topic_0076210995__fig1821920725014:
 
       .. figure:: /_static/images/en-us_image_0076600080.jpg
          :alt: **Figure 8** Viewing disk partitions
@@ -163,7 +155,6 @@ To use the 20 GB capacity, performing the following operations:
 
       **df -TH**
 
-      .. _en-us_topic_0076210995__fig0499732105012:
 
       .. figure:: /_static/images/en-us_image_0076541187.png
          :alt: **Figure 9** Viewing the file system type
@@ -233,7 +224,6 @@ To use the 20 GB capacity, performing the following operations:
 
       Information similar to the following is displayed:
 
-      .. _en-us_topic_0076210995__fig71852049155012:
 
       .. figure:: /_static/images/en-us_image_0076543500.jpg
          :alt: **Figure 10** Viewing the mounted file systems
@@ -260,7 +250,6 @@ To use the 20 GB capacity, performing the following operations:
 
       **blkid**
 
-      .. _en-us_topic_0076210995__fig124697122517:
 
       .. figure:: /_static/images/en-us_image_0076543501.jpg
          :alt: **Figure 11** Viewing the file system type

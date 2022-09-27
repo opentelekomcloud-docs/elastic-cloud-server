@@ -33,7 +33,6 @@ Procedure
 
 #. On the **Key Pair Service** page, click **Import Key Pair**.
 
-   .. _en-us_topic_0000001278734873__fig30209536143442:
 
    .. figure:: /_static/images/en-us_image_0000001234671514.png
       :alt: **Figure 1** Import Public Key
@@ -67,4 +66,3 @@ Helpful Links
 -  :ref:`Why Does a Key Pair Created Using puttygen.exe Fail to Be Imported on the Management Console? <en-us_topic_0047654687>`
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

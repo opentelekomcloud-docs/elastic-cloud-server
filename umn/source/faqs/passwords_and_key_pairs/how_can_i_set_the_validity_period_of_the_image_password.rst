@@ -34,7 +34,6 @@ The following operations use EulerOS 2.2 as an example.
 
 #. Run command **vi /etc/login.defs** to verify that the configuration has taken effect.
 
-   .. _en-us_topic_0079176727__fig36880073194742:
 
    .. figure:: /_static/images/en-us_image_0079177144.png
       :alt: **Figure 1** Configuration verification

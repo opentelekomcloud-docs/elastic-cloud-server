@@ -117,7 +117,6 @@ Logging In to an ECS Using an English Keyboard
 
    In the displayed **Configure Keyboard Layout for Remote Login** dialog box, select the English keyboard.
 
-   .. _en-us_topic_0093263550__en-us_topic_0027268511_fig25223713111459:
 
    .. figure:: /_static/images/en-us_image_0030874270.png
       :alt: **Figure 1** Keyboard layout configuration
@@ -129,7 +128,6 @@ Logging In to an ECS Using an English Keyboard
 
 #. (Optional) If you have changed the system language, in the dialog box that is displayed, click **Start Remote Login**.
 
-   .. _en-us_topic_0093263550__en-us_topic_0027268511_fig54376817111459:
 
    .. figure:: /_static/images/en-us_image_0030874271.png
       :alt: **Figure 2** Remote Login
@@ -139,7 +137,6 @@ Logging In to an ECS Using an English Keyboard
 
 #. (Optional) When the system displays "Press CTRL+ALT+DELETE to log on", click **Send CtrlAltDel** in the upper part of the remote login page to log in to the ECS.
 
-   .. _en-us_topic_0093263550__fig51941916112020:
 
    .. figure:: /_static/images/en-us_image_0201100229.png
       :alt: **Figure 3** Send CtrlAltDel
@@ -149,7 +146,6 @@ Logging In to an ECS Using an English Keyboard
 
 #. (Optional) If you need your cursor to be displayed on the remote login page, click **Local Cursor**.
 
-   .. _en-us_topic_0093263550__en-us_topic_0027268511_fig3022163194924:
 
    .. figure:: /_static/images/en-us_image_0093469181.png
       :alt: **Figure 4** Local Cursor
@@ -176,7 +172,6 @@ Logging In to an ECS Using a Non-English Keyboard
 
 #. In the displayed **Configure Keyboard Layout for Remote Login** dialog box, select the English keyboard.
 
-   .. _en-us_topic_0093263550__en-us_topic_0093263550_en-us_topic_0027268511_fig25223713111459:
 
    .. figure:: /_static/images/en-us_image_0030874270.png
       :alt: **Figure 5** Keyboard layout configuration
@@ -188,7 +183,6 @@ Logging In to an ECS Using a Non-English Keyboard
 
 8.  (Optional) If you have changed the system language, in the dialog box that is displayed, click **Start Remote Login**.
 
-    .. _en-us_topic_0093263550__en-us_topic_0093263550_en-us_topic_0027268511_fig54376817111459:
 
     .. figure:: /_static/images/en-us_image_0030874271.png
        :alt: **Figure 6** Remote Login
@@ -198,7 +192,6 @@ Logging In to an ECS Using a Non-English Keyboard
 
 9.  (Optional) When the system displays "Press CTRL+ALT+DELETE to log on", click **Send CtrlAltDel** in the upper part of the remote login page to log in to the ECS.
 
-    .. _en-us_topic_0093263550__en-us_topic_0027290684_fig22996848191913:
 
     .. figure:: /_static/images/en-us_image_0201103161.png
        :alt: **Figure 7** Send CtrlAltDel
@@ -208,7 +201,6 @@ Logging In to an ECS Using a Non-English Keyboard
 
 10. (Optional) If you need your cursor to be displayed on the remote login page, click **Local Cursor**.
 
-    .. _en-us_topic_0093263550__en-us_topic_0093263550_en-us_topic_0027268511_fig3022163194924:
 
     .. figure:: /_static/images/en-us_image_0093469181.png
        :alt: **Figure 8** Local Cursor
@@ -304,7 +296,6 @@ Local commands can be copied to an ECS. To do so, perform the following operatio
 
 #. Click **Input Commands** in the upper right corner of the page.
 
-   .. _en-us_topic_0093263550__en-us_topic_0093263548_fig18993162320449:
 
    .. figure:: /_static/images/en-us_image_0109039483.png
       :alt: **Figure 9** Input Commands
@@ -338,10 +329,6 @@ For FAQs about VNC-based ECS logins, see the following links:
 -  :ref:`Why Does a Blank Screen Appear While the System Displays a Message Indicating Successful Authentication After I Attempted to Log In to an ECS Using VNC? <en-us_topic_0032850906>`
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-
 .. |image2| image:: /_static/images/en-us_image_0128851444.png
-
 .. |image3| image:: /_static/images/en-us_image_0210779229.png
-
 .. |image4| image:: /_static/images/en-us_image_0128851405.png
-

@@ -86,7 +86,6 @@ For Windows ECSs
 
    The **Date and Time** page is displayed.
 
-   .. _en-us_topic_0040630518__fig3371712915:
 
    .. figure:: /_static/images/en-us_image_0224317546.png
       :alt: **Figure 1** Date and Time
