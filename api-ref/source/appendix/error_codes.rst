@@ -13,7 +13,6 @@ Context
 -  The ECS service is strongly dependent on other services, such as network and storage. When error messages are provided for the ECS-depended services, contact customer service for troubleshooting.
 -  If the system displays an error code when you perform operations on the management console, see "How Do I Handle Error Messages Displayed on the Management Console?" in *Elastic Cloud Server User Guide* for troubleshooting.
 
-.. _error-codes-1:
 
 Error Codes
 -----------
