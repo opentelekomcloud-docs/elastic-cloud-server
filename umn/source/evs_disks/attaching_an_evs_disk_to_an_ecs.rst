@@ -36,7 +36,6 @@ Procedure
 
    The **Attach Disk** dialog box is displayed.
 
-   .. _en-us_topic_0096293655__fig1332144315348:
 
    .. figure:: /_static/images/en-us_image_0096298046.png
       :alt: **Figure 1** Attach Disk
@@ -60,7 +59,6 @@ Procedure
 
    After the disk is attached, you can view the information about it on the **Disks** tab.
 
-   .. _en-us_topic_0096293655__fig18788918132718:
 
    .. figure:: /_static/images/en-us_image_0096298123.png
       :alt: **Figure 2** Viewing the newly attached disk
@@ -76,4 +74,3 @@ If the attached disk is newly created, the disk can be used only after it is ini
 For instructions about how to initialize a data disk, see :ref:`Scenarios and Disk Partitions <en-us_topic_0030831623>`.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

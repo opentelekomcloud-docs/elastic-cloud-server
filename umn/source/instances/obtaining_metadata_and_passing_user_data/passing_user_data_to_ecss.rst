@@ -51,7 +51,6 @@ Passing User Data
 
       File: Save the user data script to a text file and then upload the file.
 
-   .. _en-us_topic_0032380449__fig87313493915:
 
    .. figure:: /_static/images/en-us_image_0237026761.png
       :alt: **Figure 1** User Data
@@ -130,7 +129,6 @@ Customized user data scripts of Linux ECSs are based on the open-source Cloud-In
 
    After the ECS is created, start it and run the **cat /etc/hosts** command to check the script execution result.
 
-   .. _en-us_topic_0032380449__fig1787242875415:
 
    .. figure:: /_static/images/en-us_image_0115931570.png
       :alt: **Figure 2** Viewing operating results
@@ -178,7 +176,6 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
 
    After the ECS is created, start it and check the script execution result. In this example, a text file named **1111** is added to disk C:\.
 
-   .. _en-us_topic_0032380449__fig8622411077:
 
    .. figure:: /_static/images/en-us_image_0115932123.png
       :alt: **Figure 3** Creating text file (Batch)
@@ -188,7 +185,6 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
 
    To view the user data passed to the Windows ECS, log in at http://169.254.169.254/openstack/latest/user_data.
 
-   .. _en-us_topic_0032380449__fig14281122141212:
 
    .. figure:: /_static/images/en-us_image_0115932873.png
       :alt: **Figure 4** Viewing user data (Batch)
@@ -207,7 +203,6 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
 
    After the ECS is created, start it and check the script execution result. In this example, a text file named **aaaa** is added to disk C:\.
 
-   .. _en-us_topic_0032380449__fig103618447159:
 
    .. figure:: /_static/images/en-us_image_0115933029.png
       :alt: **Figure 5** Creating text file (PowerShell)
@@ -217,7 +212,6 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
 
    To view the user data passed to the Windows ECS, log in at http://169.254.169.254/openstack/latest/user_data.
 
-   .. _en-us_topic_0032380449__fig124617204176:
 
    .. figure:: /_static/images/en-us_image_0115934291.jpg
       :alt: **Figure 6** Viewing user data (PowerShell)
@@ -266,7 +260,7 @@ This case illustrates how to use the user data passing function to set the passw
    |                       |    -  Uppercase letters                                                                                                                                      |                                                               |
    |                       |    -  Lowercase letters                                                                                                                                      |    The example password is generated randomly. Do not use it. |
    |                       |    -  Digits                                                                                                                                                 |                                                               |
-   |                       |    -  Special characters: $!@%-_=+[]:./^,{}?                                                                                                                 |                                                               |
+   |                       |    -  Special characters: ``$!@%-_=+[]:./^,{}?``                                                                                                             |                                                               |
    |                       |                                                                                                                                                              |                                                               |
    |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                               |
    |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                               |
@@ -329,7 +323,7 @@ In this example, the password of user **root** is reset to **\*****\***.
    |                       |    -  Uppercase letters                                                                                                                                      |                                                               |
    |                       |    -  Lowercase letters                                                                                                                                      |    The example password is generated randomly. Do not use it. |
    |                       |    -  Digits                                                                                                                                                 |                                                               |
-   |                       |    -  Special characters: $!@%-_=+[]:./^,{}?                                                                                                                 |                                                               |
+   |                       |    -  Special characters: ``$!@%-_=+[]:./^,{}?``                                                                                                             |                                                               |
    |                       |                                                                                                                                                              |                                                               |
    |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                               |
    |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                               |

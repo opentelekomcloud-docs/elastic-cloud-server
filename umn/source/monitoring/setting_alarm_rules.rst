@@ -50,4 +50,3 @@ Procedure
       For more information about ECS alarm rules, see *Cloud Eye User Guide*.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

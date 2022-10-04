@@ -34,4 +34,3 @@ Procedure
       -  If you find that the task status area shows an ECS creation failure but the ECS list displays the created ECS, see :ref:`Why Does the Failures Area Show an ECS Creation Failure But the ECS List Displays the Created ECS? <en-us_topic_0039524582>`
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

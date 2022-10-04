@@ -23,7 +23,6 @@ The operations described in this section are provided for the ECSs running Windo
 
    The **Performance Options** dialog box is displayed.
 
-   .. _en-us_topic_0120795802__fig862604114509:
 
    .. figure:: /_static/images/en-us_image_0120795956.png
       :alt: **Figure 1** Performance Options
@@ -49,7 +48,6 @@ The operations described in this section are provided for the ECSs running Windo
 
       Considering **Memory.dmp** caused by blue screen of death (BSOD), you are advised to set **Initial size** to **16** and **Maximum size** to **4096**.
 
-   .. _en-us_topic_0120795802__fig68314916547:
 
    .. figure:: /_static/images/en-us_image_0120795935.png
       :alt: **Figure 2** Virtual Memory

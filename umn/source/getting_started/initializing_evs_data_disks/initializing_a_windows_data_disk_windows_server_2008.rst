@@ -49,7 +49,6 @@ Procedure
 
    Disks are displayed in the right pane. In the **Disk 1** area, right-click **Offline** and choose **Online** from the shortcut menu to online the disk.
 
-   .. _en-us_topic_0085634796__en-us_topic_0044524740_fig102484362217:
 
    .. figure:: /_static/images/en-us_image_0132359404.png
       :alt: **Figure 2** Online the disk
@@ -101,7 +100,6 @@ Procedure
 
 #. On the displayed **New Simple Volume Wizard** window, click **Next**.
 
-   .. _en-us_topic_0085634796__en-us_topic_0044524740_fig1388010596281:
 
    .. figure:: /_static/images/en-us_image_0097597145.png
       :alt: **Figure 6** New Simple Volume Wizard
@@ -111,7 +109,6 @@ Procedure
 
 #. Specify the volume size and click **Next**. The default value is the maximum size.
 
-   .. _en-us_topic_0085634796__en-us_topic_0044524740_fig311184311294:
 
    .. figure:: /_static/images/en-us_image_0097597147.png
       :alt: **Figure 7** Specify Volume Size
@@ -121,7 +118,6 @@ Procedure
 
 #. Assign the driver letter and click **Next**.
 
-   .. _en-us_topic_0085634796__en-us_topic_0044524740_fig1400313143015:
 
    .. figure:: /_static/images/en-us_image_0097597149.png
       :alt: **Figure 8** Assign Driver Letter or Path
@@ -131,7 +127,6 @@ Procedure
 
 #. On the displayed **Format Partition** page, click **Format this volume with the following settings**, set parameters based on the requirements, and select **Perform a quick format**. Then, click **Next**.
 
-   .. _en-us_topic_0085634796__en-us_topic_0044524740_fig19840335173018:
 
    .. figure:: /_static/images/en-us_image_0097597151.png
       :alt: **Figure 9** Format Partition
@@ -139,7 +134,6 @@ Procedure
 
       **Figure 9** Format Partition
 
-   .. _en-us_topic_0085634796__en-us_topic_0044524740_fig183312171318:
 
    .. figure:: /_static/images/en-us_image_0097597153.png
       :alt: **Figure 10** Completing the partition creation

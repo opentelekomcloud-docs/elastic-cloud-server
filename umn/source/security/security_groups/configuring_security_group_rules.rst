@@ -38,7 +38,6 @@ Procedure
 
    You can click **+** to add more inbound rules.
 
-   .. _en-us_topic_0030878383__en-us_topic_0118534005_fig1786518124129:
 
    .. figure:: /_static/images/en-us_image_0284920908.png
       :alt: **Figure 1** Add Inbound Rule
@@ -73,7 +72,6 @@ Procedure
 
    You can click **+** to add more outbound rules.
 
-   .. _en-us_topic_0030878383__en-us_topic_0118534005_fig11809848184019:
 
    .. figure:: /_static/images/en-us_image_0284993717.png
       :alt: **Figure 2** Add Outbound Rule
@@ -105,4 +103,3 @@ Procedure
 #. Click **OK** to complete the security rule configuration.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

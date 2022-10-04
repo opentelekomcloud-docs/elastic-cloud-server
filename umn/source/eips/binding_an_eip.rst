@@ -34,4 +34,3 @@ Procedure
 #. View the bound EIP on the **EIPs** tab.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

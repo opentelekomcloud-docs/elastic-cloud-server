@@ -52,10 +52,6 @@ Solution
 #. Double-click the local disk to access it and copy the file to be transferred to the Windows ECS.
 
 .. |image1| image:: /_static/images/en-us_image_0166287347.png
-
 .. |image2| image:: /_static/images/en-us_image_0166287348.png
-
 .. |image3| image:: /_static/images/en-us_image_0166287349.png
-
 .. |image4| image:: /_static/images/en-us_image_0166287351.png
-

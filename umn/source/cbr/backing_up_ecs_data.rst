@@ -74,8 +74,5 @@ EVS Disk Backup Procedure
    If some files are deleted from the disk during the backup, the deleted files may fail to be backed up. Therefore, to ensure data integrity, delete the target data after the backup is complete.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-
 .. |image2| image:: /_static/images/en-us_image_0210779229.png
-
 .. |image3| image:: /_static/images/en-us_image_0000001128656892.png
-

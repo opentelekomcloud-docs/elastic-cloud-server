@@ -10,7 +10,6 @@ Symptom
 
 When you attempt to remotely log in to a Linux ECS, the system displays the error message "Module is unknown".
 
-.. _en-us_topic_0240708482__fig17499319191716:
 
 .. figure:: /_static/images/en-us_image_0240710552.png
    :alt: **Figure 1** Module is unknown
@@ -41,7 +40,6 @@ Solution
 
    c. Press the up arrow key to prevent automatic system startup. When the kernels are displayed, press **e** to enter the editing mode.
 
-      .. _en-us_topic_0240708482__fig1087511256811:
 
       .. figure:: /_static/images/en-us_image_0240711431.png
          :alt: **Figure 2** Entering the kernel editing mode
@@ -59,7 +57,6 @@ Solution
 
    f. Add **rd.break** and press **Ctrl+X**.
 
-      .. _en-us_topic_0240708482__fig1654418212503:
 
       .. figure:: /_static/images/en-us_image_0260575520.png
          :alt: **Figure 3** Before the modification
@@ -67,7 +64,6 @@ Solution
 
          **Figure 3** Before the modification
 
-      .. _en-us_topic_0240708482__fig1954412105016:
 
       .. figure:: /_static/images/en-us_image_0260575521.png
          :alt: **Figure 4** After the modification
@@ -83,7 +79,6 @@ Solution
 
    **grep Module /var/log/messages**
 
-   .. _en-us_topic_0240708482__fig31081356162719:
 
    .. figure:: /_static/images/en-us_image_0240710554.png
       :alt: **Figure 5** System log
@@ -95,7 +90,6 @@ Solution
 
    **vi /etc/pam.d/login**
 
-   .. _en-us_topic_0240708482__fig11081756172711:
 
    .. figure:: /_static/images/en-us_image_0240710555.png
       :alt: **Figure 6** Modifying the error information

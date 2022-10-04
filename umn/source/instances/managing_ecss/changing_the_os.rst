@@ -145,4 +145,3 @@ Follow-up Procedure
 -  If the second OS change attempt is unsuccessful, contact customer service for manual recovery at the backend.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

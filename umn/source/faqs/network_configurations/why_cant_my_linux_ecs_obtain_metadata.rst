@@ -19,7 +19,6 @@ Run the following command on the Linux ECS configured with a static IP address:
 
 The route with the destination of 169.254.169.254 does not exist, but the route with the destination of 169.254.0.0/16 exists.
 
-.. _en-us_topic_0000001138811177__fig538615619196:
 
 .. figure:: /_static/images/en-us_image_0000001092174258.png
    :alt: **Figure 1** Route information
@@ -42,7 +41,6 @@ Solution
 
    **# curl** **http://169.254.169.254**
 
-   .. _en-us_topic_0000001138811177__fig813563852216:
 
    .. figure:: /_static/images/en-us_image_0000001092045958.png
       :alt: **Figure 2** Obtaining metadata

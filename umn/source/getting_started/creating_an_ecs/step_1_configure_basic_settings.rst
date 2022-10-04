@@ -161,6 +161,4 @@ Performing Basic Configurations
 #. Click **Next: Configure Network**.
 
 .. |image1| image:: /_static/images/en-us_image_0171575801.png
-
 .. |image2| image:: /_static/images/en-us_image_0000001208978003.png
-

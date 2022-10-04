@@ -10,7 +10,6 @@ Symptom
 
 Connecting to a Linux ECS using WinSCP fails, while using SSH tools like Xshell succeeds.
 
-.. _en-us_topic_0000001189572473__fig1580004542818:
 
 .. figure:: /_static/images/en-us_image_0000001189705789.png
    :alt: **Figure 1** Connection error using WinSCP
@@ -29,7 +28,6 @@ Run the following command to view the **/etc/ssh/sshd_config** file:
 
 Check the SFTP configuration and the configuration file is **/usr/libexec/openssh/sftp-server**.
 
-.. _en-us_topic_0000001189572473__fig6965144916501:
 
 .. figure:: /_static/images/en-us_image_0000001150707636.png
    :alt: **Figure 2** SFTP configuration file

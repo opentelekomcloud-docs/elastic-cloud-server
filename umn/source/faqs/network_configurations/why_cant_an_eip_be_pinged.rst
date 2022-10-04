@@ -17,7 +17,6 @@ The following fault causes are sequenced based on their occurrence probability.
 
 If the fault persists after you have ruled out a cause, check other causes.
 
-.. _en-us_topic_0105130172__en-us_topic_0118498854_fig257119102320:
 
 .. figure:: /_static/images/en-us_image_0000001223659800.png
    :alt: **Figure 1** Method of locating the failure to ping an EIP
@@ -155,7 +154,6 @@ If a firewall is enabled on the ECS, check whether the firewall blocks the ping 
 
       **Outbound Rules**: **File and Printer Sharing (Echo Request - ICMPv6-Out)**
 
-      .. _en-us_topic_0105130172__fig178326362544:
 
       .. figure:: /_static/images/en-us_image_0250182352.png
          :alt: **Figure 3** Inbound Rules
@@ -163,7 +161,6 @@ If a firewall is enabled on the ECS, check whether the firewall blocks the ping 
 
          **Figure 3** Inbound Rules
 
-      .. _en-us_topic_0105130172__fig5225320554:
 
       .. figure:: /_static/images/en-us_image_0250182717.png
          :alt: **Figure 4** Outbound Rules
@@ -246,7 +243,6 @@ Generally, the default route of an OS will preferentially select the primary NIC
 
       **ip route**
 
-      .. _en-us_topic_0105130172__fig7362102412018:
 
       .. figure:: /_static/images/en-us_image_0250105611.png
          :alt: **Figure 5** Default route
@@ -265,4 +261,3 @@ Generally, the default route of an OS will preferentially select the primary NIC
 -  If the ECS has multiple NICs and the EIP is bound to an extension NIC, configure policy routing on the ECS for network communication with the extension NIC.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

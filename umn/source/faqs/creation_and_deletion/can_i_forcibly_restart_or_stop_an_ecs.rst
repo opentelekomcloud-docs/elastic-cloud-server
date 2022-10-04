@@ -22,4 +22,3 @@ Yes. If an ECS remains in the **Restarting** or **Stopping** state for over 30 m
 #. Click **OK**.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

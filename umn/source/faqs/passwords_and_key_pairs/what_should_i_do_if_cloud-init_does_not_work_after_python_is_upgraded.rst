@@ -30,7 +30,6 @@ Solution
 
 Change the Python version used by Cloud-Init to the source version. To do so, change the environment variable value of **/usr/bin/cloud-init** from the default value **#!/usr/bin/python** to **#!/usr/bin/python2.6**.
 
-.. _en-us_topic_0118224527__fig11465133314219:
 
 .. figure:: /_static/images/en-us_image_0123417484.jpg
    :alt: **Figure 2** Changing the Python version

@@ -29,7 +29,6 @@ Fault Locating
 
 #. Start the **Run** dialog box, and then enter **perfmon -res**.
 
-   .. _en-us_topic_0167429328__en-us_topic_0166311836_fig18932134871212:
 
    .. figure:: /_static/images/en-us_image_0281771106.png
       :alt: **Figure 1** Starting the Resource Monitor
@@ -39,7 +38,6 @@ Fault Locating
 
 #. On the **Resource Monitor** page, click the **CPU** or **Network** tab to view the CPU or bandwidth usage.
 
-   .. _en-us_topic_0167429328__en-us_topic_0166311836_fig42857506323:
 
    .. figure:: /_static/images/en-us_image_0281773972.png
       :alt: **Figure 2** Resource Monitor
@@ -63,7 +61,6 @@ Fault Locating
 
    d. Check whether the process is malicious.
 
-      .. _en-us_topic_0167429328__en-us_topic_0166311836_fig138318464320:
 
       .. figure:: /_static/images/en-us_image_0281775402.png
          :alt: **Figure 3** Checking the process

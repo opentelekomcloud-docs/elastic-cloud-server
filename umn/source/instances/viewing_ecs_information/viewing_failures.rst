@@ -40,7 +40,6 @@ Procedure
 
 #. View **Failures** on the right side of common operations.
 
-   .. _en-us_topic_0108255889__fig1678913358104:
 
    .. figure:: /_static/images/en-us_image_0152768827.png
       :alt: **Figure 1** Failures
@@ -54,4 +53,3 @@ Procedure
    -  **Operation Failures**: show the tasks with errors, including the operations performed on the tasks and error codes. Such information can be used for rapid fault locating.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

@@ -41,7 +41,6 @@ This section uses an ECS running Windows Server 2008 R2 64bit as an example to d
 
    c. Click the **Details** tab and set **Property** to **Parent**.
 
-      .. _en-us_topic_0087680813__fig2821199710173:
 
       .. figure:: /_static/images/en-us_image_0087906067.png
          :alt: **Figure 3** Disk device details

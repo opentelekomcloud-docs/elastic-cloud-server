@@ -10,7 +10,6 @@ Symptom
 
 The system displays an error message indicating that a protocol error (code: 0x1104) is detected when you use MSTSC to access an ECS running Windows Server 2008.
 
-.. _en-us_topic_0264235942__en-us_topic_0138293293_fig7560131184912:
 
 .. figure:: /_static/images/en-us_image_0288997598.png
    :alt: **Figure 1** Protocol error (code: 0x1104)
@@ -75,7 +74,6 @@ Solution
 
       **netsh http show servicestate**
 
-      .. _en-us_topic_0264235942__en-us_topic_0138293293_fig16426409265:
 
       .. figure:: /_static/images/en-us_image_0288997606.png
          :alt: **Figure 3** Checking System process
@@ -103,7 +101,6 @@ Solution
 
    d. Choose **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Remote Desktop Services**.
 
-      .. _en-us_topic_0264235942__en-us_topic_0138293293_fig1072317112254:
 
       .. figure:: /_static/images/en-us_image_0288997608.png
          :alt: **Figure 4** Remote Desktop Services
@@ -113,7 +110,6 @@ Solution
 
    e. **Remote Desktop Session Host** > **Security**.
 
-      .. _en-us_topic_0264235942__en-us_topic_0138293293_fig64299268259:
 
       .. figure:: /_static/images/en-us_image_0288997610.png
          :alt: **Figure 5** Remote (RDP) Connection requires the use of the specified security layer
@@ -123,7 +119,6 @@ Solution
 
    f. Set **Require use of specific security layer for remote (RDP) connections** to **Enabled** and **Security layer** to **RDP**.
 
-      .. _en-us_topic_0264235942__en-us_topic_0138293293_fig6816237202719:
 
       .. figure:: /_static/images/en-us_image_0288997612.png
          :alt: **Figure 6** Setting security layer
@@ -139,7 +134,6 @@ Solution
 
       **gpupdate**
 
-      .. _en-us_topic_0264235942__en-us_topic_0138293293_fig1129272819299:
 
       .. figure:: /_static/images/en-us_image_0288997614.png
          :alt: **Figure 7** Updating the group policy
@@ -148,6 +142,4 @@ Solution
          **Figure 7** Updating the group policy
 
 .. |image1| image:: /_static/images/en-us_image_0288997600.png
-
 .. |image2| image:: /_static/images/en-us_image_0288997602.png
-

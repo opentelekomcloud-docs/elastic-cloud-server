@@ -30,4 +30,3 @@ Procedure
    The value is the key pair used by the ECS.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-

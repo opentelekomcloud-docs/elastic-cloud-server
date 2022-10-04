@@ -97,10 +97,6 @@ If you want to add the same tag to multiple ECSs or other resources, you can cre
 #. Choose **Service List** > **Computing** > **Elastic Cloud Server**, and select the predefined tag by following the procedure for adding a tag.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-
 .. |image2| image:: /_static/images/en-us_image_0210779229.png
-
 .. |image3| image:: /_static/images/en-us_image_0210875481.png
-
 .. |image4| image:: /_static/images/en-us_image_0210875480.png
-

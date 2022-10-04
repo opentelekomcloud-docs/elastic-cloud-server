@@ -181,14 +181,8 @@ If the high bandwidth usage is caused by normal service access of non-malicious 
       To blacklist a malicious IP address or limit its rate, use iptables.
 
 .. |image1| image:: /_static/images/en-us_image_0166736726.png
-
 .. |image2| image:: /_static/images/en-us_image_0166945975.png
-
 .. |image3| image:: /_static/images/en-us_image_0166947771.png
-
 .. |image4| image:: /_static/images/en-us_image_0166947775.png
-
 .. |image5| image:: /_static/images/en-us_image_0167110971.png
-
 .. |image6| image:: /_static/images/en-us_image_0167295759.png
-

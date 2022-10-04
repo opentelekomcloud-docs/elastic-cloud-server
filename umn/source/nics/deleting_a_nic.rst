@@ -36,4 +36,3 @@ Procedure
       Certain ECSs do not support NIC deletion when they are running. For details about these ECSs, see the GUI display. To delete a NIC from such an ECS, stop the ECS.
 
 .. |image1| image:: /_static/images/en-us_image_0093507592.png
-
