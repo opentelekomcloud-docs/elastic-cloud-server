@@ -33,7 +33,6 @@ A project ID is required for some URLs when an API is called. Therefore, you nee
 
 #. On the **My Credential** page, view the project ID in the project list.
 
-   .. _en-us_topic_0134193004__fig82901053211:
 
    .. figure:: /_static/images/en-us_image_0173496413.png
       :alt: **Figure 1** Viewing project IDs
