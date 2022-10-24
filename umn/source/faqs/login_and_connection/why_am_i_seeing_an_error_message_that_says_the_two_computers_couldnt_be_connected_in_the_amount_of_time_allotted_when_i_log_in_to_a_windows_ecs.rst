@@ -14,7 +14,6 @@ An error message is displayed indicating that the computer cannot connect to the
 .. figure:: /_static/images/en-us_image_0288997357.png
    :alt: **Figure 1** Error message
 
-
    **Figure 1** Error message
 
 Solution

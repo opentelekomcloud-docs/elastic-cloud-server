@@ -27,7 +27,6 @@ The operations described in this section are provided for the ECSs running Windo
    .. figure:: /_static/images/en-us_image_0120795956.png
       :alt: **Figure 1** Performance Options
 
-
       **Figure 1** Performance Options
 
 #. Click the **Advanced** tab and then **Background Services** in the **Processor scheduling** pane.
@@ -51,7 +50,6 @@ The operations described in this section are provided for the ECSs running Windo
 
    .. figure:: /_static/images/en-us_image_0120795935.png
       :alt: **Figure 2** Virtual Memory
-
 
       **Figure 2** Virtual Memory
 

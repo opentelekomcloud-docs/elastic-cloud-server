@@ -29,7 +29,6 @@ ECS works with other products and services to provide computing, storage, and ne
 .. figure:: /_static/images/en-us_image_0071898891.png
    :alt: **Figure 1** System architecture
 
-
    **Figure 1** System architecture
 
 Access Methods

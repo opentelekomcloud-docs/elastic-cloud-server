@@ -16,7 +16,6 @@ If automatic NVMe SSD disk attaching upon ECS startup is enabled in **/etc/fstab
 .. figure:: /_static/images/en-us_image_0087630201.jpg
    :alt: **Figure 1** Emergency mode
 
-
    **Figure 1** Emergency mode
 
 To ensure that the new ECS is functional, you must manually delete the attaching information in **/etc/fstab**.
@@ -36,7 +35,6 @@ Solution
    .. figure:: /_static/images/en-us_image_0087631679.jpg
       :alt: **Figure 2** Logging in to the ECS
 
-
       **Figure 2** Logging in to the ECS
 
 #. Run the following command to edit the **/etc/fstab** file:
@@ -49,7 +47,6 @@ Solution
    .. figure:: /_static/images/en-us_image_0087632786.jpg
       :alt: **Figure 3** Deleting the automatic attaching information
 
-
       **Figure 3** Deleting the automatic attaching information
 
 #. Run the following command to restart the ECS:
@@ -61,6 +58,5 @@ Solution
 
    .. figure:: /_static/images/en-us_image_0087632787.jpg
       :alt: **Figure 4** Logging in to the ECS
-
 
       **Figure 4** Logging in to the ECS

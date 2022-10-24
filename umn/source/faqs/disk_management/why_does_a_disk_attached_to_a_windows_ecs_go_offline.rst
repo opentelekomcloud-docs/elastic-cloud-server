@@ -14,7 +14,6 @@ A disk attached to a Windows ECS goes offline, and the system displays the messa
 .. figure:: /_static/images/en-us_image_0114229858.png
    :alt: **Figure 1** Offline disk
 
-
    **Figure 1** Offline disk
 
 Possible Causes

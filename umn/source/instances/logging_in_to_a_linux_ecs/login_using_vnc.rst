@@ -121,7 +121,6 @@ Logging In to an ECS Using an English Keyboard
    .. figure:: /_static/images/en-us_image_0030874270.png
       :alt: **Figure 1** Keyboard layout configuration
 
-
       **Figure 1** Keyboard layout configuration
 
 #. Click **Remote Login**.
@@ -132,7 +131,6 @@ Logging In to an ECS Using an English Keyboard
    .. figure:: /_static/images/en-us_image_0030874271.png
       :alt: **Figure 2** Remote Login
 
-
       **Figure 2** Remote Login
 
 #. (Optional) When the system displays "Press CTRL+ALT+DELETE to log on", click **Send CtrlAltDel** in the upper part of the remote login page to log in to the ECS.
@@ -141,7 +139,6 @@ Logging In to an ECS Using an English Keyboard
    .. figure:: /_static/images/en-us_image_0201100229.png
       :alt: **Figure 3** Send CtrlAltDel
 
-
       **Figure 3** Send CtrlAltDel
 
 #. (Optional) If you need your cursor to be displayed on the remote login page, click **Local Cursor**.
@@ -149,7 +146,6 @@ Logging In to an ECS Using an English Keyboard
 
    .. figure:: /_static/images/en-us_image_0093469181.png
       :alt: **Figure 4** Local Cursor
-
 
       **Figure 4** Local Cursor
 
@@ -176,7 +172,6 @@ Logging In to an ECS Using a Non-English Keyboard
    .. figure:: /_static/images/en-us_image_0030874270.png
       :alt: **Figure 5** Keyboard layout configuration
 
-
       **Figure 5** Keyboard layout configuration
 
 7.  Click **Remote Login**.
@@ -187,7 +182,6 @@ Logging In to an ECS Using a Non-English Keyboard
     .. figure:: /_static/images/en-us_image_0030874271.png
        :alt: **Figure 6** Remote Login
 
-
        **Figure 6** Remote Login
 
 9.  (Optional) When the system displays "Press CTRL+ALT+DELETE to log on", click **Send CtrlAltDel** in the upper part of the remote login page to log in to the ECS.
@@ -196,7 +190,6 @@ Logging In to an ECS Using a Non-English Keyboard
     .. figure:: /_static/images/en-us_image_0201103161.png
        :alt: **Figure 7** Send CtrlAltDel
 
-
        **Figure 7** Send CtrlAltDel
 
 10. (Optional) If you need your cursor to be displayed on the remote login page, click **Local Cursor**.
@@ -204,7 +197,6 @@ Logging In to an ECS Using a Non-English Keyboard
 
     .. figure:: /_static/images/en-us_image_0093469181.png
        :alt: **Figure 8** Local Cursor
-
 
        **Figure 8** Local Cursor
 
@@ -299,7 +291,6 @@ Local commands can be copied to an ECS. To do so, perform the following operatio
 
    .. figure:: /_static/images/en-us_image_0109039483.png
       :alt: **Figure 9** Input Commands
-
 
       **Figure 9** Input Commands
 

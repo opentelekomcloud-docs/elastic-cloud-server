@@ -15,7 +15,6 @@ For a Linux ECS, its disk partitions correspond to disk devices. This section us
    .. figure:: /_static/images/en-us_image_0087903699.png
       :alt: **Figure 1** open terminal
 
-
       **Figure 1** open terminal
 
 #. Run the following command to view disk partitions and disk devices:
@@ -25,7 +24,6 @@ For a Linux ECS, its disk partitions correspond to disk devices. This section us
 
    .. figure:: /_static/images/en-us_image_0087903704.png
       :alt: **Figure 2** Viewing disk partitions and disk devices
-
 
       **Figure 2** Viewing disk partitions and disk devices
 

@@ -14,7 +14,6 @@ An error occurs when you open a folder on an FTP server. The system displays a m
 .. figure:: /_static/images/en-us_image_0247338934.png
    :alt: **Figure 1** FTP Folder Error
 
-
    **Figure 1** FTP Folder Error
 
 Possible Causes
@@ -36,7 +35,6 @@ The following uses Internet Explorer as an example.
 
    .. figure:: /_static/images/en-us_image_0247293312.png
       :alt: **Figure 2** Internet Options
-
 
       **Figure 2** Internet Options
 

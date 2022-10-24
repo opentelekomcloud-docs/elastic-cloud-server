@@ -35,7 +35,6 @@ For example, to redirect port 8080 on ECS 1 bound with EIP 192.168.10.43 to port
    .. figure:: /_static/images/en-us_image_0267133745.png
       :alt: **Figure 1** Port redirections on Windows
 
-
       **Figure 1** Port redirections on Windows
 
 Linux
@@ -83,7 +82,6 @@ Private IP address of ECS 2: 192.168.72.20
    .. figure:: /_static/images/en-us_image_0121682390.png
       :alt: **Figure 2** Port redirections on Linux
 
-
       **Figure 2** Port redirections on Linux
 
    Enter the password to log in to ECS 2 with hostname **ecs-inner**.
@@ -91,6 +89,5 @@ Private IP address of ECS 2: 192.168.72.20
 
    .. figure:: /_static/images/en-us_image_0121682392.png
       :alt: **Figure 3** Logging in to ECS 2
-
 
       **Figure 3** Logging in to ECS 2

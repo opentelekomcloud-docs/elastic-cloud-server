@@ -27,7 +27,6 @@ The following procedure uses an ECS running Windows Server 2012 as an example. T
       .. figure:: /_static/images/en-us_image_0244859999.png
          :alt: **Figure 1** Changing the port number to 2020
 
-
          **Figure 1** Changing the port number to 2020
 
 #. In **Registry Editor**, choose **HKEY_LOCAL_MACHINE** > **SYSTEM** > **CurrentControlSet** > **Control** > **Terminal Server** > **WinStations** > **RDP-Tcp** and double-click **PortNumber**.
@@ -39,7 +38,6 @@ The following procedure uses an ECS running Windows Server 2012 as an example. T
 
       .. figure:: /_static/images/en-us_image_0244859999.png
          :alt: **Figure 2** Changing the port number to 2020
-
 
          **Figure 2** Changing the port number to 2020
 
@@ -70,7 +68,6 @@ The following procedure uses an ECS running Windows Server 2012 as an example. T
    .. figure:: /_static/images/en-us_image_0000001292832517.png
       :alt: **Figure 3** Selecting Services
 
-
       **Figure 3** Selecting Services
 
 #. In the **Services** window, restart **Remote Desktop Services** or the ECS.
@@ -91,7 +88,6 @@ The following procedure uses an ECS running CentOS 7.3 as an example. The defaul
 
    .. figure:: /_static/images/en-us_image_0244856480.png
       :alt: **Figure 4** Changing the port number to 2020
-
 
       **Figure 4** Changing the port number to 2020
 

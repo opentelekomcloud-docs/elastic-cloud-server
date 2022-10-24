@@ -26,7 +26,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0214947581.png
       :alt: **Figure 1** Viewing disks attached before specifications modification
 
-
       **Figure 1** Viewing disks attached before specifications modification
 
    As shown in :ref:`Figure 1 <en-us_topic_0214940106__en-us_topic_0120890833_fig10595124010458>`, the ECS has three disks attached: **/dev/vda**, **/dev/vdb**, and **/dev/vdc**.
@@ -41,7 +40,6 @@ Procedure
 
    .. figure:: /_static/images/en-us_image_0214947582.png
       :alt: **Figure 2** Viewing disks attached after specifications modification
-
 
       **Figure 2** Viewing disks attached after specifications modification
 
@@ -79,7 +77,6 @@ Procedure
 
    .. figure:: /_static/images/en-us_image_0214947583.png
       :alt: **Figure 3** Checking the number of disks attached
-
 
       **Figure 3** Checking the number of disks attached
 

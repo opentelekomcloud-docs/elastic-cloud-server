@@ -44,7 +44,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0152768827.png
       :alt: **Figure 1** Failures
 
-
       **Figure 1** Failures
 
 #. Click the number displayed in the **Failures** area to view details about the tasks.

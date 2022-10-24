@@ -14,7 +14,6 @@ An error message is displayed indicating that your remote desktop session has en
 .. figure:: /_static/images/en-us_image_0288997370.png
    :alt: **Figure 1** Ended remote desktop session
 
-
    **Figure 1** Ended remote desktop session
 
 Windows Server 2008
@@ -26,7 +25,6 @@ Windows Server 2008
    .. figure:: /_static/images/en-us_image_0288997371.png
       :alt: **Figure 2** Remote Desktop Session Host Configuration
 
-
       **Figure 2** Remote Desktop Session Host Configuration
 
 #. Double-click **Restrict each user to a single session** and deselect **Restrict each user to a single session**, and click **OK**.
@@ -34,7 +32,6 @@ Windows Server 2008
 
    .. figure:: /_static/images/en-us_image_0288997372.png
       :alt: **Figure 3** Modifying the configuration
-
 
       **Figure 3** Modifying the configuration
 
@@ -49,7 +46,6 @@ Windows Server 2012
    .. figure:: /_static/images/en-us_image_0288997374.png
       :alt: **Figure 4** Connections
 
-
       **Figure 4** Connections
 
 #. Double-click **Restrict Remote Desktop Services users to a single Remote Desktop Services session**, change the value to **Disabled**, and click **OK**.
@@ -57,7 +53,6 @@ Windows Server 2012
 
    .. figure:: /_static/images/en-us_image_0288997375.png
       :alt: **Figure 5** Modifying the configuration
-
 
       **Figure 5** Modifying the configuration
 

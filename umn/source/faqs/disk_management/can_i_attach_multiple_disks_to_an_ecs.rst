@@ -12,17 +12,17 @@ Yes. The ECSs created after the disk function upgrade can have up to 60 attached
 
    .. table:: **Table 1** Numbers of disks that can be attached to a newly created ECS
 
-      +---------------------+-------------------+--------------------+------------------------------------------------------------------------------+
-      | ECS Type            | Maximum VBD Disks | Maximum SCSI Disks | Constraint                                                                   |
-      +=====================+===================+====================+==============================================================================+
-      | KVM                 | 24                | 59                 | VBD disks + SCSI disks ≤ 60 (This constraint does not apply to local disks.) |
-      |                     |                   |                    |                                                                              |
-      | (excluding D2 ECSs) |                   |                    | The number of local disks is determined based on the ECS flavor.             |
-      +---------------------+-------------------+--------------------+------------------------------------------------------------------------------+
-      | D2                  | 24                | 30                 | VBD disks + SCSI disks ≤ 54 (This constraint does not apply to local disks.) |
-      |                     |                   |                    |                                                                              |
-      |                     |                   |                    | The number of local disks is determined based on the ECS flavor.             |
-      +---------------------+-------------------+--------------------+------------------------------------------------------------------------------+
+      +---------------------+-------------------+--------------------+-------------------------------------------------------------------------------+
+      | ECS Type            | Maximum VBD Disks | Maximum SCSI Disks | Constraint                                                                    |
+      +=====================+===================+====================+===============================================================================+
+      | KVM                 | 24                | 59                 | VBD disks + SCSI disks <= 60 (This constraint does not apply to local disks.) |
+      |                     |                   |                    |                                                                               |
+      | (excluding D2 ECSs) |                   |                    | The number of local disks is determined based on the ECS flavor.              |
+      +---------------------+-------------------+--------------------+-------------------------------------------------------------------------------+
+      | D2                  | 24                | 30                 | VBD disks + SCSI disks <= 54 (This constraint does not apply to local disks.) |
+      |                     |                   |                    |                                                                               |
+      |                     |                   |                    | The number of local disks is determined based on the ECS flavor.              |
+      +---------------------+-------------------+--------------------+-------------------------------------------------------------------------------+
 
    .. note::
 
@@ -35,11 +35,11 @@ The maximum number of disks that you can attach to an ECS that was created befor
 
 .. table:: **Table 2** Numbers of disks that can be attached to an existing ECS
 
-   +-------------------+--------------------+---------------------+-----------------------------+
-   | Maximum VBD Disks | Maximum SCSI Disks | Maximum Local Disks | Constraint                  |
-   +===================+====================+=====================+=============================+
-   | 24                | 23                 | 59                  | VBD disks + SCSI disks ≤ 24 |
-   +-------------------+--------------------+---------------------+-----------------------------+
+   +-------------------+--------------------+---------------------+------------------------------+
+   | Maximum VBD Disks | Maximum SCSI Disks | Maximum Local Disks | Constraint                   |
+   +===================+====================+=====================+==============================+
+   | 24                | 23                 | 59                  | VBD disks + SCSI disks <= 24 |
+   +-------------------+--------------------+---------------------+------------------------------+
 
 To attach 60 disks, enable advanced disk. For details, see :ref:`Enabling Advanced Disk <en-us_topic_0122307169>`.
 

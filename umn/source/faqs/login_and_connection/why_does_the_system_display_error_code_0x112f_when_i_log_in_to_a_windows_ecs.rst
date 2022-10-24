@@ -14,7 +14,6 @@ When you log in to a Windows ECS, the system displays error code 0x112f.
 .. figure:: /_static/images/en-us_image_0120795776.jpg
    :alt: **Figure 1** Error message (code: 0x112f)
 
-
    **Figure 1** Error message (code: 0x112f)
 
 Possible Causes

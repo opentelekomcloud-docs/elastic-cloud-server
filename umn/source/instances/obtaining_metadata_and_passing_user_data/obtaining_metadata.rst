@@ -220,7 +220,6 @@ Displays ECS user data. The value is configured only when you create an ECS. It 
       .. figure:: /_static/images/en-us_image_0166755236.png
          :alt: **Figure 1** 404 Not Found
 
-
          **Figure 1** 404 Not Found
 
 Network Data (OpenStack Metadata API)

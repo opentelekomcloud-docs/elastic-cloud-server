@@ -51,7 +51,6 @@ Purchasing a GRID License
    .. figure:: /_static/images/en-us_image_0178069404.png
       :alt: **Figure 1** Applying for a trial license
 
-
       **Figure 1** Applying for a trial license
 
 .. _en-us_topic_0149610914__section91244318407:
@@ -99,7 +98,6 @@ Downloading GRID Driver and Software License Packages
    .. figure:: /_static/images/en-us_image_0178334448.png
       :alt: **Figure 2** PAK
 
-
       **Figure 2** PAK
 
 #. Enter the PAK obtained in step :ref:`4 <en-us_topic_0149610914__li1859773663819>` on the **Redeem Product Activation Keys** page and click **Redeem**.
@@ -107,7 +105,6 @@ Downloading GRID Driver and Software License Packages
 
    .. figure:: /_static/images/en-us_image_0178334449.png
       :alt: **Figure 3** Redeem Product Activation Keys
-
 
       **Figure 3** Redeem Product Activation Keys
 
@@ -119,7 +116,6 @@ Downloading GRID Driver and Software License Packages
    .. figure:: /_static/images/en-us_image_0178334450.png
       :alt: **Figure 4** Logging in to the official NVIDIA website
 
-
       **Figure 4** Logging in to the official NVIDIA website
 
 #. Log in at the official NVIDIA website as prompted and select **SOFTWARE DOWNLOADS**.
@@ -127,7 +123,6 @@ Downloading GRID Driver and Software License Packages
 
    .. figure:: /_static/images/en-us_image_0000001093447741.png
       :alt: **Figure 5** **SOFTWARE DOWNLOADS** page
-
 
       **Figure 5** **SOFTWARE DOWNLOADS** page
 
@@ -140,7 +135,6 @@ Downloading GRID Driver and Software License Packages
 
    .. figure:: /_static/images/en-us_image_0000001093667097.png
       :alt: **Figure 6** ADDITIONAL SOFTWARE
-
 
       **Figure 6** ADDITIONAL SOFTWARE
 
@@ -174,7 +168,6 @@ The following uses an ECS running CentOS 7.5 as an example to describe how to de
       .. figure:: /_static/images/en-us_image_0000001093449637.png
          :alt: **Figure 7** LICENSE SERVERS
 
-
          **Figure 7** LICENSE SERVERS
 
    b. Click **CREATE SERVER**.
@@ -191,7 +184,6 @@ The following uses an ECS running CentOS 7.5 as an example to describe how to de
       .. figure:: /_static/images/en-us_image_0000001093450009.png
          :alt: **Figure 8** Create License Server
 
-
          **Figure 8** Create License Server
 
    f. Download the license file.
@@ -199,7 +191,6 @@ The following uses an ECS running CentOS 7.5 as an example to describe how to de
 
       .. figure:: /_static/images/en-us_image_0000001093310123.png
          :alt: **Figure 9** Downloading the license file
-
 
          **Figure 9** Downloading the license file
 
@@ -212,7 +203,6 @@ The following uses an ECS running CentOS 7.5 as an example to describe how to de
 
    .. figure:: /_static/images/en-us_image_0178325096.png
       :alt: **Figure 10** Uploading a license file
-
 
       **Figure 10** Uploading a license file
 
@@ -234,6 +224,5 @@ Installing the GRID Driver and Configuring the License
 
    .. figure:: /_static/images/en-us_image_0178370293.png
       :alt: **Figure 11** License server management console
-
 
       **Figure 11** License server management console

@@ -23,7 +23,6 @@ To obtain the virtualization type of an ECS, perform the following operations:
    .. figure:: /_static/images/en-us_image_0121090576.png
       :alt: **Figure 1** Viewing ECS specifications
 
-
       **Figure 1** Viewing ECS specifications
 
 #. Check the specifications tables in :ref:`ECS Types <en-us_topic_0035470096>` for the virtualization type.

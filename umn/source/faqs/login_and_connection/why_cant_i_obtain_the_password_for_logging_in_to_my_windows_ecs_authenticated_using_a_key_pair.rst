@@ -60,7 +60,6 @@ If logging in to an ECS with Cloudbase-Init enabled failed, perform the followin
       .. figure:: /_static/images/en-us_image_0275724694.png
          :alt: **Figure 1** Setting disk online
 
-
          **Figure 1** Setting disk online
 
    d. Switch to the **cloudbase-init** file in **/Program Files/Cloudbase Solution/Cloudbase-Init/log** of this disk to view the log for fault locating.
@@ -68,6 +67,5 @@ If logging in to an ECS with Cloudbase-Init enabled failed, perform the followin
 
       .. figure:: /_static/images/en-us_image_0275726221.png
          :alt: **Figure 2** cloudbase-init
-
 
          **Figure 2** cloudbase-init

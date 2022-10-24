@@ -33,7 +33,6 @@ Procedure
       .. figure:: /_static/images/en-us_image_0000001234512206.png
          :alt: **Figure 1** PuTTY Key Generator
 
-
          **Figure 1** PuTTY Key Generator
 
    b. Click **Generate**.
@@ -44,7 +43,6 @@ Procedure
 
       .. figure:: /_static/images/en-us_image_0000001278632153.png
          :alt: **Figure 2** Generating the public and private keys
-
 
          **Figure 2** Generating the public and private keys
 
@@ -70,7 +68,6 @@ Procedure
          .. figure:: /_static/images/en-us_image_0000001278352685.png
             :alt: **Figure 3** Saving a private key
 
-
             **Figure 3** Saving a private key
 
       b. Save the converted private key file, such as **kp-123.ppk**, locally.
@@ -88,7 +85,6 @@ Procedure
 
          .. figure:: /_static/images/en-us_image_0000001278751917.png
             :alt: **Figure 4** Saving a private key
-
 
             **Figure 4** Saving a private key
 

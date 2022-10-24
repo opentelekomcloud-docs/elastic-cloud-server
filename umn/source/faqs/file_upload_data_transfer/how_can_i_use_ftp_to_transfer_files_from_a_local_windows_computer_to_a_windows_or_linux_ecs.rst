@@ -31,7 +31,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0263806339.png
       :alt: **Figure 1** Setting connection parameters
 
-
       **Figure 1** Setting connection parameters
 
 #. Drag files from the local computer on the left to the target ECS on the right to transfer them.

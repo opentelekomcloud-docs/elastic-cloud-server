@@ -163,7 +163,6 @@ Use one of the following methods to set the NIC multi-queue attribute:
    .. figure:: /_static/images/en-us_image_0193026956.png
       :alt: **Figure 1** Example request body
 
-
       **Figure 1** Example request body
 
 .. _en-us_topic_0058758453__section1841681225617:
@@ -232,7 +231,6 @@ This section uses a Linux ECS running CentOS 7.4 as an example to describe how t
 
       .. figure:: /_static/images/en-us_image_0126402833.png
          :alt: **Figure 2** Enabled irqbalance
-
 
          **Figure 2** Enabled irqbalance
 
