@@ -55,7 +55,6 @@ Request Example
    .. figure:: /_static/images/en-us_image_0173496405.png
       :alt: **Figure 1** Obtaining the token
 
-
       **Figure 1** Obtaining the token
 
 #. Initiate a request and access the API for viewing details about an ECS.
