@@ -14,7 +14,6 @@ An error message is displayed indicating that your local computer cannot connect
 .. figure:: /_static/images/en-us_image_0288997242.png
    :alt: **Figure 1** Cannot connect to the remote computer
 
-
    **Figure 1** Cannot connect to the remote computer
 
 Possible Causes
@@ -52,7 +51,6 @@ Check whether the firewall is enabled on the ECS.
    .. figure:: /_static/images/en-us_image_0288997243.png
       :alt: **Figure 2** Windows Firewall
 
-
       **Figure 2** Windows Firewall
 
 #. Click **Turn Windows Firewall on or off**.
@@ -62,7 +60,6 @@ Check whether the firewall is enabled on the ECS.
 
    .. figure:: /_static/images/en-us_image_0288997244.png
       :alt: **Figure 3** Checking firewall status
-
 
       **Figure 3** Checking firewall status
 
@@ -78,7 +75,6 @@ Check whether the firewall is enabled on the ECS.
 
    .. figure:: /_static/images/en-us_image_0288997245.png
       :alt: **Figure 4** Inbound Rules
-
 
       **Figure 4** Inbound Rules
 
@@ -109,7 +105,6 @@ Modify the remote desktop connection settings on the Windows ECS:
    .. figure:: /_static/images/en-us_image_0288997246.png
       :alt: **Figure 5** Remote settings
 
-
       **Figure 5** Remote settings
 
 #. Click **OK**.
@@ -126,7 +121,6 @@ Checking Remote Desktop Services
 
    .. figure:: /_static/images/en-us_image_0288997248.png
       :alt: **Figure 6** Remote Desktop Services
-
 
       **Figure 6** Remote Desktop Services
 
@@ -147,7 +141,6 @@ Checking Remote Desktop Session Host Configuration
    .. figure:: /_static/images/en-us_image_0288997249.png
       :alt: **Figure 7** Require use of specific security layer for remote (RDP) connections
 
-
       **Figure 7** Require use of specific security layer for remote (RDP) connections
 
 #. Set **Require use of specific security layer for remote (RDP) connections** to **Enabled** and **Security layer** to **RDP**.
@@ -155,6 +148,5 @@ Checking Remote Desktop Session Host Configuration
 
    .. figure:: /_static/images/en-us_image_0288997250.png
       :alt: **Figure 8** Setting security layer to RDP
-
 
       **Figure 8** Setting security layer to RDP

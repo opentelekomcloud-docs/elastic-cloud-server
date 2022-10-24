@@ -12,7 +12,6 @@ ECS and Other Services
 .. figure:: /_static/images/en-us_image_0225439857.png
    :alt: **Figure 1** Relationships between ECS and other services
 
-
    **Figure 1** Relationships between ECS and other services
 
 ECS-related Services

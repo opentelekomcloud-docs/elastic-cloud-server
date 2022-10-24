@@ -75,7 +75,6 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
    .. figure:: /_static/images/en-us_image_0234354896.png
       :alt: **Figure 1** Selecting a NVIDIA driver version
 
-
       **Figure 1** Selecting a NVIDIA driver version
 
 #. Select a driver version as required. The following uses Tesla 418.67 as an example.
@@ -83,7 +82,6 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 
    .. figure:: /_static/images/en-us_image_0234354931.png
       :alt: **Figure 2** Selecting a driver version
-
 
       **Figure 2** Selecting a driver version
 
@@ -94,7 +92,6 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 
    .. figure:: /_static/images/en-us_image_0234355284.png
       :alt: **Figure 3** Copying the download link
-
 
       **Figure 3** Copying the download link
 
@@ -108,7 +105,6 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
    .. figure:: /_static/images/en-us_image_0234355299.png
       :alt: **Figure 4** Obtaining the installation package
 
-
       **Figure 4** Obtaining the installation package
 
 #. Run the following command to install the driver:
@@ -120,7 +116,6 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 
    .. figure:: /_static/images/en-us_image_0250287387.png
       :alt: **Figure 5** Disabling the Nouveau driver
-
 
       **Figure 5** Disabling the Nouveau driver
 
@@ -170,7 +165,6 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
    .. figure:: /_static/images/en-us_image_0250287611.png
       :alt: **Figure 6** Completing the NVIDIA driver installation
 
-
       **Figure 6** Completing the NVIDIA driver installation
 
 #. Run the following command to set systemd:
@@ -184,7 +178,6 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 
    .. figure:: /_static/images/en-us_image_0234355305.png
       :alt: **Figure 7** Viewing the NVIDIA driver version
-
 
       **Figure 7** Viewing the NVIDIA driver version
 
@@ -205,7 +198,6 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
    .. figure:: /_static/images/en-us_image_0234356929.png
       :alt: **Figure 8** Selecting a driver type (Windows)
 
-
       **Figure 8** Selecting a driver type (Windows)
 
 #. Select a driver version as required. The following uses Tesla 425.25 as an example.
@@ -213,7 +205,6 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
 
    .. figure:: /_static/images/en-us_image_0234356990.png
       :alt: **Figure 9** Selecting a driver version (Windows)
-
 
       **Figure 9** Selecting a driver version (Windows)
 
@@ -225,7 +216,6 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
    .. figure:: /_static/images/en-us_image_0234357031.png
       :alt: **Figure 10** Downloading the driver installation package
 
-
       **Figure 10** Downloading the driver installation package
 
 #. Double-click the driver and click **Run**.
@@ -233,7 +223,6 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
 
    .. figure:: /_static/images/en-us_image_0234357053.png
       :alt: **Figure 11** Running the NVIDIA driver installation program
-
 
       **Figure 11** Running the NVIDIA driver installation program
 
@@ -243,7 +232,6 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
    .. figure:: /_static/images/en-us_image_0234357336.png
       :alt: **Figure 12** Selecting an installation path
 
-
       **Figure 12** Selecting an installation path
 
 #. Install the NVIDIA program as prompted.
@@ -251,7 +239,6 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
 
    .. figure:: /_static/images/en-us_image_0234357355.png
       :alt: **Figure 13** Completing the driver installation
-
 
       **Figure 13** Completing the driver installation
 
@@ -264,7 +251,6 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
 
       .. figure:: /_static/images/en-us_image_0234357385.png
          :alt: **Figure 14** Display adapters
-
 
          **Figure 14** Display adapters
 
@@ -279,7 +265,6 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
 
       .. figure:: /_static/images/en-us_image_0234357365.png
          :alt: **Figure 15** Viewing the NVIDIA driver version
-
 
          **Figure 15** Viewing the NVIDIA driver version
 
@@ -312,7 +297,6 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
    .. figure:: /_static/images/en-us_image_0250288087.png
       :alt: **Figure 16** Selecting a CUDA version
 
-
       **Figure 16** Selecting a CUDA version
 
 #. Find the link for downloading CUDA 10.1 and copy the link.
@@ -320,7 +304,6 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 
    .. figure:: /_static/images/en-us_image_0250288474.png
       :alt: **Figure 17** Copying the link for downloading CUDA
-
 
       **Figure 17** Copying the link for downloading CUDA
 
@@ -334,7 +317,6 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
    .. figure:: /_static/images/en-us_image_0234358619.png
       :alt: **Figure 18** Downloading CUDA
 
-
       **Figure 18** Downloading CUDA
 
 6.  Install CUDA.
@@ -344,7 +326,6 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 
     .. figure:: /_static/images/en-us_image_0250288371.png
        :alt: **Figure 19** Installing CUDA
-
 
        **Figure 19** Installing CUDA
 
@@ -358,7 +339,6 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
     .. figure:: /_static/images/en-us_image_0234358634.png
        :alt: **Figure 20** Installing CUDA_1
 
-
        **Figure 20** Installing CUDA_1
 
 9.  Select **Install** and press **Enter** to start the installation.
@@ -367,13 +347,11 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
     .. figure:: /_static/images/en-us_image_0234358642.png
        :alt: **Figure 21** Installing CUDA_2
 
-
        **Figure 21** Installing CUDA_2
 
 
     .. figure:: /_static/images/en-us_image_0234358704.png
        :alt: **Figure 22** Completing the installation
-
 
        **Figure 22** Completing the installation
 
@@ -393,7 +371,6 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
     .. figure:: /_static/images/en-us_image_0234358719.png
        :alt: **Figure 23** deviceQuery common output
 
-
        **Figure 23** deviceQuery common output
 
 13. Check the CUDA version.
@@ -403,7 +380,6 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 
     .. figure:: /_static/images/en-us_image_0234358804.png
        :alt: **Figure 24** Checking the CUDA version
-
 
        **Figure 24** Checking the CUDA version
 
@@ -428,7 +404,6 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
    .. figure:: /_static/images/en-us_image_0250288895.png
       :alt: **Figure 25** Selecting a CUDA version
 
-
       **Figure 25** Selecting a CUDA version
 
 #. Find the link for downloading CUDA 10.1.
@@ -436,7 +411,6 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
 
    .. figure:: /_static/images/en-us_image_0250289123.png
       :alt: **Figure 26** Finding the link for downloading CUDA
-
 
       **Figure 26** Finding the link for downloading CUDA
 
@@ -448,7 +422,6 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
    .. figure:: /_static/images/en-us_image_0234360248.png
       :alt: **Figure 27** Installing CUDA
 
-
       **Figure 27** Installing CUDA
 
 #. On the **CUDA Setup Package** page, select an installation path and click **OK**.
@@ -457,7 +430,6 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
    .. figure:: /_static/images/en-us_image_0234360274.png
       :alt: **Figure 28** Selecting an installation path
 
-
       **Figure 28** Selecting an installation path
 
 #. Install the CUDA toolkit as prompted.
@@ -465,7 +437,6 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
 
    .. figure:: /_static/images/en-us_image_0234360255.png
       :alt: **Figure 29** Completing the installation
-
 
       **Figure 29** Completing the installation
 
@@ -480,6 +451,5 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
 
    .. figure:: /_static/images/en-us_image_0234360293.png
       :alt: **Figure 30** Successful installation
-
 
       **Figure 30** Successful installation

@@ -43,7 +43,6 @@ For high-performance H2 ECSs equipped with an InfiniBand NIC driver (InfiniBand 
       .. figure:: /_static/images/en-us_image_0058747512.jpg
          :alt: **Figure 1** Normal network communication
 
-
          **Figure 1** Normal network communication
 
       -  If the terminal display is shown in :ref:`Figure 1 <en-us_topic_0058747426__fig13564645028>`, the network communication between the two InfiniBand ECSs is normal.

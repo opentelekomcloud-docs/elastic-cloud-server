@@ -14,7 +14,6 @@ The system displays a question mark (?) when I attempt to obtain the console log
 .. figure:: /_static/images/en-us_image_0088242234.jpg
    :alt: **Figure 1** Obtaining console logs
 
-
    **Figure 1** Obtaining console logs
 
 Possible Causes

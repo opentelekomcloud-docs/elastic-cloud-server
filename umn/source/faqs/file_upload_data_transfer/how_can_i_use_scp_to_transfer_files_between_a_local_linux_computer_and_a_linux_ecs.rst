@@ -31,7 +31,6 @@ Log in to the management console. On the **Elastic Cloud Server** page, obtain t
    .. figure:: /_static/images/en-us_image_0263796649.png
       :alt: **Figure 1** Setting file uploading
 
-
       **Figure 1** Setting file uploading
 
 -  **Downloading files**
@@ -49,6 +48,5 @@ Log in to the management console. On the **Elastic Cloud Server** page, obtain t
 
    .. figure:: /_static/images/en-us_image_0263796651.png
       :alt: **Figure 2** Setting file downloading
-
 
       **Figure 2** Setting file downloading

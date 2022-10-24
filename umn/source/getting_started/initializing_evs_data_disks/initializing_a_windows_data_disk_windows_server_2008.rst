@@ -42,7 +42,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0095024494.png
       :alt: **Figure 1** Disk Management
 
-
       **Figure 1** Disk Management
 
 #. .. _en-us_topic_0085634796__en-us_topic_0044524740_li33296033102625:
@@ -52,7 +51,6 @@ Procedure
 
    .. figure:: /_static/images/en-us_image_0132359404.png
       :alt: **Figure 2** Online the disk
-
 
       **Figure 2** Online the disk
 
@@ -67,7 +65,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0132360430.png
       :alt: **Figure 3** Initialize Disk
 
-
       **Figure 3** Initialize Disk
 
 #. .. _en-us_topic_0085634796__en-us_topic_0044524740_li34991214122212:
@@ -78,7 +75,6 @@ Procedure
 
    .. figure:: /_static/images/en-us_image_0097597141.png
       :alt: **Figure 4** Unallocated space
-
 
       **Figure 4** Unallocated space
 
@@ -95,7 +91,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0097597143.png
       :alt: **Figure 5** New Simple Volume
 
-
       **Figure 5** New Simple Volume
 
 #. On the displayed **New Simple Volume Wizard** window, click **Next**.
@@ -103,7 +98,6 @@ Procedure
 
    .. figure:: /_static/images/en-us_image_0097597145.png
       :alt: **Figure 6** New Simple Volume Wizard
-
 
       **Figure 6** New Simple Volume Wizard
 
@@ -113,7 +107,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0097597147.png
       :alt: **Figure 7** Specify Volume Size
 
-
       **Figure 7** Specify Volume Size
 
 #. Assign the driver letter and click **Next**.
@@ -121,7 +114,6 @@ Procedure
 
    .. figure:: /_static/images/en-us_image_0097597149.png
       :alt: **Figure 8** Assign Driver Letter or Path
-
 
       **Figure 8** Assign Driver Letter or Path
 
@@ -131,13 +123,11 @@ Procedure
    .. figure:: /_static/images/en-us_image_0097597151.png
       :alt: **Figure 9** Format Partition
 
-
       **Figure 9** Format Partition
 
 
    .. figure:: /_static/images/en-us_image_0097597153.png
       :alt: **Figure 10** Completing the partition creation
-
 
       **Figure 10** Completing the partition creation
 
@@ -151,6 +141,5 @@ Procedure
 
    .. figure:: /_static/images/en-us_image_0097597155.png
       :alt: **Figure 11** Disk initialization succeeded
-
 
       **Figure 11** Disk initialization succeeded

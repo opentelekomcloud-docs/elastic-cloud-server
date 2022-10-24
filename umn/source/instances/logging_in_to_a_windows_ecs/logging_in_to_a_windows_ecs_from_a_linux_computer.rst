@@ -76,7 +76,6 @@ When you log in to an ECS for the first time, log in to it using VNC, enable RDP
    .. figure:: /_static/images/en-us_image_0049287308.png
       :alt: **Figure 1** System Properties
 
-
       **Figure 1** System Properties
 
 #. Click the **Remote** tab and select **Allow remote connections to this computer**.

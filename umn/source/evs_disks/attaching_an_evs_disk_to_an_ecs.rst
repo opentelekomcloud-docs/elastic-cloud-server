@@ -40,7 +40,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0096298046.png
       :alt: **Figure 1** Attach Disk
 
-
       **Figure 1** Attach Disk
 
 #. Select the target disk, specify the disk as the system disk or data disk.
@@ -62,7 +61,6 @@ Procedure
 
    .. figure:: /_static/images/en-us_image_0096298123.png
       :alt: **Figure 2** Viewing the newly attached disk
-
 
       **Figure 2** Viewing the newly attached disk
 

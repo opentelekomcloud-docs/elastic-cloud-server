@@ -14,7 +14,6 @@ When you connect a remote desktop to a Windows ECS, the system prompts that you 
 .. figure:: /_static/images/en-us_image_0288997257.png
    :alt: **Figure 1** Remote login right missing.
 
-
    **Figure 1** Remote login right missing.
 
 Solution
@@ -30,7 +29,6 @@ Solution
       .. figure:: /_static/images/en-us_image_0288997258.png
          :alt: **Figure 2** Allow log on through Remote Desktop Services properties
 
-
          **Figure 2** Allow log on through Remote Desktop Services properties
 
    b. Locate and double-click **Deny log on through Remote Desktop Services**. If the administrator account exists, delete it.
@@ -38,6 +36,5 @@ Solution
 
       .. figure:: /_static/images/en-us_image_0288997259.png
          :alt: **Figure 3** Deny log on through Remote Desktop Services properties
-
 
          **Figure 3** Deny log on through Remote Desktop Services properties

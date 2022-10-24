@@ -108,7 +108,6 @@ The following operations use PuTTY as an example to log in to the ECS.
       .. figure:: /_static/images/en-us_image_0159943784.png
          :alt: **Figure 1** Session
 
-
          **Figure 1** Session
 
 #. Click **Window**. Then, select **UTF-8** for **Received data assumed to be in which character set:** in **Translation**.

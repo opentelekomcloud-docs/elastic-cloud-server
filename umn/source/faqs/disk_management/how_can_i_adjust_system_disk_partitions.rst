@@ -43,7 +43,6 @@ To use the 20 GB capacity, performing the following operations:
       .. figure:: /_static/images/en-us_image_0076540987.png
          :alt: **Figure 1** Viewing details about the disk
 
-
          **Figure 1** Viewing details about the disk
 
    d. Run the following command to view disk partitions:
@@ -53,7 +52,6 @@ To use the 20 GB capacity, performing the following operations:
 
       .. figure:: /_static/images/en-us_image_0076598858.jpg
          :alt: **Figure 2** Viewing disk partitions
-
 
          **Figure 2** Viewing disk partitions
 
@@ -85,7 +83,6 @@ To use the 20 GB capacity, performing the following operations:
       .. figure:: /_static/images/en-us_image_0076540988.png
          :alt: **Figure 3** Creating a new partition
 
-
          **Figure 3** Creating a new partition
 
    c. Enter the new partition's start cylinder number and press **Enter**.
@@ -95,7 +92,6 @@ To use the 20 GB capacity, performing the following operations:
 
       .. figure:: /_static/images/en-us_image_0076595619.jpg
          :alt: **Figure 4** Specifying the new partition's start cylinder number
-
 
          **Figure 4** Specifying the new partition's start cylinder number
 
@@ -107,7 +103,6 @@ To use the 20 GB capacity, performing the following operations:
       .. figure:: /_static/images/en-us_image_0076595620.jpg
          :alt: **Figure 5** Specifying the new partition's end cylinder number
 
-
          **Figure 5** Specifying the new partition's end cylinder number
 
    e. Enter **p** and press **Enter** to view the created partition.
@@ -117,7 +112,6 @@ To use the 20 GB capacity, performing the following operations:
 
       .. figure:: /_static/images/en-us_image_0076596029.jpg
          :alt: **Figure 6** Viewing the created partition
-
 
          **Figure 6** Viewing the created partition
 
@@ -131,7 +125,6 @@ To use the 20 GB capacity, performing the following operations:
       .. figure:: /_static/images/en-us_image_0076596326.jpg
          :alt: **Figure 7** Completing the partition creation
 
-
          **Figure 7** Completing the partition creation
 
    g. Run the following command to view disk partitions:
@@ -141,7 +134,6 @@ To use the 20 GB capacity, performing the following operations:
 
       .. figure:: /_static/images/en-us_image_0076600080.jpg
          :alt: **Figure 8** Viewing disk partitions
-
 
          **Figure 8** Viewing disk partitions
 
@@ -158,7 +150,6 @@ To use the 20 GB capacity, performing the following operations:
 
       .. figure:: /_static/images/en-us_image_0076541187.png
          :alt: **Figure 9** Viewing the file system type
-
 
          **Figure 9** Viewing the file system type
 
@@ -228,7 +219,6 @@ To use the 20 GB capacity, performing the following operations:
       .. figure:: /_static/images/en-us_image_0076543500.jpg
          :alt: **Figure 10** Viewing the mounted file systems
 
-
          **Figure 10** Viewing the mounted file systems
 
 #. Determine whether to set automatic mounting upon system startup for the new disk.
@@ -253,7 +243,6 @@ To use the 20 GB capacity, performing the following operations:
 
       .. figure:: /_static/images/en-us_image_0076543501.jpg
          :alt: **Figure 11** Viewing the file system type
-
 
          **Figure 11** Viewing the file system type
 

@@ -14,7 +14,6 @@ When you run the **sudo** command to switch to user **root** on an Ubuntu or Deb
 .. figure:: /_static/images/en-us_image_0094801740.png
    :alt: **Figure 1** Connection timeout
 
-
    **Figure 1** Connection timeout
 
 Solution

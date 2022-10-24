@@ -38,7 +38,6 @@ Procedure
       .. figure:: /_static/images/en-us_image_0022382203.png
          :alt: **Figure 1** Modifying an alarm rule
 
-
          **Figure 1** Modifying an alarm rule
 
    d. Click **Modify**.

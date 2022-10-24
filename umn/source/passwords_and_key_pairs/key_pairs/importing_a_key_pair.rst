@@ -37,7 +37,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0000001234671514.png
       :alt: **Figure 1** Import Public Key
 
-
       **Figure 1** Import Public Key
 
 #. Use either of the following methods to import the key pair:

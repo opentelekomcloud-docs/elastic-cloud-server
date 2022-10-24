@@ -22,7 +22,6 @@ For example, a user group shown in :ref:`Figure 1 <en-us_topic_0047272493__fig10
 .. figure:: /_static/images/en-us_image_0047273062.png
    :alt: **Figure 1** User group
 
-
    **Figure 1** User group
 
 Scenario 1: User 1 Uses the Encryption Feature

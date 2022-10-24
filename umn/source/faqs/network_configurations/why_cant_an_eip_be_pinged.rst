@@ -21,7 +21,6 @@ If the fault persists after you have ruled out a cause, check other causes.
 .. figure:: /_static/images/en-us_image_0000001223659800.png
    :alt: **Figure 1** Method of locating the failure to ping an EIP
 
-
    **Figure 1** Method of locating the failure to ping an EIP
 
 .. table:: **Table 1** Method of locating the failure to ping an EIP
@@ -117,7 +116,6 @@ If a firewall is enabled on the ECS, check whether the firewall blocks the ping 
    .. figure:: /_static/images/en-us_image_0250117342.png
       :alt: **Figure 2** Checking firewall rules
 
-
       **Figure 2** Checking firewall rules
 
    If the ping operations are blocked by an ICMP rule, run the following commands to modify the rule for unblocking:
@@ -158,13 +156,11 @@ If a firewall is enabled on the ECS, check whether the firewall blocks the ping 
       .. figure:: /_static/images/en-us_image_0250182352.png
          :alt: **Figure 3** Inbound Rules
 
-
          **Figure 3** Inbound Rules
 
 
       .. figure:: /_static/images/en-us_image_0250182717.png
          :alt: **Figure 4** Outbound Rules
-
 
          **Figure 4** Outbound Rules
 
@@ -246,7 +242,6 @@ Generally, the default route of an OS will preferentially select the primary NIC
 
       .. figure:: /_static/images/en-us_image_0250105611.png
          :alt: **Figure 5** Default route
-
 
          **Figure 5** Default route
 

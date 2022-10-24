@@ -14,7 +14,6 @@ When I attempted to remotely log in to a Linux ECS, the system displayed error m
 .. figure:: /_static/images/en-us_image_0240714761.png
    :alt: **Figure 1** read: Connection reset by peer
 
-
    **Figure 1** read: Connection reset by peer
 
 Possible Causes

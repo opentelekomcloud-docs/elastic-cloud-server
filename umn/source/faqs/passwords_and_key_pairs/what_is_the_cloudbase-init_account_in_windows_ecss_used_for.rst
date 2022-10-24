@@ -38,7 +38,6 @@ Use an image to create two ECSs, ecs01 and ecs02. Then, verify that the hash val
    .. figure:: /_static/images/en-us_image_0202311481.gif
       :alt: **Figure 1** ecs01
 
-
       **Figure 1** ecs01
 
 -  LM-HASH and NTLM-HASH values of the **cloudbase-init** account for ecs02
@@ -46,6 +45,5 @@ Use an image to create two ECSs, ecs01 and ecs02. Then, verify that the hash val
 
    .. figure:: /_static/images/en-us_image_0202311491.gif
       :alt: **Figure 2** ecs02
-
 
       **Figure 2** ecs02

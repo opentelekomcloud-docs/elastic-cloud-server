@@ -311,7 +311,6 @@ Perform the test on multiple flows. This section considers 16 flows that are eve
    .. figure:: /_static/images/en-us_image_0115873247.png
       :alt: **Figure 1** Output of the netperf process on one TX end
 
-
       **Figure 1** Output of the netperf process on one TX end
 
    .. note::
@@ -493,7 +492,6 @@ UDP PPS Test (Using iperf3)
 
    .. figure:: /_static/images/en-us_image_0115874559.png
       :alt: **Figure 2** UDP PPS test result
-
 
       **Figure 2** UDP PPS test result
 

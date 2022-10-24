@@ -23,7 +23,6 @@ The route with the destination of 169.254.169.254 does not exist, but the route 
 .. figure:: /_static/images/en-us_image_0000001092174258.png
    :alt: **Figure 1** Route information
 
-
    **Figure 1** Route information
 
 After the network is restarted, the original route with the destination of 169.254.169.254 is changed to the route with the destination of 169.254.0.0/16 without a next hop. As a result, the Linux ECS cannot obtain metadata.
@@ -44,7 +43,6 @@ Solution
 
    .. figure:: /_static/images/en-us_image_0000001092045958.png
       :alt: **Figure 2** Obtaining metadata
-
 
       **Figure 2** Obtaining metadata
 

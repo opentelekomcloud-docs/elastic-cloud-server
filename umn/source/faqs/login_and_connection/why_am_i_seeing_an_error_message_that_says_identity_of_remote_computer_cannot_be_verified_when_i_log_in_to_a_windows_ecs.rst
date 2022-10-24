@@ -14,7 +14,6 @@ An error message is displayed indicating that the identity of the remote compute
 .. figure:: /_static/images/en-us_image_0288997421.png
    :alt: **Figure 1** Protocol error
 
-
    **Figure 1** Protocol error
 
 Possible Causes

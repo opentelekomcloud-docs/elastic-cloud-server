@@ -67,7 +67,6 @@ The following operations use PuTTY as an example. Before logging in to the ECS u
    .. figure:: /_static/images/en-us_image_0000001082643605.jpg
       :alt: **Figure 1** Configuring the EIP
 
-
       **Figure 1** Configuring the EIP
 
 #. Choose **Connection** > **Data**. Enter the image username in **Auto-login username**.
@@ -101,7 +100,6 @@ The following operations use PuTTY as an example. Before logging in to the ECS u
 
    .. figure:: /_static/images/en-us_image_0178475901.png
       :alt: **Figure 2** SSH Security Warning
-
 
       **Figure 2** SSH Security Warning
 
