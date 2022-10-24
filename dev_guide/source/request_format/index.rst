@@ -37,7 +37,6 @@ A project ID is required for some URLs when an API is called. Therefore, you nee
    .. figure:: /_static/images/en-us_image_0173496413.png
       :alt: **Figure 1** Viewing project IDs
 
-
       **Figure 1** Viewing project IDs
 
 -  :ref:`Versions <en-us_topic_0134193005>`
