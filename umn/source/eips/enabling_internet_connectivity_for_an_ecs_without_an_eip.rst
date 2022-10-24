@@ -131,7 +131,6 @@ In this example, the proxy ECS runs CentOS 6.5.
    .. figure:: /_static/images/en-us_image_0027174005.png
       :alt: **Figure 1** Successful SNAT configuration
 
-
       **Figure 1** Successful SNAT configuration
 
 #. Add a route.

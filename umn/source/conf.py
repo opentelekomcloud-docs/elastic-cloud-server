@@ -38,6 +38,9 @@ sys.path.insert(0, os.path.abspath('../'))
 sys.path.insert(0, os.path.abspath('./'))
 
 # -- General configuration ----------------------------------------------------
+# https://docutils.sourceforge.io/docs/user/smartquotes.html - it does not
+# what it is expected
+smartquotes = False
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom ones.

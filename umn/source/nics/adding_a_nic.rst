@@ -31,7 +31,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0093507600.png
       :alt: **Figure 1** Selecting the security group and subnet
 
-
       **Figure 1** Selecting the security group and subnet
 
    -  **Security Group**: You can select multiple security groups. In such a case, the access rules of all the selected security groups apply on the ECS.

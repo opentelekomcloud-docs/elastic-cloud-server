@@ -33,7 +33,6 @@ Fault Locating
    .. figure:: /_static/images/en-us_image_0281771106.png
       :alt: **Figure 1** Starting the Resource Monitor
 
-
       **Figure 1** Starting the Resource Monitor
 
 #. On the **Resource Monitor** page, click the **CPU** or **Network** tab to view the CPU or bandwidth usage.
@@ -41,7 +40,6 @@ Fault Locating
 
    .. figure:: /_static/images/en-us_image_0281773972.png
       :alt: **Figure 2** Resource Monitor
-
 
       **Figure 2** Resource Monitor
 
@@ -64,7 +62,6 @@ Fault Locating
 
       .. figure:: /_static/images/en-us_image_0281775402.png
          :alt: **Figure 3** Checking the process
-
 
          **Figure 3** Checking the process
 

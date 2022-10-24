@@ -36,7 +36,6 @@ If your local server runs Windows, you can use the remote desktop connection too
    .. figure:: /_static/images/en-us_image_0295941039.png
       :alt: **Figure 1** Show Options
 
-
       **Figure 1** Show Options
 
 #. Enter the EIP and username (**Administrator** by default) of the target ECS.
@@ -49,7 +48,6 @@ If your local server runs Windows, you can use the remote desktop connection too
    .. figure:: /_static/images/en-us_image_0295941040.png
       :alt: **Figure 2** Remote Desktop Connection
 
-
       **Figure 2** Remote Desktop Connection
 
 #. (Optional) To use local server resources in a remote session, configure parameters on the **Local Resources** tab.
@@ -60,7 +58,6 @@ If your local server runs Windows, you can use the remote desktop connection too
    .. figure:: /_static/images/en-us_image_0295941041.png
       :alt: **Figure 3** Clipboard
 
-
       **Figure 3** Clipboard
 
    To copy files from the local server to your ECS, click **More** and select your desired disks.
@@ -69,7 +66,6 @@ If your local server runs Windows, you can use the remote desktop connection too
    .. figure:: /_static/images/en-us_image_0295940977.png
       :alt: **Figure 4** Drives
 
-
       **Figure 4** Drives
 
 #. (Optional) Click the **Display** tab and then adjust the size of the remote desktop.
@@ -77,7 +73,6 @@ If your local server runs Windows, you can use the remote desktop connection too
 
    .. figure:: /_static/images/en-us_image_0295940978.png
       :alt: **Figure 5** Adjusting the size of the desktop
-
 
       **Figure 5** Adjusting the size of the desktop
 
@@ -111,7 +106,6 @@ When you log in to an ECS for the first time, log in to it using VNC, enable RDP
 
    .. figure:: /_static/images/en-us_image_0049287308.png
       :alt: **Figure 6** System Properties
-
 
       **Figure 6** System Properties
 

@@ -14,7 +14,6 @@ An error message is displayed indicating that the remote session will be disconn
 .. figure:: /_static/images/en-us_image_0288997423.png
    :alt: **Figure 1** Protocol error
 
-
    **Figure 1** Protocol error
 
 Possible Causes
@@ -31,7 +30,6 @@ Solution
    .. figure:: /_static/images/en-us_image_0288997424.png
       :alt: **Figure 2** Opening the registry editor
 
-
       **Figure 2** Opening the registry editor
 
 #. Choose **HKEY_LOCAL_MACHINE** > **SYSTEM** > **ControlSet001** > **Control** > **Terminal Server** > **RCM**.
@@ -41,7 +39,6 @@ Solution
 
    .. figure:: /_static/images/en-us_image_0288997425.png
       :alt: **Figure 3** Deleting Certificate
-
 
       **Figure 3** Deleting Certificate
 
@@ -53,7 +50,6 @@ Solution
    .. figure:: /_static/images/en-us_image_0288997426.png
       :alt: **Figure 4** Opening Remote Desktop Session Host Configuration
 
-
       **Figure 4** Opening Remote Desktop Session Host Configuration
 
 #. Right-click **RDP-Tcp** and choose **Properties**. In the displayed dialog box, click **General** and set **Security layer** to **RDP Security Layer**.
@@ -61,6 +57,5 @@ Solution
 
    .. figure:: /_static/images/en-us_image_0288997427.png
       :alt: **Figure 5** RDP-Tcp properties
-
 
       **Figure 5** RDP-Tcp properties

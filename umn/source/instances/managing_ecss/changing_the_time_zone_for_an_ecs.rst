@@ -90,7 +90,6 @@ For Windows ECSs
    .. figure:: /_static/images/en-us_image_0224317546.png
       :alt: **Figure 1** Date and Time
 
-
       **Figure 1** Date and Time
 
 #. Click **Change time zone**.

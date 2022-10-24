@@ -36,7 +36,6 @@ Specifications for the ECS being created are located in the specifications list.
 .. figure:: /_static/images/en-us_image_0172453607.png
    :alt: **Figure 1** ECS specifications
 
-
    **Figure 1** ECS specifications
 
 Network QoS

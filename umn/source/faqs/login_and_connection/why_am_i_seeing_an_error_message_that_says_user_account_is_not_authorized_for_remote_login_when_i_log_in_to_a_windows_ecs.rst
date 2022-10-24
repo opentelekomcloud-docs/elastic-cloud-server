@@ -14,7 +14,6 @@ An error message is displayed indicating that the connection is denied because t
 .. figure:: /_static/images/en-us_image_0288997346.png
    :alt: **Figure 1** Error message
 
-
    **Figure 1** Error message
 
 Possible Causes
@@ -35,7 +34,6 @@ Solution
       .. figure:: /_static/images/en-us_image_0288997347.png
          :alt: **Figure 2** Local security policy
 
-
          **Figure 2** Local security policy
 
    c. Check whether there are user groups or users that have been granted the remote login permission.
@@ -45,7 +43,6 @@ Solution
 
       .. figure:: /_static/images/en-us_image_0288997348.png
          :alt: **Figure 3** Allow log on through Remote Desktop Services properties
-
 
          **Figure 3** Allow log on through Remote Desktop Services properties
 
@@ -65,7 +62,6 @@ Solution
       .. figure:: /_static/images/en-us_image_0288997349.png
          :alt: **Figure 4** Checking the target user group
 
-
          **Figure 4** Checking the target user group
 
 #. Check the remote desktop session host configuration.
@@ -77,7 +73,6 @@ Solution
 
       .. figure:: /_static/images/en-us_image_0288997350.png
          :alt: **Figure 5** Security
-
 
          **Figure 5** Security
 

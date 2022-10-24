@@ -14,7 +14,6 @@ The system displays an error message indicating that a protocol error (code: 0x1
 .. figure:: /_static/images/en-us_image_0288997598.png
    :alt: **Figure 1** Protocol error (code: 0x1104)
 
-
    **Figure 1** Protocol error (code: 0x1104)
 
 Possible Causes
@@ -63,7 +62,6 @@ Solution
       .. figure:: /_static/images/en-us_image_0288997604.png
          :alt: **Figure 2** Checking port 3389
 
-
          **Figure 2** Checking port 3389
 
       As shown in :ref:`Figure 2 <en-us_topic_0264235942__en-us_topic_0138293293_fig1562219275192>`, port 3389 is used by the process with ID of 4.
@@ -77,7 +75,6 @@ Solution
 
       .. figure:: /_static/images/en-us_image_0288997606.png
          :alt: **Figure 3** Checking System process
-
 
          **Figure 3** Checking System process
 
@@ -105,7 +102,6 @@ Solution
       .. figure:: /_static/images/en-us_image_0288997608.png
          :alt: **Figure 4** Remote Desktop Services
 
-
          **Figure 4** Remote Desktop Services
 
    e. **Remote Desktop Session Host** > **Security**.
@@ -114,7 +110,6 @@ Solution
       .. figure:: /_static/images/en-us_image_0288997610.png
          :alt: **Figure 5** Remote (RDP) Connection requires the use of the specified security layer
 
-
          **Figure 5** Remote (RDP) Connection requires the use of the specified security layer
 
    f. Set **Require use of specific security layer for remote (RDP) connections** to **Enabled** and **Security layer** to **RDP**.
@@ -122,7 +117,6 @@ Solution
 
       .. figure:: /_static/images/en-us_image_0288997612.png
          :alt: **Figure 6** Setting security layer
-
 
          **Figure 6** Setting security layer
 
@@ -137,7 +131,6 @@ Solution
 
       .. figure:: /_static/images/en-us_image_0288997614.png
          :alt: **Figure 7** Updating the group policy
-
 
          **Figure 7** Updating the group policy
 

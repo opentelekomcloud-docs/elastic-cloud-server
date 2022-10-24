@@ -27,7 +27,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0122999741.png
       :alt: **Figure 1** Change Security Group
 
-
       **Figure 1** Change Security Group
 
 #. Select the target NIC and security groups as prompted.

@@ -29,7 +29,6 @@ Solution
       .. figure:: /_static/images/en-us_image_0000001122000869.png
          :alt: **Figure 1** Event viewer
 
-
          **Figure 1** Event viewer
 
    c. In the **Event Level** pane, select event levels.
@@ -37,7 +36,6 @@ Solution
 
       .. figure:: /_static/images/en-us_image_0000001121886141.png
          :alt: **Figure 2** Filtering logs
-
 
          **Figure 2** Filtering logs
 

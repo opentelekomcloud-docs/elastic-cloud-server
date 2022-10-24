@@ -42,7 +42,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0284920908.png
       :alt: **Figure 1** Add Inbound Rule
 
-
       **Figure 1** Add Inbound Rule
 
    .. table:: **Table 1** Inbound rule parameter description
@@ -75,7 +74,6 @@ Procedure
 
    .. figure:: /_static/images/en-us_image_0284993717.png
       :alt: **Figure 2** Add Outbound Rule
-
 
       **Figure 2** Add Outbound Rule
 

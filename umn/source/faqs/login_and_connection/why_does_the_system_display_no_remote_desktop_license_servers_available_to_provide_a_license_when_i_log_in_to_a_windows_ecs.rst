@@ -14,7 +14,6 @@ An error message is displayed indicating that there are no Remote Desktop Licens
 .. figure:: /_static/images/en-us_image_0288997286.png
    :alt: **Figure 1** No Remote Desktop License Servers available to provide a license
 
-
    **Figure 1** No Remote Desktop License Servers available to provide a license
 
 Possible Causes
@@ -41,7 +40,6 @@ Windows Server 2008
    .. figure:: /_static/images/en-us_image_0288997287.png
       :alt: **Figure 2** Deleting roles
 
-
       **Figure 2** Deleting roles
 
 #. In the displayed dialog box, deselect **Remote Desktop Session Host** and keep clicking **Next** till you finish the operation.
@@ -49,7 +47,6 @@ Windows Server 2008
 
    .. figure:: /_static/images/en-us_image_0288997288.png
       :alt: **Figure 3** Deselecting Remote Desktop Session Host
-
 
       **Figure 3** Deselecting Remote Desktop Session Host
 
@@ -68,7 +65,6 @@ Windows Server 2012
    .. figure:: /_static/images/en-us_image_0288997289.png
       :alt: **Figure 4** Deleting roles and features
 
-
       **Figure 4** Deleting roles and features
 
 #. Select the destination server and click **Next**.
@@ -78,7 +74,6 @@ Windows Server 2012
 
    .. figure:: /_static/images/en-us_image_0288997290.png
       :alt: **Figure 5** Deselecting Remote Desktop Services
-
 
       **Figure 5** Deselecting Remote Desktop Services
 

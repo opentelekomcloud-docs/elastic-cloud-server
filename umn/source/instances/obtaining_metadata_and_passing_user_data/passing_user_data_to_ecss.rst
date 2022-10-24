@@ -55,7 +55,6 @@ Passing User Data
    .. figure:: /_static/images/en-us_image_0237026761.png
       :alt: **Figure 1** User Data
 
-
       **Figure 1** User Data
 
 #. The created ECS automatically runs Cloud-Init/Cloudbase-Init and reads the user data script upon startup.
@@ -133,7 +132,6 @@ Customized user data scripts of Linux ECSs are based on the open-source Cloud-In
    .. figure:: /_static/images/en-us_image_0115931570.png
       :alt: **Figure 2** Viewing operating results
 
-
       **Figure 2** Viewing operating results
 
 User Data Scripts of Windows ECSs
@@ -180,7 +178,6 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
    .. figure:: /_static/images/en-us_image_0115932123.png
       :alt: **Figure 3** Creating text file (Batch)
 
-
       **Figure 3** Creating text file (Batch)
 
    To view the user data passed to the Windows ECS, log in at http://169.254.169.254/openstack/latest/user_data.
@@ -188,7 +185,6 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
 
    .. figure:: /_static/images/en-us_image_0115932873.png
       :alt: **Figure 4** Viewing user data (Batch)
-
 
       **Figure 4** Viewing user data (Batch)
 
@@ -207,7 +203,6 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
    .. figure:: /_static/images/en-us_image_0115933029.png
       :alt: **Figure 5** Creating text file (PowerShell)
 
-
       **Figure 5** Creating text file (PowerShell)
 
    To view the user data passed to the Windows ECS, log in at http://169.254.169.254/openstack/latest/user_data.
@@ -215,7 +210,6 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
 
    .. figure:: /_static/images/en-us_image_0115934291.jpg
       :alt: **Figure 6** Viewing user data (PowerShell)
-
 
       **Figure 6** Viewing user data (PowerShell)
 

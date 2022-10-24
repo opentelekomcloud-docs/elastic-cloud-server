@@ -38,5 +38,4 @@ The following operations use EulerOS 2.2 as an example.
    .. figure:: /_static/images/en-us_image_0079177144.png
       :alt: **Figure 1** Configuration verification
 
-
       **Figure 1** Configuration verification

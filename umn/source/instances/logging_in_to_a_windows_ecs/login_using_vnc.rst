@@ -122,7 +122,6 @@ Log In to a Windows ECS Using an English Keyboard
    .. figure:: /_static/images/en-us_image_0030874270.png
       :alt: **Figure 1** Keyboard layout configuration
 
-
       **Figure 1** Keyboard layout configuration
 
 #. Click **Remote Login**.
@@ -133,7 +132,6 @@ Log In to a Windows ECS Using an English Keyboard
    .. figure:: /_static/images/en-us_image_0030874271.png
       :alt: **Figure 2** Remote Login
 
-
       **Figure 2** Remote Login
 
 #. (Optional) When the system displays "Press CTRL+ALT+DELETE to log on", click **Send CtrlAltDel** in the upper part of the remote login page to log in to the ECS.
@@ -142,7 +140,6 @@ Log In to a Windows ECS Using an English Keyboard
    .. figure:: /_static/images/en-us_image_0042322120.png
       :alt: **Figure 3** Send CtrlAltDel
 
-
       **Figure 3** Send CtrlAltDel
 
 #. (Optional) If you need your cursor to be displayed on the remote login page, click **Local Cursor**.
@@ -150,7 +147,6 @@ Log In to a Windows ECS Using an English Keyboard
 
    .. figure:: /_static/images/en-us_image_0036068239.png
       :alt: **Figure 4** Local Cursor
-
 
       **Figure 4** Local Cursor
 
@@ -186,7 +182,6 @@ Log In to a Windows ECS Using a Non-English Keyboard
    .. figure:: /_static/images/en-us_image_0030874270.png
       :alt: **Figure 5** Keyboard layout configuration
 
-
       **Figure 5** Keyboard layout configuration
 
 8.  Click **Remote Login**.
@@ -197,7 +192,6 @@ Log In to a Windows ECS Using a Non-English Keyboard
     .. figure:: /_static/images/en-us_image_0030874271.png
        :alt: **Figure 6** Remote Login
 
-
        **Figure 6** Remote Login
 
 10. (Optional) When the system displays "Press CTRL+ALT+DELETE to log on", click **Send CtrlAltDel** in the upper part of the remote login page to log in to the ECS.
@@ -206,7 +200,6 @@ Log In to a Windows ECS Using a Non-English Keyboard
     .. figure:: /_static/images/en-us_image_0042322120.png
        :alt: **Figure 7** Send CtrlAltDel
 
-
        **Figure 7** Send CtrlAltDel
 
 11. (Optional) If you need your cursor to be displayed on the remote login page, click **Local Cursor**.
@@ -214,7 +207,6 @@ Log In to a Windows ECS Using a Non-English Keyboard
 
     .. figure:: /_static/images/en-us_image_0036068239.png
        :alt: **Figure 8** Local Cursor
-
 
        **Figure 8** Local Cursor
 

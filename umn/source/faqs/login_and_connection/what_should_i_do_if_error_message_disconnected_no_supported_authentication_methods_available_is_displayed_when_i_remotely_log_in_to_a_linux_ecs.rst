@@ -14,7 +14,6 @@ When I attempted to remotely log in to a Linux ECS, the system displayed error m
 .. figure:: /_static/images/en-us_image_0277132897.png
    :alt: **Figure 1** No supported authentication methods available
 
-
    **Figure 1** No supported authentication methods available
 
 Possible Causes

@@ -30,7 +30,6 @@ Solution
    .. figure:: /_static/images/en-us_image_0000001100835050.png
       :alt: **Figure 1** Remote Desktop Services
 
-
       **Figure 1** Remote Desktop Services
 
 #. Remotely connect to the ECS again.

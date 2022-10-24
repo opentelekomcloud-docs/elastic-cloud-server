@@ -47,7 +47,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0116270059.jpg
       :alt: **Figure 1** Expanding trace details
 
-
       **Figure 1** Expanding trace details
 
 #. Click **View Trace**. A dialog box is displayed, in which the trace structure details are displayed.

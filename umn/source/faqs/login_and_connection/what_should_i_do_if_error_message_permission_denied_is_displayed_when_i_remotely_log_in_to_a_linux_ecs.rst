@@ -14,7 +14,6 @@ When I attempted to remotely log in to a Linux ECS, the system displayed error M
 .. figure:: /_static/images/en-us_image_0240710556.png
    :alt: **Figure 1** Permission denied
 
-
    **Figure 1** Permission denied
 
 .. note::
@@ -44,7 +43,6 @@ Solution
       .. figure:: /_static/images/en-us_image_0240711431.png
          :alt: **Figure 2** Entering the kernel editing mode
 
-
          **Figure 2** Entering the kernel editing mode
 
       .. note::
@@ -61,13 +59,11 @@ Solution
       .. figure:: /_static/images/en-us_image_0260575520.png
          :alt: **Figure 3** Before the modification
 
-
          **Figure 3** Before the modification
 
 
       .. figure:: /_static/images/en-us_image_0260575521.png
          :alt: **Figure 4** After the modification
-
 
          **Figure 4** After the modification
 

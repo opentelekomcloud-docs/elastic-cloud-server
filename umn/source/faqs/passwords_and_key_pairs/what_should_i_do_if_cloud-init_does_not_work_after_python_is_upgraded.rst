@@ -17,7 +17,6 @@ After the **cloud-init -v** command was executed to view the Cloud-Init version,
 .. figure:: /_static/images/en-us_image_0123386277.jpg
    :alt: **Figure 1** Improper running of Cloud-Init
 
-
    **Figure 1** Improper running of Cloud-Init
 
 Possible Causes
@@ -33,6 +32,5 @@ Change the Python version used by Cloud-Init to the source version. To do so, ch
 
 .. figure:: /_static/images/en-us_image_0123417484.jpg
    :alt: **Figure 2** Changing the Python version
-
 
    **Figure 2** Changing the Python version

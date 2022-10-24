@@ -39,7 +39,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0263798009.png
       :alt: **Figure 1** Setting a password
 
-
       **Figure 1** Setting a password
 
 #. Assign permissions to directories.
@@ -78,7 +77,6 @@ Procedure
 
    .. figure:: /_static/images/en-us_image_0000001071727803.png
       :alt: **Figure 2** sshd_config file with the added information
-
 
       **Figure 2** sshd_config file with the added information
 

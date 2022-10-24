@@ -23,7 +23,6 @@ During the installation, the system displays the message "command ´gcc´ failed
 .. figure:: /_static/images/en-us_image_0107414257.png
    :alt: **Figure 1** Installation error
 
-
    **Figure 1** Installation error
 
 Possible Causes
@@ -45,6 +44,5 @@ The following operations use psutil as an example:
 
    .. figure:: /_static/images/en-us_image_0107415055.png
       :alt: **Figure 2** Successful installation
-
 
       **Figure 2** Successful installation

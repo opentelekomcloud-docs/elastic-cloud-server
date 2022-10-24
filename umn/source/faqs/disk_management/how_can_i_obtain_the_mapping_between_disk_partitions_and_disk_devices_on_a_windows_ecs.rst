@@ -20,7 +20,6 @@ This section uses an ECS running Windows Server 2008 R2 64bit as an example to d
    .. figure:: /_static/images/en-us_image_0087906013.png
       :alt: **Figure 1** Disk Management
 
-
       **Figure 1** Disk Management
 
 #. Taking disk 1 marked in :ref:`Figure 1 <en-us_topic_0087680813__fig63278226101115>` as an example, view the disk device for disk 1.
@@ -36,7 +35,6 @@ This section uses an ECS running Windows Server 2008 R2 64bit as an example to d
       .. figure:: /_static/images/en-us_image_0087906055.png
          :alt: **Figure 2** Disk properties
 
-
          **Figure 2** Disk properties
 
    c. Click the **Details** tab and set **Property** to **Parent**.
@@ -44,7 +42,6 @@ This section uses an ECS running Windows Server 2008 R2 64bit as an example to d
 
       .. figure:: /_static/images/en-us_image_0087906067.png
          :alt: **Figure 3** Disk device details
-
 
          **Figure 3** Disk device details
 

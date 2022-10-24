@@ -30,7 +30,6 @@ Your account automatically comes with a default security group. The default secu
 .. figure:: /_static/images/en-us_image_0000001230120807.png
    :alt: **Figure 1** Default security group
 
-
    **Figure 1** Default security group
 
 :ref:`Table 1 <en-us_topic_0030828257__table1580115155277>` describes default security group rules.
@@ -57,7 +56,6 @@ Each EIP can be used by only one cloud resource at a time.
 
 .. figure:: /_static/images/en-us_image_0178890066.png
    :alt: **Figure 2** Accessing the Internet using an EIP
-
 
    **Figure 2** Accessing the Internet using an EIP
 
