@@ -56,13 +56,13 @@ Response
 
 .. table:: **Table 2** Response parameters
 
-   ========= ====== =============================
+   ========= ====== ================================
    Parameter Type   Description
-   ========= ====== =============================
-   message   String Example: "<br /><br />\n\n\n"
+   ========= ====== ================================
+   message   String Example: "<br /><br />\\n\\n\\n"
    code      String Example: "201 Created"
    title     String Example: "Created"
-   ========= ====== =============================
+   ========= ====== ================================
 
 Example Request
 ---------------
