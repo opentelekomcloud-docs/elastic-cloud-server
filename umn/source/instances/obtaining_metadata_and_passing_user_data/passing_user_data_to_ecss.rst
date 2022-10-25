@@ -172,7 +172,7 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
       rem cmd
       echo "Hello, BAT Test" > C:\1111.txt
 
-   After the ECS is created, start it and check the script execution result. In this example, a text file named **1111** is added to disk C:\.
+   After the ECS is created, start it and check the script execution result. In this example, a text file named **1111** is added to disk C:\\.
 
 
    .. figure:: /_static/images/en-us_image_0115932123.png
@@ -197,7 +197,7 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
       #ps1
       echo "Hello, Powershell Test" > C:\aaaa.txt
 
-   After the ECS is created, start it and check the script execution result. In this example, a text file named **aaaa** is added to disk C:\.
+   After the ECS is created, start it and check the script execution result. In this example, a text file named **aaaa** is added to disk C:\\.
 
 
    .. figure:: /_static/images/en-us_image_0115933029.png
@@ -283,7 +283,7 @@ User data example:
 
    #. Run the following command to generate a ciphertext password based on the salt value:
 
-      **python -c "import crypt, getpass, pwd;print crypt.crypt('Cloud.1234','\$6\$V6azyeLwcD3CHlpY')"**
+      **python -c "import crypt, getpass, pwd;print crypt.crypt('Cloud.1234','\\$6\\$V6azyeLwcD3CHlpY')"**
 
       The following information is displayed:
 
