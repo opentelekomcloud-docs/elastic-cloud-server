@@ -256,7 +256,7 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
 
    b. Open the **cmd** window on the ECS and run the following commands:
 
-      **cd C:\Program Files\NVIDIA Corporation\NVSMI**
+      **cd C:\\Program Files\\NVIDIA Corporation\\NVSMI**
 
       **nvidia-smi**
 
