@@ -237,7 +237,7 @@ In this case, you must change the languages of the other three types of keyboard
 .. table:: **Table 3** Languages in the four types of keyboards
 
    +----------------------+-------------------+---------------------------------------+--------------+-----------------+
-   | -                    | Physical Keyboard | Input Method Keyboard on the Terminal | VNC Keyboard | ECS OS Keyboard |
+   | ``-``                | Physical Keyboard | Input Method Keyboard on the Terminal | VNC Keyboard | ECS OS Keyboard |
    +======================+===================+=======================================+==============+=================+
    | Before configuration | German            | English                               | English      | English         |
    +----------------------+-------------------+---------------------------------------+--------------+-----------------+
