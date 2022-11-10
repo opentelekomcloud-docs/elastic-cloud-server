@@ -1,0 +1,10 @@
+diff a/dev_guide/source/conf.py b/dev_guide/source/conf.py	(rejected hunks)
+@@ -78,7 +78,7 @@ html_theme = 'otcdocs'
+ # further. For a list of options available for each theme, see the
+ # documentation.
+ html_theme_options = {
+-    "disable_search": True,
++    "disable_search": "True",
+     "site_name": "Internal Documentation Portal",
+     "logo_url": "https://docs-int.otc-service.com",
+ }
