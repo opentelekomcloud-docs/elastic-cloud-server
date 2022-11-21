@@ -8,7 +8,7 @@ AZ Management
 +-------------------------------------+---------------------------------------------+----------------------------+----------------------+
 | Permission                          | API                                         | Action                     | Dependent Permission |
 +=====================================+=============================================+============================+======================+
-| Querying AZs (Native OpenStack API) | GET /v2/{project_id}/os-availability-zone   | ecs:availabilityZones:list | -                    |
+| Querying AZs (Native OpenStack API) | GET /v2/{project_id}/os-availability-zone   | ecs:availabilityZones:list | ``-``                |
 |                                     |                                             |                            |                      |
 |                                     | GET /v2.1/{project_id}/os-availability-zone |                            |                      |
 +-------------------------------------+---------------------------------------------+----------------------------+----------------------+
