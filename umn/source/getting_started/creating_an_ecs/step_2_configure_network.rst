@@ -61,10 +61,6 @@ Network Configurations
 
    The following options are provided:
 
-   -  Do not use
-
-      Without an EIP, the ECS cannot access the Internet and is used in the private network or cluster only.
-
    -  Auto assign
 
       The system automatically assigns an EIP for the ECS. The EIP provides a dedicated bandwidth that is configurable.
@@ -72,5 +68,13 @@ Network Configurations
    -  Specify
 
       An existing EIP is assigned for the ECS. When using an existing EIP, you are not allowed to create ECSs in a batch.
+
+   -  Do not use
+
+      Without an EIP, the ECS cannot access the Internet and is used in the private network or cluster only.
+
+#. Set **Bandwidth Size**.
+
+   Select the bandwidth based on service requirements. The unit is Mbit/s.
 
 #. Click **Next: Configure Advanced Settings**.

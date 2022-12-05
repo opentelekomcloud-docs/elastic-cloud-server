@@ -13,7 +13,7 @@ The static hostname of a Linux ECS is user defined and injected using Cloud-Init
 Changing the Hostname on the ECS
 --------------------------------
 
-To make the hostname changed by running the **hostname** command take effect even after the ECS is stopped or restarted, save the changed hostname into configuration files.
+To make the hostname which is changed by running the **hostname** command still take effect even after the ECS is stopped or restarted, save the changed hostname into configuration files.
 
 The changed hostname is assumed to be **new_hostname**.
 

@@ -12,7 +12,7 @@ Changing an ECS OS will change the system disk attached to the ECS. After the ch
 
 If the OS running on an ECS cannot meet service requirements, change the ECS OS.
 
-The public cloud supports changing between image types (public images, private images, and shared images) and between OSs. You can change your OS by changing your ECS image.
+The cloud platform supports changing between image types (public images, private images, and shared images) and between OSs. You can change your OS by changing your ECS image.
 
 Constraints
 -----------
@@ -88,14 +88,14 @@ Procedure
 
 #. (Optional) Select the **Encryption** option to encrypt the system disk during OS change.
 
-   To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permission, assign the KMS access permissions to EVS. If you do not have the permission, contact the user having the security administrator rights to assign the KMS access permissions. For more details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
+   To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permission, assign the KMS access permissions to EVS. If you do not have the permission, contact the user having the security administrator rights to assign the KMS access permissions. For details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
 
    Encryption parameters are as follows:
 
    -  **Encryption**: indicates that the EVS disk has been encrypted.
    -  **Create Xrole**: assigns KMS access permissions to EVS to obtain KMS keys. After the permissions are assigned, follow-up operations do not require assigning permissions again.
-   -  **KMS Key Name**: specifies the name of the key used by the encrypted EVS disk. You can select an existing key, or click **Create KMS Key** and create a new one on the KMS console. The default value is **evs/default**.
    -  **Xrole Name: EVSAccessKMS**: specifies that permissions have been assigned to EVS to obtain KMS keys for encrypting or decrypting EVS disks.
+   -  **KMS Key Name**: specifies the name of the key used by the encrypted EVS disk. You can select an existing key, or click **Create KMS Key** and create a new one on the KMS console. The default value is **evs/default**.
    -  **KMS Key ID**: specifies the ID of the key used by the encrypted data disk.
 
 #. (Optional) Select a **License Type** (**Use license from the system** or **Bring your own license (BYOL)**) if the changed OS running on your ECS is billed. For more details, see :ref:`License Type <en-us_topic_0046566932>`.
@@ -141,7 +141,7 @@ Follow-up Procedure
 
       **df -TH**
 
--  If the OS change is unsuccessful, perform steps :ref:`3 <en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45082966143628>` to :ref:`10 <en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45992498111556>` again to retry changing the OS again.
+-  If the OS change is unsuccessful, perform steps :ref:`3 <en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45082966143628>` to :ref:`10 <en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45992498111556>` again to retry the OS change.
 -  If the second OS change attempt is unsuccessful, contact customer service for manual recovery at the backend.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
