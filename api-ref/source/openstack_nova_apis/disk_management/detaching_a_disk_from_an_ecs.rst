@@ -23,7 +23,7 @@ When an ECS is in the **active** state, pay attention to the following constrain
 #. For a Windows ECS, you need to ensure that no data is being written into or being read from the disk when a disk is to be detached from the running ECS. Otherwise, data will be lost.
 #. OSs supporting EVS disk detachment from a running ECS include two parts:
 
-   -  For the first part, see `Formats and OSs Supported for External Image Files <https://docs.otc.t-systems.com/en-us/usermanual/ims/en-us_topic_0030713143.html>`__.
+   -  For the first part, see `External Image File Formats and Supported OSs <https://docs.otc.t-systems.com/en-us/usermanual/ims/en-us_topic_0030713143.html>`__.
 
    -  :ref:`Table 1 <en-us_topic_0065817707__en-us_topic_0036046828_table9271324195455>` lists the second part of supported OSs.
 
