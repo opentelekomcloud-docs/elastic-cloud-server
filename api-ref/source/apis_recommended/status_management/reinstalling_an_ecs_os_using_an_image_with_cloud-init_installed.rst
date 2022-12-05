@@ -192,6 +192,12 @@ Example Response
 
 See :ref:`Responses (Task) <en-us_topic_0022067714>`.
 
+.. code-block::
+
+   {
+       "job_id": "70a599e0-31e7-49b7-b260-868f441e862b"
+   }
+
 Returned Values
 ---------------
 
