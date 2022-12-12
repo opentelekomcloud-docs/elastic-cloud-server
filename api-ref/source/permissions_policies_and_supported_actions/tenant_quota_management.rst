@@ -8,13 +8,13 @@ Tenant Quota Management
 +----------------------------------------------------+---------------------------------------------------------------------+---------------------------+----------------------+
 | Permission                                         | API                                                                 | Action                    | Dependent Permission |
 +====================================================+=====================================================================+===========================+======================+
-| Querying the Tenant Quota                          | GET /v1/{project_id}/cloudservers/limits                            | ecs:cloudServerQuotas:get | -                    |
+| Querying the Tenant Quota                          | GET /v1/{project_id}/cloudservers/limits                            | ecs:cloudServerQuotas:get | ``-``                |
 +----------------------------------------------------+---------------------------------------------------------------------+---------------------------+----------------------+
-| Querying Quotas of a Tenant (Native OpenStack API) | GET /v2/{project_id}/os-quota-sets/{project_id}?user_id={user_id}   | ecs:quotas:get            | -                    |
+| Querying Quotas of a Tenant (Native OpenStack API) | GET /v2/{project_id}/os-quota-sets/{project_id}?user_id={user_id}   | ecs:quotas:get            | ``-``                |
 |                                                    |                                                                     |                           |                      |
 |                                                    | GET /v2.1/{project_id}/os-quota-sets/{project_id}?user_id={user_id} |                           |                      |
 +----------------------------------------------------+---------------------------------------------------------------------+---------------------------+----------------------+
-| Querying Default Quotas (Native OpenStack API)     | GET /v2/{project_id}/os-quota-sets/{project_id}/defaults            | ecs:quotas:get            | -                    |
+| Querying Default Quotas (Native OpenStack API)     | GET /v2/{project_id}/os-quota-sets/{project_id}/defaults            | ecs:quotas:get            | ``-``                |
 |                                                    |                                                                     |                           |                      |
 |                                                    | GET /v2.1/{project_id}/os-quota-sets/{project_id}/defaults          |                           |                      |
 +----------------------------------------------------+---------------------------------------------------------------------+---------------------------+----------------------+
