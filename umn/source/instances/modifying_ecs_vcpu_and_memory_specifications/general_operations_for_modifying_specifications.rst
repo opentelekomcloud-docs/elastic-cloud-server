@@ -103,7 +103,7 @@ Perform the following operations in the event of a specifications modification f
 
 #. Log in to the management console.
 
-#. Under **Management & Deployment**, click **Cloud Trace Service**.
+#. Under **Management & Deployment**, select **Cloud Trace Service**.
 
 #. In the navigation pane on the left, choose **Trace List**.
 

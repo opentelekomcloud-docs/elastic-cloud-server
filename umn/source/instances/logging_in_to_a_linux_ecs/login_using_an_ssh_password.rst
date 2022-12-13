@@ -8,7 +8,7 @@ Login Using an SSH Password
 Scenarios
 ---------
 
-This section describes how to remotely log in to a Linux ECS using an SSH password from Windows and Linux, respectively.
+This section describes how to remotely log in to a Linux ECS using an SSH password from a Windows and a Linux server, respectively.
 
 .. important::
 
@@ -125,4 +125,4 @@ Logging In to the Linux ECS from a Local Linux Server
 
 To log in to the Linux ECS from a local Linux server, run the following command:
 
-**ssh** *EIP bound to the ECS*
+**ssh** **EIP bound to the ECS**

@@ -15,7 +15,7 @@ CBR protects your services by ensuring the security and consistency of your data
 Differences Between Cloud Server Backup and Cloud Disk Backup
 -------------------------------------------------------------
 
-You can back up ECS data using the Cloud Server Backup or Cloud Disk Backup function.
+You can back up ECS data using Cloud Server Backup or Cloud Disk Backup.
 
 -  Cloud Server Backup (recommended): Use this backup function if you want to back up the data of all EVS disks (system and data disks) on an ECS. This prevents data inconsistency caused by time difference in creating a backup.
 -  Cloud Disk Backup: Use this backup function if you want to back up the data of one or more EVS disks (system or data disk) on an ECS. This minimizes backup costs on the basis of data security.
