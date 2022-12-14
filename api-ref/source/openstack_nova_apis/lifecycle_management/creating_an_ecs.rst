@@ -124,7 +124,7 @@ Request
    |                         |                 |                    |                                                                                                                                                                                                                                                                                                                                                                             |
    |                         |                 |                    | .. note::                                                                                                                                                                                                                                                                                                                                                                   |
    |                         |                 |                    |                                                                                                                                                                                                                                                                                                                                                                             |
-   |                         |                 |                    |    ECS hostnames comply with `RFC952 <https://tools.ietf.org/html/rfc952>`__ and `RFC1123 <https://tools.ietf.org/html/rfc1123>`__ naming rules. It is recommended that you configure hostnames using digits, letters (case sensitive), and hyphens (-). Underscores (_) are converted into hyphens (-) by default.                                                         |
+   |                         |                 |                    |    ECS hostnames comply with `RFC952 <https://tools.ietf.org/html/rfc952>`__ and `RFC1123 <https://tools.ietf.org/html/rfc1123>`__ naming rules. It is recommended that you configure hostnames using digits, lowercase letters, and hyphens (-). Underscores (_) are converted into hyphens (-) by default.                                                                |
    +-------------------------+-----------------+--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | metadata                | No              | Map<String,String> | Specifies the ECS metadata. For details, see :ref:`Table 4 <en-us_topic_0068473331__en-us_topic_0057972661_table2373623012315>`.                                                                                                                                                                                                                                            |
    |                         |                 |                    |                                                                                                                                                                                                                                                                                                                                                                             |
@@ -290,6 +290,8 @@ Request
    +-----------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | boot_index            | String          | No              | Specifies whether it is a boot disk. **0** specifies a boot disk, and **-1** specifies a non-boot disk.                                                                                                                                                                                             |
    |                       |                 |                 |                                                                                                                                                                                                                                                                                                     |
+   |                       |                 |                 | If this parameter is not specified, the default value is **-1**.                                                                                                                                                                                                                                    |
+   |                       |                 |                 |                                                                                                                                                                                                                                                                                                     |
    |                       |                 |                 | .. note::                                                                                                                                                                                                                                                                                           |
    |                       |                 |                 |                                                                                                                                                                                                                                                                                                     |
    |                       |                 |                 |    If **source_type** of the volume device is **volume**, there must be one **boot_index** whose value is **0**.                                                                                                                                                                                    |
@@ -448,17 +450,17 @@ Response
    name      String Specifies the security group name or UUID.
    ========= ====== ==========================================
 
-Example Request (Creating an ECS)
----------------------------------
+Example Request
+---------------
 
-Example URL request
+Creating an ECS
 
 .. code-block:: text
 
    POST https://{endpoint}/v2/9c53a566cb3443ab910cf0daebca90c4/servers
    POST https://{endpoint}/v2.1/9c53a566cb3443ab910cf0daebca90c4/servers
 
-**Example 1: Use an image to create an ECS through the API block_device_mapping_v2.**
+Example 1: Use an image to create an ECS through the API block_device_mapping_v2.
 
 .. code-block::
 
@@ -493,7 +495,7 @@ Example URL request
        }
    }
 
-**Example 2: Use a snapshot to create an ECS through the API block_device_mapping_v2.**
+Example 2: Use a snapshot to create an ECS through the API block_device_mapping_v2.
 
 .. note::
 
@@ -524,7 +526,7 @@ Example URL request
        }
    }
 
-**Example 3: Use a disk to create an ECS through the API block_device_mapping_v2.**
+Example 3: Use a disk to create an ECS through the API block_device_mapping_v2.
 
 .. code-block::
 
@@ -559,7 +561,7 @@ Example URL request
        }
    }
 
-**Example 4: Create an ECS through the API imageRef.**
+Example 4: Create an ECS through the API imageRef.
 
 .. code-block::
 
@@ -587,8 +589,31 @@ Example URL request
        }
    }
 
-Example Response (Creating an ECS)
-----------------------------------
+Creating ECSs in a batch:
+
+.. code-block::
+
+   {
+       "server": {
+           "availability_zone":"az1.dc1",
+           "name": "test",
+           "imageRef": "10ff4f01-35b6-4209-8397-359cb4475fa0",
+           "flavorRef": "s3.medium",
+           "return_reservation_id": "true",
+           "networks": [
+               {
+                   "uuid": "51bead38-d1a3-4d08-be20-0970c24b7cab"
+               }
+           ],
+           "min_count": "2",
+           "max_count": "3"
+       }
+   }
+
+Example response
+----------------
+
+Creating an ECS
 
 .. code-block::
 
@@ -615,30 +640,7 @@ Example Response (Creating an ECS)
        }
    }
 
-Example Request (Creating ECSs in a Batch)
-------------------------------------------
-
-.. code-block::
-
-   {
-       "server": {
-           "availability_zone":"az1.dc1",
-           "name": "test",
-           "imageRef": "10ff4f01-35b6-4209-8397-359cb4475fa0",
-           "flavorRef": "s3.medium",
-           "return_reservation_id": "true",
-           "networks": [
-               {
-                   "uuid": "51bead38-d1a3-4d08-be20-0970c24b7cab"
-               }
-           ],
-           "min_count": "2",
-           "max_count": "3"
-       }
-   }
-
-Example Response (Creating ECSs in a Batch)
--------------------------------------------
+Creating ECSs in a batch:
 
 .. code-block::
 
