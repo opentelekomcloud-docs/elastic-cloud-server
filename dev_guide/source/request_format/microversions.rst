@@ -107,7 +107,7 @@ For example, you are required to use the API for details about an ECS to view th
                "metadata": {},
                "OS-EXT-STS:task_state": null,
                "OS-DCF:diskConfig": "MANUAL",
-               "OS-EXT-AZ:availability_zone": "eu-de-01",
+               "OS-EXT-AZ:availability_zone":"az1-dc1",
                "links": [
                  {
                    "rel": "self",
