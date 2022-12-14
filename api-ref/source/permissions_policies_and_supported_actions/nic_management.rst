@@ -14,9 +14,11 @@ NIC Management
 +--------------------------------------------------------------+----------------------------------------------------------------------+----------------------------+--------------------------+
 | Updating NIC Attachment to an ECS                            | PUT /v1/{project_id}/cloudservers/{server_id}/os-interface/{port_id} | ecs:cloudServerNics:update | N/A                      |
 +--------------------------------------------------------------+----------------------------------------------------------------------+----------------------------+--------------------------+
-| Adding an ECS NIC (Native OpenStack API)                     | POST /v2/{project_id}/servers/{server_id}/os-interface               | ecs:serverInterfaces:use   | ecs:serverInterfaces:get |
+| Adding an ECS NIC (Native OpenStack API)                     | POST /v2/{project_id}/servers/{server_id}/os-interface               | ecs:serverInterfaces:use   | ecs:servers:get          |
 |                                                              |                                                                      |                            |                          |
-|                                                              | POST /v2.1/{project_id}/servers/{server_id}/os-interface             |                            | vpc:networks:get         |
+|                                                              | POST /v2.1/{project_id}/servers/{server_id}/os-interface             |                            | ecs:serverInterfaces:get |
+|                                                              |                                                                      |                            |                          |
+|                                                              |                                                                      |                            | vpc:networks:get         |
 |                                                              |                                                                      |                            |                          |
 |                                                              |                                                                      |                            | vpc:networks:update      |
 |                                                              |                                                                      |                            |                          |

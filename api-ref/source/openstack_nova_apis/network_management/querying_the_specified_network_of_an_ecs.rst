@@ -89,7 +89,7 @@ Example Response
 .. code-block::
 
    {
-       "demo_net": [
+       "Name of the network where the ECS accesses": [
            {
                "version": 4,
                "addr": "10.0.0.4"
