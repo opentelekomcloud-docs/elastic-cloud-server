@@ -120,8 +120,10 @@ Response
    |                       |                       | This parameter is supported in microversion 2.2 and later.                                          |
    +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------+
 
-Example Request (Importing an SSH Key)
---------------------------------------
+Example Request
+---------------
+
+Importing an SSH Key
 
 .. code-block:: text
 
@@ -139,8 +141,7 @@ Example Request (Importing an SSH Key)
        }
    }
 
-Example Request (Creating an SSH Key)
--------------------------------------
+Creating an SSH Key
 
 .. code-block:: text
 
@@ -155,8 +156,10 @@ Example Request (Creating an SSH Key)
        }
    }
 
-Example Response (Importing an SSH Key)
----------------------------------------
+Example response
+----------------
+
+Importing an SSH Key
 
 .. code-block::
 
@@ -169,8 +172,7 @@ Example Response (Importing an SSH Key)
        }
    }
 
-Example Response (Creating an SSH Key)
---------------------------------------
+Creating an SSH Key
 
 .. code-block::
 

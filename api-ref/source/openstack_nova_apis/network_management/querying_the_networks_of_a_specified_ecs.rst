@@ -92,17 +92,7 @@ Example Response
 
    {
        "addresses": {
-           "demo_net": [
-               {
-                   "version": 4,
-                   "addr": "10.0.0.4"
-               },
-               {
-                   "version": 4,
-                   "addr": "192.150.73.132"
-               }
-           ],
-           "private_net": [
+           "Name of the network where the ECS accesses": [
                {
                    "version": 4,
                    "addr": "10.176.42.16"
