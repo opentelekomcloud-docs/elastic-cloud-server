@@ -20,7 +20,7 @@ Accessing the ECS Creation Page
 
    .. note::
 
-      SAP High-Performance Analytic Appliance (HANA) is a high-performance real-time data computing platform based on memory computing technologies. The public cloud provides high-performance IaaS services that comply with SAP HANA requirements. These services help you rapidly request for SAP HANA resources (such as applying for HANA ECSs and public IP addresses) and install and configure SAP HANA, therefore improving your operation efficiency, reducing operation costs, and enhancing your experience.
+      SAP High-Performance Analytic Appliance (HANA) is a high-performance real-time data computing platform based on memory computing technologies. The cloud platform provides high-performance IaaS services that comply with SAP HANA requirements. These services help you rapidly request for SAP HANA resources (such as applying for HANA ECSs and public IP addresses) and install and configure SAP HANA, therefore improving your operation efficiency, reducing operation costs, and enhancing your experience.
 
       HANA ECSs are dedicated for SAP HANA. If you want to deploy SAP HANA on cloud servers, create HANA ECSs.
 
@@ -56,9 +56,9 @@ Performing Basic Configurations
 
 #. Set **Specifications**.
 
-   The public cloud provides various ECS types for different application scenarios. You can choose from existing ECS types and flavors in the list. Alternatively, you can enter a flavor or specify vCPUs and memory size to search for the flavor suited to your needs.
+   The cloud platform provides various ECS types for different application scenarios. You can choose from existing ECS types and flavors in the list. Alternatively, you can enter a flavor or specify vCPUs and memory size to search for the flavor suited to your needs.
 
-   **Latest generation** shows the types and flavors of newly released ECSs, and **All generations** show the types and flavors of all ECSs provided by the public cloud.
+   **Latest generation** shows the types and flavors of newly released ECSs, and **All generations** show the types and flavors of all ECSs provided by the cloud platform.
 
    .. note::
 
@@ -106,7 +106,7 @@ Performing Basic Configurations
 
    -  Using License from the System
 
-      Allows you to use the license provided by the public cloud platform. Obtaining the authorization of such a license is billed.
+      Allows you to use the license provided by the cloud service platform. Obtaining the authorization of such a license is billed.
 
    -  Bring your own license (BYOL)
 
@@ -126,9 +126,9 @@ Performing Basic Configurations
 
    -  Data disk
 
-      You can create multiple data disks for an ECS and enable required functions for each data disk. When creating an ECS, you can add up to 24 disks with customized sizes to it. After the ECS is created, you can add up to 60 disks to it.
+      You can create multiple data disks for an ECS and enable required functions for each data disk. When creating an ECS, you can add up to 23 data disks with customized sizes to it. After the ECS is created, you can add up to 23 VBD disks or 59 SCSI disks to it.
 
-      Click |image2| and set the following functions if required:
+      Click **Show** |image2| and set the following functions if required:
 
       -  **SCSI**: indicates that the device type of the data disk is SCSI if you select this option. For more information about SCSI disks and the ECSs that can be attached with SCSI disks, see :ref:`EVS Disks <en-us_topic_0030828256>`.
 
@@ -150,12 +150,12 @@ Performing Basic Configurations
 
       (Optional) Encryption-related parameters
 
-      To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permission, assign the KMS access permissions to EVS. If you do not have the permission, contact the user having the security administrator rights to assign the KMS access permissions. For more details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
+      To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permission, assign the KMS access permissions to EVS. If you do not have the permission, contact the user having the security administrator rights to assign the KMS access permissions. For details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
 
       -  **Encryption**: indicates that the EVS disk has been encrypted.
       -  **Create Xrole**: assigns KMS access permissions to EVS to obtain KMS keys. After the permissions are assigned, follow-up operations do not require assigning permissions again.
-      -  **KMS Key Name**: specifies the name of the key used by the encrypted EVS disk. You can select an existing key, or click **Create KMS Key** and create a new one on the KMS console. The default value is **evs/default**.
       -  **Xrole Name: EVSAccessKMS**: specifies that permissions have been assigned to EVS to obtain KMS keys for encrypting or decrypting EVS disks.
+      -  **KMS Key Name**: specifies the name of the key used by the encrypted EVS disk. You can select an existing key, or click **Create KMS Key** and create a new one on the KMS console. The default value is **evs/default**.
       -  **KMS Key ID**: specifies the ID of the key used by the encrypted data disk.
 
 #. Click **Next: Configure Network**.

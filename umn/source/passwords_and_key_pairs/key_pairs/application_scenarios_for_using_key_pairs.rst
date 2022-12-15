@@ -10,7 +10,7 @@ Key Pairs
 
 Key pairs are a set of security credentials for identity authentication when you remotely log in to ECSs.
 
-A key pair consists of a public key and a private key. ECS stores the public key and you store the private key. If you have imported a public key into a Linux ECS, you can use the corresponding private key to log in to the ECS without a password. Therefore, you do not need to worry about password interception, cracking, or leakage.
+A key pair consists of a public key and a private key. Key Pair Service (KPS) stores the public key and you store the private key. If you have imported a public key into a Linux ECS, you can use the corresponding private key to log in to the ECS without a password. Therefore, you do not need to worry about password interception, cracking, or leakage.
 
 Scenarios
 ---------

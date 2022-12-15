@@ -15,7 +15,7 @@ Disk Types
 
 EVS disk types differ in performance. Choose the disk type based on your requirements.
 
-For more information about EVS disk specifications and performance, see *Elastic Volume Service User Guide*.
+For more information about EVS disk specifications and performance, see "Disk Types and Performance" in the *Elastic Volume Service User Guide*.
 
 Device Types
 ------------

@@ -23,9 +23,9 @@ Procedure for a Single ECS
 
 #. Click the name of the target ECS.
 
-#. On the page providing details about the ECS, click |image2| following the ECS name. Then, change the name as prompted.
+#. On the page providing details about the ECS, click |image2| next to the ECS name. Then, change the name as prompted.
 
-   **Allow duplicate ECS name**: allows ECS names to be duplicate. If **Allow duplicate ECS name** is not selected and the target name is the same as an existing ECS name, the system displays a message indicating that the name has been used and you need to change another name.
+   **Allow duplicate name**: allows ECS names to be duplicate. If **Allow duplicate name** is not selected and the target name is the same as an existing ECS name, the system displays a message indicating that the name has been used and you need to change another name.
 
 #. Click **OK**.
 
@@ -40,7 +40,7 @@ Procedure for Batch Operations
 
 #. Select the target ECSs.
 
-#. Click **More** in the upper part of the ECS list and select **Change ECS Name** from the drop-down list.
+#. Click **More** above the ECS list and select **Change ECS Name** from the drop-down list.
 
 #. Enter the new name.
 

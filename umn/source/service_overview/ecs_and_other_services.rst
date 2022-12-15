@@ -55,4 +55,4 @@ ECS-related Services
 
 -  Tag Management Service (TMS)
 
-   A tag identifies an ECS. Adding tags to an ECS facilitates ECS identification and management.
+   Tags can be used to identify ECSs for easy management.

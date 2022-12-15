@@ -262,34 +262,34 @@ This case illustrates how to use the user data passing function to set the passw
 
 User data example:
 
--  Using a ciphertext password (recommended)
+Using a ciphertext password (recommended)
+
+.. code-block::
+
+   #!/bin/bash
+   echo 'root:$6$V6azyeLwcD3CHlpY$BN3VVq18fmCkj66B4zdHLWevqcxlig' | chpasswd -e;
+
+In the preceding command output, **$6$V6azyeLwcD3CHlpY$BN3VVq18fmCkj66B4zdHLWevqcxlig** is the ciphertext password, which can be generated as follows:
+
+#. Run the following command to generate an encrypted ciphertext value:
+
+   **python -c "import crypt, getpass, pwd;print crypt.mksalt()"**
+
+   The following information is displayed:
 
    .. code-block::
 
-      #!/bin/bash
-      echo 'root:$6$V6azyeLwcD3CHlpY$BN3VVq18fmCkj66B4zdHLWevqcxlig' | chpasswd -e;
+      $6$V6azyeLwcD3CHlpY
 
-   In the preceding command output, **$6$V6azyeLwcD3CHlpY$BN3VVq18fmCkj66B4zdHLWevqcxlig** is the ciphertext password, which can be generated as follows:
+#. Run the following command to generate a ciphertext password based on the salt value:
 
-   #. Run the following command to generate an encrypted ciphertext value:
+   **python -c "import crypt, getpass, pwd;print crypt.crypt('Cloud.1234','\\$6\\$V6azyeLwcD3CHlpY')"**
 
-      **python -c "import crypt, getpass, pwd;print crypt.mksalt()"**
+   The following information is displayed:
 
-      The following information is displayed:
+   .. code-block::
 
-      .. code-block::
-
-         $6$V6azyeLwcD3CHlpY
-
-   #. Run the following command to generate a ciphertext password based on the salt value:
-
-      **python -c "import crypt, getpass, pwd;print crypt.crypt('Cloud.1234','\\$6\\$V6azyeLwcD3CHlpY')"**
-
-      The following information is displayed:
-
-      .. code-block::
-
-         $6$V6azyeLwcD3CHlpY$BN3VVq18fmCkj66B4zdHLWevqcxlig
+      $6$V6azyeLwcD3CHlpY$BN3VVq18fmCkj66B4zdHLWevqcxlig
 
 After the ECS is created, you can use the password to log in to it.
 
