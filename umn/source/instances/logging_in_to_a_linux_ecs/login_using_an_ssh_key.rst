@@ -8,7 +8,7 @@ Login Using an SSH Key
 Scenarios
 ---------
 
-This section describes how to remotely log in to a Linux ECS using an SSH key pair from Windows and Linux, respectively.
+This section describes how to remotely log in to a Linux ECS using an SSH key pair from a Windows and a Linux server, respectively.
 
 Prerequisites
 -------------
@@ -21,8 +21,8 @@ Prerequisites
 
 .. _en-us_topic_0017955380__section47918167111724:
 
-Logging In to the Linux ECS from Local Windows
-----------------------------------------------
+Logging In to the Linux ECS from Local Windows Server
+-----------------------------------------------------
 
 To log in to the Linux ECS from local Windows, perform the operations described in this section.
 
@@ -88,7 +88,7 @@ The following operations use PuTTY as an example. Before logging in to the ECS u
 
 #. Run the following command using the EIP to remotely log in to the ECS through SSH:
 
-   **ssh** *Username*\ **@**\ *EIP*
+   **ssh** **Username**\ **@\ EIP**
 
    .. note::
 
@@ -113,8 +113,8 @@ The following operations use PuTTY as an example. Before logging in to the ECS u
 
 .. _en-us_topic_0017955380__section3666784111724:
 
-Logging In to the Linux ECS from Local Linux
---------------------------------------------
+Logging In to the Linux ECS from Local Linux Server
+---------------------------------------------------
 
 To log in to the Linux ECS from local Linux, perform the operations described in this section. The following operations use private key file **kp-123.pem** as an example to log in to the ECS. The name of your private key file may differ.
 
@@ -128,7 +128,7 @@ To log in to the Linux ECS from local Linux, perform the operations described in
 
 #. Run the following command to log in to the ECS:
 
-   **ssh -i /**\ *path*\ **/kp-123.pem** *Default username*\ **@**\ *EIP*
+   **ssh -i /path/kp-123.pem** **Default username**\ **@**\ **EIP**
 
    For example, if the default username is **root** and the EIP is **123.123.123.123**, run the following command:
 

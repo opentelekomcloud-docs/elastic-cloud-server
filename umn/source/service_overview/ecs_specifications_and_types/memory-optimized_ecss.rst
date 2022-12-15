@@ -111,8 +111,8 @@ Notes
    | Oracle Linux                      | -  Oracle Linux Server release 8.4 64bit            |
    |                                   | -  Oracle Linux Server release 7.6 64bit            |
    +-----------------------------------+-----------------------------------------------------+
-   | RedHat                            | -  Redhat Linux Enterprise 7.9 64bit                |
-   |                                   | -  Redhat Linux Enterprise 6.10 64bit               |
+   | Red Hat                           | -  Red Hat Enterprise Linux 7.9 64bit               |
+   |                                   | -  Red Hat Enterprise Linux 6.10 64bit              |
    +-----------------------------------+-----------------------------------------------------+
    | Rocky                             | Rocky 8 64bit                                       |
    +-----------------------------------+-----------------------------------------------------+
