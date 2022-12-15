@@ -137,4 +137,8 @@ The following procedure uses an ECS running CentOS 7.3 as an example. The defaul
 
    Use port 2020 to remotely log in to the ECS.
 
-#. Use "IP address:Port" to remotely access the ECS.
+#. Run the following command to check whether the port is open:
+
+   **telnet EIP Port**
+
+   For example: **telnet xx.xx.xx.xx 2020**

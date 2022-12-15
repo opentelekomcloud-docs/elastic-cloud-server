@@ -8,7 +8,7 @@ General-Purpose ECSs
 Overview
 --------
 
-General-purpose ECSs provide a balance of computing, memory, and network resources and a baseline level of vCPU performance with the ability to burst above the baseline. These ECSs are suitable for applications with general workloads, such as web servers, enterprise R&D, and small-scale databases.
+General-purpose ECSs provide a balance of compute, memory, and network resources and a baseline level of vCPU performance with the ability to burst above the baseline. These ECSs are suitable for applications with general workloads, such as web servers, enterprise R&D, and small-scale databases.
 
 S3 ECSs are suitable for applications that require moderate performance generally but occasionally burstable high performance, such as light-workload web servers, enterprise R&D and testing environments, and low- and medium-performance databases.
 
@@ -172,8 +172,8 @@ Notes
    | Oracle Linux                      | -  Oracle Linux Server release 8.4 64bit            |
    |                                   | -  Oracle Linux Server release 7.6 64bit            |
    +-----------------------------------+-----------------------------------------------------+
-   | RedHat                            | -  Redhat Linux Enterprise 7.9 64bit                |
-   |                                   | -  Redhat Linux Enterprise 6.10 64bit               |
+   | Red Hat                           | -  Red Hat Enterprise Linux 7.9 64bit               |
+   |                                   | -  Red Hat Enterprise Linux 6.10 64bit              |
    +-----------------------------------+-----------------------------------------------------+
    | Rocky                             | Rocky 8 64bit                                       |
    +-----------------------------------+-----------------------------------------------------+

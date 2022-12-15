@@ -8,7 +8,7 @@ License Type
 Using License from the System
 -----------------------------
 
-You can use the license provided by the public cloud platform. After creating an ECS with a license authorized, you can use the authorized OS. The platform manages license compliance for you.
+You can use OS licenses provided by the cloud platform. After creating an ECS with a license authorized, you can use the authorized OS. The platform manages license compliance for you.
 
 BYOL
 ----
@@ -19,7 +19,7 @@ Bring your own license (BYOL) allows you to use your existing OS license. In suc
 
 **How to Use BYOL?**
 
-If you select the BYOL license type, you are required to manage licenses by yourself. The public cloud platform provides functions for you to maintain license compliance during the license lifecycle, for example, deploying ECSs on DeHs. If you have obtained an OS license, you do not need to apply for a license any more.
+If you select the BYOL license type, you are required to manage licenses by yourself. The cloud platform provides functions for you to maintain license compliance during the license lifecycle, for example, deploying ECSs on DeHs. If you have obtained an OS license, you do not need to apply for a license any more.
 
 The OSs supporting BYOL are as follows:
 
