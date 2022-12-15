@@ -39,11 +39,21 @@ POST /v2/{project_id}/servers/{server_id}/action
 Request
 -------
 
-:ref:`Table 2 <en-us_topic_0028714261__table2242889516457>` describes the request parameters.
+:ref:`Table 2 <en-us_topic_0028714261__table3529164221216>` describes the request parameters.
+
+.. _en-us_topic_0028714261__table3529164221216:
+
+.. table:: **Table 2** Request parameters
+
+   +-----------+-----------+--------+----------------------------------------------------------------------------------------------------------------------+
+   | Parameter | Mandatory | Type   | Description                                                                                                          |
+   +===========+===========+========+======================================================================================================================+
+   | resize    | Yes       | Object | For details about how to modify ECS specifications, see :ref:`Table 3 <en-us_topic_0028714261__table2242889516457>`. |
+   +-----------+-----------+--------+----------------------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0028714261__table2242889516457:
 
-.. table:: **Table 2** Request parameters
+.. table:: **Table 3** **resize** field description
 
    ========= ========= ====== ===================================
    Parameter Mandatory Type   Description
@@ -68,7 +78,7 @@ Example Request
 
    {
        "resize" : {
-           "flavorRef" : "s6.medium.2"
+           "flavorRef" : "s3.medium.2"
        }
    }
 

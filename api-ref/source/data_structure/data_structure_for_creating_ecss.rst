@@ -50,10 +50,6 @@ This field is used by the following APIs:
    |                       |                 |                 | -  **false**: The EIP is not released when the ECS is deleted.                                       |
    |                       |                 |                 |                                                                                                      |
    |                       |                 |                 | The default value is **false**.                                                                      |
-   |                       |                 |                 |                                                                                                      |
-   |                       |                 |                 | .. note::                                                                                            |
-   |                       |                 |                 |                                                                                                      |
-   |                       |                 |                 |    This parameter is available only for pay-per-use EIPs.                                            |
    +-----------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------+
 
 .. note::
@@ -99,7 +95,7 @@ This field is used by the following APIs:
    |                 |                 |                 |                                                                                                                                     |
    |                 |                 |                 | For details about the enumerated values, see the **publicip** field in "Assigning an EIP" in *Virtual Private Cloud API Reference*. |
    +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
-   | bandwidth       | Yes             | Object          | Specifies the EIP bandwidth.                                                                                                        |
+   | bandwidth       | Yes             | Object          | Specifies the bandwidth of an EIP.                                                                                                  |
    |                 |                 |                 |                                                                                                                                     |
    |                 |                 |                 | For details, see :ref:`bandwidth Field Description <en-us_topic_0167957246__section172789339448>`.                                  |
    +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+

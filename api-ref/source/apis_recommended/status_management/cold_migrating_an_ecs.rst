@@ -85,15 +85,15 @@ Example Request
            "dedicated_host_id": "459a2b9d-804a-4745-ab19-a113bb1b4ddc"
        }
    }
-   Or
-   {
-       "migrate": null
-   }
 
 Example Response
 ----------------
 
-None
+.. code-block::
+
+   {
+       "job_id": "70a599e0-31e7-49b7-b260-868f441e862b"
+   }
 
 Returned Values
 ---------------
