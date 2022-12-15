@@ -54,14 +54,14 @@ Procedure
 
 #. (Optional) Select the **Encryption** option to encrypt the system disk during OS reinstallation.
 
-   To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permission, assign the KMS access permissions to EVS. If you do not have the permission, contact the user having the security administrator rights to assign the KMS access permissions. For more details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
+   To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permission, assign the KMS access permissions to EVS. If you do not have the permission, contact the user having the security administrator rights to assign the KMS access permissions. For details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
 
    Encryption parameters are as follows:
 
    -  **Encryption**: indicates that the EVS disk has been encrypted.
    -  **Create Xrole**: assigns KMS access permissions to EVS to obtain KMS keys. After the permissions are assigned, follow-up operations do not require assigning permissions again.
-   -  **KMS Key Name**: specifies the name of the key used by the encrypted EVS disk. You can select an existing key, or click **Create KMS Key** and create a new one on the KMS console. The default value is **evs/default**.
    -  **Xrole Name: EVSAccessKMS**: specifies that permissions have been assigned to EVS to obtain KMS keys for encrypting or decrypting EVS disks.
+   -  **KMS Key Name**: specifies the name of the key used by the encrypted EVS disk. You can select an existing key, or click **Create KMS Key** and create a new one on the KMS console. The default value is **evs/default**.
    -  **KMS Key ID**: specifies the ID of the key used by the encrypted data disk.
 
 #. (Optional) Select a **License Type** (**Use license from the system** or **Bring your own license (BYOL)**) if the reinstalled OS running on your ECS is billed. For more details, see :ref:`License Type <en-us_topic_0046566932>`.
@@ -91,7 +91,7 @@ Procedure
 Follow-up Procedure
 -------------------
 
-If the reinstallation is unsuccessful, perform steps :ref:`3 <en-us_topic_0024911405__li20776247143354>` to :ref:`9 <en-us_topic_0024911405__li31062819143541>` again to retry reinstalling the OS again.
+If the reinstallation is unsuccessful, perform steps :ref:`3 <en-us_topic_0024911405__li20776247143354>` to :ref:`9 <en-us_topic_0024911405__li31062819143541>` again to retry the OS installation.
 
 If the second reinstallation attempt is unsuccessful, contact customer service for manual recovery at the backend.
 

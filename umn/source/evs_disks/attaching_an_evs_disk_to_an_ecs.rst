@@ -42,7 +42,7 @@ Procedure
 
       **Figure 1** Attach Disk
 
-#. Select the target disk, specify the disk as the system disk or data disk.
+#. Select the target disk and specify the disk as the system disk or data disk
 
    .. note::
 

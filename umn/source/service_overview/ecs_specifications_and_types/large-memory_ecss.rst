@@ -69,7 +69,7 @@ Notes
       | Oracle Linux                      | -  Oracle Linux Server release 8.4 64bit            |
       |                                   | -  Oracle Linux Server release 7.6 64bit            |
       +-----------------------------------+-----------------------------------------------------+
-      | RedHat                            | Redhat Linux Enterprise 7.9 64bit                   |
+      | Red Hat                           | Red Hat Enterprise Linux 7.9 64bit                  |
       +-----------------------------------+-----------------------------------------------------+
       | SUSE                              | -  Novell SUSE Linux Enterprise Server 15 SP3 64bit |
       |                                   | -  Novell SUSE Linux Enterprise Server 15 SP2 64bit |
