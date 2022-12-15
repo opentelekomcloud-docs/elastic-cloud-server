@@ -58,7 +58,13 @@ Procedure
 
       **fdisk -l**
 
-   c. Run the following commands in the directory where the script is stored to run the script for resetting the password:
+
+      .. figure:: /_static/images/en-us_image_0000001384584706.png
+         :alt: **Figure 1** Viewing the directory of the system disk
+
+         **Figure 1** Viewing the directory of the system disk
+
+   c. Run the following commands in the directory where the **changepasswd.sh** script is stored to run the script for resetting the password:
 
       **chmod +x changepasswd.sh**
 
@@ -106,6 +112,6 @@ Procedure
 
    c. On the page providing details about the original Linux ECS, click the **Disks** tab.
 
-   d. Click **Attach Disk**. In the displayed dialog box, select the data disk detached in step :ref:`5.b <en-us_topic_0021427650__li964031614447>` and device name **/dev/sda**.
+   d. Click **Attach Disk**. In the displayed dialog box, select the data disk detached in :ref:`5.b <en-us_topic_0021427650__li964031614447>`.
 
    e. Restart the original Linux ECS.

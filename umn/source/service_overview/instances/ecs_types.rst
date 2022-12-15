@@ -5,7 +5,7 @@
 ECS Types
 =========
 
-The public cloud provides the following ECS types for different application scenarios:
+The cloud platform provides the following ECS types for different application scenarios:
 
 -  General-purpose
 -  Dedicated general-purpose

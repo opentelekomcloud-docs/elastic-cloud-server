@@ -12,7 +12,7 @@ To ensure platform security and conserve EIPs, EIPs are assigned only to specifi
 
 .. note::
 
-   NAT Gateway is recommended, which provides both the SNAT and DNAT functions for your ECSs in a VPC and allows the ECSs to access or provide services accessible from the Internet.
+   NAT Gateway is recommended, which provides both the SNAT and DNAT functions for your ECSs in a VPC and allows the ECSs to access or provide services accessible from the Internet. For details, see `NAT Gateway User Guide <https://docs.otc.t-systems.com/usermanual/nat/nat_pro_0000.html>`__.
 
 Prerequisites
 -------------
@@ -35,7 +35,7 @@ In this example, the proxy ECS runs CentOS 6.5.
 
 #. Click the name of the proxy ECS. The page providing details about the ECS is displayed.
 
-#. Click the **Network Interfaces** tab and then |image2|. Then, disable **Source/Destination Check**.
+#. On the **Network Interfaces** tab, click |image2|. Then, disable **Source/Destination Check**.
 
    By default, the source/destination check function is enabled. When this function is enabled, the system checks whether source IP addresses contained in the packets sent by ECSs are correct. If the IP addresses are incorrect, the system does not allow the ECSs to send the packets. This mechanism prevents packet spoofing, thereby improving system security. However, this mechanism prevents the packet sender from receiving returned packets. Therefore, disable the source/destination check.
 

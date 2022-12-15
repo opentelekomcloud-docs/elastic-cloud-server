@@ -23,9 +23,11 @@ Procedure
 
 #. On the **Key Pair Service** page, click **Create Key Pair**.
 
-#. Enter a key pair name and click **OK**.
+#. Enter a key pair name.
 
-   The default key pair name consists of **KeyPair-** and four random characters in the "KeyPair-*xxxx*" format. Change it to an easy-to-remember one, for example, **KeyPair-xxxx_ecs**.
+   A key pair name consists of two parts: KeyPair and four random digits (KeyPair-xxxx).
+
+#. Click **OK**.
 
 #. Manually or automatically download a .pem private key file with the name that you specify as the key name. Store it in a secure place and click **OK**.
 

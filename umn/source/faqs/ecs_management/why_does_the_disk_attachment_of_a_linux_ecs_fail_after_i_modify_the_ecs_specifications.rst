@@ -64,7 +64,7 @@ Procedure
 
       Ensure that **/mnt/vbd1** is empty. Otherwise, the attachment will fail.
 
-#. Run the following commands to check whether the numbers of disks before and after specifications modification are the same:
+#. Run the following commands to check whether the numbers of disks before and after specifications modifications are the same:
 
    **fdisk -l** **\| grep 'Disk /dev/'**
 
@@ -80,4 +80,4 @@ Procedure
 
       **Figure 3** Checking the number of disks attached
 
-   As shown in :ref:`Figure 3 <en-us_topic_0214940106__en-us_topic_0120890833_fig722411124917>`, the numbers of disks before and after specifications modification are the same. The disks are **/dev/vda**, **/dev/vdb**, and **/dev/vdc**.
+   As shown in :ref:`Figure 3 <en-us_topic_0214940106__en-us_topic_0120890833_fig722411124917>`, the numbers of disks before and after specifications modifications are the same. The disks are **/dev/vda**, **/dev/vdb**, and **/dev/vdc**.
