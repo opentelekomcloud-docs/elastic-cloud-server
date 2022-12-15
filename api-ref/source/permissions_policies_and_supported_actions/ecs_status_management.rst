@@ -16,6 +16,10 @@ ECS Status Management
 +---------------------------------------------------------------+------------------------------------------------------------+---------------------------+----------------------+
 | Cold Migrating an ECS                                         | POST /v1/{project_id}/cloudservers/{server_id}/migrate     | ecs:cloudServers:migrate  | N/A                  |
 +---------------------------------------------------------------+------------------------------------------------------------+---------------------------+----------------------+
+| Starting an ECS (Native OpenStack API)                        | POST /v2/{project_id}/servers/{server_id}/action           | ecs:servers:start         | ecs:servers:list     |
+|                                                               |                                                            |                           |                      |
+|                                                               | POST /v2.1/{project_id}/servers/{server_id}/action         |                           |                      |
++---------------------------------------------------------------+------------------------------------------------------------+---------------------------+----------------------+
 | Stopping an ECS (Native OpenStack API)                        | POST /v2/{project_id}/servers/{server_id}/action           | ecs:servers:stop          | ecs:servers:list     |
 |                                                               |                                                            |                           |                      |
 |                                                               | POST /v2.1/{project_id}/servers/{server_id}/action         |                           |                      |
@@ -27,6 +31,8 @@ ECS Status Management
 | Modifying the Specifications of an ECS (Native OpenStack API) | POST /v2.1/{project_id}/servers/{server_id}/action         | ecs:servers:resize        | ecs:servers:list     |
 |                                                               |                                                            |                           |                      |
 |                                                               | POST /v2.1/{project_id}/servers/{server_id}/action         |                           | ecs:flavors:get      |
+|                                                               |                                                            |                           |                      |
+|                                                               |                                                            |                           | ims:images:get       |
 |                                                               |                                                            |                           |                      |
 |                                                               |                                                            |                           | evs:volumes:list     |
 |                                                               |                                                            |                           |                      |

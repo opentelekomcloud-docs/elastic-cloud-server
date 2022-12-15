@@ -61,7 +61,7 @@ OSs Supporting EVS Disk Detachment from a Running ECS
 
 OSs supporting EVS disk detachment from a running ECS include two parts:
 
--  For the first part, see `Formats and OSs Supported for External Image Files <https://docs.otc.t-systems.com/en-us/usermanual/ims/en-us_topic_0030713143.html>`__.
+-  For the first part, see `External Image File Formats and Supported OSs <https://docs.otc.t-systems.com/en-us/usermanual/ims/en-us_topic_0030713143.html>`__.
 
 -  :ref:`Table 1 <en-us_topic_0036046828__table9271324195455>` lists the second part of supported OSs.
 

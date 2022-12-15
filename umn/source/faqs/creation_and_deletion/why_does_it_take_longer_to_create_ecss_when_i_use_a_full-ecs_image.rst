@@ -20,8 +20,8 @@ If your full-ECS image is in the old backup format provided by CSBS, this issue 
    -  CSBS has a new backup format. You can rapidly create ECSs if the full-ECS image is in this format
    -  This issue does not occur if a full-ECS image is created using a CBR backup.
 
-Solution Using CBR
-------------------
+Solution (Using CBR)
+--------------------
 
 If you want to use a full-ECS image to rapidly create ECSs, ensure that the full-ECS image is created using a CSBS backup in the new format. The procedure is as follows:
 
@@ -46,7 +46,7 @@ If you want to use a full-ECS image to rapidly create ECSs, ensure that the full
 
       You can use the full-ECS image to rapidly create ECSs.
 
-Solution( Using CSBS)
+Solution (Using CSBS)
 ---------------------
 
 If you want to use a full-ECS image to rapidly create ECSs, ensure that the full-ECS image is created using a CSBS backup in the new format. The procedure is as follows:
