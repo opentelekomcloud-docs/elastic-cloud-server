@@ -10,7 +10,7 @@ An Elastic Cloud Server (ECS) is a basic computing unit that consists of vCPUs, 
 ECSs support self-service creation, modification, and operation. You can create an ECS by specifying its vCPUs, memory, OS, and login mode. After an ECS is created, you can modify its specifications if necessary. ECS works with other services to provide a reliable, secure, efficient computing environment.
 
 -  For details about the operating systems supported by ECS, see :ref:`Image Types <en-us_topic_0030828254>`.
--  For details about login modes, see :ref:`Logging In to an ECS <en-us_topic_0092494193>`.
+-  For details about the login authentication mode, see :ref:`Logging In to an ECS <en-us_topic_0092494193>`.
 
 System Architecture
 -------------------
@@ -34,14 +34,14 @@ ECS works with other products and services to provide computing, storage, and ne
 Access Methods
 --------------
 
-The public cloud provides a web-based service management platform. You can access ECSs through HTTPS-compliant application programming interfaces (APIs) or the management console.
+You can access ECS through the web-based management console or HTTPS-based application programming interfaces (APIs).
 
 -  Accessing ECSs through APIs
 
-   Use this method if you are required to integrate the ECSs on the public cloud platform into a third-party system for secondary development. For detailed operations, see *Elastic Cloud Server API Reference*.
+   Use this method if you intend to integrate the ECSs on the cloud platform into a third-party system for secondary development. For details, see *Elastic Cloud Server API Reference*.
 
 -  Accessing ECSs through the management console
 
    Use this method if you are not required to integrate ECSs with a third-party system.
 
-   After registering on the public cloud platform, log in to the management console and click **Elastic Cloud Server** under **Compute** on the homepage.
+   Log in to the management console with your account and choose **Elastic Cloud Server** on the homepage.

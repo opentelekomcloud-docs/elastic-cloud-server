@@ -2,15 +2,15 @@
 
 .. _en-us_topic_0018073216:
 
-Can I Bind Multiple EIPs to an ECS?
-===================================
+Can Multiple EIPs Be Bound to an ECS?
+=====================================
 
 Scenarios
 ---------
 
-You can bind multiple EIPs to an ECS. However, this configuration is not recommended.
+Multiple EIPs can be bound to an ECS, but this operation is not recommended.
 
-To bind multiple EIPs to an ECS, you must manually configure routes.
+If you really need to bind multiple EIPs to an ECS, you must manually configure routing policies, which requires high network skills. Exercise caution when performing this operation.
 
 Configuration Example
 ---------------------

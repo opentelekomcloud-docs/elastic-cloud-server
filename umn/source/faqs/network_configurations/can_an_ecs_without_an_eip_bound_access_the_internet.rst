@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0030013188:
 
-Can an ECS Without an EIP Access the Internet?
-==============================================
+Can an ECS Without an EIP Bound Access the Internet?
+====================================================
 
 Yes.
 

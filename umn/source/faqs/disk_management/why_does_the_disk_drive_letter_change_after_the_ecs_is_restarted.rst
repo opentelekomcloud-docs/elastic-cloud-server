@@ -13,7 +13,7 @@ For a Linux ECS, the drive letter may change after an EVS disk is detached and t
 Root Cause
 ----------
 
-When an Linux ECS has multiple disks attached, it allocates drive letters in the attachment sequence and names the disks as **/dev/vda1**, **/dev/vdb1**, and **/dev/vdc1**, etc.
+When a Linux ECS has multiple disks attached, it allocates drive letters in the attachment sequence and names the disks as **/dev/vda1**, **/dev/vdb1**, and **/dev/vdc1**, etc.
 
 After a disk is detached and then attached again, or after a disk is detached and the ECS is restarted, the drive letter may change.
 

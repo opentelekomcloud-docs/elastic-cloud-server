@@ -11,6 +11,7 @@ ECS Specifications and Types
 -  :ref:`Memory-optimized ECSs <en-us_topic_0035550301>`
 -  :ref:`Large-Memory ECSs <en-us_topic_0038024694>`
 -  :ref:`Disk-intensive ECSs <en-us_topic_0035470099>`
+-  :ref:`Ultra-high I/O ECSs <en-us_topic_0094118976>`
 -  :ref:`High-Performance Computing ECSs <en-us_topic_0035470100>`
 -  :ref:`GPU-accelerated ECSs <en-us_topic_0097289624>`
 
@@ -24,5 +25,6 @@ ECS Specifications and Types
    memory-optimized_ecss
    large-memory_ecss
    disk-intensive_ecss
+   ultra-high_i_o_ecss
    high-performance_computing_ecss
    gpu-accelerated_ecss
