@@ -41,18 +41,18 @@ Response
 
 .. table:: **Table 2** Response parameters
 
-   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter             | Type                  | Description                                                                                                                                     |
-   +=======================+=======================+=================================================================================================================================================+
-   | tags                  | Array of strings      | Specifies ECS tags.                                                                                                                             |
-   |                       |                       |                                                                                                                                                 |
-   |                       |                       | Tag functions have been upgraded on the public cloud. After the upgrade, the tag values returned by the system comply with the following rules: |
-   |                       |                       |                                                                                                                                                 |
-   |                       |                       | -  The key and value of a tag are connected using an equal sign (=), for example, key=value.                                                    |
-   |                       |                       | -  If the value is empty, only the key is returned.                                                                                             |
-   |                       |                       |                                                                                                                                                 |
-   |                       |                       | For more details about upgraded tag functions, see :ref:`Tag Types <en-us_topic_0065817686>`.                                                   |
-   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                                                                               |
+   +=======================+=======================+===========================================================================================================================================================+
+   | tags                  | Array of strings      | Specifies ECS tags.                                                                                                                                       |
+   |                       |                       |                                                                                                                                                           |
+   |                       |                       | Tag functions have been upgraded on the cloud service platform. After the upgrade, the tag values returned by the system comply with the following rules: |
+   |                       |                       |                                                                                                                                                           |
+   |                       |                       | -  The key and value of a tag are connected using an equal sign (=), for example, key=value.                                                              |
+   |                       |                       | -  If the value is empty, only the key is returned.                                                                                                       |
+   |                       |                       |                                                                                                                                                           |
+   |                       |                       | For more details about upgraded tag functions, see :ref:`Tag Types <en-us_topic_0065817686>`.                                                             |
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Example Request
 ---------------

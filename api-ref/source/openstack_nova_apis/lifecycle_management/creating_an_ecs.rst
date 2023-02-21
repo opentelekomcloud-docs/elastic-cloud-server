@@ -54,12 +54,12 @@ Constraints
    b. If a tenant backs up a disk in an ECS, the disk can be deleted only after the tenant deletes all the snapshots of the disk.
    c. The flavors with different resource types cannot be adjusted if you adjust the specifications of an ECS created using an image.
 
-#. Native APIs /v2/{project_id}/servers and /v2.1/{project_id}/servers provided by the public cloud platform is developed based on and compatible with the community-version native OpenStack API.
+#. Native APIs /v2/{project_id}/servers and /v2.1/{project_id}/servers provided by the cloud service platform is developed based on and compatible with the community-version native OpenStack API.
 
    Compared with the community-version native API, this API has the following restrictions when you create an ECS using a specified image:
 
    -  Community-version native OpenStack API: creates an ECS using the local disk by default.
-   -  Native API provided by the public cloud platform: creates an ECS using the shared storage as the system disk.
+   -  Native API provided by the cloud service platform: creates an ECS using the shared storage as the system disk.
 
    Specifically, when you use the native API to create an ECS:
 
@@ -113,7 +113,7 @@ Request
    |                         |                 |                    |                                                                                                                                                                                                                                                                                                                                                                             |
    |                         |                 |                    | .. note::                                                                                                                                                                                                                                                                                                                                                                   |
    |                         |                 |                    |                                                                                                                                                                                                                                                                                                                                                                             |
-   |                         |                 |                    |    -  Certain ECS flavors cannot support all public images provided on the public cloud platform. To obtain the images supported by an ECS flavor, log in to the management console, view the images displayed on the **Create ECS** page, and obtain the image IDs on the **Image Management Service** page.                                                               |
+   |                         |                 |                    |    -  Certain ECS flavors cannot support all public images provided on the cloud service platform. To obtain the images supported by an ECS flavor, log in to the management console, view the images displayed on the **Create ECS** page, and obtain the image IDs on the **Image Management Service** page.                                                              |
    |                         |                 |                    |    -  If the creation fails, modify the parameter settings.                                                                                                                                                                                                                                                                                                                 |
    +-------------------------+-----------------+--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | flavorRef               | Yes             | String             | Specifies the flavor ID or URL.                                                                                                                                                                                                                                                                                                                                             |
