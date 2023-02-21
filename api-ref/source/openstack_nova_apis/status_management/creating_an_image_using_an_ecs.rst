@@ -14,7 +14,7 @@ Images created using an ECS are stored on storage nodes as snapshots.
 
 .. note::
 
-   This API is a native OpenStack API that is not applicable to the images on the public cloud platform.
+   This API is a native OpenStack API that is not applicable to the images on cloud service platform.
 
    -  To create a system disk image or data disk image, use the IMS API (**POST /v2/cloudimages/action**). For details, see "Creating an Image" in *Image Management Service API Reference*.
    -  To create a full-ECS image, use the IMS API (**POST /v1/cloudimages/wholeimages/action**). For details, see "Creating a Full-ECS Image" in *Image Management Service API Reference*.
