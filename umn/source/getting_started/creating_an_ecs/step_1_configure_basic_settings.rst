@@ -18,14 +18,6 @@ Accessing the ECS Creation Page
 
    The page for creating ECSs is displayed.
 
-   .. note::
-
-      SAP High-Performance Analytic Appliance (HANA) is a high-performance real-time data computing platform based on memory computing technologies. The cloud platform provides high-performance IaaS services that comply with SAP HANA requirements. These services help you rapidly request for SAP HANA resources (such as applying for HANA ECSs and public IP addresses) and install and configure SAP HANA, therefore improving your operation efficiency, reducing operation costs, and enhancing your experience.
-
-      HANA ECSs are dedicated for SAP HANA. If you want to deploy SAP HANA on cloud servers, create HANA ECSs.
-
-      For more information about HANA ECS application scenarios and creation methods, see *SAP HANA User Guide*.
-
 Performing Basic Configurations
 -------------------------------
 
@@ -50,10 +42,6 @@ Performing Basic Configurations
 
    DeH refers to physical server resources dedicated for a specified user. You can deploy ECSs on DeHs for better isolation, security, and performance of your ECSs. You can continue using your existing server software licenses of ECSs on DeHs to reduce costs. For more details, see *Dedicated Host User Guide*.
 
-   .. note::
-
-      If you select a SUSE-SAP public image when creating an ECS on a DeH, you will be billed for the license.
-
 #. Set **Specifications**.
 
    The cloud platform provides various ECS types for different application scenarios. You can choose from existing ECS types and flavors in the list. Alternatively, you can enter a flavor or specify vCPUs and memory size to search for the flavor suited to your needs.
@@ -73,8 +61,6 @@ Performing Basic Configurations
    -  Public image
 
       A public image is a standard, widely used image. It contains an OS and preinstalled public applications and is available to all users. You can configure the runtime environment or software in the public image as needed.
-
-      If you select a SUSE-SAP public image, you will be billed for the license.
 
       For more information about public images, see `Public Images Introduction <https://docs.otc.t-systems.com/en-us/ims/index.html>`__.
 
