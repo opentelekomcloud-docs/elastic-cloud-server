@@ -27,7 +27,7 @@ Notes
 Constraints
 -----------
 
--  The EVS disk quota must be greater than 0.
+-  The EVS disk quotas must be greater than 0.
 -  If the target ECS is created using a private image, ensure that the private image is available.
 -  If an ECS OS is to be reinstalled using a full-ECS image, the ECS system disk can be encrypted.
 
@@ -48,7 +48,7 @@ Procedure
 
    Under **Computing**, click **Elastic Cloud Server**.
 
-#. Locate the row containing the target ECS. Click **More** in the **Operation** column and select **Manage Image/Disk** > **Reinstall OS**.
+#. Locate the row containing the target ECS. Click **More** in the **Operation** column and select **Manage Image/Disk/Backup** > **Reinstall OS**.
 
    Only stopped ECSs support OS reinstallation. If the ECS is not stopped, stop it before proceeding with reinstallation.
 
@@ -72,7 +72,7 @@ Procedure
    -  Oracle Enterprise Linux
    -  Red Hat Enterprise Linux
 
-#. Configure the login mode.
+#. Select the login mode.
 
    If the target ECS uses key pair authentication, you can replace the original key pair.
 
@@ -91,8 +91,8 @@ Procedure
 Follow-up Procedure
 -------------------
 
-If the reinstallation is unsuccessful, perform steps :ref:`3 <en-us_topic_0024911405__li20776247143354>` to :ref:`9 <en-us_topic_0024911405__li31062819143541>` again to retry the OS installation.
+If the reinstallation fails, perform steps :ref:`3 <en-us_topic_0024911405__li20776247143354>` to :ref:`9 <en-us_topic_0024911405__li31062819143541>` again to retry the OS installation.
 
-If the second reinstallation attempt is unsuccessful, contact customer service for manual recovery at the backend.
+If the second reinstallation attempt still fails, contact customer service for manual recovery at the backend.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png

@@ -15,6 +15,27 @@ Windows
 
 The following procedure uses an ECS running Windows Server 2012 as an example. The default login port of a Windows ECS is 3389. To change it to port 2020, for example, do as follows:
 
+#. Modify the security group rule.
+
+   a. Log in to the management console.
+
+   b. Click |image1| in the upper left corner and select your region and project.
+
+   c. Under **Computing**, click **Elastic Cloud Server**.
+
+   d. On the ECS list, click the name of an ECS for which you want to modify the security group rule.
+
+   e. On the ECS details page, click the security group in the **Security Groups** area to go to the security group details page.
+
+   f. On the **Inbound Rules** tab, click **Add Rule**. In the displayed dialog box, set **Protocol & Port** as follows:
+
+      -  **Protocols**: TCP (Custom ports)
+      -  **Port**: 2020
+
+      For details, see "Adding a Security Group Rule" in the *Virtual Private Cloud User Guide*.
+
+#. Log in to the ECS.
+
 #. In the **Run** dialog box, enter **regedit** to access the registry editor.
 
 #. In **Registry Editor**, choose **HKEY_LOCAL_MACHINE** > **SYSTEM** > **CurrentControlSet** > **Control** > **Terminal Server** > **Wds** > **rdpwd** > **Tds** > **tcp** and double-click **PortNumber**.
@@ -54,14 +75,6 @@ The following procedure uses an ECS running Windows Server 2012 as an example. T
 
    After the configuration, refresh the page to view the new rule.
 
-#. Modify the security group rule.
-
-   Add an inbound rule in which **Protocol** is set to **TCP** and **Port Range** is set to **2020**.
-
-   For details, see "Adding a Security Group Rule" in the *Virtual Private Cloud User Guide*.
-
-   Use port 2020 to remotely log in to the ECS.
-
 #. Open the Windows search box, enter **services**, and select **Services**.
 
 
@@ -78,6 +91,27 @@ Linux
 -----
 
 The following procedure uses an ECS running CentOS 7.3 as an example. The default login port of a Linux ECS is 22. To change it to port 2020, for example, do as follows:
+
+#. Modify the security group rule.
+
+   a. Log in to the management console.
+
+   b. Click |image2| in the upper left corner and select your region and project.
+
+   c. Under **Computing**, click **Elastic Cloud Server**.
+
+   d. On the ECS list, click the name of an ECS for which you want to modify the security group rule.
+
+   e. On the ECS details page, click the security group in the **Security Groups** area to go to the security group details page.
+
+   f. On the **Inbound Rules** tab, click **Add Rule**. In the displayed dialog box, set **Protocol & Port** as follows:
+
+      -  **Protocols**: TCP (Custom ports)
+      -  **Port**: 2020
+
+      For details, see "Adding a Security Group Rule" in the *Virtual Private Cloud User Guide*.
+
+#. Log in to the ECS.
 
 #. Run the following command to edit the sshd configuration file:
 
@@ -129,16 +163,11 @@ The following procedure uses an ECS running CentOS 7.3 as an example. The defaul
 
       **systemctl disable firewalld**
 
-#. Modify the security group rule.
-
-   Add an inbound rule in which **Protocol** is set to **TCP** and **Port Range** is set to **2020**.
-
-   For details, see "Adding a Security Group Rule" in the *Virtual Private Cloud User Guide*.
-
-   Use port 2020 to remotely log in to the ECS.
-
 #. Run the following command to check whether the port is open:
 
    **telnet EIP Port**
 
    For example: **telnet xx.xx.xx.xx 2020**
+
+.. |image1| image:: /_static/images/en-us_image_0210779229.png
+.. |image2| image:: /_static/images/en-us_image_0210779229.png

@@ -81,8 +81,8 @@ Configuring the Login Permission Using SSH Password Authentication
 
 .. _en-us_topic_0017955633__section62068112020:
 
-Logging In to the Linux ECS from a Local Windows Server
--------------------------------------------------------
+Logging In to a Linux ECS from a Local Windows Server
+-----------------------------------------------------
 
 To log in to the Linux ECS from a local Windows server, perform the operations described in this section.
 
@@ -94,15 +94,15 @@ The following operations use PuTTY as an example to log in to the ECS.
 
 #. Run PuTTY.
 
-#. Click **Session**.
+#. Choose **Session**.
 
-   a. **Host Name (or IP address)**: EIP bound to the ECS
+   a. **Host Name (or IP address)**: Enter the EIP bound to the ECS.
 
-   b. **Port**: **22**
+   b. **Port**: Enter **22**.
 
-   c. **Connection type**: **SSH**
+   c. **Connection type**: Click **SSH**.
 
-   d. **Saved Sessions**: Task name, which can be clicked for remote connection when you use PuTTY next time
+   d. **Saved Sessions**: Enter the task name, which can be clicked for remote connection when you use PuTTY next time.
 
 
       .. figure:: /_static/images/en-us_image_0159943784.png
@@ -110,7 +110,7 @@ The following operations use PuTTY as an example to log in to the ECS.
 
          **Figure 1** Session
 
-#. Click **Window**. Then, select **UTF-8** for **Received data assumed to be in which character set:** in **Translation**.
+#. Choose **Window**. Then, select **UTF-8** for **Received data assumed to be in which character set:** in **Translation**.
 
 #. Click **Open**.
 
@@ -120,8 +120,8 @@ The following operations use PuTTY as an example to log in to the ECS.
 
 .. _en-us_topic_0017955633__section20811823174313:
 
-Logging In to the Linux ECS from a Local Linux Server
------------------------------------------------------
+Logging In to a Linux ECS from a Local Linux Server
+---------------------------------------------------
 
 To log in to the Linux ECS from a local Linux server, run the following command:
 

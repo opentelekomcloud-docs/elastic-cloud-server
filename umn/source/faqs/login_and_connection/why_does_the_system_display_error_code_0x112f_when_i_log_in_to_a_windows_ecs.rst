@@ -26,7 +26,7 @@ Solution
 
 -  Method 1 (recommended)
 
-   Modify the ECS specifications to increase the vCPUs and memory size. For instructions about how to modify ECS specifications, see :ref:`General Operations for Modifying Specifications <en-us_topic_0013771092>`.
+   Modify the ECS specifications to increase the vCPUs and memory size. For instructions about how to modify ECS specifications, see :ref:`General Operations <en-us_topic_0013771092>`.
 
 -  Method 2
 

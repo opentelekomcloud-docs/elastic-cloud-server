@@ -37,7 +37,7 @@ Procedure
 #. In the **Migrate ECS** dialog box, migrate the ECS as prompted.
 
    -  If you want to migrate the ECS to a DeH, select a DeH from the list.
-   -  If you want to migrate the ECS to another DeH, select **Migrated** **To another DeH**.
+   -  If you want to migrate the ECS from a DeH to another, select **Migrated To another DeH**.
    -  If you want to migrate the ECS from a DeH to a public resource pool, select **Migrated** **Out of DeH**.
 
 #. Click **OK**.

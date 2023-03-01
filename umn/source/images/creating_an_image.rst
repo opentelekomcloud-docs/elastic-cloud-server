@@ -22,7 +22,7 @@ Procedure
 #. Log in to the management console.
 #. Click |image1| in the upper left corner and select your region and project.
 #. Under **Computing**, click **Elastic Cloud Server**.
-#. Locate the row that contains the target ECS. Click **More** in the **Operation** column and select **Manage Image/Disk > Create Image**.
+#. Locate the row that contains the target ECS and choose **More** > **Manage Image/Disk/Backup** > **Create Image** in the **Operation** column.
 #. Configure image information as prompted.
 
    -  **Source**: **ECS**

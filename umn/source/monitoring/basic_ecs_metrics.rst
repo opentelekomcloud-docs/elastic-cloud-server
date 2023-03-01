@@ -20,6 +20,13 @@ ECS Metrics
 
 ECS metrics vary depending on ECS OSs and types. For details, see :ref:`Table 1 <en-us_topic_0030911465__table1474714113454>`. Y indicates that the metric is supported, and x indicates that the metric is not supported.
 
+.. note::
+
+   To monitor the memory usage and disk usage, you need to install the agent on your ECS.
+
+   -  For details about how to install the agent on a Windows ECS, see `Installing and Configuring the Agent on a Windows Server <https://docs.otc.t-systems.com/cloud-eye/umn/server_monitoring/installing_and_configuring_the_agent_on_a_windows_ecs/installing_and_configuring_the_agent_on_a_windows_server.html>`__.
+   -  For details about how to install the agent on a Linux ECS, see `Installing the Agent on a Linux Server <https://docs.otc.t-systems.com/cloud-eye/umn/server_monitoring/installing_and_configuring_the_agent_on_a_linux_ecs_or_bms/installing_the_agent_on_a_linux_server.html#ces-01-0029>`__.
+
 .. _en-us_topic_0030911465__table1474714113454:
 
 .. table:: **Table 1** ECS metrics
@@ -52,15 +59,11 @@ ECS metrics vary depending on ECS OSs and types. For details, see :ref:`Table 1 
    | InfiniBand NIC Status | Supported (Only for H2 ECSs) | Supported (Only for H2 ECSs) |
    +-----------------------+------------------------------+------------------------------+
 
-.. note::
-
-   The image based on which the target ECS is created must have OTC Tools installed (OTC Tools has been installed for public images by default). Otherwise, the **Memory Usage** and **Disk Usage** metrics are unavailable. For details about how to install the OTC Tools, visit https://github.com/UVP-Tools/UVP-Tools/.
-
 :ref:`Table 2 <en-us_topic_0030911465__table64866324222846>` describes these ECS metrics.
 
 The monitoring intervals for the following ECSs with raw monitoring metrics are as follows:
 
--  KVM ECS: 5 minutes
+-  KVM and QingTian ECS: 5 minutes
 
 .. _en-us_topic_0030911465__table64866324222846:
 
@@ -82,6 +85,10 @@ The monitoring intervals for the following ECSs with raw monitoring metrics are 
    |                                       |                       | Unit: Percent                                                                                                                                                                                                                                                                                                                                         |                |                  |                                                |
    |                                       |                       |                                                                                                                                                                                                                                                                                                                                                       |                |                  |                                                |
    |                                       |                       | Formula: Used memory of an ECS/Total memory of the ECS                                                                                                                                                                                                                                                                                                |                |                  |                                                |
+   |                                       |                       |                                                                                                                                                                                                                                                                                                                                                       |                |                  |                                                |
+   |                                       |                       | .. note::                                                                                                                                                                                                                                                                                                                                             |                |                  |                                                |
+   |                                       |                       |                                                                                                                                                                                                                                                                                                                                                       |                |                  |                                                |
+   |                                       |                       |    The memory usage of QingTian ECSs cannot be monitored.                                                                                                                                                                                                                                                                                             |                |                  |                                                |
    +---------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+------------------+------------------------------------------------+
    | disk_util_inband                      | Disk Usage            | Disk usage of an ECS                                                                                                                                                                                                                                                                                                                                  | >= 0           | ECS              | 5 minutes                                      |
    |                                       |                       |                                                                                                                                                                                                                                                                                                                                                       |                |                  |                                                |

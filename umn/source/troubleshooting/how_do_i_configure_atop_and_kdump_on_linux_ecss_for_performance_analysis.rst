@@ -406,26 +406,6 @@ Configuring kdump
       user  pages   = 8
       free  pages   = 16
 
-#. Set kernel parameters.
-
-   Some kernel parameters control when kdump will be triggered. It is recommended that you set all the parameters as follows:
-
-   .. code-block::
-
-      kernel.hardlockup_panic=1
-      kernel.panic=5
-      kernel.panic_on_oops=1
-      kernel.softlockup_panic=1
-      kernel.unknown_nmi_panic=1
-      kernel.nmi_watchdog=1
-
-#. Modify the preceding parameters in file **/etc/sysctl.conf** file and save the file. You can also add the following parameters to the **/etc/sysctl.conf** file:
-
-   .. code-block::
-
-      kernel.panic_on_io_nmi=1
-      kernel.panic_on_warn=1
-
 #. Run the following command to restart the system for the configurations to take effect:
 
    **# reboot**
@@ -442,24 +422,6 @@ Checking Whether kdump Configurations Have Taken Effect
    .. code-block::
 
       BOOT_IMAGE=/boot/vmlinuz-3.10.0-514.44.5.10.h142.x86_64 root=UUID=6407d6ac-c761-43cc-a9dd-1383de3fc995 ro crash_kexec_post_notifiers softlockup_panic=1 panic=3 reserve_kbox_mem=16M nmi_watchdog=1 rd.shell=0 fsck.mode=auto fsck.repair=yes net.ifnames=0 spectre_v2=off nopti noibrs noibpb crashkernel=auto LANG=en_US.UTF-8
-
-#. Run the following command and check whether the values of the parameters in bold are the same as the following:
-
-   # **sysctl -a \|grep panic**
-
-   .. code-block::
-
-      kernel.hardlockup_panic = 1
-      kernel.hung_task_panic = 0
-      kernel.panic = 5
-      kernel.panic_on_io_nmi = 0
-      kernel.panic_on_oops = 1
-      kernel.panic_on_stackoverflow = 0
-      kernel.panic_on_unrecovered_nmi = 0
-      kernel.panic_on_warn = 0
-      kernel.softlockup_panic = 1
-      kernel.unknown_nmi_panic = 1
-      vm.panic_on_oom = 0
 
 #. Run the following command and check whether the configuration in the output is correct:
 

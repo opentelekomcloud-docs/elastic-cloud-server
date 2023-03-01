@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0092435779:
 
-Overview
-========
+ECS Overview
+============
 
 An ECS is a basic computing unit that consists of vCPUs, memory, OS, and EVS disks.
 
@@ -13,4 +13,4 @@ The cloud platform provides multiple ECS types for different computing and stora
 
 -  For details about ECS types, see :ref:`ECS Types <en-us_topic_0035470096>`.
 -  For details about all ECS statuses in a lifecycle, see :ref:`ECS Lifecycle <en-us_topic_0140323150>`.
--  For details about ECS specifications, see :ref:`ECS Specifications <en-us_topic_0177512565>`.
+-  For details about ECS specifications, see :ref:`A Summary List of ECS Specifications <en-us_topic_0177512565>`.

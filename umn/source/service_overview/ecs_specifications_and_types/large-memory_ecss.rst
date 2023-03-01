@@ -8,7 +8,7 @@ Large-Memory ECSs
 Overview
 --------
 
-Large-memory ECSs provide an even larger amount of memory than memory-optimized ECSs. They are used for applications that require a large amount of memory, rapid data switching, low latency, and process large volumes of data. Large-memory ECSs provide large memory and high computing, storage, and network performance.
+Large-memory ECSs provide an even larger amount of memory than memory-optimized ECSs. They are used for applications that require a large amount of memory, rapid data switching, low latency, and capability of processing large volumes of data. Large-memory ECSs provide large memory and high computing, storage, and network performance.
 
 -  Applications
 
@@ -34,7 +34,7 @@ Specifications
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
    | e3.26xlarge.14 | 104   | 1466   | 30/20                  | 550      | 16              | 8         | KVM            | CPU: Intel® Xeon® Skylake 8176 |
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
-   | e3.52xlarge.14 | 208   | 2932   | 40/40                  | 1000     | 32              | 8         | KVM            |                                |
+   | e3.52xlarge.14 | 208   | 2932   | 40/40                  | 1,000    | 32              | 8         | KVM            |                                |
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
 
 Notes
@@ -97,7 +97,7 @@ Notes
 
 -  Large-memory ECSs can use ultra-high I/O EVS disks as the system disk and data disks.
 
--  The primary and extension NICs of a large-memory ECS have specified application scenarios. For details, see :ref:`Table 3 <en-us_topic_0038024694__table1642803151326>`.
+-  The primary and extension NICs of a large-memory ECS can be used only in certain scenarios. For details, see :ref:`Table 3 <en-us_topic_0038024694__table1642803151326>`.
 
    .. _en-us_topic_0038024694__table1642803151326:
 
@@ -113,13 +113,8 @@ Notes
 
 -  An ECS can have a maximum of 60 attached disks, including the system disk. For details about constraints, see :ref:`Can I Attach Multiple Disks to an ECS? <en-us_topic_0018073215>`
 
-   An example is provided as follows:
-
-   An E3 ECS is to be created. It can have a maximum of 60 attached disks, where:
-
-   -  The number of system disks is 1.
-   -  The number of EVS disks is at most 59.
+   For example, an E3 ECS can have one system disk and 59 EVS disks.
 
    .. note::
 
-      The maximum number of disks attached to an existing large-memory ECS remains unchanged. To attach 60 disks, enable advanced disk. For details, see :ref:`Enabling Advanced Disk <en-us_topic_0122307169>`.
+      The maximum number of disks attached to an existing large-memory ECS remains unchanged. If you want to attach 60 disks, enable advanced disk. For details, see :ref:`Enabling Advanced Disk <en-us_topic_0122307169>`.

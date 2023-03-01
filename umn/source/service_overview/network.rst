@@ -64,7 +64,7 @@ Network QoS
 
 Network QoS uses basic technologies to improve the quality of network communication. A network with QoS enabled offers predictable network performance and effectively allocates network bandwidth to use network resources.
 
-To obtain the QoS data of an ECS flavor, including the maximum bandwidth, assured bandwidth, maximum PPS, and NIC multi-queue, see :ref:`ECS Specifications <en-us_topic_0177512565>`.
+To obtain the QoS data of an ECS flavor, including the maximum bandwidth, assured bandwidth, maximum PPS, and NIC multi-queue, see :ref:`A Summary List of ECS Specifications <en-us_topic_0177512565>`.
 
 The intranet bandwidth and PPS of an ECS are determined by its flavor.
 

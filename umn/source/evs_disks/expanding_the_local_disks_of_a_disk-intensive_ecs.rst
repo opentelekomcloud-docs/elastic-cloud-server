@@ -10,7 +10,7 @@ Scenarios
 
 Disk-intensive ECSs can use both local disks and EVS disks to store data. Local disks are generally used to store service data and feature higher throughput than EVS disks.
 
-Disk-intensive ECSs do not support modifying specifications. Therefore, when the idle capacity of the local disks of such an ECS is insufficient, you must create a new disk-intensive ECS with higher specifications for capacity expansion. In such a case, the data stored in the original ECS can be migrated to the new ECS through an EVS disk.
+Disk-intensive ECSs do not support specifications modification. Therefore, when the idle capacity of the local disks of such an ECS is insufficient, you must create a new disk-intensive ECS with higher specifications for capacity expansion. In such a case, the data stored in the original ECS can be migrated to the new ECS through an EVS disk.
 
 Procedure
 ---------

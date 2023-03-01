@@ -5,7 +5,7 @@
 Managing ECSs
 =============
 
--  :ref:`Changing an ECS Name <en-us_topic_0142266317>`
+-  :ref:`Changing ECS Names <en-us_topic_0142266317>`
 -  :ref:`Reinstalling the OS <en-us_topic_0024911405>`
 -  :ref:`Changing the OS <en-us_topic_0031523135>`
 -  :ref:`Managing ECS Groups <en-us_topic_0032980085>`
@@ -16,7 +16,7 @@ Managing ECSs
    :maxdepth: 1
    :hidden: 
 
-   changing_an_ecs_name
+   changing_ecs_names
    reinstalling_the_os
    changing_the_os
    managing_ecs_groups

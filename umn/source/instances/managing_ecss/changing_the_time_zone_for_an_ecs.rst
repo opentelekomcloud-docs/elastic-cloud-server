@@ -10,7 +10,7 @@ Scenarios
 
 The default time zone for an ECS is the one you selected when creating the image that was used to create the ECS. This section describes how to change the time zone for an ECS to the local one or to another time zone in your network.
 
-After you log in to your ECS, if you find that the time on the ECS is different from the local time, change the time zone for the ECS so that the time on the ECS is the same as the local time.
+After you log in to your ECS, if you find that the time on the ECS is different from the local time, you can change the time zone for the ECS so that the time on the ECS is the same as the local time.
 
 For Linux ECSs
 --------------

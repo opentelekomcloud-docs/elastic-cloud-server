@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0013771092:
 
-General Operations for Modifying Specifications
-===============================================
+General Operations
+==================
 
 Scenarios
 ---------
@@ -69,7 +69,7 @@ Step 1: Modify Specifications
 
    After modifying the specifications, you can check whether the specifications have been modified in **Failures**.
 
-   a. Check whether **Failures** is displayed on the management console. For details, see :ref:`Viewing Failures <en-us_topic_0108255889>`.
+   a. Check whether **Failures** is displayed on the management console. For details, see :ref:`Viewing Failure Tasks <en-us_topic_0108255889>`.
 
       -  If yes, go to step :ref:`10.b <en-us_topic_0013771092__li6253192246>`.
       -  If no, the specifications have been modified.

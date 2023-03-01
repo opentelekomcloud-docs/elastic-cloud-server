@@ -8,7 +8,7 @@ Changing the OS
 Scenarios
 ---------
 
-Changing an ECS OS will change the system disk attached to the ECS. After the changing, the system disk ID of the ECS will be changed, and the original system disk will be deleted.
+Changing an ECS OS will change the system disk attached to the ECS. After the change, the system disk ID of the ECS will be changed, and the original system disk will be deleted.
 
 If the OS running on an ECS cannot meet service requirements, change the ECS OS.
 
@@ -41,17 +41,17 @@ Notes
 -  The system disk capacity of an ECS with OS changed may change because the system disk capacity specified by the image of the changed OS may be changed.
 -  You can choose to encrypt the system disk of an ECS during OS change.
 
-Notes on Change Between Different OSs
--------------------------------------
+Notes on Change Between Windows and Linux
+-----------------------------------------
 
 Change between different OSs indicates that the OS is changed between Windows and Linux.
 
--  To change Windows to Linux, install an NTFS partition tool, such as NTFS-3G for data reading and writing on the Windows ECS.
+-  To change Windows to Linux, install an NTFS partition tool, such as NTFS-3G for data reads and writes on the Windows ECS.
 -  To change Linux to Windows, install software, such as Ext2Read or Ext2Fsd to identify ext3 or ext4.
 
    .. note::
 
-      You are not advised to change Linux to Window on the cloud platform. The reason is as follows: If there are LVM partitions on the Linux ECS, these partitions may fail after the OS is changed to Windows.
+      If there are LVM partitions on the Linux ECS, these partitions may fail after the OS is changed to Windows. Therefore, a change from Linux to Windows is not recommended.
 
 Prerequisites
 -------------
@@ -78,7 +78,7 @@ Procedure
 
    Under **Computing**, click **Elastic Cloud Server**.
 
-#. Locate the row containing the target ECS. Click **More** in the **Operation** column and select **Manage Image/Disk** > **Change OS**.
+#. Locate the row containing the target ECS. Click **More** in the **Operation** column and select **Manage Image/Disk/Backup** > **Change OS**.
 
    Only stopped ECSs support OS changing. If the ECS is not stopped, stop it before proceeding with changing.
 
@@ -125,7 +125,7 @@ Procedure
 Follow-up Procedure
 -------------------
 
--  If the OSs before and after the OS change are both Linux, and automatic partition mounting upon system startup has been enabled for the data disk, the data disk partition mounting information will be lost after the OS is changed. In such a case, you need to update the **/etc/fstab** configuration.
+-  If the OSs before and after the OS change are both Linux, and automatic mounting upon system startup has been enabled for data disks, the data disk partition mounting information will be lost after the OS is changed. In such a case, you need to update the **/etc/fstab** configuration.
 
    #. Write the new partition information into **/etc/fstab**.
 

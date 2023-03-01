@@ -58,7 +58,7 @@ To log in to a Windows ECS from a local Linux computer, use a remote access tool
 Enabling RDP
 ------------
 
-When you log in to an ECS for the first time, log in to it using VNC, enable RDP, and access the ECS using MSTSC.
+For your first login, use VNC to log in and enable RDP for your ECS. Then, use MSTSC to log in.
 
 .. note::
 

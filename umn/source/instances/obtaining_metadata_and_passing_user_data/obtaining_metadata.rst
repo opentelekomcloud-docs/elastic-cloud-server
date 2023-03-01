@@ -167,22 +167,22 @@ Displays ECS metadata.
           "random_seed": "rEocCViRS+dNwlYdGIxJHUp+00poeUsAdBFkbPbYQTmpNwpoEb43k9z+96TyrekNKS+iLYDdRNy4kKGoNPEVBCc05Hg1TcDblAPfJwgJS1okqEtlcofUhKmL3K0fto+5KXEDU3GNuGwyZXjdVb9HQWU+E1jztAJjjqsahnU+g/tawABTVySLBKlAT8fMGax1mTGgArucn/WzDcy19DGioKPE7F8ILtSQ4Ww3VClK5VYB/h0x+4r7IVHrPmYX/bi1Yhm3Dc4rRYNaTjdOV5gUOsbO3oAeQkmKwQ/NO0N8qw5Ya4l8ZUW4tMav4mOsRySOOB35v0bvaJc6p+50DTbWNeX5A2MLiEhTP3vsPrmvk4LRF7CLz2J2TGIM14OoVBw7LARwmv9cz532zHki/c8tlhRzLmOTXh/wL36zFW10DeuReUGmxth7IGNmRMQKV6+miI78jm/KMPpgAdK3vwYF/GcelOFJD2HghMUUCeMbwYnvijLTejuBpwhJMNiHA/NvlEsxJDxqBCoss/Jfe+yCmUFyxovJ+L8oNkTzkmtCNzw3Ra0hiKchGhqK3BIeToV/kVx5DdF081xrEA+qyoM6CVyfJtEoz1zlRRyoo9bJ65Eg6JJd8dj1UCVsDqRY1pIjgzE/Mzsw6AaaCVhaMJL7u7YMVdyKzA6z65Xtvujz0Vo=",
           "uuid": "ca9e8b7c-f2be-4b6d-a639-f10b4d994d04",
           "availability_zone": "lt-test-1c",
-          "hostname": "ecs-ddd4-l00349281.novalocal",
+          "hostname": "ecs-ddd4.novalocal",
           "launch_index": 0,
           "meta": {
               "metering.image_id": "3a64bd37-955e-40cd-ab9e-129db56bc05d",
               "metering.imagetype": "gold",
               "metering.resourcespeccode": "s3.medium.2.linux",
               "image_name": "CentOS 7.6 64bit",
-              "os_bit": "64",
-              "vpc_id": "3b6c201f-aeb3-4bce-b841-64756e66cb49",
               "metering.resourcetype": "1",
-              "cascaded.instance_extrainfo": "pcibridge:2",
+              "vpc_id": "3b6c201f-aeb3-4bce-b841-64756e66cb49",
+              "os_bit": "64",
+              "cascaded.instance_extrainfo": "pcibridge:1",
               "os_type": "Linux",
               "charging_mode": "0"
           },
           "project_id": "6e8b0c94265645f39c5abbe63c4113c6",
-          "name": "ecs-ddd4-l00349281"
+          "name": "ecs-ddd4"
       }
 
 User Data (OpenStack Metadata API)
@@ -258,28 +258,25 @@ Displays information about all NICs attached to an ECS, including their DNS serv
           },
           {
               "type": "dns",
-              "address": "100.1
-      25.21.250"
+              "address": "100.125.21.250"
           }],
+          "qos":{
+              "instance_min_bandwidth": 100,
+              "instance_max_bandwidth": 500
+          },
           "networks": [{
               "network_id": "67dc10ce-441f-4592-9a80-cc709f6436e7",
-              "type": "i
-      pv4_dhcp",
+              "type": "ipv4_dhcp",
               "link": "tap68a9272d-71",
               "id": "network0"
           }],
           "links": [{
-              "type": "cascading",
               "vif_id": "68a9272d-7152-4ae7-a138-3ef53af669e7",
               "ethernet_mac_address": "fa:16:3e:f7:c1:47",
-              "id": "tap68a9272d-71",
-              "mtu": null
-
-          }],
-          "qos":{
-              "instance_max_bandwidth": 1200,
-              "instance_min_bandwidth": 4000
-          }
+              "mtu": null,
+              "type": "cascading",
+              "id": "tap68a9272d-71"
+          }]
       }
 
 Security Key (OpenStack Metadata API)

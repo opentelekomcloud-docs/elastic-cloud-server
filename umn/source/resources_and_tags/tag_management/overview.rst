@@ -25,12 +25,12 @@ Tags are used to identify cloud resources. When you have many cloud resources of
 
 .. _en-us_topic_0092499768__en-us_topic_0157874334_fig81911042564:
 
-.. figure:: /_static/images/en-us_image_0157904965.png
+.. figure:: /_static/images/en-us_image_0000001397546242.png
    :alt: **Figure 1** Example tags
 
    **Figure 1** Example tags
 
-:ref:`Figure 1 <en-us_topic_0092499768__en-us_topic_0157874334_fig81911042564>` shows how tags work. In this example, you assign two tags to each cloud resource. Each tag contains a key and a value that you define. The key of one tag is **Owner**, and the key of another tag is **Use**. Each tag has a value.
+:ref:`Figure 1 <en-us_topic_0092499768__en-us_topic_0157874334_fig81911042564>` shows how tags work. In this example, you assign two tags to each cloud resource. Each tag contains a key and a value that you define. The key of one tag is **Owner**, and the key of another tag is **Usage**. Each tag has a value.
 
 You can quickly search for and filter specific cloud resources based on the tags added to them. For example, you can define a set of tags for cloud resources in an account to track the owner and usage of each cloud resource, making resource management easier.
 

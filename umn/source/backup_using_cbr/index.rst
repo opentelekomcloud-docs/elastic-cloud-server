@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0096304614:
 
-CBR
-===
+Backup Using CBR
+================
 
 -  :ref:`Overview <en-us_topic_0000001128445638>`
 -  :ref:`Backing Up ECS Data <en-us_topic_0000001128604648>`

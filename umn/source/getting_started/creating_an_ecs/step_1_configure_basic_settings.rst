@@ -76,7 +76,7 @@ Performing Basic Configurations
 
       If you select a SUSE-SAP public image, you will be billed for the license.
 
-      For more information about public images, see `Public Images Introduction <https://docs.otc.t-systems.com/en-us/ims/index.html>`__.
+      For more information about public images, see `Public Images Introduction <https://docs.otc.t-systems.com/image-management-service/public-images/>`__.
 
    -  Private image
 
@@ -118,7 +118,7 @@ Performing Basic Configurations
 
    -  System disk
 
-      For the disk types supported by an ECS, see :ref:`EVS Disks <en-us_topic_0030828256>`.
+      For details about the disk types supported by ECS, see :ref:`EVS Disks <en-us_topic_0030828256>`.
 
       -  If the image based on which an ECS is created is not encrypted, the system disk of the ECS is not encrypted. If the image based on which an ECS is created is encrypted, the system disk of the ECS is automatically encrypted. For details, see :ref:`(Optional) Encryption-related parameters <en-us_topic_0163572589__en-us_topic_0144542112_li3286101316615>`.
       -  **Encryption**: indicates that the system disk is encrypted if you select this option. For details, see :ref:`(Optional) Encryption-related parameters <en-us_topic_0163572589__en-us_topic_0144542112_li3286101316615>`.

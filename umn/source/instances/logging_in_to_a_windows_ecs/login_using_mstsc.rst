@@ -19,7 +19,7 @@ Prerequisites
 
 -  Access to port 3389 is allowed in the inbound direction of the security group to which the ECS belongs. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.
 -  The network connection between the login tool and the target ECS is normal. For example, the default port 3389 is not blocked by the firewall.
--  RDP has been enabled on the target ECS. By default, RDP has been enabled on the ECSs created using a public image. For instructions about how to enable RDP, see :ref:`Enabling RDP <en-us_topic_0017955381__section65216898112059>`.
+-  Remote Desktop Protocol (RDP) needs to be enabled on the target ECS. For ECSs created using public images, RDP has been enabled by default. For instructions about how to enable RDP, see :ref:`Enabling RDP <en-us_topic_0017955381__section65216898112059>`.
 
 Logging In to a Windows ECS Using MSTSC
 ---------------------------------------
@@ -76,7 +76,7 @@ If your local server runs Windows, you can use the remote desktop connection too
 
       **Figure 5** Adjusting the size of the desktop
 
-#. Click **OK** and enter the login password as prompted to log in to the ECS.
+#. Click **Connect** and enter the login password as prompted to log in to the ECS.
 
    To ensure system security, change the login password after you log in to the ECS for the first time.
 
@@ -89,7 +89,7 @@ If your local server runs Windows, you can use the remote desktop connection too
 Enabling RDP
 ------------
 
-When you log in to an ECS for the first time, log in to it using VNC, enable RDP, and access the ECS using MSTSC.
+For your first login, use VNC to log in and enable RDP for your ECS. Then, use MSTSC to log in.
 
 .. note::
 

@@ -8,7 +8,7 @@ Login Using an SSH Key
 Scenarios
 ---------
 
-This section describes how to remotely log in to a Linux ECS using an SSH key pair from a Windows and a Linux server, respectively.
+This section describes how to use an SSH key pair to remotely log in to a Linux ECS from a Windows and a Linux server, respectively.
 
 Prerequisites
 -------------
@@ -21,14 +21,14 @@ Prerequisites
 
 .. _en-us_topic_0017955380__section47918167111724:
 
-Logging In to the Linux ECS from Local Windows Server
+Logging In to a Linux ECS from a Local Windows Server
 -----------------------------------------------------
 
-To log in to the Linux ECS from local Windows, perform the operations described in this section.
+You have two methods to log in to a Linux ECS from a local Windows server.
 
 **Method 1: Use PuTTY to log in to the ECS.**
 
-The following operations use PuTTY as an example. Before logging in to the ECS using PuTTY, make sure that the private key file has been converted to .ppk format.
+The following operations use PuTTY as an example. Before using PuTTY to log in, make sure that the private key file has been converted to .ppk format.
 
 #. Check whether the private key file has been converted to .ppk format.
 
@@ -73,14 +73,12 @@ The following operations use PuTTY as an example. Before logging in to the ECS u
 
    .. note::
 
-      -  If a public image is used, see `Public Images Introduction <https://docs.otc.t-systems.com/en-us/ims/index.html>`__ for the image username.
+      -  If a public image is used, see `Public Images Introduction <https://docs.otc.t-systems.com/image-management-service/public-images/>`__ for the image username.
       -  If a private image is used, use the username of the private image.
 
 #. Choose **Connection** > **SSH** > **Auth**. In the last configuration item **Private key file for authentication**, click **Browse** and select the private key converted in step :ref:`6 <en-us_topic_0017955380__li56738001111724>`.
 
-#. Click **Open**.
-
-   Log in to the ECS.
+#. Click **Open** to log in to the ECS.
 
 **Method 2: Use Xshell to log in to the ECS.**
 
@@ -92,7 +90,7 @@ The following operations use PuTTY as an example. Before logging in to the ECS u
 
    .. note::
 
-      -  If a public image is used, see `Public Images Introduction <https://docs.otc.t-systems.com/en-us/ims/index.html>`__ for the image username.
+      -  If a public image is used, see `Public Images Introduction <https://docs.otc.t-systems.com/image-management-service/public-images/>`__ for the image username.
       -  If a private image is used, use the username of the private image.
 
 #. (Optional) If the system displays the **SSH Security Warning** dialog box, click **Accept & Save**.
@@ -113,7 +111,7 @@ The following operations use PuTTY as an example. Before logging in to the ECS u
 
 .. _en-us_topic_0017955380__section3666784111724:
 
-Logging In to the Linux ECS from Local Linux Server
+Logging In to a Linux ECS from a Local Linux Server
 ---------------------------------------------------
 
 To log in to the Linux ECS from local Linux, perform the operations described in this section. The following operations use private key file **kp-123.pem** as an example to log in to the ECS. The name of your private key file may differ.
@@ -124,7 +122,7 @@ To log in to the Linux ECS from local Linux, perform the operations described in
 
    .. note::
 
-      In the preceding command, *path* refers to the path where the key file is saved.
+      In the preceding command, replace *path* with the actual path where the key file is saved.
 
 #. Run the following command to log in to the ECS:
 

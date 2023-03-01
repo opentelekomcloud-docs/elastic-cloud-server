@@ -12,7 +12,7 @@ General-purpose ECSs provide a balance of compute, memory, and network resources
 
 S3 ECSs are suitable for applications that require moderate performance generally but occasionally burstable high performance, such as light-workload web servers, enterprise R&D and testing environments, and low- and medium-performance databases.
 
-S2 ECSs use Intel® Xeon® Scalable processors, which significantly improve the comprehensive performance. They provide a balance of computing, memory, and network resources and a baseline level of vCPU performance with the ability to burst above the baseline. These ECSs are suitable for many applications.
+S2 ECSs use Intel® Xeon® Scalable processors, which significantly improve the comprehensive performance. They provide a balance of computing, memory, and network resources, a baseline level of vCPU performance, and the ability to burst above the baseline. These ECSs are suitable for many applications.
 
 Specifications
 --------------

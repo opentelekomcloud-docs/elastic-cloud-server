@@ -11,9 +11,9 @@ Service Overview
 -  :ref:`ECS Specifications and Types <en-us_topic_0132345719>`
 -  :ref:`Images <en-us_topic_0000001351167793>`
 -  :ref:`EVS Disks <en-us_topic_0030828256>`
--  :ref:`CBR <en-us_topic_0000001174675379>`
 -  :ref:`Network <en-us_topic_0030828257>`
 -  :ref:`Security <en-us_topic_0092435778>`
+-  :ref:`Permissions Management <en-us_topic_0170232209>`
 -  :ref:`User Permissions <en-us_topic_0054121392>`
 -  :ref:`Region and AZ <en-us_topic_0186645877>`
 
@@ -27,8 +27,8 @@ Service Overview
    ecs_specifications_and_types/index
    images/index
    evs_disks
-   cbr
    network
    security/index
+   permissions_management
    user_permissions
    region_and_az

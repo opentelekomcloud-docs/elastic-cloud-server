@@ -143,7 +143,7 @@ In this example, the proxy ECS runs CentOS 6.5.
 
       -  **Destination**: indicates the destination network segment. The default value is **0.0.0.0/0**.
 
-      -  **Next Hop**: indicates the private IP address of the SNAT ECS.
+      -  **Next Hop**: indicates the private IP address of the proxy ECS.
 
          You can obtain the private IP address of the ECS on the **Elastic Cloud Server** page.
 

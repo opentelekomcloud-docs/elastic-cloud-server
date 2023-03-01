@@ -36,7 +36,7 @@ Specifications
 Features
 --------
 
-:ref:`Table 2 <en-us_topic_0094118976__table18147135042010>` and :ref:`Table 3 <en-us_topic_0094118976__table9670341181017>` lists the IOPS performance of local disks and specifications of a single local disk attached to an I3 ECS.
+:ref:`Table 2 <en-us_topic_0094118976__table18147135042010>` and :ref:`Table 3 <en-us_topic_0094118976__table9670341181017>` list the IOPS performance of local disks and specifications of a single local disk attached to an I3 ECS.
 
 .. _en-us_topic_0094118976__table18147135042010:
 

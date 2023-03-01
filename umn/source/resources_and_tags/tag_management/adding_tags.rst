@@ -24,7 +24,7 @@ Adding Tags When Creating an ECS
 
 #. Click |image1| in the upper left corner and select your region and project.
 
-#. Under **Computing**, click **Elastic Cloud Server**.
+#. Click |image2|. Under **Computing**, click **Elastic Cloud Server**.
 
 #. Click **Create ECS**.
 
@@ -43,9 +43,9 @@ Adding Tags on the Page Providing Details About an ECS
 
 #. Log in to the management console.
 
-#. Click |image2| in the upper left corner and select your region and project.
+#. Click |image3| in the upper left corner and select your region and project.
 
-#. Under **Computing**, click **Elastic Cloud Server**.
+#. Click |image4|. Under **Computing**, click **Elastic Cloud Server**.
 
 #. On the **Elastic Cloud Server** page, click the name of the target ECS.
 
@@ -74,13 +74,13 @@ Adding Tags on the TMS Console
 
 #. In the **Search Result** area, click **Create Key**. In the displayed dialog box, enter a key (for example **project**) and click **OK**.
 
-   After the tag is created, the tag key is added to the resource list. If the key is not displayed in the resource list, click |image3| and select the created key from the drop-down list.
+   After the tag is created, the tag key is added to the resource list. If the key is not displayed in the resource list, click |image5| and select the created key from the drop-down list.
 
    By default, the value of the tag key is **Not tagged**. You need to set a value for the tag of each resource to associate the tag with the resource.
 
 #. Click **Edit** to make the resource list editable.
 
-#. Locate the row containing the target ECS, click |image4|, and enter a value (for example **A**).
+#. Locate the row containing the target ECS, click |image6|, and enter a value (for example **A**).
 
    After a value is set for a tag key, the number of tags is incremented by 1. Repeat the preceding steps to add tag values for other ECSs.
 
@@ -97,6 +97,8 @@ If you want to add the same tag to multiple ECSs or other resources, you can cre
 #. Choose **Service List** > **Computing** > **Elastic Cloud Server**, and select the predefined tag by following the procedure for adding a tag.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-.. |image2| image:: /_static/images/en-us_image_0210779229.png
-.. |image3| image:: /_static/images/en-us_image_0210875481.png
-.. |image4| image:: /_static/images/en-us_image_0210875480.png
+.. |image2| image:: /_static/images/en-us_image_0286838921.jpg
+.. |image3| image:: /_static/images/en-us_image_0210779229.png
+.. |image4| image:: /_static/images/en-us_image_0286838921.jpg
+.. |image5| image:: /_static/images/en-us_image_0210875481.png
+.. |image6| image:: /_static/images/en-us_image_0210875480.png

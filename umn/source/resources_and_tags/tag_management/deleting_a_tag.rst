@@ -20,7 +20,7 @@ Deleting a Tag on the Page Providing Details About an ECS
 
 #. Click |image1| in the upper left corner and select your region and project.
 
-#. Under **Computing**, click **Elastic Cloud Server**.
+#. Click |image2|. Under **Computing**, click **Elastic Cloud Server**.
 
 #. On the **Elastic Cloud Server** page, click the name of the target ECS.
 
@@ -43,11 +43,11 @@ Deleting a Tag on the TMS Console
 
 #. In the **Search Result** area, click **Edit** to make the resource tag list editable.
 
-   If the key of a tag you want to delete is not contained in the list, click |image2| and select the tag key from the drop-down list. It is a good practice to select at most 10 keys to display.
+   If the key of a tag you want to delete is not contained in the list, click |image3| and select the tag key from the drop-down list. It is a good practice to select at most 10 keys to display.
 
-#. Locate the row containing the target ECS and click |image3|.
+#. Locate the row containing the target ECS and click |image4|.
 
-#. (Optional) Click |image4| in the upper right of the **Search Result** area.
+#. (Optional) Click |image5| in the upper right of the **Search Result** area.
 
    The resource list is refreshed and the refresh time is updated.
 
@@ -72,12 +72,13 @@ Batch Deleting Tags on the TMS Console
 
 #. In the displayed **Manage Tag** dialog box, click **Delete** in the **Operation** column. Click **OK**.
 
-#. (Optional) Click |image5| in the upper right of the **Search Result** area.
+#. (Optional) Click |image6| in the upper right of the **Search Result** area.
 
    The resource list is refreshed and the refresh time is updated.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-.. |image2| image:: /_static/images/en-us_image_0210875481.png
-.. |image3| image:: /_static/images/en-us_image_0210875482.png
-.. |image4| image:: /_static/images/en-us_image_0210875483.png
+.. |image2| image:: /_static/images/en-us_image_0286838921.jpg
+.. |image3| image:: /_static/images/en-us_image_0210875481.png
+.. |image4| image:: /_static/images/en-us_image_0210875482.png
 .. |image5| image:: /_static/images/en-us_image_0210875483.png
+.. |image6| image:: /_static/images/en-us_image_0210875483.png
