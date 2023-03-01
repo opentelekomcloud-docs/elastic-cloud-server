@@ -10,20 +10,20 @@ Constraints
 
 -  Only a running ECS can be logged in.
 
--  Login usernames, passwords, and constraints vary depending on OSs running on the ECSs created using a public image. For details, see `Public Images Introduction <https://docs.otc.t-systems.com/en-us/ims/index.html>`__.
+-  Login usernames, passwords, and constraints vary depending on OSs running on the ECSs created using a public image. For details, see `Public Images Introduction <https://docs.otc.t-systems.com/image-management-service/public-images/>`__.
 
 -  If an ECS uses key pair authentication, use the password obtaining function available on the management console to decrypt the private key used during ECS creation to obtain a password.
 
--  Certain G series of ECSs do not support remote login provided by the management console. If you need to remotely log in to the ECSs, install the VNC server on them. For details, see :ref:`GPU-accelerated ECSs <en-us_topic_0097289624>`. You are suggested to log in to the ECSs using MSTSC.
+-  Certain G-series ECSs do not support remote login from the console. If you need to remotely log in to the ECSs, install the VNC server on them. For details, see :ref:`GPU-accelerated ECSs <en-us_topic_0097289624>`. You are suggested to log in to the ECSs using MSTSC.
 
--  If you log in to a GPU-accelerated ECS using MSTSC, GPU acceleration will fail. This is because MSTSC replaces the WDDM GPU driver with a non-accelerated remote desktop display driver. In such a case, you must use other methods to log in to the ECS, such as VNC. If the remote login function available on the management console fails to meet your service requirements, you must install a suitable remote login tool on the ECS, such as TightVNC.
+-  If you log in to a GPU-accelerated ECS using MSTSC, GPU acceleration will fail. This is because MSTSC replaces the WDDM GPU driver with a non-accelerated remote desktop display driver. In such a case, you must log in to the ECS using other methods, such as VNC. If the remote login function available on the management console fails to meet your service requirements, you must install a suitable remote login tool, such as TightVNC, on the ECS.
 
    To download TightVNC, log in at https://www.tightvnc.com/download.php.
 
 Login Modes
 -----------
 
-Select a login mode as required and log in to the target ECS.
+You can choose from a variety of login modes based on your local OS type.
 
 .. table:: **Table 1** Windows login modes
 

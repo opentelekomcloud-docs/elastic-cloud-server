@@ -8,7 +8,7 @@ Overview
 Image
 -----
 
-An image is an ECS or BMS template that contains an OS or service data and may also contain proprietary software and application software, such as database software. Images can be public, private, or shared.
+An image is an ECS or BMS template that contains an OS or service data. It may also contain proprietary software and application software, such as database software. Images can be public, private, or shared.
 
 Image Management Service (IMS) allows you to easily create and manage images. You can create an ECS using a public image, private image, or shared image. You can also use an existing ECS or external image file to create a private image.
 

@@ -43,7 +43,7 @@ ECS-related Services
 
 -  Key Management Service (KMS)
 
-   The encryption feature relies on KMS. You can use an encrypted image or EVS disks when creating an ECS. In such a case, you are required to use the key provided by KMS to improve data security.
+   The encryption feature relies on KMS. You can use an encrypted image or EVS disks when creating an ECS. In such a case, you need to use the key provided by KMS to improve data security.
 
 -  Cloud Trace Service (CTS)
 

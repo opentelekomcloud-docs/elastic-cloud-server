@@ -79,7 +79,7 @@ Advanced Settings
 
          After creating the ECS, you can view the tags on the pages providing details about the ECS, EIP, and EVS disks.
 
-      For detailed operations, see :ref:`Overview <en-us_topic_0092499768>`.
+      For details, see :ref:`Overview <en-us_topic_0092499768>`.
 
    -  Agency
 

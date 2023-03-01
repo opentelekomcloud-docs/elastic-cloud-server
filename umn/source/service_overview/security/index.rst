@@ -5,7 +5,7 @@
 Security
 ========
 
--  :ref:`User Encryption <en-us_topic_0046912051>`
+-  :ref:`Data Protection <en-us_topic_0000001449637793>`
 -  :ref:`License Type <en-us_topic_0046566932>`
 -  :ref:`Project <en-us_topic_0070518971>`
 
@@ -13,6 +13,6 @@ Security
    :maxdepth: 1
    :hidden: 
 
-   user_encryption
+   data_protection/index
    license_type
    project

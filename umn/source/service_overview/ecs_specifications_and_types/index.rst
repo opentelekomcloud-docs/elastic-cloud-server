@@ -5,7 +5,7 @@
 ECS Specifications and Types
 ============================
 
--  :ref:`ECS Specifications <en-us_topic_0177512565>`
+-  :ref:`A Summary List of ECS Specifications <en-us_topic_0177512565>`
 -  :ref:`General-Purpose ECSs <en-us_topic_0035470101>`
 -  :ref:`Dedicated General-Purpose ECSs <en-us_topic_0091224748>`
 -  :ref:`Memory-optimized ECSs <en-us_topic_0035550301>`
@@ -19,7 +19,7 @@ ECS Specifications and Types
    :maxdepth: 1
    :hidden: 
 
-   ecs_specifications
+   a_summary_list_of_ecs_specifications
    general-purpose_ecss
    dedicated_general-purpose_ecss
    memory-optimized_ecss

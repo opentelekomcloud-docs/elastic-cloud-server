@@ -48,6 +48,6 @@ Procedure
 
 #. In the ECS monitoring area, select a duration to view the monitoring data.
 
-   You can view the monitoring data of the ECS in the last 1, 3, or 12 hours.
+   You can view the monitoring data of the ECS in the last 1 hour, last 3 hours, last 12 hours, last 1 day, or last 7 days.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png

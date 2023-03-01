@@ -130,7 +130,7 @@ Notes
 
 -  To improve network performance, you can set the NIC MTU of a D2 ECS to **8888**.
 
--  D2 ECSs do not support modifying specifications.
+-  D2 ECSs do not support specifications modification.
 
 -  D2 ECSs do not support local disk snapshots or backups.
 
@@ -168,4 +168,4 @@ Notes
 
 -  Do not store long-term service data in local disks. Instead, back up data in a timely manner and use a high availability data architecture. Store long-term service data in EVS disks.
 
--  You are not allowed to buy additional local disks. The quantity and capacity of your local disks are determined according to your ECS flavor. For D2 ECSs, if additional local disks are required, buy them when creating the ECSs.
+-  Local disks can only be purchased during ECS creation. The quantity and capacity of your local disks are determined according to the specifications of your ECS.
