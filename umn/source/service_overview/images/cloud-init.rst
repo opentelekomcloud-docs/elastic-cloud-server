@@ -57,7 +57,7 @@ Notes
 
    .. note::
 
-      If you use the default security group rules for the outbound direction, the preceding requirements are met. Then, the metadata can be accessed. Default security group rules for the outbound direction are as follows:
+      If you use the default security group rules for the outbound direction, the metadata can be accessed because the default rules meet the preceding requirements. Default security group rules for the outbound direction are as follows:
 
       -  **Protocol**: **All**
       -  **Port**: **All**

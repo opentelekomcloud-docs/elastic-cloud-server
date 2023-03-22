@@ -31,11 +31,15 @@ Enabling ECSs in Different Security Groups to Communicate with Each Other Throug
 
    You can add an inbound rule to the security groups containing the ECSs to allow access from ECSs in the other security group. The required rule is as follows.
 
-   +-----------+----------------------------------------------------+--------------------+------------------------+
-   | Direction | Protocol                                           | Port               | Source                 |
-   +===========+====================================================+====================+========================+
-   | Inbound   | Used for communication through an internal network | Port or port range | Another security group |
-   +-----------+----------------------------------------------------+--------------------+------------------------+
+   +-----------------+--------------------------------------------------------------------------+-----------------+------------------------------------+
+   | Direction       | Protocol                                                                 | Port            | Source                             |
+   +=================+==========================================================================+=================+====================================+
+   | Inbound         | TCP                                                                      | All             | ID of another security group       |
+   |                 |                                                                          |                 |                                    |
+   |                 | .. note::                                                                |                 | Example: 014d7278-XXX-530c95350d43 |
+   |                 |                                                                          |                 |                                    |
+   |                 |    Select a protocol used for communication through an internal network. |                 |                                    |
+   +-----------------+--------------------------------------------------------------------------+-----------------+------------------------------------+
 
 .. _en-us_topic_0140323152__en-us_topic_0118534011_section17693183118306:
 

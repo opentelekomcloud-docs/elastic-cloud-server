@@ -132,7 +132,7 @@ Prerequisites
 
    .. note::
 
-      If you use the default security group rules for the outbound direction, the preceding requirements are met. Then, the metadata can be accessed. Default security group rules for the outbound direction are as follows:
+      If you use the default security group rules for the outbound direction, the metadata can be accessed because the default rules meet the preceding requirements. Default security group rules for the outbound direction are as follows:
 
       -  **Protocol**: **All**
       -  **Port**: **All**
@@ -141,7 +141,7 @@ Prerequisites
 Metadata (OpenStack Metadata API)
 ---------------------------------
 
-Displays ECS metadata.
+This API is used to query ECS metadata.
 
 -  URI
 
@@ -188,7 +188,7 @@ Displays ECS metadata.
 User Data (OpenStack Metadata API)
 ----------------------------------
 
-Displays ECS user data. The value is configured only when you create an ECS. It cannot be changed after the configuration.
+This API is used to query ECS user data. The value is configured only when you create an ECS. It cannot be changed after the configuration.
 
 -  URI
 
@@ -225,7 +225,7 @@ Displays ECS user data. The value is configured only when you create an ECS. It 
 Network Data (OpenStack Metadata API)
 -------------------------------------
 
-Displays information about all NICs attached to an ECS, including their DNS server addresses, network bandwidth, IDs, private IP addresses, EIPs, and MAC addresses.
+This API is used to query information about all NICs attached to an ECS, including their DNS server addresses, network bandwidth, IDs, private IP addresses, EIPs, and MAC addresses.
 
 -  URI
 
@@ -282,7 +282,7 @@ Displays information about all NICs attached to an ECS, including their DNS serv
 Security Key (OpenStack Metadata API)
 -------------------------------------
 
-Obtains temporary AKs and SKs.
+This API is used to obtain temporary AKs and SKs.
 
 .. note::
 
@@ -311,7 +311,7 @@ Obtains temporary AKs and SKs.
 User Data (EC2 Compatible API)
 ------------------------------
 
-Displays ECS user data. The value is configured only when you create an ECS. It cannot be changed after the configuration.
+This API is used to query ECS user data. The value is configured only when you create an ECS. It cannot be changed after the configuration.
 
 -  URI
 
@@ -338,7 +338,7 @@ Displays ECS user data. The value is configured only when you create an ECS. It 
 Hostname (EC2 Compatible API)
 -----------------------------
 
-Displays the name of the host accommodating an ECS. The .novalocal suffix will be added later.
+This API is used to query the name of the host accommodating an ECS. The .novalocal suffix will be added later.
 
 -  URI
 
@@ -365,7 +365,7 @@ Displays the name of the host accommodating an ECS. The .novalocal suffix will b
 Instance Type (EC2 Compatible API)
 ----------------------------------
 
-Displays an ECS flavor.
+This API is used to query an ECS flavor.
 
 -  URI
 
@@ -392,7 +392,7 @@ Displays an ECS flavor.
 Local IPv4 (EC2 Compatible API)
 -------------------------------
 
-Displays the fixed IP address of an ECS. If there are multiple NICs, only the IP address of the primary NIC is displayed.
+This API is used to query the fixed IP address of an ECS. If there are multiple NICs, only the IP address of the primary NIC is displayed.
 
 -  URI
 
@@ -419,7 +419,7 @@ Displays the fixed IP address of an ECS. If there are multiple NICs, only the IP
 Availability Zone (EC2 Compatible API)
 --------------------------------------
 
-Displays the AZ accommodating an ECS.
+This API is used to query the AZ accommodating an ECS.
 
 -  URI
 
@@ -446,7 +446,7 @@ Displays the AZ accommodating an ECS.
 Public IPv4 (EC2 Compatible API)
 --------------------------------
 
-Displays the EIP bound to an ECS. If there are multiple NICs, only the EIP of the primary NIC is displayed.
+This API is used to query the EIP bound to an ECS. If there are multiple NICs, only the EIP of the primary NIC is displayed.
 
 -  URI
 
@@ -473,7 +473,7 @@ Displays the EIP bound to an ECS. If there are multiple NICs, only the EIP of th
 Public Keys (EC2 Compatible API)
 --------------------------------
 
-Displays the public key of an ECS.
+This API is used to query the public key of an ECS.
 
 -  URI
 
