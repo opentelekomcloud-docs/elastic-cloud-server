@@ -75,7 +75,7 @@ Request
    +=================+=================+=================+=====================================================================================================================================================+
    | server          | Yes             | Object          | Specifies the ECS information. For details, see :ref:`Table 3 <en-us_topic_0020212668__table761103195216>`.                                         |
    +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-   | dry_run         | No              | Boolean         | Specifies whether to check the request and create the ECS.                                                                                          |
+   | dry_run         | No              | Boolean         | Specifies whether to check the request and create the ECS. The default value is **false**.                                                          |
    |                 |                 |                 |                                                                                                                                                     |
    |                 |                 |                 | -  **true**: indicates that only the request is sent, but the ECS will not be created. Check items include mandatory parameters and request format. |
    |                 |                 |                 |                                                                                                                                                     |
