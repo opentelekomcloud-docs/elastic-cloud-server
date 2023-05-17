@@ -18,7 +18,7 @@ import os
 import sys
 
 extensions = [
-    'otcdocstheme'
+    'otcdocstheme',
 ]
 
 otcdocs_auto_name = False
