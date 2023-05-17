@@ -5,6 +5,7 @@
 Permissions Policies and Supported Actions
 ==========================================
 
+-  :ref:`Introduction <en-us_topic_0170316409>`
 -  :ref:`Lifecycle Management <en-us_topic_0103071510>`
 -  :ref:`ECS Status Management <en-us_topic_0103071511>`
 -  :ref:`Batch Operations <en-us_topic_0184167662>`
@@ -29,6 +30,7 @@ Permissions Policies and Supported Actions
    :maxdepth: 1
    :hidden: 
 
+   introduction
    lifecycle_management
    ecs_status_management
    batch_operations

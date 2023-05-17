@@ -159,7 +159,7 @@ Example Request
 
       {
           "os-change": {
-              "adminpass": "1qazXSW@",
+
               "userid": "7e25b1da389f4697a79df3a0e5bd494e",
               "imageid": "e215580f-73ad-429d-b6f2-5433947433b0"
           }
@@ -183,7 +183,7 @@ Example Request
 
       {
           "os-change": {
-              "adminpass": "1qazXSW@",
+
               "userid": "7e25b1da389f4697a79df3a0e5bd494e",
               "imageid": "e215580f-73ad-429d-b6f2-5433947433b0",
               "metadata": {
