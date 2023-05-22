@@ -27,13 +27,6 @@ otcdocs_auto_version = False
 project = 'Elastic Cloud Server'
 otcdocs_repo_name = 'opentelekomcloud-docs/elastic-cloud-server'
 # Those variables are required for edit/bug links
-otcdocs_doc_environment = 'public'
-otcdocs_doc_link = 'elastic-cloud-server/api-ref'
-otcdocs_doc_title = 'API Reference'
-otcdocs_doc_type = 'api-ref'
-otcdocs_service_title = 'Elastic Cloud Server'
-otcdocs_service_type = 'ecs'
-otcdocs_service_category = 'compute'
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
