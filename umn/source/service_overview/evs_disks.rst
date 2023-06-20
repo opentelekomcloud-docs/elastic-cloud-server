@@ -8,14 +8,14 @@ EVS Disks
 What Is Elastic Volume Service?
 -------------------------------
 
-Elastic Volume Service (EVS) offers scalable block storage for ECSs. With high reliability, high performance, and rich specifications, EVS disks can be used for distributed file systems, development and test environments, data warehouse applications, and high-performance computing (HPC) scenarios to meet diverse service requirements.
+Elastic Volume Service (EVS) offers scalable block storage for ECSs. With high reliability, high performance, and rich specifications, EVS disks can be used for distributed file systems, development and test environments, data warehouses, and high-performance computing (HPC) scenarios to meet diverse service requirements.
 
 Disk Types
 ----------
 
-EVS disk types differ in performance. Choose the disk type based on your requirements.
+EVS disk types differ in performance. Choose a disk type based on your requirements.
 
-For more information about EVS disk specifications and performance, see "Disk Types and Performance".
+For more information about EVS disk specifications and performance, see *Elastic Volume Service User Guide*.
 
 Device Types
 ------------
@@ -32,7 +32,7 @@ EVS disks have two device types, Virtual Block Device (VBD) and Small Computer S
 
    .. note::
 
-      For more information about how to use SCSI EVS disks, for example, how to install the driver, see "Device Types and Usage Instructions" in *Elastic Volume Service User Guide*.
+      For more information about how to use SCSI EVS disks, for example, how to install a driver for SCSI EVS disks, see "Device Types and Usage Instructions" in *Elastic Volume Service User Guide*.
 
 Helpful Links
 -------------

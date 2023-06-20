@@ -78,4 +78,4 @@ Linux
 
    .. code-block::
 
-      passwd: password updated successfully
+      passwd: all authentication tokens updates successfully

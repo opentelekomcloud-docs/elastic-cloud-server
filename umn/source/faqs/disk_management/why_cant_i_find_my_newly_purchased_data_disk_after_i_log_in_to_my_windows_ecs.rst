@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0251012483:
 
-What Should I Do If the Data Disk Attached a Windows ECS Is Unavailable?
-========================================================================
+Why Can't I Find My Newly Purchased Data Disk After I Log In to My Windows ECS?
+===============================================================================
 
 Symptom
 -------

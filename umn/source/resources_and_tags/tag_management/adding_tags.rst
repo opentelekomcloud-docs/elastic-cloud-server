@@ -68,7 +68,7 @@ Adding Tags on the TMS Console
 
 #. Under **Management & Deployment**, click **Tag Management Service**.
 
-#. On the displayed **Resource Tags** page, select the region where the resource is located, select **ECS** for **Resource Type**, and click **Search**.
+#. On the displayed **Resource Tags** page, select the region where the resource is located, select **ECS-ECS** for **Resource Type**, and click **Search**.
 
    All ECSs matching the search criteria are displayed.
 
@@ -93,7 +93,7 @@ If you want to add the same tag to multiple ECSs or other resources, you can cre
 
 #. Log in to the management console.
 #. Under **Management & Deployment**, click **Tag Management Service**.
-#. In the navigation pane on the left, choose **Predefined Tags**. In the right pane, click **Create Tag** enter a key (for example **project**) and a value (for example **A**) in the displayed dialog box.
+#. Choose **Predefined Tags** in the left navigation pane and click **Create Tag**. In the displayed dialog box, enter a key (for example, **project**) and a value (for example, **A**).
 #. Choose **Service List** > **Computing** > **Elastic Cloud Server**, and select the predefined tag by following the procedure for adding a tag.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png

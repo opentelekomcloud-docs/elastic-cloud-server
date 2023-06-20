@@ -28,7 +28,7 @@ Searching for ECSs by Tag
 #. Log in to the management console.
 #. Select the region where the ECS is located.
 #. On the **Elastic Cloud Server** page, search for ECSs by tag.
-#. In the search bar, select **Tag** and then the tag key and value, and click **OK**.
+#. In the search bar, choose **Tag** and then select the tag key and value, and click **OK**.
 
 Deleting a Tag
 --------------

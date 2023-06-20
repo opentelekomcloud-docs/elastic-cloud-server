@@ -19,7 +19,7 @@ Perform the following configuration on the firewall:
 
 -  Windows
 
-   If you need to assign permissions to only the administrator to access custom data, enable the firewall as an administrator and run the following commands in PowerShell:
+   If you need to assign permissions only to the administrator to access custom data, enable the firewall as an administrator and run the following commands in PowerShell:
 
    **PS C:\\>$RejectPrincipal = New-Object -TypeName System.Security.Principal.NTAccount ("Everyone")**
 
@@ -35,14 +35,14 @@ Perform the following configuration on the firewall:
 
 -  Linux
 
-   If you need to assign permissions to only user **root** to access custom data, run the following command as user **root**:
+   If you need to assign permissions only to user **root** to access custom data, run the following command as user **root**:
 
    **iptables --append OUTPUT --proto tcp --destination 169.254.169.254 --match owner ! --uid-owner root --jump REJECT**
 
 ECS Metadata Types
 ------------------
 
-:ref:`Table 1 <en-us_topic_0042400609__table273552371680>` does not contain metadata items ami-id, ami-launch-index, ami-manifest-path, block-device-mapping/, instance-action, instance-id and reservation-id. These metadata items are not compatible with EC2 and are not recommended.
+:ref:`Table 1 <en-us_topic_0042400609__table273552371680>` does not contain metadata items ami-id, ami-launch-index, ami-manifest-path, block-device-mapping/, instance-action, instance-id and reservation-id. These metadata items are meaningless and are not recommended.
 
 .. _en-us_topic_0042400609__table273552371680:
 
@@ -97,7 +97,7 @@ ECS Metadata Types
    +-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | EC2                   | /user-data                             | Displays ECS user data.                                                                                                                                                                              |
    +-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | EC2                   | /meta-data/security-groups             | Displays the security group to which an ECS belongs.                                                                                                                                                 |
+   | EC2                   | /meta-data/security-groups             | Displays the security group of an ECS.                                                                                                                                                               |
    +-----------------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0042400609__table2373623012315:

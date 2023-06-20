@@ -124,7 +124,7 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
       **lsmod \| grep nouveau**
 
       -  If the command output contains information about the Nouveau driver, the Nouveau driver has been installed and must be disabled. Then, go to step :ref:`9.b <en-us_topic_0149470468__li073251517124>`.
-      -  If the command output does not contain information about the Nouveau driver, the Nouveau driver has been disabled. Then, go to step :ref:`9.d <en-us_topic_0149470468__li9819105753916>`.
+      -  If the command output does not contain information about the Nouveau driver, the Nouveau driver has been disabled. Then, go to step :ref:`10 <en-us_topic_0149470468__li1516433810618>`.
 
    b. .. _en-us_topic_0149470468__li073251517124:
 
@@ -153,13 +153,13 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 
          **dracut -v /boot/initramfs-$(uname -r).img $(uname -r)**
 
-   d. .. _en-us_topic_0149470468__li9819105753916:
-
-      Restart the ECS:
+   d. Restart the ECS:
 
       **reboot**
 
-#. Select **OK** for three consecutive times as prompted to complete the driver installation.
+#. .. _en-us_topic_0149470468__li1516433810618:
+
+   Select **OK** for three consecutive times as prompted to complete the driver installation.
 
 
    .. figure:: /_static/images/en-us_image_0250287611.png

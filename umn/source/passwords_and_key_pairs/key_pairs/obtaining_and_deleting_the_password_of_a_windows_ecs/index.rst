@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0000001234183498:
 
-Obtaining and Deleting the Password of an Windows ECS
-=====================================================
+Obtaining and Deleting the Password of a Windows ECS
+====================================================
 
 -  :ref:`Obtaining the Password for Logging In to a Windows ECS <en-us_topic_0031107266>`
 -  :ref:`Deleting the Initial Password for Logging In to a Windows ECS <en-us_topic_0031107267>`

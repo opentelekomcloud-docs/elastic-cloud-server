@@ -10,7 +10,11 @@ Overview
 
 Ultra-high I/O ECSs use high-performance local NVMe SSDs to provide high storage input/output operations per second (IOPS) and low read/write latency. You can create such ECSs with high-performance local NVMe SSDs attached on the management console.
 
-Ultra-high I/O ECSs can be used for high-performance relational databases, NoSQL databases (such as Cassandra and MongoDB), and ElasticSearch.
+Scenarios
+---------
+
+-  High-performance relational databases
+-  NoSQL databases (such as Cassandra and MongoDB) and ElasticSearch
 
 Specifications
 --------------
@@ -32,24 +36,38 @@ Specifications
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------------------+----------------+
    | i3.16xlarge.4 | 64    | 256    | 40/32                  | 1000     | 32              | 8         | 8 x 3,200 GiB NVMe | KVM            |
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------------------+----------------+
+   | i3.2xlarge.8  | 8     | 64     | 15/4.5                 | 150      | 4               | 4         | 1 x 3,200 GiB NVMe | KVM            |
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------------------+----------------+
+   | i3.4xlarge.8  | 16    | 128    | 20/9                   | 280      | 8               | 8         | 2 x 3,200 GiB NVMe | KVM            |
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------------------+----------------+
+   | i3.8xlarge.8  | 32    | 256    | 30/18                  | 550      | 16              | 8         | 4 x 3,200 GiB NVMe | KVM            |
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------------------+----------------+
+   | i3.12xlarge.8 | 48    | 384    | 35/27                  | 750      | 16              | 8         | 6 x 3,200 GiB NVMe | KVM            |
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------------------+----------------+
+   | i3.16xlarge.8 | 64    | 512    | 40/32                  | 1,000    | 32              | 8         | 8 x 3,200 GiB NVMe | KVM            |
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------------------+----------------+
 
 Features
 --------
 
-:ref:`Table 2 <en-us_topic_0094118976__table18147135042010>` and :ref:`Table 3 <en-us_topic_0094118976__table9670341181017>` list the IOPS performance of local disks and specifications of a single local disk attached to an I3 ECS.
+:ref:`Table 2 <en-us_topic_0094118976__table1875314018355>` and :ref:`Table 3 <en-us_topic_0094118976__table9670341181017>` list the IOPS performance of local disks and specifications of a single local disk attached to an I3 ECS.
 
-.. _en-us_topic_0094118976__table18147135042010:
+.. _en-us_topic_0094118976__table1875314018355:
 
 .. table:: **Table 2** IOPS performance of local disks used by I3 ECSs
 
    ============= =================================
    Flavor        Maximum IOPS for Random 4 KB Read
    ============= =================================
+   i3.2xlarge.4  750,000
+   i3.4xlarge.4  1,500,000
+   i3.8xlarge.4  3,000,000
+   i3.12xlarge.4 4,500,000
+   i3.16xlarge.4 6,000,000
    i3.2xlarge.8  750,000
    i3.4xlarge.8  1,500,000
    i3.8xlarge.8  3,000,000
    i3.12xlarge.8 4,500,000
-   i3.15xlarge.8 5,250,000
    i3.16xlarge.8 6,000,000
    ============= =================================
 
@@ -147,7 +165,7 @@ Notes
 
 -  Modify the **fstab** file to set automatic disk mounting at ECS start. For details, see :ref:`Setting Automatic Mounting at System Start <en-us_topic_0085634798__en-us_topic_0084935709_section15839912195453>`.
 
--  The local disk data of an ultra-high I/O ECS may be lost due to some reasons, such as physical server breakdown or local disk damage. If the data reliability of your application cannot be ensured, it is a good practice to use EVS disks to build your ECS.
+-  The local disk data of an ultra-high I/O ECS may be lost due to some reasons, such as physical server breakdown or local disk damage. If your application does not use the data reliability architecture, it is a good practice to use EVS disks to build your ECS.
 
 -  After an ultra-high I/O ECS is deleted, the data on local NVMe SSDs is automatically deleted. Back up the data before deleting such an ECS. Deleting local disk data is time-consuming. Therefore, an ultra-high I/O ECS requires a longer period of time than other ECSs for releasing resources.
 
@@ -155,7 +173,7 @@ Notes
 
 -  The device name of a local disk attached to an ultra-high I/O ECS is **/dev/nvme0n1** or **/dev/nvme0n2**.
 
--  The basic resources, including vCPUs, memory, and image of an ultra-high I/O ECS will continue to be billed after the ECS is stopped. To stop the ECS from being billed, delete it.
+-  The basic resources, including vCPUs, memory, and image of an ultra-high I/O ECS will continue to be billed after the ECS is stopped. To stop the ECS from being billed, delete it and its associated resources.
 
 Handling Damaged Local Disks Attached to an ECS of I Series
 -----------------------------------------------------------
@@ -245,7 +263,7 @@ If a local disk attached to an ECS is damaged, perform the following operations 
 
       **Figure 2** Querying the serial number of the faulty local disk
 
-#. Stop the ECS and provide the serial number of the faulty disk for technical support to replace the local disk.
+#. Stop the ECS and provide the serial number of the faulty disk to technical support personnel to replace the local disk.
 
    After the local disk is replaced, restart the ECS to synchronize the new local disk information to the virtualization layer.
 
@@ -273,6 +291,6 @@ If a local disk attached to an ECS is damaged, perform the following operations 
 
       **Figure 4** Querying the mapping between the disk ID and serial number
 
-#. Stop the ECS and provide the serial number of the faulty disk for technical support to replace the local disk.
+#. Stop the ECS and provide the serial number of the faulty disk to technical support personnel to replace the local disk.
 
    After the local disk is replaced, restart the ECS to synchronize the new local disk information to the virtualization layer.

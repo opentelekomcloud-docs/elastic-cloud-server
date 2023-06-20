@@ -34,19 +34,26 @@ Procedure
 
    Stop the original Linux ECS, detach the system disk from it, and attach the system disk to the temporary ECS.
 
-   a. Stop the original ECS, switch to the page providing details about the ECS, and click the **Disks** tab.
+   a. Log in to the management console.
+
+   b. Click |image1| in the upper left corner and select your region and project.
+
+   c. Under **Computing**, click **Elastic Cloud Server**.
+
+   d. Stop the original ECS, switch to the page providing details about the ECS, and click the **Disks** tab.
 
       .. note::
 
          Do not forcibly stop the original ECS. Otherwise, password reset may fail.
 
-   b. .. _en-us_topic_0021427650__li5640121684418:
+   e. .. _en-us_topic_0021427650__li5640121684418:
 
       Locate the row containing the system disk to be detached and click **Detach** to detach the system disk from the ECS.
 
-   c. On the page providing details about the temporary ECS, click the **Disks** tab.
+#. Attach the system disk to the temporary ECS.
 
-   d. Click **Attach Disk**. In the displayed dialog box, select the system disk detached in step :ref:`2.b <en-us_topic_0021427650__li5640121684418>` and attach it to the temporary ECS.
+   a. On the page providing details about the temporary ECS, click the **Disks** tab.
+   b. Click **Attach Disk**. In the displayed dialog box, select the system disk detached in step :ref:`2.e <en-us_topic_0021427650__li5640121684418>` and attach it to the temporary ECS.
 
 #. Log in to the temporary ECS remotely and reset the password.
 
@@ -76,7 +83,7 @@ Procedure
 
          If the original ECS and the temporary ECS both run CentOS 7, a mount failure may occur during script execution. To resolve this issue, replace **mount $dev $mountPath** with **mount -o nouuid $dev $mountPath** in the script.
 
-   d. Enter the new password and the directory obtained in step :ref:`3.b <en-us_topic_0021427650__li664021617445>` as prompted.
+   d. Enter the new password and the directory obtained in step :ref:`4.b <en-us_topic_0021427650__li664021617445>` as prompted.
 
       If the following information is displayed, the password has been changed:
 
@@ -84,7 +91,7 @@ Procedure
 
          set password success.
 
-#. For a non-**root** user, perform the following operations to enable the login permission of user **root**:
+#. (Optional) For a non-**root** user, perform the following operations to enable the login permissions for user **root**:
 
    **vi /etc/ssh/sshd_config**
 
@@ -112,6 +119,8 @@ Procedure
 
    c. On the page providing details about the original Linux ECS, click the **Disks** tab.
 
-   d. Click **Attach Disk**. In the displayed dialog box, select the data disk detached in :ref:`5.b <en-us_topic_0021427650__li964031614447>`.
+   d. Click **Attach Disk**. In the displayed dialog box, select the data disk detached in :ref:`6.b <en-us_topic_0021427650__li964031614447>`.
 
-   e. Restart the original Linux ECS.
+#. Restart the original Linux ECS.
+
+.. |image1| image:: /_static/images/en-us_image_0210779229.png

@@ -12,7 +12,7 @@ To ensure platform security and conserve EIPs, EIPs are assigned only to specifi
 
 .. note::
 
-   NAT Gateway is recommended, which provides both the SNAT and DNAT functions for your ECSs in a VPC and allows the ECSs to access or provide services accessible from the Internet. For details, see `NAT Gateway User Guide <https://docs.otc.t-systems.com/usermanual/nat/nat_pro_0000.html>`__.
+   NAT Gateway is recommended, which provides both the SNAT and DNAT functions for your ECSs in a VPC and allows the ECSs to access or provide services accessible from the Internet. For details, see `NAT Gateway <https://docs.otc.t-systems.com/usermanual/nat/nat_pro_0000.html>`__.
 
 Prerequisites
 -------------
@@ -60,7 +60,7 @@ In this example, the proxy ECS runs CentOS 6.5.
    **cat /proc/sys/net/ipv4/ip_forward**
 
    -  If **0** (disabled) is displayed, go to :ref:`10 <en-us_topic_0027157850__li51820417113959>`.
-   -  If **1** (enabled), go to :ref:`16 <en-us_topic_0027157850__li49419571113959>`.
+   -  If **1** (enabled) is displayed, go to :ref:`15 <en-us_topic_0027157850__li33604568113959>`.
 
 #. .. _en-us_topic_0027157850__li51820417113959:
 
@@ -88,7 +88,9 @@ In this example, the proxy ECS runs CentOS 6.5.
 
    **sysctl -p /etc/sysctl.conf**
 
-#. Run the following commands to configure default **iptables** rules:
+#. .. _en-us_topic_0027157850__li33604568113959:
+
+   Run the following commands to configure default **iptables** rules:
 
    **iptables -P INPUT ACCEPT**
 
@@ -138,7 +140,7 @@ In this example, the proxy ECS runs CentOS 6.5.
    a. Log in to the management console.
    b. Click |image3| in the upper left corner and select your region and project.
    c. Under **Network**, click **Virtual Private Cloud**.
-   d. Choose **Route Tables** in the left navigation pane. On the displayed page, click a VPC which a route is to be added to. On the displayed page, click **Add Route**.
+   d. Choose **Route Tables** in the left navigation pane. In the route table list, click a target route table. On the displayed page, click **Add Route**.
    e. Set route information on the displayed page.
 
       -  **Destination**: indicates the destination network segment. The default value is **0.0.0.0/0**.

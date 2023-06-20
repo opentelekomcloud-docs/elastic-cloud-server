@@ -112,7 +112,7 @@ Performing Basic Configurations
 
       Allows you to use your existing OS license. In such a case, you do not need to apply for a license again.
 
-   For more details, see :ref:`License Type <en-us_topic_0046566932>`.
+   For more information about license types, see :ref:`License Types <en-us_topic_0046566932>`.
 
 #. Set **System Disk** and **Data Disk** if required.
 

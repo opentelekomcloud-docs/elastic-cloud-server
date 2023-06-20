@@ -20,10 +20,12 @@ ECS Flavor Naming Rules
 
 ECS flavors are named in the "AB.C.D" format.
 
+Example: s2.medium.4
+
 The format is defined as follows:
 
 -  **A** specifies the ECS type. For example, **s** indicates a general-purpose ECS, **c** a general computing-plus ECS, and **m** a memory-optimized ECS.
--  **B** specifies the type ID. For example, **3** in **s3** indicates a general-purpose third-generation ECS.
+-  **B** specifies the type ID. For example, **3** in **s3** indicates the third-generation general-purpose ECS.
 -  **C** specifies the flavor size, such as medium, large, xlarge, 2xlarge, 4xlarge, or 8xlarge.
 -  **D** specifies the ratio of memory to vCPUs expressed in a digit. For example, value **4** indicates that the ratio of memory to vCPUs is 4.
 
@@ -38,12 +40,19 @@ Specifications for the ECS being created are located in the specifications list.
 
    **Figure 1** ECS specifications
 
+vCPU
+----
+
+The ECS processor uses the hyper-threading technology. The CPU exposes two execution contexts per physical core. This means that one physical core now works like two "logical cores" that can handle different software threads.
+
+For example, a 10-core physical CPU contains 20 vCPUs (threads).
+
 Network QoS
 -----------
 
 Network QoS uses basic technologies to improve the quality of network communication. A network with QoS enabled offers predictable network performance and effectively allocates network bandwidth to use network resources.
 
-To obtain the QoS data of an ECS flavor, including the maximum bandwidth, assured bandwidth, maximum PPS, and NIC multi-queue, see :ref:`A Summary List of ECS Specifications <en-us_topic_0177512565>`.
+To obtain the QoS data of an ECS flavor, including the maximum bandwidth, assured bandwidth, maximum intranet PPS, and NIC multi-queue, see :ref:`A Summary List of ECS Specifications <en-us_topic_0177512565>`.
 
 The intranet bandwidth and PPS of an ECS are determined based on ECS flavors.
 

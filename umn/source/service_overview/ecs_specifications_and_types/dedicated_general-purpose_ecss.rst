@@ -8,9 +8,15 @@ Dedicated General-Purpose ECSs
 Overview
 --------
 
-C4 ECSs use second-generation Intel® Xeon® Scalable processors and high-speed intelligent NICs to offer powerful and stable computing performance, including ultra-high network bandwidth and PPS.
+C4 ECSs use second-generation Intel® Xeon® Scalable processors and high-speed intelligent NICs to offer powerful and stable computing performance, and ultra-high network bandwidth and PPS.
 
 C3 ECSs are developed based on KVM virtualization, use Intel® Xeon® Scalable processors and Data Plane Development Kit (DPDK) rapid packet processing mechanism, and feature high and stable computing performance. Equipped with high-performance NICs, the C3 ECSs provide high performance and stability, meeting enterprise-grade application requirements.
+
+Scenarios
+---------
+
+-  C4 ECSs: Websites and web applications, generalized databases and cache servers, and medium- and heavy-workload enterprise applications with strict requirements on computing and network performance
+-  C3 ECSs: Small- and medium-scale databases, cache servers, and search clusters with high requirements on stability; enterprise-grade applications
 
 Specifications
 --------------
@@ -86,12 +92,6 @@ Specifications
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
    | c3.15xlarge.4 | 60    | 256    | 16/16                  | 500      | 16              | 12        | KVM            |                                |
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
-
-Scenarios
----------
-
--  C4 ECSs: Websites and web applications, generalized databases and cache servers, and medium- and heavy-workload enterprise applications with strict requirements on computing and network performance
--  C3 ECSs: Small- and medium-scale databases, cache servers, and search clusters with high requirements on stability; enterprise-grade applications
 
 Notes
 -----

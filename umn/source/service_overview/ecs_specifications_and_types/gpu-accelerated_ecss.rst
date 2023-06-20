@@ -15,7 +15,7 @@ GPU-accelerated ECSs are classified as G series and P series of ECSs.
 GPU-accelerated ECS Types
 -------------------------
 
-Recommended: :ref:`Computing-accelerated P2s <en-us_topic_0097289624__section1454714546567>`, :ref:`Inference-accelerated PI2 <en-us_topic_0097289624__section1846114713182>`, and :ref:`Graphics-accelerated Enhancement G6 <en-us_topic_0097289624__section131302034104515>`
+Recommended: :ref:`Computing-accelerated P2s <en-us_topic_0097289624__section1454714546567>`, :ref:`Inference-accelerated Pi2 <en-us_topic_0097289624__section1846114713182>`, and :ref:`Graphics-accelerated Enhancement G6 <en-us_topic_0097289624__section131302034104515>`
 
 Available now: All GPU models except the recommended ones. If available ECSs are sold out, use the recommended ones.
 
@@ -30,7 +30,7 @@ Available now: All GPU models except the recommended ones. If available ECSs are
    -  :ref:`Computing-accelerated P2v <en-us_topic_0097289624__section208472383415>`
    -  :ref:`Computing-accelerated P2 <en-us_topic_0097289624__section5477185118234>`
    -  :ref:`Computing-accelerated P1 <en-us_topic_0097289624__section1124594913391>`
-   -  :ref:`Inference-accelerated PI2 <en-us_topic_0097289624__section1846114713182>` (recommended)
+   -  :ref:`Inference-accelerated Pi2 <en-us_topic_0097289624__section1846114713182>` (recommended)
 
 Helpful links:
 
@@ -110,7 +110,7 @@ G6 ECSs are used in graphics acceleration scenarios, such as video rendering, cl
       |                                   | -  Windows Server 2012 R2 Standard 64bit |
       +-----------------------------------+------------------------------------------+
 
--  G6 ECSs created using a public image have had the GRID driver of a specific version installed by default. However, you need to purchase and configure the GRID license by yourself. Ensure that the GRID driver version meets service requirements.
+-  G6 ECSs created using a public image have had the GRID driver of a specific version installed by default. However, you need to purchase and configure a GRID license by yourself. Ensure that the GRID driver version meets service requirements.
 
 -  If a G6 ECS is created using a private image, make sure that the GRID driver was installed during the private image creation. If not, install the driver for graphics acceleration after the ECS is created.
 
@@ -159,7 +159,9 @@ P3 ECSs use NVIDIA A100 GPUs and provide flexibility and ultra-high-performance 
 
 -  Comprehensive basic capabilities
 
-   Networks are user-defined, subnets can be divided, and network access policies can be configured as needed. Mass storage is used, elastic capacity expansion as well as backup and restoration are supported to make data more secure. Auto Scaling allows you to add or reduce the number of ECSs quickly.
+   -  User-defined network with flexible subnet division and network access policy configuration
+   -  Mass storage, elastic expansion, and backup and restoration
+   -  Elastic scaling
 
 -  Flexibility
 
@@ -240,7 +242,9 @@ P2s ECSs use NVIDIA Tesla V100 GPUs to provide flexibility, high-performance com
 
 -  Comprehensive basic capabilities
 
-   Networks are user-defined, subnets can be divided, and network access policies can be configured as needed. Mass storage is used, elastic capacity expansion as well as backup and restoration are supported to make data more secure. Auto Scaling allows you to add or reduce the number of ECSs quickly.
+   -  User-defined network with flexible subnet division and network access policy configuration
+   -  Mass storage, elastic expansion, and backup and restoration
+   -  Elastic scaling
 
 -  Flexibility
 
@@ -333,7 +337,9 @@ P2v ECSs use NVIDIA Tesla V100 GPUs and deliver high flexibility, high-performan
 
 -  Comprehensive basic capabilities
 
-   Networks are user-defined, subnets can be divided, and network access policies can be configured as needed. Mass storage is used, elastic capacity expansion as well as backup and restoration are supported to make data more secure. Auto Scaling allows you to add or reduce the number of ECSs quickly.
+   -  User-defined network with flexible subnet division and network access policy configuration
+   -  Mass storage, elastic expansion, and backup and restoration
+   -  Elastic scaling
 
 -  Flexibility
 
@@ -426,7 +432,9 @@ Compared with P1 ECSs, P2 ECSs use NVIDIA Tesla V100 GPUs, which have improved b
 
 -  Comprehensive basic capabilities
 
-   Networks are user-defined, subnets can be divided, and network access policies can be configured as needed. Mass storage is used, elastic capacity expansion as well as backup and restoration are supported to make data more secure. Auto Scaling allows you to add or reduce the number of ECSs quickly.
+   -  User-defined network with flexible subnet division and network access policy configuration
+   -  Mass storage, elastic expansion, and backup and restoration
+   -  Elastic scaling
 
 -  Flexibility
 
@@ -529,7 +537,9 @@ P1 ECSs use NVIDIA Tesla P100 GPUs and provide flexibility, high performance, an
 
 -  Comprehensive basic capabilities
 
-   Networks are user-defined, subnets can be divided, and network access policies can be configured as needed. Mass storage is used, elastic capacity expansion as well as backup and restoration are supported to make data more secure. Auto Scaling allows you to add or reduce the number of ECSs quickly.
+   -  User-defined network with flexible subnet division and network access policy configuration
+   -  Mass storage, elastic expansion, and backup and restoration
+   -  Elastic scaling
 
 -  Flexibility
 
@@ -592,16 +602,16 @@ P1 ECSs are used in computing acceleration scenarios, such as deep learning trai
 
 .. _en-us_topic_0097289624__section1846114713182:
 
-Inference-accelerated PI2
+Inference-accelerated Pi2
 -------------------------
 
 **Overview**
 
-PI2 ECSs use NVIDIA Tesla T4 GPUs dedicated for real-time AI inference. These ECSs use the T4 INT8 calculator for up to 130 TOPS of INT8 computing. The PI2 ECSs can also be used for light-load training.
+Pi2 ECSs use NVIDIA Tesla T4 GPUs dedicated for real-time AI inference. These ECSs use the T4 INT8 calculator for up to 130 TOPS of INT8 computing. The Pi2 ECSs can also be used for light-load training.
 
 **Specifications**
 
-.. table:: **Table 12** PI2 ECS specifications
+.. table:: **Table 12** Pi2 ECS specifications
 
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs   | GPU Memory | Local Disks | Virtualization | Hardware                                                                         |
@@ -617,7 +627,7 @@ PI2 ECSs use NVIDIA Tesla T4 GPUs dedicated for real-time AI inference. These EC
    | pi2.16xlarge.4 | 64    | 256    | 30/30                  | 400      | 32              | 8         | 8 x T4 | 8 x 16 GiB | N/A         | KVM            |                                                                                  |
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
 
-**PI2 ECS Features**
+**Pi2 ECS Features**
 
 -  CPU: 2nd Generation Intel® Xeon® Scalable 6278 processors (2.6 GHz of base frequency and 3.5 GHz of turbo frequency), or Intel® Xeon® Scalable 6151 processors (3.0 GHz of base frequency and 3.4 GHz of turbo frequency)
 -  Up to four NVIDIA Tesla T4 GPUs on an ECS
@@ -629,21 +639,21 @@ PI2 ECSs use NVIDIA Tesla T4 GPUs dedicated for real-time AI inference. These EC
 
 **Supported Common Software**
 
-PI2 ECSs are used in GPU-based inference computing scenarios, such as image recognition, speech recognition, and natural language processing. The PI2 ECSs can also be used for light-load training.
+Pi2 ECSs are used in GPU-based inference computing scenarios, such as image recognition, speech recognition, and natural language processing. The Pi2 ECSs can also be used for light-load training.
 
-PI2 ECSs support the following commonly used software:
+Pi2 ECSs support the following commonly used software:
 
 -  Deep learning frameworks, such as TensorFlow, Caffe, PyTorch, and MXNet
 
 **Notes**
 
--  After a PI2 ECS is stopped, basic resources including vCPUs, memory, and images are not billed, but its system disk is billed based on the disk capacity. If other products, such as EVS disks, EIP, and bandwidth are associated with the ECS, these products are billed separately.
+-  After a Pi2 ECS is stopped, basic resources including vCPUs, memory, and images are not billed, but its system disk is billed based on the disk capacity. If other products, such as EVS disks, EIP, and bandwidth are associated with the ECS, these products are billed separately.
 
    .. note::
 
-      Resources are released after a PI2 ECS is stopped. If desired resources are insufficient when the PI2 ECS is started after being stopped, starting the ECS might fail. Therefore, if you need to use a PI2 ECS for a long time, keep the ECS running.
+      Resources are released after a Pi2 ECS is stopped. If desired resources are insufficient when the Pi2 ECS is started after being stopped, starting the ECS might fail. Therefore, if you need to use a Pi2 ECS for a long time, keep the ECS running.
 
--  :ref:`Table 13 <en-us_topic_0097289624__table576493295720>` lists the OSs supported by PI2 ECSs.
+-  :ref:`Table 13 <en-us_topic_0097289624__table576493295720>` lists the OSs supported by Pi2 ECSs.
 
    .. _en-us_topic_0097289624__table576493295720:
 
@@ -664,10 +674,10 @@ PI2 ECSs support the following commonly used software:
       |                                   | -  Windows Server 2012 R2 Standard 64bit |
       +-----------------------------------+------------------------------------------+
 
--  PI2 ECSs support automatic recovery when the hosts accommodating such ECSs become faulty.
+-  Pi2 ECSs support automatic recovery when the hosts accommodating such ECSs become faulty.
 
--  By default, PI2 ECSs created using a Windows public image have the Tesla driver installed.
+-  By default, Pi2 ECSs created using a Windows public image have the Tesla driver installed.
 
--  By default, PI2 ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+-  By default, Pi2 ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 
--  If a PI2 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+-  If a Pi2 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.

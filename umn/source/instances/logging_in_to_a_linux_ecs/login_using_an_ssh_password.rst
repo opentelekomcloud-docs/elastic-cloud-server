@@ -125,4 +125,8 @@ Logging In to a Linux ECS from a Local Linux Server
 
 To log in to the Linux ECS from a local Linux server, run the following command:
 
-**ssh** **EIP bound to the ECS**
+**ssh** **xx.xx.xx.xx**
+
+.. note::
+
+   xx.xx.xx.xx indicates the EIP bound to the ECS.

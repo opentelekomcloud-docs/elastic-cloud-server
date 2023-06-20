@@ -140,6 +140,13 @@ TCP Bandwidth Test (Using netperf)
 
 Perform the test on multiple flows. This section considers 16 flows that are evenly distributed to eight ECSs, as an example.
 
+.. note::
+
+   The TCP bandwidth test uses the multi-flow model.
+
+   -  When testing the TCP transmission (TX) bandwidth, use the one-to-many model to ensure that the capability of the receiver is sufficient.
+   -  When testing the TCP receiver (RX) bandwidth, use the many-to-one model to ensure that the capability of the sender is sufficient.
+
 #. Test the TCP TX bandwidth.
 
    a. Run the following commands on all auxiliary ECSs to start the netserver process:
@@ -324,7 +331,9 @@ UDP PPS Test (Using iperf3)
 
 #. Test the UDP TX PPS.
 
-   a. Run the following commands on all auxiliary ECSs to start the server process:
+   a. Log in to an auxiliary ECS.
+
+   b. Run the following commands on all auxiliary ECSs to start the server process:
 
       **iperf3 -s -p 12001 &**
 
@@ -332,7 +341,7 @@ UDP PPS Test (Using iperf3)
 
       In the preceding commands, **-p** specifies the listening port.
 
-   b. Start the client process on the tested ECS. For details about common iperf3 parameters, see :ref:`Table 2 <en-us_topic_0115820205__table8470126153613>`.
+   c. Start the client process on the tested ECS. For details about common iperf3 parameters, see :ref:`Table 2 <en-us_topic_0115820205__table8470126153613>`.
 
       ##Auxiliary ECS 1
 
@@ -386,49 +395,49 @@ UDP PPS Test (Using iperf3)
 
    a. Start the server process on the tested ECS. For details about common iperf3 parameters, see :ref:`Table 2 <en-us_topic_0115820205__table8470126153613>`.
 
-      ##Auxiliary ECS 1
+      ##The port number is for the first auxiliary ECS.
 
       **iperf3 -s -p 12001 -A 0 -i 60 &**
 
       **iperf3 -s -p 12002 -A 1 -i 60 &**
 
-      ##Auxiliary ECS 2
+      ##The port number is for the second auxiliary ECS.
 
       **iperf3 -s -p 12003 -A 2 -i 60 &**
 
       **iperf3 -s -p 12004 -A 3 -i 60 &**
 
-      ##Auxiliary ECS 3
+      ##The port number is for the third auxiliary ECS.
 
       **iperf3 -s -p 12005 -A 4 -i 60 &**
 
       **iperf3 -s -p 12006 -A 5 -i 60 &**
 
-      ##Auxiliary ECS 4
+      ##The port number is for the fourth auxiliary ECS.
 
       **iperf3 -s -p 12007 -A 6 -i 60 &**
 
       **iperf3 -s -p 12008 -A 7 -i 60 &**
 
-      ##Auxiliary ECS 5
+      ##The port number is for the fifth auxiliary ECS.
 
       **iperf3 -s -p 12009 -A 8 -i 60 &**
 
       **iperf3 -s -p 12010 -A 9 -i 60 &**
 
-      ##Auxiliary ECS 6
+      ##The port number is for the sixth auxiliary ECS.
 
       **iperf3 -s -p 12011 -A 10 -i 60 &**
 
       **iperf3 -s -p 12012 -A 11 -i 60 &**
 
-      ##Auxiliary ECS 7
+      ##The port number is for the seventh auxiliary ECS.
 
       **iperf3 -s -p 12013 -A 12 -i 60 &**
 
       **iperf3 -s -p 12014 -A 13 -i 60 &**
 
-      ##Auxiliary ECS 8
+      ##The port number is for the eighth auxiliary ECS.
 
       **iperf3 -s -p 12015 -A 14 -i 60 &**
 

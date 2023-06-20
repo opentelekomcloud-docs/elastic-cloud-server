@@ -48,7 +48,7 @@ Procedure
 
    Under **Computing**, click **Elastic Cloud Server**.
 
-#. Locate the row containing the target ECS. Click **More** in the **Operation** column and select **Manage Image/Disk/Backup** > **Reinstall OS**.
+#. Locate the row containing the target ECS and choose **More** > **Manage Image/Disk/Backup** > **Reinstall OS**.in the **Operation** column.
 
    Only stopped ECSs support OS reinstallation. If the ECS is not stopped, stop it before proceeding with reinstallation.
 
@@ -64,7 +64,7 @@ Procedure
    -  **KMS Key Name**: specifies the name of the key used by the encrypted EVS disk. You can select an existing key, or click **Create KMS Key** and create a new one on the KMS console. The default value is **evs/default**.
    -  **KMS Key ID**: specifies the ID of the key used by the encrypted data disk.
 
-#. (Optional) Select a **License Type** (**Use license from the system** or **Bring your own license (BYOL)**) if the reinstalled OS running on your ECS is billed. For more details, see :ref:`License Type <en-us_topic_0046566932>`.
+#. (Optional) Select a **License Type** (**Use license from the system** or **Bring your own license (BYOL)**) if the reinstalled OS running on your ECS is billed. For more details, see :ref:`License Types <en-us_topic_0046566932>`.
 
    The following OSs are billed:
 
@@ -80,9 +80,9 @@ Procedure
 
 #. .. _en-us_topic_0024911405__li31062819143541:
 
-   On the **ECS OS Reinstallation** page, confirm the OS specifications, and click **Submit Application**.
+   On the **ECS OS Reinstallation** page, confirm the settings, and click **Submit**.
 
-   After the request is submitted, the ECS status changes to **Reinstalling**. The reinstallation has been completed when the ECS status changes to **Running**.
+   After the request is submitted, the status **Reinstalling** is displayed. When this status disappears, the reinstallation is complete.
 
    .. note::
 

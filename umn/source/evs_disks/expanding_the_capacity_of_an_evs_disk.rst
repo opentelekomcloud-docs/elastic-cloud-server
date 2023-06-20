@@ -8,7 +8,7 @@ Expanding the Capacity of an EVS Disk
 Scenarios
 ---------
 
-When your disk capacity is insufficient, you can handle the insufficiency by expanding the disk capacity.
+You can expand the disk capacity if the disk space is insufficient.
 
 Procedure
 ---------
@@ -21,8 +21,8 @@ The capacity of an EVS disk can be expanded in either of the following ways:
 
    You can expand the disk capacities when the EVS disks are in the **In-use** or **Available** state.
 
-   -  Expanding an **In-use** EVS disk means that the to-be-expanded EVS disk has been attached to an ECS. Only certain ECS OSs support the expansion of **In-use** EVS disks. For details, see "Expanding an In-use EVS Disk" in *Elastic Volume Service User Guide*.
-   -  Expanding an **Available** EVS disk means that the to-be-expanded EVS disk has not been attached to an ECS. For details, see "Expanding an Available EVS Disk" in *Elastic Volume Service User Guide*.
+   -  Expanding an **In-use** EVS disk means expanding the capacity of an EVS disk that has been attached to an ECS. Only certain OSs support the expansion of **In-use** EVS disks. For details, see "Expanding an In-use EVS Disk" in *Elastic Volume Service User Guide*.
+   -  Expanding an **Available** EVS disk means expanding the capacity of an EVS disk that has not been attached to an ECS. For details, see "Expanding an Available EVS Disk" in *Elastic Volume Service User Guide*.
 
 .. note::
 

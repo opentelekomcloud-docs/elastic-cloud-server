@@ -55,7 +55,7 @@ Network Configurations
       -  **Port Range**: **ANY**
       -  **Remote End**: **0.0.0.0/16**
 
-#. Set **EIP**.
+#. Set EIP.
 
    An EIP is a static public IP address bound to an ECS in a VPC. Using the EIP, the ECS provides services externally.
 

@@ -12,6 +12,10 @@ A security group is a collection of access control rules for ECSs that have the 
 
 You can also customize a security group or use the default one. The system provides a default security group for you, which permits all outbound traffic and denies inbound traffic. ECSs in a security group are accessible to each other. For details about the default security group, see :ref:`Default Security Group and Rules <en-us_topic_0140323154>`.
 
+.. note::
+
+   If two ECSs are in the same security group but in different VPCs, the security group does not take effect. You can use a VPC peering connection to connect the two VPCs first.
+
 Security Group Rules
 --------------------
 
@@ -24,7 +28,6 @@ Security Group Constraints
 
 -  By default, you can create a maximum of 100 security groups in your cloud account.
 -  By default, you can add up to 50 security group rules to a security group.
--  By default, you can add an ECS or extension NIC to up to five security groups. In such a case, the rules of all the selected security groups are aggregated to take effect.
 -  When creating a private network load balancer, you need to select a desired security group. Do not delete the default security group rules or ensure that the following requirements are met:
 
    -  Outbound rules: only allow data packets to the selected security group or only data packets from the peer load balancer.

@@ -5,7 +5,7 @@
 Disk Management
 ===============
 
--  :ref:`What Should I Do If the Data Disk Attached a Windows ECS Is Unavailable? <en-us_topic_0251012483>`
+-  :ref:`Why Can't I Find My Newly Purchased Data Disk After I Log In to My Windows ECS? <en-us_topic_0251012483>`
 -  :ref:`How Can I Adjust System Disk Partitions? <en-us_topic_0076210995>`
 -  :ref:`How Can I Obtain the Mapping Between Disk Partitions and Disk Devices on a Windows ECS? <en-us_topic_0087680813>`
 -  :ref:`How Can I Obtain the Mapping Between Disk Partitions and Disk Devices on a Linux ECS? <en-us_topic_0087901488>`
@@ -29,7 +29,7 @@ Disk Management
    :maxdepth: 1
    :hidden: 
 
-   what_should_i_do_if_the_data_disk_attached_a_windows_ecs_is_unavailable
+   why_cant_i_find_my_newly_purchased_data_disk_after_i_log_in_to_my_windows_ecs
    how_can_i_adjust_system_disk_partitions
    how_can_i_obtain_the_mapping_between_disk_partitions_and_disk_devices_on_a_windows_ecs
    how_can_i_obtain_the_mapping_between_disk_partitions_and_disk_devices_on_a_linux_ecs

@@ -16,6 +16,10 @@ The fdisk partitioning tool is suitable only for MBR partitions, and the parted 
 
 The method for initializing a disk varies depending on the OS running on the server. This document is used for reference only. For the detailed operations and differences, see the product documents of the corresponding OS.
 
+.. important::
+
+   When using a disk for the first time, if you have not initialized it, including creating partitions and file systems, the additional space added to this disk in an expansion later may not be normally used.
+
 Prerequisites
 -------------
 
@@ -73,7 +77,7 @@ The following example shows you how a new partition can be created on a new data
       (parted) p
       Error: /dev/vdb: unrecognised disk label
       Model: Virtio Block Device (virtblk)
-      Disk /dev/vdb: 107GB
+      Disk /dev/vdb: 107GiB
       Sector size (logical/physical): 512B/512B
       Partition Table: unknown
       Disk Flags:
@@ -104,7 +108,7 @@ The following example shows you how a new partition can be created on a new data
       (parted) mklabel gpt
       (parted) p
       Model: Virtio Block Device (virtblk)
-      Disk /dev/vdb: 107GB
+      Disk /dev/vdb: 107GiB
       Sector size (logical/physical): 512B/512B
       Partition Table: gpt
       Disk Flags:
@@ -125,7 +129,7 @@ The following example shows you how a new partition can be created on a new data
 
    **mkpart test 2048s 100%**
 
-   In this example, one partition is created for the new data disk. Variable *2048s* indicates the disk start sector, and variable *100%* indicates the disk end sector. The two values are used for reference only. You can determine the number of partitions and the partition size based on your service requirements.
+   In this example, one partition is created for the new data disk. Value **2048s** indicates the disk start sector, and **100%** indicates the disk end sector. The two values are used for reference only. You can determine the number of partitions and the partition size based on your service requirements.
 
    Information similar to the following is displayed:
 

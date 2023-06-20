@@ -95,7 +95,7 @@ Solution
 
    .. note::
 
-      -  To view the modification records and check whether the modification is caused by misoperations, run the following command:
+      -  To view the modification records and check whether the modification is caused by unintended actions, run the following command:
 
          **vi /root/.bash_history**
 

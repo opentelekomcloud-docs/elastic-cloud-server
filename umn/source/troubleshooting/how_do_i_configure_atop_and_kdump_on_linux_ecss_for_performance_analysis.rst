@@ -55,12 +55,12 @@ Configuring atop for CentOS 8 or RHEL 8
 
    -  Change the value of **LOGINTERVAL** to, for example, **15**. The default value of **LOGINTERVAL** is **600**, in seconds.
 
-   -  Change the value of **LOGGENERATIONS** if needed. The default retention period of atop logs is **28** days.
+   -  Change the value of **LOGGENERATIONS** to, for example, **3**. The default retention period of atop logs is **28** days.
 
       .. code-block::
 
          LOGINTERVAL=15
-         LOGGENERATIONS=28
+         LOGGENERATIONS=3
 
 4. Run the following command to restart atop:
 
@@ -111,13 +111,13 @@ Configuring atop for CentOS 7, RHEL 7, or EulerOS
 
    Modify the following parameters, save the modification, and exit:
 
-   -  Change the value of **INTERVAL** to, for example, **15**. The default value of **INTERVAL** is **600**, in seconds.
-   -  Change the value following **-mtime** if needed. The default retention period of atop logs is **28** days.
+   -  Change the value of **LOGINTERVAL** to, for example, **15**. The default value of **LOGINTERVAL** is **600**, in seconds.
+   -  Change the value of **LOGGENERATIONS** to, for example, **3**. The default retention period of atop logs is **28** days.
 
    .. code-block::
 
       LOGINTERVAL=15
-      LOGGENERATIONS=28
+      LOGGENERATIONS=3
 
 #. Run the following command to start atop:
 
@@ -182,12 +182,12 @@ Configuring atop for SUSE 12 or SUSE 15
    Modify the following parameters, save the modification, and exit:
 
    -  Change the value of **LOGINTERVAL** to, for example, **15**. The default value of **LOGINTERVAL** is **600**, in seconds.
-   -  Change the value of **LOGGENERATIONS** if needed. The default retention period of atop logs is **28** days.
+   -  Change the value of **LOGGENERATIONS** to, for example, **3**. The default retention period of atop logs is **28** days.
 
    .. code-block::
 
       LOGINTERVAL=15
-      LOGGENERATIONS=28
+      LOGGENERATIONS=3
 
 7. Run the following command to restart atop:
 
@@ -276,13 +276,13 @@ Configuring atop Using Its Source Package for SUSE, Fedora, Debian or Ubuntu
 
    -  Change the value of **LOGINTERVAL** to, for example, **15**. The default value of **LOGINTERVAL** is **600**, in seconds.
 
-   -  Change the value of **LOGGENERATIONS** if needed. The default retention period of atop logs is **28** days.
+   -  Change the value of **LOGGENERATIONS** to, for example, **3**. The default retention period of atop logs is **28** days.
 
       .. code-block::
 
          LOGOPTS=""
          LOGINTERVAL=15
-         LOGGENERATIONS=28
+         LOGGENERATIONS=3
          LOGPATH=/var/log/atop
 
 7. Restart atop.
