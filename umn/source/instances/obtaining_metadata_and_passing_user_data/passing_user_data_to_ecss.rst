@@ -8,7 +8,7 @@ Passing User Data to ECSs
 Scenarios
 ---------
 
-Use the **User Data** function to pass user data to ECSs to:
+Specify **User Data** to pass user data to ECSs to:
 
 -  Simplify ECS configuration.
 -  Initialize the ECS OS configuration.
@@ -53,9 +53,9 @@ Passing User Data
 
 
    .. figure:: /_static/images/en-us_image_0237026761.png
-      :alt: **Figure 1** User Data
+      :alt: **Figure 1** User data injection
 
-      **Figure 1** User Data
+      **Figure 1** User data injection
 
 #. The created ECS automatically runs Cloud-Init/Cloudbase-Init and reads the user data script upon startup.
 

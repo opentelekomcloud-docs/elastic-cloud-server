@@ -14,6 +14,17 @@ S3 ECSs are suitable for applications that require moderate performance generall
 
 S2 ECSs use Intel® Xeon® Scalable processors, which significantly improve the comprehensive performance. They provide a balance of computing, memory, and network resources, a baseline level of vCPU performance, and the ability to burst above the baseline. These ECSs are suitable for many applications.
 
+Scenarios
+---------
+
+-  Applications
+
+   General-purpose ECSs are suitable for applications that have no special requirements on vCPUs, memory, disk capacities, or bandwidth, but have high requirements on security and reliability. The initial investment and maintenance costs are low.
+
+-  Application scenarios
+
+   Enterprise website deployment, enterprise office environment setup, enterprise R&D and testing activities, web servers, R&D and testing environments, and small-scale databases
+
 Specifications
 --------------
 
@@ -128,17 +139,6 @@ Specifications
    +--------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
    | s2.8xlarge.8 | 32    | 256    | 6/3                    | 50       | 8               | 12        | KVM            |                                |
    +--------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
-
-Scenarios
----------
-
--  Applications
-
-   General-purpose ECSs are suitable for applications that have no special requirements on CPU performance, memory, disk capacity, or bandwidth, but have high requirements on security and reliability. They feature low initial investment and maintenance costs.
-
--  Application scenarios
-
-   Enterprise website deployment, enterprise office environment setup, enterprise R&D and testing activities, web servers, R&D and testing environments, and small-scale databases
 
 Notes
 -----

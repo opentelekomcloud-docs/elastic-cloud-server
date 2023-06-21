@@ -126,7 +126,7 @@ Notes
       | openEuler                         | openEuler 20.03 64bit                               |
       +-----------------------------------+-----------------------------------------------------+
 
--  When the physical host where a D2 ECS is deployed becomes faulty, the ECS cannot be migrated.
+-  When the physical server where a D2 ECS is deployed becomes faulty, the ECS cannot be migrated.
 
 -  To improve network performance, you can set the NIC MTU of a D2 ECS to **8888**.
 
@@ -162,7 +162,7 @@ Notes
 
             **ll /dev/disk/by-id**
 
--  The local disk data of a D2 ECS may be lost due to some reasons, such as physical server breakdown or local disk damage. If the data reliability of your application cannot be ensured, you are strongly advised to use EVS disks to build your ECS.
+-  The local disk data of a D2 ECS may be lost due to some reasons, such as physical server breakdown or local disk damage. If your application does not use the data reliability architecture, it is a good practice to use EVS disks to build your ECS.
 
 -  When a D2 ECS is deleted, its local disk data is automatically deleted. Back up the data before deleting such an ECS. Deleting local disk data is time-consuming. Therefore, a D2 ECS requires a longer period of time than other ECSs for releasing resources.
 

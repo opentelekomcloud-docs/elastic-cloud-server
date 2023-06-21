@@ -10,7 +10,7 @@ Login and Connection
 -  :ref:`Why Cannot I Use the MAC Keyboard to Enter Lowercase Characters When I Log In to an ECS Using VNC? <en-us_topic_0047624368>`
 -  :ref:`What Should I Do If the Page Does not Respond After I Log In to an ECS Using VNC and Do Not Perform Any Operation for a Long Period of Time? <en-us_topic_0030932497>`
 -  :ref:`What Should I Do If I Cannot View Data After Logging In to an ECS Using VNC? <en-us_topic_0030932499>`
--  :ref:`Why Does a Blank Screen Appear While the System Displays a Message Indicating Successful Authentication After I Attempted to Log In to an ECS Using VNC? <en-us_topic_0032850906>`
+-  :ref:`Why Does a Blank Screen Appear After I Attempted to Log In to an ECS Using VNC? <en-us_topic_0032850906>`
 -  :ref:`How Can I Change a Remote Login Port? <en-us_topic_0244854543>`
 -  :ref:`Why Can't I Obtain the Password for Logging In to My Windows ECS Authenticated Using a Key Pair? <en-us_topic_0081525054>`
 -  :ref:`What Browser Version Is Required to Remotely Log In to an ECS? <en-us_topic_0035233718>`
@@ -45,7 +45,7 @@ Login and Connection
    why_cannot_i_use_the_mac_keyboard_to_enter_lowercase_characters_when_i_log_in_to_an_ecs_using_vnc
    what_should_i_do_if_the_page_does_not_respond_after_i_log_in_to_an_ecs_using_vnc_and_do_not_perform_any_operation_for_a_long_period_of_time
    what_should_i_do_if_i_cannot_view_data_after_logging_in_to_an_ecs_using_vnc
-   why_does_a_blank_screen_appear_while_the_system_displays_a_message_indicating_successful_authentication_after_i_attempted_to_log_in_to_an_ecs_using_vnc
+   why_does_a_blank_screen_appear_after_i_attempted_to_log_in_to_an_ecs_using_vnc
    how_can_i_change_a_remote_login_port
    why_cant_i_obtain_the_password_for_logging_in_to_my_windows_ecs_authenticated_using_a_key_pair
    what_browser_version_is_required_to_remotely_log_in_to_an_ecs

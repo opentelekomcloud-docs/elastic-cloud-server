@@ -5,7 +5,11 @@
 Security Group Configuration Examples
 =====================================
 
-Common security group configuration examples are as follows: The following examples allow all outgoing data packets by default and only describe how to configure the inbound rules of a security group.
+This section shows examples of common security group configurations. In the examples, all outgoing data packets are allowed by default. We only describe how to configure inbound rules for security groups.
+
+.. note::
+
+   For details about how to configure and modify security group rules, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>` and :ref:`Changing a Security Group <en-us_topic_0093492517>`.
 
 -  :ref:`Enabling ECSs in Different Security Groups to Communicate with Each Other Through an Internal Network <en-us_topic_0140323152__en-us_topic_0118534011_section14197522283>`
 -  :ref:`Enabling Specified IP Addresses to Remotely Access ECSs in a Security Group <en-us_topic_0140323152__en-us_topic_0118534011_section17693183118306>`

@@ -13,11 +13,9 @@ To handle this issue, perform the following operations:
 
    Identify the processes leading to high bandwidth or CPU usage.
 
-2. Troubleshooting
+2. Check whether the processes are normal and handle the issue accordingly.
 
-   Check whether the processes are malicious and handle the issue accordingly.
-
-   -  If the processes are not malicious, optimize their programs or modify ECS specifications.
+   -  If the processes are normal, optimize them or modify ECS specifications.
    -  If the processes are malicious, use a third-party tool to automatically stop the processes or manually stop them.
 
 Common Commands
@@ -25,7 +23,7 @@ Common Commands
 
 The following uses the CentOS 7.2 64bit OS as an example to describe common commands. The commands may vary depending on Linux OS editions. For details, see the official documentation for the specific OS edition.
 
-The common commands for checking Linux ECS performance metrics, such as CPU usage are as follows:
+The common commands for checking Linux ECS performance metrics, such as the CPU usage, are as follows:
 
 -  **ps -aux**
 -  **ps -ef**

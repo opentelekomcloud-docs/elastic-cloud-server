@@ -16,6 +16,10 @@ The fdisk partitioning tool is suitable only for MBR partitions, and the parted 
 
 The method for initializing a disk varies depending on the OS running on the server. This document is used for reference only. For the detailed operations and differences, see the product documents of the corresponding OS.
 
+.. important::
+
+   When using a disk for the first time, if you have not initialized it, including creating partitions and file systems, the additional space added to this disk in an expansion later may not be normally used.
+
 Prerequisites
 -------------
 
@@ -38,7 +42,7 @@ The following example shows you how a new primary partition can be created on a 
 
       [root@ecs-test-0001 ~]# fdisk -l
 
-      Disk /dev/vda: 42.9 GB, 42949672960 bytes, 83886080 sectors
+      Disk /dev/vda: 42.9 GiB, 42949672960 bytes, 83886080 sectors
       Units = sectors of 1 * 512 = 512 bytes
       Sector size (logical/physical): 512 bytes / 512 bytes
       I/O size (minimum/optimal): 512 bytes / 512 bytes
@@ -48,7 +52,7 @@ The following example shows you how a new primary partition can be created on a 
          Device Boot      Start         End      Blocks   Id  System
       /dev/vda1   *        2048    83886079    41942016   83  Linux
 
-      Disk /dev/vdb: 107.4 GB, 107374182400 bytes, 209715200 sectors
+      Disk /dev/vdb: 107.4 GiB, 107374182400 bytes, 209715200 sectors
       Units = sectors of 1 * 512 = 512 bytes
       Sector size (logical/physical): 512 bytes / 512 bytes
       I/O size (minimum/optimal): 512 bytes / 512 bytes
@@ -160,7 +164,7 @@ The following example shows you how a new primary partition can be created on a 
 
       Command (m for help): p
 
-      Disk /dev/vdb: 107.4 GB, 107374182400 bytes, 209715200 sectors
+      Disk /dev/vdb: 107.4 GiB, 107374182400 bytes, 209715200 sectors
       Units = sectors of 1 * 512 = 512 bytes
       Sector size (logical/physical): 512 bytes / 512 bytes
       I/O size (minimum/optimal): 512 bytes / 512 bytes

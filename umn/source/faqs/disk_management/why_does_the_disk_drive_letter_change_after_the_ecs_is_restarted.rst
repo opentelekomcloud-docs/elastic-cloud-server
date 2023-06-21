@@ -80,7 +80,7 @@ Solution
       -  **0**: Linux dump backup is not used. Normally, dump backup is not used, and you can set this parameter to **0**.
       -  **1**: Linux dump backup is used.
 
-   -  **0** (the second on): fsck option, that is, whether to use fsck to check disks during startup.
+   -  **0** (the second one): fsck option, that is, whether to use fsck to check disks during startup.
 
       -  **0**: fsck is not used.
 

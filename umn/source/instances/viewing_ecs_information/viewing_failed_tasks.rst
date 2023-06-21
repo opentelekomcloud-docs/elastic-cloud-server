@@ -2,13 +2,13 @@
 
 .. _en-us_topic_0108255889:
 
-Viewing Failure Tasks
-=====================
+Viewing Failed Tasks
+====================
 
 Scenarios
 ---------
 
-The **Failures** area shows the tasks that failed due to an error, including the task name and status. **Failures** can be viewed on the management console if a task failed. This section describes how to view failures.
+You can view the details of failed task (if any) in the **Failures** area, including the task names and statuses. This section describes how to view failures.
 
 Failure Types
 -------------
@@ -48,7 +48,7 @@ Procedure
 
 #. Click the number displayed in the **Failures** area to view task details.
 
-   -  **Creation Failures**: show the tasks that are being created and those failed to create.
-   -  **Operation Failures**: show the tasks with errors, including the operations performed on the tasks and error codes. Such information can be used for rapid fault locating.
+   -  **Creation Failures**: show the failed ECS creation tasks.
+   -  **Operation Failures**: show the tasks with failed operations and error codes, which help you troubleshoot the faults.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png

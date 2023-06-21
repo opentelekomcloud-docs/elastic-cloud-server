@@ -28,7 +28,7 @@ Notes
    -  SUSE 12.x series
    -  OpenSUSE 13.x series
    -  OpenSUSE 42.x series
-   -  Debine 16.x series
+   -  Debian 16.x series
    -  Fedora series
    -  Freebsd series
    -  CoreOS series

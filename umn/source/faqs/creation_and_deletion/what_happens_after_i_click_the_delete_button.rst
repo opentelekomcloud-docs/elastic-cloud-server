@@ -5,11 +5,11 @@
 What Happens After I Click the **Delete** Button?
 =================================================
 
-After you click **Delete**, the selected ECS is deleted. You can also choose to delete the EVS disk and EIP of the ECS. If you do not delete them, they will be retained. If necessary, you can manually delete them later.
+After you click **Delete**, the selected ECSs will be deleted. You can also choose to delete the EVS disks and EIPs together with the selected ECSs. If you do not delete them, they will be retained. If necessary, you can manually delete them later.
 
-To delete an ECS, perform the following operations:
+To delete selected ECSs, perform the following operations:
 
 #. Log in to the management console.
 #. Under **Computing**, click **Elastic Cloud Server**.
-#. Select the ECS to be deleted.
-#. In the upper part of the ECS list, click **Delete**.
+#. Select the ECSs to be deleted.
+#. Above the ECS list, choose **Delete**.

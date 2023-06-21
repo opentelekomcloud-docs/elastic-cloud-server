@@ -31,7 +31,7 @@ Procedure
 
 #. On the **IP Addresses** tab, select a desired one or click **Assign Virtual IP Address** for a new one.
 
-#. Click **Bind to Instance** in the **Operation** column and select the target ECS name and the NIC to bind the virtual IP address to the ECS NIC.
+#. Click **Bind to Server** in the **Operation** column and select the target ECS name and the NIC to bind the virtual IP address to the ECS NIC.
 
    For more information about virtual IP addresses, see *Virtual Private Cloud User Guide*.
 

@@ -60,7 +60,7 @@ Prerequisites
 -  The target ECS has a system disk attached.
 -  Necessary data has been backed up. (Changing the OS clears the data in all partitions of the system disk, including the system partition.)
 -  If the original ECS uses password authentication while the new ECS uses key pair authentication, ensure that a key pair is available.
--  If a private image is required for changing the ECS OS, create the desired private image by following the instructions provided in *Image Management Service User Guide*.
+-  If you plan to use a private image to change the OS, ensure that a private image is available. For details about how to create a private image, see *Image Management Service User Guide*.
 
    -  If the image of an ECS is required, make sure that a private image has been created using the ECS.
    -  If a local image file is required, make sure that the image file has been imported to the cloud platform and registered as a private image.
@@ -78,7 +78,7 @@ Procedure
 
    Under **Computing**, click **Elastic Cloud Server**.
 
-#. Locate the row containing the target ECS. Click **More** in the **Operation** column and select **Manage Image/Disk/Backup** > **Change OS**.
+#. Locate the row containing the target ECS and choose **More** > **Manage Image/Disk/Backup** > **Change OS** in the **Operation**.
 
    Only stopped ECSs support OS changing. If the ECS is not stopped, stop it before proceeding with changing.
 
@@ -98,7 +98,7 @@ Procedure
    -  **KMS Key Name**: specifies the name of the key used by the encrypted EVS disk. You can select an existing key, or click **Create KMS Key** and create a new one on the KMS console. The default value is **evs/default**.
    -  **KMS Key ID**: specifies the ID of the key used by the encrypted data disk.
 
-#. (Optional) Select a **License Type** (**Use license from the system** or **Bring your own license (BYOL)**) if the changed OS running on your ECS is billed. For more details, see :ref:`License Type <en-us_topic_0046566932>`.
+#. (Optional) Select a **License Type** (**Use license from the system** or **Bring your own license (BYOL)**) if the changed OS running on your ECS is billed. For more details, see :ref:`License Types <en-us_topic_0046566932>`.
 
    The following OSs are billed:
 
@@ -114,9 +114,9 @@ Procedure
 
 #. .. _en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45992498111556:
 
-   On the **Change ECS OS** page, confirm the specifications, and click **Submit Application**.
+   On the **Change ECS OS** page, confirm the settings, and click **Submit**.
 
-   After the application is submitted, the ECS status changes to **Changing OS**. The OS changing has been completed when **Changing OS** disappears.
+   After the application is submitted, the status **Changing OS** is displayed. When this status disappears, the OS change is complete.
 
    .. note::
 

@@ -37,7 +37,7 @@ Prerequisites
 Procedure
 ---------
 
-#. Stop the original ECS, detach the system disk from it, and attach the system disk to the temporary ECS.
+#. Stop the original ECS and detach the system disk.
 
    a. Log in to the management console.
 
@@ -55,25 +55,27 @@ Procedure
 
       Locate the row containing the system disk to be detached and click **Detach** to detach the system disk from the ECS.
 
-   f. On the page providing details about the temporary ECS, click the **Disks** tab.
+#. Attach the system disk to the temporary ECS.
 
-   g. .. _en-us_topic_0021426802__li32570973202157:
+   a. On the page providing details about the temporary ECS, click the **Disks** tab.
+
+   b. .. _en-us_topic_0021426802__li12352182016164:
 
       Click **Attach Disk**. In the displayed dialog box, select the system disk detached in step :ref:`1.e <en-us_topic_0021426802__li49674320202157>` and attach it to the temporary ECS.
 
-#. Log in to the temporary ECS remotely and attach the system disk.
+   c. Remotely log in to the temporary ECS.
 
-   a. .. _en-us_topic_0021426802__li20334892202157:
+   d. .. _en-us_topic_0021426802__li20334892202157:
 
       Run the following command to view the directory of the system disk detached from the original Windows ECS now attached to the temporary ECS:
 
       **fdisk -l**
 
-   b. Run the following command to mount the file system of the detached system disk to the temporary ECS:
+   e. Run the following command to mount the file system of the detached system disk to the temporary ECS:
 
-      **mount -t ntfs-3g /dev/**\ *Result obtained in step :ref:`2.a <en-us_topic_0021426802__li20334892202157>`* **/mnt/**
+      **mount -t ntfs-3g /dev/**\ *Result obtained in step :ref:`2.d <en-us_topic_0021426802__li20334892202157>`* **/mnt/**
 
-      For example, if the result obtained in step :ref:`2.a <en-us_topic_0021426802__li20334892202157>` is **xvde2**, run the following command:
+      For example, if the result obtained in step :ref:`2.d <en-us_topic_0021426802__li20334892202157>` is **xvde2**, run the following command:
 
       **mount -t ntfs-3g /dev/xvde2 /mnt/**
 
@@ -90,19 +92,19 @@ Procedure
 
       Back up the disk data, run the following command to rectify the NTFS file system inconsistency, and attach the system disk:
 
-      **ntfsfix /dev/**\ *Result obtained in step :ref:`2.a <en-us_topic_0021426802__li20334892202157>`*
+      **ntfsfix /dev/**\ *Result obtained in step :ref:`2.d <en-us_topic_0021426802__li20334892202157>`*
 
-      For example, if the result obtained in step :ref:`2.a <en-us_topic_0021426802__li20334892202157>` is **xvde2**, run the following command:
+      For example, if the result obtained in step :ref:`2.d <en-us_topic_0021426802__li20334892202157>` is **xvde2**, run the following command:
 
       **ntfsfix /dev/xvde2**
 
-#. Change the password and clear the original password.
+#. Change the password of the specified user and clear the original password.
 
    a. Run the following command to back up the SAM file:
 
       **cp /mnt/Windows/System32/config/SAM /mnt/Windows/System32/config/SAM.bak**
 
-   b. Run the following command to change the password of a specified user:
+   b. Run the following command to change the password of the specified user:
 
       **chntpw -u** **Administrator /mnt/Windows/System32/config/SAM**
 
@@ -127,7 +129,7 @@ Procedure
 
    b. .. _en-us_topic_0021426802__li46368402202157:
 
-      Click **Detach** to detach the data disk temporarily attached in step :ref:`1.g <en-us_topic_0021426802__li32570973202157>`.
+      Click **Detach** to detach the data disk temporarily attached in step :ref:`2.b <en-us_topic_0021426802__li12352182016164>`.
 
    c. On the page providing details about the original Windows ECS, click the **Disks** tab.
 

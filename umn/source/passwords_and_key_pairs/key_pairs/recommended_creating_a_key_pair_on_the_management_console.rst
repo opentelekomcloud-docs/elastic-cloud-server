@@ -21,7 +21,7 @@ Procedure
 
 #. In the navigation pane on the left, choose **Key Pair**.
 
-#. On the **Key Pair Service** page, click **Create Key Pair**.
+#. On the displayed page, click **Create Key Pair**.
 
 #. Enter a key pair name.
 

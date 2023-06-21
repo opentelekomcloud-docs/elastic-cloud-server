@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0046566932:
 
-License Type
-============
+License Types
+=============
 
 Using License from the System
 -----------------------------
@@ -15,11 +15,11 @@ BYOL
 
 **What Is BYOL?**
 
-Bring your own license (BYOL) allows you to use your existing OS license. In such a case, you do not need to apply for a license again. In BYOL license type, you do not pay for the license fee when creating an ECS.
+Bring your own license (BYOL) allows you to use your existing OS license. In such a case, you do not need to apply for a license again. In BYOL license type, you do not need to pay for the license fee when creating an ECS.
 
 **How to Use BYOL?**
 
-If you select the BYOL license type, you are required to manage licenses by yourself. The cloud platform provides functions for you to maintain license compliance during the license lifecycle, for example, deploying ECSs on DeHs. If you have obtained an OS license, you do not need to apply for a license any more.
+If you select the BYOL license type, you are required to manage licenses by yourself. The cloud platform provides functions for you to maintain license compliance during the license lifecycle. For example, when deploying ECSs on DeHs, you need to manage licenses by yourself. If you have obtained an OS license, you do not need to apply for a license.
 
 The OSs supporting BYOL are as follows:
 

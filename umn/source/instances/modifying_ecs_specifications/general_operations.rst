@@ -30,7 +30,7 @@ To obtain the virtualization type of an ECS, perform the following operations:
 Notes
 -----
 
--  If ECS specifications are downgraded, the ECS performance will deteriorate.
+-  Downgrading ECS specifications (vCPU or memory) will reduce performance.
 -  Certain ECS types do not support specifications modification currently. For details about available ECS types as well as their functions and usage, see "Notes" in :ref:`ECS Types <en-us_topic_0035470096>`.
 -  When the disk status is **Expanding**, you are not allowed to modify the specifications of the ECS where the disk is attached.
 -  Before modifying the specifications of a Windows ECS, modify the SAN policy by following the instructions provided in :ref:`Why Does a Disk Attached to a Windows ECS Go Offline? <en-us_topic_0114225937>` to prevent disks from going offline after the specifications are modified.
@@ -63,13 +63,13 @@ Step 1: Modify Specifications
 
 #. Click **Next**.
 
-#. On the **Modify ECS Specifications** page, confirm the modified vCPU and memory specifications and click **Submit**.
+#. Confirm the settings and click **Submit**.
 
 #. Check whether the specifications have been modified.
 
    After modifying the specifications, you can check whether the specifications have been modified in **Failures**.
 
-   a. Check whether **Failures** is displayed on the management console. For details, see :ref:`Viewing Failure Tasks <en-us_topic_0108255889>`.
+   a. Check whether **Failures** is displayed on the management console. For details, see :ref:`Viewing Failed Tasks <en-us_topic_0108255889>`.
 
       -  If yes, go to step :ref:`10.b <en-us_topic_0013771092__li6253192246>`.
       -  If no, the specifications have been modified.

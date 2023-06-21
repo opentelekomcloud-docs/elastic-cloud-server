@@ -19,7 +19,7 @@ Procedure
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
-#. In the upper right corner of the ECS list, click |image2|.
+#. In the upper right corner above the ECS list, click |image2|.
 
    The system will automatically export all ECSs in the current region under your account to a local directory.
 

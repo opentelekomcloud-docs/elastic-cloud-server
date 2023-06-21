@@ -25,7 +25,7 @@ Procedure
 
 #. Specify filter criteria as needed. The following filter criteria are available:
 
-   -  **Trace Source**, **Resource Type**, and **Search By**
+   -  **Trace Type**, **Trace Source**, **Resource Type**, and **Search By**:
 
       Select a filter criterion from the drop-down list.
 
@@ -37,7 +37,7 @@ Procedure
 
    -  **Operator**: Select a specific operator (which is a user rather than the tenant).
 
-   -  **Trace Status**: Available options include **All trace statuses**, **normal**, **warning**, and **incident**. You can only select one of them.
+   -  **Trace Status**: Available options include **All trace statuses**, **Normal**, **Warning**, and **Incident**. You can only select one of them.
 
    -  **Time Range**: You can view traces generated during any time range of the last seven days.
 

@@ -8,7 +8,7 @@ Attaching an EVS Disk to an ECS
 Scenarios
 ---------
 
-If the existing disks of an ECS fail to meet service requirements, for example, due to insufficient disk space or poor disk performance, you can attach more available EVS disks to the ECS, or create more disks (**Storage** > **Elastic Volume Service**) and attach them to the ECS.
+If the existing disks of an ECS fail to meet service requirements, for example, due to insufficient disk space or poor disk performance, you can attach more available EVS disks to the ECS, or create more disks (in **Storage** > **Elastic Volume Service**) and attach them to the ECS.
 
 Prerequisites
 -------------

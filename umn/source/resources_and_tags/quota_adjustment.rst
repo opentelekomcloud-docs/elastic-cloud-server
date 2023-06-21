@@ -44,5 +44,7 @@ Before dialing the hotline number or sending an email, make sure that the follow
    -  Quota type
    -  Required quota
 
+`Learn how to obtain the service hotline and email address. <https://open-telekom-cloud.com/en/contact>`__
+
 .. |image1| image:: /_static/images/en-us_image_0275513364.png
 .. |image2| image:: /_static/images/en-us_image_0152727234.png

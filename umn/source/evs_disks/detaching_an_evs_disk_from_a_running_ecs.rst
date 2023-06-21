@@ -8,27 +8,27 @@ Detaching an EVS Disk from a Running ECS
 Scenarios
 ---------
 
-An EVS disk attached to an ECS can function as a system disk or data disk.
+You can detach EVS disks from an ECS.
 
--  EVS disks mounted to **/dev/sda** or **/dev/vda** function as system disks. You can only detach system disks offline. Before detaching a system disk from an ECS, you must stop the ECS.
--  EVS disks mounted to other locations function as data disks. In addition to offline detachment, data disks can be detached online if the OS running on the ECS supports this feature.
+-  System disks (mounted to **/dev/sda** or **/dev/vda**) can only be detached offline. They must be stopped before being detached.
+-  Data disks (mounted to points other than **dev/sda**) can be detached online if the attached ECS is running certain OSs. You can detach these data disks without stopping the ECS.
 
 This section describes how to detach a disk from a running ECS.
 
 Constraints
 -----------
 
--  The EVS disk to be detached must be mounted at a location other than **/dev/sda** or **/dev/vda**.
+-  The EVS disk to be detached must be mounted to a point other than **/dev/sda** or **/dev/vda**.
 
    EVS disks mounted to **/dev/sda** or **/dev/vda** are system disks and cannot be detached from running ECSs.
 
 -  Before detaching an EVS disk from a running Windows ECS, make sure that OTC Tools have been installed on the ECS and that the tools are running properly.
 
--  Before detaching an EVS disk from a running Windows ECS, ensure that no program is reading data from or writing data to the disk. Otherwise, data will be lost.
+-  Before detaching an EVS disk from a running Windows ECS, ensure that no programs are reading data from or writing data to the disk. Otherwise, data will be lost.
 
 -  SCSI EVS disks cannot be detached from running Windows ECSs.
 
--  Before detaching an EVS disk from a running Linux ECS, you must log in to the ECS and run the **umount** command to cancel the association between the disk and the file system. In addition, ensure that no program is reading data from or writing data to the disk. Otherwise, detaching the disk will fail.
+-  Before detaching an EVS disk from a running Linux ECS, you must log in to the ECS and run the **umount** command to cancel the association between the disk and the file system. In addition, ensure that no programs are reading data from or writing data to the disk. Otherwise, detaching the disk will fail.
 
 Notes
 -----

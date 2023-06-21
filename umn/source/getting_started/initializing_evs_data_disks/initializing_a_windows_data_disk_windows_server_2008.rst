@@ -14,6 +14,10 @@ The maximum disk capacity supported by MBR is 2 TiB, and that supported by GPT i
 
 The method for initializing a disk varies depending on the OS running on the server. This document is used for reference only. For the detailed operations and differences, see the product documents of the corresponding OS.
 
+.. important::
+
+   When using a disk for the first time, if you have not initialized it, including creating partitions and file systems, the additional space added to this disk in an expansion later may not be normally used.
+
 Prerequisites
 -------------
 

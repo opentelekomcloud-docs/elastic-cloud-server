@@ -5,17 +5,17 @@
 Can All Users Use the Encryption Feature?
 =========================================
 
-The rights of users in a user group to use the encryption feature are as follows:
+The permissions of users in a user group to use the encryption feature are as follows:
 
--  The user who has security administrator rights can grant KMS access rights to EVS for using the encryption feature.
--  When a common user who does not have security administrator rights attempts to use the encryption feature, the condition varies depending on whether the user is the first one in the user group to use this feature.
+-  The user who has security administrator permissions can grant KMS access permissions to EVS for using the encryption feature.
+-  When a common user who does not have security administrator permissions attempts to use the encryption feature, the condition varies depending on whether the user is the first one in the user group to use this feature.
 
-   -  If the common user is the first one in the user group to use the encryption feature, the common user must request a user who has security administrator rights to grant the common user permissions. Then, the common user can use the encryption feature.
-   -  If the common user is not the first one in the user group to use the encryption feature, the user will have the permission to use the encryption feature.
+   -  If the common user is the first one in the user group to use the encryption feature, the common user must request a user who has security administrator permissions to grant the common user permissions. Then, the common user can use the encryption feature.
+   -  If the common user is not the first one in the user group to use the encryption feature, the user directly has the permissions to use the encryption feature.
 
-The following section uses a user group as an example to describe how to grant KMS access rights to EVS for using the encryption feature.
+The following section uses a user group as an example to describe how to grant KMS access permissions to EVS for using the encryption feature.
 
-For example, a user group shown in :ref:`Figure 1 <en-us_topic_0047272493__fig10921739155249>` consists of four users, user 1 to user 4. User 1 has security administrator rights. Users 2, 3, and 4 are common users who do not have security administrator rights.
+For example, a user group shown in :ref:`Figure 1 <en-us_topic_0047272493__fig10921739155249>` consists of four users, user 1 to user 4. User 1 has security administrator permissions. Users 2, 3, and 4 are common users who do not have security administrator permissions.
 
 .. _en-us_topic_0047272493__fig10921739155249:
 
@@ -45,14 +45,14 @@ In this user group, if user 1 uses the encryption feature for the first time, th
    -  CMK, the key created before using the EVS disk encryption feature
    -  Newly created key (For instructions about how to create a key, see "Creating a Key Pair" in *Key Management Service User Guide*.)
 
-After user 1 uses the encryption feature, all other users in the user group can use this feature, without requiring to contact user 1 for rights granting.
+After user 1 uses the encryption feature, all other users in the user group can use this feature, without requiring to contact user 1 for permissions granting.
 
 Scenario 2: Common User Uses the Encryption Feature
 ---------------------------------------------------
 
 In this user group, when user 3 uses the encryption feature for the first time:
 
-#. The system displays a message indicating that the user has no rights.
+#. The system displays a message indicating that the user has no permissions.
 #. User 3 asks user 1 to create Xrole to grant KMS access permissions to EVS.
 
 After user 1 grants the permissions, user 3 and all other users in the user group can use the encryption feature by default.

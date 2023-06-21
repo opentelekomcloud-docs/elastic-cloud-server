@@ -292,7 +292,7 @@ For FAQs about VNC-based ECS logins, see the following links:
 -  :ref:`What Should I Do If the Page Does not Respond After I Log In to an ECS Using VNC and Do Not Perform Any Operation for a Long Period of Time? <en-us_topic_0030932497>`
 -  :ref:`What Should I Do If I Cannot View Data After Logging In to an ECS Using VNC? <en-us_topic_0030932499>`
 -  :ref:`Why Are Characters Entered Through VNC Still Incorrect After the Keyboard Language Is Switched? <en-us_topic_0030932500>`
--  :ref:`Why Does a Blank Screen Appear While the System Displays a Message Indicating Successful Authentication After I Attempted to Log In to an ECS Using VNC? <en-us_topic_0032850906>`
+-  :ref:`Why Does a Blank Screen Appear After I Attempted to Log In to an ECS Using VNC? <en-us_topic_0032850906>`
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 .. |image2| image:: /_static/images/en-us_image_0030874266.png

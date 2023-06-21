@@ -26,7 +26,7 @@ ECS Backup Procedure
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
-#. Locate the row that contains the target ECS. Click **More** in the **Operation** column and select **Manage Image/Disk/Backup > Create Backup**.
+#. Locate the row that contains the target ECS and choose **More** > **Manage Image/Disk/Backup** > **Create Image** in the **Operation** column.
 
    -  If the ECS has been associated with a vault, configure the backup information as prompted.
 

@@ -76,6 +76,7 @@ Downloading GRID Driver and Software License Packages
       ECS Type GPU Attachment  Driver Version                CPU Architecture
       ======== =============== ============================= ================
       G6       GPU passthrough Select a version as required. x86_64
+      P3       GPU passthrough Select a version as required. x86_64
       P2s      GPU passthrough Select a version as required. x86_64
       P2v      GPU passthrough Select a version as required. x86_64
       P2       GPU passthrough Select a version as required. x86_64

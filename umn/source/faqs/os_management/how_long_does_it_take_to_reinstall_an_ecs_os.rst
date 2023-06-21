@@ -5,6 +5,6 @@
 How Long Does It Take to Reinstall an ECS OS?
 =============================================
 
-Typically, the process of reinstalling the OS of an ECS takes about 1 to 2 minutes. Stop the ECS, click **More** in the **Operation** column, and select **Reinstall OS** in the drop-down list.
+Typically, the process of reinstalling the OS of an ECS takes about 1 to 2 minutes to complete. On the ECS console, stop the ECS and choose **More** > **Manage Image/Disk/Backup** > **Reinstall OS** in the **Operation** column.
 
 During this process, the ECS is in **Reinstalling OS** state.

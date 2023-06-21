@@ -29,7 +29,7 @@ Procedure
 
       **Figure 1** Change Security Group
 
-#. Select the target NIC and security groups as prompted.
+#. Select the target NIC and security groups.
 
    You can select multiple security groups. In such a case, the rules of all the selected security groups will be aggregated to apply on the ECS.
 

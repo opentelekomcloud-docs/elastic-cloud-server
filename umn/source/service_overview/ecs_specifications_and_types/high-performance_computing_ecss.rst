@@ -10,7 +10,7 @@ Overview
 
 H2 ECSs are designed to meet high-end computational needs, such as molecular modeling and computational fluid dynamics. In addition to the substantial CPU power, the H2 ECSs offer diverse options for low-latency RDMA networking using EDR InfiniBand NICs to support memory-intensive computational requirements.
 
-HL1 ECSs are the second generation of high-computing ECSs, featuring large memory capacity. They are interconnected with each other using 100 Gbit/s RDMA InfiniBand NICs and support 56 Gbit/s shared high I/O storage.
+HL1 ECSs are the second generation of high-computing ECSs, featuring large memory capacity. They are interconnected with each other using 100 Gbit/s RDMA InfiniBand NICs and support 56 Gbit shared high I/O storage.
 
 Specifications
 --------------
@@ -71,9 +71,9 @@ High-performance computing ECSs have the following features:
 
    Ultra-high I/O (latency-optimized)
 
--  HL1 ECSs support 56 Gbit/s shared high I/O storage.
+-  HL1 ECSs support 56 Gbit shared high I/O storage.
 
-   To support 56 Gbit/s shared high I/O storage, you only need to attach high I/O (performance-optimized I) or ultra-high I/O (latency-optimized) EVS disks to target HL1 ECSs.
+   To support 56 Gbit shared high I/O storage, you only need to attach high I/O (performance-optimized I) or ultra-high I/O (latency-optimized) EVS disks to target HL1 ECSs.
 
 Notes on Using H2 ECSs
 ----------------------
@@ -126,7 +126,7 @@ Notes on Using HL1 ECSs
 
 -  HL1 ECSs only support the attachment of high I/O (performance-optimized I) and ultra-high I/O (latency-optimized) EVS disks.
 
-   To support 56 Gbit/s shared high I/O storage, you only need to attach high I/O (performance-optimized I) or ultra-high I/O (latency-optimized) EVS disks to target HL1 ECSs.
+   To support 56 Gbit shared high I/O storage, you only need to attach high I/O (performance-optimized I) or ultra-high I/O (latency-optimized) EVS disks to target HL1 ECSs.
 
 -  HL1 ECSs do not support specifications modification.
 
