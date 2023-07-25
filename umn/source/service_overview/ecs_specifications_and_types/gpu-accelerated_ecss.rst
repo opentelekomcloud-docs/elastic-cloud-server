@@ -21,6 +21,7 @@ Available now: All GPU models except the recommended ones. If available ECSs are
 
 -  G series
 
+   -  :ref:`Graphics-accelerated Enhancement G7 <en-us_topic_0097289624__section2325028104711>`
    -  :ref:`Graphics-accelerated Enhancement G6 <en-us_topic_0097289624__section131302034104515>` (recommended)
 
 -  P series
@@ -37,6 +38,83 @@ Helpful links:
 -  :ref:`Installing a GRID Driver on a GPU-accelerated ECS <en-us_topic_0149610914>`
 -  :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`
 
+.. _en-us_topic_0097289624__section2325028104711:
+
+Graphics-accelerated Enhancement G7
+-----------------------------------
+
+Overview
+
+G7 ECSs use NVIDIA A40 GPUs and support DirectX, Shader Model, OpenGL, and Vulkan. Each GPU provides 48 GiB of GPU memory. Theoretically, G7 ECSs provide 37.4 TFLOPS of FP32 peak performance and 74.8 TFLOPS (sparsity disabled) or 149.6 TFLOPS (sparsity enabled) of TF32 peak tensor performance. They deliver two times the rendering performance and 1.4 times the graphics processing performance of RTX6000 GPUsto meet professional graphics processing requirements.
+
+Select your desired GPU-accelerated ECS type and specifications.
+
+**Specifications**
+
+.. table:: **Table 1** G7 ECS specifications
+
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+------------+----------------+
+   | Flavor        | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs           | GPU Memory | Virtualization |
+   |               |       |        |                        |          |                 |           |                |            |                |
+   |               |       | (GiB)  | (Gbit/s)               | (10,000) |                 |           |                | (GiB)      |                |
+   +===============+=======+========+========================+==========+=================+===========+================+============+================+
+   | g7.12xlarge.8 | 48    | 384    | 35/18                  | 750      | 16              | 8         | 1 x NVIDIA-A40 | 1 x 48     | KVM            |
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+------------+----------------+
+   | g7.24xlarge.8 | 96    | 768    | 40/36                  | 850      | 16              | 8         | 2 x NVIDIA-A40 | 2 x 48     | KVM            |
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+------------+----------------+
+
+**G7 ECS Features**
+
+-  CPU: 3rd Generation Intel® Xeon® Scalable 6348 processors (3.0 GHz of base frequency and 3.5 GHz of turbo frequency)
+-  Graphics acceleration APIs
+
+   -  DirectX 12.07, Direct2D, DirectX Video Acceleration (DXVA)
+   -  Shader Model 5.17
+   -  OpenGL 4.68
+   -  Vulkan 1.18
+
+-  CUDA, DirectCompute, OpenACC, and OpenCL
+-  A single card is equipped with 10,752 CUDA cores, 84 second-generation RT cores, and 336 third-generation Tensor cores.
+-  Graphics applications accelerated
+-  Heavy-load CPU inference
+-  Application flow identical to common ECSs
+-  Automatic scheduling of G7 ECSs to AZs where NVIDIA A40 GPUs are used
+-  One NVENC (encoding) engine and two NVDEC (decoding) engines (including AV1 decoding) embedded
+
+**Supported Common Software**
+
+G7 ECSs are used in graphics acceleration scenarios, such as video rendering, cloud desktop, and 3D visualization. If the software relies on GPU DirectX and OpenGL hardware acceleration, use G7 ECSs. G7 ECSs support the following commonly used graphics processing software:
+
+-  AutoCAD
+-  3DS MAX
+-  MAYA
+-  Agisoft PhotoScan
+-  ContextCapture
+-  Adobe Premiere Pro
+-  Solidworks
+-  Unreal Engine
+-  Blender
+-  Vray
+
+**Notes**
+
+-  G7 ECSs support the following OSs:
+
+   -  Windows Server 2019 Standard 64bit
+   -  Windows Server 2016 Standard 64bit
+   -  CentOS 8.2 64bit
+   -  CentOS 7.6 64bit
+   -  Ubuntu Server 20.04 64bit
+   -  Ubuntu Server 18.04 64bit
+
+-  G7 ECSs created using a public image have had the GRID driver of a specific version installed by default. However, you need to purchase and configure a GRID license by yourself. Ensure that the GRID driver version meets service requirements.
+
+   For details about how to configure a GRID license, see :ref:`Installing a GRID Driver on a GPU-accelerated ECS <en-us_topic_0149610914>`.
+
+-  If a G7 ECS is created using a private image, make sure that the GRID driver was installed during the private image creation. If the GRID driver has not been installed, install the driver for graphics acceleration after the ECS is created.
+
+   For details about how to configure a GRID license, see :ref:`Installing a GRID Driver on a GPU-accelerated ECS <en-us_topic_0149610914>`.
+
 .. _en-us_topic_0097289624__section131302034104515:
 
 Graphics-accelerated Enhancement G6
@@ -50,7 +128,7 @@ Select your desired GPU-accelerated ECS type and specifications.
 
 **Specifications**
 
-.. table:: **Table 1** G6 ECS specifications
+.. table:: **Table 2** G6 ECS specifications
 
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+----------------+-------------------------------------+
    | Flavor        | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs   | GPU Memory | Virtualization | Hardware                            |
@@ -96,11 +174,11 @@ G6 ECSs are used in graphics acceleration scenarios, such as video rendering, cl
 
 **Notes**
 
--  :ref:`Table 2 <en-us_topic_0097289624__table192771727112217>` lists the OSs supported by G6 ECSs.
+-  :ref:`Table 3 <en-us_topic_0097289624__table192771727112217>` lists the OSs supported by G6 ECSs.
 
    .. _en-us_topic_0097289624__table192771727112217:
 
-   .. table:: **Table 2** Supported OS versions
+   .. table:: **Table 3** Supported OS versions
 
       +-----------------------------------+------------------------------------------+
       | OS                                | Version                                  |
@@ -127,7 +205,7 @@ P3 ECSs use NVIDIA A100 GPUs and provide flexibility and ultra-high-performance 
 
 **Specifications**
 
-.. table:: **Table 3** P3 ECS specifications
+.. table:: **Table 4** P3 ECS specifications
 
    +---------------+-------+--------+---------------------------------+----------+-----------------+-----------+----------------------+------------+----------------+
    | Flavor        | vCPUs | Memory | Max./Assured Bandwidth (Gbit/s) | Max. PPS | Max. NIC Queues | Max. NICs | GPUs                 | GPU Memory | Virtualization |
@@ -210,7 +288,7 @@ P2s ECSs use NVIDIA Tesla V100 GPUs to provide flexibility, high-performance com
 
 **Specifications**
 
-.. table:: **Table 4** P2s ECS specifications
+.. table:: **Table 5** P2s ECS specifications
 
    +----------------+-------+--------+---------------------------------+-------------------+-----------------+-----------+----------+----------------+------------------+----------------+----------------------------------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Bandwidth (Gbit/s) | Max. PPS (10,000) | Max. NIC Queues | Max. NICs | GPUs     | GPU Connection | GPU Memory (GiB) | Virtualization | Hardware                                                 |
@@ -267,11 +345,11 @@ P2s ECSs are used in computing acceleration scenarios, such as deep learning tra
 
 **Notes**
 
--  :ref:`Table 5 <en-us_topic_0097289624__table1613585194612>` lists the OSs supported by P2s ECSs.
+-  :ref:`Table 6 <en-us_topic_0097289624__table1613585194612>` lists the OSs supported by P2s ECSs.
 
    .. _en-us_topic_0097289624__table1613585194612:
 
-   .. table:: **Table 5** Supported OS versions
+   .. table:: **Table 6** Supported OS versions
 
       +-----------------------------------+------------------------------------------+
       | OS                                | Version                                  |
@@ -305,7 +383,7 @@ P2v ECSs use NVIDIA Tesla V100 GPUs and deliver high flexibility, high-performan
 
 **Specifications**
 
-.. table:: **Table 6** P2v ECS specifications
+.. table:: **Table 7** P2v ECS specifications
 
    +----------------+-------+--------+---------------------------------+-------------------+-----------------+-----------+----------+----------------+------------+----------------+-------------------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Bandwidth (Gbit/s) | Max. PPS (10,000) | Max. NIC Queues | Max. NICs | GPUs     | GPU Connection | GPU Memory | Virtualization | Hardware                                  |
@@ -362,11 +440,11 @@ P2v ECSs are used in computing acceleration scenarios, such as deep learning tra
 
 **Notes**
 
--  :ref:`Table 7 <en-us_topic_0097289624__table1793214116522>` lists the OSs supported by P2v ECSs.
+-  :ref:`Table 8 <en-us_topic_0097289624__table1793214116522>` lists the OSs supported by P2v ECSs.
 
    .. _en-us_topic_0097289624__table1793214116522:
 
-   .. table:: **Table 7** Supported OS versions
+   .. table:: **Table 8** Supported OS versions
 
       +-----------------------------------+------------------------------------------+
       | OS                                | Version                                  |
@@ -402,7 +480,7 @@ Compared with P1 ECSs, P2 ECSs use NVIDIA Tesla V100 GPUs, which have improved b
 
 **Specifications**
 
-.. table:: **Table 8** P2 ECS specifications
+.. table:: **Table 9** P2 ECS specifications
 
    +--------------+-------+--------+------------------------+----------+-----------------+-----------+----------+------------+------------------+----------------+----------------------------------------+
    | Flavor       | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs     | GPU Memory | Local Disks      | Virtualization | Hardware                               |
@@ -467,11 +545,11 @@ P2 ECSs are used in computing acceleration scenarios, such as deep learning trai
 
 -  P2 ECSs do not support specifications modification.
 
--  :ref:`Table 9 <en-us_topic_0097289624__table3436728145315>` lists the OSs supported by P2 ECSs.
+-  :ref:`Table 10 <en-us_topic_0097289624__table3436728145315>` lists the OSs supported by P2 ECSs.
 
    .. _en-us_topic_0097289624__table3436728145315:
 
-   .. table:: **Table 9** Supported OS versions
+   .. table:: **Table 10** Supported OS versions
 
       +-----------------------------------+------------------------------------------+
       | OS                                | Version                                  |
@@ -507,7 +585,7 @@ P1 ECSs use NVIDIA Tesla P100 GPUs and provide flexibility, high performance, an
 
 **Specifications**
 
-.. table:: **Table 10** P1 ECS specifications
+.. table:: **Table 11** P1 ECS specifications
 
    +--------------+-------+--------+------------------------+----------+-----------------+-----------+----------+------------+-------------+----------------+----------------------------------------+
    | Flavor       | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs     | GPU Memory | Local Disks | Virtualization | Hardware                               |
@@ -618,7 +696,7 @@ Pi2 ECSs use NVIDIA Tesla T4 GPUs dedicated for real-time AI inference. These EC
 
 **Specifications**
 
-.. table:: **Table 12** Pi2 ECS specifications
+.. table:: **Table 13** Pi2 ECS specifications
 
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs   | GPU Memory | Local Disks | Virtualization | Hardware                                                                         |
@@ -660,11 +738,11 @@ Pi2 ECSs support the following commonly used software:
 
       Resources are released after a Pi2 ECS is stopped. If desired resources are insufficient when the Pi2 ECS is started after being stopped, starting the ECS might fail. Therefore, if you need to use a Pi2 ECS for a long time, keep the ECS running.
 
--  :ref:`Table 13 <en-us_topic_0097289624__table576493295720>` lists the OSs supported by Pi2 ECSs.
+-  :ref:`Table 14 <en-us_topic_0097289624__table576493295720>` lists the OSs supported by Pi2 ECSs.
 
    .. _en-us_topic_0097289624__table576493295720:
 
-   .. table:: **Table 13** Supported OS versions
+   .. table:: **Table 14** Supported OS versions
 
       +-----------------------------------+------------------------------------------+
       | OS                                | Version                                  |
