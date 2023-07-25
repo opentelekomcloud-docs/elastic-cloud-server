@@ -149,9 +149,10 @@ Notes
       | openEuler                         | openEuler 20.03 64bit                               |
       +-----------------------------------+-----------------------------------------------------+
 
--  When the physical server where an ultra-high I/O ECS is deployed becomes faulty, the ECS cannot be migrated.
+-  If the host where an ultra-high I/O ECS resides becomes faulty, the ECS cannot be restored through live migration.
 
-   If the hardware of host machines is faulty or subhealthy and needs to be repaired, you need to stop the ECS.
+   -  If the host is faulty or subhealthy, you need to stop the ECS for hardware repair.
+   -  In case of system maintenance or hardware faults, the ECS will be redeployed (to ensure HA) and cold migrated to another host. The local disk data of the ECS will not be retained.
 
 -  Ultra-high I/O ECSs do not support specifications modification.
 
@@ -163,11 +164,11 @@ Notes
    -  Both EVS disks and local disks can be used as data disks of an ultra-high I/O ECS.
    -  An ultra-high I/O ECS can have a maximum of 60 attached disks (including VBD, SCSI, and local disks). An ECS can have a maximum of 60 attached disks, including the system disk. For details about constraints, see :ref:`Can I Attach Multiple Disks to an ECS? <en-us_topic_0018073215>`
 
--  Modify the **fstab** file to set automatic disk mounting at ECS start. For details, see :ref:`Setting Automatic Mounting at System Start <en-us_topic_0085634798__en-us_topic_0084935709_section15839912195453>`.
+-  Modify the **fstab** file to set automatic disk mounting at ECS start. For details, see :ref:`Configuring Automatic Mounting at System Start <en-us_topic_0085634798__en-us_topic_0084935709_section15839912195453>`.
 
 -  The local disk data of an ultra-high I/O ECS may be lost due to some reasons, such as physical server breakdown or local disk damage. If your application does not use the data reliability architecture, it is a good practice to use EVS disks to build your ECS.
 
--  After an ultra-high I/O ECS is deleted, the data on local NVMe SSDs is automatically deleted. Back up the data before deleting such an ECS. Deleting local disk data is time-consuming. Therefore, an ultra-high I/O ECS requires a longer period of time than other ECSs for releasing resources.
+-  After an ultra-high I/O ECS is deleted, the data on local NVMe SSDs is automatically deleted. Back up the data before deleting such an ECS. Deleting local disk data is time-consuming, so releasing resources is slow.
 
 -  The data reliability of local disks depends on the reliability of physical servers and hard disks, which are SPOF-prone. It is a good practice to use data redundancy mechanisms at the application layer to ensure data availability. Use EVS disks to store service data that needs to be stored for a long time.
 

@@ -14,7 +14,7 @@ The maximum partition size that MBR supports is 2 TiB and that GPT supports is 1
 
 The fdisk partitioning tool is suitable only for MBR partitions, and the parted partitioning tool is suitable for both MBR and GPT partitions. For more information, see :ref:`Scenarios and Disk Partitions <en-us_topic_0030831623>`.
 
-The method for initializing a disk varies depending on the OS running on the server. This document is used for reference only. For the detailed operations and differences, see the product documents of the corresponding OS.
+The method for initializing a disk varies slightly depending on the OS running on the server. This document is used for reference only. For the detailed operations and differences, see the product documents of the corresponding OS.
 
 .. important::
 
@@ -32,9 +32,11 @@ Prerequisites
 Creating and Mounting a Partition
 ---------------------------------
 
-The following example shows you how a new primary partition can be created on a new data disk that has been attached to a server. The primary partition will be created using fdisk, and MBR will be used. Furthermore, the partition will be formatted using the ext4 file system, mounted on **/mnt/sdc**, and configured with automatic mounting at system start.
+The following example shows you how a new primary partition can be created on a new data disk that has been attached to a server. The primary partition will be created using fdisk, and MBR will be used. Furthermore, the partition will be formatted using the ext4 file system, mounted on **/mnt/sdc**, and configured to mount automatically at startup.
 
-#. **fdisk -l**
+#. Query what block devices are available on the server.
+
+   **fdisk -l**
 
    Information similar to the following is displayed:
 
@@ -57,9 +59,9 @@ The following example shows you how a new primary partition can be created on a 
       Sector size (logical/physical): 512 bytes / 512 bytes
       I/O size (minimum/optimal): 512 bytes / 512 bytes
 
-   In the command output, the server contains two disks. **/dev/vda** is the system disk, and **/dev/vdb** is the new data disk.
+   In the command output, this server contains two disks. **/dev/vda** and **/dev/vdb**. **/dev/vda** is the system disk, and **/dev/vdb** is the new data disk.
 
-#. Run the following command to enter fdisk to partition the new data disk:
+#. Launch fdisk to partition the new data disk.
 
    **fdisk** *New data disk*
 
@@ -104,7 +106,7 @@ The following example shows you how a new primary partition can be created on a 
 
       Disk partitions created using GPT are not categorized.
 
-#. In this example, a primary partition is created. Therefore, enter **p** and press **Enter** to create a primary partition.
+#. Enter **p** and press **Enter** to create a primary partition in this example.
 
    Information similar to the following is displayed:
 
@@ -156,7 +158,7 @@ The following example shows you how a new primary partition can be created on a 
 
    A primary partition has been created for the new data disk.
 
-#. Enter **p** and press **Enter** to view details about the new partition.
+#. Enter **p** and press **Enter** to print the partition details.
 
    Information similar to the following is displayed:
 
@@ -196,15 +198,15 @@ The following example shows you how a new primary partition can be created on a 
 
       In case that you want to discard the changes made before, you can exit fdisk by entering **q**.
 
-#. Run the following command to synchronize the new partition table to the OS:
+#. Synchronize the new partition table to the OS.
 
    **partprobe**
 
-#. Run the following command to set the file system format for the new partition:
+#. Format the new partition with a desired file system format.
 
    **mkfs** **-t** *File system format* **/dev/vdb1**
 
-   In this example, run the following command to set the **ext4** file system for the new partition:
+   In this example, the **ext4** format is used for the new partition.
 
    **mkfs -t ext4 /dev/vdb1**
 
@@ -239,29 +241,29 @@ The following example shows you how a new primary partition can be created on a 
 
    .. important::
 
-      The partition sizes supported by file systems vary. Therefore, you are advised to choose an appropriate file system based on your service requirements.
+      The partition sizes supported by file systems vary. Choose an appropriate file system format based on your service requirements.
 
-#. Run the following command to create a mount point:
+#. Create a mount point.
 
    **mkdir** *Mount point*
 
-   In this example, run the following command to create the **/mnt/sdc** mount point:
+   In this example, the **/mnt/sdc** mount point is created.
 
    **mkdir /mnt/sdc**
 
    .. note::
 
-      The **/mnt** directory exists on all Linux systems. If the mount point fails to create, it may be that the **/mnt** directory has been accidentally deleted. Run the **mkdir -p /mnt/sdc** command to create the mount point.
+      The **/mnt** directory exists on all Linux systems. If the mount point cannot be created, it may be that the **/mnt** directory has been accidentally deleted. You can run **mkdir -p /mnt/sdc** to create the mount point.
 
-#. Run the following command to mount the new partition on the created mount point:
+#. Mount the new partition on the created mount point.
 
    **mount** *Disk partition* *Mount point*
 
-   In this example, run the following command to mount the new partition **/dev/vdb1** on **/mnt/sdc**:
+   In this example, the **/dev/vdb1** partition is mounted on **/mnt/sdc**.
 
    **mount /dev/vdb1 /mnt/sdc**
 
-#. Run the following command to view the mount result:
+#. Check the mount result.
 
    **df -TH**
 
@@ -279,30 +281,30 @@ The following example shows you how a new primary partition can be created on a 
       tmpfs          tmpfs     398M     0  398M   0% /run/user/0
       /dev/vdb1      ext4      106G   63M  101G   1% /mnt/sdc
 
-   New partition **/dev/vdb1** is mounted on **/mnt/sdc**.
+   You should now see that partition **/dev/vdb1** is mounted on **/mnt/sdc**.
 
    .. note::
 
-      If the server is restarted, the mounting will become invalid. You can set automatic mounting for partitions at system start by modifying the **/etc/fstab** file. For details, see :ref:`Setting Automatic Mounting at System Start <en-us_topic_0085634797__en-us_topic_0044524669_section15839912195453>`.
+      After the server is restarted, the disk will not be automatically mounted. To configure automount at startup, you will need to modify the **/etc/fstab** file. For details, see :ref:`Configuring Automatic Mounting at System Start <en-us_topic_0085634797__en-us_topic_0044524669_section15839912195453>`.
 
 .. _en-us_topic_0085634797__en-us_topic_0044524669_section15839912195453:
 
-Setting Automatic Mounting at System Start
-------------------------------------------
+Configuring Automatic Mounting at System Start
+----------------------------------------------
 
-Modify the **fstab** file to set automatic disk mounting at server start. You can also set automatic mounting for the servers containing data. This operation will not affect the existing data.
+The **fstab** file controls what disks are automatically mounted at startup. You can use **fstab** to configure your data disks to mount automatically. This operation will not affect the existing data.
 
-The following procedure shows how to set automatic disk mounting at server start by using UUIDs to identify disks in the **fstab** file. You are advised not to use device names to identify disks in the file because a device name may change (for example, from /dev/vdb1 to /dev/vdb2) during the server stop or start, resulting in improper server running after restart.
+The example here uses UUIDs to identify disks in the **fstab** file. You are advised not to use device names to identify disks in the file because device names are assigned dynamically and may change (for example, from /dev/vdb1 to /dev/vdb2) after a reboot. This can even prevent your disk from booting up.
 
 .. note::
 
    UUID is the unique character string for disk partitions in a Linux system.
 
-#. Run the following command to query the partition UUID:
+#. Query the partition UUID.
 
    **blkid** *Disk partition*
 
-   In this example, run the following command to query the UUID of the **/dev/vdb1** partition:
+   In this example, the UUID of the **/dev/vdb1** partition is queried.
 
    **blkid /dev/vdb1**
 
@@ -313,9 +315,9 @@ The following procedure shows how to set automatic disk mounting at server start
       [root@ecs-test-0001 ~]# blkid /dev/vdb1
       /dev/vdb1: UUID="0b3040e2-1367-4abb-841d-ddb0b92693df" TYPE="ext4"
 
-   The UUID of the **/dev/vdb1** partition is displayed.
+   Carefully record the UUID, as you will need it for the following step.
 
-#. Run the following command to open the **fstab** file using the vi editor:
+#. Open the **fstab** file using the vi editor.
 
    **vi /etc/fstab**
 
@@ -331,9 +333,9 @@ The following procedure shows how to set automatic disk mounting at server start
 
    The system saves the configurations and exits the vi editor.
 
-#. Perform the following operations to verify the automatic mounting function:
+#. Verify that the disk is auto-mounted at startup.
 
-   a. Run the following command to unmount the partition:
+   a. Unmount the partition.
 
       **umount** *Disk partition*
 
@@ -341,11 +343,11 @@ The following procedure shows how to set automatic disk mounting at server start
 
       **umount /dev/vdb1**
 
-   b. Run the following command to reload all the content in the **/etc/fstab** file:
+   b. Reload all the content in the **/etc/fstab** file.
 
       **mount -a**
 
-   c. Run the following command to query the file system mounting information:
+   c. Query the file system mounting information.
 
       **mount** **\|** **grep** *Mount point*
 

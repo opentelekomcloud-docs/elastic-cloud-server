@@ -18,9 +18,6 @@ Large-memory ECSs provide an even larger amount of memory than memory-optimized 
 
    OLAP and OLTP applications with hyper-threading enabled
 
-Specifications
---------------
-
 .. table:: **Table 1** E3 ECS specifications
 
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
