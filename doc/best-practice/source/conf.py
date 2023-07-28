@@ -30,9 +30,9 @@ otcdocs_repo_name = 'opentelekomcloud-docs/elastic-cloud-server'
 
 # Those variables are needed for indexing into OpenSearch
 otcdocs_doc_environment = 'public'
-otcdocs_doc_link = '/elastic-cloud-server/api-ref/'
-otcdocs_doc_title = 'API Reference'
-otcdocs_doc_type = 'api-ref'
+otcdocs_doc_link = '/elastic-cloud-server/best-practice/'
+otcdocs_doc_title = 'Best Practice'
+otcdocs_doc_type = 'best-practice'
 otcdocs_service_category = 'compute'
 otcdocs_service_title = 'Elastic Cloud Server'
 otcdocs_service_type = 'ecs'
@@ -92,7 +92,7 @@ html_theme_options = {
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
 
-html_title = "Elastic Cloud Server - API Reference"
+html_title = "Elastic Cloud Server - Best Practice"
 
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -106,7 +106,7 @@ html_copy_source = False
 # -- Options for PDF output --------------------------------------------------
 latex_documents = [
     ('index',
-     'ecs-api-ref.tex',
-     u'Elastic Cloud Server - API Reference',
+     'ecs-best-practice.tex',
+     u'Elastic Cloud Server - Best Practice',
      u'OpenTelekomCloud', 'manual'),
 ]
