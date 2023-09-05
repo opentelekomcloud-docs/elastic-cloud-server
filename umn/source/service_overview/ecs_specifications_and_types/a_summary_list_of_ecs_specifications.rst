@@ -257,7 +257,19 @@ Memory-optimized
 Large-Memory
 ------------
 
-.. table:: **Table 8** E3 ECS specifications
+.. table:: **Table 8** E6 ECS specifications
+
+   +----------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
+   | Flavor         | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | Virtualization | Hardware                       |
+   |                |       |        |                        |          |                 |           |                |                                |
+   |                |       | (GiB)  | (Gbit/s)               | (10,000) |                 |           |                |                                |
+   +================+=======+========+========================+==========+=================+===========+================+================================+
+   | e6.26xlarge.28 | 104   | 2948   | 30/20                  | 550      | 16              | 8         | KVM            | CPU: Intel® Xeon® Skylake 8280 |
+   +----------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
+   | e6.52xlarge.28 | 208   | 5896   | 40/40                  | 1,000    | 32              | 8         | KVM            |                                |
+   +----------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
+
+.. table:: **Table 9** E3 ECS specifications
 
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | Virtualization | Hardware                       |
@@ -276,7 +288,7 @@ Large-Memory
 Disk-intensive
 --------------
 
-.. table:: **Table 9** D2 ECS specifications
+.. table:: **Table 10** D2 ECS specifications
 
    +---------------+-------+--------+------------------------+----------+-----------------+----------------+-------------+-----------------------------+
    | Flavor        | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Virtualization | Local Disks | Hardware                    |
@@ -299,7 +311,7 @@ Disk-intensive
 Ultra-high I/O
 --------------
 
-.. table:: **Table 10** I3 ECS specifications
+.. table:: **Table 11** I3 ECS specifications
 
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------------------+----------------+
    | Flavor        | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | Local Disks        | Virtualization |
@@ -330,7 +342,7 @@ Ultra-high I/O
 High-Performance Computing
 --------------------------
 
-.. table:: **Table 11** HL1 ECS specifications
+.. table:: **Table 12** HL1 ECS specifications
 
    +---------------+-------+--------------+---------------------------------+-------------------+-----------------+-----------+----------------+---------------------------+----------------------------------------+
    | Flavor        | vCPUs | Memory (GiB) | Max./Assured Bandwidth (Gbit/s) | Max. PPS (10,000) | Max. NIC Queues | Max. NICs | Virtualization | Network                   | Hardware                               |
@@ -338,7 +350,7 @@ High-Performance Computing
    | hl1.8xlarge.8 | 32    | 256          | 9/9                             | 90                | 8               | 12        | KVM            | 100 Gbit/s EDR InfiniBand | CPU: Intel® Xeon® Processor E5-2690 v4 |
    +---------------+-------+--------------+---------------------------------+-------------------+-----------------+-----------+----------------+---------------------------+----------------------------------------+
 
-.. table:: **Table 12** H2 ECS specifications
+.. table:: **Table 13** H2 ECS specifications
 
    +---------------+-------+--------------+---------------------------------+-------------------+-----------------+-----------+----------------+-------------+-----------------+---------------------------+------------------------------+
    | Flavor        | vCPUs | Memory (GiB) | Max./Assured Bandwidth (Gbit/s) | Max. PPS (10,000) | Max. NIC Queues | Max. NICs | Virtualization | Local Disks | Local Disk (TB) | Network                   | Hardware                     |

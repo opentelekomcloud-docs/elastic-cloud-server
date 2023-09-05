@@ -43,11 +43,11 @@ Notes
 
 -  Affected by the memory loading speed, large-memory ECSs may take longer to start.
 
--  :ref:`Table 2 <en-us_topic_0038024694__table192771727112217>` lists the OSs supported by large-memory ECSs.
+-  :ref:`Table 3 <en-us_topic_0038024694__table192771727112217>` lists the OSs supported by large-memory ECSs.
 
    .. _en-us_topic_0038024694__table192771727112217:
 
-   .. table:: **Table 2** Supported OS versions
+   .. table:: **Table 3** Supported OS versions
 
       +-----------------------------------+-----------------------------------------------------+
       | OS                                | Version                                             |
@@ -94,11 +94,11 @@ Notes
 
 -  Large-memory ECSs can use ultra-high I/O EVS disks as the system disk and data disks.
 
--  The primary and extension NICs of a large-memory ECS can be used only in certain scenarios. For details, see :ref:`Table 3 <en-us_topic_0038024694__table1642803151326>`.
+-  The primary and extension NICs of a large-memory ECS can be used only in certain scenarios. For details, see :ref:`Table 4 <en-us_topic_0038024694__table1642803151326>`.
 
    .. _en-us_topic_0038024694__table1642803151326:
 
-   .. table:: **Table 3** Application scenarios of the NICs of a large-memory ECS
+   .. table:: **Table 4** Application scenarios of the NICs of a large-memory ECS
 
       +---------------+----------------------------------+--------------------------------------------------------------------------------------+
       | NIC Type      | Application Scenario             | Remarks                                                                              |
