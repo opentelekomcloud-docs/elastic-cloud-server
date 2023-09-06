@@ -57,6 +57,8 @@ Select your desired GPU-accelerated ECS type and specifications.
    |               |       |        |                        |          |                 |           |        |            |                |                                     |
    |               |       | (GiB)  | (Gbit/s)               | (10,000) |                 |           |        | (GiB)      |                |                                     |
    +===============+=======+========+========================+==========+=================+===========+========+============+================+=====================================+
+   | g6.4xlarge.4  | 16    | 64     | 25/15                  | 200      | 8               | 8         | 1 x T4 | 16         | KVM            | N/A                                 |
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+----------------+-------------------------------------+
    | g6.10xlarge.7 | 40    | 280    | 25/15                  | 200      | 16              | 8         | 1 x T4 | 16         | KVM            | CPU: Intel® Xeon® Cascade Lake 6266 |
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+----------------+-------------------------------------+
    | g6.20xlarge.7 | 80    | 560    | 30/30                  | 400      | 32              | 16        | 2 x T4 | 32         | KVM            |                                     |
@@ -571,6 +573,11 @@ P1 ECSs are used in computing acceleration scenarios, such as deep learning trai
 -  After a P1 ECS is created, you must install the NVIDIA driver for computing acceleration. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 
 -  P1 ECSs do not support specifications modification.
+
+-  P1 ECSs do not support automatic recovery.
+
+   -  If the host is faulty or subhealthy, you need to stop the ECS for hardware repair.
+   -  In case of system maintenance or hardware faults, the ECS will be redeployed (to ensure HA) and cold migrated to another host. The local disk data of the ECS will not be retained.
 
 -  :ref:`Table 11 <en-us_topic_0097289624__table8704181020556>` lists the OSs supported by P1 ECSs.
 

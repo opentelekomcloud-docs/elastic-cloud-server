@@ -14,7 +14,7 @@ The maximum partition size that MBR supports is 2 TiB and that GPT supports is 1
 
 The fdisk partitioning tool is suitable only for MBR partitions, and the parted partitioning tool is suitable for both MBR and GPT partitions. For more information, see :ref:`Scenarios and Disk Partitions <en-us_topic_0030831623>`.
 
-The method for initializing a disk varies depending on the OS running on the server. This document is used for reference only. For the detailed operations and differences, see the product documents of the corresponding OS.
+The method for initializing a disk varies slightly depending on the OS running on the server. This document is used for reference only. For the detailed operations and differences, see the product documents of the corresponding OS.
 
 .. important::
 
@@ -32,9 +32,9 @@ Prerequisites
 Creating and Mounting a Partition
 ---------------------------------
 
-The following example shows you how a new partition can be created on a new data disk that has been attached to a server. The partition will be created using parted, and GPT will be used. Furthermore, the partition will be formatted using the ext4 file system, mounted on **/mnt/sdc**, and configured with automatic mounting at system start.
+The following example shows you how a new partition can be created on a new data disk that has been attached to a server. The partition will be created using parted, and GPT will be used. Furthermore, the partition will be formatted using the ext4 file system, mounted on **/mnt/sdc**, and configured to mount automatically at startup.
 
-#. Run the following command to query information about the new data disk:
+#. Query information about the new data disk.
 
    **lsblk**
 
@@ -48,9 +48,9 @@ The following example shows you how a new partition can be created on a new data
       └─vda1 253:1    0   40G  0 part /
       vdb    253:16   0  100G  0 disk
 
-   In the command output, the server contains two disks. **/dev/vda** is the system disk, and **/dev/vdb** is the new data disk.
+   In the command output, this server contains two disks. **/dev/vda** and **/dev/vdb**. **/dev/vda** is the system disk, and **/dev/vdb** is the new data disk.
 
-#. Run the following command to enter parted to partition the new data disk:
+#. Launch parted to partition the new data disk.
 
    **parted** *New data disk*
 
@@ -85,11 +85,11 @@ The following example shows you how a new partition can be created on a new data
 
    In the command output, the **Partition Table** value is **unknown**, indicating that no partition style is set for the new disk.
 
-#. Run the following command to set the disk partition style:
+#. Set the disk partition style.
 
    **mklabel** *Disk partition style*
 
-   In this example, run the following command to set the partition style to GPT: (Disk partition styles can be MBR or GPT.)
+   This command lets you control whether to use MBR or GPT for your partition table. In this example, GPT is used.
 
    **mklabel gpt**
 
@@ -97,7 +97,7 @@ The following example shows you how a new partition can be created on a new data
 
       The maximum disk size supported by MBR is 2 TiB, and that supported by GPT is 18 EiB. Because an EVS data disk currently supports up to 32 TiB, use GPT if your disk size is larger than 2 TiB.
 
-      If the partition style is changed after the disk has been used, data on the disk will be cleared. Therefore, select an appropriate partition style when initializing the disk. If you must change the partition style to GPT after a disk has been used, it is recommended that you back up the disk data before the change.
+      If the partition style is changed after the disk has been used, all data on the disk will be lost, so take care to select an appropriate partition style when initializing the disk. If you must change the partition style to GPT after a disk has been used, it is recommended that you back up the disk data before the change.
 
 #. Enter **p** and press **Enter** to view the disk partition style.
 
@@ -121,7 +121,7 @@ The following example shows you how a new partition can be created on a new data
 
 #. Enter **unit s** and press **Enter** to set the measurement unit of the disk to sector.
 
-#. Run the following command and press **Enter**:
+#. Create a new partition.
 
    **mkpart** *Partition name Start sector* *End sector*
 
@@ -129,7 +129,7 @@ The following example shows you how a new partition can be created on a new data
 
    **mkpart test 2048s 100%**
 
-   In this example, one partition is created for the new data disk. Value **2048s** indicates the disk start sector, and **100%** indicates the disk end sector. The two values are used for reference only. You can determine the number of partitions and the partition size based on your service requirements.
+   In this example, one partition is created for the new data disk, starting on **2048** and using **100%** of the rest of the disk. The two values are used for reference only. You can determine the number of partitions and the partition size based on your service requirements.
 
    Information similar to the following is displayed:
 
@@ -138,7 +138,7 @@ The following example shows you how a new partition can be created on a new data
       (parted) mkpart opt 2048s 100%
       (parted)
 
-#. Enter **p** and press **Enter** to view details about the new partition.
+#. Enter **p** and press **Enter** to print the partition details.
 
    Information similar to the following is displayed:
 
@@ -165,9 +165,9 @@ The following example shows you how a new partition can be created on a new data
       (parted) q
       Information: You may need to update /etc/fstab.
 
-   You can set automatic disk mounting by updating the **/etc/fstab** file. Before updating the file, set the file system format for the partition and mount the partition on the mount point.
+   You can configure automatic mounting by updating the **/etc/fstab** file. Before doing so, format the partition with a desired file system and mount the partition on the mount point.
 
-#. Run the following command to view the disk partition information:
+#. View the disk partition information.
 
    **lsblk**
 
@@ -184,11 +184,11 @@ The following example shows you how a new partition can be created on a new data
 
    In the command output, **/dev/vdb1** is the partition you created.
 
-#. Run the following command to set the file system format for the new partition:
+#. Format the new partition with a desired file system format.
 
    **mkfs** **-t** *File system format* **/dev/vdb1**
 
-   In this example, run the following command to set the **ext4** file system for the new partition:
+   In this example, the **ext4** format is used for the new partition.
 
    **mkfs -t ext4 /dev/vdb1**
 
@@ -223,29 +223,29 @@ The following example shows you how a new partition can be created on a new data
 
    .. important::
 
-      The partition sizes supported by file systems vary. Therefore, you are advised to choose an appropriate file system based on your service requirements.
+      The partition sizes supported by file systems vary. Choose an appropriate file system format based on your service requirements.
 
-#. Run the following command to create a mount point:
+#. Create a mount point.
 
    **mkdir** *Mount point*
 
-   In this example, run the following command to create the **/mnt/sdc** mount point:
+   In this example, the **/mnt/sdc** mount point is created.
 
    **mkdir /mnt/sdc**
 
    .. note::
 
-      The **/mnt** directory exists on all Linux systems. If the mount point fails to create, it may be that the **/mnt** directory has been accidentally deleted. Run the **mkdir -p /mnt/sdc** command to create the mount point.
+      The **/mnt** directory exists on all Linux systems. If the mount point cannot be created, it may be that the **/mnt** directory has been accidentally deleted. You can run **mkdir -p /mnt/sdc** to create the mount point.
 
-#. Run the following command to mount the new partition on the created mount point:
+#. Mount the new partition on the created mount point.
 
    **mount** *Disk partition* *Mount point*
 
-   In this example, run the following command to mount the new partition **/dev/vdb1** on **/mnt/sdc**:
+   In this example, the **/dev/vdb1** partition is mounted on **/mnt/sdc**.
 
    **mount /dev/vdb1 /mnt/sdc**
 
-#. Run the following command to view the mount result:
+#. Check the mount result.
 
    **df -TH**
 
@@ -263,30 +263,30 @@ The following example shows you how a new partition can be created on a new data
       tmpfs          tmpfs     398M     0  398M   0% /run/user/0
       /dev/vdb1      ext4      106G   63M  101G   1% /mnt/sdc
 
-   New partition **/dev/vdb1** is mounted on **/mnt/sdc**.
+   You should now see that partition **/dev/vdb1** is mounted on **/mnt/sdc**.
 
    .. note::
 
-      If the server is restarted, the mounting will become invalid. You can set automatic mounting for partitions at system start by modifying the **/etc/fstab** file. For details, see :ref:`Setting Automatic Mounting at System Start <en-us_topic_0085634798__en-us_topic_0084935709_section15839912195453>`.
+      After the server is restarted, the disk will not be automatically mounted. To configure automount at startup, you will need to modify the **/etc/fstab** file. For details, see :ref:`Configuring Automatic Mounting at System Start <en-us_topic_0085634798__en-us_topic_0084935709_section15839912195453>`.
 
 .. _en-us_topic_0085634798__en-us_topic_0084935709_section15839912195453:
 
-Setting Automatic Mounting at System Start
-------------------------------------------
+Configuring Automatic Mounting at System Start
+----------------------------------------------
 
-Modify the **fstab** file to set automatic disk mounting at server start. You can also set automatic mounting for the servers containing data. This operation will not affect the existing data.
+The **fstab** file controls what disks are automatically mounted at startup. You can use **fstab** to configure your data disks to mount automatically. This operation will not affect the existing data.
 
-The following procedure shows how to set automatic disk mounting at server start by using UUIDs to identify disks in the **fstab** file. You are advised not to use device names to identify disks in the file because a device name may change (for example, from /dev/vdb1 to /dev/vdb2) during the server stop or start, resulting in improper server running after restart.
+The example here uses UUIDs to identify disks in the **fstab** file. You are advised not to use device names to identify disks in the file because device names are assigned dynamically and may change (for example, from /dev/vdb1 to /dev/vdb2) after a reboot. This can even prevent your disk from booting up.
 
 .. note::
 
    UUID is the unique character string for disk partitions in a Linux system.
 
-#. Run the following command to query the partition UUID:
+#. Query the partition UUID.
 
    **blkid** *Disk partition*
 
-   In this example, run the following command to query the UUID of the **/dev/vdb1** partition:
+   In this example, the UUID of the **/dev/vdb1** partition is queried.
 
    **blkid /dev/vdb1**
 
@@ -297,9 +297,9 @@ The following procedure shows how to set automatic disk mounting at server start
       [root@ecs-test-0001 ~]# blkid /dev/vdb1
       /dev/vdb1: UUID="0b3040e2-1367-4abb-841d-ddb0b92693df" TYPE="ext4"
 
-   The UUID of the **/dev/vdb1** partition is displayed.
+   Carefully record the UUID, as you will need it for the following step.
 
-#. Run the following command to open the **fstab** file using the vi editor:
+#. Open the **fstab** file using the vi editor.
 
    **vi /etc/fstab**
 
@@ -315,9 +315,9 @@ The following procedure shows how to set automatic disk mounting at server start
 
    The system saves the configurations and exits the vi editor.
 
-#. Perform the following operations to verify the automatic mounting function:
+#. Verify that the disk is auto-mounted at startup.
 
-   a. Run the following command to unmount the partition:
+   a. Unmount the partition.
 
       **umount** *Disk partition*
 
@@ -325,11 +325,11 @@ The following procedure shows how to set automatic disk mounting at server start
 
       **umount /dev/vdb1**
 
-   b. Run the following command to reload all the content in the **/etc/fstab** file:
+   b. Reload all the content in the **/etc/fstab** file.
 
       **mount -a**
 
-   c. Run the following command to query the file system mounting information:
+   c. Query the file system mounting information.
 
       **mount** **\|** **grep** *Mount point*
 
