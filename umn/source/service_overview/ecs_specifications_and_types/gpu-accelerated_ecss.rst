@@ -652,16 +652,11 @@ P1 ECSs are used in computing acceleration scenarios, such as deep learning trai
 
 -  P1 ECSs do not support specifications modification.
 
--  P1 ECSs do not support automatic recovery.
-
-   -  If the host is faulty or subhealthy, you need to stop the ECS for hardware repair.
-   -  In case of system maintenance or hardware faults, the ECS will be redeployed (to ensure HA) and cold migrated to another host. The local disk data of the ECS will not be retained.
-
--  :ref:`Table 11 <en-us_topic_0097289624__table8704181020556>` lists the OSs supported by P1 ECSs.
+-  :ref:`Table 12 <en-us_topic_0097289624__table8704181020556>` lists the OSs supported by P1 ECSs.
 
    .. _en-us_topic_0097289624__table8704181020556:
 
-   .. table:: **Table 11** Supported OS versions
+   .. table:: **Table 12** Supported OS versions
 
       +-----------------------------------+---------------------------------------+
       | OS                                | Version                               |
