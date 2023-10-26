@@ -18,7 +18,22 @@ Large-memory ECSs provide an even larger amount of memory than memory-optimized 
 
    OLAP and OLTP applications with hyper-threading enabled
 
-.. table:: **Table 1** E3 ECS specifications
+Specifications
+--------------
+
+.. table:: **Table 1** E6 ECS specifications
+
+   +----------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
+   | Flavor         | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | Virtualization | Hardware                       |
+   |                |       |        |                        |          |                 |           |                |                                |
+   |                |       | (GiB)  | (Gbit/s)               | (10,000) |                 |           |                |                                |
+   +================+=======+========+========================+==========+=================+===========+================+================================+
+   | e6.26xlarge.28 | 104   | 2948   | 30/20                  | 550      | 16              | 8         | KVM            | CPU: Intel® Xeon® Skylake 8280 |
+   +----------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
+   | e6.52xlarge.28 | 208   | 5896   | 40/40                  | 1,000    | 32              | 8         | KVM            |                                |
+   +----------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
+
+.. table:: **Table 2** E3 ECS specifications
 
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | Virtualization | Hardware                       |
