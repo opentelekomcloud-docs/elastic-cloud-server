@@ -18,7 +18,22 @@ Large-memory ECSs provide an even larger amount of memory than memory-optimized 
 
    OLAP and OLTP applications with hyper-threading enabled
 
-.. table:: **Table 1** E3 ECS specifications
+Specifications
+--------------
+
+.. table:: **Table 1** E6 ECS specifications
+
+   +----------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
+   | Flavor         | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | Virtualization | Hardware                       |
+   |                |       |        |                        |          |                 |           |                |                                |
+   |                |       | (GiB)  | (Gbit/s)               | (10,000) |                 |           |                |                                |
+   +================+=======+========+========================+==========+=================+===========+================+================================+
+   | e6.26xlarge.28 | 104   | 2948   | 30/20                  | 550      | 16              | 8         | KVM            | CPU: Intel® Xeon® Skylake 8280 |
+   +----------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
+   | e6.52xlarge.28 | 208   | 5896   | 40/40                  | 1,000    | 32              | 8         | KVM            |                                |
+   +----------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
+
+.. table:: **Table 2** E3 ECS specifications
 
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | Virtualization | Hardware                       |
@@ -43,11 +58,11 @@ Notes
 
 -  Affected by the memory loading speed, large-memory ECSs may take longer to start.
 
--  :ref:`Table 2 <en-us_topic_0038024694__table192771727112217>` lists the OSs supported by large-memory ECSs.
+-  :ref:`Table 3 <en-us_topic_0038024694__table192771727112217>` lists the OSs supported by large-memory ECSs.
 
    .. _en-us_topic_0038024694__table192771727112217:
 
-   .. table:: **Table 2** Supported OS versions
+   .. table:: **Table 3** Supported OS versions
 
       +-----------------------------------+-----------------------------------------------------+
       | OS                                | Version                                             |
@@ -94,11 +109,11 @@ Notes
 
 -  Large-memory ECSs can use ultra-high I/O EVS disks as the system disk and data disks.
 
--  The primary and extension NICs of a large-memory ECS can be used only in certain scenarios. For details, see :ref:`Table 3 <en-us_topic_0038024694__table1642803151326>`.
+-  The primary and extension NICs of a large-memory ECS can be used only in certain scenarios. For details, see :ref:`Table 4 <en-us_topic_0038024694__table1642803151326>`.
 
    .. _en-us_topic_0038024694__table1642803151326:
 
-   .. table:: **Table 3** Application scenarios of the NICs of a large-memory ECS
+   .. table:: **Table 4** Application scenarios of the NICs of a large-memory ECS
 
       +---------------+----------------------------------+--------------------------------------------------------------------------------------+
       | NIC Type      | Application Scenario             | Remarks                                                                              |
