@@ -13,7 +13,7 @@ For high-performance H2 ECSs equipped with an InfiniBand NIC driver (InfiniBand 
 
 #. Check whether the NICs of the InfiniBand ECSs are functional.
 
-   a. Log in to an ECS.
+   a. Log in to the ECS.
 
    b. Run the following command to check whether the NIC is functional:
 

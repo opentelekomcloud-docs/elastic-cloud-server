@@ -53,7 +53,7 @@ If you want to use a full-ECS image to rapidly create ECSs, ensure that the full
 
 -  Scenario 1: The ECS based on which the target CSBS backup is created is available.
 
-   Back up the original ECS on the **Cloud Server Backup Service** page and use the new format to create a full-ECS image. You can use this full-ECS image to rapidly create ECSs.
+   Back up the original ECS on the **Cloud Server Backup Service** page and use the new format to create a full-ECS image. You can use the full-ECS image to rapidly create ECSs.
 
    -  For instructions about how to back up an ECS, see *Cloud Server Backup Service User Guide*.
    -  For instructions about how create a full-ECS image, see *Image Management Service User Guide*.
@@ -62,7 +62,7 @@ If you want to use a full-ECS image to rapidly create ECSs, ensure that the full
 
    #. Use the full-ECS image to create a new ECS.
 
-   #. Back up the ECS.
+   #. Back up the newly created ECS.
 
       For details, see *Cloud Server Backup Service User Guide*.
 

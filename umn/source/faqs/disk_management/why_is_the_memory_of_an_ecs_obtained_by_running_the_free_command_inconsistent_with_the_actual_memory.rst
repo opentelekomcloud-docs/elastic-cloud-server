@@ -2,17 +2,17 @@
 
 .. _en-us_topic_0093153741:
 
-Why Is the Memory of an ECS Obtained by Running the **free** Command Inconsistent with the Actual Memory?
-=========================================================================================================
+Why Is the Memory of an ECS Obtained by Running the free Command Inconsistent with the Actual Memory?
+=====================================================================================================
 
 Symptom
 -------
 
 After you create an ECS, you run the **free -m** command to view the ECS memory. The ECS memory is less than the memory configured during ECS creation.
 
-An example is provided as follows:
+For example:
 
-For example, you configure the memory as 4,194,304 KB (4,096 MB) when you create the ECS. After the ECS is created, you run the **free -m** command to view its memory. The command output is as follows:
+When you are creating an ECS, the configured memory size is 4194304 KB (4096 MB). After the ECS is created, you run the **free -m** command to view its memory. The command output is as follows:
 
 .. code-block:: console
 

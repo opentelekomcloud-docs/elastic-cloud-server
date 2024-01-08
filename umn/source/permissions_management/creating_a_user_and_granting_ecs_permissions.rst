@@ -47,5 +47,5 @@ Process Flow
 
    Log in to the ECS console by using the created user, and verify that the user only has read permissions for ECS.
 
-   -  Choose **Service List** > **Elastic Cloud Server**. Then click **Create ECS** on the ECS console. If a message appears indicating that you have insufficient permissions to perform the operation, the **ECS ReadOnlyAccess** policy has already taken effect.
-   -  Choose any other service in **Service List**. If a message appears indicating that you have insufficient permissions to access the service, the **ECSReadOnlyAccess** policy has already taken effect.
+   -  Choose **Compute** > **Elastic Cloud Server** in **Service List**. On the ECS console, click **Create ECS**. If the creation attempt failed, the **ECSReadOnlyAccess** policy has already taken effect.
+   -  Choose any service other than ECS in **Service List**. If a message appears indicating that you have insufficient permissions to access the service, the **ECSReadOnlyAccess** policy has already taken effect.

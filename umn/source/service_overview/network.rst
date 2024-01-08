@@ -68,8 +68,8 @@ To obtain the QoS data of an ECS flavor, including the maximum bandwidth, assure
 
 The intranet bandwidth and PPS of an ECS are determined by its flavor.
 
--  Assured intranet bandwidth: indicates the guaranteed bandwidth allocated to an ECS
--  Maximum intranet bandwidth: indicates the maximum bandwidth that can be allocated to an ECS
+-  Assured intranet bandwidth: indicates the guaranteed bandwidth allocated to an ECS.
+-  Maximum intranet bandwidth: indicates the maximum bandwidth that can be allocated to an ECS.
 -  Maximum intranet PPS: indicates the maximum ECS capability in transmitting and receiving packets.
 -  NIC multi-queue: allocates NIC interrupt requests to multiple vCPUs for higher PPS performance and bandwidth.
 

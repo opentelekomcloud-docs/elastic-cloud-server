@@ -19,35 +19,22 @@ Changing the Name of a Single ECS
 
 #. Click |image1| in the upper left corner and select your region and project.
 
-#. Under **Computing**, click **Elastic Cloud Server**.
+#. Under **Computing**, choose **Elastic Cloud Server**.
 
-#. Click the name of the target ECS.
+#. Click the ECS for which you want to change the name.
 
-#. On the page providing details about the ECS, click |image2| next to the ECS name. Then, change the name as prompted.
+   The ECS details page is displayed.
 
-   **Allow duplicate name**: allows ECS names to be duplicate. If **Allow duplicate name** is not selected and the new name you configure is the same as an existing ECS name, the system displays a message indicating that the name has been used and you need to change it to another name.
+#. Click |image2| next to the ECS name.
 
-#. Click **OK**.
 
-Changing the Names of Multiple ECSs in a Batch
-----------------------------------------------
+   .. figure:: /_static/images/en-us_image_0000001706013141.png
+      :alt: **Figure 1** Changing the ECS name
 
-#. Log in to the management console.
+      **Figure 1** Changing the ECS name
 
-#. Click |image3| in the upper left corner and select your region and project.
-
-#. Under **Computing**, click **Elastic Cloud Server**.
-
-#. Select the target ECSs.
-
-#. Click **More** above the ECS list and select **Change ECS Name** from the drop-down list.
-
-#. Enter a new name.
-
-#. Click **OK**.
-
-   If you change ECS names in a batch, the new ECS names are the same, for example, all are **ecs-test**.
+#. Click |image3|.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
-.. |image2| image:: /_static/images/en-us_image_0142359884.png
-.. |image3| image:: /_static/images/en-us_image_0210779229.png
+.. |image2| image:: /_static/images/en-us_image_0000001710878525.png
+.. |image3| image:: /_static/images/en-us_image_0000001705857469.png
