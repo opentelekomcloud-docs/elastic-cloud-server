@@ -5,8 +5,8 @@
 Step 2: Configure Network
 =========================
 
-Network Configurations
-----------------------
+Network Settings
+----------------
 
 #. Set **Network** by selecting an available VPC and subnet from the drop-down list and specifying a private IP address assignment mode.
 
