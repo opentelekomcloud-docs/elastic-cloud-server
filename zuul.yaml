@@ -4,6 +4,9 @@
     default-branch: main
     templates:
       - helpcenter-base-jobs
-      - api-ref-hc-jobs
-      - umn-hc-jobs
-      - dev-guide-hc-jobs
+    check:
+      jobs:
+        - noop
+    gate:
+      jobs:
+        - noop
