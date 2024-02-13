@@ -11,6 +11,7 @@ Managing ECSs
 -  :ref:`Managing ECS Groups <en-us_topic_0032980085>`
 -  :ref:`Changing the Time Zone for an ECS <en-us_topic_0040630518>`
 -  :ref:`Obtaining ECS Console Logs <en-us_topic_0057711189>`
+-  :ref:`Starting and Stopping ECSs <en-us_topic_0013771110>`
 
 .. toctree::
    :maxdepth: 1
@@ -22,3 +23,4 @@ Managing ECSs
    managing_ecs_groups
    changing_the_time_zone_for_an_ecs
    obtaining_ecs_console_logs
+   starting_and_stopping_ecss

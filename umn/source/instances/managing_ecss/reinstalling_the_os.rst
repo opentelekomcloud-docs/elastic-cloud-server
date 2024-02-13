@@ -46,9 +46,9 @@ Procedure
 
 #. .. _en-us_topic_0024911405__li20776247143354:
 
-   Under **Computing**, click **Elastic Cloud Server**.
+   Under **Computing**, choose **Elastic Cloud Server**.
 
-#. Locate the row containing the target ECS and choose **More** > **Manage Image/Disk/Backup** > **Reinstall OS**.in the **Operation** column.
+#. Locate the row containing the target ECS and choose **More** > **Manage Image/Backup** > **Reinstall OS** in the **Operation** column.
 
    Only stopped ECSs support OS reinstallation. If the ECS is not stopped, stop it before proceeding with reinstallation.
 
@@ -75,6 +75,12 @@ Procedure
 #. Select the login mode.
 
    If the target ECS uses key pair authentication, you can replace the original key pair.
+
+
+   .. figure:: /_static/images/en-us_image_0000001657784206.png
+      :alt: **Figure 1** Reinstall OS
+
+      **Figure 1** Reinstall OS
 
 #. Click **OK**.
 

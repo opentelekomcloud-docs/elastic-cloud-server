@@ -5,171 +5,197 @@
 Security Group Configuration Examples
 =====================================
 
-This section shows examples of common security group configurations. In the examples, all outgoing data packets are allowed by default. We only describe how to configure inbound rules for security groups.
+Here are some common security group configuration examples for different scenarios, including remote login to ECSs, website access, and internal communication between instances in different security groups.
 
-.. note::
+Generally, a security group denies all external requests by default. You need to add inbound rules to a security group based on the whitelist principle to allow specific external requests to access instances in the security group.
 
-   For details about how to configure and modify security group rules, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>` and :ref:`Changing a Security Group <en-us_topic_0093492517>`.
+-  :ref:`Remotely Logging In to an ECS from a Local Server <en-us_topic_0140323152__en-us_topic_0118534011_section14933617154810>`
+-  :ref:`Remotely Connecting to an ECS from a Local Server to Upload or Download Files <en-us_topic_0140323152__en-us_topic_0118534011_section8685162114185>`
+-  :ref:`Setting Up a Website on an ECS to Provide Services Externally <en-us_topic_0140323152__en-us_topic_0118534011_section316061115481>`
+-  :ref:`Using ping Command to Verify Network Connectivity <en-us_topic_0140323152__en-us_topic_0118534011_section29561427142511>`
+-  :ref:`Enabling ECSs In Different Security Groups to Communicate Through an Internal Network <en-us_topic_0140323152__en-us_topic_0118534011_section094514632817>`
+-  :ref:`ECS Providing Database Access Service <en-us_topic_0140323152__en-us_topic_0118534011_section7465183583515>`
+-  :ref:`Allowing ECSs to Access Only Specific External Websites <en-us_topic_0140323152__en-us_topic_0118534011_section949023514612>`
 
--  :ref:`Enabling ECSs in Different Security Groups to Communicate with Each Other Through an Internal Network <en-us_topic_0140323152__en-us_topic_0118534011_section14197522283>`
--  :ref:`Enabling Specified IP Addresses to Remotely Access ECSs in a Security Group <en-us_topic_0140323152__en-us_topic_0118534011_section17693183118306>`
--  :ref:`Remotely Connecting to Linux ECSs Using SSH <en-us_topic_0140323152__en-us_topic_0118534011_section115069253338>`
--  :ref:`Remotely Connecting to Windows ECSs Using RDP <en-us_topic_0140323152__en-us_topic_0118534011_section168046312349>`
--  :ref:`Enabling Communication Between ECSs <en-us_topic_0140323152__en-us_topic_0118534011_section34721049193411>`
--  :ref:`Hosting a Website on ECSs <en-us_topic_0140323152__en-us_topic_0118534011_section1517991516357>`
--  :ref:`Enabling an ECS to Function as a DNS Server <en-us_topic_0140323152__en-us_topic_0118534011_section2910346123520>`
--  :ref:`Uploading or Downloading Files Using FTP <en-us_topic_0140323152__en-us_topic_0118534011_section5964121693610>`
+By default, all outbound rules of a security group allow all requests from instances in the security group to access external networks. :ref:`Table 1 <en-us_topic_0140323152__en-us_topic_0118534011_table102261597217>` lists the rules.
 
-.. _en-us_topic_0140323152__en-us_topic_0118534011_section14197522283:
+.. _en-us_topic_0140323152__en-us_topic_0118534011_table102261597217:
 
-Enabling ECSs in Different Security Groups to Communicate with Each Other Through an Internal Network
------------------------------------------------------------------------------------------------------
+.. table:: **Table 1** Default outbound rules in a security group
 
--  Example scenario:
+   +-----------+------+-----------------+-------------+-------------------------------------------------------------------------------------------------+
+   | Direction | Type | Protocol & Port | Destination | Description                                                                                     |
+   +===========+======+=================+=============+=================================================================================================+
+   | Outbound  | IPv4 | All             | 0.0.0.0/0   | This rule allows access from instances in the security group to any IPv4 address over any port. |
+   +-----------+------+-----------------+-------------+-------------------------------------------------------------------------------------------------+
+   | Outbound  | IPv6 | All             | ::/0        | This rule allows access from instances in the security group to any IPv6 address over any port. |
+   +-----------+------+-----------------+-------------+-------------------------------------------------------------------------------------------------+
 
-   Resources on an ECS in a security group need to be copied to an ECS associated with another security group. The two ECSs are in the same VPC. We recommend that you enable private network communication between the ECSs and then copy the resources.
+.. _en-us_topic_0140323152__en-us_topic_0118534011_section14933617154810:
 
--  Security group configuration:
+Remotely Logging In to an ECS from a Local Server
+-------------------------------------------------
 
-   Within a given VPC, ECSs in the same security group can communicate with one another by default. However, ECSs in different security groups cannot communicate with each other by default. To enable these ECSs to communicate with each other, you need to add certain security group rules.
+A security group denies all external requests by default. To remotely log in to an ECS from a local server, add an inbound security group rule based on the OS running on the ECS.
 
-   You can add an inbound rule to the security groups containing the ECSs to allow access from ECSs in the other security group. The required rule is as follows.
+-  To remotely log in to a Linux ECS using SSH, enable the SSH (22) port. For details, see :ref:`Table 2 <en-us_topic_0140323152__en-us_topic_0118534011_table20321112045011>`.
 
-   +-----------------+--------------------------------------------------------------------------+-----------------+------------------------------------+
-   | Direction       | Protocol                                                                 | Port            | Source                             |
-   +=================+==========================================================================+=================+====================================+
-   | Inbound         | TCP                                                                      | All             | ID of another security group       |
-   |                 |                                                                          |                 |                                    |
-   |                 | .. note::                                                                |                 | Example: 014d7278-XXX-530c95350d43 |
-   |                 |                                                                          |                 |                                    |
-   |                 |    Select a protocol used for communication through an internal network. |                 |                                    |
-   +-----------------+--------------------------------------------------------------------------+-----------------+------------------------------------+
+-  To remotely log in to a Windows ECS using RDP, enable the RDP (3389) port. For details, see :ref:`Table 3 <en-us_topic_0140323152__en-us_topic_0118534011_table1579314381815>`.
 
-.. _en-us_topic_0140323152__en-us_topic_0118534011_section17693183118306:
+   .. _en-us_topic_0140323152__en-us_topic_0118534011_table20321112045011:
 
-Enabling Specified IP Addresses to Remotely Access ECSs in a Security Group
----------------------------------------------------------------------------
+   .. table:: **Table 2** Remotely logging in to a Linux ECS using SSH
 
--  Example scenario:
+      ========= ==== =============== =====================
+      Direction Type Protocol & Port Source
+      ========= ==== =============== =====================
+      Inbound   IPv4 TCP: 22         IP address: 0.0.0.0/0
+      ========= ==== =============== =====================
 
-   To prevent ECSs from being attacked, you can change the port for remote login and configure security group rules that allow only specified IP addresses to remotely access the ECSs.
+   .. _en-us_topic_0140323152__en-us_topic_0118534011_table1579314381815:
 
--  Security group configuration:
+   .. table:: **Table 3** Remotely logging in to a Windows ECS using RDP
 
-   To allow IP address **192.168.20.2** to remotely access Linux ECSs in a security group over the SSH protocol (port 22), you can configure the following security group rule.
+      ========= ==== =============== =====================
+      Direction Type Protocol & Port Source
+      ========= ==== =============== =====================
+      Inbound   IPv4 TCP: 3389       IP address: 0.0.0.0/0
+      ========= ==== =============== =====================
 
-   +-----------------+-----------------+-----------------+-------------------------------------------------+
-   | Direction       | Protocol        | Port            | Source                                          |
-   +=================+=================+=================+=================================================+
-   | Inbound         | SSH             | 22              | IPv4 CIDR block or ID of another security group |
-   |                 |                 |                 |                                                 |
-   |                 |                 |                 | For example, 192.168.20.2/32                    |
-   +-----------------+-----------------+-----------------+-------------------------------------------------+
+   .. important::
 
-.. _en-us_topic_0140323152__en-us_topic_0118534011_section115069253338:
+      If the source is set to 0.0.0.0/0, remotely logging in to the ECS through any IP address is allowed. To ensure security, set the source to a specific IP address based on service requirements. For details about the configuration example, see :ref:`Table 4 <en-us_topic_0140323152__en-us_topic_0118534011_table1919016251434>`.
 
-Remotely Connecting to Linux ECSs Using SSH
--------------------------------------------
+   .. _en-us_topic_0140323152__en-us_topic_0118534011_table1919016251434:
 
--  Example scenario:
+   .. table:: **Table 4** Remotely logging in to an ECS using a specified IP address
 
-   After creating Linux ECSs, you can add a security group rule to enable remote SSH access to the ECSs.
+      =========== ========= ==== =============== ==========================
+      ECS Type    Direction Type Protocol & Port Source
+      =========== ========= ==== =============== ==========================
+      Linux ECS   Inbound   IPv4 TCP: 22         IP address: 192.168.0.0/24
+      Windows ECS Inbound   IPv4 TCP: 3389       IP address: 10.10.0.0/24
+      =========== ========= ==== =============== ==========================
 
--  Security group rule:
+.. _en-us_topic_0140323152__en-us_topic_0118534011_section8685162114185:
 
-   ========= ======== ==== =========
-   Direction Protocol Port Source
-   ========= ======== ==== =========
-   Inbound   SSH      22   0.0.0.0/0
-   ========= ======== ==== =========
+Remotely Connecting to an ECS from a Local Server to Upload or Download Files
+-----------------------------------------------------------------------------
 
-.. _en-us_topic_0140323152__en-us_topic_0118534011_section168046312349:
+By default, a security group denies all external requests. If you need to remotely connect to an ECS from a local server to upload or download files, you need to enable FTP ports 20 and 21.
 
-Remotely Connecting to Windows ECSs Using RDP
----------------------------------------------
+.. table:: **Table 5** Remotely connecting to an ECS from a local server to upload or download files
 
--  Example scenario:
+   ========= ==== =============== =====================
+   Direction Type Protocol & Port Source
+   ========= ==== =============== =====================
+   Inbound   IPv4 TCP: 20-21      IP address: 0.0.0.0/0
+   ========= ==== =============== =====================
 
-   After creating Windows ECSs, you can add a security group rule to enable remote RDP access to the ECSs.
+.. important::
 
--  Security group rule:
+   You must first install the FTP server program on the ECSs and check whether ports 20 and 21 are working properly.
 
-   ========= ======== ==== =========
-   Direction Protocol Port Source
-   ========= ======== ==== =========
-   Inbound   RDP      3389 0.0.0.0/0
-   ========= ======== ==== =========
+.. _en-us_topic_0140323152__en-us_topic_0118534011_section316061115481:
 
-.. _en-us_topic_0140323152__en-us_topic_0118534011_section34721049193411:
+Setting Up a Website on an ECS to Provide Services Externally
+-------------------------------------------------------------
 
-Enabling Communication Between ECSs
------------------------------------
+A security group denies all external requests by default. If you have set up a website on an ECS that can be accessed externally, you need to add an inbound rule to the ECS security group to allow access over specific ports, such as HTTP (80) and HTTPS (443).
 
--  Example scenario:
+.. table:: **Table 6** Setting up a website on an ECS to provide services externally
 
-   After creating ECSs, you need to add a security group rule so that you can run the **ping** command to test communication between the ECSs.
+   ========= ==== =============== =====================
+   Direction Type Protocol & Port Source
+   ========= ==== =============== =====================
+   Inbound   IPv4 TCP: 80         IP address: 0.0.0.0/0
+   Inbound   IPv4 TCP: 443        IP address: 0.0.0.0/0
+   ========= ==== =============== =====================
 
--  Security group rule:
+.. _en-us_topic_0140323152__en-us_topic_0118534011_section29561427142511:
 
-   ========= ======== ==== =========
-   Direction Protocol Port Source
-   ========= ======== ==== =========
-   Inbound   ICMP     All  0.0.0.0/0
-   ========= ======== ==== =========
+Using **ping** Command to Verify Network Connectivity
+-----------------------------------------------------
 
-.. _en-us_topic_0140323152__en-us_topic_0118534011_section1517991516357:
+By default, a security group denies all external requests. If you need to run the **ping** command on an ECS to verify network connectivity, add an inbound rule to the ECS security group to allow access over the ICMP port.
 
-Hosting a Website on ECSs
--------------------------
+.. table:: **Table 7** Using **ping** command to verify network connectivity
 
--  Example scenario:
+   ========= ==== =============== =====================
+   Direction Type Protocol & Port Source
+   ========= ==== =============== =====================
+   Inbound   IPv4 ICMP: All       IP address: 0.0.0.0/0
+   Inbound   IPv6 ICMP: All       IP address: ::/0
+   ========= ==== =============== =====================
 
-   If you deploy a website on your ECSs and require that your website be accessed over HTTP or HTTPS, you can add rules to the security group used by the ECSs that function as the web servers.
+.. _en-us_topic_0140323152__en-us_topic_0118534011_section094514632817:
 
--  Security group rule:
+Enabling ECSs In Different Security Groups to Communicate Through an Internal Network
+-------------------------------------------------------------------------------------
 
-   ========= ======== ==== =========
-   Direction Protocol Port Source
-   ========= ======== ==== =========
-   Inbound   HTTP     80   0.0.0.0/0
-   Inbound   HTTPS    443  0.0.0.0/0
-   ========= ======== ==== =========
+ECSs in the same VPC but associated with different security groups cannot communicate with each other. If you want to share data between ECSs in a VPC, for example, ECSs in security group sg-A need to access MySQL databases in security group sg-B, you need to add an inbound rule to security group sg-B to allow access from ECSs in security group sg-A over MySQL port 3306.
 
-.. _en-us_topic_0140323152__en-us_topic_0118534011_section2910346123520:
+.. table:: **Table 8** Enabling instances in different security groups to communicate through an internal network
 
-Enabling an ECS to Function as a DNS Server
--------------------------------------------
+   ========= ==== =============== ====================
+   Direction Type Protocol & Port Source
+   ========= ==== =============== ====================
+   Inbound   IPv4 TCP: 3306       Security group: sg-A
+   ========= ==== =============== ====================
 
--  Example scenario:
+.. _en-us_topic_0140323152__en-us_topic_0118534011_section7465183583515:
 
-   If you need to use an ECS as a DNS server, you must allow TCP and UDP access from port 53 to the DNS server. You can add the following rules to the security group associated with the ECS.
+ECS Providing Database Access Service
+-------------------------------------
 
--  Security group rules:
+A security group denies all external requests by default. If you have deployed the database service on an ECS and need to allow other ECSs to access the database service through an internal network, you need to add an inbound rule to the security group of the ECS with the database service deployed to allow access over ports, for example, MySQL (3306), Oracle (1521), MS SQL (1433), PostgreSQL (5432) and Redis (6379).
 
-   ========= ======== ==== =========
-   Direction Protocol Port Source
-   ========= ======== ==== =========
-   Inbound   TCP      53   0.0.0.0/0
-   Inbound   UDP      53   0.0.0.0/0
-   ========= ======== ==== =========
+.. table:: **Table 9** ECS providing database access service
 
-.. _en-us_topic_0140323152__en-us_topic_0118534011_section5964121693610:
+   +-----------+------+-----------------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+   | Direction | Type | Protocol & Port | Source                     | Description                                                                                                                   |
+   +===========+======+=================+============================+===============================================================================================================================+
+   | Inbound   | IPv4 | TCP: 3306       | Security group: sg-A       | This rule allows ECSs in security group sg-A to access the MySQL database service.                                            |
+   +-----------+------+-----------------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+   | Inbound   | IPv4 | TCP: 1521       | Security group: sg-B       | This rule allows ECSs in security group sg-B to access the Oracle database service.                                           |
+   +-----------+------+-----------------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+   | Inbound   | IPv4 | TCP: 1433       | IP address: 172.16.3.21/32 | This rule allows the ECS whose private IP address is 172.16.3.21 to access the MS SQL database service.                       |
+   +-----------+------+-----------------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+   | Inbound   | IPv4 | TCP: 5432       | IP address: 192.168.0.0/24 | This rule allows ECSs whose private IP addresses are in the 192.168.0.0/24 network to access the PostgreSQL database service. |
+   +-----------+------+-----------------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------+
 
-Uploading or Downloading Files Using FTP
-----------------------------------------
+.. important::
 
--  Example scenario:
+   In this example, the source is for reference only. Set the source address based on actual requirements.
 
-   If you want to use File Transfer Protocol (FTP) to upload files to or download files from ECSs, you need to add a security group rule.
+.. _en-us_topic_0140323152__en-us_topic_0118534011_section949023514612:
 
-   .. note::
+Allowing ECSs to Access Only Specific External Websites
+-------------------------------------------------------
 
-      You must first install the FTP server program on the ECSs and check whether ports 20 and 21 are working properly.
+By default, a security group allows all outbound traffic. :ref:`Table 11 <en-us_topic_0140323152__en-us_topic_0118534011_table5759161135518>` lists the default rules. If you want to allow ECSs to access only specific websites, configure the security groups of the ECSs as follows:
 
--  Security group rule:
+#. First, add outbound rules to allow traffic over specific ports and to specific IP addresses.
 
-   ========= ======== ===== =========
-   Direction Protocol Port  Source
-   ========= ======== ===== =========
-   Inbound   TCP      20-21 0.0.0.0/0
-   ========= ======== ===== =========
+   .. table:: **Table 10** Enabling instances in different security groups to communicate through an internal network
+
+      ========= ==== =============== =========================
+      Direction Type Protocol & Port Source
+      ========= ==== =============== =========================
+      Outbound  IPv4 TCP: 80         IP address: 132.15.XX.XX
+      Outbound  IPv4 TCP: 443        IP address: 145.117.XX.XX
+      ========= ==== =============== =========================
+
+#. Then, delete the original outbound rules that allow all traffic shown in :ref:`Table 11 <en-us_topic_0140323152__en-us_topic_0118534011_table5759161135518>`.
+
+   .. _en-us_topic_0140323152__en-us_topic_0118534011_table5759161135518:
+
+   .. table:: **Table 11** Default outbound rules in a security group
+
+      +-----------+------+-----------------+-------------+-------------------------------------------------------------------------------------------------+
+      | Direction | Type | Protocol & Port | Destination | Description                                                                                     |
+      +===========+======+=================+=============+=================================================================================================+
+      | Outbound  | IPv4 | All             | 0.0.0.0/0   | This rule allows access from instances in the security group to any IPv4 address over any port. |
+      +-----------+------+-----------------+-------------+-------------------------------------------------------------------------------------------------+
+      | Outbound  | IPv6 | All             | ::/0        | This rule allows access from instances in the security group to any IPv6 address over any port. |
+      +-----------+------+-----------------+-------------+-------------------------------------------------------------------------------------------------+

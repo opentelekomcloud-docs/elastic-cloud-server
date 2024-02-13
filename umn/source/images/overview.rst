@@ -50,4 +50,6 @@ A shared image is a private image shared by another user and can be used as your
 -  Each image can be shared to a maximum of 128 tenants.
 -  You can stop sharing images anytime without notifying the recipient.
 -  You can delete shared image anytime without notifying the recipient.
+-  Encrypted images cannot be shared.
 -  Full-ECS images cannot be shared.
+-  Only the full-ECS images created using CBR can be shared.

@@ -10,6 +10,15 @@ After you click **Delete**, the selected ECSs will be deleted. You can also choo
 To delete selected ECSs, perform the following operations:
 
 #. Log in to the management console.
+
 #. Under **Computing**, click **Elastic Cloud Server**.
+
 #. Select the ECSs to be deleted.
+
 #. Above the ECS list, choose **Delete**.
+
+
+   .. figure:: /_static/images/en-us_image_0000001707891873.png
+      :alt: **Figure 1** Deleting selected ECSs
+
+      **Figure 1** Deleting selected ECSs

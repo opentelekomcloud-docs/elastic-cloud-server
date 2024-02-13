@@ -24,7 +24,7 @@ Procedure
 
 #. Click |image1| in the upper left corner and select your region and project.
 
-#. Under **Computing**, click **Elastic Cloud Server**.
+#. Under **Computing**, choose **Elastic Cloud Server**.
 
 #. In the search box above the upper right corner of the ECS list, enter the ECS name, IP address, or ID for search.
 
@@ -37,7 +37,7 @@ Procedure
    The **Attach Disk** dialog box is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0096298046.png
+   .. figure:: /_static/images/en-us_image_0218677657.png
       :alt: **Figure 1** Attach Disk
 
       **Figure 1** Attach Disk
@@ -48,7 +48,7 @@ Procedure
 
       -  If no EVS disks are available, click **Create Disk** in the lower part of the list.
       -  For details about restrictions on attaching a disk, see :ref:`What Are the Requirements for Attaching an EVS Disk to an ECS? <en-us_topic_0040863659>`
-      -  The device names for the local disks and EVS disks mounted to a disk-intensive ECS comply with the following rules:
+      -  The device names for the local disks and EVS disks attached to a disk-intensive ECS comply with the following rules:
 
          -  System disk: Use sda or vda.
          -  Local disk: Use the device name following sda or vda in alphabetical order.
@@ -59,7 +59,7 @@ Procedure
    After the disk is attached, you can view the information about it on the **Disks** tab.
 
 
-   .. figure:: /_static/images/en-us_image_0096298123.png
+   .. figure:: /_static/images/en-us_image_0162733605.png
       :alt: **Figure 2** Viewing the newly attached disk
 
       **Figure 2** Viewing the newly attached disk
@@ -69,6 +69,6 @@ Follow-up Procedure
 
 If the attached disk is newly created, the disk can be used only after it is initialized.
 
-For instructions about how to initialize a data disk, see :ref:`Scenarios and Disk Partitions <en-us_topic_0030831623>`.
+For details about how to initialize a data disk, see :ref:`Scenarios and Disk Partitions <en-us_topic_0030831623>`.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png

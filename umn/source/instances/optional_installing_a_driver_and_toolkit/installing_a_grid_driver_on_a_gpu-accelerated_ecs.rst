@@ -27,6 +27,7 @@ Process of installing a GRID driver:
 
    -  NVIDIA allows you to apply for a 90-day trial license.
    -  For details about GPU-accelerated ECSs with different specifications and application scenarios, see :ref:`GPU-accelerated ECSs <en-us_topic_0097289624>`.
+   -  The screenshots in this section are for reference only.
 
 .. _en-us_topic_0149610914__section1130184214229:
 
@@ -75,6 +76,7 @@ Downloading GRID Driver and Software License Packages
       ======== =============== ============================= ================
       ECS Type GPU Attachment  Driver Version                CPU Architecture
       ======== =============== ============================= ================
+      G7       GPU passthrough Select a version as required. x86_64
       G6       GPU passthrough Select a version as required. x86_64
       P3       GPU passthrough Select a version as required. x86_64
       P2s      GPU passthrough Select a version as required. x86_64
@@ -131,7 +133,9 @@ Downloading GRID Driver and Software License Packages
 
 #. Decompress the GRID driver installation package and install the driver that matches your ECS OS.
 
-#. On the **SOFTWARE DOWNLOADS** page, click **ADDITIONAL SOFTWARE** to download the license software package.
+#. .. _en-us_topic_0149610914__li1783092110416:
+
+   On the **SOFTWARE DOWNLOADS** page, click **ADDITIONAL SOFTWARE** to download the license software package.
 
 
    .. figure:: /_static/images/en-us_image_0000001093667097.png
@@ -159,7 +163,43 @@ The following uses an ECS running CentOS 7.5 as an example to describe how to de
 
 2. Install the license server.
 
-   For details, see the `official NVIDIA documentation for installing the license server <https://docs.nvidia.com/grid/ls/latest/grid-license-server-user-guide/index.html#installing-nvidia-grid-license-server>`__.
+   a. Run the following command to decompress the installation package. The **Installer.zip** in the command indicates the name of the software package obtained in :ref:`10 <en-us_topic_0149610914__li1783092110416>`.
+
+      **unzip Installer.zip**
+
+   b. Run the following command to assign execution permissions to the installer:
+
+      **chmod +x setup.bin**
+
+   c. Run the installer as user **root**:
+
+      **sudo ./setup.bin -i console**
+
+   d. In the Introduction section, press **Enter** to continue.
+
+      |image1|
+
+   e. In the License Agreement section, press **Enter** to turn to last pages and accept the license agreement.
+
+      Enter **Y** and press **Enter**.
+
+      |image2|
+
+   f. In the Choose Install Folder section, press **Enter** to retain the default path for installing the License Server software.
+
+   g. In the Choose Local Tomcat Server Path section, enter the Tomcat's local path in the "/var/lib/*Tomcat version*" format, for example, /var/lib/tomcat8.
+
+   h. In the Choose Firewall Options section, confirm the port to be enabled in the firewall and press **Enter**.
+
+      |image3|
+
+   i. In the Pre-Installation Summary section, confirm the information and press **Enter** to start the installation.
+
+      |image4|
+
+   j. In the Install Complete section, press **Enter** to end the installation.
+
+      |image5|
 
 3. Obtain the license file.
 
@@ -173,21 +213,35 @@ The following uses an ECS running CentOS 7.5 as an example to describe how to de
 
    b. Click **CREATE SERVER**.
 
-   c. Set **Server Name**, **Description**, and **MAC Address** (MAC address of the license server).
-
-   d. Select **Feature**, enter the number of required licenses in the **Licenses** text box, and click **ADD**.
-
-      In active/standby deployment, enter the name of the standby server in **Failover License Server** and enter the MAC address in **Failover MAC Address**.
-
-   e. Click **CREATE LICENSE SERVER**.
+   c. On the displayed **Create License Server** page, configure parameters.
 
 
-      .. figure:: /_static/images/en-us_image_0000001093450009.png
+      .. figure:: /_static/images/en-us_image_0000001626671598.png
          :alt: **Figure 8** Create License Server
 
          **Figure 8** Create License Server
 
-   f. Download the license file.
+      .. table:: **Table 2** Parameters for creating a license server
+
+         +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Parameter                         | Description                                                                                                                                              |
+         +===================================+==========================================================================================================================================================+
+         | Server Name                       | License server name, which can be customized.                                                                                                            |
+         +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Description                       | License description information.                                                                                                                         |
+         +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | MAC Address                       | MAC address of the ECS where the license server is deployed.                                                                                             |
+         |                                   |                                                                                                                                                          |
+         |                                   | You can log in to the ECS and run **ipconfig -a** to query the MAC address.                                                                              |
+         +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+         | Feature                           | Select a feature, enter the number of required licenses in the **Licenses** text box, and click **ADD**.                                                 |
+         |                                   |                                                                                                                                                          |
+         |                                   | In active/standby deployment, enter the name of the standby server in **Failover License Server** and enter the MAC address in **Failover MAC Address**. |
+         +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+   d. Click **CREATE LICENSE SERVER**.
+
+   e. Download the license file.
 
 
       .. figure:: /_static/images/en-us_image_0000001093310123.png
@@ -199,7 +253,9 @@ The following uses an ECS running CentOS 7.5 as an example to describe how to de
 
    Default URL: http://*IP address of the EIP*:8080/licserver
 
-5. Choose **License Server** > **License Management**, select the .bin license file to be uploaded, and click **Upload**.
+5. In the navigation pane on the left, click **License Server** > **License Management**.
+
+6. Select the .bin license file to be uploaded and click **Upload**.
 
 
    .. figure:: /_static/images/en-us_image_0178325096.png
@@ -227,3 +283,9 @@ Installing the GRID Driver and Configuring the License
       :alt: **Figure 11** License server management console
 
       **Figure 11** License server management console
+
+.. |image1| image:: /_static/images/en-us_image_0000001674064185.png
+.. |image2| image:: /_static/images/en-us_image_0000001625786470.png
+.. |image3| image:: /_static/images/en-us_image_0000001674067605.png
+.. |image4| image:: /_static/images/en-us_image_0000001625473206.png
+.. |image5| image:: /_static/images/en-us_image_0000001673953273.png

@@ -16,11 +16,23 @@ Obtaining the Password Through the Management Console
 -----------------------------------------------------
 
 #. Obtain the private key file (.pem file) used when you created the ECS.
+
 #. Log in to the management console.
+
 #. Click |image1| in the upper left corner and select your region and project.
+
 #. Under **Computing**, click **Elastic Cloud Server**.
+
 #. On the **Elastic Cloud Server** page, select the target ECS.
+
 #. In the **Operation** column, click **More** and select **Get Password**.
+
+
+   .. figure:: /_static/images/en-us_image_0000001659531420.png
+      :alt: **Figure 1** Get Password
+
+      **Figure 1** Get Password
+
 #. Use either of the following methods to obtain the password through the key file:
 
    -  Click **Select File** and upload the key file from a local directory.

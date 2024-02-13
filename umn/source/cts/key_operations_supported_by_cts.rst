@@ -95,5 +95,5 @@ Key ECS Operations Recorded by CTS
    +-------------------------------------------------------+-----------------------+-----------------------+
    | Registering an FPGA image                             | aei                   | registerFpgaImage     |
    +-------------------------------------------------------+-----------------------+-----------------------+
-   | Interrupting a spot price ECS                         | server                | interruptServer       |
+   | Interrupting a spot ECS                               | server                | interruptServer       |
    +-------------------------------------------------------+-----------------------+-----------------------+

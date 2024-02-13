@@ -65,7 +65,7 @@ Network Configurations
 
       The system automatically assigns an EIP for the ECS. The EIP provides a dedicated bandwidth that is configurable.
 
-   -  Specify
+   -  Use existing
 
       An existing EIP is assigned for the ECS. When using an existing EIP, you are not allowed to create ECSs in a batch.
 

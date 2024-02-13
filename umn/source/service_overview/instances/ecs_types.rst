@@ -12,6 +12,7 @@ The cloud platform provides the following ECS types for different application sc
 -  Memory-optimized
 -  Large-memory
 -  Disk-intensive
+-  Ultra-high I/O
 -  High-performance computing
 -  GPU-accelerated
 

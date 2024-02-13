@@ -27,6 +27,12 @@ Procedure
 
    The system displays a message, asking you whether you want to delete the password.
 
+
+   .. figure:: /_static/images/en-us_image_0000001707851013.png
+      :alt: **Figure 1** Delete Password
+
+      **Figure 1** Delete Password
+
 #. Click **OK** to delete the password.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png

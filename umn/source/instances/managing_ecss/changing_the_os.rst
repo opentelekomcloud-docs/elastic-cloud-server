@@ -18,6 +18,7 @@ Constraints
 -----------
 
 -  The EVS disk quota must be greater than 0.
+-  For details about the change between different OSs, see :ref:`Notes on Change Between Windows and Linux <en-us_topic_0031523135__section1852122261012>`.
 -  If an ECS OS is to be changed using a full-ECS image, the ECS system disk can be encrypted.
 
 Notes
@@ -41,10 +42,12 @@ Notes
 -  The system disk capacity of an ECS with OS changed may change because the system disk capacity specified by the image of the changed OS may be changed.
 -  You can choose to encrypt the system disk of an ECS during OS change.
 
+.. _en-us_topic_0031523135__section1852122261012:
+
 Notes on Change Between Windows and Linux
 -----------------------------------------
 
-Change between different OSs indicates that the OS is changed between Windows and Linux.
+When you change the OS from Windows to Linux or from Linux to Windows, note the following:
 
 -  To change Windows to Linux, install an NTFS partition tool, such as NTFS-3G for data reads and writes on the Windows ECS.
 -  To change Linux to Windows, install software, such as Ext2Read or Ext2Fsd to identify ext3 or ext4.
@@ -62,7 +65,7 @@ Prerequisites
 -  If the original ECS uses password authentication while the new ECS uses key pair authentication, ensure that a key pair is available.
 -  If you plan to use a private image to change the OS, ensure that a private image is available. For details about how to create a private image, see *Image Management Service User Guide*.
 
-   -  If the image of an ECS is required, make sure that a private image has been created using the ECS.
+   -  If the image of a specified ECS is required, make sure that a private image has been created using this ECS.
    -  If a local image file is required, make sure that the image file has been imported to the cloud platform and registered as a private image.
    -  If a private image from another region is required, make sure that the image has been copied.
    -  If a private image from another user account is required, make sure that the image has been shared with you.
@@ -76,15 +79,21 @@ Procedure
 
 #. .. _en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45082966143628:
 
-   Under **Computing**, click **Elastic Cloud Server**.
+   Under **Computing**, choose **Elastic Cloud Server**.
 
-#. Locate the row containing the target ECS and choose **More** > **Manage Image/Disk/Backup** > **Change OS** in the **Operation**.
+#. Locate the row containing the target ECS and choose **More** > **Manage Image/Backup** > **Change OS** in the **Operation** column.
 
-   Only stopped ECSs support OS changing. If the ECS is not stopped, stop it before proceeding with changing.
+   Only stopped ECSs support OS change. If the ECS is not stopped, stop it before proceeding with changing.
 
 #. Modify related ECS parameters, such as **Image Type** and **Image**, based on service requirements.
 
    For more details, see :ref:`Creating an ECS <en-us_topic_0021831611>`.
+
+
+   .. figure:: /_static/images/en-us_image_0000001658474496.png
+      :alt: **Figure 1** OS Change
+
+      **Figure 1** OS Change
 
 #. (Optional) Select the **Encryption** option to encrypt the system disk during OS change.
 
@@ -120,7 +129,7 @@ Procedure
 
    .. note::
 
-      A temporary ECS is created during the OS changing process. After the process is complete, this ECS will be automatically deleted.
+      A temporary ECS is created during the OS change process. After the process is complete, this ECS will be automatically deleted.
 
 Follow-up Procedure
 -------------------

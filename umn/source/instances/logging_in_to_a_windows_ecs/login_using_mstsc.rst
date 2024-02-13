@@ -80,9 +80,9 @@ If your local server runs Windows, you can use the remote desktop connection too
 
    To ensure system security, change the login password after you log in to the ECS for the first time.
 
-#. (Optional) After logging in to the ECS using RDP, handle the issue that local files larger than 2 GB cannot be copied to a remote Windows ECS.
+#. (Optional) Copy local files to the Windows ECS using clipboard. If the file size is greater than 2 GB, an error will occur.
 
-   For details, see `troubleshooting cases <https://support.microsoft.com/en-us/help/2258090/copying-files-larger-than-2-gb-over-a-remote-desktop-services-or-termi>`__.
+   To resolve this issue, see `troubleshooting cases <https://learn.microsoft.com/en-us/troubleshoot/windows-server/remote/copying-2-gb-file-by-clipboard-redirection-fails>`__.
 
 .. _en-us_topic_0017955381__section65216898112059:
 

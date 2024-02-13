@@ -37,6 +37,12 @@ In this example, the proxy ECS runs CentOS 6.5.
 
 #. On the **Network Interfaces** tab, click |image2|. Then, disable **Source/Destination Check**.
 
+
+   .. figure:: /_static/images/en-us_image_0000001659671776.png
+      :alt: **Figure 1** Disabling source/destination check
+
+      **Figure 1** Disabling source/destination check
+
    By default, the source/destination check function is enabled. When this function is enabled, the system checks whether source IP addresses contained in the packets sent by ECSs are correct. If the IP addresses are incorrect, the system does not allow the ECSs to send the packets. This mechanism prevents packet spoofing, thereby improving system security. However, this mechanism prevents the packet sender from receiving returned packets. Therefore, disable the source/destination check.
 
 #. Log in to the proxy ECS.
@@ -126,14 +132,14 @@ In this example, the proxy ECS runs CentOS 6.5.
 
    **iptables -t nat --list**
 
-   SNAT has been configured if information similar to :ref:`Figure 1 <en-us_topic_0027157850__fig27598108113959>` is displayed.
+   SNAT has been configured if information similar to :ref:`Figure 2 <en-us_topic_0027157850__fig27598108113959>` is displayed.
 
    .. _en-us_topic_0027157850__fig27598108113959:
 
    .. figure:: /_static/images/en-us_image_0027174005.png
-      :alt: **Figure 1** Successful SNAT configuration
+      :alt: **Figure 2** Successful SNAT configuration
 
-      **Figure 1** Successful SNAT configuration
+      **Figure 2** Successful SNAT configuration
 
 #. Add a route.
 

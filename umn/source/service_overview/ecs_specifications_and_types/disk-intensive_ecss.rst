@@ -44,8 +44,8 @@ Scenarios
 
    Big data computing, network file systems, data processing, MapReduce, Hadoop, and data-intensive computing
 
-Features of D2 ECSs
--------------------
+D2 ECS Features
+---------------
 
 -  D2 ECSs use local disks to provide high sequential read/write performance and low latency, improving file read/write performance.
 -  D2 ECSs provide powerful and stable computing capabilities, ensuring efficient data processing.
@@ -126,7 +126,7 @@ Notes
       | openEuler                         | openEuler 20.03 64bit                               |
       +-----------------------------------+-----------------------------------------------------+
 
--  When the physical server where a D2 ECS is deployed becomes faulty, the ECS cannot be migrated.
+-  If the host where a D2 ECS is deployed becomes faulty, the ECS cannot be migrated.
 
 -  To improve network performance, you can set the NIC MTU of a D2 ECS to **8888**.
 
@@ -146,7 +146,7 @@ Notes
 
       .. note::
 
-         The maximum number of disks attached to an existing D2 ECS remains unchanged. To attach 60 disks, enable advanced disk. For details, see :ref:`Enabling Advanced Disk <en-us_topic_0122307169>`.
+         The maximum number of disks attached to an existing D2 ECS remains unchanged.
 
    -  You are advised to use World Wide Names (WWNs), but not drive letters, in applications to perform operations on local disks to prevent drive letter drift (low probability) on Linux. Take local disk attachment as an example:
 
@@ -162,10 +162,10 @@ Notes
 
             **ll /dev/disk/by-id**
 
--  The local disk data of a D2 ECS may be lost due to some reasons, such as physical server breakdown or local disk damage. If your application does not use the data reliability architecture, it is a good practice to use EVS disks to build your ECS.
+-  The local disk data of a D2 ECS may be lost if an exception occurs, such as physical server breakdown or local disk damage. If your application does not use the data reliability architecture, it is a good practice to use EVS disks to build your ECS.
 
--  When a D2 ECS is deleted, its local disk data is automatically deleted. Back up the data before deleting such an ECS. Deleting local disk data is time-consuming, so releasing resources is slow.
+-  When a D2 ECS is deleted, its local disk data will also be automatically deleted, which can take some time. As a result, a D2 ECS takes a longer time than other ECSs to be deleted. Back up the data before deleting such an ECS.
 
--  Do not store long-term service data in local disks. Instead, back up data in a timely manner and use a high availability data architecture. Store long-term service data in EVS disks.
+-  Do not store service data in local disks for a long time. Instead, store it in EVS disks. To improve data security, use a high availability architecture and back up data in a timely manner.
 
 -  Local disks can only be purchased during ECS creation. The quantity and capacity of your local disks are determined according to the specifications of your ECS.

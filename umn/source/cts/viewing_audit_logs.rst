@@ -19,7 +19,7 @@ Procedure
 
 #. Click |image1| in the upper left corner and select your region and project.
 
-#. Click **Service List**. Under **Management & Deployment**, select **Cloud Trace Service**.
+#. Click **Service List**. Under **Management & Deployment**, choose **Cloud Trace Service**.
 
 #. In the navigation pane on the left, choose **Trace List**.
 
@@ -29,17 +29,13 @@ Procedure
 
       Select a filter criterion from the drop-down list.
 
-      If you select **Trace name** for **Search By**, you need to select a specific trace name.
-
       If you select **Resource ID** for **Search By**, you need to select or enter a specific resource ID.
-
-      When you select **Resource name** for **Search By**, you need to select or enter a specific resource name.
 
    -  **Operator**: Select a specific operator (which is a user rather than the tenant).
 
    -  **Trace Status**: Available options include **All trace statuses**, **Normal**, **Warning**, and **Incident**. You can only select one of them.
 
-   -  **Time Range**: You can view traces generated during any time range of the last seven days.
+   -  **Time Range**: In the upper-right corner, you can select any time range of the last seven days to view traces generated during that period.
 
 #. Expand the trace for details.
 

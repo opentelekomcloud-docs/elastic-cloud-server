@@ -5,10 +5,10 @@
 Default Security Group and Rules
 ================================
 
-The system creates a default security group for each account. By default, the default security group rules:
+If you have not created any security group, the system automatically creates a default security group for you and associates it with the instance (such as an ECS) when you create it. A default security group has the following rules:
 
--  Allow all outbound packets: Instances in the default security group can send requests to and receive responses from instances in other security groups.
--  Deny all inbound packets: Requests from instances in other security groups will be denied by the default security group.
+-  Inbound rules control incoming traffic to instances in a security group. Only instances in the same security group can communicate with each other, and all inbound requests are denied.
+-  Outbound rules allow all outbound traffic and response traffic to the outbound requests.
 
 :ref:`Figure 1 <en-us_topic_0140323154__fig11890174421819>` shows the default security group.
 
@@ -19,7 +19,12 @@ The system creates a default security group for each account. By default, the de
 
    **Figure 1** Default security group
 
-:ref:`Table 1 <en-us_topic_0140323154__table542641118503>` describes the rules for the default security group.
+.. note::
+
+   -  You cannot delete the default security group, but you can modify existing rules or add rules to the group.
+   -  The default security group is automatically created to simplify the process of creating an instance for the first time. The default security group denies all external requests. To log in to an instance, add a security group rule by referring to :ref:`Remotely Logging In to an ECS from a Local Server <en-us_topic_0140323152__en-us_topic_0118534011_section14933617154810>`.
+
+:ref:`Table 1 <en-us_topic_0140323154__table542641118503>` describes the rules in the default security group.
 
 .. _en-us_topic_0140323154__table542641118503:
 

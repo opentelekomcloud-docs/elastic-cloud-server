@@ -42,7 +42,7 @@ Perform the following configuration on the firewall:
 ECS Metadata Types
 ------------------
 
-:ref:`Table 1 <en-us_topic_0042400609__table273552371680>` does not contain metadata items ami-id, ami-launch-index, ami-manifest-path, block-device-mapping/, instance-action, instance-id and reservation-id. These metadata items are meaningless and are not recommended.
+:ref:`Table 1 <en-us_topic_0042400609__table273552371680>` does not contain the following metadata items: ami-id, ami-launch-index, ami-manifest-path, block-device-mapping/, instance-action, instance-id, reservation-id, ramdisk-id, and kernel-id. These metadata items are meaningless and are not recommended.
 
 .. _en-us_topic_0042400609__table273552371680:
 
@@ -338,7 +338,7 @@ This API is used to query ECS user data. The value is configured only when you c
 Hostname (EC2 Compatible API)
 -----------------------------
 
-This API is used to query the name of the host accommodating an ECS. The .novalocal suffix will be added later.
+This API is used to query the name of the host accommodating an ECS. The **.novalocal** suffix will be added later.
 
 -  URI
 

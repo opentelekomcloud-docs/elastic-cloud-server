@@ -109,7 +109,7 @@ Notes
 
 -  Large-memory ECSs can use ultra-high I/O EVS disks as the system disk and data disks.
 
--  The primary and extension NICs of a large-memory ECS can be used only in certain scenarios. For details, see :ref:`Table 4 <en-us_topic_0038024694__table1642803151326>`.
+-  The primary and extension NICs of a large-memory ECS can only be used in the scenarios listed in :ref:`Table 4 <en-us_topic_0038024694__table1642803151326>`.
 
    .. _en-us_topic_0038024694__table1642803151326:
 
@@ -126,7 +126,3 @@ Notes
 -  An ECS can have a maximum of 60 attached disks, including the system disk. For details about constraints, see :ref:`Can I Attach Multiple Disks to an ECS? <en-us_topic_0018073215>`
 
    For example, an E3 ECS can have one system disk and 59 EVS disks.
-
-   .. note::
-
-      The maximum number of disks attached to an existing large-memory ECS remains unchanged. If you want to attach 60 disks, enable advanced disk. For details, see :ref:`Enabling Advanced Disk <en-us_topic_0122307169>`.

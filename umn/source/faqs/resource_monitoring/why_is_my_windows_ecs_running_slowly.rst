@@ -15,11 +15,9 @@ To handle this issue, perform the following operations:
 
    Windows offer multiple tools to locate faults, including Task Manager, Performance Monitor, Resource Monitor, Process Explorer, Xperf (supported by versions later than Windows Server 2008), and full memory dump analysis.
 
-2. Troubleshooting
+2. Check whether the processes are normal and handle the issue accordingly.
 
-   Check whether the processes are malicious and handle the issue accordingly.
-
-   -  If the processes are not malicious, optimize them or modify ECS specifications.
+   -  If the processes are not malicious, optimize their programs or modify ECS specifications.
    -  If the processes are malicious, stop these processes manually or use a third-party tool to stop them automatically.
 
 Fault Locating
@@ -60,7 +58,7 @@ Fault Locating
    d. Check whether the process is malicious.
 
 
-      .. figure:: /_static/images/en-us_image_0281775402.png
+      .. figure:: /_static/images/en-us_image_0000001695612925.png
          :alt: **Figure 3** Checking the process
 
          **Figure 3** Checking the process
@@ -68,7 +66,7 @@ Fault Locating
 Troubleshooting
 ---------------
 
-Before the troubleshooting, check whether the process leading to the high CPU or bandwidth usage is malicious, and then take measures accordingly.
+Before the troubleshooting, check whether the processes leading to the high CPU or bandwidth usage are normal, and handle the issue accordingly.
 
 **Suggestions for non-malicious processes**
 
@@ -82,6 +80,6 @@ Before the troubleshooting, check whether the process leading to the high CPU or
 
 If the high CPU or bandwidth usage is caused by viruses or Trojan horses, manually stop the affected processes. You are advised to troubleshoot the issue as follows:
 
-#. Use the commercial-edition antivirus software or install `Microsoft Safety Scanner <https://docs.microsoft.com/en-us/windows/security/threat-protection/intelligence/safety-scanner-download?spm=a2c4g.11186623.2.22.3fe9671c4mJYXV>`__ to scan for viruses in security mode.
+#. Use the commercial-edition antivirus software or install `Microsoft Safety Scanner <https://learn.microsoft.com/en-us/microsoft-365/security/intelligence/safety-scanner-download?view=o365-worldwide&spm=a2c4g.11186623.2.22.3fe9671c4mJYXV>`__ to scan for viruses in security mode.
 #. Install the latest patches for Windows.
-#. Run **MSconfig** to disable all drivers that are not delivered with Microsoft and check whether the fault is rectified. For details, see `How to perform a clean boot in Windows <https://support.microsoft.com/en-us/help/929135/how-to-perform-a-clean-boot-in-windows?spm=a2c4g.11186623.2.23.3fe9671c4mJYXV>`__.
+#. Run **MSconfig** to disable all drivers that are not delivered with Microsoft and check whether the fault is rectified. For details, see `How to perform a clean boot in Windows <https://support.microsoft.com/en-us/topic/how-to-perform-a-clean-boot-in-windows-da2f9573-6eec-00ad-2f8a-a97a1807f3dd>`__.

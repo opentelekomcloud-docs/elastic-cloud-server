@@ -10,8 +10,6 @@ Scenarios
 
 If ECS specifications do not meet service requirements, you can modify the ECS specifications, including vCPUs and memory. Certain ECSs allow you to change their types when you modify their specifications.
 
--  For instructions about how to modify the specifications of other ECSs, for example, between KVM ECSs, see this section.
-
 Background
 ----------
 
@@ -54,6 +52,12 @@ Step 1: Modify Specifications
    The **Modify ECS Specifications** page is displayed.
 
 #. Select the new ECS type, vCPUs, and memory as prompted.
+
+
+   .. figure:: /_static/images/en-us_image_0000001657891362.png
+      :alt: **Figure 2** Modifying specifications
+
+      **Figure 2** Modifying specifications
 
 #. (Optional) Set **DeH**.
 
@@ -103,7 +107,7 @@ Perform the following operations in the event of a specifications modification f
 
 #. Log in to the management console.
 
-#. Under **Management & Deployment**, select **Cloud Trace Service**.
+#. Under **Management & Deployment**, choose **Cloud Trace Service**.
 
 #. In the navigation pane on the left, choose **Trace List**.
 

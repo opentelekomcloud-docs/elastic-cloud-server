@@ -10,15 +10,16 @@ Symptom
 
 When a Linux ECS with an NVMe SSD disk attached, such as a P1 ECS, becomes faulty, you must contact the administrator to remotely create the ECS again for reconstruction.
 
-If automatic NVMe SSD disk attaching upon ECS startup is enabled in **/etc/fstab** on the faulty ECS, the system disk recovers after the ECS is created. However, the attached NVMe SSD disk does not have a file system, and automatic NVMe SSD disk attaching upon ECS startup fails to take effect. As a result, the ECS enters the emergency mode.
+If automatic NVMe SSD disk attachment upon ECS startup is enabled in **/etc/fstab** on the faulty ECS, the system disk recovers after the ECS is created. However, the attached NVMe SSD disk does not have a file system, and automatic NVMe SSD disk attachment upon ECS startup fails to take effect. As a result, the ECS enters the emergency mode, as shown in :ref:`Figure 1 <en-us_topic_0087622835__fig13243412145029>`.
 
+.. _en-us_topic_0087622835__fig13243412145029:
 
 .. figure:: /_static/images/en-us_image_0087630201.jpg
    :alt: **Figure 1** Emergency mode
 
    **Figure 1** Emergency mode
 
-To ensure that the new ECS is functional, you must manually delete the attaching information in **/etc/fstab**.
+To ensure that the new ECS is functional, you must manually delete the attachment information in **/etc/fstab**.
 
 .. note::
 

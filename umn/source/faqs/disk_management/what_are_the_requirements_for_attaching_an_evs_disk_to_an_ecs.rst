@@ -13,6 +13,4 @@ What Are the Requirements for Attaching an EVS Disk to an ECS?
 
 -  The target ECS must be in **Running** or **Stopped** state.
 
--  A SCSI EVS disk cannot be used as an ECS system disk.
-
 -  Certain ECSs support SCSI EVS disk attachment. For details, see :ref:`Which ECSs Can Be Attached with SCSI EVS Disks? <en-us_topic_0077938284>`

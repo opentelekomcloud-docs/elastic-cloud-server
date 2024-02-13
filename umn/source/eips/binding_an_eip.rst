@@ -23,7 +23,13 @@ Procedure
 
    The page providing details about the ECS is displayed.
 
-#. Click the **EIPs** tab and then **Bind EIP**.
+#. On the **EIPs** tab, click **Bind EIP**.
+
+
+   .. figure:: /_static/images/en-us_image_0000001659439968.png
+      :alt: **Figure 1** EIPs
+
+      **Figure 1** EIPs
 
 #. Select an EIP and click **OK**.
 
@@ -31,6 +37,12 @@ Procedure
 
       If no EIP is available in the current region, the EIP list is empty. In such a case, allocate an EIP and then bind it.
 
-#. View the bound EIP on the **EIPs** tab.
+
+   .. figure:: /_static/images/en-us_image_0000001659441336.png
+      :alt: **Figure 2** Binding an EIP
+
+      **Figure 2** Binding an EIP
+
+   View the bound EIP on the **EIPs** tab.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png

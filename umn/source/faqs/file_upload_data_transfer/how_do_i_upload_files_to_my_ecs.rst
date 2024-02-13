@@ -26,7 +26,7 @@ Windows
 
 -  From a local Mac
 
-   If your local computer runs Mac, use Microsoft Remote Desktop for Mac to transfer files to the Windows ECS For details, see :ref:`How Can I Transfer Files from a Local Mac to a Windows ECS? <en-us_topic_0295091738>`.
+   If your local computer runs macOS, use Microsoft Remote Desktop for Mac to transfer files to the Windows ECS. For details, see :ref:`How Can I Transfer Files from a Local Mac to a Windows ECS? <en-us_topic_0295091738>`.
 
 Linux
 -----

@@ -25,7 +25,7 @@ Specifications
    | h2.3xlarge.20 | 16    | 256          | 13/13                           | 90                | 8               | 12        | KVM            | 1           | 3.2             | 100 Gbit/s EDR InfiniBand |                              |
    +---------------+-------+--------------+---------------------------------+-------------------+-----------------+-----------+----------------+-------------+-----------------+---------------------------+------------------------------+
 
-.. table:: **Table 2** HL1 ECS specifications
+.. table:: **Table 2** Hl1 ECS specifications
 
    +---------------+-------+--------------+---------------------------------+-------------------+-----------------+-----------+----------------+---------------------------+----------------------------------------+
    | Flavor        | vCPUs | Memory (GiB) | Max./Assured Bandwidth (Gbit/s) | Max. PPS (10,000) | Max. NIC Queues | Max. NICs | Virtualization | Network                   | Hardware                               |
@@ -124,7 +124,7 @@ Notes on Using H2 ECSs
 Notes on Using Hl1 ECSs
 -----------------------
 
--  HL1 ECSs only support the attachment of high I/O (performance-optimized I) and ultra-high I/O (latency-optimized) EVS disks.
+-  Hl1 ECSs only support the attachment of high I/O (performance-optimized I) and ultra-high I/O (latency-optimized) EVS disks.
 
    To support 56 Gbit shared high I/O storage, you only need to attach high I/O (performance-optimized I) or ultra-high I/O (latency-optimized) EVS disks to target Hl1 ECSs.
 

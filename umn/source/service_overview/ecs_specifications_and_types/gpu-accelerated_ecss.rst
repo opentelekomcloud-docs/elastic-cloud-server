@@ -22,7 +22,7 @@ Available now: All GPU models except the recommended ones. If available ECSs are
 -  G series
 
    -  :ref:`Graphics-accelerated Enhancement G7 <en-us_topic_0097289624__section2325028104711>`
-   -  :ref:`Graphics-accelerated Enhancement G6 <en-us_topic_0097289624__section131302034104515>` (recommended)
+   -  :ref:`Graphics-accelerated Enhancement G6 <en-us_topic_0097289624__section131302034104515>`
 
 -  P series
 
@@ -43,9 +43,9 @@ Helpful links:
 Graphics-accelerated Enhancement G7
 -----------------------------------
 
-Overview
+**Overview**
 
-G7 ECSs use NVIDIA A40 GPUs and support DirectX, Shader Model, OpenGL, and Vulkan. Each GPU provides 48 GiB of GPU memory. Theoretically, G7 ECSs provide 37.4 TFLOPS of FP32 peak performance and 74.8 TFLOPS (sparsity disabled) or 149.6 TFLOPS (sparsity enabled) of TF32 peak tensor performance. They deliver two times the rendering performance and 1.4 times the graphics processing performance of RTX6000 GPUsto meet professional graphics processing requirements.
+G7 ECSs use NVIDIA A40 GPUs and support DirectX, Shader Model, OpenGL, and Vulkan. Each GPU provides 48 GiB of GPU memory. Theoretically, G7 ECSs provide 37.4 TFLOPS of FP32 peak performance and 74.8 TFLOPS (sparsity disabled) or 149.6 TFLOPS (sparsity enabled) of TF32 peak tensor performance. They deliver two times the rendering performance and 1.4 times the graphics processing performance of RTX6000 GPUs to meet professional graphics processing requirements.
 
 Select your desired GPU-accelerated ECS type and specifications.
 
@@ -65,7 +65,7 @@ Select your desired GPU-accelerated ECS type and specifications.
 
 **G7 ECS Features**
 
--  CPU: 3rd Generation Intel® Xeon® Scalable 6348 processors (3.0 GHz of base frequency and 3.5 GHz of turbo frequency)
+-  CPU: 3rd Generation Intel® Xeon® Scalable 8378A processors (3.0 GHz of base frequency and 3.5 GHz of turbo frequency)
 -  Graphics acceleration APIs
 
    -  DirectX 12.07, Direct2D, DirectX Video Acceleration (DXVA)
@@ -108,12 +108,7 @@ G7 ECSs are used in graphics acceleration scenarios, such as video rendering, cl
    -  Ubuntu Server 18.04 64bit
 
 -  G7 ECSs created using a public image have had the GRID driver of a specific version installed by default. However, you need to purchase and configure a GRID license by yourself. Ensure that the GRID driver version meets service requirements.
-
-   For details about how to configure a GRID license, see :ref:`Installing a GRID Driver on a GPU-accelerated ECS <en-us_topic_0149610914>`.
-
 -  If a G7 ECS is created using a private image, make sure that the GRID driver was installed during the private image creation. If the GRID driver has not been installed, install the driver for graphics acceleration after the ECS is created.
-
-   For details about how to configure a GRID license, see :ref:`Installing a GRID Driver on a GPU-accelerated ECS <en-us_topic_0149610914>`.
 
 .. _en-us_topic_0097289624__section131302034104515:
 
@@ -130,17 +125,17 @@ Select your desired GPU-accelerated ECS type and specifications.
 
 .. table:: **Table 2** G6 ECS specifications
 
-   +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+----------------+-------------------------------------+
-   | Flavor        | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs   | GPU Memory | Virtualization | Hardware                            |
-   |               |       |        |                        |          |                 |           |        |            |                |                                     |
-   |               |       | (GiB)  | (Gbit/s)               | (10,000) |                 |           |        | (GiB)      |                |                                     |
-   +===============+=======+========+========================+==========+=================+===========+========+============+================+=====================================+
-   | g6.4xlarge.4  | 16    | 64     | 25/15                  | 200      | 8               | 8         | 1 x T4 | 16         | KVM            | N/A                                 |
-   +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+----------------+-------------------------------------+
-   | g6.10xlarge.7 | 40    | 280    | 25/15                  | 200      | 16              | 8         | 1 x T4 | 16         | KVM            | CPU: Intel® Xeon® Cascade Lake 6266 |
-   +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+----------------+-------------------------------------+
-   | g6.20xlarge.7 | 80    | 560    | 30/30                  | 400      | 32              | 16        | 2 x T4 | 32         | KVM            |                                     |
-   +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+----------------+-------------------------------------+
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+----------------+
+   | Flavor        | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs   | GPU Memory | Virtualization |
+   |               |       |        |                        |          |                 |           |        |            |                |
+   |               |       | (GiB)  | (Gbit/s)               | (10,000) |                 |           |        | (GiB)      |                |
+   +===============+=======+========+========================+==========+=================+===========+========+============+================+
+   | g6.4xlarge.4  | 16    | 64     | 25/15                  | 200      | 8               | 8         | 1 x T4 | 16         | KVM            |
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+----------------+
+   | g6.10xlarge.7 | 40    | 280    | 25/15                  | 200      | 16              | 8         | 1 x T4 | 16         | KVM            |
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+----------------+
+   | g6.20xlarge.7 | 80    | 560    | 30/30                  | 400      | 32              | 16        | 2 x T4 | 32         | KVM            |
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+----------------+
 
 .. note::
 
@@ -151,7 +146,7 @@ Select your desired GPU-accelerated ECS type and specifications.
 -  CPU: 2nd Generation Intel® Xeon® Scalable 6266 processors (3.0 GHz of base frequency and 3.4 GHz of turbo frequency)
 -  Graphics acceleration APIs
 
-   -  DirectX 12, Direct2D, DirectX Video Acceleration (DXVA)
+   -  DirectX 12, Direct2D, and DirectX Video Acceleration (DXVA)
    -  OpenGL 4.5
    -  Vulkan 1.0
 
@@ -199,7 +194,7 @@ G6 ECSs are used in graphics acceleration scenarios, such as video rendering, cl
 Computing-accelerated P3
 ------------------------
 
-Overview
+**Overview**
 
 P3 ECSs use NVIDIA A100 GPUs and provide flexibility and ultra-high-performance computing. P3 ECSs have strengths in AI-based deep learning, scientific computing, Computational Fluid Dynamics (CFD), computing finance, seismic analysis, molecular modeling, and genomics. Theoretically, P3 ECSs provide 19.5 TFLOPS of FP32 single-precision performance and 156 TFLOPS (sparsity disabled) or 312 TFLOPS (sparsity enabled) of TF32 peak tensor performance.
 
@@ -650,7 +645,12 @@ P1 ECSs are used in computing acceleration scenarios, such as deep learning trai
 
 -  After a P1 ECS is created, you must install the NVIDIA driver for computing acceleration. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 
--  P1 ECSs do not support specifications modification.
+-  P1 ECSs do not support specifications change.
+
+-  P1 ECSs do not support automatic recovery.
+
+   -  If the host is faulty or subhealthy, you need to stop the ECS for hardware repair.
+   -  In case of system maintenance or hardware faults, the ECS will be redeployed (to ensure HA) and cold migrated to another host. The local disk data of the ECS will not be retained.
 
 -  :ref:`Table 12 <en-us_topic_0097289624__table8704181020556>` lists the OSs supported by P1 ECSs.
 
@@ -727,11 +727,11 @@ Pi2 ECSs support the following commonly used software:
 
 **Notes**
 
--  After a Pi2 ECS is stopped, basic resources including vCPUs, memory, and images are not billed, but its system disk is billed based on the disk capacity. If other products, such as EVS disks, EIP, and bandwidth are associated with the ECS, these products are billed separately.
+-  After a Pi2 ECS is stopped, basic resources including vCPUs, memory, image, and GPUs are not billed, but its system disk is billed based on the disk capacity. If other products, such as EVS disks, EIP, and bandwidth are associated with the ECS, these products are billed separately.
 
    .. note::
 
-      Resources are released after a Pi2 ECS is stopped. If desired resources are insufficient when the Pi2 ECS is started after being stopped, starting the ECS might fail. Therefore, if you need to use a Pi2 ECS for a long time, keep the ECS running.
+      Resources are released after a Pi2 ECS is stopped. If resources are insufficient when the Pi2 ECS is started after being stopped, starting the ECS might fail. Therefore, if you need to use a Pi2 ECS for a long time, keep the ECS running.
 
 -  :ref:`Table 14 <en-us_topic_0097289624__table576493295720>` lists the OSs supported by Pi2 ECSs.
 

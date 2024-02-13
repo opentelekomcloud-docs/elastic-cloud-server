@@ -84,7 +84,7 @@ Configuring the Login Permission Using SSH Password Authentication
 Logging In to a Linux ECS from a Local Windows Server
 -----------------------------------------------------
 
-To log in to the Linux ECS from a local Windows server, perform the operations described in this section.
+To log in to a Linux ECS from a local Windows server, perform the operations below.
 
 The following operations use PuTTY as an example to log in to the ECS.
 
@@ -123,10 +123,24 @@ The following operations use PuTTY as an example to log in to the ECS.
 Logging In to a Linux ECS from a Local Linux Server
 ---------------------------------------------------
 
-To log in to the Linux ECS from a local Linux server, run the following command:
+To log in to a Linux ECS from a local Linux server, perform the operations below.
 
-**ssh** **xx.xx.xx.xx**
+#. On the Linux CLI, run the following command to log in to the ECS:
 
-.. note::
+   **ssh** *xx.xx.xx.xx*
 
-   xx.xx.xx.xx indicates the EIP bound to the ECS.
+   .. note::
+
+      **xx.xx.xx.x**\ x indicates the EIP bound to the ECS.
+
+#. Verify the SSH fingerprint of the ECS and enter **yes**.
+
+   .. code-block::
+
+      The authenticity of host 'xx.xx.xx.xx (xx.xx.xx.xx)' can't be established.
+      ECDSA key fingerprint is SHA256:rnKuzrUSYS03MCoaxxxxxxxxxxxxxxxxxxxxxxxxxxx.
+      ECDSA key fingerprint is MD5:cf:64:5b:5e:74:30:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx.
+      Are you sure you want to continue connecting (yes/no)? yes
+      Warning: Permanently added 'xx.xx.xx.xx' (ECDSA) to the list of known hosts.
+
+#. Enter the password for logging in to ECS.

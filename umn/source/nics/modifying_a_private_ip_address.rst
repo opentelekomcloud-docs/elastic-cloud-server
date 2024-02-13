@@ -8,7 +8,7 @@ Modifying a Private IP Address
 Scenarios
 ---------
 
-You can modify the private IP address of the primary NIC. If you want to modify the private IP address of an extension NIC, delete the NIC and attach a new NIC.
+You can modify the private IP address of the NIC. If you want to modify the private IP address of an extension NIC, delete the NIC and attach a new NIC.
 
 Constraints
 -----------
@@ -27,13 +27,19 @@ Procedure
 
 #. Click the name of the target ECS.
 
-   The page providing details about the ECS is displayed.
+   The ECS details page is displayed.
 
-#. Click the **NICs** tab. Locate the row containing the primary NIC and click **Modify Private IP**.
+#. Click the **NICs** tab. Locate the row containing the network interface and click **Modify Private IP**.
 
    The **Modify Private IP** dialog box is displayed.
 
-#. Change the subnet and private IP address of the primary NIC as required.
+
+   .. figure:: /_static/images/en-us_image_0000001707364141.png
+      :alt: **Figure 1** Modifying the private IP address
+
+      **Figure 1** Modifying the private IP address
+
+#. Change the subnet and private IP address of the NIC as required.
 
    .. note::
 

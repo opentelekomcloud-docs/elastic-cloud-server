@@ -12,6 +12,12 @@ Confirming the Order
 
    To learn more about the price, click **Pricing details**.
 
+#. Set **Enterprise Project**.
+
+   This function is provided for enterprise users. To enable this function, contact customer service.
+
+   An enterprise project facilitates project-level management and grouping of cloud resources and users. The default project is **default**.
+
 #. Set the number of ECSs to be created.
 
    After the configuration, click **Price Calculator** to view the ECS configuration fee.

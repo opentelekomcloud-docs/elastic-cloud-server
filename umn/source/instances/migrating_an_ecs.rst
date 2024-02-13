@@ -18,7 +18,9 @@ This section describes how to migrate ECSs from a public resource pool to a DeH.
 
 .. note::
 
-   For the other two scenarios (migrating ECSs from a DeH to another DeH or to a public resource pool), see "Migrating ECSs" in the *Dedicated Host User Guide*.
+   -  Before migrating an ECS, ensure that there are available DeH resources.
+
+   -  For details about migrating ECSs from a DeH to another DeH or to a public resource pool, see "Migrating ECSs" in the *Dedicated Host User Guide*.
 
 Constraints
 -----------
@@ -36,6 +38,11 @@ Procedure
 #. Under **Computing**, click **Elastic Cloud Server**.
 #. Locate the row that contains the target ECS and choose **More** > **Migrate ECS** in the **Operation** column.
 #. In the displayed dialog box, select the target DeH.
+
+   .. note::
+
+      If no DeHs are available, create a DeH first. For details, see Allocating DeHs in the *Dedicated Host User Guide*.
+
 #. Click **OK**.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png

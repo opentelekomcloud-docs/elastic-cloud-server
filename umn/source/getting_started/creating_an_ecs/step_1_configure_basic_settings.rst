@@ -64,6 +64,8 @@ Performing Basic Configurations
 
       -  Before selecting an ECS type, learn about the introduction and notes on each type of ECSs. For details, see :ref:`ECS Types <en-us_topic_0035470096>`.
 
+      -  You can select **Hide sold-out specifications** to hide specifications that have been sold out.
+
       -  **Local Disk**: specifies the local storage of the physical server where the ECS is deployed. Only Hard Disk Driver (HDD) disks are supported. If the ECS of the selected type (such as **Disk-intensive**) uses local disks, the system automatically attaches the local disks to the ECS and displays the information of the local disks.
 
          For example, if **Local Disk** is **3x1800 GiB (HDD)**, three HDDs are attached to the ECS and the capacity of each HDD is 1800 GiB.

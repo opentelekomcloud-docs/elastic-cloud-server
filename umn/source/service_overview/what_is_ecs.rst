@@ -23,7 +23,7 @@ ECS works with other products and services to provide computing, storage, and ne
 -  Elastic Volume Service (EVS) provides storage space. Volume Backup Service (VBS) provides data backup and restoration.
 -  Cloud Eye lets you keep a close eye on the performance and resource utilization of ECSs, ensuring ECS reliability and availability.
 -  Volume Backup Service (VBS) allows you to create data backups for EVS disks and use the backups to restore the EVS disks. This maximizes user data correctness and security.
--  Cloud Server Backup Service (CSBS) backs up all EVS disks of an ECS, including the system disk and data disks, and uses the backup to restore the ECS.
+-  Backup protection: You can back up all EVS disks (including the system disk and data disks) attached to an ECS and use the backup to restore the ECS data.
 
 
 .. figure:: /_static/images/en-us_image_0071898891.png

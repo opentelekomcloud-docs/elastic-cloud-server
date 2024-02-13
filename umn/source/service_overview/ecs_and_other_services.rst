@@ -39,7 +39,7 @@ ECS-related Services
 
 -  Cloud Eye
 
-   Allows you to check the status of monitored service objects after you have obtained an ECS. This can be done without requiring additional plug-ins be installed. For details about ECS metrics supported by Cloud Eye, see :ref:`Basic ECS Metrics <en-us_topic_0030911465>`.
+   Allows you to check the status of monitored service objects after you have obtained an ECS. This can be done without requiring additional plug-ins be installed. For details about the metrics supported by ECS, see :ref:`Basic ECS Metrics <en-us_topic_0030911465>`.
 
 -  Key Management Service (KMS)
 

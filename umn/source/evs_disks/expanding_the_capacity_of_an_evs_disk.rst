@@ -27,3 +27,8 @@ The capacity of an EVS disk can be expanded in either of the following ways:
 .. note::
 
    After the capacity is expanded through the management console, only the storage capacity of the EVS disk is expanded. To use the expanded capacity, you also need to log in to the ECS and expand the partition and file system.
+
+Related Operations
+------------------
+
+For a Windows ECS, if you want to expand the disk capacity by clearing disk files, you can reduce the size of the WinSxS folder using tools built into Windows. For details, see `Clean Up the WinSxS Folder <https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/clean-up-the-winsxs-folder>`__.
