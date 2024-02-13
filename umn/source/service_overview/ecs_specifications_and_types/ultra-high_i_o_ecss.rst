@@ -131,14 +131,6 @@ Notes
       |                                   | -  Novell SUSE Linux Enterprise Server 12 SP4 64bit |
       |                                   | -  Novell SUSE Linux Enterprise Server 12 SP3 64bit |
       +-----------------------------------+-----------------------------------------------------+
-      | SUSE-SAP                          | -  Novell SUSE Linux Enterprise Server 15 SP3 64bit |
-      |                                   | -  Novell SUSE Linux Enterprise Server 15 SP2 64bit |
-      |                                   | -  Novell SUSE Linux Enterprise Server 15 SP1 64bit |
-      |                                   | -  Novell SUSE Linux Enterprise Server 15 64bit     |
-      |                                   | -  Novell SUSE Linux Enterprise Server 12 SP5 64bit |
-      |                                   | -  Novell SUSE Linux Enterprise Server 12 SP4 64bit |
-      |                                   | -  Novell SUSE Linux Enterprise Server 12 SP3 64bit |
-      +-----------------------------------+-----------------------------------------------------+
       | Ubuntu                            | -  Ubuntu 20.04 server 64bit                        |
       |                                   | -  Ubuntu 18.04 server 64bit                        |
       +-----------------------------------+-----------------------------------------------------+

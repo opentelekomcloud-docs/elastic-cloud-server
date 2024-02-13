@@ -8,20 +8,50 @@ Dedicated General-Purpose ECSs
 Overview
 --------
 
-C4 ECSs use second-generation Intel® Xeon® Scalable processors and high-speed intelligent NICs to offer powerful and stable computing performance, and ultra-high network bandwidth and PPS.
+C7t ECSs support encryption using Intel® SGX to protect the confidentiality and integrity of key code and data from being damaged by malware. Based on the TPM/TCM chip, the boot chain from the underlying server hardware to the guest OS can be measured and verified to implement trusted boot.
 
-C3 ECSs are developed based on KVM virtualization, use Intel® Xeon® Scalable processors and Data Plane Development Kit (DPDK) rapid packet processing mechanism, and feature high and stable computing performance. Equipped with high-performance NICs, the C3 ECSs provide high performance and stability, meeting enterprise-grade application requirements.
+C4 ECSs use second-generation Intel® Xeon® Scalable processors to provide powerful and stable computing performance. By using 25GE high-speed intelligent NICs, C4 ECSs offer ultra-high network bandwidth and PPS.
+
+C3 ECSs use Intel® Xeon® Scalable processors, KVM virtualization, Data Plane Development Kit (DPDK) rapid packet processing mechanism, and high-performance NICs to deliver high and stable computing performance for enterprise-grade applications.
 
 Scenarios
 ---------
 
--  C4 ECSs: Websites and web applications, generalized databases and cache servers, and medium- and heavy-workload enterprise applications with strict requirements on computing and network performance
--  C3 ECSs: Small- and medium-scale databases, cache servers, and search clusters with high requirements on stability; enterprise-grade applications
+-  C7t ECSs are suitable for:
+
+   -  Scenarios involving sensitive information such as personal identity information and healthcare, financial, and intellectual property data
+   -  Confidential data sharing in multi-party computation
+   -  Blockchain
+   -  Confidential machine learning
+   -  Scenarios with high security and trustworthy requirements, such as finance, government, and enterprises
+   -  Enterprise-class applications of various types and scales
+
+-  C4 ECSs are suitable for:
+
+   -  Websites and web applications that require high computing and network performance
+   -  General databases
+   -  Cache servers
+   -  Medium- and heavy-load enterprise applications
+
+-  C3 ECSs are suitable for:
+
+   -  Small- and medium-sized databases, cache clusters, and search clusters with high requirements on stability
+   -  Enterprise-class applications of various types and scales
 
 Specifications
 --------------
 
-.. table:: **Table 1** C4 ECS specifications
+.. table:: **Table 1** C7t ECS specifications
+
+   +-------------------------+--------+--------+------------------------+----------+-----------------+-----------+----------------+
+   | Flavor                  | vCPUs  | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | Virtualization |
+   |                         |        |        |                        |          |                 |           |                |
+   |                         |        | (GiB)  | (Gbit/s)               | (10,000) |                 |           |                |
+   +=========================+========+========+========================+==========+=================+===========+================+
+   | c7t.28xlarge.4.physical | 112    | 512    | 64/64                  | 3000     | 32              | 32        | BMS            |
+   +-------------------------+--------+--------+------------------------+----------+-----------------+-----------+----------------+
+
+.. table:: **Table 2** C4 ECS specifications
 
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+-------------------------------------+
    | Flavor        | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | Virtualization | Hardware                            |
@@ -61,7 +91,7 @@ Specifications
    | c4.16xlarge.4 | 64    | 256    | 40/36                  | 1000     | 32              | 8         | KVM            |                                     |
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+-------------------------------------+
 
-.. table:: **Table 2** C3 ECS specifications
+.. table:: **Table 3** C3 ECS specifications
 
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
    | Flavor        | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | Virtualization | Hardware                       |
@@ -96,11 +126,11 @@ Specifications
 Notes
 -----
 
-:ref:`Table 3 <en-us_topic_0091224748__table192771727112217>` lists the OSs supported by dedicated general-purpose ECSs.
+:ref:`Table 4 <en-us_topic_0091224748__table192771727112217>` lists the OSs supported by dedicated general-purpose ECSs.
 
 .. _en-us_topic_0091224748__table192771727112217:
 
-.. table:: **Table 3** Supported OS versions
+.. table:: **Table 4** Supported OS versions
 
    +-----------------------------------+-----------------------------------------------------+
    | OS                                | Version                                             |
@@ -131,14 +161,6 @@ Notes
    | Rocky                             | Rocky 8 64bit                                       |
    +-----------------------------------+-----------------------------------------------------+
    | SUSE                              | -  Novell SUSE Linux Enterprise Server 15 SP3 64bit |
-   |                                   | -  Novell SUSE Linux Enterprise Server 15 SP2 64bit |
-   |                                   | -  Novell SUSE Linux Enterprise Server 15 SP1 64bit |
-   |                                   | -  Novell SUSE Linux Enterprise Server 15 64bit     |
-   |                                   | -  Novell SUSE Linux Enterprise Server 12 SP5 64bit |
-   |                                   | -  Novell SUSE Linux Enterprise Server 12 SP4 64bit |
-   |                                   | -  Novell SUSE Linux Enterprise Server 12 SP3 64bit |
-   +-----------------------------------+-----------------------------------------------------+
-   | SUSE-SAP                          | -  Novell SUSE Linux Enterprise Server 15 SP3 64bit |
    |                                   | -  Novell SUSE Linux Enterprise Server 15 SP2 64bit |
    |                                   | -  Novell SUSE Linux Enterprise Server 15 SP1 64bit |
    |                                   | -  Novell SUSE Linux Enterprise Server 15 64bit     |
