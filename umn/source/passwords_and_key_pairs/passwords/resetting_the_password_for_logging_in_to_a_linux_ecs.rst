@@ -91,23 +91,23 @@ Procedure
 
          set password success.
 
-#. (Optional) For a non-**root** user, perform the following operations to enable the login permissions for user **root**:
+#. (Optional) Enable remote root login for non-root users.
 
    **vi /etc/ssh/sshd_config**
 
-   Modify the following parameters:
+   Modify the following settings:
 
    -  Change **PasswordAuthentication no** to **PasswordAuthentication yes**.
 
-      Alternatively, delete the comment tag (#) before **PasswordAuthentication yes**.
+      Alternatively, uncomment **PasswordAuthentication yes**.
 
    -  Change **PermitRootLogin no** to **PermitRootLogin yes**.
 
-      Alternatively, delete the comment tag (#) before **PermitRootLogin yes**.
+      Alternatively, uncomment **PermitRootLogin yes**.
 
    -  Change the value of **AllowUsers** to **root**.
 
-      Search for **AllowUsers** in the file. If **AllowUsers** is unavailable, add it at the end of the file.
+      Search for **AllowUsers** in the file. If **AllowUsers** is missing, add it at the end of the file.
 
 #. Stop the temporary ECS, detach the system disk, attach the system disk to the original Linux ECS, and restart the original Linux ECS.
 

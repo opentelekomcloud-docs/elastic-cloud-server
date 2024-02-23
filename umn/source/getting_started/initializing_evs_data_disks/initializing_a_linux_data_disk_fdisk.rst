@@ -102,7 +102,7 @@ The following example shows you how a new primary partition can be created on a 
 
    .. note::
 
-      If the MBR partition style is used, a maximum of 4 primary partitions, or 3 primary partitions and 1 extended partition can be created. The extended partition cannot be used directly and must be divided into logical partitions before use.
+      If MBR is used, a maximum of 4 primary partitions, or 3 primary partitions plus 1 extended partition can be created. The extended partition must be divided into logical partitions before use.
 
       Disk partitions created using GPT are not categorized.
 
