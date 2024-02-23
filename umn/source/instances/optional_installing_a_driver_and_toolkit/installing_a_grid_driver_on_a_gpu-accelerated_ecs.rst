@@ -163,7 +163,7 @@ The following uses an ECS running CentOS 7.5 as an example to describe how to de
 
 3. Obtain the license file.
 
-   a. Log in to the `NVIDIA website <http://nvid.nvidia.com/dashboard/>`__ on a new tab and select **LICENSE SERVERS**.
+   a. Log in to the `NVIDIA website <https://nvid.nvidia.com/dashboard/>`__ on a new tab and select **LICENSE SERVERS**.
 
 
       .. figure:: /_static/images/en-us_image_0000001093449637.png

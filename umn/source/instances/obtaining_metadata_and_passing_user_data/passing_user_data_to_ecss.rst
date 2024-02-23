@@ -258,6 +258,7 @@ This case illustrates how to use the user data passing function to set the passw
    |                       |                                                                                                                                                              |                                                               |
    |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                               |
    |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                               |
+   |                       | -  Cannot start with a slash (/) for Windows ECSs.                                                                                                           |                                                               |
    +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
 
 User data example:
@@ -321,6 +322,7 @@ In this example, the password of user **root** is reset to **\*****\***.
    |                       |                                                                                                                                                              |                                                               |
    |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                               |
    |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                               |
+   |                       | -  Cannot start with a slash (/) for Windows ECSs.                                                                                                           |                                                               |
    +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
 
 User data example (Retain the indentation in the following script):

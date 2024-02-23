@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0093263550:
 
-Login Using VNC
-===============
+Remotely Logging In to a Linux ECS (Using VNC)
+==============================================
 
 Scenarios
 ---------

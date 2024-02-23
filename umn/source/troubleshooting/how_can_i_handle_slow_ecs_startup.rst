@@ -34,7 +34,7 @@ If an ECS requires a long period of time to start, you can change the default ti
       Open the **/boot/grub2/grub.cfg** file and change the **timeout** value to **0**.
 
 
-   .. figure:: /_static/images/en-us_image_0117031548.gif
+   .. figure:: /_static/images/en-us_image_0000001782063672.png
       :alt: **Figure 2** Changing timeout duration
 
       **Figure 2** Changing timeout duration

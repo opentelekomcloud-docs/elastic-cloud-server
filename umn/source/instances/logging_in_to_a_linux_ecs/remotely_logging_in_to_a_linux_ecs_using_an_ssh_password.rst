@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0017955633:
 
-Login Using an SSH Password
-===========================
+Remotely Logging In to a Linux ECS (Using an SSH Password)
+==========================================================
 
 Scenarios
 ---------
@@ -31,7 +31,7 @@ Configuring the Login Permission Using SSH Password Authentication
 
 **Assigning the remote login permission using SSH key authentication**
 
-#. Use the SSH key to log in to the Linux ECS. For details, see :ref:`Login Using an SSH Key <en-us_topic_0017955380>`.
+#. Use the SSH key to log in to the Linux ECS. For details, see :ref:`Remotely Logging In to a Linux ECS (Using an SSH Key Pair) <en-us_topic_0017955380>`.
 
 #. Run the following command to change the value of **PasswordAuthentication** in **/etc/ssh/sshd_config** to **yes**:
 

@@ -35,7 +35,7 @@ Notes
 -  Do not perform any operations on the ECS immediately after its OS is changed. Wait for several minutes until the system successfully injects the password or key. Otherwise, the injection may fail, and the ECS cannot be logged in to.
 -  After the OS is changed, the password for logging in to the ECS is reset. To retrieve the password, perform the following operations:
 
-   -  For a Linux ECS, log in to it using the key and set a new password. For instructions about how to log in to an ECS using a key pair, see :ref:`Login Using an SSH Key <en-us_topic_0017955380>`.
+   -  For a Linux ECS, log in to it using the key and set a new password. For instructions about how to log in to an ECS using a key pair, see :ref:`Remotely Logging In to a Linux ECS (Using an SSH Key Pair) <en-us_topic_0017955380>`.
    -  For a Windows ECS, retrieve the password by following the instructions provided in :ref:`Obtaining the Password for Logging In to a Windows ECS <en-us_topic_0031107266>`.
 
 -  The system disk capacity of an ECS with OS changed may change because the system disk capacity specified by the image of the changed OS may be changed.

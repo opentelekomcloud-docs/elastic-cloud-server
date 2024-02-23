@@ -10,7 +10,7 @@ After tags are added to resources, you can search for resources by tag using eit
 Searching for ECSs by Tag
 -------------------------
 
-On the **Elastic Cloud Server** page, search for ECSs by tag key or value.
+On the **Elastic Cloud Server** page, search for ECSs by tag key-value pair.
 
 #. Log in to the management console.
 

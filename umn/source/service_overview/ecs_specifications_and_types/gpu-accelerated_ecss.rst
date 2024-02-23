@@ -263,19 +263,15 @@ P3 ECSs are used in computing acceleration scenarios, such as deep learning trai
 
 **Notes**
 
--  P3 ECSs support the following OSs:
+-  After a P3 ECS is stopped, basic resources (including vCPUs, memory, image, and GPUs) are not billed, but its system disk is billed based on the disk capacity. If other products, such as EVS disks, EIP, and bandwidth are associated with the ECS, these products are billed separately.
 
-   -  Ubuntu 20.04 server 64bit
-   -  Ubuntu 18.04 server 64bit
-   -  CentOS 8.2 64bit
-   -  CentOS 8.1 64bit
-   -  CentOS 8.0 64bit
-   -  CentOS 7.9 64bit
-   -  CentOS 7.8 64bit
-   -  CentOS 7.7 64bit
-   -  CentOS 7.6 64bit
+   .. note::
 
--  If a P3 ECS is created using a private image, make sure that the Tesla driver has been installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+      Resources will be released after a P3 ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
+
+-  If a P3 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+
+-  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
 
 .. _en-us_topic_0097289624__section1454714546567:
 
@@ -469,6 +465,8 @@ P2v ECSs are used in computing acceleration scenarios, such as deep learning tra
 
 -  If a P2v ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 
+-  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
+
 .. _en-us_topic_0097289624__section5477185118234:
 
 Computing-accelerated P2
@@ -536,7 +534,7 @@ P2 ECSs are used in computing acceleration scenarios, such as deep learning trai
 **Notes**
 
 -  The system disk of a P2 ECS must be greater than or equal to 15 GiB. It is recommended that the system disk be greater than 40 GiB.
-
+-  P2 ECSs have local NVMe SSDs attached, which will continue to be billed after the ECSs are stopped. To stop the ECS from being billed, delete it and its associated resources.
 -  The local NVMe SSDs attached to P2 ECSs are dedicated for services with strict requirements on storage I/O performance, such as deep learning training and HPC. Local disks are attached to the ECSs of specified flavors and cannot be separately bought. In addition, you are not allowed to detach a local disk and then attach it to another ECS.
 
    .. note::
@@ -641,7 +639,7 @@ P1 ECSs are used in computing acceleration scenarios, such as deep learning trai
 **Notes**
 
 -  It is recommended that the system disk of a P1 ECS be greater than 40 GiB.
-
+-  P1 ECSs have local NVMe SSDs attached, which will continue to be billed after the ECSs are stopped. To stop the ECS from being billed, delete it and its associated resources.
 -  The local NVMe SSDs attached to P1 ECSs are dedicated for services with strict requirements on storage I/O performance, such as deep learning training and HPC. Local disks are attached to the ECSs of specified flavors and cannot be separately bought. In addition, you are not allowed to detach a local disk and then attach it to another ECS.
 
    .. note::

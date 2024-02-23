@@ -19,16 +19,42 @@ Scenarios
 
 -  Applications
 
-   General-purpose ECSs are suitable for applications that have no special requirements on vCPUs, memory, disk capacities, or bandwidth, but have high requirements on security and reliability. The initial investment and maintenance costs are low.
+   General-purpose ECSs are suitable for applications that have no special requirements on CPU performance, memory, disk capacity, or bandwidth, but have high requirements on security and reliability. Example applications include web servers, R&D and testing environments, and small-scale databases. They feature low initial investment and maintenance costs.
 
 -  Application scenarios
 
-   Enterprise website deployment, enterprise office environment setup, enterprise R&D and testing activities, web servers, R&D and testing environments, and small-scale databases
+   Enterprise website deployment, enterprise office environment setup, and enterprise R&D and testing activities
 
 Specifications
 --------------
 
-.. table:: **Table 1** S3 ECS specifications
+.. table:: **Table 1** S7n ECS specifications
+
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+-------------------------+----------------+
+   | Flavor        | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | Max. Supplementary NICs | Virtualization |
+   |               |       |        |                        |          |                 |           |                         |                |
+   |               |       | (GiB)  | (Gbit/s)               | (10,000) |                 |           |                         |                |
+   +===============+=======+========+========================+==========+=================+===========+=========================+================+
+   | s7n.small.1   | 1     | 1      | 0.8/0.1                | 10       | 1               | 2         | 4                       | KVM            |
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+-------------------------+----------------+
+   | s7n.medium.2  | 1     | 2      | 0.8/0.1                | 10       | 1               | 2         | 4                       | KVM            |
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+-------------------------+----------------+
+   | s7n.large.2   | 2     | 4      | 1.5/0.2                | 15       | 1               | 2         | 8                       | KVM            |
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+-------------------------+----------------+
+   | s7n.xlarge.2  | 4     | 8      | 2/0.35                 | 25       | 1               | 2         | 16                      | KVM            |
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+-------------------------+----------------+
+   | s7n.2xlarge.2 | 8     | 16     | 3/0.75                 | 50       | 2               | 2         | 32                      | KVM            |
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+-------------------------+----------------+
+   | s7n.medium.4  | 1     | 4      | 0.8/0.1                | 10       | 1               | 2         | 4                       | KVM            |
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+-------------------------+----------------+
+   | s7n.large.4   | 2     | 8      | 1.5/0.2                | 15       | 1               | 2         | 8                       | KVM            |
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+-------------------------+----------------+
+   | s7n.xlarge.4  | 4     | 16     | 2/0.35                 | 25       | 1               | 2         | 16                      | KVM            |
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+-------------------------+----------------+
+   | s7n.2xlarge.4 | 8     | 32     | 3/0.75                 | 50       | 2               | 2         | 32                      | KVM            |
+   +---------------+-------+--------+------------------------+----------+-----------------+-----------+-------------------------+----------------+
+
+.. table:: **Table 2** S3 ECS specifications
 
    +--------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+-------------------------------------+
    | Flavor       | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | Virtualization | Hardware                            |
@@ -84,7 +110,7 @@ Specifications
    | s3.8xlarge.8 | 32    | 256    | 8/2                    | 200      | 8               | 4         | KVM            |                                     |
    +--------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+-------------------------------------+
 
-.. table:: **Table 2** S2 ECS specifications
+.. table:: **Table 3** S2 ECS specifications
 
    +--------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
    | Flavor       | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | Virtualization | Hardware                       |
@@ -143,11 +169,11 @@ Specifications
 Notes
 -----
 
-:ref:`Table 3 <en-us_topic_0035470101__table192771727112217>` lists the OSs supported by general-purpose ECSs.
+:ref:`Table 4 <en-us_topic_0035470101__table192771727112217>` lists the OSs supported by general-purpose ECSs.
 
 .. _en-us_topic_0035470101__table192771727112217:
 
-.. table:: **Table 3** Supported OS versions
+.. table:: **Table 4** Supported OS versions
 
    +-----------------------------------+-----------------------------------------------------+
    | OS                                | Version                                             |
