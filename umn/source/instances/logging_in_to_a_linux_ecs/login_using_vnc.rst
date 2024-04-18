@@ -128,7 +128,7 @@ Logging In to an ECS Using an English Keyboard
 #. (Optional) If you have changed the system language, in the dialog box that is displayed, click **Start Remote Login**.
 
 
-   .. figure:: /_static/images/en-us_image_0030874271.png
+   .. figure:: /_static/images/en-us_image_0162732803.png
       :alt: **Figure 2** Remote Login
 
       **Figure 2** Remote Login
@@ -179,7 +179,7 @@ Logging In to an ECS Using a Non-English Keyboard
 8.  (Optional) If you have changed the system language, in the dialog box that is displayed, click **Start Remote Login**.
 
 
-    .. figure:: /_static/images/en-us_image_0030874271.png
+    .. figure:: /_static/images/en-us_image_0162732803.png
        :alt: **Figure 6** Remote Login
 
        **Figure 6** Remote Login

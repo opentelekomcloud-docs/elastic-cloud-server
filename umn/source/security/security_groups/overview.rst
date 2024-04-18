@@ -28,7 +28,3 @@ Security Group Constraints
 
 -  By default, you can create a maximum of 100 security groups in your cloud account.
 -  By default, you can add up to 50 security group rules to a security group.
--  When creating a private network load balancer, you need to select a desired security group. Do not delete the default security group rules or ensure that the following requirements are met:
-
-   -  Outbound rules: only allow data packets to the selected security group or only data packets from the peer load balancer.
-   -  Inbound rules: only allow data packets from the selected security group or only data packets from the peer load balancer.

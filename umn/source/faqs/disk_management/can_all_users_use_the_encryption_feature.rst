@@ -31,7 +31,7 @@ In this user group, if user 1 uses the encryption feature for the first time, th
 
 #. User 1 creates Xrole to grant KMS access permissions to EVS.
 
-   After user 1 grants permissions, the system automatically creates CMK **evs/default** for encrypting EVS disks.
+   After user 1 grants permissions, the system automatically creates key **evs/default** for encrypting EVS disks.
 
    .. note::
 
@@ -41,8 +41,8 @@ In this user group, if user 1 uses the encryption feature for the first time, th
 
    One of the following keys can be used:
 
-   -  Default CMK, **evs/default**
-   -  CMK, the key created before using the EVS disk encryption feature
+   -  Default key **evs/default**
+   -  Custom key, which was created before using the EVS disk encryption feature
    -  Newly created key (For instructions about how to create a key, see "Creating a Key Pair" in *Key Management Service User Guide*.)
 
 After user 1 uses the encryption feature, all other users in the user group can use this feature, without requiring to contact user 1 for permissions granting.

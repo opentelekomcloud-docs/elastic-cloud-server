@@ -32,7 +32,7 @@ Impact on ECS
    -  :ref:`Login Overview <en-us_topic_0013771089>`
    -  :ref:`What Is the cloudbase-init Account in Windows ECSs Used for? <en-us_topic_0037633087>`
    -  :ref:`Why Does the Login to My Linux ECS Using a Key File Fail? <en-us_topic_0031734664>`
-   -  :ref:`Why Does the System Display a Message Indicating that the Password for Logging In to a Windows ECS Cannot Be Viewed? <en-us_topic_0031736846>`
+   -  :ref:`Why Does the System Display a Message Indicating that the Password for Logging In to a Windows ECS Cannot Be Obtained? <en-us_topic_0031736846>`
 
 -  If Cloud-Init is supported, you can view and use metadata to configure and manage running ECSs. For details, see :ref:`Obtaining Metadata <en-us_topic_0042400609>`.
 

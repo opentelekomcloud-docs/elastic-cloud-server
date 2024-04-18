@@ -13,8 +13,8 @@ Ultra-high I/O ECSs use high-performance local NVMe SSDs to provide high storage
 Scenarios
 ---------
 
--  High-performance relational databases
--  NoSQL databases (such as Cassandra and MongoDB) and ElasticSearch
+-  Ultra-high I/O ECSs are suitable for high-performance relational databases.
+-  Ultra-high I/O ECSs are suitable for NoSQL databases (such as Cassandra and MongoDB) and ElasticSearch.
 
 Specifications
 --------------
@@ -34,7 +34,7 @@ Specifications
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------------------+----------------+
    | i3.12xlarge.4 | 48    | 192    | 35/27                  | 750      | 16              | 8         | 6 x 3,200 GiB NVMe | KVM            |
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------------------+----------------+
-   | i3.16xlarge.4 | 64    | 256    | 40/32                  | 1000     | 32              | 8         | 8 x 3,200 GiB NVMe | KVM            |
+   | i3.16xlarge.4 | 64    | 256    | 40/32                  | 1,000    | 32              | 8         | 8 x 3,200 GiB NVMe | KVM            |
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------------------+----------------+
    | i3.2xlarge.8  | 8     | 64     | 15/4.5                 | 150      | 4               | 4         | 1 x 3,200 GiB NVMe | KVM            |
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------------------+----------------+
@@ -73,7 +73,7 @@ Features
 
 .. _en-us_topic_0094118976__table9670341181017:
 
-.. table:: **Table 3** Specifications of a single local disk attached to an I3 ECS
+.. table:: **Table 3** Specifications of a single I3 local disk
 
    ========================== ===================
    Metric                     Performance
@@ -149,12 +149,12 @@ Notes
       | openEuler                         | openEuler 20.03 64bit                               |
       +-----------------------------------+-----------------------------------------------------+
 
--  If the host where an ultra-high I/O ECS resides becomes faulty, the ECS cannot be restored through live migration.
+-  If the host where an ultra-high I/O ECS is deployed is faulty, the ECS cannot be restored through live migration.
 
    -  If the host is faulty or subhealthy, you need to stop the ECS for hardware repair.
    -  In case of system maintenance or hardware faults, the ECS will be redeployed (to ensure HA) and cold migrated to another host. The local disk data of the ECS will not be retained.
 
--  Ultra-high I/O ECSs do not support specifications modification.
+-  Ultra-high I/O ECSs do not support specifications change.
 
 -  Ultra-high I/O ECSs do not support local disk snapshots or backups.
 
@@ -166,9 +166,9 @@ Notes
 
 -  Modify the **fstab** file to set automatic disk mounting at ECS start. For details, see :ref:`Configuring Automatic Mounting at System Start <en-us_topic_0085634798__en-us_topic_0084935709_section15839912195453>`.
 
--  The local disk data of an ultra-high I/O ECS may be lost due to some reasons, such as physical server breakdown or local disk damage. If your application does not use the data reliability architecture, it is a good practice to use EVS disks to build your ECS.
+-  The local disk data of an ultra-high I/O ECS if an exception occurs, such as physical server breakdown or local disk damage. If your application does not use the data reliability architecture, it is a good practice to use EVS disks to build your ECS.
 
--  After an ultra-high I/O ECS is deleted, the data on local NVMe SSDs is automatically deleted. Back up the data before deleting such an ECS. Deleting local disk data is time-consuming, so releasing resources is slow.
+-  When an ultra-high I/O ECS is deleted, the data on local NVMe SSDs will also be automatically deleted, which can take some time. As a result, an ultra-high I/O ECS takes a longer time than other ECSs to be deleted. Back up the data before deleting such an ECS.
 
 -  The data reliability of local disks depends on the reliability of physical servers and hard disks, which are SPOF-prone. It is a good practice to use data redundancy mechanisms at the application layer to ensure data availability. Use EVS disks to store service data that needs to be stored for a long time.
 
@@ -291,6 +291,10 @@ If a local disk attached to an ECS is damaged, perform the following operations 
       :alt: **Figure 4** Querying the mapping between the disk ID and serial number
 
       **Figure 4** Querying the mapping between the disk ID and serial number
+
+   .. note::
+
+      If the serial number cannot be obtained by running the preceding command, see :ref:`Using a Serial Number to Obtain the Disk Name (Windows) <en-us_topic_0103285575__section1549713815243>`.
 
 #. Stop the ECS and provide the serial number of the faulty disk to technical support personnel to replace the local disk.
 

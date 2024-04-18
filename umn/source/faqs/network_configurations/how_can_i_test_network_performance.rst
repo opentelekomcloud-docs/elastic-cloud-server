@@ -83,41 +83,41 @@ Test Preparations
 
    .. table:: **Table 4** Installing test tools
 
-      +-----------------------------------+----------------------------------------------------------------------------------------------------------------------+
-      | Tool                              | Procedure                                                                                                            |
-      +===================================+======================================================================================================================+
-      | netperf                           | a. Run the following command to install gcc:                                                                         |
-      |                                   |                                                                                                                      |
-      |                                   |    **yum -y install unzip gcc gcc-c++**                                                                              |
-      |                                   |                                                                                                                      |
-      |                                   | b. Run the following command to download the netperf installation package:                                           |
-      |                                   |                                                                                                                      |
-      |                                   |    **wget --no-check-certificate** **https://github.com/HewlettPackard/netperf/archive/refs/tags/netperf-2.7.0.zip** |
-      |                                   |                                                                                                                      |
-      |                                   | c. Run the following commands to decompress the installation package and install netperf:                            |
-      |                                   |                                                                                                                      |
-      |                                   |    **unzip netperf-2.7.0.zip**                                                                                       |
-      |                                   |                                                                                                                      |
-      |                                   |    **cd netperf-netperf-2.7.0/**                                                                                     |
-      |                                   |                                                                                                                      |
-      |                                   |    **./configure && make && make install**                                                                           |
-      +-----------------------------------+----------------------------------------------------------------------------------------------------------------------+
-      | iperf3                            | a. Run the following command to download the iperf3 installation package:                                            |
-      |                                   |                                                                                                                      |
-      |                                   |    **wget --no-check-certificate https://codeload.github.com/esnet/iperf/zip/master -O iperf3.zip**                  |
-      |                                   |                                                                                                                      |
-      |                                   | b. Run the following commands to decompress the installation package and install iperf3:                             |
-      |                                   |                                                                                                                      |
-      |                                   |    **unzip iperf3.zip**                                                                                              |
-      |                                   |                                                                                                                      |
-      |                                   |    **cd iperf-master/**                                                                                              |
-      |                                   |                                                                                                                      |
-      |                                   |    **./configure && make && make install**                                                                           |
-      +-----------------------------------+----------------------------------------------------------------------------------------------------------------------+
-      | sar                               | Run the following command to install sar:                                                                            |
-      |                                   |                                                                                                                      |
-      |                                   | **yum -y install sysstat**                                                                                           |
-      +-----------------------------------+----------------------------------------------------------------------------------------------------------------------+
+      +-----------------------------------+-----------------------------------------------------------------------------------------------------+
+      | Tool                              | Procedure                                                                                           |
+      +===================================+=====================================================================================================+
+      | netperf                           | a. Run the following command to install gcc:                                                        |
+      |                                   |                                                                                                     |
+      |                                   |    **yum -y install unzip gcc gcc-c++**                                                             |
+      |                                   |                                                                                                     |
+      |                                   | b. Run the following command to download the netperf installation package:                          |
+      |                                   |                                                                                                     |
+      |                                   |    **wget** **https://github.com/HewlettPackard/netperf/archive/refs/tags/netperf-2.7.0.zip**       |
+      |                                   |                                                                                                     |
+      |                                   | c. Run the following commands to decompress the installation package and install netperf:           |
+      |                                   |                                                                                                     |
+      |                                   |    **unzip netperf-2.7.0.zip**                                                                      |
+      |                                   |                                                                                                     |
+      |                                   |    **cd netperf-netperf-2.7.0/**                                                                    |
+      |                                   |                                                                                                     |
+      |                                   |    **./configure && make && make install**                                                          |
+      +-----------------------------------+-----------------------------------------------------------------------------------------------------+
+      | iperf3                            | a. Run the following command to download the iperf3 installation package:                           |
+      |                                   |                                                                                                     |
+      |                                   |    **wget --no-check-certificate https://codeload.github.com/esnet/iperf/zip/master -O iperf3.zip** |
+      |                                   |                                                                                                     |
+      |                                   | b. Run the following commands to decompress the installation package and install iperf3:            |
+      |                                   |                                                                                                     |
+      |                                   |    **unzip iperf3.zip**                                                                             |
+      |                                   |                                                                                                     |
+      |                                   |    **cd iperf-master/**                                                                             |
+      |                                   |                                                                                                     |
+      |                                   |    **./configure && make && make install**                                                          |
+      +-----------------------------------+-----------------------------------------------------------------------------------------------------+
+      | sar                               | Run the following command to install sar:                                                           |
+      |                                   |                                                                                                     |
+      |                                   | **yum -y install sysstat**                                                                          |
+      +-----------------------------------+-----------------------------------------------------------------------------------------------------+
 
 #. Enable NIC multi-queue.
 

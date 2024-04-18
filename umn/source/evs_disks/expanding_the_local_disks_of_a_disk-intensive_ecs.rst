@@ -10,7 +10,7 @@ Scenarios
 
 Disk-intensive ECSs can use both local disks and EVS disks to store data. Local disks are generally used to store service data and feature higher throughput than EVS disks.
 
-Disk-intensive ECSs do not support specifications modification. Therefore, when the idle capacity of the local disks of such an ECS is insufficient, you must create a new disk-intensive ECS with higher specifications for capacity expansion. In such a case, the data stored in the original ECS can be migrated to the new ECS through an EVS disk.
+Disk-intensive ECSs do not support specifications modification. When the capacity of local disks is insufficient, you can create a new disk-intensive ECS with higher specifications for capacity expansion. The data stored in the original ECS can be migrated to the new ECS through EVS.
 
 Procedure
 ---------
@@ -25,9 +25,9 @@ Procedure
 
    Detach the EVS disk from the ECS.
 
-   a. On the **Elastic Cloud Server** page, select this disk-intensive ECS and ensure that it is **Stopped**.
+   a. On the **Elastic Cloud Server** page, select this disk-intensive ECS and ensure that it has been stopped.
 
-      If the ECS is in the **Running** state, choose **More** > **Stop** to stop it.
+      If the ECS is running, choose **More** > **Stop** to stop the ECS.
 
    b. Click the name of the disk-intensive ECS. The page providing details about the ECS is displayed.
 
@@ -37,11 +37,11 @@ Procedure
 
    Ensure that a new disk-intensive ECS with higher specifications than the original one is available.
 
-   The idle local disk capacity of the new ECS must meet service requirements.
+   The local disk capacity is sufficient enough to meet your requirements.
 
 #. Attach the EVS disk to the new disk-intensive ECS.
 
-   On the **Elastic Cloud Server** page, click the name of the ECS described in step :ref:`5 <en-us_topic_0037470901__li5892076615240>`. The page providing details about the ECS is displayed.
+   On the **Elastic Cloud Server** page, click the name of the ECS described in step :ref:`5 <en-us_topic_0037470901__li5892076615240>` to view details.
 
 #. Click the **Disks** tab. Then, click **Attach Disk**.
 

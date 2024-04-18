@@ -6,6 +6,7 @@ FAQs
 ====
 
 -  :ref:`ECS Overview <en-us_topic_0030930805>`
+-  :ref:`Regions and AZs <en-us_topic_0018196896>`
 -  :ref:`Creation and Deletion <en-us_topic_0018073208>`
 -  :ref:`Login and Connection <en-us_topic_0030930807>`
 -  :ref:`ECS Management <en-us_topic_0208808104>`
@@ -24,6 +25,7 @@ FAQs
    :hidden: 
 
    ecs_overview/index
+   regions_and_azs/index
    creation_and_deletion/index
    login_and_connection/index
    ecs_management/index

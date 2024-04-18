@@ -25,6 +25,8 @@ Newly Added Data Disk Has Not Been Partitioned or Initialized
 
 A new data disk does not have partitions and file systems by default. That is why it is unavailable in **My Computer**. To resolve this issue, manually initialize the disk.
 
+For details, see `Introduction to Data Disk Initialization Scenarios and Partition Styles <https://docs.otc.t-systems.com/elastic-volume-service/umn/getting_started/initialize_an_evs_data_disk/introduction_to_data_disk_initialization_scenarios_and_partition_styles.html>`__.
+
 Disk Becomes Offline After the ECS OS Is Changed or the ECS Specifications Are Modified
 ---------------------------------------------------------------------------------------
 

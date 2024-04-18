@@ -87,10 +87,10 @@ For Windows ECSs
    The **Date and Time** page is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0224317546.png
-      :alt: **Figure 1** Date and Time
+   .. figure:: /_static/images/en-us_image_0000001706240505.png
+      :alt: **Figure 1** Date and time
 
-      **Figure 1** Date and Time
+      **Figure 1** Date and time
 
 #. Click **Change time zone**.
 
