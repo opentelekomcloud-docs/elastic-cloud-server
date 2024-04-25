@@ -42,7 +42,7 @@ Advanced Settings
 
 #. To use functions listed in **Advanced Options**, select **Configure now**. Otherwise, do not select it.
 
-   -  User Data Injection
+   -  User Data
 
       You can specify the user data. The user data will be automatically passed to the ECS when the ECS starts for the first time. This configuration is optional.
 
