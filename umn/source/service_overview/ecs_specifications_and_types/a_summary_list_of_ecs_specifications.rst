@@ -393,7 +393,7 @@ GPU-accelerated
    | g7.24xlarge.8 | 96    | 768    | 40/36                  | 850      | 16              | 8         | 2 x NVIDIA-A40 | 2 x 48     | KVM            |
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+------------+----------------+
 
-.. table:: **Table 15** G6 ECS specifications
+.. table:: **Table 16** G6 ECS specifications
 
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+----------------+
    | Flavor        | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs   | GPU Memory | Virtualization |
@@ -407,7 +407,7 @@ GPU-accelerated
    | g6.20xlarge.7 | 80    | 560    | 30/30                  | 400      | 32              | 16        | 2 x T4 | 32         | KVM            |
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+----------------+
 
-.. table:: **Table 16** P3 ECS specifications
+.. table:: **Table 17** P3 ECS specifications
 
    +---------------+-------+--------+---------------------------------+----------+-----------------+-----------+----------------------+------------+----------------+
    | Flavor        | vCPUs | Memory | Max./Assured Bandwidth (Gbit/s) | Max. PPS | Max. NIC Queues | Max. NICs | GPUs                 | GPU Memory | Virtualization |

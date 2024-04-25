@@ -21,6 +21,7 @@ Available now: All GPU models except the recommended ones. If available ECSs are
 
 -  G series
 
+   -  :ref:`Graphics-accelerated Enhancement G7v <en-us_topic_0097289624__section168054357432>`
    -  :ref:`Graphics-accelerated Enhancement G7 <en-us_topic_0097289624__section2325028104711>`
    -  :ref:`Graphics-accelerated Enhancement G6 <en-us_topic_0097289624__section131302034104515>`
 
@@ -197,7 +198,7 @@ Select your desired GPU-accelerated ECS type and specifications.
 
 **Specifications**
 
-.. table:: **Table 2** G6 ECS specifications
+.. table:: **Table 3** G6 ECS specifications
 
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+----------------+
    | Flavor        | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs   | GPU Memory | Virtualization |
@@ -726,11 +727,11 @@ P1 ECSs are used in computing acceleration scenarios, such as deep learning trai
    -  If the host is faulty or subhealthy, you need to stop the ECS for hardware repair.
    -  In case of system maintenance or hardware faults, the ECS will be redeployed (to ensure HA) and cold migrated to another host. The local disk data of the ECS will not be retained.
 
--  :ref:`Table 12 <en-us_topic_0097289624__table8704181020556>` lists the OSs supported by P1 ECSs.
+-  :ref:`Table 13 <en-us_topic_0097289624__table8704181020556>` lists the OSs supported by P1 ECSs.
 
    .. _en-us_topic_0097289624__table8704181020556:
 
-   .. table:: **Table 12** Supported OS versions
+   .. table:: **Table 13** Supported OS versions
 
       +-----------------------------------+---------------------------------------+
       | OS                                | Version                               |
@@ -807,11 +808,11 @@ Pi2 ECSs support the following commonly used software:
 
       Resources are released after a Pi2 ECS is stopped. If resources are insufficient when the Pi2 ECS is started after being stopped, starting the ECS might fail. Therefore, if you need to use a Pi2 ECS for a long time, keep the ECS running.
 
--  :ref:`Table 14 <en-us_topic_0097289624__table576493295720>` lists the OSs supported by Pi2 ECSs.
+-  :ref:`Table 15 <en-us_topic_0097289624__table576493295720>` lists the OSs supported by Pi2 ECSs.
 
    .. _en-us_topic_0097289624__table576493295720:
 
-   .. table:: **Table 14** Supported OS versions
+   .. table:: **Table 15** Supported OS versions
 
       +-----------------------------------+------------------------------------------+
       | OS                                | Version                                  |
