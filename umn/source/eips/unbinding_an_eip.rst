@@ -31,7 +31,7 @@ Procedure
 
       **Figure 1** Unbinding an EIP
 
-#. Verify the EIP to be unbound and click **Yes**.
+#. Confirm the EIP to be unbound and click .
 
    .. note::
 

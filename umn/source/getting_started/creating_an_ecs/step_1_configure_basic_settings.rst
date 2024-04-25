@@ -18,8 +18,8 @@ Accessing the ECS Creation Page
 
    The page for creating ECSs is displayed.
 
-Performing Basic Configurations
--------------------------------
+Basic Settings
+--------------
 
 #. Select an AZ.
 
