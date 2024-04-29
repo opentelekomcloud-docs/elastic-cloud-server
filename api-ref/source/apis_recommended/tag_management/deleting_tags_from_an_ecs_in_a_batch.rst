@@ -59,19 +59,19 @@ Request
 
 .. table:: **Table 3** **tags** field description
 
-   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                               |
-   +=================+=================+=================+===========================================================================+
-   | key             | Yes             | String          | Specifies the tag key.                                                    |
-   |                 |                 |                 |                                                                           |
-   |                 |                 |                 | It contains a maximum of 127 Unicode characters and cannot be left blank. |
-   |                 |                 |                 |                                                                           |
-   |                 |                 |                 | The tag key of an ECS must be unique.                                     |
-   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------+
-   | value           | No              | String          | Specifies the tag value.                                                  |
-   |                 |                 |                 |                                                                           |
-   |                 |                 |                 | It contains a maximum of 255 Unicode characters and can be left blank.    |
-   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+---------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                           |
+   +=================+=================+=================+=======================================+
+   | key             | Yes             | String          | Specifies the tag key.                |
+   |                 |                 |                 |                                       |
+   |                 |                 |                 | This field cannot be left blank.      |
+   |                 |                 |                 |                                       |
+   |                 |                 |                 | The tag key of an ECS must be unique. |
+   +-----------------+-----------------+-----------------+---------------------------------------+
+   | value           | No              | String          | Specifies the tag value.              |
+   |                 |                 |                 |                                       |
+   |                 |                 |                 | This field can be left blank.         |
+   +-----------------+-----------------+-----------------+---------------------------------------+
 
 Response
 --------
@@ -81,11 +81,11 @@ None
 Example Request
 ---------------
 
+Batch delete two pairs of tags from a specified ECS.
+
 .. code-block:: text
 
    POST https://{endpoint}/v1/{project_id}/cloudservers/{server_id}/tags/action
-
-.. code-block::
 
    {
        "action": "delete",

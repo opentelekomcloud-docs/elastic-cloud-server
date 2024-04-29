@@ -31,42 +31,42 @@ GET /v2.1/{project_id}/resize_flavors?instance_uuid={instance_uuid}&source_flavo
 
    One of the **instance_uuid**, **source_flavor_id**, and **source_flavor_name** parameters must be configured. If multiple parameters are configured, the system processes the **instance_uuid**, **source_flavor_id**, and **source_flavor_name** parameters in descending order by default.
 
-:ref:`Table 2 <en-us_topic_0110472767__table96861454162513>` describes the query parameters.
+:ref:`Table 2 <en-us_topic_0110472767__table96861454162513>` describes the request parameters.
 
 .. _en-us_topic_0110472767__table96861454162513:
 
 .. table:: **Table 2** Query parameters
 
-   +--------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+
-   | Parameter          | Mandatory       | Type            | Description                                                                                               |
-   +====================+=================+=================+===========================================================================================================+
-   | instance_uuid      | No              | String          | Specifies the ID, in UUID format, of the target ECS.                                                      |
-   +--------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+
-   | source_flavor_id   | No              | String          | Specifies the source flavor ID.                                                                           |
-   +--------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+
-   | source_flavor_name | No              | String          | Specifies the source flavor name.                                                                         |
-   +--------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+
-   | sort_key           | No              | String          | Indicates the field for sorting.                                                                          |
-   |                    |                 |                 |                                                                                                           |
-   |                    |                 |                 | Options:                                                                                                  |
-   |                    |                 |                 |                                                                                                           |
-   |                    |                 |                 | -  **flavorid**: indicates the flavor ID. The default value is **flavorid**.                              |
-   |                    |                 |                 | -  **name**: indicates the flavor name.                                                                   |
-   |                    |                 |                 | -  **memory_mb**: indicates the memory size.                                                              |
-   |                    |                 |                 | -  **vcpus**: indicates the number of vCPUs.                                                              |
-   |                    |                 |                 | -  **root_gb**: indicates the system disk size.                                                           |
-   +--------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+
-   | sort_dir           | No              | String          | Specifies the ascending or descending sorting.                                                            |
-   |                    |                 |                 |                                                                                                           |
-   |                    |                 |                 | Options:                                                                                                  |
-   |                    |                 |                 |                                                                                                           |
-   |                    |                 |                 | -  **asc**: indicates the ascending order.                                                                |
-   |                    |                 |                 | -  **desc**: indicates the descending order.                                                              |
-   +--------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+
-   | limit              | No              | Integer         | Specifies the maximum number of flavors that can be displayed on one page. The default value is **1000**. |
-   +--------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+
-   | marker             | No              | String          | Uses the ID of the last flavor on one page as the paging marker.                                          |
-   +--------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+
+   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------+
+   | Parameter          | Mandatory       | Type            | Description                                                                                                |
+   +====================+=================+=================+============================================================================================================+
+   | instance_uuid      | No              | String          | Specifies the ID, in UUID format, of the target ECS.                                                       |
+   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------+
+   | source_flavor_id   | No              | String          | Specifies the source flavor ID.                                                                            |
+   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------+
+   | source_flavor_name | No              | String          | Specifies the source flavor name.                                                                          |
+   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------+
+   | sort_key           | No              | String          | Indicates the field for sorting.                                                                           |
+   |                    |                 |                 |                                                                                                            |
+   |                    |                 |                 | Options:                                                                                                   |
+   |                    |                 |                 |                                                                                                            |
+   |                    |                 |                 | -  **flavorid**: indicates the flavor ID. The default value is **flavorid**.                               |
+   |                    |                 |                 | -  **name**: indicates the flavor name.                                                                    |
+   |                    |                 |                 | -  **memory_mb**: indicates the memory size.                                                               |
+   |                    |                 |                 | -  **vcpus**: indicates the number of vCPUs.                                                               |
+   |                    |                 |                 | -  **root_gb**: indicates the system disk size.                                                            |
+   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------+
+   | sort_dir           | No              | String          | Specifies the ascending or descending sorting.                                                             |
+   |                    |                 |                 |                                                                                                            |
+   |                    |                 |                 | Options:                                                                                                   |
+   |                    |                 |                 |                                                                                                            |
+   |                    |                 |                 | -  **asc**: indicates the ascending order.                                                                 |
+   |                    |                 |                 | -  **desc**: indicates the descending order.                                                               |
+   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------+
+   | limit              | No              | Integer         | Specifies the maximum number of flavors that can be displayed on one page. The default value is **1,000**. |
+   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------+
+   | marker             | No              | String          | Uses the ID of the last flavor on one page as the paging marker.                                           |
+   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------+
 
 Request
 -------

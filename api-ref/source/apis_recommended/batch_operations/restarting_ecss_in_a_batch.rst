@@ -8,7 +8,9 @@ Restarting ECSs in a Batch
 Function
 --------
 
-This API is used to restart ECSs in a batch based on specified ECS IDs. A maximum of 1000 ECSs can be restarted at a time.
+This API is used to restart ECSs in a batch based on specified ECS IDs. A maximum of 1,000 ECSs can be restarted in one minute.
+
+This API is an asynchronous API. After the batch restart request is successfully delivered, a job ID is returned. This does not mean the batch restart is complete. You need to call the API by referring to :ref:`Querying Task Execution Status <en-us_topic_0022225398>` to query the job status. The SUCCESS status indicates that the batch restart is successful.
 
 URI
 ---
@@ -75,13 +77,11 @@ See :ref:`Responses (Task) <en-us_topic_0022067714>`.
 Example Request
 ---------------
 
-In the request, the parameters to restart ECSs must be sent with field **reboot**. For details, see the example request.
+Batch restart ECSs whose IDs are **616fb98f-46ca-475e-917e-2563e5a8cd19** and **726fb98f-46ca-475e-917e-2563e5a8cd20** with the request parameter set to **reboot**.
 
 .. code-block:: text
 
    POST https://{endpoint}/v1/{project_id}/cloudservers/action
-
-.. code-block::
 
    {
        "reboot": {
@@ -93,7 +93,6 @@ In the request, the parameters to restart ECSs must be sent with field **reboot*
                {
                    "id": "726fb98f-46ca-475e-917e-2563e5a8cd20"
                }
-
            ]
        }
    }
@@ -104,7 +103,7 @@ Example Response
 .. code-block::
 
    {
-       "job_id": "70a599e0-31e7-49b7-b260-868f441e862b"
+       "job_id": "ff80808288d41e1b018990260955686a"
    }
 
 Returned Values

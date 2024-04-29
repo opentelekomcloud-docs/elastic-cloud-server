@@ -10,6 +10,8 @@ Function
 
 This API is used to uninstall and delete one or multiple NICs from an ECS.
 
+This API is an asynchronous API. After the deletion request is successfully delivered, a job ID is returned. This does not mean the deletion is complete. You need to call the API by referring to :ref:`Querying Task Execution Status <en-us_topic_0022225398>` to query the job status. The SUCCESS status indicates that the deletion is successful.
+
 Constraints
 -----------
 
@@ -70,11 +72,11 @@ See :ref:`Responses (Task) <en-us_topic_0022067714>`.
 Example Request
 ---------------
 
+Delete the NIC whose ID is **d32019d3-bc6e-4319-9c1d-6722fc136a23** from an ECS.
+
 .. code-block:: text
 
    POST https://{endpoint}/v1/{project_id}/cloudservers/{server_id}/nics/delete
-
-.. code-block::
 
    {
        "nics": [
@@ -90,7 +92,7 @@ Example Response
 .. code-block::
 
    {
-       "job_id": "70a599e0-31e7-49b7-b260-868f441e862b"
+       "job_id": "ff80808288d41e1b018990260955686a"
    }
 
 Returned Values

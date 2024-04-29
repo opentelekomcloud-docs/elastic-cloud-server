@@ -32,7 +32,7 @@ GET /v1/{project_id}/cloudservers/os-server-groups?limit={limit}&marker={marker}
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------+
    | Parameter       | Mandatory       | Type            | Description                                                                                                                |
    +=================+=================+=================+============================================================================================================================+
-   | limit           | No              | Integer         | Specifies the upper limit on the number of returned server groups. The maximum value is 1000.                              |
+   | limit           | No              | Integer         | Specifies the upper limit on the number of returned server groups. The maximum value is 1,000.                             |
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------+
    | marker          | No              | String          | Specifies the marker that points to the ECS group. The query starts from the next piece of data indexed by this parameter. |
    |                 |                 |                 |                                                                                                                            |
@@ -94,6 +94,8 @@ Response
 Example Request
 ---------------
 
+Query ECS groups.
+
 .. code-block:: text
 
    GET https://{endpoint}/v1/{project_id}/cloudservers/os-server-groups
@@ -104,18 +106,26 @@ Example Response
 .. code-block::
 
    {
-       "server_groups": [
-           {
-               "id": "616fb98f-46ca-475e-917e-2563e5a8cd19",
-               "name": "test",
-               "policies": ["anti-affinity"],
-               "members": [],
-               "metadata": {}
-           }
-       ],
-       "page_info": {
-           "next_marker": "616fb98f-46ca-475e-917e-2563e5a8cd19"
-       }
+      "server_groups": [
+         {
+            "members": [],
+            "metadata": {},
+            "id": "318b44a7-f7a6-4c0b-8107-e8bd618b28dd",
+            "policies": [
+                        "anti-affinity"
+                        ],
+            "name": "SvrGrp-b9d6"
+     },
+     {
+            "members": [],
+            "metadata": {},
+            "id": "b8f4cfc4-9a59-498c-9b52-643ee6515cd0",
+            "policies": [
+                        "anti-affinity"
+                        ],
+            "name": "SvrGrp-10a1"
+     }
+    ]
    }
 
 Returned Values

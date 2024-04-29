@@ -92,6 +92,10 @@ Response
    +-----------------------+-----------------------+-------------------------------------------------------------------------------+
    | Parameter             | Type                  | Description                                                                   |
    +=======================+=======================+===============================================================================+
+   | server_id             | String                | If the task is an ECS-related operation, the value is **server_id**.          |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------+
+   | nic_id                | String                | If the task is a NIC-related operation, the value is **nic_id**.              |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------+
    | sub_jobs_total        | Integer               | Specifies the number of subtasks.                                             |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------+
    | sub_jobs              | Array of objects      | Specifies the execution information of a subtask.                             |
@@ -134,7 +138,7 @@ Response
 
 .. _en-us_topic_0022225398__table2577901102930:
 
-.. table:: **Table 5** **entities** field description
+.. table:: **Table 5** **sub_jobs.entities** field description
 
    +-------------------+--------+----------------------------------------------------------------------+
    | Parameter         | Type   | Description                                                          |
@@ -148,6 +152,8 @@ Response
 
 Example Request
 ---------------
+
+Query the execution status of a specified asynchronous request task.
 
 .. code-block:: text
 

@@ -53,10 +53,10 @@ Request
    |                 |                 |                  | -  Keys must be unique.                                                                                                                                                                                                       |
    |                 |                 |                  | -  Values of the same key must be unique.                                                                                                                                                                                     |
    +-----------------+-----------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | limit           | No              | String           | Limits the maximum number of queried ECSs. The value cannot be a negative number. The maximum value is 1000.                                                                                                                  |
+   | limit           | No              | String           | Limits the maximum number of queried ECSs. The value cannot be a negative number. The maximum value is 1,000.                                                                                                                 |
    |                 |                 |                  |                                                                                                                                                                                                                               |
    |                 |                 |                  | -  If the **action** value is **count**, this parameter is invalid.                                                                                                                                                           |
-   |                 |                 |                  | -  If the **action** value is **filter**, the default value is **1000**.                                                                                                                                                      |
+   |                 |                 |                  | -  If the **action** value is **filter**, the default value is **1,000**.                                                                                                                                                     |
    +-----------------+-----------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | offset          | No              | String           | Specifies index position. The query starts from the next piece of data indexed by this parameter. The value must be a number and cannot be a negative number.                                                                 |
    |                 |                 |                  |                                                                                                                                                                                                                               |
@@ -175,8 +175,6 @@ Example Request
 .. code-block:: text
 
    POST https://{endpoint}/v1/{project_id}/servers/resource_instances/action
-
-.. code-block::
 
    {
        "offset": "100",

@@ -41,6 +41,8 @@ None
 Example Request
 ---------------
 
+Delete a specified ECS group.
+
 .. code-block:: text
 
    DELETE https://{endpoint}/v1/{project_id}/cloudservers/os-server-groups/{server_group_id}

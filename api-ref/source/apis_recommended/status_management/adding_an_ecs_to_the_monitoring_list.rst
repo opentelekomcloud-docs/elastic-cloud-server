@@ -1,6 +1,6 @@
-:original_name: en-us_topic_0081529857.html
+:original_name: en-us_topic_0000001635605869.html
 
-.. _en-us_topic_0081529857:
+.. _en-us_topic_0000001635605869:
 
 Adding an ECS to the Monitoring List
 ====================================
@@ -10,16 +10,16 @@ Function
 
 This API is used to add an ECS to the monitoring list.
 
-Ceilometer periodically collects monitoring data on the ECSs added to the monitoring list and reports the data to Cloud Eye. The data includes the platform version, CPU, memory, NICs, disks, and hardware version. For example, the plug-in of an SAP ECS periodically obtains monitoring data from Cloud Eye and reports the data to SAP in reports.
+Ceilometer periodically collects monitoring data on the ECSs added to the monitoring list and reports the data to Cloud Eye. The data includes the platform version, CPU, memory, NICs, disks, and hardware version.
 
 URI
 ---
 
 POST /v1.0/servers/{server_id}/action
 
-:ref:`Table 1 <en-us_topic_0081529857__table3713317418952>` describes the parameters in the URI.
+:ref:`Table 1 <en-us_topic_0000001635605869__en-us_topic_0081529857_table3713317418952>` describes the parameters in the URI.
 
-.. _en-us_topic_0081529857__table3713317418952:
+.. _en-us_topic_0000001635605869__en-us_topic_0081529857_table3713317418952:
 
 .. table:: **Table 1** Parameter description
 
@@ -32,9 +32,9 @@ POST /v1.0/servers/{server_id}/action
 Request
 -------
 
-:ref:`Table 2 <en-us_topic_0081529857__table20892986181041>` describes the request parameters.
+:ref:`Table 2 <en-us_topic_0000001635605869__en-us_topic_0081529857_table20892986181041>` describes the request parameters.
 
-.. _en-us_topic_0081529857__table20892986181041:
+.. _en-us_topic_0000001635605869__en-us_topic_0081529857_table20892986181041:
 
 .. table:: **Table 2** Request parameters
 
@@ -52,11 +52,11 @@ None
 Example Request
 ---------------
 
+Add a specified ECS to the monitoring list.
+
 .. code-block:: text
 
    POST https://{endpoint}/v1.0/servers/{server_id}/action
-
-.. code-block::
 
    {
       "monitorMetrics" : null

@@ -60,7 +60,7 @@ Responses (Task)
    .. code-block::
 
       {
-          "job_id": "70a599e0-31e7-49b7-b260-868f441e862b"
+          "job_id": "ff80808288d41e1b018990260955686a"
       }
 
    Abnormal response

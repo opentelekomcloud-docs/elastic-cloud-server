@@ -10,6 +10,8 @@ Function
 
 This API is used to detach an EVS disk from an ECS.
 
+This API is an asynchronous API. After the detachment request is successfully delivered, a job ID is returned. This does not mean the detachment is complete. You need to call the API by referring to :ref:`Querying Task Execution Status <en-us_topic_0022225398>` to query the job status. The SUCCESS status indicates that the detachment is successful.
+
 URI
 ---
 
@@ -51,6 +53,8 @@ See :ref:`Responses (Task) <en-us_topic_0022067714>`.
 Example Request
 ---------------
 
+Detach a specified disk from an ECS.
+
 .. code-block:: text
 
    DELETE https://{endpoint}/v1/{project_id}/cloudservers/{server_id}/detachvolume/{volume_id}
@@ -61,7 +65,7 @@ Example Response
 .. code-block::
 
    {
-       "job_id": "70a599e0-31e7-49b7-b260-868f441e862b"
+       "job_id": "ff80808288d41e1b018990260955686a"
    }
 
 Returned Values

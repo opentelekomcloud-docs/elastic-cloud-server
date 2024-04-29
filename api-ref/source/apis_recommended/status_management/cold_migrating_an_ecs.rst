@@ -12,10 +12,16 @@ Function
 -  An ECS deployed on a DeH can be migrated to a public resource pool.
 -  An ECS deployed in a public resource pool can be migrated to a DeH.
 
+This API is an asynchronous API. After the cold migration request is successfully delivered, a job ID is returned. This does not mean the cold migration is complete. You need to call the API by referring to :ref:`Querying Task Execution Status <en-us_topic_0022225398>` to query the job status. The SUCCESS status indicates that the cold migration is successful.
+
+.. note::
+
+   If the migration does not cross NUMA nodes, the migration may fail due to insufficient resources on a single NUMA node.
+
 Constraints
 -----------
 
--  This API is supported by DeHs only.
+-  Currently, this API applies only to dedicated hosts.
 -  Only a stopped ECS can be cold migrated.
 -  Existing constraints of the native cold migration API are inherited.
 
@@ -51,20 +57,20 @@ Request
    +=================+=================+=================+===========================================================================================================+
    | migrate         | Yes             | Object          | Specifies the ECS to be migrated. For details, see :ref:`Table 3 <en-us_topic_0132905656__table7657338>`. |
    |                 |                 |                 |                                                                                                           |
-   |                 |                 |                 | When migrating an ECS from a DeH to a public resource pool, the **migrate** value is null.                |
+   |                 |                 |                 | This parameter is **null** when you migrate an ECS from a dedicated host to a public resource pool.       |
    +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0132905656__table7657338:
 
 .. table:: **Table 3** **migrate** field description
 
-   +-------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter         | Mandatory       | Type            | Description                                                                                                                       |
-   +===================+=================+=================+===================================================================================================================================+
-   | dedicated_host_id | No              | String          | Specifies the DeH ID.                                                                                                             |
-   |                   |                 |                 |                                                                                                                                   |
-   |                   |                 |                 | This parameter takes effect when an ECS is migrated from a public resource pool to a DeH or when an ECS is migrated between DeHs. |
-   +-------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------+
+   +-------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+
+   | Parameter         | Mandatory       | Type            | Description                                                                                               |
+   +===================+=================+=================+===========================================================================================================+
+   | dedicated_host_id | No              | String          | Specifies the DeH ID.                                                                                     |
+   |                   |                 |                 |                                                                                                           |
+   |                   |                 |                 | This parameter takes effect when an ECS is migrated from a public resource pool to a DeH or between DeHs. |
+   +-------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+
 
 Response
 --------
@@ -74,11 +80,11 @@ See :ref:`Responses (Task) <en-us_topic_0022067714>`.
 Example Request
 ---------------
 
+Migrate the ECS from the public resource pool to the DeH whose ID is **459a2b9d-804a-4745-ab19-a113bb1b4ddc**.
+
 .. code-block:: text
 
    POST https://{endpoint}/v1/{project_id}/cloudservers/{server_id}/migrate
-
-.. code-block::
 
    {
        "migrate": {
@@ -92,7 +98,7 @@ Example Response
 .. code-block::
 
    {
-       "job_id": "70a599e0-31e7-49b7-b260-868f441e862b"
+       "job_id": "ff80808288d41e1b018990260955686a"
    }
 
 Returned Values

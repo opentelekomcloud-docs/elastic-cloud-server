@@ -10,6 +10,8 @@ Function
 
 This API is used to add one or multiple NICs to an ECS.
 
+This API is an asynchronous API. After the NIC adding request is successfully delivered, a job ID is returned. This does not mean the NIC adding is complete. You need to call the API by referring to :ref:`Querying Task Execution Status <en-us_topic_0022225398>` to query the job status. The SUCCESS status indicates that the NIC adding is successful.
+
 URI
 ---
 
@@ -47,17 +49,23 @@ Request
 
 .. table:: **Table 3** **nics** field description
 
-   +-----------------+-----------------+------------------+------------------------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type             | Description                                                                                                      |
-   +=================+=================+==================+==================================================================================================================+
-   | subnet_id       | Yes             | String           | Specifies the information about the NICs to be added to an ECS.                                                  |
-   |                 |                 |                  |                                                                                                                  |
-   |                 |                 |                  | The value must be the ID of a created network in UUID format.                                                    |
-   +-----------------+-----------------+------------------+------------------------------------------------------------------------------------------------------------------+
-   | security_groups | No              | Array of objects | Specifies the security groups for NICs. For details, see :ref:`Table 4 <en-us_topic_0020212663__table16100147>`. |
-   +-----------------+-----------------+------------------+------------------------------------------------------------------------------------------------------------------+
-   | ip_address      | No              | String           | Specifies the IP address. If this parameter is unavailable, the IP address is automatically assigned.            |
-   +-----------------+-----------------+------------------+------------------------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type             | Description                                                                                                                                 |
+   +=================+=================+==================+=============================================================================================================================================+
+   | subnet_id       | Yes             | String           | Specifies the information about the NICs to be added to an ECS.                                                                             |
+   |                 |                 |                  |                                                                                                                                             |
+   |                 |                 |                  | The value must be the ID of a created network in UUID format.                                                                               |
+   +-----------------+-----------------+------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+   | security_groups | No              | Array of objects | Specifies the security groups for NICs. For details, see :ref:`Table 4 <en-us_topic_0020212663__table16100147>`.                            |
+   +-----------------+-----------------+------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+   | ip_address      | No              | String           | Specifies the IP address. If this parameter is unavailable, the IP address is automatically assigned.                                       |
+   +-----------------+-----------------+------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+   | ipv6_enable     | No              | Boolean          | Indicates whether to support IPv6 addresses.                                                                                                |
+   |                 |                 |                  |                                                                                                                                             |
+   |                 |                 |                  | If this parameter is set to **true**, the NIC supports IPv6 addresses.                                                                      |
+   +-----------------+-----------------+------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
+   | ipv6_bandwidth  | No              | Object           | Specifies the bound shared bandwidth. For details, see :ref:`ipv6_bandwidth Field Description <en-us_topic_0167957246__section2872318176>`. |
+   +-----------------+-----------------+------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0020212663__table16100147:
 
@@ -77,11 +85,11 @@ See :ref:`Responses (Task) <en-us_topic_0022067714>`.
 Example Request
 ---------------
 
+Add the NIC whose ID is **d32019d3-bc6e-4319-9c1d-6722fc136a23** and security group ID is **f0ac4394-7e4a-4409-9701-ba8be283dbc3** to an ECS.
+
 .. code-block:: text
 
    POST https://{endpoint}/v1/{project_id}/cloudservers/{server_id}/nics
-
-.. code-block::
 
    {
        "nics": [
@@ -102,7 +110,7 @@ Example Response
 .. code-block::
 
    {
-       "job_id": "70a599e0-31e7-49b7-b260-868f441e862b"
+       "job_id": "ff80808288d41e1b018990260955686a"
    }
 
 Returned Values

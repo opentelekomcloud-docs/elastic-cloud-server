@@ -64,11 +64,11 @@ None
 Example Request
 ---------------
 
+Delete the ECS whose UUID is **34dac9a0-c4a7-457b-bab2-e2c696e0e401** from the specified ECS group.
+
 .. code-block:: text
 
    POST https://{endpoint}/v1/{project_id}/cloudservers/os-server-groups/{server_group_id}/action
-
-.. code-block::
 
    {
        "remove_member": {
