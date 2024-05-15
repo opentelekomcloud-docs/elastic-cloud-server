@@ -48,30 +48,30 @@ Procedure
          .. code-block::
 
             {
-              "flavors": [
-                {
-                  "name": "c1.2xlarge",
-                  "links": [
+                "flavors": [
                     {
-                      "href": "https://xxx/v2/74610f3a5ad941998e91f076297ecf27/flavors/c1.2xlarge",
-                      "rel": "self"
-                    },
-                    {
-                      "href": "https://xxx/74610f3a5ad941998e91f076297ecf27/flavors/c1.2xlarge",
-                      "rel": "bookmark"
+                        "name": "c3.2xlarge.2",
+                        "links": [
+                            {
+                                "href": "https://compute.region.xxx.com/v2.1/743b4c0428d94531b9f2add666642e6b/flavors/c3.2xlarge.2",
+                                "rel": "self"
+                            },
+                            {
+                                "href": "https://compute.region.xxx.com/743b4c0428d94531b9f2add666642e6b/flavors/c3.2xlarge.2",
+                                "rel": "bookmark"
+                            }
+                        ],
+                        "ram": 16384,
+                        "OS-FLV-DISABLED:disabled": false,
+                        "vcpus": 8,
+                        "swap": "",
+                        "os-flavor-access:is_public": true,
+                        "rxtx_factor": 1,
+                        "OS-FLV-EXT-DATA:ephemeral": 0,
+                        "disk": 0,
+                        "id": "c3.2xlarge.2"
                     }
-                  ],
-                  "ram": 8192,
-                  "OS-FLV-DISABLED:disabled": false,
-                  "vcpus": 8,
-                  "swap": "",
-                  "os-flavor-access:is_public": true,
-                  "rxtx_factor": 1,
-                  "OS-FLV-EXT-DATA:ephemeral": 0,
-                  "disk": 0,
-                  "id": "c1.2xlarge"
-                }
-            ]
+                ]
             }
 
    b. Select a flavor based on site requirements and record the flavor ID.
@@ -294,7 +294,7 @@ Procedure
 
          {
              "server": {
-                 "flavorRef": "c1.large",
+                 "flavorRef": "c3.2xlarge.2",
                  "name": "zttestvm1",
                  "block_device_mapping_v2": [{
                  "source_type": "image",
@@ -417,10 +417,10 @@ Procedure
                "links": [
                  {
                    "rel": "bookmark",
-                   "href": "https://None/74610f3a5ad941998e91f076297ecf27/flavors/c1.large"
+                   "href": "https://None/74610f3a5ad941998e91f076297ecf27/flavors/c3.2xlarge.2"
                  }
                ],
-               "id": "c1.large"
+               "id": "c3.2xlarge.2"
              },
              "security_groups": [
                {
