@@ -69,6 +69,8 @@ Response
 Example Request
 ---------------
 
+Query details about a specified ECS group.
+
 .. code-block:: text
 
    GET https://{endpoint}/v1/{project_id}/cloudservers/os-server-groups/{server_group_id}

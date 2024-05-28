@@ -70,11 +70,11 @@ None
 Example Request
 ---------------
 
+Adds a specified ECS to an ECS group.
+
 .. code-block:: text
 
    POST https://{endpoint}/v1/{project_id}/cloudservers/os-server-groups/{server_group_id}/action
-
-.. code-block::
 
    {
        "add_member": {

@@ -8,7 +8,7 @@ Querying Project Tags
 Function
 --------
 
-Projects are used to group and isolate OpenStack resources, which include computing, storage, and network resources. A project can be a department or a team. Multiple projects can be created under one account.
+Projects are used to group and isolate OpenStack resources, which include computing, storage, and network resources. A project can be a department or a team. Multiple projects can be created for the same account.
 
 This API is used to query all tags used by a user in a specified project.
 
@@ -70,6 +70,8 @@ Response
 
 Example Request
 ---------------
+
+Query all tags used in a specified project.
 
 .. code-block:: text
 

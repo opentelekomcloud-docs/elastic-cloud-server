@@ -99,11 +99,11 @@ Response
 Example Request
 ---------------
 
+Create an ECS group.
+
 .. code-block:: text
 
    POST https://{endpoint}/v1/{project_id}/cloudservers/os-server-groups
-
-.. code-block::
 
    {
        "server_group": {

@@ -98,6 +98,8 @@ Response
 Example Request
 ---------------
 
+Query information about disks attached to an ECS.
+
 .. code-block:: text
 
    GET https://{endpoint}/v1/{project_id}/cloudservers/{server_id}/block_device

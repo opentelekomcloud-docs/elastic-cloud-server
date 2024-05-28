@@ -1,0 +1,118 @@
+:original_name: en-us_topic_0020212677.html
+
+.. _en-us_topic_0020212677:
+
+Querying a Specified SSH Key Pair
+=================================
+
+Function
+--------
+
+This API is used to query a specified SSH key pair based on the SSH key pair name.
+
+URI
+---
+
+GET /v2.1/{project_id}/os-keypairs/{keypair_name}
+
+GET /v2/{project_id}/os-keypairs/{keypair_name}
+
+:ref:`Table 1 <en-us_topic_0020212677__table51931981>` describes the parameters in the URI.
+
+.. _en-us_topic_0020212677__table51931981:
+
+.. table:: **Table 1** Parameter description
+
+   ============ ========= ============================
+   Parameter    Mandatory Description
+   ============ ========= ============================
+   project_id   Yes       Specifies the project ID.
+   keypair_name Yes       Specifies the key pair name.
+   ============ ========= ============================
+
+Request
+-------
+
+None
+
+Response
+--------
+
+:ref:`Table 2 <en-us_topic_0020212677__table49096623>` describes the response parameters.
+
+.. _en-us_topic_0020212677__table49096623:
+
+.. table:: **Table 2** Response parameters
+
+   +-----------+--------+------------------------------------------------------------------------------------------------------+
+   | Parameter | Type   | Description                                                                                          |
+   +===========+========+======================================================================================================+
+   | keypair   | Object | Specifies the SSH key pair. For details, see :ref:`Table 3 <en-us_topic_0020212677__table32323009>`. |
+   +-----------+--------+------------------------------------------------------------------------------------------------------+
+
+.. _en-us_topic_0020212677__table32323009:
+
+.. table:: **Table 3** **keypair** field description
+
+   +-----------------------+-----------------------+---------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                         |
+   +=======================+=======================+=====================================================================+
+   | public_key            | String                | Specifies information about the public key.                         |
+   +-----------------------+-----------------------+---------------------------------------------------------------------+
+   | name                  | String                | Specifies the key pair name.                                        |
+   +-----------------------+-----------------------+---------------------------------------------------------------------+
+   | fingerprint           | String                | Specifies fingerprint information about the key pair.               |
+   +-----------------------+-----------------------+---------------------------------------------------------------------+
+   | created_at            | String                | Specifies the time when the key pair was created.                   |
+   +-----------------------+-----------------------+---------------------------------------------------------------------+
+   | deleted               | Boolean               | Specifies whether a key pair has been deleted.                      |
+   |                       |                       |                                                                     |
+   |                       |                       | -  **true**: indicates that the key has been deleted.               |
+   |                       |                       | -  **false**: indicates that the key is not deleted.                |
+   +-----------------------+-----------------------+---------------------------------------------------------------------+
+   | deleted_at            | String                | Specifies the time when the key pair was deleted.                   |
+   +-----------------------+-----------------------+---------------------------------------------------------------------+
+   | id                    | Integer               | Specifies the key pair ID.                                          |
+   +-----------------------+-----------------------+---------------------------------------------------------------------+
+   | updated_at            | String                | Specifies the time when the key pair was updated.                   |
+   +-----------------------+-----------------------+---------------------------------------------------------------------+
+   | user_id               | String                | Specifies information about the user to which the key pair belongs. |
+   +-----------------------+-----------------------+---------------------------------------------------------------------+
+   | type                  | String                | Specifies the key type, which is **ssh** by default.                |
+   |                       |                       |                                                                     |
+   |                       |                       | This parameter is supported in microversion 2.2 and later.          |
+   +-----------------------+-----------------------+---------------------------------------------------------------------+
+
+Example Request
+---------------
+
+Query details of a specified SSH key pair.
+
+.. code-block:: text
+
+   GET https://{endpoint}/v2/{project_id}/os-keypairs/{keypair_name}
+   GET https://{endpoint}/v2.1/{project_id}/os-keypairs/{keypair_name}
+
+Example Response
+----------------
+
+.. code-block::
+
+   {
+       "keypair": {
+           "created_at": "2014-05-07T12:06:13.681238",
+           "deleted": false,
+           "deleted_at": null,
+           "fingerprint": "9d:00:f4:d7:26:6e:52:**:**:**:**:**:**:**:**:**",
+           "id": 1,
+           "name": "keypair-3582d8b7-e588-4aad-b7f7-f4e76f0e4314",
+           "public_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDYJrTVpcMwFqQy/oMvtUSRofZdSRHEwrsX8AYkRvn2ZnCXM+b6+GZ2NQuuWj+ocznlnwiGFQDsL/yeE+/kurqcPJFKKp60mToXIMyzioFxW88fJtw*************************************************************************************************************************************************************************************************************************** Generated-by-Nova\n",
+           "updated_at": null,
+           "user_id": "fake"
+       }
+   }
+
+Returned Values
+---------------
+
+See :ref:`Returned Values for General Requests <en-us_topic_0022067716>`.

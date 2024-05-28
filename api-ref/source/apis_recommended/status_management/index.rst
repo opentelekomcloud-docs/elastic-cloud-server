@@ -9,7 +9,7 @@ Status Management
 -  :ref:`Changing an ECS OS (Using an Image with Cloud-Init Installed) <en-us_topic_0067876971>`
 -  :ref:`Cold Migrating an ECS <en-us_topic_0132905656>`
 -  :ref:`Modifying the Specifications of an ECS <en-us_topic_0020212653>`
--  :ref:`Adding an ECS to the Monitoring List <en-us_topic_0081529857>`
+-  :ref:`Adding an ECS to the Monitoring List <en-us_topic_0000001635605869>`
 
 .. toctree::
    :maxdepth: 1

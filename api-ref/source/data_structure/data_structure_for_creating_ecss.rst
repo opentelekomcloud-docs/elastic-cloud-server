@@ -12,6 +12,7 @@ Contents
 -  :ref:`security_groups Field Description <en-us_topic_0167957246__section332191084315>`
 -  :ref:`eip Field Description <en-us_topic_0167957246__section1840318312449>`
 -  :ref:`bandwidth Field Description <en-us_topic_0167957246__section172789339448>`
+-  :ref:`ipv6_bandwidth Field Description <en-us_topic_0167957246__section2872318176>`
 -  :ref:`extendparam Field Description for Creating Disks <en-us_topic_0167957246__section1361484104817>`
 -  :ref:`extendparam Field Description for Creating ECSs <en-us_topic_0167957246__section1373711413505>`
 -  :ref:`metadata Field Description for Creating Disks <en-us_topic_0167957246__section1228814491353>`
@@ -116,7 +117,7 @@ This field is used by the following APIs:
    +=================+=================+=================+======================================================================================================================================================+
    | size            | Yes             | Integer         | Specifies the bandwidth size.                                                                                                                        |
    |                 |                 |                 |                                                                                                                                                      |
-   |                 |                 |                 | Specifies the bandwidth (Mbit/s). The value ranges from 1 to 1000.                                                                                   |
+   |                 |                 |                 | Specifies the bandwidth (Mbit/s). The value ranges from 1 to 1,000.                                                                                  |
    |                 |                 |                 |                                                                                                                                                      |
    |                 |                 |                 | The specific range may vary depending on the configuration in each region. You can see the bandwidth range of each region on the management console. |
    +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -130,6 +131,23 @@ This field is used by the following APIs:
    |                 |                 |                 | -  If the field value is others, creating the ECS will fail.                                                                                         |
    +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+.. _en-us_topic_0167957246__section2872318176:
+
+**ipv6_bandwidth** Field Description
+------------------------------------
+
+This field is used by the following APIs:
+
+-  Creating ECSs /v1/{project_id}/cloudservers
+
+.. table:: **Table 5** **ipv6_bandwidth** field description
+
+   ========= ========= ====== ======================================
+   Parameter Mandatory Type   Description
+   ========= ========= ====== ======================================
+   id        No        String Specifies the ID of an IPv6 bandwidth.
+   ========= ========= ====== ======================================
+
 .. _en-us_topic_0167957246__section1361484104817:
 
 **extendparam** Field Description for Creating Disks
@@ -141,7 +159,7 @@ This field is used by the following APIs:
 
 .. _en-us_topic_0167957246__table7562101331712:
 
-.. table:: **Table 5** **extendparam** field description for creating disks
+.. table:: **Table 6** **extendparam** field description for creating disks
 
    +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter       | Mandatory       | Type            | Description                                                                                                                                                                                                                                                                                                       |
@@ -188,7 +206,7 @@ This field is used by the following APIs:
 
 .. _en-us_topic_0167957246__table1137234112314:
 
-.. table:: **Table 6** extendparam field description for creating ECSs (for V1 APIs)
+.. table:: **Table 7** extendparam field description for creating ECSs (for V1 APIs)
 
    +-----------+-----------+--------+-------------------------------------------------------+
    | Parameter | Mandatory | Type   | Description                                           |
@@ -209,7 +227,7 @@ This field is used by the following APIs:
 
    -  When you create an ECS, both **root_volume** and **data_volume** contain the **metadata** field.
 
-.. table:: **Table 7** **metadata** field description for creating disks
+.. table:: **Table 8** **metadata** field description for creating disks
 
    +----------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------+
    | Parameter            | Mandatory       | Type            | Description                                                                                                               |
@@ -236,7 +254,7 @@ This field is used by the following APIs:
 
 .. _en-us_topic_0167957246__table2373623012315:
 
-.. table:: **Table 8** **metadata** reserved field description
+.. table:: **Table 9** **metadata** reserved field description
 
    +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter       | Mandatory       | Type            | Description                                                                                                                                                                                                                 |
@@ -266,56 +284,56 @@ This field is used by the following APIs:
 
 This field is used by the following APIs:
 
--  Creating ECSs /v1/{project_id}/cloudservers
--  Creating ECSs (native API): /v2.1/{project_id}/servers
+-  Creating ECSs: /v1/{project_id}/cloudservers
+-  Creating ECSs (native): /v2.1/{project_id}/servers
 
 .. _en-us_topic_0167957246__table24430409172542:
 
-.. table:: **Table 9** **os:scheduler_hints** field description (request parameters)
+.. table:: **Table 10** **os:scheduler_hints** field description (request parameters)
 
-   +-------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter         | Mandatory       | Type            | Description                                                                                                                              |
-   +===================+=================+=================+==========================================================================================================================================+
-   | group             | No              | String          | Specifies an ECS group ID, which is in UUID format.                                                                                      |
-   |                   |                 |                 |                                                                                                                                          |
-   |                   |                 |                 | Obtain the parameter value from the console or by performing operations provided in :ref:`Querying ECS Groups <en-us_topic_0065817721>`. |
-   |                   |                 |                 |                                                                                                                                          |
-   |                   |                 |                 | .. note::                                                                                                                                |
-   |                   |                 |                 |                                                                                                                                          |
-   |                   |                 |                 |    Ensure that the ECS group uses the anti-affinity policy. You are not advised to use other policies.                                   |
-   +-------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | tenancy           | No              | String          | Creates ECSs on a dedicated or shared host.                                                                                              |
-   |                   |                 |                 |                                                                                                                                          |
-   |                   |                 |                 | The value of this parameter can be **dedicated** or **shared**.                                                                          |
-   +-------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | dedicated_host_id | No              | String          | Specifies the dedicated host ID.                                                                                                         |
-   |                   |                 |                 |                                                                                                                                          |
-   |                   |                 |                 | .. note::                                                                                                                                |
-   |                   |                 |                 |                                                                                                                                          |
-   |                   |                 |                 |    A DeH ID takes effect only when **tenancy** is set to **dedicated**.                                                                  |
-   +-------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------+
+   +-------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------+
+   | Parameter         | Mandatory       | Type            | Description                                                                                                         |
+   +===================+=================+=================+=====================================================================================================================+
+   | group             | No              | String          | Specifies the ECS group ID in UUID format.                                                                          |
+   |                   |                 |                 |                                                                                                                     |
+   |                   |                 |                 | Obtain the parameter value from the console or by referring to :ref:`Querying ECS Groups <en-us_topic_0065817721>`. |
+   |                   |                 |                 |                                                                                                                     |
+   |                   |                 |                 | .. note::                                                                                                           |
+   |                   |                 |                 |                                                                                                                     |
+   |                   |                 |                 |    Ensure that the ECS group uses the anti-affinity policy.                                                         |
+   +-------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------+
+   | tenancy           | No              | String          | Creates ECSs on a dedicated or shared host.                                                                         |
+   |                   |                 |                 |                                                                                                                     |
+   |                   |                 |                 | The value of this parameter can be **dedicated** or **shared**.                                                     |
+   +-------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------+
+   | dedicated_host_id | No              | String          | Specifies the dedicated host ID.                                                                                    |
+   |                   |                 |                 |                                                                                                                     |
+   |                   |                 |                 | .. note::                                                                                                           |
+   |                   |                 |                 |                                                                                                                     |
+   |                   |                 |                 |    A DeH ID takes effect only when **tenancy** is set to **dedicated**.                                             |
+   +-------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0167957246__table3756175217341:
 
-.. table:: **Table 10** **os:scheduler_hints** field description (response parameters)
+.. table:: **Table 11** **os:scheduler_hints** field description (response parameters)
 
-   +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter             | Type                  | Description                                                                                                                              |
-   +=======================+=======================+==========================================================================================================================================+
-   | group                 | Array of strings      | Specifies an ECS group ID, which is in UUID format.                                                                                      |
-   |                       |                       |                                                                                                                                          |
-   |                       |                       | Obtain the parameter value from the console or by performing operations provided in :ref:`Querying ECS Groups <en-us_topic_0065817721>`. |
-   +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | tenancy               | Array of strings      | Creates ECSs on a dedicated or shared host.                                                                                              |
-   |                       |                       |                                                                                                                                          |
-   |                       |                       | The value of this parameter can be **dedicated** or **shared**.                                                                          |
-   +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-   | dedicated_host_id     | Array of strings      | Specifies the dedicated host ID.                                                                                                         |
-   |                       |                       |                                                                                                                                          |
-   |                       |                       | .. note::                                                                                                                                |
-   |                       |                       |                                                                                                                                          |
-   |                       |                       |    A DeH ID takes effect only when **tenancy** is set to **dedicated**.                                                                  |
-   +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                                         |
+   +=======================+=======================+=====================================================================================================================+
+   | group                 | Array of strings      | Specifies the ECS group ID in UUID format.                                                                          |
+   |                       |                       |                                                                                                                     |
+   |                       |                       | Obtain the parameter value from the console or by referring to :ref:`Querying ECS Groups <en-us_topic_0065817721>`. |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------+
+   | tenancy               | Array of strings      | Creates ECSs on a dedicated or shared host.                                                                         |
+   |                       |                       |                                                                                                                     |
+   |                       |                       | The value of this parameter can be **dedicated** or **shared**.                                                     |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------+
+   | dedicated_host_id     | Array of strings      | Specifies the dedicated host ID.                                                                                    |
+   |                       |                       |                                                                                                                     |
+   |                       |                       | .. note::                                                                                                           |
+   |                       |                       |                                                                                                                     |
+   |                       |                       |    A DeH ID takes effect only when **tenancy** is set to **dedicated**.                                             |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0167957246__section681114217434:
 
@@ -328,18 +346,18 @@ This field is used by the following APIs:
 
 .. _en-us_topic_0167957246__table42451440577:
 
-.. table:: **Table 11** **binding:profile** field description
+.. table:: **Table 12** **binding:profile** field description
 
-   +-------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+
-   | Parameter               | Mandatory       | Type            | Description                                                                 |
-   +=========================+=================+=================+=============================================================================+
-   | disable_security_groups | No              | Boolean         | Indicates that a HANA ECS NIC is not added to a security group.             |
-   |                         |                 |                 |                                                                             |
-   |                         |                 |                 | .. note::                                                                   |
-   |                         |                 |                 |                                                                             |
-   |                         |                 |                 |    -  A primary HANA ECS NIC must be added to a security group.             |
-   |                         |                 |                 |    -  At most one HANA ECS NIC is allowed not to add to any security group. |
-   +-------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+
+   +-------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------+
+   | Parameter               | Mandatory       | Type            | Description                                                                         |
+   +=========================+=================+=================+=====================================================================================+
+   | disable_security_groups | No              | Boolean         | Specifies whether the NIC of an ECS is not added to a security group.               |
+   |                         |                 |                 |                                                                                     |
+   |                         |                 |                 | .. note::                                                                           |
+   |                         |                 |                 |                                                                                     |
+   |                         |                 |                 |    -  The primary NIC of the ECS must be added to a security group.                 |
+   |                         |                 |                 |    -  At most one NIC of the ECS is allowed not to be added to any security groups. |
+   +-------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0167957246__section12781010134512:
 
@@ -352,7 +370,7 @@ This field is used by the following APIs:
 
 .. _en-us_topic_0167957246__table93959401279:
 
-.. table:: **Table 12** **extra_dhcp_opts** field description
+.. table:: **Table 13** **extra_dhcp_opts** field description
 
    +-----------+-----------+---------+--------------------------------------------------------+
    | Parameter | Mandatory | Type    | Description                                            |

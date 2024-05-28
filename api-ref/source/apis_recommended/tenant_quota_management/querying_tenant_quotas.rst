@@ -56,7 +56,7 @@ Response
    +=========================+=======================+==================================================================================================+
    | maxTotalInstances       | Integer               | Specifies the maximum number of ECSs you can use.                                                |
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
-   | maxTotalCores           | Integer               | Specifies the maximum number of CPU cores you can use.                                           |
+   | maxTotalCores           | Integer               | Specifies the maximum number of CPU cores that the current tenant can apply for.                 |
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
    | maxTotalRAMSize         | Integer               | Specifies the maximum memory space (MB) you can use.                                             |
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
@@ -104,6 +104,8 @@ Response
 Example Request
 ---------------
 
+Query the quotas of all resources in a project for a tenant.
+
 .. code-block:: text
 
    GET https://{endpoint}/v1/{project_id}/cloudservers/limits
@@ -116,26 +118,26 @@ Example response
 .. code-block::
 
    {
-       "absolute": {
-           "maxServerMeta": 128,
-           "maxPersonality": 5,
-           "maxImageMeta": 128,
-           "maxPersonalitySize": 10240,
-           "maxSecurityGroupRules": 20,
-           "maxTotalKeypairs": -1,
-           "totalRAMUsed": 75776,
-           "totalInstancesUsed": 21,
-           "maxSecurityGroups": 10,
-           "totalFloatingIpsUsed": 0,
-           "maxTotalCores": 20480,
-           "totalSecurityGroupsUsed": 1,
-           "maxTotalFloatingIps": 10,
-           "maxTotalInstances": 2048,
-           "totalCoresUsed": 40,
-           "maxTotalRAMSize": 25165824,
-           "maxServerGroups": 10,
-           "maxServerGroupMembers": 16,
-           "totalServerGroupsUsed": 2
+       "absolute":{
+           "maxServerMeta":128,
+           "maxPersonality":5,
+           "maxImageMeta":128,
+           "maxPersonalitySize":10240,
+           "maxSecurityGroupRules":20,
+           "maxTotalKeypairs":-1,
+           "totalRAMUsed":75776,
+           "totalInstancesUsed":21,
+           "maxSecurityGroups":10,
+           "totalFloatingIpsUsed":0,
+           "maxTotalCores":20480,
+           "totalSecurityGroupsUsed":1,
+           "maxTotalFloatingIps":10,
+           "maxTotalInstances":2048,
+           "totalCoresUsed":40,
+           "maxTotalRAMSize":25165824,
+           "maxServerGroups":10,
+           "maxServerGroupMembers":16,
+           "totalServerGroupsUsed":2
        }
    }
 

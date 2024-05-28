@@ -10,7 +10,9 @@ Function
 
 This API is used to delete ECSs based on a specified ECS ID list.
 
-You can delete a single ECS or multiple ECSs in a batch. A maximum of 1000 ECSs can be deleted in a batch.
+This API is an asynchronous API. After the deletion request is successfully delivered, a job ID is returned. This does not mean the deletion is complete. You need to call the API by referring to :ref:`Querying Task Execution Status <en-us_topic_0022225398>` to query the job status. The SUCCESS status indicates that the deletion is successful.
+
+You can delete a single ECS or multiple ECSs in a batch. A maximum of 1,000 ECSs can be deleted in a batch.
 
 URI
 ---
@@ -81,13 +83,11 @@ See :ref:`Responses (Task) <en-us_topic_0022067714>`.
 Example Request
 ---------------
 
-Example request
+Delete the ECS whose ID is **616fb98f-46ca-475e-917e-2563e5a8cd19**, unbind the EIP, and detach data disks.
 
 .. code-block:: text
 
    POST https://{endpoint}/v1/{project_id}/cloudservers/delete
-
-.. code-block::
 
    {
        "servers": [
@@ -105,7 +105,7 @@ Example Response
 .. code-block::
 
    {
-       "job_id": "70a599e0-31e7-49b7-b260-868f441e862b"
+       "job_id": "ff80808288d415d80189901d8eb81cbb"
    }
 
 Or

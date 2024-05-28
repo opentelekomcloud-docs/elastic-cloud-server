@@ -10,7 +10,7 @@ Function
 
 This API is used to query details about an ECS.
 
-The information can be queried includes the ECS billing mode and the ECS frozen status.
+The information that can be queried includes the ECS billing mode and whether the ECS is frozen.
 
 URI
 ---
@@ -61,7 +61,7 @@ Response
    |                                      |                       |                                                                                                                                                                                                                                                       |
    |                                      |                       | Options:                                                                                                                                                                                                                                              |
    |                                      |                       |                                                                                                                                                                                                                                                       |
-   |                                      |                       | **ACTIVE**, **BUILD**, **ERROR**, **HARD_REBOOT**, **MIGRATING**, **REBOOT**, **REBUILD**, **RESIZE**, **REVERT_RESIZE**, **SHUTOFF**, **VERIFY_RESIZE**, and **DELETED**                                                                             |
+   |                                      |                       | **ACTIVE**, **BUILD**, **ERROR**, **HARD_REBOOT**, **MIGRATING**, **REBOOT**, **REBUILD**, **RESIZE**, **REVERT_RESIZE**, **SHUTOFF**, **VERIFY_RESIZE**, **DELETED**, **SHELVED**, **SHELVED_OFFLOADED**, and **UNKNOWN**                            |
    |                                      |                       |                                                                                                                                                                                                                                                       |
    |                                      |                       | For details, see :ref:`ECS Statuses <en-us_topic_0178420672>`.                                                                                                                                                                                        |
    +--------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -77,8 +77,8 @@ Response
    |                                      |                       |                                                                                                                                                                                                                                                       |
    |                                      |                       | The structure is Map<String, Object>.                                                                                                                                                                                                                 |
    |                                      |                       |                                                                                                                                                                                                                                                       |
-   |                                      |                       | -  The key indicates the VPC subnet ID.                                                                                                                                                                                                               |
-   |                                      |                       | -  The value indicates the network attributes specified in :ref:`Table 1 <en-us_topic_0169494074__en-us_topic_0057972887_table23553967>`.                                                                                                             |
+   |                                      |                       | -  The key indicates the network name, for example, **demo_net**.                                                                                                                                                                                     |
+   |                                      |                       | -  The value indicates the network attribute specified in :ref:`Table 1 <en-us_topic_0169494074__en-us_topic_0057972887_table23553967>`.                                                                                                              |
    +--------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | key_name                             | String                | Specifies the key pair that is used to authenticate an ECS.                                                                                                                                                                                           |
    +--------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -86,7 +86,7 @@ Response
    +--------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | OS-EXT-STS:task_state                | String                | Specifies the ECS task status. This is an extended attribute. For details, see :ref:`ECS Statuses <en-us_topic_0178420672>`.                                                                                                                          |
    +--------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | OS-EXT-STS:vm_state                  | String                | Specifies the ECS task status. This is an extended attribute. For details, see :ref:`ECS Statuses <en-us_topic_0178420672>`.                                                                                                                          |
+   | OS-EXT-STS:vm_state                  | String                | Specifies the ECS status. This is an extended attribute. For details, see :ref:`ECS Statuses <en-us_topic_0178420672>`.                                                                                                                               |
    +--------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | OS-EXT-SRV-ATTR:instance_name        | String                | Specifies the ECS alias. This is an extended attribute.                                                                                                                                                                                               |
    +--------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -155,7 +155,7 @@ Response
    |                                      |                       |                                                                                                                                                                                                                                                       |
    |                                      |                       | For details, see :ref:`Table 5 <en-us_topic_0169494074__en-us_topic_0057972887_table33871262>`.                                                                                                                                                       |
    +--------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | description                          | String                | Describes the ECS.                                                                                                                                                                                                                                    |
+   | description                          | String                | Specifies the ECS description.                                                                                                                                                                                                                        |
    +--------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | host_status                          | String                | Specifies the status of the host accommodating the ECS.                                                                                                                                                                                               |
    |                                      |                       |                                                                                                                                                                                                                                                       |
@@ -163,7 +163,7 @@ Response
    |                                      |                       | -  **UNKNOWN**: The nova-compute status is unknown.                                                                                                                                                                                                   |
    |                                      |                       | -  **DOWN**: the nova-compute status is abnormal.                                                                                                                                                                                                     |
    |                                      |                       | -  **MAINTENANCE**: The nova-compute is in maintenance state.                                                                                                                                                                                         |
-   |                                      |                       | -  **Null**: The ECS does not have host information.                                                                                                                                                                                                  |
+   |                                      |                       | -  Empty string: There is no host information.                                                                                                                                                                                                        |
    +--------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | OS-EXT-SRV-ATTR:hostname             | String                | Specifies the host name of the ECS.                                                                                                                                                                                                                   |
    +--------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -186,7 +186,7 @@ Response
    +--------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | tags                                 | Array of strings      | Specifies ECS tags.                                                                                                                                                                                                                                   |
    +--------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | os:scheduler_hints                   | Object                | Specifies the ECS scheduling information. For details, see :ref:`Table 10 <en-us_topic_0167957246__table3756175217341>`.                                                                                                                              |
+   | os:scheduler_hints                   | Object                | Specifies the ECS scheduling information. For details, see :ref:`Table 11 <en-us_topic_0167957246__table3756175217341>`.                                                                                                                              |
    +--------------------------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | sys_tags                             | Array of objects      | Specifies ECS system tags.                                                                                                                                                                                                                            |
    |                                      |                       |                                                                                                                                                                                                                                                       |
@@ -195,6 +195,8 @@ Response
 
 Example Request
 ---------------
+
+Query details about the the ECS whose ID is **4f4b3dfa-eb70-47cf-a60a-998a53bd598a**.
 
 .. code-block:: text
 
@@ -206,90 +208,98 @@ Example Response
 .. code-block::
 
    {
-       "server": {
-           "id": "4f4b3dfa-eb70-47cf-a60a-998a53bd598a",
-           "name": "ecs-2ecf",
-           "addresses": {
-               "0431c5e5-bc94-4a44-8263-15da2a642435": [{
-                   "version": "4",
-                   "addr": "192.168.1.99",
-                   "OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:df:18:6d",
-                   "OS-EXT-IPS:port_id": "23037c18-027a-44e5-b6b9-f8d8f113fe02",
-                   "OS-EXT-IPS:type": "fixed"
-               }]
+       "server":{
+           "id":"4f4b3dfa-eb70-47cf-a60a-998a53bd598a",
+           "name":"ecs-2ecf",
+           "addresses":{
+               "0431c5e5-bc94-4a44-8263-15da2a642435":[
+                   {
+                       "version":"4",
+                       "addr":"192.168.1.99",
+                       "OS-EXT-IPS-MAC:mac_addr":"fa:16:3e:df:18:6d",
+                       "OS-EXT-IPS:port_id":"23037c18-027a-44e5-b6b9-f8d8f113fe02",
+                       "OS-EXT-IPS:type":"fixed"
+                   }
+               ]
            },
-           "flavor": {
-               "disk": "0",
-               "vcpus": "1",
-               "ram": "1024",
-               "id": "s3.small.1",
-               "name": "s3.small.1"
+           "flavor":{
+               "disk":"0",
+               "vcpus":"1",
+               "ram":"1024",
+               "id":"s3.small.1",
+               "name":"s3.small.1"
            },
-           "accessIPv4": "",
-           "accessIPv6": "",
-           "status": "ACTIVE",
-           "progress": 0,
-           "hostId": "c7145889b2e3202cd295ceddb1742ff8941b827b586861fd0acedf64",
-           "updated": "2018-09-13T07:06:51Z",
-           "created": "2018-09-13T07:03:44Z",
-                   "image": {
-                           "id": "1ce5800a-e487-4c1b-b264-3353a39e2b4b"
-                   },
-           "metadata": {
-               "metering.order_id": "CS1809131459IGC24",
-               "metering.image_id": "c71b64e7-4767-4406-afde-2c7c7ac2242c",
-               "metering.imagetype": "gold",
-               "metering.resourcespeccode": "s3.small.1.linux",
-               "image_name": "HEC_Public_Cloudinit_Oracle_Linux_7.4_64bit_40G",
-               "metering.resourcetype": "1",
-               "metering.product_id": "00301-117024-0--0",
-               "cascaded.instance_extrainfo": "pcibridge:2",
-               "os_bit": "64",
-               "vpc_id": "0431c5e5-bc94-4a44-8263-15da2a642435",
-               "os_type": "Linux",
-               "charging_mode": "1"
+           "accessIPv4":"",
+           "accessIPv6":"",
+           "status":"ACTIVE",
+           "progress":0,
+           "hostId":"c7145889b2e3202cd295ceddb1742ff8941b827b586861fd0acedf64",
+           "updated":"2018-09-13T07:06:51Z",
+           "created":"2018-09-13T07:03:44Z",
+           "image":{
+               "id":"1ce5800a-e487-4c1b-b264-3353a39e2b4b"
            },
-           "tags": [],
-           "description": "",
-           "locked": false,
-           "config_drive": "",
-           "tenant_id": "ff2eb406effc455aba53174463eb9322",
-           "user_id": "0bc5e11f91dd48849bb03b7c8a263b2c",
-           "key_name": "KeyPair-d750",
-           "os-extended-volumes:volumes_attached": [{
-               "device": "/dev/vda",
-               "bootIndex": "0",
-               "id": "80c15cff-2473-4982-a816-d760cad6c42c",
-               "delete_on_termination": "false"
-           }],
-                   "OS-EXT-STS:task_state": null,
-           "OS-EXT-STS:power_state": 1,
-           "OS-EXT-STS:vm_state": "active",
-           "OS-EXT-SRV-ATTR:host": "az21.dc1",
-           "OS-EXT-SRV-ATTR:instance_name": "instance-0015147f",
-           "OS-EXT-SRV-ATTR:hypervisor_hostname": "nova003@74",
-                   "OS-EXT-SRV-ATTR:user_data": null,
-           "OS-DCF:diskConfig": "MANUAL",
-           "OS-EXT-AZ:availability_zone":"az1-dc1", //AZ name
-           "os:scheduler_hints": {
+           "metadata":{
+               "metering.order_id":"CS1809131459IGC24",
+               "metering.image_id":"c71b64e7-4767-4406-afde-2c7c7ac2242c",
+               "metering.imagetype":"gold",
+               "metering.resourcespeccode":"s3.small.1.linux",
+               "image_name":"HEC_Public_Cloudinit_Oracle_Linux_7.4_64bit_40G",
+               "metering.resourcetype":"1",
+               "metering.product_id":"00301-117024-0--0",
+               "cascaded.instance_extrainfo":"pcibridge:2",
+               "os_bit":"64",
+               "vpc_id":"0431c5e5-bc94-4a44-8263-15da2a642435",
+               "os_type":"Linux",
+               "charging_mode":"1"
            },
-           "OS-EXT-SRV-ATTR:root_device_name": "/dev/vda",
-           "OS-EXT-SRV-ATTR:ramdisk_id": "",
-
-           "OS-SRV-USG:launched_at": "2018-09-13T07:04:09.197749",
-           "OS-EXT-SRV-ATTR:kernel_id": "",
-           "OS-EXT-SRV-ATTR:launch_index": 0,
-           "host_status": "UP",
-           "OS-EXT-SRV-ATTR:reservation_id": "r-nrd8b5c4",
-           "OS-EXT-SRV-ATTR:hostname": "ecs-2ecf",
-           "sys_tags": [{
-               "key": "_sys_enterprise_project_id",
-               "value": "0"
-           }],
-           "security_groups": [{
-               "name": "sg-95ec",
-                           "id": "6505b5d1-7837-41eb-8a1c-869d4355baa3"
-           }]
+           "tags":[
+           ],
+           "description":"",
+           "locked":false,
+           "config_drive":"",
+           "tenant_id":"ff2eb406effc455aba53174463eb9322",
+           "user_id":"0bc5e11f91dd48849bb03b7c8a263b2c",
+           "key_name":"KeyPair-d750",
+           "os-extended-volumes:volumes_attached":[
+               {
+                   "device":"/dev/vda",
+                   "bootIndex":"0",
+                   "id":"80c15cff-2473-4982-a816-d760cad6c42c",
+                   "delete_on_termination":"false"
+               }
+           ],
+           "OS-EXT-STS:task_state":null,
+           "OS-EXT-STS:power_state":1,
+           "OS-EXT-STS:vm_state":"active",
+           "OS-EXT-SRV-ATTR:host":"az21.dc1",
+           "OS-EXT-SRV-ATTR:instance_name":"instance-0015147f",
+           "OS-EXT-SRV-ATTR:hypervisor_hostname":"nova003@74",
+           "OS-EXT-SRV-ATTR:user_data":null,
+           "OS-DCF:diskConfig":"MANUAL",
+           "OS-EXT-AZ:availability_zone":"az1-dc1",
+           "os:scheduler_hints":{
+           },
+           "OS-EXT-SRV-ATTR:root_device_name":"/dev/vda",
+           "OS-EXT-SRV-ATTR:ramdisk_id":"",
+           "OS-SRV-USG:launched_at":"2018-09-13T07:04:09.197749",
+           "OS-EXT-SRV-ATTR:kernel_id":"",
+           "OS-EXT-SRV-ATTR:launch_index":0,
+           "host_status":"UP",
+           "OS-EXT-SRV-ATTR:reservation_id":"r-nrd8b5c4",
+           "OS-EXT-SRV-ATTR:hostname":"ecs-2ecf",
+           "sys_tags":[
+               {
+                   "key":"_sys_enterprise_project_id",
+                   "value":"0"
+               }
+           ],
+           "security_groups":[
+               {
+                   "name":"sg-95ec",
+                   "id":"6505b5d1-7837-41eb-8a1c-869d4355baa3"
+               }
+           ]
        }
    }
 

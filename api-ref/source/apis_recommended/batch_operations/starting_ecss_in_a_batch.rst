@@ -8,7 +8,9 @@ Starting ECSs in a Batch
 Function
 --------
 
-This API is used to start ECSs in a batch based on specified ECS IDs. A maximum of 1000 ECSs can be started at a time.
+This API is used to start ECSs in a batch based on specified ECS IDs. A maximum of 1,000 ECSs can be started in one minute.
+
+This API is an asynchronous API. After the batch start request is successfully delivered, a job ID is returned. This does not mean the batch start is complete. You need to call the API by referring to :ref:`Querying Task Execution Status <en-us_topic_0022225398>` to query the job status. The SUCCESS status indicates that the batch start is successful.
 
 URI
 ---
@@ -66,13 +68,11 @@ See :ref:`Responses (Task) <en-us_topic_0022067714>`.
 Example Request
 ---------------
 
-In the request, the parameters to start ECSs must be sent with field **os-start**. For details, see the example request.
+Batch start ECSs whose IDs are **616fb98f-46ca-475e-917e-2563e5a8cd19** and **726fb98f-46ca-475e-917e-2563e5a8cd20** with the request parameter set to **os-start**.
 
 .. code-block:: text
 
    POST https://{endpoint}/v1/{project_id}/cloudservers/action
-
-.. code-block::
 
    {
        "os-start": {
@@ -90,7 +90,11 @@ In the request, the parameters to start ECSs must be sent with field **os-start*
 Example Response
 ----------------
 
-None
+.. code-block::
+
+   {
+       "job_id": "ff808082889bd9690189061140c235fe"
+   }
 
 Returned Values
 ---------------

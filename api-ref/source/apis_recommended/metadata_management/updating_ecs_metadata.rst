@@ -14,6 +14,10 @@ This API is used to update ECS metadata.
 -  If the metadata contains the target field, the field value is automatically updated.
 -  If the field in the metadata is not requested, the field value remains unchanged.
 
+.. note::
+
+   If the metadata contains sensitive data, take appropriate measures to protect the sensitive data, for example, controlling access permissions and encrypting the data.
+
 Constraints
 -----------
 
@@ -68,11 +72,11 @@ Response
 Example Request
 ---------------
 
+Updated the metadata of an ECS to the user-defined metadata key-value pair.
+
 .. code-block:: text
 
    POST https://{endpoint}/v1/{project_id}/cloudservers/{server_id}/metadata
-
-.. code-block::
 
    {
        "metadata": {

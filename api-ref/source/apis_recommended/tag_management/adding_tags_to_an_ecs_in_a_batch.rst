@@ -86,11 +86,11 @@ None
 Example Request
 ---------------
 
+Batch add two pairs of tags to a specified ECS.
+
 .. code-block:: text
 
    POST  https://{endpoint}/v1/{project_id}/cloudservers/{server_id}/tags/action
-
-.. code-block::
 
    {
        "action": "create",
