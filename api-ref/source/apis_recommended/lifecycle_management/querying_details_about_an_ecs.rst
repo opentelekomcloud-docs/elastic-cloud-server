@@ -224,10 +224,10 @@ Example Response
            },
            "flavor":{
                "disk":"0",
-               "vcpus":"1",
+               "vcpus":"2",
                "ram":"1024",
-               "id":"s3.small.1",
-               "name":"s3.small.1"
+               "id":"s3.large.1",
+               "name":"s3.large.1"
            },
            "accessIPv4":"",
            "accessIPv6":"",

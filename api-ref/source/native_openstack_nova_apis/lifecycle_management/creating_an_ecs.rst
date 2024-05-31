@@ -464,7 +464,7 @@ Example Request
 
       {
           "server": {
-              "flavorRef": "2",
+              "flavorRef": "s3.xlarge.2",
               "name": "wjvm48",
               "metadata": {
                   "name": "name_xx1",
@@ -532,7 +532,7 @@ Example Request
 
       {
           "server": {
-              "flavorRef": "2",
+              "flavorRef": "s3.xlarge.2",
               "name": "wjvm48",
               "metadata": {
                   "name": "name_xx1",
@@ -570,7 +570,7 @@ Example Request
 
       {
           "server": {
-              "flavorRef": "2",
+              "flavorRef": "s3.xlarge.2",
               "name": "wjvm48",
               "metadata": {
                   "name": "name_xx1",
@@ -604,7 +604,7 @@ Example Request
               "availability_zone":"az1.dc1",
               "name": "test",
               "imageRef": "10ff4f01-35b6-4209-8397-359cb4475fa0",
-              "flavorRef": "s3.medium",
+              "flavorRef": "s3.xlarge.2",
               "return_reservation_id": "true",
               "networks": [
                   {

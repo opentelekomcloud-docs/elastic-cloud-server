@@ -116,32 +116,32 @@ Example Response
    {
        "flavors": [
            {
-               "id": "c3.medium",
+               "id": "s3.xlarge.1",
                "links": [
                    {
-                       "href": "https://compute.region.xxx.com/v2.1/743b4c0428d94531b9f2add666642e6b/flavors/c3.medium",
+                       "href": "https://compute.region.xxx.com/v2.1/743b4c0428d94531b9f2add666642e6b/flavors/s3.xlarge.1",
                        "rel": "self"
                    },
                    {
-                       "href": "https://compute.region.xxx.com/743b4c0428d94531b9f2add666642e6b/flavors/c3.medium",
+                       "href": "https://compute.region.xxx.com/743b4c0428d94531b9f2add666642e6b/flavors/s3.xlarge.1",
                        "rel": "bookmark"
                    }
                ],
-               "name": "c3.medium"
+               "name": "s3.xlarge.1"
            },
            {
-               "id": "c3.xlarge",
+               "id": "s3.xlarge.2",
                "links": [
                    {
-                       "href": "https://compute.region.xxx.com/v2.1/743b4c0428d94531b9f2add666642e6b/flavors/c3.xlarge",
+                       "href": "https://compute.region.xxx.com/v2.1/743b4c0428d94531b9f2add666642e6b/flavors/s3.xlarge.2",
                        "rel": "self"
                    },
                    {
-                       "href": "https://compute.region.x.com/743b4c0428d94531b9f2add666642e6b/flavors/c3.xlarge",
+                       "href": "https://compute.region.x.com/743b4c0428d94531b9f2add666642e6b/flavors/s3.xlarge.2",
                        "rel": "bookmark"
                    }
                ],
-               "name": "c3.xlarge"
+               "name": "s3.xlarge.2"
            }
        ]
    }
