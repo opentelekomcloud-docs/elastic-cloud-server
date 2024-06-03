@@ -147,10 +147,10 @@ Example Response
                },
                "flavor":{
                    "disk":"0",
-                   "vcpus":"1",
+                   "vcpus":"2",
                    "ram":"1024",
-                   "id":"c1.medium",
-                   "name":"c1.medium"
+                   "id":"c3.large.2",
+                   "name":"c3.large.2"
                },
                "accessIPv4":"",
                "accessIPv6":"",
@@ -163,7 +163,7 @@ Example Response
                "created":"2018-08-13T13:46:09Z",
                "metadata":{
                    "metering.image_id":"af60e0d5-6952-4f3d-b0ed-31bb19d4a692",
-                   "metering.resourcespeccode":"c1.medium.linux",
+                   "metering.resourcespeccode":"c3.large.2.linux",
                    "image_name":"HEC_Public_Cloudinit_CentOS_7.4_64bit",
                    "metering.product_id":"00301-253164-0--0",
                    "os_bit":"64",
@@ -253,10 +253,10 @@ Example Response
                },
                "flavor":{
                    "disk":"0",
-                   "vcpus":"1",
+                   "vcpus":"2",
                    "ram":"1024",
-                   "id":"c1.medium",
-                   "name":"c1.medium"
+                   "id":"c3.large.2",
+                   "name":"c3.large.2"
                },
                "accessIPv4":"",
                "accessIPv6":"",
@@ -270,7 +270,7 @@ Example Response
                "metadata":{
                    "metering.image_id":"af60e0d5-6952-4f3d-b0ed-31bb19d4a692",
                    "metering.imagetype":"gold",
-                   "metering.resourcespeccode":"c1.medium.linux",
+                   "metering.resourcespeccode":"c3.large.2.linux",
                    "image_name":"HEC_Public_Cloudinit_CentOS_7.4_64bit",
                    "metering.resourcetype":"1",
                    "os_bit":"64",
@@ -346,10 +346,10 @@ Example Response
                },
                "flavor":{
                    "disk":"0",
-                   "vcpus":"1",
+                   "vcpus":"2",
                    "ram":"1024",
-                   "id":"c1.medium",
-                   "name":"c1.medium"
+                   "id":"c3.large.2",
+                   "name":"c3.large.2"
                },
                "accessIPv4":"",
                "accessIPv6":"",
@@ -363,7 +363,7 @@ Example Response
                "metadata":{
                    "metering.image_id":"af60e0d5-6952-4f3d-b0ed-31bb19d4a692",
                    "metering.imagetype":"gold",
-                   "metering.resourcespeccode":"c1.medium.linux",
+                   "metering.resourcespeccode":"c3.large.2.linux",
                    "image_name":"HEC_Public_Cloudinit_CentOS_7.4_64bit",
                    "metering.resourcetype":"1",
                    "os_bit":"64",
@@ -441,10 +441,10 @@ Example Response
                },
                "flavor":{
                    "disk":"0",
-                   "vcpus":"1",
+                   "vcpus":"2",
                    "ram":"1024",
-                   "id":"c1.medium",
-                   "name":"c1.medium"
+                   "id":"c3.large.2",
+                   "name":"c3.large.2"
                },
                "accessIPv4":"",
                "accessIPv6":"",
@@ -460,7 +460,7 @@ Example Response
                    "sadfasfasf":"sdffffd",
                    "metering.order_id":"CS180813193577ORO",
                    "metering.imagetype":"gold",
-                   "metering.resourcespeccode":"c1.medium.win",
+                   "metering.resourcespeccode":"c3.large.2.win",
                    "metering.image_id":"65cb40e6-f67e-4bef-a1e7-808166a5999d",
                    "image_name":"HEC_Public_Windows2008R2_Ent_64bit40G_English",
                    "aaaaaa":"0",

@@ -245,10 +245,10 @@ Example Response
                "links": [
                    {
                        "rel": "bookmark",
-                       "href": "https://xxx/7459f9935ed2422eb9800fea1d4d9378/flavors/normal1"
+                       "href": "https://xxx/7459f9935ed2422eb9800fea1d4d9378/flavors/s3.xlarge.1"
                    }
                ],
-               "id": "normal1"
+               "id": "s3.xlarge.1"
            },
            "OS-DCF:diskConfig": "MANUAL",
            "user_id": "ed2965d80d394be0b41e56f50ac650ca",

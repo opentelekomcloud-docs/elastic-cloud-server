@@ -454,10 +454,10 @@ Example Response
                },
                "created": "2012-09-07T16:56:37Z",
                "flavor": {
-                   "id": "1",
+                   "id": "s3.xlarge.2",
                    "links": [
                        {
-                           "href": "http://openstack.example.com/openstack/flavors/1",
+                           "href": "http://openstack.example.com/openstack/flavors/s3.xlarge.2",
                            "rel": "bookmark"
                        }
                    ]
