@@ -32,7 +32,7 @@ Modify the remote desktop connection settings on the Windows ECS:
 
 #. Click **Start** in the lower left corner, right-click **Computer**, and choose **Properties** from the shortcut menu.
 
-#. In the navigation pane on the left, choose **Remote settings**.
+#. In the left navigation pane, choose **Remote settings**.
 
 #. Click the **Remote** tab. In the **Remote Desktop** pane, select **Allow connections from computers running any version of Remote Desktop (less secure)**.
 

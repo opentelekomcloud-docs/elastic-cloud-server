@@ -47,8 +47,8 @@ Specifications
    | i3.16xlarge.8 | 64    | 512    | 40/32                  | 1,000    | 32              | 8         | 8 x 3,200 GiB NVMe | KVM            |
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------------------+----------------+
 
-Features
---------
+Local Disk Performance
+----------------------
 
 :ref:`Table 2 <en-us_topic_0094118976__table1875314018355>` and :ref:`Table 3 <en-us_topic_0094118976__table9670341181017>` list the IOPS performance of local disks and specifications of a single local disk attached to an I3 ECS.
 
@@ -156,7 +156,7 @@ Notes
    -  Both EVS disks and local disks can be used as data disks of an ultra-high I/O ECS.
    -  An ultra-high I/O ECS can have a maximum of 60 attached disks (including VBD, SCSI, and local disks). An ECS can have a maximum of 60 attached disks, including the system disk. For details about constraints, see :ref:`Can I Attach Multiple Disks to an ECS? <en-us_topic_0018073215>`
 
--  Modify the **fstab** file to set automatic disk mounting at ECS start. For details, see :ref:`Configuring Automatic Mounting at System Start <en-us_topic_0085634798__en-us_topic_0084935709_section15839912195453>`.
+-  Modify the **fstab** file to set automatic disk mounting at ECS start. For details, see :ref:`Configuring Automatic Mounting at System Start <en-us_topic_0085634798__en-us_topic_0000001809029272_en-us_topic_0000001808490156_section15839912195453>`.
 
 -  The local disk data of an ultra-high I/O ECS if an exception occurs, such as physical server breakdown or local disk damage. If your application does not use the data reliability architecture, it is a good practice to use EVS disks to build your ECS.
 

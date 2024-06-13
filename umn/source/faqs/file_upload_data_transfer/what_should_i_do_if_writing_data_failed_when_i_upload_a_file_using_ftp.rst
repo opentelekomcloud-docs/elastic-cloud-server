@@ -18,12 +18,12 @@ The operations described in this section apply to FTP on Windows ECSs only.
 Possible Causes
 ---------------
 
-When NAT is enabled on the FTP server, the FTP client must connect to the FTP server in passive mode. In such a case, the public IP address (EIP) of the server cannot be accessed from the router. Therefore, you need to add the EIP to the public IP address list on the server. Additionally, set the port range to limit the number of ports with data forwarded by the router.
+When NAT is enabled on the FTP server, the FTP client must connect to the FTP server in passive mode. In such a case, the public IP address (EIP) of the server cannot be accessed from the router. You need to add the EIP to the public IP address list on the server. Additionally, set the port range to limit the number of ports with data forwarded by the router.
 
 Solution
 --------
 
-The public IP address must be associated with the private IP address using NAT. Therefore, the server must be configured accordingly.
+The EIP must be associated with the private IP address using NAT, so the server must be configured accordingly.
 
 #. Configure the public IP address of the server.
 
@@ -35,7 +35,7 @@ The public IP address must be associated with the private IP address using NAT. 
 
       **Figure 1** Setting the public IP address
 
-#. Choose **Passive mode settings**, set the port range (for example, 50000-50100) for transmitting data, and enter the target public IP address.
+#. Choose **Passive mode settings**, set the port range (for example, 50000-50100) for transmitting data, and enter the target EIP.
 
 
    .. figure:: /_static/images/en-us_image_0182087025.png

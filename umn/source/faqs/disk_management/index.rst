@@ -10,7 +10,6 @@ Disk Management
 -  :ref:`How Can I Obtain the Mapping Between Disk Partitions and Disk Devices on a Windows ECS? <en-us_topic_0087680813>`
 -  :ref:`How Can I Obtain the Mapping Between Disk Partitions and Disk Devices on a Linux ECS? <en-us_topic_0087901488>`
 -  :ref:`How Can I Enable Virtual Memory on a Windows ECS? <en-us_topic_0120795802>`
--  :ref:`Why Is the Memory of an ECS Obtained by Running the free Command Inconsistent with the Actual Memory? <en-us_topic_0093153741>`
 -  :ref:`How Can I Add the Empty Partition of an Expanded System Disk to the End Root Partition Online? <en-us_topic_0078300749>`
 -  :ref:`How Can I Add the Empty Partition of an Expanded System Disk to the Non-end Root Partition Online? <en-us_topic_0078300750>`
 -  :ref:`Can I Attach Multiple Disks to an ECS? <en-us_topic_0018073215>`
@@ -35,7 +34,6 @@ Disk Management
    how_can_i_obtain_the_mapping_between_disk_partitions_and_disk_devices_on_a_windows_ecs
    how_can_i_obtain_the_mapping_between_disk_partitions_and_disk_devices_on_a_linux_ecs
    how_can_i_enable_virtual_memory_on_a_windows_ecs
-   why_is_the_memory_of_an_ecs_obtained_by_running_the_free_command_inconsistent_with_the_actual_memory
    how_can_i_add_the_empty_partition_of_an_expanded_system_disk_to_the_end_root_partition_online
    how_can_i_add_the_empty_partition_of_an_expanded_system_disk_to_the_non-end_root_partition_online
    can_i_attach_multiple_disks_to_an_ecs

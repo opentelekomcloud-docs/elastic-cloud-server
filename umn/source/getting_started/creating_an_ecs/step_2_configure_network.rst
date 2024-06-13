@@ -33,7 +33,7 @@ Network Configurations
 
    -  **MTU Settings**: This parameter is optional.
 
-      If your ECS is of M2 or large-memory type, you can click **MTU Settings** to configure the maximum transmission unit (MTU) for a to-be-added extension NIC for improving network performance. An MTU can only be a number, ranging from 1280 to 8888.
+      If your ECS is of large-memory type, you can click **MTU Settings** to configure the maximum transmission unit (MTU) for a to-be-added extension NIC for improving network performance. An MTU can only be a number, ranging from 1280 to 8888.
 
 #. Set **Security Group** by selecting an available security group from the drop-down list or creating a new one.
 

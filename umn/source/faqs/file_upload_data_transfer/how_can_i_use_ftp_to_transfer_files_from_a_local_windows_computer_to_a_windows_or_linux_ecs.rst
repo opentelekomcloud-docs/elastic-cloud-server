@@ -23,7 +23,7 @@ Procedure
 
 #. On the local Windows computer, open FileZilla, enter the information about the target ECS, and click **Quickconnect**.
 
-   -  **Host**: EIP bound to the ECS
+   -  **Host**: EIP bound to an ECS
    -  **Username**: username set when the FTP site was set up
    -  **Password**: password of the username
    -  **Port**: FTP access port, which is port 21 by default

@@ -22,7 +22,7 @@ Constraints
 
 -  Ensure that IPv6 has been enabled on the subnet where the ECS works.
 
-   For details about how to enable IPv6 on a subnet, see :ref:`Enabling IPv6 on the Subnet Where the ECS Works <en-us_topic_0140963099__en-us_topic_0129883696_section1967161905116>`.
+   If IPv6 is not enabled on the subnet, enable it by referring to :ref:`Enabling IPv6 for an ECS <en-us_topic_0140963099__en-us_topic_0129883696_section1967161905116>`. IPv6 cannot be disabled once it is enabled.
 
 -  Ensure that the ECS flavor supports IPv6. Currently, S3, C4, and M4 ECSs support IPv6.
 
@@ -55,8 +55,12 @@ Procedure
 
 .. _en-us_topic_0140963099__en-us_topic_0129883696_section1967161905116:
 
-Enabling IPv6 on the Subnet Where the ECS Works
------------------------------------------------
+Enabling IPv6 for an ECS
+------------------------
+
+.. note::
+
+   After IPv6 is enabled on the subnet where the ECS works, an IPv6 CIDR block is automatically assigned to the subnet. IPv6 cannot be disabled once it is enabled.
 
 #. Log in to the management console.
 

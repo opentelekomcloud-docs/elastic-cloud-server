@@ -39,7 +39,7 @@ Obtaining the Disk ID of an ECS on the Console
 
          If you use a serial number (recommended) to obtain the disk name, see :ref:`Using a Serial Number to Obtain the Disk Name (Windows) <en-us_topic_0103285575__section1549713815243>` and :ref:`Using a Serial Number to Obtain a Disk Device Name (Linux) <en-us_topic_0103285575__section1251215393317>`.
 
-         If you use a BDF to obtain the disk device name, see :ref:`Using a VBD to Obtain a Disk Device Name (Linux) <en-us_topic_0103285575__section8901134753319>`. (BDF cannot be used to obtain the disk name of Windows ECSs.)
+         If you use a BDF to obtain the disk device name, see :ref:`Using a BDF to Obtain a Disk Device Name (Linux) <en-us_topic_0103285575__section8901134753319>`. (BDF cannot be used to obtain the disk name of Windows ECSs.)
 
       -  If **Device Type** is **SCSI**, use a WWN to obtain the disk name. For details, see :ref:`Using a WWN to Obtain the Disk Name (Windows) <en-us_topic_0103285575__section49041319248>` and :ref:`Using a WWN to Obtain a Disk Device Name (Linux) <en-us_topic_0103285575__section436018073419>`.
 
@@ -162,7 +162,7 @@ The following information is displayed:
 
 .. _en-us_topic_0103285575__section8901134753319:
 
-Using a VBD to Obtain a Disk Device Name (Linux)
+Using a BDF to Obtain a Disk Device Name (Linux)
 ------------------------------------------------
 
 #. Run the following command to use a BDF to obtain the device name:
@@ -216,7 +216,7 @@ Using a WWN to Obtain the Disk Name (Windows)
 Using a WWN to Obtain a Disk Device Name (Linux)
 ------------------------------------------------
 
-#. Log in as user root.
+#. Log in to the ECS as user **root**.
 
 #. Run the following command to view the disk device name:
 

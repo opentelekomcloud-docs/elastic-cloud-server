@@ -93,13 +93,13 @@ To install the passthrough NICE driver, do as follows:
 
       In this example, the passthrough NIC driver is stored in the **/home** directory. Run the **cd** */home* command to switch to the target directory.
 
-   d. Run the following command to decompress the software package. (In this procedure, ixgbevf version 2.16.4 is used as an example.)
+   d. Run the following command to decompress the software package.
 
-      **tar -zxvf ixgbevf-2.16.4.tar.gz**
+      **tar -zxvf** *ixgbevf-2.16.4*\ **.tar.gz**
 
    e. Run the following command to switch to the generated **src** directory:
 
-      **cd ixgbevf-2.16.4/src**
+      **cd** *ixgbevf-2.16.4*\ **/src**
 
    f. Run the following commands to install the driver:
 
@@ -113,9 +113,9 @@ To install the passthrough NICE driver, do as follows:
 
    h. Switch to user **root** on the ECS CLI and open the **src** directory, for example, by running the **cd** */home/ixgbevf-2.16.4/src* command. Then, run the following commands to check whether the driver has been installed:
 
-      **rmmod ixgbevf**
+      **rmmod** *ixgbevf*
 
-      **insmod ./ixgbevf.ko**
+      **insmod ./**\ *ixgbevf*\ **.ko**
 
       **ethtool -i** *NIC_name*
 

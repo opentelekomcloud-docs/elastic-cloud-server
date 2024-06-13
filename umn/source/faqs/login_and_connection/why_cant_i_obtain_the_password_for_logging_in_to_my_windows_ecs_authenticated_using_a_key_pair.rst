@@ -28,7 +28,7 @@ If logging in to an ECS with Cloudbase-Init enabled failed, perform the followin
 
    -  If Cloudbase-Init has not been configured, your ECS will not allow customized configurations, and you can log in to it only by using the original image password.
 
-   -  The ECSs created using a public image have Cloudbase-Init installed by default. Therefore, you do not need to install and configure Cloudbase-Init anymore.
+   -  The ECSs created using a public image have Cloudbase-Init installed by default. You do not need to install and configure Cloudbase-Init anymore.
 
    -  If you created your ECS by using an external image file, install and configure Cloudbase-Init.
 

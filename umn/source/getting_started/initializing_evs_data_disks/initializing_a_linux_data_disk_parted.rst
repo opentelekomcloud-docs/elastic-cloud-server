@@ -95,7 +95,7 @@ The following example shows you how a new partition can be created on a new data
 
    .. important::
 
-      The maximum disk size supported by MBR is 2 TiB, and that supported by GPT is 18 EiB. Because an EVS data disk currently supports up to 32 TiB, use GPT if your disk size is larger than 2 TiB.
+      The maximum disk size supported by MBR is 2 TiB, and that supported by GPT is 18 EiB. Because an EVS data disk currently supports up to 32 TiB, use GPT if your disk size is greater than 2 TiB.
 
       If the partition style is changed after the disk has been used, all data on the disk will be lost, so take care to select an appropriate partition style when initializing the disk. If you must change the partition style to GPT after a disk has been used, it is recommended that you back up the disk data before the change.
 
@@ -267,20 +267,20 @@ The following example shows you how a new partition can be created on a new data
 
    .. note::
 
-      After the server is restarted, the disk will not be automatically mounted. To configure automount at startup, you will need to modify the **/etc/fstab** file. For details, see :ref:`Configuring Automatic Mounting at System Start <en-us_topic_0085634798__en-us_topic_0084935709_section15839912195453>`.
+      After the server is restarted, the disk will not be automatically mounted. You can modify the **/etc/fstab** file to configure automount at startup. For details, see :ref:`Configuring Automatic Mounting at System Start <en-us_topic_0085634798__en-us_topic_0000001809029272_en-us_topic_0000001808490156_section15839912195453>`.
 
-.. _en-us_topic_0085634798__en-us_topic_0084935709_section15839912195453:
+.. _en-us_topic_0085634798__en-us_topic_0000001809029272_en-us_topic_0000001808490156_section15839912195453:
 
 Configuring Automatic Mounting at System Start
 ----------------------------------------------
 
-The **fstab** file controls what disks are automatically mounted at startup. You can use **fstab** to configure your data disks to mount automatically. This operation will not affect the existing data.
+The **fstab** file controls what disks are automatically mounted at server startup. You can configure the **fstab** file of a server that has data. This operation will not affect the existing data.
 
-The example here uses UUIDs to identify disks in the **fstab** file. You are advised not to use device names to identify disks in the file because device names are assigned dynamically and may change (for example, from /dev/vdb1 to /dev/vdb2) after a reboot. This can even prevent your disk from booting up.
+The following example uses UUIDs to identify disks in the **fstab** file. You are advised not to use device names (like **/dev/vdb1**) to identify disks in the file because device names are assigned dynamically and may change (for example, from **/dev/vdb1** to **/dev/vdb2**) after a server stop or start. This can even prevent your server from booting up.
 
 .. note::
 
-   UUID is the unique character string for disk partitions in a Linux system.
+   UUIDs are the unique character strings for identifying partitions in Linux.
 
 #. Query the partition UUID.
 

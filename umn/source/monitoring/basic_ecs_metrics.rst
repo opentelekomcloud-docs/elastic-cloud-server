@@ -19,7 +19,7 @@ SYS.ECS
 Basic ECS Metrics
 -----------------
 
-Basic ECS metrics vary depending on ECS OSs and types. For details, see\ :ref:`Table 1 <en-us_topic_0030911465__table1474714113454>`. Y indicates that the metric is supported, and x indicates that the metric is not supported.
+Basic ECS metrics vary depending on ECS OSs and types. For details, see :ref:`Table 1 <en-us_topic_0030911465__table1474714113454>`.
 
 .. note::
 

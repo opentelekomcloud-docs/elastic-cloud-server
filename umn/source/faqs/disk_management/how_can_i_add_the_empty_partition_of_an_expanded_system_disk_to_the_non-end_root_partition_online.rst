@@ -35,7 +35,7 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
 
    The first is the root partition, and the second is the swap partition.
 
-#. View and edit the fstab partition table to delete the swap partition attaching information.
+#. View and edit the fstab partition table to delete the swap partition attachment information.
 
    a. Run the following command to view the fstab partition table:
 
@@ -48,7 +48,7 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 100 GB
          UUID=7c4fce5d-f8f7-4ed6-8463-f2bd22d0ddea /                       ext4    defaults        1 1
          UUID=5de3cf2c-30c6-4fb2-9e63-830439d4e674 swap                    swap    defaults        0 0
 
-   b. Run the following command to edit the fstab partition table and delete the swap partition attaching information.
+   b. Run the following command to edit the fstab partition table and delete the swap partition attachment information.
 
       **vi /etc/fstab**
 
