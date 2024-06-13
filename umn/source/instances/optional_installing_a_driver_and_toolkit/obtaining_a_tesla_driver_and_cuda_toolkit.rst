@@ -25,8 +25,6 @@ Downloading a Tesla Driver
    P3       Tesla  A              A100
    P2s      Tesla  V              V100
    P2v      Tesla  V              V100
-   P2       Tesla  V              V100
-   P1       Tesla  P              P100
    Pi2      Tesla  T              T4
    G7       Tesla  A              A40
    G6       Tesla  T              T4

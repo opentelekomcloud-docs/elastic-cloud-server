@@ -42,7 +42,7 @@ NIC multi-queue can be enabled on an ECS only when the ECS specifications, virtu
 
       -  It is a good practice to upgrade the kernel version of the Linux ECS to 2.6.35 or later. Otherwise, NIC multi-queue is not supported.
 
-         Run the **uname -r** command to obtain the kernel version. If the kernel version is earlier than 2.6.35, contact customer service to upgrade the kernel.
+         Run the **uname -r** command to obtain the kernel version. If the kernel version is earlier than 2.6.35, contact technical support to upgrade the kernel.
 
 .. table:: **Table 1** Support of NIC multi-queue for Linux ECSs
 
