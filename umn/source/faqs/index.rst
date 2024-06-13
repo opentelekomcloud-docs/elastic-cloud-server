@@ -9,6 +9,7 @@ FAQs
 -  :ref:`Regions and AZs <en-us_topic_0018196896>`
 -  :ref:`Creation and Deletion <en-us_topic_0018073208>`
 -  :ref:`Login and Connection <en-us_topic_0030930807>`
+-  :ref:`Usage Errors <en-us_topic_0208808107>`
 -  :ref:`ECS Management <en-us_topic_0208808104>`
 -  :ref:`OS Management <en-us_topic_0018124788>`
 -  :ref:`File Upload/Data Transfer <en-us_topic_0170135967>`
@@ -28,6 +29,7 @@ FAQs
    regions_and_azs/index
    creation_and_deletion/index
    login_and_connection/index
+   usage_errors/index
    ecs_management/index
    os_management/index
    file_upload_data_transfer/index

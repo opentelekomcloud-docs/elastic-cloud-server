@@ -14,7 +14,7 @@ Prerequisites
 -------------
 
 -  The remote access tool supported by Mac has been installed on the local Mac. This section uses Microsoft Remote Desktop for Mac as an example. `Download Microsoft Remote Desktop for Mac <https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-mac>`__.
--  The target ECS has had an EIP bound.
+-  The target Windows ECS has had an EIP bound.
 -  When you log in to the ECS for the first time, ensure that RDP has been enabled on it. To do so, use VNC to log in to the ECS, enable RDP, and access the ECS using MSTSC.
 
    .. note::
@@ -42,7 +42,7 @@ Procedure
 
       The **Add a User Account** dialog box is displayed.
 
-      a. Enter username **administrator** and password for logging in to the Windows ECS and click **Add**.
+      a. Enter the username **administrator** and password for logging in to the Windows ECS and click **Add**.
 
 
          .. figure:: /_static/images/en-us_image_0295099238.png

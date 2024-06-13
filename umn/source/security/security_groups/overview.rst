@@ -23,8 +23,7 @@ After a security group is created, you can add rules to the security group. A ru
 
 Each security group has default rules. For details, see :ref:`Default Security Group and Rules <en-us_topic_0140323154>`. You can also customize security group rules. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.
 
-Security Group Constraints
---------------------------
+Notes and Constraints
+---------------------
 
--  By default, you can create a maximum of 100 security groups in your cloud account.
 -  By default, you can add up to 50 security group rules to a security group.

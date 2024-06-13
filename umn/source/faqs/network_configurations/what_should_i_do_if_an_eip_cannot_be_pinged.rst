@@ -2,13 +2,13 @@
 
 .. _en-us_topic_0105130172:
 
-Why Can't an EIP Be Pinged?
-===========================
+What Should I Do If an EIP Cannot Be Pinged?
+============================================
 
 Symptom
 -------
 
-After you purchase an EIP and bind it to an ECS, the EIP cannot be pinged on a local server or other cloud servers.
+After you purchase an EIP and bind it to an ECS, the local host or other cloud servers cannot ping the EIP of the ECS.
 
 Fault Locating
 --------------
