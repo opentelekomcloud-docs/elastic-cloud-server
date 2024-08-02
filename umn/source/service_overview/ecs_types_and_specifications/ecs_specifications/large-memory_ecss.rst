@@ -117,4 +117,4 @@ Notes
 
 -  An ECS can have a maximum of 60 attached disks, including the system disk. For details about constraints, see :ref:`Can I Attach Multiple Disks to an ECS? <en-us_topic_0018073215>`
 
-   For example, an E3 ECS can have one system disk and 59 EVS disks.
+   For example, an E3 ECS can have one system disk and 59 data disks.

@@ -16,7 +16,7 @@ Constraints
 -  The ECS must be stopped.
 -  If a virtual IP address or DNAT rule has been configured for the NIC, cancel the configuration before modifying the private IP address.
 -  If the NIC has an IPv6 address, its private IP address (IPv4 or IPv6 address) cannot be modified.
--  Before changing the private IP address of an ELB backend server, delete the backend server group.
+-  To change the private IP address for a backend server of a load balancer, remove the backend server from the backend server group first.
 
 Procedure
 ---------

@@ -15,10 +15,15 @@ The method for configuring atop varies with the OS version.
 atop
 
 -  :ref:`Introduction to atop <en-us_topic_0000001143214829__en-us_topic_0178319250_section0959133015350>`
--  :ref:`Configuring atop for CentOS 8 or RHEL 8 <en-us_topic_0000001143214829__en-us_topic_0178319250_section18897192721320>`
--  :ref:`Configuring atop for CentOS 7, RHEL 7, or EulerOS <en-us_topic_0000001143214829__en-us_topic_0178319250_section1972319582310>`
+-  :ref:`Preparing for atop Installation <en-us_topic_0000001143214829__en-us_topic_0178319250_section1829163315414>`
+-  :ref:`Configuring atop for CentOS 7/8, AlmaLinux, and Rocky Linux <en-us_topic_0000001143214829__en-us_topic_0178319250_section18897192721320>`
+-  :ref:`Configuring atop for CentOS 6 <en-us_topic_0000001143214829__en-us_topic_0178319250_section1972319582310>`
+-  :ref:`Configuring atop for Ubuntu 20/22 and Debian 10/11 <en-us_topic_0000001143214829__en-us_topic_0178319250_section773995710317>`
+-  :ref:`Configuring atop for Ubuntu 18 and Debian 8/9 <en-us_topic_0000001143214829__en-us_topic_0178319250_section76781058158>`
+-  :ref:`Configuring atop for Ubuntu 16 <en-us_topic_0000001143214829__en-us_topic_0178319250_section1919095512712>`
 -  :ref:`Configuring atop for SUSE 12 or SUSE 15 <en-us_topic_0000001143214829__en-us_topic_0178319250_section3205824181917>`
--  :ref:`Configuring atop Using Its Source Package for SUSE, Fedora, Debian or Ubuntu <en-us_topic_0000001143214829__en-us_topic_0178319250_section012793312620>`
+-  :ref:`Installing atop by Compiling the Source Code (for CentOS Stream 9, openEuler or EulerOS) <en-us_topic_0000001143214829__en-us_topic_0178319250_section012793312620>`
+-  :ref:`Analyzing atop Logs <en-us_topic_0000001143214829__en-us_topic_0178319250_section478115314146>`
 
 kdump
 
@@ -34,22 +39,26 @@ Introduction to atop
 
 atop is a monitor for Linux that can report the activity of all processes and resource consumption by all processes at regular intervals. It shows system-level activity related to the CPU, memory, disks, and network layers for every process. It also logs system and process activities daily and saves the logs in disks for long-term analysis.
 
+.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section1829163315414:
+
+Preparing for atop Installation
+-------------------------------
+
+-  Ensure that the target ECS already has an EIP bound.
+-  Ensure that the target ECS can access YUM.
+
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section18897192721320:
 
-Configuring atop for CentOS 8 or RHEL 8
----------------------------------------
+Configuring atop for CentOS 7/8, AlmaLinux, and Rocky Linux
+-----------------------------------------------------------
 
-#. Run the following command to download the atop package:
+#. Run the following command to install atop:
 
-   **# wget https://www.atoptool.nl/download/atop-2.6.0-1.el8.x86_64.rpm**
-
-#. Run the following command to install the package:
-
-   **# rpm -ivh atop-2.6.0-1.el8.x86_64.rpm**
+   **yum install -y atop**
 
 #. Run the following command to modify the configuration file of atop:
 
-   **# vi /etc/default/atop**
+   **vi /etc/sysconfig/atop**
 
    Modify the following parameters, save the modification, and exit:
 
@@ -62,89 +71,178 @@ Configuring atop for CentOS 8 or RHEL 8
          LOGINTERVAL=15
          LOGGENERATIONS=3
 
-4. Run the following command to restart atop:
+3. Run the following command to start atop:
 
-   **# systemctl restart atop**
+   **systemctl start atop**
 
-5. Run the following command to check the status of atop. If **active (running)** is displayed in the output, atop is running properly.
+4. Run the following command to check the status of atop. If **active (running)** is displayed in the output, atop is running properly.
 
-   **# systemctl status atop**
+   **systemctl status atop**
 
    .. code-block::
 
       atop.service - Atop advanced performance monitor
-      Loaded: loaded (/usr/lib/systemd/system/atop.service; enabled; vendor preset: disabled)
-      Active: active (running) since Sat 2021-06-19 14:46:10 CST; 8s ago
-      Docs: man:atop(1)
-      Process: 6391 ExecStartPost=/usr/bin/find ${LOGPATH} -name atop_* -mtime +${LOGGENERATIONS} -exec rm -v {} ; (code=exited, status=0/SUCCESS)
-      Process: 6388 ExecStartPre=/bin/sh -c test -n "$LOGGENERATIONS" -a "$LOGGENERATIONS" -eq "$LOGGENERATIONS" (code=exited, status=0/SUCCESS)
-      Process: 6387 ExecStartPre=/bin/sh -c test -n "$LOGINTERVAL" -a "$LOGINTERVAL" -eq "$LOGINTERVAL" (code=exited, status=0/SUCCESS)
-      Main PID: 6390 (atop)
-      Tasks: 1 (limit: 23716)
-      Memory: 4.1M
-      CGroup: /system.slice/atop.service
-               └─6390 /usr/bin/atop -w /var/log/atop/atop_20210619 15
-
-      Jun 19 14:46:10 ecs-centos8 systemd[1]: atop.service: Succeeded.
-      Jun 19 14:46:10 ecs-centos8 systemd[1]: Stopped Atop advanced performance monitor.
-      Jun 19 14:46:10 ecs-centos8 systemd[1]: Starting Atop advanced performance monitor...
-      Jun 19 14:46:10 ecs-centos8 systemd[1]: Started Atop advanced performance monitor.
+       Loaded: loaded (/usr/lib/systemd/system/atop.service; enabled; vendor preset: disabled)
+       Active: active (running) since Sat 2024-03-6 11:49:47 CST; 2h 27min ago
 
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section1972319582310:
 
-Configuring atop for CentOS 7, RHEL 7, or EulerOS
--------------------------------------------------
-
-#. Run the following command to download the atop package:
-
-   **# wget https://www.atoptool.nl/download/atop-2.6.0-1.el7.x86_64.rpm**
-
-   Upload the **atop-2.6.0-1.el7.x86_64.rpm** package to the target ECS.
+Configuring atop for CentOS 6
+-----------------------------
 
 #. Run the following command to install atop:
 
-   **# rpm -ivh atop-2.6.0-1.el7.x86_64.rpm --nodeps**
+   **yum install -y atop**
 
 #. Run the following command to modify the configuration file of atop:
 
-   **# vi /etc/default/atop**
+   **vi /etc/sysconfig/atop**
 
    Modify the following parameters, save the modification, and exit:
 
-   -  Change the value of **LOGINTERVAL** to, for example, **15**. The default value of **LOGINTERVAL** is **600**, in seconds.
-   -  Change the value of **LOGGENERATIONS** to, for example, **3**. The default retention period of atop logs is **28** days.
+   The default value of **LOGINTERVAL** is **600** (seconds), but you can change it to, for example, **15**.
 
    .. code-block::
 
       LOGINTERVAL=15
-      LOGGENERATIONS=3
+
+   **vi /etc/logrotate.d/atop**
+
+   Modify the following parameters, save the modification, and exit:
+
+   You can change the value of **-mtime** to, for example, **3**. The default retention period of atop logs is **40** days.
+
+   .. code-block::
+
+          postrotate
+            /usr/bin/find /var/log/atop/ -maxdepth 1 -mount -name atop_\[0-9\]\[0-9\]\[0-9\]\[0-9\]\[0-9\]\[0-9\]\[0-9\]\[0-9\]\* -mtime +3 -exec /bin/rm {} \;
+          endscript
 
 #. Run the following command to start atop:
 
-   **# systemctl start atop**
+   **service atop start**
 
-#. Run the following command to check the status of atop. If **active (running)** is displayed in the output, atop is running properly.
+#. Run the following command to check the status of atop. **is running** indicates that atop is running properly.
 
-   **# systemctl status atop**
+   **service atop status**
 
-   atop will sample system performance data based on the specified interval and save the data to the **/var/log/atop/** directory.
+   .. code-block::
+
+      atop (pid 3170) is running
+
+.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section773995710317:
+
+Configuring atop for Ubuntu 20/22 and Debian 10/11
+--------------------------------------------------
+
+#. Run the following command to install atop:
+
+   **apt-get install -y atop**
+
+#. Run the following command to modify the configuration file of atop:
+
+   **vi /etc/default/atop**
+
+   Modify the following parameters, save the modification, and exit:
+
+   -  Change the value of **LOGINTERVAL** to, for example, **15**. The default value of **LOGINTERVAL** is **600**, in seconds.
+
+   -  Change the value of **LOGGENERATIONS** to, for example, **3**. The default retention period of atop logs is **28** days.
+
+      .. code-block::
+
+         LOGINTERVAL=15
+         LOGGENERATIONS=3
+
+3. Run the following command to start atop:
+
+   **systemctl start atop**
+
+4. Run the following command to check the status of atop. **active (running)** indicates that atop is running properly.
+
+   **systemctl status atop**
 
    .. code-block::
 
       atop.service - Atop advanced performance monitor
-      Loaded: loaded (/usr/lib/systemd/system/atop.service; enabled; vendor preset: disabled)
-      Active: active (running) since Sat 2021-06-19 11:49:47 CST; 2h 27min ago
-      Docs: man:atop(1)
-      Process: 8231 ExecStartPost=/usr/bin/find ${LOGPATH} -name atop_* -mtime +${LOGGENERATIONS} -exec rm -v {} ; (code=exited, status=0/SUCCESS)
-      Process: 8225 ExecStartPre=/bin/sh -c test -n "$LOGGENERATIONS" -a "$LOGGENERATIONS" -eq "$LOGGENERATIONS" (code=exited, status=0/SUCCESS)
-      Process: 8223 ExecStartPre=/bin/sh -c test -n "$LOGINTERVAL" -a "$LOGINTERVAL" -eq "$LOGINTERVAL" (code=exited, status=0/SUCCESS)
-      Main PID: 8229 (atop)
-      CGroup: /system.slice/atop.service
-               └─8229 /usr/bin/atop -w /var/log/atop/atop_20210619 15
+       Loaded: loaded (/etc/init.d/atop; bad; vendor preset: disabled)
+       Active: active (running) since Sat 2024-03-11 14:09:47 CST; 16s ago
 
-      Jun 19 11:49:47 ecs-centos7 systemd[1]: Stopped Atop advanced performance monitor.
-      Jun 19 11:49:47 ecs-centos7 systemd[1]: Starting Atop advanced performance monitor...
-      Jun 19 11:49:47 ecs-centos7 systemd[1]: Started Atop advanced performance monitor.
+.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section76781058158:
+
+Configuring atop for Ubuntu 18 and Debian 8/9
+---------------------------------------------
+
+#. Run the following command to install atop:
+
+   **apt-get install -y atop**
+
+#. Run the following command to modify the configuration file of atop:
+
+   **vi /usr/share/atop/atop.daily**
+
+   Modify the following parameters, save the modification, and exit:
+
+   -  The default value of **LOGINTERVAL** is **600** (seconds), but you can change it to, for example, **15**.
+
+   -  You can change the value of **-mtime** to, for example, **3**. The default retention period of atop logs is **28** days.
+
+      .. code-block::
+
+         LOGINTERVAL=15
+         ……
+         ( (sleep 3; find $LOGPATH -name 'atop_*' -mtime +3 -exec rm {} \;)& )
+
+3. Run the following command to start atop:
+
+   **systemctl start atop**
+
+4. Run the following command to check the status of atop. **active (running)** indicates that atop is running properly.
+
+   **systemctl status atop**
+
+   .. code-block::
+
+      atop.service - Atop advanced performance monitor
+       Loaded: loaded (/etc/init.d/atop; bad; vendor preset: disabled)
+       Active: active (running) since Sat 2024-03-6 14:09:47 CST; 15s ago
+
+.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section1919095512712:
+
+Configuring atop for Ubuntu 16
+------------------------------
+
+#. Run the following command to install atop:
+
+   **apt-get install -y atop**
+
+#. Run the following command to modify the configuration file of atop:
+
+   **vi /etc/default/atop**
+
+   Modify the following parameters, save the modification, and exit:
+
+   -  The default value of **LOGINTERVAL** is **600** (seconds), but you can change it to, for example, **15**.
+
+   -  The default retention period of atop logs is **28** days and cannot be modified.
+
+      .. code-block::
+
+         LOGINTERVAL=15
+
+3. Run the following command to start atop:
+
+   **systemctl start atop**
+
+4. Run the following command to check the status of atop. **active (running)** indicates that atop is running properly.
+
+   **systemctl status atop**
+
+   .. code-block::
+
+      atop.service - LSB: Monitor for system resources and process activity
+         Loaded: loaded (/etc/init.d/atop; bad; vendor preset: enabled)
+         Active: active (running) since Mon 2024-04-29 19:33:22 CST; 38s ago
 
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section3205824181917:
 
@@ -153,31 +251,31 @@ Configuring atop for SUSE 12 or SUSE 15
 
 #. Run the following command to download the atop source package:
 
-   **# wget https://www.atoptool.nl/download/atop-2.6.0-1.src.rpm**
+   **wget https://www.atoptool.nl/download/atop-2.6.0-1.src.rpm**
 
 #. Run the following command to install the package:
 
-   **# rpm -ivh atop-2.6.0-1.src.rpm**
+   **rpm -ivh atop-2.6.0-1.src.rpm**
 
 #. Run the following command to install atop dependencies.
 
-   **# zypper -n install rpm-build ncurses-devel zlib-devel**
+   **zypper -n install rpm-build ncurses-devel zlib-devel**
 
 #. Run the following command to compile atop:
 
-   **# cd /usr/src/packages/SPECS**
+   **cd /usr/src/packages/SPECS**
 
-   **# rpmbuild -bb atop-2.6.0.spec**
+   **rpmbuild -bb atop-2.6.0.spec**
 
 #. Run the following command to install atop:
 
-   **# cd /usr/src/packages/RPMS/x86_64**
+   **cd /usr/src/packages/RPMS/x86_64**
 
-   **# rpm -ivh atop-2.6.0-1.x86_64.rpm**
+   **rpm -ivh atop-2.6.0-1.x86_64.rpm**
 
 #. Run the following command to modify the configuration file of atop:
 
-   **# vi /etc/default/atop**
+   **vi /etc/default/atop**
 
    Modify the following parameters, save the modification, and exit:
 
@@ -191,51 +289,40 @@ Configuring atop for SUSE 12 or SUSE 15
 
 7. Run the following command to restart atop:
 
-   **# systemctl restart atop**
+   **systemctl restart atop**
 
-8. Run the following command to check the status of atop. If **active (running)** is displayed in the output, atop is running properly.
+8. Run the following command to check the status of atop. **active (running)** indicates that atop is running properly.
 
-   **# systemctl status atop**
+   **systemctl status atop**
 
    .. code-block::
 
       atop.service - Atop advanced performance monitor
-      Loaded: loaded (/usr/lib/systemd/system/atop.service; enabled; vendor preset: disabled)
-      Active: active (running) since Sat 2021-06-19 16:50:01 CST; 6s ago
-      Docs: man:atop(1)
-      Process: 2242 ExecStartPost=/usr/bin/find ${LOGPATH} -name atop_* -mtime +${LOGGENERATIONS} -exec rm -v {} ; (code=exited, status=0/SUCCESS)
-      Process: 2240 ExecStartPre=/bin/sh -c test -n "$LOGGENERATIONS" -a "$LOGGENERATIONS" -eq "$LOGGENERATIONS" (code=exited, status=0/SUCCESS)
-      Process: 2239 ExecStartPre=/bin/sh -c test -n "$LOGINTERVAL" -a "$LOGINTERVAL" -eq "$LOGINTERVAL" (code=exited, status=0/SUCCESS)
-      Main PID: 2241 (atop)
-      Tasks: 1 (limit: 4915)
-      CGroup: /system.slice/atop.service
-               └─2241 /usr/bin/atop -w /var/log/atop/atop_20210619 15
-
-      Jun 19 16:50:01 ecs-suse15 systemd[1]: Starting Atop advanced performance monitor...
-      Jun 19 16:50:01 ecs-suse15 systemd[1]: Started Atop advanced performance monitor.
+       Loaded: loaded (/usr/lib/systemd/system/atop.service; enabled; vendor preset: disabled)
+       Active: active (running) since Sat 2021-06-19 16:50:01 CST; 6s ago
 
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section012793312620:
 
-Configuring atop Using Its Source Package for SUSE, Fedora, Debian or Ubuntu
-----------------------------------------------------------------------------
+Installing atop by Compiling the Source Code (for CentOS Stream 9, openEuler or EulerOS)
+----------------------------------------------------------------------------------------
 
 #. Download the atop source package.
 
-   **# wget https://www.atoptool.nl/download/atop-2.6.0.tar.gz**
+   **wget https://www.atoptool.nl/download/atop-2.6.0.tar.gz**
 
 2. Decompress the source package.
 
-   **# tar -zxvf atop-2.6.0.tar.gz**
+   **tar -zxvf atop-2.6.0.tar.gz**
 
 3. Query the systemctl version.
 
-   **# systemctl --version**
+   **systemctl --version**
 
    If the version is 220 or later, go to the next step.
 
    Otherwise, delete parameter **--now** from the Makefile of atop.
 
-   **# vi atop-2.6.0/Makefile**
+   **vi atop-2.6.0/Makefile**
 
    Delete parameter **--now** following the systemctl command.
 
@@ -250,29 +337,29 @@ Configuring atop Using Its Source Package for SUSE, Fedora, Debian or Ubuntu
 
 4. Install atop dependencies.
 
-   -  SUSE 12 or SUSE 15
+   -  Installing command for SUSE 12 or SUSE 15
 
-      **# zypper -n install make gcc zlib-devel ncurses-devel**
+      **zypper -n install make gcc zlib-devel ncurses-devel**
 
-   -  Fedora
+   -  Installing command for EulerOS or Fedora
 
-      **# yum install make gcc zlib-devel ncurses-devel -y**
+      **yum install make gcc zlib-devel ncurses-devel -y**
 
-   -  Debian 9, Debian 10, or Ubuntu
+   -  Installing command for Debian 9, Debian 10, or Ubuntu
 
-      **# apt install make gcc zlib1g-dev libncurses5-dev libncursesw5-dev -y**
+      **apt install make gcc zlib1g-dev libncurses5-dev libncursesw5-dev -y**
 
-5. Compile and install atop.
+5. Run the following commands to compile and install atop.
 
-   **# cd atop-2.6.0**
+   **cd atop-2.6.0**
 
-   **# make systemdinstall**
+   **make systemdinstall**
 
 6. Modify the configuration file of atop.
 
-   **# vi /etc/default/atop**
+   **vi /etc/default/atop**
 
-   Make the following modifications, save the file, and exit.
+   Modify the following parameters, save the modification, and exit:
 
    -  Change the value of **LOGINTERVAL** to, for example, **15**. The default value of **LOGINTERVAL** is **600**, in seconds.
 
@@ -287,34 +374,100 @@ Configuring atop Using Its Source Package for SUSE, Fedora, Debian or Ubuntu
 
 7. Restart atop.
 
-   **# systemctl restart atop**
+   **systemctl restart atop**
 
-8. Run the following command to check the status of atop. If **active (running)** is displayed in the output, atop is running properly.
+8. Run the following command to check the status of atop. **active (running)** indicates that atop is running properly.
 
-   **# systemctl status atop**
+   **systemctl status atop**
 
    .. code-block::
 
-      atop.service - Atop advanced performance monitor
-         Loaded: loaded (/lib/systemd/system/atop.service; enabled)
-         Active: active (running) since Sun 2021-07-25 19:29:40 CST; 4s ago
-           Docs: man:atop(1)
-        Process: 5192 ExecStartPost=/usr/bin/find ${LOGPATH} -name atop_* -mtime +${LOGGENERATIONS} -exec rm -v {} ; (code=exited, status=0/SUCCESS)
-        Process: 5189 ExecStartPre=/bin/sh -c test -n "$LOGGENERATIONS" -a "$LOGGENERATIONS" -eq "$LOGGENERATIONS" (code=exited, status=0/SUCCESS)
-        Process: 5188 ExecStartPre=/bin/sh -c test -n "$LOGINTERVAL" -a "$LOGINTERVAL" -eq "$LOGINTERVAL" (code=exited, status=0/SUCCESS)
-       Main PID: 5191 (atop)
-         CGroup: /system.slice/atop.service
-                 └─5191 /usr/bin/atop -w /var/log/atop/atop_20210725 15
+      atop.service - Atop advanced performance monitor    Loaded: loaded(/lib/systemd/system/atop.service; enabled)    Active: active (running) since Sun2021-07-25 19:29:40 CST; 4s ago .
 
-      Jul 25 19:29:40 atop systemd[1]: Starting Atop advanced performance monitor...
-      Jul 25 19:29:40 atop systemd[1]: Started Atop advanced performance monitor.
+.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section478115314146:
+
+Analyzing atop Logs
+-------------------
+
+After startup, atop stores collection records in **/var/log/atop**.
+
+Run the following command to check the log file:
+
+**atop -r /var/log/atop/atop_2024XXXX**
+
+-  **Common atop commands**
+
+   After opening the log file, you can use the following commands to sort data.
+
+   -  **c**: used to sort processes by CPU usage in descending order.
+   -  **m**: used to sort processes by memory usage in descending order.
+   -  **d**: used to sort processes by disk usage in descending order.
+   -  **a**: used to sort processes by the overall resource usage in descending order.
+   -  **n**: used to sort processes by network usage in descending order.
+   -  **t**: used to go to the next monitoring collection point.
+   -  **T**: used to go to the previous monitoring collection point.
+   -  **b**: used to specify a time point in the format of YYYYMMDDhhmm.
+
+-  **System resource monitoring fields**
+
+   The following figure shows some monitoring fields and values. The values vary according to the sampling period and atop version. The figure is for reference only.
+
+
+   .. figure:: /_static/images/en-us_image_0000001914323145.png
+      :alt: **Figure 1** System resource monitoring fields
+
+      **Figure 1** System resource monitoring fields
+
+   Description of major fields is as follows:
+
+   -  **ATOP** row: Specifies the host name and information sampling date and time.
+   -  **PRC** row: Specifies the running status of a process.
+   -  **#sys** and **user**: Specifies how long the CPU is occupied when the system is running in kernel mode and user mode.
+   -  **#proc**: Specifies the total number of processes.
+   -  **#zombie**: Specifies the number of zombie processes.
+   -  **#exit**: Specifies the number of processes that exited during the sampling period.
+   -  **CPU** row: Specifies the overall CPU usage (multi-core CPU as a whole CPU). The sum of the values in the CPU row is N x 100%. **N** indicates the number of vCPUs.
+   -  **#sys** and **user**: Specifies the percentage of how long the CPU is occupied when the system is running in kernel mode and user mode.
+   -  **#irq**: Specifies the percentage of time when CPU is servicing interrupts.
+   -  **#idle**: Specifies the percentage of time when CPU is idle.
+   -  **#wait**: Specifies the percentage of time when CPU is idle due to I/O wait.
+   -  **CPL** row: Specifies CPU load.
+   -  **#avg1**, **avg5** and **avg15**: Specifies the average number of running processes in the past 1, 5, and 15 minutes, respectively.
+   -  **#csw**: Specifies the number of context exchanges.
+   -  **#intr**: Specifies the number of interruptions.
+   -  **MEM** row: Specifies the memory usage.
+   -  **#tot**: Specifies the physical memory size.
+   -  **#free**: Specifies the size of available physical memory.
+   -  **#cache**: Specifies the memory size used for page cache.
+   -  **#buff**: Specifies the memory size used for file cache.
+   -  **#slab**: Specifies the memory size occupied by the system kernel.
+   -  **SWP** row: Specifies the usage of swap space.
+   -  **#tot**: Specifies the total swap space.
+   -  **#free**: Specifies the size of available swap space.
+   -  **DSK** row: Specifies the disk usage. Each disk device corresponds to a column. If there is an **sdb** device, a **DSK** row should be added.
+   -  **#sda**: Specifies the disk device identifier.
+   -  **#busy**: Specifies the percentage of time when the disk is busy.
+   -  **#read** and **write**: Specifies the number of read and write requests.
+   -  **NET** row: Displays the network status, covering the transport layer (TCP and UDP), IP layer, and active network ports.
+   -  **#xxxxxi**: Specifies the number of packets received by each layer or active network port.
+   -  **#xxxxxo**: Specifies the number of packets sent by each layer or active network port.
+
+-  **Stopping atop**
+
+   Running atop occupies extra system and disk resources. You are not advised to run it for a long time in the service environment. After faults are rectified, run the following command to stop atop:
+
+   **systemctl stop atop**
+
+   For CentOS 6, run the following command to stop atop:
+
+   **service atop stop**
 
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section1410131164120:
 
 Precautions for Configuring kdump
 ---------------------------------
 
-The method for configuring kdump described in this section applies to KVM ECSs running EulerOS or CentOS 7.x. For details, see `Documentation for kdump <https://www.kernel.org/doc/Documentation/kdump/kdump.txt>`__.
+The method for configuring kdump described in this section applies to KVM ECSs running EulerOS or CentOS 7.\ *x*. For details, see `Documentation for kdump <https://www.kernel.org/doc/Documentation/kdump/kdump.txt>`__.
 
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section18450171174120:
 
@@ -330,21 +483,21 @@ Configuring kdump
 
 #. Run the following command to check whether kexec-tools is installed:
 
-   **# rpm -q kexec-tools**
+   **rpm -q kexec-tools**
 
    If it is not installed, run the following command to install it:
 
-   **# yum install -y kexec-tools**
+   **yum install -y kexec-tools**
 
 #. Run the following command to enable kdump to run at system startup:
 
-   **# systemctl enable kdump**
+   **systemctl enable kdump**
 
 #. Configure the parameters for the crash kernel to reserve the memory for the capture kernel.
 
    Check whether the parameters are configured.
 
-   **# grep crashkernel /proc/cmdline**
+   **grep crashkernel /proc/cmdline**
 
    If the command output is displayed, this parameter has been configured.
 
@@ -364,7 +517,7 @@ Configuring kdump
 
 #. Run the following command for the configuration to take effect:
 
-   **# grub2-mkconfig -o /boot/grub2/grub.cfg**
+   **grub2-mkconfig -o /boot/grub2/grub.cfg**
 
 #. Open the **/etc/kdump.conf** file, locate parameter **path**, and add **/var/crash** after it.
 
@@ -408,7 +561,7 @@ Configuring kdump
 
 #. Run the following command to restart the system for the configurations to take effect:
 
-   **# reboot**
+   **reboot**
 
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section1296112934412:
 
@@ -417,7 +570,7 @@ Checking Whether kdump Configurations Have Taken Effect
 
 #. Run the following command and check whether **crashkernel=auto** is displayed:
 
-   **#** **cat /proc/cmdline \|grep crashkernel**
+   **cat /proc/cmdline \|grep crashkernel**
 
    .. code-block::
 
@@ -425,7 +578,7 @@ Checking Whether kdump Configurations Have Taken Effect
 
 #. Run the following command and check whether the configuration in the output is correct:
 
-   **# grep core_collector /etc/kdump.conf \|grep -v ^"#"**
+   **grep core_collector /etc/kdump.conf \|grep -v ^"#"**
 
    .. code-block::
 
@@ -433,7 +586,7 @@ Checking Whether kdump Configurations Have Taken Effect
 
 #. Run the following command and check whether the path configuration in the output is correct:
 
-   **# grep path /etc/kdump.conf \|grep -v ^"#"**
+   **grep path /etc/kdump.conf \|grep -v ^"#"**
 
    .. code-block::
 
@@ -441,7 +594,7 @@ Checking Whether kdump Configurations Have Taken Effect
 
 #. Run the following command and check whether the value of **Active** in the output is **active (exited)**:
 
-   **# systemctl status kdump**
+   **systemctl status kdump**
 
    .. code-block::
 
@@ -454,10 +607,10 @@ Checking Whether kdump Configurations Have Taken Effect
 
 #. Run the following test command:
 
-   **# echo c > /proc/sysrq-trigger**
+   **echo c > /proc/sysrq-trigger**
 
    After the command is executed, kdump will be triggered, the system will be restarted, and the generated vmcore file will be saved to the path specified by **path**.
 
-#. Run the following command to check whether the vmcore file has been generated in the specified path, for example, **/var/crash/**:
+#. Run the following command to check whether the **vmcore** file has been generated in the specified path, for example, **/var/crash/**:
 
-   **# ll /var/crash/**
+   **ll /var/crash/**
