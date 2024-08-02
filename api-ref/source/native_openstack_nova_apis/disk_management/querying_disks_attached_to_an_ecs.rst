@@ -8,9 +8,7 @@ Querying Disks Attached to an ECS
 Function
 --------
 
-This API is used to query the disks attached to an ECS.
-
-Disks that have been successfully attached and are being attached are to be queried.
+This API is used to query the disks that have been and are being attached to an ECS.
 
 URI
 ---

@@ -60,27 +60,9 @@ Data Structure for Querying Details About ECSs
    id        String Specifies the security group ID.
    ========= ====== ==========================================
 
-The following table lists parameters involved in the fault information attribute.
-
-.. _en-us_topic_0169494074__en-us_topic_0057972887_table37121720:
-
-.. table:: **Table 4** **fault** parameters
-
-   +-----------+---------+----------------------------------------------------------------------------------+
-   | Parameter | Type    | Description                                                                      |
-   +===========+=========+==================================================================================+
-   | message   | String  | Specifies the fault information.                                                 |
-   +-----------+---------+----------------------------------------------------------------------------------+
-   | code      | Integer | Specifies the error code.                                                        |
-   +-----------+---------+----------------------------------------------------------------------------------+
-   | details   | String  | Specifies the fault details.                                                     |
-   +-----------+---------+----------------------------------------------------------------------------------+
-   | created   | String  | Specifies the time when the fault occurred. The time is in ISO 8601 time format. |
-   +-----------+---------+----------------------------------------------------------------------------------+
-
 .. _en-us_topic_0169494074__en-us_topic_0057972887_table33871262:
 
-.. table:: **Table 5** **os-extended-volumes:volumes_attached** parameters
+.. table:: **Table 4** **os-extended-volumes:volumes_attached** parameters
 
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
    | Parameter             | Type                  | Description                                                                           |
@@ -104,7 +86,7 @@ The following table lists parameters involved in the fault information attribute
 
 .. _en-us_topic_0169494074__table537485761711:
 
-.. table:: **Table 6** **metadata** parameters
+.. table:: **Table 5** **metadata** parameters
 
    +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter                   | Type                  | Description                                                                                                                                                                                            |
@@ -173,7 +155,7 @@ The following table lists parameters involved in the fault information attribute
 
 .. _en-us_topic_0169494074__table6690227839:
 
-.. table:: **Table 7** **sys_tags** parameters
+.. table:: **Table 6** **sys_tags** parameters
 
    ========= ====== ===============================
    Parameter Type   Description
@@ -184,7 +166,7 @@ The following table lists parameters involved in the fault information attribute
 
 .. _en-us_topic_0169494074__table173259974818:
 
-.. table:: **Table 8** **image** parameters
+.. table:: **Table 7** **image** parameters
 
    ========= ====== =======================
    Parameter Type   Description

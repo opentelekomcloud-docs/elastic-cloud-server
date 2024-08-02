@@ -10,7 +10,7 @@ Function
 
 This API is used to add one or multiple NICs to an ECS.
 
-This API is an asynchronous API. After the NIC adding request is successfully delivered, a job ID is returned. This does not mean the NIC adding is complete. You need to call the API by referring to :ref:`Querying Task Execution Status <en-us_topic_0022225398>` to query the job status. The SUCCESS status indicates that the NIC adding is successful.
+This API is an asynchronous API. After the NIC addition request is successfully delivered, a job ID is returned. This does not mean the NIC addition is complete. You need to call the API by referring to :ref:`Querying Task Execution Status <en-us_topic_0022225398>` to query the job status. The SUCCESS status indicates that the NIC addition is successful.
 
 URI
 ---

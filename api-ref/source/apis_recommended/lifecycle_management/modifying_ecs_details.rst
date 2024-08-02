@@ -8,12 +8,12 @@ Modifying ECS Details
 Function
 --------
 
-This API is used to modify ECS details. Only the name, description, and hostname of an ECS can be modified.
+This API is used to modify ECS details. Only the name and description of an ECS can be modified.
 
 Constraints
 -----------
 
-The modification on the hostname takes effect only after the ECS is restarted.
+This API is used to modify the name of an ECS. For details about how to modify the host name of the ECS, see "How Can a Changed Static Hostname Take Effect Permanently?" in the *Elastic Cloud Server User Guide*.
 
 URI
 ---
@@ -71,7 +71,7 @@ Request
    |                 |                 |                 |                                                                                                                                                                                                                                                                                                                                         |
    |                 |                 |                 | .. note::                                                                                                                                                                                                                                                                                                                               |
    |                 |                 |                 |                                                                                                                                                                                                                                                                                                                                         |
-   |                 |                 |                 |    This field is no longer used. For details about how to modify the host name of the ECS, see "How Can a Changed Static Hostname Take Effect Permanently?" in *Elastic Cloud Server User Guide*.                                                                                                                                       |
+   |                 |                 |                 |    This field is no longer used. For details about how to modify the host name of the ECS, see "How Can a Changed Static Hostname Take Effect Permanently?" in the *Elastic Cloud Server User Guide*.                                                                                                                                   |
    +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response

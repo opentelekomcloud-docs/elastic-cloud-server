@@ -11,7 +11,7 @@ New IAM users do not have any permissions assigned by default. You need to first
 
 You can grant users permissions by using roles and policies. Roles are provided by IAM to define service-based permissions that match users' job responsibilities. Policies define API-based permissions for operations on specific resources under certain conditions, allowing for more fine-grained, secure access control of cloud resources.
 
-For more information about system-defined policies supported by ECS, see "Permissions Management" in *Elastic Cloud Server User Guide*.
+For more information about system-defined policies supported by ECS, see "Permissions Management" in the *Elastic Cloud Server User Guide*.
 
 .. note::
 
