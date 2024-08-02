@@ -34,7 +34,7 @@ GET /v1/{project_id}/cloudservers/detail?flavor={flavor}&name={name}&status={sta
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter       | Mandatory       | Type            | Description                                                                                                                                                                                                                |
    +=================+=================+=================+============================================================================================================================================================================================================================+
-   | offset          | No              | Integer         | Specifies a page number.                                                                                                                                                                                                   |
+   | offset          | No              | Integer         | Specifies the page number.                                                                                                                                                                                                 |
    |                 |                 |                 |                                                                                                                                                                                                                            |
    |                 |                 |                 | The value must be greater than or equal to **0** and the default value is **1**.                                                                                                                                           |
    |                 |                 |                 |                                                                                                                                                                                                                            |
@@ -69,7 +69,7 @@ GET /v1/{project_id}/cloudservers/detail?flavor={flavor}&name={name}&status={sta
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | limit           | No              | Integer         | Specifies the maximum number of ECSs on one page.                                                                                                                                                                          |
    |                 |                 |                 |                                                                                                                                                                                                                            |
-   |                 |                 |                 | Each page contains 25 ECSs by default, and a maximum of 1,000 ECSs are returned. For large volumes of data, you are advised to set the value to **100**.                                                                   |
+   |                 |                 |                 | Each page contains 25 ECSs by default, and a maximum of 1,000 ECSs are returned. For large volumes of data, you are advised to set the value to **200**.                                                                   |
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | tags            | No              | String          | Obtains the ECSs with specified tags.                                                                                                                                                                                      |
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -203,9 +203,6 @@ Example Response
                "OS-DCF:diskConfig":"MANUAL",
                "OS-EXT-AZ:availability_zone":"az1-dc1",
                "os:scheduler_hints":{
-                   "dec_baremetal":[
-                       "share"
-                   ],
                    "guestos_product_name":[
                        "KVM Virtual Machine"
                    ]

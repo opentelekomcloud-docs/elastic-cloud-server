@@ -61,68 +61,68 @@ Request
 
 .. table:: **Table 3** **rebuild** parameters
 
-   +--------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter          | Mandatory       | Type            | Description                                                                                                                         |
-   +====================+=================+=================+=====================================================================================================================================+
-   | name               | No              | String          | Specifies the name of the rebuilt ECS.                                                                                              |
-   |                    |                 |                 |                                                                                                                                     |
-   |                    |                 |                 | The value contains 1 to 254 characters.                                                                                             |
-   +--------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
-   | metadata           | No              | Object          | Specifies the metadata of the rebuilt ECS.                                                                                          |
-   +--------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
-   | imageRef           | Yes             | String          | Specifies the image ID or URL.                                                                                                      |
-   +--------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
-   | adminPass          | No              | String          | Specifies the password for logging in to the rebuilt ECS. This parameter does not take effect.                                      |
-   +--------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
-   | OS-DCF:diskConfig  | No              | String          | Not supported                                                                                                                       |
-   +--------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
-   | preserve_ephemeral | No              | Boolean         | Specifies whether to retain the temporary disk. This parameter is not supported.                                                    |
-   +--------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
-   | key_name           | No              | String          | Specifies the key pair name. If the value is null, the existing key pair is left blank.                                             |
-   |                    |                 |                 |                                                                                                                                     |
-   |                    |                 |                 | This parameter is supported in microversion 2.54 and later.                                                                         |
-   +--------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
-   | user_data          | No              | String          | Specifies the user data to be injected during the ECS creation. This is an extended attribute. Text and text files can be injected. |
-   |                    |                 |                 |                                                                                                                                     |
-   |                    |                 |                 | .. note::                                                                                                                           |
-   |                    |                 |                 |                                                                                                                                     |
-   |                    |                 |                 |    -  The content of **user_data** must be encoded with base64.                                                                     |
-   |                    |                 |                 |    -  The maximum size of the content to be injected (before encoding) is 32 KB.                                                    |
-   |                    |                 |                 |                                                                                                                                     |
-   |                    |                 |                 | For more information about the user data to be injected, see "Injecting User Data into ECSs" in *Elastic Cloud Server User Guide*.  |
-   |                    |                 |                 |                                                                                                                                     |
-   |                    |                 |                 | Examples                                                                                                                            |
-   |                    |                 |                 |                                                                                                                                     |
-   |                    |                 |                 | Before base64 encoding:                                                                                                             |
-   |                    |                 |                 |                                                                                                                                     |
-   |                    |                 |                 | -  Linux                                                                                                                            |
-   |                    |                 |                 |                                                                                                                                     |
-   |                    |                 |                 |    .. code-block::                                                                                                                  |
-   |                    |                 |                 |                                                                                                                                     |
-   |                    |                 |                 |       #!/bin/bash                                                                                                                   |
-   |                    |                 |                 |       echo user_test > /home/user.txt                                                                                               |
-   |                    |                 |                 |                                                                                                                                     |
-   |                    |                 |                 | -  Windows                                                                                                                          |
-   |                    |                 |                 |                                                                                                                                     |
-   |                    |                 |                 |    .. code-block::                                                                                                                  |
-   |                    |                 |                 |                                                                                                                                     |
-   |                    |                 |                 |       rem cmd                                                                                                                       |
-   |                    |                 |                 |       echo 111 > c:\aaa.txt                                                                                                         |
-   |                    |                 |                 |                                                                                                                                     |
-   |                    |                 |                 | After base64 encoding:                                                                                                              |
-   |                    |                 |                 |                                                                                                                                     |
-   |                    |                 |                 | -  Linux                                                                                                                            |
-   |                    |                 |                 |                                                                                                                                     |
-   |                    |                 |                 |    .. code-block::                                                                                                                  |
-   |                    |                 |                 |                                                                                                                                     |
-   |                    |                 |                 |       IyEvYmluL2Jhc2gKZWNobyB1c2VyX3Rlc3QgPiAvaG9tZS91c2VyLnR4dA==                                                                  |
-   |                    |                 |                 |                                                                                                                                     |
-   |                    |                 |                 | -  Windows                                                                                                                          |
-   |                    |                 |                 |                                                                                                                                     |
-   |                    |                 |                 |    .. code-block::                                                                                                                  |
-   |                    |                 |                 |                                                                                                                                     |
-   |                    |                 |                 |       cmVtIGNtZAplY2hvIDExMSA+IGM6XGFhYS50eHQ=                                                                                      |
-   +--------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------+
+   +--------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter          | Mandatory       | Type            | Description                                                                                                                            |
+   +====================+=================+=================+========================================================================================================================================+
+   | name               | No              | String          | Specifies the name of the rebuilt ECS.                                                                                                 |
+   |                    |                 |                 |                                                                                                                                        |
+   |                    |                 |                 | The value contains 1 to 254 characters.                                                                                                |
+   +--------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------+
+   | metadata           | No              | Object          | Specifies the metadata of the rebuilt ECS.                                                                                             |
+   +--------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------+
+   | imageRef           | Yes             | String          | Specifies the image ID or URL.                                                                                                         |
+   +--------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------+
+   | adminPass          | No              | String          | Specifies the password for logging in to the rebuilt ECS. This parameter does not take effect.                                         |
+   +--------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------+
+   | OS-DCF:diskConfig  | No              | String          | Not supported                                                                                                                          |
+   +--------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------+
+   | preserve_ephemeral | No              | Boolean         | Specifies whether to retain the temporary disk. This parameter is not supported.                                                       |
+   +--------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------+
+   | key_name           | No              | String          | Specifies the key pair name. If the value is null, the existing key pair is left blank.                                                |
+   |                    |                 |                 |                                                                                                                                        |
+   |                    |                 |                 | This parameter is supported in microversion 2.54 and later.                                                                            |
+   +--------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------+
+   | user_data          | No              | String          | Specifies the user data to be injected during the ECS creation. This is an extended attribute. Text and text files can be injected.    |
+   |                    |                 |                 |                                                                                                                                        |
+   |                    |                 |                 | .. note::                                                                                                                              |
+   |                    |                 |                 |                                                                                                                                        |
+   |                    |                 |                 |    -  The content of **user_data** must be encoded with base64.                                                                        |
+   |                    |                 |                 |    -  The maximum size of the content to be injected (before encoding) is 32 KB.                                                       |
+   |                    |                 |                 |                                                                                                                                        |
+   |                    |                 |                 | For more information about the user data to be injected, see "Injecting User Data into ECSs" in the *Elastic Cloud Server User Guide*. |
+   |                    |                 |                 |                                                                                                                                        |
+   |                    |                 |                 | Examples                                                                                                                               |
+   |                    |                 |                 |                                                                                                                                        |
+   |                    |                 |                 | Before base64 encoding:                                                                                                                |
+   |                    |                 |                 |                                                                                                                                        |
+   |                    |                 |                 | -  Linux                                                                                                                               |
+   |                    |                 |                 |                                                                                                                                        |
+   |                    |                 |                 |    .. code-block::                                                                                                                     |
+   |                    |                 |                 |                                                                                                                                        |
+   |                    |                 |                 |       #!/bin/bash                                                                                                                      |
+   |                    |                 |                 |       echo user_test > /home/user.txt                                                                                                  |
+   |                    |                 |                 |                                                                                                                                        |
+   |                    |                 |                 | -  Windows                                                                                                                             |
+   |                    |                 |                 |                                                                                                                                        |
+   |                    |                 |                 |    .. code-block::                                                                                                                     |
+   |                    |                 |                 |                                                                                                                                        |
+   |                    |                 |                 |       rem cmd                                                                                                                          |
+   |                    |                 |                 |       echo 111 > c:\aaa.txt                                                                                                            |
+   |                    |                 |                 |                                                                                                                                        |
+   |                    |                 |                 | After base64 encoding:                                                                                                                 |
+   |                    |                 |                 |                                                                                                                                        |
+   |                    |                 |                 | -  Linux                                                                                                                               |
+   |                    |                 |                 |                                                                                                                                        |
+   |                    |                 |                 |    .. code-block::                                                                                                                     |
+   |                    |                 |                 |                                                                                                                                        |
+   |                    |                 |                 |       IyEvYmluL2Jhc2gKZWNobyB1c2VyX3Rlc3QgPiAvaG9tZS91c2VyLnR4dA==                                                                     |
+   |                    |                 |                 |                                                                                                                                        |
+   |                    |                 |                 | -  Windows                                                                                                                             |
+   |                    |                 |                 |                                                                                                                                        |
+   |                    |                 |                 |    .. code-block::                                                                                                                     |
+   |                    |                 |                 |                                                                                                                                        |
+   |                    |                 |                 |       cmVtIGNtZAplY2hvIDExMSA+IGM6XGFhYS50eHQ=                                                                                         |
+   +--------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------+
 
 Response
 --------

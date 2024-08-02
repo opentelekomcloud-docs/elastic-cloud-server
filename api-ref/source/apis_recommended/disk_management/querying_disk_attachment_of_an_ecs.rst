@@ -73,7 +73,7 @@ Response
    | bootIndex             | Boolean               | Specifies the EVS disk boot sequence.                                                 |
    |                       |                       |                                                                                       |
    |                       |                       | -  **0** indicates the system disk.                                                   |
-   |                       |                       | -  Non-0 indicates a data disk.                                                       |
+   |                       |                       | -  A non-zero value indicates a data disk.                                            |
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
    | bus                   | String                | Indicates the disk bus type.                                                          |
    |                       |                       |                                                                                       |

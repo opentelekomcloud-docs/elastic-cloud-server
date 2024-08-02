@@ -29,11 +29,11 @@ GET /v1/{project_id}/cloudservers/flavors?availability_zone={availability_zone}
 
 .. table:: **Table 2** Query parameters
 
-   +-------------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter         | Mandatory | Type   | Description                                                                                                                    |
-   +===================+===========+========+================================================================================================================================+
-   | availability_zone | No        | String | Specifies an AZ. If this parameter is not left blank, flavors in the **normal**, **obt**, or **promotion** state are returned. |
-   +-------------------+-----------+--------+--------------------------------------------------------------------------------------------------------------------------------+
+   +-------------------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter         | Mandatory | Type   | Description                                                                                                                     |
+   +===================+===========+========+=================================================================================================================================+
+   | availability_zone | No        | String | Specifies an AZ. If this parameter is not left blank, flavors in the **normal**, **obt**, or **promotion** states are returned. |
+   +-------------------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------------+
 
 Request
 -------
@@ -190,7 +190,7 @@ Response
    +----------------------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | ecs:generation                   | String                | Specifies the generation of an ECS type.                                                                                                                                                                                                                                                                                                                                                                                   |
    |                                  |                       |                                                                                                                                                                                                                                                                                                                                                                                                                            |
-   |                                  |                       | For example, **3** in **s3** indicates the general-purpose third-generation ECSs. For details about flavors and generations, see `ECS Specifications <https://docs.otc.t-systems.com/en-us/usermanual/ecs/en-us_topic_0177512565.html>`__ in *Elastic Cloud Server User Guide*.                                                                                                                                            |
+   |                                  |                       | For example, **3** in **s3** indicates the general-purpose third-generation ECSs. For details about flavors and generations, see `ECS Specifications <https://docs.otc.t-systems.com/en-us/usermanual/ecs/en-us_topic_0177512565.html>`__ in the *Elastic Cloud Server User Guide*.                                                                                                                                        |
    +----------------------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | ecs:virtualization_env_types     | String                | Specifies a virtualization type.                                                                                                                                                                                                                                                                                                                                                                                           |
    |                                  |                       |                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -253,7 +253,7 @@ Response
 
 .. note::
 
-   For more information, see "ECS Specifications and Types" in *Elastic Cloud Server User Guide*.
+   For more information, see "ECS Specifications and Types" in the *Elastic Cloud Server User Guide*.
 
 Example Request
 ---------------
