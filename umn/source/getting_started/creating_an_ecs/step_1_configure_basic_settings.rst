@@ -30,11 +30,11 @@ Basic Settings
 
    .. note::
 
-      Random AZ allocation is available on the console when you create an ECS. The system will use a hash algorithm to select an AZ as the default AZ based on your universally unique identifier (UUID).
+      -  During the creation process, you can select a random AZ. The system will use a hash algorithm to select an AZ as the default AZ based on your universally unique identifier (UUID).
 
-      The available ECS types and flavors vary depending on AZs. To view all supported ECS types and flavors on the cloud service platform, set **AZ** to **Random**. Then, the system automatically allocates an AZ according to your selected ECS flavor.
+      -  The available ECS types and flavors vary depending on AZs. To view all supported ECS types and flavors on the cloud service platform, set **AZ** to **Random**. Then, the system automatically allocates an AZ according to your selected ECS flavor.
 
-      For example, S3 ECSs are available only in AZ 1; S2 ECSs are available in AZ 2 and AZ 3 and have been sold out in AZ 1. If you set **AZ** to **Random**, you can view both S3 and S2 ECSs. If you create an S3 ECS, the system automatically allocates it to AZ 1. If you create an S2 ECS, the system randomly allocates it to AZ 2 or AZ 3.
+         For example, S3 ECSs are available only in AZ1; S2 ECSs are available in AZ2 and AZ3 and have been sold out in AZ1. If you set **AZ** to **Random**, you can view both S3 and S2 ECSs. If you create an S3 ECS, the system automatically allocates it to AZ1. If you create an S2 ECS, the system randomly allocates it to AZ2 or AZ3.
 
 #. Set **DeH**.
 

@@ -180,7 +180,7 @@ Graphics-accelerated Enhancement G7
 
 **Overview**
 
-G7 ECSs use NVIDIA A40 GPUs and support DirectX, Shader Model, OpenGL, and Vulkan. Each GPU provides 48 GiB of GPU memory. Theoretically, G7 ECSs provide 37.4 TFLOPS of FP32 peak performance and 74.8 TFLOPS (sparsity disabled) or 149.6 TFLOPS (sparsity enabled) of TF32 peak tensor performance. They deliver two times the rendering performance and 1.4 times the graphics processing performance of RTX6000 GPUs to meet professional graphics processing requirements.
+G7 ECSs use NVIDIA A40 GPUs and support DirectX, Shader Model, OpenGL, and Vulkan. Each GPU provides 48 GiB of GPU memory. Theoretically, the peak FP32 is 37.4 TFLOPS and the peak TF32 tensor is 74.8 TFLOPS \| 149.6 TFLOPS (sparsity enabled). They deliver two times the rendering performance and 1.4 times the graphics processing performance of RTX6000 GPUs to meet professional graphics processing requirements.
 
 Select your desired GPU-accelerated ECS type and specifications.
 
@@ -321,7 +321,7 @@ Computing-accelerated P3
 
 **Overview**
 
-P3 ECSs use NVIDIA A100 GPUs and provide flexibility and ultra-high-performance computing. P3 ECSs have strengths in AI-based deep learning, scientific computing, Computational Fluid Dynamics (CFD), computing finance, seismic analysis, molecular modeling, and genomics. Theoretically, P3 ECSs provide 19.5 TFLOPS of FP32 single-precision performance and 156 TFLOPS (sparsity disabled) or 312 TFLOPS (sparsity enabled) of TF32 peak tensor performance.
+P3 ECSs use NVIDIA A100 GPUs and provide flexibility and ultra-high-performance computing. P3 ECSs have strengths in AI-based deep learning, scientific computing, Computational Fluid Dynamics (CFD), computing finance, seismic analysis, molecular modeling, and genomics. Theoretically, the FP32 is 19.5 TFLOPS and the TF32 tensor core is 156 TFLOPS \| 312 TFLOPS (sparsity enabled).
 
 **Specifications**
 

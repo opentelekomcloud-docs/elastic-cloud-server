@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0132345719:
 
-ECS Specifications and Types
-============================
+ECS Specifications
+==================
 
 -  :ref:`A Summary List of ECS Specifications <en-us_topic_0177512565>`
 -  :ref:`General-Purpose ECSs <en-us_topic_0035470101>`

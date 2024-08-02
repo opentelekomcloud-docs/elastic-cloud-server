@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0115820205:
 
-How Can I Test Network Performance?
-===================================
+How Can I Test the Network Performance of Linux ECSs?
+=====================================================
 
 Use netperf and iperf3 to test network performance between ECSs. The test operations include preparations, TCP bandwidth test, UDP PPS test, and latency test.
 

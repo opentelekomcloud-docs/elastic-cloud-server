@@ -15,7 +15,7 @@ You can change the image for your ECS on the ECS console.
 
 #. Select the target image type and image.
 
-#. Set the login mode. You can select **Password** or **Key pair**.
+#. Set the login mode. You can select **Key pair**.
 
 #. Set the other parameters and click **OK**.
 

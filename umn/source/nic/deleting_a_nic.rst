@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0093492519:
 
-Deleting a Network Interface
-============================
+Deleting a NIC
+==============
 
 Scenarios
 ---------

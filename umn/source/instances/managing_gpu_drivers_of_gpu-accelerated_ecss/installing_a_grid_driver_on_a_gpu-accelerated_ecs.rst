@@ -94,8 +94,9 @@ Downloading GRID Driver and Software License Packages
 
 #. .. _en-us_topic_0149610914__li1859773663819:
 
-   Obtain the Product Activation Key (PAK) from the email indicating successful registration with NVIDIA.
+   Refer to :ref:`Figure 2 <en-us_topic_0149610914__fig133361216153817>` to obtain the Product Activation Key (PAK) from the email indicating successful registration with NVIDIA.
 
+   .. _en-us_topic_0149610914__fig133361216153817:
 
    .. figure:: /_static/images/en-us_image_0178334448.png
       :alt: **Figure 2** PAK
@@ -158,7 +159,7 @@ The following uses an ECS running CentOS 7.5 as an example to describe how to de
 #. Configure the network.
 
    -  If the license server is to be accessed using the VPC, ensure that the license server and the GPU-accelerated ECS with the GRID driver installed are in the same VPC subnet.
-   -  If the license server is to be accessed using a public IP address, configure the security group to which license server belongs and add inbound rules for TCP 7070 and TCP 8080.
+   -  If the license server is to be accessed using a public IP address, configure the security group which license server belongs to and add inbound rules for TCP 7070 and TCP 8080.
 
 2. Install the license server.
 

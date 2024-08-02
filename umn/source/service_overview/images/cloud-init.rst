@@ -48,7 +48,7 @@ Impact on AS
 Notes
 -----
 
--  When using Cloud-Init, enable DHCP in the VPC to which the ECS belongs.
+-  When using Cloud-Init, enable DHCP in the VPC which the ECS belongs to.
 -  When using Cloud-Init, ensure that security group rules for the outbound direction meet the following requirements:
 
    -  **Protocol**: **TCP**

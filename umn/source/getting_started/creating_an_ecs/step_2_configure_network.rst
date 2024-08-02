@@ -18,7 +18,7 @@ Network Settings
 
    .. note::
 
-      -  Ensure that DHCP is enabled in the VPC to which the ECS belongs.
+      -  Ensure that DHCP is enabled in the VPC which the ECS belongs to.
       -  When you use VPC for the first time, the system automatically creates a VPC for you, including the security group and NIC.
 
 #. (Optional) Add an extension NIC. You can add multiple extension NICs to an ECS and specify IP addresses for them (including primary NICs).
@@ -45,14 +45,14 @@ Network Settings
 
       Before initializing an ECS, ensure that the security group rules for the outbound direction meet the following requirements:
 
-      -  **Protocol**: **TCP**
-      -  **Port Range**: **80**
-      -  **Remote End**: **169.254.0.0/16**
+      -  Protocol: TCP
+      -  Port: 80
+      -  Source: 169.254.0.0/16
 
       If you use the default security group rules for the outbound direction, the preceding requirements are met, and the ECS can be initialized. The default security group rules for the outbound direction are as follows:
 
-      -  **Protocol**: **ANY**
-      -  **Port Range**: **ANY**
+      -  Protocol: ANY
+      -  Port: ANY
       -  **Remote End**: **0.0.0.0/16**
 
 #. Set EIP.

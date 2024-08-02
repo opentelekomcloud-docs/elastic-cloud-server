@@ -286,7 +286,7 @@ If a local disk attached to an ECS is damaged, perform the following operations 
 
    .. note::
 
-      If the serial number cannot be obtained by running the preceding command, see :ref:`Using a Serial Number to Obtain the Disk Name (Windows) <en-us_topic_0103285575__section1549713815243>`.
+      If the serial number cannot be obtained by running the preceding command, see :ref:`Using a Serial Number to Obtain the Disk Device Name (Windows) <en-us_topic_0103285575__section1549713815243>`.
 
 #. Stop the ECS and provide the serial number of the faulty disk to technical support personnel to replace the local disk.
 

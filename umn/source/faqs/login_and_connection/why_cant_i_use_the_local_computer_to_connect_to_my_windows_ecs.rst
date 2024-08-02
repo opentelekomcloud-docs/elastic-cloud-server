@@ -16,8 +16,8 @@ An error message is displayed indicating that your local computer cannot connect
 
    **Figure 1** Cannot connect to the remote computer
 
-Possible Causes
----------------
+Possible Cause
+--------------
 
 -  Port 3389 of the security group on the ECS is disabled. For details, see :ref:`Checking Port Configuration on the ECS <en-us_topic_0264235939__en-us_topic_0250947106_section143451864405>`.
 -  The firewall on the ECS is disabled. For details, see :ref:`Checking Whether the Firewall Is Correctly Configured <en-us_topic_0264235939__en-us_topic_0250947106_section1130118816394>`.
@@ -34,7 +34,7 @@ Check whether port 3389 (used by default) on the ECS is accessible.
 
 Ensure that port 3389 has been added in the inbound rule.
 
-On the page providing details about the ECS, click the **Security Groups** tab and view port 3389 in the inbound rule of the security group.
+On the ECS details page, click the **Security Groups** tab and check port 3389 in the inbound rule of the security group.
 
 .. _en-us_topic_0264235939__en-us_topic_0250947106_section1130118816394:
 
@@ -91,7 +91,7 @@ After you perform the preceding operations, try to remotely log in to the ECS ag
 Checking Remote Desktop Connection Settings
 -------------------------------------------
 
-Modify the remote desktop connection settings on the Windows ECS:
+Modify the remote desktop connection settings of the Windows ECS: Select **Allow remote connections to this computer**. The procedure is as follows:
 
 #. Log in to the ECS.
 
@@ -99,7 +99,7 @@ Modify the remote desktop connection settings on the Windows ECS:
 
 #. In the left navigation pane, choose **Remote settings**.
 
-#. Click the **Remote** tab. In the **Remote Desktop** pane, select **Allow connections from computers running any version of Remote Desktop (less secure)**.
+#. Click the **Remote** tab. In the **Remote Desktop** pane, select **Allow remote connections to this computer**.
 
 
    .. figure:: /_static/images/en-us_image_0288997246.png

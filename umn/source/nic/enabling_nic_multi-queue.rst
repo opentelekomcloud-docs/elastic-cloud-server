@@ -27,7 +27,7 @@ Support of NIC Multi-Queue
 
 NIC multi-queue can be enabled on an ECS only when the ECS specifications, virtualization type, and image OS meet the requirements described in this section.
 
--  For details about the ECS specifications that support NIC multi-queue, see :ref:`ECS Specifications and Types <en-us_topic_0132345719>`.
+-  For details about the ECS specifications that support NIC multi-queue, see :ref:`ECS Specifications <en-us_topic_0132345719>`.
 
    .. note::
 

@@ -25,7 +25,7 @@ Procedure
 
 #. On the **NICs** tab, click **Add NIC**.
 
-#. Set the subnet and security group for the network interface to be added.
+#. Set the subnet and security group for the NIC to be added.
 
 
    .. figure:: /_static/images/en-us_image_0000001676518625.png

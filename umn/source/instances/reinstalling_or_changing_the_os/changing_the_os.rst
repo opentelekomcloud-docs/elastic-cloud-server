@@ -130,7 +130,7 @@ Procedure
 
 #. .. _en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45992498111556:
 
-   On the **Change ECS OS** page, confirm the specifications, and click **Submit**.
+   In the **Change ECS OS** dialog box, confirm the specifications, and click **Submit**.
 
    After the application is submitted, the status **Changing OS** is displayed. When this status disappears, the OS change is complete.
 

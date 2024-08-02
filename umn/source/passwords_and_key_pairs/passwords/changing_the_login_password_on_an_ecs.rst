@@ -45,7 +45,7 @@ Windows
 
 #. Log in to the ECS.
 
-   For details, see :ref:`Login Overview <en-us_topic_0092494943>`.
+   For details, see :ref:`Login Overview (Windows) <en-us_topic_0092494943>`.
 
 #. Press **Win+R** to start the **Run** dialog box.
 

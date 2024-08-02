@@ -133,9 +133,9 @@ Using a Serial Number to Obtain a Disk Device Name (Linux)
 
 If a serial number is displayed on the console, run either of the following commands to obtain the device name.
 
-**#** **udevadm info --query=all --name=/dev/xxx \| grep ID_SERIAL**
+**udevadm info --query=all --name=/dev/xxx \| grep ID_SERIAL**
 
-**# ll /dev/disk/by-id/\***
+**ll /dev/disk/by-id/\***
 
 .. note::
 
@@ -143,9 +143,9 @@ If a serial number is displayed on the console, run either of the following comm
 
 For example, if the serial number of the VBD disk is 62f0d06b-808d-480d-8, run either of the following commands:
 
-**# udevadm info --query=all --name=/dev/vdb \| grep ID_SERIAL**
+**udevadm info --query=all --name=/dev/vdb \| grep ID_SERIAL**
 
-**# ll /dev/disk/by-id/\***
+**ll /dev/disk/by-id/\***
 
 The following information is displayed:
 
