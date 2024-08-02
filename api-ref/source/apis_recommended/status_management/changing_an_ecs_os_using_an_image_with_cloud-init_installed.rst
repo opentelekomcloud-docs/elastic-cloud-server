@@ -96,7 +96,7 @@ Request
    |                      |                 |                 |    -  The content of **user_data** must be encoded with base64.                                                                                 |
    |                      |                 |                 |    -  The maximum size of the content to be injected (before encoding) is 32 KB.                                                                |
    |                      |                 |                 |                                                                                                                                                 |
-   |                      |                 |                 | For more details, see "Injecting User Data into ECSs" in *Elastic Cloud Server User Guide*.                                                     |
+   |                      |                 |                 | For more details, see "Injecting User Data into ECSs" in the *Elastic Cloud Server User Guide*.                                                 |
    |                      |                 |                 |                                                                                                                                                 |
    |                      |                 |                 | Examples                                                                                                                                        |
    |                      |                 |                 |                                                                                                                                                 |

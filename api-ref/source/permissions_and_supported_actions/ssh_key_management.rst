@@ -20,7 +20,7 @@ SSH Key Management
 |                                                                                               |                                                      |                           |                 |
 |                                                                                               | GET /v2.1/{project_id}/os-keypairs                   |                           |                 |
 +-----------------------------------------------------------------------------------------------+------------------------------------------------------+---------------------------+-----------------+
-| :ref:`Deleting an SSH key pair (native openStack API) <en-us_topic_0020212680>`               | DELETE /v2/{project_id}/os-keypairs/{keypair_name}   | ecs:serverKeypairs:delete | ``-``           |
+| :ref:`Deleting an SSH key pair (native OpenStack API) <en-us_topic_0020212680>`               | DELETE /v2/{project_id}/os-keypairs/{keypair_name}   | ecs:serverKeypairs:delete | ``-``           |
 |                                                                                               |                                                      |                           |                 |
 |                                                                                               | DELETE /v2.1/{project_id}/os-keypairs/{keypair_name} |                           |                 |
 +-----------------------------------------------------------------------------------------------+------------------------------------------------------+---------------------------+-----------------+

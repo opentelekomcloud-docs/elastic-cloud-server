@@ -72,7 +72,7 @@ Response
 Example Request
 ---------------
 
-Updated the metadata of an ECS to the user-defined metadata key-value pair.
+Updated the metadata of an ECS with the user-defined metadata key-value pair.
 
 .. code-block:: text
 
