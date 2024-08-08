@@ -25,7 +25,7 @@ Procedure
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
-#. Locate the row containing the target ECS and choose **More** > **Manage Image/Backup** > **Create Image** in the **Operation** column.
+#. In the ECS list, choose **More** > **Manage Image/Backup** > **Create Image** in the **Operation** column.
 
 #. Configure the following information:
 

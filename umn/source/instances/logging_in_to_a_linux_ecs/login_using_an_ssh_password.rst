@@ -131,7 +131,7 @@ To log in to a Linux ECS from a local Linux server, perform the operations below
 
    .. note::
 
-      **xx.xx.xx.x**\ x indicates the EIP bound to the ECS.
+      **xx.xx.xx.xx** indicates the EIP bound to the ECS.
 
 #. Verify the SSH fingerprint of the ECS and enter **yes**.
 

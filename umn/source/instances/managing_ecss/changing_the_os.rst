@@ -17,7 +17,13 @@ The cloud platform supports changing between image types (public images, private
 Constraints
 -----------
 
+-  The OS change takes about 10 to 20 minutes During this process, the ECS status is **Changing OS**.
+-  Do not perform any operations on the ECS before the system injects the password or key pair. Otherwise, the login will fail.
+-  The ECS for which you want to change the OS must be in any of the following states: **Stopped**, **Reinstallation failed**, or **Failed to change the OS**.
+-  The target ECS must have a system disk attached.
 -  The EVS disk quota must be greater than 0.
+-  The system disk type cannot be changed.
+-  The system disk can be encrypted.
 -  For details about the change between different OSs, see :ref:`Notes on Change Between Windows and Linux <en-us_topic_0031523135__section1852122261012>`.
 -  If an ECS OS is to be changed using a full-ECS image, the ECS system disk can be encrypted.
 
@@ -59,10 +65,12 @@ When you change the OS from Windows to Linux or from Linux to Windows, note the 
 Prerequisites
 -------------
 
--  The target ECS is stopped.
--  The target ECS has a system disk attached.
--  Necessary data has been backed up. (Changing the OS clears the data in all partitions of the system disk, including the system partition.)
--  If the original ECS uses password authentication while the new ECS uses key pair authentication, ensure that a key pair is available.
+-  The data is backed up.
+
+-  If you want to change the login authentication mode from password to key pair during the OS change, create a key file in advance.
+
+   For details, see :ref:`(Recommended) Creating a Key Pair on the Management Console <en-us_topic_0000001278350057>`.
+
 -  If you plan to use a private image to change the OS, ensure that a private image is available. For details about how to create a private image, see *Image Management Service User Guide*.
 
    -  If the image of a specified ECS is required, make sure that a private image has been created using this ECS.
@@ -85,7 +93,7 @@ Procedure
 
    Only stopped ECSs support OS change. If the ECS is not stopped, stop it before proceeding with changing.
 
-#. Modify related ECS parameters, such as **Image Type** and **Image**, based on service requirements.
+#. Select the target image.
 
    For more details, see :ref:`Creating an ECS <en-us_topic_0021831611>`.
 

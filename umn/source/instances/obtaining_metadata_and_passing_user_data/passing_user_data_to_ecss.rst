@@ -373,7 +373,7 @@ User data example:
 Case 6
 ------
 
-This case illustrates how to use the user data passing function to assign user **root** permission for remotely logging in to a Linux ECS. After passing the file to an ECS, you can log in to the ECS as user **root** using SSH key pair authentication.
+This case illustrates how to use the user data passing function to assign user **root** permissions for remotely logging in to a Linux ECS. After passing the file to an ECS, you can log in to the ECS as user **root** using SSH key pair authentication.
 
 User data example:
 
