@@ -276,4 +276,4 @@ After installing a GUI on a GPU-accelerated ECS, perform the following operation
 
    .. note::
 
-      If a GPU-accelerated ECS has a GRID driver installed, you need to configure a license to use the GPU rendering capability. For details, see :ref:`Installing a GRID Driver on a GPU-accelerated ECS <en-us_topic_0149610914>`.
+      If a GPU-accelerated ECS has a GRID driver installed, you need to configure a license to use the GPU rendering capability. For details, see :ref:`Manually Installing a GRID Driver on a GPU-accelerated ECS <en-us_topic_0149610914>`.

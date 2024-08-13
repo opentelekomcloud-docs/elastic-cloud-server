@@ -10,7 +10,7 @@ Security Group
 
 A security group is a collection of access control rules for ECSs that have the same security protection requirements and that are mutually trusted. After a security group is created, you can create various access rules for the security group, these rules will apply to all ECSs added to this security group.
 
-You can also customize a security group or use the default one. The system provides a default security group for you, which permits all outbound traffic and denies inbound traffic. ECSs in a security group are accessible to each other. For details about the default security group, see :ref:`Default Security Group and Rules <en-us_topic_0140323154>`.
+You can also customize a security group or use the default one. The system provides a default security group for you, which permits all outbound traffic and denies inbound traffic. ECSs in a security group are accessible to each other. For details about the default security group, see :ref:`Default Security Groups and Rules <en-us_topic_0140323154>`.
 
 .. note::
 
