@@ -8,7 +8,7 @@ Why Do the Disks of a Windows ECS Go Offline After I Modify the ECS Specificatio
 Scenarios
 ---------
 
-After you modify specifications of a Windows ECS, the disks may go offline. Therefore, you need to check the number of disks after you modify the specifications.
+After you modify specifications of a Windows ECS, the disks may go offline. You need to check the number of disks after you modify the specifications.
 
 Procedure
 ---------
@@ -46,7 +46,7 @@ Procedure
 
       The **Server Manager** page is displayed.
 
-   b. In the navigation pane on the left, choose **Storage** > **Disk Management**.
+   b. In the left navigation pane, choose **Storage** > **Disk Management**.
 
       The **Disk Management** page is displayed.
 

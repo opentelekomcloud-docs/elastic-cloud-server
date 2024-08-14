@@ -14,7 +14,7 @@ Prerequisites
 -------------
 
 -  The target ECS is running.
--  You have bound an EIP to the ECS.
+-  The ECS must have an EIP bound.
 
 -  Access to port 3389 is allowed in the inbound direction of the security group to which the ECS belongs.
 -  Data can be exchanged between the login tool and the target ECS. For example, the default port 3389 is not blocked by the firewall.

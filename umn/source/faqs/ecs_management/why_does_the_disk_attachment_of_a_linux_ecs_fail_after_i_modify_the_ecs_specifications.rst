@@ -8,7 +8,7 @@ Why Does the Disk Attachment of a Linux ECS Fail After I Modify the ECS Specific
 Scenarios
 ---------
 
-After you modify specifications of a Linux ECS, disk attachment may fail. Therefore, you need to check the disk attachment after you modify the specifications.
+After you modify specifications of a Linux ECS, disk attachment may fail. You need to check the disk attachment after you modify the specifications.
 
 Procedure
 ---------
@@ -56,13 +56,13 @@ Procedure
 
    For example, run the following command:
 
-   **mount /dev/vbd1 /mnt/vbd1**
+   **mount /dev/vdb1 /mnt/vdb1**
 
-   In the preceding command, **/dev/vbd1** is the disk to be attached, and **/mnt/vbd1** is the path for disk attachment.
+   In the preceding command, **/dev/vdb1** is the disk to be attached, and **/mnt/vdb1** is the path for disk attachment.
 
    .. important::
 
-      Ensure that **/mnt/vbd1** is empty. Otherwise, the attachment will fail.
+      Ensure that **/mnt/vdb1** is empty. Otherwise, the attachment will fail.
 
 #. Run the following commands to check whether the numbers of disks before and after specifications modifications are the same:
 

@@ -18,7 +18,7 @@ Constraints
 -----------
 
 -  The OS change takes about 10 to 20 minutes During this process, the ECS status is **Changing OS**.
--  Do not perform any operations on the ECS before the system injects the password or key pair. Otherwise, the login will fail.
+-  Do not perform any operations on the ECS before the system injects the password or key. Otherwise, the login will fail.
 -  The ECS for which you want to change the OS must be in any of the following states: **Stopped**, **Reinstallation failed**, or **Failed to change the OS**.
 -  The target ECS must have a system disk attached.
 -  The EVS disk quota must be greater than 0.
@@ -39,7 +39,6 @@ Notes
 -  After the OS is changed, the IP and MAC addresses of the ECS remain unchanged.
 -  After the OS is changed, customized configurations, such as DNS and hostname of the original OS will be reset and require reconfiguration.
 -  It takes about 10 to 20 minutes to change the OS. During this process, the ECS is in **Changing OS** state.
--  Do not perform any operations on the ECS immediately after its OS is changed. Wait for several minutes until the system successfully injects the password or key. Otherwise, the injection may fail, and the ECS cannot be logged in to.
 -  After the OS is changed, the password for logging in to the ECS is reset. To retrieve the password, perform the following operations:
 
    -  For a Linux ECS, log in to it using the key and set a new password. For instructions about how to log in to an ECS using a key pair, see :ref:`Remotely Logging In to a Linux ECS (Using an SSH Key Pair) <en-us_topic_0017955380>`.
@@ -111,7 +110,7 @@ Procedure
 
    -  **Encryption**: indicates that the EVS disk has been encrypted.
    -  **Create Xrole**: assigns KMS access permissions to EVS to obtain KMS keys. After the permissions are assigned, follow-up operations do not require assigning permissions again.
-   -  **Xrole Name: EVSAccessKMS**: specifies that permissions have been assigned to EVS to obtain KMS keys for encrypting or decrypting EVS disks.
+   -  **Xrole Name**: set to **EVSAccessKMS**, which means that permissions have been assigned to EVS to obtain KMS keys for encrypting or decrypting EVS disks.
    -  **KMS Key Name**: specifies the name of the key used by the encrypted EVS disk. You can select an existing key, or click **Create KMS Key** and create a new one on the KMS console. The default value is **evs/default**.
    -  **KMS Key ID**: specifies the ID of the key used by the encrypted data disk.
 

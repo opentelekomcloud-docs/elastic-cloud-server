@@ -77,7 +77,7 @@ Installing a GUI
 
    (Mandatory for Ubuntu 20.04) Add a member account.
 
-   After GUI desktop component is installed on the ECS, you cannot log in to the Ubuntu 20.04 OS as user root **user**. Therefore, you need to add a member account for logging in to the GUI desktop.
+   After GUI desktop component is installed on the ECS, you cannot log in to the Ubuntu 20.04 OS as user root **user**. You need to add a member account for logging in to the GUI desktop.
 
    Run the following command to add user **user01**:
 
@@ -199,7 +199,9 @@ For GPU-accelerated ECSs, you need to configure X Server, x11vnc, and ligthdm wh
 
    b. Press **i** to enter editing mode.
 
-   c. Add the following content to the file:
+   c. .. _en-us_topic_0155136016__li560810483329:
+
+      Add the following content to the file:
 
       .. code-block::
 
@@ -248,7 +250,7 @@ After installing a GUI on a GPU-accelerated ECS, perform the following operation
 
    d. In the **Add Inbound Rule** dialog box, follow the prompts to add the following security group rule:
 
-      Allow inbound access through TCP port *5902*. The port number is determined by the **rfbport** parameter in step **Step 9.c.**
+      Allow inbound access through TCP port *5902*. The port number is determined by the **rfbport** parameter in step :ref:`9.c <en-us_topic_0155136016__li560810483329>`.
 
 #. Log in to the ECS using VNC.
 
