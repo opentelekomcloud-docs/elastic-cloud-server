@@ -8,8 +8,9 @@ Why Does the System Display Error Code 0x112f When I Log In to a Windows ECS?
 Symptom
 -------
 
-When you log in to a Windows ECS, the system displays error code 0x112f.
+When you log in to a Windows ECS, the system displays error code 0x112f, as shown in :ref:`Figure 1 <en-us_topic_0120795668__fig1256612592310>`.
 
+.. _en-us_topic_0120795668__fig1256612592310:
 
 .. figure:: /_static/images/en-us_image_0120795776.jpg
    :alt: **Figure 1** Error message (code: 0x112f)
@@ -36,4 +37,4 @@ Solution
 
    .. note::
 
-      This method will deteriorate the disk I/O performance. Therefore, use this method only when necessary.
+      This method will deteriorate the disk I/O performance, so use this method only when necessary.

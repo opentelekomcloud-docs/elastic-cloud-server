@@ -107,7 +107,7 @@ Procedure
 
    -  Change the value of **AllowUsers** to **root**.
 
-      Search for **AllowUsers** in the file. If **AllowUsers** is missing, add it at the end of the file.
+      Search for **AllowUsers** in the file. If **AllowUsers** is missing, add **AllowUsers root** at the end of the file.
 
 #. Stop the temporary ECS, detach the system disk, attach the system disk to the original Linux ECS, and restart the original Linux ECS.
 

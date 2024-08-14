@@ -145,7 +145,7 @@ If the high bandwidth usage is caused by normal service access of non-malicious 
 
       Parameters in the **nethogs** command are as follows:
 
-      -  **-d**: Set the update interval in the unit of second. The default value is **1**.
+      -  **-d**: Set the update interval in the unit of second. The default value is 1s.
       -  **-t**: Enable tracing.
       -  **-c**: Set the number of updates.
       -  **device**: Set the NIC to be monitored. The default value is **eth0**.

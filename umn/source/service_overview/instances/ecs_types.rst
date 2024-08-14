@@ -44,9 +44,11 @@ When creating an ECS, you can view the flavors in the flavor list.
 vCPU
 ----
 
-The processor uses the hyper-threading technology. The CPU exposes two execution contexts per physical core. This means that one physical core now works like two "logical cores" that can handle different software threads.
+ECS supports hyper-threading, which enables two threads to run concurrently on a single CPU core. Each thread is represented as a virtual CPU (vCPU) and a CPU core contains two vCPUs (logical cores).
 
-For example, a 10-core physical CPU contains 20 vCPUs (threads).
+Hyper-threading is enabled for most ECS flavors by default. If hyper-threading is disabled during the ECS creation or flavor change, the number of vCPUs queried from the ECS is half of the number of vCPUs defined by the ECS flavor.
+
+For example, a 2-core physical CPU contains 4 vCPUs (threads).
 
 Network QoS
 -----------
@@ -69,8 +71,10 @@ The intranet bandwidth and PPS of an ECS are determined by the ECS flavor.
 
 -  Maximum NICs: indicates the maximum number of NICs that can be attached to an ECS.
 
-   .. note::
+-  Maximum supplementary NICs: indicates the maximum number of supplementary NICs that can be attached to an ECS.
 
-      -  For instructions about how to test PPS, see :ref:`How Can I Test Network Performance? <en-us_topic_0115820205>`.
-      -  For instructions about how to enable NIC multi-queue, see :ref:`Enabling NIC Multi-Queue <en-us_topic_0058758453>`.
-      -  The maximum bandwidth is the total bandwidth allocated to an ECS. If an ECS has multiple NICs, the sum of the maximum bandwidths allocated to all NICs cannot exceed the maximum bandwidth allocated to the ECS.
+.. note::
+
+   -  For instructions about how to test PPS, see :ref:`How Can I Test Network Performance? <en-us_topic_0115820205>`.
+   -  For instructions about how to enable NIC multi-queue, see :ref:`Enabling NIC Multi-Queue <en-us_topic_0058758453>`.
+   -  The maximum bandwidth is the total bandwidth allocated to an ECS. If an ECS has multiple NICs, the sum of the maximum bandwidths allocated to all NICs cannot exceed the maximum bandwidth allocated to the ECS.

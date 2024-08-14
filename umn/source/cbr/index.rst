@@ -2,15 +2,15 @@
 
 .. _en-us_topic_0096304614:
 
-Backup Using CBR
-================
+CBR
+===
 
 -  :ref:`Overview <en-us_topic_0000001128445638>`
--  :ref:`Backing Up an ECS Data <en-us_topic_0000001128604648>`
+-  :ref:`Backing Up an ECS <en-us_topic_0000001128604648>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
    overview
-   backing_up_an_ecs_data
+   backing_up_an_ecs

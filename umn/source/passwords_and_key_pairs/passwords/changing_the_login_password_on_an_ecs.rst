@@ -24,21 +24,21 @@ Background
 
 .. table:: **Table 1** Password complexity requirements
 
-   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
-   | Parameter             | Requirement                                                                                                                                                  | Example Value                                                 |
-   +=======================+==============================================================================================================================================================+===============================================================+
-   | Password              | -  Consists of 8 to 26 characters.                                                                                                                           | YNbUwp!dUc9MClnv                                              |
-   |                       | -  Contains at least three of the following character types:                                                                                                 |                                                               |
-   |                       |                                                                                                                                                              | .. note::                                                     |
-   |                       |    -  Uppercase letters                                                                                                                                      |                                                               |
-   |                       |    -  Lowercase letters                                                                                                                                      |    The example password is generated randomly. Do not use it. |
-   |                       |    -  Digits                                                                                                                                                 |                                                               |
-   |                       |    -  Special characters: ``$!@%-_=+[]:./^,{}?``                                                                                                             |                                                               |
-   |                       |                                                                                                                                                              |                                                               |
-   |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                               |
-   |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                               |
-   |                       | -  Cannot start with a slash (/) for Windows ECSs.                                                                                                           |                                                               |
-   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
+   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter                         | Requirement                                                                                                                                                  |
+   +===================================+==============================================================================================================================================================+
+   | Password                          | -  Consists of 8 to 26 characters.                                                                                                                           |
+   |                                   | -  Contains at least three of the following character types:                                                                                                 |
+   |                                   |                                                                                                                                                              |
+   |                                   |    -  Uppercase letters                                                                                                                                      |
+   |                                   |    -  Lowercase letters                                                                                                                                      |
+   |                                   |    -  Digits                                                                                                                                                 |
+   |                                   |    -  Special characters: ``$!@%-_=+[]:./^,{}?``                                                                                                             |
+   |                                   |                                                                                                                                                              |
+   |                                   | -  Cannot contain the username or the username spelled backwards.                                                                                            |
+   |                                   | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |
+   |                                   | -  Cannot start with a slash (/) for Windows ECSs.                                                                                                           |
+   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Windows
 -------

@@ -5,10 +5,10 @@
 Default Security Group and Rules
 ================================
 
-If you have not created any security groups yet, the system automatically creates a default security group for you and associates it with the instance when you create it. A default security group has the following rules:
+Note the following when using default security group rules:
 
--  Inbound rules control incoming traffic to instances in a security group. Only instances in the same security group can communicate with each other, and all inbound requests are denied.
--  Outbound rules allow all outbound traffic and response traffic to the outbound requests.
+-  Inbound rules control incoming traffic to instances in the default security group. The instances can only communicate with each other but cannot be accessed from external networks.
+-  Outbound rules allow all traffic from the instances in the default security group to external networks.
 
 :ref:`Figure 1 <en-us_topic_0140323154__fig11890174421819>` shows the default security group.
 

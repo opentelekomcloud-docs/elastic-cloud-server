@@ -8,7 +8,7 @@ Adding a Network Interface
 Scenarios
 ---------
 
-If your ECS requires multiple network interfaces, you can attach them to your ECS.
+If your ECS requires multiple network interfaces, you can add them to your ECS.
 
 Procedure
 ---------
@@ -33,7 +33,7 @@ Procedure
 
       **Figure 1** Configuring the subnet and security group
 
-   -  **Security Group**: You can select multiple security groups. In such a case, the rules of these security groups are effectively aggregated to create one set of rules to apply to the ECS.
+   -  **Security Group**: You can select multiple security groups. In such a case, the access rules of all the selected security groups will apply to the ECS.
    -  **Subnet**: specifies the subnet to which the network interface to be added belongs.
    -  **New Private IP Address**: If you want to add a network interface with a specified IP address, enter an IP address into the **New Private IP Address** field. I
 
