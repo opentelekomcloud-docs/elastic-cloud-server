@@ -106,9 +106,9 @@ Procedure
 
 
    .. figure:: /_static/images/en-us_image_0175083510.png
-      :alt: **Figure 7** Assign Driver Letter or Path
+      :alt: **Figure 7** Assign Drive Letter or Path
 
-      **Figure 7** Assign Driver Letter or Path
+      **Figure 7** Assign Drive Letter or Path
 
 #. Assign a drive letter or path to your partition and click **Next**. The system assigns drive letter D by default. In this example, the default setting is used.
 
@@ -132,7 +132,7 @@ Procedure
 
    .. important::
 
-      The partition sizes supported by file systems vary. Therefore, you are advised to choose an appropriate file system based on your service requirements.
+      The partition sizes supported by file systems vary. Choose an appropriate file system format based on your service requirements.
 
 #. Click **Finish**.
 

@@ -10,7 +10,7 @@ After tags are added to resources, you can search for resources by tag using eit
 Searching for ECSs by Tag
 -------------------------
 
-On the **Elastic Cloud Server** page, search for ECSs by tag key or value.
+On the **Elastic Cloud Server** page, search for ECSs by tag key-value pair.
 
 #. Log in to the management console.
 
@@ -18,25 +18,21 @@ On the **Elastic Cloud Server** page, search for ECSs by tag key or value.
 
 #. Under **Computing**, choose **Elastic Cloud Server**.
 
-#. Click **Search by Tag** above the upper right corner of the ECS list to expand the search area.
+#. In the search box, select **Tag** and then a key-value pair, and click **OK**.
+
+   You can search for ECSs by multiple tags and they are automatically joined with AND.
 
 
-   .. figure:: /_static/images/en-us_image_0183030460.png
-      :alt: **Figure 1** Searching for ECSs by tag
+   .. figure:: /_static/images/en-us_image_0000001798756234.png
+      :alt: **Figure 1** Searching by tag (1)
 
-      **Figure 1** Searching for ECSs by tag
+      **Figure 1** Searching by tag (1)
 
-#. Enter the tag of the ECS to be queried.
 
-   Neither the tag key nor value can be empty. When the tag key or value is matched, the system automatically shows the target ECSs.
+   .. figure:: /_static/images/en-us_image_0000001845635105.png
+      :alt: **Figure 2** Searching by tag (2)
 
-#. Add tags.
-
-   The system supports multiple tags and uses the intersection set of all tags to search for ECSs.
-
-#. Click **Search**.
-
-   The system searches for ECSs based on tag keys and values.
+      **Figure 2** Searching by tag (2)
 
 Filtering Resources on the TMS Console
 --------------------------------------

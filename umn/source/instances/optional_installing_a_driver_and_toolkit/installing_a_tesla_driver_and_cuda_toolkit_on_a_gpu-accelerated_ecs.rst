@@ -19,12 +19,12 @@ This section describes how to install a Tesla driver and CUDA toolkit on a GPU-a
 Notes
 -----
 
--  The target ECS has an EIP bound.
--  The Tesla driver and CUDA toolkit have not been installed on the ECS.
+-  The ECS must have an EIP bound.
+-  Check whether the CUDA toolkit and Tesla driver have been installed on the ECS.
 
 .. note::
 
-   -  Download the CUDA toolkit from the official NVIDIA website and install it. A Tesla driver matching the CUDA version will be automatically installed then. However, if there are specific requirements or dependencies on the Tesla driver version, download the matching Tesla driver from the official NVIDIA website first and then install the driver before installing the CUDA toolkit.
+   -  If the CUDA toolkit has not been installed, download it from the official NVIDIA website and install it. A Tesla driver matching the CUDA version will be automatically installed then. However, if there are specific requirements or dependencies on the Tesla driver version, download the matching Tesla driver from the official NVIDIA website first and then install the driver before installing the CUDA toolkit.
    -  If a Tesla driver has been installed on the ECS, check the driver version. Before installing a new driver version, uninstall the original Tesla driver to prevent an installation failure due to driver conflicts.
 
 Installation process:

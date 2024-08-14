@@ -340,7 +340,7 @@ Linux (Manually Enabling Dynamic Assignment of IPv6 Addresses)
 
    -  Ubuntu 18.04/20.04
 
-      a. Run the following command to access **/etc/netpaln/**:
+      a. Run the following command to access **/etc/netplan/**:
 
          **cd /etc/netplan**
 
@@ -380,7 +380,7 @@ Linux (Manually Enabling Dynamic Assignment of IPv6 Addresses)
 
    -  Ubuntu 22.04
 
-      a. Run the following command to access **/etc/netpaln/**:
+      a. Run the following command to access **/etc/netplan/**:
 
          **cd /etc/netplan**
 
@@ -398,7 +398,7 @@ Linux (Manually Enabling Dynamic Assignment of IPv6 Addresses)
 
          **vi 01-netcfg.yaml**
 
-      d. Append the following content to the configuration file (pay attention to the yaml syntax and text indentation):
+      d. Append the following content to the configuration file **01-netcfg.yaml** (pay attention to the yaml syntax and text indentation):
 
          .. code-block::
 
@@ -417,6 +417,34 @@ Linux (Manually Enabling Dynamic Assignment of IPv6 Addresses)
       e. Run the following command to make the changes take effect:
 
          **sudo netplan apply**
+
+      f. Run the following command to edit **/etc/NetworkManager/NetworkManager.conf**:
+
+         **vi /etc/NetworkManager/NetworkManager.conf**
+
+      g. Append the following content to the configuration file **NetworkManager.conf** (pay attention to the file format and indentation):
+
+         .. code-block::
+
+            [main]
+            plugins=ifupdown,keyfile
+            dhcp=dhclient
+
+            [ifupdown]
+            managed=true
+
+            [device]
+            wifi.scan-rand-mac-address=no
+
+
+         .. figure:: /_static/images/en-us_image_0000001806593545.png
+            :alt: **Figure 17** Modification result
+
+            **Figure 17** Modification result
+
+      h. Run the following command for the configuration to take effect:
+
+         **systemctl** **restart NetworkManager**
 
    -  Debian
 
@@ -488,9 +516,9 @@ Linux (Manually Enabling Dynamic Assignment of IPv6 Addresses)
 
 
             .. figure:: /_static/images/en-us_image_0000001771292141.png
-               :alt: **Figure 17** Example command
+               :alt: **Figure 18** Example command
 
-               **Figure 17** Example command
+               **Figure 18** Example command
 
       d. (Optional) For CentOS 7/CentOS 8, change the IPv6 link-local address mode of extension NICs to EUI64.
 
@@ -500,9 +528,9 @@ Linux (Manually Enabling Dynamic Assignment of IPv6 Addresses)
 
 
             .. figure:: /_static/images/en-us_image_0000001723651678.png
-               :alt: **Figure 18** Querying NIC information
+               :alt: **Figure 19** Querying NIC information
 
-               **Figure 18** Querying NIC information
+               **Figure 19** Querying NIC information
 
          #. Run the following command to change the IPv6 link-local address mode of eth1 to EUI64:
 
@@ -571,15 +599,15 @@ After automatic IPv6 address assignment is configured on an ECS running CentOS 6
 
 
       .. figure:: /_static/images/en-us_image_0000001723492326.png
-         :alt: **Figure 19** Modification 1
+         :alt: **Figure 20** Modification 1
 
-         **Figure 19** Modification 1
+         **Figure 20** Modification 1
 
 
       .. figure:: /_static/images/en-us_image_0000001771211517.png
-         :alt: **Figure 20** Modification 2
+         :alt: **Figure 21** Modification 2
 
-         **Figure 20** Modification 2
+         **Figure 21** Modification 2
 
 -  Debian 8.2.0/8.8.0
 
