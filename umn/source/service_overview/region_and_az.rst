@@ -38,4 +38,4 @@ When deploying resources, consider your applications' requirements on disaster r
 Regions and Endpoints
 ---------------------
 
-Before you use an API to call resources, specify its region and endpoint. For more details, see `Regions and Endpoints <https://docs.otc.t-systems.com/additional/endpoints.html>`__.
+Before you use an API to call resources, specify its region and endpoint. For more details, see `Regions and Endpoints <https://docs.otc.t-systems.com/regions-and-endpoints/index.html>`__.

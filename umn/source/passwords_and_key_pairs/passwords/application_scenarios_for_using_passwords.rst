@@ -45,7 +45,7 @@ Background
    |                                   |    -  Uppercase letters                                                                                                                                      |
    |                                   |    -  Lowercase letters                                                                                                                                      |
    |                                   |    -  Digits                                                                                                                                                 |
-   |                                   |    -  Special characters: ``$!@%-_=+[]:./^,{}?``                                                                                                             |
+   |                                   |    -  Special characters:``$!@%-_=+[]:./^,{}?``                                                                                                              |
    |                                   |                                                                                                                                                              |
    |                                   | -  Cannot contain the username or the username spelled backwards.                                                                                            |
    |                                   | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |

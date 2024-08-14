@@ -17,7 +17,7 @@ If your full-ECS image is in the old backup format provided by CSBS, this issue 
 
 .. note::
 
-   -  CSBS has a new backup format. You can rapidly create ECSs if the full-ECS image is in this format
+   -  CSBS has a new backup format. You can rapidly create ECSs if the full-ECS image is in this format.
    -  This issue does not occur if a full-ECS image is created using a CBR backup.
 
 Solution (Using CBR)
@@ -27,16 +27,16 @@ If you want to use a full-ECS image to rapidly create ECSs, ensure that the full
 
 -  Scenario 1: The ECS based on which the target CSBS backup is created is available.
 
-   In such a case, use the ECS to create a CBR backup and use this backup to create a full-ECS image. You can use this full-ECS image to rapidly create ECSs.
+   Use an ECS to create a CBR backup and use the backup to create a full-ECS image. You can use this full-ECS image to rapidly create ECSs.
 
    -  For instructions about how to back up an ECS, see *Cloud Backup and Recovery User Guide*.
    -  For instructions about how create a full-ECS image, see *Image Management Service User Guide*.
 
 -  Scenario 2: The ECS based on which the target CSBS backup is created is unavailable.
 
-   #. Use the full-ECS image to create a new ECS.
+   #. Use the full-ECS image to create an ECS.
 
-   #. Use an ECS to create a CBR backup.
+   #. Use the ECS to create a CBR backup.
 
       For details, see *Cloud Backup and Recovery User Guide*.
 

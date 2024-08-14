@@ -5,7 +5,7 @@
 Why Is My Linux ECS Running Slowly?
 ===================================
 
-If your ECS runs slowly or is inaccessible unexpectedly, the bandwidth or vCPU usage of the ECS may be excessively high. If you have created an alarm rule using Cloud Eye, the system automatically sends an alarm to you when the bandwidth or CPU usage reaches the threshold specified in the rule.
+If your ECS runs slowly or is inaccessible unexpectedly, the bandwidth or vCPU usage of the ECS may be excessively high. If you have created an alarm rule in Cloud Eye, the system automatically sends an alarm to you when the bandwidth or CPU usage reaches the threshold specified in the rule.
 
 To handle this issue, perform the following operations:
 
@@ -13,10 +13,10 @@ To handle this issue, perform the following operations:
 
    Identify the processes leading to high bandwidth or CPU usage.
 
-2. Check whether the processes are normal and handle the issue accordingly.
+2. Check whether the processes are malicious and handle the issue accordingly.
 
    -  If the processes are normal, optimize them or modify ECS specifications.
-   -  If the processes are malicious, use a third-party tool to automatically stop the processes or manually stop them.
+   -  If the processes are malicious, stop these processes manually or use a third-party tool to stop them automatically.
 
 Common Commands
 ---------------
@@ -113,7 +113,7 @@ If the processes leading to high CPU usage are malicious, run the top command to
 
    #. Run the top command to check the resource usage of the **kswapd0** process.
 
-   #. If the process remains in non-sleeping state for a long period of time, you can preliminarily determine that the system is consistently paging. In such a case, the high CPU usage is caused by insufficient memory.
+   #. If the process remains in non-sleeping state for a long period, you can preliminarily determine that the system is consistently paging. In such a case, the high CPU usage is caused by insufficient memory.
 
       |image5|
 

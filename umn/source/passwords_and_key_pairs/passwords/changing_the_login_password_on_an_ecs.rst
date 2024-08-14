@@ -33,7 +33,7 @@ Background
    |                                   |    -  Uppercase letters                                                                                                                                      |
    |                                   |    -  Lowercase letters                                                                                                                                      |
    |                                   |    -  Digits                                                                                                                                                 |
-   |                                   |    -  Special characters: ``$!@%-_=+[]:./^,{}?``                                                                                                             |
+   |                                   |    -  Special characters:``$!@%-_=+[]:./^,{}?``                                                                                                              |
    |                                   |                                                                                                                                                              |
    |                                   | -  Cannot contain the username or the username spelled backwards.                                                                                            |
    |                                   | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |
@@ -45,7 +45,7 @@ Windows
 
 #. Log in to the ECS.
 
-   For details, see :ref:`Login Overview <en-us_topic_0092494943>`.
+   For details, see :ref:`Login Overview (Windows) <en-us_topic_0092494943>`.
 
 #. Press **Win+R** to start the **Run** dialog box.
 
@@ -60,7 +60,7 @@ Linux
 
 #. Use the existing key file to log in to the ECS as user **root** through SSH.
 
-   For details, see :ref:`Remotely Logging In to a Linux ECS (Using an SSH Key Pair) <en-us_topic_0017955380>`.
+   For details, see :ref:`Logging In to a Linux ECS Using an SSH Key Pair <en-us_topic_0017955380>`.
 
 #. Run the following command to reset the password of user **root**:
 

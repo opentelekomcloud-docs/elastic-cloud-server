@@ -34,7 +34,7 @@ Your account automatically comes with a default security group. The default secu
 
    **Figure 1** Default security group
 
-:ref:`Table 1 <en-us_topic_0030828257__table1580115155277>` describes default security group rules.
+:ref:`Table 1 <en-us_topic_0030828257__table1580115155277>` describes the rules in the default security group.
 
 .. _en-us_topic_0030828257__table1580115155277:
 
@@ -77,7 +77,7 @@ The intranet bandwidth and PPS of an ECS are determined by its flavor.
 
    .. note::
 
-      -  For instructions about how to test PPS, see :ref:`How Can I Test Network Performance? <en-us_topic_0115820205>`
+      -  For instructions about how to test PPS, see :ref:`How Can I Test the Network Performance of Linux ECSs? <en-us_topic_0115820205>`
       -  For instructions about how to enable NIC multi-queue, see :ref:`Enabling NIC Multi-Queue <en-us_topic_0058758453>`.
 
 **Use case of network QoS:**

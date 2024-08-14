@@ -10,7 +10,7 @@ Scenarios
 
 To provide a pure system, the ECSs running Ubuntu do not have a GUI installed by default. You can install a GUI on such ECSs as needed.
 
-For GPU-accelerated ECSs, after installing a GUI, you need to configure X Server and x11vnc to make sure that:
+For GPU-accelerated ECSs, after installing a GUI, you need to configure X Server, x11vnc, and lightdm to make sure that:
 
 -  The graphics system and VNC server are automatically started upon the ECS startup.
 -  Applications can invoke GPUs properly after a remote login using VNC.
@@ -18,7 +18,7 @@ For GPU-accelerated ECSs, after installing a GUI, you need to configure X Server
 You can perform the following steps to install a GUI on an Ubuntu ECS:
 
 -  :ref:`Installing a GUI <en-us_topic_0155136016__section171371109342>`
--  :ref:`(Optional) Configuring X Server, x11vnc, and ligthdm <en-us_topic_0155136016__section017703513556>`: required only for GPU-accelerated ECSs.
+-  :ref:`(Optional) Configuring X Server, x11vnc, and lightdm <en-us_topic_0155136016__section017703513556>`: required only for GPU-accelerated ECSs.
 -  :ref:`(Optional) Verifying Drivers on GPU-accelerated ECSs <en-us_topic_0155136016__section238717615398>`: required only for GPU-accelerated ECSs.
 
 Constraints
@@ -67,7 +67,7 @@ Installing a GUI
       fi
       tty -s && mesg n || true
 
-#. press **Esc** to exit editing mode.
+#. Press **Esc** to exit editing mode.
 
 #. Run the following command to save and exit the configuration file:
 
@@ -116,14 +116,14 @@ Installing a GUI
 #. Log in to the ECS using VNC provided on the management console and log in to the GUI desktop using the member account created in :ref:`5 <en-us_topic_0155136016__li2361413175614>` or the **root** account.
 
    -  For Ubuntu 20.04 OS, you need to use the member account to log in to the GUI desktop.
-   -  For GPU-accelerated ECSs, you also need to :ref:`configure X Server, x11vnc, and ligthdm <en-us_topic_0155136016__section017703513556>`.
+   -  For GPU-accelerated ECSs, you also need to :ref:`configure X Server, x11vnc, and lightdm <en-us_topic_0155136016__section017703513556>`.
 
 .. _en-us_topic_0155136016__section017703513556:
 
-(Optional) Configuring X Server, x11vnc, and ligthdm
+(Optional) Configuring X Server, x11vnc, and lightdm
 ----------------------------------------------------
 
-For GPU-accelerated ECSs, you need to configure X Server, x11vnc, and ligthdm when installing a GUI.
+For GPU-accelerated ECSs, you need to configure X Server, x11vnc, and lightdm when installing a GUI.
 
 #. Remotely log in to the ECS.
 
@@ -165,7 +165,7 @@ For GPU-accelerated ECSs, you need to configure X Server, x11vnc, and ligthdm wh
 
          #. For example, the queried BusID is **00.0d.0** (a hexadecimal number) and needs to be converted to **PCI:00:13:0** (a decimal number).
 
-   d. press **Esc** to exit editing mode.
+   d. Press **Esc** to exit editing mode.
 
    e. Run the following command to save and exit the configuration file:
 
@@ -175,11 +175,11 @@ For GPU-accelerated ECSs, you need to configure X Server, x11vnc, and ligthdm wh
 
    **apt-get -y install x11vnc**
 
-#. Install ligthdm.
+#. Install lightdm.
 
    **apt-get -y install lightdm**
 
-#. Select **ligthdm** as the default display manager.
+#. Select **lightdm** as the default display manager.
 
 
    .. figure:: /_static/images/en-us_image_0000001358295221.png
@@ -217,7 +217,7 @@ For GPU-accelerated ECSs, you need to configure X Server, x11vnc, and ligthdm wh
          WantedBy=multi-user.target
          Alias=myservice.service
 
-   d. press **Esc** to exit editing mode.
+   d. Press **Esc** to exit editing mode.
 
    e. Run the following command to save and exit the configuration file:
 
