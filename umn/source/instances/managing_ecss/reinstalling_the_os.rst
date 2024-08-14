@@ -19,7 +19,7 @@ Notes
 -  Do not perform any operations on the ECS immediately after its OS is reinstalled. Wait for several minutes until the system successfully injects the password or key. Otherwise, the injection may fail, and the ECS cannot be logged in to.
 -  After the OS is reinstalled, the password for logging in to the ECS will be reset. To retrieve the password, perform the following operations:
 
-   -  For a Linux ECS, log in to it using the key and set a new password. For instructions about how to log in to an ECS using a key pair, see :ref:`Login Using an SSH Key <en-us_topic_0017955380>`.
+   -  For a Linux ECS, log in to it using the key and set a new password. For instructions about how to log in to an ECS using a key pair, see :ref:`Remotely Logging In to a Linux ECS (Using an SSH Key Pair) <en-us_topic_0017955380>`.
    -  For a Windows ECS, retrieve the password by following the instructions provided in :ref:`Obtaining the Password for Logging In to a Windows ECS <en-us_topic_0031107266>`.
 
 -  You can choose to encrypt the system disk of an ECS during OS reinstallation.
@@ -52,7 +52,7 @@ Procedure
 
    Only stopped ECSs support OS reinstallation. If the ECS is not stopped, stop it before proceeding with reinstallation.
 
-#. (Optional) Select the **Encryption** option to encrypt the system disk during OS reinstallation.
+#. (Optional) Select the **Encrypted** option to encrypt the system disk during OS reinstallation.
 
    To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permission, assign the KMS access permissions to EVS. If you do not have the permission, contact the user having the security administrator rights to assign the KMS access permissions. For details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
 
@@ -77,7 +77,7 @@ Procedure
    If the target ECS uses key pair authentication, you can replace the original key pair.
 
 
-   .. figure:: /_static/images/en-us_image_0000001657784206.png
+   .. figure:: /_static/images/en-us_image_0000001797837016.png
       :alt: **Figure 1** Reinstall OS
 
       **Figure 1** Reinstall OS

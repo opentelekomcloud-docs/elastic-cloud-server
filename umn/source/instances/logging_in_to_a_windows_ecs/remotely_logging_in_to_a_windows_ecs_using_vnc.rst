@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0027268511:
 
-Login Using VNC
-===============
+Remotely Logging In to a Windows ECS (Using VNC)
+================================================
 
 Scenarios
 ---------

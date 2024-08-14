@@ -34,7 +34,7 @@ Adding Tags During ECS Creation
 
    .. note::
 
-      -  For details about other parameters, see "Creating an ECS."
+      For details about other parameters, see "Creating an ECS."
 
 
    .. figure:: /_static/images/en-us_image_0000001659693292.png

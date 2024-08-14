@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0017955380:
 
-Login Using an SSH Key
-======================
+Remotely Logging In to a Linux ECS (Using an SSH Key Pair)
+==========================================================
 
 Scenarios
 ---------
@@ -51,7 +51,13 @@ The following operations use PuTTY as an example. Before using PuTTY to log in, 
 
    Ensure that the format of **All files (*.*)** is selected.
 
-#. Click **Save private key**.
+
+   .. figure:: /_static/images/en-us_image_0000001744520501.png
+      :alt: **Figure 1** Importing the private key file
+
+      **Figure 1** Importing the private key file
+
+#. In the **Actions** area, click **Save private key**.
 
 #. .. _en-us_topic_0017955380__li56738001111724:
 
@@ -65,18 +71,30 @@ The following operations use PuTTY as an example. Before using PuTTY to log in, 
 
 
    .. figure:: /_static/images/en-us_image_0000001082643605.jpg
-      :alt: **Figure 1** Configuring the EIP
+      :alt: **Figure 2** Configuring the EIP
 
-      **Figure 1** Configuring the EIP
+      **Figure 2** Configuring the EIP
 
 #. Choose **Connection** > **Data**. Enter the image username in **Auto-login username**.
+
+
+   .. figure:: /_static/images/en-us_image_0000001744562821.png
+      :alt: **Figure 3** Entering the username
+
+      **Figure 3** Entering the username
 
    .. note::
 
       -  If a public image is used, see `Public Images Introduction <https://docs.otc.t-systems.com/image-management-service/public-images/>`__ for the image username.
       -  If a private image is used, use the username of the private image.
 
-#. Choose **Connection** > **SSH** > **Auth**. In the last configuration item **Private key file for authentication**, click **Browse** and select the private key converted in step :ref:`6 <en-us_topic_0017955380__li56738001111724>`.
+#. Choose **Connection** > **SSH** > **Auth** > **Credentials**. In the configuration item **Private key file for authentication**, click **Browse** and select the private key converted in step :ref:`6 <en-us_topic_0017955380__li56738001111724>`.
+
+
+   .. figure:: /_static/images/en-us_image_0000001696804084.png
+      :alt: **Figure 4** Importing the private key file
+
+      **Figure 4** Importing the private key file
 
 #. Click **Open** to log in to the ECS.
 
@@ -97,9 +115,9 @@ The following operations use PuTTY as an example. Before using PuTTY to log in, 
 
 
    .. figure:: /_static/images/en-us_image_0178475901.png
-      :alt: **Figure 2** SSH Security Warning
+      :alt: **Figure 5** SSH Security Warning
 
-      **Figure 2** SSH Security Warning
+      **Figure 5** SSH Security Warning
 
 #. Select **Public Key** and click **Browse** beside the user key text box.
 

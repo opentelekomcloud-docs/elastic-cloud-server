@@ -54,7 +54,7 @@ Installing a GUI
 
    **vim /root/.profile**
 
-   Change **mesg n \|\| true** at the end of the file to **tty -s && mesg n \|\| true**. The modified file content is as follows:
+   Press **i** to enter the editing mode and change **mesg n \|\| true** in the last line to **tty -s && mesg n \|\| true**. After the modification, the file content is as follows:
 
    .. code-block::
 

@@ -39,6 +39,86 @@ Helpful links:
 -  :ref:`Installing a GRID Driver on a GPU-accelerated ECS <en-us_topic_0149610914>`
 -  :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`
 
+Images Supported by GPU-accelerated ECSs
+----------------------------------------
+
+.. table:: **Table 1** Images supported by GPU-accelerated ECSs
+
+   +-----------------------+-----------------------+------------------------------------------+
+   | Category              | ECS Type              | Supported Image                          |
+   +=======================+=======================+==========================================+
+   | Graphics-accelerated  | G7v                   | -  CentOS 8.2 64bit                      |
+   |                       |                       | -  CentOS 7.6 64bit                      |
+   |                       |                       | -  Ubuntu 20.04 Server 64bit             |
+   |                       |                       | -  Ubuntu 18.04 Server 64bit             |
+   |                       |                       | -  Windows Server 2019 Standard 64bit    |
+   |                       |                       | -  Windows Server 2016 Standard 64bit    |
+   +-----------------------+-----------------------+------------------------------------------+
+   | Graphics-accelerated  | G7                    | -  CentOS 8.2 64bit                      |
+   |                       |                       | -  CentOS 7.6 64bit                      |
+   |                       |                       | -  Ubuntu 20.04 Server 64bit             |
+   |                       |                       | -  Ubuntu 18.04 Server 64bit             |
+   |                       |                       | -  Windows Server 2019 Standard 64bit    |
+   |                       |                       | -  Windows Server 2016 Standard 64bit    |
+   +-----------------------+-----------------------+------------------------------------------+
+   | Graphics-accelerated  | G6                    | -  EulerOS 2.5 64bit                     |
+   |                       |                       | -  Windows Server 2019 Standard 64bit    |
+   |                       |                       | -  Windows Server 2016 Standard 64bit    |
+   |                       |                       | -  Windows Server 2012 R2 Standard 64bit |
+   +-----------------------+-----------------------+------------------------------------------+
+   | Computing-accelerated | P3                    | -  CentOS 8.2 64bit                      |
+   |                       |                       | -  CentOS 8.1 64bit                      |
+   |                       |                       | -  CentOS 8.0 64bit                      |
+   |                       |                       | -  CentOS 7.9 64bit                      |
+   |                       |                       | -  CentOS 7.8 64bit                      |
+   |                       |                       | -  CentOS 7.7 64bit                      |
+   |                       |                       | -  CentOS 7.6 64bit                      |
+   |                       |                       | -  Ubuntu 20.04 server 64bit             |
+   |                       |                       | -  Ubuntu 18.04 server 64bit             |
+   +-----------------------+-----------------------+------------------------------------------+
+   | Computing-accelerated | P2s                   | -  CentOS 7.9 64bit                      |
+   |                       |                       | -  EulerOS 2.5 64bit                     |
+   |                       |                       | -  Oracle Linux Server release 7.6 64bit |
+   |                       |                       | -  Ubuntu 20.04 Server 64bit             |
+   |                       |                       | -  Ubuntu 18.04 Server 64bit             |
+   |                       |                       | -  Windows Server 2019 Standard 64bit    |
+   |                       |                       | -  Windows Server 2016 Standard 64bit    |
+   |                       |                       | -  Windows Server 2012 R2 Standard 64bit |
+   +-----------------------+-----------------------+------------------------------------------+
+   | Computing-accelerated | P2v                   | -  CentOS 7.9 64bit                      |
+   |                       |                       | -  EulerOS 2.5 64bit                     |
+   |                       |                       | -  Oracle Linux Server release 7.6 64bit |
+   |                       |                       | -  Ubuntu 20.04 Server 64bit             |
+   |                       |                       | -  Ubuntu 18.04 Server 64bit             |
+   |                       |                       | -  Windows Server 2019 Standard 64bit    |
+   |                       |                       | -  Windows Server 2016 Standard 64bit    |
+   |                       |                       | -  Windows Server 2012 R2 Standard 64bit |
+   +-----------------------+-----------------------+------------------------------------------+
+   | Computing-accelerated | P2                    | -  CentOS 7.9 64bit                      |
+   |                       |                       | -  EulerOS 2.5 64bit                     |
+   |                       |                       | -  Oracle Linux Server release 7.6 64bit |
+   |                       |                       | -  Ubuntu 20.04 Server 64bit             |
+   |                       |                       | -  Ubuntu 18.04 Server 64bit             |
+   |                       |                       | -  Windows Server 2019 Standard 64bit    |
+   |                       |                       | -  Windows Server 2016 Standard 64bit    |
+   |                       |                       | -  Windows Server 2012 R2 Standard 64bit |
+   +-----------------------+-----------------------+------------------------------------------+
+   | Computing-accelerated | P1                    | -  CentOS 7.9 64bit                      |
+   |                       |                       | -  Ubuntu 20.04 Server 64bit             |
+   |                       |                       | -  Ubuntu 18.04 Server 64bit             |
+   |                       |                       | -  Debian GNU/Linux 11 64bit             |
+   |                       |                       | -  Debian GNU/Linux 10 64bit             |
+   |                       |                       | -  Oracle Linux Server release 7.6 64bit |
+   +-----------------------+-----------------------+------------------------------------------+
+   | Inference-accelerated | Pi2                   | -  CentOS 7.9 64bit                      |
+   |                       |                       | -  Oracle Linux Server release 7.6 64bit |
+   |                       |                       | -  Ubuntu 20.04 Server 64bit             |
+   |                       |                       | -  Ubuntu 18.04 Server 64bit             |
+   |                       |                       | -  Windows Server 2019 Standard 64bit    |
+   |                       |                       | -  Windows Server 2016 Standard 64bit    |
+   |                       |                       | -  Windows Server 2012 R2 Standard 64bit |
+   +-----------------------+-----------------------+------------------------------------------+
+
 .. _en-us_topic_0097289624__section168054357432:
 
 Graphics-accelerated Enhancement G7v
@@ -52,7 +132,7 @@ Select your desired GPU-accelerated ECS type and specifications.
 
 **Specifications**
 
-.. table:: **Table 1** G7v ECS specifications
+.. table:: **Table 2** G7v ECS specifications
 
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------------------+------------+----------------+
    | Flavor        | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs               | GPU Memory | Virtualization |
@@ -101,17 +181,17 @@ G7v ECSs are used in graphics acceleration scenarios, such as video rendering, c
 
 **Notes**
 
--  G7v ECSs support the following OSs:
+-  After a G7v ECS is stopped, basic resources (including vCPUs, memory, image, and GPUs) are not billed, but its system disk is billed based on the disk capacity. If other products, such as EVS disks, EIP, and bandwidth are associated with the ECS, these products are billed separately.
 
-   -  Windows Server 2019 Standard 64bit
-   -  Windows Server 2016 Standard 64bit
-   -  CentOS 8.2 64bit
-   -  CentOS 7.6 64bit
-   -  Ubuntu Server 20.04 64bit
-   -  Ubuntu Server 18.04 64bit
+   .. note::
+
+      Resources will be released after a G7v ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
 
 -  G7v ECSs created using a public image have had the GRID driver of a specific version installed by default. However, you need to purchase and configure a GRID license by yourself. Ensure that the GRID driver version meets service requirements.
+
 -  If a G7v ECS is created using a private image, make sure that the GRID driver was installed during the private image creation. If the GRID driver has not been installed, install the driver for graphics acceleration after the ECS is created.
+
+-  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
 
 .. _en-us_topic_0097289624__section2325028104711:
 
@@ -126,7 +206,7 @@ Select your desired GPU-accelerated ECS type and specifications.
 
 **Specifications**
 
-.. table:: **Table 2** G7 ECS specifications
+.. table:: **Table 3** G7 ECS specifications
 
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+------------+----------------+
    | Flavor        | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs           | GPU Memory | Virtualization |
@@ -173,17 +253,15 @@ G7 ECSs are used in graphics acceleration scenarios, such as video rendering, cl
 
 **Notes**
 
--  G7 ECSs support the following OSs:
+-  After a G7 ECS is stopped, basic resources (including vCPUs, memory, image, and GPUs) are not billed, but its system disk is billed based on the disk capacity. If other products, such as EVS disks, EIP, and bandwidth are associated with the ECS, these products are billed separately.
 
-   -  Windows Server 2019 Standard 64bit
-   -  Windows Server 2016 Standard 64bit
-   -  CentOS 8.2 64bit
-   -  CentOS 7.6 64bit
-   -  Ubuntu Server 20.04 64bit
-   -  Ubuntu Server 18.04 64bit
+   .. note::
+
+      Resources will be released after a G7 ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
 
 -  G7 ECSs created using a public image have had the GRID driver of a specific version installed by default. However, you need to purchase and configure a GRID license by yourself. Ensure that the GRID driver version meets service requirements.
 -  If a G7 ECS is created using a private image, make sure that the GRID driver was installed during the private image creation. If the GRID driver has not been installed, install the driver for graphics acceleration after the ECS is created.
+-  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
 
 .. _en-us_topic_0097289624__section131302034104515:
 
@@ -198,7 +276,7 @@ Select your desired GPU-accelerated ECS type and specifications.
 
 **Specifications**
 
-.. table:: **Table 3** G6 ECS specifications
+.. table:: **Table 4** G6 ECS specifications
 
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+----------------+
    | Flavor        | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs   | GPU Memory | Virtualization |
@@ -244,25 +322,17 @@ G6 ECSs are used in graphics acceleration scenarios, such as video rendering, cl
 
 **Notes**
 
--  :ref:`Table 4 <en-us_topic_0097289624__table192771727112217>` lists the OSs supported by G6 ECSs.
+-  After a G6 ECS is stopped, basic resources (including vCPUs, memory, image, and GPUs) are not billed, but its system disk is billed based on the disk capacity. If other products, such as EVS disks, EIP, and bandwidth are associated with the ECS, these products are billed separately.
 
-   .. _en-us_topic_0097289624__table192771727112217:
+   .. note::
 
-   .. table:: **Table 4** Supported OS versions
-
-      +-----------------------------------+------------------------------------------+
-      | OS                                | Version                                  |
-      +===================================+==========================================+
-      | EulerOS                           | EulerOS 2.5 64bit                        |
-      +-----------------------------------+------------------------------------------+
-      | Windows                           | -  Windows Server 2019 Standard 64bit    |
-      |                                   | -  Windows Server 2016 Standard 64bit    |
-      |                                   | -  Windows Server 2012 R2 Standard 64bit |
-      +-----------------------------------+------------------------------------------+
+      Resources will be released after a G6 ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
 
 -  G6 ECSs created using a public image have had the GRID driver of a specific version installed by default. However, you need to purchase and configure a GRID license by yourself. Ensure that the GRID driver version meets service requirements.
 
 -  If a G6 ECS is created using a private image, make sure that the GRID driver was installed during the private image creation. If not, install the driver for graphics acceleration after the ECS is created.
+
+-  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
 
 .. _en-us_topic_0097289624__section48861652193:
 
@@ -333,19 +403,15 @@ P3 ECSs are used in computing acceleration scenarios, such as deep learning trai
 
 **Notes**
 
--  P3 ECSs support the following OSs:
+-  After a P3 ECS is stopped, basic resources (including vCPUs, memory, image, and GPUs) are not billed, but its system disk is billed based on the disk capacity. If other products, such as EVS disks, EIP, and bandwidth are associated with the ECS, these products are billed separately.
 
-   -  Ubuntu 20.04 server 64bit
-   -  Ubuntu 18.04 server 64bit
-   -  CentOS 8.2 64bit
-   -  CentOS 8.1 64bit
-   -  CentOS 8.0 64bit
-   -  CentOS 7.9 64bit
-   -  CentOS 7.8 64bit
-   -  CentOS 7.7 64bit
-   -  CentOS 7.6 64bit
+   .. note::
 
--  If a P3 ECS is created using a private image, make sure that the Tesla driver has been installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+      Resources will be released after a P3 ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
+
+-  If a P3 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+
+-  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
 
 .. _en-us_topic_0097289624__section1454714546567:
 
@@ -415,32 +481,15 @@ P2s ECSs are used in computing acceleration scenarios, such as deep learning tra
 
 **Notes**
 
--  :ref:`Table 7 <en-us_topic_0097289624__table1613585194612>` lists the OSs supported by P2s ECSs.
+-  After a P2s ECS is stopped, basic resources (including vCPUs, memory, image, and GPUs) are not billed, but its system disk is billed based on the disk capacity. If other products, such as EVS disks, EIP, and bandwidth are associated with the ECS, these products are billed separately.
 
-   .. _en-us_topic_0097289624__table1613585194612:
+   .. note::
 
-   .. table:: **Table 7** Supported OS versions
-
-      +-----------------------------------+------------------------------------------+
-      | OS                                | Version                                  |
-      +===================================+==========================================+
-      | CentOS                            | CentOS 7.9 64bit                         |
-      +-----------------------------------+------------------------------------------+
-      | EulerOS                           | EulerOS 2.5 64bit                        |
-      +-----------------------------------+------------------------------------------+
-      | Oracle Linux                      | Oracle Linux Server release 7.6 64bit    |
-      +-----------------------------------+------------------------------------------+
-      | Ubuntu                            | -  Ubuntu 20.04 server 64bit             |
-      |                                   | -  Ubuntu 18.04 server 64bit             |
-      +-----------------------------------+------------------------------------------+
-      | Windows                           | -  Windows Server 2019 Standard 64bit    |
-      |                                   | -  Windows Server 2016 Standard 64bit    |
-      |                                   | -  Windows Server 2012 R2 Standard 64bit |
-      +-----------------------------------+------------------------------------------+
+      Resources will be released after a P2s ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
 
 -  By default, P2s ECSs created using a Windows public image have the Tesla driver installed.
-
 -  If a P2s ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+-  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
 
 .. _en-us_topic_0097289624__section208472383415:
 
@@ -453,7 +502,7 @@ P2v ECSs use NVIDIA Tesla V100 GPUs and deliver high flexibility, high-performan
 
 **Specifications**
 
-.. table:: **Table 8** P2v ECS specifications
+.. table:: **Table 7** P2v ECS specifications
 
    +----------------+-------+--------+---------------------------------+-------------------+-----------------+-----------+----------+----------------+------------+----------------+-------------------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Bandwidth (Gbit/s) | Max. PPS (10,000) | Max. NIC Queues | Max. NICs | GPUs     | GPU Connection | GPU Memory | Virtualization | Hardware                                  |
@@ -510,34 +559,19 @@ P2v ECSs are used in computing acceleration scenarios, such as deep learning tra
 
 **Notes**
 
--  :ref:`Table 9 <en-us_topic_0097289624__table1793214116522>` lists the OSs supported by P2v ECSs.
+-  After a P2v ECS is stopped, basic resources (including vCPUs, memory, image, and GPUs) are not billed, but its system disk is billed based on the disk capacity. If other products, such as EVS disks, EIP, and bandwidth are associated with the ECS, these products are billed separately.
 
-   .. _en-us_topic_0097289624__table1793214116522:
+   .. note::
 
-   .. table:: **Table 9** Supported OS versions
-
-      +-----------------------------------+------------------------------------------+
-      | OS                                | Version                                  |
-      +===================================+==========================================+
-      | CentOS                            | CentOS 7.9 64bit                         |
-      +-----------------------------------+------------------------------------------+
-      | EulerOS                           | EulerOS 2.5 64bit                        |
-      +-----------------------------------+------------------------------------------+
-      | Oracle Linux                      | Oracle Linux Server release 7.6 64bit    |
-      +-----------------------------------+------------------------------------------+
-      | Ubuntu                            | -  Ubuntu 20.04 server 64bit             |
-      |                                   | -  Ubuntu 18.04 server 64bit             |
-      +-----------------------------------+------------------------------------------+
-      | Windows                           | -  Windows Server 2019 Standard 64bit    |
-      |                                   | -  Windows Server 2016 Standard 64bit    |
-      |                                   | -  Windows Server 2012 R2 Standard 64bit |
-      +-----------------------------------+------------------------------------------+
+      Resources will be released after a P2v ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
 
 -  By default, P2v ECSs created using a Windows public image have the Tesla driver installed.
 
 -  By default, P2v ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 
 -  If a P2v ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+
+-  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
 
 .. _en-us_topic_0097289624__section5477185118234:
 
@@ -550,7 +584,7 @@ Compared with P1 ECSs, P2 ECSs use NVIDIA Tesla V100 GPUs, which have improved b
 
 **Specifications**
 
-.. table:: **Table 10** P2 ECS specifications
+.. table:: **Table 8** P2 ECS specifications
 
    +--------------+-------+--------+------------------------+----------+-----------------+-----------+----------+------------+------------------+----------------+----------------------------------------+
    | Flavor       | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs     | GPU Memory | Local Disks      | Virtualization | Hardware                               |
@@ -606,7 +640,7 @@ P2 ECSs are used in computing acceleration scenarios, such as deep learning trai
 **Notes**
 
 -  The system disk of a P2 ECS must be greater than or equal to 15 GiB. It is recommended that the system disk be greater than 40 GiB.
-
+-  P2 ECSs have local NVMe SSDs attached, which will continue to be billed after the ECSs are stopped. To stop the ECS from being billed, delete it and its associated resources.
 -  The local NVMe SSDs attached to P2 ECSs are dedicated for services with strict requirements on storage I/O performance, such as deep learning training and HPC. Local disks are attached to the ECSs of specified flavors and cannot be separately bought. In addition, you are not allowed to detach a local disk and then attach it to another ECS.
 
    .. note::
@@ -614,35 +648,10 @@ P2 ECSs are used in computing acceleration scenarios, such as deep learning trai
       Data may be lost on the local NVMe SSDs attached to P2 ECSs due to a fault, for example, due to a disk or host fault. Therefore, you are suggested to store only temporary data in local NVMe SSDs. If you store important data in such a disk, securely back up the data.
 
 -  P2 ECSs do not support specifications modification.
-
--  :ref:`Table 11 <en-us_topic_0097289624__table3436728145315>` lists the OSs supported by P2 ECSs.
-
-   .. _en-us_topic_0097289624__table3436728145315:
-
-   .. table:: **Table 11** Supported OS versions
-
-      +-----------------------------------+------------------------------------------+
-      | OS                                | Version                                  |
-      +===================================+==========================================+
-      | CentOS                            | CentOS 7.9 64bit                         |
-      +-----------------------------------+------------------------------------------+
-      | EulerOS                           | EulerOS 2.5 64bit                        |
-      +-----------------------------------+------------------------------------------+
-      | Oracle Linux                      | Oracle Linux Server release 7.6 64bit    |
-      +-----------------------------------+------------------------------------------+
-      | Ubuntu                            | -  Ubuntu 20.04 server 64bit             |
-      |                                   | -  Ubuntu 18.04 server 64bit             |
-      +-----------------------------------+------------------------------------------+
-      | Windows                           | -  Windows Server 2019 Standard 64bit    |
-      |                                   | -  Windows Server 2016 Standard 64bit    |
-      |                                   | -  Windows Server 2012 R2 Standard 64bit |
-      +-----------------------------------+------------------------------------------+
-
 -  After you delete a P2 ECS, the data stored in local NVMe SSDs is automatically cleared.
-
 -  By default, P2 ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
-
 -  If a P2 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+-  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
 
 .. _en-us_topic_0097289624__section1124594913391:
 
@@ -655,7 +664,7 @@ P1 ECSs use NVIDIA Tesla P100 GPUs and provide flexibility, high performance, an
 
 **Specifications**
 
-.. table:: **Table 12** P1 ECS specifications
+.. table:: **Table 9** P1 ECS specifications
 
    +--------------+-------+--------+------------------------+----------+-----------------+-----------+----------+------------+-------------+----------------+----------------------------------------+
    | Flavor       | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs     | GPU Memory | Local Disks | Virtualization | Hardware                               |
@@ -711,7 +720,7 @@ P1 ECSs are used in computing acceleration scenarios, such as deep learning trai
 **Notes**
 
 -  It is recommended that the system disk of a P1 ECS be greater than 40 GiB.
-
+-  P1 ECSs have local NVMe SSDs attached, which will continue to be billed after the ECSs are stopped. To stop the ECS from being billed, delete it and its associated resources.
 -  The local NVMe SSDs attached to P1 ECSs are dedicated for services with strict requirements on storage I/O performance, such as deep learning training and HPC. Local disks are attached to the ECSs of specified flavors and cannot be separately bought. In addition, you are not allowed to detach a local disk and then attach it to another ECS.
 
    .. note::
@@ -719,41 +728,17 @@ P1 ECSs are used in computing acceleration scenarios, such as deep learning trai
       Data may be lost on the local NVMe SSDs attached to P1 ECSs due to a fault, for example, due to a disk or host fault. Therefore, you are suggested to store only temporary data in local NVMe SSDs. If you store important data in such a disk, securely back up the data.
 
 -  After a P1 ECS is created, you must install the NVIDIA driver for computing acceleration. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
-
 -  P1 ECSs do not support specifications change.
-
 -  P1 ECSs do not support automatic recovery.
 
    -  If the host is faulty or subhealthy, you need to stop the ECS for hardware repair.
    -  In case of system maintenance or hardware faults, the ECS will be redeployed (to ensure HA) and cold migrated to another host. The local disk data of the ECS will not be retained.
 
--  :ref:`Table 13 <en-us_topic_0097289624__table8704181020556>` lists the OSs supported by P1 ECSs.
-
-   .. _en-us_topic_0097289624__table8704181020556:
-
-   .. table:: **Table 13** Supported OS versions
-
-      +-----------------------------------+---------------------------------------+
-      | OS                                | Version                               |
-      +===================================+=======================================+
-      | CentOS                            | CentOS 7.9 64bit                      |
-      +-----------------------------------+---------------------------------------+
-      | Debian                            | -  Debian GNU/Linux 11 64bit          |
-      |                                   | -  Debian GNU/Linux 10 64bit          |
-      +-----------------------------------+---------------------------------------+
-      | Oracle Linux                      | Oracle Linux Server release 7.6 64bit |
-      +-----------------------------------+---------------------------------------+
-      | Ubuntu                            | -  Ubuntu 20.04 server 64bit          |
-      |                                   | -  Ubuntu 18.04 server 64bit          |
-      +-----------------------------------+---------------------------------------+
-
 -  After you delete a P1 ECS, the data stored in local NVMe SSDs is automatically cleared.
-
 -  By default, P1 ECSs created using a Windows public image have the Tesla driver installed.
-
 -  By default, P1 ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
-
 -  If a P1 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+-  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
 
 .. _en-us_topic_0097289624__section1846114713182:
 
@@ -766,7 +751,7 @@ Pi2 ECSs use NVIDIA Tesla T4 GPUs dedicated for real-time AI inference. These EC
 
 **Specifications**
 
-.. table:: **Table 14** Pi2 ECS specifications
+.. table:: **Table 10** Pi2 ECS specifications
 
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs   | GPU Memory | Local Disks | Virtualization | Hardware                                                                         |
@@ -802,37 +787,14 @@ Pi2 ECSs support the following commonly used software:
 
 **Notes**
 
--  After a Pi2 ECS is stopped, basic resources including vCPUs, memory, image, and GPUs are not billed, but its system disk is billed based on the disk capacity. If other products, such as EVS disks, EIP, and bandwidth are associated with the ECS, these products are billed separately.
+-  After a Pi2 ECS is stopped, basic resources (including vCPUs, memory, image, and GPUs) are not billed, but its system disk is billed based on the disk capacity. If other products, such as EVS disks, EIP, and bandwidth are associated with the ECS, these products are billed separately.
 
    .. note::
 
-      Resources are released after a Pi2 ECS is stopped. If resources are insufficient when the Pi2 ECS is started after being stopped, starting the ECS might fail. Therefore, if you need to use a Pi2 ECS for a long time, keep the ECS running.
-
--  :ref:`Table 15 <en-us_topic_0097289624__table576493295720>` lists the OSs supported by Pi2 ECSs.
-
-   .. _en-us_topic_0097289624__table576493295720:
-
-   .. table:: **Table 15** Supported OS versions
-
-      +-----------------------------------+------------------------------------------+
-      | OS                                | Version                                  |
-      +===================================+==========================================+
-      | CentOS                            | CentOS 7.9 64bit                         |
-      +-----------------------------------+------------------------------------------+
-      | Oracle Linux                      | Oracle Linux Server release 7.6 64bit    |
-      +-----------------------------------+------------------------------------------+
-      | Ubuntu                            | -  Ubuntu 20.04 server 64bit             |
-      |                                   | -  Ubuntu 18.04 server 64bit             |
-      +-----------------------------------+------------------------------------------+
-      | Windows                           | -  Windows Server 2019 Standard 64bit    |
-      |                                   | -  Windows Server 2016 Standard 64bit    |
-      |                                   | -  Windows Server 2012 R2 Standard 64bit |
-      +-----------------------------------+------------------------------------------+
+      Resources will be released after a Pi2 ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
 
 -  Pi2 ECSs support automatic recovery when the hosts accommodating such ECSs become faulty.
-
 -  By default, Pi2 ECSs created using a Windows public image have the Tesla driver installed.
-
 -  By default, Pi2 ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
-
 -  If a Pi2 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+-  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.

@@ -60,7 +60,7 @@ Procedure
 
    .. note::
 
-      If the disk is offline, you need to online the disk before initializing it.
+      If the disk is offline, you need to bring it online before initializing it.
 
 #. After making the disk online, the disk status changes from **Offline** to **Not Initialized**. Right-click the disk status and choose **Initialize Disk** from the shortcut menu, as shown in :ref:`Figure 3 <en-us_topic_0085634796__en-us_topic_0044524740_fig409808111224>`.
 
@@ -113,13 +113,13 @@ Procedure
 
       **Figure 7** Specify Volume Size
 
-#. Assign the driver letter and click **Next**.
+#. Assign the drive letter and click **Next**.
 
 
    .. figure:: /_static/images/en-us_image_0097597149.png
-      :alt: **Figure 8** Assign Driver Letter or Path
+      :alt: **Figure 8** Assign Drive Letter or Path
 
-      **Figure 8** Assign Driver Letter or Path
+      **Figure 8** Assign Drive Letter or Path
 
 #. On the displayed **Format Partition** page, click **Format this volume with the following settings**, set parameters based on the requirements, and select **Perform a quick format**. Then, click **Next**.
 
@@ -137,7 +137,7 @@ Procedure
 
    .. important::
 
-      The partition sizes supported by file systems vary. Therefore, you are advised to choose an appropriate file system based on your service requirements.
+      The partition sizes supported by file systems vary. Choose an appropriate file system format based on your service requirements.
 
 #. Click **Finish**. Wait for the initialization to complete. When the volume status changes to **Healthy**, the initialization has finished successfully, as shown in :ref:`Figure 11 <en-us_topic_0085634796__en-us_topic_0044524740_fig14464150329>`.
 
