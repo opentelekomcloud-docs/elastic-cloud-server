@@ -210,7 +210,7 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
 
 #. Click the driver to be downloaded. On the **TESLA DRIVER FOR WINDOWS** page that is displayed, click **DOWNLOAD**.
 
-#. Click **Agree & Download** to download the installation package.
+#. Click **AGREE & DOWNLOAD** to download the installation package.
 
 
    .. figure:: /_static/images/en-us_image_0234357031.png
