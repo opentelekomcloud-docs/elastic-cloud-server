@@ -35,7 +35,7 @@ In this example, the proxy ECS runs CentOS 6.5.
 
 #. Click the name of the proxy ECS. The page providing details about the ECS is displayed.
 
-#. On the **Network Interfaces** tab, click |image2|. Then, disable **Source/Destination Check**.
+#. On the **NICs** tab, click |image2|. Then, disable **Source/Destination Check**.
 
 
    .. figure:: /_static/images/en-us_image_0000001659671776.png
@@ -47,7 +47,7 @@ In this example, the proxy ECS runs CentOS 6.5.
 
 #. Log in to the proxy ECS.
 
-   For more details, see :ref:`Login Overview <en-us_topic_0013771089>`.
+   For more details, see :ref:`Login Overview (Linux) <en-us_topic_0013771089>`.
 
 #. Run the following command to check whether the proxy ECS can access the Internet:
 

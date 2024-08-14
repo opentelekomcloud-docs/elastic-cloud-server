@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0017955381:
 
-Remotely Logging In to a Windows ECS (Using MSTSC)
-==================================================
+Logging In to a Windows ECS Using MSTSC
+=======================================
 
 Scenarios
 ---------
@@ -17,9 +17,10 @@ Prerequisites
 -  You have obtained the password for logging in to the Windows ECS. For details, see :ref:`Obtaining the Password for Logging In to a Windows ECS <en-us_topic_0031107266>`.
 -  You have bound an EIP to the ECS. For details, see :ref:`Binding an EIP <en-us_topic_0174917535>`.
 
--  Access to port 3389 is allowed in the inbound direction of the security group to which the ECS belongs. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.
+-  Access to port 3389 is allowed in the inbound direction of the security group which the ECS belongs to. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.
 -  The network connection between the login tool and the target ECS is normal. For example, the default port 3389 is not blocked by the firewall.
 -  Remote Desktop Protocol (RDP) needs to be enabled on the target ECS. For ECSs created using public images, RDP has been enabled by default. For instructions about how to enable RDP, see :ref:`Enabling RDP <en-us_topic_0017955381__section65216898112059>`.
+
 
 Logging In to a Windows ECS Using MSTSC
 ---------------------------------------

@@ -62,7 +62,7 @@ Procedure
 
       If the disk is offline, you need to bring it online before initializing it.
 
-#. After making the disk online, the disk status changes from **Offline** to **Not Initialized**. Right-click the disk status and choose **Initialize Disk** from the shortcut menu.
+#. After making the disk online, the status of **Disk 1** changes from **Offline** to **Not Initialized**. Right-click the disk status and choose **Initialize Disk** from the shortcut menu.
 
 
    .. figure:: /_static/images/en-us_image_0000001809189756.png

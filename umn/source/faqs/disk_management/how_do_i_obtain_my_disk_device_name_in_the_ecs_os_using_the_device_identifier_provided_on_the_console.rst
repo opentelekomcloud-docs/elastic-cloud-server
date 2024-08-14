@@ -37,16 +37,16 @@ Obtaining the Disk ID of an ECS on the Console
 
       -  If **Device Type** is **VBD**, use a serial number or BDF to obtain the disk device name.
 
-         If you use a serial number (recommended) to obtain the disk name, see :ref:`Using a Serial Number to Obtain the Disk Name (Windows) <en-us_topic_0103285575__section1549713815243>` and :ref:`Using a Serial Number to Obtain a Disk Device Name (Linux) <en-us_topic_0103285575__section1251215393317>`.
+         If you use a serial number (recommended) to obtain the disk device name, see :ref:`Using a Serial Number to Obtain the Disk Device Name (Windows) <en-us_topic_0103285575__section1549713815243>` and :ref:`Using a Serial Number to Obtain a Disk Device Name (Linux) <en-us_topic_0103285575__section1251215393317>`.
 
-         If you use a BDF to obtain the disk device name, see :ref:`Using a BDF to Obtain a Disk Device Name (Linux) <en-us_topic_0103285575__section8901134753319>`. (BDF cannot be used to obtain the disk name of Windows ECSs.)
+         If you use a BDF to obtain the disk device name, see :ref:`Using a BDF to Obtain a Disk Device Name (Linux) <en-us_topic_0103285575__section8901134753319>`. (BDF cannot be used to obtain the disk device name of Windows ECSs.)
 
-      -  If **Device Type** is **SCSI**, use a WWN to obtain the disk name. For details, see :ref:`Using a WWN to Obtain the Disk Name (Windows) <en-us_topic_0103285575__section49041319248>` and :ref:`Using a WWN to Obtain a Disk Device Name (Linux) <en-us_topic_0103285575__section436018073419>`.
+      -  If **Device Type** is **SCSI**, use a WWN to obtain the disk device name. For details, see :ref:`Using a WWN to Obtain the Disk Name (Windows) <en-us_topic_0103285575__section49041319248>` and :ref:`Using a WWN to Obtain a Disk Device Name (Linux) <en-us_topic_0103285575__section436018073419>`.
 
 .. _en-us_topic_0103285575__section1549713815243:
 
-Using a Serial Number to Obtain the Disk Name (Windows)
--------------------------------------------------------
+Using a Serial Number to Obtain the Disk Device Name (Windows)
+--------------------------------------------------------------
 
 If a serial number is displayed on the console, use either of the following methods to obtain the disk name.
 

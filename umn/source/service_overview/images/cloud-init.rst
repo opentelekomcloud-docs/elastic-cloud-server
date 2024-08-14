@@ -14,7 +14,7 @@ Using Cloud-Init to initialize your ECSs will affect your ECS, IMS, and AS servi
 Impact on IMS
 -------------
 
-To ensure that ECSs created using a private image support custom configurations, you must install Cloud-Init or Cloudbase-Init on the ECSs before using them to create private images.
+To ensure that ECSs that are created using a private image support custom configurations, you must install Cloud-Init or Cloudbase-Init on the ECSs before using them to create private images.
 
 -  For Windows OSs, download and install Cloudbase-Init.
 -  For Linux OSs, download and install Cloud-Init.
@@ -29,7 +29,7 @@ Impact on ECS
 -  When creating an ECS, if the selected image supports Cloud-Init, you can use the **User Data** function to specify custom configuration, such as ECS login password to the ECS. Such custom settings will take effect upon ECS initialization. For details, see :ref:`Passing User Data to ECSs <en-us_topic_0032380449>`.
 -  If Cloud-Init is supported, ECSs do not support password authentication anymore. All newly created ECSs use key pair authentication. This change will influence your ECS logins. For details, see the following sections:
 
-   -  :ref:`Login Overview <en-us_topic_0013771089>`
+   -  :ref:`Login Overview (Linux) <en-us_topic_0013771089>`
    -  :ref:`What Is the Cloudbase-Init Account in Windows ECSs Used for? <en-us_topic_0037633087>`
    -  :ref:`Why Does the Login to My Linux ECS Using a Key File Fail? <en-us_topic_0031734664>`
    -  :ref:`Why Does the System Display a Message Indicating that the Password for Logging In to a Windows ECS Cannot Be Obtained? <en-us_topic_0031736846>`

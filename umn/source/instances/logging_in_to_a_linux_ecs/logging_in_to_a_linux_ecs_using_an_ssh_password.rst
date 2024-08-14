@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0017955633:
 
-Remotely Logging In to a Linux ECS (Using an SSH Password)
-==========================================================
+Logging In to a Linux ECS Using an SSH Password
+===============================================
 
 Scenarios
 ---------
@@ -20,7 +20,7 @@ Prerequisites
 -  The target ECS is running.
 -  You have bound an EIP to the ECS. For details, see :ref:`Binding an EIP <en-us_topic_0174917535>`.
 
--  Access to port 22 is allowed in the inbound direction of the security group to which the ECS belongs. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.
+-  Access to port 22 is allowed in the inbound direction of the security group which the ECS belongs to. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.
 -  The network connection between the login tool (PuTTY) and the target ECS is normal. For example, the default port 22 is not blocked by the firewall.
 -  You have obtained the SSH login permission and reset the common user password for logging in to the Linux ECS. For details, see :ref:`Configuring the Login Permission Using SSH Password Authentication <en-us_topic_0017955633__section6207684794951>`.
 
@@ -31,7 +31,7 @@ Configuring the Login Permission Using SSH Password Authentication
 
 **Assigning the remote login permission using SSH key authentication**
 
-#. Use the SSH key to log in to the Linux ECS. For details, see :ref:`Remotely Logging In to a Linux ECS (Using an SSH Key Pair) <en-us_topic_0017955380>`.
+#. Use the SSH key to log in to the Linux ECS. For details, see :ref:`Logging In to a Linux ECS Using an SSH Key Pair <en-us_topic_0017955380>`.
 
 #. Run the following command to change the value of **PasswordAuthentication** in **/etc/ssh/sshd_config** to **yes**:
 

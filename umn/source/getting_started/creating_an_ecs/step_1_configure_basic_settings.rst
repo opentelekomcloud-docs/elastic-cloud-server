@@ -113,7 +113,7 @@ Basic Settings
 
    -  Data disk
 
-      You can create multiple data disks for an ECS and enable required functions for each data disk. When creating an ECS, you can add up to 23 data disks with customized sizes to it. After the ECS is created, you can add up to 23 VBD disks or 59 SCSI disks to it.
+      You can create multiple data disks for an ECS and enable required functions for each data disk. During the creation process, you can add a maximum of 23 data disks for each ECS and customize the disk size as needed.
 
       Click **Show**\ |image2| and set the following functions if required:
 

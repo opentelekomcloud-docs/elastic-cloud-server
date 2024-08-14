@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0017955380:
 
-Remotely Logging In to a Linux ECS (Using an SSH Key Pair)
-==========================================================
+Logging In to a Linux ECS Using an SSH Key Pair
+===============================================
 
 Scenarios
 ---------
