@@ -16,7 +16,7 @@ Network Configurations
 -  :ref:`How Can I Handle the Issue that a Windows 7 ECS Equipped with an Intel 82599 NIC Reports an Error in SR-IOV Scenarios? <en-us_topic_0053287548>`
 -  :ref:`Why Can't My Linux ECS Obtain Metadata? <en-us_topic_0000001138811177>`
 -  :ref:`How Can I Obtain the MAC Address of My ECS? <en-us_topic_0101604506>`
--  :ref:`How Can I Test Network Performance? <en-us_topic_0115820205>`
+-  :ref:`How Can I Test the Network Performance of Linux ECSs? <en-us_topic_0115820205>`
 -  :ref:`Why Can't I Use DHCP to Obtain a Private IP Address? <en-us_topic_0105130173>`
 -  :ref:`How Can I View and Modify Kernel Parameters of a Linux ECS? <en-us_topic_0107659745>`
 -  :ref:`How Can I Configure Port Redirection? <en-us_topic_0101604507>`
@@ -38,7 +38,7 @@ Network Configurations
    how_can_i_handle_the_issue_that_a_windows_7_ecs_equipped_with_an_intel_82599_nic_reports_an_error_in_sr-iov_scenarios
    why_cant_my_linux_ecs_obtain_metadata
    how_can_i_obtain_the_mac_address_of_my_ecs
-   how_can_i_test_network_performance
+   how_can_i_test_the_network_performance_of_linux_ecss
    why_cant_i_use_dhcp_to_obtain_a_private_ip_address
    how_can_i_view_and_modify_kernel_parameters_of_a_linux_ecs
    how_can_i_configure_port_redirection

@@ -10,8 +10,8 @@ Symptom
 
 When you create a file or directory, you get the error message "No space left on device", "Cannot create directory", or "Couldn't create temporary archive name."
 
-Possible Causes
----------------
+Possible Cause
+--------------
 
 In Linux, both of the following use the disk space:
 
@@ -32,7 +32,7 @@ Solution
 
 #. Run the following command to check the available space on the disk:
 
-   **# df -h**
+   **df -h**
 
    .. _en-us_topic_0000001597810477__en-us_topic_0176850943_fig20632111816415:
 
@@ -45,12 +45,12 @@ Solution
 
 #. Run the following command to check the available inodes on the disk:
 
-   **# df -i**
+   **df -i**
 
    If the value of **Use%** in the command output is **100%**, inodes are used up. Perform the following operations to free up inodes:
 
    a. Archive files in all directories.
 
-      **# tar czvf /tmp/backup.tar.gz /home/data**
+      **tar czvf /tmp/backup.tar.gz /home/data**
 
    b. Delete unnecessary files to release inodes.

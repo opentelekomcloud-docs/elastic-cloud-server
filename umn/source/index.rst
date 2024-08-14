@@ -10,10 +10,10 @@ Elastic Cloud Server - User Guide
    instances/index
    images/index
    evs_disks/index
-   cbr/index
-   nics/index
+   nic/index
    eip/index
    security/index
+   cbr/index
    passwords_and_key_pairs/index
    permissions_management/index
    resources_and_tags/index

@@ -53,11 +53,11 @@ Obtaining the Password Through APIs
 
    Obtain the ciphertext password.
 
-   Call the password obtaining APIs to obtain the ciphertext password of the public key encrypted using RSA. The API URI is in the format "GET /v2/{*tenant_id*}/servers/{*server_id*}/os-server-password".
+   Call the password obtaining APIs to obtain the ciphertext password of the public key encrypted using RSA. The API URI is in the format "GET /v2/{*project_id*}/servers/{*server_id*}/os-server-password".
 
    .. note::
 
-      For details, see `Obtaining the Password for Logging In to an ECS <https://docs.otc.t-systems.com/api/ecs/en-us_topic_0031176553.html>`__.
+      For details, see `Obtaining the Password for Logging In to an ECS <https://docs.otc.t-systems.com/elastic-cloud-server/api-ref/native_openstack_nova_apis/key_and_password_management/obtaining_the_password_for_logging_in_to_an_ecs.html#en-us-topic-0031176553>`__.
 
 #. Decrypt the ciphertext password.
 

@@ -34,13 +34,13 @@ Note the following before configuring security group rules:
 
    .. table:: **Table 1** Default outbound rules in a security group
 
-      +-----------+------+-----------------+-------------+------------------------------------------------------------------------------------------------+
-      | Direction | Type | Protocol & Port | Destination | Description                                                                                    |
-      +===========+======+=================+=============+================================================================================================+
-      | Outbound  | IPv4 | All             | 0.0.0.0/0   | This rule allows the instances in the security group to access any IPv4 address over any port. |
-      +-----------+------+-----------------+-------------+------------------------------------------------------------------------------------------------+
-      | Outbound  | IPv6 | All             | ::/0        | This rule allows the instances in the security group to access any IPv6 address over any port. |
-      +-----------+------+-----------------+-------------+------------------------------------------------------------------------------------------------+
+      +-----------+------+-----------------+-------------+--------------------------------------------------------------------------------------+
+      | Direction | Type | Protocol & Port | Destination | Description                                                                          |
+      +===========+======+=================+=============+======================================================================================+
+      | Outbound  | IPv4 | All             | 0.0.0.0/0   | Allows the instances in the security group to access any IPv4 address over any port. |
+      +-----------+------+-----------------+-------------+--------------------------------------------------------------------------------------+
+      | Outbound  | IPv6 | All             | ::/0        | Allows the instances in the security group to access any IPv6 address over any port. |
+      +-----------+------+-----------------+-------------+--------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0140323152__en-us_topic_0118534011_section14933617154810:
 
@@ -125,8 +125,8 @@ A security group denies all external requests by default. If you have set up a w
 
 .. _en-us_topic_0140323152__en-us_topic_0118534011_section29561427142511:
 
-Using ping Command to Verify Network Connectivity
--------------------------------------------------
+Using **ping** Command to Verify Network Connectivity
+-----------------------------------------------------
 
 Ping works by sending an Internet Control Message Protocol (ICMP) Echo Request. To ping an ECS from your PC to verify the network connectivity, you need to add an inbound rule to the security group of the ECS to allow ICMP traffic.
 
@@ -172,11 +172,11 @@ A security group denies all external requests by default. If you have deployed a
    +-----------+------+-----------------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------+
    | Direction | Type | Protocol & Port | Source                     | Description                                                                                                                   |
    +===========+======+=================+============================+===============================================================================================================================+
-   | Inbound   | IPv4 | TCP: 3306       | Security group: sg-A       | This rule allows the ECSs in security group **sg-A** to access the MySQL database service.                                    |
+   | Inbound   | IPv4 | TCP: 3306       | Security group: sg-A       | Allows the ECSs in security group **sg-A** to access the MySQL database service.                                              |
    +-----------+------+-----------------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-   | Inbound   | IPv4 | TCP: 1521       | Security group: sg-B       | This rule allows the ECSs in security group **sg-B** to access the Oracle database service.                                   |
+   | Inbound   | IPv4 | TCP: 1521       | Security group: sg-B       | Allows the ECSs in security group **sg-B** to access the Oracle database service.                                             |
    +-----------+------+-----------------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-   | Inbound   | IPv4 | TCP: 1433       | IP address: 172.16.3.21/32 | This rule allows the ECS whose private IP address is 172.16.3.21 to access the MS SQL database service.                       |
+   | Inbound   | IPv4 | TCP: 1433       | IP address: 172.16.3.21/32 | Allows the ECS whose private IP address is 172.16.3.21 to access the MS SQL database service.                                 |
    +-----------+------+-----------------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------+
    | Inbound   | IPv4 | TCP: 5432       | IP address: 192.168.0.0/24 | This rule allows ECSs whose private IP addresses are in the 192.168.0.0/24 network to access the PostgreSQL database service. |
    +-----------+------+-----------------+----------------------------+-------------------------------------------------------------------------------------------------------------------------------+
@@ -196,13 +196,13 @@ By default, a security group allows all outbound traffic. :ref:`Table 11 <en-us_
 
    .. table:: **Table 10** Allowing ECSs to access specific external websites
 
-      +-----------+------+-----------------+---------------------------+----------------------------------------------------------------------------------------------------------+
-      | Direction | Type | Protocol & Port | Destination               | Description                                                                                              |
-      +===========+======+=================+===========================+==========================================================================================================+
-      | Outbound  | IPv4 | TCP: 80         | IP address: 132.15.XX.XX  | This rule allows ECSs in the security group to access the external website at http://132.15.XX.XX:80.    |
-      +-----------+------+-----------------+---------------------------+----------------------------------------------------------------------------------------------------------+
-      | Outbound  | IPv4 | TCP: 443        | IP address: 145.117.XX.XX | This rule allows ECSs in the security group to access the external website at https://145.117.XX.XX:443. |
-      +-----------+------+-----------------+---------------------------+----------------------------------------------------------------------------------------------------------+
+      +-----------+------+-----------------+---------------------------+------------------------------------------------------------------------------------------------+
+      | Direction | Type | Protocol & Port | Destination               | Description                                                                                    |
+      +===========+======+=================+===========================+================================================================================================+
+      | Outbound  | IPv4 | TCP: 80         | IP address: 132.15.XX.XX  | Allows ECSs in the security group to access the external website at http://132.15.XX.XX:80.    |
+      +-----------+------+-----------------+---------------------------+------------------------------------------------------------------------------------------------+
+      | Outbound  | IPv4 | TCP: 443        | IP address: 145.117.XX.XX | Allows ECSs in the security group to access the external website at https://145.117.XX.XX:443. |
+      +-----------+------+-----------------+---------------------------+------------------------------------------------------------------------------------------------+
 
 #. Delete the original outbound rules that allow all traffic.
 
@@ -210,10 +210,10 @@ By default, a security group allows all outbound traffic. :ref:`Table 11 <en-us_
 
    .. table:: **Table 11** Default outbound rules in a security group
 
-      +-----------+------+-----------------+-------------+------------------------------------------------------------------------------------------------+
-      | Direction | Type | Protocol & Port | Destination | Description                                                                                    |
-      +===========+======+=================+=============+================================================================================================+
-      | Outbound  | IPv4 | All             | 0.0.0.0/0   | This rule allows the instances in the security group to access any IPv4 address over any port. |
-      +-----------+------+-----------------+-------------+------------------------------------------------------------------------------------------------+
-      | Outbound  | IPv6 | All             | ::/0        | This rule allows the instances in the security group to access any IPv6 address over any port. |
-      +-----------+------+-----------------+-------------+------------------------------------------------------------------------------------------------+
+      +-----------+------+-----------------+-------------+--------------------------------------------------------------------------------------+
+      | Direction | Type | Protocol & Port | Destination | Description                                                                          |
+      +===========+======+=================+=============+======================================================================================+
+      | Outbound  | IPv4 | All             | 0.0.0.0/0   | Allows the instances in the security group to access any IPv4 address over any port. |
+      +-----------+------+-----------------+-------------+--------------------------------------------------------------------------------------+
+      | Outbound  | IPv6 | All             | ::/0        | Allows the instances in the security group to access any IPv6 address over any port. |
+      +-----------+------+-----------------+-------------+--------------------------------------------------------------------------------------+

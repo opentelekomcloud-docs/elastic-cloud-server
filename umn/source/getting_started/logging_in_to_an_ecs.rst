@@ -30,7 +30,7 @@ You can log in to a Windows ECS using either VNC or MSTSC provided on the manage
 
    -  Remote desktop connection (MSTSC)
 
-      For details, see :ref:`Remotely Logging In to a Windows ECS (Using MSTSC) <en-us_topic_0017955381>`.
+      For details, see :ref:`Logging In to a Windows ECS Using MSTSC <en-us_topic_0017955381>`.
 
 Logging In to a Linux ECS
 -------------------------
@@ -53,7 +53,7 @@ Select a login method and log in to the ECS.
 
    When you log in to the ECS using the SSH key, bind an EIP to the ECS.
 
-   For details, see :ref:`Remotely Logging In to a Linux ECS (Using an SSH Key Pair) <en-us_topic_0017955380>`.
+   For details, see :ref:`Logging In to a Linux ECS Using an SSH Key Pair <en-us_topic_0017955380>`.
 
 Follow-up Procedure
 -------------------
