@@ -162,6 +162,7 @@ Procedure
          |                       |                                                                                                                                                              |                                                               |
          |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                               |
          |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                               |
+         |                       | -  Cannot start with a slash (/) for Windows ECSs.                                                                                                           |                                                               |
          +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png

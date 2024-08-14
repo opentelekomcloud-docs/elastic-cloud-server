@@ -9,7 +9,7 @@ You can change the image for your ECS on the ECS console.
 
 #. Select the target ECS and click **Stop** in the upper left corner of the ECS list.
 
-#. Locate the row that contains the target ECS and choose **More** > **Manage Image/Backup** > **Change OS** in the **Operation** column.
+#. Locate the row that contains the target ECS, choose **More** > **Manage Image/Backup** > **Change OS** in the **Operation** column.
 
    The **Change OS** dialog box is displayed.
 

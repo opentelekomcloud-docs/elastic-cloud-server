@@ -5,7 +5,7 @@
 Default Security Group and Rules
 ================================
 
-If you have not created any security groups yet, the system automatically creates a default security group for you and associates it with the instance (such as an ECS) when you create it. A default security group has the following rules:
+If you have not created any security groups yet, the system automatically creates a default security group for you and associates it with the instance when you create it. A default security group has the following rules:
 
 -  Inbound rules control incoming traffic to instances in a security group. Only instances in the same security group can communicate with each other, and all inbound requests are denied.
 -  Outbound rules allow all outbound traffic and response traffic to the outbound requests.

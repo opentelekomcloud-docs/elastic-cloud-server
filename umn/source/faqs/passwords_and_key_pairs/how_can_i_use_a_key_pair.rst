@@ -43,4 +43,4 @@ Helpful Links
 -------------
 
 -  :ref:`(Recommended) Creating a Key Pair on the Management Console <en-us_topic_0000001278350057>`
--  :ref:`Login Using an SSH Key <en-us_topic_0017955380>`
+-  :ref:`Remotely Logging In to a Linux ECS (Using an SSH Key Pair) <en-us_topic_0017955380>`

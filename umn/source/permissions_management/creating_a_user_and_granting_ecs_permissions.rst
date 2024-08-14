@@ -9,7 +9,7 @@ Use `IAM <https://docs.otc.t-systems.com/usermanual/iam/iam_01_0026.html>`__ to 
 
 -  Create IAM users for employees based on your enterprise's organizational structure. Each IAM user will have their own security credentials for accessing ECS resources.
 -  Grant only the permissions required for users to perform a specific task.
--  Entrust accounts or cloud services to perform efficient O&M on your ECS resources.
+-  Delegate access to other accounts or cloud services for efficient O&M.
 
 If your account does not need individual IAM users, skip this section.
 

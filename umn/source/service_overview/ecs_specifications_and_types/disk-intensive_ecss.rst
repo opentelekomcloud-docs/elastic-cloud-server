@@ -50,7 +50,7 @@ D2 ECS Features
 -  D2 ECSs use local disks to provide high sequential read/write performance and low latency, improving file read/write performance.
 -  D2 ECSs provide powerful and stable computing capabilities, ensuring efficient data processing.
 -  D2 ECSs with a vCPU/memory ratio of 1:8 process large volumes of data.
--  D2 ECSs provide high intranet performance, including high intranet bandwidth and PPS, meeting requirements for data exchange between ECSs during peak hours.
+-  D2 ECSs provide high intranet performance, including high intranet bandwidth and packets per second (PPS), meeting requirements for data exchange between ECSs during peak hours.
 -  Each D2 ECS supports a maximum configuration of 24 local disks, 60 vCPUs, and 540 GiB memory.
 
 .. table:: **Table 2** Specifications of a Single SAS HDD Disk Attached to a D2 ECS

@@ -37,6 +37,7 @@ Background
    |                       |                                                                                                                                                              |                                                               |
    |                       | -  Cannot contain the username or the username spelled backwards.                                                                                            |                                                               |
    |                       | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |                                                               |
+   |                       | -  Cannot start with a slash (/) for Windows ECSs.                                                                                                           |                                                               |
    +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
 
 Windows
@@ -59,7 +60,7 @@ Linux
 
 #. Use the existing key file to log in to the ECS as user **root** through SSH.
 
-   For details, see :ref:`Login Using an SSH Key <en-us_topic_0017955380>`.
+   For details, see :ref:`Remotely Logging In to a Linux ECS (Using an SSH Key Pair) <en-us_topic_0017955380>`.
 
 #. Run the following command to reset the password of user **root**:
 

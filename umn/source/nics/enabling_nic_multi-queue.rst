@@ -8,7 +8,7 @@ Enabling NIC Multi-Queue
 Scenarios
 ---------
 
-Single-core CPU performance cannot meet the requirement of processing NIC interruptions incurred with the increase of network I/O bandwidth. NIC multi-queue enables multiple CPUs to process ECS NIC interruptions, thereby improving PPS and I/O performance.
+Single-core CPU performance cannot meet the requirement of processing NIC interruptions incurred with the increase of network I/O bandwidth. NIC multi-queue enables multiple CPUs to process ECS NIC interruptions, thereby improving packets per second (PPS) and I/O performance.
 
 The ECS described in this section is assumed to comply with the requirements on specifications and virtualization type.
 
