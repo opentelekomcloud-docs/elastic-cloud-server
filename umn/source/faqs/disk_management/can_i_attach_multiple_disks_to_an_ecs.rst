@@ -26,8 +26,8 @@ Yes. The ECSs created after the disk function upgrade can have up to 60 attached
 
    .. note::
 
-      -  The system disk of an ECS is of VBD type. Therefore, the maximum number of SCSI disks is 59.
-      -  For a D-series KVM ECS, its local disks use two SCSI controllers, indicating that 30 SCSI drive letters are used. Therefore, a maximum of 30 SCSI disks can be attached to such an ECS.
+      -  The system disk of an ECS is of VBD type. The maximum number of SCSI disks is 59.
+      -  For a D-series KVM ECS, its local disks use two SCSI controllers, indicating that 30 SCSI drive letters are used. A maximum of 30 SCSI disks can be attached to such an ECS.
 
 The maximum number of disks that you can attach to an ECS that was created before the disk function upgrade remains unchanged, as shown in :ref:`Table 2 <en-us_topic_0018073215__table3150162605720>`.
 

@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0000001128604648:
 
-Backing Up an ECS Data
-======================
+Backing Up an ECS
+=================
 
 Scenarios
 ---------
@@ -26,7 +26,7 @@ ECS Backup Procedure
 
 #. Under **Computing**, choose **Elastic Cloud Server**.
 
-#. In the ECS list, locate the target ECS and choose **More** > **Manage Image/Backup** > **Create Server Backup** in the **Operation** column.
+#. In the ECS list, locate the target ECS and choose **More** > **Manage Image/Backup** > **Create Server Backup**.
 
    -  If the ECS has been associated with a vault, configure the backup information as prompted.
 
@@ -56,7 +56,7 @@ EVS Disk Backup Procedure
 
 #. Under **Computing**, choose **Elastic Cloud Server**.
 
-#. In the ECS list, locate the target ECS and choose **More** > **Manage Image/Backup** > **Create Disk Backup** in the **Operation** column.
+#. In the ECS list, locate the target ECS and choose **More** > **Manage Image/Backup** > **Create Disk Backup**.
 
    -  If the ECS has been associated with a vault, configure the backup information as prompted.
 
@@ -71,7 +71,7 @@ EVS Disk Backup Procedure
 
 #. Click **OK**. The system automatically creates a backup for the disk.
 
-   On the **Backups** tab page, if the status of the backup is **Available**, the backup task is successful.
+   On the **Backups** tab of the CBR console, if the status of the backup is **Available**, the backup task is successful.
 
    If some files are deleted from the disk during the backup, the deleted files may fail to be backed up. Therefore, to ensure data integrity, delete the target data after the backup is complete.
 

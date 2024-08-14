@@ -15,23 +15,21 @@ GPU-accelerated ECSs are classified as G series and P series of ECSs.
 GPU-accelerated ECS Types
 -------------------------
 
-Recommended: :ref:`Computing-accelerated P2s <en-us_topic_0097289624__section1454714546567>`, :ref:`Inference-accelerated Pi2 <en-us_topic_0097289624__section1846114713182>`, and :ref:`Graphics-accelerated Enhancement G6 <en-us_topic_0097289624__section131302034104515>`
+Recommended: :ref:`Computing-accelerated P2s <en-us_topic_0097289624__section1454714546567>`, :ref:`Inference-accelerated Pi2 <en-us_topic_0097289624__section1846114713182>`, and :ref:`GPU-accelerated Enhancement G6 <en-us_topic_0097289624__section131302034104515>`
 
 Available now: All GPU models except the recommended ones. If available ECSs are sold out, use the recommended ones.
 
 -  G series
 
-   -  :ref:`Graphics-accelerated Enhancement G7v <en-us_topic_0097289624__section168054357432>`
+   -  :ref:`GPU-accelerated Enhancement G7v <en-us_topic_0097289624__section168054357432>`
    -  :ref:`Graphics-accelerated Enhancement G7 <en-us_topic_0097289624__section2325028104711>`
-   -  :ref:`Graphics-accelerated Enhancement G6 <en-us_topic_0097289624__section131302034104515>`
+   -  :ref:`GPU-accelerated Enhancement G6 <en-us_topic_0097289624__section131302034104515>`
 
 -  P series
 
    -  :ref:`Computing-accelerated P3 <en-us_topic_0097289624__section48861652193>`
    -  :ref:`Computing-accelerated P2s <en-us_topic_0097289624__section1454714546567>` (recommended)
    -  :ref:`Computing-accelerated P2v <en-us_topic_0097289624__section208472383415>`
-   -  :ref:`Computing-accelerated P2 <en-us_topic_0097289624__section5477185118234>`
-   -  :ref:`Computing-accelerated P1 <en-us_topic_0097289624__section1124594913391>`
    -  :ref:`Inference-accelerated Pi2 <en-us_topic_0097289624__section1846114713182>` (recommended)
 
 Helpful links:
@@ -94,22 +92,6 @@ Images Supported by GPU-accelerated ECSs
    |                       |                       | -  Windows Server 2016 Standard 64bit    |
    |                       |                       | -  Windows Server 2012 R2 Standard 64bit |
    +-----------------------+-----------------------+------------------------------------------+
-   | Computing-accelerated | P2                    | -  CentOS 7.9 64bit                      |
-   |                       |                       | -  EulerOS 2.5 64bit                     |
-   |                       |                       | -  Oracle Linux Server release 7.6 64bit |
-   |                       |                       | -  Ubuntu 20.04 Server 64bit             |
-   |                       |                       | -  Ubuntu 18.04 Server 64bit             |
-   |                       |                       | -  Windows Server 2019 Standard 64bit    |
-   |                       |                       | -  Windows Server 2016 Standard 64bit    |
-   |                       |                       | -  Windows Server 2012 R2 Standard 64bit |
-   +-----------------------+-----------------------+------------------------------------------+
-   | Computing-accelerated | P1                    | -  CentOS 7.9 64bit                      |
-   |                       |                       | -  Ubuntu 20.04 Server 64bit             |
-   |                       |                       | -  Ubuntu 18.04 Server 64bit             |
-   |                       |                       | -  Debian GNU/Linux 11 64bit             |
-   |                       |                       | -  Debian GNU/Linux 10 64bit             |
-   |                       |                       | -  Oracle Linux Server release 7.6 64bit |
-   +-----------------------+-----------------------+------------------------------------------+
    | Inference-accelerated | Pi2                   | -  CentOS 7.9 64bit                      |
    |                       |                       | -  Oracle Linux Server release 7.6 64bit |
    |                       |                       | -  Ubuntu 20.04 Server 64bit             |
@@ -121,8 +103,8 @@ Images Supported by GPU-accelerated ECSs
 
 .. _en-us_topic_0097289624__section168054357432:
 
-Graphics-accelerated Enhancement G7v
-------------------------------------
+GPU-accelerated Enhancement G7v
+-------------------------------
 
 **Overview**
 
@@ -188,9 +170,7 @@ G7v ECSs are used in graphics acceleration scenarios, such as video rendering, c
       Resources will be released after a G7v ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
 
 -  G7v ECSs created using a public image have had the GRID driver of a specific version installed by default. However, you need to purchase and configure a GRID license by yourself. Ensure that the GRID driver version meets service requirements.
-
 -  If a G7v ECS is created using a private image, make sure that the GRID driver was installed during the private image creation. If the GRID driver has not been installed, install the driver for graphics acceleration after the ECS is created.
-
 -  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
 
 .. _en-us_topic_0097289624__section2325028104711:
@@ -265,8 +245,8 @@ G7 ECSs are used in graphics acceleration scenarios, such as video rendering, cl
 
 .. _en-us_topic_0097289624__section131302034104515:
 
-Graphics-accelerated Enhancement G6
------------------------------------
+GPU-accelerated Enhancement G6
+------------------------------
 
 **Overview**
 
@@ -410,7 +390,6 @@ P3 ECSs are used in computing acceleration scenarios, such as deep learning trai
       Resources will be released after a P3 ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
 
 -  If a P3 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
-
 -  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
 
 .. _en-us_topic_0097289624__section1454714546567:
@@ -566,178 +545,8 @@ P2v ECSs are used in computing acceleration scenarios, such as deep learning tra
       Resources will be released after a P2v ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
 
 -  By default, P2v ECSs created using a Windows public image have the Tesla driver installed.
-
 -  By default, P2v ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
-
 -  If a P2v ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
-
--  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
-
-.. _en-us_topic_0097289624__section5477185118234:
-
-Computing-accelerated P2
-------------------------
-
-**Overview**
-
-Compared with P1 ECSs, P2 ECSs use NVIDIA Tesla V100 GPUs, which have improved both single- and double-precision computing capabilities by 50% and offer 112 TFLOPS of deep learning.
-
-**Specifications**
-
-.. table:: **Table 8** P2 ECS specifications
-
-   +--------------+-------+--------+------------------------+----------+-----------------+-----------+----------+------------+------------------+----------------+----------------------------------------+
-   | Flavor       | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs     | GPU Memory | Local Disks      | Virtualization | Hardware                               |
-   |              |       |        |                        |          |                 |           |          |            |                  |                |                                        |
-   |              |       | (GiB)  | (Gbit/s)               | (10,000) |                 |           |          | (GiB)      |                  |                |                                        |
-   +==============+=======+========+========================+==========+=================+===========+==========+============+==================+================+========================================+
-   | p2.2xlarge.8 | 8     | 64     | 5/1.6                  | 35       | 2               | 12        | 1 x V100 | 1 x 16     | 1 x 800 GiB NVMe | KVM            | CPU: Intel® Xeon® Processor E5-2690 v4 |
-   +--------------+-------+--------+------------------------+----------+-----------------+-----------+----------+------------+------------------+----------------+----------------------------------------+
-   | p2.4xlarge.8 | 16    | 128    | 8/3.2                  | 70       | 4               | 12        | 2 x V100 | 2 x 16     | 2 x 800 GiB NVMe | KVM            |                                        |
-   +--------------+-------+--------+------------------------+----------+-----------------+-----------+----------+------------+------------------+----------------+----------------------------------------+
-   | p2.8xlarge.8 | 32    | 256    | 10/6.5                 | 140      | 8               | 12        | 4 x V100 | 4 x 16     | 4 x 800 GiB NVMe | KVM            |                                        |
-   +--------------+-------+--------+------------------------+----------+-----------------+-----------+----------+------------+------------------+----------------+----------------------------------------+
-
-**P2 ECS Features**
-
--  CPU: Intel® Xeon® Processor E5-2690 v4 (2.6 GHz)
-
--  NVIDIA Tesla V100 GPUs
-
--  GPU hardware passthrough
-
--  14 TFLOPS of single-precision computing, 7 TFLOPS of double-precision computing, and 112 TFLOPS of deep learning
-
--  Maximum network bandwidth of 12 Gbit/s
-
--  16 GiB of HBM2 GPU memory with a bandwidth of 900 Gbit/s
-
--  800 GiB NVMe SSDs for temporary local storage
-
--  Comprehensive basic capabilities
-
-   -  User-defined network with flexible subnet division and network access policy configuration
-   -  Mass storage, elastic expansion, and backup and restoration
-   -  Elastic scaling
-
--  Flexibility
-
-   Similar to other types of ECSs, P2 ECSs can be provisioned in a few minutes.
-
--  Excellent supercomputing ecosystem
-
-   The supercomputing ecosystem allows you to build up a flexible, high-performance, cost-effective computing platform. A large number of HPC applications and deep-learning frameworks can run on P2 ECSs.
-
-**Supported Common Software**
-
-P2 ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software requires GPU CUDA parallel computing, use P2 ECSs. P2 ECSs support the following commonly used software:
-
--  Common deep learning frameworks, such as TensorFlow, Caffe, PyTorch, and MXNet
--  CUDA GPU rendering supported by RedShift for Autodesk 3dsMax and V-Ray for 3ds Max
--  Agisoft PhotoScan
--  MapD
-
-**Notes**
-
--  The system disk of a P2 ECS must be greater than or equal to 15 GiB. It is recommended that the system disk be greater than 40 GiB.
--  P2 ECSs have local NVMe SSDs attached, which will continue to be billed after the ECSs are stopped. To stop the ECS from being billed, delete it and its associated resources.
--  The local NVMe SSDs attached to P2 ECSs are dedicated for services with strict requirements on storage I/O performance, such as deep learning training and HPC. Local disks are attached to the ECSs of specified flavors and cannot be separately bought. In addition, you are not allowed to detach a local disk and then attach it to another ECS.
-
-   .. note::
-
-      Data may be lost on the local NVMe SSDs attached to P2 ECSs due to a fault, for example, due to a disk or host fault. Therefore, you are suggested to store only temporary data in local NVMe SSDs. If you store important data in such a disk, securely back up the data.
-
--  P2 ECSs do not support specifications modification.
--  After you delete a P2 ECS, the data stored in local NVMe SSDs is automatically cleared.
--  By default, P2 ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
--  If a P2 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
--  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
-
-.. _en-us_topic_0097289624__section1124594913391:
-
-Computing-accelerated P1
-------------------------
-
-**Overview**
-
-P1 ECSs use NVIDIA Tesla P100 GPUs and provide flexibility, high performance, and cost-effectiveness. These ECSs support GPU Direct for direct communication between GPUs, improving data transmission efficiency. P1 ECSs provide outstanding general computing capabilities and have strengths in deep learning, graphic databases, high-performance databases, Computational Fluid Dynamics (CFD), computing finance, seismic analysis, molecular modeling, and genomics. They are designed for scientific computing.
-
-**Specifications**
-
-.. table:: **Table 9** P1 ECS specifications
-
-   +--------------+-------+--------+------------------------+----------+-----------------+-----------+----------+------------+-------------+----------------+----------------------------------------+
-   | Flavor       | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs     | GPU Memory | Local Disks | Virtualization | Hardware                               |
-   |              |       |        |                        |          |                 |           |          |            |             |                |                                        |
-   |              |       | (GiB)  | (Gbit/s)               | (10,000) |                 |           |          | (GiB)      | (GiB)       |                |                                        |
-   +==============+=======+========+========================+==========+=================+===========+==========+============+=============+================+========================================+
-   | p1.2xlarge.8 | 8     | 64     | 5/1.6                  | 35       | 2               | 12        | 1 x P100 | 1 x 16     | 1 x 800     | KVM            | CPU: Intel® Xeon® Processor E5-2690 v4 |
-   +--------------+-------+--------+------------------------+----------+-----------------+-----------+----------+------------+-------------+----------------+----------------------------------------+
-   | p1.4xlarge.8 | 16    | 128    | 8/3.2                  | 70       | 4               | 12        | 2 x P100 | 2 x 16     | 2 x 800     | KVM            |                                        |
-   +--------------+-------+--------+------------------------+----------+-----------------+-----------+----------+------------+-------------+----------------+----------------------------------------+
-   | p1.8xlarge.8 | 32    | 256    | 10/6.5                 | 140      | 8               | 12        | 4 x P100 | 4 x 16     | 4 x 800     | KVM            |                                        |
-   +--------------+-------+--------+------------------------+----------+-----------------+-----------+----------+------------+-------------+----------------+----------------------------------------+
-
-**P1 ECS Features**
-
--  CPU: Intel® Xeon® E5-2690 v4 processors (2.6 GHz of base frequency and 3.5 GHz of turbo frequency)
-
--  Up to four NVIDIA Tesla P100 GPUs on a P1 ECS (If eight P100 GPUs are required on an instance, use BMS.)
-
--  GPU hardware passthrough
-
--  9.3 TFLOPS of single-precision computing and 4.7 TFLOPS of double-precision computing
-
--  Maximum network bandwidth of 10 Gbit/s
-
--  16 GiB of HBM2 GPU memory with a bandwidth of 732 Gbit/s
-
--  800 GiB NVMe SSDs for temporary local storage
-
--  Comprehensive basic capabilities
-
-   -  User-defined network with flexible subnet division and network access policy configuration
-   -  Mass storage, elastic expansion, and backup and restoration
-   -  Elastic scaling
-
--  Flexibility
-
-   Similar to other types of ECSs, P1 ECSs can be provisioned in a few minutes. You can configure specifications as needed. P1 ECSs with two, four, and eight GPUs will be supported later.
-
--  Excellent supercomputing ecosystem
-
-   The supercomputing ecosystem allows you to build up a flexible, high-performance, cost-effective computing platform. A large number of HPC applications and deep-learning frameworks can run on P1 ECSs.
-
-**Supported Common Software**
-
-P1 ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software requires GPU CUDA parallel computing, use P1 ECSs. P1 ECSs support the following commonly used software:
-
--  Deep learning frameworks, such as TensorFlow, Caffe, PyTorch, and MXNet
--  RedShift for Autodesk 3dsMax, V-Ray for 3ds Max
--  Agisoft PhotoScan
--  MapD
-
-**Notes**
-
--  It is recommended that the system disk of a P1 ECS be greater than 40 GiB.
--  P1 ECSs have local NVMe SSDs attached, which will continue to be billed after the ECSs are stopped. To stop the ECS from being billed, delete it and its associated resources.
--  The local NVMe SSDs attached to P1 ECSs are dedicated for services with strict requirements on storage I/O performance, such as deep learning training and HPC. Local disks are attached to the ECSs of specified flavors and cannot be separately bought. In addition, you are not allowed to detach a local disk and then attach it to another ECS.
-
-   .. note::
-
-      Data may be lost on the local NVMe SSDs attached to P1 ECSs due to a fault, for example, due to a disk or host fault. Therefore, you are suggested to store only temporary data in local NVMe SSDs. If you store important data in such a disk, securely back up the data.
-
--  After a P1 ECS is created, you must install the NVIDIA driver for computing acceleration. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
--  P1 ECSs do not support specifications change.
--  P1 ECSs do not support automatic recovery.
-
-   -  If the host is faulty or subhealthy, you need to stop the ECS for hardware repair.
-   -  In case of system maintenance or hardware faults, the ECS will be redeployed (to ensure HA) and cold migrated to another host. The local disk data of the ECS will not be retained.
-
--  After you delete a P1 ECS, the data stored in local NVMe SSDs is automatically cleared.
--  By default, P1 ECSs created using a Windows public image have the Tesla driver installed.
--  By default, P1 ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
--  If a P1 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 -  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
 
 .. _en-us_topic_0097289624__section1846114713182:
@@ -751,7 +560,7 @@ Pi2 ECSs use NVIDIA Tesla T4 GPUs dedicated for real-time AI inference. These EC
 
 **Specifications**
 
-.. table:: **Table 10** Pi2 ECS specifications
+.. table:: **Table 8** Pi2 ECS specifications
 
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs   | GPU Memory | Local Disks | Virtualization | Hardware                                                                         |
@@ -759,6 +568,8 @@ Pi2 ECSs use NVIDIA Tesla T4 GPUs dedicated for real-time AI inference. These EC
    |                |       | (GiB)  | (Gbit/s)               | (10,000) |                 |           |        | (GiB)      |             |                |                                                                                  |
    +================+=======+========+========================+==========+=================+===========+========+============+=============+================+==================================================================================+
    | pi2.2xlarge.4  | 8     | 32     | 10/4                   | 50       | 4               | 4         | 1 x T4 | 1 x 16 GiB | N/A         | KVM            | CPU: Intel® Xeon® Skylake 6151 3.0 GHz or Intel® Xeon® Cascade Lake 6278 2.6 GHz |
+   +----------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
+   | pi2.3xlarge.4  | 12    | 48     | 12/6                   | 80       | 6               | 6         | 1 x T4 | 1 x 16 GiB | N/A         | KVM            |                                                                                  |
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
    | pi2.4xlarge.4  | 16    | 64     | 15/8                   | 100      | 8               | 8         | 2 x T4 | 2 x 16 GiB | N/A         | KVM            |                                                                                  |
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+

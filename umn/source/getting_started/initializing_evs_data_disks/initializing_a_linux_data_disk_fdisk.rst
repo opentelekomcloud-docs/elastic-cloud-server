@@ -59,7 +59,7 @@ The following example shows you how a new primary partition can be created on a 
       Sector size (logical/physical): 512 bytes / 512 bytes
       I/O size (minimum/optimal): 512 bytes / 512 bytes
 
-   In the command output, this server contains two disks. **/dev/vda** and **/dev/vdb**. **/dev/vda** is the system disk, and **/dev/vdb** is the new data disk.
+   In the command output, this server contains two disks: **/dev/vda** and **/dev/vdb**. **/dev/vda** is the system disk, and **/dev/vdb** is the new data disk.
 
 #. Launch fdisk to partition the new data disk.
 
@@ -102,7 +102,7 @@ The following example shows you how a new primary partition can be created on a 
 
    .. note::
 
-      If MBR is used, a maximum of 4 primary partitions, or 3 primary partitions plus 1 extended partition can be created. The extended partition must be divided into logical partitions before use.
+      If MBR is used, a maximum of four primary partitions, or three primary partitions plus one extended partition can be created. The extended partition must be divided into logical partitions before use.
 
       Disk partitions created using GPT are not categorized.
 
@@ -285,20 +285,20 @@ The following example shows you how a new primary partition can be created on a 
 
    .. note::
 
-      After the server is restarted, the disk will not be automatically mounted. To configure automount at startup, you will need to modify the **/etc/fstab** file. For details, see :ref:`Configuring Automatic Mounting at System Start <en-us_topic_0085634797__en-us_topic_0044524669_section15839912195453>`.
+      After the server is restarted, the disk will not be automatically mounted. You can modify the **/etc/fstab** file to configure automount at startup. For details, see :ref:`Configuring Automatic Mounting at System Start <en-us_topic_0085634797__en-us_topic_0000001809189108_en-us_topic_0000001808330216_section15839912195453>`.
 
-.. _en-us_topic_0085634797__en-us_topic_0044524669_section15839912195453:
+.. _en-us_topic_0085634797__en-us_topic_0000001809189108_en-us_topic_0000001808330216_section15839912195453:
 
 Configuring Automatic Mounting at System Start
 ----------------------------------------------
 
 The **fstab** file controls what disks are automatically mounted at startup. You can use **fstab** to configure your data disks to mount automatically. This operation will not affect the existing data.
 
-The example here uses UUIDs to identify disks in the **fstab** file. You are advised not to use device names to identify disks in the file because device names are assigned dynamically and may change (for example, from /dev/vdb1 to /dev/vdb2) after a reboot. This can even prevent your disk from booting up.
+The example here uses UUIDs to identify disks in the **fstab** file. You are advised not to use device names to identify disks in the file because device names are assigned dynamically and may change (for example, from **/dev/vdb1** to **/dev/vdb2**) after a server stop or start. This can even prevent the server from booting up.
 
 .. note::
 
-   UUID is the unique character string for disk partitions in a Linux system.
+   UUIDs are the unique character strings for identifying partitions in Linux.
 
 #. Query the partition UUID.
 

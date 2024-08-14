@@ -5,7 +5,7 @@
 How Can I Test Network Performance?
 ===================================
 
-Use netperf and iperf3 to test network performance between ECSs. The test operations include preparations, Transmission Control Protocol (TCP) bandwidth test, User Datagram Protocol (UDP) packets per second (PPS) test, and latency test.
+Use netperf and iperf3 to test network performance between ECSs. The test operations include preparations, TCP bandwidth test, UDP PPS test, and latency test.
 
 Background
 ----------

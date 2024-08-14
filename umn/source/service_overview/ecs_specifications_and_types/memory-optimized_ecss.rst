@@ -11,7 +11,6 @@ Overview
 -  M7n ECSs use the third-generation Intel® Xeon® Scalable processors to provide enhanced computing, security, and stability. Each M7n ECS can have a maximum number of 96 vCPUs and a memory speed of 3,200 MHz, and provide a secure and trusted cloud environment for memory-intensive computing applications.
 -  M4 ECSs use the second-generation Intel® Xeon® Scalable processors with technologies optimized to offer powerful and stable computing performance. Using 25GE high-speed intelligent NICs, M4 ECSs provide a maximum memory size of 512 GiB based on DDR4 for memory-intensive applications with high requirements on network bandwidth and Packets Per Second (PPS).
 -  M3 ECSs are developed based on the KVM virtualization platform and designed for processing large-scale data sets in the memory. They use Intel® Xeon® Scalable processors, network acceleration engines, and DPDK rapid packet processing mechanism to provide higher network performance and up to 512 GiB of DDR4 memory for memory-intensive computing applications.
--  M2 ECSs use Intel Xeon E5-2690 v4 CPUs and are designed for memory-optimized applications.
 
 Specifications
 --------------
@@ -92,18 +91,6 @@ Specifications
    | m3.15xlarge.8 | 60    | 512    | 17/17                  | 500      | 16              | 12        | KVM            |                                |
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
 
-.. table:: **Table 4** M2 ECS specifications
-
-   +--------------+--------+--------+------------------------+----------+-----------------+----------------+----------------------------------------+
-   | Flavor       | vCPUs  | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Virtualization | Hardware                               |
-   |              |        |        |                        |          |                 |                |                                        |
-   |              |        | (GiB)  | (Gbit/s)               | (10,000) |                 |                |                                        |
-   +==============+========+========+========================+==========+=================+================+========================================+
-   | m2.4xlarge.8 | 16     | 128    | 8/5                    | 40       | 4               | KVM            | CPU: Intel® Xeon® Processor E5-2690 v4 |
-   +--------------+--------+--------+------------------------+----------+-----------------+----------------+----------------------------------------+
-   | m2.8xlarge.8 | 32     | 256    | 13/8                   | 60       | 8               | KVM            |                                        |
-   +--------------+--------+--------+------------------------+----------+-----------------+----------------+----------------------------------------+
-
 Scenarios
 ---------
 
@@ -115,11 +102,11 @@ Scenarios
 Notes
 -----
 
-:ref:`Table 5 <en-us_topic_0035550301__table192771727112217>` lists the OSs supported by memory-optimized ECSs.
+:ref:`Table 4 <en-us_topic_0035550301__table192771727112217>` lists the OSs supported by memory-optimized ECSs.
 
 .. _en-us_topic_0035550301__table192771727112217:
 
-.. table:: **Table 5** Supported OS versions
+.. table:: **Table 4** Supported OS versions
 
    +-----------------------------------+-----------------------------------------------------+
    | OS                                | Version                                             |

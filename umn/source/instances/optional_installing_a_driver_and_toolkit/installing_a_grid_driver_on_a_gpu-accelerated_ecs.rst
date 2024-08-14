@@ -42,7 +42,7 @@ Purchasing a GRID License
 
    Log in at the `official NVIDIA website <https://www.nvidia.com/object/nvidia-enterprise-account.html>`__ and enter desired information.
 
-   For details about how to register for an account and apply for a trial license, see `official NVIDIA help page <https://nvid.nvidia.com/NvidiaUtilities/#/needHelp>`__.
+   For details about how to sign up for an account and apply for a trial license, see `official NVIDIA help page <https://nvid.nvidia.com/NvidiaUtilities/#/needHelp>`__.
 
    .. note::
 
@@ -82,8 +82,6 @@ Downloading GRID Driver and Software License Packages
       P3       GPU passthrough    Select a version as needed. x86_64
       P2s      GPU passthrough    Select a version as needed. x86_64
       P2v      GPU passthrough    Select a version as needed. x86_64
-      P2       GPU passthrough    Select a version as needed. x86_64
-      P1       GPU passthrough    Select a version as needed. x86_64
       PI2      GPU passthrough    Select a version as needed. x86_64
       ======== ================== =========================== ================
 

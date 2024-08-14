@@ -7,7 +7,7 @@ Creating a User and Granting ECS Permissions
 
 Use `IAM <https://docs.otc.t-systems.com/usermanual/iam/iam_01_0026.html>`__ to implement fine-grained permissions control over your ECSs. With IAM, you can:
 
--  Create IAM users for employees based on your enterprise's organizational structure. Each IAM user will have their own security credentials for accessing ECS resources.
+-  Create IAM users for personnel based on your enterprise's organizational structure. Each IAM user will have their own security credentials for accessing ECS resources.
 -  Grant only the permissions required for users to perform a specific task.
 -  Delegate access to other accounts or cloud services for efficient O&M.
 
@@ -35,17 +35,17 @@ Process Flow
 
 #. .. _en-us_topic_0170265913__li8447183891715:
 
-   Create a user group and assign permissions to it.
+   `Create a user group and assign permissions <https://docs.otc.t-systems.com/usermanual/iam/iam_01_0030.html>`__.
 
-   Create a user group on the IAM console, and attach the **ECSReadOnlyAccess** policy to the group.
+   Create a user group on the IAM console and assign the **ECS ReadOnlyAccess** permissions to the group.
 
-#. Create an IAM user.
+#. `Create a user and add the user to the user group <https://docs.otc.t-systems.com/usermanual/iam/iam_01_0031.html>`__.
 
    Create a user on the IAM console and add the user to the group created in :ref:`1 <en-us_topic_0170265913__li8447183891715>`.
 
-#. Log in and verify permissions.
+#. `Log in to the management console as the created user <https://docs.otc.t-systems.com/usermanual/iam/iam_01_0032.html>`__.
 
-   Log in to the ECS console by using the created user, and verify that the user only has read permissions for ECS.
+   In the authorized region, perform the following operations:
 
    -  Choose **Compute** > **Elastic Cloud Server** in **Service List**. On the ECS console, click **Create ECS**. If the creation attempt failed, the **ECSReadOnlyAccess** policy has already taken effect.
    -  Choose any service other than ECS in **Service List**. If a message appears indicating that you have insufficient permissions to access the service, the **ECSReadOnlyAccess** policy has already taken effect.
