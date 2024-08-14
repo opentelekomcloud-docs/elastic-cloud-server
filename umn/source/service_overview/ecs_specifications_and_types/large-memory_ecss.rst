@@ -16,7 +16,7 @@ Large-memory ECSs provide an even larger amount of memory than memory-optimized 
 
 -  Application scenarios
 
-   OLTP and OLAP scenarios
+   OLAP and OLTP applications with hyper-threading enabled
 
 Specifications
 --------------

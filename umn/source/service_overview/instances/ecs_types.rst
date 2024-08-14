@@ -44,11 +44,9 @@ When creating an ECS, you can view the flavors in the flavor list.
 vCPU
 ----
 
-ECS supports hyper-threading, which enables two threads to run concurrently on a single CPU core. Each thread is represented as a virtual CPU (vCPU) and a CPU core contains two vCPUs (logical cores).
+The processor uses the hyper-threading technology. The CPU exposes two execution contexts per physical core. This means that one physical core now works like two "logical cores" that can handle different software threads.
 
-Hyper-threading is enabled for most ECS flavors by default. If hyper-threading is disabled during the ECS creation or flavor change, the number of vCPUs queried from the ECS is half of the number of vCPUs defined by the ECS flavor.
-
-For example, a 2-core physical CPU contains 4 vCPUs (threads).
+For example, a 10-core physical CPU contains 20 vCPUs (threads).
 
 Network QoS
 -----------

@@ -2,13 +2,13 @@
 
 .. _en-us_topic_0037633087:
 
-What Is the Cloudbase-Init Account in Windows ECSs Used for?
+What Is the cloudbase-init Account in Windows ECSs Used for?
 ============================================================
 
 Description
 -----------
 
-In Windows ECSs, **cloudbase-init** is the default account of the Cloudbase-Init agent program. It is used to obtain the metadata and execute configurations when an ECS starts.
+In Windows ECSs, **cloudbase-init** is the default account of the Cloudbase-Init agent program. It is used to obtain the metadata and execute configurations when the ECS starts.
 
 .. note::
 

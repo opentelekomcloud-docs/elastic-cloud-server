@@ -12,7 +12,7 @@ Passwords and Key Pairs
 -  :ref:`Why Does the Login to My Linux ECS Using a Key File Fail? <en-us_topic_0031734664>`
 -  :ref:`What Should I Do If I Cannot Download a Key Pair? <en-us_topic_0105170210>`
 -  :ref:`Why Does a Key Pair Created Using puttygen.exe Fail to Be Imported on the Management Console? <en-us_topic_0047654687>`
--  :ref:`What Is the Cloudbase-Init Account in Windows ECSs Used for? <en-us_topic_0037633087>`
+-  :ref:`What Is the cloudbase-init Account in Windows ECSs Used for? <en-us_topic_0037633087>`
 -  :ref:`What Should I Do If Cloud-Init Does Not Work After Python Is Upgraded? <en-us_topic_0118224527>`
 
 .. toctree::

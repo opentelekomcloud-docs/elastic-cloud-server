@@ -15,7 +15,7 @@ Possible Causes
 
 The format of the public key content does not meet system requirements.
 
-If you store a public key by clicking **Save public key** on PuTTY Key Generator, the format of the public key content will change. You cannot import the key on the management console.
+If you store a public key by clicking **Save public key** on PuTTY Key Generator, the format of the public key content will change. Therefore, you cannot import the key on the management console.
 
 Solution
 --------
@@ -36,7 +36,7 @@ Use the locally stored private key and **PuTTY Key Generator** to restore the fo
 
    .. _en-us_topic_0047654687__fig5530274016810:
 
-   .. figure:: /_static/images/en-us_image_0000001885295389.png
+   .. figure:: /_static/images/en-us_image_0037982934.png
       :alt: **Figure 2** Restoring the format of the public key content
 
       **Figure 2** Restoring the format of the public key content

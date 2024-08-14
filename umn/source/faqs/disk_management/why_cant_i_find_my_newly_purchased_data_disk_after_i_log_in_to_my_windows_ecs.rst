@@ -12,7 +12,7 @@ After logging in to my Windows ECS, I cannot find the attached data disk.
 
 .. caution::
 
-   Formatting a disk will cause data loss. Before formatting a disk, create a backup for it.
+   Formatting a disk will cause data loss. Therefore, before formatting a disk, create a backup for it.
 
 Possible Causes
 ---------------

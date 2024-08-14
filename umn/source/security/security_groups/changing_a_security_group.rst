@@ -37,7 +37,7 @@ Procedure
 
 #. Select the target NIC and security groups.
 
-   You can select multiple security groups. In such a case, the rules of all the selected security groups will apply to the ECS.
+   You can select multiple security groups. In such a case, the rules of all the selected security groups will be aggregated to apply on the ECS.
 
    To create a security group, click **Create Security Group**.
 

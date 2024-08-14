@@ -35,17 +35,17 @@ Process Flow
 
 #. .. _en-us_topic_0170265913__li8447183891715:
 
-   `Create a user group and assign permissions <https://docs.otc.t-systems.com/usermanual/iam/iam_01_0030.html>`__.
+   Create a user group and assign permissions to it.
 
-   Create a user group on the IAM console and assign the **ECS ReadOnlyAccess** permissions to the group.
+   Create a user group on the IAM console, and attach the **ECSReadOnlyAccess** policy to the group.
 
-#. `Create a user and add the user to the user group <https://docs.otc.t-systems.com/usermanual/iam/iam_01_0031.html>`__.
+#. Create an IAM user.
 
    Create a user on the IAM console and add the user to the group created in :ref:`1 <en-us_topic_0170265913__li8447183891715>`.
 
-#. `Log in to the management console as the created user <https://docs.otc.t-systems.com/usermanual/iam/iam_01_0032.html>`__.
+#. Log in and verify permissions.
 
-   In the authorized region, perform the following operations:
+   Log in to the ECS console by using the created user, and verify that the user only has read permissions for ECS.
 
    -  Choose **Compute** > **Elastic Cloud Server** in **Service List**. On the ECS console, click **Create ECS**. If the creation attempt failed, the **ECSReadOnlyAccess** policy has already taken effect.
    -  Choose any service other than ECS in **Service List**. If a message appears indicating that you have insufficient permissions to access the service, the **ECSReadOnlyAccess** policy has already taken effect.
