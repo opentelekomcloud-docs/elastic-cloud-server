@@ -14,7 +14,7 @@ Using Cloud-Init to initialize your ECSs will affect your ECS, IMS, and AS servi
 Impact on IMS
 -------------
 
-To ensure that ECSs created using a private image support custom configurations, you must install Cloud-Init or Cloudbase-Init on the ECSs before using them to create private images.
+To ensure that ECSs created using a private image support customized configurations, you must install Cloud-Init or Cloudbase-Init on the ECSs before using them to create private images.
 
 -  For Windows OSs, download and install Cloudbase-Init.
 -  For Linux OSs, download and install Cloud-Init.
@@ -30,7 +30,7 @@ Impact on ECS
 -  If Cloud-Init is supported, ECSs do not support password authentication anymore. All newly created ECSs use key pair authentication. This change will influence your ECS logins. For details, see the following sections:
 
    -  :ref:`Login Overview <en-us_topic_0013771089>`
-   -  :ref:`What Is the Cloudbase-Init Account in Windows ECSs Used for? <en-us_topic_0037633087>`
+   -  :ref:`What Is the cloudbase-init Account in Windows ECSs Used for? <en-us_topic_0037633087>`
    -  :ref:`Why Does the Login to My Linux ECS Using a Key File Fail? <en-us_topic_0031734664>`
    -  :ref:`Why Does the System Display a Message Indicating that the Password for Logging In to a Windows ECS Cannot Be Obtained? <en-us_topic_0031736846>`
 
@@ -57,4 +57,8 @@ Notes
 
    .. note::
 
-      If you use the default security group rules for the outbound direction, the metadata can be accessed because the default rules meet the preceding requirements. For details about the default security group rules for the outbound direction, see :ref:`Security Group <en-us_topic_0030828257__section15617142420109>`.
+      If you use the default security group rules for the outbound direction, the metadata can be accessed because the default rules meet the preceding requirements. Default security group rules for the outbound direction are as follows:
+
+      -  **Protocol**: **All**
+      -  **Port**: **All**
+      -  **Destination**: **0.0.0.0/0**

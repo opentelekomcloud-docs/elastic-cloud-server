@@ -10,7 +10,7 @@ Key Pairs
 
 Key pairs are a set of security credentials for identity authentication when you remotely log in to ECSs.
 
-A key pair consists of a public key and a private key. Key Pair Service (KPS) stores the public key and you store the private key. If you have imported a public key into a Linux ECS, you can use the corresponding private key to log in to the ECS without a password. You do not need to worry about password interception, cracking, or leakage.
+A key pair consists of a public key and a private key. Key Pair Service (KPS) stores the public key and you store the private key. If you have imported a public key into a Linux ECS, you can use the corresponding private key to log in to the ECS without a password. Therefore, you do not need to worry about password interception, cracking, or leakage.
 
 Scenarios
 ---------
@@ -26,7 +26,7 @@ When purchasing an ECS, you are advised to select the key pair login mode. For W
 
 -  Logging in to a Windows ECS
 
-   You can use the key pair to obtain a password for login. The password is randomly generated and is more secure.
+   You can use the key pair to obtain a password for login. The password is randomly generated and therefore is more secure.
 
    For details, see :ref:`Obtaining the Password for Logging In to a Windows ECS <en-us_topic_0031107266>`.
 
@@ -47,7 +47,7 @@ You can create a key pair or use an existing one for remote login authentication
 
 -  Using an existing key pair
 
-   If an existing key pair (created using PuTTYgen, for example) is available, you can import the public key by referring to :ref:`Importing a Key Pair <en-us_topic_0000001278734873>` on the management console to let the system maintain your public key.
+   If an existing key pair (created using PuTTYgen, for example) is available, you can import the public key by referring to :ref:`Importing a Key Pair <en-us_topic_0000001278734873>` on the management console to let the system maintain the public key for you.
 
    .. note::
 

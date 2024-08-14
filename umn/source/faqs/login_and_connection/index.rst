@@ -25,7 +25,7 @@ Login and Connection
 -  :ref:`Why Does the System Display No Remote Desktop License Servers Available to Provide a License When I Log In to a Windows ECS? <en-us_topic_0264235941>`
 -  :ref:`Why Does the System Display Error Code 0x112f When I Log In to a Windows ECS? <en-us_topic_0120795668>`
 -  :ref:`Why Does the System Display Error Code 0x1104 When I Log In to a Windows ECS? <en-us_topic_0264235942>`
--  :ref:`Why Does the System Display Error Code 122.112... When I Log In to a Windows ECS? <en-us_topic_0264235943>`
+-  :ref:`Why Does the System Display Error Code 122.112.. When I Log In to a Windows ECS? <en-us_topic_0264235943>`
 -  :ref:`Why Does the System Display Invalid Certificate or Associated Chain When I Log In to a Windows ECS from a Mac? <en-us_topic_0264235944>`
 -  :ref:`Why Is My Remote Session Interrupted by a Protocol Error? <en-us_topic_0264235945>`
 -  :ref:`Why Am I Seeing an Error Message That Says Identity of Remote Computer Cannot be Verified When I Log In to a Windows ECS? <en-us_topic_0264235946>`
@@ -63,7 +63,7 @@ Login and Connection
    why_does_the_system_display_no_remote_desktop_license_servers_available_to_provide_a_license_when_i_log_in_to_a_windows_ecs
    why_does_the_system_display_error_code_0x112f_when_i_log_in_to_a_windows_ecs
    why_does_the_system_display_error_code_0x1104_when_i_log_in_to_a_windows_ecs
-   why_does_the_system_display_error_code_122.112..._when_i_log_in_to_a_windows_ecs
+   why_does_the_system_display_error_code_122.112.._when_i_log_in_to_a_windows_ecs
    why_does_the_system_display_invalid_certificate_or_associated_chain_when_i_log_in_to_a_windows_ecs_from_a_mac
    why_is_my_remote_session_interrupted_by_a_protocol_error
    why_am_i_seeing_an_error_message_that_says_identity_of_remote_computer_cannot_be_verified_when_i_log_in_to_a_windows_ecs

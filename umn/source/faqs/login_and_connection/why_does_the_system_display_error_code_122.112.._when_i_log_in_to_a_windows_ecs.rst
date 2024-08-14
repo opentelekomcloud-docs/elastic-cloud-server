@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0264235943:
 
-Why Does the System Display Error Code 122.112.\ *..* When I Log In to a Windows ECS?
-=====================================================================================
+Why Does the System Display Error Code 122.112.\ *.* When I Log In to a Windows ECS?
+====================================================================================
 
 Symptom
 -------

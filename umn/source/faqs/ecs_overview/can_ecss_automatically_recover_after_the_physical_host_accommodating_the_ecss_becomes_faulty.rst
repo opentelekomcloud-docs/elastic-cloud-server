@@ -5,7 +5,7 @@
 Can ECSs Automatically Recover After the Physical Host Accommodating the ECSs Becomes Faulty?
 =============================================================================================
 
-Yes, ECS can automatically recover if the physical host becomes faulty.
+Yes.
 
 ECSs run on physical hosts. Although there are multiple mechanisms to ensure system reliability, fault tolerance, and high availability, host hardware might be damaged or power failures might occur. If physical hosts cannot be powered on or restarted due to damage, CPU and memory data will be lost and live migration cannot be used to recovery ECSs.
 

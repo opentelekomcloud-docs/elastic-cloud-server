@@ -19,14 +19,13 @@ Run the following command on the Linux ECS configured with a static IP address:
 
 The route with the destination of 169.254.169.254 does not exist, but the route with the destination of 169.254.0.0/16 exists.
 
-.. _en-us_topic_0000001138811177__fig538615619196:
 
 .. figure:: /_static/images/en-us_image_0000001092174258.png
    :alt: **Figure 1** Route information
 
    **Figure 1** Route information
 
-After the network is restarted, the original route with the destination of 169.254.169.254 is changed to the route with the destination of 169.254.0.0/16 without a next hop, as shown in :ref:`Figure 1 <en-us_topic_0000001138811177__fig538615619196>`. As a result, the Linux ECS cannot obtain metadata.
+After the network is restarted, the original route with the destination of 169.254.169.254 is changed to the route with the destination of 169.254.0.0/16 without a next hop. As a result, the Linux ECS cannot obtain metadata.
 
 Solution
 --------

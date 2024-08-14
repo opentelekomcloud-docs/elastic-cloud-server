@@ -15,7 +15,7 @@ The operations described in this section are provided for the ECSs running Windo
 
 #. Right-click **Computer** and choose **Properties** from the shortcut menu.
 
-#. In the left navigation pane, choose **Advanced system settings**.
+#. In the navigation pane on the left, choose **Advanced system settings**.
 
    The **System Properties** dialog box is displayed.
 
@@ -45,7 +45,7 @@ The operations described in this section are provided for the ECSs running Windo
 
    -  **Custom size**: Select **Custom size** and set **Initial size** and **Maximum size**.
 
-      Considering **Memory.dmp** caused by blue screen of death (BSOD), you are advised to set **Initial size** to **16** and **Maximum size** to **4,096**.
+      Considering **Memory.dmp** caused by blue screen of death (BSOD), you are advised to set **Initial size** to **16** and **Maximum size** to **4096**.
 
 
    .. figure:: /_static/images/en-us_image_0120795935.png

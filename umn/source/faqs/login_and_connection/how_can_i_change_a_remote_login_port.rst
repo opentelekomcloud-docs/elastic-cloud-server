@@ -165,7 +165,7 @@ The following procedure uses an ECS running CentOS 7.3 as an example. The defaul
 
 #. Run the following command to check whether the port is open:
 
-   **telnet EIP port**
+   **telnet EIP Port**
 
    For example: **telnet xx.xx.xx.xx 2020**
 

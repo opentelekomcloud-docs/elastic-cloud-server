@@ -22,7 +22,7 @@ ECS is a project-level service deployed and accessed in specific physical region
 
 You can grant users permissions by using roles and policies.
 
--  Roles: A type of coarse-grained authorization mechanism that defines permissions related to user responsibilities. This mechanism provides only a limited number of service-level roles for authorization. When using roles to grant permissions, you need to also assign other roles which the permissions depend on to take effect. However, roles are not an ideal choice for fine-grained authorization and secure access control.
+-  Roles: A type of coarse-grained authorization mechanism that defines permissions related to user responsibilities. This mechanism provides only a limited number of service-level roles for authorization. When using roles to grant permissions, you need to also assign other roles on which the permissions depend to take effect. However, roles are not an ideal choice for fine-grained authorization and secure access control.
 
 -  Policies: A fine-grained authorization strategy that defines permissions required to perform operations on specific cloud resources under certain conditions. This mechanism allows for more flexible policy-based authorization, meeting requirements for secure access control. For example, you can grant ECS users only the permissions for managing a certain type of ECSs.
 
@@ -32,10 +32,10 @@ You can grant users permissions by using roles and policies.
 
 .. _en-us_topic_0170232209__table481412518317:
 
-.. table:: **Table 1** System-defined permissions for ECS
+.. table:: **Table 1** System-defined policies supported by ECS
 
    +----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+---------------------------------------------------------------------------------------------+
-   | Policy/Role Name     | Description                                                                                                                                                                              | Type                  | Policy Content                                                                              |
+   | Policy Name          | Description                                                                                                                                                                              | Type                  | Policy Content                                                                              |
    +======================+==========================================================================================================================================================================================+=======================+=============================================================================================+
    | ECS FullAccess       | Administrator permissions for ECS. Users granted these permissions can perform all operations on ECSs, including creating, deleting, and viewing ECSs, and modifying ECS specifications. | System-defined policy | :ref:`ECS FullAccess Policy Content <en-us_topic_0170232209__section05771626112719>`        |
    +----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+---------------------------------------------------------------------------------------------+

@@ -10,11 +10,11 @@ Windows
 
 -  File transfer tool
 
-   Install a file transfer tool, such as FileZilla on both the local computer and the Windows ECS and use it to transfer files. For details, see :ref:`How Can I Use FTP to Transfer Files from a Local Windows Computer to a Windows or Linux ECS? <en-us_topic_0263806053>`
+   Install a file transfer tool, such as FileZilla on both the local computer and the Windows ECS and use it to transfer files.
 
 -  (Recommended) Local disk mapping
 
-   Use MSTSC to transfer files. This method does not support resumable transmission. Do not use this method to transfer large files.
+   Use MSTSC to transfer files. This method does not support resumable transmission. Therefore, do not use this method to transfer large files.
 
    For details, see :ref:`How Can I Transfer Files from a Local Windows Computer to a Windows ECS? <en-us_topic_0166284970>`
 
@@ -26,7 +26,7 @@ Windows
 
 -  From a local Mac
 
-   If your local computer runs macOS, use Microsoft Remote Desktop for Mac to transfer files to the Windows ECS. For details, see :ref:`How Can I Transfer Files from a Local Mac to a Windows ECS? <en-us_topic_0295091738>`
+   If your local computer runs macOS, use Microsoft Remote Desktop for Mac to transfer files to the Windows ECS. For details, see :ref:`How Can I Transfer Files from a Local Mac to a Windows ECS? <en-us_topic_0295091738>`.
 
 Linux
 -----

@@ -19,8 +19,6 @@ A subnet is a range of IP addresses in your VPC and provides IP address manageme
 
 By default, ECSs in all subnets of the same VPC can communicate with each other, while ECSs in different VPCs cannot.
 
-.. _en-us_topic_0030828257__section15617142420109:
-
 Security Group
 --------------
 
@@ -51,7 +49,7 @@ Your account automatically comes with a default security group. The default secu
 EIP
 ---
 
-The Elastic IP (EIP) service enables your cloud resources to communicate with the Internet using static public IP addresses and scalable bandwidths. EIPs can be bound to or unbound from ECSs, BMSs, virtual IP addresses, NAT gateways or load balancers.
+The Elastic IP (EIP) service enables your cloud resources to communicate with the Internet using static public IP addresses and scalable bandwidths. EIPs can be bound to or unbound from ECSs, BMSs, virtual IP addresses, NAT gateways, or load balancers.
 
 Each EIP can be used by only one cloud resource at a time.
 

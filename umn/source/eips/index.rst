@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0140313883:
 
-EIP
-===
+EIPs
+====
 
 -  :ref:`Overview <en-us_topic_0144542149>`
 -  :ref:`Binding an EIP <en-us_topic_0174917535>`

@@ -38,7 +38,7 @@ Procedure
 
    **# systemctl set-default graphical.target**
 
-#. Run the following command to start **graphical.target**:
+#. Run the following command to start **tgraphical.target**:
 
    **# systemctl start graphical.target**
 

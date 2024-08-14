@@ -8,7 +8,7 @@ Obtaining the Password for Logging In to a Windows ECS
 Scenarios
 ---------
 
-Password authentication is required to log in to a Windows ECS. You must use the key file used when you created the ECS to obtain the administrator password generated during ECS creation. The administrator user is **Administrator** or the user configured using Cloudbase-Init. This password is randomly generated, offering high security.
+Password authentication is required to log in to a Windows ECS. Therefore, you must use the key file used when you created the ECS to obtain the administrator password generated during ECS creation. The administrator user is **Administrator** or the user configured using Cloudbase-Init. This password is randomly generated, offering high security.
 
 You can obtain the initial password for logging in to a Windows ECS through the management console or APIs. For details, see this section.
 

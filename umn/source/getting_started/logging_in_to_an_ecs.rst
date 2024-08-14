@@ -62,4 +62,4 @@ Follow-up Procedure
 
    For details, see :ref:`Scenarios and Disk Partitions <en-us_topic_0030831623>`.
 
--  Certain ECSs require the installation of a driver after you log in to them. For details about available ECS types and functions, see :ref:`ECS Types <en-us_topic_0035470096>`. For details about restrictions on using different types of ECSs, see their notes.
+-  Certain ECSs require the installation of a driver after you log in to them. For details about available ECS types as well as their functions and usage, see "Notes" in :ref:`ECS Types <en-us_topic_0035470096>`.
