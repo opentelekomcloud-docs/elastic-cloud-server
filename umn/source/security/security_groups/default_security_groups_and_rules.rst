@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0140323154:
 
-Default Security Group and Rules
-================================
+Default Security Groups and Rules
+=================================
 
 Note the following when using default security group rules:
 

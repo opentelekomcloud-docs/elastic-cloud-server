@@ -138,7 +138,7 @@ Prerequisites
 
    .. note::
 
-      If you use the default security group rules for the outbound direction, the metadata can be accessed because the default rules meet the preceding requirements. For details about the default security group rules for the outbound direction, see :ref:`Default Security Group and Rules <en-us_topic_0140323154>`.
+      If you use the default security group rules for the outbound direction, the metadata can be accessed because the default rules meet the preceding requirements. For details about the default security group rules for the outbound direction, see :ref:`Default Security Groups and Rules <en-us_topic_0140323154>`.
 
 Metadata (OpenStack Metadata API)
 ---------------------------------

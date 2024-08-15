@@ -21,7 +21,6 @@ Available now: All GPU models except the recommended ones. If available ECSs are
 
 -  G series
 
-   -  :ref:`GPU-accelerated Enhancement G7v <en-us_topic_0097289624__section168054357432>`
    -  :ref:`Graphics-accelerated Enhancement G7 <en-us_topic_0097289624__section2325028104711>`
    -  :ref:`GPU-accelerated Enhancement G6 <en-us_topic_0097289624__section131302034104515>`
 
@@ -34,7 +33,7 @@ Available now: All GPU models except the recommended ones. If available ECSs are
 
 Helpful links:
 
--  :ref:`Installing a GRID Driver on a GPU-accelerated ECS <en-us_topic_0149610914>`
+-  :ref:`Manually Installing a GRID Driver on a GPU-accelerated ECS <en-us_topic_0149610914>`
 -  :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`
 
 Images Supported by GPU-accelerated ECSs
@@ -45,13 +44,6 @@ Images Supported by GPU-accelerated ECSs
    +-----------------------+-----------------------+------------------------------------------+
    | Type                  | Series                | Supported Image                          |
    +=======================+=======================+==========================================+
-   | Graphics-accelerated  | G7v                   | -  CentOS 8.2 64bit                      |
-   |                       |                       | -  CentOS 7.6 64bit                      |
-   |                       |                       | -  Ubuntu 20.04 Server 64bit             |
-   |                       |                       | -  Ubuntu 18.04 Server 64bit             |
-   |                       |                       | -  Windows Server 2019 Standard 64bit    |
-   |                       |                       | -  Windows Server 2016 Standard 64bit    |
-   +-----------------------+-----------------------+------------------------------------------+
    | Graphics-accelerated  | G7                    | -  CentOS 8.2 64bit                      |
    |                       |                       | -  CentOS 7.6 64bit                      |
    |                       |                       | -  Ubuntu 20.04 Server 64bit             |
@@ -101,78 +93,6 @@ Images Supported by GPU-accelerated ECSs
    |                       |                       | -  Windows Server 2012 R2 Standard 64bit |
    +-----------------------+-----------------------+------------------------------------------+
 
-.. _en-us_topic_0097289624__section168054357432:
-
-GPU-accelerated Enhancement G7v
--------------------------------
-
-**Overview**
-
-G7v ECSs use NVIDIA A40 GPUs and support DirectX, Shader Model, OpenGL, and Vulkan. Each GPU provides 48 GiB of GPU memory. Theoretically, the peak FP32 is 37.4 TFLOPS and the peak TF32 tensor is 74.8 TFLOPS \| 149.6 TFLOPS (sparsity enabled). They deliver two times the rendering performance and 1.4 times the graphics processing performance of RTX6000 GPUs to meet professional graphics processing requirements.
-
-Select your desired GPU-accelerated ECS type and specifications.
-
-**Specifications**
-
-.. table:: **Table 2** G7v ECS specifications
-
-   +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------------------+------------+----------------+
-   | Flavor        | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs               | GPU Memory | Virtualization |
-   |               |       |        |                        |          |                 |           |                    |            |                |
-   |               |       | (GiB)  | (Gbit/s)               | (10,000) |                 |           |                    | (GiB)      |                |
-   +===============+=======+========+========================+==========+=================+===========+====================+============+================+
-   | g7v.2xlarge.8 | 8     | 64     | 15/3                   | 100      | 4               | 4         | 1 x NVIDIA-A40-8Q  | 8          | KVM            |
-   +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------------------+------------+----------------+
-   | g7v.4xlarge.8 | 16    | 128    | 20/6                   | 150      | 8               | 8         | 1 x NVIDIA-A40-16Q | 16         | KVM            |
-   +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------------------+------------+----------------+
-   | g7v.6xlarge.8 | 24    | 192    | 25/9                   | 200      | 8               | 8         | 1 x NVIDIA-A40-24Q | 24         | KVM            |
-   +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------------------+------------+----------------+
-
-**G7v ECS Features**
-
--  CPU: 3rd Generation Intel® Xeon® Scalable 6348 processors (3.0 GHz of base frequency and 3.5 GHz of turbo frequency)
--  Graphics acceleration APIs
-
-   -  DirectX 12.07, Direct2D, DirectX Video Acceleration (DXVA)
-   -  Shader Model 5.17
-   -  OpenGL 4.68
-   -  Vulkan 1.18
-
--  CUDA, DirectCompute, OpenACC, and OpenCL
--  A single card is equipped with 10,752 CUDA cores, 84 second-generation RT cores, and 336 third-generation Tensor cores.
--  Graphics applications accelerated
--  Heavy-load CPU inference
--  Application flow identical to common ECSs
--  Automatic scheduling of G7v ECSs to AZs where NVIDIA A40 GPUs are used
--  One NVENC (encoding) engine and two NVDEC (decoding) engines (including AV1 decoding) embedded
-
-**Supported Common Software**
-
-G7v ECSs are used in graphics acceleration scenarios, such as video rendering, cloud desktop, and 3D visualization. If the software relies on GPU DirectX and OpenGL hardware acceleration, use G7v ECSs. G7v ECSs support the following commonly used graphics processing software:
-
--  AutoCAD
--  3DS MAX
--  MAYA
--  Agisoft PhotoScan
--  ContextCapture
--  Adobe Premiere Pro
--  Solidworks
--  Unreal Engine
--  Blender
--  Vray
-
-**Notes**
-
--  After a G7v ECS is stopped, basic resources (including vCPUs, memory, image, and GPUs) are not billed, but its system disk is billed based on the disk capacity. If other products, such as EVS disks, EIP, and bandwidth are associated with the ECS, these products are billed separately.
-
-   .. note::
-
-      Resources will be released after a G7v ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
-
--  G7v ECSs created using a public image have had the GRID driver of a specific version installed by default. However, you need to purchase and configure a GRID license by yourself. Ensure that the GRID driver version meets service requirements.
--  If a G7v ECS is created using a private image, make sure that the GRID driver was installed during the private image creation. If the GRID driver has not been installed, install the driver for graphics acceleration after the ECS is created.
--  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
-
 .. _en-us_topic_0097289624__section2325028104711:
 
 Graphics-accelerated Enhancement G7
@@ -186,7 +106,7 @@ Select your desired GPU-accelerated ECS type and specifications.
 
 **Specifications**
 
-.. table:: **Table 3** G7 ECS specifications
+.. table:: **Table 2** G7 ECS specifications
 
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+------------+----------------+
    | Flavor        | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs           | GPU Memory | Virtualization |
@@ -256,7 +176,7 @@ Select your desired GPU-accelerated ECS type and specifications.
 
 **Specifications**
 
-.. table:: **Table 4** G6 ECS specifications
+.. table:: **Table 3** G6 ECS specifications
 
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+----------------+
    | Flavor        | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs   | GPU Memory | Virtualization |
@@ -325,7 +245,7 @@ P3 ECSs use NVIDIA A100 GPUs and provide flexibility and ultra-high-performance 
 
 **Specifications**
 
-.. table:: **Table 5** P3 ECS specifications
+.. table:: **Table 4** P3 ECS specifications
 
    +---------------+-------+--------+---------------------------------+----------+-----------------+-----------+----------------------+------------+----------------+
    | Flavor        | vCPUs | Memory | Max./Assured Bandwidth (Gbit/s) | Max. PPS | Max. NIC Queues | Max. NICs | GPUs                 | GPU Memory | Virtualization |
@@ -403,7 +323,7 @@ P2s ECSs use NVIDIA Tesla V100 GPUs to provide flexibility, high-performance com
 
 **Specifications**
 
-.. table:: **Table 6** P2s ECS specifications
+.. table:: **Table 5** P2s ECS specifications
 
    +----------------+-------+--------+---------------------------------+-------------------+-----------------+-----------+----------+----------------+------------------+----------------+----------------------------------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Bandwidth (Gbit/s) | Max. PPS (10,000) | Max. NIC Queues | Max. NICs | GPUs     | GPU Connection | GPU Memory (GiB) | Virtualization | Hardware                                                 |
@@ -481,7 +401,7 @@ P2v ECSs use NVIDIA Tesla V100 GPUs and deliver high flexibility, high-performan
 
 **Specifications**
 
-.. table:: **Table 7** P2v ECS specifications
+.. table:: **Table 6** P2v ECS specifications
 
    +----------------+-------+--------+---------------------------------+-------------------+-----------------+-----------+----------+----------------+------------+----------------+-------------------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Bandwidth (Gbit/s) | Max. PPS (10,000) | Max. NIC Queues | Max. NICs | GPUs     | GPU Connection | GPU Memory | Virtualization | Hardware                                  |
@@ -560,7 +480,7 @@ Pi2 ECSs use NVIDIA Tesla T4 GPUs dedicated for real-time AI inference. These EC
 
 **Specifications**
 
-.. table:: **Table 8** Pi2 ECS specifications
+.. table:: **Table 7** Pi2 ECS specifications
 
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs   | GPU Memory | Local Disks | Virtualization | Hardware                                                                         |

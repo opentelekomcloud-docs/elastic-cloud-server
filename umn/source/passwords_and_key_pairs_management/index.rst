@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0140313881:
 
-Passwords and Key Pairs
-=======================
+Passwords and Key Pairs Management
+==================================
 
 -  :ref:`Passwords <en-us_topic_0031073513>`
 -  :ref:`Key Pairs <en-us_topic_0000001234175322>`
