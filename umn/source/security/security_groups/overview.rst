@@ -21,7 +21,7 @@ Security Group Rules
 
 After a security group is created, you can add rules to the security group. A rule applies either to inbound traffic (ingress) or outbound traffic (egress). After ECSs are added to the security group, they are protected by the rules of that group.
 
-Each security group has default rules. For details, see :ref:`Default Security Group and Rules <en-us_topic_0140323154>`. You can also customize security group rules. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.
+Each security group has default rules. For details, see :ref:`Default Security Groups and Rules <en-us_topic_0140323154>`. You can also customize security group rules. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.
 
 Notes and Constraints
 ---------------------
