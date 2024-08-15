@@ -14,7 +14,7 @@ Elastic Cloud Server - User Guide
    eip/index
    security/index
    cbr/index
-   passwords_and_key_pairs/index
+   passwords_and_key_pairs_management/index
    permissions_management/index
    resources_and_tags/index
    monitoring/index
