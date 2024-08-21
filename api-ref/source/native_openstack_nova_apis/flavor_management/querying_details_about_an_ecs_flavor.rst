@@ -130,11 +130,11 @@ Example Response
            "name": "c3.2xlarge.2",
            "links": [
                {
-                   "href": "https://compute.region.xxx.com/v2.1/743b4c0428d94531b9f2add666642e6b/flavors/c3.2xlarge.2",
+                   "href": "https://compute.region.example.com/v2.1/743b4c0428d94531b9f2add666642e6b/flavors/c3.2xlarge.2",
                    "rel": "self"
                },
                {
-                   "href": "https://compute.region.xxx.com/743b4c0428d94531b9f2add666642e6b/flavors/c3.2xlarge.2",
+                   "href": "https://compute.region.example.com/743b4c0428d94531b9f2add666642e6b/flavors/c3.2xlarge.2",
                    "rel": "bookmark"
                }
            ],

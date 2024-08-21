@@ -194,12 +194,12 @@ Example Response
                "links": [
                    {
                        "rel": "self",
-                       "href": "https://compute-ext.region.xxx.com/v1.0/743b4c0428d94531b9f2add666642e6b/flavors/c3.15xlarge.2",
+                       "href": "https://compute-ext.region.example.com/v1.0/743b4c0428d94531b9f2add666642e6b/flavors/c3.15xlarge.2",
                        "type": null
                    },
                    {
                        "rel": "bookmark",
-                       "href": "https://compute-ext.region.xxx.com/743b4c0428d94531b9f2add666642e6b/flavors/c3.15xlarge.2",
+                       "href": "https://compute-ext.region.example.com/743b4c0428d94531b9f2add666642e6b/flavors/c3.15xlarge.2",
                        "type": null
                    }
                ],
