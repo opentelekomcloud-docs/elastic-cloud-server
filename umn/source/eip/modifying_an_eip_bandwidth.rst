@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0093492521:
 
-Changing an EIP Bandwidth
-=========================
+Modifying an EIP Bandwidth
+==========================
 
 Scenarios
 ---------

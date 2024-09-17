@@ -1,9 +1,9 @@
-:original_name: en-us_topic_0018073208.html
+:original_name: en-us_topic_0208785174.html
 
-.. _en-us_topic_0018073208:
+.. _en-us_topic_0208785174:
 
-Creation and Deletion
-=====================
+ECS Creation
+============
 
 -  :ref:`What Should I Do If the ECS Resources to Be Purchased Are Sold Out? <en-us_topic_0170880184>`
 -  :ref:`What Is the Creation Time and Startup Time of an ECS? <en-us_topic_0160672219>`
@@ -12,11 +12,6 @@ Creation and Deletion
 -  :ref:`What Do I Do If I Selected an Incorrect Image for My ECS? <en-us_topic_0238302634>`
 -  :ref:`How Quickly Can I Obtain an ECS? <en-us_topic_0018073212>`
 -  :ref:`How Can I Manage ECSs by Group? <en-us_topic_0000001283659852>`
--  :ref:`What Happens After I Click the Delete Button? <en-us_topic_0018073218>`
--  :ref:`Can a Deleted ECS Be Provisioned Again? <en-us_topic_0018073221>`
--  :ref:`Can a Deleted ECS Be Restored? <en-us_topic_0170158381>`
--  :ref:`How Do I Delete or Restart an ECS? <en-us_topic_0101604502>`
--  :ref:`Can I Forcibly Restart or Stop an ECS? <en-us_topic_0029792884>`
 
 .. toctree::
    :maxdepth: 1
@@ -29,8 +24,3 @@ Creation and Deletion
    what_do_i_do_if_i_selected_an_incorrect_image_for_my_ecs
    how_quickly_can_i_obtain_an_ecs
    how_can_i_manage_ecss_by_group
-   what_happens_after_i_click_the_delete_button
-   can_a_deleted_ecs_be_provisioned_again
-   can_a_deleted_ecs_be_restored
-   how_do_i_delete_or_restart_an_ecs
-   can_i_forcibly_restart_or_stop_an_ecs

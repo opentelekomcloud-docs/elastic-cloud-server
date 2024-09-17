@@ -88,6 +88,17 @@ Basic Settings
 
       A shared image is a private image shared by another user.
 
+#. (Optional) Set **Protection**.
+
+   When using certain public images, you are advised to enable protection to improve the overall security for ECSs. HSS is designed to improve the overall security for ECSs. It reduces intrusion risks with asset management, vulnerability management, intrusion detection, and baseline inspection functions.
+
+   Select one of the following options:
+
+   -  **Advanced HSS edition (paid)**: You can choose the enterprise edition and you need to pay for it.
+   -  **None**: HSS is disabled and servers are not protected.
+
+   After you select an HSS edition, the system automatically installs the HSS agent, enables account cracking prevention, and offers host security functions.
+
 #. (Optional) Set **License Type**.
 
    Specifies a license type for using an OS or software. This parameter is displayed only when the selected image is billed.

@@ -6,8 +6,7 @@ Managing ECSs
 =============
 
 -  :ref:`Changing the Time Zone for an ECS <en-us_topic_0040630518>`
--  :ref:`Obtaining Metadata <en-us_topic_0042400609>`
--  :ref:`Passing User Data to ECSs <en-us_topic_0032380449>`
+-  :ref:`Obtaining Metadata and Passing User Data <en-us_topic_0140313879>`
 -  :ref:`Changing ECS Names <en-us_topic_0142266317>`
 -  :ref:`Migrating an ECS <en-us_topic_0133365988>`
 -  :ref:`Managing ECS Groups <en-us_topic_0032980085>`
@@ -20,8 +19,7 @@ Managing ECSs
    :hidden: 
 
    changing_the_time_zone_for_an_ecs
-   obtaining_metadata
-   passing_user_data_to_ecss
+   obtaining_metadata_and_passing_user_data/index
    changing_ecs_names
    migrating_an_ecs
    managing_ecs_groups
