@@ -6,37 +6,43 @@ FAQs
 ====
 
 -  :ref:`ECS Overview <en-us_topic_0030930805>`
--  :ref:`Regions and AZs <en-us_topic_0018196896>`
--  :ref:`Creation and Deletion <en-us_topic_0018073208>`
+-  :ref:`ECS Creation <en-us_topic_0208785174>`
+-  :ref:`ECS Deletion <en-us_topic_0208785175>`
 -  :ref:`Login and Connection <en-us_topic_0030930807>`
--  :ref:`Usage Errors <en-us_topic_0208808107>`
--  :ref:`ECS Management <en-us_topic_0208808104>`
--  :ref:`OS Management <en-us_topic_0018124788>`
--  :ref:`File Upload/Data Transfer <en-us_topic_0170135967>`
--  :ref:`ECS Migration <en-us_topic_0208809314>`
+-  :ref:`Regions and AZs <en-us_topic_0018196896>`
+-  :ref:`GUI Installation FAQs <en-us_topic_0155136013>`
 -  :ref:`Disk Management <en-us_topic_0018124786>`
--  :ref:`Passwords and Key Pairs <en-us_topic_0105215483>`
+-  :ref:`Data Backup and Restoration <en-us_topic_0000001987515176>`
 -  :ref:`Network Configurations <en-us_topic_0018124785>`
--  :ref:`Resource Management and Tags <en-us_topic_0208809315>`
--  :ref:`Resource Monitoring <en-us_topic_0208809316>`
+-  :ref:`EIPs <en-us_topic_0030930806>`
+-  :ref:`Passwords and Key Pairs <en-us_topic_0105215483>`
 -  :ref:`Database Applications <en-us_topic_0018124789>`
+-  :ref:`File Upload/Data Transfer <en-us_topic_0170135967>`
+-  :ref:`Usage Errors <en-us_topic_0208808107>`
+-  :ref:`Resource Monitoring <en-us_topic_0208809316>`
+-  :ref:`Modifying Specifications <en-us_topic_0208808106>`
+-  :ref:`OS Management <en-us_topic_0018124788>`
+-  :ref:`Resource Management and Tags <en-us_topic_0208809315>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
    ecs_overview/index
-   regions_and_azs/index
-   creation_and_deletion/index
+   ecs_creation/index
+   ecs_deletion/index
    login_and_connection/index
-   usage_errors/index
-   ecs_management/index
-   os_management/index
-   file_upload_data_transfer/index
-   ecs_migration/index
+   regions_and_azs/index
+   gui_installation_faqs/index
    disk_management/index
-   passwords_and_key_pairs/index
+   data_backup_and_restoration/index
    network_configurations/index
-   resource_management_and_tags/index
-   resource_monitoring/index
+   eips/index
+   passwords_and_key_pairs/index
    database_applications/index
+   file_upload_data_transfer/index
+   usage_errors/index
+   resource_monitoring/index
+   modifying_specifications/index
+   os_management/index
+   resource_management_and_tags/index

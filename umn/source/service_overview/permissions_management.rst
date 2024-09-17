@@ -28,33 +28,41 @@ You can grant users permissions by using roles and policies.
 
    Most policies define permissions based on APIs. For the API actions supported by ECS, see "Permissions Policies and Supported Actions" in *Elastic Cloud Server API Reference*.
 
-:ref:`Table 1 <en-us_topic_0170232209__table481412518317>` lists all the system policies supported by ECS.
+:ref:`Table 1 <en-us_topic_0170232209__table481412518317>` and :ref:`Table 2 <en-us_topic_0170232209__table8633147210>` list all ECS system-defined policies and roles.
 
 .. _en-us_topic_0170232209__table481412518317:
 
-.. table:: **Table 1** System-defined permissions for ECS
+.. table:: **Table 1** ECS system-defined policies (recommended)
 
-   +----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+---------------------------------------------------------------------------------------------+
-   | Policy/Role Name     | Description                                                                                                                                                                              | Type                  | Policy Content                                                                              |
-   +======================+==========================================================================================================================================================================================+=======================+=============================================================================================+
-   | ECS FullAccess       | Administrator permissions for ECS. Users granted these permissions can perform all operations on ECSs, including creating, deleting, and viewing ECSs, and modifying ECS specifications. | System-defined policy | :ref:`ECS FullAccess Policy Content <en-us_topic_0170232209__section05771626112719>`        |
-   +----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+---------------------------------------------------------------------------------------------+
-   | ECS CommonOperations | Common user permissions for ECS. Users granted these permissions can start, stop, restart, and query ECSs.                                                                               | System-defined policy | :ref:`ECS CommonOperations Policy Content <en-us_topic_0170232209__section82501145192816>`  |
-   +----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+---------------------------------------------------------------------------------------------+
-   | ECS ReadOnlyAccess   | Read-only permissions for ECS. Users granted these permissions can only view ECS data.                                                                                                   | System-defined policy | :ref:`ECS ReadOnlyAccess Policy Content <en-us_topic_0170232209__section1575124622817>`     |
-   +----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+---------------------------------------------------------------------------------------------+
-   | Server Administrator | Full permissions for ECS. This role must be used together with the **Tenant Guest** role in the same project.                                                                            | System role           | :ref:`Server Administrator Policy Content <en-us_topic_0170232209__section134911715123413>` |
-   |                      |                                                                                                                                                                                          |                       |                                                                                             |
-   |                      | If a user needs to create, delete, or change resources of other services, the user must also be granted administrator permissions of the corresponding services in the same project.     |                       |                                                                                             |
-   |                      |                                                                                                                                                                                          |                       |                                                                                             |
-   |                      | For example, if a user needs to create a new VPC when creating an ECS, the user must also be granted permissions with the **VPC Administrator** role.                                    |                       |                                                                                             |
-   +----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+---------------------------------------------------------------------------------------------+
+   +----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+   | Policy/Role Name     | Description                                                                                                                                                                              | Policy Content                                                                             |
+   +======================+==========================================================================================================================================================================================+============================================================================================+
+   | ECS FullAccess       | Administrator permissions for ECS. Users granted these permissions can perform all operations on ECSs, including creating, deleting, and viewing ECSs, and modifying ECS specifications. | :ref:`ECS FullAccess Policy Content <en-us_topic_0170232209__section05771626112719>`       |
+   +----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+   | ECS CommonOperations | Common user permissions for ECS. Users granted these permissions can start, stop, restart, and query ECSs.                                                                               | :ref:`ECS CommonOperations Policy Content <en-us_topic_0170232209__section82501145192816>` |
+   +----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+   | ECS ReadOnlyAccess   | Read-only permissions for ECS. Users granted these permissions can only view ECS data.                                                                                                   | :ref:`ECS ReadOnlyAccess Policy Content <en-us_topic_0170232209__section1575124622817>`    |
+   +----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
 
-:ref:`Table 2 <en-us_topic_0170232209__table470371811355>` lists the common operations supported by each system-defined policy of ECS. Select the policies as required.
+.. _en-us_topic_0170232209__table8633147210:
+
+.. table:: **Table 2** ECS system-defined roles
+
+   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+   | Role Name             | Description                                                                                                                                                                          | Role Content                                                                              |
+   +=======================+======================================================================================================================================================================================+===========================================================================================+
+   | Server Administrator  | Full permissions for ECS. This role must be used together with the **Tenant Guest** role in the same project.                                                                        | :ref:`Server Administrator Role Content <en-us_topic_0170232209__section134911715123413>` |
+   |                       |                                                                                                                                                                                      |                                                                                           |
+   |                       | If a user needs to create, delete, or change resources of other services, the user must also be granted administrator permissions of the corresponding services in the same project. |                                                                                           |
+   |                       |                                                                                                                                                                                      |                                                                                           |
+   |                       | For example, if a user needs to create a new VPC when creating an ECS, the user must also be granted permissions with the **VPC Administrator** role.                                |                                                                                           |
+   +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
+
+:ref:`Table 3 <en-us_topic_0170232209__table470371811355>` lists the common operations supported by each system-defined policy of ECS. Select the policies as required.
 
 .. _en-us_topic_0170232209__table470371811355:
 
-.. table:: **Table 2** Common operations supported by each system-defined policy
+.. table:: **Table 3** Common operations supported by each system-defined policy
 
    +---------------------------------------------------------+----------------+----------------------+-----------------------------------------+
    | Operation                                               | ECS FullAccess | ECS CommonOperations | ECS ReadOnlyAccess                      |
@@ -254,8 +262,8 @@ ECS ReadOnlyAccess Policy Content
 
 .. _en-us_topic_0170232209__section134911715123413:
 
-Server Administrator Policy Content
------------------------------------
+Server Administrator Role Content
+---------------------------------
 
 .. code-block::
 

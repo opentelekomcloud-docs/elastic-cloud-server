@@ -57,7 +57,7 @@ Network Settings
 
 #. Set EIP.
 
-   An EIP is a static public IP address bound to an ECS in a VPC. Using the EIP, the ECS provides services externally.
+   An EIP is a static public IP address bound to an ECS in a VPC. Using the EIP, the ECS can provide services externally.
 
    The following options are provided:
 

@@ -94,12 +94,12 @@ Network QoS:
 
 -  The maximum/assured bandwidth is completely independent of the EIP bandwidth.
 -  ECSs of the same hypervisor share the total bandwidth of the hypervisor.
--  Network QoS applies for both internal and external bandwidth.
+-  Network QoS applies for both private and public network bandwidth.
 -  Network QoS has been applied to the existing KVM-based ECSs.
 -  ECSs of the same hypervisor are preferentially allocated with assured bandwidths. Only when other ECSs of the same hypervisor are not in use, an ECS in use in the hypervisor can have the maximum bandwidth.
 
 .. note::
 
    -  Network QoS applies to any program running on an ECS.
-   -  Network QoS applies for both internal and external bandwidth.
+   -  Network QoS applies for both private and public network bandwidth.
    -  The EIP bandwidth limits the external bandwidth, and the network QoS limits the internal bandwidth.
