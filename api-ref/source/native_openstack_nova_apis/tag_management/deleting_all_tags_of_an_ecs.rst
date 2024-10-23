@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0065820824:
 
-Deleting Tags from an ECS
-=========================
+Deleting All Tags of an ECS
+===========================
 
 This API is used to delete all tags of an ECS.
 

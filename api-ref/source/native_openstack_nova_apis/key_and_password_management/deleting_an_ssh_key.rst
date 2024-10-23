@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0020212680:
 
-Deleting an SSH Key Pair
-========================
+Deleting an SSH Key
+===================
 
 Function
 --------
