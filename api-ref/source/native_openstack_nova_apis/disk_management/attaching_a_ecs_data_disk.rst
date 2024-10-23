@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0031167350:
 
-Attaching a Disk to an ECS
-==========================
+Attaching a ECS Data Disk
+=========================
 
 Function
 --------

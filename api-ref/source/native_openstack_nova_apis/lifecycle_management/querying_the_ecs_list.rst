@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0020212688:
 
-Querying ECSs
-=============
+Querying the ECS List
+=====================
 
 Function
 --------

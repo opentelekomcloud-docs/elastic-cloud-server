@@ -49,9 +49,7 @@ ECS supports the following actions that can be defined in custom policies:
 -  :ref:`Tenant Quota Management <en-us_topic_0103071517>`
 -  :ref:`SSH Key Management <en-us_topic_0103071515>`
 -  :ref:`Password Management <en-us_topic_0161341998>`
--  :ref:`Floating IP Address Management <en-us_topic_0103072349>`
 -  :ref:`ECS Group Management <en-us_topic_0103071520>`
 -  :ref:`ECS Management Through Console <en-us_topic_0184192952>`
 -  :ref:`AZ Management <en-us_topic_0103071519>`
 -  :ref:`Tag Management <en-us_topic_0103071521>`
--  :ref:`FPGA Logical File Management <en-us_topic_0132778339>`

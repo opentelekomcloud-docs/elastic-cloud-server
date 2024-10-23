@@ -57,53 +57,53 @@ Response
 
 .. table:: **Table 3** **quota_set** parameter description
 
-   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------+
-   | Parameter                   | Type                  | Description                                                                             |
-   +=============================+=======================+=========================================================================================+
-   | cores                       | Integer               | Specifies the quantity quota of vCPUs.                                                  |
-   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------+
-   | fixed_ips                   | Integer               | Specifies the quantity quota of fixed IP addresses. This parameter is not supported.    |
-   |                             |                       |                                                                                         |
-   |                             |                       | This parameter is not supported in microversion 2.36 and later.                         |
-   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------+
-   | floating_ips                | Integer               | Specifies the quantity quota of floating IP addresses. This parameter is not supported. |
-   |                             |                       |                                                                                         |
-   |                             |                       | This parameter is not supported in microversion 2.36 and later.                         |
-   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------+
-   | id                          | String                | Specifies the project UUID.                                                             |
-   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------+
-   | injected_file_content_bytes | Integer               | Specifies the size quota (bytes) of the files to be injected.                           |
-   |                             |                       |                                                                                         |
-   |                             |                       | This parameter is not supported in microversion 2.56 and later.                         |
-   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------+
-   | injected_file_path_bytes    | Integer               | Specifies the size quota (bytes) of the path for the files to be injected.              |
-   |                             |                       |                                                                                         |
-   |                             |                       | This parameter is not supported in microversion 2.56 and later.                         |
-   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------+
-   | injected_files              | Integer               | Specifies the quantity quota of the files to be injected.                               |
-   |                             |                       |                                                                                         |
-   |                             |                       | This parameter is not supported in microversion 2.56 and later.                         |
-   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------+
-   | instances                   | Integer               | Specifies the quantity quota of ECSs.                                                   |
-   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------+
-   | key_pairs                   | Integer               | Specifies the quantity quota of key pairs. This parameter is not supported.             |
-   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------+
-   | metadata_items              | Integer               | Specifies the metadata quantity quota.                                                  |
-   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------+
-   | ram                         | Integer               | Specifies the memory quota (MB).                                                        |
-   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------+
-   | security_group_rules        | Integer               | Specifies the quota of security group rules. This parameter is not supported.           |
-   |                             |                       |                                                                                         |
-   |                             |                       | This parameter is not supported in microversion 2.36 and later.                         |
-   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------+
-   | security_groups             | Integer               | Specifies the quantity quota of security groups. This parameter is not supported.       |
-   |                             |                       |                                                                                         |
-   |                             |                       | This parameter is not supported in microversion 2.36 and later.                         |
-   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------+
-   | server_groups               | Integer               | Specifies the quantity quota of ECS groups.                                             |
-   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------+
-   | server_group_members        | Integer               | Specifies the ECS quota in an ECS group.                                                |
-   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------+
+   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------+
+   | Parameter                   | Type                  | Description                                                                                                           |
+   +=============================+=======================+=======================================================================================================================+
+   | cores                       | Integer               | Specifies the quantity quota of vCPUs.                                                                                |
+   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------+
+   | fixed_ips                   | Integer               | Specifies the quantity quota of fixed IP addresses. This parameter is not supported.                                  |
+   |                             |                       |                                                                                                                       |
+   |                             |                       | This parameter is not supported in microversion 2.36 and later.                                                       |
+   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------+
+   | floating_ips                | Integer               | Specifies the quantity quota of floating IP addresses. This parameter is not supported.                               |
+   |                             |                       |                                                                                                                       |
+   |                             |                       | This parameter is not supported in microversion 2.36 and later.                                                       |
+   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------+
+   | id                          | String                | Specifies the project UUID.                                                                                           |
+   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------+
+   | injected_file_content_bytes | Integer               | Specifies the size quota (bytes) of the files to be injected.                                                         |
+   |                             |                       |                                                                                                                       |
+   |                             |                       | This parameter is not supported in microversion 2.56 and later.                                                       |
+   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------+
+   | injected_file_path_bytes    | Integer               | Specifies the size quota (bytes) of the path for the files to be injected. This parameter is not supported currently. |
+   |                             |                       |                                                                                                                       |
+   |                             |                       | This parameter is not supported in microversion 2.56 and later.                                                       |
+   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------+
+   | injected_files              | Integer               | Specifies the quantity quota of the files to be injected.                                                             |
+   |                             |                       |                                                                                                                       |
+   |                             |                       | This parameter is not supported in microversion 2.56 and later.                                                       |
+   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------+
+   | instances                   | Integer               | Specifies the quantity quota of ECSs.                                                                                 |
+   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------+
+   | key_pairs                   | Integer               | Specifies the quantity quota of key pairs. This parameter is not supported.                                           |
+   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------+
+   | metadata_items              | Integer               | Specifies the metadata quantity quota.                                                                                |
+   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------+
+   | ram                         | Integer               | Specifies the memory quota (MB).                                                                                      |
+   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------+
+   | security_group_rules        | Integer               | Specifies the quota of security group rules. This parameter is not supported.                                         |
+   |                             |                       |                                                                                                                       |
+   |                             |                       | This parameter is not supported in microversion 2.36 and later.                                                       |
+   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------+
+   | security_groups             | Integer               | Specifies the quantity quota of security groups. This parameter is not supported.                                     |
+   |                             |                       |                                                                                                                       |
+   |                             |                       | This parameter is not supported in microversion 2.36 and later.                                                       |
+   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------+
+   | server_groups               | Integer               | Specifies the quantity quota of ECS groups.                                                                           |
+   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------+
+   | server_group_members        | Integer               | Specifies the ECS quota in an ECS group.                                                                              |
+   +-----------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------+
 
 Example Request
 ---------------

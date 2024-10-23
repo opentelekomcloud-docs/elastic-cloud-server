@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0031176553:
 
-Obtaining the Password for Logging In to an ECS
-===============================================
+Obtaining the Password of an ECS
+================================
 
 Function
 --------

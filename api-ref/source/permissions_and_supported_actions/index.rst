@@ -19,12 +19,10 @@ Permissions and Supported Actions
 -  :ref:`Tenant Quota Management <en-us_topic_0103071517>`
 -  :ref:`SSH Key Management <en-us_topic_0103071515>`
 -  :ref:`Password Management <en-us_topic_0161341998>`
--  :ref:`Floating IP Address Management <en-us_topic_0103072349>`
 -  :ref:`ECS Group Management <en-us_topic_0103071520>`
 -  :ref:`ECS Management Through Console <en-us_topic_0184192952>`
 -  :ref:`AZ Management <en-us_topic_0103071519>`
 -  :ref:`Tag Management <en-us_topic_0103071521>`
--  :ref:`FPGA Logical File Management <en-us_topic_0132778339>`
 
 .. toctree::
    :maxdepth: 1
@@ -44,9 +42,7 @@ Permissions and Supported Actions
    tenant_quota_management
    ssh_key_management
    password_management
-   floating_ip_address_management
    ecs_group_management
    ecs_management_through_console
    az_management
    tag_management
-   fpga_logical_file_management

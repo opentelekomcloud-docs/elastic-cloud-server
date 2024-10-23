@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0020212652:
 
-Stopping an ECS
-===============
+Disabling an ECS
+================
 
 Function
 --------
