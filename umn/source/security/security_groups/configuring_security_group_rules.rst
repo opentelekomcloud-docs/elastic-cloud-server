@@ -39,7 +39,7 @@ Procedure
    You can click **+** to add more inbound rules.
 
 
-   .. figure:: /_static/images/en-us_image_0000001865662817.png
+   .. figure:: /_static/images/en-us_image_0000002065205609.png
       :alt: **Figure 1** Add Inbound Rule
 
       **Figure 1** Add Inbound Rule
@@ -82,7 +82,7 @@ Procedure
    You can click **+** to add more outbound rules.
 
 
-   .. figure:: /_static/images/en-us_image_0000001865582629.png
+   .. figure:: /_static/images/en-us_image_0000002065206257.png
       :alt: **Figure 2** Add Outbound Rule
 
       **Figure 2** Add Outbound Rule
