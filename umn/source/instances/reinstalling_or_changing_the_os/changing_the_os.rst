@@ -98,9 +98,9 @@ Procedure
 
 
    .. figure:: /_static/images/en-us_image_0000001658474496.png
-      :alt: **Figure 1** OS Change
+      :alt: **Figure 1** Changing an OS
 
-      **Figure 1** OS Change
+      **Figure 1** Changing an OS
 
 #. (Optional) Select the **Encryption** option to encrypt the system disk during OS change.
 
@@ -136,7 +136,7 @@ Procedure
 
    .. note::
 
-      A temporary ECS is created during the OS change process. After the process is complete, this ECS will be automatically deleted.
+      During the OS change process, a temporary ECS is created. After the OS change is complete, this ECS will be automatically deleted.
 
 Follow-up Procedure
 -------------------

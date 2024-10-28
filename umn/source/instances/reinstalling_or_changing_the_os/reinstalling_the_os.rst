@@ -78,21 +78,21 @@ Procedure
 
 
    .. figure:: /_static/images/en-us_image_0000001797837016.png
-      :alt: **Figure 1** Reinstall OS
+      :alt: **Figure 1** Reinstalling an OS
 
-      **Figure 1** Reinstall OS
+      **Figure 1** Reinstalling an OS
 
 #. Click **OK**.
 
 #. .. _en-us_topic_0024911405__li31062819143541:
 
-   On the **ECS OS Reinstallation** page, confirm the settings, and click **Submit**.
+   In the **ECS OS Reinstallation** dialog box, confirm the settings, and click **Submit**.
 
    After the request is submitted, the status **Reinstalling** is displayed. When this status disappears, the reinstallation is complete.
 
    .. note::
 
-      A temporary ECS is created during the reinstallation process. After reinstallation, this ECS will be automatically deleted. Do not perform any operation on the temporary ECS during the reinstallation process.
+      During the reinstallation process, a temporary ECS is created. After the reinstallation is complete, this ECS will be automatically deleted. Do not perform any operation on the temporary ECS during the reinstallation process.
 
 Follow-up Procedure
 -------------------

@@ -274,9 +274,9 @@ The following example shows you how a new partition can be created on a new data
 Configuring Automatic Mounting at System Start
 ----------------------------------------------
 
-The **fstab** file controls what disks are automatically mounted at server startup. You can configure the **fstab** file of a server that has data. This operation will not affect the existing data.
+The **fstab** file controls what disks are automatically mounted at ECS startup. You can configure the **fstab** file of an ECS that has data. This operation will not affect the existing data.
 
-The following example uses UUIDs to identify disks in the **fstab** file. You are advised not to use device names (like **/dev/vdb1**) to identify disks in the file because device names are assigned dynamically and may change (for example, from **/dev/vdb1** to **/dev/vdb2**) after a server stop or start. This can even prevent your server from booting up.
+The following example uses UUIDs to identify disks in the **fstab** file. You are advised not to use device names (like **/dev/vdb1**) to identify disks in the file because device names are assigned dynamically and may change (for example, from **/dev/vdb1** to **/dev/vdb2**) after an ECS stop or start. This can even prevent your ECS from booting up.
 
 .. note::
 
