@@ -19,7 +19,25 @@ Scenarios
 Specifications
 --------------
 
-.. table:: **Table 1** I3 ECS specifications
+.. table:: **Table 1** I3m ECS specifications
+
+   +----------------+-------+--------+------------------------+----------+-----------------+--------------------+-----------+----------------+
+   | Flavor         | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Local Disks        | Max. NICs | Virtualization |
+   |                |       |        |                        |          |                 |                    |           |                |
+   |                |       | (GiB)  | (Gbit/s)               | (10,000) |                 | (GiB)              |           |                |
+   +================+=======+========+========================+==========+=================+====================+===========+================+
+   | i3m.2xlarge.8  | 8     | 64     | 2.5/2.5                | 100      | 4               | 1 x 1,600 GiB NVMe | 4         | KVM            |
+   +----------------+-------+--------+------------------------+----------+-----------------+--------------------+-----------+----------------+
+   | i3m.4xlarge.8  | 16    | 128    | 5/5                    | 150      | 4               | 2 x 1,600 GiB NVMe | 8         | KVM            |
+   +----------------+-------+--------+------------------------+----------+-----------------+--------------------+-----------+----------------+
+   | i3m.8xlarge.8  | 32    | 256    | 10/10                  | 200      | 8               | 4 x 1,600 GiB NVMe | 8         | KVM            |
+   +----------------+-------+--------+------------------------+----------+-----------------+--------------------+-----------+----------------+
+   | i3m.12xlarge.8 | 48    | 384    | 15/15                  | 240      | 8               | 6 x 1,600 GiB NVMe | 8         | KVM            |
+   +----------------+-------+--------+------------------------+----------+-----------------+--------------------+-----------+----------------+
+   | i3m.16xlarge.8 | 64    | 512    | 25/25                  | 500      | 16              | 8 x 1,600 GiB NVMe | 8         | KVM            |
+   +----------------+-------+--------+------------------------+----------+-----------------+--------------------+-----------+----------------+
+
+.. table:: **Table 2** I3 ECS specifications
 
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+--------------------+----------------+
    | Flavor        | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | Local Disks        | Virtualization |
@@ -50,11 +68,28 @@ Specifications
 Local Disk Performance
 ----------------------
 
-:ref:`Table 2 <en-us_topic_0094118976__table1875314018355>` and :ref:`Table 3 <en-us_topic_0094118976__table9670341181017>` list the IOPS performance of local disks and specifications of a single local disk attached to an I3 ECS.
+:ref:`Table 3 <en-us_topic_0094118976__table8237323473>` and :ref:`Table 5 <en-us_topic_0094118976__table2850175181012>` list the IOPS performance of local disks and specifications of a single local disk attached to an I3m ECS.
+
+:ref:`Table 4 <en-us_topic_0094118976__table1875314018355>` and :ref:`Table 6 <en-us_topic_0094118976__table9670341181017>` list the IOPS performance of local disks and specifications of a single local disk attached to an I3 ECS.
+
+.. _en-us_topic_0094118976__table8237323473:
+
+.. table:: **Table 3** IOPS performance of local disks used by I3m ECSs
+
+   ============== =================================
+   Flavor         Maximum IOPS for Random 4 KB Read
+   ============== =================================
+   i3m.2xlarge.8  750,000
+   i3m.4xlarge.8  1,500,000
+   i3m.8xlarge.8  3,000,000
+   i3m.12xlarge.8 4,500,000
+   i3m.15xlarge.8 5,250,000
+   i3m.16xlarge.8 6,000,000
+   ============== =================================
 
 .. _en-us_topic_0094118976__table1875314018355:
 
-.. table:: **Table 2** IOPS performance of local disks used by I3 ECSs
+.. table:: **Table 4** IOPS performance of local disks used by I3 ECSs
 
    ============= =================================
    Flavor        Maximum IOPS for Random 4 KB Read
@@ -71,9 +106,24 @@ Local Disk Performance
    i3.16xlarge.8 6,000,000
    ============= =================================
 
+.. _en-us_topic_0094118976__table2850175181012:
+
+.. table:: **Table 5** Specifications of a single I3m local disk
+
+   ========================== ===================
+   Metric                     Performance
+   ========================== ===================
+   Disk capacity              1.6 TB
+   IOPS for random 4 KB read  750,000
+   IOPS for random 4 KB write 200,000
+   Read throughput            2.9 GiB/s
+   Write throughput           1.9 GiB/s
+   Access latency             Within microseconds
+   ========================== ===================
+
 .. _en-us_topic_0094118976__table9670341181017:
 
-.. table:: **Table 3** Specifications of a single I3 local disk
+.. table:: **Table 6** Specifications of a single I3 local disk
 
    ========================== ===================
    Metric                     Performance
@@ -89,41 +139,102 @@ Local Disk Performance
 Notes
 -----
 
--  :ref:`Table 4 <en-us_topic_0094118976__table192771727112217>` lists the OSs supported by ultra-high I/O ECSs.
+-  :ref:`Table 7 <en-us_topic_0094118976__table192771727112217>` lists the OSs supported by ultra-high I/O ECSs.
 
    .. _en-us_topic_0094118976__table192771727112217:
 
-   .. table:: **Table 4** Supported OS versions
+   .. table:: **Table 7** Supported OS versions
 
       +-----------------------------------+-----------------------------------------------------+
       | OS                                | Version                                             |
       +===================================+=====================================================+
       | Alma                              | Alma 8 64bit                                        |
       +-----------------------------------+-----------------------------------------------------+
-      | CentOS                            | -  CentOS Stream 8.6 64bit                          |
+      | CentOS                            | -  CentOS Stream 9.6 64bit                          |
+      |                                   | -  CentOS Stream 8.6 64bit                          |
+      |                                   | -  CentOS 8.5 64bit                                 |
+      |                                   | -  CentOS 8.4 64bit                                 |
+      |                                   | -  CentOS 8.3 64bit                                 |
+      |                                   | -  CentOS 8.2 64bit                                 |
+      |                                   | -  CentOS 8.1 64bit                                 |
       |                                   | -  CentOS 7.9 64bit                                 |
       |                                   | -  CentOS 7.7 64bit                                 |
       +-----------------------------------+-----------------------------------------------------+
-      | Debian                            | -  Debian GNU/Linux 11 64bit                        |
+      | Debian                            | -  Debian GNU/Linux 12.0.0 64bit                    |
+      |                                   | -  Debian GNU/Linux 11.7.0 64bit                    |
+      |                                   | -  Debian GNU/Linux 11.6.0 64bit                    |
+      |                                   | -  Debian GNU/Linux 11.5.0 64bit                    |
+      |                                   | -  Debian GNU/Linux 11.4.0 64bit                    |
+      |                                   | -  Debian GNU/Linux 11.3.0 64bit                    |
+      |                                   | -  Debian GNU/Linux 11.2.0 64bit                    |
+      |                                   | -  Debian GNU/Linux 11.1.0 64bit                    |
+      |                                   | -  Debian GNU/Linux 11.0.0 64bit                    |
+      |                                   | -  Debian GNU/Linux 10.13.0 64bit                   |
+      |                                   | -  Debian GNU/Linux 10.12.0 64bit                   |
+      |                                   | -  Debian GNU/Linux 10.11.0 64bit                   |
+      |                                   | -  Debian GNU/Linux 10.10.0 64bit                   |
+      |                                   | -  Debian GNU/Linux 10.9.0 64bit                    |
+      |                                   | -  Debian GNU/Linux 10.8.0 64bit                    |
+      |                                   | -  Debian GNU/Linux 10.7.0 64bit                    |
+      |                                   | -  Debian GNU/Linux 10.6.0 64bit                    |
+      |                                   | -  Debian GNU/Linux 10.5.0 64bit                    |
+      |                                   | -  Debian GNU/Linux 10.4.0 64bit                    |
+      |                                   | -  Debian GNU/Linux 10.3.0 64bit                    |
+      |                                   | -  Debian GNU/Linux 10.2.0 64bit                    |
+      |                                   | -  Debian GNU/Linux 10.1.0 64bit                    |
       |                                   | -  Debian GNU/Linux 10 64bit                        |
       +-----------------------------------+-----------------------------------------------------+
-      | EulerOS                           | EulerOS 2.5 64bit                                   |
+      | EulerOS                           | -  EulerOS 2.12 64bit                               |
+      |                                   | -  EulerOS 2.11 64bit                               |
+      |                                   | -  EulerOS 2.10 64bit                               |
+      |                                   | -  EulerOS 2.8 64bit                                |
+      |                                   | -  EulerOS 2.7 64bit                                |
+      |                                   | -  EulerOS 2.5 64bit                                |
       +-----------------------------------+-----------------------------------------------------+
-      | Fedora                            | -  Fedora 35 64bit                                  |
+      | Fedora                            | -  Fedora 39 64bit                                  |
+      |                                   | -  Fedora 38 64bit                                  |
+      |                                   | -  Fedora 37 64bit                                  |
+      |                                   | -  Fedora 36 64bit                                  |
+      |                                   | -  Fedora 35 64bit                                  |
       |                                   | -  Fedora 34 64bit                                  |
       |                                   | -  Fedora 33 64bit                                  |
+      |                                   | -  Fedora 32 64bit                                  |
+      |                                   | -  Fedora 31 64bit                                  |
       +-----------------------------------+-----------------------------------------------------+
-      | OpenSUSE                          | OpenSUSE 15.3 64bit                                 |
+      | OpenSUSE                          | -  OpenSUSE 15.5 64bit                              |
+      |                                   | -  OpenSUSE 15.4 64bit                              |
+      |                                   | -  OpenSUSE 15.3 64bit                              |
+      |                                   | -  OpenSUSE 15.2 64bit                              |
       +-----------------------------------+-----------------------------------------------------+
       | Oracle Linux                      | -  Oracle Linux Server release 8.4 64bit            |
       |                                   | -  Oracle Linux Server release 7.6 64bit            |
       +-----------------------------------+-----------------------------------------------------+
-      | Red Hat                           | -  Red Hat Enterprise Linux 7.9 64bit               |
+      | Red Hat                           | -  Red Hat Enterprise Linux 9.1 64bit               |
+      |                                   | -  Red Hat Enterprise Linux 9.0 64bit               |
+      |                                   | -  Red Hat Enterprise Linux 8.7 64bit               |
+      |                                   | -  Red Hat Enterprise Linux 8.6 64bit               |
+      |                                   | -  Red Hat Enterprise Linux 8.5 64bit               |
+      |                                   | -  Red Hat Enterprise Linux 8.4 64bit               |
+      |                                   | -  Red Hat Enterprise Linux 8.3 64bit               |
+      |                                   | -  Red Hat Enterprise Linux 8.2 64bit               |
+      |                                   | -  Red Hat Enterprise Linux 8.1 64bit               |
+      |                                   | -  Red Hat Enterprise Linux 7.9 64bit               |
       |                                   | -  Red Hat Enterprise Linux 6.10 64bit              |
       +-----------------------------------+-----------------------------------------------------+
-      | Rocky                             | Rocky 8 64bit                                       |
+      | Rocky                             | -  9.2 64bit                                        |
+      |                                   | -  9.1 64bit                                        |
+      |                                   | -  9.0 64bit                                        |
+      |                                   | -  8.8 64bit                                        |
+      |                                   | -  8.7 64bit                                        |
+      |                                   | -  8.6 64bit                                        |
+      |                                   | -  8.5 64bit                                        |
+      |                                   | -  8.4 64bit                                        |
+      |                                   | -  8.3 64bit                                        |
+      |                                   | -  8 64bit                                          |
       +-----------------------------------+-----------------------------------------------------+
-      | SUSE                              | -  Novell SUSE Linux Enterprise Server 15 SP3 64bit |
+      | SUSE                              | -  Novell SUSE Linux Enterprise Server 15 SP5 64bit |
+      |                                   | -  Novell SUSE Linux Enterprise Server 15 SP4 64bit |
+      |                                   | -  Novell SUSE Linux Enterprise Server 15 SP3 64bit |
       |                                   | -  Novell SUSE Linux Enterprise Server 15 SP2 64bit |
       |                                   | -  Novell SUSE Linux Enterprise Server 15 SP1 64bit |
       |                                   | -  Novell SUSE Linux Enterprise Server 15 64bit     |
@@ -131,14 +242,23 @@ Notes
       |                                   | -  Novell SUSE Linux Enterprise Server 12 SP4 64bit |
       |                                   | -  Novell SUSE Linux Enterprise Server 12 SP3 64bit |
       +-----------------------------------+-----------------------------------------------------+
-      | Ubuntu                            | -  Ubuntu 20.04 server 64bit                        |
+      | Ubuntu                            | -  Ubuntu 22.04 Server 64bit                        |
+      |                                   | -  Ubuntu 20.04 server 64bit                        |
       |                                   | -  Ubuntu 18.04 server 64bit                        |
       +-----------------------------------+-----------------------------------------------------+
-      | Windows                           | -  Windows Server 2019 Standard 64bit               |
+      | Windows                           | -  Windows Server 2022 Standard 64bit               |
+      |                                   | -  Windows Server 2022 Datacenter 64bit             |
+      |                                   | -  Windows Server 2019 Datacenter 64bit             |
+      |                                   | -  Windows Server 2019 Standard 64bit               |
       |                                   | -  Windows Server 2016 Standard 64bit               |
       |                                   | -  Windows Server 2012 R2 Standard 64bit            |
       +-----------------------------------+-----------------------------------------------------+
-      | openEuler                         | openEuler 20.03 64bit                               |
+      | openEuler                         | -  openEuler 22.03 SP1 64bit                        |
+      |                                   | -  openEuler 22.03 64bit                            |
+      |                                   | -  openEuler 20.03 SP3 64bit                        |
+      |                                   | -  openEuler 20.03 SP2 64bit                        |
+      |                                   | -  openEuler 20.03 SP1 64bit                        |
+      |                                   | -  openEuler 20.03 64bit                            |
       +-----------------------------------+-----------------------------------------------------+
 
 -  If the host where an ultra-high I/O ECS is deployed is faulty, the ECS cannot be restored through live migration.

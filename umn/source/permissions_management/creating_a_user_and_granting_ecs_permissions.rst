@@ -7,11 +7,11 @@ Creating a User and Granting ECS Permissions
 
 Use `IAM <https://docs.otc.t-systems.com/usermanual/iam/iam_01_0026.html>`__ to implement fine-grained permissions control over your ECSs. With IAM, you can:
 
--  Create IAM users for personnel based on your enterprise's organizational structure. Each IAM user will have their own security credentials for accessing ECS resources.
+-  Create IAM users for personnel based on your enterprise's organizational structure. Each IAM user has their own identity credentials for accessing ECS resources.
 -  Grant only the permissions required for users to perform a specific task.
 -  Delegate access to other accounts or cloud services for efficient O&M.
 
-If your account does not need individual IAM users, skip this section.
+If your account does not require individual IAM users, you can skip this section.
 
 This section describes the procedure for granting permissions (see :ref:`Process Flow <en-us_topic_0170265913__section197617372174>`).
 
@@ -47,5 +47,5 @@ Process Flow
 
    In the authorized region, perform the following operations:
 
-   -  Choose **Compute** > **Elastic Cloud Server** in **Service List**. On the ECS console, click **Create ECS**. If the creation attempt failed, the **ECSReadOnlyAccess** policy has already taken effect.
-   -  Choose any service other than ECS in **Service List**. If a message appears indicating that you have insufficient permissions to access the service, the **ECSReadOnlyAccess** policy has already taken effect.
+   -  Choose **Compute** > **Elastic Cloud Server** in the service list. On the ECS console, click **Create ECS**. If the creation attempt failed, the **ECSReadOnlyAccess** policy has already taken effect.
+   -  Choose any service other than ECS in the service list. If a message appears indicating that you have insufficient permissions to access the service, the **ECSReadOnlyAccess** policy has already taken effect.

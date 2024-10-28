@@ -12,8 +12,8 @@ Virtual Private Cloud (VPC) allows you to create customized virtual networks in 
 
 For more information about VPC, see *Virtual Private Cloud User Guide*.
 
-Subnet
-------
+Subnets
+-------
 
 A subnet is a range of IP addresses in your VPC and provides IP address management and DNS resolution functions for ECSs in it. The IP addresses of all ECSs in a subnet belong to the subnet.
 
