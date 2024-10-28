@@ -66,7 +66,7 @@ For your first login, use VNC to log in and enable RDP for your ECS. Then, use M
 
 #. Log in to the Windows ECS using VNC.
 
-   For details, see :ref:`Remotely Logging In to a Windows ECS (Using VNC) <en-us_topic_0027268511>`.
+   For details, see :ref:`Logging In to a Windows ECS Using VNC <en-us_topic_0027268511>`.
 
 #. Click **Start** in the task bar and choose **Control Panel** > **System and Security** > **System** > **Remote settings**.
 

@@ -158,7 +158,7 @@ The following uses an ECS running CentOS 7.5 as an example to describe how to de
 #. Configure the network.
 
    -  If the license server is to be accessed using the VPC, ensure that the license server and the GPU-accelerated ECS with the GRID driver installed are in the same VPC subnet.
-   -  If the license server is to be accessed using a public IP address, configure the security group which license server belongs to and add inbound rules for TCP 7070 and TCP 8080.
+   -  If the license server is to be accessed using a public IP address, configure the security group which the license server belongs to and add inbound rules for TCP 7070 and TCP 8080.
 
 2. Install the license server.
 

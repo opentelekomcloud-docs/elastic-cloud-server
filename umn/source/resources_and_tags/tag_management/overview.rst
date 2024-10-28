@@ -21,7 +21,7 @@ You can add a tag to an ECS during the ECS creation or after the ECS is created.
 Basics of Tags
 --------------
 
-Tags are used to identify cloud resources. When you have many cloud resources of the same type, you can use tags to classify cloud resources by dimension (for example, use, owner, or environment).
+Tags are used to identify cloud resources. When you have many cloud resources of the same type, you can use tags to classify cloud resources by dimension (for example, usage, owner, or environment).
 
 .. _en-us_topic_0092499768__en-us_topic_0157874334_fig81911042564:
 

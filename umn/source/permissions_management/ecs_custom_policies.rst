@@ -5,7 +5,7 @@
 ECS Custom Policies
 ===================
 
-Custom policies can be created to supplement the system-defined policies of ECS. For the actions that can be added to custom policies, see "Permissions Policies and Supported Actions" in "Elastic Cloud Server API Reference".
+Custom policies can be created to supplement the system-defined policies of ECS. For the actions that can be added to custom policies, see "Permissions and Supported Actions" in "Elastic Cloud Server API Reference".
 
 You can create custom policies in either of the following ways:
 
