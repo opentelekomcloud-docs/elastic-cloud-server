@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0067161469:
 
-Adding an ECS to a Security Group
-=================================
+Adding a Security Group
+=======================
 
 Function
 --------

@@ -124,7 +124,7 @@ Lifecycle Management
 |                                                                                              |                                               |                                   |                            |
 |                                                                                              | DELETE /v2.1/{project_id}/servers/{server_id} |                                   |                            |
 +----------------------------------------------------------------------------------------------+-----------------------------------------------+-----------------------------------+----------------------------+
-| :ref:`Modifying ECS details (native OpenStack API) <en-us_topic_0020212692>`                 | PUT /v2/{project_id}/servers/{server_id}      | ecs:servers:update                | ecs:servers:get            |
+| :ref:`Modifying an ECS (native OpenStack API) <en-us_topic_0020212692>`                      | PUT /v2/{project_id}/servers/{server_id}      | ecs:servers:update                | ecs:servers:get            |
 |                                                                                              |                                               |                                   |                            |
 |                                                                                              | PUT /v2.1/{project_id}/servers/{server_id}    |                                   |                            |
 +----------------------------------------------------------------------------------------------+-----------------------------------------------+-----------------------------------+----------------------------+

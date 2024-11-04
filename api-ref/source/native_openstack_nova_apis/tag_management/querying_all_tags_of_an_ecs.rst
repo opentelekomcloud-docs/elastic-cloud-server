@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0065820822:
 
-Querying Tags of an ECS
-=======================
+Querying All Tags of an ECS
+===========================
 
 This API is used to query all tags of an ECS.
 

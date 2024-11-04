@@ -97,7 +97,7 @@ Delete the ECS whose ID is **616fb98f-46ca-475e-917e-2563e5a8cd19**, unbind the 
        ],
        "delete_publicip": false,
        "delete_volume": false
-      }
+           }
 
 Example Response
 ----------------
@@ -106,7 +106,7 @@ Example Response
 
    {
        "job_id": "ff80808288d415d80189901d8eb81cbb"
-   }
+           }
 
 Or
 
@@ -116,8 +116,8 @@ Or
        "error": {
            "message": "request body is illegal.",
            "code": "Ecs.0005"
-       }
-   }
+           }
+           }
 
 Returned Values
 ---------------
