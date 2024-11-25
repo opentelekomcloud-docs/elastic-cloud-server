@@ -136,10 +136,10 @@ If the keys are the same but the values are different, the tags are also automat
 
 -  Searching by a single tag
 
-   In the search box, select **Tag** and then a key-value pair, and click **OK**.
+   In the search box, select **Tag** and then a key-value pair, and press **Enter**.
 
 -  Searching by multiple tags
 
-   In the search box, select multiple tag key-value pairs for search.
+   In the search box, select multiple tag key-value pairs and press **Enter** for search.
 
    If you search by multiple tags, the tags are in the AND relationship.

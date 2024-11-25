@@ -12,8 +12,9 @@ GPU-accelerated ECSs are classified as G series and P series of ECSs.
 -  G series: Graphics-accelerated ECSs, which are suitable for 3D animation rendering and CAD
 -  P series: Computing-accelerated or inference-accelerated ECSs, which are suitable for deep learning, scientific computing, and CAE
 
-GPU-accelerated ECS Types
--------------------------
+
+GPU-accelerated ECSs
+--------------------
 
 Recommended: :ref:`Computing-accelerated P2s <en-us_topic_0097289624__section1454714546567>`, :ref:`Inference-accelerated Pi2 <en-us_topic_0097289624__section1846114713182>`, and :ref:`GPU-accelerated Enhancement G6 <en-us_topic_0097289624__section131302034104515>`
 
@@ -26,6 +27,7 @@ Available now: All GPU models except the recommended ones. If available ECSs are
 
 -  P series
 
+   -  :ref:`Computing-accelerated P5s <en-us_topic_0097289624__section453311473114>`
    -  :ref:`Computing-accelerated P3 <en-us_topic_0097289624__section48861652193>`
    -  :ref:`Computing-accelerated P2s <en-us_topic_0097289624__section1454714546567>` (recommended)
    -  :ref:`Computing-accelerated P2v <en-us_topic_0097289624__section208472383415>`
@@ -55,6 +57,15 @@ Images Supported by GPU-accelerated ECSs
    |                       |                       | -  Windows Server 2019 Standard 64bit    |
    |                       |                       | -  Windows Server 2016 Standard 64bit    |
    |                       |                       | -  Windows Server 2012 R2 Standard 64bit |
+   +-----------------------+-----------------------+------------------------------------------+
+   | Computing-accelerated | P5s                   | -  CentOS 7.9 64bit                      |
+   |                       |                       | -  CentOS 7.8 64bit                      |
+   |                       |                       | -  CentOS 7.7 64bit                      |
+   |                       |                       | -  CentOS 7.6 64bit                      |
+   |                       |                       | -  Ubuntu 22.04 64bit                    |
+   |                       |                       | -  Ubuntu 20.04 64bit                    |
+   |                       |                       | -  Ubuntu 18.04 64bit                    |
+   |                       |                       | -  Ubuntu 16.04 64bit                    |
    +-----------------------+-----------------------+------------------------------------------+
    | Computing-accelerated | P3                    | -  CentOS 8.2 64bit                      |
    |                       |                       | -  CentOS 8.1 64bit                      |
@@ -141,7 +152,7 @@ Select your desired GPU-accelerated ECS type and specifications.
 G7 ECSs are used in graphics acceleration scenarios, such as video rendering, cloud desktop, and 3D visualization. If the software relies on GPU DirectX and OpenGL hardware acceleration, use G7 ECSs. G7 ECSs support the following commonly used graphics processing software:
 
 -  AutoCAD
--  3DS MAX
+-  3ds Max
 -  MAYA
 -  Agisoft PhotoScan
 -  ContextCapture
@@ -215,7 +226,7 @@ Select your desired GPU-accelerated ECS type and specifications.
 G6 ECSs are used in graphics acceleration scenarios, such as video rendering, cloud desktop, and 3D visualization. If the software relies on GPU DirectX and OpenGL hardware acceleration, use G6 ECSs. G6 ECSs support the following commonly used graphics processing software:
 
 -  AutoCAD
--  3DS MAX
+-  3ds Max
 -  MAYA
 -  Agisoft PhotoScan
 -  ContextCapture
@@ -245,7 +256,7 @@ P3 ECSs use NVIDIA A100 GPUs and provide flexibility and ultra-high-performance 
 
 **Specifications**
 
-.. table:: **Table 4** P3 ECS specifications
+.. table:: **Table 5** P3 ECS specifications
 
    +---------------+-------+--------+---------------------------------+----------+-----------------+-----------+----------------------+------------+----------------+
    | Flavor        | vCPUs | Memory | Max./Assured Bandwidth (Gbit/s) | Max. PPS | Max. NIC Queues | Max. NICs | GPUs                 | GPU Memory | Virtualization |
@@ -295,8 +306,8 @@ P3 ECSs use NVIDIA A100 GPUs and provide flexibility and ultra-high-performance 
 
 P3 ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software is required to support GPU CUDA, use P3 ECSs. P3 ECSs support the following commonly used software:
 
--  Common deep learning frameworks, such as TensorFlow, Spark, PyTorch, MXNet, and Caffee
--  CUDA GPU rendering supported by RedShift for Autodesk 3dsMax and V-Ray for 3ds Max
+-  Common deep learning frameworks, such as TensorFlow, Spark, PyTorch, MXNet, and Caffe
+-  CUDA GPU rendering supported by RedShift for Autodesk 3ds Max and V-Ray for 3ds Max
 -  Agisoft PhotoScan
 -  MapD
 -  More than 2,000 GPU-accelerated applications such as Amber, NAMD, and VASP
@@ -323,7 +334,7 @@ P2s ECSs use NVIDIA Tesla V100 GPUs to provide flexibility, high-performance com
 
 **Specifications**
 
-.. table:: **Table 5** P2s ECS specifications
+.. table:: **Table 6** P2s ECS specifications
 
    +----------------+-------+--------+---------------------------------+-------------------+-----------------+-----------+----------+----------------+------------------+----------------+----------------------------------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Bandwidth (Gbit/s) | Max. PPS (10,000) | Max. NIC Queues | Max. NICs | GPUs     | GPU Connection | GPU Memory (GiB) | Virtualization | Hardware                                                 |
@@ -374,7 +385,7 @@ P2s ECSs use NVIDIA Tesla V100 GPUs to provide flexibility, high-performance com
 P2s ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software is required to support GPU CUDA, use P2s ECSs. P2s ECSs support the following commonly used software:
 
 -  Common deep learning frameworks, such as TensorFlow, Caffe, PyTorch, and MXNet
--  CUDA GPU rendering supported by RedShift for Autodesk 3dsMax and V-Ray for 3ds Max
+-  CUDA GPU rendering supported by RedShift for Autodesk 3ds Max and V-Ray for 3ds Max
 -  Agisoft PhotoScan
 -  MapD
 
@@ -401,7 +412,7 @@ P2v ECSs use NVIDIA Tesla V100 GPUs and deliver high flexibility, high-performan
 
 **Specifications**
 
-.. table:: **Table 6** P2v ECS specifications
+.. table:: **Table 7** P2v ECS specifications
 
    +----------------+-------+--------+---------------------------------+-------------------+-----------------+-----------+----------+----------------+------------+----------------+-------------------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Bandwidth (Gbit/s) | Max. PPS (10,000) | Max. NIC Queues | Max. NICs | GPUs     | GPU Connection | GPU Memory | Virtualization | Hardware                                  |
@@ -452,7 +463,7 @@ P2v ECSs use NVIDIA Tesla V100 GPUs and deliver high flexibility, high-performan
 P2v ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software is required to support GPU CUDA, use P2v ECSs. P2v ECSs support the following commonly used software:
 
 -  Common deep learning frameworks, such as TensorFlow, Caffe, PyTorch, and MXNet
--  CUDA GPU rendering supported by RedShift for Autodesk 3dsMax and V-Ray for 3ds Max
+-  CUDA GPU rendering supported by RedShift for Autodesk 3ds Max and V-Ray for 3ds Max
 -  Agisoft PhotoScan
 -  MapD
 
@@ -480,7 +491,7 @@ Pi2 ECSs use NVIDIA Tesla T4 GPUs dedicated for real-time AI inference. These EC
 
 **Specifications**
 
-.. table:: **Table 7** Pi2 ECS specifications
+.. table:: **Table 8** Pi2 ECS specifications
 
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs   | GPU Memory | Local Disks | Virtualization | Hardware                                                                         |

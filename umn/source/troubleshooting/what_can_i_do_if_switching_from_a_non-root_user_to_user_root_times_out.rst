@@ -21,11 +21,11 @@ Solution
 
 #. Log in to the ECS.
 
-#. Run the following command to edit the hosts configuration file:
+#. Run the following command to edit the **hosts** configuration file:
 
    **vi /etc/hosts**
 
-#. Press **i** to enter editing mode.
+#. Press **i** to enter insert mode.
 
 #. Add the IP address and hostname to the last line of the hosts configuration file.
 
@@ -33,7 +33,7 @@ Solution
 
    An example is provided as follows:
 
-   If the ECS hostname is **hostname** and the private IP address of the ECS is 192.168.0.1, add the following statement:
+   If the ECS hostname is **hostname** and the private IP address of the ECS is **192.168.0.1**, add the following statement:
 
    192.168.0.1 hostname
 

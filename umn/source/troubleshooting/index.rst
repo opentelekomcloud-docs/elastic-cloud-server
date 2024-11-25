@@ -6,7 +6,7 @@ Troubleshooting
 ===============
 
 -  :ref:`What Can I Do If Switching from a Non-root User to User root Times Out? <en-us_topic_0094801708>`
--  :ref:`What Should I Do If Error "command ´gcc´ failed with exit status 1" Occurs During PIP-based Software Installation <en-us_topic_0107412162>`
+-  :ref:`What Should I Do If Error "command ´gcc´ failed with exit status 1" Occurs During PIP-based Software Installation? <en-us_topic_0107412162>`
 -  :ref:`What Should I Do If Packages Are Downloaded Using PIP or wget at a Low Rate? <en-us_topic_0107490388>`
 -  :ref:`How Can I Handle Slow ECS Startup? <en-us_topic_0117006217>`
 -  :ref:`How Do I Configure atop and kdump on Linux ECSs for Performance Analysis? <en-us_topic_0000001143214829>`
