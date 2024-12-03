@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0170265910:
 
-Permissions Management
-======================
+Using IAM to Grant Access to ECS
+================================
 
 -  :ref:`Creating a User and Granting ECS Permissions <en-us_topic_0170265913>`
 -  :ref:`ECS Custom Policies <en-us_topic_0170265914>`
