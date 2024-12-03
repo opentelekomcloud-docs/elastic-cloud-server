@@ -8,7 +8,7 @@ Viewing ECS Details (List View)
 Scenarios
 ---------
 
-After obtaining ECSs, you can view and manage them on the management console. This section describes how to view detailed ECS configurations, including its name, image, system disk, data disks, VPC, NIC, security group, and EIP.
+After obtaining ECSs, you can view and manage them on the management console. This section describes how to view ECS configuration details, including its name, image, system disk, data disks, VPC, network interfaces, security group, EIP address, and bandwidth.
 
 To view the private IP address of an ECS, view it on the **Elastic Cloud Server** page.
 

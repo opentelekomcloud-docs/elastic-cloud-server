@@ -26,7 +26,9 @@ Deleting a Tag on the ECS Details Page
 
    The ECS details page is displayed.
 
-#. Click the **Tags** tab. Locate the row containing the tag to be deleted and click **Delete** in the **Operation** column. In the **Delete Tag** dialog box, click **Yes**.
+#. Click the **Tags** tab, locate the tag to be deleted, and click **Delete** in the **Operation** column.
+
+#. Click **OK**.
 
 .. _en-us_topic_0183019671__section167319315388:
 
@@ -35,9 +37,7 @@ Deleting a Tag on the TMS Console
 
 #. Log in to the management console.
 
-#. Under **Management & Deployment**, choose **Tag Management Service**.
-
-#. In the upper right corner of the page, click the username and select **Tag Management** from the drop-down list.
+#. Under **Management & Deployment**, click **Tag Management Service**.
 
 #. On the **Resource Tags** page, set the search criteria for ECSs and click **Search**.
 
@@ -62,7 +62,7 @@ Batch Deleting Tags on the TMS Console
 
 #. Log in to the management console.
 
-#. Under **Management & Deployment**, choose **Tag Management Service**.
+#. Under **Management & Deployment**, click **Tag Management Service**.
 
 #. On the **Resource Tags** page, set the search criteria for ECSs and click **Search**.
 

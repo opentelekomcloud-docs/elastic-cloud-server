@@ -21,8 +21,8 @@ GPU-accelerated ECSs support GRID and Tesla drivers.
 -  To use computing acceleration, install a Tesla driver.
 
    -  A computing-accelerated (P series) ECS created using a Windows public image has had a Tesla driver of a specified version installed by default.
-   -  A computing-accelerated (P series) ECS created using a Linux public image does not have a Tesla driver installed by default. To install a Tesla driver, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
-   -  To install a Tesla driver on a GPU-accelerated ECS created using a private image, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+   -  A computing-accelerated (P series) ECS created using a Linux public image does not have a Tesla driver installed by default. To install a Tesla driver, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+   -  To install a Tesla driver on a GPU-accelerated ECS created using a private image, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 
 .. table:: **Table 1** Acceleration supported by GPU drivers
 
