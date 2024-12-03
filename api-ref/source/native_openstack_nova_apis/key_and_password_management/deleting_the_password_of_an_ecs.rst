@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0031176554:
 
-Deleting the Password for Logging In to an ECS
-==============================================
+Deleting the Password of an ECS
+===============================
 
 Function
 --------

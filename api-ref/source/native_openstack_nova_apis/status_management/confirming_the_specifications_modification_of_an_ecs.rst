@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0028714262:
 
-Confirming ECS Specifications Modification
-==========================================
+Confirming the Specifications Modification of an ECS
+====================================================
 
 Function
 --------

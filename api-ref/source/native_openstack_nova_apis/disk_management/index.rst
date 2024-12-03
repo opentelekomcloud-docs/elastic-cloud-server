@@ -7,7 +7,7 @@ Disk Management
 
 -  :ref:`Querying Disks Attached to an ECS <en-us_topic_0020212671>`
 -  :ref:`Querying a Disk Attached to an ECS <en-us_topic_0020212672>`
--  :ref:`Attaching a Disk to an ECS <en-us_topic_0031167350>`
+-  :ref:`Attaching a ECS Data Disk <en-us_topic_0031167350>`
 -  :ref:`Detaching a Disk from an ECS <en-us_topic_0065817707>`
 
 .. toctree::
@@ -16,5 +16,5 @@ Disk Management
 
    querying_disks_attached_to_an_ecs
    querying_a_disk_attached_to_an_ecs
-   attaching_a_disk_to_an_ecs
+   attaching_a_ecs_data_disk
    detaching_a_disk_from_an_ecs

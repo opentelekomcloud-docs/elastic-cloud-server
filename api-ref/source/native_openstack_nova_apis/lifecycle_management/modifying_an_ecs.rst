@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0020212692:
 
-Modifying ECS Details
-=====================
+Modifying an ECS
+================
 
 Function
 --------
