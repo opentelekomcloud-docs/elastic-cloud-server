@@ -237,15 +237,19 @@ This field is used by the following APIs:
 
 .. table:: **Table 8** **metadata** field description for creating disks
 
-   +----------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------+
-   | Parameter            | Mandatory       | Type            | Description                                                                                                             |
-   +======================+=================+=================+=========================================================================================================================+
-   | \__system__encrypted | No              | String          | Specifies encryption in **metadata**. The value can be **0** (encryption disabled) or **1** (encryption enabled).       |
-   |                      |                 |                 |                                                                                                                         |
-   |                      |                 |                 | If this parameter does not exist, the disk will not be encrypted by default.                                            |
-   +----------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------+
-   | \__system__cmkid     | No              | String          | Specifies the CMK ID, which indicates encryption in **metadata**. This parameter is used with **\__system__encrypted**. |
-   +----------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------+
+   +----------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------+
+   | Parameter            | Mandatory       | Type            | Description                                                                                                               |
+   +======================+=================+=================+===========================================================================================================================+
+   | \__system__encrypted | No              | String          | Specifies encryption in **metadata**. The value can be **0** (encryption disabled) or **1** (encryption enabled).         |
+   |                      |                 |                 |                                                                                                                           |
+   |                      |                 |                 | If this parameter does not exist, the disk will not be encrypted by default.                                              |
+   +----------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------+
+   | \__system__cmkid     | No              | String          | Specifies the CMK ID, which indicates encryption in **metadata**. This parameter is used with **\__system__encrypted**.   |
+   |                      |                 |                 |                                                                                                                           |
+   |                      |                 |                 | .. note::                                                                                                                 |
+   |                      |                 |                 |                                                                                                                           |
+   |                      |                 |                 |    For details about how to obtain the CMK ID, see "Querying the List of CMKs" in *Key Management Service API Reference*. |
+   +----------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0167957246__section1574435185018:
 
