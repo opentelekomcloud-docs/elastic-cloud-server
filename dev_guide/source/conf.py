@@ -109,8 +109,7 @@ html_copy_source = False
 # -- Options for PDF output --------------------------------------------------
 latex_documents = [
     ('index',
-     'ecs-dev-guide.tex',
-     u'Elastic Cloud Server - Developer Guide',
+     'ecs-dev-guide.tex',u'Elastic Cloud Server - Developer Guide',
      u'OpenTelekomCloud', 'manual'),
 ]
 

@@ -4,6 +4,12 @@
     default-branch: main
     templates:
       - helpcenter-base-jobs
+    vars:
+      sphinx_pdf_files:
+        - ecs-api-ref.pdf
+        - ecs-best-practice.pdf
+        - ecs-umn.pdf
+        - ecs-dev-guide.pdf
     check:
       jobs:
         - noop
