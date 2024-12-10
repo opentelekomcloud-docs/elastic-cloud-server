@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'ecs-best-practice.tex',
-     u'Elastic Cloud Server - Best Practice',
+    u'Elastic Cloud Server - Best Practice',
      u'OpenTelekomCloud', 'manual'),
 ]
 
