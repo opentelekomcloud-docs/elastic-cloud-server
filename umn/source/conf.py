@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'ecs-umn.tex',
-     u'Elastic Cloud Server - User Guide',
+    u'Elastic Cloud Server - User Guide',
      u'OpenTelekomCloud', 'manual'),
 ]
 
