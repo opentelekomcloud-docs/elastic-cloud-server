@@ -34,7 +34,7 @@ Available now: All GPU models except the recommended ones. If available ECSs are
 Helpful links:
 
 -  :ref:`Manually Installing a GRID Driver on a GPU-accelerated ECS <en-us_topic_0149610914>`
--  :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`
+-  :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`
 
 Images Supported by GPU-accelerated ECSs
 ----------------------------------------
@@ -162,6 +162,7 @@ G7 ECSs are used in graphics acceleration scenarios, such as video rendering, cl
 -  G7 ECSs created using a public image have had the GRID driver of a specific version installed by default. However, you need to purchase and configure a GRID license by yourself. Ensure that the GRID driver version meets service requirements.
 -  If a G7 ECS is created using a private image, make sure that the GRID driver was installed during the private image creation. If the GRID driver has not been installed, install the driver for graphics acceleration after the ECS is created.
 -  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
+-  GPU-accelerated ECSs do not support live migration.
 
 .. _en-us_topic_0097289624__section131302034104515:
 
@@ -233,6 +234,8 @@ G6 ECSs are used in graphics acceleration scenarios, such as video rendering, cl
 -  If a G6 ECS is created using a private image, make sure that the GRID driver was installed during the private image creation. If not, install the driver for graphics acceleration after the ECS is created.
 
 -  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
+
+-  GPU-accelerated ECSs do not support live migration.
 
 .. _en-us_topic_0097289624__section48861652193:
 
@@ -309,8 +312,9 @@ P3 ECSs are used in computing acceleration scenarios, such as deep learning trai
 
       Resources will be released after a P3 ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
 
--  If a P3 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+-  If a P3 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 -  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
+-  GPU-accelerated ECSs do not support live migration.
 
 .. _en-us_topic_0097289624__section1454714546567:
 
@@ -387,8 +391,9 @@ P2s ECSs are used in computing acceleration scenarios, such as deep learning tra
       Resources will be released after a P2s ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
 
 -  By default, P2s ECSs created using a Windows public image have the Tesla driver installed.
--  If a P2s ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+-  If a P2s ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 -  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
+-  GPU-accelerated ECSs do not support live migration.
 
 .. _en-us_topic_0097289624__section208472383415:
 
@@ -465,9 +470,10 @@ P2v ECSs are used in computing acceleration scenarios, such as deep learning tra
       Resources will be released after a P2v ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
 
 -  By default, P2v ECSs created using a Windows public image have the Tesla driver installed.
--  By default, P2v ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
--  If a P2v ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+-  By default, P2v ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+-  If a P2v ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 -  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
+-  GPU-accelerated ECSs do not support live migration.
 
 .. _en-us_topic_0097289624__section1846114713182:
 
@@ -526,6 +532,7 @@ Pi2 ECSs support the following commonly used software:
 
 -  Pi2 ECSs support automatic recovery when the hosts accommodating such ECSs become faulty.
 -  By default, Pi2 ECSs created using a Windows public image have the Tesla driver installed.
--  By default, Pi2 ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
--  If a Pi2 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Installing a Tesla Driver and CUDA Toolkit on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+-  By default, Pi2 ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+-  If a Pi2 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 -  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
+-  GPU-accelerated ECSs do not support live migration.

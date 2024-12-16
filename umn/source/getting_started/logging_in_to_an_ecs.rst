@@ -26,7 +26,7 @@ You can log in to a Windows ECS using either VNC or MSTSC provided on the manage
 
    -  Management console (VNC)
 
-      For details, see :ref:`Remotely Logging In to a Windows ECS (Using VNC) <en-us_topic_0027268511>`.
+      For details, see :ref:`Logging In to a Windows ECS Using VNC <en-us_topic_0027268511>`.
 
    -  Remote desktop connection (MSTSC)
 
@@ -47,7 +47,7 @@ Select a login method and log in to the ECS.
 
 -  VNC
 
-   For details, see :ref:`Remotely Logging In to a Linux ECS (Using VNC) <en-us_topic_0093263550>`.
+   For details, see :ref:`Logging In to a Linux ECS Using VNC <en-us_topic_0093263550>`.
 
 -  SSH key
 

@@ -59,13 +59,15 @@ Adding Tags on the ECS Details Page
 
 #. Click the **Tags** tab and then **Add Tag**. In the displayed dialog box, enter the tag key and tag value. For the tag key and tag value requirements, see :ref:`Table 1 <en-us_topic_0092499768__table197401426182516>`.
 
-   You can change the tag value after the tag is added.
-
 
    .. figure:: /_static/images/en-us_image_0000001659537286.png
       :alt: **Figure 2** Adding tags on the Tags tab
 
       **Figure 2** Adding tags on the Tags tab
+
+#. Click **OK**.
+
+   After tags are added, you can click **Edit** in the **Operation** column to modify them.
 
 .. _en-us_topic_0183019669__section115321623241:
 
@@ -78,7 +80,7 @@ Adding Tags on the TMS Console
 
 #. Log in to the management console.
 
-#. Under **Management & Deployment**, choose **Tag Management Service**.
+#. Under **Management & Deployment**, click **Tag Management Service**.
 
 #. On the displayed **Resource Tags** page, select the region where the resource is located, select **ECS-ECS** for **Resource Type**, and click **Search**.
 
@@ -104,9 +106,9 @@ Using Predefined Tags
 If you want to add the same tag to multiple ECSs or other resources, you can create a predefined tag on the TMS console and then select the tag for the ECSs or resources. This frees you from having to repeatedly enter tag keys and values. To do so, perform the following operations:
 
 #. Log in to the management console.
-#. Under **Management & Deployment**, choose **Tag Management Service**.
+#. Under **Management & Deployment**, click **Tag Management Service**.
 #. Choose **Predefined Tags** in the left navigation pane and click **Create Tag**. In the displayed dialog box, enter a key (for example, **project**) and a value (for example, **A**).
-#. Choose **Service List** > **Computing** > **Elastic Cloud Server**, and select the predefined tag by following the procedure for adding a tag.
+#. Choose **Computing** > **Elastic Cloud Server** from the service list and select the predefined tag by following the procedure for adding a tag.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 .. |image2| image:: /_static/images/en-us_image_0210779229.png

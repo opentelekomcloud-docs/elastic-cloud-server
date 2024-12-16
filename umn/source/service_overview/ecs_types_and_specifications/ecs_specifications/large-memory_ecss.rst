@@ -67,23 +67,53 @@ Notes
       +-----------------------------------+-----------------------------------------------------+
       | OS                                | Version                                             |
       +===================================+=====================================================+
-      | CentOS                            | -  CentOS 7.9 64bit                                 |
+      | CentOS                            | -  CentOS 8.5 64bit                                 |
+      |                                   | -  CentOS 8.4 64bit                                 |
+      |                                   | -  CentOS 8.3 64bit                                 |
+      |                                   | -  CentOS 8.2 64bit                                 |
+      |                                   | -  CentOS 8.1 64bit                                 |
+      |                                   | -  CentOS 7.9 64bit                                 |
       |                                   | -  CentOS 7.7 64bit                                 |
       +-----------------------------------+-----------------------------------------------------+
-      | EulerOS                           | EulerOS 2.5 64bit                                   |
+      | EulerOS                           | -  EulerOS 2.12 64bit                               |
+      |                                   | -  EulerOS 2.11 64bit                               |
+      |                                   | -  EulerOS 2.10 64bit                               |
+      |                                   | -  EulerOS 2.8 64bit                                |
+      |                                   | -  EulerOS 2.7 64bit                                |
+      |                                   | -  EulerOS 2.5 64bit                                |
       +-----------------------------------+-----------------------------------------------------+
-      | Fedora                            | -  Fedora 35 64bit                                  |
+      | Fedora                            | -  Fedora 39 64bit                                  |
+      |                                   | -  Fedora 38 64bit                                  |
+      |                                   | -  Fedora 37 64bit                                  |
+      |                                   | -  Fedora 36 64bit                                  |
+      |                                   | -  Fedora 35 64bit                                  |
       |                                   | -  Fedora 34 64bit                                  |
       |                                   | -  Fedora 33 64bit                                  |
+      |                                   | -  Fedora 32 64bit                                  |
+      |                                   | -  Fedora 31 64bit                                  |
       +-----------------------------------+-----------------------------------------------------+
-      | OpenSUSE                          | OpenSUSE 15.3 64bit                                 |
+      | OpenSUSE                          | -  OpenSUSE 15.5 64bit                              |
+      |                                   | -  OpenSUSE 15.4 64bit                              |
+      |                                   | -  OpenSUSE 15.3 64bit                              |
+      |                                   | -  OpenSUSE 15.2 64bit                              |
       +-----------------------------------+-----------------------------------------------------+
       | Oracle Linux                      | -  Oracle Linux Server release 8.4 64bit            |
       |                                   | -  Oracle Linux Server release 7.6 64bit            |
       +-----------------------------------+-----------------------------------------------------+
-      | Red Hat                           | Red Hat Enterprise Linux 7.9 64bit                  |
+      | Red Hat                           | -  Red Hat Enterprise Linux 9.1 64bit               |
+      |                                   | -  Red Hat Enterprise Linux 9.0 64bit               |
+      |                                   | -  Red Hat Enterprise Linux 8.7 64bit               |
+      |                                   | -  Red Hat Enterprise Linux 8.6 64bit               |
+      |                                   | -  Red Hat Enterprise Linux 8.5 64bit               |
+      |                                   | -  Red Hat Enterprise Linux 8.4 64bit               |
+      |                                   | -  Red Hat Enterprise Linux 8.3 64bit               |
+      |                                   | -  Red Hat Enterprise Linux 8.2 64bit               |
+      |                                   | -  Red Hat Enterprise Linux 8.1 64bit               |
+      |                                   | -  Red Hat Enterprise Linux 7.9 64bit               |
       +-----------------------------------+-----------------------------------------------------+
-      | SUSE                              | -  Novell SUSE Linux Enterprise Server 15 SP3 64bit |
+      | SUSE                              | -  Novell SUSE Linux Enterprise Server 15 SP5 64bit |
+      |                                   | -  Novell SUSE Linux Enterprise Server 15 SP4 64bit |
+      |                                   | -  Novell SUSE Linux Enterprise Server 15 SP3 64bit |
       |                                   | -  Novell SUSE Linux Enterprise Server 15 SP2 64bit |
       |                                   | -  Novell SUSE Linux Enterprise Server 15 SP1 64bit |
       |                                   | -  Novell SUSE Linux Enterprise Server 15 64bit     |
@@ -91,11 +121,20 @@ Notes
       |                                   | -  Novell SUSE Linux Enterprise Server 12 SP4 64bit |
       |                                   | -  Novell SUSE Linux Enterprise Server 12 SP3 64bit |
       +-----------------------------------+-----------------------------------------------------+
-      | Ubuntu                            | -  Ubuntu 20.04 server 64bit                        |
+      | Ubuntu                            | -  Ubuntu 22.04 server 64bit                        |
+      |                                   | -  Ubuntu 20.04 server 64bit                        |
       |                                   | -  Ubuntu 18.04 server 64bit                        |
       +-----------------------------------+-----------------------------------------------------+
-      | Windows                           | -  Windows Server 2019 Standard 64bit               |
+      | Windows                           | -  Windows Server 2022 Standard 64bit               |
+      |                                   |                                                     |
+      |                                   | -  Windows Server 2022 Datacenter 64bit             |
+      |                                   |                                                     |
+      |                                   | -  Windows Server 2019 Standard 64bit               |
+      |                                   |                                                     |
+      |                                   | -  Windows Server 2019 Datacenter 64bit             |
+      |                                   |                                                     |
       |                                   | -  Windows Server 2016 Standard 64bit               |
+      |                                   |                                                     |
       |                                   | -  Windows Server 2012 R2 Standard 64bit            |
       +-----------------------------------+-----------------------------------------------------+
 
