@@ -36,7 +36,7 @@ Procedure
 #. Log in to the management console.
 #. Click |image1| in the upper left corner and select your region and project.
 #. Under **Computing**, click **Elastic Cloud Server**.
-#. In the ECS list, locate the target ECS and choose More In the Operation column of the ECS to be migrated, choose **More** > **Migrate ECS** in the **Operation** column.
+#. In the ECS list, locate the target ECS to be migrated, choose **More** > **Migrate ECS** in the **Operation** column.
 #. In the displayed dialog box, select the target DeH.
 
    .. note::
