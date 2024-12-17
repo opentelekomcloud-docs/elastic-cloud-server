@@ -11,7 +11,7 @@ Elastic Cloud Server - User Guide
    instances/index
    images/index
    disks/index
-   nics/index
+   elastic_network_interfaces/index
    eips/index
    security/index
    backup_using_cbr/index
