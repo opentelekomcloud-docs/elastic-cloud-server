@@ -8,16 +8,14 @@ Viewing Traces
 Scenarios
 ---------
 
-After you enable CTS and the management tracker is created, CTS starts recording operations on cloud resources. CTS stores operation records generated in the last seven days.
+After you enable CTS and the management tracker is created, CTS starts recording operations on cloud resources. Cloud Trace Service (CTS) stores operation records (traces) generated in the last seven days.
 
-This section describes how to query and export operation records of the last seven days on the CTS console.
+.. note::
 
--  :ref:`Viewing Real-Time Traces in the Trace List <en-us_topic_0116266207__en-us_topic_0179639644_section19271975203>`
+   These operation records are retained for seven days on the CTS console and are automatically deleted upon expiration. Manual deletion is not supported.
 
-.. _en-us_topic_0116266207__en-us_topic_0179639644_section19271975203:
-
-Viewing Real-Time Traces in the Trace List
-------------------------------------------
+Viewing Real-Time Traces
+------------------------
 
 #. Log in to the management console.
 
@@ -25,7 +23,7 @@ Viewing Real-Time Traces in the Trace List
 
 #. Choose **Trace List** in the navigation pane on the left.
 
-#. Set filters to search for your desired traces, as shown in :ref:`Figure 1 <en-us_topic_0116266207__en-us_topic_0179639644_fig139361441134311>`. The following filters are available:
+#. Set filters to search for your desired traces, as shown in :ref:`Figure 1 <en-us_topic_0116266207__en-us_topic_0179639644_fig139361441134311>`. The following filters are available.
 
    .. _en-us_topic_0116266207__en-us_topic_0179639644_fig139361441134311:
 
@@ -42,14 +40,13 @@ Viewing Real-Time Traces in the Trace List
 
    -  **Operator**: Select a user.
    -  **Trace Status**: Select **All trace statuses**, **Normal**, **Warning**, or **Incident**.
-   -  Time range: You can query traces generated during any time range in the last seven days.
-   -  Click **Export** to export all traces in the query result as a CSV file. The file can contain up to 5000 records.
+   -  Time range: Select **Last 1 hour**, **Last 1 day**, or **Last 1 week**, or specify a custom time range within the last seven days.
 
 #. Click **Query**.
 
 #. On the **Trace List** page, you can also export and refresh the trace list.
 
-   -  Click **Export** to export all traces in the query result as a CSV file. The file can contain up to 5000 records.
+   -  Click **Export** to export all traces in the query result as a CSV file. The file can contain up to 5,000 records.
    -  Click |image2| to view the latest information about traces.
 
 #. Click |image3| on the left of a trace to expand its details.
@@ -65,5 +62,5 @@ Viewing Real-Time Traces in the Trace List
 .. |image1| image:: /_static/images/en-us_image_0000001696838310.png
 .. |image2| image:: /_static/images/en-us_image_0000001696678850.png
 .. |image3| image:: /_static/images/en-us_image_0000001744678489.jpg
-.. |image4| image:: /_static/images/en-us_image_0000001696838318.png
+.. |image4| image:: /_static/images/en-us_image_0000001942942816.png
 .. |image5| image:: /_static/images/en-us_image_0000001758618249.png

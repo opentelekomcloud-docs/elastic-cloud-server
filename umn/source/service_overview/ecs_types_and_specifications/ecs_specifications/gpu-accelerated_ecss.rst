@@ -295,6 +295,7 @@ P5s ECSs are used in computing acceleration scenarios, such as deep learning tra
 -  P5s ECSs support automatic recovery when the hosts accommodating such ECSs become faulty.
 -  After a P5s ECS is stopped, basic resources (including vCPUs, memory, image, and encoding cards) are not billed, but its system disk is billed based on the disk capacity. If other products, such as EVS disks, EIP, and bandwidth are associated with the ECS, these products are billed separately.
 -  Specifications of P5s ECSs can only be changed to other specifications of the same instance type.
+-  If you have attached a data disk to a P5s ECS during ECS creation, do not detach the data disk upon creation, or the detachment will fail.
 
 .. _en-us_topic_0097289624__section48861652193:
 

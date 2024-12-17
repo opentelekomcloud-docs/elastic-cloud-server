@@ -31,6 +31,6 @@ Procedure
 
 #. View the ECS details.
 
-   You can click the tabs and perform operations. For details, see :ref:`Changing a Security Group <en-us_topic_0093492517>`, :ref:`Adding a NIC <en-us_topic_0093492518>`, :ref:`Adding Tags <en-us_topic_0183019669>`, and :ref:`Binding an EIP <en-us_topic_0174917535>`.
+   You can click the tabs and perform operations. For details, see :ref:`Changing a Security Group <en-us_topic_0093492517>`, :ref:`Attaching a Network Interface <en-us_topic_0093492518>`, :ref:`Adding Tags <en-us_topic_0183019669>`, and :ref:`Binding an EIP <en-us_topic_0174917535>`.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png

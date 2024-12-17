@@ -77,7 +77,7 @@ Advanced Settings
 
       For example, if you activate user **root** permission by passing a script file to an ECS, you can log in to the ECS as user **root**.
 
-      For detailed operations, see :ref:`Passing User Data <en-us_topic_0032380449>`.
+      For detailed operations, see :ref:`Injecting User Data <en-us_topic_0032380449>`.
 
    -  Tag
 
