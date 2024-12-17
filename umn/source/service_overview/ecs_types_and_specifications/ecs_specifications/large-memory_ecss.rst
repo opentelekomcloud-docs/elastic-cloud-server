@@ -126,15 +126,10 @@ Notes
       |                                   | -  Ubuntu 18.04 server 64bit                        |
       +-----------------------------------+-----------------------------------------------------+
       | Windows                           | -  Windows Server 2022 Standard 64bit               |
-      |                                   |                                                     |
       |                                   | -  Windows Server 2022 Datacenter 64bit             |
-      |                                   |                                                     |
       |                                   | -  Windows Server 2019 Standard 64bit               |
-      |                                   |                                                     |
       |                                   | -  Windows Server 2019 Datacenter 64bit             |
-      |                                   |                                                     |
       |                                   | -  Windows Server 2016 Standard 64bit               |
-      |                                   |                                                     |
       |                                   | -  Windows Server 2012 R2 Standard 64bit            |
       +-----------------------------------+-----------------------------------------------------+
 

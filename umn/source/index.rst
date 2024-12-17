@@ -7,6 +7,7 @@ Elastic Cloud Server - User Guide
 
    service_overview/index
    getting_started/index
+   using_iam_to_grant_access_to_ecs/index
    instances/index
    images/index
    disks/index
@@ -15,7 +16,6 @@ Elastic Cloud Server - User Guide
    security/index
    backup_using_cbr/index
    passwords_and_key_pairs/index
-   permissions_management/index
    resources_and_tags/index
    monitoring_using_cloud_eye/index
    audit_using_cts/index

@@ -2,7 +2,7 @@
 
 .. _en-us_topic_0116262067:
 
-Key Operations Supported by CTS
+ECS Operations Supported by CTS
 ===============================
 
 Scenarios
@@ -13,7 +13,7 @@ Cloud Trace Service (CTS) records user operations performed on ECSs and related 
 Prerequisites
 -------------
 
-CTS has been provisioned.
+CTS has been enabled.
 
 Key ECS Operations Recorded by CTS
 ----------------------------------
@@ -21,7 +21,7 @@ Key ECS Operations Recorded by CTS
 .. table:: **Table 1** ECS operations recorded by CTS
 
    +----------------------------------------------------------+-----------------------+-----------------------+
-   | Operation                                                | Resource Type         | Event Name            |
+   | Operation                                                | Resource Type         | Trace                 |
    +==========================================================+=======================+=======================+
    | Creating an ECS                                          | ecs                   | createServer          |
    |                                                          |                       |                       |

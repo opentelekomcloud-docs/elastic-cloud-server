@@ -27,7 +27,7 @@ For example, an ECS has three disks attached: **/dev/vda1**, **/dev/vdb1**, and 
    /dev/vdb1                       /data1   ext4  defaults  0  0
    /dev/vdc1                       /data2   ext4  defaults  0  0
 
-After **/dev/vdb1** is detached and the ECS is restarted, **/dev/vdc1** becomes **/dev/vdb1** and is mounted to **/data**. In such a case, no disk is mounted to **/data2**.
+After **/dev/vdb1** is detached and the ECS is restarted, **/dev/vdc1** becomes **/dev/vdb1** and is mounted to **/data1**. In such a case, no disk is mounted to **/data2**.
 
 The change of drive letters can affect the running of applications. To solve this problem, you are advised to use the universally unique identifiers (UUIDs) to replace **/dev/vdx** because a UUID uniquely identifies a disk partition in the Linux OS.
 

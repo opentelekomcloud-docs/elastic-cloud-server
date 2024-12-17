@@ -255,7 +255,7 @@ This case illustrates how to use the user data passing function to set the passw
    |                                   |    -  Uppercase letters                                                                                                                                      |
    |                                   |    -  Lowercase letters                                                                                                                                      |
    |                                   |    -  Digits                                                                                                                                                 |
-   |                                   |    -  Special characters:``$!@%-_=+[]:./^,{}?``                                                                                                              |
+   |                                   |    -  Special characters: ``$!@%-_=+[]:./^,{}?``                                                                                                             |
    |                                   |                                                                                                                                                              |
    |                                   | -  Cannot contain the username or the username spelled backwards.                                                                                            |
    |                                   | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |
@@ -318,7 +318,7 @@ In this example, the password of user **root** is reset to **\*****\***.
    |                                   |    -  Uppercase letters                                                                                                                                      |
    |                                   |    -  Lowercase letters                                                                                                                                      |
    |                                   |    -  Digits                                                                                                                                                 |
-   |                                   |    -  Special characters:``$!@%-_=+[]:./^,{}?``                                                                                                              |
+   |                                   |    -  Special characters: ``$!@%-_=+[]:./^,{}?``                                                                                                             |
    |                                   |                                                                                                                                                              |
    |                                   | -  Cannot contain the username or the username spelled backwards.                                                                                            |
    |                                   | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |

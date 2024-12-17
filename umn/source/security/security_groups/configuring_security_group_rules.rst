@@ -34,15 +34,19 @@ Procedure
 
    The system automatically switches to the security group details page.
 
+#. On the **Inbound Rules** tab, click **Add Rule**.
+
+   The **Add Inbound Rule** dialog box is displayed.
+
 #. Configure required parameters.
 
    You can click **+** to add more inbound rules.
 
 
-   .. figure:: /_static/images/en-us_image_0000002065205609.png
-      :alt: **Figure 1** Add Inbound Rule
+   .. figure:: /_static/images/en-us_image_0000002076474708.png
+      :alt: **Figure 1** Adding inbound rules
 
-      **Figure 1** Add Inbound Rule
+      **Figure 1** Adding inbound rules
 
    .. table:: **Table 1** Inbound rule parameter description
 
@@ -72,20 +76,28 @@ Procedure
       |                       |                                                                                                                                                                                                                                                                                                                                                               |                       |
       |                       | If the source is a security group, this rule will apply to all instances associated with the selected security group.                                                                                                                                                                                                                                         |                       |
       +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-      | Description           | Supplementary information about the security group rule. This parameter is optional.                                                                                                                                                                                                                                                                          | N/A                   |
+      | Description           | Supplementary information about the security group rule. This parameter is optional.                                                                                                                                                                                                                                                                          | ``-``                 |
       |                       |                                                                                                                                                                                                                                                                                                                                                               |                       |
-      |                       | The security group rule description can contain a maximum of 255 characters and cannot contain angle brackets (< or >).                                                                                                                                                                                                                                       |                       |
+      |                       | The description can contain a maximum of 255 characters and cannot contain angle brackets (< or >).                                                                                                                                                                                                                                                           |                       |
       +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+
+#. Click **OK**.
+
+   The inbound rule list is displayed.
+
+#. On the **Outbound Rules** tab, click **Add Rule**.
+
+   The **Add Outbound Rule** dialog box is displayed.
 
 #. Configure required parameters.
 
    You can click **+** to add more outbound rules.
 
 
-   .. figure:: /_static/images/en-us_image_0000002065206257.png
-      :alt: **Figure 2** Add Outbound Rule
+   .. figure:: /_static/images/en-us_image_0000002076320880.png
+      :alt: **Figure 2** Adding outbound rules
 
-      **Figure 2** Add Outbound Rule
+      **Figure 2** Adding outbound rules
 
    .. table:: **Table 2** Outbound rule parameter description
 
@@ -113,9 +125,9 @@ Procedure
       |                       |                                                                                                                                                                                                                                                                                                                                                               |                       |
       |                       | -  **Security group**: The source is from another security group. You can select a security group in the same region from the drop-down list. If there is instance A in security group A and instance B in security group B, and the inbound rule of security group A allows traffic from security group B, traffic is allowed from instance B to instance A. |                       |
       +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-      | Description           | Supplementary information about the security group rule. This parameter is optional.                                                                                                                                                                                                                                                                          | N/A                   |
+      | Description           | Supplementary information about the security group rule. This parameter is optional.                                                                                                                                                                                                                                                                          | ``-``                 |
       |                       |                                                                                                                                                                                                                                                                                                                                                               |                       |
-      |                       | The security group rule description can contain a maximum of 255 characters and cannot contain angle brackets (< or >).                                                                                                                                                                                                                                       |                       |
+      |                       | The description can contain a maximum of 255 characters and cannot contain angle brackets (< or >).                                                                                                                                                                                                                                                           |                       |
       +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
 #. Click **OK** to complete the security rule configuration.

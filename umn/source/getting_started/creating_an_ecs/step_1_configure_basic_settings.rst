@@ -32,6 +32,8 @@ Basic Settings
 
       -  During the creation process, you can select a random AZ. The system will use a hash algorithm to select an AZ as the default AZ based on your universally unique identifier (UUID).
 
+         If you batch create multiple ECSs and want to deploy them in different AZs, select **Multi-AZ deployment**.
+
       -  The available ECS types and flavors vary depending on AZs. To view all supported ECS types and flavors on the cloud service platform, set **AZ** to **Random**. Then, the system automatically allocates an AZ according to your selected ECS flavor.
 
          For example, S3 ECSs are available only in AZ1; S2 ECSs are available in AZ2 and AZ3 and have been sold out in AZ1. If you set **AZ** to **Random**, you can view both S3 and S2 ECSs. If you create an S3 ECS, the system automatically allocates it to AZ1. If you create an S2 ECS, the system randomly allocates it to AZ2 or AZ3.
@@ -50,7 +52,7 @@ Basic Settings
 
    .. note::
 
-      -  Before selecting an ECS type, learn about the introduction and notes on each type of ECSs. For details, see :ref:`ECS Types <en-us_topic_0035470096>`.
+      -  Before selecting an ECS type, learn about various types of ECSs and their precautions. For details, see :ref:`ECS Types <en-us_topic_0035470096>`.
 
       -  You can select **Hide sold-out specifications** to hide specifications that have been sold out.
 
@@ -117,7 +119,7 @@ Basic Settings
 
    -  System disk
 
-      For details about the disk types supported by ECS, see :ref:`EVS Disks <en-us_topic_0030828256>`.
+      For details about the disk types supported by ECSs, see :ref:`EVS Disks <en-us_topic_0030828256>`.
 
       -  If the image based on which an ECS is created is not encrypted, the system disk of the ECS is not encrypted. If the image based on which an ECS is created is encrypted, the system disk of the ECS is automatically encrypted. For details, see :ref:`(Optional) Encryption-related parameters <en-us_topic_0163572589__en-us_topic_0144542112_li3286101316615>`.
       -  **Encryption**: indicates that the system disk is encrypted if you select this option. For details, see :ref:`(Optional) Encryption-related parameters <en-us_topic_0163572589__en-us_topic_0144542112_li3286101316615>`.
@@ -128,7 +130,7 @@ Basic Settings
 
       Click **Show**\ |image2| and set the following functions if required:
 
-      -  **SCSI**: indicates that the device type of the data disk is SCSI if you select this option. For more information about SCSI disks and the ECSs that can be attached with SCSI disks, see :ref:`EVS Disks <en-us_topic_0030828256>`.
+      -  **SCSI**: indicates that the device type of the data disk is SCSI if you select this option. For more information about SCSI disks and ECSs that can have SCSI disks attached, see :ref:`EVS Disks <en-us_topic_0030828256>`.
 
       -  **Share**: indicates that the EVS disk is sharable if you select this option. Such an EVS disk can be attached to multiple ECSs.
 
@@ -148,7 +150,7 @@ Basic Settings
 
       (Optional) Encryption-related parameters
 
-      To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permission, assign the KMS access permissions to EVS. If you do not have the permission, contact the user having the security administrator rights to assign the KMS access permissions. For details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
+      To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permissions, assign the KMS access permissions to EVS. If you do not have the required permissions, contact the user who has the Security Administrator permissions to assign the KMS access permissions. For details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
 
       -  **Encryption**: indicates that the EVS disk has been encrypted.
       -  **Create Xrole**: assigns KMS access permissions to EVS to obtain KMS keys. After the permissions are assigned, follow-up operations do not require assigning permissions again.
