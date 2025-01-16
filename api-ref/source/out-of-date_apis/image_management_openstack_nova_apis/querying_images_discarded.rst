@@ -90,7 +90,7 @@ Response
    | images_links | No        | Array of objects | Specifies the information about the next page when you query images in pages. |
    +--------------+-----------+------------------+-------------------------------------------------------------------------------+
 
-.. table:: **Table 5** **images** information
+.. table:: **Table 5** **images** parameters
 
    +-----------+-----------+------------------+-------------------------------------------+
    | Parameter | Mandatory | Type             | Description                               |
@@ -112,7 +112,7 @@ Response
    | rel       | Yes       | String | Specifies the query direction when you query images in pages.      |
    +-----------+-----------+--------+--------------------------------------------------------------------+
 
-.. table:: **Table 7** **links** parameter description
+.. table:: **Table 7** **links** parameters
 
    +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter       | Mandatory       | Type            | Description                                                                                                                                                                                               |

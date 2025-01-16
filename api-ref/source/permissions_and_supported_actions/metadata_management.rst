@@ -12,7 +12,7 @@ Metadata Management
 |                                                                                                    |                                                              |                                 |                 |
 |                                                                                                    | GET /v2.1/{project_id}/servers/{server_id}/metadata          |                                 |                 |
 +----------------------------------------------------------------------------------------------------+--------------------------------------------------------------+---------------------------------+-----------------+
-| :ref:`Querying ECS metadata with a specified key (native OpenStack API) <en-us_topic_0065817714>`  | GET /v2/{project_id}/servers/{server_id}/metadata/{key}      | ecs:servers:getMetadata         | ecs:servers:get |
+| :ref:`Obtaining ECS metadata with a specified key (native OpenStack API) <en-us_topic_0065817714>` | GET /v2/{project_id}/servers/{server_id}/metadata/{key}      | ecs:servers:getMetadata         | ecs:servers:get |
 |                                                                                                    |                                                              |                                 |                 |
 |                                                                                                    | GET /v2.1/{project_id}/servers/{server_id}/metadata/{key}    |                                 |                 |
 +----------------------------------------------------------------------------------------------------+--------------------------------------------------------------+---------------------------------+-----------------+

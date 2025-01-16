@@ -24,9 +24,9 @@ Supported Actions
 
 ECS provides system-defined policies that can be directly used in IAM. You can also create custom policies to supplement system-defined policies for more refined access control. Operations supported by policies are specific to APIs. The following are common concepts related to policies:
 
--  Permissions: statements in a policy that allow or deny certain operations
--  APIs: REST APIs that can be called by a user who has been granted specific permissions
--  Actions: specific operations that are allowed or denied
+-  Permissions: statements in a policy that allow or deny certain operations on specified resources under specific conditions.
+-  APIs: REST APIs that can be called by a custom policy
+-  Actions: specific operations that are allowed or denied in a custom policy
 -  Dependencies: actions which a specific action depends on. When allowing an action for a user, you also need to allow any existing action dependencies for that user.
 -  IAM projects/Enterprise projects: the authorization scope of a custom policy. A custom policy can be applied to IAM projects or enterprise projects or both. Policies that contain actions for both IAM and enterprise projects can be used and applied for both IAM and Enterprise Management. Policies that contain actions only for IAM projects can be used and applied to IAM only.
 

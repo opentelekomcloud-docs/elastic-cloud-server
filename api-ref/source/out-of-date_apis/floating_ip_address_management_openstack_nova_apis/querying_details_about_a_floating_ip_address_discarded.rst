@@ -8,7 +8,7 @@ Querying Details About a Floating IP Address (Discarded)
 Function
 --------
 
-This API is used to query the details about a floating IP address based on the ID of the IP address.
+This API is used to query the details about a floating IP address based on the ID of the floating IP address.
 
 This API has been discarded. Use the API described in "Querying a Floating IP Address".
 

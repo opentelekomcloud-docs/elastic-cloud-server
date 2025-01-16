@@ -8,7 +8,7 @@ Specifications Query
 +--------------------------------------------------------------------------------------------------+------------------------------------------------------------+----------------------------+-----------------+
 | Permission                                                                                       | API                                                        | Action                     | Dependencies    |
 +==================================================================================================+============================================================+============================+=================+
-| :ref:`Querying details about ECS flavors and extended flavors <en-us_topic_0020212656>`          | GET /v1/{project_id}/cloudservers/flavors                  | ecs:cloudServerFlavors:get | ``-``           |
+| :ref:`Querying details about flavors and extended flavor information <en-us_topic_0020212656>`   | GET /v1/{project_id}/cloudservers/flavors                  | ecs:cloudServerFlavors:get | ``-``           |
 +--------------------------------------------------------------------------------------------------+------------------------------------------------------------+----------------------------+-----------------+
 | :ref:`Querying the extra_specs value for an ECS (native OpenStack API) <en-us_topic_0065817706>` | GET /v2/{project_id}/flavors/{flavors_id}/os-extra_specs   | ecs:flavors:get            | ``-``           |
 |                                                                                                  |                                                            |                            |                 |

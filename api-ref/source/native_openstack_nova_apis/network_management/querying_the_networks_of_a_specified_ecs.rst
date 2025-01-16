@@ -8,7 +8,7 @@ Querying the Networks of a Specified ECS
 Function
 --------
 
-This API is used to query the networks of an ECS.
+This API is used to query the networks of a specified ECS.
 
 Constraints
 -----------
