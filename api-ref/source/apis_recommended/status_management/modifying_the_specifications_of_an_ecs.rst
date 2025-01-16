@@ -86,7 +86,7 @@ Change the ECS flavor to c3.15xlarge.2.
    POST https://{endpoint}/v1/{project_id}/cloudservers/{server_id}/resize
 
    {
-   "resize": {
+       "resize": {
            "flavorRef": "c3.15xlarge.2"
        }
    }

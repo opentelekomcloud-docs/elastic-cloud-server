@@ -12,7 +12,7 @@ SSH Key Management
 |                                                                                               |                                                      |                           |                 |
 |                                                                                               | POST /v2.1/{project_id}/os-keypairs                  |                           |                 |
 +-----------------------------------------------------------------------------------------------+------------------------------------------------------+---------------------------+-----------------+
-| :ref:`Querying a specified SSH key pair (native OpenStack API) <en-us_topic_0020212677>`      | GET /v2/{project_id}/os-keypairs/{keypair_name}      | ecs:serverKeypairs:get    | ``-``           |
+| :ref:`Querying an SSH key pair (native OpenStack API) <en-us_topic_0020212677>`               | GET /v2/{project_id}/os-keypairs/{keypair_name}      | ecs:serverKeypairs:get    | ``-``           |
 |                                                                                               |                                                      |                           |                 |
 |                                                                                               | GET /v2.1/{project_id}/os-keypairs/{keypair_name}    |                           |                 |
 +-----------------------------------------------------------------------------------------------+------------------------------------------------------+---------------------------+-----------------+

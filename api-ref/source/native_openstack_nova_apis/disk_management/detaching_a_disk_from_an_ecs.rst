@@ -13,9 +13,9 @@ This API is used to detach a disk from an ECS.
 Constraints
 -----------
 
-The system disk, the device name of which is **/dev/sda**, and user disks can be detached from an ECS only when the ECS is stopped. There are no requirements on OTC Tools.
+The system disk, the device name of which is **/dev/sda**, and user disks can be detached from an ECS only when the ECS is stopped. There are no requirements on the OSs and OTC Tools.
 
-When an ECS is in the **active** state, pay attention to the following constraints:
+When an ECS is in the **active** status, pay attention to the following constraints:
 
 #. Only data disks, the device name of which is not **/dev/sda**, can be detached from an ECS.
 #. Make sure that OTC Tools have been installed and enabled on the ECS. Otherwise, the uninstallation will fail.

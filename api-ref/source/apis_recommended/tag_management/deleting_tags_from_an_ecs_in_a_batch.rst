@@ -13,7 +13,7 @@ Function
 
 .. note::
 
-   -  This API is idempotent. When you delete a tag but the tag does not exist, a successful result is returned.
+   -  This API is idempotent. When you delete a tag but the tag does not exist, a successful result is returned by default.
 
 Constraints
 -----------

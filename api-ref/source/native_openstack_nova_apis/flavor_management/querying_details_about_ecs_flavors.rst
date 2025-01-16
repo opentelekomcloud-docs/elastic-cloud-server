@@ -40,7 +40,7 @@ GET /v2/{project_id}/flavors/detail?minDisk={minDisk}&minRam={minRam}&sort_key={
    +-----------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | sort_key  | No        | String | Indicates a sorting field, the default value of which is **flavorid**. The value of this parameter can also be **name**, **memory_mb**, **vcpus**, **root_gb**, or **flavorid**. |
    +-----------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | sort_dir  | No        | String | Specifies the ascending (**asc**) or descending (**desc**) sorting. Options: **asc** and **desc**                                                                                |
+   | sort_dir  | No        | String | Specifies the ascending (**asc**) or descending (**desc**) sorting. The default value is **asc**.                                                                                |
    +-----------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Request

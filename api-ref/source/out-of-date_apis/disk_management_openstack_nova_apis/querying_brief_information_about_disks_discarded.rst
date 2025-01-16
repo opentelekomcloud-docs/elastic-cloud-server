@@ -34,7 +34,7 @@ GET /v2.1/{project_id}/os-volumes
 Request
 -------
 
-N/A
+None
 
 Response
 --------

@@ -13,7 +13,7 @@ This API is used to create an ECS group.
 Constraints
 -----------
 
-Only anti-affinity policies are supported.
+Only anti-affinity groups are supported.
 
 URI
 ---

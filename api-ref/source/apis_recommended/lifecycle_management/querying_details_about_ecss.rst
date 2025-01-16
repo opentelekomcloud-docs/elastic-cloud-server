@@ -203,9 +203,6 @@ Example Response
                "OS-DCF:diskConfig":"MANUAL",
                "OS-EXT-AZ:availability_zone":"az1-dc1",
                "os:scheduler_hints":{
-                   "guestos_product_name":[
-                       "KVM Virtual Machine"
-                   ]
                },
                "OS-EXT-SRV-ATTR:root_device_name":"/dev/sda",
                "OS-EXT-SRV-ATTR:ramdisk_id":"8999878c-4a62-4014-89be-1743ff3a5daf",
@@ -301,9 +298,6 @@ Example Response
                "OS-DCF:diskConfig":"MANUAL",
                "OS-EXT-AZ:availability_zone":"az1-dc1",
                "os:scheduler_hints":{
-                   "guestos_product_name":[
-                       "KVM Virtual Machine"
-                   ]
                },
                "OS-EXT-SRV-ATTR:root_device_name":"/dev/sda",
                "OS-EXT-SRV-ATTR:ramdisk_id":"8999878c-4a62-4026-92be-1743ff3a5daf",
@@ -394,9 +388,6 @@ Example Response
                "OS-DCF:diskConfig":"MANUAL",
                "OS-EXT-AZ:availability_zone":"az1-dc1",
                "os:scheduler_hints":{
-                   "guestos_product_name":[
-                       "KVM Virtual Machine"
-                   ]
                },
                "OS-EXT-SRV-ATTR:root_device_name":"/dev/sda",
                "OS-EXT-SRV-ATTR:ramdisk_id":"8999878c-4a25-4014-92be-1743ff3a5daf",
@@ -496,9 +487,6 @@ Example Response
                "OS-DCF:diskConfig":"MANUAL",
                "OS-EXT-AZ:availability_zone":"az1-dc1",
                "os:scheduler_hints":{
-                   "guestos_product_name":[
-                       "KVM Virtual Machine"
-                   ]
                },
                "OS-EXT-SRV-ATTR:root_device_name":"/dev/sda",
                "OS-EXT-SRV-ATTR:ramdisk_id":"8999878c-4a62-4014-92be-1743ff3a5daf",

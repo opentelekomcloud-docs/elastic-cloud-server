@@ -126,7 +126,7 @@ Response
 Example Request
 ---------------
 
--  Add a NIC whose network ID is **3cb9bc59-5699-4588-a4b1-b87f96708bc6**.
+-  Add a NIC whose network ID is **3cb9bc59-5699-4588-a4b1-b87f96708bc6** to a specified ECS.
 
    .. code-block:: text
 
@@ -144,7 +144,7 @@ Example Request
           }
       }
 
--  Add a NIC whose port ID is **ce531f90-199f-48c0-816c-13e38010b442**.
+-  Add a NIC whose port ID is **ce531f90-199f-48c0-816c-13e38010b442** to a specified ECS.
 
    .. code-block:: text
 

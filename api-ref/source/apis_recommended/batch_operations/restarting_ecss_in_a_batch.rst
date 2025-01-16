@@ -53,7 +53,7 @@ Request
    +=================+=================+==================+===================================================================================================+
    | type            | Yes             | String           | Specifies the type of the restart operation.                                                      |
    |                 |                 |                  |                                                                                                   |
-   |                 |                 |                  | -  **SOFT**: soft restart                                                                         |
+   |                 |                 |                  | -  **SOFT**: normal restart                                                                       |
    |                 |                 |                  | -  **HARD**: forcible restart (hard restart)                                                      |
    +-----------------+-----------------+------------------+---------------------------------------------------------------------------------------------------+
    | servers         | Yes             | Array of objects | Specifies ECS IDs. For details, see :ref:`Table 4 <en-us_topic_0020212649__table26785545162223>`. |
