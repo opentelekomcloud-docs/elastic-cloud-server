@@ -10,7 +10,7 @@ What Is Image?
 
 An image is an ECS template that contains an OS. It may also contain proprietary software and application software, such as database software. You can use images to create ECSs.
 
-Images can be public or private. Public images are provided by the system by default, and private images are manually created. You can use any type of image to create an ECS. You can also create a private image using an existing ECS or external image. This provides you with a simple and fast way to create ECSs tailored to your needs. For example, if you use web services, your image can contain web server configurations, static configurations, and dynamic page code. After you use this image to create an ECS, the web server will run on the created ECS.
+Images can be public or private. Public images are provided by the system by default, and private images are manually created. You can use a public or private image to create an ECS. You can also create a private image using an existing ECS or external image. This provides you with a simple and fast way to create ECSs tailored to your needs. For example, if you use web services, your image can contain web server configurations, static configurations, and dynamic page code. After you use this image to create an ECS, the web server will run on the created ECS.
 
 
 Image Types

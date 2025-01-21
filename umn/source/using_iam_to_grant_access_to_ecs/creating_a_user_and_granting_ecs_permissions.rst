@@ -18,9 +18,9 @@ This section describes the procedure for granting permissions (see :ref:`Process
 Prerequisites
 -------------
 
-Before assigning permissions to user groups, you should learn about system policies supported by ECS and select the policies based on service requirements.
+Before assigning permissions to user groups, you should learn about system-defined policies supported by ECS and select the policies based on service requirements.
 
-For more information about system policies supported by ECS, see :ref:`Permissions Management <en-us_topic_0170232209>`.
+For details about system-defined policies supported by ECS, see :ref:`Permissions Management <en-us_topic_0170232209>`.
 
 .. _en-us_topic_0170265913__section197617372174:
 
