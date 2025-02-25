@@ -90,6 +90,7 @@ html_theme = 'otcdocs'
 # further. For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
+    "logo_url": "https://docs.otc.t-systems.com",
 }
 
 # The name for this set of Sphinx documents.  If None, it defaults to
