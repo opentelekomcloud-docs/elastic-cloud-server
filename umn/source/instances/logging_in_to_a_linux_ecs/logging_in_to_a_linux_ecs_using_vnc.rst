@@ -118,7 +118,7 @@ Logging In to an ECS Using an English Keyboard
    In the displayed **Configure Keyboard Layout for Remote Login** dialog box, select the English keyboard.
 
 
-   .. figure:: /_static/images/en-us_image_0030874270.png
+   .. figure:: /_static/images/en-us_image_0000002176822257.png
       :alt: **Figure 1** Keyboard layout configuration
 
       **Figure 1** Keyboard layout configuration
@@ -128,7 +128,7 @@ Logging In to an ECS Using an English Keyboard
 #. (Optional) If you have changed the system language, in the dialog box that is displayed, click **Start Remote Login**.
 
 
-   .. figure:: /_static/images/en-us_image_0162732803.png
+   .. figure:: /_static/images/en-us_image_0000002141305390.png
       :alt: **Figure 2** Remote Login
 
       **Figure 2** Remote Login
@@ -169,7 +169,7 @@ Logging In to an ECS Using a Non-English Keyboard
 #. In the displayed **Configure Keyboard Layout for Remote Login** dialog box, select the English keyboard.
 
 
-   .. figure:: /_static/images/en-us_image_0030874270.png
+   .. figure:: /_static/images/en-us_image_0000002176822257.png
       :alt: **Figure 5** Keyboard layout configuration
 
       **Figure 5** Keyboard layout configuration
@@ -179,7 +179,7 @@ Logging In to an ECS Using a Non-English Keyboard
 8.  (Optional) If you have changed the system language, in the dialog box that is displayed, click **Start Remote Login**.
 
 
-    .. figure:: /_static/images/en-us_image_0162732803.png
+    .. figure:: /_static/images/en-us_image_0000002141305390.png
        :alt: **Figure 6** Remote Login
 
        **Figure 6** Remote Login

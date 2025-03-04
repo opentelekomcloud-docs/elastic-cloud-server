@@ -21,9 +21,13 @@ Scenarios
 
 -  Applications
 
-   General-purpose ECSs are suitable for applications that have no special requirements on CPU performance, memory, disk capacity, or bandwidth, but have high requirements on security and reliability. Example applications include web servers, R&D and testing environments, and small-scale databases. They feature low initial investment and maintenance costs.
+   Web servers, R&D and testing environments for developers, and small-scale databases
 
--  Application scenarios
+-  Features:
+
+   The applications have no special requirements on vCPUs, memory, disk capacity, and bandwidth, but have high requirements on security and reliability. Users require low initial investment and maintenance costs.
+
+-  Application scenarios:
 
    Enterprise website deployment, enterprise office environment setup, and enterprise R&D and testing activities
 

@@ -60,7 +60,7 @@ Viewing Real-Time Traces in the Trace List
 
    |image5|
 
-#. For details about key fields in the trace structure, see section "Trace References" > "Trace Structure" and section "Trace References" > "Example Traces" in the *CTS User Guide*.
+#. For details about key fields in the trace structure, see `Trace Structure <https://docs.otc.t-systems.com/cloud-trace-service/umn/user_guide/trace_references/trace_structure.html#cts-03-0010>`__ and `Example Traces <https://docs.otc.t-systems.com/cloud-trace-service/umn/user_guide/trace_references/example_traces.html>`__ in the *CTS User Guide*.
 
 .. |image1| image:: /_static/images/en-us_image_0000001696838310.png
 .. |image2| image:: /_static/images/en-us_image_0000001696678850.png
