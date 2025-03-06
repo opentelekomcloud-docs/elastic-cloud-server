@@ -82,7 +82,7 @@ Enabling IPv6 for an ECS
 
 8. In the **Subnet Information** area, click **Enable** for **IPv6 CIDR Block**.
 
-9. Click **OK**.
+9. Click **Yes**.
 
 .. _en-us_topic_0140963099__en-us_topic_0129883696_section0206266172:
 

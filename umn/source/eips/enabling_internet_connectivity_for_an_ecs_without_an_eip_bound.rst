@@ -42,7 +42,7 @@ The following uses CentOS 7.9 as an example. The operations apply to CentOS 7.9 
 
 #. Click the name of the proxy ECS. The page providing details about the ECS is displayed.
 
-#. On the **Network Interfaces** tab, click |image2|. Then, disable **Source/Destination Check**.
+#. On the **NICs** tab, click |image2|. Then, disable **Source/Destination Check**.
 
 
    .. figure:: /_static/images/en-us_image_0000001659671776.png

@@ -2,11 +2,11 @@
 
 .. _en-us_topic_0092497777:
 
-Elastic Network Interfaces
-==========================
+NICs
+====
 
--  :ref:`Attaching a Network Interface <en-us_topic_0093492518>`
--  :ref:`Detaching a Network Interface <en-us_topic_0093492519>`
+-  :ref:`Adding a NIC <en-us_topic_0093492518>`
+-  :ref:`Deleting a NIC <en-us_topic_0093492519>`
 -  :ref:`Modifying a Private IP Address <en-us_topic_0133339807>`
 -  :ref:`Managing Virtual IP Addresses <en-us_topic_0093492520>`
 -  :ref:`Enabling NIC Multi-Queue <en-us_topic_0058758453>`
@@ -16,8 +16,8 @@ Elastic Network Interfaces
    :maxdepth: 1
    :hidden: 
 
-   attaching_a_network_interface
-   detaching_a_network_interface
+   adding_a_nic
+   deleting_a_nic
    modifying_a_private_ip_address
    managing_virtual_ip_addresses
    enabling_nic_multi-queue

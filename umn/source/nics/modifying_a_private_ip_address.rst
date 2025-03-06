@@ -29,7 +29,7 @@ Procedure
 
    The ECS details page is displayed.
 
-#. Click the **Network Interfaces** tab. Locate the row containing the network interface and click **Modify Private IP**.
+#. Click the **NICs** tab. Locate the row containing the network interface and click **Modify Private IP**.
 
    The **Modify Private IP** dialog box is displayed.
 
