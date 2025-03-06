@@ -44,4 +44,4 @@ You can access ECS through the web-based management console or HTTPS-based appli
 
    Use this method if you are not required to integrate ECSs with a third-party system.
 
-   Log in to the management console with your account and choose **Elastic Cloud Server** on the homepage.
+   Log in to the management console with your account and choose **Elastic Cloud Server** from the service list.

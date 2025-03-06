@@ -57,7 +57,7 @@ Network QoS uses basic technologies to improve the quality of network communicat
 
 To obtain the QoS data of an ECS flavor, including the maximum bandwidth, assured bandwidth, maximum intranet PPS, and NIC multi-queue, see :ref:`A Summary List of ECS Specifications <en-us_topic_0177512565>`.
 
-The intranet bandwidth and PPS of an ECS are determined by the ECS flavor.
+Constraints on network performance vary depending on ECS flavors.
 
 -  Assured intranet bandwidth: indicates the guaranteed bandwidth allocated to an ECS when there is a network bandwidth contention in the entire network.
 
@@ -67,7 +67,7 @@ The intranet bandwidth and PPS of an ECS are determined by the ECS flavor.
 
    PPS: packets per second, indicates the number of packets received and sent per second. It is usually used to measure the network performance.
 
--  NIC multi-queues: allocates NIC interrupt requests to multiple vCPUs for higher PPS performance and bandwidth
+-  NIC multi-queues: allocates NIC interruptions to multiple vCPUs for higher PPS performance and bandwidth
 
 -  Maximum NICs: indicates the maximum number of NICs that can be attached to an ECS.
 
@@ -75,6 +75,6 @@ The intranet bandwidth and PPS of an ECS are determined by the ECS flavor.
 
 .. note::
 
-   -  For instructions about how to test PPS, see :ref:`How Can I Test the Network Performance of Linux ECSs? <en-us_topic_0115820205>`.
+   -  For instructions about how to test PPS, see :ref:`How Can I Test the Network Performance of Linux ECSs? <en-us_topic_0115820205>`
    -  For instructions about how to enable NIC multi-queue, see :ref:`Enabling NIC Multi-Queue <en-us_topic_0058758453>`.
    -  The maximum bandwidth is the total bandwidth allocated to an ECS. If an ECS has multiple NICs, the sum of the maximum bandwidths allocated to all NICs cannot exceed the maximum bandwidth allocated to the ECS.
