@@ -10,12 +10,8 @@ Scenarios
 
 After you enable CTS and the management tracker is created, CTS starts recording operations on cloud resources. Cloud Trace Service (CTS) stores operation records (traces) generated in the last seven days.
 
-.. note::
-
-   These operation records are retained for seven days on the CTS console and are automatically deleted upon expiration. Manual deletion is not supported.
-
-Viewing Real-Time Traces
-------------------------
+Viewing Real-Time Traces in the Trace List
+------------------------------------------
 
 #. Log in to the management console.
 

@@ -26,7 +26,7 @@ Constraints
 
 -  This document applies to ECSs running Ubuntu 16.04, 18.04, and 20.04.
 -  The Ubuntu ECS must have an EIP bound or have an intranet image source configured.
--  Before installing a GUI on an ECS, ensure that the idle memory is greater than or equal to 2 GB. Otherwise, the GUI installation may fail or the ECS cannot be started after the installation.
+-  Before installing a GUI on an ECS, ensure that the memory is no less than 2 GB to prevent GUI installation or ECS startup failures.
 -  GPU-accelerated ECSs must have a correct GPU driver installed. For details, see :ref:`GPU Driver <en-us_topic_0234802636>`.
 
 .. _en-us_topic_0155136016__section171371109342:
@@ -77,7 +77,7 @@ Installing a GUI
 
    (Mandatory for Ubuntu 20.04) Add a member account.
 
-   After GUI desktop component is installed on the ECS, you cannot log in to the Ubuntu 20.04 OS as user root **user**. You need to add a member account for logging in to the GUI desktop.
+   After the GUI desktop component is installed on the ECS, you cannot log in to the Ubuntu 20.04 OS as user **root**. You need to add a member account for logging in to the GUI desktop.
 
    Run the following command to add user **user01**:
 

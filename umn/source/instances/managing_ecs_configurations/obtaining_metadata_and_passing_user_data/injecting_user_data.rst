@@ -15,8 +15,8 @@ Specify **User Data** to inject user data into ECSs to:
 -  Upload your scripts to ECSs during ECS creation.
 -  Perform other tasks using scripts.
 
-Use Restrictions
-----------------
+Constraints
+-----------
 
 -  Linux
 
