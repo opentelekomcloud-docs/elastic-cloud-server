@@ -5,10 +5,10 @@
 Modifying ECS Specifications (vCPUs and Memory)
 ===============================================
 
--  :ref:`Modifying Individual ECS Specifications <en-us_topic_0013771092>`
+-  :ref:`Modifying Specifications of Individual ECSs <en-us_topic_0013771092>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
-   modifying_individual_ecs_specifications
+   modifying_specifications_of_individual_ecss

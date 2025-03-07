@@ -5,7 +5,7 @@
 How Can I Enable Virtual Memory on a Windows ECS?
 =================================================
 
-Enabling ECS virtual memory will deteriorate I/O performance. If the memory is insufficient, you are advised to expand the memory by referring to :ref:`Modifying ECS Specifications (vCPUs and Memory) <en-us_topic_0030828258>`. If you really need to enable virtual memory, see the operations described below.
+Enabling ECS virtual memory will deteriorate I/O performance. If the ECS memory is insufficient, increase the memory by performing the operations in :ref:`Modifying ECS Specifications (vCPUs and Memory) <en-us_topic_0030828258>`. If you really need to enable virtual memory, see the operations described below.
 
 .. note::
 

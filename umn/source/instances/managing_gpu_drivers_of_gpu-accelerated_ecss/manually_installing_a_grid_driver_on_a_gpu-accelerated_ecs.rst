@@ -49,7 +49,7 @@ Purchasing a GRID License
       The method of using a trial license is the same as that of using an official license. You can use an official license to activate an account with a trial license to prevent repetitive registration. The trial license has a validity period of 90 days. After the trial license expires, it cannot be used anymore. Purchase an official license then.
 
 
-   .. figure:: /_static/images/en-us_image_0178069404.png
+   .. figure:: /_static/images/en-us_image_0000002114597602.png
       :alt: **Figure 1** Applying for a trial license
 
       **Figure 1** Applying for a trial license
