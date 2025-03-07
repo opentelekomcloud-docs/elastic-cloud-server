@@ -38,7 +38,7 @@ Scenarios
 
 -  Applications
 
-   Disk-intensive ECSs are suitable for applications that require large volumes of data to process, high I/O performance, and rapid data switching and processing.
+   Disk-intensive ECSs are suitable for applications that require large volumes of data to process, high I/O performance, and rapid data switching and processing, such as MapReduce, Hadoop, and data-intensive computing.
 
 -  Application scenarios
 
@@ -198,7 +198,7 @@ Notes
 
 -  D2 ECSs do not support OS reinstallation or change.
 
--  D2 ECSs can use both local disks and EVS disks to store data. In addition, they can have EVS disks attached to provide a larger storage size. Use restrictions on the two types of storage media are as follows:
+-  D2 ECSs can use both local disks and EVS disks to store data. In addition, they can have EVS disks attached to provide a larger storage size. Note the following when using the two types of storage media:
 
    -  Only an EVS disk, not a local disk, can be used as the system disk of a D2 ECS.
 
@@ -230,4 +230,4 @@ Notes
 
 -  Do not store service data in local disks for a long time. Instead, store it in EVS disks. To improve data security, use a high availability architecture and back up data in a timely manner.
 
--  Local disks can only be purchased during ECS creation. The quantity and capacity of your local disks are determined according to the specifications of your ECS.
+-  Local disks can only be purchased during D2 ECS creation. The quantity and capacity of your local disks are determined according to the specifications of your ECS.

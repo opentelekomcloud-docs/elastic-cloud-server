@@ -69,7 +69,7 @@ Solution
 
    g. Run the following command to go to the **/sysroot** directory:
 
-      **# chroot /sysroot**
+      **chroot /sysroot**
 
 2. .. _en-us_topic_0240708483__li12380124143314:
 

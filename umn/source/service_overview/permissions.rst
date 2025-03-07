@@ -2,10 +2,10 @@
 
 .. _en-us_topic_0170232209:
 
-Permissions Management
-======================
+Permissions
+===========
 
-If you need to assign different permissions to employees in your enterprise to access your ECS resources, IAM is a good choice for fine-grained permissions management. IAM provides identity authentication, permissions management, and access control, helping you secure access to your resources.
+If you need to grant your enterprise personnel permission to access your ECS resources, use IAM. IAM provides identity authentication, permissions management, and access control, helping you secure access to your resources.
 
 With IAM, you can use your account to create IAM users, and assign permissions to the users to control their access to specific resources. For example, some software developers in your enterprise need to use ECS resources but should not be allowed to delete the resources or perform any other high-risk operations. In this scenario, you can create IAM users for the software developers and grant them only the permissions required for using ECS resources.
 
@@ -55,7 +55,7 @@ You can grant users permissions by using roles and policies.
    |                       |                                                                                                                                                                                      |                                                                                           |
    |                       | If a user needs to create, delete, or change resources of other services, the user must also be granted administrator permissions of the corresponding services in the same project. |                                                                                           |
    |                       |                                                                                                                                                                                      |                                                                                           |
-   |                       | For example, if a user needs to create a new VPC when creating an ECS, the user must also be granted permissions with the **VPC Administrator** role.                                |                                                                                           |
+   |                       | For example, if a user needs to create a VPC when creating an ECS, the user must also be granted permissions with the **VPC Administrator** role.                                    |                                                                                           |
    +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
 
 :ref:`Table 3 <en-us_topic_0170232209__table470371811355>` lists the common operations supported by each system-defined policy of ECS. Select the policies as required.

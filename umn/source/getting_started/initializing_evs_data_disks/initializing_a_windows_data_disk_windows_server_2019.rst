@@ -120,7 +120,7 @@ Procedure
 
       **Figure 8** Format Partition
 
-#. Specify format settings and click **Next**. The system selects the NTFS file system by default. You can specify the file system type as required. In this example, the default setting is used.
+#. Specify format settings and click **Next**. The system selects the NTFS file system by default. You can specify the file system format as required. In this example, the default setting is used.
 
    The **Completing the New Simple Volume Wizard** page is displayed.
 

@@ -25,7 +25,7 @@ Procedure
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
-#. In the ECS list, locate the row that contains the target ECS. Click **More** in the **Operation** column and select **Manage Network** > **Change Security Group**.
+#. In the ECS list, choose **More** > **Manage Network** > **Change Security Group** in the **Operation** column.
 
    The **Change Security Group** dialog box is displayed.
 

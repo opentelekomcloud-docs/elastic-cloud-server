@@ -10,9 +10,9 @@ Overview
 
 Large-memory ECSs provide an even larger amount of memory than memory-optimized ECSs. They are used for applications that require a large amount of memory, rapid data switching, low latency, and capability of processing large volumes of data. Large-memory ECSs provide large memory and high computing, storage, and network performance.
 
--  Applications
+-  Features:
 
-   Large-memory ECSs are suitable for applications that require a large amount of memory, rapid data switching, and low latency, and process large volumes of data.
+   The applications are for large-scale, enterprise-class, in-memory applications, process large volumes of data, and require rapid data switching, processing and low latency storage resource.
 
 -  Application scenarios
 
@@ -28,9 +28,9 @@ Specifications
    |                |       |        |                        |          |                 |           |                |                                |
    |                |       | (GiB)  | (Gbit/s)               | (10,000) |                 |           |                |                                |
    +================+=======+========+========================+==========+=================+===========+================+================================+
-   | e6.26xlarge.28 | 104   | 2948   | 30/20                  | 550      | 16              | 8         | KVM            | CPU: Intel® Xeon® Skylake 8280 |
+   | e6.26xlarge.28 | 104   | 2,948  | 30/20                  | 550      | 16              | 8         | KVM            | CPU: Intel® Xeon® Skylake 8280 |
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
-   | e6.52xlarge.28 | 208   | 5896   | 40/40                  | 1,000    | 32              | 8         | KVM            |                                |
+   | e6.52xlarge.28 | 208   | 5,896  | 40/40                  | 1,000    | 32              | 8         | KVM            |                                |
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
 
 .. table:: **Table 2** E3 ECS specifications
@@ -44,9 +44,9 @@ Specifications
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
    | e3.14xlarge.12 | 56    | 696    | 25/25                  | 500      | 16              | 8         | KVM            |                                |
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
-   | e3.26xlarge.14 | 104   | 1466   | 30/20                  | 550      | 16              | 8         | KVM            | CPU: Intel® Xeon® Skylake 8176 |
+   | e3.26xlarge.14 | 104   | 1,466  | 30/20                  | 550      | 16              | 8         | KVM            | CPU: Intel® Xeon® Skylake 8176 |
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
-   | e3.52xlarge.14 | 208   | 2932   | 40/40                  | 1,000    | 32              | 8         | KVM            |                                |
+   | e3.52xlarge.14 | 208   | 2,932  | 40/40                  | 1,000    | 32              | 8         | KVM            |                                |
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+----------------+--------------------------------+
 
 Notes

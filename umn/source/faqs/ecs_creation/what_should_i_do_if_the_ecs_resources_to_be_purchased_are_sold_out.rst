@@ -5,4 +5,9 @@
 What Should I Do If the ECS Resources to Be Purchased Are Sold Out?
 ===================================================================
 
-Each region has two or three AZs. If resources in an AZ are sold out, you can change the AZ and purchase resources in another AZ.
+When you are purchasing ECSs, the selected specifications may be sold out. In this case, the specifications cannot be purchased in the current region or AZ.
+
+Each region has multiple AZs. If resources in an AZ are sold out, you are advised to:
+
+-  Switch to another AZ to purchase the resources.
+-  Purchase other resources that are not sold out.

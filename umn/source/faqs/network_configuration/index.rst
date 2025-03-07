@@ -7,8 +7,8 @@ Network Configuration
 
 -  :ref:`How Can I Configure the NTP and DNS Servers for an ECS? <en-us_topic_0074825901>`
 -  :ref:`How Do I Configure DNS for an ECS? <en-us_topic_0198270920>`
--  :ref:`Can the ECSs of Different Accounts Communicate over an Intranet? <en-us_topic_0018078501>`
--  :ref:`Will ECSs That I Purchased Deployed in the Same Subnet? <en-us_topic_0018078503>`
+-  :ref:`Can the ECSs of Different Accounts in Different VPCs Communicate over an Intranet? <en-us_topic_0018078501>`
+-  :ref:`Will My ECSs Be Deployed in the Same Subnet? <en-us_topic_0018078503>`
 -  :ref:`How Do I Configure Port Mapping? <en-us_topic_0101604507>`
 -  :ref:`How Can I Obtain the MAC Address of My ECS? <en-us_topic_0101604506>`
 -  :ref:`How Can I View and Modify Kernel Parameters of a Linux ECS? <en-us_topic_0107659745>`
@@ -24,8 +24,8 @@ Network Configuration
 
    how_can_i_configure_the_ntp_and_dns_servers_for_an_ecs
    how_do_i_configure_dns_for_an_ecs
-   can_the_ecss_of_different_accounts_communicate_over_an_intranet
-   will_ecss_that_i_purchased_deployed_in_the_same_subnet
+   can_the_ecss_of_different_accounts_in_different_vpcs_communicate_over_an_intranet
+   will_my_ecss_be_deployed_in_the_same_subnet
    how_do_i_configure_port_mapping
    how_can_i_obtain_the_mac_address_of_my_ecs
    how_can_i_view_and_modify_kernel_parameters_of_a_linux_ecs

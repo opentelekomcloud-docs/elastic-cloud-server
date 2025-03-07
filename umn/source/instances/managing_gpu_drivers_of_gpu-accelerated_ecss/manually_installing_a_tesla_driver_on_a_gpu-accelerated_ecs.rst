@@ -45,7 +45,7 @@ Installation process:
 Installing a Tesla Driver on a Linux ECS
 ----------------------------------------
 
-The following uses Ubuntu 16.04 64bit as an example to describe how to install the Tesla driver matching CUDA 10.1 on a GPU-accelerated ECS.
+The following uses Ubuntu 20.04 64bit as an example to describe how to install the Tesla driver matching CUDA 10.1 on a GPU-accelerated ECS.
 
 .. note::
 
@@ -69,10 +69,10 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 
 #. Download the NVIDIA driver package.
 
-   Select a driver version at `NVIDIA Driver Downloads <https://www.nvidia.com/Download/index.aspx?lang=en-us>`__ based on the ECS type. Click **SEARCH**.
+   Select a driver at `NVIDIA Driver Downloads <https://www.nvidia.com/Download/index.aspx?lang=en-us>`__ based on the ECS type.
 
 
-   .. figure:: /_static/images/en-us_image_0234354896.png
+   .. figure:: /_static/images/en-us_image_0000002114600494.png
       :alt: **Figure 1** Selecting a NVIDIA driver version
 
       **Figure 1** Selecting a NVIDIA driver version
@@ -80,20 +80,14 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 #. Select a driver version as required. The following uses Tesla 418.67 as an example.
 
 
-   .. figure:: /_static/images/en-us_image_0234354931.png
+   .. figure:: /_static/images/en-us_image_0000002150126353.png
       :alt: **Figure 2** Selecting a driver version
 
       **Figure 2** Selecting a driver version
 
-#. Click the driver to be downloaded. On the **TESLA DRIVER FOR LINUX X64** page that is displayed, click **DOWNLOAD**.
+#. Click **View** in the row containing the driver to be downloaded.
 
-#. Copy the download link.
-
-
-   .. figure:: /_static/images/en-us_image_0234355284.png
-      :alt: **Figure 3** Copying the download link
-
-      **Figure 3** Copying the download link
+#. Right-click **Download** and copy the download link.
 
 #. Run the following command on the ECS to download the driver:
 
@@ -103,9 +97,9 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 
 
    .. figure:: /_static/images/en-us_image_0234355299.png
-      :alt: **Figure 4** Obtaining the installation package
+      :alt: **Figure 3** Obtaining the installation package
 
-      **Figure 4** Obtaining the installation package
+      **Figure 3** Obtaining the installation package
 
 #. Run the following command to install the driver:
 
@@ -115,9 +109,9 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 
 
    .. figure:: /_static/images/en-us_image_0250287387.png
-      :alt: **Figure 5** Disabling the Nouveau driver
+      :alt: **Figure 4** Disabling the Nouveau driver
 
-      **Figure 5** Disabling the Nouveau driver
+      **Figure 4** Disabling the Nouveau driver
 
    a. Run the following command to check whether the Nouveau driver has been installed:
 
@@ -163,9 +157,9 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 
 
    .. figure:: /_static/images/en-us_image_0250287611.png
-      :alt: **Figure 6** Completing the NVIDIA driver installation
+      :alt: **Figure 5** Completing the NVIDIA driver installation
 
-      **Figure 6** Completing the NVIDIA driver installation
+      **Figure 5** Completing the NVIDIA driver installation
 
 #. Run the following command to set systemd:
 
@@ -177,9 +171,9 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 
 
    .. figure:: /_static/images/en-us_image_0234355305.png
-      :alt: **Figure 7** Viewing the NVIDIA driver version
+      :alt: **Figure 6** Viewing the NVIDIA driver version
 
-      **Figure 7** Viewing the NVIDIA driver version
+      **Figure 6** Viewing the NVIDIA driver version
 
 .. _en-us_topic_0149470468__section244363219171:
 
@@ -195,52 +189,46 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
    Select a driver version at `NVIDIA Driver Downloads <https://www.nvidia.com/Download/index.aspx?lang=en-us>`__ based on the ECS type.
 
 
-   .. figure:: /_static/images/en-us_image_0234356929.png
-      :alt: **Figure 8** Selecting a driver type (Windows)
+   .. figure:: /_static/images/en-us_image_0000002114450902.png
+      :alt: **Figure 7** Selecting a driver type (Windows)
 
-      **Figure 8** Selecting a driver type (Windows)
+      **Figure 7** Selecting a driver type (Windows)
 
 #. Select a driver version as required. The following uses Tesla 425.25 as an example.
 
 
-   .. figure:: /_static/images/en-us_image_0234356990.png
-      :alt: **Figure 9** Selecting a driver version (Windows)
+   .. figure:: /_static/images/en-us_image_0000002114454596.png
+      :alt: **Figure 8** Selecting a driver version (Windows)
 
-      **Figure 9** Selecting a driver version (Windows)
+      **Figure 8** Selecting a driver version (Windows)
 
-#. Click the driver to be downloaded. On the **TESLA DRIVER FOR WINDOWS** page that is displayed, click **DOWNLOAD**.
+#. Click **View** in the row containing the driver to be downloaded.
 
-#. Click **AGREE & DOWNLOAD** to download the installation package.
-
-
-   .. figure:: /_static/images/en-us_image_0234357031.png
-      :alt: **Figure 10** Downloading the driver installation package
-
-      **Figure 10** Downloading the driver installation package
+#. Click **Download** to download the installation package.
 
 #. Double-click the driver and click **Run**.
 
 
    .. figure:: /_static/images/en-us_image_0234357053.png
-      :alt: **Figure 11** Running the NVIDIA driver installation program
+      :alt: **Figure 9** Running the NVIDIA driver installation program
 
-      **Figure 11** Running the NVIDIA driver installation program
+      **Figure 9** Running the NVIDIA driver installation program
 
 #. Select an installation path and click **OK**.
 
 
    .. figure:: /_static/images/en-us_image_0234357336.png
-      :alt: **Figure 12** Selecting an installation path
+      :alt: **Figure 10** Selecting an installation path
 
-      **Figure 12** Selecting an installation path
+      **Figure 10** Selecting an installation path
 
 #. Install the NVIDIA program as prompted.
 
 
    .. figure:: /_static/images/en-us_image_0234357355.png
-      :alt: **Figure 13** Completing the driver installation
+      :alt: **Figure 11** Completing the driver installation
 
-      **Figure 13** Completing the driver installation
+      **Figure 11** Completing the driver installation
 
 #. Restart the ECS.
 
@@ -250,9 +238,9 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
 
 
       .. figure:: /_static/images/en-us_image_0234357385.png
-         :alt: **Figure 14** Display adapters
+         :alt: **Figure 12** Display adapters
 
-         **Figure 14** Display adapters
+         **Figure 12** Display adapters
 
    b. Open the **cmd** window on the ECS and run the following commands:
 
@@ -264,16 +252,16 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
 
 
       .. figure:: /_static/images/en-us_image_0234357365.png
-         :alt: **Figure 15** Viewing the NVIDIA driver version
+         :alt: **Figure 13** Viewing the NVIDIA driver version
 
-         **Figure 15** Viewing the NVIDIA driver version
+         **Figure 13** Viewing the NVIDIA driver version
 
 .. _en-us_topic_0149470468__section1034245773916:
 
 Installing the CUDA Toolkit on a Linux ECS
 ------------------------------------------
 
-The following uses Ubuntu 16.04 64bit as an example to describe how to install the CUDA 10.1 toolkit on a GPU-accelerated ECS.
+The following uses Ubuntu 20.04 64bit as an example to describe how to install the CUDA 10.1 toolkit on a GPU-accelerated ECS.
 
 #. Log in to the ECS.
 
@@ -294,18 +282,12 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 #. On the CUDA download page, set parameters according to the information shown in :ref:`Obtaining a Tesla Driver and CUDA Toolkit <en-us_topic_0213874991>`.
 
 
-   .. figure:: /_static/images/en-us_image_0250288087.png
-      :alt: **Figure 16** Selecting a CUDA version
+   .. figure:: /_static/images/en-us_image_0000002150256677.png
+      :alt: **Figure 14** Selecting a CUDA version
 
-      **Figure 16** Selecting a CUDA version
+      **Figure 14** Selecting a CUDA version
 
 #. Find the link for downloading CUDA 10.1 and copy the link.
-
-
-   .. figure:: /_static/images/en-us_image_0250288474.png
-      :alt: **Figure 17** Copying the link for downloading CUDA
-
-      **Figure 17** Copying the link for downloading CUDA
 
 5. Run the following command on the ECS to download CUDA:
 
@@ -315,19 +297,13 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 
 
    .. figure:: /_static/images/en-us_image_0234358619.png
-      :alt: **Figure 18** Downloading CUDA
+      :alt: **Figure 15** Downloading CUDA
 
-      **Figure 18** Downloading CUDA
+      **Figure 15** Downloading CUDA
 
 6.  Install CUDA.
 
     Follow the instructions provided on the official NVIDIA website.
-
-
-    .. figure:: /_static/images/en-us_image_0250288371.png
-       :alt: **Figure 19** Installing CUDA
-
-       **Figure 19** Installing CUDA
 
 7.  Run the following command to install CUDA:
 
@@ -337,23 +313,23 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 
 
     .. figure:: /_static/images/en-us_image_0234358634.png
-       :alt: **Figure 20** Installing CUDA_1
+       :alt: **Figure 16** Installing CUDA_1
 
-       **Figure 20** Installing CUDA_1
+       **Figure 16** Installing CUDA_1
 
 9.  Select **Install** and press **Enter** to start the installation.
 
 
     .. figure:: /_static/images/en-us_image_0234358642.png
-       :alt: **Figure 21** Installing CUDA_2
+       :alt: **Figure 17** Installing CUDA_2
 
-       **Figure 21** Installing CUDA_2
+       **Figure 17** Installing CUDA_2
 
 
     .. figure:: /_static/images/en-us_image_0234358704.png
-       :alt: **Figure 22** Completing the installation
+       :alt: **Figure 18** Completing the installation
 
-       **Figure 22** Completing the installation
+       **Figure 18** Completing the installation
 
 10. Run the following command to switch to **/usr/local/cuda-10.1/samples/1_Utilities/deviceQuery**:
 
@@ -369,9 +345,9 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 
 
     .. figure:: /_static/images/en-us_image_0234358719.png
-       :alt: **Figure 23** deviceQuery common output
+       :alt: **Figure 19** deviceQuery common output
 
-       **Figure 23** deviceQuery common output
+       **Figure 19** deviceQuery common output
 
 13. Check the CUDA version.
 
@@ -379,9 +355,9 @@ The following uses Ubuntu 16.04 64bit as an example to describe how to install t
 
 
     .. figure:: /_static/images/en-us_image_0234358804.png
-       :alt: **Figure 24** Checking the CUDA version
+       :alt: **Figure 20** Checking the CUDA version
 
-       **Figure 24** Checking the CUDA version
+       **Figure 20** Checking the CUDA version
 
 14. Run the following command to enable the persistent mode:
 
@@ -402,17 +378,17 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
 
 
    .. figure:: /_static/images/en-us_image_0250288895.png
-      :alt: **Figure 25** Selecting a CUDA version
+      :alt: **Figure 21** Selecting a CUDA version
 
-      **Figure 25** Selecting a CUDA version
+      **Figure 21** Selecting a CUDA version
 
 #. Find the link for downloading CUDA 10.1.
 
 
    .. figure:: /_static/images/en-us_image_0250289123.png
-      :alt: **Figure 26** Finding the link for downloading CUDA
+      :alt: **Figure 22** Finding the link for downloading CUDA
 
-      **Figure 26** Finding the link for downloading CUDA
+      **Figure 22** Finding the link for downloading CUDA
 
 #. Click **Download** to download the CUDA toolkit.
 
@@ -420,25 +396,25 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
 
 
    .. figure:: /_static/images/en-us_image_0234360248.png
-      :alt: **Figure 27** Installing CUDA
+      :alt: **Figure 23** Installing CUDA
 
-      **Figure 27** Installing CUDA
+      **Figure 23** Installing CUDA
 
 #. On the **CUDA Setup Package** page, select an installation path and click **OK**.
 
 
    .. figure:: /_static/images/en-us_image_0234360274.png
-      :alt: **Figure 28** Selecting an installation path
+      :alt: **Figure 24** Selecting an installation path
 
-      **Figure 28** Selecting an installation path
+      **Figure 24** Selecting an installation path
 
 #. Install the CUDA toolkit as prompted.
 
 
    .. figure:: /_static/images/en-us_image_0234360255.png
-      :alt: **Figure 29** Completing the installation
+      :alt: **Figure 25** Completing the installation
 
-      **Figure 29** Completing the installation
+      **Figure 25** Completing the installation
 
 8. Check whether CUDA has been installed
 
@@ -450,6 +426,6 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
 
 
    .. figure:: /_static/images/en-us_image_0234360293.png
-      :alt: **Figure 30** Successful installation
+      :alt: **Figure 26** Successful installation
 
-      **Figure 30** Successful installation
+      **Figure 26** Successful installation
