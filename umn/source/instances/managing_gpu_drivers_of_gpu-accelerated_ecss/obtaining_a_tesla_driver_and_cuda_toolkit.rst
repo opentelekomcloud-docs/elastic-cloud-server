@@ -46,15 +46,9 @@ The following uses Tesla T4 as an example to describe how to download the driver
 #. Select the Linux operating system and the CUDA Toolkit 11.6 version.
 
 
-   .. figure:: /_static/images/en-us_image_0000001411215958.png
+   .. figure:: /_static/images/en-us_image_0000002150031409.png
       :alt: **Figure 1** Selecting the CUDA Toolkit version
 
       **Figure 1** Selecting the CUDA Toolkit version
 
-#. Select a CUDA Toolkit 11.6 package to download.
-
-
-   .. figure:: /_static/images/en-us_image_0000001461461773.png
-      :alt: **Figure 2** Downloading a CUDA Toolkit 11.6 package
-
-      **Figure 2** Downloading a CUDA Toolkit 11.6 package
+#. Select your desired version and download the package.

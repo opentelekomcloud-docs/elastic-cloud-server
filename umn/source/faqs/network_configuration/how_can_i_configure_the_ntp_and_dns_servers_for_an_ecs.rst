@@ -107,24 +107,27 @@ Take an ECS running Windows Server 2012 as an example.
 
    a. Double-click network connections.
 
-   b. Click **Properties** in the lower left corner.
+   b. Click **Properties** in the lower left corner, as shown in :ref:`Figure 2 <en-us_topic_0074825901__en-us_topic_0093971249_fig2100910145714>`.
 
+      .. _en-us_topic_0074825901__en-us_topic_0093971249_fig2100910145714:
 
       .. figure:: /_static/images/en-us_image_0280664270.png
          :alt: **Figure 2** Local area connection
 
          **Figure 2** Local area connection
 
-   c. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**.
+   c. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**, as shown in :ref:`Figure 3 <en-us_topic_0074825901__en-us_topic_0093971249_fig1100121010571>`.
 
+      .. _en-us_topic_0074825901__en-us_topic_0093971249_fig1100121010571:
 
       .. figure:: /_static/images/en-us_image_0280664288.png
          :alt: **Figure 3** Selecting a protocol type
 
          **Figure 3** Selecting a protocol type
 
-   d. Select **Use the following DNS server addresses** and set the IP addresses of the DNS servers.
+   d. Select **Use the following DNS server addresses** and set the IP addresses of the DNS servers as prompted, as shown in :ref:`Figure 4 <en-us_topic_0074825901__en-us_topic_0093971249_fig16102121015719>`.
 
+      .. _en-us_topic_0074825901__en-us_topic_0093971249_fig16102121015719:
 
       .. figure:: /_static/images/en-us_image_0280664482.png
          :alt: **Figure 4** Setting the IP addresses of the DNS servers

@@ -17,8 +17,8 @@ The cloud platform supports changing between image types (public images, private
 Constraints
 -----------
 
--  The OS change takes about 10 to 20 minutes During this process, the ECS status is **Changing OS**.
--  Do not perform any operations on the ECS before the system injects the password or key. Otherwise, the login will fail.
+-  The OS change takes about 1 to 4 minutes During this process, the ECS status is **Changing OS**.
+-  Do not perform any operations on the ECS before the system injects the password or key, or the login will fail.
 -  The ECS for which you want to change the OS must be in any of the following states: **Stopped**, **Reinstallation failed**, or **Failed to change the OS**.
 -  The target ECS must have a system disk attached.
 -  The EVS disk quota must be greater than 0.
@@ -31,7 +31,7 @@ Notes
 -----
 
 -  After the OS is changed, the original OS is not retained, and the original system disk is deleted, including the data in all partitions of the system disk.
--  Back up data before changing the OS.
+-  Changing the OS clears the data in all partitions of the system disk, including the system partition. Back up data before changing the OS.
 -  Changing the OS does not affect data in data disks.
 -  After the OS is changed, your service running environment must be deployed in the new OS again.
 -  After the OS is changed, the ECS will be automatically started.
@@ -94,7 +94,7 @@ Procedure
 
 #. Select the target image.
 
-   For more details, see :ref:`Creating an ECS <en-us_topic_0021831611>`.
+   For details, see :ref:`Creating an ECS <en-us_topic_0021831611>`.
 
 
    .. figure:: /_static/images/en-us_image_0000001658474496.png

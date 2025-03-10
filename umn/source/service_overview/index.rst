@@ -12,7 +12,7 @@ Service Overview
 -  :ref:`Network <en-us_topic_0030828257>`
 -  :ref:`Security <en-us_topic_0092435778>`
 -  :ref:`ECS and Other Services <en-us_topic_0013771111>`
--  :ref:`Permissions Management <en-us_topic_0170232209>`
+-  :ref:`Permissions <en-us_topic_0170232209>`
 -  :ref:`User Permissions <en-us_topic_0054121392>`
 -  :ref:`Region and AZ <en-us_topic_0186645877>`
 
@@ -27,6 +27,6 @@ Service Overview
    network
    security/index
    ecs_and_other_services
-   permissions_management
+   permissions
    user_permissions
    region_and_az

@@ -38,7 +38,7 @@ The ECS lifecycle refers to the entire journey an ECS goes through, from creatio
    +-------------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
    | Reinstalling            | Intermediate          | The ECS has received a request to reinstall the OS and has begun the reinstallation.                                                         |
    +-------------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | Reinstalling failed     | Stable                | The ECS received a request to reinstall the OS, but the reinstallation failed. Contact technical support for assistance.                     |
+   | Reinstallation failed   | Stable                | The ECS received a request to reinstall the OS, but the reinstallation failed. Contact technical support for assistance.                     |
    +-------------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
    | Changing OS             | Intermediate          | The ECS received a request to change the OS and has begun implementing the changes.                                                          |
    +-------------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+

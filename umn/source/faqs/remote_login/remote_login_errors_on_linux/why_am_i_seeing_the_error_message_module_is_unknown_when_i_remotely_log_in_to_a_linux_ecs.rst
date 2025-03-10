@@ -69,7 +69,7 @@ Solution
 
    g. Run the following command to go to the **/sysroot** directory:
 
-      **# chroot /sysroot**
+      **chroot /sysroot**
 
 #. Run the following command to view the system log for error files:
 
