@@ -51,9 +51,9 @@ Notes
 -  When using Cloud-Init, enable DHCP in the VPC which the ECS belongs to.
 -  When using Cloud-Init, ensure that security group rules for the outbound direction meet the following requirements:
 
-   -  **Protocol**: **TCP**
-   -  **Port**: **80**
-   -  **Destination**: **169.254.0.0/16**
+   -  Protocol: TCP
+   -  Port: 80
+   -  Destination: 169.254.0.0/16
 
    .. note::
 

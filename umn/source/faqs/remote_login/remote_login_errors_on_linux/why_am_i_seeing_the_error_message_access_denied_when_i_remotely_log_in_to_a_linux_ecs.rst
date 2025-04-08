@@ -19,7 +19,7 @@ Possible Causes
 Solution
 --------
 
--  If the username or password is incorrect,
+-  The username or password is incorrect.
 
    Check the username and password.
 

@@ -35,7 +35,7 @@ Procedure
 
    .. note::
 
-      If no EIP is available in the current region, the EIP list is empty. In such a case, allocate an EIP and then bind it.
+      If no EIP is available in the current region, the EIP list is empty. In such a case, assign an EIP and then bind it.
 
 
    .. figure:: /_static/images/en-us_image_0000001659441336.png

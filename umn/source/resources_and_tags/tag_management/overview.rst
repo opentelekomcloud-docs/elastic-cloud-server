@@ -10,7 +10,7 @@ Scenarios
 
 A tag identifies an ECS. Adding tags to an ECS facilitates ECS identification and management.
 
-You can add a tag to an ECS during the ECS creation or after the ECS is created. You can add a maximum of 10 tags to each ECS.
+You can add tags to an ECS either during or after the ECS creation. A maximum of 10 tags can be added to an ECS.
 
 .. note::
 

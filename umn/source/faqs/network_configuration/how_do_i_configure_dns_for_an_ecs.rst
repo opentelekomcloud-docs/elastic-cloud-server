@@ -50,7 +50,7 @@ Procedure (Linux)
 
       Obtain the file system domain name from the file system mount point.
 
-#. (Optional) In a network environment of the DHCP server, edit the **/etc/resolv.conf** file to prevent the file from being automatically modified upon an ECS startup, and prevent the DNS server IP address added in :ref:`2 <en-us_topic_0198270920__en-us_topic_0054116434_li13553756203149>` from being reset.
+#. (Optional) In a network environment that uses the DHCP server, edit the **/etc/resolv.conf** file to prevent the file from being automatically modified upon an ECS startup, and prevent the DNS server IP address added in :ref:`2 <en-us_topic_0198270920__en-us_topic_0054116434_li13553756203149>` from being reset.
 
    a. Run the following command to lock the file:
 

@@ -58,7 +58,7 @@ The random password for logging in to ecs_02 must be resolved again. The procedu
 
    Obtain the password for logging in to ecs_02.
 
-   a. Locate the row containing ecs_02, click **More** in the **Operation** column, and select **Get Password** from the drop-down list.
+   a. Locate the row that contains **ecs_02**, click **More** in the **Operation** column and choose **Get Password**.
    b. Click **Select File** and upload private key file **Keypair_02** of ecs_02.
    c. Click **Get Password** to obtain a new random password.
 

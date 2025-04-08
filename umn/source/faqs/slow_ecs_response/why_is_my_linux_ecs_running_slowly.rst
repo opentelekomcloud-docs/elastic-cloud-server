@@ -9,11 +9,11 @@ If your ECS runs slowly or is inaccessible unexpectedly, the bandwidth or vCPU u
 
 To handle this issue, perform the following operations:
 
-#. Fault locating
+#. Fault locating:
 
    Identify the processes leading to high bandwidth or CPU usage.
 
-2. Check whether the processes are malicious and handle the issue accordingly.
+2. Troubleshooting: Check whether the processes are malicious and handle the issue accordingly.
 
    -  If the processes are normal, optimize them or modify ECS specifications.
    -  If the processes are malicious, stop these processes manually or use a third-party tool to stop them automatically.
@@ -60,7 +60,7 @@ Locating High CPU Usage
 
          b. Alternatively, click **Input Command** in the upper right corner of the VNC login page, paste or enter commands in the displayed dialog box, and click **Send**.
 
-         c. Common parameters in top commands are as follows:
+         c. Common parameters in **top** commands are as follows:
 
             **s**: Change the image update frequency.
 
@@ -87,7 +87,7 @@ Locating High CPU Usage
 Troubleshooting High CPU Usage
 ------------------------------
 
-If the processes leading to high CPU usage are malicious, run the top command to stop them. If the **kswapd0** process leads to high CPU usage, optimize the program for the process or upgrade the ECS specifications for a larger memory capacity.
+If the processes leading to high CPU usage are malicious, run the **top** command to stop them. If the **kswapd0** process leads to high CPU usage, optimize the program for the process or upgrade the ECS specifications for a larger memory capacity.
 
 **kswapd0** is a virtual memory management process. When the physical memory becomes insufficient, **kswapd0** runs to allocate disk swap capacity for caching. This uses a large number of CPU resources.
 
@@ -95,7 +95,7 @@ If the processes leading to high CPU usage are malicious, run the top command to
 
    Quickly stop such processes on the top page. To do so, perform the following operations:
 
-   #. Press the **k** key during the execution of the top command.
+   #. Press the **k** key during the execution of the **top** command.
 
    #. Enter the PID of the process to be stopped.
 
@@ -124,7 +124,7 @@ If the processes leading to high CPU usage are malicious, run the top command to
       -  **si**: Volume of data written from the swap partition to the memory per second, which is transferred from the disk to the memory.
       -  **so**: Volume of data written from the memory to the swap partition per second, which is transferred from the memory to the disk.
 
-   #. Further identify the causes of high memory usage. Run commands, such as **free** and **ps** to check the memory usage of the system and processes in the system.
+   #. Further identify the causes of high memory usage by running commands such as **free** and **ps** to check the memory usage of the system and processes in the system.
 
    #. Restart the application or release the memory when traffic is light.
 
@@ -141,7 +141,7 @@ If the high bandwidth usage is caused by normal service access of non-malicious 
 
       **yum install nethogs -y**
 
-      After the installation, run the **netgos** command to check bandwidth usage.
+      After the installation, run the **nethogs** command to check bandwidth usage.
 
       Parameters in the **nethogs** command are as follows:
 

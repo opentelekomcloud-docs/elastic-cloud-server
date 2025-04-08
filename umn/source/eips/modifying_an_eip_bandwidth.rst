@@ -8,7 +8,17 @@ Modifying an EIP Bandwidth
 Scenarios
 ---------
 
-If an EIP has been bound to the ECS, the ECS can access the Internet using the bandwidth associated with the EIP. This section describes how to adjust the bandwidth of an ECS.
+The bandwidth of an EIP enables data transfer between the public network and an ECS. If the bandwidth of the EIP does not meet your service requirements, you can adjust the bandwidth by referring to this section.
+
+Constraints
+-----------
+
+Reducing bandwidths may cause packet loss. Exercise caution when performing this operation.
+
+Prerequisites
+-------------
+
+An EIP has been bound to an ECS. For details, see :ref:`Binding an EIP <en-us_topic_0174917535>`.
 
 Procedure
 ---------

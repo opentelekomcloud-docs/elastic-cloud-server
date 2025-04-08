@@ -22,7 +22,7 @@ Starting ECSs
 #. Under **Computing**, select **Elastic Cloud Server**.
 #. In the ECS list, select the target ECSs.
 #. Click **Start** in the upper left corner of the list.
-#. In the displayed window, click **OK**.
+#. In the displayed window, click **OK** to start the selected ECSs.
 
    .. note::
 
@@ -44,7 +44,7 @@ Stopping ECSs
 
       ECSs with physical flavors, such as C7t ECSs, only support the force stop option. Ensure that you have saved all files on those ECSs.
 
-#. Click **OK** to stop the ECSs.
+#. Click **OK** to stop the selected ECSs.
 
    .. note::
 
@@ -63,7 +63,7 @@ Restarting ECSs
 
       After an ECS is forcibly restarted, unsaved data on the ECS will be lost.
 
-#. Click **OK** to stop the ECSs.
+#. Click **OK** to restart the selected ECSs.
 
    .. note::
 
@@ -76,7 +76,7 @@ Deleting an ECS
 #. Click |image4| in the upper left corner and select your region and project.
 #. Under **Computing**, select **Elastic Cloud Server**.
 #. In the ECS list, select the target ECSs.
-#. Click **Delete** in the upper left corner of the list.
+#. Choose **More** > **Delete** in the upper left corner of the list.
 
    .. note::
 

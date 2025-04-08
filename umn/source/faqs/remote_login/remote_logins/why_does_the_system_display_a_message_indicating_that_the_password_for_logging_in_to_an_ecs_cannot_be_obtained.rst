@@ -30,7 +30,7 @@ Solution
 -  If the issue is a result of cause 2, proceed as follows:
 
    #. Locate the row containing the target ECS, click **More** in the **Operation** column, and select **Restart**.
-   #. Click **More** in the **Operation** column and select **Get Password** to check whether the password can be obtained.
+   #. After the reset, click **More** in the **Operation** column and choose **Get Password** to check whether the password can be obtained.
 
       -  If you can obtain the password, no further action is required.
       -  If you cannot obtain the password, contact customer service.

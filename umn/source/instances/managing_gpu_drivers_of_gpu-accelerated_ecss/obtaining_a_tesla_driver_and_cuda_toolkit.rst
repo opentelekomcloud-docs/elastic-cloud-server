@@ -39,7 +39,9 @@ Download the `CUDA software package <https://developer.nvidia.com/cuda-toolkit-a
 
 .. note::
 
-   `NVIDIA Driver Downloads <https://www.nvidia.com/Download/index.aspx?lang=en-us>`__ provides the mapping between the driver version and CUDA Toolkit. If the versions do not match, the driver may be unavailable.
+   There is a mapping between the driver version and CUDA Toolkit version. If the versions do not match, the driver may be unavailable.
+
+   For mapping details, see `Downloading the Official NVIDIA Drivers <https://www.nvidia.com/Download/index.aspx?lang=en-us>`__.
 
 The following uses Tesla T4 as an example to describe how to download the driver package and CUDA Toolkit.
 

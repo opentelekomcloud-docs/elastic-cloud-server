@@ -56,4 +56,4 @@ Procedure
 
    In the displayed dialog box, select the EVS disk detached in step :ref:`4 <en-us_topic_0037470901__li19170660143341>` and the device name.
 
-#. Migrate the data from the EVS disk in :ref:`7 <en-us_topic_0037470901__li37480066171923>` to the local disks of the new disk-intensive ECS.
+#. Migrate the data from the EVS disk in step :ref:`7 <en-us_topic_0037470901__li37480066171923>` to the local disks of the new disk-intensive ECS.

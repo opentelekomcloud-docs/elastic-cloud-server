@@ -18,7 +18,7 @@ Confirming the Order
 
    An enterprise project facilitates project-level management and grouping of cloud resources and users. The default project is **default**.
 
-#. Set the number of ECSs to be created.
+#. Set **Quantity**.
 
    After the configuration, click **Price Calculator** to view the ECS configuration fee.
 

@@ -261,13 +261,13 @@ Configuring atop for SUSE 12 or SUSE 15
 
    **zypper -n install rpm-build ncurses-devel zlib-devel**
 
-#. Run the following command to compile atop:
+#. Run the following commands to compile atop:
 
    **cd /usr/src/packages/SPECS**
 
    **rpmbuild -bb atop-2.6.0.spec**
 
-#. Run the following command to install atop:
+#. Run the following commands to install atop:
 
    **cd /usr/src/packages/RPMS/x86_64**
 
@@ -324,7 +324,7 @@ Installing atop by Compiling the Source Code (for CentOS Stream 9, openEuler or 
 
    **vi atop-2.6.0/Makefile**
 
-   Delete parameter **--now** following the systemctl command.
+   Delete parameter **--now** following the **systemctl** command.
 
    .. code-block::
 
@@ -349,7 +349,7 @@ Installing atop by Compiling the Source Code (for CentOS Stream 9, openEuler or 
 
       **apt install make gcc zlib1g-dev libncurses5-dev libncursesw5-dev -y**
 
-5. Run the following commands to compile and install atop.
+5. Compile and install atop.
 
    **cd atop-2.6.0**
 
@@ -376,7 +376,7 @@ Installing atop by Compiling the Source Code (for CentOS Stream 9, openEuler or 
 
    **systemctl restart atop**
 
-8. Run the following command to check the status of atop. **active (running)** indicates that atop is running properly.
+8. Check the status of atop. **active (running)** indicates that atop is running properly.
 
    **systemctl status atop**
 
@@ -397,7 +397,7 @@ Run the following command to check the log file:
 
 -  **Common atop commands**
 
-   After opening the log file, you can use the following commands to sort data.
+   After opening the log file, you can use the following commands to sort data:
 
    -  **c**: used to sort processes by CPU usage in descending order.
    -  **m**: used to sort processes by memory usage in descending order.
@@ -545,7 +545,7 @@ Configuring kdump
 
       core_collector makedumpfile -d 31 -c
 
-   where
+   In the preceding command:
 
    **-c** indicates compressing the vmcore file.
 

@@ -5,7 +5,7 @@
 Permissions
 ===========
 
-If you need to grant your enterprise personnel permission to access your ECS resources, use IAM. IAM provides identity authentication, permissions management, and access control, helping you secure access to your resources.
+If you need to assign different permissions to employees in your enterprise to access your ECS resources, IAM is a good choice for fine-grained permissions management. IAM provides identity authentication, permissions management, and access control, helping you secure access to your resources.
 
 With IAM, you can use your account to create IAM users, and assign permissions to the users to control their access to specific resources. For example, some software developers in your enterprise need to use ECS resources but should not be allowed to delete the resources or perform any other high-risk operations. In this scenario, you can create IAM users for the software developers and grant them only the permissions required for using ECS resources.
 

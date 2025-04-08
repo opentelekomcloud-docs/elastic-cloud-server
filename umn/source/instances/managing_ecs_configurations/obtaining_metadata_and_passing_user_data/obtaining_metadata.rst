@@ -42,7 +42,7 @@ Perform the following configuration on the firewall:
 ECS Metadata Types
 ------------------
 
-:ref:`Table 1 <en-us_topic_0042400609__table273552371680>` does not contain the following metadata items: ami-id, ami-launch-index, ami-manifest-path, block-device-mapping/, instance-action, instance-id, reservation-id, ramdisk-id, and kernel-id. These metadata items are meaningless and are not recommended.
+:ref:`Table 1 <en-us_topic_0042400609__table273552371680>` does not contain the following EC2-compatible metadata items: ami-id, ami-launch-index, ami-manifest-path, block-device-mapping/, instance-action, instance-id, reservation-id, ramdisk-id, and kernel-id. These metadata items are meaningless and are not recommended.
 
 .. _en-us_topic_0042400609__table273552371680:
 
@@ -132,9 +132,9 @@ Prerequisites
 -  The target ECS has been logged in.
 -  Security group rules in the outbound direction meet the following requirements:
 
-   -  **Protocol**: **TCP**
-   -  **Port**: **80**
-   -  **Destination**: **169.254.0.0/16**
+   -  Protocol: TCP
+   -  Port: 80
+   -  Destination: 169.254.0.0/16
 
    .. note::
 
@@ -284,11 +284,11 @@ This API is used to query information about all NICs attached to an ECS, includi
 Security Key (OpenStack Metadata API)
 -------------------------------------
 
-This API is used to obtain temporary AKs and SKs.
+This API is used to obtain a temporary AK/SK.
 
 .. note::
 
-   -  If an ECS needs to obtain a temporary AK and SK, go to the ECS details page, and configure **Agency** for the ECS in the **Management Information** area so that the ECS is authorized on IAM.
+   -  If an ECS needs to obtain a temporary AK/SK, you need to create and authorize an agency on the IAM console and then go to the ECS details page to configure **Agency** for the ECS in the **Management Information** area.
    -  The validity period of a temporary AK and SK is one hour. The temporary AK and SK are updated 10 minutes ahead of the expiration time. During the 10 minutes, both the new and old temporary AKs and SKs can be used.
    -  When using temporary AKs and SKs, add **'X-Security-Token':{securitytoken}** in the message header. **securitytoken** is the value returned when a call is made to the API.
 

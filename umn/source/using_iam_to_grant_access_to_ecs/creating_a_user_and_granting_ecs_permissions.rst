@@ -41,7 +41,7 @@ Process Flow
 
 #. `Create a user and add the user to the user group <https://docs.otc.t-systems.com/usermanual/iam/iam_01_0031.html>`__.
 
-   Create a user on the IAM console and add the user to the group created in :ref:`1 <en-us_topic_0170265913__li8447183891715>`.
+   Create a user on the IAM console and add the user to the group created in step :ref:`1 <en-us_topic_0170265913__li8447183891715>`.
 
 #. `Log in to the management console as the created user <https://docs.otc.t-systems.com/usermanual/iam/iam_01_0032.html>`__.
 

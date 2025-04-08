@@ -13,7 +13,7 @@ To provide a pure system, the ECSs running CentOS 6 do not have a GUI installed 
 Constraints
 -----------
 
--  Before installing a GUI on an ECS, ensure that the memory is no less than 2 GB to prevent GUI installation or ECS startup failures.
+-  Before installing a GUI on an ECS, ensure that the idle memory is greater than or equal to 2 GB. Otherwise, the GUI installation may fail or the ECS cannot be started after the installation.
 
 Procedure
 ---------

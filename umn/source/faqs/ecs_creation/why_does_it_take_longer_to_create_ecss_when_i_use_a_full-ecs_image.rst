@@ -40,7 +40,7 @@ If you want to use a full-ECS image to rapidly create ECSs, ensure that the full
 
       For details, see *Cloud Backup and Recovery User Guide*.
 
-   #. Use the CBR backup to create a full-ECS image.
+   #. Use the new CBR to create a full-ECS image.
 
       For details, see *Image Management Service User Guide*.
 

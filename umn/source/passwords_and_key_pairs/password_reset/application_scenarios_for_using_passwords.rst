@@ -5,7 +5,13 @@
 Application Scenarios for Using Passwords
 =========================================
 
-The password for logging in to your ECS is important and please keep it secure. You can reset the password if it is forgotten or expires.
+Passwords are used to log in to ECSs. If you select the password login mode when creating an ECS, you can use the username and password to log in to your ECS. The password is very important. Keep it secure.
+
+You can reset the password when:
+
+-  You forgot the password.
+-  The password has expired.
+-  You selected **Set password later** during the ECS creation.
 
 :ref:`Table 1 <en-us_topic_0035643949__table15251728124719>` provides guidance on how to reset your password in different scenarios.
 
@@ -14,7 +20,7 @@ The password for logging in to your ECS is important and please keep it secure. 
 .. table:: **Table 1** Resetting a password
 
    +-------------------------------------------------------------------------------------------+----------------------------------------------------+
-   | Reference                                                                                 | Prerequisites                                      |
+   | Scenario                                                                                  | Prerequisites                                      |
    +===========================================================================================+====================================================+
    | :ref:`Resetting the Password for Logging In to an ECS in the OS <en-us_topic_0122627689>` | N/A                                                |
    |                                                                                           |                                                    |

@@ -12,6 +12,11 @@ Password authentication is required to log in to a Windows ECS. You must use the
 
 You can obtain the initial password for logging in to a Windows ECS through the management console or APIs. For details, see this section.
 
+Prerequisites
+-------------
+
+You have obtained the private key file (.pem file) which was generated during the ECS creation.
+
 Obtaining the Password Through the Management Console
 -----------------------------------------------------
 
@@ -47,7 +52,7 @@ Obtaining the Password Through APIs
 
 #. Set up the API calling environment.
 
-#. Call APIs. For details, see `API Usage Guidelines <https://docs.otc.t-systems.com/api/ecs/en-us_topic_0020805967.html>`__ in *Elastic Cloud Server API Reference*.
+#. Call APIs. For details, see `API Usage Guidelines <https://docs.otc.t-systems.com/api/ecs/en-us_topic_0020805967.html>`__ in the *Elastic Cloud Server API Reference*.
 
 #. .. _en-us_topic_0031107266__li5770130102852:
 

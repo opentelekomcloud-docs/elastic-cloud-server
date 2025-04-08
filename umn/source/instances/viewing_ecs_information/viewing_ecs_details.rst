@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0017130261:
 
-Viewing ECS Details (List View)
-===============================
+Viewing ECS Details
+===================
 
 Scenarios
 ---------
@@ -21,7 +21,7 @@ Procedure
 
 #. Under **Computing**, choose **Elastic Cloud Server**.
 
-   The **Elastic Cloud Server** page is displayed. On this page, you can view your ECSs and the basic information about the ECSs, such as their specifications, images, and IP addresses.
+   The **Elastic Cloud Server** page is displayed. On this page, you can view the ECSs you have created as well as their details such as the specifications, images, and IP addresses.
 
 #. In the search box above the ECS list, select a filter (such as ECS name, ID, or private IP address), enter the corresponding information, and press **Enter**.
 

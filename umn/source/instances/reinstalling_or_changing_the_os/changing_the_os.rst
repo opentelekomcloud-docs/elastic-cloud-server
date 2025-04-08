@@ -38,7 +38,7 @@ Notes
 -  After the OS is changed, the system disk type of the ECS cannot be changed.
 -  After the OS is changed, the IP and MAC addresses of the ECS remain unchanged.
 -  After the OS is changed, customized configurations, such as DNS and hostname of the original OS will be reset and require reconfiguration.
--  It takes about 10 to 20 minutes to change the OS. During this process, the ECS is in **Changing OS** state.
+-  An OS change takes about 1 to 4 minutes to complete. During this process, the ECS is in **Changing OS** state.
 -  After the OS is changed, the password for logging in to the ECS is reset. To retrieve the password, perform the following operations:
 
    -  For a Linux ECS, log in to it using the key and set a new password. For instructions about how to log in to an ECS using a key pair, see :ref:`Logging In to a Linux ECS Using an SSH Key Pair <en-us_topic_0017955380>`.
@@ -104,7 +104,7 @@ Procedure
 
 #. (Optional) Select the **Encryption** option to encrypt the system disk during OS change.
 
-   To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permissions, assign the KMS access permissions to EVS. If you do not have the required permissions, contact the user who has the Security Administrator permissions to assign the KMS access permissions. For details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
+   To enable encryption, click **Create Xrole** to grant KMS access permissions to EVS. If you have the granting permission, grant KMS access permissions to EVS. If you do not have the granting permission, contact the user who has the Security Administrator permissions to grant KMS access permissions. For details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
 
    Encryption parameters are as follows:
 
@@ -132,7 +132,7 @@ Procedure
 
    In the **Change ECS OS** dialog box, confirm the specifications, and click **Submit**.
 
-   After the application is submitted, the status **Changing OS** is displayed. When this status disappears, the OS change is complete.
+   After the application is submitted, the ECS status changes to **Changing OS**. When this status disappears, the OS change is complete.
 
    .. note::
 
