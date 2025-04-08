@@ -5,33 +5,9 @@
 Data Structure for Querying Details About ECSs
 ==============================================
 
-.. _en-us_topic_0169494074__en-us_topic_0057972887_table23553967:
-
-.. table:: **Table 1** **address** parameters
-
-   +-------------------------+-----------------------+--------------------------------------------------------+
-   | Parameter               | Type                  | Description                                            |
-   +=========================+=======================+========================================================+
-   | version                 | String                | Specifies the IP address version.                      |
-   |                         |                       |                                                        |
-   |                         |                       | -  **4**: indicates IPv4.                              |
-   |                         |                       | -  **6**: indicates IPv6.                              |
-   +-------------------------+-----------------------+--------------------------------------------------------+
-   | addr                    | String                | Specifies the IP address.                              |
-   +-------------------------+-----------------------+--------------------------------------------------------+
-   | OS-EXT-IPS:type         | String                | Specifies the IP address type.                         |
-   |                         |                       |                                                        |
-   |                         |                       | -  **fixed**: indicates the private IP address.        |
-   |                         |                       | -  **floating**: indicates the floating IP address.    |
-   +-------------------------+-----------------------+--------------------------------------------------------+
-   | OS-EXT-IPS-MAC:mac_addr | String                | Specifies the MAC address.                             |
-   +-------------------------+-----------------------+--------------------------------------------------------+
-   | OS-EXT-IPS:port_id      | String                | Specifies the port ID corresponding to the IP address. |
-   +-------------------------+-----------------------+--------------------------------------------------------+
-
 .. _en-us_topic_0169494074__en-us_topic_0057972887_table41869715:
 
-.. table:: **Table 2** **flavor** parameters
+.. table:: **Table 1** flavor parameters
 
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------+
    | Parameter             | Type                  | Description                                                                                                |
@@ -51,7 +27,7 @@ Data Structure for Querying Details About ECSs
 
 .. _en-us_topic_0169494074__en-us_topic_0057972887_table38168783:
 
-.. table:: **Table 3** **security_groups** parameters
+.. table:: **Table 2** **security_groups** parameters
 
    ========= ====== ==========================================
    Parameter Type   Description
@@ -62,7 +38,7 @@ Data Structure for Querying Details About ECSs
 
 .. _en-us_topic_0169494074__en-us_topic_0057972887_table33871262:
 
-.. table:: **Table 4** **os-extended-volumes:volumes_attached** parameters
+.. table:: **Table 3** **os-extended-volumes:volumes_attached** parameters
 
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
    | Parameter             | Type                  | Description                                                                           |
@@ -86,7 +62,7 @@ Data Structure for Querying Details About ECSs
 
 .. _en-us_topic_0169494074__table537485761711:
 
-.. table:: **Table 5** **metadata** parameters
+.. table:: **Table 4** **metadata** parameters
 
    +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter                   | Type                  | Description                                                                                                                                                                                            |
@@ -155,7 +131,7 @@ Data Structure for Querying Details About ECSs
 
 .. _en-us_topic_0169494074__table6690227839:
 
-.. table:: **Table 6** **sys_tags** parameters
+.. table:: **Table 5** **sys_tags** parameters
 
    ========= ====== ===============================
    Parameter Type   Description
@@ -166,7 +142,7 @@ Data Structure for Querying Details About ECSs
 
 .. _en-us_topic_0169494074__table173259974818:
 
-.. table:: **Table 7** **image** parameters
+.. table:: **Table 6** **image** parameters
 
    ========= ====== =======================
    Parameter Type   Description

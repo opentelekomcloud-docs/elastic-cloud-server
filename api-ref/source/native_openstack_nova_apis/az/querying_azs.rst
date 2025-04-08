@@ -8,7 +8,7 @@ Querying AZs
 Function
 --------
 
-This API is used to query AZs.
+This API is used to list AZs.
 
 URI
 ---
