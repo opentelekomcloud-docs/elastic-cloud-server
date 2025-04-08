@@ -28,7 +28,7 @@ ECS provides system-defined policies that can be directly used in IAM. You can a
 -  APIs: REST APIs that can be called by a custom policy
 -  Actions: specific operations that are allowed or denied in a custom policy
 -  Dependencies: actions which a specific action depends on. When allowing an action for a user, you also need to allow any existing action dependencies for that user.
--  IAM projects/Enterprise projects: the authorization scope of a custom policy. A custom policy can be applied to IAM projects or enterprise projects or both. Policies that contain actions for both IAM and enterprise projects can be used and applied for both IAM and Enterprise Management. Policies that contain actions only for IAM projects can be used and applied to IAM only.
+-  IAM projects/Enterprise projects: Authorization scope of custom policies, which can be IAM projects, enterprise projects, or both. Custom policies that contain actions for both IAM projects and enterprise projects can be assigned to user groups and be applied in both IAM and Enterprise Management. Policies that contain actions only for IAM projects can be assigned to user groups and be applied only in IAM. They cannot be applied in Enterprise Management.
 
 .. note::
 

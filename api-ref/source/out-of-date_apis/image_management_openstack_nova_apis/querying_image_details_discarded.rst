@@ -31,7 +31,7 @@ GET /v2.1/{project_id}/images/detail?name={name}&status={status}&changes-since={
    project_id Yes       Specifies the project ID.
    ========== ========= =========================
 
-Parameters in the following table can be used as URI parameters to filter query results. Usage: /v2/{tenant_id}/images/detail? name ={name}&status={status}
+Parameters in the following table can be used as URI parameters to filter query results. Usage: /v2/{project_id}/images/detail? name ={name}&status={status}
 
 :ref:`Table 2 <en-us_topic_0065817696__table8153553113616>` describes the query parameters.
 

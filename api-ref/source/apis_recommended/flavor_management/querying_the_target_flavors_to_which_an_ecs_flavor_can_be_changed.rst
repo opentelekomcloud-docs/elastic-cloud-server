@@ -58,7 +58,7 @@ GET /v2.1/{project_id}/resize_flavors?instance_uuid={instance_uuid}&source_flavo
    +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------+
    | sort_dir           | No              | String          | Specifies the ascending or descending sorting.                                                             |
    |                    |                 |                 |                                                                                                            |
-   |                    |                 |                 | Options:                                                                                                   |
+   |                    |                 |                 | Value range:                                                                                               |
    |                    |                 |                 |                                                                                                            |
    |                    |                 |                 | -  **asc**: indicates the ascending order.                                                                 |
    |                    |                 |                 | -  **desc**: indicates the descending order.                                                               |
@@ -119,8 +119,8 @@ Response
    +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
    | OS-FLV-DISABLED:disabled   | Boolean               | This is an extended attribute, specifying whether a flavor is available.                 |
    |                            |                       |                                                                                          |
-   |                            |                       | -  **true**: indicates that a flavor is available.                                       |
-   |                            |                       | -  **false**: indicates that a flavor is unavailable.                                    |
+   |                            |                       | -  **true**: indicates that a flavor is unavailable.                                     |
+   |                            |                       | -  **false**: indicates that a flavor is available.                                      |
    |                            |                       |                                                                                          |
    |                            |                       | .. note::                                                                                |
    |                            |                       |                                                                                          |

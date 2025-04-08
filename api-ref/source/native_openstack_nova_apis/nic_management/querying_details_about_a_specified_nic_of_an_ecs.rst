@@ -8,7 +8,7 @@ Querying Details About a Specified NIC of an ECS
 Function
 --------
 
-This API is used to query details about an NIC based on the NIC ID.
+This API is used to query details about a NIC based on the NIC ID.
 
 URI
 ---
@@ -83,7 +83,7 @@ Response
 Example Request
 ---------------
 
-Query details about an NIC based on the specified NIC ID.
+Query details about a NIC based on the specified NIC ID.
 
 .. code-block:: text
 
