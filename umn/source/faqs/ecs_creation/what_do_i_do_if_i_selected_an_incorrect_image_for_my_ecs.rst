@@ -19,6 +19,6 @@ You can change the image for your ECS on the ECS console.
 
 #. Set the other parameters and click **OK**.
 
-   After the application is submitted, the ECS status changes to **Changing OS**. The OS changing has been successfully completed when the ECS status changes to **Running**.
+   After the application is submitted, the ECS status changes to **Changing OS**. When this status disappears, the OS change is complete.
 
 For details, see :ref:`Changing the OS <en-us_topic_0031523135>`.

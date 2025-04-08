@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0039588795:
 
-Viewing ECS Creation Statuses
-=============================
+Viewing the ECS Creation Status
+===============================
 
 Scenarios
 ---------

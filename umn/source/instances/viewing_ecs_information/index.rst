@@ -5,9 +5,9 @@
 Viewing ECS Information
 =======================
 
--  :ref:`Viewing ECS Creation Statuses <en-us_topic_0039588795>`
+-  :ref:`Viewing the ECS Creation Status <en-us_topic_0039588795>`
 -  :ref:`Viewing Failed Tasks <en-us_topic_0108255889>`
--  :ref:`Viewing ECS Details (List View) <en-us_topic_0017130261>`
+-  :ref:`Viewing ECS Details <en-us_topic_0017130261>`
 -  :ref:`Exporting ECS Information <en-us_topic_0060610074>`
 -  :ref:`Searching for ECSs <en-us_topic_0000001630328828>`
 
@@ -15,8 +15,8 @@ Viewing ECS Information
    :maxdepth: 1
    :hidden: 
 
-   viewing_ecs_creation_statuses
+   viewing_the_ecs_creation_status
    viewing_failed_tasks
-   viewing_ecs_details_list_view
+   viewing_ecs_details
    exporting_ecs_information
    searching_for_ecss

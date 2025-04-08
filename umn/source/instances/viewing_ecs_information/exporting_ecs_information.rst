@@ -8,7 +8,7 @@ Exporting ECS Information
 Scenarios
 ---------
 
-The information of all ECSs under your account can be exported in a CSV file to a local directory. The file includes the IDs, private IP addresses, and EIPs of your ECSs.
+The information of all ECSs in your account can be exported to a CSV file locally. The file includes the IDs, private IP addresses, and EIPs of your ECSs.
 
 Procedure
 ---------

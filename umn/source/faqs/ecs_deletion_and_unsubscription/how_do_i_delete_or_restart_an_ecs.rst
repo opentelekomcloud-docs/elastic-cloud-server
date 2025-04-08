@@ -15,7 +15,7 @@ Deleting an ECS
 
 .. note::
 
-   If you choose to delete the EIP and data disks associated with the ECS when deleting it, no charges will apply for the EIP and data disks. However, if they are not deleted, they will continue o incur fees.
+   If you choose to delete the EIP and data disks associated with the ECS when deleting it, no charges will apply for the EIP and data disks. However, if they are not deleted, they will continue to incur fees.
 
 Restarting an ECS
 -----------------

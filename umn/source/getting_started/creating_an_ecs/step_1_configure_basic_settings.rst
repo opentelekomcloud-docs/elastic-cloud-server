@@ -70,7 +70,7 @@ Basic Settings
 
    -  Private image
 
-      A private image is an image available only to the user who created it. It contains an OS, preinstalled public applications, and the user's private applications. Using a customized private image, you can create ECSs tailored to your needs in batches.
+      A private image is an image available only to the user who created it. It contains an OS, preinstalled public applications, and the user's private applications. You can use a private image to create multiple ECSs in a batch, reducing the time for configuring ECSs repeatedly.
 
       You can also select an encrypted image. For more information about encrypted images, see *Image Management Service User Guide*.
 
@@ -78,7 +78,7 @@ Basic Settings
 
          -  If you use a full-ECS image to create an ECS, the EVS disks associated with the full-ECS image do not support the function of creating disks using a data disk image.
 
-         -  If a full-ECS image is in **Normal** state and the system displays message "Available in AZ\ *x*", the full-ECS image can be used to create ECSs in this AZ only, and the encryption attributes of the system and data disks of the created ECSs are the same as those of the system and data disks specified in the full-ECS image. Additionally, the SCSI, data encryption, and sharing attribute settings of the system and data disks cannot be modified during ECS creation.
+         -  If a full-ECS image is in **Normal** state and the system displays message "Available in AZ\ *x*", the full-ECS image can be used to create ECSs in this AZ only, and the encryption attributes of the system and data disks of the created ECSs are the same as those of the system and data disks specified in the full-ECS image. The SCSI, encryption, and sharing attribute settings of the system and data disks cannot be modified during ECS creation.
 
          -  If a full-ECS image is in **Normal** state but the system does not display message "Available in AZ\ *x*", the full-ECS image can be used to create ECSs in the entire region, and the encryption attributes of the system and data disks of the created ECSs are the same as those of the system and data disks specified in the full-ECS image. Additionally, the data encryption settings of the system disk, and the SCSI, sharing attribute, and data encryption settings of data disks can be modified during ECS creation.
 
@@ -92,7 +92,7 @@ Basic Settings
 
 #. (Optional) Set **Protection**.
 
-   When using certain public images, you are advised to enable protection to improve the overall security for ECSs. HSS is designed to improve the overall security for ECSs. It reduces intrusion risks with asset management, vulnerability management, intrusion detection, and baseline inspection functions.
+   When using certain public images, you are advised to enable protection to improve the overall security for ECSs. HSS is designed to improve the overall security for ECSs. It reduces security risks with account cracking prevention, weak password detection, malicious program detection, two-factor authentication, vulnerability management, and web page anti-tampering.
 
    Select one of the following options:
 
@@ -103,15 +103,15 @@ Basic Settings
 
 #. (Optional) Set **License Type**.
 
-   Specifies a license type for using an OS or software. This parameter is displayed only when the selected image is billed.
+   Specify a license type for using an OS or software. This parameter is displayed only when the selected image is billed.
 
    -  Using License from the System
 
-      Allows you to use the license provided by the cloud service platform. Obtaining the authorization of such a license is billed.
+      You can use the license provided by the cloud service platform. Obtaining the authorization of such a license is billed.
 
    -  Bring your own license (BYOL)
 
-      Allows you to use your existing OS license. In such a case, you do not need to apply for a license again.
+      You can use your existing OS license. In such a case, you do not need to apply for a license again.
 
    For more information about license types, see :ref:`License Types <en-us_topic_0046566932>`.
 
@@ -128,7 +128,7 @@ Basic Settings
 
       You can create multiple data disks for an ECS and enable required functions for each data disk. During the creation process, you can add a maximum of 23 data disks for each ECS and customize the disk size as needed.
 
-      Click **Show**\ |image2| and set the following functions if required:
+      Click **Show** |image2| and set the following functions if required:
 
       -  **SCSI**: indicates that the device type of the data disk is SCSI if you select this option. For more information about SCSI disks and ECSs that can have SCSI disks attached, see :ref:`EVS Disks <en-us_topic_0030828256>`.
 
@@ -150,7 +150,7 @@ Basic Settings
 
       (Optional) Encryption-related parameters
 
-      To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permissions, assign the KMS access permissions to EVS. If you do not have the required permissions, contact the user who has the Security Administrator permissions to assign the KMS access permissions. For details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
+      To enable encryption, click **Create Xrole** to grant KMS access permissions to EVS. If you have the granting permission, grant KMS access permissions to EVS. If you do not have the granting permission, contact the user who has the Security Administrator permissions to grant KMS access permissions. For details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
 
       -  **Encryption**: indicates that the EVS disk has been encrypted.
       -  **Create Xrole**: assigns KMS access permissions to EVS to obtain KMS keys. After the permissions are assigned, follow-up operations do not require assigning permissions again.

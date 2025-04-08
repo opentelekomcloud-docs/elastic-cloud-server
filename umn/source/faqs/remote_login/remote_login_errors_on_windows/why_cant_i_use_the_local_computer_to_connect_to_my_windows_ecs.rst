@@ -16,8 +16,8 @@ An error message is displayed indicating that your local computer cannot connect
 
    **Figure 1** Cannot connect to the remote computer
 
-Possible Cause
---------------
+Possible Causes
+---------------
 
 -  Port 3389 of the security group on the ECS is disabled. For details, see :ref:`Checking Port Configuration on the ECS <en-us_topic_0264235939__en-us_topic_0250947106_section143451864405>`.
 -  The firewall on the ECS is disabled. For details, see :ref:`Checking Whether the Firewall Is Correctly Configured <en-us_topic_0264235939__en-us_topic_0250947106_section1130118816394>`.

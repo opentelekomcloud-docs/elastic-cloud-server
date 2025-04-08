@@ -8,7 +8,7 @@ Modifying Specifications of Individual ECSs
 Scenarios
 ---------
 
-If the ECS specifications do not meet service requirements, you can modify the ECS specifications, including vCPUs and memory. Certain ECSs allow you to change their types when you modify their specifications.
+If the ECS specifications do not meet service requirements, you can modify the specifications, including vCPUs and memory. Certain ECSs allow you to change their types when you modify their specifications.
 
 Background
 ----------
@@ -31,7 +31,7 @@ Notes
 -  The ECS needs to be stopped during the specification modification, so you are advised to perform this operation during off-peak hours.
 -  During the specification modification, do not perform any operation on the ECS, such as stopping or restarting the ECS. Otherwise, the modification will fail.
 -  Downgrading ECS specifications (vCPUs or memory) will reduce performance.
--  Certain ECS types do not support specifications modification. For details about available ECS types and functions, see :ref:`ECS Types <en-us_topic_0035470096>`. For details about constraints on using different types of ECSs, see their notes.
+-  Certain ECS types do not support specifications modification. For details about ECS types and functions, see :ref:`ECS Specifications <en-us_topic_0132345719>`. For details about constraints on using different types of ECSs, see their notes.
 -  When the disk status is **Expanding**, you are not allowed to modify the specifications of the ECS where the disk is attached.
 -  Before modifying the specifications of a Windows ECS, modify the SAN policy by following the instructions provided in :ref:`Why Does a Disk Attached to a Windows ECS Go Offline? <en-us_topic_0114225937>` to prevent disks from going offline after the specifications are modified.
 -  Before modifying specifications, make sure that the ECS has been stopped.

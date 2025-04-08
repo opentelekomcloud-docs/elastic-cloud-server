@@ -54,7 +54,7 @@ Procedure
 
 #. (Optional) Select the **Encrypted** option to encrypt the system disk during OS reinstallation.
 
-   To enable encryption, click **Create Xrole** to assign KMS access permissions to EVS. If you have rights granting permissions, assign the KMS access permissions to EVS. If you do not have the required permissions, contact the user who has the Security Administrator permissions to assign the KMS access permissions. For details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
+   To enable encryption, click **Create Xrole** to grant KMS access permissions to EVS. If you have the granting permission, grant KMS access permissions to EVS. If you do not have the granting permission, contact the user who has the Security Administrator permissions to grant KMS access permissions. For details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
 
    Encryption parameters are as follows:
 

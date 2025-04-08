@@ -21,7 +21,7 @@ Network Settings
       -  Ensure that DHCP is enabled in the VPC which the ECS belongs to.
       -  When you use VPC for the first time, the system automatically creates a VPC for you, including the security group and NIC.
 
-#. (Optional) Add an extension NIC. You can add multiple extension NICs to an ECS and specify IP addresses for them (including primary NICs).
+#. (Optional) Set **Extension NIC**. You can add multiple extension NICs to an ECS and specify IP addresses for them (including primary NICs).
 
    .. note::
 
@@ -45,17 +45,17 @@ Network Settings
 
       Before initializing an ECS, ensure that the security group rules for the outbound direction meet the following requirements:
 
-      -  Protocol: TCP
+      -  Protocol & Port: TCP
       -  Port: 80
-      -  Source: 169.254.0.0/16
+      -  Destination: 169.254.0.0/16
 
       If you use the default security group rules for the outbound direction, the preceding requirements are met, and the ECS can be initialized. The default security group rules for the outbound direction are as follows:
 
-      -  Protocol: ANY
-      -  Port: ANY
-      -  **Remote End**: **0.0.0.0/16**
+      -  Protocol & Port: All
+      -  Port range: All ports
+      -  Destination: 0.0.0.0/0
 
-#. Set EIP.
+#. Set **EIP**.
 
    An EIP is a static public IP address bound to an ECS in a VPC. Using the EIP, the ECS can provide services externally.
 
@@ -63,7 +63,7 @@ Network Settings
 
    -  Auto assign
 
-      The system automatically assigns an EIP for the ECS. The EIP provides a dedicated bandwidth that is configurable.
+      The system automatically assigns an EIP with exclusive bandwidth for each ECS. You can set the bandwidth.
 
    -  Use existing
 

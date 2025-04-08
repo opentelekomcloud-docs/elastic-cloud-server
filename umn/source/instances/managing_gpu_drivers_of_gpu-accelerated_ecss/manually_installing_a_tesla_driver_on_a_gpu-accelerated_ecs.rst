@@ -287,7 +287,7 @@ The following uses Ubuntu 20.04 64bit as an example to describe how to install t
 
       **Figure 14** Selecting a CUDA version
 
-#. Find the link for downloading CUDA 10.1 and copy the link.
+#. Find the link for downloading CUDA 10.1 corresponding to Ubuntu 20.04 64bit and copy the link.
 
 5. Run the following command on the ECS to download CUDA:
 
@@ -331,25 +331,29 @@ The following uses Ubuntu 20.04 64bit as an example to describe how to install t
 
        **Figure 18** Completing the installation
 
-10. Run the following command to switch to **/usr/local/cuda-10.1/samples/1_Utilities/deviceQuery**:
+10. (Optional) Check whether CUDA has been installed.
 
-    **cd /usr/local/cuda-10.1/samples/1_Utilities/deviceQuery**
+    If the CUDA version is 11.5 or earlier, perform the following operations to check whether CUDA has been installed: If the CUDA version is 11.6 or later, skip this step.
 
-11. Run the **make** command to automatically compile the deviceQuery program.
+    a. Run the following command to switch to **/usr/local/cuda-10.1/samples/1_Utilities/deviceQuery**:
 
-12. Run the following command to check whether CUDA has been installed:
+       **cd /usr/local/cuda-10.1/samples/1_Utilities/deviceQuery**
 
-    **./deviceQuery**
+    b. Run the **make** command to automatically compile the deviceQuery program.
 
-    If the command output contains the CUDA version, CUDA has been installed.
+    c. Run the following command to check whether CUDA has been installed:
+
+       **./deviceQuery**
+
+       If the command output contains the CUDA version, CUDA has been installed.
 
 
-    .. figure:: /_static/images/en-us_image_0234358719.png
-       :alt: **Figure 19** deviceQuery common output
+       .. figure:: /_static/images/en-us_image_0234358719.png
+          :alt: **Figure 19** deviceQuery common output
 
-       **Figure 19** deviceQuery common output
+          **Figure 19** deviceQuery common output
 
-13. Check the CUDA version.
+11. Check the CUDA version.
 
     **/usr/local/cuda/bin/nvcc -V**
 
@@ -359,7 +363,7 @@ The following uses Ubuntu 20.04 64bit as an example to describe how to install t
 
        **Figure 20** Checking the CUDA version
 
-14. Run the following command to enable the persistent mode:
+12. Run the following command to enable the persistent mode:
 
     **sudo nvidia-smi -pm 1**
 

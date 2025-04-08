@@ -8,7 +8,7 @@ Why Can I Remotely Access an ECS But Cannot Ping It?
 Symptom
 -------
 
-You can remotely access an ECS but when you ping the EIP bound to the ECS, the ping operation fails.
+You can remotely access an ECS, but when you ping the EIP bound to the ECS, the ping operation fails.
 
 Possible Causes
 ---------------

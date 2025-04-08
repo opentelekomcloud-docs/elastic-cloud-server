@@ -67,7 +67,7 @@ Adding Tags on the ECS Details Page
 
 #. Click **OK**.
 
-   After tags are added, you can click **Edit** in the **Operation** column to modify them.
+   After tags are added, you can click **Edit** in the **Operation** column to edit them.
 
 .. _en-us_topic_0183019669__section115321623241:
 
@@ -108,7 +108,7 @@ If you want to add the same tag to multiple ECSs or other resources, you can cre
 #. Log in to the management console.
 #. Under **Management & Deployment**, click **Tag Management Service**.
 #. Choose **Predefined Tags** in the left navigation pane and click **Create Tag**. In the displayed dialog box, enter a key (for example, **project**) and a value (for example, **A**).
-#. Choose **Computing** > **Elastic Cloud Server** from the service list and select the predefined tag by following the procedure for adding a tag.
+#. Choose **Computing** > **Elastic Cloud Server** from the service list and select the predefined tag keys and values.
 
 .. |image1| image:: /_static/images/en-us_image_0210779229.png
 .. |image2| image:: /_static/images/en-us_image_0210779229.png

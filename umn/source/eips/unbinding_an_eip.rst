@@ -10,6 +10,10 @@ Scenarios
 
 This section describes how to unbind an EIP from an ECS.
 
+.. caution::
+
+   After an EIP is unbound from an ECS, the ECS can no longer access the public network. Before unbinding an EIP, ensure that the ECS does not need to access the public network or an alternative network connection is available.
+
 Procedure
 ---------
 

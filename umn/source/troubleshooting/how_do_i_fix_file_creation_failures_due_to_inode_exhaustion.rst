@@ -10,8 +10,8 @@ Symptom
 
 When you create a file or directory, you get the error message "No space left on device", "Cannot create directory", or "Couldn't create temporary archive name."
 
-Possible Cause
---------------
+Possible Causes
+---------------
 
 In Linux, both of the following use the disk space:
 

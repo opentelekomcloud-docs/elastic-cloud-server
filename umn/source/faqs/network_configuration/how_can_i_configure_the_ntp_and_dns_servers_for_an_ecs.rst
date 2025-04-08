@@ -143,7 +143,7 @@ Take an ECS running Windows Server 2012 as an example.
       -  In **HKEY_LOCAL_MACHINE > SYSTEM > CurrentControlSet > Services > W32Time > TimeProviders > NtpClient**, set the value of **Enabled** to **1**, indicating that the NTP client is used.
       -  In **HKEY_LOCAL_MACHINE > SYSTEM > CurrentControlSet > Services > W32Time > TimeProviders > NtpServer**, set the value of **Enabled** to **0**, indicating that the NTP server is stopped.
       -  Choose the **HKEY_LOCAL_MACHINE** > **SYSTEM** > **CurrentControlSet** > **Services** > **W32Time** > **Parameters** file and set the **NtpServer** data. Set the data of **TYPE** to **NTP**.
-      -  In **HKEY_LOCAL_MACHINE \\ SYSTEM \\ CurrentControlSet \\ Services \\ W32Time \\ TimeProviders \\ NtpClient**, set the value of **SpecialPollInterval** to **60** and that of **Base** to **Decimal**, indicating the clock synchronization cycle is 60s.
+      -  In **HKEY_LOCAL_MACHINE \\ SYSTEM \\ CurrentControlSet \\ Services \\ W32Time \\ TimeProviders \\ NtpClient**, set the value of **SpecialPollInterval** to **3600** and that of **Base** to **Decimal**, indicating the clock synchronization cycle is 3600s.
       -  In **HKEY_LOCAL_MACHINE \\ SYSTEM \\ CurrentControlSet \\ Services \\ W32Time \\ config**, set the values of **MaxPosPhaseCorrection** and **MaxNegPhaseCorrection** to **ffffffff** and that of **Base** to **Hexadecimal**.
 
    c. Open the **Run** dialog box, enter **services.msc**, and click **OK**. The **Services** window is displayed.
