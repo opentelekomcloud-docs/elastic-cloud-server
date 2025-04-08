@@ -8,9 +8,11 @@ Image Management
 +--------------------------------------------------------------------------+----------------------------------------------------+-------------------------+----------------------+
 | Permission                                                               | API                                                | Action                  | Dependencies         |
 +==========================================================================+====================================================+=========================+======================+
-| :ref:`Creating an image (native OpenStack API) <en-us_topic_0065817694>` | POST /v2/{project_id}/servers/{server_id}/action   | ecs:servers:createImage | evs:volumes:get      |
+| :ref:`Creating an image (native OpenStack API) <en-us_topic_0065817694>` | POST /v2/{project_id}/servers/{server_id}/action   | ecs:servers:createImage | ecs:servers:list     |
 |                                                                          |                                                    |                         |                      |
-|                                                                          | POST /v2.1/{project_id}/servers/{server_id}/action |                         | evs:snapshots:create |
+|                                                                          | POST /v2.1/{project_id}/servers/{server_id}/action |                         | evs:volumes:get      |
+|                                                                          |                                                    |                         |                      |
+|                                                                          |                                                    |                         | evs:snapshots:create |
 |                                                                          |                                                    |                         |                      |
 |                                                                          |                                                    |                         | ims:images:create    |
 |                                                                          |                                                    |                         |                      |
@@ -21,4 +23,6 @@ Image Management
 |                                                                          |                                                    |                         | ims:images:update    |
 |                                                                          |                                                    |                         |                      |
 |                                                                          |                                                    |                         | ims:images:delete    |
+|                                                                          |                                                    |                         |                      |
+|                                                                          |                                                    |                         | ims:quotas:get       |
 +--------------------------------------------------------------------------+----------------------------------------------------+-------------------------+----------------------+

@@ -11,7 +11,7 @@ Context
 -  An error code returned by an API does not correspond to one error message. The following table lists only common error messages.
 -  Most ECS APIs are asynchronous. Some error codes are displayed in the returned messages for task viewing requests. HTTP status codes may not be accurate.
 -  The ECS service is strongly dependent on other services, such as network and storage. If the reported error messages contain information about ECS-depended services, contact technical support for troubleshooting.
--  If the system displays an error code when you perform operations on the management console, see "How Do I Handle Error Messages Displayed on the Management Console?" in the *Elastic Cloud Server User Guide* for troubleshooting.
+-  If the system displays an error code when you perform operations on the management console, see "How Do I Handle Error Messages Displayed on the Management Console?" in *Elastic Cloud Server User Guide* for troubleshooting.
 
 
 Error Codes
