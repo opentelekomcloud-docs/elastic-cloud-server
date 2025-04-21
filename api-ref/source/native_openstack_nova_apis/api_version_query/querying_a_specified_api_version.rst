@@ -5,8 +5,8 @@
 Querying a Specified API Version
 ================================
 
-Function Description
---------------------
+Function
+--------
 
 This API is used to query the information of a specified version.
 

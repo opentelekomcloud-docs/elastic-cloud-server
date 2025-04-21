@@ -59,7 +59,7 @@ Response
    +======================================+===============================+=======================================================================================================================================================================================================================================================+
    | status                               | String                        | Specifies the ECS status.                                                                                                                                                                                                                             |
    |                                      |                               |                                                                                                                                                                                                                                                       |
-   |                                      |                               | Options:                                                                                                                                                                                                                                              |
+   |                                      |                               | Value range:                                                                                                                                                                                                                                          |
    |                                      |                               |                                                                                                                                                                                                                                                       |
    |                                      |                               | **ACTIVE**, **BUILD**, **ERROR**, **HARD_REBOOT**, **MIGRATING**, **REBOOT**, **REBUILD**, **RESIZE**, **REVERT_RESIZE**, **SHUTOFF**, **VERIFY_RESIZE**, **DELETED**, **SHELVED**, **SHELVED_OFFLOADED**, and **UNKNOWN**                            |
    |                                      |                               |                                                                                                                                                                                                                                                       |
@@ -76,11 +76,11 @@ Response
    | addresses                            | Map<String, Array of objects> | Specifies the network attribute of the ECS.                                                                                                                                                                                                           |
    |                                      |                               |                                                                                                                                                                                                                                                       |
    |                                      |                               | -  The key indicates the network name, for example, **demo_net**.                                                                                                                                                                                     |
-   |                                      |                               | -  The value indicates the network attribute specified in :ref:`Table 1 <en-us_topic_0169494074__en-us_topic_0057972887_table23553967>`.                                                                                                              |
+   |                                      |                               | -  The value indicates the network attribute specified in :ref:`Table 4 <en-us_topic_0094148849__en-us_topic_0057972887_table23553967>`.                                                                                                              |
    +--------------------------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | key_name                             | String                        | Specifies the key pair that is used to authenticate an ECS.                                                                                                                                                                                           |
    +--------------------------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | image                                | Object                        | Specifies the ECS image. For details, see :ref:`Table 7 <en-us_topic_0169494074__table173259974818>`.                                                                                                                                                 |
+   | image                                | Object                        | Specifies the ECS image. For details, see :ref:`Table 6 <en-us_topic_0169494074__table173259974818>`.                                                                                                                                                 |
    +--------------------------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | OS-EXT-STS:task_state                | String                        | Specifies the ECS task status. This is an extended attribute. For details, see :ref:`ECS Statuses <en-us_topic_0178420672>`.                                                                                                                          |
    +--------------------------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -92,13 +92,13 @@ Response
    +--------------------------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | flavor                               | Object                        | Specifies the ECS flavor.                                                                                                                                                                                                                             |
    |                                      |                               |                                                                                                                                                                                                                                                       |
-   |                                      |                               | For details, see :ref:`Table 2 <en-us_topic_0169494074__en-us_topic_0057972887_table41869715>`.                                                                                                                                                       |
+   |                                      |                               | For details, see :ref:`Table 1 <en-us_topic_0169494074__en-us_topic_0057972887_table41869715>`.                                                                                                                                                       |
    +--------------------------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | id                                   | String                        | Specifies the ECS ID in UUID format.                                                                                                                                                                                                                  |
    +--------------------------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | security_groups                      | Array of objects              | Specifies the security groups of the ECS.                                                                                                                                                                                                             |
    |                                      |                               |                                                                                                                                                                                                                                                       |
-   |                                      |                               | For details, see :ref:`Table 3 <en-us_topic_0169494074__en-us_topic_0057972887_table38168783>`.                                                                                                                                                       |
+   |                                      |                               | For details, see :ref:`Table 2 <en-us_topic_0169494074__en-us_topic_0057972887_table38168783>`.                                                                                                                                                       |
    +--------------------------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | OS-EXT-AZ:availability_zone          | String                        | Specifies the AZ of an ECS. This is an extended attribute.                                                                                                                                                                                            |
    +--------------------------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -137,7 +137,7 @@ Response
    +--------------------------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | OS-EXT-STS:power_state               | Integer                       | Specifies the power status of the ECS. This is an extended attribute.                                                                                                                                                                                 |
    |                                      |                               |                                                                                                                                                                                                                                                       |
-   |                                      |                               | Options:                                                                                                                                                                                                                                              |
+   |                                      |                               | Value range:                                                                                                                                                                                                                                          |
    |                                      |                               |                                                                                                                                                                                                                                                       |
    |                                      |                               | -  **0**: **NOSTATE**                                                                                                                                                                                                                                 |
    |                                      |                               | -  **1**: **RUNNING**                                                                                                                                                                                                                                 |
@@ -145,7 +145,7 @@ Response
    +--------------------------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | config_drive                         | String                        | Specifies the configuration driver.                                                                                                                                                                                                                   |
    +--------------------------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | metadata                             | Map<String,String>            | Specifies the ECS metadata. For details, see :ref:`Table 5 <en-us_topic_0169494074__table537485761711>`.                                                                                                                                              |
+   | metadata                             | Map<String,String>            | Specifies the ECS metadata. For details, see :ref:`Table 4 <en-us_topic_0169494074__table537485761711>`.                                                                                                                                              |
    |                                      |                               |                                                                                                                                                                                                                                                       |
    |                                      |                               | .. note::                                                                                                                                                                                                                                             |
    |                                      |                               |                                                                                                                                                                                                                                                       |
@@ -159,7 +159,7 @@ Response
    +--------------------------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | os-extended-volumes:volumes_attached | Array of objects              | Specifies the disks attached to an ECS.                                                                                                                                                                                                               |
    |                                      |                               |                                                                                                                                                                                                                                                       |
-   |                                      |                               | For details, see :ref:`Table 4 <en-us_topic_0169494074__en-us_topic_0057972887_table33871262>`.                                                                                                                                                       |
+   |                                      |                               | For details, see :ref:`Table 3 <en-us_topic_0169494074__en-us_topic_0057972887_table33871262>`.                                                                                                                                                       |
    +--------------------------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | description                          | String                        | Specifies the ECS description.                                                                                                                                                                                                                        |
    +--------------------------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -196,8 +196,32 @@ Response
    +--------------------------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | sys_tags                             | Array of objects              | Specifies ECS system tags.                                                                                                                                                                                                                            |
    |                                      |                               |                                                                                                                                                                                                                                                       |
-   |                                      |                               | For details, see :ref:`Table 6 <en-us_topic_0169494074__table6690227839>`.                                                                                                                                                                            |
+   |                                      |                               | For details, see :ref:`Table 5 <en-us_topic_0169494074__table6690227839>`.                                                                                                                                                                            |
    +--------------------------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. _en-us_topic_0094148849__en-us_topic_0057972887_table23553967:
+
+.. table:: **Table 4** **addresses** field description
+
+   +-------------------------+-----------------------+--------------------------------------------------------+
+   | Parameter               | Type                  | Description                                            |
+   +=========================+=======================+========================================================+
+   | version                 | String                | Specifies the IP address version.                      |
+   |                         |                       |                                                        |
+   |                         |                       | -  **4**: indicates IPv4.                              |
+   |                         |                       | -  **6**: indicates IPv6.                              |
+   +-------------------------+-----------------------+--------------------------------------------------------+
+   | addr                    | String                | Specifies the IP address.                              |
+   +-------------------------+-----------------------+--------------------------------------------------------+
+   | OS-EXT-IPS:type         | String                | Specifies the IP address type.                         |
+   |                         |                       |                                                        |
+   |                         |                       | -  **fixed**: indicates the private IP address.        |
+   |                         |                       | -  **floating**: indicates the floating IP address.    |
+   +-------------------------+-----------------------+--------------------------------------------------------+
+   | OS-EXT-IPS-MAC:mac_addr | String                | Specifies the MAC address.                             |
+   +-------------------------+-----------------------+--------------------------------------------------------+
+   | OS-EXT-IPS:port_id      | String                | Specifies the port ID corresponding to the IP address. |
+   +-------------------------+-----------------------+--------------------------------------------------------+
 
 Example Request
 ---------------
@@ -214,98 +238,124 @@ Example Response
 .. code-block::
 
    {
-       "server":{
-           "id":"4f4b3dfa-eb70-47cf-a60a-998a53bd598a",
-           "name":"ecs-2ecf",
-           "addresses":{
-               "0431c5e5-bc94-4a44-8263-15da2a642435":[
+       "server": {
+           "fault": null,
+           "id": "4f4b3dfa-eb70-47cf-a60a-998a53bd598a",
+           "name": "ecs-2ecf",
+           "addresses": {
+               "0431c5e5-bc94-4a44-8263-15da2a642435": [
                    {
-                       "version":"4",
-                       "addr":"192.168.1.99",
-                       "OS-EXT-IPS-MAC:mac_addr":"fa:16:3e:df:18:6d",
-                       "OS-EXT-IPS:port_id":"23037c18-027a-44e5-b6b9-f8d8f113fe02",
-                       "OS-EXT-IPS:type":"fixed"
+                       "version": "4",
+                       "addr": "192.168.1.99",
+                       "primary": true,
+                       "OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:df:18:6d",
+                       "OS-EXT-IPS:type": "fixed",
+                       "OS-EXT-IPS:port_id": "23037c18-027a-44e5-b6b9-f8d8f113fe02"
                    }
                ]
            },
-           "flavor":{
-               "disk":"0",
-               "vcpus":"2",
-               "ram":"1024",
-               "id":"s3.large.1",
-               "name":"s3.large.1"
+           "flavor": {
+               "disk": "0",
+               "vcpus": "2",
+               "ram": "1024",
+               "id": "s3.large.1",
+               "name": "s3.large.1"
+               "asic_accelerators": [
+
+               ]
            },
-           "accessIPv4":"",
-           "accessIPv6":"",
-           "status":"ACTIVE",
-           "progress":0,
-           "hostId":"c7145889b2e3202cd295ceddb1742ff8941b827b586861fd0acedf64",
-           "updated":"2018-09-13T07:06:51Z",
-           "created":"2018-09-13T07:03:44Z",
-           "image":{
-               "id":"1ce5800a-e487-4c1b-b264-3353a39e2b4b"
+           "accessIPv4": "",
+           "accessIPv6": "",
+           "status": "ACTIVE",
+           "progress": 0,
+           "hostId": "c7145889b2e3202cd295ceddb1742ff8941b827b586861fd0acedf64",
+           "updated": "2018-09-13T07:06:51Z",
+           "created": "2018-09-13T07:03:44Z",
+           "metadata": {
+               "metering.order_id": "CS1809131459IGC24",
+               "image_name": "Public_Cloudinit_Oracle_Linux_7.4_64bit_40G",
+               "metering.resourcespeccode": "s3.large.1",
+               "charging_mode": "1",
+               "vpc_id": "0431c5e5-bc94-4a44-8263-15da2a642435",
+               "os_type": "Linux",
+               "metering.resourcetype": "1",
+               "metering.image_id": "c71b64e7-4767-4406-afde-2c7c7ac2242c",
+               "os_bit": "64",
+               "__support_agent_list": "hss,ces",
+               "cascaded.instance_extrainfo": "pcibridge:2",
+               "metering.imagetype": "gold"
            },
-           "metadata":{
-               "metering.order_id":"CS1809131459IGC24",
-               "metering.image_id":"c71b64e7-4767-4406-afde-2c7c7ac2242c",
-               "metering.imagetype":"gold",
-               "metering.resourcespeccode":"s3.small.1.linux",
-               "image_name":"HEC_Public_Cloudinit_Oracle_Linux_7.4_64bit_40G",
-               "metering.resourcetype":"1",
-               "metering.product_id":"00301-117024-0--0",
-               "cascaded.instance_extrainfo":"pcibridge:2",
-               "os_bit":"64",
-               "vpc_id":"0431c5e5-bc94-4a44-8263-15da2a642435",
-               "os_type":"Linux",
-               "charging_mode":"1"
-           },
-           "tags":[
+           "tags": [
+
            ],
-           "description":"",
-           "locked":false,
-           "config_drive":"",
-           "tenant_id":"ff2eb406effc455aba53174463eb9322",
-           "user_id":"0bc5e11f91dd48849bb03b7c8a263b2c",
-           "key_name":"KeyPair-d750",
-           "os-extended-volumes:volumes_attached":[
+           "description": "",
+           "locked": false,
+           "config_drive": "",
+           "tenant_id": "ff2eb406effc455aba53174463eb9322",
+           "user_id": "0bc5e11f91dd48849bb03b7c8a263b2c",
+           "key_name": "KeyPair-d750",
+           "os-extended-volumes:volumes_attached": [
                {
-                   "device":"/dev/vda",
-                   "bootIndex":"0",
-                   "id":"80c15cff-2473-4982-a816-d760cad6c42c",
-                   "delete_on_termination":"false"
+                   "id": "80c15cff-2473-4982-a816-d760cad6c42c",
+                   "delete_on_termination": "false",
+                   "device": "/dev/vda",
+                   "bootIndex": "0"
                }
            ],
-           "OS-EXT-STS:task_state":null,
-           "OS-EXT-STS:power_state":1,
-           "OS-EXT-STS:vm_state":"active",
-           "OS-EXT-SRV-ATTR:host":"az21.dc1",
-           "OS-EXT-SRV-ATTR:instance_name":"instance-0015147f",
-           "OS-EXT-SRV-ATTR:hypervisor_hostname":"nova003@74",
-           "OS-EXT-SRV-ATTR:user_data":null,
-           "OS-DCF:diskConfig":"MANUAL",
-           "OS-EXT-AZ:availability_zone":"az1-dc1",
-           "os:scheduler_hints":{
+           "OS-EXT-STS:task_state": null,
+           "OS-EXT-STS:power_state": 1,
+           "OS-EXT-STS:vm_state": "active",
+           "OS-EXT-SRV-ATTR:host": "az21.dc1",
+           "OS-EXT-SRV-ATTR:instance_name": "instance-0015147f",
+           "OS-EXT-SRV-ATTR:hypervisor_hostname": "nova003@74",
+           "OS-DCF:diskConfig": "MANUAL",
+           "OS-EXT-AZ:availability_zone": "az1-dc1",
+           "os:scheduler_hints": {
+
            },
-           "OS-EXT-SRV-ATTR:root_device_name":"/dev/vda",
-           "OS-EXT-SRV-ATTR:ramdisk_id":"",
-           "OS-SRV-USG:launched_at":"2018-09-13T07:04:09.197749",
-           "OS-EXT-SRV-ATTR:kernel_id":"",
-           "OS-EXT-SRV-ATTR:launch_index":0,
-           "host_status":"UP",
-           "OS-EXT-SRV-ATTR:reservation_id":"r-nrd8b5c4",
-           "OS-EXT-SRV-ATTR:hostname":"ecs-2ecf",
-           "sys_tags":[
+           "OS-EXT-SRV-ATTR:root_device_name": "/dev/vda",
+           "OS-EXT-SRV-ATTR:ramdisk_id": "",
+           "OS-EXT-SRV-ATTR:user_data": null,
+           "OS-SRV-USG:launched_at": "2018-09-13T07:04:09.197749",
+           "OS-EXT-SRV-ATTR:kernel_id": "",
+           "OS-EXT-SRV-ATTR:launch_index": 0,
+           "host_status": "UP",
+           "OS-EXT-SRV-ATTR:reservation_id": "r-nrd8b5c4",
+           "OS-EXT-SRV-ATTR:hostname": "ecs-2ecf",
+           "OS-SRV-USG:terminated_at": null,
+           "sys_tags": [
                {
-                   "key":"_sys_enterprise_project_id",
-                   "value":"0"
+                   "key": "_sys_enterprise_project_id",
+                   "value": "0"
                }
            ],
-           "security_groups":[
+           "security_groups": [
                {
-                   "name":"sg-95ec",
-                   "id":"6505b5d1-7837-41eb-8a1c-869d4355baa3"
+                   "id": "6505b5d1-7837-41eb-8a1c-869d4355baa3",
+                   "name": "sg-95ec"
                }
-           ]
+           ],
+           "image": {
+               "id": "c71b64e7-4767-4406-afde-2c7c7ac2242c"
+           },
+           "hypervisor": null,
+           "auto_terminate_time": "",
+           "cpu_options": {
+               "hw:cpu_threads": null
+           },
+           "enclave_options": {
+               "enabled": false
+           },
+           "capacity_reservation_id": null,
+           "capacity_reservation_specification": {
+               "id": null,
+               "preference": null
+           },
+           "security_options": {
+               "secure_boot_enabled": null,
+               "tpm_enabled": null
+           },
+           "spod_id": null
        }
    }
 
