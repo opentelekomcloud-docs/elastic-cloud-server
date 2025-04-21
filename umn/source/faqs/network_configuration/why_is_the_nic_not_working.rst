@@ -18,13 +18,11 @@ The NIC driver has not been correctly installed.
 Solution
 --------
 
-Disk-intensive and large-memory ECSs use passthrough NICs to improve network performance. You must install the passthrough NIC driver on the ECSs or the image that is used for creating the ECSs.
+Disk-intensive and large-memory ECSs use passthrough network interfaces to improve network performance. You must install the passthrough network interface driver on the ECSs or the image that is used for creating the ECSs.
 
 .. note::
 
    If you mount the CD/DVD-ROM driver over a VPN, ensure that the VPN bandwidth is greater than 8 Mbit/s.
-
-To install the passthrough NICE driver, do as follows:
 
 #. Obtain the passthrough NIC driver.
 

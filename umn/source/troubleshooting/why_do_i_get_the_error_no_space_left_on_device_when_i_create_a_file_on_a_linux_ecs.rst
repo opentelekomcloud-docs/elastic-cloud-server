@@ -69,8 +69,8 @@ Solution
 
    |image5|
 
-inotify Watch Limit Reached
----------------------------
+Value of **fs.inotify.max_user_watches** Reached
+------------------------------------------------
 
 If inotify watches are used up, "No space left on device" will be displayed.
 
@@ -92,7 +92,7 @@ Solution
 
    **sysctl -p**
 
-   inotify is used to monitor file system events. By default, a maximum of 8192 files can be watched for each real user ID. You can run the following command to obtain the current limit:
+   inotify is used to monitor file system events. By default, a maximum of 8,192 files can be watched for each real user ID. You can run the following command to obtain the current limit:
 
    **cat /proc/sys/fs/inotify/max_user_watches**
 

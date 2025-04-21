@@ -9,7 +9,7 @@ This document describes common Linux kernel parameters and how to view and modif
 
 .. caution::
 
-   Modify the kernel parameters only if the parameter settings affect your services. If the parameter settings must be modified,
+   Modify the kernel parameters only if the parameter settings affect your services. If the parameter settings must be modified, perform the following:
 
    -  Ensure that the target parameter settings meet service requirements.
    -  Modify the correct kernel parameters. For details about common kernel parameters, see :ref:`Table 1 <en-us_topic_0107659745__table15253154115313>`.

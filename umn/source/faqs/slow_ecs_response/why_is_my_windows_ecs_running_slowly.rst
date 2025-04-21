@@ -51,7 +51,7 @@ Fault Locating
 
    The following describes how to display PIDs in **Windows Task Manager**, locate a process, and check whether it is malicious.
 
-   a. Click the **Details** tab.
+   a. Click the **Processes** tab.
 
    b. Click **PID** to sort the data.
 

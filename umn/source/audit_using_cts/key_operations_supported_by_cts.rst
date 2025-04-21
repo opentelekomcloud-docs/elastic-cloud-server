@@ -2,7 +2,7 @@
 
 .. _en-us_topic_0116262067:
 
-ECS Operations Supported by CTS
+Key Operations Supported by CTS
 ===============================
 
 Scenarios

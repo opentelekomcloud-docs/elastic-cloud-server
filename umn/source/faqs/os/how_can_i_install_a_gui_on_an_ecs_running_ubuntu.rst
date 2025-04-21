@@ -26,7 +26,7 @@ Constraints
 
 -  This document applies to ECSs running Ubuntu 16.04, 18.04, and 20.04.
 -  The Ubuntu ECS must have an EIP bound or have an intranet image source configured.
--  Before installing a GUI on an ECS, ensure that the memory is no less than 2 GB to prevent GUI installation or ECS startup failures.
+-  Before installing a GUI on an ECS, ensure that the idle memory is greater than or equal to 2 GB. Otherwise, the GUI installation may fail or the ECS cannot be started after the installation.
 -  GPU-accelerated ECSs must have a correct GPU driver installed. For details, see :ref:`GPU Driver <en-us_topic_0234802636>`.
 
 .. _en-us_topic_0155136016__section171371109342:

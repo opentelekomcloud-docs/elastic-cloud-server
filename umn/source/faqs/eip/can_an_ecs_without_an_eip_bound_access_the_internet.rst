@@ -17,4 +17,4 @@ Yes.
 
    If a large number of concurrent connections are required, it is a good practice to use the NAT Gateway service provided by the cloud platform.
 
-   The NAT Gateway service offers the NAT function for ECSs in a VPC, allowing these ECSs to access the Internet using an EIP. For more information about NAT Gateway, see *NAT Gateway User Guide*.
+   The NAT Gateway service offers the network address translation (NAT) function for ECSs in a VPC, allowing these ECSs to access the Internet using an EIP. The SNAT function provided by the NAT Gateway service allows the ECSs in a VPC to access the Internet without requiring an EIP. Additionally, SNAT supports a large number of concurrent connections for applications that have a large number of requests and connections. For more information about NAT Gateway, see *NAT Gateway User Guide*.

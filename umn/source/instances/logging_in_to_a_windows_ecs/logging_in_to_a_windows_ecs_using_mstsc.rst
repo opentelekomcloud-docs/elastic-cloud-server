@@ -35,9 +35,9 @@ If your local server runs Windows, you can use the remote desktop connection too
 
 
    .. figure:: /_static/images/en-us_image_0295941039.png
-      :alt: **Figure 1** Show Options
+      :alt: **Figure 1** Showing options
 
-      **Figure 1** Show Options
+      **Figure 1** Showing options
 
 #. Enter the EIP and username (**Administrator** by default) of the target ECS.
 

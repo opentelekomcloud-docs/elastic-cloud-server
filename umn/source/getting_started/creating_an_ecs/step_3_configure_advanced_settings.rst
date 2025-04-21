@@ -10,11 +10,11 @@ Advanced Settings
 
 #. Set **ECS Name**.
 
-   The name can be customized but can contain only letters, digits, underscores (_), hyphens (-), and periods (.).
+   You can customize the ECS name. Only letters, digits, underscores (_), hyphens (-), and periods (.) are allowed.
 
-   If you want to create multiple ECSs at a time, the system automatically sequences these ECSs.
+   If you want to create multiple ECSs all at one time, the system automatically sequences these ECSs.
 
-   **Allow duplicate name**: allows ECS names to be duplicate. If you select **Allow duplicate name** and create multiple ECSs in a batch, the created ECSs will have the same name.
+   **Allow duplicate name**: allows duplicate ECS names. If you select **Allow duplicate name** and create multiple ECSs in a batch, the created ECSs will have the same name.
 
    The **ECS Name** set in this step will be the initial host name in the ECS OS.
 
@@ -24,10 +24,10 @@ Advanced Settings
 
       When you set the ECS name and hostname, you are advised to use letters (a-z), digits (0-9), and hyphens (-) to prevent unknown issues. In the ECS:
 
-      -  Periods (.), hyphens (-), or underscores (_) at the beginning of the name will be ignored.
-      -  If periods (.) are not at the beginning, they and the content following them will be ignored.
+      -  Periods (.), hyphens (-), and underscores (_) at the beginning of the name will be ignored.
+      -  For periods (.) that are not at the beginning of the name, they and any content following them will be ignored.
 
-#. (Optional) Specify the description of the ECS.
+#. (Optional) Set **Description**.
 
 #. Set **Login Mode**.
 
@@ -39,13 +39,13 @@ Advanced Settings
 
 #. Set **Cloud Backup and Recovery**.
 
-   Cloud Backup and Recovery (CBR) provides backup protection for EVS disks and ECSs, and uses backups to restore the EVS disks and ECSs. After you set **Cloud Backup and Recovery**, the system binds the target ECS to the cloud backup vault and associates the ECS with the selected backup policy to periodically back up the ECS.
+   Cloud Backup and Recovery (CBR) provides backup protection for EVS disks and ECSs, and uses backups to restore the EVS disks and ECSs. After you set **Cloud Backup and Recovery**, the system associates the ECS with the cloud backup vault and applies the selected backup policy to periodically back up the ECS.
 
    The following options are provided:
 
    -  Create new
 
-      a. Set the name of the cloud backup vault, which consists of 1 to 64 characters, containing only letters, digits, underscores (_), and hyphens (-). For example, **vault-f61e**. The default naming rule is **vault\_**\ *xxxx*.
+      a. Enter the name of the cloud backup vault. The name consists of 1 to 64 characters. Only letters, digits, underscores (_), and hyphens (-) are allowed. For example, **vault-f61e**. The default naming rule is **vault\_**\ *xxxx*.
       b. Enter the vault capacity, which is required for backing up the ECS. The vault capacity cannot be smaller than that of the ECS to be backed up. Its value ranges from the total capacity of the ECS to 10,485,760 in the unit of GB.
       c. Select a backup policy from the drop-down list, or log in to the CBR console and configure a desired one.
 
@@ -56,11 +56,11 @@ Advanced Settings
 
    -  Do not use
 
-      Skip this configuration if CBR is not required. If you need to enable CBR after creating an ECS, log in to the CBR console, locate the target vault, and bind the ECS to the vault.
+      Skip this configuration if CBR is not required. If you need to enable CBR after creating an ECS, log in to the CBR console, locate the target vault, and associate it with the ECS.
 
 #. Set **ECS Group (Optional)**.
 
-   An ECS group applies the anti-affinity policy to the ECSs in it so that the ECSs are automatically allocated to different hosts. This configuration is optional. For instructions about how to create an ECS group, see :ref:`Managing ECS Groups <en-us_topic_0032980085>`.
+   An ECS group applies the anti-affinity policy to the ECSs in it so that the ECSs are automatically allocated to different hosts. This configuration is optional. For details, see :ref:`Managing ECS Groups <en-us_topic_0032980085>`.
 
    .. note::
 
@@ -77,11 +77,11 @@ Advanced Settings
 
       For example, if you activate user **root** permission by passing a script file to an ECS, you can log in to the ECS as user **root**.
 
-      For detailed operations, see :ref:`Injecting User Data <en-us_topic_0032380449>`.
+      For details about how to inject user data, see :ref:`Injecting User Data <en-us_topic_0032380449>`.
 
    -  Tag
 
-      This configuration is optional. You can tag an ECS to facilitate identification and management. You can add up to 10 tags to an ECS.
+      This configuration is optional. You can tag an ECS to facilitate identification and management. A maximum of 10 tags can be added to an ECS.
 
       .. note::
 
@@ -89,7 +89,7 @@ Advanced Settings
 
          After creating the ECS, you can view the tags on the pages providing details about the ECS, EIP, and EVS disks.
 
-      For details, see :ref:`Overview <en-us_topic_0092499768>`.
+      For details about tag operations, see :ref:`Overview <en-us_topic_0092499768>`.
 
    -  Agency
 

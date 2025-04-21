@@ -5,12 +5,12 @@
 Audit Using CTS
 ===============
 
--  :ref:`ECS Operations Supported by CTS <en-us_topic_0116262067>`
+-  :ref:`Key Operations Supported by CTS <en-us_topic_0116262067>`
 -  :ref:`Viewing Traces <en-us_topic_0116266207>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
-   ecs_operations_supported_by_cts
+   key_operations_supported_by_cts
    viewing_traces

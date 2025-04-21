@@ -21,7 +21,7 @@ When purchasing an ECS, you are advised to select the key pair login mode. For W
 
    You can directly use a key pair to log in a Linux ECS.
 
-   -  During the ECS creation, select the key pair login mode. For details, see "Set Login Mode" in :ref:`Step 3: Configure Advanced Settings <en-us_topic_0163572591>`.
+   -  During the ECS creation, select the key pair login mode. For details, see "Set **Login Mode**" in :ref:`Step 3: Configure Advanced Settings <en-us_topic_0163572591>`.
    -  After the ECS is created, bind a key pair to the ECS by referring to "Binding a Key Pair" in the *Data Encryption Workshop User Guide*.
 
 -  Logging in to a Windows ECS

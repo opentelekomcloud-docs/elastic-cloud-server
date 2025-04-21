@@ -12,7 +12,7 @@ Background
 
 -  Tested ECS: an ECS that is tested for network performance. Such an ECS functions as the client (TX end) or server (RX end) in netperf tests.
 
--  Auxiliary ECS: an ECS that is used to exchange test data with the tested ECS. The auxiliary ECS functions as the client (TX end) or server (RX end) in netperf tests.
+-  Auxiliary ECSs: an ECS that is used to exchange test data with the tested ECS. The auxiliary ECS functions as the client (TX end) or server (RX end) in netperf tests.
 
 -  :ref:`Table 1 <en-us_topic_0115820205__table15359114885218>` and :ref:`Table 2 <en-us_topic_0115820205__table8470126153613>` list the common netperf and iperf3 parameters.
 

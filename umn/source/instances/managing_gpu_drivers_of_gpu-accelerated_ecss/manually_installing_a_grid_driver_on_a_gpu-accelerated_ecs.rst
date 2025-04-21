@@ -73,16 +73,17 @@ Downloading GRID Driver and Software License Packages
 
    .. table:: **Table 1** GRID driver versions supported by GPU-accelerated ECSs
 
-      ======== =============== =========================== ================
-      ECS Type GPU Attachment  Driver Version              CPU Architecture
-      ======== =============== =========================== ================
-      G7       GPU passthrough Select a version as needed. x86_64
-      G6       GPU passthrough Select a version as needed. x86_64
-      P3       GPU passthrough Select a version as needed. x86_64
-      P2s      GPU passthrough Select a version as needed. x86_64
-      P2v      GPU passthrough Select a version as needed. x86_64
-      PI2      GPU passthrough Select a version as needed. x86_64
-      ======== =============== =========================== ================
+      ======== ================== =========================== ================
+      ECS Type GPU Attachment     Driver Version              CPU Architecture
+      ======== ================== =========================== ================
+      G7v      GPU virtualization GRID 13.0                   x86_64
+      G7       GPU passthrough    Select a version as needed. x86_64
+      G6       GPU passthrough    Select a version as needed. x86_64
+      P3       GPU passthrough    Select a version as needed. x86_64
+      P2s      GPU passthrough    Select a version as needed. x86_64
+      P2v      GPU passthrough    Select a version as needed. x86_64
+      PI2      GPU passthrough    Select a version as needed. x86_64
+      ======== ================== =========================== ================
 
 #. After the registration, log in at the `official NVIDIA website <https://nvid.nvidia.com/dashboard/>`__ and enter the account.
 
@@ -162,7 +163,7 @@ The following uses an ECS running CentOS 7.5 as an example to describe how to de
 
 2. Install the license server.
 
-   a. Run the following command to decompress the installation package. The **Installer.zip** in the command indicates the name of the software package obtained in :ref:`10 <en-us_topic_0149610914__li1783092110416>`.
+   a. Run the following command to decompress the installation package. The **Installer.zip** in the command indicates the name of the software package obtained in step :ref:`10 <en-us_topic_0149610914__li1783092110416>`.
 
       **unzip Installer.zip**
 

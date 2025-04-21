@@ -13,11 +13,11 @@ The cloud platform provides automatic recovery by default to restart ECSs throug
 
 .. note::
 
-   -  Automatic recovery does not ensure user data consistency.
+   -  Auto recovery does not ensure user data consistency.
    -  An ECS can be automatically recovered only if the physical server on which it is deployed becomes faulty. This function does not take effect if the fault is caused by the ECS itself.
-   -  An ECS can be automatically recovered only after the physical server on which it is deployed is shut down. If the physical server is not shut down due to a fault, for example, a memory fault, automatic recovery fails to take effect.
+   -  An ECS can be automatically recovered only after the physical server on which it is deployed is shut down. If the physical server is not shut down due to a fault, for example, a memory fault, auto recovery fails to take effect.
    -  An ECS can be automatically recovered only once within 12 hours if the server on which it is deployed becomes faulty.
-   -  ECS automatic recovery may fail in the following scenarios:
+   -  ECS auto recovery may fail in the following scenarios:
 
       -  No physical server is available for migration due to a system fault.
       -  The target physical server does not have sufficient temporary capacity.

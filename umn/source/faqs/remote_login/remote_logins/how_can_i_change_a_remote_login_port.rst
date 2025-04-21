@@ -109,7 +109,7 @@ The following procedure uses an ECS running CentOS 7.3 as an example. The defaul
       -  **Protocols**: TCP (Custom ports)
       -  **Port**: 2020
 
-      For details, see "Adding a Security Group Rule" in the *Virtual Private Cloud User Guide*.
+      For details, see "Adding a Security Group Rule" in *Virtual Private Cloud User Guide*.
 
 #. Log in to the ECS.
 

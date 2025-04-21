@@ -62,7 +62,7 @@ Procedure
 
 #. Log in to the management console.
 
-#. Under **Computing**, click **Elastic Cloud Server**.
+#. Under **Computing**, choose **Elastic Cloud Server**.
 
    The ECS console is displayed.
 
