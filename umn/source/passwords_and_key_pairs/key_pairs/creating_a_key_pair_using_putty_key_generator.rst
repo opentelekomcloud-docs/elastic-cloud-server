@@ -8,7 +8,7 @@ Creating a Key Pair Using PuTTY Key Generator
 Scenarios
 ---------
 
-You can use puttygen.exe to create a key pair and store both the public key and private key locally.
+You can use the third-party tool puttygen.exe to create a key pair. After the key pair is created, both the public key and private key are stored locally.
 
 .. note::
 

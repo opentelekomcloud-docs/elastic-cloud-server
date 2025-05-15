@@ -122,7 +122,7 @@ Disk-intensive and large-memory ECSs use passthrough network interfaces to impro
       .. note::
 
          -  After you run the **rmmod ixgbevf** command, the system may display an error message. This message does not affect the installation of the passthrough NIC driver and can be ignored.
-         -  *NIC_name* specifies the passthrough NIC name, for example, **ens5.**
+         -  *NIC_name* after **ethtool -i** specifies the passthrough NIC name.
 
    i. Check the driver status based on the displayed information.
 

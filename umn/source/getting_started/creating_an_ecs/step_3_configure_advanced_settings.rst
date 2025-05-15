@@ -81,7 +81,7 @@ Advanced Settings
 
    -  Tag
 
-      This configuration is optional. You can tag an ECS to facilitate identification and management. A maximum of 10 tags can be added to an ECS.
+      This configuration is optional. You can tag an ECS to identify and manage your ECS resources easily. A maximum of 10 tags can be added to an ECS.
 
       .. note::
 

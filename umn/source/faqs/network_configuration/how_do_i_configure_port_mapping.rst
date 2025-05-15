@@ -56,7 +56,7 @@ Private IP address of ECS 2: 192.168.72.20
 
       By default, the source/destination check function is enabled. When this function is enabled, the system checks whether source IP addresses contained in the packets sent by ECSs are correct. If the IP addresses are incorrect, the system does not allow the ECSs to send the packets. This mechanism prevents packet spoofing, thereby improving system security. However, this mechanism prevents the packet sender from receiving returned packets. You need to disable the source/destination check.
 
-   -  The operations involve modifying kernel parameters, which may cause kernel unstability. Evaluate risks before performing this operation.
+   -  The operations involve modifying kernel parameters, which may cause kernel instability. Evaluate risks before performing this operation.
 
 #. Log in to Linux ECS 1.
 

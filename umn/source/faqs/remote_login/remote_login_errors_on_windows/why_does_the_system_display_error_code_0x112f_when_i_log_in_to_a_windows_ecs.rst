@@ -29,7 +29,7 @@ Solution
 
    Modify the ECS specifications to increase the vCPUs and memory size. For details about how to modify specifications, see :ref:`Modifying Specifications of Individual ECSs <en-us_topic_0013771092>`.
 
--  Method 2
+-  Method 2:
 
    Enable virtual memory on the ECS to obtain its idle memory.
 

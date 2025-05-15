@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0163572590:
 
-Step 2: Configure Network
-=========================
+Step 2: Configure Network Settings
+==================================
 
 Network Settings
 ----------------
@@ -63,7 +63,7 @@ Network Settings
 
    -  Auto assign
 
-      The system automatically assigns an EIP with exclusive bandwidth for each ECS. You can set the bandwidth.
+      The system automatically assigns an EIP with exclusive bandwidth for each ECS. You can set the bandwidth as required.
 
    -  Use existing
 

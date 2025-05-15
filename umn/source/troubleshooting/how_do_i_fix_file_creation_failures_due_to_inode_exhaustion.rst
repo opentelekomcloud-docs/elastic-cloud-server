@@ -22,11 +22,6 @@ In Linux, both of the following use the disk space:
 
    An inode (index node) stores metadata of a file system object, such as a file, directory, device file, socket, and pipe in the file system, but does not contain the object's data and filename.
 
-Constraints
------------
-
-The procedures described in this section involve disk initialization. Back up data in advance.
-
 Solution
 --------
 
