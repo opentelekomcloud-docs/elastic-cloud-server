@@ -38,7 +38,7 @@ Solution
    -  **Port number**: **22** by default.
    -  **User Name**: Enter the username for logging in to the ECS.
 
-      -  If the ECS is logged in using an SSH key pair,
+      -  If the ECS is logged in using an SSH key pair:
 
          -  The username is **core** for a CoreOS public image.
          -  The username is **root** for a non-CoreOS public image.

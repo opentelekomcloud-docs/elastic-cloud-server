@@ -36,7 +36,7 @@ If the fault persists after you have ruled out a cause, check other causes.
    +--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Network ACL is associated.                                   | If the VPC is associated with a network ACL, check the network ACL rules. For details, see :ref:`Checking Network ACL Rules <en-us_topic_0105130172__en-us_topic_0096302298_section374314592329>`.                                                                       |
    +--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | A network exception occurred.                                | Use another ECS in the same region to check whether the local network is functional. For details, see :ref:`Checking Whether the Network Is Functional <en-us_topic_0105130172__section108152100162>`.                                                                   |
+   | A network exception occurred.                                | Use another ECS in the same region to check whether the local network is functional. For details, see :ref:`Checking Whether the Network Is Normal <en-us_topic_0105130172__section108152100162>`.                                                                       |
    +--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Routes are incorrectly configured if multiple NICs are used. | If the network is inaccessible due to an extension NIC, the fault is generally caused by incorrect route configurations. To resolve this issue, see :ref:`Checking the ECS Route Configuration If Multiple NICs Are Used <en-us_topic_0105130172__section175172388145>`. |
    +--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -215,8 +215,8 @@ By default, no ACL is configured for a VPC. If a network ACL is associated with 
 
 .. _en-us_topic_0105130172__section108152100162:
 
-Checking Whether the Network Is Functional
-------------------------------------------
+Checking Whether the Network Is Normal
+--------------------------------------
 
 #. Use another ECS in the same region to check whether the local network is functional.
 

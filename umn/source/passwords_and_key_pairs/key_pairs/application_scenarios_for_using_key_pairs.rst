@@ -8,9 +8,9 @@ Application Scenarios for Using Key Pairs
 Key Pairs
 ---------
 
-Key pairs are a set of security credentials for identity authentication when you remotely log in to ECSs.
+Key pairs (SSH key pairs) are a set of security credentials for identity authentication when you remotely log in to ECSs.
 
-A key pair consists of a public key and a private key. Key Pair Service (KPS) stores the public key and you store the private key. If you have imported a public key into a Linux ECS, you can use the corresponding private key to log in to the ECS without a password. You do not need to worry about password interception, cracking, or leakage.
+A key pair consists of a public key and a private key. Key Pair Service (KPS) stores the public key and you store the private key. If you have imported a public key into a Linux ECS, you can use the corresponding private key, rather than a password, to log in to the ECS. You do not need to worry about password interception, cracking, or leakage.
 
 Scenarios
 ---------
@@ -51,7 +51,7 @@ You can create a key pair or use an existing one for remote login authentication
 
    .. note::
 
-      If the public key of the existing key pair is stored by clicking **Save public key** on PuTTY Key Generator, the public key cannot be imported to the management console.
+      If the public key of the existing key pair is stored by clicking **Save public key** on puttygen.exe, the public key cannot be imported to the management console.
 
       If you want to use this existing key pair for remote login, see :ref:`Why Does a Key Pair Created Using puttygen.exe Fail to Be Imported on the Management Console? <en-us_topic_0047654687>`
 

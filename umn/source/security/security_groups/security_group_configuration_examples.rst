@@ -125,7 +125,7 @@ Setting Up a Website on an ECS to Provide Internet-Accessible Services
 
 A security group denies all external requests by default. If you set up a website on an ECS to allow access from the Internet, you need to add an inbound rule to the ECS security group to allow access over specific ports, such as HTTP (80) and HTTPS (443).
 
-.. table:: **Table 7** Setting up a website on an ECS to provide services internet-accessible services
+.. table:: **Table 7** Setting up a website on an ECS to provide internet-accessible services
 
    ========= ==== =============== =====================
    Direction Type Protocol & Port Source

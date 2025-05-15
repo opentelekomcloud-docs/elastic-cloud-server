@@ -23,7 +23,7 @@ After a security group is created, you can add rules to the security group. A ru
 
 Each security group has default rules. For details, see :ref:`Default Security Groups and Rules <en-us_topic_0140323154>`. You can also customize security group rules. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.
 
-Constraints
------------
+Constraints on Using Security Groups
+------------------------------------
 
 -  By default, you can add up to 50 security group rules to a security group.
