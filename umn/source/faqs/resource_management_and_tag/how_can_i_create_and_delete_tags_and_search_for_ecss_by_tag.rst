@@ -16,7 +16,7 @@ Creating a Tag
 
 #. Click the name of the target ECS.
 
-   The page providing details about the ECS is displayed.
+   The ECS details page is displayed.
 
 #. Click **Tags** and then **Add Tag**.
 

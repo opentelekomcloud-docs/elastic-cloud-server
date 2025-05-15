@@ -32,6 +32,7 @@ Available now: All GPU models except the recommended ones. If available ECSs are
    -  :ref:`Computing-accelerated P3 <en-us_topic_0097289624__section48861652193>`
    -  :ref:`Computing-accelerated P2s <en-us_topic_0097289624__section1454714546567>` (recommended)
    -  :ref:`Computing-accelerated P2v <en-us_topic_0097289624__section208472383415>`
+   -  :ref:`Inference-accelerated Pi5e <en-us_topic_0097289624__section3135224614>`
    -  :ref:`Inference-accelerated Pi2 <en-us_topic_0097289624__section1846114713182>` (recommended)
 
 Helpful links:
@@ -102,6 +103,16 @@ Images Supported by GPU-accelerated ECSs
    |                       |                       | -  Windows Server 2019 Standard 64bit    |
    |                       |                       | -  Windows Server 2016 Standard 64bit    |
    |                       |                       | -  Windows Server 2012 R2 Standard 64bit |
+   +-----------------------+-----------------------+------------------------------------------+
+   | Inference-accelerated | Pi5e                  | -  CentOS 7.9 64bit                      |
+   |                       |                       | -  CentOS 7.8 64bit                      |
+   |                       |                       | -  CentOS 7.7 64bit                      |
+   |                       |                       | -  CentOS 7.6 64bit                      |
+   |                       |                       | -  Ubuntu 22.04 Server 64bit             |
+   |                       |                       | -  Ubuntu 20.04 Server 64bit             |
+   |                       |                       | -  Ubuntu 18.04 Server 64bit             |
+   |                       |                       | -  Ubuntu 16.04 Server 64bit             |
+   |                       |                       | -  EulerOS 2.0 64bit                     |
    +-----------------------+-----------------------+------------------------------------------+
    | Inference-accelerated | Pi2                   | -  CentOS 7.9 64bit                      |
    |                       |                       | -  Oracle Linux Server release 7.6 64bit |
@@ -623,6 +634,48 @@ P2v ECSs are used in computing acceleration scenarios, such as deep learning tra
 -  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
 -  GPU-accelerated ECSs do not support live migration.
 
+.. _en-us_topic_0097289624__section3135224614:
+
+Inference-accelerated Pi5e
+--------------------------
+
+**Overview**
+
+Pi5e ECSs use NVIDIA Ada Lovelace L4 Tensor Core GPUs that are dedicated for real-time AI inference. This series is the most efficient NVIDIA accelerator for mainstream applications. Servers equipped with L4 power up to 120x higher AI video performance and 2.7x more generative AI performance over CPU solutions, as well as over 4x more graphics performance than the previous GPU generation. NVIDIA L4's versatility and energy-efficient, single-slot, low-profile form factor make it ideal for global deployments, including edge locations.
+
+**Specifications**
+
+.. table:: **Table 9** Pi5e ECS specifications
+
+   +-----------------+-------+--------+---------------------------------+----------+-----------------+-----------+--------+------------+-------------+----------------+
+   | Flavor          | vCPUs | Memory | Max./Assured Bandwidth (Gbit/s) | Max. PPS | Max. NIC Queues | Max. NICs | GPUs   | GPU Memory | Local Disks | Virtualization |
+   |                 |       |        |                                 |          |                 |           |        |            |             |                |
+   |                 |       | (GiB)  |                                 | (10,000) |                 |           |        | (GiB)      |             |                |
+   +=================+=======+========+=================================+==========+=================+===========+========+============+=============+================+
+   | pi5e.4xlarge.4  | 16    | 64     | 20/6                            | 280      | 8               | 8         | 1 x L4 | 24         | ``-``       | KVM            |
+   +-----------------+-------+--------+---------------------------------+----------+-----------------+-----------+--------+------------+-------------+----------------+
+   | pi5e.8xlarge.4  | 32    | 128    | 30/12                           | 550      | 8               | 8         | 2 x L4 | 48         | ``-``       | KVM            |
+   +-----------------+-------+--------+---------------------------------+----------+-----------------+-----------+--------+------------+-------------+----------------+
+   | pi5e.16xlarge.4 | 64    | 256    | 36/24                           | 800      | 16              | 8         | 4 x L4 | 96         | ``-``       | KVM            |
+   +-----------------+-------+--------+---------------------------------+----------+-----------------+-----------+--------+------------+-------------+----------------+
+   | pi5e.24xlarge.4 | 96    | 384    | 40/36                           | 850      | 32              | 8         | 6 x L4 | 144        | ``-``       | KVM            |
+   +-----------------+-------+--------+---------------------------------+----------+-----------------+-----------+--------+------------+-------------+----------------+
+
+**Pi5e ECS features**:
+
+-  1:4 ratio of vCPUs to memory
+-  CPU: 3rd Generation Intel® Xeon® Scalable 6348 processors (2.6 GHz of base frequency and 3.5 GHz of turbo frequency)
+-  24 GiB of GPU memory per card
+-  Up to 300 GB/s of GPU memory bandwidth
+-  GPUDirect Peer to Peer (P2P)
+
+**Notes**
+
+-  Pi5e ECSs support automatic recovery when the hosts accommodating such ECSs become faulty.
+-  After a Pi5e ECS is stopped, its basic resources (vCPUs, memory, image, and encoding cards) are not billed, but its system disk is billed based on the disk capacity. If other products, such as EVS disks, EIP, and bandwidth are associated with the ECS, these products are billed separately.
+-  After a pay-per-use Pi5e ECS is stopped, its basic resources (vCPUs, memory, and encoding cards) will be released. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, change its billing mode to yearly/monthly or do not stop it.
+-  Specifications of Pi5e ECSs can only be changed to other specifications of the same instance type.
+
 .. _en-us_topic_0097289624__section1846114713182:
 
 Inference-accelerated Pi2
@@ -634,7 +687,7 @@ Pi2 ECSs use NVIDIA Tesla T4 GPUs dedicated for real-time AI inference. These EC
 
 **Specifications**
 
-.. table:: **Table 9** Pi2 ECS specifications
+.. table:: **Table 10** Pi2 ECS specifications
 
    +----------------+-------+--------+------------------------+----------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Bandwidth | Max. PPS | Max. NIC Queues | Max. NICs | GPUs   | GPU Memory | Local Disks | Virtualization | Hardware                                                                         |

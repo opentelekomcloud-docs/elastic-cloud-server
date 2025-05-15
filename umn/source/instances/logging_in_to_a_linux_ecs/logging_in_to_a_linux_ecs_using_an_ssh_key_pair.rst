@@ -85,7 +85,7 @@ The following operations use PuTTY as an example. Before using PuTTY to log in, 
 
    .. note::
 
-      -  If a public image is used, see `Public Images Introduction <https://docs.otc.t-systems.com/image-management-service/public-images/>`__ for the image username.
+      -  If a public image is used, see `Public Image Introduction <https://docs.otc.t-systems.com/image-management-service/public-images/>`__ for the image username.
       -  If a private image is used, use the username of the private image.
 
 #. Choose **Connection** > **SSH** > **Auth** > **Credentials**. In the configuration item **Private key file for authentication**, click **Browse** and select the private key converted in step :ref:`6 <en-us_topic_0017955380__li56738001111724>`.
@@ -108,7 +108,7 @@ The following operations use PuTTY as an example. Before using PuTTY to log in, 
 
    .. note::
 
-      -  If a public image is used, see `Public Images Introduction <https://docs.otc.t-systems.com/image-management-service/public-images/>`__ for the image username.
+      -  If a public image is used, see `Public Image Introduction <https://docs.otc.t-systems.com/image-management-service/public-images/>`__ for the image username.
       -  If a private image is used, use the username of the private image.
 
 #. (Optional) If the system displays the **SSH Security Warning** dialog box, click **Accept & Save**.

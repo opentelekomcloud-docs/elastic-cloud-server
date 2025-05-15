@@ -72,7 +72,7 @@ If a serial number is displayed on the console, use either of the following meth
 
    **wmic path Win32_DiskDrive get SerialNumber**
 
-   Information similar to the following is displayed:
+   The following information is displayed.
 
 
    .. figure:: /_static/images/en-us_image_0000001127902463.png

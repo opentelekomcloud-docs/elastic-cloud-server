@@ -9,6 +9,7 @@ ECS Failure
 -  :ref:`Why Does the System Display a Question Mark When I Attempt to Obtain Console Logs? <en-us_topic_0088241338>`
 -  :ref:`Why Is the Memory of an ECS Obtained by Running the free Command Inconsistent with the Actual Memory? <en-us_topic_0093153741>`
 -  :ref:`Is an ECS Hostname with Suffix .novalocal Normal? <en-us_topic_0094874138>`
+-  :ref:`Why Does a Forcibly-Stopped Linux ECS Fail to Be Restarted? <en-us_topic_0102008259>`
 -  :ref:`How Can a Changed Static Hostname Take Effect Permanently? <en-us_topic_0050735736>`
 -  :ref:`Why Can't My Linux ECS Obtain Metadata? <en-us_topic_0000001138811177>`
 
@@ -20,5 +21,6 @@ ECS Failure
    why_does_the_system_display_a_question_mark_when_i_attempt_to_obtain_console_logs
    why_is_the_memory_of_an_ecs_obtained_by_running_the_free_command_inconsistent_with_the_actual_memory
    is_an_ecs_hostname_with_suffix_.novalocal_normal
+   why_does_a_forcibly-stopped_linux_ecs_fail_to_be_restarted
    how_can_a_changed_static_hostname_take_effect_permanently
    why_cant_my_linux_ecs_obtain_metadata
