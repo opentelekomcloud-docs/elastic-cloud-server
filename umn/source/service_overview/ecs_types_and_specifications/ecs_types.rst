@@ -65,7 +65,7 @@ Constraints on network performance vary depending on ECS flavors.
 
 -  Maximum intranet PPS: indicates the maximum ECS capability in sending and receiving packets.
 
-   PPS: packets per second, indicates the number of packets received and sent per second. It is usually used to measure the network performance.
+   Packets per second (PPS): indicates the number of packets received and sent per second. It is usually used to measure the network performance.
 
 -  NIC multi-queues: allocates NIC interruptions to multiple vCPUs for higher PPS performance and bandwidth
 

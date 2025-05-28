@@ -8,7 +8,7 @@
 Scenarios
 ---------
 
-You can use the management console to create a key pair. ECS stores the public key and you store the private key.
+You can create a key pair on the management console. After the key pair is created, the public key is automatically stored in the system, and the private key is stored in your local computer. After a key pair is created for an ECS on the management console, ensure that you store your private key in a secure place. Without a private key, you will not be able to log in to the ECS.
 
 Procedure
 ---------

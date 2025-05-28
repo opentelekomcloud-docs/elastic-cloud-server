@@ -66,7 +66,7 @@ Basic Settings
 
       A public image is a standard, widely used image. It contains an OS and preinstalled public applications and is available to all users. You can configure the runtime environment or software in the public image as needed.
 
-      For more information about public images, see `Public Images Introduction <https://docs.otc.t-systems.com/image-management-service/public-images/>`__.
+      For more information about public images, see `Public Image Introduction <https://docs.otc.t-systems.com/image-management-service/public-images/>`__.
 
    -  Private image
 
