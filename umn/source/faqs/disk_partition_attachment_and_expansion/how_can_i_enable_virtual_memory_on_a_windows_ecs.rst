@@ -37,7 +37,7 @@ The operations described in this section are provided for the ECSs running Windo
 
 #. Configure virtual memory based on service requirements.
 
-   -  **Automatically manage paging file size for all drives**: Deselect the check box.
+   -  **Automatically manage paging file size for all drives**: Deselect the checkbox.
 
    -  **Drive**: Select the drive where the virtual memory file is stored.
 

@@ -8,7 +8,7 @@ Viewing Traces
 Scenarios
 ---------
 
-After you enable CTS and the management tracker is created, CTS starts recording operations on cloud resources. Cloud Trace Service (CTS) stores operation records (traces) generated in the last seven days.
+After you enable Cloud Trace Service (CTS) and the management tracker is created, CTS starts recording operations on cloud resources. CTS stores operation records (traces) generated in the last seven days.
 
 Viewing Real-Time Traces in the Trace List
 ------------------------------------------

@@ -16,6 +16,8 @@ C4 ECSs use second-generation Intel® Xeon® Scalable processors to provide powe
 
 C3 ECSs use Intel® Xeon® Scalable processors, KVM virtualization, Data Plane Development Kit (DPDK) rapid packet processing mechanism, and high-performance NICs to deliver high and stable computing performance for enterprise-grade applications.
 
+X1e ECSs deliver powerful and stable compute. They use Intel® Xeon® Scalable processors and high-performance networks to provide high performance and stability for enterprise-grade applications.
+
 Scenarios
 ---------
 
@@ -43,6 +45,12 @@ Scenarios
 
    -  Small- and medium-sized databases, cache clusters, and search clusters with high requirements on stability
    -  Enterprise-class applications of various types and scales
+
+-  X1e ECSs are suitable for:
+
+   -  Small- and medium-sized databases that require high stability
+   -  Cache and search clusters
+   -  Enterprise-grade applications
 
 Specifications
 --------------
@@ -181,14 +189,52 @@ Specifications
    | c3.15xlarge.4 | 60    | 256    | 16/16                  | 500      | 16              | 12        | 8                   | KVM            |                                |
    +---------------+-------+--------+------------------------+----------+-----------------+-----------+---------------------+----------------+--------------------------------+
 
+.. table:: **Table 5** X1e ECS specifications
+
+   +---------------+---------+---------+------------------------+----------+-----------+----------------+
+   | Flavor        | vCPUs   | Memory  | Max./Assured Bandwidth | Max. PPS | Max. NICs | Virtualization |
+   |               |         |         |                        |          |           |                |
+   |               |         | (GiB)   | (Gbit/s)               | (10,000) |           |                |
+   +===============+=========+=========+========================+==========+===========+================+
+   | x1e.large.2   | 2       | 4       | 1.5/0.6                | 30       | 2         | KVM            |
+   +---------------+---------+---------+------------------------+----------+-----------+----------------+
+   | x1e.slarge.2  | 3       | 6       | 2/0.8                  | 40       | 2         | KVM            |
+   +---------------+---------+---------+------------------------+----------+-----------+----------------+
+   | x1e.xlarge.2  | 4       | 8       | 3/1                    | 50       | 2         | KVM            |
+   +---------------+---------+---------+------------------------+----------+-----------+----------------+
+   | x1e.2slarge.2 | 6       | 12      | 4/1.5                  | 70       | 3         | KVM            |
+   +---------------+---------+---------+------------------------+----------+-----------+----------------+
+   | x1e.3xlarge.2 | 12      | 24      | 7/3                    | 110      | 4         | KVM            |
+   +---------------+---------+---------+------------------------+----------+-----------+----------------+
+   | x1e.large.3   | 2       | 6       | 1.5/0.6                | 30       | 2         | KVM            |
+   +---------------+---------+---------+------------------------+----------+-----------+----------------+
+   | x1e.slarge.3  | 3       | 9       | 2/0.8                  | 40       | 2         | KVM            |
+   +---------------+---------+---------+------------------------+----------+-----------+----------------+
+   | x1e.xlarge.3  | 4       | 12      | 3/1                    | 50       | 2         | KVM            |
+   +---------------+---------+---------+------------------------+----------+-----------+----------------+
+   | x1e.2slarge.3 | 6       | 18      | 4/1.5                  | 70       | 3         | KVM            |
+   +---------------+---------+---------+------------------------+----------+-----------+----------------+
+   | x1e.3xlarge.3 | 12      | 36      | 7/3                    | 110      | 4         | KVM            |
+   +---------------+---------+---------+------------------------+----------+-----------+----------------+
+   | x1e.large.4   | 2       | 8       | 1.5/0.6                | 30       | 2         | KVM            |
+   +---------------+---------+---------+------------------------+----------+-----------+----------------+
+   | x1e.slarge.4  | 3       | 12      | 2/0.8                  | 40       | 2         | KVM            |
+   +---------------+---------+---------+------------------------+----------+-----------+----------------+
+   | x1e.xlarge.4  | 4       | 16      | 3/1                    | 50       | 2         | KVM            |
+   +---------------+---------+---------+------------------------+----------+-----------+----------------+
+   | x1e.2slarge.4 | 6       | 24      | 4/1.5                  | 70       | 3         | KVM            |
+   +---------------+---------+---------+------------------------+----------+-----------+----------------+
+   | x1e.3xlarge.4 | 12      | 48      | 7/3                    | 110      | 4         | KVM            |
+   +---------------+---------+---------+------------------------+----------+-----------+----------------+
+
 Notes
 -----
 
-:ref:`Table 5 <en-us_topic_0091224748__table192771727112217>` lists the OSs supported by dedicated general-purpose ECSs.
+:ref:`Table 6 <en-us_topic_0091224748__table192771727112217>` lists the OSs supported by dedicated general-purpose ECSs.
 
 .. _en-us_topic_0091224748__table192771727112217:
 
-.. table:: **Table 5** Supported OS versions
+.. table:: **Table 6** Supported OS versions
 
    +-----------------------------------+-----------------------------------------------------+
    | OS                                | Version                                             |

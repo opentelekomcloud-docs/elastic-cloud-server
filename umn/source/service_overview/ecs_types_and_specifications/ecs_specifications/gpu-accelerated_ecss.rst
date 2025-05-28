@@ -50,15 +50,15 @@ Images Supported by GPU-accelerated ECSs
    +=======================+=======================+==========================================+
    | Graphics-accelerated  | G7v                   | -  CentOS 8.2 64bit                      |
    |                       |                       | -  CentOS 7.6 64bit                      |
-   |                       |                       | -  Ubuntu 20.04 Server 64bit             |
-   |                       |                       | -  Ubuntu 18.04 Server 64bit             |
+   |                       |                       | -  Ubuntu 20.04 server 64bit             |
+   |                       |                       | -  Ubuntu 18.04 server 64bit             |
    |                       |                       | -  Windows Server 2019 Standard 64bit    |
    |                       |                       | -  Windows Server 2016 Standard 64bit    |
    +-----------------------+-----------------------+------------------------------------------+
    | Graphics-accelerated  | G7                    | -  CentOS 8.2 64bit                      |
    |                       |                       | -  CentOS 7.6 64bit                      |
-   |                       |                       | -  Ubuntu 20.04 Server 64bit             |
-   |                       |                       | -  Ubuntu 18.04 Server 64bit             |
+   |                       |                       | -  Ubuntu 20.04 server 64bit             |
+   |                       |                       | -  Ubuntu 18.04 server 64bit             |
    |                       |                       | -  Windows Server 2019 Standard 64bit    |
    |                       |                       | -  Windows Server 2016 Standard 64bit    |
    +-----------------------+-----------------------+------------------------------------------+
@@ -89,8 +89,8 @@ Images Supported by GPU-accelerated ECSs
    | Computing-accelerated | P2s                   | -  CentOS 7.9 64bit                      |
    |                       |                       | -  EulerOS 2.5 64bit                     |
    |                       |                       | -  Oracle Linux Server release 7.6 64bit |
-   |                       |                       | -  Ubuntu 20.04 Server 64bit             |
-   |                       |                       | -  Ubuntu 18.04 Server 64bit             |
+   |                       |                       | -  Ubuntu 20.04 server 64bit             |
+   |                       |                       | -  Ubuntu 18.04 server 64bit             |
    |                       |                       | -  Windows Server 2019 Standard 64bit    |
    |                       |                       | -  Windows Server 2016 Standard 64bit    |
    |                       |                       | -  Windows Server 2012 R2 Standard 64bit |
@@ -98,8 +98,8 @@ Images Supported by GPU-accelerated ECSs
    | Computing-accelerated | P2v                   | -  CentOS 7.9 64bit                      |
    |                       |                       | -  EulerOS 2.5 64bit                     |
    |                       |                       | -  Oracle Linux Server release 7.6 64bit |
-   |                       |                       | -  Ubuntu 20.04 Server 64bit             |
-   |                       |                       | -  Ubuntu 18.04 Server 64bit             |
+   |                       |                       | -  Ubuntu 20.04 server 64bit             |
+   |                       |                       | -  Ubuntu 18.04 server 64bit             |
    |                       |                       | -  Windows Server 2019 Standard 64bit    |
    |                       |                       | -  Windows Server 2016 Standard 64bit    |
    |                       |                       | -  Windows Server 2012 R2 Standard 64bit |
@@ -392,7 +392,7 @@ P5s ECSs are used in computing acceleration scenarios, such as deep learning tra
 **Notes**
 
 -  P5s ECSs support automatic recovery when the hosts accommodating such ECSs become faulty.
--  After a P5s ECS is stopped, basic resources (including vCPUs, memory, image, and encoding cards) are not billed, but its system disk is billed based on the disk capacity. If other products, such as EVS disks, EIP, and bandwidth are associated with the ECS, these products are billed separately.
+-  After a P5s ECS is stopped, basic resources (vCPUs, memory, image, and encoding cards) are not billed, but its system disk is billed based on the disk capacity. If other products, such as EVS disks, EIP, and bandwidth are associated with the ECS, these products are billed separately.
 -  Specifications of P5s ECSs can only be changed to other specifications of the same instance type.
 -  If you have attached a data disk to a P5s ECS during ECS creation, do not detach the data disk upon creation, or the detachment will fail.
 
@@ -403,25 +403,25 @@ Computing-accelerated P3
 
 **Overview**
 
-P3 ECSs use NVIDIA A100 GPUs and provide flexibility and ultra-high-performance computing. P3 ECSs have strengths in AI-based deep learning, scientific computing, Computational Fluid Dynamics (CFD), computing finance, seismic analysis, molecular modeling, and genomics. Theoretically, the FP32 is 19.5 TFLOPS and the TF32 tensor core is 156 TFLOPS \| 312 TFLOPS (sparsity enabled).
+P3 ECSs use NVIDIA A100 GPUs and provide flexibility and ultra-high-performance computing. P3 ECSs have strengths in AI-based deep learning, scientific computing, Computational Fluid Dynamics (CFD), computing finance, seismic analysis, molecular modeling, and genomics. Theoretically, the FP32 is 19.5 TFLOPS, and the TF32 tensor core is 156 TFLOPS \| 312 TFLOPS (sparsity enabled).
 
 **Specifications**
 
 .. table:: **Table 6** P3 ECS specifications
 
-   +---------------+-------+--------+---------------------------------+----------+-----------------+-----------+----------------------+------------+----------------+
-   | Flavor        | vCPUs | Memory | Max./Assured Bandwidth (Gbit/s) | Max. PPS | Max. NIC Queues | Max. NICs | GPUs                 | GPU Memory | Virtualization |
-   |               |       |        |                                 |          |                 |           |                      |            |                |
-   |               |       | (GiB)  |                                 | (10,000) |                 |           |                      | (GiB)      |                |
-   +===============+=======+========+=================================+==========+=================+===========+======================+============+================+
-   | p3.2xlarge.8  | 8     | 64     | 10/4                            | 100      | 4               | 4         | 1 x NVIDIA A100 80GB | 80         | KVM            |
-   +---------------+-------+--------+---------------------------------+----------+-----------------+-----------+----------------------+------------+----------------+
-   | p3.4xlarge.8  | 16    | 128    | 15/8                            | 200      | 8               | 8         | 2 x NVIDIA A100 80GB | 160        | KVM            |
-   +---------------+-------+--------+---------------------------------+----------+-----------------+-----------+----------------------+------------+----------------+
-   | p3.8xlarge.8  | 32    | 256    | 25/15                           | 350      | 16              | 8         | 4 x NVIDIA A100 80GB | 320        | KVM            |
-   +---------------+-------+--------+---------------------------------+----------+-----------------+-----------+----------------------+------------+----------------+
-   | p3.16xlarge.8 | 64    | 512    | 36/30                           | 700      | 32              | 8         | 8 x NVIDIA A100 80GB | 640        | KVM            |
-   +---------------+-------+--------+---------------------------------+----------+-----------------+-----------+----------------------+------------+----------------+
+   +---------------+-------+--------+---------------------------------+----------+-----------------+-----------+-----------------------+------------+----------------+
+   | Flavor        | vCPUs | Memory | Max./Assured Bandwidth (Gbit/s) | Max. PPS | Max. NIC Queues | Max. NICs | GPUs                  | GPU Memory | Virtualization |
+   |               |       |        |                                 |          |                 |           |                       |            |                |
+   |               |       | (GiB)  |                                 | (10,000) |                 |           |                       | (GiB)      |                |
+   +===============+=======+========+=================================+==========+=================+===========+=======================+============+================+
+   | p3.2xlarge.8  | 8     | 64     | 10/4                            | 100      | 4               | 4         | 1 x NVIDIA A100 80 GB | 80         | KVM            |
+   +---------------+-------+--------+---------------------------------+----------+-----------------+-----------+-----------------------+------------+----------------+
+   | p3.4xlarge.8  | 16    | 128    | 15/8                            | 200      | 8               | 8         | 2 x NVIDIA A100 80 GB | 160        | KVM            |
+   +---------------+-------+--------+---------------------------------+----------+-----------------+-----------+-----------------------+------------+----------------+
+   | p3.8xlarge.8  | 32    | 256    | 25/15                           | 350      | 16              | 8         | 4 x NVIDIA A100 80 GB | 320        | KVM            |
+   +---------------+-------+--------+---------------------------------+----------+-----------------+-----------+-----------------------+------------+----------------+
+   | p3.16xlarge.8 | 64    | 512    | 36/30                           | 700      | 32              | 8         | 8 x NVIDIA A100 80 GB | 640        | KVM            |
+   +---------------+-------+--------+---------------------------------+----------+-----------------+-----------+-----------------------+------------+----------------+
 
 **P3 ECS Features**
 
