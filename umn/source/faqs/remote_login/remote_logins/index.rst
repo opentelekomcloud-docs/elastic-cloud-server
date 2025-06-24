@@ -5,6 +5,8 @@
 Remote Logins
 =============
 
+-  :ref:`Why Can't I Log In to My Windows ECS? <en-us_topic_0018073217>`
+-  :ref:`Why Can't I Log In to My Linux ECS? <en-us_topic_0105127983>`
 -  :ref:`How Can I Change a Remote Login Port? <en-us_topic_0244854543>`
 -  :ref:`Why Can't I Obtain the Password for Logging In to My Windows ECS Authenticated Using a Key Pair? <en-us_topic_0081525054>`
 -  :ref:`What Browser Version Is Required to Remotely Log In to an ECS? <en-us_topic_0035233718>`
@@ -16,6 +18,8 @@ Remote Logins
    :maxdepth: 1
    :hidden: 
 
+   why_cant_i_log_in_to_my_windows_ecs
+   why_cant_i_log_in_to_my_linux_ecs
    how_can_i_change_a_remote_login_port
    why_cant_i_obtain_the_password_for_logging_in_to_my_windows_ecs_authenticated_using_a_key_pair
    what_browser_version_is_required_to_remotely_log_in_to_an_ecs

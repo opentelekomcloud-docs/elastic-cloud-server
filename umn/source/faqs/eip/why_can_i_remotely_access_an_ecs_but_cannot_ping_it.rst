@@ -24,7 +24,7 @@ Solution
 
 #. On the **Elastic Cloud Server** page, click the name of the target ECS.
 
-   The page providing details about the ECS is displayed.
+   The ECS details page is displayed.
 
 #. Click the **Security Groups** tab, expand the information of the security group, and click the security group ID.
 

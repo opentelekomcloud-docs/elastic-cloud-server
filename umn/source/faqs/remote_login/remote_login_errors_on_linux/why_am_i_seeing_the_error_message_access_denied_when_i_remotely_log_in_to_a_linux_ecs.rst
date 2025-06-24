@@ -23,7 +23,7 @@ Solution
 
    Check the username and password.
 
--  If a policy that denies logins from user **root** is enabled on the SSH server,
+-  A policy that denies logins from user **root** is enabled on the SSH server.
 
    #. Edit the **/etc/ssh/sshd_config** file and check the following settings to ensure that the SSH logins from user **root** are allowed:
 

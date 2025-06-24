@@ -16,13 +16,15 @@ atop
 
 -  :ref:`Introduction to atop <en-us_topic_0000001143214829__en-us_topic_0178319250_section0959133015350>`
 -  :ref:`Preparing for atop Installation <en-us_topic_0000001143214829__en-us_topic_0178319250_section1829163315414>`
--  :ref:`Configuring atop for CentOS 7/8, AlmaLinux, and Rocky Linux <en-us_topic_0000001143214829__en-us_topic_0178319250_section18897192721320>`
 -  :ref:`Configuring atop for CentOS 6 <en-us_topic_0000001143214829__en-us_topic_0178319250_section1972319582310>`
--  :ref:`Configuring atop for Ubuntu 20/22 and Debian 10/11 <en-us_topic_0000001143214829__en-us_topic_0178319250_section773995710317>`
--  :ref:`Configuring atop for Ubuntu 18 and Debian 8/9 <en-us_topic_0000001143214829__en-us_topic_0178319250_section76781058158>`
--  :ref:`Configuring atop for Ubuntu 16 <en-us_topic_0000001143214829__en-us_topic_0178319250_section1919095512712>`
+-  :ref:`Configuring atop for CentOS 7/8, AlmaLinux, and Rocky Linux <en-us_topic_0000001143214829__en-us_topic_0178319250_section18897192721320>`
+-  :ref:`Configuring atop for Ubuntu 16 and Debian 8 <en-us_topic_0000001143214829__en-us_topic_0178319250_section1919095512712>`
+-  :ref:`Configuring atop for Ubuntu 18 and Debian 9 <en-us_topic_0000001143214829__en-us_topic_0178319250_section76781058158>`
+-  :ref:`Configuring atop for Ubuntu 20 and Debian 10 <en-us_topic_0000001143214829__en-us_topic_0178319250_section773995710317>`
+-  :ref:`Configuring atop for Ubuntu 22 and Ubuntu 24 <en-us_topic_0000001143214829__en-us_topic_0178319250_section203481850122217>`
+-  :ref:`Configuring atop for Debian 11 and Debian 12 <en-us_topic_0000001143214829__en-us_topic_0178319250_section59661927152613>`
 -  :ref:`Configuring atop for SUSE 12 or SUSE 15 <en-us_topic_0000001143214829__en-us_topic_0178319250_section3205824181917>`
--  :ref:`Installing atop by Compiling the Source Code (for CentOS Stream 9, openEuler or EulerOS) <en-us_topic_0000001143214829__en-us_topic_0178319250_section012793312620>`
+-  :ref:`Installing atop by Compiling the Source Code (for CentOS Stream 8/9, openEuler, or EulerOS) <en-us_topic_0000001143214829__en-us_topic_0178319250_section012793312620>`
 -  :ref:`Analyzing atop Logs <en-us_topic_0000001143214829__en-us_topic_0178319250_section478115314146>`
 
 kdump
@@ -44,46 +46,12 @@ atop is a monitor for Linux that can report the activity of all processes and re
 Preparing for atop Installation
 -------------------------------
 
--  Ensure that the target ECS already has an EIP bound.
--  Ensure that the target ECS can access YUM.
+An EIP is required and can access YUM.
 
-.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section18897192721320:
+Constraints
+-----------
 
-Configuring atop for CentOS 7/8, AlmaLinux, and Rocky Linux
------------------------------------------------------------
-
-#. Run the following command to install atop:
-
-   **yum install -y atop**
-
-#. Run the following command to modify the configuration file of atop:
-
-   **vi /etc/sysconfig/atop**
-
-   Modify the following parameters, save the modification, and exit:
-
-   -  Change the value of **LOGINTERVAL** to, for example, **15**. The default value of **LOGINTERVAL** is **600**, in seconds.
-
-   -  Change the value of **LOGGENERATIONS** to, for example, **3**. The default retention period of atop logs is **28** days.
-
-      .. code-block::
-
-         LOGINTERVAL=15
-         LOGGENERATIONS=3
-
-3. Run the following command to start atop:
-
-   **systemctl start atop**
-
-4. Run the following command to check the status of atop. If **active (running)** is displayed in the output, atop is running properly.
-
-   **systemctl status atop**
-
-   .. code-block::
-
-      atop.service - Atop advanced performance monitor
-       Loaded: loaded (/usr/lib/systemd/system/atop.service; enabled; vendor preset: disabled)
-       Active: active (running) since Sat 2024-03-6 11:49:47 CST; 2h 27min ago
+The atop tool used for node resource monitoring consumes a small amount of CPU cores and memory to collect system resources and uses some disk space to record logs. The log path is **/var/log/atop**.
 
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section1972319582310:
 
@@ -96,11 +64,11 @@ Configuring atop for CentOS 6
 
 #. Run the following command to modify the configuration file of atop:
 
-   **vi /etc/sysconfig/atop**
+   **vi /etc/default/atop**
 
    Modify the following parameters, save the modification, and exit:
 
-   The default value of **LOGINTERVAL** is **600** (seconds), but you can change it to, for example, **15**.
+   Change the value of **LOGINTERVAL** to, for example, **15**. The default value of **LOGINTERVAL** is **600**, in seconds.
 
    .. code-block::
 
@@ -114,7 +82,7 @@ Configuring atop for CentOS 6
 
    .. code-block::
 
-          postrotate
+         postrotate
             /usr/bin/find /var/log/atop/ -maxdepth 1 -mount -name atop_\[0-9\]\[0-9\]\[0-9\]\[0-9\]\[0-9\]\[0-9\]\[0-9\]\[0-9\]\* -mtime +3 -exec /bin/rm {} \;
           endscript
 
@@ -130,10 +98,65 @@ Configuring atop for CentOS 6
 
       atop (pid 3170) is running
 
-.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section773995710317:
+#. Run the following command to stop atop after troubleshooting to release the system and disk resources occupied by atop:
 
-Configuring atop for Ubuntu 20/22 and Debian 10/11
---------------------------------------------------
+   **service atop stop**
+
+.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section18897192721320:
+
+Configuring atop for CentOS 7/8, AlmaLinux, and Rocky Linux
+-----------------------------------------------------------
+
+#. Run the following command to install atop:
+
+   **yum install -y atop**
+
+#. Run the following command to modify the configuration file of atop:
+
+   **vi /etc/default/atop**
+
+   Modify the following parameters, save the modification, and exit:
+
+   -  Change the value of **LOGINTERVAL** to, for example, **15**. The default value of **LOGINTERVAL** is **600**, in seconds.
+   -  Change the value of **LOGGENERATIONS** to, for example, **3**. The default retention period of atop logs is **28** days.
+
+   .. code-block::
+
+      LOGINTERVAL=15
+      LOGGENERATIONS=3
+
+3. Run the following command to start atop:
+
+   **systemctl enable --now atop atopacct atop-rotate.timer**
+
+4. Check whether atop is started. If **atop atopacct** is **active (running)**, or **atop-rotate.timer** is **active (waiting)**, the service is running properly.
+
+   **systemctl status atop atopacct atop-rotate.timer**
+
+   .. code-block::
+
+      atop.service - Atop advanced performance monitor
+      Loaded: loaded (/usr/lib/systemd/system/atop.service; enabled; vendor preset: enabled)
+      Active: active (running)
+
+      atopacct.service - Atop process accounting daemon
+      Loaded: loaded (/usr/lib/systemd/system/atopacct.service; enabled; vendor preset: enabled)
+      Active: active (running)
+
+      atop-rotate.timer - Daily atop restart
+      Loaded: loaded (/usr/lib/systemd/system/atop-rotate.timer; enabled; vendor preset: enabled)
+      Active: active (waiting)
+
+5. Run the following command to stop atop after troubleshooting to release the system and disk resources occupied by atop:
+
+   **systemctl disable atop atopacct atop-rotate.timer**
+
+   **systemctl stop atop atopacct atop-rotate.timer**
+
+.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section1919095512712:
+
+Configuring atop for Ubuntu 16 and Debian 8
+-------------------------------------------
 
 #. Run the following command to install atop:
 
@@ -146,13 +169,11 @@ Configuring atop for Ubuntu 20/22 and Debian 10/11
    Modify the following parameters, save the modification, and exit:
 
    -  Change the value of **LOGINTERVAL** to, for example, **15**. The default value of **LOGINTERVAL** is **600**, in seconds.
+   -  The default retention period of atop logs is **28** days and cannot be modified.
 
-   -  Change the value of **LOGGENERATIONS** to, for example, **3**. The default retention period of atop logs is **28** days.
+   .. code-block::
 
-      .. code-block::
-
-         LOGINTERVAL=15
-         LOGGENERATIONS=3
+      LOGINTERVAL=15
 
 3. Run the following command to start atop:
 
@@ -165,13 +186,17 @@ Configuring atop for Ubuntu 20/22 and Debian 10/11
    .. code-block::
 
       atop.service - Atop advanced performance monitor
-       Loaded: loaded (/etc/init.d/atop; bad; vendor preset: disabled)
-       Active: active (running) since Sat 2024-03-11 14:09:47 CST; 16s ago
+      Loaded: loaded (/etc/init.d/atop; bad; vendor preset: disabled)
+      Active: active (running)
+
+5. Run the following command to stop atop after troubleshooting to release the system and disk resources occupied by atop:
+
+   **systemctl stop atop**
 
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section76781058158:
 
-Configuring atop for Ubuntu 18 and Debian 8/9
----------------------------------------------
+Configuring atop for Ubuntu 18 and Debian 9
+-------------------------------------------
 
 #. Run the following command to install atop:
 
@@ -183,34 +208,43 @@ Configuring atop for Ubuntu 18 and Debian 8/9
 
    Modify the following parameters, save the modification, and exit:
 
-   -  The default value of **LOGINTERVAL** is **600** (seconds), but you can change it to, for example, **15**.
-
+   -  Change the value of **LOGINTERVAL** to, for example, **15**. The default value of **LOGINTERVAL** is **600**, in seconds.
    -  You can change the value of **-mtime** to, for example, **3**. The default retention period of atop logs is **28** days.
 
-      .. code-block::
+   .. code-block::
 
-         LOGINTERVAL=15
-         ……
-         ( (sleep 3; find $LOGPATH -name 'atop_*' -mtime +3 -exec rm {} \;)& )
+      LOGINTERVAL=15
+      ……
+      ( (sleep 3; find $LOGPATH -name 'atop_*' -mtime +3 -exec rm {} \;)& )
 
-3. Run the following command to start atop:
+3. Restart the atop service (started by default) to apply the configuration:
 
-   **systemctl start atop**
+   **systemctl restart atop atopacct**
 
 4. Run the following command to check the status of atop. **active (running)** indicates that atop is running properly.
 
-   **systemctl status atop**
+   **systemctl status atop atopacct**
 
    .. code-block::
 
       atop.service - Atop advanced performance monitor
-       Loaded: loaded (/etc/init.d/atop; bad; vendor preset: disabled)
-       Active: active (running) since Sat 2024-03-6 14:09:47 CST; 15s ago
+      Loaded: loaded (/etc/init.d/atop; enable; vendor preset: enabled)
+      Active: active (running)
 
-.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section1919095512712:
+      atopacct.service - Atop process accounting daemon
+      Loaded: loaded (/usr/lib/systemd/system/atopacct.service; enabled; vendor preset: enabled)
+      Active: active (running)
 
-Configuring atop for Ubuntu 16
-------------------------------
+5. Run the following command to stop atop after troubleshooting to release the system and disk resources occupied by atop:
+
+   **systemctl disable atop atopacct**
+
+   **systemctl stop atop atopacct**
+
+.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section773995710317:
+
+Configuring atop for Ubuntu 20 and Debian 10
+--------------------------------------------
 
 #. Run the following command to install atop:
 
@@ -222,27 +256,139 @@ Configuring atop for Ubuntu 16
 
    Modify the following parameters, save the modification, and exit:
 
-   -  The default value of **LOGINTERVAL** is **600** (seconds), but you can change it to, for example, **15**.
-
-   -  The default retention period of atop logs is **28** days and cannot be modified.
-
-      .. code-block::
-
-         LOGINTERVAL=15
-
-3. Run the following command to start atop:
-
-   **systemctl start atop**
-
-4. Run the following command to check the status of atop. **active (running)** indicates that atop is running properly.
-
-   **systemctl status atop**
+   -  Change the value of **LOGINTERVAL** to, for example, **15**. The default value of **LOGINTERVAL** is **600**, in seconds.
+   -  Change the value of **LOGGENERATIONS** to, for example, **3**. The default retention period of atop logs is **28** days.
 
    .. code-block::
 
-      atop.service - LSB: Monitor for system resources and process activity
-         Loaded: loaded (/etc/init.d/atop; bad; vendor preset: enabled)
-         Active: active (running) since Mon 2024-04-29 19:33:22 CST; 38s ago
+      LOGINTERVAL=15
+      LOGGENERATIONS=3
+
+3. Restart the atop service (started by default) to apply the configuration:
+
+   **systemctl restart atop atopacct**
+
+4. Run the following command to check the status of atop. **active (running)** indicates that atop is running properly.
+
+   **systemctl status atop atopacct**
+
+   .. code-block::
+
+      atop.service - Atop advanced performance monitor
+      Loaded: loaded (/etc/init.d/atop; enable; vendor preset: enabled)
+      Active: active (running)
+
+      atopacct.service - Atop process accounting daemon
+      Loaded: loaded (/usr/lib/systemd/system/atopacct.service; enabled; vendor preset: enabled)
+      Active: active (running)
+
+5. Run the following command to stop atop after troubleshooting to release the system and disk resources occupied by atop:
+
+   **systemctl disable atop atopacct**
+
+   **systemctl stop atop atopacct**
+
+.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section203481850122217:
+
+Configuring atop for Ubuntu 22 and Ubuntu 24
+--------------------------------------------
+
+#. Run the following command to install atop:
+
+   **apt-get install -y atop**
+
+#. Run the following command to modify the configuration file of atop:
+
+   **vi /etc/default/atop**
+
+   Modify the following parameters, save the modification, and exit:
+
+   -  Change the value of **LOGINTERVAL** to, for example, **15**. The default value of **LOGINTERVAL** is **600**, in seconds.
+   -  Change the value of **LOGGENERATIONS** to, for example, **3**. The default retention period of atop logs is **28** days.
+
+   .. code-block::
+
+      LOGINTERVAL=15
+      LOGGENERATIONS=3
+
+#. Restart the atop service (started by default) to apply the configuration:
+
+   **systemctl restart atop atopacct atop-rotate.timer**
+
+#. Check whether atop is started. If **atop atopacct** is **active (running)**, or **atop-rotate.timer** is **active (waiting)**, the service is running properly.
+
+   **systemctl status atop atopacct atop-rotate.timer**
+
+   .. code-block::
+
+      atop.service - Atop advanced performance monitor
+      Loaded: loaded (/usr/lib/systemd/system/atop.service; enabled; vendor preset: enabled)
+      Active: active (running)
+
+      atopacct.service - Atop process accounting daemon
+      Loaded: loaded (/usr/lib/systemd/system/atopacct.service; enabled; vendor preset: enabled)
+      Active: active (running)
+
+      atop-rotate.timer - Daily atop restart
+      Loaded: loaded (/usr/lib/systemd/system/atop-rotate.timer; enabled; vendor preset: enabled)
+      Active: active (waiting)
+
+#. Run the following command to stop atop after troubleshooting to release the system and disk resources occupied by atop:
+
+   **systemctl disable atop atopacct atop-rotate.timer**
+
+   **systemctl stop atop atopacct atop-rotate.timer**
+
+.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section59661927152613:
+
+Configuring atop for Debian 11 and Debian 12
+--------------------------------------------
+
+#. Run the following command to install atop:
+
+   **apt-get install -y atop**
+
+#. Run the following command to modify the configuration file of atop:
+
+   **vi /etc/default/atop**
+
+   Modify the following parameters, save the modification, and exit:
+
+   -  Change the value of **LOGINTERVAL** to, for example, **15**. The default value of **LOGINTERVAL** is **600**, in seconds.
+   -  Change the value of **LOGGENERATIONS** to, for example, **3**. The default retention period of atop logs is **28** days.
+
+   .. code-block::
+
+      LOGINTERVAL=15
+      LOGGENERATIONS=3
+
+#. Restart the atop service (started by default) to apply the configuration:
+
+   **systemctl restart atop atopacct atop-rotate.timer**
+
+#. Check whether atop is started. If **atop atopacct** is **active (running)**, or **atop-rotate.timer** is **active (waiting)**, the service is running properly.
+
+   **systemctl status atop atopacct atop-rotate.timer**
+
+   .. code-block::
+
+      atop.service - Atop advanced performance monitor
+      Loaded: loaded (/usr/lib/systemd/system/atop.service; enabled; vendor preset: enabled)
+      Active: active (running)
+
+      atopacct.service - Atop process accounting daemon
+      Loaded: loaded (/usr/lib/systemd/system/atopacct.service; enabled; vendor preset: enabled)
+      Active: active (running)
+
+      atop-rotate.timer - Daily atop restart
+      Loaded: loaded (/usr/lib/systemd/system/atop-rotate.timer; enabled; vendor preset: enabled)
+      Active: active (waiting)
+
+#. Run the following command to stop atop after troubleshooting to release the system and disk resources occupied by atop:
+
+   **systemctl disable atop atopacct atop-rotate.timer**
+
+   **systemctl stop atop atopacct atop-rotate.timer**
 
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section3205824181917:
 
@@ -287,24 +433,38 @@ Configuring atop for SUSE 12 or SUSE 15
       LOGINTERVAL=15
       LOGGENERATIONS=3
 
-7. Run the following command to restart atop:
+7. Restart the atop service (started by default) to apply the configuration:
 
-   **systemctl restart atop**
+   **systemctl restart atop atopacct atop-rotate.timer**
 
-8. Run the following command to check the status of atop. **active (running)** indicates that atop is running properly.
+8. Check whether atop is started. If **atop atopacct** is **active (running)**, or **atop-rotate.timer** is **active (waiting)**, the service is running properly.
 
-   **systemctl status atop**
+   **systemctl status atop atopacct atop-rotate.timer**
 
    .. code-block::
 
       atop.service - Atop advanced performance monitor
-       Loaded: loaded (/usr/lib/systemd/system/atop.service; enabled; vendor preset: disabled)
-       Active: active (running) since Sat 2021-06-19 16:50:01 CST; 6s ago
+      Loaded: loaded (/usr/lib/systemd/system/atop.service; enabled; vendor preset: enabled)
+      Active: active (running)
+
+      atopacct.service - Atop process accounting daemon
+      Loaded: loaded (/usr/lib/systemd/system/atopacct.service; enabled; vendor preset: enabled)
+      Active: active (running)
+
+      atop-rotate.timer - Daily atop restart
+      Loaded: loaded (/usr/lib/systemd/system/atop-rotate.timer; enabled; vendor preset: enabled)
+      Active: active (waiting)
+
+9. Run the following command to stop atop after troubleshooting to release the system and disk resources occupied by atop:
+
+   **systemctl disable atop atopacct atop-rotate.timer**
+
+   **systemctl stop atop atopacct atop-rotate.timer**
 
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section012793312620:
 
-Installing atop by Compiling the Source Code (for CentOS Stream 9, openEuler or EulerOS)
-----------------------------------------------------------------------------------------
+Installing atop by Compiling the Source Code (for CentOS Stream 8/9, openEuler, or EulerOS)
+-------------------------------------------------------------------------------------------
 
 #. Download the atop source package.
 
@@ -355,34 +515,49 @@ Installing atop by Compiling the Source Code (for CentOS Stream 9, openEuler or 
 
    **make systemdinstall**
 
-6. Modify the configuration file of atop.
+6. Run the following command to modify the configuration file of atop:
 
    **vi /etc/default/atop**
 
    Modify the following parameters, save the modification, and exit:
 
    -  Change the value of **LOGINTERVAL** to, for example, **15**. The default value of **LOGINTERVAL** is **600**, in seconds.
-
    -  Change the value of **LOGGENERATIONS** to, for example, **3**. The default retention period of atop logs is **28** days.
-
-      .. code-block::
-
-         LOGOPTS=""
-         LOGINTERVAL=15
-         LOGGENERATIONS=3
-         LOGPATH=/var/log/atop
-
-7. Restart atop.
-
-   **systemctl restart atop**
-
-8. Check the status of atop. **active (running)** indicates that atop is running properly.
-
-   **systemctl status atop**
 
    .. code-block::
 
-      atop.service - Atop advanced performance monitor    Loaded: loaded(/lib/systemd/system/atop.service; enabled)    Active: active (running) since Sun2021-07-25 19:29:40 CST; 4s ago .
+      LOGOPTS=""
+      LOGINTERVAL=15
+      LOGGENERATIONS=3
+      LOGPATH=/var/log/atop
+
+7. Restart the atop service (started by default) to apply the configuration:
+
+   **systemctl restart atop atopacct atop-rotate.timer**
+
+8. Check whether atop is started. If **atop atopacct** is **active (running)**, or **atop-rotate.timer** is **active (waiting)**, the service is running properly.
+
+   **systemctl status atop atopacct atop-rotate.timer**
+
+   .. code-block::
+
+      atop.service - Atop advanced performance monitor
+      Loaded: loaded (/usr/lib/systemd/system/atop.service; enabled; vendor preset: enabled)
+      Active: active (running)
+
+      atopacct.service - Atop process accounting daemon
+      Loaded: loaded (/usr/lib/systemd/system/atopacct.service; enabled; vendor preset: enabled)
+      Active: active (running)
+
+      atop-rotate.timer - Daily atop restart
+      Loaded: loaded (/usr/lib/systemd/system/atop-rotate.timer; enabled; vendor preset: enabled)
+      Active: active (waiting)
+
+9. Run the following command to stop atop after troubleshooting to release the system and disk resources occupied by atop:
+
+   **systemctl disable atop atopacct atop-rotate.timer**
+
+   **systemctl stop atop atopacct atop-rotate.timer**
 
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section478115314146:
 
@@ -452,16 +627,6 @@ Run the following command to check the log file:
    -  **#xxxxxi**: Specifies the number of packets received by each layer or active network port.
    -  **#xxxxxo**: Specifies the number of packets sent by each layer or active network port.
 
--  **Stopping atop**
-
-   Running atop occupies extra system and disk resources. You are not advised to run it for a long time in the service environment. After faults are rectified, run the following command to stop atop:
-
-   **systemctl stop atop**
-
-   For CentOS 6, run the following command to stop atop:
-
-   **service atop stop**
-
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section1410131164120:
 
 Precautions for Configuring kdump
@@ -493,9 +658,9 @@ Configuring kdump
 
    **systemctl enable kdump**
 
-#. Configure the parameters for the crash kernel to reserve the memory for the capture kernel.
+#. Configure the **crashkernel** parameter to reserve the memory for the capture kernel.
 
-   Check whether the parameters are configured.
+   Run the following command to check whether the parameter has been configured:
 
    **grep crashkernel /proc/cmdline**
 

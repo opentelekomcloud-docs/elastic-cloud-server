@@ -10,7 +10,7 @@ Constraints
 
 -  Only a running ECS can be logged in to.
 
--  Login usernames, passwords, and constraints vary depending on OSs running on the ECSs created using a public image. For details, see `Public Images Introduction <https://docs.otc.t-systems.com/image-management-service/public-images/>`__.
+-  Login usernames, passwords, and constraints vary depending on OSs running on the ECSs created using a public image. For details, see `Public Image Introduction <https://docs.otc.t-systems.com/image-management-service/public-images/>`__.
 
 -  If an ECS uses key pair authentication, use the password obtaining function available on the management console to decrypt the private key used during ECS creation to obtain a password.
 

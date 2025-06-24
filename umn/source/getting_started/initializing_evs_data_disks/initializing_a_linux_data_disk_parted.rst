@@ -123,7 +123,7 @@ The following example shows you how a new partition can be created on a new data
 
 #. Create a new partition.
 
-   **mkpart** *Partition name Start sector* *End sector*
+   **mkpart** *<Partition name> <Start sector>* *<End sector>*
 
    In this example, run the following command:
 
