@@ -108,16 +108,16 @@ Images Supported by GPU-accelerated ECSs
    |                       |                       | -  CentOS 7.8 64bit                      |
    |                       |                       | -  CentOS 7.7 64bit                      |
    |                       |                       | -  CentOS 7.6 64bit                      |
-   |                       |                       | -  Ubuntu 22.04 Server 64bit             |
-   |                       |                       | -  Ubuntu 20.04 Server 64bit             |
-   |                       |                       | -  Ubuntu 18.04 Server 64bit             |
-   |                       |                       | -  Ubuntu 16.04 Server 64bit             |
+   |                       |                       | -  Ubuntu 22.04 server 64bit             |
+   |                       |                       | -  Ubuntu 20.04 server 64bit             |
+   |                       |                       | -  Ubuntu 18.04 server 64bit             |
+   |                       |                       | -  Ubuntu 16.04 server 64bit             |
    |                       |                       | -  EulerOS 2.0 64bit                     |
    +-----------------------+-----------------------+------------------------------------------+
    | Inference-accelerated | Pi2                   | -  CentOS 7.9 64bit                      |
    |                       |                       | -  Oracle Linux Server release 7.6 64bit |
-   |                       |                       | -  Ubuntu 20.04 Server 64bit             |
-   |                       |                       | -  Ubuntu 18.04 Server 64bit             |
+   |                       |                       | -  Ubuntu 20.04 server 64bit             |
+   |                       |                       | -  Ubuntu 18.04 server 64bit             |
    |                       |                       | -  Windows Server 2019 Standard 64bit    |
    |                       |                       | -  Windows Server 2016 Standard 64bit    |
    |                       |                       | -  Windows Server 2012 R2 Standard 64bit |
