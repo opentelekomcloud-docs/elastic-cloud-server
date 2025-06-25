@@ -25,7 +25,7 @@ A region and availability zone (AZ) identify the location of a data center. You 
 Selecting a Region
 ------------------
 
-Select a region closest to your target users for lower network latency and quick access.
+You are advised to select a region close to you or your target users. This helps ensure low access latency.
 
 Selecting an AZ
 ---------------
