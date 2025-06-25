@@ -22,11 +22,11 @@ Constraints
 
 -  Ensure that IPv6 has been enabled on the subnet where the ECS works.
 
-   If IPv6 is not enabled on the subnet, enable it by referring to :ref:`Enabling IPv6 for an ECS <en-us_topic_0140963099__en-us_topic_0129883696_section1967161905116>`. IPv6 cannot be disabled once it is enabled.
+   If IPv6 is not enabled, enable it by referring to :ref:`Enabling IPv6 for an ECS <en-us_topic_0140963099__en-us_topic_0129883696_section1967161905116>`. Once enabled, IPv6 cannot be disabled.
 
 -  Ensure that the ECS flavor supports IPv6. Currently, S3, C4, and M4 ECSs support IPv6.
 
--  Ensure that **Self-assigned IPv6 address** is selected during ECS creation.
+-  Ensure that **Automatically-assigned IPv6 address** is selected during ECS creation.
 
 -  After the ECS is started, its hot-swappable NICs cannot automatically acquire IPv6 addresses.
 -  Only ECSs can work in dual-stack mode and BMSs cannot.
@@ -35,23 +35,25 @@ Constraints
 Procedure
 ---------
 
--  Windows: Windows Server 2012 is used as an example to describe how to enable dynamic assignment of IPv6 addresses in Windows.
+-  Windows: Windows Server 2012 is used as an example to describe how to enable dynamic assignment of IPv6 addresses in Windows, as shown in :ref:`Table 1 <en-us_topic_0140963099__en-us_topic_0129883696_table1091729658>`.
 
--  Linux: Dynamic assignment of IPv6 addresses can be enabled automatically (recommended) or manually.
+-  Linux: Dynamic assignment of IPv6 addresses can be enabled automatically (recommended) or manually, as shown in :ref:`Table 1 <en-us_topic_0140963099__en-us_topic_0129883696_table1091729658>`.
 
    If a private image created from a CentOS 6.x or Debian ECS with automatic IPv6 address assignment enabled is used to create an ECS in an environment that does not support IPv6, the ECS may start slow because of IPv6 address assignment timeout. You can set the timeout duration for assigning IPv6 addresses by referring to :ref:`Setting the Timeout Duration for IPv6 Address Assignment <en-us_topic_0140963099__en-us_topic_0129883696_section814912855814>`.
 
+.. _en-us_topic_0140963099__en-us_topic_0129883696_table1091729658:
+
 .. table:: **Table 1** Enabling dynamic assignment of IPv6 addresses for different OSs
 
-   +---------------------+---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
-   | OS                  | Automatically/Manually Enabling | Reference                                                                                                                                       |
-   +=====================+=================================+=================================================================================================================================================+
-   | Windows Server 2012 | Automatically                   | :ref:`Windows Server 2012 <en-us_topic_0140963099__en-us_topic_0129883696_section0206266172>`                                                   |
-   +---------------------+---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Linux               | Automatically (recommended)     | :ref:`Linux (Automatically Enabling Dynamic Assignment of IPv6 Addresses) <en-us_topic_0140963099__en-us_topic_0129883696_section106971627556>` |
-   +---------------------+---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Linux               | Manually                        | :ref:`Linux (Manually Enabling Dynamic Assignment of IPv6 Addresses) <en-us_topic_0140963099__en-us_topic_0129883696_section7426172116710>`     |
-   +---------------------+---------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+   +---------------------+--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+   | OS                  | Auto/Manual        | Reference                                                                                                                                       |
+   +=====================+====================+=================================================================================================================================================+
+   | Windows Server 2012 | Auto               | :ref:`Windows Server 2012 <en-us_topic_0140963099__en-us_topic_0129883696_section0206266172>`                                                   |
+   +---------------------+--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Linux               | Auto (recommended) | :ref:`Linux (Automatically Enabling Dynamic Assignment of IPv6 Addresses) <en-us_topic_0140963099__en-us_topic_0129883696_section106971627556>` |
+   +---------------------+--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Linux               | Manual             | :ref:`Linux (Manually Enabling Dynamic Assignment of IPv6 Addresses) <en-us_topic_0140963099__en-us_topic_0129883696_section7426172116710>`     |
+   +---------------------+--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0140963099__en-us_topic_0129883696_section1967161905116:
 
@@ -68,9 +70,9 @@ Enabling IPv6 for an ECS
 
 3. Under **Computing**, click **Elastic Cloud Server**.
 
-4. Click the target ECS to go to the detail page.
+4. Click the target ECS to go to the ECS details page.
 
-5. In the **ECS Information** area, click the VPC name.
+5. In the **ECS Information** area, click the VPC name. The VPC list is displayed.
 
 6. Click the number in the **Subnets** column.
 
@@ -82,7 +84,7 @@ Enabling IPv6 for an ECS
 
 8. In the **Subnet Information** area, click **Enable** for **IPv6 CIDR Block**.
 
-9. Click **Yes**.
+9. Click **OK**.
 
 .. _en-us_topic_0140963099__en-us_topic_0129883696_section0206266172:
 
@@ -93,7 +95,7 @@ Windows Server 2012
 
    Check whether IPv6 is enabled for the ECS.
 
-   Run the following command in the CMD window to check it:
+   Run the following command in the CMD window:
 
    **ipconfig**
 
@@ -358,11 +360,11 @@ Linux (Manually Enabling Dynamic Assignment of IPv6 Addresses)
 
             **Figure 13** Configuration file name
 
-      c. Run the following command to edit the configuration file:
+      c. Run the following command to edit the configuration file **01-network-manager-all.yaml**:
 
          **vi 01-network-manager-all.yaml**
 
-      d. Append the following content to the configuration file (pay attention to the yaml syntax and text indentation):
+      d. Append the following content to the configuration file **01-network-manager-all.yaml** (pay attention to the YAML file format and text indentation):
 
          .. code-block::
 
@@ -398,11 +400,11 @@ Linux (Manually Enabling Dynamic Assignment of IPv6 Addresses)
 
             **Figure 15** Configuration file name
 
-      c. Run the following command to edit the configuration file:
+      c. Run the following command to edit the configuration file **01-netcfg.yaml**:
 
          **vi 01-netcfg.yaml**
 
-      d. Append the following content to the configuration file **01-netcfg.yaml** (pay attention to the yaml syntax and text indentation):
+      d. Append the following content to the configuration file **01-netcfg.yaml** (pay attention to the YAML file format and text indentation):
 
          .. code-block::
 
