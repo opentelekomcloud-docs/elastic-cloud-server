@@ -170,10 +170,10 @@ Use one of the following methods to set the NIC multi-queue attribute:
 Creating an ECS Using a Private Image
 -------------------------------------
 
-Create an ECS using a registered private image. For details, see :ref:`Creating an ECS <en-us_topic_0021831611>`. Note the following when setting the parameters:
+You can create an ECS using a registered private image. For details, see :ref:`Creating an ECS <en-us_topic_0021831611>`. Note the following when setting the parameters:
 
 -  **Region**: Select the region where the private image is located.
--  **Image**: Select **Private image** and then the desired image from the drop-down list.
+-  **Image**: Click **Private image** and then select the desired image from the drop-down list.
 
 .. _en-us_topic_0058758453__section214227201118:
 

@@ -25,7 +25,7 @@ Procedure
 
    The page providing details about the ECS is displayed.
 
-#. Click the **NICs** tab. Then, click **Manage Virtual IP Address**.
+#. Click the **Network Interfaces** tab. Then, click **Manage Virtual IP Address**.
 
    The **Virtual Private Cloud** page is displayed.
 
