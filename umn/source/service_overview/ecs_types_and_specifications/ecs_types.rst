@@ -25,7 +25,7 @@ Example: s2.medium.4
 
 The format is defined as follows:
 
--  **A** specifies the ECS type. For example, **s** indicates a general-purpose ECS, **c** a general computing-plus ECS, and **m** a memory-optimized ECS.
+-  **A** specifies the ECS type. For example, **s** indicates a general-computing ECS, **c** a general computing-plus ECS, and **m** a memory-optimized ECS.
 -  **B** specifies the type ID. For example, **3** in **s3** indicates the third-generation general-purpose ECS.
 -  **C** specifies the flavor size, such as medium, large, xlarge, 2xlarge, 4xlarge, or 8xlarge.
 -  **D** specifies the ratio of memory to vCPUs expressed in a digit. For example, value **4** indicates that the ratio of memory to vCPUs is 4.
