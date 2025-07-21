@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0183019671:
 
-Deleting a Tag
-==============
+Deleting Tags
+=============
 
 If you no longer need a tag, delete it in any of the following ways:
 
@@ -20,7 +20,7 @@ Deleting a Tag on the ECS Details Page
 
 #. Click |image1| in the upper left corner and select your region and project.
 
-#. Under **Computing**, choose **Elastic Cloud Server**.
+#. Choose Computing > Elastic Cloud Server. The **Elastic Cloud Server** page is displayed.
 
 #. In the ECS list, click the name of the target ECS.
 

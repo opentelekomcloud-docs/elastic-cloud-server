@@ -119,7 +119,7 @@ Basic Settings
 
    -  System disk
 
-      For details about the disk types supported by ECSs, see :ref:`EVS Disks <en-us_topic_0030828256>`.
+      For details about the disk types supported by ECS, see :ref:`EVS Disks <en-us_topic_0030828256>`.
 
       -  If the image based on which an ECS is created is not encrypted, the system disk of the ECS is not encrypted. If the image based on which an ECS is created is encrypted, the system disk of the ECS is automatically encrypted. For details, see :ref:`(Optional) Encryption-related parameters <en-us_topic_0163572589__en-us_topic_0144542112_li3286101316615>`.
       -  **Encryption**: indicates that the system disk is encrypted if you select this option. For details, see :ref:`(Optional) Encryption-related parameters <en-us_topic_0163572589__en-us_topic_0144542112_li3286101316615>`.

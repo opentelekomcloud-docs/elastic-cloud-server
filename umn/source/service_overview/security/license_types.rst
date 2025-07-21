@@ -15,7 +15,7 @@ BYOL
 
 **What Is BYOL?**
 
-Bring your own license (BYOL) allows you to use your existing OS license. In such a case, you do not need to apply for a license again. In BYOL license type, you do not need to pay for the license fee when creating an ECS.
+Bring your own license (BYOL) allows you to use your existing OS license. In such a case, you do not need to apply for a license again. If you use BYOL when purchasing an ECS, you do not need to pay for the license.
 
 **How to Use BYOL?**
 
