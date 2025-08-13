@@ -22,9 +22,9 @@ Adding Tags During ECS Creation
 
 #. Log in to the management console.
 
-#. Click |image1| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select a region and project.
 
-#. Under **Computing**, choose **Elastic Cloud Server**.
+#. Choose Computing > Elastic Cloud Server. The **Elastic Cloud Server** page is displayed.
 
 #. Click **Create** **ECS**.
 
@@ -37,7 +37,7 @@ Adding Tags During ECS Creation
       For details about other parameters, see "Creating an ECS."
 
 
-   .. figure:: /_static/images/en-us_image_0000001659693292.png
+   .. figure:: /_static/images/en-us_image_0000002385495189.png
       :alt: **Figure 1** Adding tags
 
       **Figure 1** Adding tags
@@ -49,9 +49,9 @@ Adding Tags on the ECS Details Page
 
 #. Log in to the management console.
 
-#. Click |image2| in the upper left corner and select your region and project.
+#. Click |image2| in the upper left corner and select a region and project.
 
-#. Under **Computing**, choose **Elastic Cloud Server**.
+#. Choose Computing > Elastic Cloud Server. The **Elastic Cloud Server** page is displayed.
 
 #. In the ECS list, click the name of the target ECS.
 
@@ -60,7 +60,7 @@ Adding Tags on the ECS Details Page
 #. Click the **Tags** tab and then **Add Tag**. In the displayed dialog box, enter the tag key and tag value. For the tag key and tag value requirements, see :ref:`Table 1 <en-us_topic_0092499768__table197401426182516>`.
 
 
-   .. figure:: /_static/images/en-us_image_0000001659537286.png
+   .. figure:: /_static/images/en-us_image_0000002385415681.png
       :alt: **Figure 2** Adding tags on the Tags tab
 
       **Figure 2** Adding tags on the Tags tab
@@ -110,7 +110,7 @@ If you want to add the same tag to multiple ECSs or other resources, you can cre
 #. Choose **Predefined Tags** in the left navigation pane and click **Create Tag**. In the displayed dialog box, enter a key (for example, **project**) and a value (for example, **A**).
 #. Choose **Computing** > **Elastic Cloud Server** from the service list and select the predefined tag keys and values.
 
-.. |image1| image:: /_static/images/en-us_image_0210779229.png
-.. |image2| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0000002357852357.png
+.. |image2| image:: /_static/images/en-us_image_0000002324093702.png
 .. |image3| image:: /_static/images/en-us_image_0210875481.png
 .. |image4| image:: /_static/images/en-us_image_0210875480.png

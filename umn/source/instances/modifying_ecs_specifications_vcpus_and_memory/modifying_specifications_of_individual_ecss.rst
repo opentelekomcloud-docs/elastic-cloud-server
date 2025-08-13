@@ -18,7 +18,7 @@ To obtain the virtualization type of an ECS, perform the following operations:
 #. On the page providing details about the ECS, view the ECS specifications.
 
 
-   .. figure:: /_static/images/en-us_image_0121090576.png
+   .. figure:: /_static/images/en-us_image_0000002351464146.png
       :alt: **Figure 1** Viewing ECS specifications
 
       **Figure 1** Viewing ECS specifications
@@ -41,7 +41,7 @@ Step 1: Modify Specifications
 
 #. Log in to the management console.
 
-#. Click |image1| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select a region and project.
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
@@ -53,7 +53,7 @@ Step 1: Modify Specifications
 
    The **Modify ECS Specifications** page is displayed.
 
-#. Select the new ECS type, vCPUs, and memory as prompted.
+#. Select the new ECS type, vCPUs, and memory.
 
 
    .. figure:: /_static/images/en-us_image_0000001657891362.png
@@ -65,17 +65,15 @@ Step 1: Modify Specifications
 
    If the ECS is created on a DeH, the system allows you to change the DeH.
 
-   To do so, select the target DeH from the drop-down list. If no DeH is available in the drop-down list, remaining DeH resources are insufficient and cannot be used to create the ECS with specifications modified.
+   To do so, select the target DeH from the drop-down list. If no DeH is available in the drop-down list, it means remaining DeH resources are insufficient and cannot be used to create the ECS with new specifications.
 
 #. Click **Next**.
 
-#. Confirm the settings and click **Submit**.
+#. Confirm the new specifications and click **Submit**.
 
 #. Check whether the specifications have been modified.
 
-   After modifying the specifications, you can check whether the specifications have been modified in **Failures**.
-
-   a. Check whether **Failures** is displayed on the management console. For details, see :ref:`Viewing Failed Tasks <en-us_topic_0108255889>`.
+   a. On the console, check whether **Failures** is displayed by referring to :ref:`Viewing Failed Tasks <en-us_topic_0108255889>`.
 
       -  If yes, go to step :ref:`10.b <en-us_topic_0013771092__li6253192246>`.
       -  If no, the specifications have been modified.
@@ -84,7 +82,7 @@ Step 1: Modify Specifications
 
       Click **Failures**. Then, in the **Failures** dialog box, click **Operation Failures** and check whether the task is contained in the list by **Name/ID**, **Operated At**, or **Task**.
 
-      -  If yes, the specifications modification failed. See :ref:`Follow-up Procedure <en-us_topic_0013771092__section9461027528>` for failure causes.
+      -  If yes, the specifications failed to be modified. See :ref:`Follow-up Procedure <en-us_topic_0013771092__section9461027528>` for failure causes.
       -  If no, the specifications have been modified.
 
 Step 2: Check Disk Attachment
@@ -115,10 +113,10 @@ Perform the following operations if the specifications fail to be modified:
 
 #. In the **Trace Name** column, locate the **resizeServer** event by resource ID.
 
-   The resource ID is the ID of the ECS on which the specifications modification failed.
+   The resource ID is the ID of the ECS whose specifications failed to be modified.
 
 #. Click **View Trace** in the **Operation** column to view the failure cause.
 
    If the fault cannot be rectified based on logs, contact customer service.
 
-.. |image1| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0000002324123086.png

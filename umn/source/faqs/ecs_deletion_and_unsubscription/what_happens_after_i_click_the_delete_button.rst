@@ -18,7 +18,7 @@ To delete selected ECSs, perform the following operations:
 #. Above the ECS list, choose **Delete**.
 
 
-   .. figure:: /_static/images/en-us_image_0000001707891873.png
+   .. figure:: /_static/images/en-us_image_0000002385516357.png
       :alt: **Figure 1** Deleting selected ECSs
 
       **Figure 1** Deleting selected ECSs

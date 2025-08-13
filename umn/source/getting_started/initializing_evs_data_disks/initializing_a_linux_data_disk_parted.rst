@@ -52,7 +52,7 @@ The following example shows you how a new partition can be created on a new data
 
 #. Launch parted to partition the new data disk.
 
-   **parted** *New data disk*
+   **parted** *<new-data-disk>*
 
    In this example, run the following command:
 

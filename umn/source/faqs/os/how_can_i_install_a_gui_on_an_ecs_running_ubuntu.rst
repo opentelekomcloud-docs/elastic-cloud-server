@@ -24,7 +24,7 @@ You can perform the following steps to install a GUI on an Ubuntu ECS:
 Constraints
 -----------
 
--  This document applies to ECSs running Ubuntu 16.04, 18.04, and 20.04.
+-  This section applies to ECSs running Ubuntu 16.04, 18.04, 20.04, 22.04, and 24.04.
 -  The Ubuntu ECS must have an EIP bound or have an intranet image source configured.
 -  Before installing a GUI on an ECS, ensure that the idle memory is greater than or equal to 2 GB. Otherwise, the GUI installation may fail or the ECS cannot be started after the installation.
 -  GPU-accelerated ECSs must have a correct GPU driver installed. For details, see :ref:`GPU Driver <en-us_topic_0234802636>`.
@@ -46,11 +46,21 @@ Installing a GUI
 
          **apt-get install -y scite xorg xubuntu-desktop**
 
-      -  For Ubuntu 18.04 and 20.04, run the following command:
+      -  For Ubuntu 18.04 and later versions, run the following command:
 
          **apt-get install -y ubuntu-desktop**
 
-#. Run the following command to edit the **root/.profile** file:
+#. Set the configuration file version (mandatory for Ubuntu 24.04).
+
+   In Ubuntu 24.04, after the installation command is executed, you need to set the configuration file as prompted or press **Enter** to use the default value.
+
+
+   .. figure:: /_static/images/en-us_image_0000002310550052.png
+      :alt: **Figure 1** Example configuration file
+
+      **Figure 1** Example configuration file
+
+#. Run the following command to edit the **/root/.profile** file:
 
    **vim /root/.profile**
 
@@ -75,7 +85,7 @@ Installing a GUI
 
 #. .. _en-us_topic_0155136016__li2361413175614:
 
-   (Mandatory for Ubuntu 20.04) Add a member account.
+   Add a member account (mandatory for Ubuntu 20.04).
 
    After the GUI desktop component is installed on the ECS, you cannot log in to the Ubuntu 20.04 OS as user **root**. You need to add a member account for logging in to the GUI desktop.
 
@@ -113,7 +123,7 @@ Installing a GUI
 
 #. Run the reboot command to restart the ECS.
 
-#. Log in to the ECS using VNC provided on the management console and log in to the GUI desktop using the member account created in :ref:`5 <en-us_topic_0155136016__li2361413175614>` or the **root** account.
+#. Log in to the ECS using VNC provided on the management console and log in to the GUI desktop using the member account created in step :ref:`6 <en-us_topic_0155136016__li2361413175614>` or the **root** account.
 
    -  For Ubuntu 20.04 OS, you need to use the member account to log in to the GUI desktop.
    -  For GPU-accelerated ECSs, you also need to :ref:`configure X Server, x11vnc, and lightdm <en-us_topic_0155136016__section017703513556>`.
@@ -135,9 +145,9 @@ For GPU-accelerated ECSs, you need to configure X Server, x11vnc, and lightdm wh
 
 
    .. figure:: /_static/images/en-us_image_0000001305249202.png
-      :alt: **Figure 1** GPU's BusID
+      :alt: **Figure 2** GPU's BusID
 
-      **Figure 1** GPU's BusID
+      **Figure 2** GPU's BusID
 
 #. Generate the X Server configuration.
 
@@ -155,9 +165,9 @@ For GPU-accelerated ECSs, you need to configure X Server, x11vnc, and lightdm wh
 
 
       .. figure:: /_static/images/en-us_image_0000001358242793.png
-         :alt: **Figure 2** Adding the GPU's BusID
+         :alt: **Figure 3** Adding the GPU's BusID
 
-         **Figure 2** Adding the GPU's BusID
+         **Figure 3** Adding the GPU's BusID
 
       .. note::
 
@@ -183,9 +193,9 @@ For GPU-accelerated ECSs, you need to configure X Server, x11vnc, and lightdm wh
 
 
    .. figure:: /_static/images/en-us_image_0000001358295221.png
-      :alt: **Figure 3** Selecting a display manager
+      :alt: **Figure 4** Selecting a display manager
 
-      **Figure 3** Selecting a display manager
+      **Figure 4** Selecting a display manager
 
 #. Configure the GUI desktop environment to automatically start upon ECS startup.
 
@@ -258,9 +268,9 @@ After installing a GUI on a GPU-accelerated ECS, perform the following operation
 
 
    .. figure:: /_static/images/en-us_image_0000001305796210.png
-      :alt: **Figure 4** TightVNC client
+      :alt: **Figure 5** TightVNC client
 
-      **Figure 4** TightVNC client
+      **Figure 5** TightVNC client
 
 #. Right-click on the blank area and choose **Open in Terminal** from the shortcut menu.
 
@@ -270,9 +280,9 @@ After installing a GUI on a GPU-accelerated ECS, perform the following operation
 
 
    .. figure:: /_static/images/en-us_image_0000001358439905.png
-      :alt: **Figure 5** Graphics card information
+      :alt: **Figure 6** Graphics card information
 
-      **Figure 5** Graphics card information
+      **Figure 6** Graphics card information
 
    .. note::
 

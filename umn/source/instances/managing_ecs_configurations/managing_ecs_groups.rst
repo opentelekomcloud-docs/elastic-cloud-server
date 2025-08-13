@@ -8,7 +8,7 @@ Managing ECS Groups
 Scenarios
 ---------
 
-An ECS group logically groups ECSs. ECSs in an ECS group comply with the same policy associated with the ECS group.
+An ECS group logically groups ECSs. ECSs in an ECS group comply with the same policy.
 
 Currently, only the anti-affinity policy is supported.
 
@@ -34,11 +34,11 @@ Creating an ECS Group
 Create an ECS group and associate the same policy to all group members. ECS groups are independent from each other.
 
 #. Log in to the management console.
-#. Click |image1| in the upper left corner and select your region and project.
-#. Under **Computing**, choose **Elastic Cloud Server**.
+#. Click |image1| in the upper left corner and select a region and project.
+#. Under **Computing**, click **Elastic Cloud Server**.
 #. In the navigation pane on the left, choose **ECS Group**.
 #. On the **ECS Group** page, click **Create ECS Group**.
-#. Enter the name of an ECS group.
+#. Enter the name of the ECS group.
 #. Select a policy for the ECS group.
 #. Click **OK**.
 
@@ -51,13 +51,13 @@ To improve service reliability, you can add ECSs to an ECS group so that these E
 
 .. note::
 
-   -  After an ECS is added to an ECS group, the system reallocates a host to run this ECS to ensure that ECSs in this group are running on different hosts. When the ECS is being restarted, the startup may fail due to insufficient resources. In such a case, remove the ECS from the ECS group and try to restart the ECS again.
-   -  ECSs that have local disks attached can be added to an ECS group only during the creation process. Once created, they can no longer be added to any ECS groups.
-   -  ECSs that have local disks, GPU cards, or FPGA cards attached can be added to an ECS group only during the creation process. Once created, they can no longer be added to any ECS groups.
+   -  After an ECS is added to an ECS group, the system reallocates a host to run this ECS to ensure that ECSs in this group run on different hosts. When you attempt to restart the ECS, the startup may fail due to insufficient resources. In such a case, remove the ECS from the ECS group and try to restart the ECS again.
+   -  ECSs that have local disks attached can be added to an ECS group only during the creation process. Once created, they cannot be added to any ECS groups.
+   -  ECSs that have local disks, GPU cards, or FPGA cards attached can be added to an ECS group only during the creation process. Once created, they cannot be added to any ECS groups.
 
 #. Log in to the management console.
-#. Click |image2| in the upper left corner and select your region and project.
-#. Under **Computing**, choose **Elastic Cloud Server**.
+#. Click |image2| in the upper left corner and select a region and project.
+#. Under **Computing**, click **Elastic Cloud Server**.
 #. In the navigation pane on the left, choose **ECS Group**.
 #. Locate the row that contains the target ECS group and click **Add ECS** in the **Operation** column.
 #. On the **Add ECS** page, select an ECS to be added.
@@ -72,9 +72,9 @@ After an ECS is removed from an ECS group, the ECS does not comply with the ECS 
 
 #. Log in to the management console.
 
-#. Click |image3| in the upper left corner and select your region and project.
+#. Click |image3| in the upper left corner and select a region and project.
 
-#. Under **Computing**, choose **Elastic Cloud Server**.
+#. Under **Computing**, click **Elastic Cloud Server**.
 
 #. In the navigation pane on the left, choose **ECS Group**.
 
@@ -82,7 +82,9 @@ After an ECS is removed from an ECS group, the ECS does not comply with the ECS 
 
 #. Locate the ECS to be removed and click **Remove** in the **Operation** column.
 
-#. In the displayed dialog box, click **Yes**.
+   Alternatively, select multiple ECSs to be removed and click **Remove** above the list.
+
+#. In the displayed dialog box, click **OK**.
 
    The ECS is removed from the ECS group.
 
@@ -94,13 +96,13 @@ Deleting an ECS Group
 After an ECS group is deleted, the policy does not apply to the ECSs in the ECS group anymore.
 
 #. Log in to the management console.
-#. Click |image4| in the upper left corner and select your region and project.
-#. Under **Computing**, choose **Elastic Cloud Server**.
+#. Click |image4| in the upper left corner and select a region and project.
+#. Under **Computing**, click **Elastic Cloud Server**.
 #. In the navigation pane on the left, choose **ECS Group**.
 #. Locate the ECS group to be deleted and click **Delete** in the **Operation** column.
-#. In the displayed dialog box, click **Yes**.
+#. In the displayed dialog box, click **OK**.
 
-.. |image1| image:: /_static/images/en-us_image_0210779229.png
-.. |image2| image:: /_static/images/en-us_image_0210779229.png
-.. |image3| image:: /_static/images/en-us_image_0210779229.png
-.. |image4| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0000002357961877.png
+.. |image2| image:: /_static/images/en-us_image_0000002323963310.png
+.. |image3| image:: /_static/images/en-us_image_0000002324123110.png
+.. |image4| image:: /_static/images/en-us_image_0000002357881761.png

@@ -48,7 +48,9 @@ Basic Settings
 
    The cloud platform provides various ECS types for different application scenarios. You can choose from existing ECS types and flavors in the list. Alternatively, you can enter a flavor or specify vCPUs and memory size to search for the flavor suited to your needs.
 
-   **Latest generation** shows the types and flavors of newly released ECSs, and **All generations** show the types and flavors of all ECSs provided by the cloud platform.
+   -  **Hide sold-out specifications**: After this option is selected, sold-out specifications are not displayed.
+   -  **Only show latest generation**: After this option is selected, only newly released ECS types and specifications are displayed. If this option is not selected, all ECS types and specifications available on the cloud service platform are displayed.
+   -  **Only show bare metal specifications**: After this option is selected, only bare metal specifications are displayed. If this option is not selected, all ECS types and specifications available on the cloud service platform are displayed.
 
    .. note::
 
@@ -66,7 +68,7 @@ Basic Settings
 
       A public image is a standard, widely used image. It contains an OS and preinstalled public applications and is available to all users. You can configure the runtime environment or software in the public image as needed.
 
-      For more information about public images, see `Public Image Introduction <https://docs.otc.t-systems.com/image-management-service/public-images/>`__.
+      For more information about public images, see `Image Management Service - Public Image Introduction <https://docs.otc.t-systems.com/image-management-service/public-images/>`__.
 
    -  Private image
 
@@ -161,4 +163,5 @@ Basic Settings
 #. Click **Next: Configure Network**.
 
 .. |image1| image:: /_static/images/en-us_image_0171575801.png
-.. |image2| image:: /_static/images/en-us_image_0000001208978003.png
+.. |image2| image:: /_static/images/en-us_image_0000002405497713.png
+.. |image3| image:: /_static/images/en-us_image_0000002372211646.png

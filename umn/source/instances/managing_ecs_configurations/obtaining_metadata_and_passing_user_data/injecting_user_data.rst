@@ -24,8 +24,8 @@ Constraints
 
    -  The user data to be specified must be less than or equal to 32 KB.
    -  If user data is uploaded as text, the data can contain only ASCII characters. If user data is uploaded using a file, the file can contain any characters and the file size cannot exceed 32 KB.
-   -  The image that is used to create ECSs must be a public image, a private image created based on a public image, or a private image with Cloud-Init installed.
-   -  The format of the customized scripts must be supported by Linux ECSs.
+   -  The image that is used to create ECSs must be a public image, a private image created from a public image, or a private image with Cloud-Init installed.
+   -  The format of the user data scripts must be supported by Linux ECSs.
    -  DHCP must be enabled on the VPC network, and port 80 must be enabled for the security group in the outbound direction.
 
 -  Windows
@@ -40,7 +40,7 @@ Constraints
 Injecting User Data
 -------------------
 
-#. Create a user data script, the format of which complies with user data script specifications. For details, see :ref:`Helpful Links <en-us_topic_0032380449__section54344118153243>`.
+#. Create a user data script that complies with user data script specifications. For details, see :ref:`Helpful Links <en-us_topic_0032380449__section54344118153243>`.
 
 #. When creating an ECS, set **Advanced Options** to **Configure now**, and paste the content of the user data script to the **User Data** text box or upload the user data file.
 
@@ -53,57 +53,57 @@ Injecting User Data
       File: Save the user data script to a text file and then upload the file.
 
 
-   .. figure:: /_static/images/en-us_image_0237026761.png
+   .. figure:: /_static/images/en-us_image_0000002352286882.png
       :alt: **Figure 1** User data injection
 
       **Figure 1** User data injection
 
-#. The created ECS automatically runs Cloud-Init/Cloudbase-Init and reads the user data script upon startup.
+#. The created ECS automatically runs Cloud-Init or Cloudbase-Init and reads the user data script upon startup.
 
 User Data Scripts of Linux ECSs
 -------------------------------
 
-Customized user data scripts of Linux ECSs are based on the open-source Cloud-Init architecture. This architecture uses ECS metadata as the data source for automatically configuring the ECSs. The customized script types are compatible with open-source Cloud-Init. For details about Cloud-Init, see http://cloudinit.readthedocs.io/en/latest/topics/format.html.
+User data scripts (referred to as scripts) of Linux ECSs are based on the open-source Cloud-Init architecture. This architecture uses ECS metadata as the data source for configuring the ECSs. User data scripts are compatible with the open-source Cloud-Init. For details about Cloud-Init, see http://cloudinit.readthedocs.io/en/latest/topics/format.html.
 
--  Script execution time: A customized user data script is executed after the status of the target ECS changes to **Running** and before **/etc/init** is executed.
+-  Script execution time: A user data script is executed after the status of the target ECS changes to **Running** and before **/etc/init** is executed.
 
    .. note::
 
       By default, the scripts are executed as user **root**.
 
--  Script type: Both user-data scripts and Cloud-Config data scripts are supported.
+-  Script types: user-data and Cloud-Config data scripts
 
    .. table:: **Table 1** Linux ECS script types
 
-      +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-      | Item                  | User-Data Script                                                                                                                              | Cloud-Config Data Script                                                                                                      |
-      +=======================+===============================================================================================================================================+===============================================================================================================================+
-      | Description           | Scripts, such as Shell and Python scripts, are used for custom configurations.                                                                | Methods pre-defined in Cloud-Init, such as the yum repository and SSH key, are used for configuring certain ECS applications. |
-      +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-      | Format                | The first line must start with **#!** (for example, **#!/bin/bash** or **#!/usr/bin/env python**) and no spaces are allowed at the beginning. | The first line must be **#cloud-config**, and no space is allowed in front of it.                                             |
-      |                       |                                                                                                                                               |                                                                                                                               |
-      |                       | When a script is started for the first time, it will be executed at the rc.local-like level, indicating a low priority in the boot sequence.  |                                                                                                                               |
-      +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-      | Constraint            | Before Base64 encoding, the size of the script, including the first line, cannot exceed 32 KB.                                                | Before Base64 encoding, the size of the script, including the first line, cannot exceed 32 KB.                                |
-      +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-      | Frequency             | The script is executed only once when the ECS is started for the first time.                                                                  | The execution frequency varies according to the applications configured on the ECS.                                           |
-      +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+      +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+      | Item                  | User-Data Script                                                                                                                               | Cloud-Config Data Script                                                                                                      |
+      +=======================+================================================================================================================================================+===============================================================================================================================+
+      | Description           | Scripts, such as Shell and Python scripts, are used for custom configurations.                                                                 | Methods pre-defined in Cloud-Init, such as the yum repository and SSH key, are used for configuring certain ECS applications. |
+      +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+      | Format                | The first line must start with **#!** (for example, **#!/bin/bash** or **#!/usr/bin/env python**), and no spaces are allowed at the beginning. | The first line must be **#cloud-config**, and no space is allowed in front of it.                                             |
+      |                       |                                                                                                                                                |                                                                                                                               |
+      |                       | When a script is started for the first time, it will be executed at the rc.local-like level, indicating a low priority in the boot sequence.   |                                                                                                                               |
+      +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+      | Constraint            | Before Base64 encoding, the size of the script, including the first line, cannot exceed 32 KB.                                                 | Before Base64 encoding, the size of the script, including the first line, cannot exceed 32 KB.                                |
+      +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+      | Frequency             | The script is executed only once when the ECS is started for the first time.                                                                   | The execution frequency varies according to the applications configured on the ECS.                                           |
+      +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
 
--  How can I view the customized user data injected into a Linux ECS?
+-  How can I view the user data injected into a Linux ECS?
 
    #. Log in to the ECS.
 
-   #. Run the following command to view the customized user data as user **root**:
+   #. Run the following command to view the user data as user **root**:
 
       **curl http://169.254.169.254/openstack/latest/user_data**
 
 -  Script usage examples
 
-   This section describes how to inject scripts in different formats into Linux ECSs and view script execution results.
+   The following describes how to inject scripts in different formats into Linux ECSs and view script execution results.
 
    **Example 1: Inject a user-data script.**
 
-   When creating an ECS, set **User Data** to **As text** and enter the customized user data script.
+   When creating an ECS, set **User Data** to **As text** and enter the user data script.
 
    .. code-block::
 
@@ -119,7 +119,7 @@ Customized user data scripts of Linux ECSs are based on the open-source Cloud-In
 
    **Example 2: Inject a Cloud-Config data script.**
 
-   When creating an ECS, set **User Data** to **As text** and enter the customized user data script.
+   When creating an ECS, set **User Data** to **As text** and enter the user data script.
 
    .. code-block::
 
@@ -138,35 +138,35 @@ Customized user data scripts of Linux ECSs are based on the open-source Cloud-In
 User Data Scripts of Windows ECSs
 ---------------------------------
 
-Customized user data scripts of Windows ECSs are based on the open-source Cloudbase-Init architecture. This architecture uses ECS metadata as the data source for initializing and automatically configuring the ECSs. The customized script types are compatible with open-source Cloudbase-Init. For details about Cloudbase-Init, see https://cloudbase-init.readthedocs.io/en/latest/userdata.html.
+User data scripts of Windows ECSs are based on the open-source Cloudbase-Init architecture. This architecture uses ECS metadata as the data source for initializing and configuring the ECSs. User data scripts are compatible with the open-source Cloudbase-Init. For details about Cloudbase-Init, see https://cloudbase-init.readthedocs.io/en/latest/userdata.html.
 
--  Script type: Both batch-processing program scripts and PowerShell scripts are supported.
+-  Script types: batch-processing program and PowerShell scripts
 
    .. table:: **Table 2** Windows ECS script types
 
-      +------------+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-      | ``-``      | Batch-Processing Program Script                                                                                                             | PowerShell Script                                                                                                                        |
-      +============+=============================================================================================================================================+==========================================================================================================================================+
-      | Format     | The script must be started with **rem cmd**, which is the first line of the script. No space is allowed at the beginning of the first line. | The script must be started with **#ps1**, which is the first line of the script. No space is allowed at the beginning of the first line. |
-      +------------+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
-      | Constraint | Before Base64 encoding, the size of the script, including the first line, cannot exceed 32 KB.                                              | Before Base64 encoding, the size of the script, including the first line, cannot exceed 32 KB.                                           |
-      +------------+---------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
+      +------------+------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+      | Item       | Batch-Processing Program Script                                                                                              | PowerShell Script                                                                                                         |
+      +============+==============================================================================================================================+===========================================================================================================================+
+      | Format     | The script must start with **rem cmd** and use it as the first line. No space is allowed at the beginning of the first line. | The script must start with **#ps1** and use it as the first line. No space is allowed at the beginning of the first line. |
+      +------------+------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+      | Constraint | Before Base64 encoding, the size of the script, including the first line, cannot exceed 32 KB.                               | Before Base64 encoding, the size of the script, including the first line, cannot exceed 32 KB.                            |
+      +------------+------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
 
--  How can I view the customized user data injected into a Windows ECS?
+-  How can I view the user data injected into a Windows ECS?
 
    #. Log in to the ECS.
 
-   #. Access the following URL in the address bar of the browser and view the user data:
+   #. In the address bar of a browser, access the following URL and view the user data:
 
       **http://169.254.169.254/openstack/latest/user_data**
 
 -  Script usage examples
 
-   This section describes how to inject scripts in different formats into Windows ECSs and view script execution results.
+   The following describes how to inject scripts in different formats into Windows ECSs and view script execution results.
 
    **Example 1: Inject a batch-processing program script.**
 
-   When creating an ECS, set **User Data** to **As text** and enter the customized user data script.
+   When creating an ECS, set **User Data** to **As text** and enter the user data script.
 
    .. code-block::
 
@@ -191,7 +191,7 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
 
    **Example 2: Inject a PowerShell script.**
 
-   When creating an ECS, set **User Data** to **As text** and enter the customized user data script.
+   When creating an ECS, set **User Data** to **As text** and enter the user data script.
 
    .. code-block::
 
@@ -217,9 +217,9 @@ Customized user data scripts of Windows ECSs are based on the open-source Cloudb
 Case 1
 ------
 
-This case illustrates how to inject user data to simplify Linux ECS configuration.
+This case illustrates how to inject user data to simplify Linux ECS configurations.
 
-In this example, vim is configured to enable syntax highlighting, display line numbers, and set the tab stop to **4**. The .vimrc configuration file is created and injected into the **/root/.vimrc** directory during ECS creation. After the ECS is created, vim is automatically configured based on your requirements. This improves ECS configuration efficiency, especially in batch ECS creation scenarios.
+To enable syntax highlighting, display line numbers, and set the tab stop to **4** for Vim, create a .vimrc configuration file and inject it into the **/root/.vimrc** directory during ECS creation. After the ECS is created, vim is automatically configured based on your requirements. This improves ECS configuration efficiency, especially in batch ECS creation scenarios.
 
 User data example:
 
@@ -246,20 +246,19 @@ This case illustrates how to use the user data injection function to set the pas
 
 .. table:: **Table 3** Password complexity requirements
 
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter                         | Requirement                                                                                                                                                  |
-   +===================================+==============================================================================================================================================================+
-   | Password                          | -  Consists of 8 to 26 characters.                                                                                                                           |
-   |                                   | -  Contains at least three of the following character types:                                                                                                 |
-   |                                   |                                                                                                                                                              |
-   |                                   |    -  Uppercase letters                                                                                                                                      |
-   |                                   |    -  Lowercase letters                                                                                                                                      |
-   |                                   |    -  Digits                                                                                                                                                 |
-   |                                   |    -  Special characters: ``$!@%-_=+[]:./^,{}?``                                                                                                             |
-   |                                   |                                                                                                                                                              |
-   |                                   | -  Cannot contain the username or the username spelled backwards.                                                                                            |
-   |                                   | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------------------+-------------------------------------------------------------------+
+   | Parameter                         | Requirement                                                       |
+   +===================================+===================================================================+
+   | Password                          | -  Consists of 8 to 26 characters.                                |
+   |                                   | -  Contains at least three of the following character types:      |
+   |                                   |                                                                   |
+   |                                   |    -  Uppercase letters                                           |
+   |                                   |    -  Lowercase letters                                           |
+   |                                   |    -  Digits                                                      |
+   |                                   |    -  Special characters: ``$!@%-_=+[]:./^,{}?``                  |
+   |                                   |                                                                   |
+   |                                   | -  Cannot contain the username or the username spelled backwards. |
+   +-----------------------------------+-------------------------------------------------------------------+
 
 User data example:
 
@@ -270,7 +269,7 @@ Using a ciphertext password (recommended)
    #!/bin/bash
    echo 'root:$6$V6azyeLwcD3CHlpY$BN3VVq18fmCkj66B4zdHLWevqcxlig' | chpasswd -e;
 
-In the preceding command output, **$6$V6azyeLwcD3CHlpY$BN3VVq18fmCkj66B4zdHLWevqcxlig** is the ciphertext password, which can be generated as follows:
+In this command, **$6$V6azyeLwcD3CHlpY$BN3VVq18fmCkj66B4zdHLWevqcxlig** is the ciphertext password, which can be generated by performing the following steps:
 
 #. Run the following command to generate an encrypted ciphertext value:
 
@@ -294,6 +293,10 @@ In the preceding command output, **$6$V6azyeLwcD3CHlpY$BN3VVq18fmCkj66B4zdHLWevq
 
 After the ECS is created, you can use the password to log in to it.
 
+.. note::
+
+   When you specify the **adminPass** field during Linux ECS creation, you can refer to this example to set the password for the ECS through user data injection.
+
 Case 3
 ------
 
@@ -309,20 +312,19 @@ In this example, the password of user **root** is reset to **\*****\***.
 
 .. table:: **Table 4** Password complexity requirements
 
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter                         | Requirement                                                                                                                                                  |
-   +===================================+==============================================================================================================================================================+
-   | Password                          | -  Consists of 8 to 26 characters.                                                                                                                           |
-   |                                   | -  Contains at least three of the following character types:                                                                                                 |
-   |                                   |                                                                                                                                                              |
-   |                                   |    -  Uppercase letters                                                                                                                                      |
-   |                                   |    -  Lowercase letters                                                                                                                                      |
-   |                                   |    -  Digits                                                                                                                                                 |
-   |                                   |    -  Special characters: ``$!@%-_=+[]:./^,{}?``                                                                                                             |
-   |                                   |                                                                                                                                                              |
-   |                                   | -  Cannot contain the username or the username spelled backwards.                                                                                            |
-   |                                   | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |
-   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------------------+-------------------------------------------------------------------+
+   | Parameter                         | Requirement                                                       |
+   +===================================+===================================================================+
+   | Password                          | -  Consists of 8 to 26 characters.                                |
+   |                                   | -  Contains at least three of the following character types:      |
+   |                                   |                                                                   |
+   |                                   |    -  Uppercase letters                                           |
+   |                                   |    -  Lowercase letters                                           |
+   |                                   |    -  Digits                                                      |
+   |                                   |    -  Special characters: ``$!@%-_=+[]:./^,{}?``                  |
+   |                                   |                                                                   |
+   |                                   | -  Cannot contain the username or the username spelled backwards. |
+   +-----------------------------------+-------------------------------------------------------------------+
 
 User data example (Retain the indentation in the following script):
 
@@ -360,7 +362,7 @@ After the ECS is created, you can use the created username and password to log i
 Case 5
 ------
 
-This case illustrates how to use the user data injection function to update system software packages for a Linux ECS and enable the HTTPd service. After the user data is passed to an ECS, you can use the HTTPd service.
+This case illustrates how to use the user data injection function to update system software packages for a Linux ECS and enable the httpd service. After the user data is injected to an ECS, you can use the httpd service.
 
 User data example:
 
@@ -374,7 +376,7 @@ User data example:
 Case 6
 ------
 
-This case illustrates how to inject the user data to assign user **root** permissions for remotely logging in to a Linux ECS. After injecting the file into an ECS, you can log in to the ECS as user **root** using SSH key pair authentication.
+This case illustrates how to use the user data injection function to assign user **root** permissions for remotely logging in to a Linux ECS. After the user data is injected to an ECS, you can log in to the ECS as user **root** using SSH key pair authentication.
 
 User data example:
 
@@ -392,7 +394,7 @@ User data example:
 Helpful Links
 -------------
 
-For more information about user data injection cases, visit the official Cloud-init/Cloudbase-init website:
+For more information about user data injection cases, visit the official Cloud-init or Cloudbase-init website:
 
 -  https://cloudinit.readthedocs.io/en/latest/
 

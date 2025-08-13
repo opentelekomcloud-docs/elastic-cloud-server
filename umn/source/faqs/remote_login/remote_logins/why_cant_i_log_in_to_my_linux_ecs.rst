@@ -23,7 +23,7 @@ Check whether you can log in to the ECS using VNC on the management console.
 
 #. Log in to the management console.
 
-#. Under **Computing**, choose **Elastic Cloud Server**.
+#. Choose **Computing** > **Elastic Cloud Server**.
 
 #. In the **Operation** column of the target ECS, click **Remote Login**.
 
@@ -171,7 +171,7 @@ If port 22 is inaccessible, check whether port 22 is opened in the security grou
 On the ECS details page, click the **Security Groups** tab and check that port 22 is configured in the inbound rule of the security group.
 
 
-.. figure:: /_static/images/en-us_image_0000002260436902.png
+.. figure:: /_static/images/en-us_image_0000002385628601.png
    :alt: **Figure 4** Checking remote access ports
 
    **Figure 4** Checking remote access ports

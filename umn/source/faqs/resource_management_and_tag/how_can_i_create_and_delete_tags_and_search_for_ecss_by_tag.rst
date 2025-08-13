@@ -59,7 +59,7 @@ Deleting a Tag
 #. On the page providing details about the ECS, click **Tags**, locate the row containing the target tag, and click **Delete** in the **Operation** column.
 
 
-   .. figure:: /_static/images/en-us_image_0000001662463644.png
+   .. figure:: /_static/images/en-us_image_0000002385823481.png
       :alt: **Figure 3** Deleting a tag
 
       **Figure 3** Deleting a tag

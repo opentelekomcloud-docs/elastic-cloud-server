@@ -21,7 +21,7 @@ Procedure
 
 #. Log in to the management console.
 
-#. Click |image1| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select a region and project.
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
@@ -38,9 +38,9 @@ Procedure
       +------------+-----------------------------------------------------------------------+
       | Parameter  | Description                                                           |
       +============+=======================================================================+
-      | Type       | Select **Create Image**.                                              |
-      +------------+-----------------------------------------------------------------------+
       | Region     | Select a region close to your business.                               |
+      +------------+-----------------------------------------------------------------------+
+      | Type       | Select **Create Image**.                                              |
       +------------+-----------------------------------------------------------------------+
       | Image Type | Select **System disk image**.                                         |
       +------------+-----------------------------------------------------------------------+
@@ -70,6 +70,8 @@ Procedure
       | Description                       | (Optional) Enter a description of the image.                                                                                                                                                                                     |
       +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-#. Click **Create Now**.
+#. Click **Next**.
 
-.. |image1| image:: /_static/images/en-us_image_0210779229.png
+#. Confirm the parameters and click **Submit Application**.
+
+.. |image1| image:: /_static/images/en-us_image_0000002324123038.png

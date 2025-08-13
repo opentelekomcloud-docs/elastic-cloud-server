@@ -23,7 +23,7 @@ Check whether you can log in to the ECS using VNC on the management console.
 
 #. Log in to the management console.
 
-#. Under **Computing**, choose **Elastic Cloud Server**.
+#. Choose **Computing** > **Elastic Cloud Server**.
 
 #. In the **Operation** column of the target ECS, click **Remote Login**.
 
@@ -211,7 +211,7 @@ Checking Whether the Remote Access Port Is Correctly Configured
    On the ECS details page, click the **Security Groups** tab and check port 3389 in the inbound rule of the security group.
 
 
-   .. figure:: /_static/images/en-us_image_0000002294943061.png
+   .. figure:: /_static/images/en-us_image_0000002385621273.png
       :alt: **Figure 7** Checking remote access ports
 
       **Figure 7** Checking remote access ports

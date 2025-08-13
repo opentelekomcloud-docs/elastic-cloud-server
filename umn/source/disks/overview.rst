@@ -10,6 +10,22 @@ What Is Elastic Volume Service?
 
 Elastic Volume Service (EVS) offers scalable block storage for ECSs. With high reliability, high performance, and rich specifications, EVS disks can be used for distributed file systems, development and test environments, data warehouses, and high-performance computing (HPC) scenarios to meet diverse service requirements.
 
+Just like the physical disks in local PC need to be installed before they can be used, EVS disks need to be attached to servers before they can be used. They cannot be used alone. You also need to partition and create file systems on them before they can be used for persistent data storage.
+
+
+.. figure:: /_static/images/en-us_image_0205523160.png
+   :alt: **Figure 1** EVS architecture
+
+   **Figure 1** EVS architecture
+
+-  A system disk runs the server OS. It is like drive C in a PC.
+
+   When a server is created, a system disk is automatically created and attached. You cannot create a system disk separately. The maximum size of a system disk is 1,024 GiB.
+
+-  Data disks store the server data. They are like drive D, drive E, and drive F in a PC.
+
+   Data disks can be created during or after the server creation. If you create data disks during the server creation, the system will automatically attach the data disks to the server. If you create data disks after the server creation, you need to manually attach the data disks. The maximum size of a data disk is 32,768 GiB.
+
 Disk Types
 ----------
 

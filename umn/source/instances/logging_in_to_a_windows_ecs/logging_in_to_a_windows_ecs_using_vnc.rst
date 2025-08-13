@@ -49,7 +49,7 @@ Login Notes
       |                                       |                                                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                            |
       |                                       | .. note::                                                                                                                                                                                                                                                                                   | For instructions about how to change an ECS OS keyboard language, see :ref:`Changing the OS Keyboard Language <en-us_topic_0027268511__section66962382111459>`.                                                                                                                            |
       |                                       |                                                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                            |
-      |                                       |    -  The default OS keyboard language of an ECS created using a public image is English. For additional information, see `Public Image Introduction <https://docs.otc.t-systems.com/image-management-service/public-images/>`__.                                                           |                                                                                                                                                                                                                                                                                            |
+      |                                       |    -  The default OS keyboard language of an ECS created using a public image is English. For additional information, see `Image Management Service - Public Image Introduction <https://docs.otc.t-systems.com/image-management-service/public-images/>`__.                                |                                                                                                                                                                                                                                                                                            |
       |                                       |    -  The OS keyboard language of an ECS created using a private image is customized.                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                                            |
       +---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -236,7 +236,7 @@ Log In to a Windows ECS Using an English Keyboard
 
 #. Log in to the management console.
 
-#. Click |image1| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select a region and project.
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
@@ -262,7 +262,7 @@ Log In to a Windows ECS Using an English Keyboard
 
 #. Click **Remote Login**.
 
-#. (Optional) If you have changed the system language, in the dialog box that is displayed, click **Remote Login**.
+#. (Optional) If you have changed the system language, in the displayed dialog box, click **Remote Login**.
 
 
    .. figure:: /_static/images/en-us_image_0000002141305390.png
@@ -295,7 +295,7 @@ Log In to a Windows ECS Using a Non-English Keyboard
 
 #. Log in to the management console.
 
-#. Click |image3| in the upper left corner and select your region and project.
+#. Click |image3| in the upper left corner and select a region and project.
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
@@ -322,7 +322,7 @@ Log In to a Windows ECS Using a Non-English Keyboard
 
 8.  Click **Remote Login**.
 
-9.  (Optional) If you have changed the system language, in the dialog box that is displayed, click **Remote Login**.
+9.  (Optional) If you have changed the system language, in the displayed dialog box, click **Remote Login**.
 
 
     .. figure:: /_static/images/en-us_image_0000002141305390.png
@@ -408,7 +408,7 @@ In this case, you must change the languages of the other three types of keyboard
 
    For details, see :ref:`Log In to a Windows ECS Using a Non-English Keyboard <en-us_topic_0027268511__section5982347111459>`.
 
-To set the languages on the four types of keyboards to all be the same, repeat steps :ref:`1 <en-us_topic_0027268511__en-us_topic_0039525621_li55865773114331>` to :ref:`4 <en-us_topic_0027268511__en-us_topic_0039525621_li62706781115148>`.
+To set the same language across the four types of keyboards, perform steps :ref:`1 <en-us_topic_0027268511__en-us_topic_0039525621_li55865773114331>` to :ref:`4 <en-us_topic_0027268511__en-us_topic_0039525621_li62706781115148>`.
 
 .. note::
 
@@ -431,7 +431,7 @@ For FAQs about VNC-based ECS logins, see the following links:
 -  :ref:`Why Are Characters Entered Through VNC Still Incorrect After the Keyboard Language Is Switched? <en-us_topic_0030932500>`
 -  :ref:`Why Does a Blank Screen Appear After I Attempted to Log In to an ECS Using VNC? <en-us_topic_0032850906>`
 
-.. |image1| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0000002357961913.png
 .. |image2| image:: /_static/images/en-us_image_0030874266.png
-.. |image3| image:: /_static/images/en-us_image_0210779229.png
+.. |image3| image:: /_static/images/en-us_image_0000002323963338.png
 .. |image4| image:: /_static/images/en-us_image_0030874275.png

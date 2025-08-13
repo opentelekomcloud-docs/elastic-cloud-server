@@ -15,7 +15,7 @@ Solution
 #. Log in to the management console and choose **Key Pair**.
 
 
-   .. figure:: /_static/images/en-us_image_0000001662607510.png
+   .. figure:: /_static/images/en-us_image_0000002371837552.png
       :alt: **Figure 1** Key Pair
 
       **Figure 1** Key Pair
@@ -23,7 +23,7 @@ Solution
 #. Click **Create Key Pair**.
 
 
-   .. figure:: /_static/images/en-us_image_0000001710488113.png
+   .. figure:: /_static/images/en-us_image_0000002405359641.png
       :alt: **Figure 2** Creating a key pair
 
       **Figure 2** Creating a key pair
@@ -31,7 +31,7 @@ Solution
 #. Click **OK** to save the private key to your local directory.
 
 
-   .. figure:: /_static/images/en-us_image_0000001710608385.png
+   .. figure:: /_static/images/en-us_image_0000002352093356.png
       :alt: **Figure 3** Saving the private key
 
       **Figure 3** Saving the private key
