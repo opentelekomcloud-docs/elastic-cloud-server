@@ -18,7 +18,7 @@ Solution
 #. In the navigation pane of the ECS console, choose **Key Pair**. Then, click **Create Key Pair**.
 
 
-   .. figure:: /_static/images/en-us_image_0000001662440438.png
+   .. figure:: /_static/images/en-us_image_0000002371673040.png
       :alt: **Figure 1** Creating a key pair
 
       **Figure 1** Creating a key pair

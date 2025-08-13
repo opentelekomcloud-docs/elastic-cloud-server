@@ -19,7 +19,8 @@ FAQs
 -  :ref:`Application Deployment and Software Installation <en-us_topic_0018124789>`
 -  :ref:`File Upload/Data Transfer <en-us_topic_0170135967>`
 -  :ref:`ECS Failure <en-us_topic_0208808107>`
--  :ref:`Slow ECS Response <en-us_topic_0208809316>`
+-  :ref:`ECS Lag (Windows) <en-us_topic_0208809316>`
+-  :ref:`ECS Lag (Linux) <en-us_topic_0000002371724753>`
 -  :ref:`Specification Modification <en-us_topic_0208808106>`
 -  :ref:`OS Change <en-us_topic_0018124788>`
 -  :ref:`Resource Management and Tag <en-us_topic_0208809315>`
@@ -42,7 +43,8 @@ FAQs
    application_deployment_and_software_installation/index
    file_upload_data_transfer/index
    ecs_failure/index
-   slow_ecs_response/index
+   ecs_lag_windows/index
+   ecs_lag_linux/index
    specification_modification/index
    os_change/index
    resource_management_and_tag/index

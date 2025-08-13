@@ -8,7 +8,7 @@ Why Cannot My ECS OS Start Properly?
 #. Check the image based on which the ECS was created. If the image is a public one, this issue is not caused by private image sources.
 
 
-   .. figure:: /_static/images/en-us_image_0000001710350037.png
+   .. figure:: /_static/images/en-us_image_0000002352075320.png
       :alt: **Figure 1** Image type
 
       **Figure 1** Image type

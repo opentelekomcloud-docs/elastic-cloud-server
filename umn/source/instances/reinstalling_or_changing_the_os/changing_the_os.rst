@@ -25,7 +25,7 @@ Constraints
 -  The system disk type cannot be changed.
 -  The system disk can be encrypted.
 -  For details about the change between different OSs, see :ref:`Notes on Change Between Windows and Linux <en-us_topic_0031523135__section1852122261012>`.
--  If an ECS OS is to be changed using a full-ECS image, the ECS system disk can be encrypted.
+-  If an ECS OS is changed using a full-ECS image, the ECS system disk can be encrypted.
 
 Notes
 -----
@@ -38,7 +38,7 @@ Notes
 -  After the OS is changed, the system disk type of the ECS cannot be changed.
 -  After the OS is changed, the IP and MAC addresses of the ECS remain unchanged.
 -  After the OS is changed, customized configurations, such as DNS and hostname of the original OS will be reset and require reconfiguration.
--  An OS change takes about 1 to 4 minutes to complete. During this process, the ECS is in **Changing OS** state.
+-  An OS change takes about 1 to 4 minutes to complete. During this process, the ECS status is **Changing OS**.
 -  After the OS is changed, the password for logging in to the ECS is reset. To retrieve the password, perform the following operations:
 
    -  For a Linux ECS, log in to it using the key and set a new password. For instructions about how to log in to an ECS using a key pair, see :ref:`Logging In to a Linux ECS Using an SSH Key Pair <en-us_topic_0017955380>`.
@@ -82,11 +82,11 @@ Procedure
 
 #. Log in to the management console.
 
-#. Click |image1| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select a region and project.
 
 #. .. _en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45082966143628:
 
-   Under **Computing**, choose **Elastic Cloud Server**.
+   Under **Computing**, click **Elastic Cloud Server**.
 
 #. Locate the row containing the target ECS and choose **More** > **Manage Image/Backup** > **Change OS** in the **Operation** column.
 
@@ -97,12 +97,12 @@ Procedure
    For details, see :ref:`Creating an ECS <en-us_topic_0021831611>`.
 
 
-   .. figure:: /_static/images/en-us_image_0000001658474496.png
+   .. figure:: /_static/images/en-us_image_0000002385192025.png
       :alt: **Figure 1** Changing an OS
 
       **Figure 1** Changing an OS
 
-#. (Optional) Select the **Encryption** option to encrypt the system disk during OS change.
+#. (Optional) Select the **Encrypted** option to encrypt the system disk during OS change.
 
    To enable encryption, click **Create Xrole** to grant KMS access permissions to EVS. If you have the granting permission, grant KMS access permissions to EVS. If you do not have the granting permission, contact the user who has the Security Administrator permissions to grant KMS access permissions. For details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
 
@@ -122,7 +122,7 @@ Procedure
    -  Oracle Enterprise Linux
    -  Red Hat Enterprise Linux
 
-#. Configure the login mode.
+#. Select the login mode.
 
    If the target ECS uses key pair authentication, you can replace the original key pair.
 
@@ -130,7 +130,7 @@ Procedure
 
 #. .. _en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45992498111556:
 
-   In the **Change ECS OS** dialog box, confirm the specifications, and click **Submit**.
+   In the **Change ECS OS** dialog box, confirm the specifications and click **Submit**.
 
    After the application is submitted, the ECS status changes to **Changing OS**. When this status disappears, the OS change is complete.
 
@@ -157,7 +157,7 @@ Follow-up Procedure
 
       **df -TH**
 
--  If the OS change is unsuccessful, perform steps :ref:`3 <en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45082966143628>` to :ref:`10 <en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45992498111556>` again to retry the OS change.
--  If the second OS change attempt is unsuccessful, contact customer service for manual recovery at the backend.
+-  If the OS change fails, perform steps :ref:`3 <en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45082966143628>` to :ref:`10 <en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45992498111556>` again to retry the OS change.
+-  If the attempt still fails, contact customer service for manual recovery at the backend.
 
-.. |image1| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0000002357961833.png
