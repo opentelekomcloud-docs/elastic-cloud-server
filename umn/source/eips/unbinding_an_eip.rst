@@ -19,7 +19,7 @@ Procedure
 
 #. Log in to the management console.
 
-#. Click |image1| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select a region and project.
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
@@ -30,15 +30,11 @@ Procedure
 #. On the **EIPs** tab, locate the row containing the EIP to be unbound and click **Unbind**.
 
 
-   .. figure:: /_static/images/en-us_image_0000001659508872.png
+   .. figure:: /_static/images/en-us_image_0000002351518800.png
       :alt: **Figure 1** Unbinding an EIP
 
       **Figure 1** Unbinding an EIP
 
-#. Confirm the EIP to be unbound and click .
+#. Confirm the EIP to be unbound and click **OK**.
 
-   .. note::
-
-      Unreleased EIPs will continue to be billed. To stop the EIPs from being billed, release them.
-
-.. |image1| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0000002324093750.png
