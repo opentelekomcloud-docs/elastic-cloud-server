@@ -1,0 +1,39 @@
+name: Feature Demand
+description: Request a new feature or enhancement
+title: "[DEMAND]: "
+labels: ["demand"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature demand! Please provide all the required information to help us understand and process your request efficiently.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Please provide a short summary to your request
+      placeholder: "Please..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature Description
+      description: Please provide a clear and detailed description of the feature you're requesting
+      placeholder: "Describe the feature you'd like to see implemented..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: doc_type
+    attributes:
+      label: Documents Requested
+      description: Select affected document type (at least one or both)
+      options:
+        - label: "API"
+        - label: "UMN"
+    validations:
+      required: true
