@@ -6,8 +6,9 @@
       - helpcenter-base-jobs
     vars:
       sphinx_pdf_files:
-        - ecs-umn.pdf
         - ecs-api-ref.pdf
+        - ecs-best-practice.pdf
+        - ecs-umn.pdf
         - ecs-dev-guide.pdf
     check:
       jobs:
