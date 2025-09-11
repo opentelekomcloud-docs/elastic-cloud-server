@@ -41,7 +41,7 @@ Procedure
 
    a. Log in to the management console.
 
-   b. Click |image1| in the upper left corner and select your region and project.
+   b. Click |image1| in the upper left corner and select a region and project.
 
    c. Under **Computing**, click **Elastic Cloud Server**.
 
@@ -141,8 +141,8 @@ Procedure
 
    b. Click **Start**. Enter **CMD** in the search box and press **Enter**.
 
-   c. Run the following command to set a new password. The new password must meet the password complexity requirements described in :ref:`Application Scenarios for Using Passwords <en-us_topic_0035643949>`.
+   c. Run the following command to set a new password. The new password must meet the password complexity requirements described in :ref:`Overview of Password Reset <en-us_topic_0035643949>`.
 
-      **net user** **Administrator** *New password*
+      **net user** **Administrator** *new-password*
 
-.. |image1| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0000002324093734.png

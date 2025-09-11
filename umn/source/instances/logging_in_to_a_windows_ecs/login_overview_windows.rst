@@ -25,7 +25,7 @@ Login Modes
 
 You can choose from a variety of login modes based on your local OS type.
 
-.. table:: **Table 1** Windows login modes
+.. table:: **Table 1** Windows ECS login modes
 
    +-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
    | ECS OS          | Local OS        | Connection Method                                                                                                                                           | Requirement                                |
@@ -34,11 +34,11 @@ You can choose from a variety of login modes based on your local OS type.
    |                 |                 |                                                                                                                                                             |                                            |
    |                 |                 | Click **Start** on the local computer. In the **Search programs and files** text box, enter **mstsc** to open the **Remote Desktop Connection** dialog box. |                                            |
    |                 |                 |                                                                                                                                                             |                                            |
-   |                 |                 | For details, see :ref:`Logging In to a Windows ECS Using MSTSC <en-us_topic_0017955381>`.                                                                   |                                            |
+   |                 |                 | For details, see :ref:`Logging In to a Windows ECS from a Windows Server <en-us_topic_0017955381>`.                                                         |                                            |
    +-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
    |                 | Linux           | Install a remote connection tool, for example, rdesktop.                                                                                                    |                                            |
    |                 |                 |                                                                                                                                                             |                                            |
-   |                 |                 | For details, see :ref:`Logging In to a Windows ECS from a Linux Computer <en-us_topic_0275383051>`.                                                         |                                            |
+   |                 |                 | For details, see :ref:`Logging In to a Windows ECS from a Linux Server <en-us_topic_0275383051>`.                                                           |                                            |
    +-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
    |                 | Windows         | Through the management console.                                                                                                                             | No EIP is required.                        |
    |                 |                 |                                                                                                                                                             |                                            |

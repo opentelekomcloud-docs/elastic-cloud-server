@@ -8,15 +8,15 @@ Importing a Key Pair
 Scenarios
 ---------
 
-You need to import a key pair in either of the following scenarios:
+You need to import a key pair to the ECS when you:
 
--  Create a key pair using PuTTYgen and import the public key to the ECS.
+-  Create a key pair using puttygen.exe.
 
--  Import the public key of an existing key pair to the ECS to let the system maintain your public key.
+-  Import the public key of an existing local key pair (for example, generated using PuTTYgen) to let the system maintain your public key.
 
    .. note::
 
-      If the public key of the existing key pair is stored by clicking **Save public key** on PuTTY Key Generator, the public key cannot be imported to the management console.
+      If the public key of the existing key pair is stored by clicking **Save public key** on puttygen.exe, the public key cannot be imported to the management console.
 
       If you want to use this existing key pair for remote login, see :ref:`Why Does a Key Pair Created Using puttygen.exe Fail to Be Imported on the Management Console? <en-us_topic_0047654687>`
 
