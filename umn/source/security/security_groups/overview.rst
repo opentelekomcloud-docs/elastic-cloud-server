@@ -14,7 +14,7 @@ You can also customize a security group or use the default one. The system provi
 
 .. note::
 
-   If two ECSs are in the same security group but in different VPCs, the security group does not take effect. You can use a VPC peering connection to connect the two VPCs first.
+   -  A security group works only when the network communication is normal. If two ECSs are in the same security group but in different VPCs, the security group does not take effect. You can use a VPC peering connection to connect the two VPCs first.
 
 Security Group Rules
 --------------------

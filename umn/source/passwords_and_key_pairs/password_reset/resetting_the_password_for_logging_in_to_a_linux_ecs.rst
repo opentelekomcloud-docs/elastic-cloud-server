@@ -34,7 +34,7 @@ Procedure
 
    a. Log in to the management console.
 
-   b. Click |image1| in the upper left corner and select your region and project.
+   b. Click |image1| in the upper left corner and select a region and project.
 
    c. Under **Computing**, click **Elastic Cloud Server**.
 
@@ -99,11 +99,11 @@ Procedure
 
    -  Change **PasswordAuthentication no** to **PasswordAuthentication yes**.
 
-      Alternatively, uncomment **PasswordAuthentication yes**.
+      Alternatively, delete the comment tag (#) before **PasswordAuthentication yes**.
 
    -  Change **PermitRootLogin no** to **PermitRootLogin yes**.
 
-      Alternatively, uncomment **PermitRootLogin yes**.
+      Alternatively, delete the comment tag (#) before **PermitRootLogin yes**.
 
    -  Change the value of **AllowUsers** to **root**.
 
@@ -123,4 +123,4 @@ Procedure
 
 #. Restart the original Linux ECS.
 
-.. |image1| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0000002323933930.png

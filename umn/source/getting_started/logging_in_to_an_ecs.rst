@@ -30,7 +30,7 @@ You can log in to a Windows ECS using either VNC or MSTSC provided on the manage
 
    -  Remote desktop connection (MSTSC)
 
-      For details, see :ref:`Logging In to a Windows ECS Using MSTSC <en-us_topic_0017955381>`.
+      For details, see :ref:`Logging In to a Windows ECS from a Windows Server <en-us_topic_0017955381>`.
 
 Logging In to a Linux ECS
 -------------------------
