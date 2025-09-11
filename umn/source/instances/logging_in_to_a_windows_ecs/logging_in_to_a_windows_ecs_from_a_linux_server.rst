@@ -2,13 +2,13 @@
 
 .. _en-us_topic_0275383051:
 
-Logging In to a Windows ECS from a Linux Computer
-=================================================
+Logging In to a Windows ECS from a Linux Server
+===============================================
 
 Scenarios
 ---------
 
-This section describes how to log in to a Windows ECS from a Linux computer.
+This section describes how to log in to a Windows ECS from a Linux server.
 
 Prerequisites
 -------------
@@ -23,7 +23,7 @@ Prerequisites
 Procedure
 ---------
 
-To log in to a Windows ECS from a local Linux computer, use a remote access tool, such as rdesktop.
+To log in to a Windows ECS from a local Linux server, use a remote access tool, such as rdesktop.
 
 #. Run the following command to check whether rdesktop has been installed on the ECS:
 
@@ -35,7 +35,7 @@ To log in to a Windows ECS from a local Linux computer, use a remote access tool
 
    **rdesktop -u** *Username* **-p** *Password* **-g** *Resolution* *EIP*
 
-   For example, run **rdesktop -u administrator -p password -g 1024*720 121.xx.xx.xx**.
+   For example, run **rdesktop -u administrator -p password -g 1024*720 121.xx.xx.xxx**.
 
    .. table:: **Table 1** Parameters in the remote login command
 
@@ -62,7 +62,7 @@ For your first login, use VNC to log in and enable RDP for your ECS. Then, use M
 
 .. note::
 
-   By default, RDP has been enabled on the ECSs created using a public image.
+   RDP is enabled by default for ECSs created using public images.
 
 #. Log in to the Windows ECS using VNC.
 

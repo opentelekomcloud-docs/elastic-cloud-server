@@ -16,7 +16,7 @@ Advanced Settings
 
    **Allow duplicate name**: allows duplicate ECS names. If you select **Allow duplicate name** and create multiple ECSs in a batch, the created ECSs will have the same name.
 
-   The **ECS Name** set in this step will be the initial host name in the ECS OS.
+   The **ECS Name** set in this step will be the initial hostname in the ECS OS.
 
    .. note::
 

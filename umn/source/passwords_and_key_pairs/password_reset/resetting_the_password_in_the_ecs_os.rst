@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0122627689:
 
-Resetting the Password for Logging In to an ECS in the OS
-=========================================================
+Resetting the Password in the ECS OS
+====================================
 
 Scenarios
 ---------
@@ -39,10 +39,12 @@ Background
    |                                   | -  Cannot contain more than two consecutive characters in the same sequence as they appear in the username. (This requirement applies only to Windows ECSs.) |
    +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Windows
--------
+Windows ECS
+-----------
 
-#. Log in to the ECS.
+For a Windows ECS, log in to the ECS using the old password and reset the password in the OS.
+
+#. Log in to the Windows ECS.
 
    For details, see :ref:`Login Overview (Windows) <en-us_topic_0092494943>`.
 
@@ -52,10 +54,10 @@ Windows
 
 #. Enter a new password that meets the requirements listed in :ref:`Table 1 <en-us_topic_0122627689__en-us_topic_0021426802_table4381109318958>`.
 
-   **net user** **Administrator** *New password*
+   **net user** **Administrator** *new-password*
 
-Linux
------
+Resetting the Password of a Linux ECS
+-------------------------------------
 
 #. Use the existing key file to log in to the ECS as user **root** through SSH.
 

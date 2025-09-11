@@ -8,7 +8,7 @@ Logging In to a Linux ECS Using an SSH Password
 Scenarios
 ---------
 
-This section describes how to remotely log in to a Linux ECS using an SSH password from a Windows and a Linux server, respectively.
+This section describes how to use an SSH password to remotely log in to a Linux ECS from a Windows and a Linux server, respectively.
 
 .. important::
 
@@ -20,7 +20,7 @@ Prerequisites
 -  The target ECS is running.
 -  You have bound an EIP to the ECS. For details, see :ref:`Binding an EIP <en-us_topic_0174917535>`.
 
--  Access to port 22 is allowed in the inbound direction of the security group which the ECS belongs to. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.
+-  Access to port 22 is allowed in the inbound direction of the security group that the ECS belongs to. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.
 -  The network connection between the login tool (PuTTY) and the target ECS is normal. For example, the default port 22 is not blocked by the firewall.
 -  You have obtained the SSH login permission and reset the common user password for logging in to the Linux ECS. For details, see :ref:`Configuring the Login Permission Using SSH Password Authentication <en-us_topic_0017955633__section6207684794951>`.
 

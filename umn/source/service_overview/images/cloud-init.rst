@@ -34,7 +34,7 @@ Impact on ECS
    -  :ref:`Why Does the Login to My Linux ECS Using a Key File Fail? <en-us_topic_0031734664>`
    -  :ref:`Why Does the System Display a Message Indicating that the Password for Logging In to an ECS Cannot Be Obtained? <en-us_topic_0031736846>`
 
--  If Cloud-Init is supported, you can view and use metadata to configure and manage running ECSs. For details, see :ref:`Obtaining Metadata <en-us_topic_0042400609>`.
+-  If Cloud-Init is supported, you can view and use metadata to configure and manage running ECSs. For details, see :ref:`Obtaining ECS Details Using Metadata <en-us_topic_0042400609>`.
 
 Impact on AS
 ------------

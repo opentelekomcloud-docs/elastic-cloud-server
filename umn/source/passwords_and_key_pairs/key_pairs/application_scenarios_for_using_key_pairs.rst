@@ -10,7 +10,7 @@ Key Pairs
 
 Key pairs (SSH key pairs) are a set of security credentials for identity authentication when you remotely log in to ECSs.
 
-A key pair consists of a public key and a private key. Key Pair Service (KPS) stores the public key and you store the private key. If you have imported a public key into a Linux ECS, you can use the corresponding private key, rather than a password, to log in to the ECS. You do not need to worry about password interception, cracking, or leakage.
+A key pair consists of a public key and a private key. Key Pair Service (KPS) stores the public key and you store the private key. If you have bound a public key to a Linux ECS, you can use the corresponding private key, rather than a password, to log in to the ECS. You do not need to worry about password interception, cracking, or leakage.
 
 Scenarios
 ---------
@@ -68,4 +68,4 @@ Notes and Constraints
    -  RSA-2048
    -  RSA-4096
 
--  Store your private key in a secure place because you need to use it to prove your identity when logging in to your ECS. The private key can be downloaded once only.
+-  Store your private key in a secure place because you need to use it to prove your identity when logging in to your ECS. The private key can be downloaded only once.

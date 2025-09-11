@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0017955381:
 
-Logging In to a Windows ECS Using MSTSC
-=======================================
+Logging In to a Windows ECS from a Windows Server
+=================================================
 
 Scenarios
 ---------
@@ -17,10 +17,9 @@ Prerequisites
 -  You have obtained the password for logging in to the Windows ECS. For details, see :ref:`Obtaining the Password for Logging In to a Windows ECS <en-us_topic_0031107266>`.
 -  You have bound an EIP to the ECS. For details, see :ref:`Binding an EIP <en-us_topic_0174917535>`.
 
--  Access to port 3389 is allowed in the inbound direction of the security group which the ECS belongs to. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.
+-  Access to port 3389 is allowed in the inbound direction of the security group that the ECS belongs to. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.
 -  The network connection between the login tool and the target ECS is normal. For example, the default port 3389 is not blocked by the firewall.
 -  Remote Desktop Protocol (RDP) needs to be enabled on the target ECS. For ECSs created using public images, RDP has been enabled by default. For instructions about how to enable RDP, see :ref:`Enabling RDP <en-us_topic_0017955381__section65216898112059>`.
-
 
 Logging In to a Windows ECS Using MSTSC
 ---------------------------------------
@@ -57,17 +56,17 @@ If your local server runs Windows, you can use the remote desktop connection too
 
 
    .. figure:: /_static/images/en-us_image_0295941041.png
-      :alt: **Figure 3** Clipboard
+      :alt: **Figure 3** Selecting the clipboard
 
-      **Figure 3** Clipboard
+      **Figure 3** Selecting the clipboard
 
    To copy files from the local server to your ECS, click **More** and select your desired disks.
 
 
    .. figure:: /_static/images/en-us_image_0295940977.png
-      :alt: **Figure 4** Drives
+      :alt: **Figure 4** Selecting drives
 
-      **Figure 4** Drives
+      **Figure 4** Selecting drives
 
 #. (Optional) Click the **Display** tab and then adjust the size of the remote desktop.
 
@@ -81,10 +80,6 @@ If your local server runs Windows, you can use the remote desktop connection too
 
    To ensure system security, change the login password after you log in to the ECS for the first time.
 
-#. (Optional) Copy local files to the Windows ECS using clipboard. If the file size is greater than 2 GB, an error will occur.
-
-   To resolve this issue, see `troubleshooting cases <https://learn.microsoft.com/en-us/troubleshoot/windows-server/remote/copying-2-gb-file-by-clipboard-redirection-fails>`__.
-
 .. _en-us_topic_0017955381__section65216898112059:
 
 Enabling RDP
@@ -94,7 +89,7 @@ For your first login, use VNC to log in and enable RDP for your ECS. Then, use M
 
 .. note::
 
-   By default, RDP has been enabled on the ECSs created using a public image.
+   RDP is enabled by default for ECSs created using public images.
 
 #. Log in to the Windows ECS using VNC.
 
