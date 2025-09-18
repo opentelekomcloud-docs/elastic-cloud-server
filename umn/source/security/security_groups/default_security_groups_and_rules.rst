@@ -7,8 +7,8 @@ Default Security Groups and Rules
 
 Note the following when using default security group rules:
 
--  Inbound rules control incoming traffic to instances in the default security group. The instances can only communicate with each other but cannot be accessed from external networks.
--  Outbound rules allow all traffic from the instances in the default security group to external networks.
+-  **Inbound rules** control incoming traffic to instances in the default security group. The instances can communicate with each other but cannot be accessed from external networks.
+-  **Outbound rules** allow all traffic from the instances in the default security group to external networks.
 
 :ref:`Figure 1 <en-us_topic_0140323154__fig11890174421819>` shows the default security group.
 

@@ -51,7 +51,7 @@ An EIP is required and can access YUM.
 Constraints
 -----------
 
-The atop tool used for node resource monitoring consumes a small amount of CPU cores and memory to collect system resources and uses some disk space to record logs. The log path is **/var/log/atop**.
+The atop tool used for node resource monitoring consumes a small number of CPU cores and memory to collect system resources and uses some disk space to record logs. The log path is **/var/log/atop**.
 
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section1972319582310:
 
@@ -399,7 +399,7 @@ Configuring atop for SUSE 12 or SUSE 15
 
    **wget https://www.atoptool.nl/download/atop-2.6.0-1.src.rpm**
 
-#. Run the following command to install the package:
+#. Run the following command to install the atop source package:
 
    **rpm -ivh atop-2.6.0-1.src.rpm**
 
@@ -470,7 +470,7 @@ Installing atop by Compiling the Source Code (for CentOS Stream 8/9, openEuler, 
 
    **wget https://www.atoptool.nl/download/atop-2.6.0.tar.gz**
 
-2. Decompress the source package.
+2. Decompress the atop source package.
 
    **tar -zxvf atop-2.6.0.tar.gz**
 
@@ -639,7 +639,7 @@ The method for configuring kdump described in this section applies to KVM ECSs r
 Introduction to kdump
 ---------------------
 
-kdump is a feature of the Linux kernel that creates crash dumps in the event of a kernel crash. In the event of a kernel crash, kdump boots another Linux kernel and uses it to export an image of RAM, which is known as vmcore and can be used to debug and determine the cause of the crash.
+Kdump is a tool used to dump runtime memory when the system crashes. Once the system crashes, the kernel can no longer function properly. At this point, Kdump boots another kernel to capture and save a memory dump. This kernel collects all runtime states and data and stores them in a dump core file for troubleshooting and debugging.
 
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section134381494320:
 
@@ -664,9 +664,9 @@ Configuring kdump
 
    **grep crashkernel /proc/cmdline**
 
-   If the command output is displayed, this parameter has been configured.
+   If the command output is displayed, this parameter has been configured. If no command output is displayed, you need to configure **crashkernel**.
 
-   Edit the **/etc/default/grub** file to configure the following parameters:
+   Edit the **/etc/default/grub** file to configure **crashkernel** as follows:
 
    .. code-block::
 
@@ -741,7 +741,7 @@ Checking Whether kdump Configurations Have Taken Effect
 
       BOOT_IMAGE=/boot/vmlinuz-3.10.0-514.44.5.10.h142.x86_64 root=UUID=6407d6ac-c761-43cc-a9dd-1383de3fc995 ro crash_kexec_post_notifiers softlockup_panic=1 panic=3 reserve_kbox_mem=16M nmi_watchdog=1 rd.shell=0 fsck.mode=auto fsck.repair=yes net.ifnames=0 spectre_v2=off nopti noibrs noibpb crashkernel=auto LANG=en_US.UTF-8
 
-#. Run the following command and check whether the configuration in the output is correct:
+#. Run the following command and check whether the information in the output is correct:
 
    **grep core_collector /etc/kdump.conf \|grep -v ^"#"**
 
@@ -749,7 +749,7 @@ Checking Whether kdump Configurations Have Taken Effect
 
       core_collector makedumpfile -l --message-level 1 -d 31
 
-#. Run the following command and check whether the path configuration in the output is correct:
+#. Run the following command and check whether the information in the output is correct:
 
    **grep path /etc/kdump.conf \|grep -v ^"#"**
 
@@ -774,7 +774,7 @@ Checking Whether kdump Configurations Have Taken Effect
 
    **echo c > /proc/sysrq-trigger**
 
-   After the command is executed, kdump will be triggered, the system will be restarted, and the generated vmcore file will be saved to the path specified by **path**.
+   This command will trigger kdump. When triggered, kdump will boot another kernel and store the generated **vmcore** file to the location specified by **path**.
 
 #. Run the following command to check whether the **vmcore** file has been generated in the specified path, for example, **/var/crash/**:
 

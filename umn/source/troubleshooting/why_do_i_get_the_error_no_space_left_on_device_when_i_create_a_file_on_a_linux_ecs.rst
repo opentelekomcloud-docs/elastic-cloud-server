@@ -72,7 +72,7 @@ Solution
 Value of **fs.inotify.max_user_watches** Reached
 ------------------------------------------------
 
-If inotify watches are used up, "No space left on device" will be displayed.
+If there is insufficient space for Linux ECSs, "No space left on device" will be displayed.
 
 |image6|
 

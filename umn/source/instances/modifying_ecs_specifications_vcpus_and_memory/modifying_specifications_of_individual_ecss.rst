@@ -105,7 +105,7 @@ After specifications are modified, disk attachment may fail. Therefore, check di
 Follow-up Procedure
 -------------------
 
-Perform the following operations in the event of a specifications modification failure:
+Perform the following operations if the specifications fail to be modified:
 
 #. Log in to the management console.
 
