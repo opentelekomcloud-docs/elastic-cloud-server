@@ -12,7 +12,7 @@ An ECS can have a maximum of 12 network interfaces, including a primary network 
 
 .. caution::
 
-   Detaching a networking interface may cause network interruptions. Evaluate the impact in advance and exercise caution when performing this operation.
+   Detaching a network interface may cause network interruptions. Evaluate the impact in advance and exercise caution when performing this operation.
 
 Procedure
 ---------

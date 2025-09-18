@@ -19,7 +19,7 @@ Obtaining the Disk ID of an ECS on the Console
 
 #. Log in to the management console.
 
-#. Under **Computing**, choose **Elastic Cloud Server**.
+#. Choose **Computing** > **Elastic Cloud Server**.
 
 #. Click the target ECS name in the ECS list.
 

@@ -16,7 +16,7 @@ To change an ECS OS, do as follows:
 During this process, the ECS is in **Changing OS** state.
 
 
-.. figure:: /_static/images/en-us_image_0000001658474496.png
+.. figure:: /_static/images/en-us_image_0000002385192025.png
    :alt: **Figure 1** Changing an OS
 
    **Figure 1** Changing an OS

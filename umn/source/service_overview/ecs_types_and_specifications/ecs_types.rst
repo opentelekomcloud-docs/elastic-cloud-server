@@ -13,7 +13,6 @@ The cloud platform provides the following ECS types for different application sc
 -  Large-memory
 -  Disk-intensive
 -  Ultra-high I/O
--  High-performance computing
 -  GPU-accelerated
 
 ECS Flavor Naming Rules
@@ -36,7 +35,7 @@ How Do I Know My ECS Flavor?
 When creating an ECS, you can view the flavors in the flavor list.
 
 
-.. figure:: /_static/images/en-us_image_0172453607.png
+.. figure:: /_static/images/en-us_image_0000002367660492.png
    :alt: **Figure 1** ECS flavors
 
    **Figure 1** ECS flavors
@@ -44,18 +43,18 @@ When creating an ECS, you can view the flavors in the flavor list.
 vCPU
 ----
 
-ECS supports hyper-threading, which enables two threads to run concurrently on a single CPU core. Each thread is represented as a virtual CPU (vCPU) and a CPU core contains two vCPUs (logical cores).
-
-Hyper-threading is enabled for most ECS flavors by default. If hyper-threading is disabled during the ECS creation or flavor change, the number of vCPUs queried from the ECS is half of the number of vCPUs defined by the ECS flavor.
+ECS supports hyper-threading, which enables two threads to run concurrently on a single CPU core. Each thread is represented as a virtual CPU (vCPU), and a CPU core contains two vCPUs (logical cores).
 
 For example, a 2-core physical CPU contains 4 vCPUs (threads).
+
+Hyper-threading is enabled for most ECS flavors by default. If hyper-threading is disabled during the ECS creation or flavor change, the number of vCPUs is half of the number of vCPUs defined by the ECS flavor.
 
 Network QoS
 -----------
 
-Network QoS uses basic technologies to improve the quality of network communication. A network with QoS enabled offers predictable network performance and effectively allocates network bandwidth to use network resources.
+Network QoS uses basic technologies to improve the quality of network communication. A network with QoS enabled offers predictable network performance and effectively allocates network bandwidth.
 
-To obtain the QoS data of an ECS flavor, including the maximum bandwidth, assured bandwidth, maximum intranet PPS, and NIC multi-queue, see :ref:`A Summary List of ECS Specifications <en-us_topic_0177512565>`.
+For details about the QoS data of an ECS flavor, including the maximum/assured bandwidth (Gbit/s), maximum intranet PPS, and NIC multi-queue, see :ref:`A Summary List of ECS Specifications <en-us_topic_0177512565>`.
 
 Constraints on network performance vary depending on ECS flavors.
 
@@ -63,7 +62,7 @@ Constraints on network performance vary depending on ECS flavors.
 
 -  Maximum intranet bandwidth: indicates the maximum bandwidth that can be allocated to an ECS when the ECS does not compete for network bandwidth (other ECSs on the host do not have high requirements on network bandwidth).
 
--  Maximum intranet PPS: indicates the maximum ECS capability in sending and receiving packets.
+-  Maximum intranet PPS: indicates the maximum number of packets that an ECS can transmit and receive per second.
 
    Packets per second (PPS): indicates the number of packets received and sent per second. It is usually used to measure the network performance.
 

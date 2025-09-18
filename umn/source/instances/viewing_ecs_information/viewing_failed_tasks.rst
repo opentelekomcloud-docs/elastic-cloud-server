@@ -34,14 +34,14 @@ Procedure
 
 #. Log in to the management console.
 
-#. Click |image1| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select a region and project.
 
-#. Under **Computing**, choose **Elastic Cloud Server**.
+#. Under **Computing**, click **Elastic Cloud Server**.
 
 #. View **Failures** on the right side of common operations.
 
 
-   .. figure:: /_static/images/en-us_image_0162732523.png
+   .. figure:: /_static/images/en-us_image_0000002385194877.png
       :alt: **Figure 1** Failures
 
       **Figure 1** Failures
@@ -51,4 +51,4 @@ Procedure
    -  **Creation Failures**: show the failed ECS creation tasks.
    -  **Operation Failures**: show the tasks with failed operations and error codes, which help you troubleshoot the faults.
 
-.. |image1| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0000002324123066.png
