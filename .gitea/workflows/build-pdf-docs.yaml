@@ -1,0 +1,28 @@
+name: Build PDF Docs
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, edited]
+jobs:
+  tox-pdf-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: https://github.com/opentelekomcloud-infra/github-actions/.github/actions/tox-run-env@v1
+        with:
+          tox-env: pdf-docs
+          
+      - name: Upload documentation preview
+        uses: https://github.com/opentelekomcloud-infra/github-actions/.github/actions/tox-upload-swift@v1
+        with:
+          docs_path: "doc/build/pdf"
+          docs_service: elastic-cloud-server
+          swift_container: "gitea_action_logs"
+          otc_swift_username: ${{ secrets.OTC_SWIFT_USERNAME }}
+          otc_swift_password: ${{ secrets.OTC_SWIFT_PASSWORD }}
+          otc_swift_project_name: ${{ secrets.OTC_SWIFT_PROJECT_NAME }}
+          otc_swift_domain: ${{ secrets.OTC_SWIFT_DOMAIN }}
+          otc_swift_endpoint: ${{ secrets.OTC_SWIFT_ENDPOINT }}
+          gitea_token: ${{ secrets.GITEA_TOKEN }}
+          gitea_server_url: ${{ gitea.server_url }}
+          repo: ${{ gitea.repository }}
+          pr_number: ${{ gitea.event.pull_request.number }}
+          run_id: ${{ gitea.run_id }}
