@@ -1,0 +1,28 @@
+name: Build PDF Docs
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, edited]
+jobs:
+  tox-pdf-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: opentelekomcloud-infra/github-actions/.github/actions/tox-run-env@v1
+        with:
+          tox-env: pdf-docs
+          
+      - name: Upload documentation preview
+        uses: opentelekomcloud-infra/github-actions/.github/actions/tox-upload-swift@v1
+        with:
+          docs_path: "doc/build/pdf"
+          docs_service: elastic-cloud-server
+          swift_container: "gh_action_logs"
+          otc_swift_username: ${{ secrets.OTC_SWIFT_USERNAME }}
+          otc_swift_password: ${{ secrets.OTC_SWIFT_PASSWORD }}
+          otc_swift_project_name: ${{ secrets.OTC_SWIFT_PROJECT_NAME }}
+          otc_swift_domain: ${{ secrets.OTC_SWIFT_DOMAIN }}
+          otc_swift_endpoint: ${{ secrets.OTC_SWIFT_ENDPOINT }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          repo: ${{ github.repository }}
+          pr_number: ${{ github.event.pull_request.number }}
+          run_id: ${{ github.run_id }}
+          ci_platform: github
