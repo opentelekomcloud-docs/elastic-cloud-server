@@ -34,7 +34,7 @@ otcdocs_repo_name = 'opentelekomcloud-docs/elastic-cloud-server'
 otcdocs_doc_environment = 'public'
 otcdocs_doc_link = '/elastic-cloud-server/dev-guide/'
 otcdocs_doc_title = 'Developer Guide'
-otcdocs_doc_type = 'dev'
+otcdocs_doc_type = 'dev-guide'
 otcdocs_service_category = 'compute'
 otcdocs_service_title = 'Elastic Cloud Server'
 otcdocs_service_type = 'ecs'
@@ -113,7 +113,8 @@ html_copy_source = False
 # -- Options for PDF output --------------------------------------------------
 latex_documents = [
     ('index',
-     'ecs-dev-guide.tex',u'Elastic Cloud Server - Developer Guide',
+     'ecs-dev-guide.tex',
+    u'Elastic Cloud Server - Developer Guide',
      u'OpenTelekomCloud', 'manual'),
 ]
 
