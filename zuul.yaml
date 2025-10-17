@@ -6,8 +6,8 @@
       - helpcenter-base-jobs-no-check
     vars:
       sphinx_pdf_files:
-        - ecs-api-ref.pdf
         - ecs-umn.pdf
+        - ecs-api-ref.pdf
         - ecs-dev-guide.pdf
     check:
       jobs:
