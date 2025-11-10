@@ -30,7 +30,7 @@ Procedure
    The **Change Security Group** dialog box is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0162733894.png
+   .. figure:: /_static/images/en-us_image_0000002385344877.png
       :alt: **Figure 1** Change Security Group
 
       **Figure 1** Change Security Group

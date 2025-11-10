@@ -31,10 +31,6 @@ Network Settings
       -  Ensure that the IP addresses required by the NICs are within the subnet, consecutive, and available.
       -  The subnet with the specified IP address cannot overlap with other subnets.
 
-   -  **MTU Settings**: This parameter is optional.
-
-      If your ECS is of large-memory type, you can click **MTU Settings** to configure the maximum transmission unit (MTU) for a to-be-added extension NIC for improving network performance. An MTU can only be a number, ranging from 1280 to 8888.
-
 #. Set **Security Group** by selecting an available security group from the drop-down list or creating a new one.
 
    A security group controls ECS access within or between security groups by defining access rules. This enhances ECS security.

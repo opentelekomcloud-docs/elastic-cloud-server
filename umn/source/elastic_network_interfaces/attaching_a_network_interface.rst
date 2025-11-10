@@ -15,7 +15,7 @@ Procedure
 
 #. Log in to the management console.
 
-#. Click |image1| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select a region and project.
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
@@ -35,6 +35,12 @@ Procedure
    -  Create a new network interface.
 
       Set the subnet and security group for the network interface to be attached.
+
+
+      .. figure:: /_static/images/en-us_image_0000002351500708.png
+         :alt: **Figure 1** Configuring the subnet and security group
+
+         **Figure 1** Configuring the subnet and security group
 
       -  **Subnet**: the subnet that the network interface belongs to.
       -  **New Private IP Address**: If you want to add a network interface with a specified IP address, enter an IP address into the **Private IP Address** field.
@@ -99,4 +105,4 @@ Some OSs cannot identify newly attached network interfaces. In this case, you ne
    -  If yes, no further action is required.
    -  If no, contact customer service.
 
-.. |image1| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0000002323933950.png

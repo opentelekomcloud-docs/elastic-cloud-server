@@ -63,7 +63,7 @@ The following example shows you how a new primary partition can be created on a 
 
 #. Launch fdisk to partition the new data disk.
 
-   **fdisk** *New data disk*
+   **fdisk** *<new-data-disk>*
 
    In this example, run the following command:
 

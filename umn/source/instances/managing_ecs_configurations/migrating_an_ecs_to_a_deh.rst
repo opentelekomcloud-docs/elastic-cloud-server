@@ -34,9 +34,9 @@ Procedure
 ---------
 
 #. Log in to the management console.
-#. Click |image1| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select a region and project.
 #. Under **Computing**, click **Elastic Cloud Server**.
-#. In the ECS list, locate the target ECS to be migrated, choose **More** > **Migrate ECS** in the **Operation** column.
+#. In the ECS list, locate the ECS to be migrated, choose **More** > **View O&M and Monitoring** > **Reallocate ECS** in the **Operation** column.
 #. In the displayed dialog box, select the target DeH.
 
    .. note::
@@ -45,4 +45,4 @@ Procedure
 
 #. Click **OK**.
 
-.. |image1| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0000002357881765.png

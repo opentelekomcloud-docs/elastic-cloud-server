@@ -17,7 +17,7 @@ Elastic Cloud Server - User Guide
    backup_using_cbr/index
    passwords_and_key_pairs/index
    resources_and_tags/index
-   monitoring_using_cloud_eye/index
+   cloud_eye_monitoring/index
    audit_using_cts/index
    troubleshooting/index
    faqs/index

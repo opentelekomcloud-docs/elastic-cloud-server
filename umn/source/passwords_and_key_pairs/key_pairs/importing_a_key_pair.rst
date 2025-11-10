@@ -25,7 +25,7 @@ Procedure
 
 #. Log in to the management console.
 
-#. Click |image1| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select a region and project.
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
@@ -34,7 +34,7 @@ Procedure
 #. On the **Key Pair Service** page, click **Import Key Pair**.
 
 
-   .. figure:: /_static/images/en-us_image_0000001234671514.png
+   .. figure:: /_static/images/en-us_image_0000002351719638.png
       :alt: **Figure 1** Import Public Key
 
       **Figure 1** Import Public Key
@@ -64,4 +64,4 @@ Helpful Links
 -  :ref:`What Should I Do If a Key Pair Cannot Be Imported? <en-us_topic_0019883415>`
 -  :ref:`Why Does a Key Pair Created Using puttygen.exe Fail to Be Imported on the Management Console? <en-us_topic_0047654687>`
 
-.. |image1| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0000002357932505.png

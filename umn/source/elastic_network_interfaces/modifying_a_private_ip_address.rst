@@ -34,7 +34,7 @@ Procedure
    The **Modify Private IP** dialog box is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000001707364141.png
+   .. figure:: /_static/images/en-us_image_0000002351670516.png
       :alt: **Figure 1** Modifying the private IP address
 
       **Figure 1** Modifying the private IP address
