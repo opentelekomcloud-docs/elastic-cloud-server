@@ -40,7 +40,7 @@ Constraints
 Injecting User Data
 -------------------
 
-#. Create a user data script that complies with user data script specifications. For details, see :ref:`Helpful Links <en-us_topic_0032380449__section54344118153243>`.
+#. Create a user-data script that complies with user-data script specifications. For details, see :ref:`Helpful Links <en-us_topic_0032380449__section54344118153243>`.
 
 #. When creating an ECS, set **Advanced Options** to **Configure now**, and paste the content of the user data script to the **User Data** text box or upload the user data file.
 
@@ -219,7 +219,7 @@ Case 1
 
 This case illustrates how to inject user data to simplify Linux ECS configurations.
 
-To enable syntax highlighting, display line numbers, and set the tab stop to **4** for Vim, create a .vimrc configuration file and inject it into the **/root/.vimrc** directory during ECS creation. After the ECS is created, vim is automatically configured based on your requirements. This improves ECS configuration efficiency, especially in batch ECS creation scenarios.
+In Vim, to enable syntax highlighting, display line numbers, and set tab to 4 spaces, create a .vimrc script and inject it into the **/root/.vimrc** directory during ECS creation. After the ECS is created, vim is automatically configured based on your requirements. This improves ECS configuration efficiency, especially in batch ECS creation scenarios.
 
 User data example:
 

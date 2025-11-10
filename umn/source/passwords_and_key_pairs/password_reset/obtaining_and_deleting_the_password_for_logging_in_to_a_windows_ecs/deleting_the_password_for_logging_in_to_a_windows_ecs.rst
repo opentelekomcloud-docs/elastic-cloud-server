@@ -2,15 +2,19 @@
 
 .. _en-us_topic_0031107267:
 
-Deleting the Initial Password for Logging In to a Windows ECS
-=============================================================
+Deleting the Password for Logging In to a Windows ECS
+=====================================================
 
 Scenarios
 ---------
 
-After you obtain the initial password, it is a good practice to delete it to ensure system security.
+After obtaining the initial password, you are advised to delete it from the system to ensure security.
 
-Deleting the initial password does not affect ECS operation or login. Once deleted, the password cannot be retrieved. Before you delete a password, it is a good practice to record it.
+Deleting the initial password does not affect ECS running or login.
+
+.. caution::
+
+   Once deleted, the password cannot be retrieved, so record the password before deleting it.
 
 Procedure
 ---------

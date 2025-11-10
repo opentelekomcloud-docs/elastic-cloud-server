@@ -5,6 +5,9 @@
 Default Security Groups and Rules
 =================================
 
+Default Security Group Rules
+----------------------------
+
 Note the following when using default security group rules:
 
 -  **Inbound rules** control incoming traffic to instances in the default security group. The instances can communicate with each other but cannot be accessed from external networks.
