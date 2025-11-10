@@ -123,14 +123,16 @@ Basic Settings
 
       For details about the disk types supported by ECS, see :ref:`EVS Disks <en-us_topic_0030828256>`.
 
-      -  If the image based on which an ECS is created is not encrypted, the system disk of the ECS is not encrypted. If the image based on which an ECS is created is encrypted, the system disk of the ECS is automatically encrypted. For details, see :ref:`(Optional) Encryption-related parameters <en-us_topic_0163572589__en-us_topic_0144542112_li3286101316615>`.
+      The following parameter settings are displayed by default. You can click |image2| to hide them.
+
+      -  If the image from which an ECS is created is not encrypted, the system disk of the ECS is not encrypted. If the image from which an ECS is created is encrypted, the system disk of the ECS is automatically encrypted. For details, see :ref:`(Optional) Encryption-related parameters <en-us_topic_0163572589__en-us_topic_0144542112_li3286101316615>`.
       -  **Encryption**: indicates that the system disk is encrypted if you select this option. For details, see :ref:`(Optional) Encryption-related parameters <en-us_topic_0163572589__en-us_topic_0144542112_li3286101316615>`.
 
    -  Data disk
 
       You can create multiple data disks for an ECS and enable required functions for each data disk. During the creation process, you can add a maximum of 23 data disks for each ECS and customize the disk size as needed.
 
-      Click **Show** |image2| and set the following functions if required:
+      The following parameter settings are displayed by default. You can click |image3| to hide them.
 
       -  **SCSI**: indicates that the device type of the data disk is SCSI if you select this option. For more information about SCSI disks and ECSs that can have SCSI disks attached, see :ref:`EVS Disks <en-us_topic_0030828256>`.
 
