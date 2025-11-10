@@ -66,17 +66,11 @@ Request
    |                 |                 |                 |    -  For ECSs that only support SCSI disks, set the device name of the system disk to **/dev/sda** and the device names of data disks in alphabetical order, for example, **/dev/sdb** and **/dev/sdc**. The system will not change the default device names.                                                                                                                                                                                           |
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | volume_type     | No              | String          | Specifies the disk type.                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-   |                 |                 |                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-   |                 |                 |                 | If **volumeId** is unavailable and **dry_run** is set to **true**, **volume_type** is available and must be specified.                                                                                                                                                                                                                                                                                                                                   |
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | count           | No              | Integer         | Specifies the number of disks.                                                                                                                                                                                                                                                                                                                                                                                                                           |
-   |                 |                 |                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-   |                 |                 |                 | If **volumeId** is unavailable and **dry_run** is set to **true**, **count** is available. If **count** is unavailable, the number of disks is **1** by default.                                                                                                                                                                                                                                                                                         |
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | hw:passthrough  | No              | String          | -  If this parameter is set to **true**, the disk device type is SCSI, which allows ECS OSs to directly access the underlying storage media. SCSI reservation commands are supported.                                                                                                                                                                                                                                                                    |
    |                 |                 |                 | -  If this parameter is set to **false**, the disk device type is VBD, which supports only simple SCSI read/write commands.                                                                                                                                                                                                                                                                                                                              |
-   |                 |                 |                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-   |                 |                 |                 | If **volumeId** is unavailable and **dry_run** is set to **true**, **volume_type** is available and must be specified.                                                                                                                                                                                                                                                                                                                                   |
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response
@@ -87,22 +81,38 @@ See :ref:`Responses (Task) <en-us_topic_0022067714>`.
 Example Request
 ---------------
 
-Attach a SCSI EVS disk to the device **/dev/sda**.
+-  Attach a SCSI EVS disk to device **/dev/sda**.
 
-.. code-block:: text
+   .. code-block:: text
 
-   POST https://{endpoint}/v1/{project_id}/cloudservers/{server_id}/attachvolume
+      POST https://{endpoint}/v1/{project_id}/cloudservers/{server_id}/attachvolume
 
-   {
-       "volumeAttachment": {
-            "volumeId": "a26887c6-c47b-4654-abb5-dfadf7d3f803",
-            "device": "/dev/sda",
-            "volume_type": "SSD",
-            "count": 5,
-            "hw:passthrough": "true"
-       },
-       "dry_run": false
-   }
+      {
+          "volumeAttachment": {
+               "volumeId": "a26887c6-c47b-4654-abb5-dfadf7d3f803",
+               "device": "/dev/sda",
+               "volume_type": "SSD",
+               "count": 5,
+               "hw:passthrough": "true"
+          },
+          "dry_run": false
+      }
+
+-  Send a pre-check request for attaching a disk.
+
+   .. code-block:: text
+
+      POST https://{endpoint}/v1/{project_id}/cloudservers/{server_id}/attachvolume
+
+      {
+          "volumeAttachment": {
+               "volumeId": "a26887c6-c47b-4654-abb5-dfadf7d3f803",
+               "volume_type": "SSD",
+               "count": 1,
+               "hw:passthrough": "true"
+          },
+          "dry_run": true
+      }
 
 Example Response
 ----------------

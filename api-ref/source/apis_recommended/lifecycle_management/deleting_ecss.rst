@@ -44,6 +44,8 @@ Request
    | Parameter       | Mandatory       | Type             | Description                                                                                                                                                                                                                               |
    +=================+=================+==================+===========================================================================================================================================================================================================================================+
    | servers         | Yes             | Array of objects | Specifies the ECSs to be deleted. For details, see :ref:`Table 3 <en-us_topic_0020212679__table32603030>`.                                                                                                                                |
+   |                 |                 |                  |                                                                                                                                                                                                                                           |
+   |                 |                 |                  | A maximum of 1,000 ECSs can be deleted at a time.                                                                                                                                                                                         |
    +-----------------+-----------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | delete_publicip | No              | Boolean          | Specifies whether to delete the EIP bound to the ECS when deleting the ECS. If you do not want to delete the EIP, the system only unbinds the EIP from the ECS and reserves the EIP.                                                      |
    |                 |                 |                  |                                                                                                                                                                                                                                           |
@@ -83,21 +85,43 @@ See :ref:`Responses (Task) <en-us_topic_0022067714>`.
 Example Request
 ---------------
 
-Delete the ECS whose ID is **616fb98f-46ca-475e-917e-2563e5a8cd19**, unbind the EIP, and detach data disks.
+-  Delete the ECS whose ID is **616fb98f-46ca-475e-917e-2563e5a8cd19**, unbind the EIP, and detach data disks.
 
-.. code-block:: text
+   .. code-block:: text
 
-   POST https://{endpoint}/v1/{project_id}/cloudservers/delete
+      POST https://{endpoint}/v1/{project_id}/cloudservers/delete
 
-   {
-       "servers": [
-           {
-               "id": "616fb98f-46ca-475e-917e-2563e5a8cd19"
-           }
-       ],
-       "delete_publicip": false,
-       "delete_volume": false
-           }
+      {
+          "servers": [
+              {
+                  "id": "616fb98f-46ca-475e-917e-2563e5a8cd19"
+              }
+          ],
+          "delete_publicip": false,
+          "delete_volume": false
+         }
+
+-  Delete ECSs whose IDs are **616fb98f-46ca-475e-917e-2563e5a8cd19**, **616fb98f-46ca-475e-917e-2563e5a8ef20**, and **616fb98f-46ca-475e-917e-2563e5a8gh21** in batches.
+
+   .. code-block:: text
+
+      POST https://{endpoint}/v1/{project_id}/cloudservers/delete
+
+      {
+          "delete_publicip": false,
+          "delete_volume": false,
+          "servers": [
+              {
+                  "id": "616fb98f-46ca-475e-917e-2563e5a8cd19"
+              },
+              {
+                  "id": "616fb98f-46ca-475e-917e-2563e5a8ef20"
+              },
+              {
+                  "id": "616fb98f-46ca-475e-917e-2563e5a8gh21"
+              }
+          ]
+      }
 
 Example Response
 ----------------
