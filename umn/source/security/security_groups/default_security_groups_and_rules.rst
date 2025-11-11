@@ -5,6 +5,9 @@
 Default Security Groups and Rules
 =================================
 
+Default Security Group Rules
+----------------------------
+
 Note the following when using default security group rules:
 
 -  **Inbound rules** control incoming traffic to instances in the default security group. The instances can communicate with each other but cannot be accessed from external networks.
@@ -19,12 +22,7 @@ Note the following when using default security group rules:
 
    **Figure 1** Default security group
 
-.. note::
-
-   -  You cannot delete the default security group, but you can modify existing rules or add rules to the group.
-   -  The default security group is automatically created to simplify the process of creating an instance for the first time. The default security group denies all external requests. To log in to an instance, add a security group rule by referring to :ref:`Remotely Logging In to an ECS from a Local Server <en-us_topic_0140323152__en-us_topic_0118534011_section14933617154810>`.
-
-:ref:`Table 1 <en-us_topic_0140323154__table542641118503>` describes the rules in the default security group.
+:ref:`Table 1 <en-us_topic_0140323154__table542641118503>` describes the default security group rules.
 
 .. _en-us_topic_0140323154__table542641118503:
 

@@ -21,7 +21,7 @@ Procedure
 
 #. Log in to the management console.
 
-#. Click |image1| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select a region and project.
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
@@ -43,7 +43,7 @@ Procedure
 
    .. note::
 
-      Using multiple security groups may deteriorate ECS network performance. You are suggested to select no more than five security groups.
+      Using multiple security groups may deteriorate ECS network performance. You are advised to select no more than five security groups.
 
 #. Click **OK**.
 

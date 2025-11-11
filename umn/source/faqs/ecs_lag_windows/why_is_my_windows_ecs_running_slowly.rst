@@ -45,11 +45,11 @@ Fault Locating
 
 #. Obtain the IDs and names of the processes with high CPU or bandwidth usage.
 
-#. On the remote login page, click **Ctrl+Alt+Del** to start the **Windows Task Manager**.
+#. On the VNC remote login page, click **Ctrl+Alt+Del** to start the **Windows Task Manager**.
 
    Alternatively, start the **Run** dialog box and enter **taskmgr** to start the **Windows Task Manager**.
 
-   The following describes how to display PIDs in **Windows Task Manager**, locate a process, and check whether it is malicious.
+   The following describes how to display PIDs in **Windows Task Manager**, locate a process, and check whether it is normal.
 
    a. Click the **Processes** tab.
 

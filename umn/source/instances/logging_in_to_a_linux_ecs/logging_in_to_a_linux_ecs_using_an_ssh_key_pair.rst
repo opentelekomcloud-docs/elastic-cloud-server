@@ -8,12 +8,19 @@ Logging In to a Linux ECS Using an SSH Key Pair
 Scenarios
 ---------
 
+Key pairs (SSH key pairs) are a set of security credentials for identity authentication when you remotely log in to ECSs.
+
+A key pair consists of a public key and a private key. Key Pair Service (KPS) stores the public key and you store the private key. If you have bound a public key to a Linux ECS, you can use the corresponding private key, rather than a password, to log in to the ECS. You do not need to worry about password interception, cracking, or leakage.
+
+For details, see :ref:`Application Scenarios for Using Key Pairs <en-us_topic_0000001278335673>`.
+
 This section describes how to use an SSH key pair to remotely log in to a Linux ECS from a Windows and a Linux server, respectively.
 
 Prerequisites
 -------------
 
--  You have obtained the private key file used for creating the ECS. For details about how to create a key pair, see :ref:`(Recommended) Creating a Key Pair on the Management Console <en-us_topic_0000001278350057>`.
+-  The ECS status must be **Running**.
+-  You have obtained the private key file (.pem) generated during the ECS creation. For details about how to create a key pair, see :ref:`(Recommended) Creating a Key Pair on the Management Console <en-us_topic_0000001278350057>`.
 -  You have bound an EIP to the ECS. For details, see :ref:`Viewing ECS Details <en-us_topic_0017130261>`.
 
 -  You have configured the inbound rules of the security group. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.
@@ -85,7 +92,7 @@ The following operations use PuTTY as an example. Before using PuTTY to log in, 
 
    .. note::
 
-      -  If a public image is used, see `Public Image Introduction <https://docs.otc.t-systems.com/image-management-service/public-images/>`__ for the image username.
+      -  If a public image is used, see `Image Management Service - Public Image Introduction <https://docs.otc.t-systems.com/image-management-service/public-images/>`__ for the image username.
       -  If a private image is used, use the username of the private image.
 
 #. Choose **Connection** > **SSH** > **Auth** > **Credentials**. In the configuration item **Private key file for authentication**, click **Browse** and select the private key converted in step :ref:`6 <en-us_topic_0017955380__li56738001111724>`.
@@ -108,7 +115,7 @@ The following operations use PuTTY as an example. Before using PuTTY to log in, 
 
    .. note::
 
-      -  If a public image is used, see `Public Image Introduction <https://docs.otc.t-systems.com/image-management-service/public-images/>`__ for the image username.
+      -  If a public image is used, see `Image Management Service - Public Image Introduction <https://docs.otc.t-systems.com/image-management-service/public-images/>`__ for the image username.
       -  If a private image is used, use the username of the private image.
 
 #. (Optional) If the system displays the **SSH Security Warning** dialog box, click **Accept & Save**.

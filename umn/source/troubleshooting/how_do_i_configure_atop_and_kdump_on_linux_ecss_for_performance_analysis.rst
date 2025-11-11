@@ -64,7 +64,7 @@ Configuring atop for CentOS 6
 
 #. Run the following command to modify the configuration file of atop:
 
-   **vi /etc/default/atop**
+   **vi /etc/sysconfig/atop**
 
    Modify the following parameters, save the modification, and exit:
 
@@ -113,7 +113,7 @@ Configuring atop for CentOS 7/8, AlmaLinux, and Rocky Linux
 
 #. Run the following command to modify the configuration file of atop:
 
-   **vi /etc/default/atop**
+   **vi /etc/sysconfig/atop**
 
    Modify the following parameters, save the modification, and exit:
 

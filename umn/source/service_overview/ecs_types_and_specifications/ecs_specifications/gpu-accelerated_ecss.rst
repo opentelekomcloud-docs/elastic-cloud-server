@@ -16,15 +16,15 @@ GPU-accelerated ECSs are classified as G series and P series of ECSs.
 GPU-accelerated ECSs
 --------------------
 
-Recommended: :ref:`Computing-accelerated P2s <en-us_topic_0097289624__section1454714546567>`, :ref:`Inference-accelerated Pi2 <en-us_topic_0097289624__section1846114713182>`, and :ref:`GPU-accelerated Enhancement G6 <en-us_topic_0097289624__section131302034104515>`
+Recommended: :ref:`Computing-accelerated P2s <en-us_topic_0097289624__section1454714546567>`, :ref:`Inference-accelerated Pi2 <en-us_topic_0097289624__section1846114713182>`, and :ref:`Graphics-accelerated Enhancement G6 <en-us_topic_0097289624__section131302034104515>`
 
 Available now: All GPU models except the recommended ones. If available ECSs are sold out, use the recommended ones.
 
 -  G series
 
-   -  :ref:`GPU-accelerated Enhancement G7v <en-us_topic_0097289624__section168054357432>`
+   -  :ref:`Graphics-accelerated Enhancement G7v <en-us_topic_0097289624__section168054357432>`
    -  :ref:`Graphics-accelerated Enhancement G7 <en-us_topic_0097289624__section2325028104711>`
-   -  :ref:`GPU-accelerated Enhancement G6 <en-us_topic_0097289624__section131302034104515>`
+   -  :ref:`Graphics-accelerated Enhancement G6 <en-us_topic_0097289624__section131302034104515>`
 
 -  P series
 
@@ -125,8 +125,8 @@ Images Supported by GPU-accelerated ECSs
 
 .. _en-us_topic_0097289624__section168054357432:
 
-GPU-accelerated Enhancement G7v
--------------------------------
+Graphics-accelerated Enhancement G7v
+------------------------------------
 
 **Overview**
 
@@ -276,8 +276,8 @@ G7 ECSs are used in graphics acceleration scenarios, such as video rendering, cl
 
 .. _en-us_topic_0097289624__section131302034104515:
 
-GPU-accelerated Enhancement G6
-------------------------------
+Graphics-accelerated Enhancement G6
+-----------------------------------
 
 **Overview**
 
@@ -677,7 +677,6 @@ Pi5e ECSs use NVIDIA Ada Lovelace L4 Tensor Core GPUs that are dedicated for rea
 
 -  Pi5e ECSs support automatic recovery when the hosts accommodating such ECSs become faulty.
 -  After a Pi5e ECS is stopped, its basic resources (vCPUs, memory, image, and encoding cards) are not billed, but its system disk is billed based on the disk capacity. If other products, such as EVS disks, EIP, and bandwidth are associated with the ECS, these products are billed separately.
--  After a pay-per-use Pi5e ECS is stopped, its basic resources (vCPUs, memory, and encoding cards) will be released. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, change its billing mode to yearly/monthly or do not stop it.
 -  Specifications of Pi5e ECSs can only be changed to other specifications of the same instance type.
 
 .. _en-us_topic_0097289624__section1846114713182:

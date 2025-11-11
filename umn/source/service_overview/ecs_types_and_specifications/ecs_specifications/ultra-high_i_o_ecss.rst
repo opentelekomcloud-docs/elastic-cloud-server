@@ -13,8 +13,8 @@ Ultra-high I/O ECSs use high-performance local NVMe SSDs to provide high storage
 Scenarios
 ---------
 
--  Ultra-high I/O ECSs are suitable for high-performance relational databases.
--  Ultra-high I/O ECSs are suitable for NoSQL databases (such as Cassandra and MongoDB) and ElasticSearch.
+-  High-performance relational databases
+-  NoSQL databases (such as Cassandra and MongoDB) and ElasticSearch
 
 Specifications
 --------------
@@ -70,13 +70,13 @@ Specifications
 Local Disk Performance
 ----------------------
 
-:ref:`Table 3 <en-us_topic_0094118976__table8237323473>` and :ref:`Table 5 <en-us_topic_0094118976__table2850175181012>` list the IOPS performance of local disks and specifications of a single local disk attached to an I3m ECS.
+:ref:`Table 3 <en-us_topic_0094118976__table8237323473>` lists the local disk IOPS of I3m instance flavors. :ref:`Table 5 <en-us_topic_0094118976__table2850175181012>` lists the performance of a single local disk used by an I3m ECS.
 
-:ref:`Table 4 <en-us_topic_0094118976__table1875314018355>` and :ref:`Table 6 <en-us_topic_0094118976__table9670341181017>` list the IOPS performance of local disks and specifications of a single local disk attached to an I3 ECS.
+:ref:`Table 4 <en-us_topic_0094118976__table1875314018355>` lists the local disk IOPS of I3 instance flavors. :ref:`Table 6 <en-us_topic_0094118976__table9670341181017>` lists the performance of a single local disk used by an I3 ECS.
 
 .. _en-us_topic_0094118976__table8237323473:
 
-.. table:: **Table 3** IOPS performance of local disks used by I3m ECSs
+.. table:: **Table 3** Local disk IOPS of I3m instance flavors
 
    ============== =================================
    Flavor         Maximum IOPS for Random 4 KB Read
@@ -91,7 +91,7 @@ Local Disk Performance
 
 .. _en-us_topic_0094118976__table1875314018355:
 
-.. table:: **Table 4** IOPS performance of local disks used by I3 ECSs
+.. table:: **Table 4** Local disk IOPS of I3 instance flavors
 
    ============= =================================
    Flavor        Maximum IOPS for Random 4 KB Read
@@ -110,7 +110,7 @@ Local Disk Performance
 
 .. _en-us_topic_0094118976__table2850175181012:
 
-.. table:: **Table 5** Specifications of a single I3m local disk
+.. table:: **Table 5** Performance of a single local disk used by an I3m ECS
 
    ========================== ===================
    Metric                     Performance
@@ -125,7 +125,7 @@ Local Disk Performance
 
 .. _en-us_topic_0094118976__table9670341181017:
 
-.. table:: **Table 6** Specifications of a single I3 local disk
+.. table:: **Table 6** Performance of a single local disk used by an I3 ECS
 
    ========================== ===================
    Metric                     Performance
@@ -290,8 +290,8 @@ Notes
 
 -  The basic resources, including vCPUs, memory, and image of an ultra-high I/O ECS will continue to be billed after the ECS is stopped. To stop the ECS from being billed, delete it and its associated resources.
 
-Handling Damaged Local Disks Attached to an ECS of I Series
------------------------------------------------------------
+Handling Damaged Local Disks Used by I-Series ECSs
+--------------------------------------------------
 
 If a local disk attached to an ECS is damaged, perform the following operations to handle this issue:
 

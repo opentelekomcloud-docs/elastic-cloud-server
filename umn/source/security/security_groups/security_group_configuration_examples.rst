@@ -5,7 +5,7 @@
 Security Group Configuration Examples
 =====================================
 
-When you create instances, such as cloud servers, containers, and databases, in a VPC subnet, you can use the default security group or create a security group. You can add inbound and outbound rules to the default or your security group to control traffic from and to the instances in the security group. Here are some common security group configuration examples:
+When you create instances, such as cloud servers, containers, and databases, in a VPC subnet, you can :ref:`use the default security group <en-us_topic_0140323154>` or create a security group. You can :ref:`add inbound and outbound rules <en-us_topic_0030878383>` to the default or your created security group to control traffic from and to the instances in the security group. Here are some common security group configuration examples:
 
 -  :ref:`Remotely Logging In to an ECS from a Local Server <en-us_topic_0140323152__en-us_topic_0118534011_section14933617154810>`
 -  :ref:`Remotely Connecting to an ECS from a Local Server to Upload or Download Files over FTP <en-us_topic_0140323152__en-us_topic_0118534011_section8685162114185>`
