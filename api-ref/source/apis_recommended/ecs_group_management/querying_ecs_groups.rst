@@ -13,7 +13,7 @@ This API is used to query ECS groups.
 URI
 ---
 
-GET /v1/{project_id}/cloudservers/os-server-groups?limit={limit}&marker={marker}
+GET /v1/{project_id}/cloudservers/os-server-groups
 
 :ref:`Table 1 <en-us_topic_0175597846__table566015531780>` describes the parameters in the URI.
 

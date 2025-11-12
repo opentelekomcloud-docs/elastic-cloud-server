@@ -72,7 +72,7 @@ Request
    |                 |                 |                 | -  Can only consist of digits, letters, hyphens (-), and underscores (_). |
    |                 |                 |                 | -  Must be unique and cannot be left blank.                               |
    +-----------------+-----------------+-----------------+---------------------------------------------------------------------------+
-   | value           | Yes             | String          | Specifies the tag value.                                                  |
+   | value           | No              | String          | Specifies the tag value.                                                  |
    |                 |                 |                 |                                                                           |
    |                 |                 |                 | -  Contains a maximum of 43 characters.                                   |
    |                 |                 |                 | -  Can only consist of digits, letters, hyphens (-), and underscores (_). |

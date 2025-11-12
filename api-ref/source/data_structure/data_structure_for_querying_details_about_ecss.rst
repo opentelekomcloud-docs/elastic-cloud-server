@@ -12,29 +12,72 @@ Data Structure for Querying Details About ECSs
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------+
    | Parameter             | Type                  | Description                                                                                                |
    +=======================+=======================+============================================================================================================+
-   | id                    | String                | Specifies the ECS flavor ID.                                                                               |
+   | id                    | String                | **Definition**                                                                                             |
+   |                       |                       |                                                                                                            |
+   |                       |                       | Specifies the ECS flavor ID.                                                                               |
+   |                       |                       |                                                                                                            |
+   |                       |                       | **Range**                                                                                                  |
+   |                       |                       |                                                                                                            |
+   |                       |                       | N/A                                                                                                        |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------+
-   | name                  | String                | Specifies the ECS flavor name.                                                                             |
+   | name                  | String                | **Definition**                                                                                             |
+   |                       |                       |                                                                                                            |
+   |                       |                       | Specifies the ECS flavor name.                                                                             |
+   |                       |                       |                                                                                                            |
+   |                       |                       | **Range**                                                                                                  |
+   |                       |                       |                                                                                                            |
+   |                       |                       | N/A                                                                                                        |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------+
-   | disk                  | String                | Specifies the system disk size in the ECS flavor. Value **0** indicates that the disk size is not limited. |
+   | disk                  | String                | **Definition**                                                                                             |
+   |                       |                       |                                                                                                            |
+   |                       |                       | Specifies the system disk size in the ECS flavor. Value **0** indicates that the disk size is not limited. |
    |                       |                       |                                                                                                            |
    |                       |                       | The field is invalid in this system.                                                                       |
+   |                       |                       |                                                                                                            |
+   |                       |                       | **Range**                                                                                                  |
+   |                       |                       |                                                                                                            |
+   |                       |                       | N/A                                                                                                        |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------+
-   | vcpus                 | String                | Specifies the number of vCPUs in the ECS flavor.                                                           |
+   | vcpus                 | String                | **Definition**                                                                                             |
+   |                       |                       |                                                                                                            |
+   |                       |                       | Specifies the number of vCPUs in the ECS flavor.                                                           |
+   |                       |                       |                                                                                                            |
+   |                       |                       | **Range**                                                                                                  |
+   |                       |                       |                                                                                                            |
+   |                       |                       | N/A                                                                                                        |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------+
-   | ram                   | String                | Specifies the memory size (MB) in the ECS flavor.                                                          |
+   | ram                   | String                | **Definition**                                                                                             |
+   |                       |                       |                                                                                                            |
+   |                       |                       | Specifies the memory size (MiB) in the ECS flavor.                                                         |
+   |                       |                       |                                                                                                            |
+   |                       |                       | **Range**                                                                                                  |
+   |                       |                       |                                                                                                            |
+   |                       |                       | N/A                                                                                                        |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0169494074__en-us_topic_0057972887_table38168783:
 
 .. table:: **Table 2** **security_groups** parameters
 
-   ========= ====== ==========================================
-   Parameter Type   Description
-   ========= ====== ==========================================
-   name      String Specifies the security group name or UUID.
-   id        String Specifies the security group ID.
-   ========= ====== ==========================================
+   +-----------------------+-----------------------+--------------------------------------------+
+   | Parameter             | Type                  | Description                                |
+   +=======================+=======================+============================================+
+   | name                  | String                | **Definition**                             |
+   |                       |                       |                                            |
+   |                       |                       | Specifies the security group name or UUID. |
+   |                       |                       |                                            |
+   |                       |                       | **Range**                                  |
+   |                       |                       |                                            |
+   |                       |                       | N/A                                        |
+   +-----------------------+-----------------------+--------------------------------------------+
+   | id                    | String                | **Definition**                             |
+   |                       |                       |                                            |
+   |                       |                       | Specifies the security group ID.           |
+   |                       |                       |                                            |
+   |                       |                       | **Range**                                  |
+   |                       |                       |                                            |
+   |                       |                       | N/A                                        |
+   +-----------------------+-----------------------+--------------------------------------------+
 
 .. _en-us_topic_0169494074__en-us_topic_0057972887_table33871262:
 
@@ -43,21 +86,41 @@ Data Structure for Querying Details About ECSs
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
    | Parameter             | Type                  | Description                                                                           |
    +=======================+=======================+=======================================================================================+
-   | id                    | String                | Specifies the disk ID in UUID format.                                                 |
+   | id                    | String                | **Definition**                                                                        |
+   |                       |                       |                                                                                       |
+   |                       |                       | Specifies the disk ID in UUID format.                                                 |
+   |                       |                       |                                                                                       |
+   |                       |                       | **Range**                                                                             |
+   |                       |                       |                                                                                       |
+   |                       |                       | N/A                                                                                   |
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
-   | delete_on_termination | String                | Specifies whether the disk is deleted with the ECS.                                   |
+   | delete_on_termination | String                | **Definition**                                                                        |
+   |                       |                       |                                                                                       |
+   |                       |                       | Specifies whether the disk is deleted with the ECS.                                   |
+   |                       |                       |                                                                                       |
+   |                       |                       | This parameter is supported in microversion 2.3 and later.                            |
+   |                       |                       |                                                                                       |
+   |                       |                       | **Range**                                                                             |
    |                       |                       |                                                                                       |
    |                       |                       | -  **true**: indicates that the disk is deleted with the ECS.                         |
    |                       |                       | -  **false**: indicates that the disk is not deleted with the ECS.                    |
-   |                       |                       |                                                                                       |
-   |                       |                       | This parameter is supported in microversion 2.3 and later.                            |
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
-   | bootIndex             | String                | Specifies the EVS disk boot sequence.                                                 |
+   | bootIndex             | String                | **Definition**                                                                        |
+   |                       |                       |                                                                                       |
+   |                       |                       | Specifies the EVS disk boot sequence.                                                 |
+   |                       |                       |                                                                                       |
+   |                       |                       | **Range**                                                                             |
    |                       |                       |                                                                                       |
    |                       |                       | -  **0** indicates the system disk.                                                   |
    |                       |                       | -  Non-**0** indicates a data disk.                                                   |
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
-   | device                | String                | Specifies the drive letter of the EVS disk, which is the device name of the EVS disk. |
+   | device                | String                | **Definition**                                                                        |
+   |                       |                       |                                                                                       |
+   |                       |                       | Specifies the drive letter of the EVS disk, which is the device name of the EVS disk. |
+   |                       |                       |                                                                                       |
+   |                       |                       | **Range**                                                                             |
+   |                       |                       |                                                                                       |
+   |                       |                       | N/A                                                                                   |
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0169494074__table537485761711:
@@ -67,85 +130,200 @@ Data Structure for Querying Details About ECSs
    +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter                   | Type                  | Description                                                                                                                                                                                            |
    +=============================+=======================+========================================================================================================================================================================================================+
-   | charging_mode               | String                | Specifies the ECS billing mode.                                                                                                                                                                        |
-   +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | vpc_id                      | String                | Specifies the ID of the VPC where the ECS is located.                                                                                                                                                  |
-   +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | EcmResStatus                | String                | Specifies the ECS frozen status.                                                                                                                                                                       |
+   | charging_mode               | String                | **Definition**                                                                                                                                                                                         |
    |                             |                       |                                                                                                                                                                                                        |
-   |                             |                       | -  **normal**: The ECS is not frozen.                                                                                                                                                                  |
-   |                             |                       | -  **freeze**: The ECS has been frozen.                                                                                                                                                                |
+   |                             |                       | Specifies the ECS billing mode.                                                                                                                                                                        |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | **Range**                                                                                                                                                                                              |
+   +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | vpc_id                      | String                | **Definition**                                                                                                                                                                                         |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | Specifies the ID of the VPC where the ECS is located.                                                                                                                                                  |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | **Range**                                                                                                                                                                                              |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | N/A                                                                                                                                                                                                    |
+   +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | EcmResStatus                | String                | **Definition**                                                                                                                                                                                         |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | Specifies the ECS frozen status.                                                                                                                                                                       |
    |                             |                       |                                                                                                                                                                                                        |
    |                             |                       | .. note::                                                                                                                                                                                              |
    |                             |                       |                                                                                                                                                                                                        |
    |                             |                       |    The system automatically adds this field, which is mandatory, after an ECS is frozen or unfrozen.                                                                                                   |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | **Range**                                                                                                                                                                                              |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | -  **normal**: The ECS is not frozen.                                                                                                                                                                  |
+   |                             |                       | -  **freeze**: The ECS has been frozen.                                                                                                                                                                |
    +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | metering.image_id           | String                | Specifies the image ID of the ECS.                                                                                                                                                                     |
+   | metering.image_id           | String                | **Definition**                                                                                                                                                                                         |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | Specifies the image ID of the ECS.                                                                                                                                                                     |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | **Range**                                                                                                                                                                                              |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | N/A                                                                                                                                                                                                    |
    +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | metering.imagetype          | String                | Specifies the image type. The following types are supported:                                                                                                                                           |
+   | metering.imagetype          | String                | **Definition**                                                                                                                                                                                         |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | Specifies the image type.                                                                                                                                                                              |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | **Range**                                                                                                                                                                                              |
    |                             |                       |                                                                                                                                                                                                        |
    |                             |                       | -  Public image (**gold**)                                                                                                                                                                             |
    |                             |                       | -  Private image (**private**)                                                                                                                                                                         |
    |                             |                       | -  Shared image (**shared**)                                                                                                                                                                           |
    +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | metering.resourcespeccode   | String                | Specifies the resource specifications of the ECS.                                                                                                                                                      |
+   | metering.resourcespeccode   | String                | **Definition**                                                                                                                                                                                         |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | Specifies the resource specifications of the ECS.                                                                                                                                                      |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | **Range**                                                                                                                                                                                              |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | N/A                                                                                                                                                                                                    |
    +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | metering.resourcetype       | String                | Specifies the resource type of the ECS.                                                                                                                                                                |
+   | metering.resourcetype       | String                | **Definition**                                                                                                                                                                                         |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | Specifies the resource type of the ECS.                                                                                                                                                                |
    |                             |                       |                                                                                                                                                                                                        |
    |                             |                       | Value **1** indicates ECSs.                                                                                                                                                                            |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | **Range**                                                                                                                                                                                              |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | N/A                                                                                                                                                                                                    |
    +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | cascaded.instance_extrainfo | String                | Specifies the extended information about the internal ECSs.                                                                                                                                            |
+   | cascaded.instance_extrainfo | String                | **Definition**                                                                                                                                                                                         |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | Specifies the extended information about the internal ECSs.                                                                                                                                            |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | **Range**                                                                                                                                                                                              |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | N/A                                                                                                                                                                                                    |
    +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | image_name                  | String                | Specifies the image name of the ECS.                                                                                                                                                                   |
+   | image_name                  | String                | **Definition**                                                                                                                                                                                         |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | Specifies the image name of the ECS.                                                                                                                                                                   |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | **Range**                                                                                                                                                                                              |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | N/A                                                                                                                                                                                                    |
    +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | agency_name                 | String                | Specifies the IAM agency name.                                                                                                                                                                         |
+   | agency_name                 | String                | **Definition**                                                                                                                                                                                         |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | Specifies the IAM agency name.                                                                                                                                                                         |
    |                             |                       |                                                                                                                                                                                                        |
    |                             |                       | An agency is created by a tenant administrator on IAM to provide temporary credentials for ECSs to access cloud services.                                                                              |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | **Range**                                                                                                                                                                                              |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | N/A                                                                                                                                                                                                    |
    +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | os_bit                      | String                | Specifies the number of bits in the operating system: **32** or **64**.                                                                                                                                |
+   | os_bit                      | String                | **Definition**                                                                                                                                                                                         |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | OS bit                                                                                                                                                                                                 |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | **Range**                                                                                                                                                                                              |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | 32 or 64                                                                                                                                                                                               |
    +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | os_type                     | String                | Specifies the OS type. The value can be **Linux** or **Windows**.                                                                                                                                      |
+   | os_type                     | String                | **Definition**                                                                                                                                                                                         |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | Specifies the OS type.                                                                                                                                                                                 |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | **Range**                                                                                                                                                                                              |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | Linux or Windows                                                                                                                                                                                       |
    +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | lockCheckEndpoint           | String                | Specifies the callback URL for checking whether ECS locking is enabled.                                                                                                                                |
+   | lockCheckEndpoint           | String                | **Definition**                                                                                                                                                                                         |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | Specifies the callback URL for checking whether ECS locking is enabled.                                                                                                                                |
    |                             |                       |                                                                                                                                                                                                        |
    |                             |                       | -  If ECS locking is enabled, the ECS is locked.                                                                                                                                                       |
    |                             |                       | -  If ECS locking is disabled, the ECS is unlocked, and invalid locks are deleted.                                                                                                                     |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | **Range**                                                                                                                                                                                              |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | N/A                                                                                                                                                                                                    |
    +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | lockSource                  | String                | Specifies the lock source.                                                                                                                                                                             |
+   | lockSource                  | String                | **Definition**                                                                                                                                                                                         |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | Specifies the lock source.                                                                                                                                                                             |
    |                             |                       |                                                                                                                                                                                                        |
    |                             |                       | -  Order lock (**ORDER**)                                                                                                                                                                              |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | **Range**                                                                                                                                                                                              |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | N/A                                                                                                                                                                                                    |
    +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | lockSourceId                | String                | Specifies the ECS lock source ID.                                                                                                                                                                      |
+   | lockSourceId                | String                | **Definition**                                                                                                                                                                                         |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | Specifies the ECS lock source ID.                                                                                                                                                                      |
    |                             |                       |                                                                                                                                                                                                        |
    |                             |                       | If **lockSource** is set to **ORDER**, **lockSourceId** is the order ID.                                                                                                                               |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | **Range**                                                                                                                                                                                              |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | N/A                                                                                                                                                                                                    |
    +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | lockScene                   | String                | Specifies the ECS lock type.                                                                                                                                                                           |
+   | lockScene                   | String                | **Definition**                                                                                                                                                                                         |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | Specifies the ECS lock type.                                                                                                                                                                           |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | **Range**                                                                                                                                                                                              |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | N/A                                                                                                                                                                                                    |
    +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | virtual_env_type            | String                | -  If an ECS is created using an iOS image, the value of this parameter is **IsoImage**.                                                                                                               |
+   | virtual_env_type            | String                | **Definition**                                                                                                                                                                                         |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | -  If an ECS is created using an iOS image, the value of this parameter is **IsoImage**.                                                                                                               |
    |                             |                       | -  If an ECS is created using a non-iOS image, the value of this parameter is **FusionCompute** in versions earlier than 19.5.0, and this parameter will be unavailable in versions later than 19.5.0. |
    |                             |                       |                                                                                                                                                                                                        |
    |                             |                       | .. note::                                                                                                                                                                                              |
    |                             |                       |                                                                                                                                                                                                        |
-   |                             |                       |    -  The **virtual_env_type** cannot be added, deleted, or modified.                                                                                                                                  |
+   |                             |                       |    The **virtual_env_type** cannot be added, deleted, or modified.                                                                                                                                     |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | **Range**                                                                                                                                                                                              |
+   |                             |                       |                                                                                                                                                                                                        |
+   |                             |                       | N/A                                                                                                                                                                                                    |
    +-----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0169494074__table6690227839:
 
 .. table:: **Table 5** **sys_tags** parameters
 
-   ========= ====== ===============================
-   Parameter Type   Description
-   ========= ====== ===============================
-   key       String Specifies the system tag key.
-   value     String Specifies the system tag value.
-   ========= ====== ===============================
+   +-----------------------+-----------------------+---------------------------------+
+   | Parameter             | Type                  | Description                     |
+   +=======================+=======================+=================================+
+   | key                   | String                | **Definition**                  |
+   |                       |                       |                                 |
+   |                       |                       | Specifies the system tag key.   |
+   |                       |                       |                                 |
+   |                       |                       | **Range**                       |
+   |                       |                       |                                 |
+   |                       |                       | N/A                             |
+   +-----------------------+-----------------------+---------------------------------+
+   | value                 | String                | **Definition**                  |
+   |                       |                       |                                 |
+   |                       |                       | Specifies the system tag value. |
+   |                       |                       |                                 |
+   |                       |                       | **Range**                       |
+   |                       |                       |                                 |
+   |                       |                       | N/A                             |
+   +-----------------------+-----------------------+---------------------------------+
 
 .. _en-us_topic_0169494074__table173259974818:
 
 .. table:: **Table 6** **image** parameters
 
-   ========= ====== =======================
-   Parameter Type   Description
-   ========= ====== =======================
-   id        String Specifies the image ID.
-   ========= ====== =======================
+   +-----------------------+-----------------------+-------------------------+
+   | Parameter             | Type                  | Description             |
+   +=======================+=======================+=========================+
+   | id                    | String                | **Definition**          |
+   |                       |                       |                         |
+   |                       |                       | Specifies the image ID. |
+   |                       |                       |                         |
+   |                       |                       | **Range**               |
+   |                       |                       |                         |
+   |                       |                       | N/A                     |
+   +-----------------------+-----------------------+-------------------------+

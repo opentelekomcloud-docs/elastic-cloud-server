@@ -14,7 +14,7 @@ For a running ECS, the system will automatically stop the ECS, copy the ECS data
 
 This API supports automatic rollback if the underlying resources are insufficient.
 
-This API must be used with the API for verifying ECS specifications modification (POST /v2.1/{project_id}/servers/{server_id}/action) or the API for rolling back ECS specifications modification (POST /v2.1/{project_id}/servers/{server_id}/action) if an ECS is detected to be in **VERIFY_RESIZE** state and its **OS-EXT-STS:vm_state** is **RESIZED**.
+This API cannot be used independently. The VM status needs to be queried in polling mode. When **status** is **VERIFY_RESIZE**, **OS-EXT-STS:task_state** is **""**, and **OS-EXT-STS:vm_state** is **RESIZED**, this API must be used together with :ref:`Confirming the Specifications Modification of an ECS <en-us_topic_0028714262>` (POST /v2.1/{project_id}/servers/{server_id}/action) or :ref:`Rolling Back ECS Specifications Modification <en-us_topic_0028714263>` (POST /v2.1/{project_id}/servers/{server_id}/action).
 
 URI
 ---

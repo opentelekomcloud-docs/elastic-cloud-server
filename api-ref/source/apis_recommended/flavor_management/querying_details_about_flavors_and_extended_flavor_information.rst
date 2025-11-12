@@ -13,7 +13,7 @@ This API is used to query details about ECS flavors and extended flavor informat
 URI
 ---
 
-GET /v1/{project_id}/cloudservers/flavors?availability_zone={availability_zone}
+GET /v1/{project_id}/cloudservers/flavors
 
 :ref:`Table 1 <en-us_topic_0020212656__table50905282>` describes the parameters in the URI.
 
@@ -29,11 +29,25 @@ GET /v1/{project_id}/cloudservers/flavors?availability_zone={availability_zone}
 
 .. table:: **Table 2** Query parameters
 
-   +-------------------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter         | Mandatory | Type   | Description                                                                                                                     |
-   +===================+===========+========+=================================================================================================================================+
-   | availability_zone | No        | String | Specifies an AZ. If this parameter is not left blank, flavors in the **normal**, **obt**, or **promotion** states are returned. |
-   +-------------------+-----------+--------+---------------------------------------------------------------------------------------------------------------------------------+
+   +-------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter         | Mandatory       | Type            | Description                                                                                                                     |
+   +===================+=================+=================+=================================================================================================================================+
+   | availability_zone | No              | String          | **Definition**                                                                                                                  |
+   |                   |                 |                 |                                                                                                                                 |
+   |                   |                 |                 | Specifies an AZ. If this parameter is not left blank, flavors in the **normal**, **obt**, or **promotion** states are returned. |
+   |                   |                 |                 |                                                                                                                                 |
+   |                   |                 |                 | **Constraints**                                                                                                                 |
+   |                   |                 |                 |                                                                                                                                 |
+   |                   |                 |                 | N/A                                                                                                                             |
+   |                   |                 |                 |                                                                                                                                 |
+   |                   |                 |                 | **Range**                                                                                                                       |
+   |                   |                 |                 |                                                                                                                                 |
+   |                   |                 |                 | N/A                                                                                                                             |
+   |                   |                 |                 |                                                                                                                                 |
+   |                   |                 |                 | **Default Value**                                                                                                               |
+   |                   |                 |                 |                                                                                                                                 |
+   |                   |                 |                 | N/A                                                                                                                             |
+   +-------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------+
 
 Request
 -------
@@ -49,11 +63,17 @@ Response
 
 .. table:: **Table 3** Response parameters
 
-   +-----------+------------------+-------------------------------------------------------------------------------------------------+
-   | Parameter | Type             | Description                                                                                     |
-   +===========+==================+=================================================================================================+
-   | flavors   | Array of objects | Specifies ECS flavors. For details, see :ref:`Table 4 <en-us_topic_0020212656__table15697576>`. |
-   +-----------+------------------+-------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                     |
+   +=======================+=======================+=================================================================================================+
+   | flavors               | Array of objects      | **Definition**                                                                                  |
+   |                       |                       |                                                                                                 |
+   |                       |                       | Specifies ECS flavors. For details, see :ref:`Table 4 <en-us_topic_0020212656__table15697576>`. |
+   |                       |                       |                                                                                                 |
+   |                       |                       | **Range**                                                                                       |
+   |                       |                       |                                                                                                 |
+   |                       |                       | N/A                                                                                             |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0020212656__table15697576:
 
@@ -62,52 +82,134 @@ Response
    +----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------+
    | Parameter                  | Type                  | Description                                                                                                              |
    +============================+=======================+==========================================================================================================================+
-   | id                         | String                | Specifies the ID of the ECS flavor.                                                                                      |
+   | id                         | String                | **Definition**                                                                                                           |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | Specifies the ID of the ECS flavor.                                                                                      |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | **Range**                                                                                                                |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | N/A                                                                                                                      |
    +----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------+
-   | name                       | String                | Specifies the name of the ECS flavor.                                                                                    |
+   | name                       | String                | **Definition**                                                                                                           |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | Specifies the name of the ECS flavor.                                                                                    |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | **Range**                                                                                                                |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | N/A                                                                                                                      |
    +----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------+
-   | vcpus                      | String                | Specifies the number of vCPUs in the ECS flavor.                                                                         |
+   | vcpus                      | String                | **Definition**                                                                                                           |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | Specifies the number of vCPUs in the ECS flavor.                                                                         |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | **Range**                                                                                                                |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | N/A                                                                                                                      |
    +----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------+
-   | ram                        | Integer               | Specifies the memory size (MB) in the ECS flavor.                                                                        |
+   | ram                        | Integer               | **Definition**                                                                                                           |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | Specifies the memory size (MiB) in the ECS flavor.                                                                       |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | **Range**                                                                                                                |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | N/A                                                                                                                      |
    +----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------+
-   | disk                       | String                | Specifies the system disk size in the ECS flavor.                                                                        |
+   | disk                       | String                | **Definition**                                                                                                           |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | Specifies the system disk size in the ECS flavor.                                                                        |
    |                            |                       |                                                                                                                          |
    |                            |                       | This parameter has not been used. Its default value is **0**.                                                            |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | **Range**                                                                                                                |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | N/A                                                                                                                      |
    +----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------+
-   | swap                       | String                | Specifies the swap partition size required by the ECS flavor.                                                            |
+   | swap                       | String                | **Definition**                                                                                                           |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | Specifies the swap partition size required by the ECS flavor.                                                            |
    |                            |                       |                                                                                                                          |
    |                            |                       | This parameter has not been used. Its default value is **""**.                                                           |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | **Range**                                                                                                                |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | N/A                                                                                                                      |
    +----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------+
-   | OS-FLV-EXT-DATA:ephemeral  | Integer               | Specifies the temporary disk size. This is an extended attribute.                                                        |
+   | OS-FLV-EXT-DATA:ephemeral  | Integer               | **Definition**                                                                                                           |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | Specifies the temporary disk size. This is an extended attribute.                                                        |
    |                            |                       |                                                                                                                          |
    |                            |                       | This parameter has not been used. Its default value is **0**.                                                            |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | **Range**                                                                                                                |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | N/A                                                                                                                      |
    +----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------+
-   | OS-FLV-DISABLED:disabled   | Boolean               | Specifies whether the ECS flavor has been disabled. This is an extended attribute.                                       |
+   | OS-FLV-DISABLED:disabled   | Boolean               | **Definition**                                                                                                           |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | Specifies whether the ECS flavor has been disabled. This is an extended attribute.                                       |
    |                            |                       |                                                                                                                          |
    |                            |                       | This parameter has not been used. Its default value is **false**.                                                        |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | **Range**                                                                                                                |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | N/A                                                                                                                      |
    +----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------+
-   | rxtx_factor                | Float                 | Specifies the ratio of the available network bandwidth to the network hardware bandwidth of the ECS.                     |
+   | rxtx_factor                | Float                 | **Definition**                                                                                                           |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | Specifies the ratio of the available network bandwidth to the network hardware bandwidth of the ECS.                     |
    |                            |                       |                                                                                                                          |
    |                            |                       | This parameter has not been used. Its default value is **1.0**.                                                          |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | **Range**                                                                                                                |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | N/A                                                                                                                      |
    +----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------+
-   | rxtx_quota                 | String                | Specifies the software constraints of the network bandwidth that can be used by the ECS.                                 |
+   | rxtx_quota                 | String                | **Definition**                                                                                                           |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | Specifies the software constraints of the network bandwidth that can be used by the ECS.                                 |
    |                            |                       |                                                                                                                          |
    |                            |                       | This parameter has not been used. Its default value is **null**.                                                         |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | **Range**                                                                                                                |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | N/A                                                                                                                      |
    +----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------+
-   | rxtx_cap                   | String                | Specifies the hardware constraints of the network bandwidth that can be used by the ECS.                                 |
+   | rxtx_cap                   | String                | **Definition**                                                                                                           |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | Specifies the hardware constraints of the network bandwidth that can be used by the ECS.                                 |
    |                            |                       |                                                                                                                          |
    |                            |                       | This parameter has not been used. Its default value is **null**.                                                         |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | **Range**                                                                                                                |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | N/A                                                                                                                      |
    +----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------+
-   | os-flavor-access:is_public | Boolean               | Specifies whether a flavor is available to all tenants. This is an extended attribute.                                   |
+   | os-flavor-access:is_public | Boolean               | **Definition**                                                                                                           |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | Specifies whether a flavor is available to all tenants. This is an extended attribute.                                   |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | **Range**                                                                                                                |
    |                            |                       |                                                                                                                          |
    |                            |                       | -  **true**: indicates that a flavor is available to all tenants.                                                        |
    |                            |                       | -  **false**: indicates that a flavor is available only to certain tenants.                                              |
    |                            |                       |                                                                                                                          |
    |                            |                       | Default value: **true**                                                                                                  |
    +----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------+
-   | links                      | Array of objects      | Specifies shortcut links for ECS flavors. For details, see :ref:`Table 5 <en-us_topic_0020212656__table35958848194647>`. |
+   | links                      | Array of objects      | **Definition**                                                                                                           |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | Specifies shortcut links for ECS flavors. For details, see :ref:`Table 5 <en-us_topic_0020212656__table35958848194647>`. |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | **Range**                                                                                                                |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | N/A                                                                                                                      |
    +----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------+
-   | os_extra_specs             | Object                | Specifies extended ECS specifications. For details, see :ref:`Table 6 <en-us_topic_0020212656__table59078165>`.          |
+   | os_extra_specs             | Object                | **Definition**                                                                                                           |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | Specifies extended ECS specifications. For details, see :ref:`Table 6 <en-us_topic_0020212656__table59078165>`.          |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | **Range**                                                                                                                |
+   |                            |                       |                                                                                                                          |
+   |                            |                       | N/A                                                                                                                      |
    +----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0020212656__table35958848194647:
@@ -159,7 +261,7 @@ Response
    |                                  |                       |    -  For D2 ECSs, the value can be 2, 4, 8, 12, 16, or 24.                                                                                                                                                                                                                                                                                                                                                                |
    |                                  |                       |    -  For D3 ECSs, the value can be 2, 4, 8, 12, 16, 24, or 28.                                                                                                                                                                                                                                                                                                                                                            |
    |                                  |                       |                                                                                                                                                                                                                                                                                                                                                                                                                            |
-   |                                  |                       | -  **size**: indicates the capacity of a single disk, in GB. Currently, only **1675** is supported. The actual disk size is **1800**, and the available size after formatting is **1675**.                                                                                                                                                                                                                                 |
+   |                                  |                       | -  **size**: indicates the capacity of a single disk, in GiB. Currently, only **1675** is supported. The actual disk size is **1800**, and the available size after formatting is **1675**.                                                                                                                                                                                                                                |
    |                                  |                       | -  **safeFormat**: indicates whether the local disks of the ECS are securely formatted. The following types are supported:                                                                                                                                                                                                                                                                                                 |
    |                                  |                       |                                                                                                                                                                                                                                                                                                                                                                                                                            |
    |                                  |                       |    -  For D2 or D3 ECSs, the value is **True**.                                                                                                                                                                                                                                                                                                                                                                            |
@@ -170,7 +272,7 @@ Response
    +----------------------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | quota:nvme_ssd                   | String                | The value of this parameter is in the format of {type}:{spec}:{num}:{size}:{safeFormat}.                                                                                                                                                                                                                                                                                                                                   |
    |                                  |                       |                                                                                                                                                                                                                                                                                                                                                                                                                            |
-   |                                  |                       | -  **type**: indicates the capacity of a single NVME SSD disk attached to the ECS, which can only be 1.6 TB or 3.2 TB.                                                                                                                                                                                                                                                                                                     |
+   |                                  |                       | -  **type**: indicates the capacity of a single NVMe SSD disk attached to the ECS, which can only be 1.6 TB or 3.2 TB.                                                                                                                                                                                                                                                                                                     |
    |                                  |                       |                                                                                                                                                                                                                                                                                                                                                                                                                            |
    |                                  |                       | -  **spec**: indicates the specifications of the NVMe SSD disk, which can be **large** (large specifications) or **lvs** (small specifications).                                                                                                                                                                                                                                                                           |
    |                                  |                       |                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -178,7 +280,7 @@ Response
    |                                  |                       |                                                                                                                                                                                                                                                                                                                                                                                                                            |
    |                                  |                       | -  **num** indicates the number of local disks.                                                                                                                                                                                                                                                                                                                                                                            |
    |                                  |                       |                                                                                                                                                                                                                                                                                                                                                                                                                            |
-   |                                  |                       | -  **size**: indicates the capacity, in the unit of GB, of the disk used by the guest user. If the **spec** value is **large**, the value of this parameter is the size of a single disk attached to the ECS. If the value of **spec** is **lvs**, the value of **size** is an integer multiple of 50.                                                                                                                     |
+   |                                  |                       | -  **size**: indicates the capacity, in the unit of GiB, of the disk used by the guest user. If the **spec** value is **large**, the value of this parameter is the size of a single disk attached to the ECS. If the value of **spec** is **lvs**, the value of **size** is an integer multiple of 50.                                                                                                                    |
    |                                  |                       |                                                                                                                                                                                                                                                                                                                                                                                                                            |
    |                                  |                       | -  **safeFormat**: indicates whether the local disks of the ECS are securely formatted.                                                                                                                                                                                                                                                                                                                                    |
    |                                  |                       |                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -209,7 +311,7 @@ Response
    |                                  |                       |                                                                                                                                                                                                                                                                                                                                                                                                                            |
    |                                  |                       | For example, nvidia-a30:1 indicates that the ECS has an A30 GPU attached.                                                                                                                                                                                                                                                                                                                                                  |
    +----------------------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | cond:operation:status            | String                | This parameter takes effect region-wide. If an AZ is not configured in the **cond:operation:az** parameter, the value of this parameter is used by default. If this parameter is not set or used, the meaning of **normal** applies. Value range:                                                                                                                                                                          |
+   | cond:operation:status            | String                | This parameter takes effect region-wide. If an AZ is not configured in the **cond:operation:az** parameter, the value of this parameter is used by default. If this parameter is not set or used, the meaning of **normal** applies. Options:                                                                                                                                                                              |
    |                                  |                       |                                                                                                                                                                                                                                                                                                                                                                                                                            |
    |                                  |                       | -  **normal**: indicates normal commercial use of the flavor.                                                                                                                                                                                                                                                                                                                                                              |
    |                                  |                       | -  **abandon**: indicates that the flavor has been taken offline (not displayed).                                                                                                                                                                                                                                                                                                                                          |

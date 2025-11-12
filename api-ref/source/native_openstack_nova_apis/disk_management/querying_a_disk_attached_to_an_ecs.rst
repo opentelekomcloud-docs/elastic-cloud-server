@@ -28,7 +28,7 @@ GET /v2/{project_id}/servers/{server_id}/os-volume_attachments/{volume_id}
    ========== ========= =========================
    project_id Yes       Specifies the project ID.
    server_id  Yes       Specifies the ECS ID.
-   volume_id  Yes       Specifies the disk ID.
+   volume_id  Yes       Specifies the volume ID.
    ========== ========= =========================
 
 Request

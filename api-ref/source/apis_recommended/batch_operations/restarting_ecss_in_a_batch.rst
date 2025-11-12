@@ -10,7 +10,7 @@ Function
 
 This API is used to restart ECSs in a batch based on specified ECS IDs. A maximum of 1,000 ECSs can be restarted in one minute.
 
-This API is an asynchronous API. After the batch restart request is successfully delivered, a job ID is returned. This does not mean the batch restart is complete. You need to call the API by referring to :ref:`Querying Task Execution Status <en-us_topic_0022225398>` to query the job status. The SUCCESS status indicates that the batch restart is successful.
+This API is an asynchronous API. After the batch restart request is successfully delivered, a job ID is returned. This does not mean the batch restart is complete. You need to call the API by referring to :ref:`Querying Job Execution Status <en-us_topic_0022225398>` to query the job status. The SUCCESS status indicates that the batch restart is successful.
 
 URI
 ---
@@ -72,7 +72,7 @@ Request
 Response
 --------
 
-See :ref:`Responses (Task) <en-us_topic_0022067714>`.
+See :ref:`Responses (Jobs) <en-us_topic_0022067714>`.
 
 Example Request
 ---------------
