@@ -115,7 +115,7 @@ Response
    +--------------------------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | OS-DCF:diskConfig                    | String                | Specifies the disk configuration mode. This is an extended attribute. This field is valid for the ECS started using an image.                                                                                                                              |
    |                                      |                       |                                                                                                                                                                                                                                                            |
-   |                                      |                       | Value range:                                                                                                                                                                                                                                               |
+   |                                      |                       | Range:                                                                                                                                                                                                                                                     |
    |                                      |                       |                                                                                                                                                                                                                                                            |
    |                                      |                       | -  **AUTO**: This API uses a single partition to build an ECS with the target disk size. The API automatically adjusts the file system to adapt to the entire partition.                                                                                   |
    |                                      |                       |                                                                                                                                                                                                                                                            |
@@ -239,7 +239,7 @@ Response
    |                       |                       |                                                                                                                                 |
    |                       |                       | This parameter is supported in microversion 2.47 and later.                                                                     |
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------+
-   | ram                   | Integer               | Specifies the memory size (MB) in the ECS flavor.                                                                               |
+   | ram                   | Integer               | Specifies the memory size (MiB) in the ECS flavor.                                                                              |
    |                       |                       |                                                                                                                                 |
    |                       |                       | This parameter is supported in microversion 2.47 and later.                                                                     |
    +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------------+
@@ -310,17 +310,17 @@ Response
 
 .. table:: **Table 8** **os-extended-volumes:volumes_attached** field description
 
-   +-----------------------+-----------------------+---------------------------------------------------------------------+
-   | Parameter             | Type                  | Description                                                         |
-   +=======================+=======================+=====================================================================+
-   | id                    | String                | Specifies the EVS disk ID.                                          |
-   +-----------------------+-----------------------+---------------------------------------------------------------------+
-   | delete_on_termination | Boolean               | Specifies whether to delete additional disks when deleting the ECS. |
-   |                       |                       |                                                                     |
-   |                       |                       | By default, this parameter is set to **False**.                     |
-   |                       |                       |                                                                     |
-   |                       |                       | This parameter is supported in microversion 2.3 and later.          |
-   +-----------------------+-----------------------+---------------------------------------------------------------------+
+   +-----------------------+-----------------------+-------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                       |
+   +=======================+=======================+===================================================================+
+   | id                    | String                | Specifies the volume ID.                                          |
+   +-----------------------+-----------------------+-------------------------------------------------------------------+
+   | delete_on_termination | Boolean               | Specifies whether to delete attached disks when deleting the ECS. |
+   |                       |                       |                                                                   |
+   |                       |                       | By default, this parameter is set to **False**.                   |
+   |                       |                       |                                                                   |
+   |                       |                       | This parameter is supported in microversion 2.3 and later.        |
+   +-----------------------+-----------------------+-------------------------------------------------------------------+
 
 .. _en-us_topic_0020212690__table2053207517233:
 

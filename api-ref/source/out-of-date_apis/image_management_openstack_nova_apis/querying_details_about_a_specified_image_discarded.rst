@@ -59,9 +59,9 @@ Response
    +----------------------+------------------+------------------------------------------------------------------------------------------------------+
    | OS-EXT-IMG-SIZE:size | Integer          | Specifies the image size. The value must be greater than zero.                                       |
    +----------------------+------------------+------------------------------------------------------------------------------------------------------+
-   | minDisk              | Integer          | Specifies the minimum disk size in GB required by the image. The value must be greater than zero.    |
+   | minDisk              | Integer          | Specifies the minimum disk size required by the image. The value must be greater than zero.          |
    +----------------------+------------------+------------------------------------------------------------------------------------------------------+
-   | minRam               | Integer          | Specifies the minimum memory size in GB required by the image. The value must be greater than zero.  |
+   | minRam               | Integer          | Specifies the minimum memory size required by the image. The value must be greater than zero.        |
    +----------------------+------------------+------------------------------------------------------------------------------------------------------+
    | progress             | Integer          | Specifies the image upload progress. The value must be greater than zero.                            |
    +----------------------+------------------+------------------------------------------------------------------------------------------------------+

@@ -22,15 +22,17 @@ ECS Status Management
 +-------------------------------------------------------------------------------------+------------------------------------------------------------+---------------------------+--------------------+
 | :ref:`Stopping an ECS (native OpenStack API) <en-us_topic_0020212652>`              | POST /v2/{project_id}/servers/{server_id}/action           | ecs:servers:stop          | ecs:servers:list   |
 |                                                                                     |                                                            |                           |                    |
-|                                                                                     | POST /v2.1/{project_id}/servers/{server_id}/action         |                           |                    |
+|                                                                                     | POST /v2.1/{project_id}/servers/{server_id}/action         |                           | ecs:servers:get    |
 +-------------------------------------------------------------------------------------+------------------------------------------------------------+---------------------------+--------------------+
 | :ref:`Restarting an ECS (native OpenStack API) <en-us_topic_0020212650>`            | POST /v2/{project_id}/servers/{server_id}/action           | ecs:servers:reboot        | ecs:servers:list   |
 |                                                                                     |                                                            |                           |                    |
-|                                                                                     | POST /v2.1/{project_id}/servers/{server_id}/action         |                           |                    |
+|                                                                                     | POST /v2.1/{project_id}/servers/{server_id}/action         |                           | ecs:servers:get    |
 +-------------------------------------------------------------------------------------+------------------------------------------------------------+---------------------------+--------------------+
 | :ref:`Modifying ECS specifications (native OpenStack API) <en-us_topic_0028714261>` | POST /v2.1/{project_id}/servers/{server_id}/action         | ecs:servers:resize        | ecs:servers:list   |
 |                                                                                     |                                                            |                           |                    |
-|                                                                                     | POST /v2.1/{project_id}/servers/{server_id}/action         |                           | ecs:flavors:get    |
+|                                                                                     | POST /v2.1/{project_id}/servers/{server_id}/action         |                           | ecs:servers:get    |
+|                                                                                     |                                                            |                           |                    |
+|                                                                                     |                                                            |                           | ecs:flavors:get    |
 |                                                                                     |                                                            |                           |                    |
 |                                                                                     |                                                            |                           | ims:images:get     |
 |                                                                                     |                                                            |                           |                    |
@@ -66,9 +68,9 @@ ECS Status Management
 +-------------------------------------------------------------------------------------+------------------------------------------------------------+---------------------------+--------------------+
 | :ref:`Locking an ECS (native OpenStack API) <en-us_topic_0065817690>`               | POST /v2/{project_id}/servers/{server_id}/action           | ecs:servers:lock          | ecs:servers:list   |
 |                                                                                     |                                                            |                           |                    |
-|                                                                                     | POST /v2.1/{project_id}/servers/{server_id}/action         |                           |                    |
+|                                                                                     | POST /v2.1/{project_id}/servers/{server_id}/action         |                           | ecs:servers:get    |
 +-------------------------------------------------------------------------------------+------------------------------------------------------------+---------------------------+--------------------+
 | :ref:`Unlocking an ECS (native OpenStack API) <en-us_topic_0065817691>`             | POST /v2/{project_id}/servers/{server_id}/action           | ecs:servers:unlock        | ecs:servers:list   |
 |                                                                                     |                                                            |                           |                    |
-|                                                                                     | POST /v2.1/{project_id}/servers/{server_id}/action         |                           |                    |
+|                                                                                     | POST /v2.1/{project_id}/servers/{server_id}/action         |                           | ecs:servers:get    |
 +-------------------------------------------------------------------------------------+------------------------------------------------------------+---------------------------+--------------------+

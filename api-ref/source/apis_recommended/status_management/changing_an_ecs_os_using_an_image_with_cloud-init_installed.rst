@@ -10,7 +10,7 @@ Function
 
 This API is used to change an ECS OS. During the system disk reinstallation using a new image, the data disks of the ECS remain unchanged.
 
-This API is an asynchronous API. After the OS change request is successfully delivered, a job ID is returned. This does not mean the OS change is complete. You need to call the API by referring to :ref:`Querying Task Execution Status <en-us_topic_0022225398>` to query the job status. The SUCCESS status indicates that the OS change is successful.
+This API is an asynchronous API. After the OS change request is successfully delivered, a job ID is returned. This does not mean the OS change is complete. You need to call the API by referring to :ref:`Querying Job Execution Status <en-us_topic_0022225398>` to query the job status. The SUCCESS status indicates that the OS change is successful.
 
 After this API is called, the system uninstalls the system disk, uses the new image to create a system disk, and attaches it to the ECS. In this way, the OS is changed.
 
@@ -49,102 +49,219 @@ Request
 
 .. table:: **Table 2** Request parameters
 
-   +-----------+-----------+--------+---------------------------------------------------------------------------------------------+
-   | Parameter | Mandatory | Type   | Description                                                                                 |
-   +===========+===========+========+=============================================================================================+
-   | os-change | Yes       | Object | Changes an ECS OS. For details, see :ref:`Table 3 <en-us_topic_0067876971__table32200631>`. |
-   +-----------+-----------+--------+---------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                                 |
+   +=================+=================+=================+=============================================================================================+
+   | os-change       | Yes             | Object          | **Definition**                                                                              |
+   |                 |                 |                 |                                                                                             |
+   |                 |                 |                 | Changes an ECS OS. For details, see :ref:`Table 3 <en-us_topic_0067876971__table32200631>`. |
+   |                 |                 |                 |                                                                                             |
+   |                 |                 |                 | **Constraints**                                                                             |
+   |                 |                 |                 |                                                                                             |
+   |                 |                 |                 | N/A                                                                                         |
+   |                 |                 |                 |                                                                                             |
+   |                 |                 |                 | **Range**                                                                                   |
+   |                 |                 |                 |                                                                                             |
+   |                 |                 |                 | N/A                                                                                         |
+   |                 |                 |                 |                                                                                             |
+   |                 |                 |                 | **Default Value**                                                                           |
+   |                 |                 |                 |                                                                                             |
+   |                 |                 |                 | N/A                                                                                         |
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0067876971__table32200631:
 
 .. table:: **Table 3** **os-change** field description
 
-   +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                                                                                                                                                                 |
-   +=================+=================+=================+=============================================================================================================================================================================================================+
-   | keyname         | Yes             | String          | Specifies the key name.                                                                                                                                                                                     |
-   +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | userid          | No              | String          | Specifies the user ID. When the **keyname** parameter is being specified, the value of this parameter is used preferentially. If this parameter is left blank, the user ID in the token is used by default. |
-   +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | imageid         | Yes             | String          | Specifies the ID of the new image in UUID format.                                                                                                                                                           |
-   |                 |                 |                 |                                                                                                                                                                                                             |
-   |                 |                 |                 | You can obtain the image ID from the console or by following the instructions provided in "Querying Images" in *Image Management Service API Reference*.                                                    |
-   +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | metadata        | No              | Object          | Specifies the metadata of the ECS for which the OS is to be changed.                                                                                                                                        |
-   |                 |                 |                 |                                                                                                                                                                                                             |
-   |                 |                 |                 | For more information, see :ref:`Table 4 <en-us_topic_0067876971__table9120223>`.                                                                                                                            |
-   +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                                                                                                                          |
+   +=================+=================+=================+======================================================================================================================================================================================+
+   | keyname         | Yes             | String          | **Definition**                                                                                                                                                                       |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | Specifies the key name.                                                                                                                                                              |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | **Constraints**                                                                                                                                                                      |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | N/A                                                                                                                                                                                  |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | **Range**                                                                                                                                                                            |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | N/A                                                                                                                                                                                  |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | **Default Value**                                                                                                                                                                    |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | N/A                                                                                                                                                                                  |
+   +-----------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | userid          | No              | String          | **Definition**                                                                                                                                                                       |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | Specifies the user ID.                                                                                                                                                               |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | **Constraints**                                                                                                                                                                      |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | When the **keyname** parameter is being specified, the value of this parameter is used preferentially. If this parameter is left blank, the user ID in the token is used by default. |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | **Range**                                                                                                                                                                            |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | N/A                                                                                                                                                                                  |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | **Default Value**                                                                                                                                                                    |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | N/A                                                                                                                                                                                  |
+   +-----------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | imageid         | Yes             | String          | **Definition**                                                                                                                                                                       |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | Specifies the ID of the new image in UUID format.                                                                                                                                    |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | You can obtain the image ID from the console or by following the instructions provided in "Querying Images" in *Image Management Service API Reference*.                             |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | **Constraints**                                                                                                                                                                      |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | N/A                                                                                                                                                                                  |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | **Range**                                                                                                                                                                            |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | N/A                                                                                                                                                                                  |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | **Default Value**                                                                                                                                                                    |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | N/A                                                                                                                                                                                  |
+   +-----------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | metadata        | No              | Object          | **Definition**                                                                                                                                                                       |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | Specifies the metadata of the ECS for which the OS is to be changed.                                                                                                                 |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | For more information, see :ref:`Table 4 <en-us_topic_0067876971__table9120223>`.                                                                                                     |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | **Constraints**                                                                                                                                                                      |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | N/A                                                                                                                                                                                  |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | **Range**                                                                                                                                                                            |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | N/A                                                                                                                                                                                  |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | **Default Value**                                                                                                                                                                    |
+   |                 |                 |                 |                                                                                                                                                                                      |
+   |                 |                 |                 | N/A                                                                                                                                                                                  |
+   +-----------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0067876971__table9120223:
 
 .. table:: **Table 4** **metadata** field description
 
-   +----------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter            | Mandatory       | Type            | Description                                                                                                                                      |
-   +======================+=================+=================+==================================================================================================================================================+
-   | BYOL                 | No              | String          | Specifies whether a user has the license of an image.                                                                                            |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 | -  If this parameter is set to **true**, the license file delivered with the image is used, indicating that BYOL is used.                        |
-   |                      |                 |                 | -  If this parameter is set to a value other than **true**, BYOL is not used, and the license file provided by the cloud platform must be used.  |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 | The default value is not **true**, indicating that BYOL is not used.                                                                             |
-   +----------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-   | user_data            | No              | String          | Specifies the user data to be injected to the ECS during the creation. Text and text files can be injected.                                      |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 | .. note::                                                                                                                                        |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 |    -  The content of **user_data** must be encoded with base64.                                                                                  |
-   |                      |                 |                 |    -  The maximum size of the content to be injected (before encoding) is 32 KB.                                                                 |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 | For more details, see "Injecting User Data into ECSs" in the *Elastic Cloud Server User Guide*.                                                  |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 | Examples                                                                                                                                         |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 | Before base64 encoding:                                                                                                                          |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 | -  Linux                                                                                                                                         |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 |    .. code-block::                                                                                                                               |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 |       #!/bin/bash                                                                                                                                |
-   |                      |                 |                 |       echo user_test > /home/user.txt                                                                                                            |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 | -  Windows                                                                                                                                       |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 |    .. code-block::                                                                                                                               |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 |       rem cmd                                                                                                                                    |
-   |                      |                 |                 |       echo 111 > c:\aaa.txt                                                                                                                      |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 | After base64 encoding:                                                                                                                           |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 | -  Linux                                                                                                                                         |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 |    .. code-block::                                                                                                                               |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 |       IyEvYmluL2Jhc2gKZWNobyB1c2VyX3Rlc3QgPiAvaG9tZS91c2VyLnR4dA==                                                                               |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 | -  Windows                                                                                                                                       |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 |    .. code-block::                                                                                                                               |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 |       cmVtIGNtZAplY2hvIDExMSA+IGM6XGFhYS50eHQ=                                                                                                   |
-   +----------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-   | \__system__encrypted | No              | String          | Specifies encryption in **metadata**. The value can be **0** (encryption disabled) or **1** (encryption enabled).                                |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 | If this parameter does not exist, the system disk will not be encrypted by default.                                                              |
-   +----------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
-   | \__system__cmkid     | No              | String          | Specifies the CMK ID, which indicates encryption in **metadata**. This parameter is used with **\__system__encrypted**.                          |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 | .. note::                                                                                                                                        |
-   |                      |                 |                 |                                                                                                                                                  |
-   |                      |                 |                 |    For details about how to obtain the CMK ID through HTTPS requests, see "Querying the List of CMKs" in *Key Management Service API Reference*. |
-   +----------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
+   +----------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter            | Mandatory       | Type            | Description                                                                                                                                     |
+   +======================+=================+=================+=================================================================================================================================================+
+   | BYOL                 | No              | String          | **Definition**                                                                                                                                  |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | Specifies whether a user has the license of an image.                                                                                           |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | **Constraints**                                                                                                                                 |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | N/A                                                                                                                                             |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | **Range**                                                                                                                                       |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | -  If this parameter is set to **true**, the license file delivered with the image is used, indicating that BYOL is used.                       |
+   |                      |                 |                 | -  If this parameter is set to a value other than **true**, BYOL is not used, and the license file provided by the cloud platform must be used. |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | **Default Value**                                                                                                                               |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | The default value is not **true**, indicating that BYOL is not used.                                                                            |
+   +----------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+   | user_data            | No              | String          | **Definition**                                                                                                                                  |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | Specifies the user data to be injected to the ECS during the creation. Text and text files can be injected.                                     |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | Examples                                                                                                                                        |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | Before base64 encoding:                                                                                                                         |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | -  Linux                                                                                                                                        |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 |    .. code-block::                                                                                                                              |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 |       #!/bin/bash                                                                                                                               |
+   |                      |                 |                 |       echo user_test > /home/user.txt                                                                                                           |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | -  Windows                                                                                                                                      |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 |    .. code-block::                                                                                                                              |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 |       rem cmd                                                                                                                                   |
+   |                      |                 |                 |       echo 111 > c:\aaa.txt                                                                                                                     |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | After base64 encoding:                                                                                                                          |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | -  Linux                                                                                                                                        |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 |    .. code-block::                                                                                                                              |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 |       IyEvYmluL2Jhc2gKZWNobyB1c2VyX3Rlc3QgPiAvaG9tZS91c2VyLnR4dA==                                                                              |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | -  Windows                                                                                                                                      |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 |    .. code-block::                                                                                                                              |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 |       cmVtIGNtZAplY2hvIDExMSA+IGM6XGFhYS50eHQ=                                                                                                  |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | For more details, see "Injecting User Data into ECSs" in the *Elastic Cloud Server User Guide*.                                                 |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | **Constraints**                                                                                                                                 |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | -  The content of **user_data** must be encoded with base64.                                                                                    |
+   |                      |                 |                 | -  The maximum size of the content to be injected (before encoding) is 32 KB.                                                                   |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | **Range**                                                                                                                                       |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | N/A                                                                                                                                             |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | **Default Value**                                                                                                                               |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | N/A                                                                                                                                             |
+   +----------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+   | \__system__encrypted | No              | String          | **Definition**                                                                                                                                  |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | Specifies the encryption field in **metadata**.                                                                                                 |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | **Constraints**                                                                                                                                 |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | N/A                                                                                                                                             |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | **Range**                                                                                                                                       |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | -  **0**: indicates a non-encrypted disk.                                                                                                       |
+   |                      |                 |                 | -  **1**: indicates an encrypted disk.                                                                                                          |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | **Default Value**                                                                                                                               |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | If this parameter does not exist, the system disk will not be encrypted by default.                                                             |
+   +----------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+   | \__system__cmkid     | No              | String          | **Definition**                                                                                                                                  |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | Specifies the CMK ID, which indicates encryption in **metadata**.                                                                               |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | **Constraints**                                                                                                                                 |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | This parameter must be used with **\__system__encrypted**.                                                                                      |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | .. note::                                                                                                                                       |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 |    For details about how to obtain the CMK ID through HTTPS requests, see "Querying the Key List" in *Key Management Service API Reference*.    |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | **Range**                                                                                                                                       |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | N/A                                                                                                                                             |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | **Default Value**                                                                                                                               |
+   |                      |                 |                 |                                                                                                                                                 |
+   |                      |                 |                 | N/A                                                                                                                                             |
+   +----------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response
 --------
 
-See :ref:`Responses (Task) <en-us_topic_0022067714>`.
+See :ref:`Responses (Jobs) <en-us_topic_0022067714>`.
 
 Example Request
 ---------------
@@ -196,7 +313,7 @@ Example Request
 Example Response
 ----------------
 
-See :ref:`Responses (Task) <en-us_topic_0022067714>`.
+See :ref:`Responses (Jobs) <en-us_topic_0022067714>`.
 
 .. code-block::
 

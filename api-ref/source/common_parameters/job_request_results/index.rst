@@ -2,15 +2,15 @@
 
 .. _en-us_topic_0022067713:
 
-Task Request Result
+Job Request Results
 ===================
 
--  :ref:`Responses (Task) <en-us_topic_0022067714>`
+-  :ref:`Responses (Jobs) <en-us_topic_0022067714>`
 -  :ref:`Returned Values <en-us_topic_0022067715>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
-   responses_task
+   responses_jobs
    returned_values

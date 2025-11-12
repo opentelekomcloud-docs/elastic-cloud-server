@@ -33,7 +33,7 @@ Request Parameters
 
 None
 
-Response Parameters
+Response parameters
 -------------------
 
 None

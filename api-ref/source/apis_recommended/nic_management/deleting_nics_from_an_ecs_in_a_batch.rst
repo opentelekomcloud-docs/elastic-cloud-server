@@ -8,9 +8,9 @@ Deleting NICs from an ECS in a Batch
 Function
 --------
 
-This API is used to uninstall and delete one or multiple NICs from an ECS.
+This API is used to delete one or multiple NICs from an ECS.
 
-This API is an asynchronous API. After the deletion request is successfully delivered, a job ID is returned. This does not mean the deletion is complete. You need to call the API by referring to :ref:`Querying Task Execution Status <en-us_topic_0022225398>` to query the job status. The SUCCESS status indicates that the deletion is successful.
+This API is an asynchronous API. After the deletion request is successfully delivered, a job ID is returned. This does not mean the deletion is complete. You need to call the API by referring to :ref:`Querying Job Execution Status <en-us_topic_0022225398>` to query the job status. The SUCCESS status indicates that the deletion is successful.
 
 Constraints
 -----------
@@ -67,7 +67,7 @@ Request
 Response
 --------
 
-See :ref:`Responses (Task) <en-us_topic_0022067714>`.
+See :ref:`Responses (Jobs) <en-us_topic_0022067714>`.
 
 Example Request
 ---------------

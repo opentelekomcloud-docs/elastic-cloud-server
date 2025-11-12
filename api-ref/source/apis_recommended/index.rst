@@ -13,7 +13,7 @@ APIs (Recommended)
 -  :ref:`Disk Management <en-us_topic_0111860831>`
 -  :ref:`Metadata Management <en-us_topic_0124385013>`
 -  :ref:`Tenant Quota Management <en-us_topic_0020212673>`
--  :ref:`Task Status Management <en-us_topic_0022225397>`
+-  :ref:`Job Status Management <en-us_topic_0022225397>`
 -  :ref:`Tag Management <en-us_topic_0108433461>`
 -  :ref:`ECS Group Management <en-us_topic_0161097717>`
 
@@ -29,6 +29,6 @@ APIs (Recommended)
    disk_management/index
    metadata_management/index
    tenant_quota_management/index
-   task_status_management/index
+   job_status_management/index
    tag_management/index
    ecs_group_management/index

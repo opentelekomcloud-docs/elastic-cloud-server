@@ -10,7 +10,7 @@ Function
 
 ECS specifications can be modified, for example, upgrading the vCPUs and memory, to meet service requirements. This API is used to modify ECS specifications.
 
-This API is an asynchronous API. After the specifications modification request is successfully delivered, a job ID is returned. This does not mean the modification is complete. You need to call the API by referring to :ref:`Querying Task Execution Status <en-us_topic_0022225398>` to query the job status. The SUCCESS status indicates that the modification is successful.
+This API is an asynchronous API. After the specifications modification request is successfully delivered, a job ID is returned. This does not mean the modification is complete. You need to call the API by referring to :ref:`Querying Job Execution Status <en-us_topic_0022225398>` to query the job status. The SUCCESS status indicates that the modification is successful.
 
 An ECS flavor cannot be changed to certain flavors. For details, see :ref:`Querying the Target Flavors to Which an ECS Flavor Can Be Changed <en-us_topic_0110472767>`.
 
@@ -46,35 +46,75 @@ Request
 
 .. table:: **Table 2** Request parameters
 
-   +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                                                                                             |
-   +=================+=================+=================+=========================================================================================================================================+
-   | resize          | Yes             | Object          | Specifies the operation to modify ECS specifications. For details, see :ref:`Table 3 <en-us_topic_0020212653__table7657338>`.           |
-   +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------+
-   | dry_run         | No              | Boolean         | Specifies whether to only check the request and not modify the ECS specifications.                                                      |
-   |                 |                 |                 |                                                                                                                                         |
-   |                 |                 |                 | **true**: The request is sent and the ECS specifications are not modified. Check items include mandatory parameters and request format. |
-   |                 |                 |                 |                                                                                                                                         |
-   |                 |                 |                 | -  If the check fails, the system returns an error.                                                                                     |
-   |                 |                 |                 | -  If the check is successful, the system returns status code 202.                                                                      |
-   |                 |                 |                 |                                                                                                                                         |
-   |                 |                 |                 | **false**: The request is sent and the ECS specifications will be modified after the check is passed.                                   |
-   +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                                                                   |
+   +=================+=================+=================+===============================================================================================================================+
+   | resize          | Yes             | Object          | **Definition**                                                                                                                |
+   |                 |                 |                 |                                                                                                                               |
+   |                 |                 |                 | Specifies the operation to modify ECS specifications. For details, see :ref:`Table 3 <en-us_topic_0020212653__table7657338>`. |
+   |                 |                 |                 |                                                                                                                               |
+   |                 |                 |                 | **Constraints**                                                                                                               |
+   |                 |                 |                 |                                                                                                                               |
+   |                 |                 |                 | N/A                                                                                                                           |
+   |                 |                 |                 |                                                                                                                               |
+   |                 |                 |                 | **Range**                                                                                                                     |
+   |                 |                 |                 |                                                                                                                               |
+   |                 |                 |                 | N/A                                                                                                                           |
+   |                 |                 |                 |                                                                                                                               |
+   |                 |                 |                 | **Default Value**                                                                                                             |
+   |                 |                 |                 |                                                                                                                               |
+   |                 |                 |                 | N/A                                                                                                                           |
+   +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------+
+   | dry_run         | No              | Boolean         | **Definition**                                                                                                                |
+   |                 |                 |                 |                                                                                                                               |
+   |                 |                 |                 | Specifies whether to check the request. If this parameter is set to **true**, no instance is created.                         |
+   |                 |                 |                 |                                                                                                                               |
+   |                 |                 |                 | **Constraints**                                                                                                               |
+   |                 |                 |                 |                                                                                                                               |
+   |                 |                 |                 | N/A                                                                                                                           |
+   |                 |                 |                 |                                                                                                                               |
+   |                 |                 |                 | **Range**                                                                                                                     |
+   |                 |                 |                 |                                                                                                                               |
+   |                 |                 |                 | -  **true**: Check the request. Check items include the mandatory parameters and request format.                              |
+   |                 |                 |                 |                                                                                                                               |
+   |                 |                 |                 |    -  If the check fails, the system returns an error.                                                                        |
+   |                 |                 |                 |    -  If the check is successful, the system returns status code 202.                                                         |
+   |                 |                 |                 |                                                                                                                               |
+   |                 |                 |                 | -  **false**: Send the request without checking the request body.                                                             |
+   |                 |                 |                 |                                                                                                                               |
+   |                 |                 |                 | **Default Value**                                                                                                             |
+   |                 |                 |                 |                                                                                                                               |
+   |                 |                 |                 | false                                                                                                                         |
+   +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0020212653__table7657338:
 
 .. table:: **Table 3** **resize** field description
 
-   +-----------+-----------+--------+------------------------------------------------------------+
-   | Parameter | Mandatory | Type   | Description                                                |
-   +===========+===========+========+============================================================+
-   | flavorRef | Yes       | String | Specifies the flavor ID of the ECS after the modification. |
-   +-----------+-----------+--------+------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                |
+   +=================+=================+=================+============================================================+
+   | flavorRef       | Yes             | String          | **Definition**                                             |
+   |                 |                 |                 |                                                            |
+   |                 |                 |                 | Specifies the flavor ID of the ECS after the modification. |
+   |                 |                 |                 |                                                            |
+   |                 |                 |                 | **Constraints**                                            |
+   |                 |                 |                 |                                                            |
+   |                 |                 |                 | N/A                                                        |
+   |                 |                 |                 |                                                            |
+   |                 |                 |                 | **Range**                                                  |
+   |                 |                 |                 |                                                            |
+   |                 |                 |                 | N/A                                                        |
+   |                 |                 |                 |                                                            |
+   |                 |                 |                 | **Default Value**                                          |
+   |                 |                 |                 |                                                            |
+   |                 |                 |                 | N/A                                                        |
+   +-----------------+-----------------+-----------------+------------------------------------------------------------+
 
 Response
 --------
 
-See :ref:`Responses (Task) <en-us_topic_0022067714>`.
+See :ref:`Responses (Jobs) <en-us_topic_0022067714>`.
 
 Example Request
 ---------------

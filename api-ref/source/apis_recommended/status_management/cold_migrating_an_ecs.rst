@@ -12,7 +12,7 @@ Function
 -  An ECS deployed on a DeH can be migrated to a public resource pool.
 -  An ECS deployed in a public resource pool can be migrated to a DeH.
 
-This API is an asynchronous API. After the cold migration request is successfully delivered, a job ID is returned. This does not mean the cold migration is complete. You need to call the API by referring to :ref:`Querying Task Execution Status <en-us_topic_0022225398>` to query the job status. The SUCCESS status indicates that the cold migration is successful.
+This API is an asynchronous API. After the cold migration request is successfully delivered, a job ID is returned. This does not mean the cold migration is complete. You need to call the API by referring to :ref:`Querying Job Execution Status <en-us_topic_0022225398>` to query the job status. The SUCCESS status indicates that the cold migration is successful.
 
 .. note::
 
@@ -55,9 +55,23 @@ Request
    +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+
    | Parameter       | Mandatory       | Type            | Description                                                                                               |
    +=================+=================+=================+===========================================================================================================+
-   | migrate         | Yes             | Object          | Specifies the ECS to be migrated. For details, see :ref:`Table 3 <en-us_topic_0132905656__table7657338>`. |
+   | migrate         | Yes             | Object          | **Definition**                                                                                            |
+   |                 |                 |                 |                                                                                                           |
+   |                 |                 |                 | Specifies the ECS to be migrated. For details, see :ref:`Table 3 <en-us_topic_0132905656__table7657338>`. |
    |                 |                 |                 |                                                                                                           |
    |                 |                 |                 | This parameter is **null** when you migrate an ECS from a dedicated host to a public resource pool.       |
+   |                 |                 |                 |                                                                                                           |
+   |                 |                 |                 | **Constraints**                                                                                           |
+   |                 |                 |                 |                                                                                                           |
+   |                 |                 |                 | N/A                                                                                                       |
+   |                 |                 |                 |                                                                                                           |
+   |                 |                 |                 | **Range**                                                                                                 |
+   |                 |                 |                 |                                                                                                           |
+   |                 |                 |                 | N/A                                                                                                       |
+   |                 |                 |                 |                                                                                                           |
+   |                 |                 |                 | **Default Value**                                                                                         |
+   |                 |                 |                 |                                                                                                           |
+   |                 |                 |                 | N/A                                                                                                       |
    +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0132905656__table7657338:
@@ -67,15 +81,27 @@ Request
    +-------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+
    | Parameter         | Mandatory       | Type            | Description                                                                                               |
    +===================+=================+=================+===========================================================================================================+
-   | dedicated_host_id | No              | String          | Specifies the DeH ID.                                                                                     |
+   | dedicated_host_id | No              | String          | **Definition**                                                                                            |
+   |                   |                 |                 |                                                                                                           |
+   |                   |                 |                 | Specifies the DeH ID.                                                                                     |
+   |                   |                 |                 |                                                                                                           |
+   |                   |                 |                 | **Constraints**                                                                                           |
    |                   |                 |                 |                                                                                                           |
    |                   |                 |                 | This parameter takes effect when an ECS is migrated from a public resource pool to a DeH or between DeHs. |
+   |                   |                 |                 |                                                                                                           |
+   |                   |                 |                 | **Range**                                                                                                 |
+   |                   |                 |                 |                                                                                                           |
+   |                   |                 |                 | N/A                                                                                                       |
+   |                   |                 |                 |                                                                                                           |
+   |                   |                 |                 | **Default Value**                                                                                         |
+   |                   |                 |                 |                                                                                                           |
+   |                   |                 |                 | N/A                                                                                                       |
    +-------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+
 
 Response
 --------
 
-See :ref:`Responses (Task) <en-us_topic_0022067714>`.
+See :ref:`Responses (Jobs) <en-us_topic_0022067714>`.
 
 Example Request
 ---------------
