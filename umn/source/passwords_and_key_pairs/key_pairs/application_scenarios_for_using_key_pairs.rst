@@ -22,7 +22,7 @@ When purchasing an ECS, you are advised to select the key pair login mode. For W
    You can directly use a key pair to log in a Linux ECS.
 
    -  During the ECS creation, select the key pair login mode. For details, see "Set **Login Mode**" in :ref:`Step 3: Configure Advanced Settings <en-us_topic_0163572591>`.
-   -  After the ECS is created, bind a key pair to the ECS by referring to "Binding a Key Pair" in the *Data Encryption Workshop User Guide*.
+   -  After the ECS is created, bind a key pair to the ECS by referring to "Binding a Key Pair" in the *Key Management Service User Guide*.
 
 -  Logging in to a Windows ECS
 
@@ -55,8 +55,8 @@ You can create a key pair or use an existing one for remote login authentication
 
       If you want to use this existing key pair for remote login, see :ref:`Why Does a Key Pair Created Using puttygen.exe Fail to Be Imported on the Management Console? <en-us_topic_0047654687>`
 
-Notes and Constraints
----------------------
+Constraints
+-----------
 
 -  Key pairs can be used to remotely log in to Linux ECSs only.
 -  SSH-2 key pairs created on the console support only the RSA-2048 cryptographic algorithms.

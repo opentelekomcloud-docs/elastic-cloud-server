@@ -87,4 +87,4 @@ For example, there are two ECSs in a VPC, ecs-01 and ecs-02. Perform the followi
 
    Log in to an ECS in the same VPC, run the following command to ping the added host, and check whether the operation is successful:
 
-   **ping** *Hostname*
+   **ping** *hostname*

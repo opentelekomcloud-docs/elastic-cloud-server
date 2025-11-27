@@ -19,13 +19,13 @@ Procedure
 
 #. Log in to the management console.
 
-#. Click |image1| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select a region and project.
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
 #. In the ECS list, click the name of the ECS from which you want to detach a network interface
 
-   The page providing details about the ECS is displayed.
+   The ECS details page is displayed.
 
 #. On the **Network Interfaces** tab, locate the target network interface and click **Detach**.
 
@@ -39,4 +39,4 @@ Procedure
 
       Certain ECSs do not support network interface detachment when they are running. For details, see the GUI display. To detach a network interface from such an ECS, stop the ECS first.
 
-.. |image1| image:: /_static/images/en-us_image_0093507592.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

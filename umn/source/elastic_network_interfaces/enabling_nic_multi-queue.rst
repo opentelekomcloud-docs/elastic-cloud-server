@@ -121,7 +121,7 @@ Use one of the following methods to set the NIC multi-queue attribute:
 
 #. Log in to the management console.
 #. Under **Computing**, click **Image Management Service**.
-#. Click the **Private Images** tab. In the image list, click the name of the target image to switch to the page providing details about the image.
+#. Click the **Private Images** tab. In the image list, click the name of the target image to go to the image details page.
 #. Click **Modify** in the upper right corner. In the displayed **Modify Image** dialog box, set the NIC multi-queue attribute.
 
 **Method 3:** Add **hw_vif_multiqueue_enabled** to an image through the API.
@@ -201,20 +201,20 @@ This section uses a Linux ECS running CentOS 7.4 as an example to describe how t
 
    .. code-block:: console
 
-      [root@localhost ~]# ethtool -l eth0  #View the number of queues used by NIC eth0.
+      [root@localhost ~]# ethtool -l eth0 # View the number of queues used by NIC eth0.
       Channel parameters for eth0:
       Pre-set maximums:
       RX:               0
       TX:               0
       Other:                  0
-      Combined: 4  #Indicates that a maximum of four queues can be enabled for the NIC.
+      Combined: 4 # Indicates that a maximum of four queues can be enabled for the NIC.
       Current hardware settings:
       RX:               0
       TX:               0
       Other:                  0
-      Combined: 1 #Indicates that one queue has been enabled.
+      Combined: 1 # Indicates that one queue has been enabled.
 
-      [root@localhost ~]# ethtool -L eth0 combined 4 #Enable four queues on NIC eth0.
+      [root@localhost ~]# ethtool -L eth0 combined 4 # Enable four queues on NIC eth0.
 
 #. (Optional) Enable irqbalance so that the system automatically allocates NIC interrupts on multiple vCPUs.
 

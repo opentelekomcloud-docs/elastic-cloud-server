@@ -8,7 +8,7 @@ Viewing Failed Tasks
 Scenarios
 ---------
 
-You can view the details of failed task (if any) in the **Failures** area, including the task names and statuses. This section describes how to view failures.
+You can view the details of failed tasks (if there are any) in the **Failures** area, including the task names and statuses. This section describes how to view failures.
 
 Failure Types
 -------------
@@ -51,4 +51,4 @@ Procedure
    -  **Creation Failures**: show the failed ECS creation tasks.
    -  **Operation Failures**: show the tasks with failed operations and error codes, which help you troubleshoot the faults.
 
-.. |image1| image:: /_static/images/en-us_image_0000002324123066.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

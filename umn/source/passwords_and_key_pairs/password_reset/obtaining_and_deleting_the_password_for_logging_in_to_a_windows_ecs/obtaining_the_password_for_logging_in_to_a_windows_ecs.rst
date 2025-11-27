@@ -74,4 +74,4 @@ Obtaining the Password Through APIs
 
    b. Invoke the Java class library **org.bouncycastle.jce.provider.BouncyCastleProvider** and use the key file to edit the code decryption ciphertext.
 
-.. |image1| image:: /_static/images/en-us_image_0000002324093730.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

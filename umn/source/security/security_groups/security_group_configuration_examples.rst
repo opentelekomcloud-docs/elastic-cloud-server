@@ -15,14 +15,14 @@ When you create instances, such as cloud servers, containers, and databases, in 
 -  :ref:`Allowing External Instances to Access the Database Deployed on an ECS <en-us_topic_0140323152__en-us_topic_0118534011_section7465183583515>`
 -  :ref:`Allowing ECSs to Access Only Specific External Websites <en-us_topic_0140323152__en-us_topic_0118534011_section949023514612>`
 
-Precautions
------------
+Notes
+-----
 
 Note the following before configuring security group rules:
 
--  **Instances associated with different security groups are isolated from each other by default.**
+-  Instances associated with different security groups are isolated from each other by default.
 
--  **Generally, a security group denies all external requests by default,** while allowing instances in it to communicate with each other.
+-  Generally, a security group denies all external requests by default, while allowing instances in it to communicate with each other.
 
    If required, you can add inbound rules to allow specific traffic to access the instances in the security group.
 
@@ -75,18 +75,18 @@ A security group denies all external requests by default. To remotely log in to 
 
    .. caution::
 
-      If the source is set to 0.0.0.0/0, all external IP addresses are allowed to remotely log in to the ECS. To ensure network security and prevent service interruptions caused by network intrusions, set the source to a trusted IP address. For details, see :ref:`Table 4 <en-us_topic_0140323152__en-us_topic_0118534011_table1919016251434>`.
+      If the source is set to 0.0.0.0/0, all external IP addresses are allowed to remotely log in to the ECS. To ensure network security and prevent service interruptions caused by network intrusions, set the source to a trusted IP address (for example, the EIP bound to an ECS). For details, see :ref:`Table 4 <en-us_topic_0140323152__en-us_topic_0118534011_table1919016251434>`.
 
    .. _en-us_topic_0140323152__en-us_topic_0118534011_table1919016251434:
 
    .. table:: **Table 4** Remotely logging in to an ECS using a trusted IP address
 
-      =========== ========= ==== =============== ==========================
+      =========== ========= ==== =============== ============================
       ECS Type    Direction Type Protocol & Port Source
-      =========== ========= ==== =============== ==========================
-      Linux ECS   Inbound   IPv4 TCP: 22         IP address: 192.168.0.0/24
-      Windows ECS Inbound   IPv4 TCP: 3389       IP address: 10.10.0.0/24
-      =========== ========= ==== =============== ==========================
+      =========== ========= ==== =============== ============================
+      Linux ECS   Inbound   IPv4 TCP: 22         IP address: 12.\ *XX*.0.6/32
+      Windows ECS Inbound   IPv4 TCP: 3389       IP address: 12.\ *XX*.0.7/32
+      =========== ========= ==== =============== ============================
 
 .. _en-us_topic_0140323152__en-us_topic_0118534011_section8685162114185:
 

@@ -10,7 +10,7 @@ Image
 
 An image is an ECS or BMS template that contains an OS or service data. It may also contain proprietary software and application software, such as database software. Images are classified into public, private, and shared images.
 
-Image Management Service (IMS) allows you to easily create and manage images. You can create an ECS using a public image, private image, or shared image. You can also use an existing ECS or external image file to create a private image.
+Image Management Service (IMS) allows you to easily create and manage images. You can create an ECS using a public image, private image, or shared image. You can also create a private image from an ECS or external image file.
 
 Public Image
 ------------
@@ -40,6 +40,7 @@ If you plan to use a private image to change the OS, ensure that the private ima
 -  If a local image file is required, make sure that the image file has been imported to the cloud platform and registered as a private image.
 -  If a private image from another region is required, make sure that the image has been copied.
 -  If a private image from another user account is required, make sure that the image has been shared with you.
+-  A heterogeneous ECS with GPUs, NPUs, or encoding cards do not support private images in UEFI boot mode.
 
 Shared Image
 ------------

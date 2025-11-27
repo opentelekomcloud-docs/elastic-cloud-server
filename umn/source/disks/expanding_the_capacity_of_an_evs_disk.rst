@@ -8,7 +8,7 @@ Expanding the Capacity of an EVS Disk
 Scenarios
 ---------
 
-You can expand the disk capacity if the disk space is insufficient. The capacities of both system disks and data disks can be expanded.
+You can expand the disk capacity if it is insufficient. Both system and data disks can be expanded.
 
 Procedure
 ---------

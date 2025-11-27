@@ -10,7 +10,7 @@ Symptom
 
 A Linux ECS cannot be logged in to due to some reasons. For example, the network is abnormal, the firewall does not allow access to the local port for accessing the remote desktop, or the ECS vCPUs are overloaded.
 
-This section describes how to troubleshoot login failures on a Linux ECS.
+This section describes how to troubleshoot Linux ECS login failures.
 
 If you cannot log in to your Linux ECS, follow the instructions provided in :ref:`Checking the VNC Login <en-us_topic_0105127983__section16351720103416>`. Then, locate the login fault by referring to :ref:`Fault Locating <en-us_topic_0105127983__section51421019195617>`.
 
@@ -46,7 +46,7 @@ If the VNC login still fails, record the resource details and fault occurred tim
 Fault Locating
 --------------
 
-If you can log in to the ECS using VNC but cannot log in to the ECS using a remote desktop connection, locate the fault as follows.
+If you can log in to the ECS using VNC but cannot log in to it using a remote desktop connection, locate the fault by referring to this section.
 
 The following fault causes are sequenced based on their occurrence probability.
 
@@ -71,7 +71,7 @@ If the fault persists after you have ruled out a cause, check other causes.
    +--------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | The remote access port is incorrectly configured.                              | Check whether the remote access port is correctly configured on the local computer and the ECS. For details, see :ref:`Checking Whether the Remote Access Port Is Correctly Configured <en-us_topic_0105127983__section21752310487>`.           |
    +--------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | An IP address whitelist for SSH logins has been configured.                    | Check whether an SSH login IP address whitelist is configured after HSS is enabled. For details, see :ref:`Checking the IP Address Whitelist for SSH Logins (with HSS Enabled) <en-us_topic_0105127983__section9583105919232>`.                 |
+   | An IP address whitelist for SSH logins has been configured.                    | Ensure your IP address is included in the whitelist. For details, see :ref:`Checking the IP Address Whitelist for SSH Logins (with HSS Enabled) <en-us_topic_0105127983__section9583105919232>`.                                                |
    +--------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | An OS fault has occurred.                                                      | The file system is damaged. For details, see :ref:`Checking Whether an OS Fault Has Occurred <en-us_topic_0105127983__section1977334311553>`.                                                                                                   |
    +--------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

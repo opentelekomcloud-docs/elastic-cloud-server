@@ -10,7 +10,7 @@ What Is a Password?
 
 Passwords are used to log in to ECSs. If you select the password login mode when creating an ECS, you can use the username and password to log in to the ECS. The password is very important. Keep it secure.
 
-You can set a password when creating an ECS. If you do not set a password during the creation or if the password is lost or expired, you can reset the password.
+You can set a password when creating an ECS.
 
 You can reset the password in any of the following scenarios:
 
@@ -28,19 +28,19 @@ Password Reset Scenarios
 
 .. table:: **Table 1** Password reset methods
 
-   +----------------------------------------------------------------------------------------+----------------------------------------------------+
-   | Scenario                                                                               | Prerequisites                                      |
-   +========================================================================================+====================================================+
-   | :ref:`Resetting the Password in the ECS OS <en-us_topic_0122627689>`                   | N/A                                                |
-   |                                                                                        |                                                    |
-   |                                                                                        | .. note::                                          |
-   |                                                                                        |                                                    |
-   |                                                                                        |    The reference is for Windows or Linux ECSs.     |
-   +----------------------------------------------------------------------------------------+----------------------------------------------------+
-   | :ref:`Resetting the Password for Logging In to a Windows ECS <en-us_topic_0021426802>` | The password reset plug-in has not been installed. |
-   +----------------------------------------------------------------------------------------+----------------------------------------------------+
-   | :ref:`Resetting the Password for Logging In to a Linux ECS <en-us_topic_0021427650>`   | The password reset plug-in has not been installed. |
-   +----------------------------------------------------------------------------------------+----------------------------------------------------+
+   +-----------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
+   | Scenario                                                                                                              | Prerequisites                                      |
+   +=======================================================================================================================+====================================================+
+   | :ref:`Resetting the Password in the ECS OS <en-us_topic_0122627689>`                                                  | N/A                                                |
+   |                                                                                                                       |                                                    |
+   |                                                                                                                       | .. note::                                          |
+   |                                                                                                                       |                                                    |
+   |                                                                                                                       |    The reference is for Windows or Linux ECSs.     |
+   +-----------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
+   | :ref:`Resetting the Password of a Windows ECS by Attaching a System Disk to a Temporary ECS <en-us_topic_0021426802>` | The password reset plug-in has not been installed. |
+   +-----------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
+   | :ref:`Resetting the Password of a Linux ECS by Attaching a System Disk to a Temporary ECS <en-us_topic_0021427650>`   | The password reset plug-in has not been installed. |
+   +-----------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+
 
 Password Complexity Requirements
 --------------------------------

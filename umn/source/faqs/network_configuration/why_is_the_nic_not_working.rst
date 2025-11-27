@@ -32,23 +32,23 @@ Disk-intensive and large-memory ECSs use passthrough network interfaces to impro
 
    .. table:: **Table 1** NIC driver versions and OSs
 
-      +-----------------------+-------------------------------------------+-----------------------------------------------------------------------+
-      | NIC Driver Version    | OS                                        | How to Obtain                                                         |
-      +=======================+===========================================+=======================================================================+
-      | ixgbevf 2.16.4        | CentOS 7.2 64bit                          | https://sourceforge.net/projects/e1000/files/ixgbevf%20stable/2.16.4/ |
-      +-----------------------+-------------------------------------------+-----------------------------------------------------------------------+
-      |                       | Red Hat Enterprise Linux 7.2 64bit        |                                                                       |
-      +-----------------------+-------------------------------------------+-----------------------------------------------------------------------+
-      | ixgbevf 2.16.1        | SUSE Linux Enterprise Server 11 SP3 64bit | https://sourceforge.net/projects/e1000/files/ixgbevf%20stable/2.16.1/ |
-      |                       |                                           |                                                                       |
-      |                       | SUSE Linux Enterprise Server 11 SP4 64bit |                                                                       |
-      +-----------------------+-------------------------------------------+-----------------------------------------------------------------------+
+      +-----------------------+--------------------------------------------+-----------------------------------------------------------------------+
+      | NIC Driver Version    | OS                                         | How to Obtain                                                         |
+      +=======================+============================================+=======================================================================+
+      | ixgbevf 2.16.4        | CentOS 7.2 64-bit                          | https://sourceforge.net/projects/e1000/files/ixgbevf%20stable/2.16.4/ |
+      +-----------------------+--------------------------------------------+-----------------------------------------------------------------------+
+      |                       | Red Hat Enterprise Linux 7.2 64-bit        |                                                                       |
+      +-----------------------+--------------------------------------------+-----------------------------------------------------------------------+
+      | ixgbevf 2.16.1        | SUSE Linux Enterprise Server 11 SP3 64-bit | https://sourceforge.net/projects/e1000/files/ixgbevf%20stable/2.16.1/ |
+      |                       |                                            |                                                                       |
+      |                       | SUSE Linux Enterprise Server 11 SP4 64-bit |                                                                       |
+      +-----------------------+--------------------------------------------+-----------------------------------------------------------------------+
 
 #. Log in to the ECS.
 
    For more details, see :ref:`Login Overview (Linux) <en-us_topic_0013771089>`.
 
-#. Install the passthrough NIC driver on the ECS. In this procedure, Red Hat Enterprise Linux 7.2 64bit is used as an example.
+#. Install the passthrough NIC driver on the ECS. In this procedure, Red Hat Enterprise Linux 7.2 64-bit is used as an example.
 
    a. Configure the passthrough NIC.
 

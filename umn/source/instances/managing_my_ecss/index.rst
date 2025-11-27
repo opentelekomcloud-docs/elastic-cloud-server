@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0176502615:
 
-Managing ECS Configurations
-===========================
+Managing My ECSs
+================
 
 -  :ref:`Changing the Time Zone for an ECS <en-us_topic_0040630518>`
 -  :ref:`Obtaining Metadata and Passing User Data <en-us_topic_0140313879>`
@@ -12,7 +12,7 @@ Managing ECS Configurations
 -  :ref:`Managing ECS Groups <en-us_topic_0032980085>`
 -  :ref:`Obtaining ECS Console Logs <en-us_topic_0057711189>`
 -  :ref:`Configuring Mapping Between Hostnames and IP Addresses in the Same VPC <en-us_topic_0074752335>`
--  :ref:`Starting and Stopping ECSs <en-us_topic_0013771110>`
+-  :ref:`Managing ECS Status <en-us_topic_0013771110>`
 
 .. toctree::
    :maxdepth: 1
@@ -25,4 +25,4 @@ Managing ECS Configurations
    managing_ecs_groups
    obtaining_ecs_console_logs
    configuring_mapping_between_hostnames_and_ip_addresses_in_the_same_vpc
-   starting_and_stopping_ecss
+   managing_ecs_status

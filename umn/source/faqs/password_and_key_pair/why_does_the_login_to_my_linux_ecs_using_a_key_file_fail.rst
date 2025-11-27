@@ -33,4 +33,4 @@ Solution
    #. Use the key file to log in to the ECS again and check whether the login is successful.
 
       -  If the login is successful, no further action is required.
-      -  If the login fails, contact customer service for technical support.
+      -  If it is not functional, contact customer service for technical support.

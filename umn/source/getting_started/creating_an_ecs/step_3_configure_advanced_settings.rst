@@ -27,7 +27,7 @@ Advanced Settings
       -  Periods (.), hyphens (-), and underscores (_) at the beginning of the name will be ignored.
       -  For periods (.) that are not at the beginning of the name, they and any content following them will be ignored.
 
-#. (Optional) Set **Description**.
+#. (Optional) Enter the ECS description.
 
 #. Set **Login Mode**.
 
@@ -46,7 +46,7 @@ Advanced Settings
    -  Create new
 
       a. Enter the name of the cloud backup vault. The name consists of 1 to 64 characters. Only letters, digits, underscores (_), and hyphens (-) are allowed. For example, **vault-f61e**. The default naming rule is **vault\_**\ *xxxx*.
-      b. Enter the vault capacity, which is required for backing up the ECS. The vault capacity cannot be smaller than that of the ECS to be backed up. Its value ranges from the total capacity of the ECS to 10,485,760 in the unit of GB.
+      b. Enter the vault capacity, which is required for backing up the ECS. The vault capacity cannot be smaller than that of the ECS to be backed up. The value range is from the total capacity of the ECS to 10,485,760 in the unit of GiB.
       c. Select a backup policy from the drop-down list, or log in to the CBR console and configure a desired one.
 
    -  Use existing

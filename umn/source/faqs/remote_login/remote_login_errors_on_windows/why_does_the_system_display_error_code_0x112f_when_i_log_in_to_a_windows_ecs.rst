@@ -33,7 +33,7 @@ Solution
 
    Enable virtual memory on the ECS to obtain its idle memory.
 
-   For details, see :ref:`How Can I Enable Virtual Memory on a Windows ECS? <en-us_topic_0120795802>`
+   For details about how to enable virtual memory, see :ref:`How Can I Enable Virtual Memory on a Windows ECS? <en-us_topic_0120795802>`
 
    .. note::
 

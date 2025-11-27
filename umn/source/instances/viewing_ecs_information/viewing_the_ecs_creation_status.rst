@@ -15,7 +15,7 @@ Procedure
 
 #. Log in to the management console.
 
-#. Click |image1| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select a region and project.
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
@@ -35,7 +35,7 @@ Procedure
 
          -  **Creating**: The ECS is being created.
 
-         -  **Faulty**: Creating the ECS failed. In such a case, the system automatically rolls back the task and displays an error code on the GUI, for example, **Ecs.0013 Insufficient EIP quota**.
+         -  **Faulty**: Creating the ECS failed. For a failed task, the system rolls back the task and displays an error code, for example, **Ecs.0013 Insufficient EIP quota**.
 
          -  **Running**: The request of creating the ECS has been processed, and the ECS is running properly. An ECS in this state can provide services for you.
 
@@ -43,4 +43,4 @@ Procedure
 
       -  If you find that the task status area shows an ECS creation failure but the ECS has been created successfully and displayed in the ECS list, see :ref:`Why Does the Failures Area Show an ECS Creation Failure But the ECS List Displays the Created ECS? <en-us_topic_0039524582>`
 
-.. |image1| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

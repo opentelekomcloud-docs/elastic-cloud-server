@@ -11,7 +11,7 @@ Scenarios
 You can use an existing ECS to create a system disk image, data disk image, and full-ECS image.
 
 -  System disk image: contains an OS and application software for running services. You can use a system disk image to create ECSs and migrate your services to the cloud.
--  Data disk image: contains only service data. You can create a data disk image from an ECS data disk. You can also use a data disk image to create EVS disks and migrate your service data to the cloud.
+-  Data disk image: contains only service data. You can use a data disk image to create EVS disks and migrate your service data to the cloud.
 -  Full-ECS image: contains all the data of an ECS, including the data on the data disks attached to the ECS. A full-ECS image can be used to rapidly create ECSs with service data.
 
 You can use a private image to change the OS. For instructions about how to create a private image, see *Image Management Service User Guide*.
@@ -72,6 +72,6 @@ Procedure
 
 #. Click **Next**.
 
-#. Confirm the parameters and click **Submit Application**.
+#. Confirm the parameters and click **Submit**.
 
-.. |image1| image:: /_static/images/en-us_image_0000002324123038.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

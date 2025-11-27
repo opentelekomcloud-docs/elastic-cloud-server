@@ -64,4 +64,4 @@ Helpful Links
 -  :ref:`What Should I Do If a Key Pair Cannot Be Imported? <en-us_topic_0019883415>`
 -  :ref:`Why Does a Key Pair Created Using puttygen.exe Fail to Be Imported on the Management Console? <en-us_topic_0047654687>`
 
-.. |image1| image:: /_static/images/en-us_image_0000002357932505.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

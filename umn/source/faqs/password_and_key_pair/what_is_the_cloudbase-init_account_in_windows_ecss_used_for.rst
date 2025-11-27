@@ -8,18 +8,18 @@ What Is the Cloudbase-Init Account in Windows ECSs Used for?
 Description
 -----------
 
-In Windows ECSs, **cloudbase-init** is the default account of the Cloudbase-Init agent program. It is used to obtain the metadata and execute configurations when an ECS starts.
+In Windows ECSs, **cloudbase-init** is the default user of the Cloudbase-Init agent program. It is used to obtain the metadata and execute configurations when an ECS starts.
 
 .. note::
 
    This account is unavailable on Linux ECSs.
 
-Do not modify or delete this account or uninstall the Cloudbase-Init agent program. Otherwise, you will be unable to insert data to initialize an ECS created using a Windows private image.
+Do not modify or delete this account or uninstall the Cloudbase-Init agent program. Otherwise, you will be unable to inject data to initialize an ECS created using a Windows private image.
 
-Security Hardening for Randomized **cloudbase-init** Passwords
---------------------------------------------------------------
+Security Hardening for Random **cloudbase-init** Passwords
+----------------------------------------------------------
 
-In Cloudbase-Init 0.9.10, the security of randomized **cloudbase-init** passwords has been hardened to ensure that the hash values (LM-HASH and NTLM-HASH) of the passwords are different.
+In Cloudbase-Init 0.9.10, the security of random **cloudbase-init** passwords has been hardened to ensure that the hash values (LM-HASH and NTLM-HASH) of the passwords are different.
 
 In Windows, the hash passwords are in the format of "Username:RID:LM-HASH value:NT-HASH value".
 

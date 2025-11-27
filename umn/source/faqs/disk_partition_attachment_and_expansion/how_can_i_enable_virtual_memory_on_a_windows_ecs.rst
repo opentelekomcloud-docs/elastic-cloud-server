@@ -11,7 +11,7 @@ Enabling ECS virtual memory will deteriorate I/O performance. If the ECS memory 
 
    If the memory usage is excessively high and the I/O performance is not as good as expected, you are not advised to enable virtual memory. The reason is as follows: The excessively high memory usage limits the system performance improvement. Furthermore, frequent memory switching requires massive additional I/O operations, which will further deteriorate the I/O performance and the overall system performance.
 
-The operations described in this section are provided for the ECSs running Windows Server 2008 or later.
+The operations described in this section apply to ECSs running Windows Server 2008 or later.
 
 #. Right-click **Computer** and choose **Properties** from the shortcut menu.
 
@@ -45,7 +45,7 @@ The operations described in this section are provided for the ECSs running Windo
 
    -  **Custom size**: Select **Custom size** and set **Initial size** and **Maximum size**.
 
-      Considering **Memory.dmp** caused by blue screen of death (BSOD), you are advised to set **Initial size** to **16** and **Maximum size** to **4,096**.
+      Considering **Memory.dmp** caused by blue screen of death (BSOD), you are advised to set **Initial size** to **16** and **Maximum size** to **4096**.
 
 
    .. figure:: /_static/images/en-us_image_0120795935.png

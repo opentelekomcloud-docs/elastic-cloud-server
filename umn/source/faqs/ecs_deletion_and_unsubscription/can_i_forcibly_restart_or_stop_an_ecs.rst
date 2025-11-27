@@ -9,9 +9,9 @@ Yes. If an ECS remains in the **Restarting** or **Stopping** state for over 30 m
 
 #. Log in to the management console.
 
-#. Click |image1| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select a region and project.
 
-#. Under **Computing**, click **Elastic Cloud Server**.
+#. Choose **Computing** > **Elastic Cloud Server**.
 
 #. Select the target ECS and click **Restart** or **Stop**.
 
@@ -21,4 +21,4 @@ Yes. If an ECS remains in the **Restarting** or **Stopping** state for over 30 m
 
 #. Click **OK**.
 
-.. |image1| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

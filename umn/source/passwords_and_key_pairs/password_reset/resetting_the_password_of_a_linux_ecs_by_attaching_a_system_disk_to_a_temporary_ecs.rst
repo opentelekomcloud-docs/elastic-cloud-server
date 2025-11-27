@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0021427650:
 
-Resetting the Password for Logging In to a Linux ECS
-====================================================
+Resetting the Password of a Linux ECS by Attaching a System Disk to a Temporary ECS
+===================================================================================
 
 Scenarios
 ---------
@@ -18,6 +18,7 @@ This section describes how to reset the password of user **root**. After resetti
 Prerequisites
 -------------
 
+-  A backup has been created for the system disk. For details, see :ref:`Backing Up an ECS <en-us_topic_0000001128604648>`.
 -  A temporary Linux ECS is available. It is located in the same AZ and has the same CPU architecture as the target ECS.
 -  You have bound an EIP to the temporary ECS.
 
@@ -38,7 +39,7 @@ Procedure
 
    c. Under **Computing**, click **Elastic Cloud Server**.
 
-   d. Stop the original ECS, switch to the page providing details about the ECS, and click the **Disks** tab.
+   d. Stop the original ECS, go to the ECS details page, and click the **Disks** tab.
 
       .. note::
 
@@ -52,7 +53,7 @@ Procedure
 
    Attach the system disk to the temporary ECS.
 
-   a. On the page providing details about the temporary ECS, click the **Disks** tab.
+   a. On the details page of the temporary ECS, click the **Disks** tab.
    b. Click **Attach Disk**. In the displayed dialog box, select the system disk detached in step :ref:`2.e <en-us_topic_0021427650__li5640121684418>` and attach it to the temporary ECS.
 
 #. Log in to the temporary ECS remotely and reset the password.
@@ -99,11 +100,11 @@ Procedure
 
    -  Change **PasswordAuthentication no** to **PasswordAuthentication yes**.
 
-      Alternatively, delete the comment tag (#) before **PasswordAuthentication yes**.
+      Alternatively, uncomment **PasswordAuthentication yes**.
 
    -  Change **PermitRootLogin no** to **PermitRootLogin yes**.
 
-      Alternatively, delete the comment tag (#) before **PermitRootLogin yes**.
+      Alternatively, uncomment **PermitRootLogin yes**.
 
    -  Change the value of **AllowUsers** to **root**.
 
@@ -111,16 +112,16 @@ Procedure
 
 #. Stop the temporary ECS, detach the system disk, attach the system disk to the original Linux ECS, and restart the original Linux ECS.
 
-   a. Stop the temporary ECS, switch to the page providing details about the ECS, and click the **Disks** tab.
+   a. Stop the temporary ECS, go to the ECS details page, and click the **Disks** tab.
 
    b. .. _en-us_topic_0021427650__li964031614447:
 
       Click **Detach** to detach the data disk temporarily attached in step :ref:`3 <en-us_topic_0021427650__li821617118326>`.
 
-   c. On the page providing details about the original Linux ECS, click the **Disks** tab.
+   c. On the details page of the original Linux ECS, click the **Disks** tab.
 
    d. Click **Attach Disk**. In the displayed dialog box, select the data disk detached in :ref:`6.b <en-us_topic_0021427650__li964031614447>`.
 
 #. Restart the original Linux ECS.
 
-.. |image1| image:: /_static/images/en-us_image_0000002323933930.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

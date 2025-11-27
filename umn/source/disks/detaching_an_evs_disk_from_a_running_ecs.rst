@@ -132,5 +132,5 @@ OSs supporting EVS disk detachment from a running ECS include two parts:
 Procedure
 ---------
 
-#. On the **Elastic Cloud Server** page, click the name of the ECS from which the EVS disk is to be detached. The page providing details about the ECS is displayed.
+#. On the **Elastic Cloud Server** page, click the name of the ECS from which the EVS disk is to be detached. The ECS details page is displayed.
 #. Click the **Disks** tab. Locate the row containing the EVS disk to be detached and click **Detach**.

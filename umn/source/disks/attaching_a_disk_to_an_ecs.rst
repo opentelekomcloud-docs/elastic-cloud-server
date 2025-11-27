@@ -10,7 +10,7 @@ Scenarios
 
 If the existing disks of an ECS fail to meet service requirements, for example, due to insufficient disk space or poor disk performance, you can attach more available EVS disks to the ECS, or create more disks (choosing **Storage** > **Elastic Volume Service**) and attach them to the ECS.
 
-When attaching EVS disks to an existing ECS, their billing modes can be different from the ECS. You can select appropriate billing modes for these EVS disks based on your requirements.
+When attaching EVS disks to an existing ECS, their billing modes can be different from the ECS billing mode. You can select appropriate billing modes for these EVS disks based on your requirements.
 
 Prerequisites
 -------------
@@ -32,7 +32,7 @@ Procedure
 
 #. Click the name of the target ECS.
 
-   The page providing details about the ECS is displayed.
+   The ECS details page is displayed.
 
 #. Click the **Disks** tab. Then, click **Attach Disk**.
 
@@ -73,4 +73,4 @@ If the attached disk is newly created, the disk can be used only after it is ini
 
 For details about how to initialize a data disk, see :ref:`Scenarios and Disk Partitions <en-us_topic_0030831623>`.
 
-.. |image1| image:: /_static/images/en-us_image_0000002323933954.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

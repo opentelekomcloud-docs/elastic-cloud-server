@@ -14,7 +14,7 @@ Prerequisites
 -------------
 
 -  The target ECS is running.
--  You have bound an ECS to the EIP. For details about how to bind an EIP, see :ref:`Binding an EIP <en-us_topic_0174917535>`.
+-  An EIP has been bound to the ECS. For details, see :ref:`Binding an EIP <en-us_topic_0174917535>`.
 
 -  Access to port 3389 is allowed in the inbound direction of the security group which the ECS belongs to. For details, see :ref:`Configuring Security Group Rules <en-us_topic_0030878383>`.
 

@@ -46,10 +46,10 @@ Use the locally stored private key and **PuTTY Key Generator** to restore the fo
 #. Import the public key to the management console.
 
    a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select your region and project.
+   b. Click |image1| in the upper left corner and select a region and project.
    c. Under **Computing**, click **Elastic Cloud Server**.
    d. In the navigation pane on the left, choose **Key Pair**.
    e. On the key pair page, click **Import Key Pair**.
    f. Copy the public key content in the .txt file to **Public Key Content** and click **OK**.
 
-.. |image1| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

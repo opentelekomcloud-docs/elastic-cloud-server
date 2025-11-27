@@ -35,6 +35,6 @@ Procedure
 
 #. In the default download path, view the exported ECS information.
 
-.. |image1| image:: /_static/images/en-us_image_0000002323963254.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png
 .. |image2| image:: /_static/images/en-us_image_0142360062.png
 .. |image3| image:: /_static/images/en-us_image_0142360062.png

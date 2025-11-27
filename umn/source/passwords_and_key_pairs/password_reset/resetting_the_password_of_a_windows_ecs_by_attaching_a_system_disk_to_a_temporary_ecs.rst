@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0021426802:
 
-Resetting the Password for Logging In to a Windows ECS
-======================================================
+Resetting the Password of a Windows ECS by Attaching a System Disk to a Temporary ECS
+=====================================================================================
 
 Scenarios
 ---------
@@ -13,10 +13,12 @@ You can reset your ECS password if:
 -  The password is forgotten.
 -  The password has expired.
 
-The method described in this section can only be used to change the password of a local Windows account, but not the password of a domain account.
+The method described in this section only can be used to change the password of a local Windows account; it cannot be used to change a domain account password.
 
 Prerequisites
 -------------
+
+-  A backup has been created for the system disk. For details, see :ref:`Backing Up an ECS <en-us_topic_0000001128604648>`.
 
 -  A temporary Linux ECS running Ubuntu 14.04 or later is available. It is located in the same AZ and has the same CPU architecture as the target ECS.
 
@@ -32,7 +34,7 @@ Prerequisites
 
    Method 2:
 
-   Download the ntfs-3g and chntpw software packages of the version required by the temporary ECS OS.
+   Download the **ntfs-3g** and **chntpw** software packages of the version required by the temporary ECS OS.
 
 Procedure
 ---------
@@ -45,7 +47,7 @@ Procedure
 
    c. Under **Computing**, click **Elastic Cloud Server**.
 
-   d. Stop the original Windows ECS, switch to the page providing details about the ECS, and click the **Disks** tab.
+   d. Stop the original Windows ECS, switch to the ECS details page, and click the **Disks** tab.
 
       .. note::
 
@@ -57,7 +59,7 @@ Procedure
 
 #. Attach the system disk to the temporary ECS.
 
-   a. On the temporary ECS details page, click the **Disks** tab.
+   a. On the details page of the temporary ECS, click the **Disks** tab.
 
    b. .. _en-us_topic_0021426802__li12352182016164:
 
@@ -67,7 +69,7 @@ Procedure
 
    d. .. _en-us_topic_0021426802__li20334892202157:
 
-      Run the following command to view the directory of the system disk detached from the original Windows ECS now attached to the temporary ECS:
+      Run the following command to view the directory of the system disk attached to the temporary ECS:
 
       **fdisk -l**
 
@@ -79,7 +81,7 @@ Procedure
 
       **mount -t ntfs-3g /dev/xvde2 /mnt/**
 
-      If the following error information is displayed after the preceding command is executed, the NTFS file systems may be inconsistent. In such a case, rectify the file system inconsistency.
+      If the following error information is returned in the command output, the NTFS file systems may be inconsistent. In such a case, rectify the file system inconsistency.
 
       .. code-block::
 
@@ -131,7 +133,7 @@ Procedure
 
       Click **Detach** to detach the data disk temporarily attached in step :ref:`2.b <en-us_topic_0021426802__li12352182016164>`.
 
-   c. On the original Windows ECS details page, click the **Disks** tab.
+   c. On the details page of the original Windows ECS, click the **Disks** tab.
 
    d. Click **Attach Disk**. In the displayed dialog box, select the data disk detached in step :ref:`4.b <en-us_topic_0021426802__li46368402202157>` and attach it to the original ECS as the system disk.
 
@@ -143,6 +145,6 @@ Procedure
 
    c. Run the following command to set a new password. The new password must meet the password complexity requirements described in :ref:`Overview of Password Reset <en-us_topic_0035643949>`.
 
-      **net user** **Administrator** *new-password*
+      **net user** **Administrator** *<new-password>*
 
-.. |image1| image:: /_static/images/en-us_image_0000002324093734.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

@@ -8,9 +8,9 @@ Overview
 EIP
 ---
 
-The Elastic IP (EIP) service enables your cloud resources to communicate with the Internet using static public IP addresses and scalable bandwidths. EIPs can be bound to or unbound from ECSs, BMSs, virtual IP addresses, NAT gateways or load balancers.
+The Elastic IP (EIP) service enables your cloud resources to communicate with the Internet using static public IP addresses and scalable bandwidths. EIPs can be bound to or unbound from ECSs, BMSs, virtual IP addresses, NAT gateways, or load balancers.
 
-Each EIP can be used by only one cloud resource at a time.
+Each EIP can be used by only one cloud resource at a time. An EIP must be in the same region as the resource it is bound to. Cross-region EIP bounding is not supported.
 
 
 .. figure:: /_static/images/en-us_image_0178890066.png

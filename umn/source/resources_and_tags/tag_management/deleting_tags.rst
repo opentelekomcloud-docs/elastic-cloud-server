@@ -18,9 +18,9 @@ Deleting a Tag on the ECS Details Page
 
 #. Log in to the management console.
 
-#. Click |image1| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select a region and project.
 
-#. Choose Computing > Elastic Cloud Server. The **Elastic Cloud Server** page is displayed.
+#. Under **Computing**, click **Elastic Cloud Server**. The **Elastic Cloud Server** page is displayed.
 
 #. In the ECS list, click the name of the target ECS.
 
@@ -56,7 +56,7 @@ Deleting a Tag on the TMS Console
 Batch Deleting Tags on the TMS Console
 --------------------------------------
 
-.. important::
+.. caution::
 
    Exercise caution when deleting tags in a batch. After you delete the tags, they will be removed from all the associated ECSs and cannot be recovered.
 
@@ -76,7 +76,7 @@ Batch Deleting Tags on the TMS Console
 
    The resource list is refreshed and the refresh time is updated.
 
-.. |image1| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png
 .. |image2| image:: /_static/images/en-us_image_0210875481.png
 .. |image3| image:: /_static/images/en-us_image_0210875482.png
 .. |image4| image:: /_static/images/en-us_image_0210875483.png

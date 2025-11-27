@@ -18,7 +18,7 @@ ECS Permissions
 
 By default, new IAM users do not have permissions assigned. You need to add a user to one or more groups, and attach permissions policies or roles to these groups. Users inherit permissions from the groups to which they are added and can perform specified operations on cloud services based on the permissions.
 
-ECS is a project-level service deployed and accessed in specific physical regions. To assign ECS permissions to a user group, specify the scope as region-specific projects and select projects for the permissions to take effect. If you select **All projects**, the permissions will take effect for user groups in all region-specific projects. When accessing ECS, the users need to switch to a region where they have got permissions to use this service.
+ECS is a project-level service deployed for specific regions. To assign ECS permissions to a user group, specify the scope as region-specific projects and select projects for the permissions to take effect. If you select **All projects**, the permissions will take effect for user groups in all region-specific projects. When accessing ECS, the users need to switch to a region where they have got permissions to use this service.
 
 You can grant users permissions by using roles and policies.
 
@@ -26,7 +26,7 @@ You can grant users permissions by using roles and policies.
 
 -  Policies: A fine-grained authorization strategy that defines permissions required to perform operations on specific cloud resources under certain conditions. This mechanism allows for more flexible policy-based authorization, meeting requirements for secure access control. For example, you can grant ECS users only the permissions for managing a certain type of ECSs.
 
-   Most policies define permissions based on APIs. For the API actions supported by ECS, see "Permissions Policies and Supported Actions" in *Elastic Cloud Server API Reference*.
+   Most policies define permissions based on APIs. For the API actions supported by ECS, see "Permissions and Supported Actions" in *Elastic Cloud Server API Reference*.
 
 :ref:`Table 1 <en-us_topic_0170232209__table481412518317>` and :ref:`Table 2 <en-us_topic_0170232209__table8633147210>` list all ECS system-defined policies and roles.
 

@@ -12,7 +12,7 @@ An ECS group logically groups ECSs. ECSs in an ECS group comply with the same po
 
 Currently, only the anti-affinity policy is supported.
 
-You can perform the following operations on an ECS group:
+You can perform the following operations:
 
 -  :ref:`Creating an ECS Group <en-us_topic_0032980085__section1464061364114>`
 -  :ref:`Adding an ECS to an ECS Group <en-us_topic_0032980085__section1447818554481>`
@@ -31,7 +31,7 @@ You can perform the following operations on an ECS group:
 Creating an ECS Group
 ---------------------
 
-Create an ECS group and associate the same policy to all group members. ECS groups are independent from each other.
+Create an ECS group and associate the same policy to all group members. ECS groups are independent of each other.
 
 #. Log in to the management console.
 #. Click |image1| in the upper left corner and select a region and project.
@@ -102,7 +102,7 @@ After an ECS group is deleted, the policy does not apply to the ECSs in the ECS 
 #. Locate the ECS group to be deleted and click **Delete** in the **Operation** column.
 #. In the displayed dialog box, click **OK**.
 
-.. |image1| image:: /_static/images/en-us_image_0000002357961877.png
-.. |image2| image:: /_static/images/en-us_image_0000002323963310.png
-.. |image3| image:: /_static/images/en-us_image_0000002324123110.png
-.. |image4| image:: /_static/images/en-us_image_0000002357881761.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png
+.. |image2| image:: /_static/images/en-us_image_0000002188678994.png
+.. |image3| image:: /_static/images/en-us_image_0000002188678994.png
+.. |image4| image:: /_static/images/en-us_image_0000002188678994.png
