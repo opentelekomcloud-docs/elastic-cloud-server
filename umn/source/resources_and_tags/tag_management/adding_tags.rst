@@ -30,7 +30,7 @@ Adding Tags During ECS Creation
 
 #. Configure parameters for the ECS.
 
-   Select **Configure now** for **Advanced Options**. Then, add a tag key and tag value. For the tag key and tag value requirements, see :ref:`Table 1 <en-us_topic_0092499768__table197401426182516>`.
+   Add tag keys and tag values to the ECS. For the tag key and tag value requirements, see :ref:`Table 1 <en-us_topic_0092499768__table197401426182516>`.
 
    .. note::
 
@@ -82,13 +82,13 @@ Adding Tags on the TMS Console
 
 #. Under **Management & Deployment**, click **Tag Management Service**.
 
-#. On the displayed **Resource Tags** page, select the region where the resource is located, select **ECS-ECS** for **Resource Type**, and click **Search**.
+#. On the displayed page, select the region where the resource is located, select **ECS-ECS** for **Resource Type**, and click **Search**.
 
    All ECSs matching the search criteria are displayed.
 
-#. In the **Search Result** area, click **Create Key**. In the displayed dialog box, enter a key (for example **project**) and click **OK**.
+#. In the **Search Results** area, click **Create Key**. In the displayed dialog box, enter a key (for example, **project**) and click **OK**.
 
-   After the tag is created, the tag key is added to the resource list. If the key is not displayed in the resource list, click |image3| and select the created key from the drop-down list.
+   After the tag is created, the tag key is added to the resource list. If the key is not displayed in the resource list, click |image3| and select the key you created just now.
 
    By default, the value of the tag key is **Not tagged**. You need to set a value for the tag of each resource to associate the tag with the resource.
 

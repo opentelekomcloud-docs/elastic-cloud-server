@@ -109,7 +109,7 @@ Logging In to an ECS Using an English Keyboard
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
-#. In the search box above the upper right corner of the ECS list, enter the ECS name and click |image2| for search.
+#. In the search box above the ECS list, enter the ECS name and click |image2| for search.
 
 #. Locate the row containing the ECS and click **Remote Login** in the **Operation** column.
 
@@ -162,7 +162,7 @@ Logging In to an ECS Using a Non-English Keyboard
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
-#. In the search box above the upper right corner of the ECS list, enter the ECS name, IP address, or ID, and click |image4| for search.
+#. In the search box above the ECS list, enter the ECS name, IP address, or ID, and click |image4| for search.
 
 #. Locate the row containing the ECS and click **Remote Login** in the **Operation** column.
 

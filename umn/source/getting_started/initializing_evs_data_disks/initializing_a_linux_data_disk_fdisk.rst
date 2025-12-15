@@ -1,6 +1,6 @@
-:original_name: en-us_topic_0085634797.html
+:original_name: en-us_topic_0000002520144801.html
 
-.. _en-us_topic_0085634797:
+.. _en-us_topic_0000002520144801:
 
 Initializing a Linux Data Disk (fdisk)
 ======================================
@@ -285,12 +285,12 @@ The following example shows you how a new primary partition can be created on a 
 
    .. note::
 
-      After the server is restarted, the disk will not be automatically mounted. You can modify the **/etc/fstab** file to configure automount at startup. For details, see :ref:`Configuring Automatic Mounting at System Start <en-us_topic_0085634797__en-us_topic_0000001809189108_en-us_topic_0000001808330216_section15839912195453>`.
+      After the server is restarted, the disk will not be automatically mounted. You can modify the **/etc/fstab** file to configure auto mount at startup. For details, see :ref:`Configuring Auto Mount at Startup <en-us_topic_0000002520144801__en-us_topic_0000002015136322_en-us_topic_0000001809189108_en-us_topic_0000001808330216_section15839912195453>`.
 
-.. _en-us_topic_0085634797__en-us_topic_0000001809189108_en-us_topic_0000001808330216_section15839912195453:
+.. _en-us_topic_0000002520144801__en-us_topic_0000002015136322_en-us_topic_0000001809189108_en-us_topic_0000001808330216_section15839912195453:
 
-Configuring Automatic Mounting at System Start
-----------------------------------------------
+Configuring Auto Mount at Startup
+---------------------------------
 
 The **fstab** file controls what disks are automatically mounted at startup. You can use **fstab** to configure your data disks to mount automatically. This operation will not affect the existing data.
 
@@ -355,7 +355,7 @@ The example here uses UUIDs to identify disks in the **fstab** file. You are adv
 
       **mount** **\|** **grep** **/mnt/sdc**
 
-      If information similar to the following is displayed, automatic mounting has been configured:
+      If information similar to the following is displayed, auto mount has taken effect:
 
       .. code-block::
 

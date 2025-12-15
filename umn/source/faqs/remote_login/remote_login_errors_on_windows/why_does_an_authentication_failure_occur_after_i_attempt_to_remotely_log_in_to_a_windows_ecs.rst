@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0018339851:
 
-Why Does an Authentication Failure Occurs After I Attempt to Remotely Log In to a Windows ECS?
-==============================================================================================
+Why Does an Authentication Failure Occur After I Attempt to Remotely Log In to a Windows ECS?
+=============================================================================================
 
 Symptom
 -------

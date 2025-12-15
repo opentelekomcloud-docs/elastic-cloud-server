@@ -11,7 +11,7 @@ Scenarios
 You can detach EVS disks from an ECS.
 
 -  System disks (mounted to **/dev/sda** or **/dev/vda**) can only be detached offline. They must be stopped before being detached.
--  Data disks (mounted to points other than **dev/sda**) can be detached online if the attached ECS is running certain OSs. You can detach these data disks without stopping the ECS.
+-  Data disks (mounted to points other than **/dev/sda**) can be detached both online and offline if the attached ECS is running certain OSs. You can detach these data disks without stopping the ECS.
 
 This section describes how to detach a disk from a running ECS.
 

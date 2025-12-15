@@ -27,7 +27,7 @@ Procedure
 
 #. In the ECS list, choose **More** > **Manage Network** > **Change Security Group** in the **Operation** column.
 
-   The **Change Security Group** dialog box is displayed.
+   The **Change Security Group** panel slides out.
 
 
    .. figure:: /_static/images/en-us_image_0000002385344877.png

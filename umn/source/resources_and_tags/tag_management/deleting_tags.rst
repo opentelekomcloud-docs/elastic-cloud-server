@@ -41,13 +41,13 @@ Deleting a Tag on the TMS Console
 
 #. On the **Resource Tags** page, set the search criteria for ECSs and click **Search**.
 
-#. In the **Search Result** area, click **Edit** to make the resource tag list editable.
+#. In the **Search Results** area, click **Edit** to make the resource tag list editable.
 
-   If the key of a tag you want to delete is not contained in the list, click |image2| and select the tag key from the drop-down list. It is a good practice to select at most 10 keys to display.
+   If the key of a tag you want to delete is not contained in the list, click |image2| and select the target tag keys. It is a good practice to select at most 10 keys to display.
 
 #. Locate the row containing the target ECS and click |image3|.
 
-#. (Optional) Click |image4| in the upper right of the **Search Result** area.
+#. (Optional) Click |image4| in the upper right of the **Search Results** area.
 
    The resource list is refreshed and the refresh time is updated.
 
