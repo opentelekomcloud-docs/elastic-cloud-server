@@ -333,7 +333,7 @@ The following uses Ubuntu 20.04 64bit as an example to describe how to install t
 
 10. (Optional) Check whether CUDA has been installed.
 
-    If the CUDA version is 11.5 or earlier, perform the following operations to check whether CUDA has been installed: If the CUDA version is 11.6 or later, skip this step.
+    If the CUDA version is 11.5 or earlier, perform the following operations to check whether CUDA has been installed. If the CUDA version is 11.6 or later, skip this step.
 
     a. Run the following command to switch to **/usr/local/cuda-10.1/samples/1_Utilities/deviceQuery**:
 

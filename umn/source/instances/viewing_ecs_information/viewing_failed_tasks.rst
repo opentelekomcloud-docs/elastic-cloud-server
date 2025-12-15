@@ -26,7 +26,7 @@ Failure Types
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Operation failures                | -  Modifying ECS specifications                                                                                                                                                                                                                                                                     |
    |                                   |                                                                                                                                                                                                                                                                                                     |
-   |                                   |    If an ECS specifications modification failed, this operation is recorded in **Failures**.                                                                                                                                                                                                        |
+   |                                   |    If an ECS specification modification failed, this operation is recorded in **Failures**.                                                                                                                                                                                                         |
    +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Procedure
@@ -38,7 +38,7 @@ Procedure
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
-#. View **Failures** on the right side of common operations.
+#. View **Failures** on the right side of common operations above the ECS list.
 
 
    .. figure:: /_static/images/en-us_image_0000002385194877.png

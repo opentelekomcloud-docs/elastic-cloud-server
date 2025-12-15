@@ -33,11 +33,11 @@ Notes
 -  After the OS is changed, the original OS is not retained, and the original system disk is deleted, including the data in all partitions of the system disk.
 -  Changing the OS clears the data in all partitions of the system disk, including the system partition. Back up data before changing the OS.
 -  Changing the OS does not affect data in data disks.
--  After the OS is changed, your service running environment must be deployed in the new OS again.
+-  After the OS is changed, your service runtime environment must be deployed on the new OS again.
 -  After the OS is changed, the ECS will be automatically started.
 -  After the OS is changed, the system disk type of the ECS cannot be changed.
 -  After the OS is changed, the IP and MAC addresses of the ECS remain unchanged.
--  After the OS is changed, customized configurations, such as DNS and hostname of the original OS will be reset and require reconfiguration.
+-  After the OS is changed, custom settings (such as DNS and hostname) of the original OS will be reset. They need to be configured again.
 -  An OS change takes about 1 to 4 minutes to complete. During this process, the ECS status is **Changing OS**.
 -  After the OS is changed, the password for logging in to the ECS is reset. To retrieve the password, perform the following operations:
 
@@ -147,7 +147,7 @@ Follow-up Procedure
 
       It is a good practice to back up the **/etc/fstab** file before writing data into it.
 
-      To enable automatic partition mounting upon system startup, see :ref:`Initializing a Linux Data Disk (fdisk) <en-us_topic_0085634797>`.
+      To enable automatic partition mounting upon system startup, see :ref:`Initializing EVS Data Disks <en-us_topic_0030831989>`.
 
    #. Mount the partition so that you can use the data disk.
 

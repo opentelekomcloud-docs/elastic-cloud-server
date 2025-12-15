@@ -5,7 +5,7 @@
 Remote Login Errors on Windows
 ==============================
 
--  :ref:`Why Does an Authentication Failure Occurs After I Attempt to Remotely Log In to a Windows ECS? <en-us_topic_0018339851>`
+-  :ref:`Why Does an Authentication Failure Occur After I Attempt to Remotely Log In to a Windows ECS? <en-us_topic_0018339851>`
 -  :ref:`Why Can't I Use the Local Computer to Connect to My Windows ECS? <en-us_topic_0264235939>`
 -  :ref:`How Can I Obtain the Permission to Remotely Log In to a Windows ECS? <en-us_topic_0264235940>`
 -  :ref:`Why Does the System Display No Remote Desktop License Servers Available to Provide a License When I Log In to a Windows ECS? <en-us_topic_0264235941>`
@@ -24,7 +24,7 @@ Remote Login Errors on Windows
    :maxdepth: 1
    :hidden: 
 
-   why_does_an_authentication_failure_occurs_after_i_attempt_to_remotely_log_in_to_a_windows_ecs
+   why_does_an_authentication_failure_occur_after_i_attempt_to_remotely_log_in_to_a_windows_ecs
    why_cant_i_use_the_local_computer_to_connect_to_my_windows_ecs
    how_can_i_obtain_the_permission_to_remotely_log_in_to_a_windows_ecs
    why_does_the_system_display_no_remote_desktop_license_servers_available_to_provide_a_license_when_i_log_in_to_a_windows_ecs

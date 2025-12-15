@@ -28,7 +28,7 @@ Procedure
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
-#. In the search box above the upper right corner of the ECS list, enter the ECS name, IP address, or ID for search.
+#. In the search box above the ECS list, enter the ECS name, IP address, or ID for search.
 
 #. Click the name of the target ECS.
 
