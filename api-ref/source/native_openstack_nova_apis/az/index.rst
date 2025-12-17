@@ -5,10 +5,10 @@
 AZ
 ==
 
--  :ref:`Querying AZs <en-us_topic_0065817728>`
+-  :ref:`Listing AZs <en-us_topic_0065817728>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
-   querying_azs
+   listing_azs

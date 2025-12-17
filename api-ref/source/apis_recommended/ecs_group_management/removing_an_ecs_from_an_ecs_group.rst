@@ -8,7 +8,7 @@ Removing an ECS from an ECS Group
 Function
 --------
 
-This API is used to remove an ECS from an ECS group. After being removed, the anti-affinity policy will not take effect on this ECS and other ECSs in the same ECS group.
+This API is used to remove an ECS from an ECS group. The anti-affinity policy will not be applied to the ECS after it is removed from the group.
 
 Constraints
 -----------
