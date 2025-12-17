@@ -2,13 +2,13 @@
 
 .. _en-us_topic_0020212676:
 
-Querying SSH Key Pairs
-======================
+Listing SSH Key Pairs
+=====================
 
 Function
 --------
 
-This API is used to query SSH key pairs.
+This API is used to list SSH key pairs.
 
 URI
 ---
@@ -80,7 +80,7 @@ Response
 Example Request
 ---------------
 
-Query the list of SSH key pairs.
+List SSH key pairs.
 
 .. code-block:: text
 

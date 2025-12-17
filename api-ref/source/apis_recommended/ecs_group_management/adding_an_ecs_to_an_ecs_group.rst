@@ -8,7 +8,7 @@ Adding an ECS to an ECS Group
 Function
 --------
 
-This API is used to add an ECS to an ECS group. The system automatically deploys the newly added ECS to a host that is different from the ones accommodating other ECSs in the ECS group.
+This API is used to add an ECS to an ECS group. ECSs in the same group are automatically deployed on different hosts if possible.
 
 Constraints
 -----------

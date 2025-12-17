@@ -347,7 +347,7 @@ Response
    |                                      |                               |                                                                                                                                                                                                                                                       |
    |                                      |                               | -  **UP**: The nova-compute status is normal.                                                                                                                                                                                                         |
    |                                      |                               | -  **UNKNOWN**: The nova-compute status is unknown.                                                                                                                                                                                                   |
-   |                                      |                               | -  **DOWN**: the nova-compute status is abnormal.                                                                                                                                                                                                     |
+   |                                      |                               | -  **DOWN**: The nova-compute status is abnormal.                                                                                                                                                                                                     |
    |                                      |                               | -  **MAINTENANCE**: The nova-compute is in maintenance state.                                                                                                                                                                                         |
    |                                      |                               | -  Empty string: There is no host information.                                                                                                                                                                                                        |
    +--------------------------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -565,8 +565,11 @@ Example Response
                "id": "s3.large.1",
                "name": "s3.large.1"
                "asic_accelerators": [
-
-               ]
+                   {
+                       "name":"asic_01",
+                       "count":1,
+                       "memory_mb":1024
+                   }]
            },
            "accessIPv4": "",
            "accessIPv6": "",

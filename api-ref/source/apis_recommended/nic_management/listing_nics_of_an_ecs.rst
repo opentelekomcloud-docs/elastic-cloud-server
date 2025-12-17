@@ -2,13 +2,13 @@
 
 .. _en-us_topic_0121978383:
 
-Querying NICs of an ECS
-=======================
+Listing NICs of an ECS
+======================
 
 Function
 --------
 
-This API is used to query NICs of an ECS.
+This API is used to list NICs of an ECS.
 
 URI
 ---
@@ -206,7 +206,7 @@ Response
 Example Request
 ---------------
 
-Query NICs of an ECS.
+List NICs of an ECS.
 
 .. code-block:: text
 

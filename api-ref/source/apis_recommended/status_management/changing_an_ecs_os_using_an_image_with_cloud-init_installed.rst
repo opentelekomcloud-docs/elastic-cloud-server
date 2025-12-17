@@ -17,10 +17,10 @@ After this API is called, the system uninstalls the system disk, uses the new im
 Constraints
 -----------
 
--  You can only use an image with Cloud-Init or Cloudbase-Init installed.
--  Only a stopped ECS or an ECS on which reinstalling or changing the OS failed supports changing OS.
--  Only an ECS with a system disk supports changing OS.
--  You are not allowed to perform other operations when changing the OS. Otherwise, changing the OS will fail.
+-  This API only supports images with Cloud-Init or Cloudbase-Init installed.
+-  OS changes are only supported on stopped ECSs or on ECSs where OS reinstallation or change has failed.
+-  ECSs without system disks do not support OS changes.
+-  You are not allowed to perform other operations when changing the OS, or the OS change may fail.
 
 URI
 ---
