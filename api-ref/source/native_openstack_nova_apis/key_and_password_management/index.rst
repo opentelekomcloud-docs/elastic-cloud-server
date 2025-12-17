@@ -5,7 +5,7 @@
 Key and Password Management
 ===========================
 
--  :ref:`Querying SSH Key Pairs <en-us_topic_0020212676>`
+-  :ref:`Listing SSH Key Pairs <en-us_topic_0020212676>`
 -  :ref:`Querying a Specified SSH Key Pair <en-us_topic_0020212677>`
 -  :ref:`Creating and Importing an SSH Key Pair <en-us_topic_0020212678>`
 -  :ref:`Deleting an SSH Key <en-us_topic_0020212680>`
@@ -16,7 +16,7 @@ Key and Password Management
    :maxdepth: 1
    :hidden: 
 
-   querying_ssh_key_pairs
+   listing_ssh_key_pairs
    querying_a_specified_ssh_key_pair
    creating_and_importing_an_ssh_key_pair
    deleting_an_ssh_key

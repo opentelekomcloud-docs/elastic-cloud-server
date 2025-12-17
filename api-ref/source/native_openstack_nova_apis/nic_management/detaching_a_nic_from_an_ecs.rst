@@ -2,13 +2,13 @@
 
 .. _en-us_topic_0020212666:
 
-Deleting a NIC from an ECS
-==========================
+Detaching a NIC from an ECS
+===========================
 
 Function
 --------
 
-This API is used to delete a NIC from an ECS based on the port ID.
+This API is used to detach a NIC from an ECS based on the port ID.
 
 Constraints
 -----------
@@ -63,7 +63,7 @@ None
 Example Request
 ---------------
 
-Delete a NIC from an ECS based on the specified port ID.
+Detach a NIC from an ECS based on the specified port ID.
 
 .. code-block:: text
 

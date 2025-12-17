@@ -10,7 +10,7 @@ Function
 
 This API is used to create ECS.
 
-This API does not support automatic rollback after creating an ECS failed. If automatic rollback is required, call the API POST /v1/{project_id}/cloudservers. For details, see :ref:`Creating an ECS <en-us_topic_0020212668>`.
+This API does not support automatic rollback after creating an ECS failed. If automatic rollback is required, call the API POST /v1/{project_id}/cloudservers. For details, see :ref:`Creating ECSs <en-us_topic_0020212668>`.
 
 URI
 ---
@@ -35,14 +35,14 @@ POST /v2/{project_id}/servers
 
    Alias of the API for creating ECSs: /v2/{project_id}/os-volumes_boot
 
-   This calling mode can only be used in OpenStack client.
+   This calling mode can only be used in OpenStack client and is not recommended.
 
 Constraints
 -----------
 
-#. This API is native, which does not support the creation of ECSs using full-ECS images. To use full-ECS images to create ECSs, refer to :ref:`Creating an ECS <en-us_topic_0020212668>`.
+#. This API is native, which does not support the creation of ECSs using full-ECS images. To use full-ECS images to create ECSs, refer to :ref:`Creating ECSs <en-us_topic_0020212668>`.
 
-#. When using this API to create an ECS, you cannot bind an EIP to the ECS during the creation process. To do so, see :ref:`Creating an ECS <en-us_topic_0020212668>`.
+#. When using this API to create an ECS, you cannot bind an EIP to the ECS during the creation process. To do so, see :ref:`Creating ECSs <en-us_topic_0020212668>`.
 
 #. Parameter **port** in the three network parameters (**port**, **uuid**, and **fixed_ip**) has the highest priority. If parameter **fixed_ip** is set, you must specify the UUID.
 

@@ -2,13 +2,13 @@
 
 .. _en-us_topic_0065792793:
 
-Querying All API Versions
-=========================
+Listing API Versions
+====================
 
 Function
 --------
 
-This API is used to query all available Nova versions.
+This API is used to list all available Nova versions.
 
 To support function extension, Nova APIs can be distinguished by version. There are two types of versions:
 
@@ -87,7 +87,7 @@ The following table describes the response parameters.
 Example Request
 ---------------
 
-Query all API versions.
+List supported API versions.
 
 .. code-block:: text
 

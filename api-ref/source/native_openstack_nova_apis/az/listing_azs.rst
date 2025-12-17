@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0065817728:
 
-Querying AZs
-============
+Listing AZs
+===========
 
 Function
 --------
@@ -71,7 +71,7 @@ Response
 Example Request
 ---------------
 
-Query a list of AZs.
+List AZs.
 
 .. code-block:: text
 

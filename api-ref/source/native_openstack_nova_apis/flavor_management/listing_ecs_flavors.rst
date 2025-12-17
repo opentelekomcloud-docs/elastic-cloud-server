@@ -2,13 +2,13 @@
 
 .. _en-us_topic_0065817705:
 
-Querying ECS Flavors
-====================
+Listing ECS Flavors
+===================
 
 Function
 --------
 
-This API is used to query available ECS flavors. After receiving the request, Nova uses nova-api to view the flavors from the database.
+This API is used to list available ECS flavors. After receiving the request, Nova uses nova-api to view the flavors from the database.
 
 URI
 ---
@@ -101,7 +101,7 @@ Response
 Example Request
 ---------------
 
-Query available ECS flavors.
+List available ECS flavors.
 
 .. code-block:: text
 
