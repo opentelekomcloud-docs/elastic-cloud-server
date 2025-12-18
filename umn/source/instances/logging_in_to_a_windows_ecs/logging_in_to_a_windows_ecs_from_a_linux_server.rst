@@ -33,7 +33,7 @@ To log in to a Windows ECS from a local Linux server, use a remote access tool, 
 
 #. Run the following command to log in to the ECS:
 
-   **rdesktop -u** *Username* **-p** *Password* **-g** *Resolution* *EIP*
+   **rdesktop -u** *username* **-p** *password* **-g** *resolution* *EIP*
 
    For example, run **rdesktop -u administrator -p password -g 1024*720 121.xx.xx.xxx**.
 

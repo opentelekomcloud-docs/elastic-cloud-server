@@ -19,7 +19,7 @@ To ensure that ECSs that are created using a private image support custom config
 -  For Windows OSs, download and install Cloudbase-Init.
 -  For Linux OSs, download and install Cloud-Init.
 
-After being installed in an image, Cloud-Init or Cloudbase-Init automatically configures initial attributes for the ECSs created using this image.
+Once installed in an image, Cloud-Init or Cloudbase-Init automatically configures initial attributes for the ECSs created using this image.
 
 For more information, see *Image Management Service User Guide*.
 

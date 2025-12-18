@@ -194,7 +194,7 @@ Notes
 
 -  To improve network performance, you can set the NIC MTU of a D2 ECS to **8888**.
 
--  D2 ECSs do not support specifications modification.
+-  D2 ECSs do not support specification modification.
 
 -  D2 ECSs do not support local disk snapshots or backups.
 

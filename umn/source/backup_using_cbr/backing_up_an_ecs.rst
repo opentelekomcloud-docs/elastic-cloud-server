@@ -58,14 +58,14 @@ EVS Disk Backup Procedure
 
 #. In the ECS list, locate the target ECS and choose **More** > **Manage Image/Backup** > **Create Disk Backup**.
 
-   -  If the ECS has been associated with a vault, configure the backup information as prompted.
+   -  If the ECS has been associated with a vault, configure the backup information as instructed.
 
       -  **Server List**: The ECS to be backed up is selected by default. Click |image3| to view the disks attached to the ECSs. Select the disks to be backed up.
       -  **Name**: Customize your backup name.
       -  **Description**: Supplementary information about the backup.
       -  **Full Backup**: If this option is selected, the system will perform full backup for the disks to be associated. The storage capacity used by the backup increases accordingly.
 
-   -  If the ECS is not associated with a vault, buy a vault first and then configure the backup information as prompted.
+   -  If the ECS is not associated with a vault, buy a vault first and then configure the backup information as instructed.
 
       For details, see `Creating a Disk Backup Vault <https://docs.otc.t-systems.com/cloud-backup-recovery/umn/getting_started/step_1_create_a_vault/creating_a_disk_backup_vault.html>`__.
 
