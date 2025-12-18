@@ -2,18 +2,18 @@
 
 .. _en-us_topic_0142195139:
 
-Responses (Batch Operation)
-===========================
+Responses (Batch Requests)
+==========================
 
-The following responses are only for resetting the passwords for logging in to ECSs in a batch and for modifying ECS specifications in a batch. For details about the responses of other batch operations, see :ref:`Responses (Task) <en-us_topic_0022067714>`.
+The following responses are only for batch resetting the passwords for logging in to ECSs and for batch modifying ECS specifications. For details about the responses of other batch operations, see :ref:`Responses (Jobs) <en-us_topic_0022067714>`.
 
 -  Normal responses
 
-   +-----------+------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter | Type             | Description                                                                                                                                             |
-   +===========+==================+=========================================================================================================================================================+
-   | response  | Array of objects | Specifies the response returned after a request is successfully submitted. For details, see :ref:`Table 1 <en-us_topic_0142195139__table849372311389>`. |
-   +-----------+------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------+------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter | Type             | Description                                                                                                                                                   |
+   +===========+==================+===============================================================================================================================================================+
+   | response  | Array of objects | Specifies the response returned after a batch request is successfully submitted. For details, see :ref:`Table 1 <en-us_topic_0142195139__table849372311389>`. |
+   +-----------+------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
    .. _en-us_topic_0142195139__table849372311389:
 

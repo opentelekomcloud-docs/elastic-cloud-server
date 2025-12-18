@@ -50,9 +50,9 @@ Parameters in the following table can be used as URI parameters to filter query 
    +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | changes-since   | No              | String          | Specifies the images modified after the **changes-since** time point. The value is in ISO8601 format, such as **2013-06-09T06:42:18Z**.                                                                                               |
    +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | minRam          | No              | Integer         | Specifies the minimum memory size in MB required by the image.                                                                                                                                                                        |
+   | minRam          | No              | Integer         | Specifies the minimum memory size in MiB required by the image.                                                                                                                                                                       |
    +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | minDisk         | No              | Integer         | Specifies the minimum disk size in GB required by the image.                                                                                                                                                                          |
+   | minDisk         | No              | Integer         | Specifies the minimum disk size in GiB required by the image.                                                                                                                                                                         |
    +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0065817696__table84817387373:
@@ -97,11 +97,11 @@ Response
    |                       |                       |                                                                   |
    |                       |                       | The value must be greater than zero.                              |
    +-----------------------+-----------------------+-------------------------------------------------------------------+
-   | minDisk               | Integer               | Specifies the minimum disk size in GB required by the image.      |
+   | minDisk               | Integer               | Specifies the minimum disk size required by the image.            |
    |                       |                       |                                                                   |
    |                       |                       | The value must be greater than zero.                              |
    +-----------------------+-----------------------+-------------------------------------------------------------------+
-   | minRam                | Integer               | Specifies the minimum memory size in GB required by the image.    |
+   | minRam                | Integer               | Specifies the minimum memory size required by the image.          |
    |                       |                       |                                                                   |
    |                       |                       | The value must be greater than zero.                              |
    +-----------------------+-----------------------+-------------------------------------------------------------------+

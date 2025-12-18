@@ -34,9 +34,9 @@ GET /v2/{project_id}/flavors/detail?minDisk={minDisk}&minRam={minRam}&sort_key={
    +-----------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter | Mandatory | Type   | Description                                                                                                                                                                      |
    +===========+===========+========+==================================================================================================================================================================================+
-   | minDisk   | No        | String | Specifies the minimum disk specification in the unit of GB. Only the ECSs with the disk specification greater than or equal to the minimum specification can be queried.         |
+   | minDisk   | No        | String | Specifies the minimum disk size in GiB. Only the ECSs with a disk size greater than or equal to the minimum size can be queried.                                                 |
    +-----------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | minRam    | No        | String | Specifies the minimum RAM in the unit of MB. Only the ECSs with the RAM specification greater than or equal to the minimum specification can be queried.                         |
+   | minRam    | No        | String | Specifies the minimum memory size in MiB. Only the ECSs with the memory size greater than or equal to the minimum size can be queried.                                           |
    +-----------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | sort_key  | No        | String | Indicates a sorting field, the default value of which is **flavorid**. The value of this parameter can also be **name**, **memory_mb**, **vcpus**, **root_gb**, or **flavorid**. |
    +-----------+-----------+--------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -82,7 +82,7 @@ Response
    +----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------+
    | vcpus                      | Integer               | Specifies the number of vCPUs in the ECS flavor.                                                                         |
    +----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------+
-   | ram                        | Integer               | Specifies the memory size (MB) in the ECS flavor.                                                                        |
+   | ram                        | Integer               | Specifies the memory size (MiB) in the ECS flavor.                                                                       |
    +----------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------+
    | disk                       | Integer               | Specifies the system disk size in the ECS flavor.                                                                        |
    |                            |                       |                                                                                                                          |

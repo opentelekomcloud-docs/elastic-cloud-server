@@ -38,11 +38,11 @@ Request
 
 .. table:: **Table 2** Request parameters
 
-   ============== ========= ==== ===================================
-   Parameter      Mandatory Type Description
-   ============== ========= ==== ===================================
-   monitorMetrics Yes       Null Adds an ECS to the monitoring list.
-   ============== ========= ==== ===================================
+   ============== ========= ====== ===================================
+   Parameter      Mandatory Type   Description
+   ============== ========= ====== ===================================
+   monitorMetrics Yes       String Adds an ECS to the monitoring list.
+   ============== ========= ====== ===================================
 
 Response
 --------
@@ -59,7 +59,7 @@ Add a specified ECS to the monitoring list.
    POST https://{endpoint}/v1.0/servers/{server_id}/action
 
    {
-      "monitorMetrics" : null
+       "monitorMetrics": ""
    }
 
 Example Response

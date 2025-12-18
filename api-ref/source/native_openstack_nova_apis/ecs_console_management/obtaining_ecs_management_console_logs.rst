@@ -67,7 +67,7 @@ Response
 
 .. _en-us_topic_0065817689__table18130192135217:
 
-.. table:: **Table 4** Response parameter
+.. table:: **Table 4** Response parameters
 
    ========= ====== =======================
    Parameter Type   Description

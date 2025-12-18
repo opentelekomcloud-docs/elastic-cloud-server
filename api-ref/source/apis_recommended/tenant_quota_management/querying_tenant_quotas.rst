@@ -41,11 +41,17 @@ Response
 
 .. table:: **Table 2** Response parameters
 
-   +-----------+--------+--------------------------------------------------------------------------------------------------+
-   | Parameter | Type   | Description                                                                                      |
-   +===========+========+==================================================================================================+
-   | absolute  | Object | Specifies tenant quotas. For details, see :ref:`Table 3 <en-us_topic_0020212674__table7714075>`. |
-   +-----------+--------+--------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                      |
+   +=======================+=======================+==================================================================================================+
+   | absolute              | Object                | **Definition**                                                                                   |
+   |                       |                       |                                                                                                  |
+   |                       |                       | Specifies tenant quotas. For details, see :ref:`Table 3 <en-us_topic_0020212674__table7714075>`. |
+   |                       |                       |                                                                                                  |
+   |                       |                       | **Range**                                                                                        |
+   |                       |                       |                                                                                                  |
+   |                       |                       | N/A                                                                                              |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0020212674__table7714075:
 
@@ -54,51 +60,165 @@ Response
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
    | Parameter               | Type                  | Description                                                                                      |
    +=========================+=======================+==================================================================================================+
-   | maxTotalInstances       | Integer               | Specifies the maximum number of ECSs that can be requested.                                      |
+   | maxTotalInstances       | Integer               | **Definition**                                                                                   |
+   |                         |                       |                                                                                                  |
+   |                         |                       | Specifies the maximum number of ECSs that can be requested.                                      |
+   |                         |                       |                                                                                                  |
+   |                         |                       | **Range**                                                                                        |
+   |                         |                       |                                                                                                  |
+   |                         |                       | N/A                                                                                              |
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
-   | maxTotalCores           | Integer               | Specifies the maximum number of CPU cores that the current tenant can apply for.                 |
+   | maxTotalCores           | Integer               | **Definition**                                                                                   |
+   |                         |                       |                                                                                                  |
+   |                         |                       | Specifies the maximum number of CPU cores that the current tenant can apply for.                 |
+   |                         |                       |                                                                                                  |
+   |                         |                       | **Range**                                                                                        |
+   |                         |                       |                                                                                                  |
+   |                         |                       | N/A                                                                                              |
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
-   | maxTotalRAMSize         | Integer               | Specifies the maximum memory space (MB) you can use.                                             |
+   | maxTotalRAMSize         | Integer               | **Definition**                                                                                   |
+   |                         |                       |                                                                                                  |
+   |                         |                       | Specifies the maximum memory size (MiB) allowed.                                                 |
+   |                         |                       |                                                                                                  |
+   |                         |                       | **Range**                                                                                        |
+   |                         |                       |                                                                                                  |
+   |                         |                       | N/A                                                                                              |
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
-   | maxTotalKeypairs        | Integer               | Specifies the maximum number of SSH key pairs you can use.                                       |
+   | maxTotalKeypairs        | Integer               | **Definition**                                                                                   |
+   |                         |                       |                                                                                                  |
+   |                         |                       | Specifies the maximum number of SSH key pairs you can use.                                       |
+   |                         |                       |                                                                                                  |
+   |                         |                       | **Range**                                                                                        |
+   |                         |                       |                                                                                                  |
+   |                         |                       | N/A                                                                                              |
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
-   | maxServerMeta           | Integer               | Specifies the maximum length of the metadata you can use.                                        |
+   | maxServerMeta           | Integer               | **Definition**                                                                                   |
+   |                         |                       |                                                                                                  |
+   |                         |                       | Specifies the maximum length of the metadata you can use.                                        |
+   |                         |                       |                                                                                                  |
+   |                         |                       | **Range**                                                                                        |
+   |                         |                       |                                                                                                  |
+   |                         |                       | N/A                                                                                              |
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
-   | maxPersonality          | Integer               | Specifies the maximum number of files that can be injected.                                      |
+   | maxPersonality          | Integer               | **Definition**                                                                                   |
+   |                         |                       |                                                                                                  |
+   |                         |                       | Specifies the maximum number of files that can be injected.                                      |
+   |                         |                       |                                                                                                  |
+   |                         |                       | **Range**                                                                                        |
+   |                         |                       |                                                                                                  |
+   |                         |                       | N/A                                                                                              |
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
-   | maxPersonalitySize      | Integer               | Specifies the maximum size (byte) of the file to be injected.                                    |
+   | maxPersonalitySize      | Integer               | **Definition**                                                                                   |
+   |                         |                       |                                                                                                  |
+   |                         |                       | Specifies the maximum size (byte) of the file to be injected.                                    |
+   |                         |                       |                                                                                                  |
+   |                         |                       | **Range**                                                                                        |
+   |                         |                       |                                                                                                  |
+   |                         |                       | N/A                                                                                              |
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
-   | maxServerGroups         | Integer               | Specifies the maximum number of server groups.                                                   |
+   | maxServerGroups         | Integer               | **Definition**                                                                                   |
+   |                         |                       |                                                                                                  |
+   |                         |                       | Specifies the maximum number of server groups.                                                   |
+   |                         |                       |                                                                                                  |
+   |                         |                       | **Range**                                                                                        |
+   |                         |                       |                                                                                                  |
+   |                         |                       | N/A                                                                                              |
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
-   | maxServerGroupMembers   | Integer               | Specifies the maximum number of ECSs in an ECS group.                                            |
+   | maxServerGroupMembers   | Integer               | **Definition**                                                                                   |
+   |                         |                       |                                                                                                  |
+   |                         |                       | Specifies the maximum number of ECSs in an ECS group.                                            |
+   |                         |                       |                                                                                                  |
+   |                         |                       | **Range**                                                                                        |
+   |                         |                       |                                                                                                  |
+   |                         |                       | N/A                                                                                              |
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
-   | totalServerGroupsUsed   | Integer               | Specifies the number of used server groups.                                                      |
+   | totalServerGroupsUsed   | Integer               | **Definition**                                                                                   |
+   |                         |                       |                                                                                                  |
+   |                         |                       | Specifies the number of used server groups.                                                      |
+   |                         |                       |                                                                                                  |
+   |                         |                       | **Range**                                                                                        |
+   |                         |                       |                                                                                                  |
+   |                         |                       | N/A                                                                                              |
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
-   | maxSecurityGroups       | Integer               | Specifies the maximum number of security groups you can use.                                     |
+   | maxSecurityGroups       | Integer               | **Definition**                                                                                   |
+   |                         |                       |                                                                                                  |
+   |                         |                       | Specifies the maximum number of security groups you can use.                                     |
    |                         |                       |                                                                                                  |
    |                         |                       | .. note::                                                                                        |
    |                         |                       |                                                                                                  |
    |                         |                       |    The quota complies with the VPC quota limit.                                                  |
+   |                         |                       |                                                                                                  |
+   |                         |                       | **Range**                                                                                        |
+   |                         |                       |                                                                                                  |
+   |                         |                       | N/A                                                                                              |
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
-   | maxSecurityGroupRules   | Integer               | Specifies the maximum number of security group rules that you can configure in a security group. |
+   | maxSecurityGroupRules   | Integer               | **Definition**                                                                                   |
+   |                         |                       |                                                                                                  |
+   |                         |                       | Specifies the maximum number of security group rules that you can configure in a security group. |
    |                         |                       |                                                                                                  |
    |                         |                       | .. note::                                                                                        |
    |                         |                       |                                                                                                  |
    |                         |                       |    The quota complies with the VPC quota limit.                                                  |
+   |                         |                       |                                                                                                  |
+   |                         |                       | **Range**                                                                                        |
+   |                         |                       |                                                                                                  |
+   |                         |                       | N/A                                                                                              |
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
-   | maxTotalFloatingIps     | Integer               | Specifies the maximum number of floating IP addresses you can use.                               |
+   | maxTotalFloatingIps     | Integer               | **Definition**                                                                                   |
+   |                         |                       |                                                                                                  |
+   |                         |                       | Specifies the maximum number of floating IP addresses you can use.                               |
+   |                         |                       |                                                                                                  |
+   |                         |                       | **Range**                                                                                        |
+   |                         |                       |                                                                                                  |
+   |                         |                       | N/A                                                                                              |
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
-   | maxImageMeta            | Integer               | Specifies the maximum length of the image metadata.                                              |
+   | maxImageMeta            | Integer               | **Definition**                                                                                   |
+   |                         |                       |                                                                                                  |
+   |                         |                       | Specifies the maximum length of the image metadata.                                              |
+   |                         |                       |                                                                                                  |
+   |                         |                       | **Range**                                                                                        |
+   |                         |                       |                                                                                                  |
+   |                         |                       | N/A                                                                                              |
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
-   | totalInstancesUsed      | Integer               | Specifies the number of used ECSs.                                                               |
+   | totalInstancesUsed      | Integer               | **Definition**                                                                                   |
+   |                         |                       |                                                                                                  |
+   |                         |                       | Specifies the number of used ECSs.                                                               |
+   |                         |                       |                                                                                                  |
+   |                         |                       | **Range**                                                                                        |
+   |                         |                       |                                                                                                  |
+   |                         |                       | N/A                                                                                              |
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
-   | totalCoresUsed          | Integer               | Specifies the number of the used CPU cores.                                                      |
+   | totalCoresUsed          | Integer               | **Definition**                                                                                   |
+   |                         |                       |                                                                                                  |
+   |                         |                       | Specifies the number of the used CPU cores.                                                      |
+   |                         |                       |                                                                                                  |
+   |                         |                       | **Range**                                                                                        |
+   |                         |                       |                                                                                                  |
+   |                         |                       | N/A                                                                                              |
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
-   | totalRAMUsed            | Integer               | Specifies the used memory size (MB).                                                             |
+   | totalRAMUsed            | Integer               | **Definition**                                                                                   |
+   |                         |                       |                                                                                                  |
+   |                         |                       | Specifies the used memory size (MiB).                                                            |
+   |                         |                       |                                                                                                  |
+   |                         |                       | **Range**                                                                                        |
+   |                         |                       |                                                                                                  |
+   |                         |                       | N/A                                                                                              |
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
-   | totalSecurityGroupsUsed | Integer               | Specifies the number of used security groups.                                                    |
+   | totalSecurityGroupsUsed | Integer               | **Definition**                                                                                   |
+   |                         |                       |                                                                                                  |
+   |                         |                       | Specifies the number of used security groups.                                                    |
+   |                         |                       |                                                                                                  |
+   |                         |                       | **Range**                                                                                        |
+   |                         |                       |                                                                                                  |
+   |                         |                       | N/A                                                                                              |
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
-   | totalFloatingIpsUsed    | Integer               | Specifies the number of used floating IP addresses.                                              |
+   | totalFloatingIpsUsed    | Integer               | **Definition**                                                                                   |
+   |                         |                       |                                                                                                  |
+   |                         |                       | Specifies the number of used floating IP addresses.                                              |
+   |                         |                       |                                                                                                  |
+   |                         |                       | **Range**                                                                                        |
+   |                         |                       |                                                                                                  |
+   |                         |                       | N/A                                                                                              |
    +-------------------------+-----------------------+--------------------------------------------------------------------------------------------------+
 
 Example Request
