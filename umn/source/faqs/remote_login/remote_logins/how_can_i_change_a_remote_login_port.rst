@@ -19,7 +19,7 @@ The following procedure uses an ECS running Windows Server 2012 as an example. T
 
    a. Log in to the management console.
 
-   b. Click |image1| in the upper left corner and select your region and project.
+   b. Click |image1| in the upper left corner and select a region and project.
 
    c. Under **Computing**, click **Elastic Cloud Server**.
 
@@ -96,7 +96,7 @@ The following procedure uses an ECS running CentOS 7.3 as an example. The defaul
 
    a. Log in to the management console.
 
-   b. Click |image2| in the upper left corner and select your region and project.
+   b. Click |image2| in the upper left corner and select a region and project.
 
    c. Under **Computing**, click **Elastic Cloud Server**.
 
@@ -169,5 +169,5 @@ The following procedure uses an ECS running CentOS 7.3 as an example. The defaul
 
    For example: **telnet xx.xx.xx.xx 2020**
 
-.. |image1| image:: /_static/images/en-us_image_0210779229.png
-.. |image2| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png
+.. |image2| image:: /_static/images/en-us_image_0000002188678994.png

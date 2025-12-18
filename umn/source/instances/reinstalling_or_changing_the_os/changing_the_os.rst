@@ -160,4 +160,4 @@ Follow-up Procedure
 -  If the OS change fails, perform steps :ref:`3 <en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45082966143628>` to :ref:`10 <en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45992498111556>` again to retry the OS change.
 -  If the attempt still fails, contact customer service for manual recovery at the backend.
 
-.. |image1| image:: /_static/images/en-us_image_0000002357961833.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

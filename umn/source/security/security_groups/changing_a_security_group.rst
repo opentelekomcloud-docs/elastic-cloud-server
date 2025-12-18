@@ -19,7 +19,7 @@ Constraints
 Procedure
 ---------
 
-#. Log in to the management console.
+#. Log in to the console and access the ECS list page.
 
 #. Click |image1| in the upper left corner and select a region and project.
 
@@ -47,4 +47,4 @@ Procedure
 
 #. Click **OK**.
 
-.. |image1| image:: /_static/images/en-us_image_0093507575.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

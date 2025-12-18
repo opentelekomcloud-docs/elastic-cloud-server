@@ -62,7 +62,7 @@ Procedure
 
 #. Log in to the management console.
 
-#. Under **Computing**, choose **Elastic Cloud Server**.
+#. Under **Computing**, click **Elastic Cloud Server**.
 
    The ECS console is displayed.
 
@@ -81,7 +81,7 @@ Procedure
 
             **Figure 1** Selecting a property
 
-      b. Specify a property value and press **Enter** to search.
+      b. In the search box, enter or select properties as prompted, such as ID, status, and flavor name, and press **Enter**.
 
 Example 1: Searching by Property Value
 --------------------------------------

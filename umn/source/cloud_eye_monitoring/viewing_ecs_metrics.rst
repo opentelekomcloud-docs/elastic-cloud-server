@@ -8,9 +8,9 @@ Viewing ECS Metrics
 Scenarios
 ---------
 
-The cloud platform provides Cloud Eye, which monitors the running statuses of your ECSs. You can obtain the monitoring metrics of each ECS on the management console.
+The cloud platform provides Cloud Eye, which monitors the statuses of your ECSs. You can obtain the monitoring metrics of each ECS on the management console.
 
-There a short time delay between transmission and display of monitoring data. The status of an ECS displayed on Cloud Eye is the status obtained 5 to 10 minutes before. If an ECS is just created, wait for 5 to 10 minutes to view the real-time monitoring data.
+There is a short time delay between transmission and display of monitoring data. The status of an ECS displayed on Cloud Eye is the status obtained 5 to 10 minutes earlier. If an ECS is just created, wait for 5 to 10 minutes to view the real-time monitoring data.
 
 Prerequisites
 -------------
@@ -42,7 +42,7 @@ Procedure
 
 #. In the search box above the upper right corner of the ECS list, enter the ECS name, IP address, or ID to search for the target ECS.
 
-#. Click the name of the target ECS. The page providing details about the ECS is displayed.
+#. Click the name of the target ECS. The ECS details page is displayed.
 
 #. Click the **Monitoring** tab to view the monitoring data.
 
@@ -50,4 +50,4 @@ Procedure
 
    You can view the monitoring data of the ECS in the last 1 hour, last 3 hours, last 12 hours, last 1 day, or last 7 days. You can also select a custom time range to view the historical monitoring data of the last six months.
 
-.. |image1| image:: /_static/images/en-us_image_0000002324137580.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

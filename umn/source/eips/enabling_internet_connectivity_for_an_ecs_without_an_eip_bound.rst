@@ -40,7 +40,7 @@ The following uses CentOS 7.9 as an example. The operations apply to CentOS 7.9 
 
 #. In the search box above the upper right corner of the ECS list, enter the proxy ECS name for search.
 
-#. Click the name of the proxy ECS. The page providing details about the ECS is displayed.
+#. Click the name of the proxy ECS. The ECS details page is displayed.
 
 #. On the **Network Interfaces** tab, click |image2|. Then, disable **Source/Destination Check**.
 
@@ -172,6 +172,6 @@ The following uses CentOS 7.9 as an example. The operations apply to CentOS 7.9 
 
    **iptables -t nat -D POSTROUTING -o eth0 -s 192.168.125.0/24 -j SNAT --to 192.168.125.4**
 
-.. |image1| image:: /_static/images/en-us_image_0000002324093742.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png
 .. |image2| image:: /_static/images/en-us_image_0128851717.png
-.. |image3| image:: /_static/images/en-us_image_0000002323933938.png
+.. |image3| image:: /_static/images/en-us_image_0000002188678994.png

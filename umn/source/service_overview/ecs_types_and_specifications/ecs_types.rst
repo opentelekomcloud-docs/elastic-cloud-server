@@ -54,15 +54,15 @@ Network QoS
 
 Network QoS uses basic technologies to improve the quality of network communication. A network with QoS enabled offers predictable network performance and effectively allocates network bandwidth.
 
-For details about the QoS data of an ECS flavor, including the maximum/assured bandwidth (Gbit/s), maximum intranet PPS, and NIC multi-queue, see :ref:`A Summary List of ECS Specifications <en-us_topic_0177512565>`.
+For details about the QoS data of an ECS flavor, including the maximum/assured network bandwidth (Gbit/s), maximum network PPS, and maximum NIC queues, see :ref:`A Summary List of ECS Specifications <en-us_topic_0177512565>`.
 
 Constraints on network performance vary depending on ECS flavors.
 
--  Assured intranet bandwidth: indicates the guaranteed bandwidth allocated to an ECS when there is a network bandwidth contention in the entire network.
+-  Assured network bandwidth: indicates the guaranteed bandwidth allocated to an ECS when there is a network bandwidth contention in the entire network.
 
--  Maximum intranet bandwidth: indicates the maximum bandwidth that can be allocated to an ECS when the ECS does not compete for network bandwidth (other ECSs on the host do not have high requirements on network bandwidth).
+-  Maximum network bandwidth: indicates the maximum bandwidth that can be allocated to an ECS when the ECS does not compete for network bandwidth (other ECSs on the host do not have high requirements on network bandwidth).
 
--  Maximum intranet PPS: indicates the maximum number of packets that an ECS can transmit and receive per second.
+-  Maximum network PPS: indicates the maximum number of packets that an ECS can transmit and receive per second.
 
    Packets per second (PPS): indicates the number of packets received and sent per second. It is usually used to measure the network performance.
 

@@ -29,7 +29,7 @@ The **nofile** parameter in **/etc/security/limits.conf** is used to set the max
 Solution
 --------
 
-#. Enter the single-user mode.
+#. Enter single-user mode.
 
    The following uses CentOS 7 as an example:
 

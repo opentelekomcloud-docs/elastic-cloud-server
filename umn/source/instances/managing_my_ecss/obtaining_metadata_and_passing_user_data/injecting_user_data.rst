@@ -99,7 +99,7 @@ User data scripts (referred to as scripts) of Linux ECSs are based on the open-s
 
 -  Script usage examples
 
-   The following describes how to inject scripts in different formats into Linux ECSs and view script execution results.
+   The following describes how to inject scripts in different formats into Linux ECSs and view the script execution results.
 
    **Example 1: Inject a user-data script.**
 
@@ -140,7 +140,7 @@ User Data Scripts of Windows ECSs
 
 User data scripts of Windows ECSs are based on the open-source Cloudbase-Init architecture. This architecture uses ECS metadata as the data source for initializing and configuring the ECSs. User data scripts are compatible with the open-source Cloudbase-Init. For details about Cloudbase-Init, see https://cloudbase-init.readthedocs.io/en/latest/userdata.html.
 
--  Script types: batch-processing program and PowerShell scripts
+-  Script types: batch-processing programs and PowerShell scripts
 
    .. table:: **Table 2** Windows ECS script types
 
@@ -156,13 +156,13 @@ User data scripts of Windows ECSs are based on the open-source Cloudbase-Init ar
 
    #. Log in to the ECS.
 
-   #. In the address bar of a browser, access the following URL and view the user data:
+   #. In the address bar of a browser, access the following URL to view the user data:
 
       **http://169.254.169.254/openstack/latest/user_data**
 
 -  Script usage examples
 
-   The following describes how to inject scripts in different formats into Windows ECSs and view script execution results.
+   The following describes how to inject scripts in different formats into Windows ECSs and view the script execution results.
 
    **Example 1: Inject a batch-processing program script.**
 

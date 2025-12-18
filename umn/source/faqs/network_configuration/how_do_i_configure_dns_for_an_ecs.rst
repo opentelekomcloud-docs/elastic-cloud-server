@@ -5,27 +5,36 @@
 How Do I Configure DNS for an ECS?
 ==================================
 
-A DNS server is used to resolve domain names of file systems. The DNS server IP address is 100.125.4.25.
-
 Scenarios
 ---------
 
-By default, the IP address of the DNS server used to resolve domain names of file systems is automatically configured on ECSs when creating ECSs. No manual configuration is needed except when the resolution fails due to a change in the DNS server IP address.
+Configure a DNS server for resolving the domain name of an ECS. By default, the IP address of the DNS server is automatically configured when an ECS is created. No manual configuration is needed except when the resolution fails due to a change in the DNS server IP address.
 
-Windows Server 2012 is used as an example in the operation procedures for Windows.
+The DNS server IP address is 100.125.4.25.
+
+You can configure DNS for an ECS as follows:
+
+-  (Recommended) Change the DNS server address of the subnet to which the ECS belongs.
+-  Change the DNS server address in the ECS OS.
+
+   -  :ref:`Procedure (Linux) <en-us_topic_0198270920__en-us_topic_0054116434_section60237810114859>`
+   -  :ref:`Procedure (Windows) <en-us_topic_0198270920__en-us_topic_0054116434_section75976550455>`
+
+.. _en-us_topic_0198270920__en-us_topic_0054116434_section60237810114859:
 
 Procedure (Linux)
 -----------------
+
+This section uses CentOS 7.5 as an example.
 
 #. Log in to the ECS as user **root**.
 
 #. .. _en-us_topic_0198270920__en-us_topic_0054116434_li13553756203149:
 
-   Run the **vi /etc/resolv.conf** command to edit the **/etc/resolv.conf** file. Add the DNS server IP address above the existing nameserver information. See :ref:`Figure 1 <en-us_topic_0198270920__en-us_topic_0054116434_fig3735131720121>`.
+   Run the **vi /etc/resolv.conf** command to edit the **/etc/resolv.conf** file. Add the DNS server IP address above the existing nameserver information.
 
-   .. _en-us_topic_0198270920__en-us_topic_0054116434_fig3735131720121:
 
-   .. figure:: /_static/images/en-us_image_0078780345.png
+   .. figure:: /_static/images/en-us_image_0000002348468029.png
       :alt: **Figure 1** Configuring DNS
 
       **Figure 1** Configuring DNS
@@ -68,13 +77,17 @@ Procedure (Linux)
 
       .. _en-us_topic_0198270920__en-us_topic_0054116434_fig46855620155120:
 
-      .. figure:: /_static/images/en-us_image_0058331748.png
+      .. figure:: /_static/images/en-us_image_0000002314549168.png
          :alt: **Figure 2** A locked file
 
          **Figure 2** A locked file
 
+.. _en-us_topic_0198270920__en-us_topic_0054116434_section75976550455:
+
 Procedure (Windows)
 -------------------
+
+This section uses Windows Server 2012 as an example.
 
 #. Go to the ECS console and log in to the ECS running Windows Server 2012.
 
@@ -84,7 +97,7 @@ Procedure (Windows)
 
    .. _en-us_topic_0198270920__en-us_topic_0054116434_fig11811485719:
 
-   .. figure:: /_static/images/en-us_image_0110762886.png
+   .. figure:: /_static/images/en-us_image_0000002314389356.png
       :alt: **Figure 3** Page for network and sharing center
 
       **Figure 3** Page for network and sharing center
@@ -93,7 +106,7 @@ Procedure (Windows)
 
    .. _en-us_topic_0198270920__en-us_topic_0054116434_fig18980173031015:
 
-   .. figure:: /_static/images/en-us_image_0110763434.png
+   .. figure:: /_static/images/en-us_image_0000002348348273.png
       :alt: **Figure 4** Local area connection
 
       **Figure 4** Local area connection
@@ -102,7 +115,7 @@ Procedure (Windows)
 
    .. _en-us_topic_0198270920__en-us_topic_0054116434_fig146301518171620:
 
-   .. figure:: /_static/images/en-us_image_0110764366.png
+   .. figure:: /_static/images/en-us_image_0000002348468089.png
       :alt: **Figure 5** Local area connection properties
 
       **Figure 5** Local area connection properties
@@ -111,7 +124,7 @@ Procedure (Windows)
 
    .. _en-us_topic_0198270920__en-us_topic_0054116434_fig82464042713:
 
-   .. figure:: /_static/images/en-us_image_0110765557.png
+   .. figure:: /_static/images/en-us_image_0000002314549180.png
       :alt: **Figure 6** Configuring DNS on Windows
 
       **Figure 6** Configuring DNS on Windows

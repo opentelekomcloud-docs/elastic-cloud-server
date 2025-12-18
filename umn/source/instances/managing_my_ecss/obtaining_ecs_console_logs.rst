@@ -132,13 +132,13 @@ Procedure
 
    a. Log in to the management console.
 
-   b. Click |image1| in the upper left corner and select your region and project.
+   b. Click |image1| in the upper left corner and select a region and project.
 
    c. Under **Computing**, click **Elastic Cloud Server**.
 
    d. On the **Elastic Cloud Server** page, click the name of the target ECS.
 
-   e. On the page providing details about the ECS, click the **Console Logs** tab.
+   e. On the ECS details page, click the **Console Logs** tab.
 
    f. Choose the number of lines to be displayed for a log from the **Displayed Lines** drop-down list.
 
@@ -159,4 +159,4 @@ Related Links
 
 :ref:`Why Does the System Display a Question Mark When I Attempt to Obtain Console Logs? <en-us_topic_0088241338>`
 
-.. |image1| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

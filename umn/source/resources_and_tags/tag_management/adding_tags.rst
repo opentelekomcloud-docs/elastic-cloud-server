@@ -7,7 +7,7 @@ Adding Tags
 
 Tags are used to identify cloud resources, such as ECSs, images, and disks. If you have multiple types of cloud resources which are associated with each other, you can add tags to the resources to classify and manage them easily. For more details, see :ref:`Overview <en-us_topic_0092499768>`.
 
-You can add tags to an ECS in any of the following ways:
+You can add tags to ECSs in the following ways:
 
 -  :ref:`Adding Tags During ECS Creation <en-us_topic_0183019669__section619816351650>`
 -  :ref:`Adding Tags on the ECS Details Page <en-us_topic_0183019669__section15164103015253>`
@@ -24,7 +24,7 @@ Adding Tags During ECS Creation
 
 #. Click |image1| in the upper left corner and select a region and project.
 
-#. Choose Computing > Elastic Cloud Server. The **Elastic Cloud Server** page is displayed.
+#. Under **Computing**, click **Elastic Cloud Server**. The **Elastic Cloud Server** page is displayed.
 
 #. Click **Create** **ECS**.
 
@@ -51,7 +51,7 @@ Adding Tags on the ECS Details Page
 
 #. Click |image2| in the upper left corner and select a region and project.
 
-#. Choose Computing > Elastic Cloud Server. The **Elastic Cloud Server** page is displayed.
+#. Under\ **Computing**, click **Elastic Cloud Server**. The **Elastic Cloud Server** page is displayed.
 
 #. In the ECS list, click the name of the target ECS.
 
@@ -110,7 +110,7 @@ If you want to add the same tag to multiple ECSs or other resources, you can cre
 #. Choose **Predefined Tags** in the left navigation pane and click **Create Tag**. In the displayed dialog box, enter a key (for example, **project**) and a value (for example, **A**).
 #. Choose **Computing** > **Elastic Cloud Server** from the service list and select the predefined tag keys and values.
 
-.. |image1| image:: /_static/images/en-us_image_0000002357852357.png
-.. |image2| image:: /_static/images/en-us_image_0000002324093702.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png
+.. |image2| image:: /_static/images/en-us_image_0000002188678994.png
 .. |image3| image:: /_static/images/en-us_image_0210875481.png
 .. |image4| image:: /_static/images/en-us_image_0210875480.png

@@ -39,4 +39,4 @@ Procedure
 
 #. Click **OK** to delete the password.
 
-.. |image1| image:: /_static/images/en-us_image_0000002323933926.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

@@ -10,7 +10,7 @@ Scenarios
 
 After obtaining ECSs, you can view and manage them on the management console. This section describes how to view ECS configuration details, including its name, image, system disk, data disks, VPC, network interfaces, security group, EIP address, and bandwidth.
 
-To view the private IP address of an ECS, view it on the **Elastic Cloud Server** page.
+To view the private IP address of an ECS, go to the ECS list page.
 
 Procedure
 ---------
@@ -27,10 +27,10 @@ Procedure
 
 #. Click the name of the target ECS.
 
-   The page providing details about the ECS is displayed.
+   The ECS details page is displayed.
 
 #. View the ECS details.
 
    You can click the tabs and perform operations. For details, see :ref:`Changing a Security Group <en-us_topic_0093492517>`, :ref:`Attaching a Network Interface <en-us_topic_0093492518>`, :ref:`Adding Tags <en-us_topic_0183019669>`, and :ref:`Binding an EIP <en-us_topic_0174917535>`.
 
-.. |image1| image:: /_static/images/en-us_image_0000002357881713.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

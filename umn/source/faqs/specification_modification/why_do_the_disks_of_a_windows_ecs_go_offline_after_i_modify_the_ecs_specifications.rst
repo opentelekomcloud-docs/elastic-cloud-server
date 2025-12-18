@@ -15,7 +15,7 @@ Procedure
 
 #. Check whether the number of disks displayed on the **Computer** page after you modified ECS specifications is the same as the number of disks before you modified ECS specifications.
 
-   -  If the numbers are the same, the status of the disks is properly. No further action is required.
+   -  If the numbers are the same, the disks are properly mounted. No further action is required.
    -  If the numbers are different, the disks are offline. In this case, go to step :ref:`2 <en-us_topic_0214940105__en-us_topic_0100593628_li1476865113179>`.
 
    For example:

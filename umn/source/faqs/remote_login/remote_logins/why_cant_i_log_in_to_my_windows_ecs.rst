@@ -8,9 +8,9 @@ Why Can't I Log In to My Windows ECS?
 Symptom
 -------
 
-A Windows ECS fails to be logged in to due to some reasons. For example, the network is abnormal, the firewall does not allow access to the local port for accessing the remote desktop, or the ECS vCPUs are overloaded.
+A Windows ECS fails to be logged in to due to some reasons. For example, the network is abnormal, the firewall blocks the local port required for remote desktop, or the ECS vCPUs are overloaded.
 
-This section describes how to troubleshoot login failures on a Windows ECS.
+This section describes how to troubleshoot Windows ECS login failures.
 
 If you cannot log in to your Windows ECS, follow the instructions provided in :ref:`Checking the VNC Login <en-us_topic_0018073217__section16351720103416>`. Then, locate the login fault by referring to :ref:`Fault Locating <en-us_topic_0018073217__section51421019195617>`.
 
@@ -48,7 +48,7 @@ If the VNC login still fails, record the resource details and fault occurred tim
 Fault Locating
 --------------
 
-If you can log in to the ECS using VNC but cannot log in to the ECS using a remote desktop connection, locate the fault as follows.
+If you can log in to the ECS using VNC but cannot log in to it using a remote desktop connection, locate the fault by referring to this section.
 
 The following fault causes are sequenced based on their occurrence probability.
 
@@ -108,7 +108,7 @@ Check the login mode you set when you created the ECS.
 
    **Figure 4** Login Mode
 
--  **Key pair**: If your ECS is authenticated using a key pair, use the key pair to obtain a password before login.
+-  **Key pair**: If your ECS is authenticated using a key pair, use the key pair to obtain a password before logging in.
 
    #. Locate the ECS whose password is to be obtained, choose **More** > **Get Password** in the **Operation** column.
    #. Copy the content of the private key file and paste it into the text box. Click **Get Password** to obtain a new random password.

@@ -21,7 +21,7 @@ Procedure
 
 #. Click the name of the ECS to which you want to attach a network interface.
 
-   The page providing details about the ECS is displayed.
+   The ECS details page is displayed.
 
 #. On the **Network Interfaces** tab, click **Attach Network Interface**.
 
@@ -43,7 +43,7 @@ Procedure
          **Figure 1** Configuring the subnet and security group
 
       -  **Subnet**: the subnet that the network interface belongs to.
-      -  **New Private IP Address**: If you want to add a network interface with a specified IP address, enter an IP address into the **Private IP Address** field.
+      -  **New Private IP Address**: If you want to add a network interface with a specified IP address, enter an IP address into the **New Private IP Address** field.
       -  **Security Group**: You can select multiple security groups. In such a case, the access rules of all the selected security groups will apply to the ECS.
 
 #. Click **OK**.
@@ -98,11 +98,11 @@ Some OSs cannot identify newly attached network interfaces. In this case, you ne
 
 #. .. _en-us_topic_0093492518__li1695469165210:
 
-   Log in to the management console. Locate the row containing the target ECS, click **More** in the **Operation** column, and select **Restart**.
+   Log in to the management console. On the ECS list page, locate the row that contains the target ECS and choose **More** > **Restart** in the **Operation** column.
 
-#. Run **ifconfig** again to check whether the network interface name obtained in step :ref:`2 <en-us_topic_0093492518__li595089165210>` is displayed in the command output:
+#. Run **ifconfig** again to check whether the network interface name obtained in step :ref:`2 <en-us_topic_0093492518__li595089165210>` is displayed in the command output.
 
    -  If yes, no further action is required.
    -  If no, contact customer service.
 
-.. |image1| image:: /_static/images/en-us_image_0000002323933950.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

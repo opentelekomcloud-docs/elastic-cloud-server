@@ -8,7 +8,7 @@ Creating Alarm Rules
 Scenarios
 ---------
 
-You can set alarm rules and notifications for ECSs. This helps you learn about ECS statuses and receive alarm notifications (if any) in a timely manner.
+You can set alarm rules and notifications for ECSs. This helps you learn about ECS statuses and receive alarm notifications in a timely manner.
 
 This section describes how to set ECS alarm rules.
 
@@ -19,7 +19,7 @@ Procedure
 
 #. Click |image1| in the upper left corner and select a region and project.
 
-#. Under **Management & Deployment**, choose **Cloud Eye**.
+#. Under **Management & Deployment**, click **Cloud Eye**.
 
 #. In the navigation pane on the left, choose **Alarm Management** > **Alarm Rules**.
 
@@ -31,7 +31,7 @@ Procedure
 
    b. Click **Modify** in the upper right corner of the page.
 
-   c. In the **Modify Alarm Rule** dialog box shown in :ref:`Figure 1 <en-us_topic_0027371531__fig5398007222382>`, set the parameters as prompted.
+   c. In the **Modify Alarm Rule** dialog box shown in :ref:`Figure 1 <en-us_topic_0027371531__fig5398007222382>`, set parameters as required.
 
       .. _en-us_topic_0027371531__fig5398007222382:
 
@@ -48,4 +48,4 @@ Procedure
 
       For more information about ECS alarm rules, see *Cloud Eye User Guide*.
 
-.. |image1| image:: /_static/images/en-us_image_0000002358056069.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

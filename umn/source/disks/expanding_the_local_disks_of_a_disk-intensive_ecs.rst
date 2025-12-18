@@ -19,7 +19,7 @@ Procedure
 
    `Create an EVS disk <https://docs.otc.t-systems.com/usermanual/evs/en-us_topic_0021738346.html>`__ according to the volume of data to be migrated.
 
-#. Attach the EVS disk created in :ref:`1 <en-us_topic_0037470901__li29205763161240>` to the disk-intensive ECS for which you want to expand the capacity.
+#. Attach the EVS disk created in step :ref:`1 <en-us_topic_0037470901__li29205763161240>` to the disk-intensive ECS for which you want to expand the capacity.
 
 #. Back up local disk data.
 

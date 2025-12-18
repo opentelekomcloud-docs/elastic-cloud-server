@@ -35,6 +35,6 @@ Changing the Name of a Single ECS
 
 #. Click |image3|.
 
-.. |image1| image:: /_static/images/en-us_image_0000002357881773.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png
 .. |image2| image:: /_static/images/en-us_image_0000001710878525.png
 .. |image3| image:: /_static/images/en-us_image_0000001705857469.png

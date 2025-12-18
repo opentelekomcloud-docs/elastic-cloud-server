@@ -73,9 +73,9 @@ The following uses Ubuntu 20.04 64bit as an example to describe how to install t
 
 
    .. figure:: /_static/images/en-us_image_0000002114600494.png
-      :alt: **Figure 1** Selecting a NVIDIA driver version
+      :alt: **Figure 1** Selecting the NVIDIA driver
 
-      **Figure 1** Selecting a NVIDIA driver version
+      **Figure 1** Selecting the NVIDIA driver
 
 #. Select a driver version as required. The following uses Tesla 418.67 as an example.
 

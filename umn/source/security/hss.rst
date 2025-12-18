@@ -40,7 +40,7 @@ How Do I Check Host Security Statuses?
 On the **Server** tab, you can view the ECS security statuses in the current region.
 
 #. Log in to the management console.
-#. Click |image1| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select a region and project.
 #. Click |image2| and choose **Security** > **Host Security Service**.
 #. Choose **Asset Management** > **Servers & Quota** and go to the **Servers** tab to view the protection status of the target servers.
 
@@ -68,6 +68,6 @@ On the **Server** tab, you can view the ECS security statuses in the current reg
 
 For more details, see `What Is HSS? <https://docs.otc.t-systems.com/host-security-service/umn/introduction/index.html>`__
 
-.. |image1| image:: /_static/images/en-us_image_0244226509.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png
 .. |image2| image:: /_static/images/en-us_image_0000001526737785.jpg
 .. |image3| image:: /_static/images/en-us_image_0000002039480781.png

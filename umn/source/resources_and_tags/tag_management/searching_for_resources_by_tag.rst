@@ -47,4 +47,4 @@ Filtering Resources on the TMS Console
 
    All the resources that meet the search criteria will be displayed in the **Search Result** area.
 
-.. |image1| image:: /_static/images/en-us_image_0000002357932473.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

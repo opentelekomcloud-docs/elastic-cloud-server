@@ -21,7 +21,7 @@ There are two ways to expand a system disk:
 Procedure
 ---------
 
-This section uses an ECS running CentOS 7.3 64bit as an example. A 60 GB system disk was created with the ECS. However, the capacity of the system disk partition is displayed as only 40 GB.
+This section uses an ECS running CentOS 7.3 64-bit as an example. A 60 GB system disk was created with the ECS. However, the capacity of the system disk partition is displayed as only 40 GB.
 
 To use the 20 GB capacity, performing the following operations:
 
@@ -225,7 +225,7 @@ To use the 20 GB capacity, performing the following operations:
 
    If you do not set automatic mounting upon system startup, you must mount the new partition to the specified directory again after the ECS is restarted.
 
-   -  If automatic mounting is required, go to :ref:`7 <en-us_topic_0076210995__li51885379162851>`.
+   -  If automatic mounting is required, go to step :ref:`7 <en-us_topic_0076210995__li51885379162851>`.
    -  If automatic mounting is not required, no further action is required.
 
 #. .. _en-us_topic_0076210995__li51885379162851:

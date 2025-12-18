@@ -29,7 +29,7 @@ The file in the **/etc/pam.d/** directory was modified by mistake.
 Solution
 --------
 
-#. Enter the single-user mode.
+#. Enter single-user mode.
 
    The following uses CentOS 7 as an example:
 

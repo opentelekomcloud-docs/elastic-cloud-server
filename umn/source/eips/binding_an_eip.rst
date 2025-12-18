@@ -21,12 +21,12 @@ Procedure
 
 #. On the **Elastic Cloud Server** page, click the name of the target ECS.
 
-   The page providing details about the ECS is displayed.
+   The ECS details page is displayed.
 
 #. On the **EIPs** tab, click **Bind EIP**.
 
 
-   .. figure:: /_static/images/en-us_image_0000002351515476.png
+   .. figure:: /_static/images/en-us_image_0000002493552933.png
       :alt: **Figure 1** EIPs
 
       **Figure 1** EIPs
@@ -45,4 +45,4 @@ Procedure
 
    View the bound EIP on the **EIPs** tab.
 
-.. |image1| image:: /_static/images/en-us_image_0000002357852409.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

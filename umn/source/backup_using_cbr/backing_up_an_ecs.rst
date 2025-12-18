@@ -22,9 +22,9 @@ ECS Backup Procedure
 
 #. Log in to the management console.
 
-#. Click |image1| in the upper left corner and select your region and project.
+#. Click |image1| in the upper left corner and select a region and project.
 
-#. Under **Computing**, choose **Elastic Cloud Server**.
+#. Under **Computing**, click **Elastic Cloud Server**.
 
 #. In the ECS list, locate the target ECS and choose **More** > **Manage Image/Backup** > **Create Server Backup**.
 
@@ -45,16 +45,16 @@ ECS Backup Procedure
 
    The ECS can be restarted if the backup progress of an ECS exceeds 10%. However, to ensure data integrity, restart it after the backup is complete.
 
-   After the backup is complete, you can restore server data or create images on the **Backups** tab page. For details, see `Restoring from a Cloud Server Backup <https://docs.otc.t-systems.com/cloud-backup-recovery/umn/restoring_data/restoring_from_a_cloud_server_backup.html>`__ and `Using a Backup to Create an Image <https://docs.otc.t-systems.com/cloud-backup-recovery/umn/backup_management/using_a_backup_to_create_an_image.html>`__.
+   After the backup is complete, you can restore server data or create images on the **Backups** tab page. For details, see `Restoring from a Cloud Server Backup <https://docs.otc.t-systems.com/en-us/usermanual/cbr/cbr_03_0032.html>`__ and `Creating an Image from a Cloud Server Backup <https://docs.otc.t-systems.com/en-us/usermanual/cbr/cbr_03_0016.html>`__.
 
 EVS Disk Backup Procedure
 -------------------------
 
 #. Log in to the management console.
 
-#. Click |image2| in the upper left corner and select your region and project.
+#. Click |image2| in the upper left corner and select a region and project.
 
-#. Under **Computing**, choose **Elastic Cloud Server**.
+#. Under **Computing**, click **Elastic Cloud Server**.
 
 #. In the ECS list, locate the target ECS and choose **More** > **Manage Image/Backup** > **Create Disk Backup**.
 
@@ -77,6 +77,6 @@ EVS Disk Backup Procedure
 
    After the backup is complete, you can restore disk data on the **Backups** tab page. For details, see `Restoring from a Cloud Disk Backup <https://docs.otc.t-systems.com/cloud-backup-recovery/umn/restoring_data/restoring_from_a_cloud_disk_backup.html>`__.
 
-.. |image1| image:: /_static/images/en-us_image_0210779229.png
-.. |image2| image:: /_static/images/en-us_image_0210779229.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png
+.. |image2| image:: /_static/images/en-us_image_0000002188678994.png
 .. |image3| image:: /_static/images/en-us_image_0000001128656892.png

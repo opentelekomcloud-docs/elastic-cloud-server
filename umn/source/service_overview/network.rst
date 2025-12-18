@@ -51,9 +51,9 @@ Your account automatically comes with a default security group. The default secu
 EIP
 ---
 
-The Elastic IP (EIP) service enables your cloud resources to communicate with the Internet using static public IP addresses and scalable bandwidths. EIPs can be bound to or unbound from ECSs, BMSs, virtual IP addresses, NAT gateways or load balancers.
+The Elastic IP (EIP) service enables your cloud resources to communicate with the Internet using static public IP addresses and scalable bandwidths. EIPs can be bound to or unbound from ECSs, BMSs, virtual IP addresses, NAT gateways, or load balancers.
 
-Each EIP can be used by only one cloud resource at a time.
+Each EIP can be used by only one cloud resource at a time. An EIP must be in the same region as the resource it is bound to. Cross-region EIP bounding is not supported.
 
 
 .. figure:: /_static/images/en-us_image_0178890066.png
@@ -66,14 +66,14 @@ Network QoS
 
 Network QoS uses basic technologies to improve the quality of network communication. A network with QoS enabled offers predictable network performance and effectively allocates network bandwidth to use network resources.
 
-To obtain the QoS data of an ECS flavor, including the maximum bandwidth, assured bandwidth, maximum packets per second (PPS), and NIC multi-queue, see :ref:`A Summary List of ECS Specifications <en-us_topic_0177512565>`.
+For details about the QoS data of an ECS flavor, including the maximum/assured network bandwidth (Gbit/s), maximum network PPS, and maximum NIC queues, see :ref:`A Summary List of ECS Specifications <en-us_topic_0177512565>`.
 
 The intranet bandwidth and PPS of an ECS are determined by its flavor.
 
--  Assured intranet bandwidth: indicates the guaranteed bandwidth allocated to an ECS.
--  Maximum intranet bandwidth: indicates the maximum bandwidth that can be allocated to an ECS.
--  Maximum intranet PPS: indicates the maximum ECS capability in transmitting and receiving packets.
--  NIC multi-queue: allocates NIC interrupt requests to multiple vCPUs for higher PPS performance and bandwidth.
+-  Assured network bandwidth: indicates the guaranteed bandwidth allocated to an ECS.
+-  Maximum network bandwidth: indicates the maximum bandwidth that can be allocated to an ECS.
+-  Maximum network PPS: indicates the maximum ECS capability in transmitting and receiving packets.
+-  NIC multi-queue: allocates NIC interrupt requests to multiple CPUs for higher PPS performance and bandwidth.
 
    .. note::
 
@@ -82,17 +82,17 @@ The intranet bandwidth and PPS of an ECS are determined by its flavor.
 
 **Use case of network QoS:**
 
-All ECSs of the same hypervisor share the network QoS. There is a hypervisor bucket within the host between the ECS and the hypervisor. So packets from ECSs pass through the bucket to the hypervisor. The bucket size (GB) is determined by the ECS flavor.
+All ECSs of the same hypervisor share the network QoS. There is a hypervisor bucket within the host between the ECS and the hypervisor. So packets from ECSs pass through the bucket to the hypervisor. The bucket size is determined by the ECS flavor.
 
 For example, if the maximum bandwidth of a hypervisor bucket is 10 Gbit/s and will be shared by ECS 1 and ECS 2, the assured bandwidth of ECS 1 is 5 Gbit/s and that of ECS 2 is 1 Gbit/s. ECS 1 and ECS 2 share the bandwidth of 10 Gbit/s.
 
--  If the bandwidth required by ECS 1 is 10 Gbit/s and that required by ECS 2 is 0 Gbit/s, all bandwidths are allocated to ECS 1.
--  If the bandwidth required by ECS 1 is 10 Gbit/s and that required by ECS 2 is 1 Gbit/s, the bandwidth allocated to ECS 1 is 9 Gbit/s and that allocated to ECS 2 is 1 Gbit/s.
--  If the total bandwidth required by ECS 1 and ECS 2 exceeds the bandwidth of the hypervisor bucket, the assured bandwidth will be allocated to the ECSs first, that is the bandwidth for ECS 1 is 5 Gbit/s and that for ECS 2 is 1 Gbit/s. The remaining 4 Gbit/s of bandwidth will be randomly used by the two ECSs.
+-  If the bandwidth required by ECS 1 is 10 GB/s and that required by ECS 2 is 0 GB/s, all bandwidths are allocated to ECS 1.
+-  If the bandwidth required by ECS 1 is 10 GB/s and that required by ECS 2 is 1 GB/s, the bandwidth allocated to ECS 1 is 9 GB/s and that allocated to ECS 2 is 1 GB/s.
+-  If the total bandwidth required by ECS 1 and ECS 2 exceeds the bandwidth of the hypervisor bucket, the assured bandwidth will be allocated to the ECSs first, that is the bandwidth for ECS 1 is 5 GB/s and that for ECS 2 is 1 GB/s. The remaining 4 GB/s of bandwidth will be randomly used by the two ECSs.
 
 Network QoS:
 
--  The maximum/assured bandwidth is completely independent of the EIP bandwidth.
+-  The maximum/assured network bandwidth is completely independent of the EIP bandwidth.
 -  ECSs of the same hypervisor share the total bandwidth of the hypervisor.
 -  Network QoS applies for both private and public network bandwidth.
 -  Network QoS has been applied to the existing KVM-based ECSs.

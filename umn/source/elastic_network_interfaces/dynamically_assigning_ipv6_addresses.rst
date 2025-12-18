@@ -13,7 +13,7 @@ IPv6 addresses are used to deal with IPv4 address exhaustion. If an ECS uses an 
 In some cases, an ECS cannot dynamically acquire an IPv6 address even if it meets all the requirements in :ref:`Constraints <en-us_topic_0140963099__en-us_topic_0129883696_section196731247131618>`. You need to configure the ECS to dynamically acquire IPv6 addresses. For public images:
 
 -  By default, dynamic IPv6 address assignment is enabled for Windows public images. You do not need to configure it. The operations in :ref:`Windows Server 2012 <en-us_topic_0140963099__en-us_topic_0129883696_section0206266172>` are for your reference only.
--  Before enabling dynamic IPv6 address assignment for a Linux public image, check whether IPv6 has been enabled and then whether dynamic IPv6 address assignment has been enabled. Currently, IPv6 is enabled for all Linux public images.
+-  By default, Linux public images support the IPv6 protocol stack. You need to check whether dynamic assignment of IPv6 addresses is enabled. If not, enable it by referring to :ref:`Linux (Automatically Enabling Dynamic Assignment of IPv6 Addresses) <en-us_topic_0140963099__en-us_topic_0129883696_section106971627556>` and :ref:`Linux (Manually Enabling Dynamic Assignment of IPv6 Addresses) <en-us_topic_0140963099__en-us_topic_0129883696_section7426172116710>`.
 
 .. _en-us_topic_0140963099__en-us_topic_0129883696_section196731247131618:
 
@@ -24,7 +24,7 @@ Constraints
 
    If IPv6 is not enabled, enable it by referring to :ref:`Enabling IPv6 for an ECS <en-us_topic_0140963099__en-us_topic_0129883696_section1967161905116>`. Once enabled, IPv6 cannot be disabled.
 
--  Ensure that the ECS flavor supports IPv6. Currently, S3, C4, and M4 ECSs support IPv6.
+-  Ensure that the ECS flavor supports IPv6. Currently, C4, M4, and S3 ECSs support IPv6.
 
 -  Ensure that **Automatically-assigned IPv6 address** is selected during ECS creation.
 
@@ -66,7 +66,7 @@ Enabling IPv6 for an ECS
 
 #. Log in to the management console.
 
-2. Click |image1| in the upper left corner and select the desired region and project.
+2. Click |image1| in the upper left corner and select a region and project.
 
 3. Under **Computing**, click **Elastic Cloud Server**.
 
@@ -108,7 +108,7 @@ Windows Server 2012
 
          **Figure 1** Querying the IPv6 address
 
-   -  If only a link-local IPv6 address is displayed, IPv6 is enabled but dynamic IPv6 assignment is not enabled. Go to :ref:`2 <en-us_topic_0140963099__en-us_topic_0129883696_li2024825592115>`.
+   -  If only a link-local IPv6 address is displayed, IPv6 is enabled but dynamic IPv6 assignment is not enabled. Go to step :ref:`2 <en-us_topic_0140963099__en-us_topic_0129883696_li2024825592115>`.
 
 
       .. figure:: /_static/images/en-us_image_0000001723492302.png
@@ -116,7 +116,7 @@ Windows Server 2012
 
          **Figure 2** Link-local IPv6 address
 
-   -  If neither an IPv6 address nor link-local IPv6 address is displayed, IPv6 is disabled. Go to :ref:`3 <en-us_topic_0140963099__en-us_topic_0129883696_li35521349132511>`.
+   -  If neither an IPv6 address nor link-local IPv6 address is displayed, IPv6 is disabled. Go to step :ref:`3 <en-us_topic_0140963099__en-us_topic_0129883696_li35521349132511>`.
 
 
       .. figure:: /_static/images/en-us_image_0000001771211453.png
@@ -154,7 +154,7 @@ Windows Server 2012
 
          **Figure 5** Configuring dynamic IPv6 address assignment
 
-   f. Perform :ref:`1 <en-us_topic_0140963099__en-us_topic_0129883696_li64771254152011>` to check whether dynamic IPv6 address assignment is enabled.
+   f. Perform step :ref:`1 <en-us_topic_0140963099__en-us_topic_0129883696_li64771254152011>` to check whether dynamic IPv6 address assignment is enabled.
 
 #. .. _en-us_topic_0140963099__en-us_topic_0129883696_li35521349132511:
 
@@ -178,7 +178,7 @@ Windows Server 2012
 
       **Set-NetIPv6Protocol -RandomizeIdentifiers disabled**
 
-   c. Perform :ref:`1 <en-us_topic_0140963099__en-us_topic_0129883696_li64771254152011>` to check whether dynamic IPv6 address assignment is enabled.
+   c. Perform step :ref:`1 <en-us_topic_0140963099__en-us_topic_0129883696_li64771254152011>` to check whether dynamic IPv6 address assignment is enabled.
 
 .. _en-us_topic_0140963099__en-us_topic_0129883696_section106971627556:
 
@@ -482,7 +482,7 @@ Linux (Manually Enabling Dynamic Assignment of IPv6 Addresses)
 
             If no IPv6 address is assigned after the NICs are brought down and up, you can run this command to restart the network.
 
-      d. Perform :ref:`1 <en-us_topic_0140963099__en-us_topic_0129883696_li967053013012>` to check whether dynamic IPv6 address assignment is enabled.
+      d. Perform step :ref:`1 <en-us_topic_0140963099__en-us_topic_0129883696_li967053013012>` to check whether dynamic IPv6 address assignment is enabled.
 
    -  CentOS, EulerOS, or Fedora
 
@@ -526,7 +526,7 @@ Linux (Manually Enabling Dynamic Assignment of IPv6 Addresses)
 
                **Figure 18** Example command
 
-      d. (Optional) For CentOS 7/CentOS 8, change the IPv6 link-local address mode of extension NICs to EUI64.
+      d. (Optional) For CentOS 7/CentOS 8/openEuler, change the IPv6 link-local address mode of extension NICs to EUI64.
 
          #. Run the following command to query the NIC information:
 
@@ -558,11 +558,11 @@ Linux (Manually Enabling Dynamic Assignment of IPv6 Addresses)
 
             **service network restart**
 
-         #. For CentOS 7/EulerOS/Fedora, run the following command to restart the network service:
+         #. For CentOS 7/EulerOS/Fedora/openEuler, run the following command to restart the network service:
 
             **systemctl restart NetworkManager**
 
-      f. Perform :ref:`1 <en-us_topic_0140963099__en-us_topic_0129883696_li967053013012>` to check whether dynamic IPv6 address assignment is enabled.
+      f. Perform step :ref:`1 <en-us_topic_0140963099__en-us_topic_0129883696_li967053013012>` to check whether dynamic IPv6 address assignment is enabled.
 
    -  SUSE, openSUSE, or CoreOS
 
@@ -636,4 +636,4 @@ After automatic IPv6 address assignment is configured on an ECS running CentOS 6
 
    #. Press **i** to enter editing mode and change **TimeoutStartSec=5min** to **TimeoutStartSec=30**.
 
-.. |image1| image:: /_static/images/en-us_image_0000001771211441.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

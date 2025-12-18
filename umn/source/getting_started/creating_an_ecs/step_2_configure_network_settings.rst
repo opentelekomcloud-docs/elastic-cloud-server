@@ -45,7 +45,7 @@ Network Settings
       -  Port: 80
       -  Destination: 169.254.0.0/16
 
-      If you use the default security group rules for the outbound direction, the preceding requirements are met, and the ECS can be initialized. The default security group rules for the outbound direction are as follows:
+      If you use the default security group rule listed below for the outbound direction, the preceding requirements are met, and the ECS can be initialized:
 
       -  Protocol & Port: All
       -  Port range: All ports

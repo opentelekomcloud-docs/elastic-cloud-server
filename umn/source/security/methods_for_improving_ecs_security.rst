@@ -103,7 +103,7 @@ Set CBR when purchasing an ECS. The system will associate the ECS with a cloud b
 -  Create new
 
    #. Enter the name of the cloud backup vault. The name consists of 1 to 64 characters. Only letters, digits, underscores (_), and hyphens (-) are allowed. For example, **vault-f61e**. The default naming rule is **vault\_**\ *xxxx*.
-   #. Enter the vault capacity, which is required for backing up the ECS. The vault capacity cannot be smaller than that of the ECS to be backed up. Its value ranges from the total capacity of the ECS to 10,485,760 in the unit of GB.
+   #. Enter the vault capacity, which is required for backing up the ECS. The vault capacity cannot be smaller than that of the ECS to be backed up. The value range is from the total capacity of the ECS to 10,485,760 in the unit of GiB.
    #. Select a backup policy from the drop-down list, or log in to the CBR console and configure a desired one.
 
 -  Use existing
@@ -129,7 +129,7 @@ Improving the Port Security
 
 You can use security groups to protect the network security of your ECSs. A security group controls inbound and outbound traffic for your ECSs. Inbound traffic originates from the outside to the ECS, while outbound traffic originates from the ECS to the outside.
 
-You can configure security group rules to grant access to or from specific ports. You are advised to disable high-risk ports and only enable necessary ports.
+You can :ref:`configure security group rules <en-us_topic_0030878383>` to grant access to or from specific ports. You are advised to disable high-risk ports and only enable necessary ports.
 
 :ref:`Table 2 <en-us_topic_0000001194242043__table34831117171>` lists common high-risk ports. You are advised to change these ports to non-high-risk ports.
 
