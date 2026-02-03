@@ -409,19 +409,19 @@ P5s ECSs use high-performance NVIDIA Tesla H100 PCIe to provide outstanding real
 
 **Specifications**
 
-.. table:: **Table 5** P5s ECS specifications
+.. table:: **Table 6** P5s ECS specifications
 
-   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+------------------+----------------+
-   | Flavor          | vCPUs | Memory (GiB) | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS (10,000) | Max. NIC Queues | Max. NICs | GPUs           | GPU Memory (GiB) | Virtualization |
-   +=================+=======+==============+=========================================+===========================+=================+===========+================+==================+================+
-   | p5s.5xlarge.12  | 20    | 240          | 16/4.5                                  | 280                       | 8               | 4         | 1 \* H100 PCIe | 80               | KVM            |
-   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+------------------+----------------+
-   | p5s.10xlarge.12 | 40    | 480          | 24/9                                    | 550                       | 16              | 8         | 2 \* H100 PCIe | 160              | KVM            |
-   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+------------------+----------------+
-   | p5s.20xlarge.12 | 80    | 960          | 32/18                                   | 750                       | 32              | 8         | 4 \* H100 PCIe | 320              | KVM            |
-   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+------------------+----------------+
-   | p5s.40xlarge.12 | 160   | 1920         | 40/36                                   | 850                       | 32              | 8         | 8 \* H100 PCIe | 640              | KVM            |
-   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+------------------+----------------+
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+---------------+------------------+----------------+
+   | Flavor          | vCPUs | Memory (GiB) | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS (10,000) | Max. NIC Queues | Max. NICs | GPUs          | GPU Memory (GiB) | Virtualization |
+   +=================+=======+==============+=========================================+===========================+=================+===========+===============+==================+================+
+   | p5s.5xlarge.12  | 20    | 240          | 16/4.5                                  | 280                       | 8               | 4         | 1 x H100 PCIe | 80               | KVM            |
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+---------------+------------------+----------------+
+   | p5s.10xlarge.12 | 40    | 480          | 24/9                                    | 550                       | 16              | 8         | 2 x H100 PCIe | 160              | KVM            |
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+---------------+------------------+----------------+
+   | p5s.20xlarge.12 | 80    | 960          | 32/18                                   | 750                       | 32              | 8         | 4 x H100 PCIe | 320              | KVM            |
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+---------------+------------------+----------------+
+   | p5s.40xlarge.12 | 160   | 1,920        | 40/36                                   | 850                       | 32              | 8         | 8 x H100 PCIe | 640              | KVM            |
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+---------------+------------------+----------------+
 
 **P5s ECS Features**
 
@@ -430,9 +430,9 @@ P5s ECSs use high-performance NVIDIA Tesla H100 PCIe to provide outstanding real
 -  Each GPU provides 80 GiB of GPU memory and 3,026 TFLOPS INT8 compute.
 -  The GPU memory bandwidth can reach up to 2,000 GB/s.
 
-**Supported Common Software**
+**Supported Software**
 
-P5s ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software is required to support GPU CUDA, use P5s ECSs. The following commonly used software is supported:
+P5s ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software is required to support GPU CUDA, use P5s ECSs. P5s ECSs support the following commonly used software:
 
 -  Common deep learning frameworks, such as TensorFlow, Spark, PyTorch, MXNet, and Caffe
 -  CUDA GPU rendering supported by RedShift for Autodesk 3ds Max and V-Ray for 3ds Max
@@ -458,7 +458,7 @@ P3 ECSs use NVIDIA A100 GPUs and provide flexibility and ultra-high-performance 
 
 **Specifications**
 
-.. table:: **Table 6** P3 ECS specifications
+.. table:: **Table 7** P3 ECS specifications
 
    +---------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+-----------------------+------------+----------------+
    | Flavor        | vCPUs | Memory | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS | Max. NIC Queues | Max. NICs | GPUs                  | GPU Memory | Virtualization |
@@ -520,10 +520,10 @@ P3 ECSs are used in computing acceleration scenarios, such as deep learning trai
 
    .. note::
 
-      Resources will be released after a P3 ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop it.
+      Resources will be released after a P3 ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
 
 -  If a P3 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
--  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
+-  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous compute. Their specifications can only be changed to other specifications of the same instance type.
 -  GPU-accelerated ECSs do not support live migration.
 
 .. _en-us_topic_0097289624__section1454714546567:
@@ -537,7 +537,7 @@ P2s ECSs use NVIDIA Tesla V100 GPUs to provide flexibility, high-performance com
 
 **Specifications**
 
-.. table:: **Table 7** P2s ECS specifications
+.. table:: **Table 8** P2s ECS specifications
 
    +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------+----------------+------------------+----------------+----------------------------------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS (10,000) | Max. NIC Queues | Max. NICs | GPUs     | GPU Connection | GPU Memory (GiB) | Virtualization | Hardware                                                 |
@@ -616,14 +616,14 @@ P2v ECSs use NVIDIA Tesla V100 GPUs and deliver high flexibility, high-performan
 
 **Specifications**
 
-.. table:: **Table 8** P2v ECS specifications
+.. table:: **Table 9** P2v ECS specifications
 
    +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------+----------------+------------+----------------+-------------------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS (10,000) | Max. NIC Queues | Max. NICs | GPUs     | GPU Connection | GPU Memory | Virtualization | Hardware                                  |
    |                |       |        |                                         |                           |                 |           |          |                |            |                |                                           |
    |                |       | (GiB)  |                                         |                           |                 |           |          |                | (GiB)      |                |                                           |
    +================+=======+========+=========================================+===========================+=================+===========+==========+================+============+================+===========================================+
-   | p2v.2xlarge.8  | 8     | 64     | 10/4                                    | 50                        | 4               | 4         | 1 x V100 | N/A            | 1 x 16 GiB | KVM            | CPU: Intel® Xeon® Skylake-SP Gold 6151 v5 |
+   | p2v.2xlarge.8  | 8     | 64     | 10/4                                    | 50                        | 4               | 4         | 1 x V100 | ``-``          | 1 x 16 GiB | KVM            | CPU: Intel® Xeon® Skylake-SP Gold 6151 v5 |
    +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------+----------------+------------+----------------+-------------------------------------------+
    | p2v.4xlarge.8  | 16    | 128    | 15/8                                    | 100                       | 8               | 8         | 2 x V100 | NVLink         | 2 x 16 GiB | KVM            |                                           |
    +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------+----------------+------------+----------------+-------------------------------------------+
@@ -696,7 +696,7 @@ Pi5e ECSs use NVIDIA Ada Lovelace L4 Tensor Core GPUs that are dedicated for rea
 
 **Specifications**
 
-.. table:: **Table 9** Pi5e ECS specifications
+.. table:: **Table 10** Pi5e ECS specifications
 
    +-----------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+
    | Flavor          | vCPUs | Memory | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS | Max. NIC Queues | Max. NICs | GPUs   | GPU Memory | Local Disks | Virtualization |
@@ -742,22 +742,22 @@ Pi2 ECSs use NVIDIA Tesla T4 GPUs dedicated for real-time AI inference. These EC
 
 **Specifications**
 
-.. table:: **Table 10** Pi2 ECS specifications
+.. table:: **Table 11** Pi2 ECS specifications
 
    +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Network Bandwidth | Max. Network PPS | Max. NIC Queues | Max. NICs | GPUs   | GPU Memory | Local Disks | Virtualization | Hardware                                                                         |
    |                |       |        |                                |                  |                 |           |        |            |             |                |                                                                                  |
    |                |       | (GiB)  | (Gbit/s)                       | (10,000)         |                 |           |        | (GiB)      |             |                |                                                                                  |
    +================+=======+========+================================+==================+=================+===========+========+============+=============+================+==================================================================================+
-   | pi2.2xlarge.4  | 8     | 32     | 10/4                           | 50               | 4               | 4         | 1 x T4 | 1 x 16 GiB | N/A         | KVM            | CPU: Intel® Xeon® Skylake 6151 3.0 GHz or Intel® Xeon® Cascade Lake 6278 2.6 GHz |
+   | pi2.2xlarge.4  | 8     | 32     | 10/4                           | 50               | 4               | 4         | 1 x T4 | 1 x 16 GiB | ``-``       | KVM            | CPU: Intel® Xeon® Skylake 6151 3.0 GHz or Intel® Xeon® Cascade Lake 6278 2.6 GHz |
    +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
-   | pi2.3xlarge.4  | 12    | 48     | 12/6                           | 80               | 6               | 6         | 1 x T4 | 1 x 16 GiB | N/A         | KVM            |                                                                                  |
+   | pi2.3xlarge.4  | 12    | 48     | 12/6                           | 80               | 6               | 6         | 1 x T4 | 1 x 16 GiB | ``-``       | KVM            |                                                                                  |
    +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
-   | pi2.4xlarge.4  | 16    | 64     | 15/8                           | 100              | 8               | 8         | 2 x T4 | 2 x 16 GiB | N/A         | KVM            |                                                                                  |
+   | pi2.4xlarge.4  | 16    | 64     | 15/8                           | 100              | 8               | 8         | 2 x T4 | 2 x 16 GiB | ``-``       | KVM            |                                                                                  |
    +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
-   | pi2.8xlarge.4  | 32    | 128    | 25/15                          | 200              | 16              | 8         | 4 x T4 | 4 x 16 GiB | N/A         | KVM            |                                                                                  |
+   | pi2.8xlarge.4  | 32    | 128    | 25/15                          | 200              | 16              | 8         | 4 x T4 | 4 x 16 GiB | ``-``       | KVM            |                                                                                  |
    +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
-   | pi2.16xlarge.4 | 64    | 256    | 30/30                          | 400              | 32              | 8         | 8 x T4 | 8 x 16 GiB | N/A         | KVM            |                                                                                  |
+   | pi2.16xlarge.4 | 64    | 256    | 30/30                          | 400              | 32              | 8         | 8 x T4 | 8 x 16 GiB | ``-``       | KVM            |                                                                                  |
    +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
 
 **Pi2 ECS Features**

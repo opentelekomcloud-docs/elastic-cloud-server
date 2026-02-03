@@ -108,7 +108,7 @@ Windows Server 2012
 
          **Figure 1** Querying the IPv6 address
 
-   -  If only a link-local IPv6 address is displayed, IPv6 is enabled but dynamic IPv6 assignment is not enabled. Go to step :ref:`2 <en-us_topic_0140963099__en-us_topic_0129883696_li2024825592115>`.
+   -  If only a link-local IPv6 address is displayed, IPv6 is enabled but dynamic IPv6 assignment is not enabled. Go to :ref:`2 <en-us_topic_0140963099__en-us_topic_0129883696_li2024825592115>`.
 
 
       .. figure:: /_static/images/en-us_image_0000001723492302.png
@@ -116,7 +116,7 @@ Windows Server 2012
 
          **Figure 2** Link-local IPv6 address
 
-   -  If neither an IPv6 address nor link-local IPv6 address is displayed, IPv6 is disabled. Go to step :ref:`3 <en-us_topic_0140963099__en-us_topic_0129883696_li35521349132511>`.
+   -  If neither an IPv6 address nor link-local IPv6 address is displayed, IPv6 is disabled. Go to :ref:`3 <en-us_topic_0140963099__en-us_topic_0129883696_li35521349132511>`.
 
 
       .. figure:: /_static/images/en-us_image_0000001771211453.png
@@ -178,7 +178,7 @@ Windows Server 2012
 
       **Set-NetIPv6Protocol -RandomizeIdentifiers disabled**
 
-   c. Perform step :ref:`1 <en-us_topic_0140963099__en-us_topic_0129883696_li64771254152011>` to check whether dynamic IPv6 address assignment is enabled.
+   c. Perform :ref:`1 <en-us_topic_0140963099__en-us_topic_0129883696_li64771254152011>` to check whether dynamic IPv6 address assignment is enabled.
 
 .. _en-us_topic_0140963099__en-us_topic_0129883696_section106971627556:
 
@@ -482,9 +482,9 @@ Linux (Manually Enabling Dynamic Assignment of IPv6 Addresses)
 
             If no IPv6 address is assigned after the NICs are brought down and up, you can run this command to restart the network.
 
-      d. Perform step :ref:`1 <en-us_topic_0140963099__en-us_topic_0129883696_li967053013012>` to check whether dynamic IPv6 address assignment is enabled.
+      d. Perform :ref:`1 <en-us_topic_0140963099__en-us_topic_0129883696_li967053013012>` to check whether dynamic IPv6 address assignment is enabled.
 
-   -  CentOS, EulerOS, or Fedora
+   -  CentOS, EulerOS, Fedora, or openEuler
 
       a. Open the configuration file **/etc/sysconfig/network-scripts/ifcfg-eth0** of the primary NIC.
 
@@ -562,7 +562,7 @@ Linux (Manually Enabling Dynamic Assignment of IPv6 Addresses)
 
             **systemctl restart NetworkManager**
 
-      f. Perform step :ref:`1 <en-us_topic_0140963099__en-us_topic_0129883696_li967053013012>` to check whether dynamic IPv6 address assignment is enabled.
+      f. Perform :ref:`1 <en-us_topic_0140963099__en-us_topic_0129883696_li967053013012>` to check whether dynamic IPv6 address assignment is enabled.
 
    -  SUSE, openSUSE, or CoreOS
 

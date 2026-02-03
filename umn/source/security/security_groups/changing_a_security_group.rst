@@ -19,7 +19,7 @@ Constraints
 Procedure
 ---------
 
-#. Log in to the console and access the ECS list page.
+#. Log in to the management console and access the ECS list page.
 
 #. Click |image1| in the upper left corner and select a region and project.
 

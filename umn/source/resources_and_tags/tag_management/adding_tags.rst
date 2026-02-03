@@ -51,7 +51,7 @@ Adding Tags on the ECS Details Page
 
 #. Click |image2| in the upper left corner and select a region and project.
 
-#. Under\ **Computing**, click **Elastic Cloud Server**. The **Elastic Cloud Server** page is displayed.
+#. Under **Computing**, click **Elastic Cloud Server**. The **Elastic Cloud Server** page is displayed.
 
 #. In the ECS list, click the name of the target ECS.
 

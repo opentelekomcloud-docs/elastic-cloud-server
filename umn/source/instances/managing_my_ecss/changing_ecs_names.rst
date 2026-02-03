@@ -10,7 +10,7 @@ Scenarios
 
 After an ECS is created, you can change its name as needed.
 
-Multiple ECS names can be changed in a batch. After the change, the ECS names are the same.
+Multiple ECS names can be changed in a batch. After the change is complete, the ECS names will be identical.
 
 Changing the Name of a Single ECS
 ---------------------------------
