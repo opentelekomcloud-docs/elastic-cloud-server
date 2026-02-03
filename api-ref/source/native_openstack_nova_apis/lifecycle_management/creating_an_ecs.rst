@@ -79,7 +79,7 @@ Constraints
 
 #. If your ECS is remotely logged in using a key, use the **key_name** parameter. If your ECS is remotely accessed using a password, use the **adminPass** parameter. Linux ECSs support **user_data** for injection. Windows ECSs support **admin_pass** for injection.
 
-#. If the image based on which the ECS is created uses the native OpenStack API, ensure that the specified AZ and system disk capacity and type used when the ECS is created are the same as those used when the image is created. Otherwise, the ECS creation will fail.
+#. If the image used to create the ECS uses the native OpenStack API, ensure that the AZ and the system disk capacity and type specified during the ECS creation are the same as those of the image. Otherwise, the ECS creation will fail.
 
 Request
 -------
