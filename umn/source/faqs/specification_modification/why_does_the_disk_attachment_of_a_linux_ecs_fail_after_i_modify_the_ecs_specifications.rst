@@ -17,31 +17,31 @@ Procedure
 
 #. .. _en-us_topic_0214940106__en-us_topic_0120890833_li218141135312:
 
-   Run the following command to view the disks attached before specifications modification:
+   Run the following command to view the disks attached before specification modification:
 
    **fdisk -l** **\| grep 'Disk /dev/'**
 
    .. _en-us_topic_0214940106__en-us_topic_0120890833_fig10595124010458:
 
    .. figure:: /_static/images/en-us_image_0214947581.png
-      :alt: **Figure 1** Viewing disks attached before specifications modification
+      :alt: **Figure 1** Viewing disks attached before specification modification
 
-      **Figure 1** Viewing disks attached before specifications modification
+      **Figure 1** Viewing disks attached before specification modification
 
    As shown in :ref:`Figure 1 <en-us_topic_0214940106__en-us_topic_0120890833_fig10595124010458>`, the ECS has three disks attached: **/dev/vda**, **/dev/vdb**, and **/dev/vdc**.
 
 #. .. _en-us_topic_0214940106__en-us_topic_0120890833_li161843557534:
 
-   Run the following command to view disks attached after specifications modification:
+   Run the following command to view disks attached after specification modification:
 
    **df -h\| grep '/dev/'**
 
    .. _en-us_topic_0214940106__en-us_topic_0120890833_fig692535712437:
 
    .. figure:: /_static/images/en-us_image_0214947582.png
-      :alt: **Figure 2** Viewing disks attached after specifications modification
+      :alt: **Figure 2** Viewing disks attached after specification modification
 
-      **Figure 2** Viewing disks attached after specifications modification
+      **Figure 2** Viewing disks attached after specification modification
 
    As shown in :ref:`Figure 2 <en-us_topic_0214940106__en-us_topic_0120890833_fig692535712437>`, only one disk **/dev/vda** is attached to the ECS.
 
@@ -64,7 +64,7 @@ Procedure
 
       Ensure that **/mnt/vdb1** is empty. Otherwise, the attachment will fail.
 
-#. Run the following commands to check whether the numbers of disks before and after specifications modifications are the same:
+#. Run the following commands to check whether the numbers of disks before and after specification modifications are the same:
 
    **fdisk -l** **\| grep 'Disk /dev/'**
 
@@ -80,4 +80,4 @@ Procedure
 
       **Figure 3** Checking the number of disks attached
 
-   As shown in :ref:`Figure 3 <en-us_topic_0214940106__en-us_topic_0120890833_fig722411124917>`, the numbers of disks before and after specifications modifications are the same. The disks are **/dev/vda**, **/dev/vdb**, and **/dev/vdc**.
+   As shown in :ref:`Figure 3 <en-us_topic_0214940106__en-us_topic_0120890833_fig722411124917>`, the numbers of disks before and after specification modifications are the same. The disks are **/dev/vda**, **/dev/vdb**, and **/dev/vdc**.

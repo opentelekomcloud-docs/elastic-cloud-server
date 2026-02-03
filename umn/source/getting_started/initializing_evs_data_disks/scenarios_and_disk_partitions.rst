@@ -14,7 +14,7 @@ After a disk is attached to a server, you need to log in to the server to initia
 
 -  System disk
 
-   A system disk does not require manual initialization because it is automatically created and initialized upon server creation. The default partition style is master boot record (MBR).
+   A system disk does not require manual initialization because it is automatically created and initialized upon the server creation. The default partition style is master boot record (MBR).
 
 -  Data disk
 
@@ -23,12 +23,19 @@ After a disk is attached to a server, you need to log in to the server to initia
 
    In both cases, you must initialize the data disk before using it. Choose an appropriate partition style based on your service plan.
 
-Partitioning Operation Guide
-----------------------------
+Notes and Constraints
+---------------------
 
-:ref:`Table 1 <en-us_topic_0030831623__en-us_topic_0085245975_table2729705994129>` lists the common disk partition styles. In Linux, different disk partition styles require different partitioning tools.
+-  A disk created from a data source does not need to be initialized. Such a disk contains the source data in the beginning. Initializing the disk may clear the initial data on it.
+-  Initializing a disk does not change the server's IP address or the disk ID.
+-  Initializing a disk does not delete the snapshots created for the disk, so you can still use snapshots to roll back data to the source disk after the disk is initialized.
 
-.. _en-us_topic_0030831623__en-us_topic_0085245975_table2729705994129:
+Disk Partition Styles
+---------------------
+
+:ref:`Table 1 <en-us_topic_0030831623__en-us_topic_0000002015294542_en-us_topic_0000001855947921_en-us_topic_0000001808490252_table2729705994129>` lists the common disk partition styles. In Linux, different partition styles require different partitioning tools.
+
+.. _en-us_topic_0030831623__en-us_topic_0000002015294542_en-us_topic_0000001855947921_en-us_topic_0000001808490252_table2729705994129:
 
 .. table:: **Table 1** Disk partition styles
 
@@ -47,3 +54,9 @@ Partitioning Operation Guide
    |                            |                                 |                                                                                                                                                                                                                                                            |                         |
    |                            | 1 EiB = 1048576 TiB             | Disk partitions created using GPT are not categorized.                                                                                                                                                                                                     |                         |
    +----------------------------+---------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+
+
+.. important::
+
+   The maximum disk size supported by MBR is 2 TiB, and that supported by GPT is 18 EiB. Because an EVS data disk currently supports up to 32 TiB, use GPT if your disk size is greater than 2 TiB.
+
+   If the partition style is changed after the disk has been used, all data on the disk will be lost, so take care to select an appropriate partition style when initializing the disk. If you must change the partition style to GPT after a disk has been used, it is recommended that you back up the disk data before the change.

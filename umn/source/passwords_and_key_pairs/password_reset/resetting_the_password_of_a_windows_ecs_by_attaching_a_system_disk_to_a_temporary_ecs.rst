@@ -13,14 +13,14 @@ You can reset your ECS password if:
 -  The password is forgotten.
 -  The password has expired.
 
-The method described in this section only can be used to change the password of a local Windows account; it cannot be used to change a domain account password.
+The method described in this section can only be used to change the password of a local Windows account; it cannot be used to change a domain account password.
 
 Prerequisites
 -------------
 
 -  A backup has been created for the system disk. For details, see :ref:`Backing Up an ECS <en-us_topic_0000001128604648>`.
 
--  A temporary Linux ECS running Ubuntu 14.04 or later is available. It is located in the same AZ and has the same CPU architecture as the target ECS.
+-  A temporary Linux ECS running Ubuntu 14.04 or later is available in the same AZ and has the same CPU architecture as the target ECS.
 
 -  You have bound an EIP to the temporary ECS and configured the apt-get source.
 
@@ -34,7 +34,7 @@ Prerequisites
 
    Method 2:
 
-   Download the **ntfs-3g** and **chntpw** software packages of the version required by the temporary ECS OS.
+   Download the **ntfs-3g** and **chntpw** software packages of the version required by the temporary ECS OS and install them.
 
 Procedure
 ---------
@@ -67,21 +67,19 @@ Procedure
 
    c. Remotely log in to the temporary ECS.
 
-   d. .. _en-us_topic_0021426802__li20334892202157:
-
-      Run the following command to view the directory of the system disk attached to the temporary ECS:
+   d. Run the following command to query the system disk partitions attached to the temporary ECS, so you can identify the directory of the system disk:
 
       **fdisk -l**
 
    e. Run the following command to mount the file system of the detached system disk to the temporary ECS:
 
-      **mount -t ntfs-3g /dev/**\ *Result obtained in step :ref:`2.d <en-us_topic_0021426802__li20334892202157>`* **/mnt/**
+      **mount -t ntfs-3g /dev/**\ *system-disk-directory* **/mnt/**
 
-      For example, if the result obtained in step :ref:`2.d <en-us_topic_0021426802__li20334892202157>` is **xvde2**, run the following command:
+      For example, if the queried system disk directory is xvde2, run the following command:
 
       **mount -t ntfs-3g /dev/xvde2 /mnt/**
 
-      If the following error information is returned in the command output, the NTFS file systems may be inconsistent. In such a case, rectify the file system inconsistency.
+      If the following error information is returned in the command output, the NTFS file systems between the original Windows ECS and the Linux ECS may be inconsistent.
 
       .. code-block::
 
@@ -92,15 +90,15 @@ Procedure
          Windows fully (no hibernation or fast restarting), or mount the volume
          read-only with the 'ro' mount option.
 
-      Back up the disk data, run the following command to rectify the NTFS file system inconsistency, and attach the system disk:
+      If the file system is inconsistent, back up the disk data first, and run the following command to repair the New Technology File System (NTFS) partition, and then attach the system disk:
 
-      **ntfsfix /dev/**\ *Result obtained in step :ref:`2.d <en-us_topic_0021426802__li20334892202157>`*
+      **ntfsfix /dev/**\ *system-disk-directory*
 
-      For example, if the result obtained in step :ref:`2.d <en-us_topic_0021426802__li20334892202157>` is **xvde2**, run the following command:
+      For example, if the queried system disk directory is xvde2, run the following command:
 
       **ntfsfix /dev/xvde2**
 
-#. Change the password of the specified user and clear the original password.
+#. On the temporary ECS, change the password of the specified user and clear the original password.
 
    a. Run the following command to back up the SAM file:
 
@@ -131,11 +129,11 @@ Procedure
 
    b. .. _en-us_topic_0021426802__li46368402202157:
 
-      Click **Detach** to detach the data disk temporarily attached in step :ref:`2.b <en-us_topic_0021426802__li12352182016164>`.
+      Click **Detach** to detach the system disk temporarily attached in step :ref:`2.b <en-us_topic_0021426802__li12352182016164>`.
 
    c. On the details page of the original Windows ECS, click the **Disks** tab.
 
-   d. Click **Attach Disk**. In the displayed dialog box, select the data disk detached in step :ref:`4.b <en-us_topic_0021426802__li46368402202157>` and attach it to the original ECS as the system disk.
+   d. Click **Attach Disk**. In the displayed dialog box, select the system disk detached in step :ref:`4.b <en-us_topic_0021426802__li46368402202157>` and attach it to the original ECS as the system disk.
 
 #. Start the original Windows ECS and set a new login password.
 

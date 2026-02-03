@@ -28,6 +28,7 @@ Available now: All GPU models except the recommended ones. If available ECSs are
 
 -  P series
 
+   -  :ref:`Computing-accelerated P5e <en-us_topic_0097289624__section7795174175814>`
    -  :ref:`Computing-accelerated P5s <en-us_topic_0097289624__section453311473114>`
    -  :ref:`Computing-accelerated P3 <en-us_topic_0097289624__section48861652193>`
    -  :ref:`Computing-accelerated P2s <en-us_topic_0097289624__section1454714546567>` (recommended)
@@ -66,6 +67,15 @@ Images Supported by GPU-accelerated ECSs
    |                       |                       | -  Windows Server 2019 Standard 64bit    |
    |                       |                       | -  Windows Server 2016 Standard 64bit    |
    |                       |                       | -  Windows Server 2012 R2 Standard 64bit |
+   +-----------------------+-----------------------+------------------------------------------+
+   | Computing-accelerated | P5e                   | -  CentOS 7.9 64bit                      |
+   |                       |                       | -  CentOS 7.8 64bit                      |
+   |                       |                       | -  CentOS 7.7 64bit                      |
+   |                       |                       | -  CentOS 7.6 64bit                      |
+   |                       |                       | -  Ubuntu 22.04 64bit                    |
+   |                       |                       | -  Ubuntu 20.04 64bit                    |
+   |                       |                       | -  Ubuntu 18.04 64bit                    |
+   |                       |                       | -  Ubuntu 16.04 64bit                    |
    +-----------------------+-----------------------+------------------------------------------+
    | Computing-accelerated | P5s                   | -  CentOS 7.9 64bit                      |
    |                       |                       | -  CentOS 7.8 64bit                      |
@@ -125,7 +135,7 @@ Graphics-accelerated Enhancement G7v
 
 **Overview**
 
-G7v ECSs use NVIDIA A40 GPUs and support DirectX, Shader Model, OpenGL, and Vulkan. Each GPU provides 48 GiB of GPU memory. Theoretically, the peak FP32 is 37.4 TFLOPS and the peak TF32 tensor is 74.8 TFLOPS \| 149.6 TFLOPS (sparsity enabled). They deliver two times the rendering performance and 1.4 times the graphics processing performance of RTX6000 GPUs to meet professional graphics processing requirements.
+G7v ECSs use NVIDIA A40 GPUs and support DirectX, Shader Model, OpenGL, and Vulkan. Each GPU provides 48 GiB of GPU memory. Theoretically, the peak FP32 is 37.4 TFLOPS and the peak TF32 tensor is 74.8 TFLOPS \| 149.6 TFLOPS (sparsity enabled). They deliver twice the rendering performance and 1.4 times the graphics processing performance of RTX6000 GPUs to meet professional graphics processing requirements.
 
 Select your desired GPU-accelerated ECS type and specifications.
 
@@ -161,9 +171,9 @@ Select your desired GPU-accelerated ECS type and specifications.
 -  Heavy-load CPU inference
 -  Application flow identical to common ECSs
 -  Automatic scheduling of G7v ECSs to AZs where NVIDIA A40 GPUs are used
--  One NVENC (encoding) engine and two NVDEC (decoding) engines (including AV1 decoding) embedded
+-  Built-in one NVENC and two NVDECs (including AV1 decoding)
 
-**Supported Common Software**
+**Supported Software**
 
 G7v ECSs are used in graphics acceleration scenarios, such as video rendering, cloud desktop, and 3D visualization. If the software relies on GPU DirectX and OpenGL hardware acceleration, use G7v ECSs. G7v ECSs support the following commonly used graphics processing software:
 
@@ -194,7 +204,7 @@ G7v ECSs are used in graphics acceleration scenarios, such as video rendering, c
 
    For details, see :ref:`Manually Installing a GRID Driver on a GPU-accelerated ECS <en-us_topic_0149610914>`.
 
--  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
+-  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous compute. Their specifications can only be changed to other specifications of the same instance type.
 
 -  GPU-accelerated ECSs do not support live migration.
 
@@ -205,7 +215,7 @@ Graphics-accelerated Enhancement G7
 
 **Overview**
 
-G7 ECSs use NVIDIA A40 GPUs and support DirectX, Shader Model, OpenGL, and Vulkan. Each GPU provides 48 GiB of GPU memory. Theoretically, the peak FP32 is 37.4 TFLOPS and the peak TF32 tensor is 74.8 TFLOPS \| 149.6 TFLOPS (sparsity enabled). They deliver two times the rendering performance and 1.4 times the graphics processing performance of RTX6000 GPUs to meet professional graphics processing requirements.
+G7 ECSs use NVIDIA A40 GPUs and support DirectX, Shader Model, OpenGL, and Vulkan. Each GPU provides 48 GiB of GPU memory. Theoretically, the peak FP32 is 37.4 TFLOPS and the peak TF32 tensor is 74.8 TFLOPS \| 149.6 TFLOPS (sparsity enabled). They deliver twice the rendering performance and 1.4 times the graphics processing performance of RTX6000 GPUs to meet professional graphics processing requirements.
 
 Select your desired GPU-accelerated ECS type and specifications.
 
@@ -239,9 +249,9 @@ Select your desired GPU-accelerated ECS type and specifications.
 -  Heavy-load CPU inference
 -  Application flow identical to common ECSs
 -  Automatic scheduling of G7 ECSs to AZs where NVIDIA A40 GPUs are used
--  One NVENC (encoding) engine and two NVDEC (decoding) engines (including AV1 decoding) embedded
+-  Built-in one NVENC and two NVDECs (including AV1 decoding)
 
-**Supported Common Software**
+**Supported Software**
 
 G7 ECSs are used in graphics acceleration scenarios, such as video rendering, cloud desktop, and 3D visualization. If the software relies on GPU DirectX and OpenGL hardware acceleration, use G7 ECSs. G7 ECSs support the following commonly used graphics processing software:
 
@@ -314,9 +324,9 @@ Select your desired GPU-accelerated ECS type and specifications.
 -  Graphics applications accelerated
 -  Heavy-load CPU inference
 -  Automatic scheduling of G6 ECSs to AZs where NVIDIA T4 GPUs are used
--  One NVENC engine and two NVDEC engines embedded
+-  Built-in one NVENC and two NVDECs
 
-**Supported Common Software**
+**Supported Software**
 
 G6 ECSs are used in graphics acceleration scenarios, such as video rendering, cloud desktop, and 3D visualization. If the software relies on GPU DirectX and OpenGL hardware acceleration, use G6 ECSs. G6 ECSs support the following commonly used graphics processing software:
 
@@ -342,6 +352,52 @@ G6 ECSs are used in graphics acceleration scenarios, such as video rendering, cl
 
 -  GPU-accelerated ECSs do not support live migration.
 
+.. _en-us_topic_0097289624__section7795174175814:
+
+Computing-accelerated P5e
+-------------------------
+
+**Overview**
+
+P5e ECSs use high-performance NVIDIA Tesla H100 NVL to deliver outstanding training.
+
+**Specifications**
+
+.. table:: **Table 5** P5e ECS specifications
+
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+--------------+------------------+----------------+
+   | Flavor          | vCPUs | Memory (GiB) | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS (10,000) | Max. NIC Queues | Max. NICs | GPUs         | GPU Memory (GiB) | Virtualization |
+   +=================+=======+==============+=========================================+===========================+=================+===========+==============+==================+================+
+   | p5e.10xlarge.12 | 40    | 480          | 24/9                                    | 550                       | 16              | 8         | 2 x H100 NVL | 188              | KVM            |
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+--------------+------------------+----------------+
+   | p5e.20xlarge.12 | 80    | 960          | 32/18                                   | 750                       | 32              | 8         | 4 x H100 NVL | 376              | KVM            |
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+--------------+------------------+----------------+
+   | p5e.40xlarge.12 | 160   | 1920         | 40/36                                   | 850                       | 32              | 8         | 8 x H100 NVL | 752              | KVM            |
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+--------------+------------------+----------------+
+
+**P5e ECS Features**
+
+-  1:12 ratio of vCPUs to memory
+-  CPU: 4th Generation Intel® Xeon® Scalable 8458P processors (2.7 GHz of basic frequency and 3.8 GHz of turbo frequency)
+-  Each GPU provides 94 GiB of GPU memory and 3,026 TFLOPS INT8 compute.
+-  The GPU memory bandwidth can reach up to 2,000 GB/s.
+
+**Supported Software**
+
+P5e ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software is required to support GPU CUDA, use P5e ECSs. P5e ECSs support the following commonly used software:
+
+-  Common deep learning frameworks, such as TensorFlow, Spark, PyTorch, MXNet, and Caffe
+-  CUDA GPU rendering supported by RedShift for Autodesk 3ds Max and V-Ray for 3ds Max
+-  Agisoft PhotoScan
+-  MapD
+-  More than 2,000 GPU-accelerated applications such as Amber, NAMD, and VASP
+
+**Notes**
+
+-  P5e ECSs support automatic recovery when the hosts accommodating such ECSs become faulty.
+-  After a P5e ECS is stopped, its basic resources (vCPUs, memory, image, and encoding cards) are not billed, but its system disk is billed based on the disk capacity. If other service resources, such as EVS disks, EIPs, and bandwidth are associated with the ECS, these resources are billed separately.
+-  Specifications of P5e ECSs can only be changed to other specifications of the same instance type.
+
 .. _en-us_topic_0097289624__section453311473114:
 
 Computing-accelerated P5s
@@ -353,19 +409,19 @@ P5s ECSs use high-performance NVIDIA Tesla H100 PCIe to provide outstanding real
 
 **Specifications**
 
-.. table:: **Table 5** P5s ECS specifications
+.. table:: **Table 6** P5s ECS specifications
 
-   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+------------------+----------------+
-   | Flavor          | vCPUs | Memory (GiB) | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS (10,000) | Max. NIC Queues | Max. NICs | GPUs           | GPU Memory (GiB) | Virtualization |
-   +=================+=======+==============+=========================================+===========================+=================+===========+================+==================+================+
-   | p5s.5xlarge.12  | 20    | 240          | 16/4.5                                  | 280                       | 8               | 4         | 1 \* H100 PCIe | 80               | KVM            |
-   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+------------------+----------------+
-   | p5s.10xlarge.12 | 40    | 480          | 24/9                                    | 550                       | 16              | 8         | 2 \* H100 PCIe | 160              | KVM            |
-   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+------------------+----------------+
-   | p5s.20xlarge.12 | 80    | 960          | 32/18                                   | 750                       | 32              | 8         | 4 \* H100 PCIe | 320              | KVM            |
-   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+------------------+----------------+
-   | p5s.40xlarge.12 | 160   | 1920         | 40/36                                   | 850                       | 32              | 8         | 8 \* H100 PCIe | 640              | KVM            |
-   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+------------------+----------------+
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+---------------+------------------+----------------+
+   | Flavor          | vCPUs | Memory (GiB) | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS (10,000) | Max. NIC Queues | Max. NICs | GPUs          | GPU Memory (GiB) | Virtualization |
+   +=================+=======+==============+=========================================+===========================+=================+===========+===============+==================+================+
+   | p5s.5xlarge.12  | 20    | 240          | 16/4.5                                  | 280                       | 8               | 4         | 1 x H100 PCIe | 80               | KVM            |
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+---------------+------------------+----------------+
+   | p5s.10xlarge.12 | 40    | 480          | 24/9                                    | 550                       | 16              | 8         | 2 x H100 PCIe | 160              | KVM            |
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+---------------+------------------+----------------+
+   | p5s.20xlarge.12 | 80    | 960          | 32/18                                   | 750                       | 32              | 8         | 4 x H100 PCIe | 320              | KVM            |
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+---------------+------------------+----------------+
+   | p5s.40xlarge.12 | 160   | 1,920        | 40/36                                   | 850                       | 32              | 8         | 8 x H100 PCIe | 640              | KVM            |
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+---------------+------------------+----------------+
 
 **P5s ECS Features**
 
@@ -374,9 +430,9 @@ P5s ECSs use high-performance NVIDIA Tesla H100 PCIe to provide outstanding real
 -  Each GPU provides 80 GiB of GPU memory and 3,026 TFLOPS INT8 compute.
 -  The GPU memory bandwidth can reach up to 2,000 GB/s.
 
-**Supported Common Software**
+**Supported Software**
 
-P5s ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software is required to support GPU CUDA, use P5s ECSs. The following commonly used software is supported:
+P5s ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software is required to support GPU CUDA, use P5s ECSs. P5s ECSs support the following commonly used software:
 
 -  Common deep learning frameworks, such as TensorFlow, Spark, PyTorch, MXNet, and Caffe
 -  CUDA GPU rendering supported by RedShift for Autodesk 3ds Max and V-Ray for 3ds Max
@@ -402,7 +458,7 @@ P3 ECSs use NVIDIA A100 GPUs and provide flexibility and ultra-high-performance 
 
 **Specifications**
 
-.. table:: **Table 6** P3 ECS specifications
+.. table:: **Table 7** P3 ECS specifications
 
    +---------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+-----------------------+------------+----------------+
    | Flavor        | vCPUs | Memory | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS | Max. NIC Queues | Max. NICs | GPUs                  | GPU Memory | Virtualization |
@@ -448,7 +504,7 @@ P3 ECSs use NVIDIA A100 GPUs and provide flexibility and ultra-high-performance 
 
    The supercomputing ecosystem allows you to build up a flexible, high-performance, cost-effective computing platform. A large number of HPC applications and deep-learning frameworks can run on P3 ECSs.
 
-**Supported Common Software**
+**Supported Software**
 
 P3 ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software is required to support GPU CUDA, use P3 ECSs. P3 ECSs support the following commonly used software:
 
@@ -464,10 +520,10 @@ P3 ECSs are used in computing acceleration scenarios, such as deep learning trai
 
    .. note::
 
-      Resources will be released after a P3 ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop it.
+      Resources will be released after a P3 ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
 
 -  If a P3 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
--  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
+-  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous compute. Their specifications can only be changed to other specifications of the same instance type.
 -  GPU-accelerated ECSs do not support live migration.
 
 .. _en-us_topic_0097289624__section1454714546567:
@@ -481,7 +537,7 @@ P2s ECSs use NVIDIA Tesla V100 GPUs to provide flexibility, high-performance com
 
 **Specifications**
 
-.. table:: **Table 7** P2s ECS specifications
+.. table:: **Table 8** P2s ECS specifications
 
    +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------+----------------+------------------+----------------+----------------------------------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS (10,000) | Max. NIC Queues | Max. NICs | GPUs     | GPU Connection | GPU Memory (GiB) | Virtualization | Hardware                                                 |
@@ -527,7 +583,7 @@ P2s ECSs use NVIDIA Tesla V100 GPUs to provide flexibility, high-performance com
 
    The supercomputing ecosystem allows you to build up a flexible, high-performance, cost-effective computing platform. A large number of HPC applications and deep-learning frameworks can run on P2s ECSs.
 
-**Supported Common Software**
+**Supported Software**
 
 P2s ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software is required to support GPU CUDA, use P2s ECSs. P2s ECSs support the following commonly used software:
 
@@ -546,7 +602,7 @@ P2s ECSs are used in computing acceleration scenarios, such as deep learning tra
 
 -  By default, P2s ECSs created using a Windows public image have the Tesla driver installed.
 -  If a P2s ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
--  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
+-  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous compute. Their specifications can only be changed to other specifications of the same instance type.
 -  GPU-accelerated ECSs do not support live migration.
 
 .. _en-us_topic_0097289624__section208472383415:
@@ -560,14 +616,14 @@ P2v ECSs use NVIDIA Tesla V100 GPUs and deliver high flexibility, high-performan
 
 **Specifications**
 
-.. table:: **Table 8** P2v ECS specifications
+.. table:: **Table 9** P2v ECS specifications
 
    +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------+----------------+------------+----------------+-------------------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS (10,000) | Max. NIC Queues | Max. NICs | GPUs     | GPU Connection | GPU Memory | Virtualization | Hardware                                  |
    |                |       |        |                                         |                           |                 |           |          |                |            |                |                                           |
    |                |       | (GiB)  |                                         |                           |                 |           |          |                | (GiB)      |                |                                           |
    +================+=======+========+=========================================+===========================+=================+===========+==========+================+============+================+===========================================+
-   | p2v.2xlarge.8  | 8     | 64     | 10/4                                    | 50                        | 4               | 4         | 1 x V100 | N/A            | 1 x 16 GiB | KVM            | CPU: Intel® Xeon® Skylake-SP Gold 6151 v5 |
+   | p2v.2xlarge.8  | 8     | 64     | 10/4                                    | 50                        | 4               | 4         | 1 x V100 | ``-``          | 1 x 16 GiB | KVM            | CPU: Intel® Xeon® Skylake-SP Gold 6151 v5 |
    +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------+----------------+------------+----------------+-------------------------------------------+
    | p2v.4xlarge.8  | 16    | 128    | 15/8                                    | 100                       | 8               | 8         | 2 x V100 | NVLink         | 2 x 16 GiB | KVM            |                                           |
    +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------+----------------+------------+----------------+-------------------------------------------+
@@ -606,7 +662,7 @@ P2v ECSs use NVIDIA Tesla V100 GPUs and deliver high flexibility, high-performan
 
    The supercomputing ecosystem allows you to build up a flexible, high-performance, cost-effective computing platform. A large number of HPC applications and deep-learning frameworks can run on P2v ECSs.
 
-**Supported Common Software**
+**Supported Software**
 
 P2v ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software is required to support GPU CUDA, use P2v ECSs. P2v ECSs support the following commonly used software:
 
@@ -626,7 +682,7 @@ P2v ECSs are used in computing acceleration scenarios, such as deep learning tra
 -  By default, P2v ECSs created using a Windows public image have the Tesla driver installed.
 -  By default, P2v ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 -  If a P2v ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
--  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
+-  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous compute. Their specifications can only be changed to other specifications of the same instance type.
 -  GPU-accelerated ECSs do not support live migration.
 
 .. _en-us_topic_0097289624__section3135224614:
@@ -640,7 +696,7 @@ Pi5e ECSs use NVIDIA Ada Lovelace L4 Tensor Core GPUs that are dedicated for rea
 
 **Specifications**
 
-.. table:: **Table 9** Pi5e ECS specifications
+.. table:: **Table 10** Pi5e ECS specifications
 
    +-----------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+
    | Flavor          | vCPUs | Memory | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS | Max. NIC Queues | Max. NICs | GPUs   | GPU Memory | Local Disks | Virtualization |
@@ -686,22 +742,22 @@ Pi2 ECSs use NVIDIA Tesla T4 GPUs dedicated for real-time AI inference. These EC
 
 **Specifications**
 
-.. table:: **Table 10** Pi2 ECS specifications
+.. table:: **Table 11** Pi2 ECS specifications
 
    +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
    | Flavor         | vCPUs | Memory | Max./Assured Network Bandwidth | Max. Network PPS | Max. NIC Queues | Max. NICs | GPUs   | GPU Memory | Local Disks | Virtualization | Hardware                                                                         |
    |                |       |        |                                |                  |                 |           |        |            |             |                |                                                                                  |
    |                |       | (GiB)  | (Gbit/s)                       | (10,000)         |                 |           |        | (GiB)      |             |                |                                                                                  |
    +================+=======+========+================================+==================+=================+===========+========+============+=============+================+==================================================================================+
-   | pi2.2xlarge.4  | 8     | 32     | 10/4                           | 50               | 4               | 4         | 1 x T4 | 1 x 16 GiB | N/A         | KVM            | CPU: Intel® Xeon® Skylake 6151 3.0 GHz or Intel® Xeon® Cascade Lake 6278 2.6 GHz |
+   | pi2.2xlarge.4  | 8     | 32     | 10/4                           | 50               | 4               | 4         | 1 x T4 | 1 x 16 GiB | ``-``       | KVM            | CPU: Intel® Xeon® Skylake 6151 3.0 GHz or Intel® Xeon® Cascade Lake 6278 2.6 GHz |
    +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
-   | pi2.3xlarge.4  | 12    | 48     | 12/6                           | 80               | 6               | 6         | 1 x T4 | 1 x 16 GiB | N/A         | KVM            |                                                                                  |
+   | pi2.3xlarge.4  | 12    | 48     | 12/6                           | 80               | 6               | 6         | 1 x T4 | 1 x 16 GiB | ``-``       | KVM            |                                                                                  |
    +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
-   | pi2.4xlarge.4  | 16    | 64     | 15/8                           | 100              | 8               | 8         | 2 x T4 | 2 x 16 GiB | N/A         | KVM            |                                                                                  |
+   | pi2.4xlarge.4  | 16    | 64     | 15/8                           | 100              | 8               | 8         | 2 x T4 | 2 x 16 GiB | ``-``       | KVM            |                                                                                  |
    +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
-   | pi2.8xlarge.4  | 32    | 128    | 25/15                          | 200              | 16              | 8         | 4 x T4 | 4 x 16 GiB | N/A         | KVM            |                                                                                  |
+   | pi2.8xlarge.4  | 32    | 128    | 25/15                          | 200              | 16              | 8         | 4 x T4 | 4 x 16 GiB | ``-``       | KVM            |                                                                                  |
    +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
-   | pi2.16xlarge.4 | 64    | 256    | 30/30                          | 400              | 32              | 8         | 8 x T4 | 8 x 16 GiB | N/A         | KVM            |                                                                                  |
+   | pi2.16xlarge.4 | 64    | 256    | 30/30                          | 400              | 32              | 8         | 8 x T4 | 8 x 16 GiB | ``-``       | KVM            |                                                                                  |
    +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
 
 **Pi2 ECS Features**
@@ -712,9 +768,9 @@ Pi2 ECSs use NVIDIA Tesla T4 GPUs dedicated for real-time AI inference. These EC
 -  Up to 8.1 TFLOPS of single-precision computing on a single GPU
 -  Up to 130 TOPS of INT8 computing on a single GPU
 -  16 GiB of GDDR6 GPU memory with a bandwidth of 320 GiB/s on a single GPU
--  One NVENC engine and two NVDEC engines embedded
+-  Built-in one NVENC and two NVDECs
 
-**Supported Common Software**
+**Supported Software**
 
 Pi2 ECSs are used in GPU-based inference computing scenarios, such as image recognition, speech recognition, and natural language processing. The Pi2 ECSs can also be used for light-load training.
 
@@ -734,5 +790,5 @@ Pi2 ECSs support the following commonly used software:
 -  By default, Pi2 ECSs created using a Windows public image have the Tesla driver installed.
 -  By default, Pi2 ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 -  If a Pi2 ECS is created using a private image, make sure that the Tesla driver was installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
--  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous computing power. Their specifications can only be changed to other specifications of the same instance type.
+-  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous compute. Their specifications can only be changed to other specifications of the same instance type.
 -  GPU-accelerated ECSs do not support live migration.

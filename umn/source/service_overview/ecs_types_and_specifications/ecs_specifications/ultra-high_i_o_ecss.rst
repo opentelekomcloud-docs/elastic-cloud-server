@@ -280,7 +280,7 @@ Notes
    -  Both EVS disks and local disks can be used as data disks of an ultra-high I/O ECS.
    -  An ultra-high I/O ECS can have a maximum of 60 attached disks (including VBD, SCSI, and local disks). For details about constraints, see :ref:`Can I Attach Multiple Disks to an ECS? <en-us_topic_0018073215>`
 
--  Modify the **fstab** file to set automatic disk mounting at ECS start. For details, see :ref:`Configuring Automatic Mounting at System Start <en-us_topic_0085634798__en-us_topic_0000001809029272_en-us_topic_0000001808490156_section15839912195453>`.
+-  Modify the **fstab** file to set automatic disk mounting at ECS start. For details, see :ref:`Initializing EVS Data Disks <en-us_topic_0030831989>`.
 
 -  The local disk data of an ultra-high I/O ECS may be lost if an exception occurs, such as physical server breakdown or local disk damage. If your application did not use the data reliability architecture, it is a good practice to use EVS disks to build your ECS.
 

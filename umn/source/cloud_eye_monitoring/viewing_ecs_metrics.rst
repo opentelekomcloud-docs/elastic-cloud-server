@@ -40,13 +40,13 @@ Procedure
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
-#. In the search box above the upper right corner of the ECS list, enter the ECS name, IP address, or ID to search for the target ECS.
+#. In the search box above the ECS list, enter the ECS name, IP address, or ID to search for the target ECS.
 
 #. Click the name of the target ECS. The ECS details page is displayed.
 
 #. Click the **Monitoring** tab to view the monitoring data.
 
-#. In the ECS monitoring area, select a duration to view the monitoring data.
+#. In the ECS monitoring area, select a time range to view the monitoring data.
 
    You can view the monitoring data of the ECS in the last 1 hour, last 3 hours, last 12 hours, last 1 day, or last 7 days. You can also select a custom time range to view the historical monitoring data of the last six months.
 

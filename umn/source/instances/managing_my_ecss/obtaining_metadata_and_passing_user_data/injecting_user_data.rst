@@ -394,7 +394,7 @@ User data example:
 Helpful Links
 -------------
 
-For more information about user data injection cases, visit the official Cloud-init or Cloudbase-init website:
+For more information about user data injection cases, visit the official Cloud-Init or Cloudbase-Init website:
 
 -  https://cloudinit.readthedocs.io/en/latest/
 

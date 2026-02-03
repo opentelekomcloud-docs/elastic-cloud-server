@@ -41,10 +41,10 @@ Filtering Resources on the TMS Console
 
 #. Under **Management & Deployment**, click **Tag Management Service**.
 
-#. On the **Resource Tags** page, set the search criteria, including **Region**, **Resource Type**, and **Resource Tag**.
+#. On the displayed page, set the search criteria, including **Region**, **Resource Type**, and **Resource Tag**.
 
 #. Click **Search**.
 
-   All the resources that meet the search criteria will be displayed in the **Search Result** area.
+   All the resources that meet the search criteria will be displayed in the **Search Results** area.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png

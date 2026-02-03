@@ -111,7 +111,7 @@ The following operations use PuTTY as an example. Before using PuTTY to log in, 
 
 #. Run the following command using the EIP to remotely log in to the ECS through SSH:
 
-   **ssh** **Username**\ **@\ EIP**
+   **ssh** **username**\ **@\ EIP**
 
    .. note::
 

@@ -1,6 +1,6 @@
-:original_name: en-us_topic_0117490178.html
+:original_name: en-us_topic_0000002520224813.html
 
-.. _en-us_topic_0117490178:
+.. _en-us_topic_0000002520224813:
 
 Initializing a Windows Data Disk (Windows Server 2019)
 ======================================================
@@ -39,7 +39,7 @@ Procedure
    The **Server Manager** window is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000001855868573.png
+   .. figure:: /_static/images/en-us_image_0000002301562030.png
       :alt: **Figure 1** Server Manager
 
       **Figure 1** Server Manager
@@ -49,7 +49,7 @@ Procedure
    The **Computer Management** window is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000001855948605.png
+   .. figure:: /_static/images/en-us_image_0000002301721718.png
       :alt: **Figure 2** Computer Management
 
       **Figure 2** Computer Management
@@ -59,7 +59,7 @@ Procedure
    Disks are displayed in the right pane. If there is a disk that is not initialized, the system will prompt you with the **Initialize Disk** dialog box.
 
 
-   .. figure:: /_static/images/en-us_image_0000001809029932.png
+   .. figure:: /_static/images/en-us_image_0000002335561333.png
       :alt: **Figure 3** Disk list
 
       **Figure 3** Disk list
@@ -69,7 +69,7 @@ Procedure
    The **Computer Management** window is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000001809189776.png
+   .. figure:: /_static/images/en-us_image_0000002335521125.png
       :alt: **Figure 4** Computer Management
 
       **Figure 4** Computer Management
@@ -85,7 +85,7 @@ Procedure
    The **New Simple Volume Wizard** window is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000001855868577.png
+   .. figure:: /_static/images/en-us_image_0000002301562034.png
       :alt: **Figure 5** New Simple Volume Wizard
 
       **Figure 5** New Simple Volume Wizard
@@ -95,7 +95,7 @@ Procedure
    The **Specify Volume Size** page is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000001855948609.png
+   .. figure:: /_static/images/en-us_image_0000002301721726.png
       :alt: **Figure 6** Specify Volume Size
 
       **Figure 6** Specify Volume Size
@@ -105,7 +105,7 @@ Procedure
    The **Assign Drive Letter or Path** page is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000001809029936.png
+   .. figure:: /_static/images/en-us_image_0000002335561341.png
       :alt: **Figure 7** Assign Drive Letter or Path
 
       **Figure 7** Assign Drive Letter or Path
@@ -115,7 +115,7 @@ Procedure
    The **Format Partition** page is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000001809189780.png
+   .. figure:: /_static/images/en-us_image_0000002335521133.png
       :alt: **Figure 8** Format Partition
 
       **Figure 8** Format Partition
@@ -125,7 +125,7 @@ Procedure
    The **Completing the New Simple Volume Wizard** page is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000001855868581.png
+   .. figure:: /_static/images/en-us_image_0000002301562042.png
       :alt: **Figure 9** Completing the New Simple Volume Wizard
 
       **Figure 9** Completing the New Simple Volume Wizard
@@ -139,7 +139,7 @@ Procedure
    Wait for the initialization to complete. When the volume status changes to **Healthy**, the initialization has finished successfully.
 
 
-   .. figure:: /_static/images/en-us_image_0000001855948613.png
+   .. figure:: /_static/images/en-us_image_0000002301721734.png
       :alt: **Figure 10** Disk initialized
 
       **Figure 10** Disk initialized
@@ -149,9 +149,9 @@ Procedure
    If New Volume (D:) appears, the disk is successfully initialized and no further action is required.
 
 
-   .. figure:: /_static/images/en-us_image_0000001809189784.png
+   .. figure:: /_static/images/en-us_image_0000002335521137.png
       :alt: **Figure 11** This PC
 
       **Figure 11** This PC
 
-.. |image1| image:: /_static/images/en-us_image_0000001809029940.png
+.. |image1| image:: /_static/images/en-us_image_0000002335561349.png

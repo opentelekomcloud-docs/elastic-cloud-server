@@ -25,7 +25,7 @@ A variety of ECS search types are available. For details, see :ref:`Table 1 <en-
    -  The following properties only support exact search and you need to enter complete values: ID, image ID, EIP, VPC ID, and enterprise project.
    -  The private IP address must be in the following CIDR blocks: 10.0.0.0/8-24, 172.16.0.0/12-24, and 192.168.0.0/16-24.
    -  You can search by tag key-value pair. You can add one or more tags. If keys are different, the tags are automatically joined with AND. If the keys are the same but the values are different, the tags are also automatically joined with AND.
-   -  You cannot use both the private IP address and EIP for a combination of search.
+   -  You cannot use both the private IP address and EIP for a combined search.
 
 .. _en-us_topic_0000001630328828__table145381755194911:
 
@@ -86,7 +86,7 @@ Procedure
 Example 1: Searching by Property Value
 --------------------------------------
 
-After you enter a complete property value, the system automatically identifies the property type and search for it.
+After you enter a complete property value, the system automatically identifies the property type and searches for it.
 
 -  Searching by a single value
 

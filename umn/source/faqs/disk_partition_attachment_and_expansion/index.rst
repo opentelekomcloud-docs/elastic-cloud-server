@@ -15,7 +15,7 @@ Disk Partition, Attachment, and Expansion
 -  :ref:`What Are the Requirements for Attaching an EVS Disk to an ECS? <en-us_topic_0040863659>`
 -  :ref:`Which ECSs Can Be Attached with SCSI EVS Disks? <en-us_topic_0077938284>`
 -  :ref:`How Can I Attach a Snapshot-based System Disk to an ECS as Its Data Disk? <en-us_topic_0152643976>`
--  :ref:`Why Does a Linux ECS with a SCSI Disk Attached Fails to Be Restarted? <en-us_topic_0087382187>`
+-  :ref:`Why Does a Linux ECS with a SCSI Disk Attached Fail to Be Restarted? <en-us_topic_0087382187>`
 -  :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
 -  :ref:`How Can I Add ECSs Using Local Disks to an ECS Group? <en-us_topic_0189943259>`
 -  :ref:`Why Does a Disk Attached to a Windows ECS Go Offline? <en-us_topic_0114225937>`
@@ -37,7 +37,7 @@ Disk Partition, Attachment, and Expansion
    what_are_the_requirements_for_attaching_an_evs_disk_to_an_ecs
    which_ecss_can_be_attached_with_scsi_evs_disks
    how_can_i_attach_a_snapshot-based_system_disk_to_an_ecs_as_its_data_disk
-   why_does_a_linux_ecs_with_a_scsi_disk_attached_fails_to_be_restarted
+   why_does_a_linux_ecs_with_a_scsi_disk_attached_fail_to_be_restarted
    can_all_users_use_the_encryption_feature
    how_can_i_add_ecss_using_local_disks_to_an_ecs_group
    why_does_a_disk_attached_to_a_windows_ecs_go_offline

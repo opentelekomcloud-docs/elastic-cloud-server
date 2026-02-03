@@ -29,7 +29,7 @@ Constraints
 -  Ensure that **Automatically-assigned IPv6 address** is selected during ECS creation.
 
 -  After the ECS is started, its hot-swappable NICs cannot automatically acquire IPv6 addresses.
--  Only ECSs can work in dual-stack mode and BMSs cannot.
+-  Only ECSs support IPv4/IPv6 dual-stack. BMSs do not support IPv4/IPv6 dual-stack.
 -  Only one IPv6 address can be bound to a NIC.
 
 Procedure
@@ -39,7 +39,7 @@ Procedure
 
 -  Linux: Dynamic assignment of IPv6 addresses can be enabled automatically (recommended) or manually, as shown in :ref:`Table 1 <en-us_topic_0140963099__en-us_topic_0129883696_table1091729658>`.
 
-   If a private image created from a CentOS 6.x or Debian ECS with automatic IPv6 address assignment enabled is used to create an ECS in an environment that does not support IPv6, the ECS may start slow because of IPv6 address assignment timeout. You can set the timeout duration for assigning IPv6 addresses by referring to :ref:`Setting the Timeout Duration for IPv6 Address Assignment <en-us_topic_0140963099__en-us_topic_0129883696_section814912855814>`.
+   If you use a private image from a CentOS 6.x or Debian ECS with IPv6 auto-assignment enabled to create an ECS in a non-IPv6 environment, the ECS may experience slow startup due to an IPv6 address assignment timeout. You can set the timeout duration for assigning IPv6 addresses by referring to :ref:`Setting the Timeout Duration for IPv6 Address Assignment <en-us_topic_0140963099__en-us_topic_0129883696_section814912855814>`.
 
 .. _en-us_topic_0140963099__en-us_topic_0129883696_table1091729658:
 
@@ -108,7 +108,7 @@ Windows Server 2012
 
          **Figure 1** Querying the IPv6 address
 
-   -  If only a link-local IPv6 address is displayed, IPv6 is enabled but dynamic IPv6 assignment is not enabled. Go to step :ref:`2 <en-us_topic_0140963099__en-us_topic_0129883696_li2024825592115>`.
+   -  If only a link-local IPv6 address is displayed, IPv6 is enabled but dynamic IPv6 assignment is not enabled. Go to :ref:`2 <en-us_topic_0140963099__en-us_topic_0129883696_li2024825592115>`.
 
 
       .. figure:: /_static/images/en-us_image_0000001723492302.png
@@ -116,7 +116,7 @@ Windows Server 2012
 
          **Figure 2** Link-local IPv6 address
 
-   -  If neither an IPv6 address nor link-local IPv6 address is displayed, IPv6 is disabled. Go to step :ref:`3 <en-us_topic_0140963099__en-us_topic_0129883696_li35521349132511>`.
+   -  If neither an IPv6 address nor link-local IPv6 address is displayed, IPv6 is disabled. Go to :ref:`3 <en-us_topic_0140963099__en-us_topic_0129883696_li35521349132511>`.
 
 
       .. figure:: /_static/images/en-us_image_0000001771211453.png
@@ -178,7 +178,7 @@ Windows Server 2012
 
       **Set-NetIPv6Protocol -RandomizeIdentifiers disabled**
 
-   c. Perform step :ref:`1 <en-us_topic_0140963099__en-us_topic_0129883696_li64771254152011>` to check whether dynamic IPv6 address assignment is enabled.
+   c. Perform :ref:`1 <en-us_topic_0140963099__en-us_topic_0129883696_li64771254152011>` to check whether dynamic IPv6 address assignment is enabled.
 
 .. _en-us_topic_0140963099__en-us_topic_0129883696_section106971627556:
 
@@ -192,7 +192,7 @@ You can also enable dynamic IPv6 address assignment by following the instruction
 .. caution::
 
    -  When you run **ipv6-setup-**\ *xxx*, the network service will be automatically restarted. As a result, the network is temporarily disconnected.
-   -  If a private image created from a CentOS 6.x or Debian ECS with automatic IPv6 address assignment enabled is used to create an ECS in an environment that does not support IPv6, the ECS may start slow because of IPv6 address assignment timeout. Set the timeout duration for assigning IPv6 addresses to 30s by referring to :ref:`Setting the Timeout Duration for IPv6 Address Assignment <en-us_topic_0140963099__en-us_topic_0129883696_section814912855814>` and try to create a new private image again.
+   -  If you use a private image from a CentOS 6.x or Debian ECS with IPv6 auto-assignment enabled to create an ECS in a non-IPv6 environment, the ECS may experience slow startup due to an IPv6 address assignment timeout. You can set the timeout duration for assigning IPv6 addresses to 30s by referring to :ref:`Setting the Timeout Duration for IPv6 Address Assignment <en-us_topic_0140963099__en-us_topic_0129883696_section814912855814>` and try to create a new private image again.
 
 #. Run the following command to check whether IPv6 is enabled for the ECS:
 
@@ -280,7 +280,7 @@ Linux (Manually Enabling Dynamic Assignment of IPv6 Addresses)
 
 .. caution::
 
-   If a private image created from a CentOS 6.x or Debian ECS with automatic IPv6 address assignment enabled is used to create an ECS in an environment that does not support IPv6, the ECS may start slow because of IPv6 address assignment timeout. Set the timeout duration for assigning IPv6 addresses to 30s by referring to :ref:`Setting the Timeout Duration for IPv6 Address Assignment <en-us_topic_0140963099__en-us_topic_0129883696_section814912855814>` and try to create a new private image again.
+   If you use a private image from a CentOS 6.x or Debian ECS with IPv6 auto-assignment enabled to create an ECS in a non-IPv6 environment, the ECS may experience slow startup due to an IPv6 address assignment timeout. You can set the timeout duration for assigning IPv6 addresses to 30s by referring to :ref:`Setting the Timeout Duration for IPv6 Address Assignment <en-us_topic_0140963099__en-us_topic_0129883696_section814912855814>` and try to create a new private image again.
 
 #. .. _en-us_topic_0140963099__en-us_topic_0129883696_li967053013012:
 
@@ -482,9 +482,9 @@ Linux (Manually Enabling Dynamic Assignment of IPv6 Addresses)
 
             If no IPv6 address is assigned after the NICs are brought down and up, you can run this command to restart the network.
 
-      d. Perform step :ref:`1 <en-us_topic_0140963099__en-us_topic_0129883696_li967053013012>` to check whether dynamic IPv6 address assignment is enabled.
+      d. Perform :ref:`1 <en-us_topic_0140963099__en-us_topic_0129883696_li967053013012>` to check whether dynamic IPv6 address assignment is enabled.
 
-   -  CentOS, EulerOS, or Fedora
+   -  CentOS, EulerOS, Fedora, or openEuler
 
       a. Open the configuration file **/etc/sysconfig/network-scripts/ifcfg-eth0** of the primary NIC.
 
@@ -562,7 +562,7 @@ Linux (Manually Enabling Dynamic Assignment of IPv6 Addresses)
 
             **systemctl restart NetworkManager**
 
-      f. Perform step :ref:`1 <en-us_topic_0140963099__en-us_topic_0129883696_li967053013012>` to check whether dynamic IPv6 address assignment is enabled.
+      f. Perform :ref:`1 <en-us_topic_0140963099__en-us_topic_0129883696_li967053013012>` to check whether dynamic IPv6 address assignment is enabled.
 
    -  SUSE, openSUSE, or CoreOS
 
@@ -579,7 +579,7 @@ Linux (Manually Enabling Dynamic Assignment of IPv6 Addresses)
 Setting the Timeout Duration for IPv6 Address Assignment
 --------------------------------------------------------
 
-After automatic IPv6 address assignment is configured on an ECS running CentOS 6.x or Debian, the ECS will be created as a private image. When this image is used to create an ECS in an environment that IPv6 is unavailable, the ECS may start slow because acquiring an IPv6 address times out. Before creating the private image, you can set the timeout duration for acquiring IPv6 addresses to 30s as follows:
+If you use a private image from a CentOS 6.x or Debian ECS with IPv6 auto-assignment enabled to create an ECS in a non-IPv6 environment, the ECS may experience slow startup due to an IPv6 address assignment timeout. You can set the timeout duration for assigning IPv6 addresses to 30s and try to create a new private image again.
 
 -  CentOS 6.\ *x*:
 

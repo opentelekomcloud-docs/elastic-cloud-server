@@ -305,7 +305,7 @@ Log In to a Windows ECS Using a Non-English Keyboard
 
    For instructions about how to obtain the password for logging in to a Windows ECS, see :ref:`Obtaining the Password for Logging In to a Windows ECS <en-us_topic_0031107266>`.
 
-#. In the search box above the upper right corner of the ECS list, enter the ECS name, IP address, or ID, and click |image4| for search.
+#. In the search box above the ECS list, enter the ECS name, IP address, or ID, and click |image4| for search.
 
 #. Locate the row containing the ECS and click **Remote Login** in the **Operation** column.
 
