@@ -20,12 +20,26 @@ Procedure
 
 #. Run the following command to obtain the installation component provided by the OS:
 
-   **yum groupinstall "Desktop"**
+   .. code-block::
+
+      yum groupinstall "Desktop"
 
 2. Run the following command to set the default startup level to **5** (GUI):
 
-   **sed -i 's/id:3:initdefault:/id:5:initdefault:/' /etc/inittab**
+   .. code-block::
+
+      sed -i 's/id:3:initdefault:/id:5:initdefault:/' /etc/inittab
 
 3. Run the following command:
 
-   **startx**
+   .. code-block::
+
+      startx
+
+   After the command is executed, a GUI is displayed.
+
+
+   .. figure:: /_static/images/en-us_image_0000002489569541.png
+      :alt: **Figure 1** GUI display
+
+      **Figure 1** GUI display

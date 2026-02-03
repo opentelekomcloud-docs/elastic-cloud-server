@@ -52,7 +52,7 @@ To improve service reliability, you can add ECSs to an ECS group so that these E
 .. note::
 
    -  After an ECS is added to an ECS group, the system reallocates a host to run this ECS to ensure that ECSs in this group run on different hosts. When you attempt to restart the ECS, the startup may fail due to insufficient resources. In such a case, remove the ECS from the ECS group and try to restart the ECS again.
-   -  ECSs that have local disks attached can be added to an ECS group only during the creation process. Once created, they cannot be added to any ECS groups.
+   -  ECSs with local disks can be added to an ECS group only during the creation process. Once created, they cannot be added to any ECS groups.
    -  ECSs that have local disks, GPU cards, or FPGA cards attached can be added to an ECS group only during the creation process. Once created, they cannot be added to any ECS groups.
 
 #. Log in to the management console.

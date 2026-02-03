@@ -16,7 +16,7 @@ Notes
 -  After the OS is reinstalled, the IP and MAC addresses of the ECS remain unchanged.
 -  Reinstalling the OS clears the data in all partitions of the system disk, including the system partition. Back up data before reinstalling the OS. For details, see :ref:`Backing Up an ECS <en-us_topic_0000001128604648>`.
 -  Reinstalling the OS does not affect data in data disks.
--  Do not perform any operations on the ECS immediately after its OS is reinstalled. Wait for several minutes until the system successfully injects the password or key. Otherwise, the injection may fail, and the ECS cannot be logged in to.
+-  Do not perform any operations on the ECS immediately after its OS is reinstalled. Wait for several minutes until the system successfully injects the password or key. Otherwise, the injection may fail, and the ECS cannot be accessed.
 -  After the OS is reinstalled, the password for logging in to the ECS is reset. To retrieve the password, perform the following operations:
 
    -  For a Linux ECS, log in to it using the key and set a new password. For instructions about how to log in to an ECS using a key pair, see :ref:`Logging In to a Linux ECS Using an SSH Key Pair <en-us_topic_0017955380>`.

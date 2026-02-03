@@ -75,11 +75,11 @@ A security group denies all external requests by default. To remotely log in to 
 
    .. caution::
 
-      If the source is set to 0.0.0.0/0, all external IP addresses are allowed to remotely log in to the ECS. To ensure network security and prevent service interruptions caused by network intrusions, set the source to a trusted IP address (for example, the EIP bound to an ECS). For details, see :ref:`Table 4 <en-us_topic_0140323152__en-us_topic_0118534011_table1919016251434>`.
+      If the source is set to 0.0.0.0/0, all external IP addresses are allowed to remotely log in to the ECS. To ensure network security and prevent service interruptions caused by network intrusions, set the source to a known IP address (for example, the EIP bound to an ECS). For details, see :ref:`Table 4 <en-us_topic_0140323152__en-us_topic_0118534011_table1919016251434>`.
 
    .. _en-us_topic_0140323152__en-us_topic_0118534011_table1919016251434:
 
-   .. table:: **Table 4** Remotely logging in to an ECS using a trusted IP address
+   .. table:: **Table 4** Remotely logging in to an ECS using a known IP address
 
       =========== ========= ==== =============== ============================
       ECS Type    Direction Type Protocol & Port Source
@@ -105,12 +105,12 @@ By default, a security group denies all external requests. If you need to remote
 
 .. caution::
 
-   -  If the source is set to 0.0.0.0/0, all external IP addresses are allowed to remotely log in to the ECS to upload or download files. To ensure network security and prevent service interruptions caused by network intrusions, set the source to a trusted IP address. For details, see :ref:`Table 6 <en-us_topic_0140323152__en-us_topic_0118534011_table127653483419>`.
+   -  If the source is set to 0.0.0.0/0, all external IP addresses are allowed to remotely log in to the ECS to upload or download files. To ensure network security and prevent service interruptions caused by network intrusions, set the source to a known IP address. For details, see :ref:`Table 6 <en-us_topic_0140323152__en-us_topic_0118534011_table127653483419>`.
    -  You must first install the FTP server program on the ECSs and then check whether ports 20 and 21 are working properly.
 
 .. _en-us_topic_0140323152__en-us_topic_0118534011_table127653483419:
 
-.. table:: **Table 6** Remotely connecting to an ECS from a trusted server to upload or download files
+.. table:: **Table 6** Remotely connecting to an ECS from a known server to upload or download files
 
    ========= ==== =============== ==========================
    Direction Type Protocol & Port Source
@@ -170,7 +170,7 @@ Instances in the same VPC but in different security groups cannot communicate wi
 Allowing External Instances to Access the Database Deployed on an ECS
 ---------------------------------------------------------------------
 
-A security group denies all external requests by default. If you have deployed a database on an ECS and want the database to be accessed from external instances on a private network, you need to add an inbound rule to the security group of the ECS to allow access over corresponding ports. Here are some common ports for databases:
+By default, security groups deny all inbound requests. If you have deployed a database on a cloud server and want the database to be accessible to external instances over a private network, you need to add inbound rules to the security group of the cloud server to allow access over corresponding ports. Here are some common ports for databases:
 
 -  MySQL: port 3306
 -  Oracle: port 1521

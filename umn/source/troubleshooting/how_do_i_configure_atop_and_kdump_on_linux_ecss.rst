@@ -2,13 +2,13 @@
 
 .. _en-us_topic_0000001143214829:
 
-How Do I Configure atop and kdump on Linux ECSs for Performance Analysis?
-=========================================================================
+How Do I Configure atop and kdump on Linux ECSs?
+================================================
 
 Scenarios
 ---------
 
-This section describes how you can configure atop and kdump on Linux ECSs for performance analysis.
+This section describes how to configure atop and kdump on Linux ECSs.
 
 The method for configuring atop varies with the OS version.
 
@@ -23,9 +23,11 @@ atop
 -  :ref:`Configuring atop for Ubuntu 20 and Debian 10 <en-us_topic_0000001143214829__en-us_topic_0178319250_section773995710317>`
 -  :ref:`Configuring atop for Ubuntu 22 and Ubuntu 24 <en-us_topic_0000001143214829__en-us_topic_0178319250_section203481850122217>`
 -  :ref:`Configuring atop for Debian 11 and Debian 12 <en-us_topic_0000001143214829__en-us_topic_0178319250_section59661927152613>`
--  :ref:`Configuring atop for SUSE 12 or SUSE 15 <en-us_topic_0000001143214829__en-us_topic_0178319250_section3205824181917>`
+-  :ref:`Configuring atop for SUSE 12 and SUSE 15 <en-us_topic_0000001143214829__en-us_topic_0178319250_section3205824181917>`
+-  :ref:`Configuring atop for HCE 2.0 <en-us_topic_0000001143214829__en-us_topic_0178319250_section178718210178>`
 -  :ref:`Installing atop by Compiling the Source Code (for CentOS Stream 8/9, openEuler, or EulerOS) <en-us_topic_0000001143214829__en-us_topic_0178319250_section012793312620>`
 -  :ref:`Analyzing atop Logs <en-us_topic_0000001143214829__en-us_topic_0178319250_section478115314146>`
+-  :ref:`(Optional) Loading the netatop Kernel Module <en-us_topic_0000001143214829__en-us_topic_0178319250_section8871164440>`
 
 kdump
 
@@ -46,7 +48,7 @@ atop is a monitor for Linux that can report the activity of all processes and re
 Preparing for atop Installation
 -------------------------------
 
-An EIP is required and can access YUM.
+An EIP is required and can be used to access the yum software source.
 
 Constraints
 -----------
@@ -164,7 +166,7 @@ Configuring atop for Ubuntu 16 and Debian 8
 
 #. Run the following command to modify the configuration file of atop:
 
-   **vi /etc/default/atop**
+   **vi /etc/sysconfig/atop**
 
    Modify the following parameters, save the modification, and exit:
 
@@ -392,8 +394,8 @@ Configuring atop for Debian 11 and Debian 12
 
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section3205824181917:
 
-Configuring atop for SUSE 12 or SUSE 15
----------------------------------------
+Configuring atop for SUSE 12 and SUSE 15
+----------------------------------------
 
 #. Run the following command to download the atop source package:
 
@@ -461,6 +463,47 @@ Configuring atop for SUSE 12 or SUSE 15
 
    **systemctl stop atop atopacct atop-rotate.timer**
 
+.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section178718210178:
+
+Configuring atop for HCE 2.0
+----------------------------
+
+#. Run the following command to install atop:
+
+   **yum install -y atop**
+
+#. Set the sampling period.
+
+   The sampling period has been preset in the HCE and does not need to be adjusted. By default, the sampling period is 10 seconds, and logs are stored for three days.
+
+#. Run the following command to start atop:
+
+   **systemctl enable --now atop atopacct atop-rotate.timer**
+
+#. Check whether atop is started. If **atop atopacct** is **active (running)**, or **atop-rotate.timer** is **active (waiting)**, the services are running properly.
+
+   **systemctl status atop atopacct atop-rotate.timer**
+
+   .. code-block::
+
+      atop.service - Atop advanced performance monitor
+      Loaded: loaded (/usr/lib/systemd/system/atop.service; enabled; vendor preset: enabled)
+      Active: active (running)
+
+      atopacct.service - Atop process accounting daemon
+      Loaded: loaded (/usr/lib/systemd/system/atopacct.service; enabled; vendor preset: enabled)
+      Active: active (running)
+
+      atop-rotate.timer - Daily atop restart
+      Loaded: loaded (/usr/lib/systemd/system/atop-rotate.timer; enabled; vendor preset: enabled)
+      Active: active (waiting)
+
+#. Run the following commands to stop atop after troubleshooting to release the system and disk resources occupied by atop:
+
+   **systemctl disable atop atopacct atop-rotate.timer**
+
+   **systemctl stop atop atopacct atop-rotate.timer**
+
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section012793312620:
 
 Installing atop by Compiling the Source Code (for CentOS Stream 8/9, openEuler, or EulerOS)
@@ -519,7 +562,7 @@ Installing atop by Compiling the Source Code (for CentOS Stream 8/9, openEuler, 
 
    **vi /etc/default/atop**
 
-   Modify the following parameters, save the modification, and exit:
+   Add the following parameters, save the modification, and exit:
 
    -  Change the value of **LOGINTERVAL** to, for example, **15**. The default value of **LOGINTERVAL** is **600**, in seconds.
    -  Change the value of **LOGGENERATIONS** to, for example, **3**. The default retention period of atop logs is **28** days.
@@ -601,7 +644,7 @@ Run the following command to check the log file:
    -  **#proc**: Specifies the total number of processes.
    -  **#zombie**: Specifies the number of zombie processes.
    -  **#exit**: Specifies the number of processes that exited during the sampling period.
-   -  **CPU** row: Specifies the overall CPU usage (multi-core CPU as a whole CPU). The sum of the values in the CPU row is N x 100%. **N** indicates the number of vCPUs.
+   -  **CPU** row: Specifies the overall CPU usage (multi-core CPU as a whole CPU). The sum of the values in the CPU row is N x 100%. **N** indicates the number of CPUs.
    -  **#sys** and **user**: Specifies the percentage of how long the CPU is occupied when the system is running in kernel mode and user mode.
    -  **#irq**: Specifies the percentage of time when CPU is servicing interrupts.
    -  **#idle**: Specifies the percentage of time when CPU is idle.
@@ -627,12 +670,43 @@ Run the following command to check the log file:
    -  **#xxxxxi**: Specifies the number of packets received by each layer or active network port.
    -  **#xxxxxo**: Specifies the number of packets sent by each layer or active network port.
 
+.. _en-us_topic_0000001143214829__en-us_topic_0178319250_section8871164440:
+
+(Optional) Loading the netatop Kernel Module
+--------------------------------------------
+
+The netatop kernel module can monitor the statistics of TCP and UDP data packets sent and received by each process or thread. In atop, netatop is not installed by default. If you need to monitor the network usage, install it by referring to the description below.
+
+HCE 2.0 is used as an example to describe how to load the netatop kernel module for atop.
+
+To load the netatop kernel module on other Linux operating systems, see `Module netatop <https://www.atoptool.nl/downloadnetatop.php>`__ in the official atop help documentation.
+
+#. Run the following command to install the kernel development package and the software environment required for compilation on the kernel:
+
+   **sudo yum install -y kernel-devel dkms elfutils-libelf-devel**
+
+#. Run the following command to download the source code of the latest netatop to the specified directory:
+
+   **cd /usr/src/ && sudo wget https://www.atoptool.nl/download/netatop-3.2.2.tar.gz --no-check-certificate**
+
+#. Run the following command to decompress the source code and go to the source code directory:
+
+   **sudo tar -zxvf netatop-3.2.2.tar.gz && cd netatop-3.2.2**
+
+#. Run the following command to build and install the module and daemon based on the source code:
+
+   **sudo make && sudo make install**
+
+#. Run the following command to start netatop:
+
+   **systemctl start netatop**
+
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section1410131164120:
 
 Precautions for Configuring kdump
 ---------------------------------
 
-The method for configuring kdump described in this section applies to KVM ECSs running EulerOS or CentOS 7.\ *x*. For details, see `Documentation for kdump <https://www.kernel.org/doc/Documentation/kdump/kdump.txt>`__.
+The method for configuring kdump described in this section applies to KVM Linux ECSs running EulerOS or CentOS 7.\ *x*. For details, see `Documentation for kdump <https://www.kernel.org/doc/Documentation/kdump/kdump.txt>`__.
 
 .. _en-us_topic_0000001143214829__en-us_topic_0178319250_section18450171174120:
 

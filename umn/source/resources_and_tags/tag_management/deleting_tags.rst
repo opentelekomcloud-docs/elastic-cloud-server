@@ -72,9 +72,9 @@ Batch Deleting Tags on the TMS Console
 
 #. In the displayed **Manage Tag** dialog box, click **Delete** in the **Operation** column. Click **OK**.
 
-#. (Optional) Click |image5| in the upper right of the **Search Result** area.
+#. (Optional) Click |image5| in the upper right of the **Search Results** area.
 
-   The resource list is refreshed and the refresh time is updated.
+   The resource tag list is refreshed.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
 .. |image2| image:: /_static/images/en-us_image_0210875481.png

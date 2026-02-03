@@ -38,17 +38,23 @@ Installing a GUI
 
    a. Run the following command to update the software library:
 
-      **apt-get update**
+      .. code-block::
+
+         apt-get update
 
    b. Run the following command to install the Ubuntu GUI desktop component:
 
       -  For Ubuntu 16.04, run the following command:
 
-         **apt-get install -y scite xorg xubuntu-desktop**
+         .. code-block::
+
+            apt-get install -y scite xorg xubuntu-desktop
 
       -  For Ubuntu 18.04 and later versions, run the following command:
 
-         **apt-get install -y ubuntu-desktop**
+         .. code-block::
+
+            apt-get install -y ubuntu-desktop
 
 #. Set the configuration file version (mandatory for Ubuntu 24.04).
 
@@ -62,7 +68,9 @@ Installing a GUI
 
 #. Run the following command to edit the **/root/.profile** file:
 
-   **vim /root/.profile**
+   .. code-block::
+
+      vim /root/.profile
 
    Press **i** to enter the editing mode and change **mesg n \|\| true** in the last line to **tty -s && mesg n \|\| true**. After the modification, the file content is as follows:
 
@@ -81,7 +89,9 @@ Installing a GUI
 
 #. Run the following command to save and exit the configuration file:
 
-   **:wq**
+   .. code-block::
+
+      :wq
 
 #. .. _en-us_topic_0155136016__li2361413175614:
 
@@ -91,7 +101,9 @@ Installing a GUI
 
    Run the following command to add user **user01**:
 
-   **adduser user01**
+   .. code-block::
+
+      adduser user01
 
    Set a password for **user01** as prompted.
 
@@ -141,7 +153,9 @@ For GPU-accelerated ECSs, you need to configure X Server, x11vnc, and lightdm wh
 
    Query the BusID of the GPU.
 
-   **lspci \| grep -i nvidia**
+   .. code-block::
+
+      lspci | grep -i nvidia
 
 
    .. figure:: /_static/images/en-us_image_0000001305249202.png
@@ -151,13 +165,17 @@ For GPU-accelerated ECSs, you need to configure X Server, x11vnc, and lightdm wh
 
 #. Generate the X Server configuration.
 
-   **nvidia-xconfig --enable-all-gpus --separate-x-screens**
+   .. code-block::
+
+      nvidia-xconfig --enable-all-gpus --separate-x-screens
 
 #. Configure the GPU's BusID in "Section Device" in the generated **/etc/X11/xorg.conf**.
 
    a. Edit **/etc/X11/xorg.conf**.
 
-      **vi /etc/X11/xorg.conf**
+      .. code-block::
+
+         vi /etc/X11/xorg.conf
 
    b. Press **i** to enter editing mode.
 
@@ -179,15 +197,21 @@ For GPU-accelerated ECSs, you need to configure X Server, x11vnc, and lightdm wh
 
    e. Run the following command to save and exit the configuration file:
 
-      **:wq**
+      .. code-block::
+
+         :wq
 
 #. Install x11vnc.
 
-   **apt-get -y install x11vnc**
+   .. code-block::
+
+      apt-get -y install x11vnc
 
 #. Install lightdm.
 
-   **apt-get -y install lightdm**
+   .. code-block::
+
+      apt-get -y install lightdm
 
 #. Select **lightdm** as the default display manager.
 
@@ -199,13 +223,17 @@ For GPU-accelerated ECSs, you need to configure X Server, x11vnc, and lightdm wh
 
 #. Configure the GUI desktop environment to automatically start upon ECS startup.
 
-   **systemctl set-default graphical.target**
+   .. code-block::
+
+      systemctl set-default graphical.target
 
 #. (Optional) Configure the x11vnc to automatically start upon ECS startup.
 
    a. Add the **/lib/systemd/system/myservice.service** file.
 
-      **vi /lib/systemd/system/myservice.service**
+      .. code-block::
+
+         vi /lib/systemd/system/myservice.service
 
    b. Press **i** to enter editing mode.
 
@@ -231,13 +259,16 @@ For GPU-accelerated ECSs, you need to configure X Server, x11vnc, and lightdm wh
 
    e. Run the following command to save and exit the configuration file:
 
-      **:wq**
+      .. code-block::
+
+         :wq
 
 #. Load configuration files.
 
-   **systemctl daemon-reload**
+   .. code-block::
 
-   **systemctl enable myservice.service**
+      systemctl daemon-reload
+      systemctl enable myservice.service
 
 #. Run the reboot command to restart the ECS.
 
@@ -276,7 +307,9 @@ After installing a GUI on a GPU-accelerated ECS, perform the following operation
 
 #. Run the following command on the terminal. If the graphics card information is displayed as follows, the driver is working properly.
 
-   **nvidia-settings**
+   .. code-block::
+
+      nvidia-settings
 
 
    .. figure:: /_static/images/en-us_image_0000001358439905.png

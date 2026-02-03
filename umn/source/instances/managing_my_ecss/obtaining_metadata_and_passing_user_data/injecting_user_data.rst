@@ -63,7 +63,7 @@ Injecting User Data
 User Data Scripts of Linux ECSs
 -------------------------------
 
-User data scripts (referred to as scripts) of Linux ECSs are based on the open-source Cloud-Init architecture. This architecture uses ECS metadata as the data source for configuring the ECSs. User data scripts are compatible with the open-source Cloud-Init. For details about Cloud-Init, see http://cloudinit.readthedocs.io/en/latest/topics/format.html.
+User data scripts (referred to as scripts) of Linux ECSs are based on the open-source Cloud-Init architecture. This architecture uses ECS metadata as the data source for configuring the ECSs. User data scripts are compatible with the open-source Cloud-Init. For details about Cloud-Init, see https://cloudinit.readthedocs.io/en/latest/explanation/format.html.
 
 -  Script execution time: A user data script is executed after the status of the target ECS changes to **Running** and before **/etc/init** is executed.
 

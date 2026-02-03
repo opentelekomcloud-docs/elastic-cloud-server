@@ -27,9 +27,9 @@ Prerequisites
 
    The monitoring data is unavailable for the ECSs without alarm rules configured in Cloud Eye. For details, see :ref:`Creating Alarm Rules <en-us_topic_0027371531>`.
 
--  The target ECS has been properly running for at least 10 minutes.
+-  The target ECS has been properly running for at least about 10 minutes.
 
-   The monitoring data and graphics are available for a new ECS after the ECS runs for at least 10 minutes.
+   The monitoring data and graphics are not available for a new ECS until the ECS has been running for a certain period.
 
 Procedure
 ---------
