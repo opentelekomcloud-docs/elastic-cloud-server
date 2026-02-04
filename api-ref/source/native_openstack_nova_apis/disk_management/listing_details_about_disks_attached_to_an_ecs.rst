@@ -2,13 +2,13 @@
 
 .. _en-us_topic_0020212671:
 
-Querying Disks Attached to an ECS
-=================================
+Listing Details About Disks Attached to an ECS
+==============================================
 
 Function
 --------
 
-This API is used to query the disks that have been and are being attached to an ECS.
+This API is used to list details about disks that have been and are being attached to an ECS.
 
 URI
 ---
@@ -68,7 +68,7 @@ Response
 Example Request
 ---------------
 
-Query details about disks attached to an ECS.
+List details about disks attached to an ECS.
 
 .. code-block:: text
 

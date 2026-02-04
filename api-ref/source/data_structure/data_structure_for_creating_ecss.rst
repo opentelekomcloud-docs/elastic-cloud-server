@@ -500,7 +500,7 @@ This field is used by the following APIs:
    +-----------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | agency_name           | No              | String          | **Definition**                                                                                                                                                                                                              |
    |                       |                 |                 |                                                                                                                                                                                                                             |
-   |                       |                 |                 | Specifies the IAM agency name.                                                                                                                                                                                              |
+   |                       |                 |                 | Specifies the agency name.                                                                                                                                                                                                  |
    |                       |                 |                 |                                                                                                                                                                                                                             |
    |                       |                 |                 | An agency is created by a tenant administrator on Identity and Access Management (IAM) to provide temporary credentials for ECSs to access cloud services.                                                                  |
    |                       |                 |                 |                                                                                                                                                                                                                             |
@@ -570,119 +570,119 @@ This field is used by the following APIs:
 
 .. table:: **Table 10** **os:scheduler_hints** field description (request parameters)
 
-   +-------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter         | Mandatory       | Type            | Description                                                                                                                     |
-   +===================+=================+=================+=================================================================================================================================+
-   | group             | No              | String          | **Definition**                                                                                                                  |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | Specifies the ECS group ID in UUID format.                                                                                      |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | Obtain the parameter value from the console or by referring to :ref:`Querying the List of ECS Groups <en-us_topic_0065817721>`. |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | **Constraints**                                                                                                                 |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | Ensure that the ECS group uses the anti-affinity policy.                                                                        |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | The anti-affinity policy is not supported for ECSs created on a specified DeH.                                                  |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | **Range**                                                                                                                       |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | N/A                                                                                                                             |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | **Default Value**                                                                                                               |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | N/A                                                                                                                             |
-   +-------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------+
-   | tenancy           | No              | String          | **Definition**                                                                                                                  |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | Creates ECSs on a dedicated or shared host.                                                                                     |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | **Constraints**                                                                                                                 |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | N/A                                                                                                                             |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | **Range**                                                                                                                       |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | The value of this parameter can be **dedicated** or **shared**.                                                                 |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | **Default Value**                                                                                                               |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | N/A                                                                                                                             |
-   +-------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------+
-   | dedicated_host_id | No              | String          | **Definition**                                                                                                                  |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | Specifies the dedicated host ID.                                                                                                |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | **Constraints**                                                                                                                 |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | A DeH ID takes effect only when **tenancy** is set to **dedicated**.                                                            |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | **Range**                                                                                                                       |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | N/A                                                                                                                             |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | **Default Value**                                                                                                               |
-   |                   |                 |                 |                                                                                                                                 |
-   |                   |                 |                 | N/A                                                                                                                             |
-   +-------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------+
+   +-------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------+
+   | Parameter         | Mandatory       | Type            | Description                                                                                                        |
+   +===================+=================+=================+====================================================================================================================+
+   | group             | No              | String          | **Definition**                                                                                                     |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | Specifies the ECS group ID in UUID format.                                                                         |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | Obtain the parameter value from the console or by referring to :ref:`Listing ECS Groups <en-us_topic_0065817721>`. |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | **Constraints**                                                                                                    |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | Ensure that the ECS group uses the anti-affinity policy.                                                           |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | The anti-affinity policy is not supported for ECSs created on a specified DeH.                                     |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | **Range**                                                                                                          |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | N/A                                                                                                                |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | **Default Value**                                                                                                  |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | N/A                                                                                                                |
+   +-------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------+
+   | tenancy           | No              | String          | **Definition**                                                                                                     |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | Creates ECSs on a dedicated or shared host.                                                                        |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | **Constraints**                                                                                                    |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | N/A                                                                                                                |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | **Range**                                                                                                          |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | The value of this parameter can be **dedicated** or **shared**.                                                    |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | **Default Value**                                                                                                  |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | N/A                                                                                                                |
+   +-------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------+
+   | dedicated_host_id | No              | String          | **Definition**                                                                                                     |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | Specifies the dedicated host ID.                                                                                   |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | **Constraints**                                                                                                    |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | A DeH ID takes effect only when **tenancy** is set to **dedicated**.                                               |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | **Range**                                                                                                          |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | N/A                                                                                                                |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | **Default Value**                                                                                                  |
+   |                   |                 |                 |                                                                                                                    |
+   |                   |                 |                 | N/A                                                                                                                |
+   +-------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0167957246__table3756175217341:
 
 .. table:: **Table 11** **os:scheduler_hints** field description (response parameters)
 
-   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter             | Type                  | Description                                                                                                                    |
-   +=======================+=======================+================================================================================================================================+
-   | group                 | Array of strings      | **Definition**                                                                                                                 |
-   |                       |                       |                                                                                                                                |
-   |                       |                       | Specifies the ECS group ID in UUID format.                                                                                     |
-   |                       |                       |                                                                                                                                |
-   |                       |                       | Obtain the parameter value from the console or by referring to :ref:`Querying the List of ECS Groups <en-us_topic_0065817721>` |
-   |                       |                       |                                                                                                                                |
-   |                       |                       | **Constraints**                                                                                                                |
-   |                       |                       |                                                                                                                                |
-   |                       |                       | N/A                                                                                                                            |
-   |                       |                       |                                                                                                                                |
-   |                       |                       | **Range**                                                                                                                      |
-   |                       |                       |                                                                                                                                |
-   |                       |                       | N/A                                                                                                                            |
-   |                       |                       |                                                                                                                                |
-   |                       |                       | **Default Value**                                                                                                              |
-   |                       |                       |                                                                                                                                |
-   |                       |                       | N/A                                                                                                                            |
-   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------+
-   | tenancy               | Array of strings      | **Definition**                                                                                                                 |
-   |                       |                       |                                                                                                                                |
-   |                       |                       | Creates ECSs on a dedicated or shared host.                                                                                    |
-   |                       |                       |                                                                                                                                |
-   |                       |                       | **Constraints**                                                                                                                |
-   |                       |                       |                                                                                                                                |
-   |                       |                       | N/A                                                                                                                            |
-   |                       |                       |                                                                                                                                |
-   |                       |                       | **Range**                                                                                                                      |
-   |                       |                       |                                                                                                                                |
-   |                       |                       | **share** or **dedicate**                                                                                                      |
-   |                       |                       |                                                                                                                                |
-   |                       |                       | **Default Value**                                                                                                              |
-   |                       |                       |                                                                                                                                |
-   |                       |                       | N/A                                                                                                                            |
-   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------+
-   | dedicated_host_id     | Array of strings      | **Definition**                                                                                                                 |
-   |                       |                       |                                                                                                                                |
-   |                       |                       | Specifies the dedicated host ID.                                                                                               |
-   |                       |                       |                                                                                                                                |
-   |                       |                       | **Constraints**                                                                                                                |
-   |                       |                       |                                                                                                                                |
-   |                       |                       | A DeH ID takes effect only when **tenancy** is set to **dedicated**.                                                           |
-   |                       |                       |                                                                                                                                |
-   |                       |                       | **Range**                                                                                                                      |
-   |                       |                       |                                                                                                                                |
-   |                       |                       | N/A                                                                                                                            |
-   |                       |                       |                                                                                                                                |
-   |                       |                       | **Default Value**                                                                                                              |
-   |                       |                       |                                                                                                                                |
-   |                       |                       | N/A                                                                                                                            |
-   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                                       |
+   +=======================+=======================+===================================================================================================================+
+   | group                 | Array of strings      | **Definition**                                                                                                    |
+   |                       |                       |                                                                                                                   |
+   |                       |                       | Specifies the ECS group ID in UUID format.                                                                        |
+   |                       |                       |                                                                                                                   |
+   |                       |                       | Obtain the parameter value from the console or by referring to :ref:`Listing ECS Groups <en-us_topic_0065817721>` |
+   |                       |                       |                                                                                                                   |
+   |                       |                       | **Constraints**                                                                                                   |
+   |                       |                       |                                                                                                                   |
+   |                       |                       | N/A                                                                                                               |
+   |                       |                       |                                                                                                                   |
+   |                       |                       | **Range**                                                                                                         |
+   |                       |                       |                                                                                                                   |
+   |                       |                       | N/A                                                                                                               |
+   |                       |                       |                                                                                                                   |
+   |                       |                       | **Default Value**                                                                                                 |
+   |                       |                       |                                                                                                                   |
+   |                       |                       | N/A                                                                                                               |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------+
+   | tenancy               | Array of strings      | **Definition**                                                                                                    |
+   |                       |                       |                                                                                                                   |
+   |                       |                       | Creates ECSs on a dedicated or shared host.                                                                       |
+   |                       |                       |                                                                                                                   |
+   |                       |                       | **Constraints**                                                                                                   |
+   |                       |                       |                                                                                                                   |
+   |                       |                       | N/A                                                                                                               |
+   |                       |                       |                                                                                                                   |
+   |                       |                       | **Range**                                                                                                         |
+   |                       |                       |                                                                                                                   |
+   |                       |                       | **share** or **dedicate**                                                                                         |
+   |                       |                       |                                                                                                                   |
+   |                       |                       | **Default Value**                                                                                                 |
+   |                       |                       |                                                                                                                   |
+   |                       |                       | N/A                                                                                                               |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------+
+   | dedicated_host_id     | Array of strings      | **Definition**                                                                                                    |
+   |                       |                       |                                                                                                                   |
+   |                       |                       | Specifies the dedicated host ID.                                                                                  |
+   |                       |                       |                                                                                                                   |
+   |                       |                       | **Constraints**                                                                                                   |
+   |                       |                       |                                                                                                                   |
+   |                       |                       | A DeH ID takes effect only when **tenancy** is set to **dedicated**.                                              |
+   |                       |                       |                                                                                                                   |
+   |                       |                       | **Range**                                                                                                         |
+   |                       |                       |                                                                                                                   |
+   |                       |                       | N/A                                                                                                               |
+   |                       |                       |                                                                                                                   |
+   |                       |                       | **Default Value**                                                                                                 |
+   |                       |                       |                                                                                                                   |
+   |                       |                       | N/A                                                                                                               |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0167957246__section681114217434:
 

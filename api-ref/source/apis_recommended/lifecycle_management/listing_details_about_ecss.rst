@@ -2,13 +2,13 @@
 
 .. _en-us_topic_0094148850:
 
-Querying Details About ECSs
-===========================
+Listing Details About ECSs
+==========================
 
 Function
 --------
 
-This API is used to query details about ECSs according to search criteria.
+This API is used to list details about ECSs based on search criteria.
 
 The information that can be queried includes the ECS billing mode and whether the ECS is frozen.
 
@@ -692,7 +692,7 @@ Response
 Example Request
 ---------------
 
-Query details about ECSs. Ten records are displayed on each page, starting from the first page.
+List details about ECSs. Ten records are displayed on each page, starting from the first page.
 
 .. code-block:: text
 

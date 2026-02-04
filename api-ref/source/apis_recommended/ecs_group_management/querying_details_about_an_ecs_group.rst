@@ -8,7 +8,7 @@ Querying Details About an ECS Group
 Function
 --------
 
-This API is used to query details bout an ECS group.
+This API is used to query details about an ECS group.
 
 URI
 ---
@@ -69,7 +69,7 @@ Response
 Example Request
 ---------------
 
-Query details about a specified ECS group.
+Query details about the specified ECS group.
 
 .. code-block:: text
 

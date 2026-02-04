@@ -2,13 +2,13 @@
 
 .. _en-us_topic_0065817721:
 
-Querying the List of ECS Groups
-===============================
+Listing ECS Groups
+==================
 
 Function
 --------
 
-This API is used to query the list of ECS groups.
+This API is used to list ECS groups.
 
 URI
 ---
@@ -84,7 +84,7 @@ Response
 Example Request
 ---------------
 
-Query a list of ECS groups.
+List ECS groups.
 
 .. code-block:: text
 

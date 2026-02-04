@@ -369,7 +369,7 @@ Response
 
 .. _en-us_topic_0118308527__table1656029015527:
 
-.. table:: **Table 7** Data structure of the network which an ECS accesses
+.. table:: **Table 7** Data structure of the network that an ECS accesses
 
    +-----------------------+-----------------------+-----------------------------------------------+
    | Parameter             | Type                  | Description                                   |

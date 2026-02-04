@@ -46,7 +46,7 @@ GET /v1/{project_id}/cloudservers/fpga_image/detail?fpga_image_id={fpga_image_id
 .. note::
 
    -  Pagination query takes effect only if parameters **page** and **size** both have a value. If only one of them has a value, an error message indicating invalid parameter will be displayed.
-   -  If **fpga_image_id** is used, pagination query specified by **page** and **size** does not take effect.
+   -  If **fpga_image_id** is used, the pagination query specified by **page** and **size** does not take effect.
 
 Request
 -------

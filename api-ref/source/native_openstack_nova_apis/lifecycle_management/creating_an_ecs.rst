@@ -10,7 +10,7 @@ Function
 
 This API is used to create ECS.
 
-This API does not support automatic rollback after creating an ECS failed. If automatic rollback is required, call the API POST /v1/{project_id}/cloudservers. For details, see :ref:`Creating an ECS <en-us_topic_0020212668>`.
+This API does not support automatic rollback after creating an ECS failed. If automatic rollback is required, call the API POST /v1/{project_id}/cloudservers. For details, see :ref:`Creating ECSs <en-us_topic_0020212668>`.
 
 URI
 ---
@@ -35,14 +35,14 @@ POST /v2/{project_id}/servers
 
    Alias of the API for creating ECSs: /v2/{project_id}/os-volumes_boot
 
-   This calling mode can only be used in OpenStack client.
+   This calling mode can only be used in OpenStack client and is not recommended.
 
 Constraints
 -----------
 
-#. This API is native, which does not support the creation of ECSs using full-ECS images. To use full-ECS images to create ECSs, refer to :ref:`Creating an ECS <en-us_topic_0020212668>`.
+#. This API is native, which does not support the creation of ECSs using full-ECS images. To use full-ECS images to create ECSs, refer to :ref:`Creating ECSs <en-us_topic_0020212668>`.
 
-#. When using this API to create an ECS, you cannot bind an EIP to the ECS during the creation process. To do so, see :ref:`Creating an ECS <en-us_topic_0020212668>`.
+#. When using this API to create an ECS, you cannot bind an EIP to the ECS during the creation process. To do so, see :ref:`Creating ECSs <en-us_topic_0020212668>`.
 
 #. Parameter **port** in the three network parameters (**port**, **uuid**, and **fixed_ip**) has the highest priority. If parameter **fixed_ip** is set, you must specify the UUID.
 
@@ -79,7 +79,7 @@ Constraints
 
 #. If your ECS is remotely logged in using a key, use the **key_name** parameter. If your ECS is remotely accessed using a password, use the **adminPass** parameter. Linux ECSs support **user_data** for injection. Windows ECSs support **admin_pass** for injection.
 
-#. If the image based on which the ECS is created uses the native OpenStack API, ensure that the specified AZ and system disk capacity and type used when the ECS is created are the same as those used when the image is created. Otherwise, the ECS creation will fail.
+#. If the image used to create the ECS uses the native OpenStack API, ensure that the AZ and the system disk capacity and type specified during the ECS creation are the same as those of the image. Otherwise, the ECS creation will fail.
 
 Request
 -------

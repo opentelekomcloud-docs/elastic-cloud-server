@@ -150,7 +150,7 @@ Response
    +--------------------------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | OS-EXT-SRV-ATTR:hypervisor_hostname  | String                        | **Definition**                                                                                                                                                                                                                                        |
    |                                      |                               |                                                                                                                                                                                                                                                       |
-   |                                      |                               | Specifies the name of the host on which the ECS is deployed. This is an extended attribute.                                                                                                                                                           |
+   |                                      |                               | Specifies the name of the host where the ECS is deployed. This is an extended attribute.                                                                                                                                                              |
    |                                      |                               |                                                                                                                                                                                                                                                       |
    |                                      |                               | **Range**                                                                                                                                                                                                                                             |
    |                                      |                               |                                                                                                                                                                                                                                                       |
@@ -258,7 +258,7 @@ Response
    |                                      |                               | **Range**                                                                                                                                                                                                                                             |
    |                                      |                               |                                                                                                                                                                                                                                                       |
    |                                      |                               | -  If the ECS status is normal, **NULL** is displayed.                                                                                                                                                                                                |
-   |                                      |                               | -  If the ECS status is faulty, fault message or details are returned.                                                                                                                                                                                |
+   |                                      |                               | -  If the ECS status is abnormal, the fault message or details are returned.                                                                                                                                                                          |
    |                                      |                               |                                                                                                                                                                                                                                                       |
    |                                      |                               |    -  **message**: specifies the fault message.                                                                                                                                                                                                       |
    |                                      |                               |    -  **code**: specifies the fault code.                                                                                                                                                                                                             |
@@ -347,7 +347,7 @@ Response
    |                                      |                               |                                                                                                                                                                                                                                                       |
    |                                      |                               | -  **UP**: The nova-compute status is normal.                                                                                                                                                                                                         |
    |                                      |                               | -  **UNKNOWN**: The nova-compute status is unknown.                                                                                                                                                                                                   |
-   |                                      |                               | -  **DOWN**: the nova-compute status is abnormal.                                                                                                                                                                                                     |
+   |                                      |                               | -  **DOWN**: The nova-compute status is abnormal.                                                                                                                                                                                                     |
    |                                      |                               | -  **MAINTENANCE**: The nova-compute is in maintenance state.                                                                                                                                                                                         |
    |                                      |                               | -  Empty string: There is no host information.                                                                                                                                                                                                        |
    +--------------------------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -507,26 +507,20 @@ Response
 
 .. table:: **Table 5** **security_options** field description
 
-   +-----------------+-----------------+-----------------+------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                |
-   +=================+=================+=================+============================================================+
-   | tpm_enabled     | Yes             | Boolean         | **Definition**                                             |
-   |                 |                 |                 |                                                            |
-   |                 |                 |                 | Specifies whether to enable TPM.                           |
-   |                 |                 |                 |                                                            |
-   |                 |                 |                 | **Constraints**                                            |
-   |                 |                 |                 |                                                            |
-   |                 |                 |                 | Currently, the following instance types support TPM: Pi5e. |
-   |                 |                 |                 |                                                            |
-   |                 |                 |                 | **Range**                                                  |
-   |                 |                 |                 |                                                            |
-   |                 |                 |                 | -  **true**: Enable TPM.                                   |
-   |                 |                 |                 | -  **false**: Disable TPM.                                 |
-   |                 |                 |                 |                                                            |
-   |                 |                 |                 | **Default Value**                                          |
-   |                 |                 |                 |                                                            |
-   |                 |                 |                 | false                                                      |
-   +-----------------+-----------------+-----------------+------------------------------------------------------------+
+   +-----------------------+-----------------------+------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                |
+   +=======================+=======================+============================================================+
+   | tpm_enabled           | Boolean               | **Definition**                                             |
+   |                       |                       |                                                            |
+   |                       |                       | Specifies whether to enable TPM.                           |
+   |                       |                       |                                                            |
+   |                       |                       | Currently, the following instance types support TPM: Pi5e. |
+   |                       |                       |                                                            |
+   |                       |                       | **Range**                                                  |
+   |                       |                       |                                                            |
+   |                       |                       | -  **true**: Enable TPM.                                   |
+   |                       |                       | -  **false**: Disable TPM.                                 |
+   +-----------------------+-----------------------+------------------------------------------------------------+
 
 Example Request
 ---------------
@@ -565,8 +559,11 @@ Example Response
                "id": "s3.large.1",
                "name": "s3.large.1"
                "asic_accelerators": [
-
-               ]
+                   {
+                       "name":"asic_01",
+                       "count":1,
+                       "memory_mb":1024
+                   }]
            },
            "accessIPv4": "",
            "accessIPv6": "",

@@ -17,10 +17,10 @@ After this API is called, the system uninstalls the system disk, uses the new im
 Constraints
 -----------
 
--  You can only use an image with Cloud-Init or Cloudbase-Init installed.
--  Only a stopped ECS or an ECS on which reinstalling or changing the OS failed supports changing OS.
--  Only an ECS with a system disk supports changing OS.
--  You are not allowed to perform other operations when changing the OS. Otherwise, changing the OS will fail.
+-  This API only supports images with Cloud-Init or Cloudbase-Init installed.
+-  OS changes are only supported on stopped ECSs or on ECSs where OS reinstallation or change has failed.
+-  ECSs without system disks do not support OS changes.
+-  You are not allowed to perform other operations when changing the OS, or the OS change may fail.
 
 URI
 ---
@@ -261,7 +261,25 @@ Request
 Response
 --------
 
-See :ref:`Responses (Jobs) <en-us_topic_0022067714>`.
+:ref:`Table 5 <en-us_topic_0067876971__table2824153181913>` describes the response parameters.
+
+.. _en-us_topic_0067876971__table2824153181913:
+
+.. table:: **Table 5** Response parameters
+
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                                                                                                                                                                                 |
+   +=======================+=======================+=============================================================================================================================================================================================================================================================+
+   | job_id                | String                | **Definition**                                                                                                                                                                                                                                              |
+   |                       |                       |                                                                                                                                                                                                                                                             |
+   |                       |                       | Specifies the job ID returned after a job is delivered. The job ID can be used to query the job execution progress. For details about how to query the job execution status based on **job_id**, see :ref:`Job Status Management <en-us_topic_0022225397>`. |
+   |                       |                       |                                                                                                                                                                                                                                                             |
+   |                       |                       | **Range**                                                                                                                                                                                                                                                   |
+   |                       |                       |                                                                                                                                                                                                                                                             |
+   |                       |                       | N/A                                                                                                                                                                                                                                                         |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+For details about abnormal responses, see :ref:`Responses (Jobs) <en-us_topic_0022067714>`.
 
 Example Request
 ---------------

@@ -124,7 +124,25 @@ Request
 Response
 --------
 
-See :ref:`Responses (Jobs) <en-us_topic_0022067714>`.
+:ref:`Table 4 <en-us_topic_0020212679__table2824153181913>` describes the response parameters.
+
+.. _en-us_topic_0020212679__table2824153181913:
+
+.. table:: **Table 4** Response parameters
+
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                                                                                                                                                                                 |
+   +=======================+=======================+=============================================================================================================================================================================================================================================================+
+   | job_id                | String                | **Definition**                                                                                                                                                                                                                                              |
+   |                       |                       |                                                                                                                                                                                                                                                             |
+   |                       |                       | Specifies the job ID returned after a job is delivered. The job ID can be used to query the job execution progress. For details about how to query the job execution status based on **job_id**, see :ref:`Job Status Management <en-us_topic_0022225397>`. |
+   |                       |                       |                                                                                                                                                                                                                                                             |
+   |                       |                       | **Range**                                                                                                                                                                                                                                                   |
+   |                       |                       |                                                                                                                                                                                                                                                             |
+   |                       |                       | N/A                                                                                                                                                                                                                                                         |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+For details about abnormal responses, see :ref:`Responses (Jobs) <en-us_topic_0022067714>`.
 
 Example Request
 ---------------
@@ -143,7 +161,7 @@ Example Request
           ],
           "delete_publicip": false,
           "delete_volume": false
-         }
+              }
 
 -  Delete ECSs whose IDs are **616fb98f-46ca-475e-917e-2563e5a8cd19**, **616fb98f-46ca-475e-917e-2563e5a8ef20**, and **616fb98f-46ca-475e-917e-2563e5a8gh21** in batches.
 
@@ -165,7 +183,7 @@ Example Request
                   "id": "616fb98f-46ca-475e-917e-2563e5a8gh21"
               }
           ]
-      }
+              }
 
 Example Response
 ----------------

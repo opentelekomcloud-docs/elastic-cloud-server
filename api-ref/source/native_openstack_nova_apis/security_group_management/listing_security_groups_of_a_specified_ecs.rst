@@ -2,13 +2,13 @@
 
 .. _en-us_topic_0065817702:
 
-Querying Security Groups of a Specified ECS
-===========================================
+Listing Security Groups of a Specified ECS
+==========================================
 
 Function
 --------
 
-This API is used to query security groups of a specified ECS.
+This API is used to list security groups of a specified ECS.
 
 URI
 ---
@@ -123,7 +123,7 @@ Response
 Example Request
 ---------------
 
-Query security groups of a specified ECS.
+List security groups of a specified ECS.
 
 .. code-block:: text
 

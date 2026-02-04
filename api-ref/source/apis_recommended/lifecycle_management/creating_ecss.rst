@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0020212668:
 
-Creating an ECS
-===============
+Creating ECSs
+=============
 
 .. _en-us_topic_0020212668__section61372619:
 

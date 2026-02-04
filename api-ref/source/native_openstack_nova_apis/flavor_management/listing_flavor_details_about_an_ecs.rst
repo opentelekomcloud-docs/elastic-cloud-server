@@ -2,13 +2,13 @@
 
 .. _en-us_topic_0020212658:
 
-Querying Details About ECS Flavors
-==================================
+Listing Flavor Details About an ECS
+===================================
 
 Function
 --------
 
-This API is used to query details about ECS flavors.
+This API is used to list flavor details about an ECS.
 
 URI
 ---
@@ -128,7 +128,7 @@ Response
 Example Request
 ---------------
 
-Query details about ECS flavors.
+List flavor details about an ECS.
 
 .. code-block:: text
 

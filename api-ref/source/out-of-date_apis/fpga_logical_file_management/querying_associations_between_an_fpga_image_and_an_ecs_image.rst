@@ -48,7 +48,7 @@ GET /v1/{project_id}/cloudservers/fpga_image/associations?image_id={image_id}&fp
 .. note::
 
    -  You can obtain the association only after specifying either **fpga_image_id** or **image_id**. Otherwise, only one empty list is returned.
-   -  Pagination query takes effect only if parameters **page** and **size** both have a value. If only one of them has a value, an error message indicating invalid parameter will be displayed. If both **image_id** and **fpga_image_id** are used, pagination query specified by **page** and **size** does not take effect.
+   -  Pagination query takes effect only if parameters **page** and **size** both have a value. If only one of them has a value, an error message indicating invalid parameter will be displayed. If both **image_id** and **fpga_image_id** are used, the pagination query specified by **page** and **size** does not take effect.
 
 Request
 -------

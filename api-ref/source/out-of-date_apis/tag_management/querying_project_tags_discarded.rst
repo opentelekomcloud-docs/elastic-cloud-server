@@ -14,7 +14,7 @@ This API is used to query all tags used by a user in a specified project.
 
 .. note::
 
-   This API has been discarded. Use the API described in :ref:`Querying Project Tags <en-us_topic_0167811966>`.
+   This API has been discarded. Use the API described in :ref:`Listing Project Tags <en-us_topic_0167811966>`.
 
 URI
 ---

@@ -2,13 +2,13 @@
 
 .. _en-us_topic_0020212656:
 
-Querying Details About Flavors and Extended Flavor Information
-==============================================================
+Listing Flavor Details and Extended Information
+===============================================
 
 Function
 --------
 
-This API is used to query details about ECS flavors and extended flavor information.
+This API is used to list flavor details and extended information.
 
 URI
 ---
@@ -360,7 +360,7 @@ Response
 Example Request
 ---------------
 
-Query details about ECS flavors and extended flavor information.
+List ECS flavor details and extended flavor information.
 
 .. code-block:: text
 
