@@ -12,10 +12,10 @@ Cloud Backup and Recovery (CBR) enhances data integrity and service continuity. 
 
 For more information, see :ref:`CBR Architecture <en-us_topic_0000001128445638__section10399144613501>`, :ref:`Backup Mechanism <en-us_topic_0000001128445638__section696712594578>`, and :ref:`Backup Options <en-us_topic_0000001128445638__section533362013>`.
 
-You can back up ECS data using Cloud Server Backup or Cloud Disk Backup.
+You can back up ECS data using cloud server backup or cloud disk backup.
 
--  Cloud Server Backup (recommended): Use this backup function if you want to back up the data of all EVS disks (system and data disks) on an ECS. This prevents data inconsistency caused by time difference in creating a backup.
--  Cloud Disk Backup: Use this backup function if you want to back up the data of one or more EVS disks (system or data disk) on an ECS. This minimizes backup costs on the basis of data security.
+-  Cloud server backup (recommended): Use this backup function if you want to back up the data of all EVS disks (system and data disks) on an ECS. This prevents data inconsistency caused by time difference in creating a backup.
+-  Cloud disk backup: Use this backup function if you want to back up the data of one or more EVS disks (system or data disk) on an ECS. This minimizes backup costs on the basis of data security.
 
 ECS Backup Procedure
 --------------------
@@ -26,7 +26,7 @@ ECS Backup Procedure
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
-#. In the ECS list, locate the target ECS and choose **More** > **Manage Image/Backup** > **Create Server Backup**.
+#. In the ECS list, locate the target ECS and choose **More** > **Manage Image/Backup** > **Create Server Backup** in the **Operation** column.
 
    -  If the ECS has been associated with a vault, configure the backup information as instructed.
 

@@ -20,7 +20,9 @@ Procedure
 
 #. Run the following command to install the GUI desktop component:
 
-   **yum groupinstall "Server with GUI"**
+   .. code-block::
+
+      yum groupinstall "Server with GUI"
 
    .. note::
 
@@ -36,11 +38,15 @@ Procedure
 
 #. After the installation is complete, run the following command to set the default startup level to **graphical.target**:
 
-   **systemctl set-default graphical.target**
+   .. code-block::
+
+      systemctl set-default graphical.target
 
 #. Run the following command to start **graphical.target**:
 
-   **systemctl start graphical.target**
+   .. code-block::
+
+      systemctl start graphical.target
 
 #. Restart the ECS.
 

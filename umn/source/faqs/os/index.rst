@@ -11,6 +11,7 @@ OS
 -  :ref:`How Can I Install a GUI on an ECS Running Ubuntu? <en-us_topic_0155136016>`
 -  :ref:`How Can I Install a GUI on an ECS Running Debian? <en-us_topic_0000001210472883>`
 -  :ref:`Why Cannot My ECS OS Start Properly? <en-us_topic_0101604510>`
+-  :ref:`Best Practices for Performance Configuration <en-us_topic_0000002498531278>`
 
 .. toctree::
    :maxdepth: 1
@@ -22,3 +23,4 @@ OS
    how_can_i_install_a_gui_on_an_ecs_running_ubuntu
    how_can_i_install_a_gui_on_an_ecs_running_debian
    why_cannot_my_ecs_os_start_properly
+   best_practices_for_performance_configuration

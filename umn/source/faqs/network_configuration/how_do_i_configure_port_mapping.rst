@@ -5,10 +5,10 @@
 How Do I Configure Port Mapping?
 ================================
 
-Symptom
--------
+Description
+-----------
 
-It is expected that the EIP and port on ECS 1 accessed from the public network can be automatically redirected to the EIP and port on ECS 2.
+How do I configure public access to the EIP and port on ECS 1 to be automatically redirected to a specific port on ECS 2?
 
 Windows
 -------
@@ -49,13 +49,6 @@ Private IP address of ECS 2: 192.168.72.20
 .. note::
 
    -  Ensure that the desired ports have been enabled on the ECS security group and firewall.
-
-   -  Ensure that the source/destination check function is disabled.
-
-      On the ECS details page, click **Network Interfaces** and disable **Source/Destination Check**.
-
-      By default, the source/destination check function is enabled. When this function is enabled, the system checks whether source IP addresses contained in the packets sent by ECSs are correct. If the IP addresses are incorrect, the system does not allow the ECSs to send the packets. This mechanism prevents packet spoofing, thereby improving system security. However, this mechanism prevents the packet sender from receiving returned packets. You need to disable the source/destination check.
-
    -  The operations involve modifying kernel parameters, which may cause kernel instability. Evaluate risks before performing this operation.
 
 #. Log in to Linux ECS 1.

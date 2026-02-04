@@ -21,25 +21,35 @@ Procedure
 
 #. Log in to the ECS and run the following command to update the software library:
 
-   **apt update**
+   .. code-block::
+
+      apt update
 
 #. Run the following command to upgrade the software library:
 
-   **apt upgrade**
+   .. code-block::
+
+      apt upgrade
 
 3. Run the following command to install tasksel:
 
-   **apt install tasksel**
+   .. code-block::
+
+      apt install tasksel
 
 4. Run the following command to use tasksel to install the GNOME GUI:
 
-   **tasksel install desktop gnome-desktop**
+   .. code-block::
+
+      tasksel install desktop gnome-desktop
 
    The installation takes a long time. Please wait.
 
 5. Run the following command to set the GUI as the default startup target:
 
-   **systemctl set-default graphical.target**
+   .. code-block::
+
+      systemctl set-default graphical.target
 
 6. .. _en-us_topic_0000001210472883__li162011120159:
 
@@ -49,7 +59,9 @@ Procedure
 
    Run the following command to add user **user01**:
 
-   **adduser user01**
+   .. code-block::
+
+      adduser user01
 
    Set a password for **user01** as prompted.
 

@@ -39,7 +39,7 @@ In this user group, if user 1 uses the encryption feature for the first time, th
 
 #. User 1 selects a key.
 
-   One of the following keys can be used:
+   Any of the following keys can be used:
 
    -  Default key **evs/default**
    -  Custom key, which was created before using the EVS disk encryption feature

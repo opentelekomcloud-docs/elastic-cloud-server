@@ -29,12 +29,12 @@ Available now: All GPU models except the recommended ones. If available ECSs are
 -  P series
 
    -  :ref:`Computing-accelerated P5e <en-us_topic_0097289624__section7795174175814>`
-   -  :ref:`Computing-accelerated P5s <en-us_topic_0097289624__section453311473114>`
+   -  :ref:`Computing-accelerated P5s <en-us_topic_0097289624__section453311473114>` (recommended)
    -  :ref:`Computing-accelerated P3 <en-us_topic_0097289624__section48861652193>`
-   -  :ref:`Computing-accelerated P2s <en-us_topic_0097289624__section1454714546567>` (recommended)
+   -  :ref:`Computing-accelerated P2s <en-us_topic_0097289624__section1454714546567>`
    -  :ref:`Computing-accelerated P2v <en-us_topic_0097289624__section208472383415>`
-   -  :ref:`Inference-accelerated Pi5e <en-us_topic_0097289624__section3135224614>`
-   -  :ref:`Inference-accelerated Pi2 <en-us_topic_0097289624__section1846114713182>` (recommended)
+   -  :ref:`Inference-accelerated Pi5e <en-us_topic_0097289624__section3135224614>` (recommended)
+   -  :ref:`Inference-accelerated Pi2 <en-us_topic_0097289624__section1846114713182>`
 
 Helpful links:
 
@@ -160,7 +160,7 @@ Select your desired GPU-accelerated ECS type and specifications.
 -  CPU: 3rd Generation Intel® Xeon® Scalable 6348 processors (3.0 GHz of basic frequency and 3.5 GHz of turbo frequency)
 -  Graphics acceleration APIs
 
-   -  DirectX 12.07, Direct2D, DirectX Video Acceleration (DXVA)
+   -  DirectX 12.07, Direct2D, and DirectX Video Acceleration (DXVA)
    -  Shader Model 5.17
    -  OpenGL 4.68
    -  Vulkan 1.18
@@ -238,7 +238,7 @@ Select your desired GPU-accelerated ECS type and specifications.
 -  CPU: 3rd Generation Intel® Xeon® Scalable 8378A processors (3.0 GHz of basic frequency and 3.5 GHz of turbo frequency)
 -  Graphics acceleration APIs
 
-   -  DirectX 12.07, Direct2D, DirectX Video Acceleration (DXVA)
+   -  DirectX 12.07, Direct2D, and DirectX Video Acceleration (DXVA)
    -  Shader Model 5.17
    -  OpenGL 4.68
    -  Vulkan 1.18
@@ -372,7 +372,7 @@ P5e ECSs use high-performance NVIDIA Tesla H100 NVL to deliver outstanding train
    +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+--------------+------------------+----------------+
    | p5e.20xlarge.12 | 80    | 960          | 32/18                                   | 750                       | 32              | 8         | 4 x H100 NVL | 376              | KVM            |
    +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+--------------+------------------+----------------+
-   | p5e.40xlarge.12 | 160   | 1920         | 40/36                                   | 850                       | 32              | 8         | 8 x H100 NVL | 752              | KVM            |
+   | p5e.40xlarge.12 | 160   | 1,920        | 40/36                                   | 850                       | 32              | 8         | 8 x H100 NVL | 752              | KVM            |
    +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+--------------+------------------+----------------+
 
 **P5e ECS Features**

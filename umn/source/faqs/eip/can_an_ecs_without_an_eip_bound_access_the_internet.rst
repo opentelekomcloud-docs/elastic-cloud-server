@@ -11,7 +11,7 @@ Yes.
 
    You can configure the SNAT server so that the ECS without an EIP bound can access the Internet.
 
-   For details, see `"Configuring an SNAT Server" <https://docs.otc.t-systems.com/en-us/usermanual/vpc/vpc_route_0004.html>`__ in *Virtual Private Cloud User Guide*.
+   For details, see `Configuring an SNAT Server <https://docs.otc.t-systems.com/en-us/usermanual/vpc/vpc_route_0004.html>`__ in *Virtual Private Cloud User Guide*.
 
 -  Method 2: Create a NAT gateway.
 

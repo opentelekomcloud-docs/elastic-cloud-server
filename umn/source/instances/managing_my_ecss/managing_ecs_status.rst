@@ -5,9 +5,9 @@
 Managing ECS Status
 ===================
 
-You can start, stop, restart, or delete the ECS.
+You can start, stop, restart, or delete an ECS.
 
--  To prevent a sudden load increase, you are advised to start or stop a small number of ECSs at a time.
+-  To prevent a sudden load increase, you are advised to start or stop ECSs in small batches.
 -  If an ECS remains in the **Restarting** or **Stopping** state for a long time, you can forcibly restart or stop it. In such a case, any unsaved data on the ECS will be lost. Therefore, exercise caution when forcibly restarting or stopping an ECS.
 
 .. note::

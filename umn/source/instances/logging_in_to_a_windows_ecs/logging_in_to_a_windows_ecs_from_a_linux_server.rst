@@ -29,7 +29,7 @@ To log in to a Windows ECS from a local Linux server, use a remote access tool, 
 
    **rdesktop**
 
-   If the message "command not found" is displayed, rdesktop is not installed. In such a case, obtain the rdesktop installation package at the `official rdesktop website <http://www.rdesktop.org/>`__.
+   If the message "command not found" is displayed, rdesktop is not installed. In such a case, obtain the rdesktop installation package at the `official rdesktop website <https://www.rdesktop.org/>`__.
 
 #. Run the following command to log in to the ECS:
 

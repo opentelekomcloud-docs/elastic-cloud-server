@@ -34,7 +34,7 @@ Your account automatically comes with a default security group. The default secu
 
    **Figure 1** Default security group
 
-:ref:`Table 1 <en-us_topic_0030828257__table1580115155277>` describes the rules in the default security group.
+:ref:`Table 1 <en-us_topic_0030828257__table1580115155277>` describes the default security group rules.
 
 .. _en-us_topic_0030828257__table1580115155277:
 
