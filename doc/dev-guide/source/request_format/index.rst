@@ -25,16 +25,14 @@ URLs are in the format of https://Endpoint/uri. :ref:`Table 1 <en-us_topic_01341
 
 A project ID is required for some URLs when an API is called. Therefore, you need to obtain a project ID on the console before calling an API. To do so, perform the following operations:
 
-#. Register yourself on the management console and log in to it.
+#. Log in to the management console.
 
-#. Hover the mouse over the username and select **Basic Information** from the drop-down list.
+#. Click the username and choose **My Credentials** from the drop-down list.
 
-#. On the **Account Info** page, click **Manage** following **Security Credentials**.
-
-#. On the **My Credential** page, view the project ID in the project list.
+   On the **My Credential** page, view the project ID in the project list.
 
 
-   .. figure:: /_static/images/en-us_image_0173496413.png
+   .. figure:: /_static/images/en-us_image_0000002563735547.png
       :alt: **Figure 1** Viewing project IDs
 
       **Figure 1** Viewing project IDs

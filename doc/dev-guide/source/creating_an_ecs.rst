@@ -10,7 +10,7 @@ Scenarios
 
 An ECS with EVS disks is required.
 
-An ECS can be created using a disk or image. This section uses an image as an example to describe how to create an ECS.
+An ECS can be created using a volume or image. This section uses an image as an example to describe how to create an ECS.
 
 Involved APIs
 -------------
