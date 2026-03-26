@@ -77,6 +77,7 @@ For example, you are required to use the API for details about an ECS to view th
 
       ============ ================
       Content-Type application/json
+      ============ ================
       X-Auth-Token ${token}
       ============ ================
 
@@ -181,6 +182,7 @@ For example, you are required to use the API for details about an ECS to view th
 
       ============================ ================
       Content-Type                 application/json
+      ============================ ================
       X-Auth-Token                 ${token}
       X-OpenStack-Nova-API-Version 2.26
       ============================ ================
