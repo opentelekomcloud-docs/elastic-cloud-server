@@ -37,7 +37,7 @@ Procedure
 
       Run the following command to upload local files to the ECS:
 
-      **put** *Path in which files are stored on the local computer*
+      **put** *local-computer-file-path*
 
       For example, to upload the **/home/test.txt** file on the local Linux computer to the ECS, run the following command:
 
@@ -47,7 +47,7 @@ Procedure
 
       Run the following command to download files on the ECS to the local computer:
 
-      **get** *Path in which the files are stored on the ECS Path in which the files are to be stored on the local computer*
+      **get** *<ECS-file-path> <local-computer-file-path>*
 
       For example, to download the **test.txt** file on the ECS to the local Linux computer, run the following command:
 

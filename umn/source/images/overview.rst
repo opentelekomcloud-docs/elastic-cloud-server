@@ -40,7 +40,7 @@ If you plan to use a private image to change the OS, ensure that the private ima
 -  If a local image file is required, make sure that the image file has been imported to the cloud platform and registered as a private image.
 -  If a private image from another region is required, make sure that the image has been copied.
 -  If a private image from another user account is required, make sure that the image has been shared with you.
--  A heterogeneous ECS with GPUs, NPUs, or encoding cards do not support private images in UEFI boot mode.
+-  A heterogeneous ECS with GPUs, NPUs, or encoding cards does not support private images in UEFI boot mode.
 
 Shared Image
 ------------

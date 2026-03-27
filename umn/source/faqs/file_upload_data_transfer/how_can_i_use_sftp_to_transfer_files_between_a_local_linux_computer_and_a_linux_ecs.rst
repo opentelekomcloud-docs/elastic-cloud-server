@@ -90,7 +90,7 @@ Procedure
 
 #. Run the following command on the local computer to set up the connection:
 
-   **sftp root@**\ *IP address*
+   **sftp root@**\ *IP-address*
 
 #. Run the **sftp** command to check the connection.
 

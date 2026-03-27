@@ -27,7 +27,7 @@ Windows Server 2008
 
       **Figure 2** Remote Desktop Session Host Configuration
 
-#. Double-click **Restrict each user to a single session** and deselect **Restrict each user to a single session**, and click **OK**.
+#. Double-click **Restrict each user to a single session**, deselect **Restrict each user to a single session**, and click **OK**.
 
 
    .. figure:: /_static/images/en-us_image_0288997372.png

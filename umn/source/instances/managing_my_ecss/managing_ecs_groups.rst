@@ -31,7 +31,7 @@ You can perform the following operations:
 Creating an ECS Group
 ---------------------
 
-Create an ECS group and associate the same policy to all group members. ECS groups are independent of each other.
+Create an ECS group and select a policy for the group. This policy applies to all ECSs in the same group. ECS groups are independent of each other.
 
 #. Log in to the management console.
 #. Click |image1| in the upper left corner and select a region and project.

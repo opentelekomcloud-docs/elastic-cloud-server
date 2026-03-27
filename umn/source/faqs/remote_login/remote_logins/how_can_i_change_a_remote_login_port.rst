@@ -98,7 +98,7 @@ The following procedure uses an ECS running CentOS 7.3 as an example. The defaul
 
    b. Click |image2| in the upper left corner and select a region and project.
 
-   c. Under **Computing**, click **Elastic Cloud Server**.
+   c. Under **Computing**, select **Elastic Cloud Server**.
 
    d. On the ECS list, click the name of an ECS for which you want to modify the security group rule.
 
@@ -109,7 +109,7 @@ The following procedure uses an ECS running CentOS 7.3 as an example. The defaul
       -  **Protocols**: TCP (Custom ports)
       -  **Port**: 2020
 
-      For details, see "Adding a Security Group Rule" in *Virtual Private Cloud User Guide*.
+      For details, see "Adding a Security Group Rule" in the *Virtual Private Cloud User Guide*.
 
 #. Log in to the ECS.
 
@@ -135,21 +135,21 @@ The following procedure uses an ECS running CentOS 7.3 as an example. The defaul
 
    **systemctl restart sshd**
 
-#. Skip this step if the firewall is disabled. Configure the firewall.
+#. (Optional) Configure the firewall. If the firewall is disabled, skip this step.
 
    The firewall varies depending on the CentOS version. CentOS 7 uses firewalld, and CentOS 6 uses iptables. The following operations use CentOS 7 as an example.
 
    Run the **firewall-cmd --state** command to check the firewall status.
 
-   -  (Recommended) Method 1: Add information about a new port to firewalld.
+   -  (Recommended) Method 1: Add a new port to firewalld.
 
-      a. Run the following commands to add a rule for port 2020:
+      a. Add a rule for port 2020.
 
          **firewall-cmd --zone=public --add-port=2020/tcp --permanent**
 
          **firewall-cmd --reload**
 
-      b. View the added port. The TCP connection of port 2020 will have been added.
+      b. View the added port. In the ports section, port 2020 for TCP connections should have been added.
 
          **firewall-cmd --list-all**
 

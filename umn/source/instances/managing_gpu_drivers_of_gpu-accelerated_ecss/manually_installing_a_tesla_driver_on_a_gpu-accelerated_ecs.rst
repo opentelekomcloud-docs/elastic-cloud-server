@@ -69,13 +69,13 @@ The following uses Ubuntu 20.04 64bit as an example to describe how to install t
 
 #. Download the NVIDIA driver package.
 
-   Select a driver at `NVIDIA Driver Downloads <https://www.nvidia.com/Download/index.aspx?lang=en-us>`__ based on the ECS type.
+   Download a driver from `NVIDIA Drivers <https://www.nvidia.com/Download/index.aspx?lang=en-us>`__ based on the ECS type.
 
 
    .. figure:: /_static/images/en-us_image_0000002114600494.png
-      :alt: **Figure 1** Selecting the NVIDIA driver
+      :alt: **Figure 1** Manual driver search
 
-      **Figure 1** Selecting the NVIDIA driver
+      **Figure 1** Manual driver search
 
 #. Select a driver version as required. The following uses Tesla 418.67 as an example.
 
@@ -186,7 +186,7 @@ The following uses Windows Server 2016 Standard 64bit as an example to describe 
 
 #. Download the NVIDIA driver package.
 
-   Select a driver version at `NVIDIA Driver Downloads <https://www.nvidia.com/Download/index.aspx?lang=en-us>`__ based on the ECS type.
+   Select a driver version at `NVIDIA Drivers <https://www.nvidia.com/Download/index.aspx?lang=en-us>`__ based on the ECS type.
 
 
    .. figure:: /_static/images/en-us_image_0000002114450902.png

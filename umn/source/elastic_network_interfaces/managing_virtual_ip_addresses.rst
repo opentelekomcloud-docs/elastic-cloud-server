@@ -45,7 +45,7 @@ The following uses CentOS 8.2 64bit as an example.
 
 #. .. _en-us_topic_0093492520__en-us_topic_0118499077_li528316578916:
 
-   Obtain the network interface that the virtual IP address is to be bound and the connection of the network interface:
+   Obtain and take a note of the network interface that the virtual IP address is to be bound and the connection of the network interface:
 
    **nmcli connection**
 
@@ -75,7 +75,7 @@ The following uses CentOS 8.2 64bit as an example.
    Configure the parameters as follows:
 
    -  *connection-name-of-the-network-interface*: The connection name of the network interface obtained in :ref:`1 <en-us_topic_0093492520__en-us_topic_0118499077_li528316578916>`. In this example, the connection name is **System eth0**.
-   -  *virtual-IP-address*: Enter the virtual IP address to be added. If you add multiple virtual IP addresses at a time, separate every two with a comma (,).
+   -  *virtual-IP-address*: The virtual IP address to be added. If you add multiple virtual IP addresses at a time, separate every two with a comma (,).
 
    Example commands:
 
@@ -145,7 +145,7 @@ Ubuntu
 
 The following uses Ubuntu 22.04 server 64bit as an example. If the ECS runs **Ubuntu 22** or **Ubuntu 20**, perform the following operations:
 
-#. Obtain the network interface that the virtual IP address is to be bound:
+#. Obtain and take a note of the network interface that the virtual IP address is to be bound:
 
    **ifconfig**
 
@@ -262,9 +262,9 @@ The following operations use Windows Server as an example.
 
 
    .. figure:: /_static/images/en-us_image_0000001179761510.png
-      :alt: **Figure 2** Configuring private IP address
+      :alt: **Figure 2** Configuring a private IP address
 
-      **Figure 2** Configuring private IP address
+      **Figure 2** Configuring a private IP address
 
 #. Click **Advanced**.
 
@@ -274,9 +274,9 @@ The following operations use Windows Server as an example.
 
 
    .. figure:: /_static/images/en-us_image_0000001225081545.png
-      :alt: **Figure 3** Configuring virtual IP address
+      :alt: **Figure 3** Configuring a virtual IP address
 
-      **Figure 3** Configuring virtual IP address
+      **Figure 3** Configuring a virtual IP address
 
 #. Click **OK**.
 

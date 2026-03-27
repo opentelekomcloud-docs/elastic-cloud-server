@@ -10,7 +10,7 @@ Scenarios
 
 ECS metadata is a special API that can be locally accessed in the ECS OS. It contains basic ECS details, such as the cloud server ID, hostname, and network details. With ECS metadata, you can exchange basic information in an ECS and configure and manage the ECS OS and applications more conveniently and securely. Metadata allows you to configure information in the OS during initialization and obtain ECS information during service running.
 
-ECS metadata supports OpenStack and EC2 compatible types, as shown in :ref:`Table 1 <en-us_topic_0042400609__table273552371680>`.
+ECS supports OpenStack and EC2-compatible metadata types, as shown in :ref:`Table 1 <en-us_topic_0042400609__table273552371680>`.
 
 The following describes the URI and methods of using the supported ECS metadata.
 
@@ -19,7 +19,7 @@ Notes
 
 If the metadata contains sensitive data, take appropriate measures to protect the sensitive data, for example, controlling access permissions and encrypting the data.
 
-Example configurations on the firewall are listed below:
+Example firewall configurations are listed below:
 
 -  Windows
 
@@ -81,38 +81,38 @@ ECS Metadata Types
    |                       |                                               |                                                                                                                                                                                                                                                  |
    |                       |                                               |    ECSs will not use agencies to perform operations on resources.                                                                                                                                                                                |
    +-----------------------+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | EC2 compatible        | /latest/meta-data/hostname                    | Displays the name of the host accommodating an ECS.                                                                                                                                                                                              |
+   | EC2-compatible        | /latest/meta-data/hostname                    | Displays the hostname of an ECS.                                                                                                                                                                                                                 |
    |                       |                                               |                                                                                                                                                                                                                                                  |
-   |                       |                                               | To remove the suffix **.novalocal** from an ECS, see:                                                                                                                                                                                            |
+   |                       |                                               | To remove the suffix **.novalocal** from an ECS hostname, see:                                                                                                                                                                                   |
    |                       |                                               |                                                                                                                                                                                                                                                  |
    |                       |                                               | :ref:`Is an ECS Hostname with Suffix .novalocal Normal? <en-us_topic_0094874138>`                                                                                                                                                                |
    +-----------------------+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | EC2 compatible        | /latest/meta-data/local-hostname              | Has the same meaning as **hostname**.                                                                                                                                                                                                            |
+   | EC2-compatible        | /latest/meta-data/local-hostname              | Has the same meaning as **hostname**.                                                                                                                                                                                                            |
    +-----------------------+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | EC2 compatible        | /latest/meta-data/public-hostname             | Has the same meaning as **hostname**.                                                                                                                                                                                                            |
+   | EC2-compatible        | /latest/meta-data/public-hostname             | Has the same meaning as **hostname**.                                                                                                                                                                                                            |
    +-----------------------+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | EC2 compatible        | /latest/meta-data/instance-type               | Displays an ECS flavor.                                                                                                                                                                                                                          |
+   | EC2-compatible        | /latest/meta-data/instance-type               | Displays an ECS flavor.                                                                                                                                                                                                                          |
    +-----------------------+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | EC2 compatible        | /latest/meta-data/local-ipv4                  | Displays the fixed IP address of an ECS.                                                                                                                                                                                                         |
+   | EC2-compatible        | /latest/meta-data/local-ipv4                  | Displays the fixed IP address of an ECS.                                                                                                                                                                                                         |
    |                       |                                               |                                                                                                                                                                                                                                                  |
    |                       |                                               | If there are multiple NICs, only the IP address of the primary NIC is displayed.                                                                                                                                                                 |
    +-----------------------+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | EC2 compatible        | /latest/meta-data/placement/availability-zone | Displays the AZ accommodating an ECS.                                                                                                                                                                                                            |
+   | EC2-compatible        | /latest/meta-data/placement/availability-zone | Displays the AZ accommodating an ECS.                                                                                                                                                                                                            |
    +-----------------------+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | EC2 compatible        | /latest/meta-data/public-ipv4                 | Displays the EIP bound to the ECS.                                                                                                                                                                                                               |
+   | EC2-compatible        | /latest/meta-data/public-ipv4                 | Displays the EIP bound to the ECS.                                                                                                                                                                                                               |
    |                       |                                               |                                                                                                                                                                                                                                                  |
    |                       |                                               | If there are multiple NICs, only the EIP of the primary NIC is displayed.                                                                                                                                                                        |
    +-----------------------+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | EC2 compatible        | /latest/meta-data/public-keys/0/openssh-key   | Displays the public key of an ECS.                                                                                                                                                                                                               |
+   | EC2-compatible        | /latest/meta-data/public-keys/0/openssh-key   | Displays the public key of an ECS.                                                                                                                                                                                                               |
    +-----------------------+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | EC2 compatible        | /latest/user-data                             | Displays ECS user data. It is used the same way as user-data in the OpenStack metadata type.                                                                                                                                                     |
+   | EC2-compatible        | /latest/user-data                             | Displays ECS user data. It is used the same way as user-data in the OpenStack metadata type.                                                                                                                                                     |
    +-----------------------+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | EC2 compatible        | /latest/meta-data/security-groups             | Displays the security group of an ECS.                                                                                                                                                                                                           |
+   | EC2-compatible        | /latest/meta-data/security-groups             | Displays the security group of an ECS.                                                                                                                                                                                                           |
    +-----------------------+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0042400609__table2373623012315:
 
-.. table:: **Table 2** metadata key fields
+.. table:: **Table 2** Key metadata fields
 
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------+
    | Parameter             | Type                  | Description                                                                         |
@@ -123,9 +123,9 @@ ECS Metadata Types
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------+
    | meta                  | Dict                  | Specifies the metadata information, including the image name, image ID, and VPC ID. |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------+
-   | hostname              | String                | Specifies the name of the host accommodating an ECS.                                |
+   | hostname              | String                | Specifies the hostname of an ECS.                                                   |
    |                       |                       |                                                                                     |
-   |                       |                       | To remove the suffix **.novalocal** from an ECS, see:                               |
+   |                       |                       | To remove the suffix **.novalocal** from an ECS hostname, see:                      |
    |                       |                       |                                                                                     |
    |                       |                       | :ref:`Is an ECS Hostname with Suffix .novalocal Normal? <en-us_topic_0094874138>`   |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------+
@@ -134,7 +134,7 @@ Prerequisites
 -------------
 
 -  The target ECS has been logged in.
--  Security group rules in the outbound direction meet the following requirements:
+-  The outbound security group rules must meet the following requirements:
 
    -  Protocol: TCP
    -  Port: 80
@@ -142,7 +142,7 @@ Prerequisites
 
    .. note::
 
-      If you use the default security group rules for the outbound direction, the metadata can be accessed because the default rules meet the preceding requirements. For details about the default security group rules for the outbound direction, see :ref:`Default Security Groups and Rules <en-us_topic_0140323154>`.
+      If you use the outbound rules of the default security group, the preceding requirements are met by default and metadata can be accessed. For details about the outbound rules of the default security group, see :ref:`Default Security Group and Rules <en-us_topic_0140323154>`.
 
 Metadata (OpenStack Metadata API)
 ---------------------------------
@@ -194,7 +194,7 @@ This API is used to query ECS metadata.
 User Data (OpenStack Metadata API)
 ----------------------------------
 
-This API is used to query ECS user data. The value is configured only when you create an ECS. It cannot be changed after the configuration.
+This API is used to query ECS user data. The value can be configured only during the ECS creation. After the creation is complete, it cannot be changed.
 
 -  URI
 
@@ -221,7 +221,7 @@ This API is used to query ECS user data. The value is configured only when you c
 
    .. note::
 
-      If user data was not passed to the ECS during ECS creation, the query result is 404.
+      If no user data was passed to the ECS during creation, the query result is 404.
 
 
       .. figure:: /_static/images/en-us_image_0166755236.png
@@ -293,7 +293,7 @@ This API is used to obtain a temporary AK/SK.
 
 .. note::
 
-   -  If an ECS needs to obtain a temporary AK/SK, you need to create and authorize an agency on the IAM console and then go to the ECS details page to configure **Agency** for the ECS in the **Management Information** area.
+   -  To enable an ECS to obtain a temporary AK/SK, you need to create and authorize an agency on the IAM console and then go to the ECS details page to configure **Agency** for the ECS in the **Management Information** area.
    -  The validity period of a temporary AK and SK is one hour. The temporary AK and SK are updated 10 minutes ahead of the expiration time. During the 10 minutes, both the new and old temporary AKs and SKs can be used.
    -  When using temporary AKs and SKs, add **'X-Security-Token':{securitytoken}** in the message header. **securitytoken** is the value returned when a call is made to the API.
 
@@ -315,10 +315,10 @@ This API is used to obtain a temporary AK/SK.
 
    **Invoke-RestMethod http://169.254.169.254/openstack/latest/securitykey**
 
-User Data (EC2 Compatible API)
+User Data (EC2-Compatible API)
 ------------------------------
 
-This API is used to query ECS user data. The value is configured only when you create an ECS. It cannot be changed after the configuration.
+This API is used to query ECS user data. The value can be configured only during the ECS creation. After the creation is complete, it cannot be changed.
 
 -  URI
 
@@ -343,10 +343,10 @@ This API is used to query ECS user data. The value is configured only when you c
       #!/bin/bash
       echo "Hello, the time is now $(date -R)" | tee /root/output.txt
 
-Hostname (EC2 Compatible API)
+Hostname (EC2-Compatible API)
 -----------------------------
 
-This API is used to query the name of the host accommodating an ECS. The **.novalocal** suffix will be added later.
+This API is used to query the hostname of an ECS. The **.novalocal** suffix will be added to the hostname.
 
 -  URI
 
@@ -370,7 +370,7 @@ This API is used to query the name of the host accommodating an ECS. The **.nova
 
       vm-test.novalocal
 
-Instance Type (EC2 Compatible API)
+Instance Type (EC2-Compatible API)
 ----------------------------------
 
 This API is used to query an ECS flavor.
@@ -397,7 +397,7 @@ This API is used to query an ECS flavor.
 
       s3.medium.2
 
-Local IPv4 (EC2 Compatible API)
+Local IPv4 (EC2-Compatible API)
 -------------------------------
 
 This API is used to query the fixed IP address of an ECS. If there are multiple NICs, only the IP address of the primary NIC is displayed.
@@ -424,7 +424,7 @@ This API is used to query the fixed IP address of an ECS. If there are multiple 
 
       192.1.1.2
 
-Availability Zone (EC2 Compatible API)
+Availability Zone (EC2-Compatible API)
 --------------------------------------
 
 This API is used to query the AZ accommodating an ECS.
@@ -451,7 +451,7 @@ This API is used to query the AZ accommodating an ECS.
 
       az1.dc1
 
-Public IPv4 (EC2 Compatible API)
+Public IPv4 (EC2-Compatible API)
 --------------------------------
 
 This API is used to query the EIP bound to an ECS. If there are multiple NICs, only the EIP of the primary NIC is displayed.
@@ -478,7 +478,7 @@ This API is used to query the EIP bound to an ECS. If there are multiple NICs, o
 
       46.1.1.2
 
-Public Keys (EC2 Compatible API)
+Public Keys (EC2-Compatible API)
 --------------------------------
 
 This API is used to query the public key of an ECS.
