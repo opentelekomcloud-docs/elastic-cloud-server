@@ -60,10 +60,6 @@ Enabling RDP
 
 For your first login, use VNC to log in and enable RDP for your ECS. Then, use MSTSC to log in.
 
-.. note::
-
-   RDP is enabled by default for ECSs created using public images.
-
 #. Log in to the Windows ECS using VNC.
 
    For details, see :ref:`Logging In to a Windows ECS Using VNC <en-us_topic_0027268511>`.

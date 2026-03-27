@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0094801708:
 
-What Can I Do If Switching from a Non-root User to User root Times Out?
-=======================================================================
+What Can I Do If Switching from a Non-root User to a Root User Timed Out?
+=========================================================================
 
 Symptom
 -------
@@ -33,7 +33,7 @@ Solution
 
    An example is provided as follows:
 
-   If the ECS hostname is **hostname** and the private IP address of the ECS is **192.168.0.1**, add the following statement:
+   If the ECS hostname is **hostname** and the private IP address of the ECS is **192.168.0.1**, add the following:
 
    192.168.0.1 hostname
 

@@ -30,7 +30,7 @@ The following operations use EulerOS 2.2 as an example.
 
    .. note::
 
-      You are advised to configure the password validity period as needed and change it at a regular basis.
+      You are advised to configure the password validity period as needed and change it on a regular basis.
 
 #. Run command **vi /etc/login.defs** to verify that the configuration has taken effect.
 

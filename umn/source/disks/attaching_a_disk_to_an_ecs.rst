@@ -44,7 +44,7 @@ Procedure
 
       **Figure 1** Attach Disk
 
-#. Select the target disk and specify the disk as the system disk or data disk
+#. Select the target disk and specify the disk as the system disk or data disk.
 
    .. note::
 
@@ -69,7 +69,7 @@ Procedure
 Follow-up Procedure
 -------------------
 
-If the attached disk is newly created, the disk can be used only after it is initialized.
+If the attached disk is newly created, the disk cannot be used until it is initialized.
 
 For details about how to initialize a data disk, see :ref:`Scenarios and Disk Partitions <en-us_topic_0030831623>`.
 

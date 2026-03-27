@@ -55,7 +55,7 @@ Procedure
 
    e. .. _en-us_topic_0021426802__li49674320202157:
 
-      Locate the row containing the system disk to be detached and click **Detach** to detach the system disk from the ECS.
+      Locate the row containing the system disk and click **Detach** to detach the system disk from the ECS.
 
 #. Attach the system disk to the temporary ECS.
 
@@ -73,13 +73,13 @@ Procedure
 
    e. Run the following command to mount the file system of the detached system disk to the temporary ECS:
 
-      **mount -t ntfs-3g /dev/**\ *system-disk-directory* **/mnt/**
+      **mount -t ntfs-3g /dev/**\ *<system-disk-directory>* **/mnt/**
 
       For example, if the queried system disk directory is xvde2, run the following command:
 
       **mount -t ntfs-3g /dev/xvde2 /mnt/**
 
-      If the following error information is returned in the command output, the NTFS file systems between the original Windows ECS and the Linux ECS may be inconsistent.
+      If the error information below is returned in the command output, the NTFS file systems between the original Windows ECS and the Linux ECS may be inconsistent.
 
       .. code-block::
 
@@ -123,7 +123,7 @@ Procedure
          Write hive files? (y/n) [n] : y
          0<SAM> - OK
 
-#. Stop the temporary ECS, detach the system disk, and attach the system disk to the original Windows ECS.
+#. Stop the temporary ECS, detach the system disk, and attach the system disk back to the original Windows ECS.
 
    a. Stop the temporary ECS, go to the ECS details page, and click the **Disks** tab.
 
@@ -141,7 +141,7 @@ Procedure
 
    b. Click **Start**. Enter **CMD** in the search box and press **Enter**.
 
-   c. Run the following command to set a new password. The new password must meet the password complexity requirements described in :ref:`Overview of Password Reset <en-us_topic_0035643949>`.
+   c. Run the command below to set a new password. The new password must meet the password complexity requirements. For details, see :ref:`Overview of Password Reset <en-us_topic_0035643949>`.
 
       **net user** **Administrator** *<new-password>*
 

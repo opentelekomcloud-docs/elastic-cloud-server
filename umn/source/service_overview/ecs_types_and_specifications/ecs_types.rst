@@ -24,10 +24,10 @@ Example: s2.medium.4
 
 The format is defined as follows:
 
--  **A** specifies the ECS type. For example, **s** indicates a general-computing ECS, **c** a general computing-plus ECS, and **m** a memory-optimized ECS.
--  **B** specifies the type ID. For example, **3** in **s3** indicates the third-generation general-purpose ECS.
--  **C** specifies the flavor size, such as medium, large, xlarge, 2xlarge, 4xlarge, or 8xlarge.
--  **D** specifies the ratio of memory to vCPUs expressed in a digit. For example, value **4** indicates that the ratio of memory to vCPUs is 4.
+-  **A** indicates the instance family. For example, **s** indicates general computing, **c** indicates general computing-plus, and **m** indicates memory-optimized.
+-  **B** indicates the instance generation. For example, **3** in **s3** indicates the general computing III generation.
+-  **C** indicates the instance size, such as medium, large, xlarge, 2xlarge, 4xlarge, and 8xlarge.
+-  **D** indicates the ratio of memory to vCPUs expressed in a digit. For example, value **4** indicates that the ratio of memory to vCPUs is 4.
 
 How Do I Know My ECS Flavor?
 ----------------------------
@@ -43,7 +43,7 @@ When creating an ECS, you can view the flavors in the flavor list.
 vCPU
 ----
 
-ECS supports hyper-threading, which enables two threads to run concurrently on a single CPU core. Each thread is represented as a virtual CPU (vCPU), and a CPU core contains two vCPUs (logical cores).
+ECS supports hyper-threading, which enables two threads to run concurrently on a single CPU core. Each thread is represented as a virtual CPU (vCPU). When hyper-threading is enabled, each CPU core contains two vCPUs available to your workloads.
 
 For example, a 2-core physical CPU contains 4 vCPUs (threads).
 
@@ -69,8 +69,6 @@ Constraints on network performance vary depending on ECS flavors.
 -  NIC multi-queues: allocates NIC interruptions to multiple vCPUs for higher PPS performance and bandwidth
 
 -  Maximum NICs: indicates the maximum number of NICs that can be attached to an ECS.
-
--  Maximum supplementary NICs: indicates the maximum number of supplementary NICs that can be attached to an ECS.
 
 .. note::
 

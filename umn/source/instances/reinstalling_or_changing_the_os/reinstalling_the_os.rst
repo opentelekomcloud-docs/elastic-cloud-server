@@ -37,6 +37,8 @@ Prerequisites
 -  The target ECS is stopped.
 -  The target ECS has a system disk attached.
 
+.. _en-us_topic_0024911405__section58299059111554:
+
 Procedure
 ---------
 
@@ -44,13 +46,17 @@ Procedure
 
 #. Click |image1| in the upper left corner and select a region and project.
 
-#. .. _en-us_topic_0024911405__li20776247143354:
-
-   Under **Computing**, click **Elastic Cloud Server**.
+#. Under **Computing**, click **Elastic Cloud Server**.
 
 #. Locate the row containing the target ECS and choose **More** > **Manage Image/Backup** > **Reinstall OS** in the **Operation** column.
 
-   Only stopped ECSs support OS reinstallation. If the ECS is not stopped, stop it before proceeding with reinstallation.
+   Only stopped ECSs support OS reinstallation. If the ECS is not stopped, stop it before proceeding with the reinstallation.
+
+
+   .. figure:: /_static/images/en-us_image_0000002524673400.png
+      :alt: **Figure 1** Reinstalling an OS
+
+      **Figure 1** Reinstalling an OS
 
 #. (Optional) Select the **Encrypted** option to encrypt the system disk during OS reinstallation.
 
@@ -72,21 +78,21 @@ Procedure
    -  Oracle Enterprise Linux
    -  Red Hat Enterprise Linux
 
-#. Select the login mode.
+#. Set **Login Mode**.
 
-   If the target ECS uses key pair authentication, you can replace the original key pair.
+   You can set the login mode for the ECS whose OS is to be reinstalled based on service requirements.
 
+   -  Key pair
 
-   .. figure:: /_static/images/en-us_image_0000002351471046.png
-      :alt: **Figure 1** Reinstalling an OS
+      If you select **Key pair** for **Login Mode**, select an existing key pair from the drop-down list or create a key pair. For details, see :ref:`(Recommended) Creating a Key Pair on the Management Console <en-us_topic_0000001278350057>`.
 
-      **Figure 1** Reinstalling an OS
+      .. note::
+
+         If you use an existing key pair, make sure that you have saved the key file locally. Otherwise, logging in to the ECS will fail.
 
 #. Click **OK**.
 
-#. .. _en-us_topic_0024911405__li31062819143541:
-
-   In the **ECS OS Reinstallation** dialog box, confirm the settings, and click **Submit**.
+#. On the **Reinstall OS** page, confirm the settings and click **OK**.
 
    After the request is submitted, the status **Reinstalling** is displayed. When this status disappears, the reinstallation is complete.
 
@@ -97,7 +103,7 @@ Procedure
 Follow-up Procedure
 -------------------
 
-If the reinstallation fails, perform steps :ref:`3 <en-us_topic_0024911405__li20776247143354>` to :ref:`9 <en-us_topic_0024911405__li31062819143541>` again to retry the OS installation.
+If the system displays a message indicating that the reinstallation fails, you can perform steps in :ref:`Procedure <en-us_topic_0024911405__section58299059111554>` again to retry the OS installation.
 
 If the attempt still fails, contact customer service for manual recovery at the backend.
 

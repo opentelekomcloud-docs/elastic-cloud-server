@@ -17,14 +17,13 @@ The cloud platform supports changing between image types (public images, private
 Constraints
 -----------
 
--  The OS change takes about 1 to 4 minutes During this process, the ECS status is **Changing OS**.
+-  An OS change takes about 1 to 4 minutes to complete. During this process, the ECS status is **Changing OS**.
 -  Do not perform any operations on the ECS before the system injects the password or key, or the login will fail.
 -  The ECS for which you want to change the OS must be in any of the following states: **Stopped**, **Reinstallation failed**, or **Failed to change the OS**.
 -  The target ECS must have a system disk attached.
 -  The EVS disk quota must be greater than 0.
 -  The system disk type cannot be changed.
 -  The system disk can be encrypted.
--  For details about the change between different OSs, see :ref:`Notes on Change Between Windows and Linux <en-us_topic_0031523135__section1852122261012>`.
 -  If an ECS OS is changed using a full-ECS image, the ECS system disk can be encrypted.
 
 Notes
@@ -46,27 +45,21 @@ Notes
 
 -  The system disk capacity of an ECS with OS changed may change because the system disk capacity specified by the image of the changed OS may be changed.
 -  You can choose to encrypt the system disk of an ECS during OS change.
+-  When you change the OS from Windows to Linux or vice versa, note the following:
 
-.. _en-us_topic_0031523135__section1852122261012:
+   -  To change Windows to Linux, install a tool or driver (such as NTFS-3G) that enables read and write access to Windows NTFS partitions.
+   -  To change Linux to Windows, install software, such as Ext2Read or Ext2Fsd, to identify ext3 or ext4.
 
-Notes on Change Between Windows and Linux
------------------------------------------
+      .. note::
 
-When you change the OS from Windows to Linux or from Linux to Windows, note the following:
-
--  To change Windows to Linux, install an NTFS partition tool, such as NTFS-3G for data reads and writes on the Windows ECS.
--  To change Linux to Windows, install software, such as Ext2Read or Ext2Fsd to identify ext3 or ext4.
-
-   .. note::
-
-      If there are LVM partitions on the Linux ECS, these partitions may fail after the OS is changed to Windows. Therefore, a change from Linux to Windows is not recommended.
+         If there are LVM partitions on the Linux ECS, these partitions may fail to be identified after the OS is changed to Windows. Therefore, a change from Linux to Windows is not recommended.
 
 Prerequisites
 -------------
 
--  The data is backed up.
+-  The ECS data has been backed up.
 
--  If you want to change the login authentication mode from password to key pair during the OS change, create a key file in advance.
+-  If you want to change the login authentication mode from password to key pair during the OS change, ensure that you have created a key file.
 
    For details, see :ref:`(Recommended) Creating a Key Pair on the Management Console <en-us_topic_0000001278350057>`.
 
@@ -90,7 +83,7 @@ Procedure
 
 #. Locate the row containing the target ECS and choose **More** > **Manage Image/Backup** > **Change OS** in the **Operation** column.
 
-   Only stopped ECSs support OS change. If the ECS is not stopped, stop it before proceeding with changing.
+   Only stopped ECSs support OS change. If the ECS is not stopped, stop it before proceeding with the change.
 
 #. Select the target image.
 
@@ -122,15 +115,18 @@ Procedure
    -  Oracle Enterprise Linux
    -  Red Hat Enterprise Linux
 
-#. Select the login mode.
+#. Set **Login Mode**.
 
-   If the target ECS uses key pair authentication, you can replace the original key pair.
+   You can set the login mode for the ECS whose OS is to be changed based on service requirements.
+
+   -  If you select **Password** for **Login Mode**, you can use the original password or enter a new one.
+   -  If you select **Key pair** for **Login Mode**, select an available key pair from the drop-down list or create a key pair. For details, see :ref:`(Recommended) Creating a Key Pair on the Management Console <en-us_topic_0000001278350057>`.
 
 #. Click **OK**.
 
 #. .. _en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45992498111556:
 
-   In the **Change ECS OS** dialog box, confirm the specifications and click **Submit**.
+   On the **Change OS** page, confirm the settings and click **Submit**.
 
    After the application is submitted, the ECS status changes to **Changing OS**. When this status disappears, the OS change is complete.
 

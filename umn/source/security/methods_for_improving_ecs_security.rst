@@ -41,20 +41,18 @@ Before using the HSS service, install the HSS agent on your ECSs first and you w
 
 We provide different methods for you to install the HSS agent depending on whether your ECSs are to be created or already exist.
 
--  **Scenario 1: An ECS is to be created.**
+-  **Scenario 1: Enable HSS during ECS creation.**
 
    When you use certain public images to create ECSs, you are advised to use HSS to protect your ECSs.
 
    Select one of the following options:
 
-   -  **Advanced HSS edition (paid)**: You can choose the enterprise edition and you need to pay for it.
+   -  **Advanced HSS edition (paid)**: You can choose the enterprise edition.
    -  **None**: HSS is disabled and servers are not protected.
 
-   After you select an HSS edition, the system automatically installs the HSS agent, enables account cracking prevention, and offers host security functions.
+-  **Scenario 2: Enable HSS for an existing ECS.**
 
--  **Scenario 2: An ECS is already created and HSS is not configured for it.**
-
-   For an existing ECS without HSS configured, you can manually install an Agent on it.
+   If HSS is not enabled on an existing ECS, you can manually install an agent to use HSS.
 
    For details, see the *Host Security Service User Guide*.
 

@@ -8,11 +8,13 @@ Login Overview (Windows)
 Constraints
 -----------
 
--  Only a running ECS can be logged in to.
+-  You can only log in to a running ECS.
 
 -  For ECSs created using public images, the login usernames, passwords, and constraints vary depending on OSs running on the ECSs. For details, see `Image Management Service - Public Image Introduction <https://docs.otc.t-systems.com/image-management-service/public-images/>`__.
 
--  If an ECS uses key pair authentication, use the password obtaining function available on the management console to decrypt the private key used during ECS creation to obtain a password.
+-  If an ECS uses key pair authentication, use the Get Password function on the management console to parse the private key file used during ECS creation into a password, and then use the password to log in to the ECS.
+
+   For details, see :ref:`Obtaining the Password for Logging In to a Windows ECS <en-us_topic_0031107266>`.
 
 -  Certain G-series ECSs do not support remote login from the console. If you need to remotely log in to the ECSs, install the VNC server on them. For details, see :ref:`GPU-accelerated ECSs <en-us_topic_0097289624>`. You are advised to log in to such ECSs using MSTSC.
 

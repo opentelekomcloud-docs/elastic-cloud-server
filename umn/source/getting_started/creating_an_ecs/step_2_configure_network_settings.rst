@@ -39,16 +39,16 @@ Network Settings
 
    .. note::
 
-      Before initializing an ECS, ensure that the security group rules for the outbound direction meet the following requirements:
+      Before initializing an ECS, ensure that the outbound rule of the ECS security group meets the following requirements:
 
-      -  Protocol & Port: TCP
+      -  Protocol: TCP
       -  Port: 80
       -  Destination: 169.254.0.0/16
 
-      If you use the default security group rule listed below for the outbound direction, the preceding requirements are met, and the ECS can be initialized:
+      If you use the outbound rules of the default security group, the preceding requirements are met by default. The outbound rules of the default security group are as follows:
 
-      -  Protocol & Port: All
-      -  Port range: All ports
+      -  Protocol: All
+      -  Port: All
       -  Destination: 0.0.0.0/0
 
 #. Set **EIP**.
