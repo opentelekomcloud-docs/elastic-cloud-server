@@ -10,6 +10,8 @@ Scenarios
 
 Cloud Trace Service (CTS) records operations performed on cloud service resources. A record contains information such as the user who performed the operation, IP address, operation content, and returned response message. These records facilitate security auditing, issue tracking, and resource locating. They also help you plan and use resources, and identify high-risk or non-compliant operations.
 
+This section describes how to query or export operation records of the last seven days on the CTS console.
+
 What Is a Trace?
 ----------------
 
@@ -22,7 +24,7 @@ Viewing Traces in the Trace List
 
 #. In the navigation pane, choose **Trace List**.
 
-#. In the upper right corner of the page, set a desired query time range: **Last 1 hour**, **Last 1 day**, or **Last 1 week**. You can also click **Customize** to specify a custom time range within the last seven days.
+#. In the upper right corner of the page, select a desired query time range: **Last 1 hour**, **Last 1 day**, or **Last 1 week**. You can also specify a custom time range within the last seven days.
 
 #. Set filters to search for your desired traces, as shown in :ref:`Figure 1 <en-us_topic_0116266207__en-us_topic_0179639644_fig139361441134311>`.
 
@@ -47,7 +49,7 @@ Viewing Traces in the Trace List
       +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Resource type                     | Select the type of the resource involved in a trace from the drop-down list.                                                                                                          |
       |                                   |                                                                                                                                                                                       |
-      |                                   | For details about the resource types of each cloud service, see section "Supported Services and Operations" in the *Cloud Trace Service User Guide*.                                  |
+      |                                   | For details about the resource types of each cloud service, see "Supported Services and Operations" in *CTS User Guide*.                                                              |
       +-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Search By                         | Select one of the following options:                                                                                                                                                  |
       |                                   |                                                                                                                                                                                       |
@@ -57,7 +59,7 @@ Viewing Traces in the Trace List
       |                                   |                                                                                                                                                                                       |
       |                                   | -  **Trace name**: name of a trace.                                                                                                                                                   |
       |                                   |                                                                                                                                                                                       |
-      |                                   |    For details about the operations that can be audited for each cloud service, see section "Supported Services and Operations" in the *Cloud Trace Service User Guide*.              |
+      |                                   |    For details about the operations that can be audited for each cloud service, see "Supported Services and Operations" in *CTS User Guide*.                                          |
       |                                   |                                                                                                                                                                                       |
       |                                   | -  **Resource name**: name of the cloud resource involved in a trace.                                                                                                                 |
       |                                   |                                                                                                                                                                                       |

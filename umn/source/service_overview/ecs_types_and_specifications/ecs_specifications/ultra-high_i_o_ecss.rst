@@ -8,7 +8,7 @@ Ultra-high I/O ECSs
 Overview
 --------
 
-Ultra-high I/O ECSs use high-performance local NVMe SSDs to provide high storage input/output operations per second (IOPS) and low read/write latency. You can create such ECSs with high-performance local NVMe SSDs attached on the management console.
+Ultra-high I/O ECSs use high-performance local NVMe SSDs to provide high storage input/output operations per second (IOPS) and low read/write latency. You can create such ECSs on the management console.
 
 Scenarios
 ---------
@@ -270,9 +270,9 @@ Notes
    -  If the host is faulty or subhealthy, you need to stop the ECS for hardware repair.
    -  In case of system maintenance or hardware faults, the ECS will be redeployed (to ensure HA) and cold migrated to another host. The local disk data of the ECS will not be retained.
 
--  Ultra-high I/O ECSs do not support specifications change.
+-  Ultra-high I/O ECSs do not support specification modification.
 
--  Ultra-high I/O ECSs do not support local disk snapshots or backups.
+-  Ultra-high I/O ECSs do not support snapshots or backups of local disks.
 
 -  Ultra-high I/O ECSs can use local disks, and can also have EVS disks attached to provide a larger storage size. Note the following when using the two types of storage media:
 
@@ -280,17 +280,17 @@ Notes
    -  Both EVS disks and local disks can be used as data disks of an ultra-high I/O ECS.
    -  An ultra-high I/O ECS can have a maximum of 60 attached disks (including VBD, SCSI, and local disks). For details about constraints, see :ref:`Can I Attach Multiple Disks to an ECS? <en-us_topic_0018073215>`
 
--  Modify the **fstab** file to set automatic disk mounting at ECS start. For details, see :ref:`Initializing EVS Data Disks <en-us_topic_0030831989>`.
+-  You can configure the **fstab** file to set automatic disk mounting at ECS startup. For details, see :ref:`Initializing EVS Data Disks <en-us_topic_0030831989>`.
 
 -  The local disk data of an ultra-high I/O ECS may be lost if an exception occurs, such as physical server breakdown or local disk damage. If your application did not use the data reliability architecture, it is a good practice to use EVS disks to build your ECS.
 
--  When an ultra-high I/O ECS is deleted, the data on local NVMe SSDs will also be automatically deleted, which can take some time. As a result, an ultra-high I/O ECS takes a longer time than other ECSs to be deleted. Back up the data before deleting such an ECS.
+-  When an ultra-high I/O ECS is deleted, the data on local NVMe SSDs will also be automatically deleted. Back up data in advance. Deleting local disk data will increase the time needed to release resources compared with ECSs without local disks.
 
--  The data reliability of local disks depends on the reliability of physical servers and hard disks, which are SPOF-prone. It is a good practice to use data redundancy mechanisms at the application layer to ensure data availability. Use EVS disks to store service data that needs to be stored for a long time.
+-  The reliability of local disk data depends on the reliability of physical servers and hard disks, which are SPOF-prone. It is a good practice to use data redundancy at the application layer to ensure data availability. Use EVS disks to store service data that needs to be stored for a long time.
 
 -  The device name of a local disk attached to an ultra-high I/O ECS is **/dev/nvme0n1** or **/dev/nvme0n2**.
 
--  The basic resources, including vCPUs, memory, and image of an ultra-high I/O ECS will continue to be billed after the ECS is stopped. To stop the ECS from being billed, delete it and its associated resources.
+-  The basic resources, including vCPUs, memory, and the image of an ultra-high I/O ECS will continue to be billed after the ECS is stopped. To stop the ECS from being billed, delete it and its associated resources.
 
 Handling Damaged Local Disks Used by I-Series ECSs
 --------------------------------------------------

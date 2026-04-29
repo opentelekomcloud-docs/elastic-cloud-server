@@ -228,7 +228,7 @@ Notes
 
 -  The local disk data of a D2 ECS may be lost if an exception occurs, such as physical server breakdown or local disk damage. If your application does not use the data reliability architecture, it is a good practice to use EVS disks to build your ECS.
 
--  When a D2 ECS is deleted, its local disk data will also be automatically deleted, which can take some time. As a result, a D2 ECS takes a longer time than other ECSs to be deleted. Back up the data before deleting such an ECS.
+-  When a D2 ECS is deleted, its local disk data will also be automatically deleted. Back up data in advance. Deleting local disk data will increase the time needed to release resources compared with ECSs without local disks.
 
 -  Do not store service data in local disks for a long time. Instead, store it in EVS disks. To improve data security, use a high availability architecture and back up data in a timely manner.
 

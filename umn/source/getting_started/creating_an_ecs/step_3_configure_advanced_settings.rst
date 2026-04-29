@@ -73,7 +73,7 @@ Advanced Settings
       You can specify the user data. The user data will be automatically passed to the ECS when the ECS starts for the first time. This configuration is optional.
 
       -  **As text**: allows you to enter the user data in the text box.
-      -  **As file**: enables the text to automatically inject a script file or other files into a specified directory on an ECS when you create the ECS.
+      -  **As file**: allows you to inject user data by uploading script files or other files during ECS creation.
 
       For example, if you activate user **root** permission by passing a script file to an ECS, you can log in to the ECS as user **root**.
 

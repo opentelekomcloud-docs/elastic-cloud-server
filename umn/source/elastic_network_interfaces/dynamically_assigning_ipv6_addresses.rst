@@ -154,7 +154,7 @@ Windows Server 2012
 
          **Figure 5** Configuring dynamic IPv6 address assignment
 
-   f. Perform step :ref:`1 <en-us_topic_0140963099__en-us_topic_0129883696_li64771254152011>` to check whether dynamic IPv6 address assignment is enabled.
+   f. Perform :ref:`1 <en-us_topic_0140963099__en-us_topic_0129883696_li64771254152011>` to check whether dynamic IPv6 address assignment is enabled.
 
 #. .. _en-us_topic_0140963099__en-us_topic_0129883696_li35521349132511:
 

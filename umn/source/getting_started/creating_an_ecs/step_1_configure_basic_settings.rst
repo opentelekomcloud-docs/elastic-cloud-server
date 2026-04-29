@@ -98,7 +98,7 @@ Basic Settings
 
    Select one of the following options:
 
-   -  **Advanced HSS edition (paid)**: You can choose the enterprise edition and you need to pay for it.
+   -  **Advanced HSS edition (paid)**: You can choose the enterprise edition.
    -  **None**: HSS is disabled and servers are not protected.
 
    After you select an HSS edition, the system automatically installs the HSS agent, enables account cracking prevention, and offers host security functions.

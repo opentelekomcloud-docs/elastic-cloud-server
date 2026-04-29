@@ -37,7 +37,7 @@ Log in to the management console. On the **Elastic Cloud Server** page, obtain t
 
    Run the following command on the local Linux computer to download files from the Linux ECS:
 
-   **scp** *Username@EIP:Path in which the files are stored on the Linux ECS Path in which the files are to be stored on the local computer*
+   **scp** *username@EIP:<ECS-file-path> <local-host-file-path>*
 
    For example, to download the **/home/test.txt** file on the ECS whose EIP is 139.x.x.x to the **/home** directory on the local computer, run the following command:
 

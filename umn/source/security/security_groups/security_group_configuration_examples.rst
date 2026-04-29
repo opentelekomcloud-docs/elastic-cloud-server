@@ -57,11 +57,11 @@ A security group denies all external requests by default. To remotely log in to 
 
    .. table:: **Table 2** Remotely logging in to a Linux ECS using SSH
 
-      ========= ==== =============== =====================
-      Direction Type Protocol & Port Source
-      ========= ==== =============== =====================
-      Inbound   IPv4 TCP: 22         IP address: 0.0.0.0/0
-      ========= ==== =============== =====================
+      ========= ======== =============== =====================
+      Direction Type     Protocol & Port Source
+      ========= ======== =============== =====================
+      Inbound   **IPv4** TCP: 22         IP address: 0.0.0.0/0
+      ========= ======== =============== =====================
 
    .. _en-us_topic_0140323152__en-us_topic_0118534011_table1579314381815:
 

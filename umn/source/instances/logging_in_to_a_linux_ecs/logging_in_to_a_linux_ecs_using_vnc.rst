@@ -319,7 +319,7 @@ For FAQs about VNC-based ECS logins, see the following links:
 -  :ref:`Why Are Characters Entered Through VNC Still Incorrect After the Keyboard Language Is Switched? <en-us_topic_0030932500>`
 -  :ref:`Why Does a Blank Screen Appear After I Attempted to Log In to an ECS Using VNC? <en-us_topic_0032850906>`
 
-.. |image1| image:: /_static/images/en-us_image_0000002357961897.png
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png
 .. |image2| image:: /_static/images/en-us_image_0128851444.png
-.. |image3| image:: /_static/images/en-us_image_0000002323963330.png
+.. |image3| image:: /_static/images/en-us_image_0000002188678994.png
 .. |image4| image:: /_static/images/en-us_image_0128851405.png

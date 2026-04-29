@@ -8,7 +8,7 @@ What Should I Do If Error Message "Permission denied" Is Displayed When I Remote
 Symptom
 -------
 
-When I attempted to remotely log in to a Linux ECS, the system displayed error Message "Permission denied".
+When I attempted to remotely log in to a Linux ECS, the system displayed error "Permission denied".
 
 
 .. figure:: /_static/images/en-us_image_0240710556.png
