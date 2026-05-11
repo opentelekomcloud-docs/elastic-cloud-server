@@ -12,7 +12,7 @@ This section uses Windows Server 2019 Standard 64bit to describe how to initiali
 
 The maximum disk capacity supported by MBR is 2 TiB, and that supported by GPT is 18 EiB. Therefore, use the GPT partition style if your disk capacity is larger than 2 TiB. To learn more about disk partition styles, see :ref:`Scenarios and Disk Partitions <en-us_topic_0030831623>`.
 
-The method for initializing a disk varies slightly depending on the OS running on the server. This document is used for reference only. For the detailed operations and differences, see the product documents of the corresponding OS.
+The method of initializing a disk varies depending on the OS running on the server. The operations described in this section are for reference only. For detailed steps and differences, see the product documentation of the relevant OS.
 
 .. important::
 

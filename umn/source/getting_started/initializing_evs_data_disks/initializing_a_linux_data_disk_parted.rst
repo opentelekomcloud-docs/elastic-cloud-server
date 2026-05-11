@@ -227,7 +227,7 @@ The following example shows you how a new partition can be created on a new data
 
 #. Create a mount point.
 
-   **mkdir** *<mount-point>*
+   **mkdir** *mount-point*
 
    In this example, the **/mnt/sdc** mount point is created.
 
@@ -239,7 +239,7 @@ The following example shows you how a new partition can be created on a new data
 
 #. Mount the new partition on the created mount point.
 
-   **mount** *<disk-partition>* *<mount-point>*
+   **mount** *disk-partition* *mount-point*
 
    In this example, the **/dev/vdb1** partition is mounted on **/mnt/sdc**.
 
@@ -331,7 +331,7 @@ The following example uses UUIDs to identify disks in the **fstab** file. You ar
 
    c. Query the file system mounting information.
 
-      **mount** **\|** **grep** *<mount-point>*
+      **mount** **\|** **grep** *mount-point*
 
       In this example, run the following command:
 

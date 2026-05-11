@@ -8,7 +8,7 @@ Why Can't I Log In to My Linux ECS?
 Symptom
 -------
 
-A Linux ECS cannot be logged in to due to some reasons. For example, the network is abnormal, the firewall does not allow access to the local port for accessing the remote desktop, or the ECS vCPUs are overloaded.
+A Linux ECS cannot be logged in to due to some reasons. For example, the network is abnormal, remote desktop access is blocked by the firewall on the ECS, or the ECS vCPUs are overloaded.
 
 This section describes how to troubleshoot Linux ECS login failures.
 
@@ -39,7 +39,7 @@ Check whether you can log in to the ECS using VNC on the management console.
 
       Do not press **CTRL+ALT+DELETE** on the physical keyboard because this operation does not take effect.
 
-If the VNC login still fails, record the resource details and fault occurred time for further fault locating and analysis.
+If the VNC login still fails, record the resource details and fault occurrence time for further fault locating and analysis.
 
 .. _en-us_topic_0105127983__section51421019195617:
 
@@ -164,7 +164,7 @@ Check whether the local host can access port 22 on the ECS.
 
 Run the following command to check whether port 22 is accessible:
 
-**telnet ECS private IP address**
+**telnet** *<ECS-private-IP-address>*
 
 If port 22 is inaccessible, check whether port 22 is opened in the security group rule.
 
@@ -218,7 +218,7 @@ After you configure the allowlist, SSH logins will be allowed only from IP addre
 
    .. caution::
 
-      -  Before enabling this function, ensure that all IP addresses that need to initiate SSH logins are added to the allowlist. Otherwise, you cannot remotely log in to your ECS through SSH.
+      -  Before enabling the whitelist to control SSH logins, ensure that all IP addresses that need to initiate SSH logins are added to the allowlist. Otherwise, you cannot remotely log in to your ECS through SSH.
       -  Exercise caution when adding a local IP address to the allowlist. This will make HSS no longer restrict access from this IP address to your ECSs.
 
    For more details, see `Configuring Server Login Protection <https://docs.otc.t-systems.com/host-security-service/umn/enabling_hss/common_security_configuration/configuring_server_login_protection.html#hss-01-0566>`__.
@@ -256,8 +256,8 @@ Checking Whether an Error Occurred During a Remote Login
 
 If an error message is displayed during remote login, check the operation guide based on the error information.
 
-If the fault persists, record the resource details and fault occurred time, and contact technical support for assistance.
+If the fault persists, record the resource details and fault occurrence time, and contact technical support for assistance.
 
-If the fault persists after the preceding operations are performed, record the resource details and fault occurred time, and contact customer service for technical support.
+If the fault persists after the preceding operations are performed, record the resource details and fault occurrence time, and contact customer service for technical support.
 
 .. |image1| image:: /_static/images/en-us_image_0164069962.png

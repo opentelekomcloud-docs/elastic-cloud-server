@@ -35,6 +35,7 @@ Notes
 -  When the disk status is **Expanding**, you are not allowed to modify the specifications of the ECS where the disk is attached.
 -  Before modifying the specifications of a Windows ECS, modify the SAN policy to prevent disks from going offline after the specifications are modified. For details, see :ref:`Why Does a Disk Attached to a Windows ECS Go Offline? <en-us_topic_0114225937>`
 -  Before modifying specifications, make sure that the ECS has been stopped.
+-  After earlier-generation ECSs are upgraded to *x*\ 9 generations, they can only be upgraded but cannot be downgraded to earlier generations.
 
 Step 1: Modify Specifications
 -----------------------------

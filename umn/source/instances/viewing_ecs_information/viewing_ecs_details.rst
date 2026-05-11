@@ -21,7 +21,7 @@ Procedure
 
 #. Under **Computing**, click **Elastic Cloud Server**.
 
-   The **Elastic Cloud Server** page is displayed. On this page, you can view the ECSs you have created as well as their details such as the specifications, images, and IP addresses.
+#. On the ECS list page, view the ECSs you have created as well as their details such as the specifications, images, and IP addresses.
 
 #. In the search box above the ECS list, select a filter (such as ECS name, ID, or private IP address), enter the corresponding information, and press **Enter**.
 
@@ -31,6 +31,6 @@ Procedure
 
 #. View the ECS details.
 
-   You can click the tabs and perform operations. For details, see :ref:`Changing a Security Group <en-us_topic_0093492517>`, :ref:`Attaching a Network Interface <en-us_topic_0093492518>`, :ref:`Adding Tags <en-us_topic_0183019669>`, and :ref:`Binding an EIP <en-us_topic_0174917535>`.
+   You can click different tabs to perform the operations described in :ref:`Changing a Security Group <en-us_topic_0093492517>`, :ref:`Attaching a Network Interface <en-us_topic_0093492518>`, :ref:`Adding Tags <en-us_topic_0183019669>`, and :ref:`Binding an EIP <en-us_topic_0174917535>`.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
