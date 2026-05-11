@@ -9,9 +9,9 @@ Overview
 --------
 
 -  M9 ECSs use the sixth-generation Intel® Xeon® Scalable processors and KVM virtualization to provide enhanced compute, network, and security performance to fulfill the high-performance and large-memory requirements.
--  M7n ECSs use the third-generation Intel® Xeon® Scalable processors to provide enhanced compute, security, and stability. Each M7n ECS can have a maximum number of 96 vCPUs and a memory speed of 3,200 MHz, and provide a secure and trusted cloud environment for memory-intensive compute applications.
+-  M7n ECSs use the third-generation Intel® Xeon® Scalable processors to provide enhanced performance, security, and stability. An M7n ECS can have up to 96 vCPUs and 3,200 MHz memory frequency. It provides a secure and trusted cloud environment and is suitable for memory-intensive compute applications.
 -  M4 ECSs use the second-generation Intel® Xeon® Scalable processors with technologies optimized to offer powerful and stable compute performance. Using 25GE high-speed intelligent NICs, M4 ECSs provide a maximum memory size of 512 GiB based on DDR4 for memory-intensive applications with high requirements on network bandwidth and PPS.
--  M3 ECSs are developed based on the KVM virtualization platform and designed for processing large-scale data sets in memory. They use Intel® Xeon® Scalable processors, network acceleration engines, and DPDK rapid packet processing to provide higher network performance and up to 512 GiB of DDR4 memory for memory-intensive compute applications.
+-  M3 ECSs are built on the KVM virtualization platform and designed for processing large-scale datasets in memory. They use Intel® Xeon® Scalable processors, network acceleration engines, and DPDK rapid packet processing to provide higher network performance and up to 512 GiB of DDR4 memory for memory-intensive compute applications.
 
 Specifications
 --------------
@@ -35,9 +35,9 @@ Specifications
    +---------------+-------+--------+--------------------------------+------------------+---------------------+-----------------+-----------+-------------------------+-----------------------------+----------------+
    | m9.16xlarge.8 | 64    | 512    | 60/40                          | 1,000            | 700                 | 64              | 8         | 21                      | 23                          |                |
    +---------------+-------+--------+--------------------------------+------------------+---------------------+-----------------+-----------+-------------------------+-----------------------------+----------------+
-   | m9.32xlarge.8 | 128   | 1024   | 100/80                         | 2,000            | 1,000               | 64              | 10        | 43                      | 46                          |                |
+   | m9.32xlarge.8 | 128   | 1,024  | 100/80                         | 2,000            | 1,000               | 64              | 10        | 43                      | 46                          |                |
    +---------------+-------+--------+--------------------------------+------------------+---------------------+-----------------+-----------+-------------------------+-----------------------------+----------------+
-   | m9.48xlarge.8 | 192   | 1504   | 120/102                        | 4,000            | 1,000               | 64              | 12        | 64                      | 70                          |                |
+   | m9.48xlarge.8 | 192   | 1,504  | 120/102                        | 4,000            | 1,000               | 64              | 12        | 64                      | 70                          |                |
    +---------------+-------+--------+--------------------------------+------------------+---------------------+-----------------+-----------+-------------------------+-----------------------------+----------------+
 
 .. table:: **Table 2** M7n ECS specifications

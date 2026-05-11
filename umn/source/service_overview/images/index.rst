@@ -6,11 +6,11 @@ Images
 ======
 
 -  :ref:`Image Types <en-us_topic_0030828254>`
--  :ref:`Cloud-Init <en-us_topic_0048642616>`
+-  :ref:`Cloud-Init/Cloudbase-Init <en-us_topic_0048642616>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
    image_types
-   cloud-init
+   cloud-init_cloudbase-init

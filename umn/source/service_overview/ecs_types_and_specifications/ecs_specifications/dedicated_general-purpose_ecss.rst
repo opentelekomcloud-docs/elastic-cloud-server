@@ -10,7 +10,7 @@ Overview
 
 C9 ECSs use the sixth-generation Intel ® Xeon ® Scalable processors and KVM virtualization to provide enhanced compute, network, and security performance for high-load scenarios such as databases, gaming, and HPC.
 
-C7n ECSs use the third-generation Intel Xeon scalable processors to provide enhanced computing, security, and stability. Each C7n ECS can have a maximum number of 96 vCPUs and a memory speed of 3,200 MHz, supports secure boot, and provides a secure, trusted cloud environment.
+C7n ECSs use the third-generation Intel® Xeon® Scalable processors to provide enhanced performance, security, and stability. A C7n ECS can have up to 96 vCPUs and 3,200 MHz memory frequency, and provides a secure and trusted cloud environment.
 
 C7t ECSs support encryption using Intel® SGX to protect the confidentiality and integrity of key code and data from being damaged by malware. Based on the TPM/TCM chip, the boot chain from the underlying server hardware to the guest OS can be measured and verified to implement trusted boot.
 

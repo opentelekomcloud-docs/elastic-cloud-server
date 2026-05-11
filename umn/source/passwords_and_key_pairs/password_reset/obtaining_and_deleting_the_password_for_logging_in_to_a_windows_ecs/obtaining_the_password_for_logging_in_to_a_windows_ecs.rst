@@ -58,7 +58,9 @@ Obtaining the Password Through APIs
 
    Obtain the ciphertext password.
 
-   Call the password obtaining APIs to obtain the ciphertext password of the public key encrypted using RSA. The API URI is in the format "GET /v2/{*project_id*}/servers/{*server_id*}/os-server-password".
+   Call the password obtaining APIs to obtain the ciphertext password of the public key encrypted using RSA.
+
+   The API URI is in the following format: GET /v2/{*project_id*}/servers/{*server_id*}/os-server-password.
 
    .. note::
 

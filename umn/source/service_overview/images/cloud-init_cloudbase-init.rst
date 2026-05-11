@@ -2,14 +2,14 @@
 
 .. _en-us_topic_0048642616:
 
-Cloud-Init
-==========
+Cloud-Init/Cloudbase-Init
+=========================
 
-Cloud-Init is an open-source cloud initialization program, which initializes some of the customized configurations of a newly created ECS, such as the hostname, key pair, and user data.
+Cloud-Init or Cloudbase-Init is an open-source cloud program that allows you to configure specific custom details of newly created ECSs (such as the hostname, key pair, and user data) during initialization.
 
-All standard (Standard_xxx) and enterprise (Enterprise_xxx) images support Cloud-Init. Only certain community images (Community_xxx) do not support it.
+All standard (Standard_xxx) and enterprise (Enterprise_xxx) images support Cloud-Init or Cloudbase-Init. Only certain community images (Community_xxx) do not support it.
 
-Using Cloud-Init to initialize your ECSs will affect your ECS, IMS, and AS services.
+Using Cloud-Init or Cloudbase-Init to initialize your ECSs will affect the use of your ECS, IMS, and AS services.
 
 Impact on IMS
 -------------
@@ -19,22 +19,22 @@ To ensure that ECSs that are created using a private image support custom config
 -  For Windows OSs, download and install Cloudbase-Init.
 -  For Linux OSs, download and install Cloud-Init.
 
-Once installed in an image, Cloud-Init or Cloudbase-Init automatically configures initial attributes for the ECSs created using this image.
+Once installed in an image, Cloud-Init or Cloudbase-Init will automatically configure initial attributes for the ECSs when they are created using this image.
 
 For more information, see *Image Management Service User Guide*.
 
 Impact on ECS
 -------------
 
--  When creating an ECS, if the selected image supports Cloud-Init, you can use the **User Data** function to specify custom configuration, such as ECS login password to the ECS. Such custom settings will take effect upon ECS initialization. For details, see :ref:`Injecting User Data <en-us_topic_0032380449>`.
--  If Cloud-Init is supported, ECSs do not support password authentication anymore. All newly created ECSs use key pair authentication. This change will influence your ECS logins. For details, see the following sections:
+-  When creating an ECS, if the selected image supports Cloud-Init or Cloudbase-Init, you can inject custom information (such as the ECS login password) during the initialization. For details, see :ref:`Injecting User Data <en-us_topic_0032380449>`.
+-  After Cloud-Init is supported, ECSs do not support password authentication anymore. All newly created ECSs use key pair authentication. This change will affect your login to ECSs. For details, see the following sections:
 
    -  :ref:`Login Overview (Linux) <en-us_topic_0013771089>`
    -  :ref:`What Is the Cloudbase-Init Account in Windows ECSs Used for? <en-us_topic_0037633087>`
    -  :ref:`Why Does the Login to My Linux ECS Using a Key File Fail? <en-us_topic_0031734664>`
    -  :ref:`Why Does the System Display a Message Indicating that the Password for Logging In to an ECS Cannot Be Obtained? <en-us_topic_0031736846>`
 
--  If Cloud-Init is supported, you can view and use metadata to configure and manage running ECSs. For details, see :ref:`Obtaining ECS Details Using Metadata <en-us_topic_0042400609>`.
+-  After Cloud-Init or Cloudbase-Init is supported, you can view and use metadata to configure and manage running ECSs. For details, see :ref:`Obtaining ECS Details Using Metadata <en-us_topic_0042400609>`.
 
 Impact on AS
 ------------

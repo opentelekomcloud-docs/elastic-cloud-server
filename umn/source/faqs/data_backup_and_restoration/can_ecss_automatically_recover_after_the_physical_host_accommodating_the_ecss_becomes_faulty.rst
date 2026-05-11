@@ -24,6 +24,6 @@ The cloud platform provides automatic recovery by default to restart ECSs throug
 
    -  An ECS with any of the following resources cannot be automatically recovered:
 
-      -  Local disk
-      -  Passthrough FPGA card
-      -  Passthrough InfiniBand NIC
+      -  Local disks
+      -  Passthrough FPGA cards
+      -  Passthrough InfiniBand NICs
