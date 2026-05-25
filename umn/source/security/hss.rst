@@ -41,7 +41,7 @@ On the **Server** tab, you can view the ECS security statuses in the current reg
 
 #. Log in to the management console.
 #. Click |image1| in the upper left corner and select a region and project.
-#. Click |image2| and choose **Security** > **Host Security Service**.
+#. Under **Security**, click **Host Security Service**.
 #. Choose **Asset Management** > **Servers & Quota** > **Servers** to view the security statuses of target servers.
 
    .. table:: **Table 1** Statuses
@@ -59,7 +59,7 @@ On the **Server** tab, you can view the ECS security statuses in the current reg
       +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Protection Status                 | -  **Protected**: The ECS is fully protected by HSS.                                                                                                                                                  |
       |                                   | -  **Unprotected**: HSS is disabled for the ECS. After the agent is installed, click **Enable** in the **Operation** column to enable protection.                                                     |
-      |                                   | -  **Protection interrupted**: The ECS is not protected, because the HSS protection server is interrupted. You can hover the cursor on |image3| next to **Protection interrupted** to view the cause. |
+      |                                   | -  **Protection interrupted**: The ECS is not protected, because the HSS protection server is interrupted. You can hover the cursor on |image2| next to **Protection interrupted** to view the cause. |
       +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Scan Results                      | -  **Risky**: The ECS is risky.                                                                                                                                                                       |
       |                                   | -  **Safe**: No risks are detected.                                                                                                                                                                   |
@@ -69,5 +69,4 @@ On the **Server** tab, you can view the ECS security statuses in the current reg
 For more details, see `What Is HSS? <https://docs.otc.t-systems.com/host-security-service/umn/introduction/index.html>`__
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
-.. |image2| image:: /_static/images/en-us_image_0000001526737785.jpg
-.. |image3| image:: /_static/images/en-us_image_0000002039480781.png
+.. |image2| image:: /_static/images/en-us_image_0000002039480781.png

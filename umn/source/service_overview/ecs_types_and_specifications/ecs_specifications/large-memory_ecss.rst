@@ -10,11 +10,11 @@ Overview
 
 Large-memory ECSs provide an even larger amount of memory than memory-optimized ECSs. They are used for applications that require a large amount of memory, rapid data exchange and processing, low latency, and capability of processing large volumes of data. Large-memory ECSs provide large memory and high computing, storage, and network performance.
 
--  Features:
+-  Features
 
    The applications are for large-scale, enterprise-class, in-memory applications, process large volumes of data, and require rapid data switching, processing and low latency storage resource.
 
--  Application scenarios
+-  Scenarios
 
    OLTP and OLAP scenarios
 

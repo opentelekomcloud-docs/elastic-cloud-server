@@ -23,6 +23,8 @@ Procedure
 
 #. Log in to the management console.
 
+#. Click |image1| in the upper left corner and select a region and project.
+
 #. Under **Computing**, click **Elastic Cloud Server**.
 
 #. Click the name of the target ECS.
@@ -46,3 +48,5 @@ Procedure
       Subnets can be changed only within the same VPC.
 
    If the target private IP address is not specified, the system will automatically assign one to the primary NIC.
+
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png

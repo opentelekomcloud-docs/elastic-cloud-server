@@ -22,7 +22,7 @@ Constraints
 
    EVS disks mounted to **/dev/sda** or **/dev/vda** are system disks and cannot be detached from running ECSs.
 
--  Before detaching an EVS disk from a running Windows ECS, make sure that OTC Tools have been installed on the ECS and that the tools are running properly.
+-  Before detaching an EVS disk from a running Windows ECS, make sure that the OTC Tools has been installed and is running properly on the ECS. For Linux ECSs, the OTC Tools is not required.
 
 -  Before detaching an EVS disk from a running Windows ECS, ensure that no programs are reading data from or writing data to the disk. Otherwise, data will be lost.
 
@@ -132,5 +132,10 @@ OSs supporting EVS disk detachment from a running ECS include two parts:
 Procedure
 ---------
 
+#. Log in to the management console.
+#. Click |image1| in the upper left corner and select a region and project.
+#. Under **Computing**, click **Elastic Cloud Server**.
 #. On the **Elastic Cloud Server** page, click the name of the ECS from which the EVS disk is to be detached. The ECS details page is displayed.
 #. Click the **Disks** tab. Locate the row containing the EVS disk to be detached and click **Detach**.
+
+.. |image1| image:: /_static/images/en-us_image_0000002188678994.png
