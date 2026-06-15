@@ -17,7 +17,7 @@ Procedure
 
 #. Click |image1| in the upper left corner and select a region and project.
 
-#. Under **Computing**, select **Elastic Cloud Server**.
+#. Under **Computing**, click **Elastic Cloud Server**.
 
 #. After creating an ECS, view the creation status above the ECS list beside the common operations (**Start**, **Stop**, **Restart**, and **Delete**).
 

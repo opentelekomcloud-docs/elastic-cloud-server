@@ -98,7 +98,7 @@ The following procedure uses an ECS running CentOS 7.3 as an example. The defaul
 
    b. Click |image2| in the upper left corner and select a region and project.
 
-   c. Under **Computing**, select **Elastic Cloud Server**.
+   c. Under **Computing**, click **Elastic Cloud Server**.
 
    d. On the ECS list, click the name of an ECS for which you want to modify the security group rule.
 

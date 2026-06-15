@@ -129,7 +129,7 @@ Procedure
 
    b. .. _en-us_topic_0021426802__li46368402202157:
 
-      Click **Detach** to detach the system disk temporarily attached in step :ref:`2.b <en-us_topic_0021426802__li12352182016164>`.
+      Click **Detach** to detach the system disk temporarily attached in :ref:`2.b <en-us_topic_0021426802__li12352182016164>`.
 
    c. On the details page of the original Windows ECS, click the **Disks** tab.
 

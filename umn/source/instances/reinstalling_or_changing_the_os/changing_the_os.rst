@@ -70,6 +70,8 @@ Prerequisites
    -  If a private image from another region is required, make sure that the image has been copied.
    -  If a private image from another user account is required, make sure that the image has been shared with you.
 
+.. _en-us_topic_0031523135__section208284422018:
+
 Procedure
 ---------
 
@@ -77,9 +79,7 @@ Procedure
 
 #. Click |image1| in the upper left corner and select a region and project.
 
-#. .. _en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45082966143628:
-
-   Under **Computing**, click **Elastic Cloud Server**.
+#. Under **Computing**, click **Elastic Cloud Server**.
 
 #. Locate the row containing the target ECS and choose **More** > **Manage Image/Backup** > **Change OS** in the **Operation** column.
 
@@ -124,9 +124,7 @@ Procedure
 
 #. Click **OK**.
 
-#. .. _en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45992498111556:
-
-   On the **Change OS** page, confirm the settings and click **Submit**.
+#. On the **Change OS** page, confirm the settings and click **Submit**.
 
    After the application is submitted, the ECS status changes to **Changing OS**. When this status disappears, the OS change is complete.
 
@@ -153,7 +151,7 @@ Follow-up Procedure
 
       **df -TH**
 
--  If the OS change fails, perform steps :ref:`3 <en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45082966143628>` to :ref:`10 <en-us_topic_0031523135__en-us_topic_0031523135_en-us_topic_0024911405_li45992498111556>` again to retry the OS change.
+-  If the OS change fails, perform the operations described in :ref:`Procedure <en-us_topic_0031523135__section208284422018>` again to retry the OS change.
 -  If the attempt still fails, contact customer service for manual recovery at the backend.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png

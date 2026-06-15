@@ -52,7 +52,7 @@ If a serial number is displayed on the console, use either of the following meth
 
 **cmd**
 
-#. Start **cmd** in a Windows OS as an administrator and run either of the following commands:
+#. Start **cmd** in a Windows OS as an administrator and run any of the following commands:
 
    **wmic diskdrive get serialnumber**
 
@@ -64,7 +64,7 @@ If a serial number is displayed on the console, use either of the following meth
 
       A serial number is the first 20 digits of a disk UUID.
 
-   For example, if the serial number of a VBD disk on the console is 97c876c0-54b3-460a-b, run either of the following commands to obtain the serial number of the disk on the ECS OS:
+   For example, if the serial number of a VBD disk on the console is 97c876c0-54b3-460a-b, run any of the following commands to obtain the serial number of the disk on the ECS OS:
 
    **wmic diskdrive get serialnumber**
 
@@ -93,7 +93,7 @@ If a serial number is displayed on the console, use either of the following meth
 **PowerShell**
 
 #. Start PowerShell as an administrator in a Windows OS.
-#. Run the following command to check the disk on which the logical disk is created:
+#. Check the disk on which the logical disk is created.
 
    -  Windows Server 2012 or later
 
@@ -107,7 +107,7 @@ If a serial number is displayed on the console, use either of the following meth
 
          **Get-Disk \|select Number, SerialNumber**
 
-         As shown in :ref:`Figure 3 <en-us_topic_0103285575__fig1960253814473>`, the disk is **Disk 0**.
+         As shown in :ref:`Figure 3 <en-us_topic_0103285575__fig1960253814473>`, the serial number **97c876c0-54b3-460a-b** is mapped to **Disk 0**.
 
          .. _en-us_topic_0103285575__fig1960253814473:
 

@@ -18,8 +18,6 @@ GPU-accelerated ECSs
 
 Recommended: :ref:`Computing-accelerated P2s <en-us_topic_0097289624__section1454714546567>`, :ref:`Inference-accelerated Pi2 <en-us_topic_0097289624__section1846114713182>`, and :ref:`Graphics-accelerated Enhancement G6 <en-us_topic_0097289624__section131302034104515>`
 
-Available now: All GPU models except the recommended ones. If available ECSs are sold out, use the recommended ones.
-
 -  G series
 
    -  :ref:`Graphics-accelerated Enhancement G7v <en-us_topic_0097289624__section168054357432>`
@@ -167,7 +165,7 @@ Select your desired GPU-accelerated ECS type and specifications.
 
 -  CUDA, DirectCompute, OpenACC, and OpenCL
 -  A single card is equipped with 10,752 CUDA cores, 84 second-generation RT cores, and 336 third-generation Tensor cores.
--  Accelerated graphics applications
+-  Graphics acceleration
 -  Heavy-load CPU inference
 -  Application flow identical to common ECSs
 -  Automatic scheduling of G7v ECSs to AZs where NVIDIA A40 GPUs are used
@@ -194,7 +192,7 @@ G7v ECSs are used in graphics acceleration scenarios, such as video rendering, c
 
    .. note::
 
-      Resources will be released after a G7v ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
+      Resources will be released after a G7v ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop it.
 
 -  G7v ECSs created using a public image have had the GRID driver of a specific version installed by default. However, you need to purchase and configure a GRID license by yourself. Ensure that the GRID driver version meets service requirements.
 
@@ -204,7 +202,7 @@ G7v ECSs are used in graphics acceleration scenarios, such as video rendering, c
 
    For details, see :ref:`Manually Installing a GRID Driver on a GPU-accelerated ECS <en-us_topic_0149610914>`.
 
--  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous compute. Their specifications can only be changed to other specifications of the same instance type.
+-  Unlike general-purpose compute, GPU-accelerated ECSs deliver heterogeneous compute. Their specifications can only be modified within the same instance type.
 
 -  GPU-accelerated ECSs do not support live migration.
 
@@ -245,7 +243,7 @@ Select your desired GPU-accelerated ECS type and specifications.
 
 -  CUDA, DirectCompute, OpenACC, and OpenCL
 -  A single card is equipped with 10,752 CUDA cores, 84 second-generation RT cores, and 336 third-generation Tensor cores.
--  Accelerated graphics applications
+-  Graphics acceleration
 -  Heavy-load CPU inference
 -  Application flow identical to common ECSs
 -  Automatic scheduling of G7 ECSs to AZs where NVIDIA A40 GPUs are used
@@ -272,11 +270,11 @@ G7 ECSs are used in graphics acceleration scenarios, such as video rendering, cl
 
    .. note::
 
-      Resources will be released after a G7 ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
+      Resources will be released after a G7 ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop it.
 
 -  G7 ECSs created using a public image have had the GRID driver of a specific version installed by default. However, you need to purchase and configure a GRID license by yourself. Ensure that the GRID driver version meets service requirements.
 -  If a G7 ECS is created using a private image, make sure that the GRID driver was installed during the private image creation. If the GRID driver has not been installed, install the driver for graphics acceleration after the ECS is created.
--  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous compute. Their specifications can only be changed to other specifications of the same instance type.
+-  Unlike general-purpose compute, GPU-accelerated ECSs deliver heterogeneous compute. Their specifications can only be modified within the same instance type.
 -  GPU-accelerated ECSs do not support live migration.
 
 .. _en-us_topic_0097289624__section131302034104515:
@@ -321,7 +319,7 @@ Select your desired GPU-accelerated ECS type and specifications.
 
 -  CUDA and OpenCL
 -  NVIDIA T4 GPUs
--  Accelerated graphics applications
+-  Graphics acceleration
 -  Heavy-load CPU inference
 -  Automatic scheduling of G6 ECSs to AZs where NVIDIA T4 GPUs are used
 -  Built-in one NVENC and two NVDECs
@@ -342,13 +340,13 @@ G6 ECSs are used in graphics acceleration scenarios, such as video rendering, cl
 
    .. note::
 
-      Resources will be released after a G6 ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
+      Resources will be released after a G6 ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop it.
 
 -  G6 ECSs created using a public image have had the GRID driver of a specific version installed by default. However, you need to purchase and configure a GRID license by yourself. Ensure that the GRID driver version meets service requirements.
 
 -  If a G6 ECS is created using a private image, make sure that the GRID driver was installed during the private image creation. If not, install the driver for graphics acceleration after the ECS is created.
 
--  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous compute. Their specifications can only be changed to other specifications of the same instance type.
+-  Unlike general-purpose compute, GPU-accelerated ECSs deliver heterogeneous compute. Their specifications can only be modified within the same instance type.
 
 -  GPU-accelerated ECSs do not support live migration.
 
@@ -384,7 +382,7 @@ P5e ECSs use high-performance NVIDIA Tesla H100 NVL to deliver outstanding train
 
 **Supported Software**
 
-P5e ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software is required to support GPU CUDA, use P5e ECSs. P5e ECSs support the following commonly used software:
+P5e ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software is required to support GPU CUDA parallel computing, use P5e ECSs. P5e ECSs support the following commonly used software:
 
 -  Common deep learning frameworks, such as TensorFlow, Spark, PyTorch, MXNet, and Caffe
 -  CUDA GPU rendering supported by RedShift for Autodesk 3ds Max and V-Ray for 3ds Max
@@ -432,7 +430,7 @@ P5s ECSs use high-performance NVIDIA Tesla H100 PCIe to provide outstanding real
 
 **Supported Software**
 
-P5s ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software is required to support GPU CUDA, use P5s ECSs. P5s ECSs support the following commonly used software:
+P5s ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software is required to support GPU CUDA parallel computing, use P5s ECSs. P5s ECSs support the following commonly used software:
 
 -  Common deep learning frameworks, such as TensorFlow, Spark, PyTorch, MXNet, and Caffe
 -  CUDA GPU rendering supported by RedShift for Autodesk 3ds Max and V-Ray for 3ds Max
@@ -484,7 +482,7 @@ P3 ECSs use NVIDIA A100 GPUs and provide flexibility and ultra-high-performance 
 
 -  19.5 TFLOPS of single-precision performance and 9.7 TFLOPS of double-precision performance on a single GPU
 
--  NVIDIA Tensor cores with 156 TFLOPS of single- and double-precision performance for deep learning
+-  NVIDIA Tensor cores with 156 TFLOPS of mixed-precision performance for deep learning
 
 -  Up to 40 Gbit/s of network bandwidth on a single ECS
 
@@ -506,7 +504,7 @@ P3 ECSs use NVIDIA A100 GPUs and provide flexibility and ultra-high-performance 
 
 **Supported Software**
 
-P3 ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software is required to support GPU CUDA, use P3 ECSs. P3 ECSs support the following commonly used software:
+P3 ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software is required to support GPU CUDA parallel computing, use P3 ECSs. P3 ECSs support the following commonly used software:
 
 -  Common deep learning frameworks, such as TensorFlow, Spark, PyTorch, MXNet, and Caffe
 -  CUDA GPU rendering supported by RedShift for Autodesk 3ds Max and V-Ray for 3ds Max
@@ -520,10 +518,10 @@ P3 ECSs are used in computing acceleration scenarios, such as deep learning trai
 
    .. note::
 
-      Resources will be released after a P3 ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
+      Resources will be released after a P3 ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop it.
 
 -  If a P3 ECS is created using a private image, make sure that the Tesla driver has been installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
--  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous compute. Their specifications can only be changed to other specifications of the same instance type.
+-  Unlike general-purpose compute, GPU-accelerated ECSs deliver heterogeneous compute. Their specifications can only be modified within the same instance type.
 -  GPU-accelerated ECSs do not support live migration.
 
 .. _en-us_topic_0097289624__section1454714546567:
@@ -533,7 +531,7 @@ Computing-accelerated P2s
 
 **Overview**
 
-P2s ECSs use NVIDIA Tesla V100 GPUs to provide flexibility, high-performance computing, and cost-effectiveness. P2s ECSs provide outstanding general computing capabilities and have strengths in AI-based deep learning, scientific computing, Computational Fluid Dynamics (CFD), computing finance, seismic analysis, molecular modeling, and genomics.
+P2s ECSs use NVIDIA Tesla V100 GPUs to provide flexibility, high-performance computing, and cost-effectiveness. P2s ECSs provide outstanding general computing capabilities and have strengths in fields such as AI-based deep learning, scientific computing, Computational Fluid Dynamics (CFD), computing finance, seismic analysis, molecular modeling, and genomics.
 
 **Specifications**
 
@@ -585,7 +583,7 @@ P2s ECSs use NVIDIA Tesla V100 GPUs to provide flexibility, high-performance com
 
 **Supported Software**
 
-P2s ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software is required to support GPU CUDA, use P2s ECSs. P2s ECSs support the following commonly used software:
+P2s ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software is required to support GPU CUDA parallel computing, use P2s ECSs. P2s ECSs support the following commonly used software:
 
 -  Common deep learning frameworks, such as TensorFlow, Caffe, PyTorch, and MXNet
 -  CUDA GPU rendering supported by RedShift for Autodesk 3ds Max and V-Ray for 3ds Max
@@ -598,11 +596,11 @@ P2s ECSs are used in computing acceleration scenarios, such as deep learning tra
 
    .. note::
 
-      Resources will be released after a P2s ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
+      Resources will be released after a P2s ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop it.
 
 -  By default, P2s ECSs created using a Windows public image have the Tesla driver installed.
 -  If a P2s ECS is created using a private image, make sure that the Tesla driver has been installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
--  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous compute. Their specifications can only be changed to other specifications of the same instance type.
+-  Unlike general-purpose compute, GPU-accelerated ECSs deliver heterogeneous compute. Their specifications can only be modified within the same instance type.
 -  GPU-accelerated ECSs do not support live migration.
 
 .. _en-us_topic_0097289624__section208472383415:
@@ -612,7 +610,7 @@ Computing-accelerated P2v
 
 **Overview**
 
-P2v ECSs use NVIDIA Tesla V100 GPUs and deliver high flexibility, high-performance computing, and high cost-effectiveness. These ECSs use GPU NVLink for direct communication between GPUs, improving data transmission efficiency. P2v ECSs provide outstanding general computing capabilities and have strengths in AI-based deep learning, scientific computing, Computational Fluid Dynamics (CFD), computing finance, seismic analysis, molecular modeling, and genomics.
+P2v ECSs use NVIDIA Tesla V100 GPUs and deliver high flexibility, high-performance computing, and high cost-effectiveness. These ECSs use GPU NVLink for direct communication between GPUs, improving data transmission efficiency. P2v ECSs provide outstanding general computing capabilities and have strengths in fields such as AI-based deep learning, scientific computing, Computational Fluid Dynamics (CFD), computing finance, seismic analysis, molecular modeling, and genomics.
 
 **Specifications**
 
@@ -664,7 +662,7 @@ P2v ECSs use NVIDIA Tesla V100 GPUs and deliver high flexibility, high-performan
 
 **Supported Software**
 
-P2v ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software is required to support GPU CUDA, use P2v ECSs. P2v ECSs support the following commonly used software:
+P2v ECSs are used in computing acceleration scenarios, such as deep learning training, inference, scientific computing, molecular modeling, and seismic analysis. If the software is required to support GPU CUDA parallel computing, use P2v ECSs. P2v ECSs support the following commonly used software:
 
 -  Common deep learning frameworks, such as TensorFlow, Caffe, PyTorch, and MXNet
 -  CUDA GPU rendering supported by RedShift for Autodesk 3ds Max and V-Ray for 3ds Max
@@ -677,12 +675,12 @@ P2v ECSs are used in computing acceleration scenarios, such as deep learning tra
 
    .. note::
 
-      Resources will be released after a P2v ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
+      Resources will be released after a P2v ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop it.
 
 -  By default, P2v ECSs created using a Windows public image have the Tesla driver installed.
 -  By default, P2v ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 -  If a P2v ECS is created using a private image, make sure that the Tesla driver has been installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
--  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous compute. Their specifications can only be changed to other specifications of the same instance type.
+-  Unlike general-purpose compute, GPU-accelerated ECSs deliver heterogeneous compute. Their specifications can only be modified within the same instance type.
 -  GPU-accelerated ECSs do not support live migration.
 
 .. _en-us_topic_0097289624__section3135224614:
@@ -738,7 +736,7 @@ Inference-accelerated Pi2
 
 **Overview**
 
-Pi2 ECSs use NVIDIA Tesla T4 GPUs dedicated to real-time AI inference. These ECSs use the T4 INT8 calculator for up to 130 TOPS of INT8 performance. The Pi2 ECSs can also be used for light-load training.
+Pi2 ECSs use NVIDIA Tesla T4 GPUs dedicated to real-time AI inference. These ECSs use the T4 INT8 calculator for up to 130 TOPS of INT8 performance. Pi2 ECSs can also be used for light-load training.
 
 **Specifications**
 
@@ -772,7 +770,7 @@ Pi2 ECSs use NVIDIA Tesla T4 GPUs dedicated to real-time AI inference. These ECS
 
 **Supported Software**
 
-Pi2 ECSs are used in GPU-based inference computing scenarios, such as image recognition, speech recognition, and natural language processing. The Pi2 ECSs can also be used for light-load training.
+Pi2 ECSs are used in GPU-based inference computing scenarios, such as image recognition, speech recognition, and natural language processing. Pi2 ECSs can also be used for light-load training.
 
 Pi2 ECSs support the following commonly used software:
 
@@ -784,11 +782,11 @@ Pi2 ECSs support the following commonly used software:
 
    .. note::
 
-      Resources will be released after a Pi2 ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop the ECS.
+      Resources will be released after a Pi2 ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop it.
 
 -  Pi2 ECSs support automatic recovery when the hosts accommodating such ECSs become faulty.
 -  By default, Pi2 ECSs created using a Windows public image have the Tesla driver installed.
 -  By default, Pi2 ECSs created using a Linux public image do not have a Tesla driver installed. After the ECS is created, install a driver on it for computing acceleration. For details, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 -  If a Pi2 ECS is created using a private image, make sure that the Tesla driver has been installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
--  GPU-accelerated ECSs differ greatly in general-purpose and heterogeneous compute. Their specifications can only be changed to other specifications of the same instance type.
+-  Unlike general-purpose compute, GPU-accelerated ECSs deliver heterogeneous compute. Their specifications can only be modified within the same instance type.
 -  GPU-accelerated ECSs do not support live migration.

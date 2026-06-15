@@ -13,7 +13,7 @@ Keep your password secure. Reset the password if:
 -  The password is forgotten.
 -  The password has expired.
 
-This section describes how to reset the password of user **root**. After resetting the password, you can log in to the ECS, and change the private key or reset the password of a non-**root** user.
+This section describes how to reset the root password. After resetting the password, you can log in to the ECS and change the keys or reset passwords for non-root users.
 
 Prerequisites
 -------------
@@ -110,17 +110,17 @@ Procedure
 
       Search for **AllowUsers** in the file. If **AllowUsers** is missing, add **AllowUsers root** at the end of the file.
 
-#. Stop the temporary ECS, detach the system disk, attach the system disk to the original Linux ECS, and restart the original Linux ECS.
+#. Stop the temporary ECS, detach the system disk, and attach it back to the original Linux ECS. Then, restart the original Linux ECS.
 
    a. Stop the temporary ECS, go to the ECS details page, and click the **Disks** tab.
 
    b. .. _en-us_topic_0021427650__li964031614447:
 
-      Click **Detach** to detach the data disk temporarily attached in step :ref:`3 <en-us_topic_0021427650__li821617118326>`.
+      Click **Detach** to detach the system disk temporarily attached in :ref:`3 <en-us_topic_0021427650__li821617118326>`.
 
    c. On the details page of the original Linux ECS, click the **Disks** tab.
 
-   d. Click **Attach Disk**. In the displayed dialog box, select the data disk detached in :ref:`6.b <en-us_topic_0021427650__li964031614447>`.
+   d. Click **Attach Disk**. In the displayed dialog box, select the system disk detached in :ref:`6.b <en-us_topic_0021427650__li964031614447>`.
 
 #. Restart the original Linux ECS.
 
