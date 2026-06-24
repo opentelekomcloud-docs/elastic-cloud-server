@@ -8,6 +8,7 @@ Memory-optimized ECSs
 Overview
 --------
 
+-  X1m ECSs are built on the KVM virtualization platform and designed for processing large-scale datasets in memory. They use Intel® Xeon® Scalable processors, network acceleration engines, and DPDK rapid packet processing to provide higher network performance and up to 512 GiB of DDR4 memory for memory-intensive compute applications.
 -  M9 ECSs use the sixth-generation Intel® Xeon® Scalable processors and KVM virtualization to provide enhanced compute, network, and security performance to fulfill the high-performance and large-memory requirements.
 -  M7n ECSs use the third-generation Intel® Xeon® Scalable processors to provide enhanced performance, security, and stability. An M7n ECS can have up to 96 vCPUs and 3,200 MHz memory frequency. It provides a secure and trusted cloud environment and is suitable for memory-intensive compute applications.
 -  M4 ECSs use the second-generation Intel® Xeon® Scalable processors with technologies optimized to offer powerful and stable compute performance. Using 25GE high-speed intelligent NICs, M4 ECSs provide a maximum memory size of 512 GiB based on DDR4 for memory-intensive applications with high requirements on network bandwidth and PPS.
@@ -60,7 +61,7 @@ Specifications
    | m9.48xlarge.8 | 192   | 1,504  | 120/102                        | 4,000            | 1,000               | 64              | 12        | 64                      | 70                          |                |
    +---------------+-------+--------+--------------------------------+------------------+---------------------+-----------------+-----------+-------------------------+-----------------------------+----------------+
 
-.. table:: **Table 2** M7n ECS specifications
+.. table:: **Table 3** M7n ECS specifications
 
    +----------------+-------+--------+--------------------------------+------------------+---------------------+-----------------+-----------+---------------------------------+-----------------------------+----------------+
    | Flavor         | vCPUs | Memory | Max./Assured Network Bandwidth | Max. Network PPS | Network Connections | Max. NIC Queues | Max. NICs | Max./Assured EVS Disk Bandwidth | Max. EVS Disk IOPS (10,000) | Virtualization |

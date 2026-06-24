@@ -516,7 +516,7 @@ For more details, see :ref:`Memory-optimized ECSs <en-us_topic_0035550301>`.
    | m9.48xlarge.8 | 192   | 1,504  | 120/102                        | 4,000            | 1,000               | 64              | 12        | 64                      | 70                          |                |
    +---------------+-------+--------+--------------------------------+------------------+---------------------+-----------------+-----------+-------------------------+-----------------------------+----------------+
 
-.. table:: **Table 13** M7n ECS specifications
+.. table:: **Table 14** M7n ECS specifications
 
    +----------------+-------+--------+--------------------------------+------------------+---------------------+-----------------+-----------+---------------------------------+-----------------------------+----------------+
    | Flavor         | vCPUs | Memory | Max./Assured Network Bandwidth | Max. Network PPS | Network Connections | Max. NIC Queues | Max. NICs | Max./Assured EVS Disk Bandwidth | Max. EVS Disk IOPS (10,000) | Virtualization |
