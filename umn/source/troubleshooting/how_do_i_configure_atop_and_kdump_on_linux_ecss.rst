@@ -166,7 +166,7 @@ Configuring atop for Ubuntu 16 and Debian 8
 
 #. Run the following command to modify the configuration file of atop:
 
-   **vi /etc/sysconfig/atop**
+   **vi /etc/default/atop**
 
    Modify the following parameters, save the modification, and exit:
 

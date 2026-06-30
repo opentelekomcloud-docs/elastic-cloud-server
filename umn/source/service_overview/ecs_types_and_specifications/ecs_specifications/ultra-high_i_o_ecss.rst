@@ -282,7 +282,7 @@ Notes
 
 -  You can configure the **fstab** file to set automatic disk mounting at ECS startup. For details, see :ref:`Initializing EVS Data Disks <en-us_topic_0030831989>`.
 
--  The local disk data of an ultra-high I/O ECS may be lost if an exception occurs, such as physical server breakdown or local disk damage. If your application did not use the data reliability architecture, it is a good practice to use EVS disks to build your ECS.
+-  The local disk data of an ultra-high I/O ECS may be lost if an exception occurs, such as physical server breakdown or local disk damage. If your application does not use the data reliability architecture, it is a good practice to use EVS disks to build your ECS.
 
 -  When an ultra-high I/O ECS is deleted, the data on local NVMe SSDs will also be automatically deleted. Back up data in advance. Deleting local disk data will increase the time needed to release resources compared with ECSs without local disks.
 

@@ -53,6 +53,12 @@ Follow-up Procedure
 
 Some OSs cannot identify newly attached network interfaces. In this case, you need to manually activate the network interfaces. The following uses Ubuntu as an example to show how to activate network interfaces. Operations may vary depending on the operating system. You can refer to the corresponding OS documentation for assistance.
 
+#. Log in to the management console.
+
+#. Click |image2| in the upper left corner and select a region and project.
+
+#. Under **Computing**, click **Elastic Cloud Server**.
+
 #. Locate the row containing the target ECS and click **Remote Login** in the **Operation** column.
 
    Log in to the ECS.
@@ -87,22 +93,23 @@ Some OSs cannot identify newly attached network interfaces. In this case, you ne
 
    *X* in the preceding command indicates the serial number of the network interface, for example, **ifup eth2**.
 
-#. Run the following command to check whether the network interface name obtained in step :ref:`2 <en-us_topic_0093492518__li595089165210>` is displayed in the command output:
+#. Run the following command to check whether the network interface name obtained in step :ref:`5 <en-us_topic_0093492518__li595089165210>` is displayed in the command output:
 
    **ifconfig**
 
    For example, check whether **eth2** is displayed in the command output.
 
    -  If yes, the newly added network interface has been activated. No further action is required.
-   -  If no, the newly added network interface failed to be activated. Go to step :ref:`9 <en-us_topic_0093492518__li1695469165210>`.
+   -  If no, the newly added network interface failed to be activated. Go to step :ref:`12 <en-us_topic_0093492518__li1695469165210>`.
 
 #. .. _en-us_topic_0093492518__li1695469165210:
 
    Log in to the management console. On the ECS list page, locate the row that contains the target ECS and choose **More** > **Restart** in the **Operation** column.
 
-#. Run **ifconfig** again to check whether the network interface name obtained in step :ref:`2 <en-us_topic_0093492518__li595089165210>` is displayed in the command output.
+#. Run **ifconfig** again to check whether the network interface name obtained in step :ref:`5 <en-us_topic_0093492518__li595089165210>` is displayed in the command output.
 
    -  If yes, no further action is required.
    -  If no, contact customer service.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
+.. |image2| image:: /_static/images/en-us_image_0000002188678994.png

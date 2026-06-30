@@ -45,7 +45,7 @@ ECS Backup Procedure
 
    The ECS can be restarted if the backup progress of an ECS exceeds 10%. However, to ensure data integrity, restart the ECS only after the backup is complete.
 
-   After the backup is complete, you can restore server data or create images on the **Backups** tab page. For details, see `Restoring from a Cloud Server Backup <https://docs.otc.t-systems.com/en-us/usermanual/cbr/cbr_03_0032.html>`__ and `Creating an Image from a Cloud Server Backup <https://docs.otc.t-systems.com/en-us/usermanual/cbr/cbr_03_0016.html>`__.
+   After the backup is complete, you can restore server data or create images on the **Backups** tab. For details, see `Restoring from a Cloud Server Backup <https://docs.otc.t-systems.com/en-us/usermanual/cbr/cbr_03_0032.html>`__ and `Creating an Image from a Cloud Server Backup <https://docs.otc.t-systems.com/en-us/usermanual/cbr/cbr_03_0016.html>`__.
 
 EVS Disk Backup Procedure
 -------------------------
@@ -75,7 +75,7 @@ EVS Disk Backup Procedure
 
    If some files are deleted from the disk during the backup, the deleted files may fail to be backed up. Therefore, to ensure data integrity, delete the target data after the backup is complete.
 
-   After the backup is complete, you can restore disk data on the **Backups** tab page. For details, see `Restoring from a Cloud Disk Backup <https://docs.otc.t-systems.com/cloud-backup-recovery/umn/restoring_data/restoring_from_a_cloud_disk_backup.html>`__.
+   After the backup is complete, you can restore disk data on the **Backups** tab. For details, see `Restoring from a Cloud Disk Backup <https://docs.otc.t-systems.com/cloud-backup-recovery/umn/restoring_data/restoring_from_a_cloud_disk_backup.html>`__.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
 .. |image2| image:: /_static/images/en-us_image_0000002188678994.png
