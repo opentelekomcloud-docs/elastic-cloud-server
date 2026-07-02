@@ -8,16 +8,37 @@ Memory-optimized ECSs
 Overview
 --------
 
+-  X2m ECSs use the second-generation Intel® Xeon® Scalable processors with technologies optimized to offer powerful and stable compute performance. Powered by 25GE high-speed intelligent NICs, X2m ECSs provide ultra-high network bandwidth and PPS. They offer up to 512 GiB of DDR4 memory, suitable for memory-intensive applications.
 -  X1m ECSs are built on the KVM virtualization platform and designed for processing large-scale datasets in memory. They use Intel® Xeon® Scalable processors, network acceleration engines, and DPDK rapid packet processing to provide higher network performance and up to 512 GiB of DDR4 memory for memory-intensive compute applications.
 -  M9 ECSs use the sixth-generation Intel® Xeon® Scalable processors and KVM virtualization to provide enhanced compute, network, and security performance to fulfill the high-performance and large-memory requirements.
 -  M7n ECSs use the third-generation Intel® Xeon® Scalable processors to provide enhanced performance, security, and stability. An M7n ECS can have up to 96 vCPUs and 3,200 MHz memory frequency. It provides a secure and trusted cloud environment and is suitable for memory-intensive compute applications.
--  M4 ECSs use the second-generation Intel® Xeon® Scalable processors with technologies optimized to offer powerful and stable compute performance. Using 25GE high-speed intelligent NICs, M4 ECSs provide a maximum memory size of 512 GiB based on DDR4 for memory-intensive applications with high requirements on network bandwidth and PPS.
+-  M4 ECSs use the second-generation Intel® Xeon® Scalable processors with technologies optimized to offer powerful and stable compute performance. Powered by 25GE high-speed intelligent NICs, M4 ECSs provide ultra-high network bandwidth and PPS. They offer up to 512 GiB of DDR4 memory, suitable for memory-intensive applications.
 -  M3 ECSs are built on the KVM virtualization platform and designed for processing large-scale datasets in memory. They use Intel® Xeon® Scalable processors, network acceleration engines, and DPDK rapid packet processing to provide higher network performance and up to 512 GiB of DDR4 memory for memory-intensive compute applications.
 
 Specifications
 --------------
 
-.. table:: **Table 1** X1m ECS specifications
+.. table:: **Table 1** X2m ECS specifications
+
+   +---------------+-------+--------+--------------------------------+------------------+---------------------+-----------------+-----------+----------------------------+--------------------------------+----------------+----------------+----------------------------------------+
+   | Flavor        | vCPUs | Memory | Max./Assured Network Bandwidth | Max. Network PPS | Network Connections | Max. NIC Queues | Max. NICs | Assured EVS Disk Bandwidth | Assured EVS Disk IOPS (10,000) | Max. EVS Disks | Virtualization | Hardware                               |
+   |               |       |        |                                |                  |                     |                 |           |                            |                                |                |                |                                        |
+   |               |       | (GiB)  | (Gbit/s)                       | (10,000)         | (10,000)            |                 |           | (Gbit/s)                   |                                |                |                |                                        |
+   +===============+=======+========+================================+==================+=====================+=================+===========+============================+================================+================+================+========================================+
+   | x2m.large.8   | 2     | 16     | 4/1.2                          | 40               | 200                 | 2               | 2         | 1                          | 1                              | 60             | KVM            | CPU: Intel® Xeon® Cascade Lake 3.0 GHz |
+   +---------------+-------+--------+--------------------------------+------------------+---------------------+-----------------+-----------+----------------------------+--------------------------------+----------------+----------------+----------------------------------------+
+   | x2m.slarge.8  | 3     | 24     | 6/1.8                          | 60               | 200                 | 2               | 2         | 1.25                       | 1.5                            | 60             | KVM            |                                        |
+   +---------------+-------+--------+--------------------------------+------------------+---------------------+-----------------+-----------+----------------------------+--------------------------------+----------------+----------------+----------------------------------------+
+   | x2m.xlarge.8  | 4     | 32     | 8/2.4                          | 80               | 200                 | 2               | 3         | 1.5                        | 2                              | 60             | KVM            |                                        |
+   +---------------+-------+--------+--------------------------------+------------------+---------------------+-----------------+-----------+----------------------------+--------------------------------+----------------+----------------+----------------------------------------+
+   | x2m.2slarge.8 | 6     | 48     | 11.5/3.4                       | 115              | 200                 | 3               | 3         | 1.75                       | 2.25                           | 60             | KVM            |                                        |
+   +---------------+-------+--------+--------------------------------+------------------+---------------------+-----------------+-----------+----------------------------+--------------------------------+----------------+----------------+----------------------------------------+
+   | x2m.2xlarge.8 | 8     | 64     | 15/4.5                         | 150              | 200                 | 4               | 4         | 2                          | 2.5                            | 60             | KVM            |                                        |
+   +---------------+-------+--------+--------------------------------+------------------+---------------------+-----------------+-----------+----------------------------+--------------------------------+----------------+----------------+----------------------------------------+
+   | x2m.3xlarge.8 | 12    | 96     | 17/7                           | 200              | 300                 | 4               | 6         | 2.5                        | 3                              | 60             | KVM            |                                        |
+   +---------------+-------+--------+--------------------------------+------------------+---------------------+-----------------+-----------+----------------------------+--------------------------------+----------------+----------------+----------------------------------------+
+
+.. table:: **Table 2** X1m ECS specifications
 
    +---------------+-------+--------+--------------------------------+------------------+---------------------+-----------------+-----------+----------------------------+--------------------------------+----------------+----------------+--------------------------------+
    | Flavor        | vCPUs | Memory | Max./Assured Network Bandwidth | Max. Network PPS | Network Connections | Max. NIC Queues | Max. NICs | Assured EVS Disk Bandwidth | Assured EVS Disk IOPS (10,000) | Max. EVS Disks | Virtualization | Hardware                       |
@@ -37,7 +58,7 @@ Specifications
    | x1m.3xlarge.8 | 12    | 96     | 8/3.5                          | 110              | 100                 | 4               | 12        | 2                          | 4                              | 60             | KVM            |                                |
    +---------------+-------+--------+--------------------------------+------------------+---------------------+-----------------+-----------+----------------------------+--------------------------------+----------------+----------------+--------------------------------+
 
-.. table:: **Table 2** M9 ECS specifications
+.. table:: **Table 3** M9 ECS specifications
 
    +---------------+-------+--------+--------------------------------+------------------+---------------------+-----------------+-----------+-------------------------+-----------------------------+----------------+
    | Flavor        | vCPUs | Memory | Max./Assured Network Bandwidth | Max. Network PPS | Network Connections | Max. NIC Queues | Max. NICs | Max. EVS Disk Bandwidth | Max. EVS Disk IOPS (10,000) | Virtualization |
@@ -61,7 +82,7 @@ Specifications
    | m9.48xlarge.8 | 192   | 1,504  | 120/102                        | 4,000            | 1,000               | 64              | 12        | 64                      | 70                          |                |
    +---------------+-------+--------+--------------------------------+------------------+---------------------+-----------------+-----------+-------------------------+-----------------------------+----------------+
 
-.. table:: **Table 3** M7n ECS specifications
+.. table:: **Table 4** M7n ECS specifications
 
    +----------------+-------+--------+--------------------------------+------------------+---------------------+-----------------+-----------+---------------------------------+-----------------------------+----------------+
    | Flavor         | vCPUs | Memory | Max./Assured Network Bandwidth | Max. Network PPS | Network Connections | Max. NIC Queues | Max. NICs | Max./Assured EVS Disk Bandwidth | Max. EVS Disk IOPS (10,000) | Virtualization |
@@ -89,7 +110,7 @@ Specifications
    | m7n.24xlarge.8 | 96    | 768    | 40/36                          | 850              | 800                 | 32              | 8         | 24/24                           | 22.5                        | KVM            |
    +----------------+-------+--------+--------------------------------+------------------+---------------------+-----------------+-----------+---------------------------------+-----------------------------+----------------+
 
-.. table:: **Table 4** M4 ECS specifications
+.. table:: **Table 5** M4 ECS specifications
 
    +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------+-------------------------------------+
    | Flavor        | vCPUs | Memory | Max./Assured Network Bandwidth | Max. Network PPS | Max. NIC Queues | Max. NICs | Virtualization | Hardware                            |
@@ -119,7 +140,7 @@ Specifications
    | m4.2xlarge.32 | 8     | 256    | 15/4.5                         | 150              | 4               | 4         | KVM            |                                     |
    +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------+-------------------------------------+
 
-.. table:: **Table 5** M3 ECS specifications
+.. table:: **Table 6** M3 ECS specifications
 
    +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------------------+----------------+--------------------------------+
    | Flavor        | vCPUs | Memory | Max./Assured Network Bandwidth | Max. Network PPS | Max. NIC Queues | Max. NICs | Assured EVS Disk Bandwidth | Virtualization | Hardware                       |
@@ -152,11 +173,11 @@ Scenarios
 Notes
 -----
 
-:ref:`Table 6 <en-us_topic_0035550301__table192771727112217>` lists the OSs supported by memory-optimized ECSs.
+:ref:`Table 7 <en-us_topic_0035550301__table192771727112217>` lists the OSs supported by memory-optimized ECSs.
 
 .. _en-us_topic_0035550301__table192771727112217:
 
-.. table:: **Table 6** Supported OS versions
+.. table:: **Table 7** Supported OS versions
 
    +-----------------------------------+-----------------------------------------------------+
    | OS                                | Version                                             |
