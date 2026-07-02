@@ -6,7 +6,7 @@ Tag Management
 ==============
 
 -  :ref:`Overview <en-us_topic_0092499768>`
--  :ref:`Adding Tags <en-us_topic_0183019669>`
+-  :ref:`Adding Tags to an ECS <en-us_topic_0183019669>`
 -  :ref:`Searching for Resources by Tag <en-us_topic_0183019670>`
 -  :ref:`Deleting Tags <en-us_topic_0183019671>`
 
@@ -15,6 +15,6 @@ Tag Management
    :hidden: 
 
    overview
-   adding_tags
+   adding_tags_to_an_ecs
    searching_for_resources_by_tag
    deleting_tags

@@ -2,18 +2,18 @@
 
 .. _en-us_topic_0183019669:
 
-Adding Tags
-===========
+Adding Tags to an ECS
+=====================
 
 Tags are used to identify cloud resources, such as ECSs, images, and disks. If you have multiple types of cloud resources which are associated with each other, you can add tags to the resources to classify and manage them easily. For more details, see :ref:`Overview <en-us_topic_0092499768>`.
 
 You can add tags to ECSs in the following ways:
 
 -  :ref:`Adding Tags During ECS Creation <en-us_topic_0183019669__section619816351650>`
--  :ref:`Adding Tags on the ECS Details Page <en-us_topic_0183019669__section15164103015253>`
+-  :ref:`Editing Tags on the ECS Details Page <en-us_topic_0183019669__section15164103015253>`
 -  :ref:`Adding Tags on the TMS Console <en-us_topic_0183019669__section115321623241>`
 
-For details about how to use predefined tags, see :ref:`Using Predefined Tags <en-us_topic_0183019669__section648015120456>`.
+-  :ref:`Using Predefined Tags to Add a Tag to A ECS <en-us_topic_0183019669__section648015120456>`
 
 .. _en-us_topic_0183019669__section619816351650:
 
@@ -28,7 +28,7 @@ Adding Tags During ECS Creation
 
 #. Click **Create** **ECS**.
 
-#. Configure parameters for the ECS.
+#. Set required parameters as instructed.
 
    Add tag keys and tag values to the ECS. For details about the requirements for tag keys and values, see :ref:`Table 1 <en-us_topic_0092499768__table197401426182516>`.
 
@@ -44,8 +44,8 @@ Adding Tags During ECS Creation
 
 .. _en-us_topic_0183019669__section15164103015253:
 
-Adding Tags on the ECS Details Page
------------------------------------
+Editing Tags on the ECS Details Page
+------------------------------------
 
 #. Log in to the management console.
 
@@ -57,13 +57,15 @@ Adding Tags on the ECS Details Page
 
    The ECS details page is displayed.
 
-#. Click the **Tags** tab and then **Add Tag**. In the displayed dialog box, enter the tag key and tag value. For the tag key and tag value requirements, see :ref:`Table 1 <en-us_topic_0092499768__table197401426182516>`.
+#. Click the **Tags** tab and then **Add Tag**. In the displayed dialog box, enter the tag key and value based on the requirements described in :ref:`Table 1 <en-us_topic_0092499768__table197401426182516>`.
+
+   You can also use predefined tags. For details, see :ref:`Using Predefined Tags to Add a Tag to A ECS <en-us_topic_0183019669__section648015120456>`.
 
 
    .. figure:: /_static/images/en-us_image_0000002385415681.png
-      :alt: **Figure 2** Adding tags on the Tags tab
+      :alt: **Figure 2** Adding tags on the **Tags** tab
 
-      **Figure 2** Adding tags on the Tags tab
+      **Figure 2** Adding tags on the **Tags** tab
 
 #. Click **OK**.
 
@@ -100,15 +102,25 @@ Adding Tags on the TMS Console
 
 .. _en-us_topic_0183019669__section648015120456:
 
-Using Predefined Tags
----------------------
+Using Predefined Tags to Add a Tag to A ECS
+-------------------------------------------
 
-If you want to add the same tag to multiple ECSs or other resources, you can create a predefined tag on the TMS console and then select the tag for the ECSs or resources. This frees you from having to repeatedly enter tag keys and values. To do so, perform the following operations:
+If you want to add the same tag to multiple ECSs or other resources, you can create a predefined tag on the TMS console and then select the tag for the ECSs or other resources. This frees you from having to repeatedly enter tag keys and values. To do so, perform the following operations:
 
 #. Log in to the management console.
+
 #. Under **Management & Deployment**, click **Tag Management Service**.
-#. Choose **Predefined Tags** in the left navigation pane and click **Create Tag**. In the displayed dialog box, enter a key (for example, **project**) and a value (for example, **A**).
-#. Choose **Computing** > **Elastic Cloud Server** from the service list and select the predefined tag keys and values.
+
+#. Choose **Predefined Tags** in the left navigation pane and click **Create Tag**. In the slide-out panel, enter a tag key (for example, **project**) and a tag value (for example, **A**).
+
+#. Under **Computing**, click **Elastic Cloud Server**.
+
+#. Select predefined tags from the tag key and tag value drop-down lists. This operation is available during or after the ECS creation.
+
+   Predefined tags are not available in the following scenarios:
+
+   -  :ref:`Adding Tags During ECS Creation <en-us_topic_0183019669__section619816351650>`
+   -  :ref:`Editing Tags on the ECS Details Page <en-us_topic_0183019669__section15164103015253>`
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
 .. |image2| image:: /_static/images/en-us_image_0000002188678994.png
