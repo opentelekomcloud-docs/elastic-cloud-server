@@ -28,12 +28,41 @@ POST /v1/{project_id}/cloudservers/os-server-groups/{server_group_id}/action
 
 .. table:: **Table 1** Parameter description
 
-   =============== ========= ===========================
-   Parameter       Mandatory Description
-   =============== ========= ===========================
-   project_id      Yes       Specifies the project ID.
-   server_group_id Yes       Specifies the ECS group ID.
-   =============== ========= ===========================
+   +-----------------------+-----------------------+-----------------------------+
+   | Parameter             | Mandatory             | Description                 |
+   +=======================+=======================+=============================+
+   | project_id            | Yes                   | **Definition**              |
+   |                       |                       |                             |
+   |                       |                       | Specifies the project ID.   |
+   |                       |                       |                             |
+   |                       |                       | **Constraints**             |
+   |                       |                       |                             |
+   |                       |                       | N/A                         |
+   |                       |                       |                             |
+   |                       |                       | **Range**                   |
+   |                       |                       |                             |
+   |                       |                       | N/A                         |
+   |                       |                       |                             |
+   |                       |                       | **Default Value**           |
+   |                       |                       |                             |
+   |                       |                       | N/A                         |
+   +-----------------------+-----------------------+-----------------------------+
+   | server_group_id       | Yes                   | **Definition**              |
+   |                       |                       |                             |
+   |                       |                       | Specifies the ECS group ID. |
+   |                       |                       |                             |
+   |                       |                       | **Constraints**             |
+   |                       |                       |                             |
+   |                       |                       | N/A                         |
+   |                       |                       |                             |
+   |                       |                       | **Range**                   |
+   |                       |                       |                             |
+   |                       |                       | N/A                         |
+   |                       |                       |                             |
+   |                       |                       | **Default Value**           |
+   |                       |                       |                             |
+   |                       |                       | N/A                         |
+   +-----------------------+-----------------------+-----------------------------+
 
 Request
 -------
@@ -47,20 +76,48 @@ Request
    +-----------------+-----------------+-----------------+------------------------------------------------------------------------------+
    | Parameter       | Mandatory       | Type            | Description                                                                  |
    +=================+=================+=================+==============================================================================+
-   | add_member      | Yes             | Object          | Specifies the information of the ECS to be added to an ECS group.            |
+   | add_member      | Yes             | Object          | **Definition**                                                               |
+   |                 |                 |                 |                                                                              |
+   |                 |                 |                 | Specifies the information of the ECS to be added to an ECS group.            |
    |                 |                 |                 |                                                                              |
    |                 |                 |                 | For details, see :ref:`Table 3 <en-us_topic_0133622595__table532112610239>`. |
+   |                 |                 |                 |                                                                              |
+   |                 |                 |                 | **Constraints**                                                              |
+   |                 |                 |                 |                                                                              |
+   |                 |                 |                 | N/A                                                                          |
+   |                 |                 |                 |                                                                              |
+   |                 |                 |                 | **Range**                                                                    |
+   |                 |                 |                 |                                                                              |
+   |                 |                 |                 | N/A                                                                          |
+   |                 |                 |                 |                                                                              |
+   |                 |                 |                 | **Default Value**                                                            |
+   |                 |                 |                 |                                                                              |
+   |                 |                 |                 | N/A                                                                          |
    +-----------------+-----------------+-----------------+------------------------------------------------------------------------------+
 
 .. _en-us_topic_0133622595__table532112610239:
 
 .. table:: **Table 3** **add_member** parameters
 
-   ============= ========= ====== =======================
-   Parameter     Mandatory Type   Description
-   ============= ========= ====== =======================
-   instance_uuid Yes       String Specifies the ECS UUID.
-   ============= ========= ====== =======================
+   +-----------------+-----------------+-----------------+-------------------------+
+   | Parameter       | Mandatory       | Type            | Description             |
+   +=================+=================+=================+=========================+
+   | instance_uuid   | Yes             | String          | **Definition**          |
+   |                 |                 |                 |                         |
+   |                 |                 |                 | Specifies the ECS UUID. |
+   |                 |                 |                 |                         |
+   |                 |                 |                 | **Constraints**         |
+   |                 |                 |                 |                         |
+   |                 |                 |                 | N/A                     |
+   |                 |                 |                 |                         |
+   |                 |                 |                 | **Range**               |
+   |                 |                 |                 |                         |
+   |                 |                 |                 | N/A                     |
+   |                 |                 |                 |                         |
+   |                 |                 |                 | **Default Value**       |
+   |                 |                 |                 |                         |
+   |                 |                 |                 | N/A                     |
+   +-----------------+-----------------+-----------------+-------------------------+
 
 Response
 --------

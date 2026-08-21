@@ -26,18 +26,70 @@ DELETE /v1/{project_id}/cloudservers/{server_id}/detachvolume/{volume_id}
    +-----------------------+-----------------------+---------------------------------------------------+
    | Parameter             | Mandatory             | Description                                       |
    +=======================+=======================+===================================================+
-   | project_id            | Yes                   | Specifies the project ID.                         |
+   | project_id            | Yes                   | **Definition**                                    |
+   |                       |                       |                                                   |
+   |                       |                       | Specifies the project ID.                         |
+   |                       |                       |                                                   |
+   |                       |                       | **Constraints**                                   |
+   |                       |                       |                                                   |
+   |                       |                       | N/A                                               |
+   |                       |                       |                                                   |
+   |                       |                       | **Range**                                         |
+   |                       |                       |                                                   |
+   |                       |                       | N/A                                               |
+   |                       |                       |                                                   |
+   |                       |                       | **Default Value**                                 |
+   |                       |                       |                                                   |
+   |                       |                       | N/A                                               |
    +-----------------------+-----------------------+---------------------------------------------------+
-   | server_id             | Yes                   | Specifies the ECS ID.                             |
+   | server_id             | Yes                   | **Definition**                                    |
+   |                       |                       |                                                   |
+   |                       |                       | Specifies the ECS ID.                             |
+   |                       |                       |                                                   |
+   |                       |                       | **Constraints**                                   |
+   |                       |                       |                                                   |
+   |                       |                       | N/A                                               |
+   |                       |                       |                                                   |
+   |                       |                       | **Range**                                         |
+   |                       |                       |                                                   |
+   |                       |                       | N/A                                               |
+   |                       |                       |                                                   |
+   |                       |                       | **Default Value**                                 |
+   |                       |                       |                                                   |
+   |                       |                       | N/A                                               |
    +-----------------------+-----------------------+---------------------------------------------------+
-   | volume_id             | Yes                   | Specifies the disk ID.                            |
+   | volume_id             | Yes                   | **Definition**                                    |
+   |                       |                       |                                                   |
+   |                       |                       | Specifies the disk ID.                            |
+   |                       |                       |                                                   |
+   |                       |                       | **Constraints**                                   |
+   |                       |                       |                                                   |
+   |                       |                       | N/A                                               |
+   |                       |                       |                                                   |
+   |                       |                       | **Range**                                         |
+   |                       |                       |                                                   |
+   |                       |                       | N/A                                               |
+   |                       |                       |                                                   |
+   |                       |                       | **Default Value**                                 |
+   |                       |                       |                                                   |
+   |                       |                       | N/A                                               |
    +-----------------------+-----------------------+---------------------------------------------------+
-   | delete_flag           | No                    | Indicates whether to forcibly detach a data disk. |
+   | delete_flag           | No                    | **Definition**                                    |
+   |                       |                       |                                                   |
+   |                       |                       | Specifies whether to forcibly detach a data disk. |
+   |                       |                       |                                                   |
+   |                       |                       | **Constraints**                                   |
+   |                       |                       |                                                   |
+   |                       |                       | N/A                                               |
+   |                       |                       |                                                   |
+   |                       |                       | **Range**                                         |
    |                       |                       |                                                   |
    |                       |                       | -  If yes, set it to **1**.                       |
    |                       |                       | -  If no, set it to **0**.                        |
    |                       |                       |                                                   |
-   |                       |                       | It is set to **0** by default.                    |
+   |                       |                       | **Default Value**                                 |
+   |                       |                       |                                                   |
+   |                       |                       | 0                                                 |
    +-----------------------+-----------------------+---------------------------------------------------+
 
 Request

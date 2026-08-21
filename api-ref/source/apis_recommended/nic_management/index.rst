@@ -8,6 +8,7 @@ NIC Management
 -  :ref:`Adding NICs to an ECS in a Batch <en-us_topic_0020212663>`
 -  :ref:`Deleting NICs from an ECS in a Batch <en-us_topic_0020212665>`
 -  :ref:`Listing NICs of an ECS <en-us_topic_0121978383>`
+-  :ref:`Updating NIC Attachment Information of an ECS <en-us_topic_0230783964>`
 
 .. toctree::
    :maxdepth: 1
@@ -16,3 +17,4 @@ NIC Management
    adding_nics_to_an_ecs_in_a_batch
    deleting_nics_from_an_ecs_in_a_batch
    listing_nics_of_an_ecs
+   updating_nic_attachment_information_of_an_ecs

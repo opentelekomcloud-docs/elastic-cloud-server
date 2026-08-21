@@ -26,11 +26,25 @@ POST /v1/{project_id}/cloudservers/os-server-groups
 
 .. table:: **Table 1** Parameter description
 
-   ========== ========= =========================
-   Parameter  Mandatory Description
-   ========== ========= =========================
-   project_id Yes       Specifies the project ID.
-   ========== ========= =========================
+   +-----------------------+-----------------------+---------------------------+
+   | Parameter             | Mandatory             | Description               |
+   +=======================+=======================+===========================+
+   | project_id            | Yes                   | **Definition**            |
+   |                       |                       |                           |
+   |                       |                       | Specifies the project ID. |
+   |                       |                       |                           |
+   |                       |                       | **Constraints**           |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Range**                 |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Default Value**         |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   +-----------------------+-----------------------+---------------------------+
 
 Request
 -------

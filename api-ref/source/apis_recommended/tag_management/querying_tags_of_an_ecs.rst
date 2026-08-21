@@ -22,12 +22,41 @@ GET /v1/{project_id}/cloudservers/{server_id}/tags
 
 .. table:: **Table 1** Parameter description
 
-   ========== ========= =========================
-   Parameter  Mandatory Description
-   ========== ========= =========================
-   project_id Yes       Specifies the project ID.
-   server_id  Yes       Specifies the ECS ID.
-   ========== ========= =========================
+   +-----------------------+-----------------------+---------------------------+
+   | Parameter             | Mandatory             | Description               |
+   +=======================+=======================+===========================+
+   | project_id            | Yes                   | **Definition**            |
+   |                       |                       |                           |
+   |                       |                       | Specifies the project ID. |
+   |                       |                       |                           |
+   |                       |                       | **Constraints**           |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Range**                 |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Default Value**         |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   +-----------------------+-----------------------+---------------------------+
+   | server_id             | Yes                   | **Definition**            |
+   |                       |                       |                           |
+   |                       |                       | Specifies the ECS ID.     |
+   |                       |                       |                           |
+   |                       |                       | **Constraints**           |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Range**                 |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Default Value**         |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   +-----------------------+-----------------------+---------------------------+
 
 Request
 -------
@@ -43,22 +72,46 @@ Response
 
 .. table:: **Table 2** Response parameters
 
-   +-----------+------------------+-----------------------------------------------------------------------------------------------+
-   | Parameter | Type             | Description                                                                                   |
-   +===========+==================+===============================================================================================+
-   | tags      | Array of objects | Specifies tags. For details, see :ref:`Table 3 <en-us_topic_0167811967__table1148911211295>`. |
-   +-----------+------------------+-----------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                   |
+   +=======================+=======================+===============================================================================================+
+   | tags                  | Array of objects      | **Definition**                                                                                |
+   |                       |                       |                                                                                               |
+   |                       |                       | Specifies tags. For details, see :ref:`Table 3 <en-us_topic_0167811967__table1148911211295>`. |
+   |                       |                       |                                                                                               |
+   |                       |                       | **Range**                                                                                     |
+   |                       |                       |                                                                                               |
+   |                       |                       | A maximum of 10 tags are supported. They cannot start with \_sys_.                            |
+   +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0167811967__table1148911211295:
 
 .. table:: **Table 3** **tags** field description
 
-   ========= ====== ========================
-   Parameter Type   Description
-   ========= ====== ========================
-   key       String Specifies the tag key.
-   value     String Specifies the tag value.
-   ========= ====== ========================
+   +-----------------------+-----------------------+--------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                              |
+   +=======================+=======================+==========================================================================+
+   | key                   | String                | **Definition**                                                           |
+   |                       |                       |                                                                          |
+   |                       |                       | Specifies the tag key.                                                   |
+   |                       |                       |                                                                          |
+   |                       |                       | **Range**                                                                |
+   |                       |                       |                                                                          |
+   |                       |                       | -  It cannot be left blank.                                              |
+   |                       |                       | -  It must be unique for each resource.                                  |
+   |                       |                       | -  A maximum of 36 characters are supported.                             |
+   |                       |                       | -  Only letters, digits, hyphens (-), and underscores (_) are supported. |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------+
+   | value                 | String                | **Definition**                                                           |
+   |                       |                       |                                                                          |
+   |                       |                       | Specifies the tag value.                                                 |
+   |                       |                       |                                                                          |
+   |                       |                       | **Range**                                                                |
+   |                       |                       |                                                                          |
+   |                       |                       | -  Can be left blank.                                                    |
+   |                       |                       | -  A maximum of 43 characters are supported.                             |
+   |                       |                       | -  Only letters, digits, hyphens (-), and underscores (_) are supported. |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------+
 
 Example Request
 ---------------

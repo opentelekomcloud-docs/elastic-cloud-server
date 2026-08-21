@@ -23,11 +23,25 @@ GET /v1/{project_id}/cloudservers/detail?flavor={flavor}&name={name}&status={sta
 
 .. table:: **Table 1** Path parameters
 
-   ========== ========= =========================
-   Parameter  Mandatory Description
-   ========== ========= =========================
-   project_id Yes       Specifies the project ID.
-   ========== ========= =========================
+   +-----------------------+-----------------------+---------------------------+
+   | Parameter             | Mandatory             | Description               |
+   +=======================+=======================+===========================+
+   | project_id            | Yes                   | **Definition**            |
+   |                       |                       |                           |
+   |                       |                       | Specifies the project ID. |
+   |                       |                       |                           |
+   |                       |                       | **Constraints**           |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Range**                 |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Default Value**         |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   +-----------------------+-----------------------+---------------------------+
 
 .. table:: **Table 2** Query parameters
 
@@ -40,19 +54,17 @@ GET /v1/{project_id}/cloudservers/detail?flavor={flavor}&name={name}&status={sta
    |                 |                 |                 |                                                                                                                                                                                                                            |
    |                 |                 |                 | **Constraints**                                                                                                                                                                                                            |
    |                 |                 |                 |                                                                                                                                                                                                                            |
-   |                 |                 |                 | The value must be greater than or equal to **0** and the default value is **1**.                                                                                                                                           |
-   |                 |                 |                 |                                                                                                                                                                                                                            |
    |                 |                 |                 | If the value is **0**, the first page is displayed, which is the same as the value **1**.                                                                                                                                  |
    |                 |                 |                 |                                                                                                                                                                                                                            |
    |                 |                 |                 | You are advised to set this parameter to a value greater than or equal to 1.                                                                                                                                               |
    |                 |                 |                 |                                                                                                                                                                                                                            |
    |                 |                 |                 | **Range**                                                                                                                                                                                                                  |
    |                 |                 |                 |                                                                                                                                                                                                                            |
-   |                 |                 |                 | N/A                                                                                                                                                                                                                        |
+   |                 |                 |                 | >= 0                                                                                                                                                                                                                       |
    |                 |                 |                 |                                                                                                                                                                                                                            |
    |                 |                 |                 | **Default Value**                                                                                                                                                                                                          |
    |                 |                 |                 |                                                                                                                                                                                                                            |
-   |                 |                 |                 | N/A                                                                                                                                                                                                                        |
+   |                 |                 |                 | 1                                                                                                                                                                                                                          |
    +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | flavor          | No              | String          | **Definition**                                                                                                                                                                                                             |
    |                 |                 |                 |                                                                                                                                                                                                                            |
@@ -82,7 +94,7 @@ GET /v1/{project_id}/cloudservers/detail?flavor={flavor}&name={name}&status={sta
    |                 |                 |                 |                                                                                                                                                                                                                            |
    |                 |                 |                 | **Range**                                                                                                                                                                                                                  |
    |                 |                 |                 |                                                                                                                                                                                                                            |
-   |                 |                 |                 | Periods (.) are supported to match any single characters except \\n and \\r. A period is equal to [^\\n\\r].                                                                                                               |
+   |                 |                 |                 | 1 to 128 characters, including letters, digits, underscores (_), hyphens (-), and periods (.)                                                                                                                              |
    |                 |                 |                 |                                                                                                                                                                                                                            |
    |                 |                 |                 | **Default Value**                                                                                                                                                                                                          |
    |                 |                 |                 |                                                                                                                                                                                                                            |
@@ -283,8 +295,8 @@ Response
    |                                      |                               |                                                                                                                                                                                                                                                       |
    |                                      |                               | **Range**                                                                                                                                                                                                                                             |
    |                                      |                               |                                                                                                                                                                                                                                                       |
-   |                                      |                               | -  The key indicates the network name, for example, **demo_net**.                                                                                                                                                                                     |
-   |                                      |                               | -  The value indicates the network attribute specified in :ref:`Table 5 <en-us_topic_0094148850__en-us_topic_0057972887_table23553967>`.                                                                                                              |
+   |                                      |                               | -  The key is **vpc_id**.                                                                                                                                                                                                                             |
+   |                                      |                               | -  The value is a network attribute specified in :ref:`Table 5 <en-us_topic_0094148850__en-us_topic_0057972887_table23553967>`.                                                                                                                       |
    +--------------------------------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | key_name                             | String                        | **Definition**                                                                                                                                                                                                                                        |
    |                                      |                               |                                                                                                                                                                                                                                                       |
