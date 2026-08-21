@@ -23,13 +23,57 @@ GET /v1/{project_id}/cloudservers/{server_id}/block_device/{volume_id}
 
 .. table:: **Table 1** Parameter description
 
-   ========== ========= =========================================
-   Parameter  Mandatory Description
-   ========== ========= =========================================
-   server_id  Yes       Specifies the ECS ID in UUID format.
-   project_id Yes       Specifies the project ID.
-   volume_id  Yes       Specifies the EVS disk ID in UUID format.
-   ========== ========= =========================================
+   +-----------------------+-----------------------+-------------------------------------------+
+   | Parameter             | Mandatory             | Description                               |
+   +=======================+=======================+===========================================+
+   | server_id             | Yes                   | **Definition**                            |
+   |                       |                       |                                           |
+   |                       |                       | Specifies the ECS ID in UUID format.      |
+   |                       |                       |                                           |
+   |                       |                       | **Constraints**                           |
+   |                       |                       |                                           |
+   |                       |                       | N/A                                       |
+   |                       |                       |                                           |
+   |                       |                       | **Range**                                 |
+   |                       |                       |                                           |
+   |                       |                       | N/A                                       |
+   |                       |                       |                                           |
+   |                       |                       | **Default Value**                         |
+   |                       |                       |                                           |
+   |                       |                       | N/A                                       |
+   +-----------------------+-----------------------+-------------------------------------------+
+   | project_id            | Yes                   | **Definition**                            |
+   |                       |                       |                                           |
+   |                       |                       | Specifies the project ID.                 |
+   |                       |                       |                                           |
+   |                       |                       | **Constraints**                           |
+   |                       |                       |                                           |
+   |                       |                       | N/A                                       |
+   |                       |                       |                                           |
+   |                       |                       | **Range**                                 |
+   |                       |                       |                                           |
+   |                       |                       | N/A                                       |
+   |                       |                       |                                           |
+   |                       |                       | **Default Value**                         |
+   |                       |                       |                                           |
+   |                       |                       | N/A                                       |
+   +-----------------------+-----------------------+-------------------------------------------+
+   | volume_id             | Yes                   | **Definition**                            |
+   |                       |                       |                                           |
+   |                       |                       | Specifies the EVS disk ID in UUID format. |
+   |                       |                       |                                           |
+   |                       |                       | **Constraints**                           |
+   |                       |                       |                                           |
+   |                       |                       | N/A                                       |
+   |                       |                       |                                           |
+   |                       |                       | **Range**                                 |
+   |                       |                       |                                           |
+   |                       |                       | N/A                                       |
+   |                       |                       |                                           |
+   |                       |                       | **Default Value**                         |
+   |                       |                       |                                           |
+   |                       |                       | N/A                                       |
+   +-----------------------+-----------------------+-------------------------------------------+
 
 Request
 -------
@@ -45,11 +89,17 @@ Response
 
 .. table:: **Table 2** Response parameters
 
-   +------------------+--------+----------------------------------------------------------------------------------------------------------------------+
-   | Parameter        | Type   | Description                                                                                                          |
-   +==================+========+======================================================================================================================+
-   | volumeAttachment | Object | Specifies the disk attached to an ECS. For details, see :ref:`Table 3 <en-us_topic_0167811961__table1128997111919>`. |
-   +------------------+--------+----------------------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                                          |
+   +=======================+=======================+======================================================================================================================+
+   | volumeAttachment      | Object                | **Definition**                                                                                                       |
+   |                       |                       |                                                                                                                      |
+   |                       |                       | Specifies the disk attached to an ECS. For details, see :ref:`Table 3 <en-us_topic_0167811961__table1128997111919>`. |
+   |                       |                       |                                                                                                                      |
+   |                       |                       | **Range**                                                                                                            |
+   |                       |                       |                                                                                                                      |
+   |                       |                       | N/A                                                                                                                  |
+   +-----------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0167811961__table1128997111919:
 
@@ -58,28 +108,73 @@ Response
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------+
    | Parameter             | Type                  | Description                                                                              |
    +=======================+=======================+==========================================================================================+
-   | serverId              | String                | Specifies the ECS ID in UUID format.                                                     |
+   | serverId              | String                | **Definition**                                                                           |
+   |                       |                       |                                                                                          |
+   |                       |                       | Specifies the ECS ID in UUID format.                                                     |
+   |                       |                       |                                                                                          |
+   |                       |                       | **Range**                                                                                |
+   |                       |                       |                                                                                          |
+   |                       |                       | N/A                                                                                      |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------+
-   | volumeId              | String                | Specifies the EVS disk ID in UUID format.                                                |
+   | volumeId              | String                | **Definition**                                                                           |
+   |                       |                       |                                                                                          |
+   |                       |                       | Specifies the EVS disk ID in UUID format.                                                |
+   |                       |                       |                                                                                          |
+   |                       |                       | **Range**                                                                                |
+   |                       |                       |                                                                                          |
+   |                       |                       | N/A                                                                                      |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------+
-   | id                    | String                | Specifies the mount ID, which is the same as the EVS disk ID.                            |
+   | id                    | String                | **Definition**                                                                           |
+   |                       |                       |                                                                                          |
+   |                       |                       | Specifies the mount ID, which is the same as the EVS disk ID.                            |
    |                       |                       |                                                                                          |
    |                       |                       | The value is in UUID format.                                                             |
+   |                       |                       |                                                                                          |
+   |                       |                       | **Range**                                                                                |
+   |                       |                       |                                                                                          |
+   |                       |                       | N/A                                                                                      |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------+
-   | size                  | Integer               | Specifies the EVS disk size, in GiB.                                                     |
+   | size                  | Integer               | **Definition**                                                                           |
+   |                       |                       |                                                                                          |
+   |                       |                       | Specifies the EVS disk size, in GiB.                                                     |
+   |                       |                       |                                                                                          |
+   |                       |                       | **Range**                                                                                |
+   |                       |                       |                                                                                          |
+   |                       |                       | N/A                                                                                      |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------+
-   | device                | String                | Specifies the drive letter of the EVS disk, displayed as the device name on the console. |
+   | device                | String                | **Definition**                                                                           |
+   |                       |                       |                                                                                          |
+   |                       |                       | Specifies the drive letter of the EVS disk, displayed as the device name on the console. |
+   |                       |                       |                                                                                          |
+   |                       |                       | **Range**                                                                                |
+   |                       |                       |                                                                                          |
+   |                       |                       | N/A                                                                                      |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------+
-   | pciAddress            | String                | Specifies the PCI address.                                                               |
+   | pciAddress            | String                | **Definition**                                                                           |
+   |                       |                       |                                                                                          |
+   |                       |                       | Specifies the PCI address.                                                               |
+   |                       |                       |                                                                                          |
+   |                       |                       | **Range**                                                                                |
+   |                       |                       |                                                                                          |
+   |                       |                       | N/A                                                                                      |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------+
-   | bootIndex             | Integer               | Specifies the EVS disk boot sequence.                                                    |
+   | bootIndex             | Integer               | **Definition**                                                                           |
+   |                       |                       |                                                                                          |
+   |                       |                       | Specifies the EVS disk boot sequence.                                                    |
+   |                       |                       |                                                                                          |
+   |                       |                       | **Range**                                                                                |
    |                       |                       |                                                                                          |
    |                       |                       | -  **0** indicates the system disk.                                                      |
    |                       |                       | -  Non-**0** indicates a data disk.                                                      |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------+
-   | bus                   | String                | Specifies the disk bus type.                                                             |
+   | bus                   | String                | **Definition**                                                                           |
    |                       |                       |                                                                                          |
-   |                       |                       | Options: **virtio** and **scsi**                                                         |
+   |                       |                       | Specifies the disk bus type.                                                             |
+   |                       |                       |                                                                                          |
+   |                       |                       | **Range**                                                                                |
+   |                       |                       |                                                                                          |
+   |                       |                       | -  virtio                                                                                |
+   |                       |                       | -  scsi                                                                                  |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------+
 
 Example Request

@@ -21,7 +21,7 @@ This API is an asynchronous API. After the cold migration request is successfull
 Constraints
 -----------
 
--  Currently, this API applies only to dedicated hosts.
+-  Currently, this API only applies to dedicated hosts.
 -  Only a stopped ECS can be cold migrated.
 -  Existing constraints of the native cold migration API are inherited.
 
@@ -36,12 +36,41 @@ POST /v1/{project_id}/cloudservers/{server_id}/migrate
 
 .. table:: **Table 1** Parameter description
 
-   ========== ========= =========================
-   Parameter  Mandatory Description
-   ========== ========= =========================
-   project_id Yes       Specifies the project ID.
-   server_id  Yes       Specifies the ECS ID.
-   ========== ========= =========================
+   +-----------------------+-----------------------+---------------------------+
+   | Parameter             | Mandatory             | Description               |
+   +=======================+=======================+===========================+
+   | project_id            | Yes                   | **Definition**            |
+   |                       |                       |                           |
+   |                       |                       | Specifies the project ID. |
+   |                       |                       |                           |
+   |                       |                       | **Constraints**           |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Range**                 |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Default Value**         |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   +-----------------------+-----------------------+---------------------------+
+   | server_id             | Yes                   | **Definition**            |
+   |                       |                       |                           |
+   |                       |                       | Specifies the ECS ID.     |
+   |                       |                       |                           |
+   |                       |                       | **Constraints**           |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Range**                 |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Default Value**         |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   +-----------------------+-----------------------+---------------------------+
 
 Request
 -------

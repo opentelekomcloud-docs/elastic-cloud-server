@@ -51,11 +51,25 @@ POST /v1/{project_id}/cloudservers
 
 .. table:: **Table 1** Parameter description
 
-   ========== ========= =========================
-   Parameter  Mandatory Description
-   ========== ========= =========================
-   project_id Yes       Specifies the project ID.
-   ========== ========= =========================
+   +-----------------------+-----------------------+---------------------------+
+   | Parameter             | Mandatory             | Description               |
+   +=======================+=======================+===========================+
+   | project_id            | Yes                   | **Definition**            |
+   |                       |                       |                           |
+   |                       |                       | Specifies the project ID. |
+   |                       |                       |                           |
+   |                       |                       | **Constraints**           |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Range**                 |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Default Value**         |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   +-----------------------+-----------------------+---------------------------+
 
 Request
 -------
@@ -68,46 +82,46 @@ Request
 
 .. table:: **Table 2** Request parameters
 
-   +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                                                                 |
-   +=================+=================+=================+=============================================================================================================+
-   | server          | Yes             | Object          | **Definition**                                                                                              |
-   |                 |                 |                 |                                                                                                             |
-   |                 |                 |                 | Specifies the ECS information. For details, see :ref:`Table 3 <en-us_topic_0020212668__table761103195216>`. |
-   |                 |                 |                 |                                                                                                             |
-   |                 |                 |                 | **Constraints**                                                                                             |
-   |                 |                 |                 |                                                                                                             |
-   |                 |                 |                 | N/A                                                                                                         |
-   |                 |                 |                 |                                                                                                             |
-   |                 |                 |                 | **Range**                                                                                                   |
-   |                 |                 |                 |                                                                                                             |
-   |                 |                 |                 | N/A                                                                                                         |
-   |                 |                 |                 |                                                                                                             |
-   |                 |                 |                 | **Default Value**                                                                                           |
-   |                 |                 |                 |                                                                                                             |
-   |                 |                 |                 | N/A                                                                                                         |
-   +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+
-   | dry_run         | No              | Boolean         | **Definition**                                                                                              |
-   |                 |                 |                 |                                                                                                             |
-   |                 |                 |                 | Specifies whether to check the request. If this parameter is set to **true**, no instance is created.       |
-   |                 |                 |                 |                                                                                                             |
-   |                 |                 |                 | **Constraints**                                                                                             |
-   |                 |                 |                 |                                                                                                             |
-   |                 |                 |                 | N/A                                                                                                         |
-   |                 |                 |                 |                                                                                                             |
-   |                 |                 |                 | **Range**                                                                                                   |
-   |                 |                 |                 |                                                                                                             |
-   |                 |                 |                 | -  **true**: Check the request. Check items include the mandatory parameters and request format.            |
-   |                 |                 |                 |                                                                                                             |
-   |                 |                 |                 |    -  If the check fails, the system returns an error.                                                      |
-   |                 |                 |                 |    -  If the check is successful, the system returns status code 202.                                       |
-   |                 |                 |                 |                                                                                                             |
-   |                 |                 |                 | -  **false**: Send the request without checking the request body.                                           |
-   |                 |                 |                 |                                                                                                             |
-   |                 |                 |                 | **Default Value**                                                                                           |
-   |                 |                 |                 |                                                                                                             |
-   |                 |                 |                 | false                                                                                                       |
-   +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                                                                                             |
+   +=================+=================+=================+=========================================================================================================================================================+
+   | server          | Yes             | Object          | **Definition**                                                                                                                                          |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | Specifies the ECS information. For details, see :ref:`Table 3 <en-us_topic_0020212668__table761103195216>`.                                             |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | **Constraints**                                                                                                                                         |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | N/A                                                                                                                                                     |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | **Range**                                                                                                                                               |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | N/A                                                                                                                                                     |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | **Default Value**                                                                                                                                       |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | N/A                                                                                                                                                     |
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | dry_run         | No              | Boolean         | **Definition**                                                                                                                                          |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | Specifies whether the system checks the request. If this parameter is set to **true**, the system checks the request, but no instances will be created. |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | **Constraints**                                                                                                                                         |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | N/A                                                                                                                                                     |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | **Range**                                                                                                                                               |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | -  **true**: The system checks the request. Check items include mandatory parameters and request format.                                                |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 |    -  If the check fails, the system returns an error.                                                                                                  |
+   |                 |                 |                 |    -  If the check is successful, the system returns status code 202.                                                                                   |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | -  **false**: The system sends the request without checking the request body.                                                                           |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | **Default Value**                                                                                                                                       |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | false                                                                                                                                                   |
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0020212668__table761103195216:
 
@@ -582,7 +596,7 @@ Request
    +-----------------+-----------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
    | extra_dhcp_opts | No              | Array of objects | **Definition**                                                                                                                                  |
    |                 |                 |                  |                                                                                                                                                 |
-   |                 |                 |                  | Indicates extended DHCP options. For details, see :ref:`Table 13 <en-us_topic_0167957246__table93959401279>`.                                   |
+   |                 |                 |                  | Specifies extended DHCP options. For details, see :ref:`Table 13 <en-us_topic_0167957246__table93959401279>`.                                   |
    |                 |                 |                  |                                                                                                                                                 |
    |                 |                 |                  | **Constraints**                                                                                                                                 |
    |                 |                 |                  |                                                                                                                                                 |
@@ -651,20 +665,19 @@ Request
    |                 |                 |                 |                                                                                                                                                                                                                                                                                                                              |
    |                 |                 |                 | -  When the disk is created from a backup:                                                                                                                                                                                                                                                                                   |
    |                 |                 |                 |                                                                                                                                                                                                                                                                                                                              |
-   |                 |                 |                 |    If the type of the backup's source disk is **SSD**, **SAS**, **SATA**, **GPSSD**, **ESSD**, or **GPSSD2**, you can create disks of any of these types.                                                                                                                                                                    |
+   |                 |                 |                 |    If the type of the backup's source disk is **SSD**, **SAS**, **SATA**, **GPSSD**, or **ESSD**, you can create disks of any of these types.                                                                                                                                                                                |
    |                 |                 |                 |                                                                                                                                                                                                                                                                                                                              |
    |                 |                 |                 |    If the type of the backup's source disk is **co-p1** or **uh-l1**, you can create disks of any of the two types.                                                                                                                                                                                                          |
    |                 |                 |                 |                                                                                                                                                                                                                                                                                                                              |
    |                 |                 |                 | **Range**                                                                                                                                                                                                                                                                                                                    |
    |                 |                 |                 |                                                                                                                                                                                                                                                                                                                              |
-   |                 |                 |                 | The value can be **ESSD**, **GPSSD2**, **GPSSD**, **SSD**, **SAS**, or **SATA**.                                                                                                                                                                                                                                             |
+   |                 |                 |                 | The value can be **ESSD**, **GPSSD**, **SSD**, **SAS**, or **SATA**.                                                                                                                                                                                                                                                         |
    |                 |                 |                 |                                                                                                                                                                                                                                                                                                                              |
    |                 |                 |                 | -  **SSD**: the ultra-high I/O type                                                                                                                                                                                                                                                                                          |
    |                 |                 |                 | -  **SAS**: the high I/O type                                                                                                                                                                                                                                                                                                |
    |                 |                 |                 | -  **SATA**: the common I/O type (end-of-sale)                                                                                                                                                                                                                                                                               |
    |                 |                 |                 | -  **GPSSD**: the general purpose SSD type                                                                                                                                                                                                                                                                                   |
    |                 |                 |                 | -  **ESSD**: the extreme SSD type                                                                                                                                                                                                                                                                                            |
-   |                 |                 |                 | -  **GPSSD2**: the general purpose SSD V2 type                                                                                                                                                                                                                                                                               |
    |                 |                 |                 |                                                                                                                                                                                                                                                                                                                              |
    |                 |                 |                 | **Default Value**                                                                                                                                                                                                                                                                                                            |
    |                 |                 |                 |                                                                                                                                                                                                                                                                                                                              |
@@ -746,20 +759,19 @@ Request
    |                 |                 |                 |                                                                                                                                                                                                                                           |
    |                 |                 |                 | -  When the disk is created from a backup:                                                                                                                                                                                                |
    |                 |                 |                 |                                                                                                                                                                                                                                           |
-   |                 |                 |                 |    If the type of the backup's source disk is **SSD**, **SAS**, **SATA**, **GPSSD**, **ESSD**, or **GPSSD2**, you can create disks of any of these types.                                                                                 |
+   |                 |                 |                 |    If the type of the backup's source disk is **SSD**, **SAS**, **SATA**, **GPSSD**, or **ESSD**, you can create disks of any of these types.                                                                                             |
    |                 |                 |                 |                                                                                                                                                                                                                                           |
    |                 |                 |                 |    If the type of the backup's source disk is **co-p1** or **uh-l1**, you can create disks of any of the two types.                                                                                                                       |
    |                 |                 |                 |                                                                                                                                                                                                                                           |
    |                 |                 |                 | **Range**                                                                                                                                                                                                                                 |
    |                 |                 |                 |                                                                                                                                                                                                                                           |
-   |                 |                 |                 | The value can be **ESSD**, **GPSSD2**, **GPSSD**, **SSD**, **SAS**, or **SATA**.                                                                                                                                                          |
+   |                 |                 |                 | The value can be **ESSD**, **GPSSD**, **SSD**, **SAS**, or **SATA**.                                                                                                                                                                      |
    |                 |                 |                 |                                                                                                                                                                                                                                           |
    |                 |                 |                 | -  **SSD**: the ultra-high I/O type                                                                                                                                                                                                       |
    |                 |                 |                 | -  **SAS**: the high I/O type                                                                                                                                                                                                             |
    |                 |                 |                 | -  **SATA**: the common I/O type (end-of-sale)                                                                                                                                                                                            |
    |                 |                 |                 | -  **GPSSD**: the general purpose SSD type                                                                                                                                                                                                |
    |                 |                 |                 | -  **ESSD**: the extreme SSD type                                                                                                                                                                                                         |
-   |                 |                 |                 | -  **GPSSD2**: the general purpose SSD V2 type                                                                                                                                                                                            |
    |                 |                 |                 |                                                                                                                                                                                                                                           |
    |                 |                 |                 | **Default Value**                                                                                                                                                                                                                         |
    |                 |                 |                 |                                                                                                                                                                                                                                           |

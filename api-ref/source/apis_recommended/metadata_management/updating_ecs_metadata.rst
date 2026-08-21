@@ -10,8 +10,8 @@ Function
 
 This API is used to update ECS metadata.
 
--  If the metadata does not contain the target field, the field is automatically added.
--  If the metadata contains the target field, the field value is automatically updated.
+-  If the metadata does not contain the field to be updated, the field is automatically added.
+-  If the metadata contains the field to be updated, the field value is automatically updated.
 -  If the field in the metadata is not requested, the field value remains unchanged.
 
 .. note::
@@ -30,44 +30,86 @@ POST /v1/{project_id}/cloudservers/{server_id}/metadata
 
 .. table:: **Table 1** Parameter description
 
-   ========== ========= =========================
-   Parameter  Mandatory Description
-   ========== ========= =========================
-   project_id Yes       Specifies the project ID.
-   server_id  Yes       Specifies the ECS ID.
-   ========== ========= =========================
+   +-----------------------+-----------------------+---------------------------+
+   | Parameter             | Mandatory             | Description               |
+   +=======================+=======================+===========================+
+   | project_id            | Yes                   | **Definition**            |
+   |                       |                       |                           |
+   |                       |                       | Specifies the project ID. |
+   |                       |                       |                           |
+   |                       |                       | **Constraints**           |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Range**                 |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Default Value**         |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   +-----------------------+-----------------------+---------------------------+
+   | server_id             | Yes                   | **Definition**            |
+   |                       |                       |                           |
+   |                       |                       | Specifies the ECS ID.     |
+   |                       |                       |                           |
+   |                       |                       | **Constraints**           |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Range**                 |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Default Value**         |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   +-----------------------+-----------------------+---------------------------+
 
 Request
 -------
 
 .. table:: **Table 2** Request parameters
 
-   +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                                                                                                                                                                            |
-   +=================+=================+=================+========================================================================================================================================================================================================================+
-   | metadata        | Yes             | Object          | Specifies the user-defined metadata key-value pair.                                                                                                                                                                    |
-   |                 |                 |                 |                                                                                                                                                                                                                        |
-   |                 |                 |                 | The data structure can be empty. If the value is empty, data is not updated.                                                                                                                                           |
-   |                 |                 |                 |                                                                                                                                                                                                                        |
-   |                 |                 |                 | For a metadata tag:                                                                                                                                                                                                    |
-   |                 |                 |                 |                                                                                                                                                                                                                        |
-   |                 |                 |                 | It contains a maximum of 255 Unicode characters and cannot be left blank. A tag can contain uppercase letters (A-Z), lowercase letters (a-z), digits (0-9), hyphens (-), underscores (_), colons (:), and periods (.). |
-   |                 |                 |                 |                                                                                                                                                                                                                        |
-   |                 |                 |                 | For a metadata value:                                                                                                                                                                                                  |
-   |                 |                 |                 |                                                                                                                                                                                                                        |
-   |                 |                 |                 | It contains a maximum of 255 Unicode characters.                                                                                                                                                                       |
-   +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type               | Description                                                                                                                                                                             |
+   +=================+=================+====================+=========================================================================================================================================================================================+
+   | metadata        | Yes             | Map<String,String> | **Definition**                                                                                                                                                                          |
+   |                 |                 |                    |                                                                                                                                                                                         |
+   |                 |                 |                    | This API is used to update ECS metadata.                                                                                                                                                |
+   |                 |                 |                    |                                                                                                                                                                                         |
+   |                 |                 |                    | You can use metadata to customize key-value pairs. For details about reserved key-value pairs, see :ref:`Table 9 <en-us_topic_0167957246__table2373623012315>`.                         |
+   |                 |                 |                    |                                                                                                                                                                                         |
+   |                 |                 |                    | **Constraints**                                                                                                                                                                         |
+   |                 |                 |                    |                                                                                                                                                                                         |
+   |                 |                 |                    | If the metadata contains sensitive data, take appropriate measures to protect the sensitive data, for example, controlling access permissions and encrypting the data.                  |
+   |                 |                 |                    |                                                                                                                                                                                         |
+   |                 |                 |                    | **Range**                                                                                                                                                                               |
+   |                 |                 |                    |                                                                                                                                                                                         |
+   |                 |                 |                    | -  A metadata key consists of 1 to 255 characters and can only contain uppercase letters, lowercase letters, digits, spaces, hyphens (-), underscores (_), colons (:), and periods (.). |
+   |                 |                 |                    | -  A metadata value consists of a maximum of 255 characters.                                                                                                                            |
+   |                 |                 |                    |                                                                                                                                                                                         |
+   |                 |                 |                    | **Default Value**                                                                                                                                                                       |
+   |                 |                 |                    |                                                                                                                                                                                         |
+   |                 |                 |                    | N/A                                                                                                                                                                                     |
+   +-----------------+-----------------+--------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Response
 --------
 
 .. table:: **Table 3** Parameter description
 
-   ========= ====== ===================================================
-   Parameter Type   Description
-   ========= ====== ===================================================
-   metadata  Object Specifies the user-defined metadata key-value pair.
-   ========= ====== ===================================================
+   +-----------------------+-----------------------+-----------------------------------------------------+
+   | Parameter             | Type                  | Description                                         |
+   +=======================+=======================+=====================================================+
+   | metadata              | Object                | **Definition**                                      |
+   |                       |                       |                                                     |
+   |                       |                       | Specifies the user-defined metadata key-value pair. |
+   |                       |                       |                                                     |
+   |                       |                       | **Range**                                           |
+   |                       |                       |                                                     |
+   |                       |                       | N/A                                                 |
+   +-----------------------+-----------------------+-----------------------------------------------------+
 
 Example Request
 ---------------

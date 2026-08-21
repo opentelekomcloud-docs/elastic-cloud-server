@@ -21,12 +21,41 @@ DELETE /v1/{project_id}/cloudservers/os-server-groups/{server_group_id}
 
 .. table:: **Table 1** Parameter description
 
-   =============== ========= =============================
-   Parameter       Mandatory Description
-   =============== ========= =============================
-   project_id      Yes       Specifies the project ID.
-   server_group_id Yes       Specifies the ECS group UUID.
-   =============== ========= =============================
+   +-----------------------+-----------------------+-------------------------------+
+   | Parameter             | Mandatory             | Description                   |
+   +=======================+=======================+===============================+
+   | project_id            | Yes                   | **Definition**                |
+   |                       |                       |                               |
+   |                       |                       | Specifies the project ID.     |
+   |                       |                       |                               |
+   |                       |                       | **Constraints**               |
+   |                       |                       |                               |
+   |                       |                       | N/A                           |
+   |                       |                       |                               |
+   |                       |                       | **Range**                     |
+   |                       |                       |                               |
+   |                       |                       | N/A                           |
+   |                       |                       |                               |
+   |                       |                       | **Default Value**             |
+   |                       |                       |                               |
+   |                       |                       | N/A                           |
+   +-----------------------+-----------------------+-------------------------------+
+   | server_group_id       | Yes                   | **Definition**                |
+   |                       |                       |                               |
+   |                       |                       | Specifies the ECS group UUID. |
+   |                       |                       |                               |
+   |                       |                       | **Constraints**               |
+   |                       |                       |                               |
+   |                       |                       | N/A                           |
+   |                       |                       |                               |
+   |                       |                       | **Range**                     |
+   |                       |                       |                               |
+   |                       |                       | N/A                           |
+   |                       |                       |                               |
+   |                       |                       | **Default Value**             |
+   |                       |                       |                               |
+   |                       |                       | N/A                           |
+   +-----------------------+-----------------------+-------------------------------+
 
 Request Parameters
 ------------------

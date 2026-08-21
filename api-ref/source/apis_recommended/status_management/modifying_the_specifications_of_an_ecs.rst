@@ -30,12 +30,41 @@ POST /v1/{project_id}/cloudservers/{server_id}/resize
 
 .. table:: **Table 1** Parameter description
 
-   ========== ========= =========================
-   Parameter  Mandatory Description
-   ========== ========= =========================
-   project_id Yes       Specifies the project ID.
-   server_id  Yes       Specifies the ECS ID.
-   ========== ========= =========================
+   +-----------------------+-----------------------+---------------------------+
+   | Parameter             | Mandatory             | Description               |
+   +=======================+=======================+===========================+
+   | project_id            | Yes                   | **Definition**            |
+   |                       |                       |                           |
+   |                       |                       | Specifies the project ID. |
+   |                       |                       |                           |
+   |                       |                       | **Constraints**           |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Range**                 |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Default Value**         |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   +-----------------------+-----------------------+---------------------------+
+   | server_id             | Yes                   | **Definition**            |
+   |                       |                       |                           |
+   |                       |                       | Specifies the ECS ID.     |
+   |                       |                       |                           |
+   |                       |                       | **Constraints**           |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Range**                 |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Default Value**         |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   +-----------------------+-----------------------+---------------------------+
 
 Request
 -------
@@ -46,46 +75,46 @@ Request
 
 .. table:: **Table 2** Request parameters
 
-   +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                                                                                   |
-   +=================+=================+=================+===============================================================================================================================+
-   | resize          | Yes             | Object          | **Definition**                                                                                                                |
-   |                 |                 |                 |                                                                                                                               |
-   |                 |                 |                 | Specifies the operation to modify ECS specifications. For details, see :ref:`Table 3 <en-us_topic_0020212653__table7657338>`. |
-   |                 |                 |                 |                                                                                                                               |
-   |                 |                 |                 | **Constraints**                                                                                                               |
-   |                 |                 |                 |                                                                                                                               |
-   |                 |                 |                 | N/A                                                                                                                           |
-   |                 |                 |                 |                                                                                                                               |
-   |                 |                 |                 | **Range**                                                                                                                     |
-   |                 |                 |                 |                                                                                                                               |
-   |                 |                 |                 | N/A                                                                                                                           |
-   |                 |                 |                 |                                                                                                                               |
-   |                 |                 |                 | **Default Value**                                                                                                             |
-   |                 |                 |                 |                                                                                                                               |
-   |                 |                 |                 | N/A                                                                                                                           |
-   +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------+
-   | dry_run         | No              | Boolean         | **Definition**                                                                                                                |
-   |                 |                 |                 |                                                                                                                               |
-   |                 |                 |                 | Specifies whether to check the request. If this parameter is set to **true**, no instance is created.                         |
-   |                 |                 |                 |                                                                                                                               |
-   |                 |                 |                 | **Constraints**                                                                                                               |
-   |                 |                 |                 |                                                                                                                               |
-   |                 |                 |                 | N/A                                                                                                                           |
-   |                 |                 |                 |                                                                                                                               |
-   |                 |                 |                 | **Range**                                                                                                                     |
-   |                 |                 |                 |                                                                                                                               |
-   |                 |                 |                 | -  **true**: Check the request. Check items include the mandatory parameters and request format.                              |
-   |                 |                 |                 |                                                                                                                               |
-   |                 |                 |                 |    -  If the check fails, the system returns an error.                                                                        |
-   |                 |                 |                 |    -  If the check is successful, the system returns status code 202.                                                         |
-   |                 |                 |                 |                                                                                                                               |
-   |                 |                 |                 | -  **false**: Send the request without checking the request body.                                                             |
-   |                 |                 |                 |                                                                                                                               |
-   |                 |                 |                 | **Default Value**                                                                                                             |
-   |                 |                 |                 |                                                                                                                               |
-   |                 |                 |                 | false                                                                                                                         |
-   +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                                                                                             |
+   +=================+=================+=================+=========================================================================================================================================================+
+   | resize          | Yes             | Object          | **Definition**                                                                                                                                          |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | Specifies the operation to modify ECS specifications. For details, see :ref:`Table 3 <en-us_topic_0020212653__table7657338>`.                           |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | **Constraints**                                                                                                                                         |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | N/A                                                                                                                                                     |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | **Range**                                                                                                                                               |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | N/A                                                                                                                                                     |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | **Default Value**                                                                                                                                       |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | N/A                                                                                                                                                     |
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | dry_run         | No              | Boolean         | **Definition**                                                                                                                                          |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | Specifies whether the system checks the request. If this parameter is set to **true**, the system checks the request, but no instances will be created. |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | **Constraints**                                                                                                                                         |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | N/A                                                                                                                                                     |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | **Range**                                                                                                                                               |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | -  **true**: The system checks the request. Check items include mandatory parameters and request format.                                                |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 |    -  If the check fails, the system returns an error.                                                                                                  |
+   |                 |                 |                 |    -  If the check is successful, the system returns status code 202.                                                                                   |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | -  **false**: The system sends the request without checking the request body.                                                                           |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | **Default Value**                                                                                                                                       |
+   |                 |                 |                 |                                                                                                                                                         |
+   |                 |                 |                 | false                                                                                                                                                   |
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0020212653__table7657338:
 
