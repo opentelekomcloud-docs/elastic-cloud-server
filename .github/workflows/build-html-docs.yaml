@@ -4,7 +4,9 @@ on:
     types: [opened, reopened, synchronize, edited]
 jobs:
   tox-docs:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-internal
+    container:
+      image: catthehacker/ubuntu:act-24.04
     steps:
       - uses: opentelekomcloud-infra/github-actions/.github/actions/tox-run-env@v1
         with:
@@ -17,6 +19,7 @@ jobs:
           docs_path: "doc/build/html"
           docs_service: elastic-cloud-server
           swift_container: "gh_action_logs"
+          otc_swift_preview_endpoint: ${{ secrets.OTC_SWIFT_PREVIEW_ENDPOINT }}
           otc_swift_username: ${{ secrets.OTC_SWIFT_USERNAME }}
           otc_swift_password: ${{ secrets.OTC_SWIFT_PASSWORD }}
           otc_swift_project_name: ${{ secrets.OTC_SWIFT_PROJECT_NAME }}
