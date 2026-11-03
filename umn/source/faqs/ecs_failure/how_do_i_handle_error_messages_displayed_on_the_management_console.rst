@@ -67,3 +67,7 @@ If an error occurs, check the error code and perform the corresponding operation
    +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
    | Other error codes     | Other error messages                                                                                                                  | Initiate the request again. If the error persists, record the returned error code and contact customer service for troubleshooting. |
    +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+
+.. meta::
+   :description: Resolve ECS error messages on the T Cloud Public management console.
+   :keywords: Elastic Cloud Server, ECS, Error Messages, Management Console, Error Codes

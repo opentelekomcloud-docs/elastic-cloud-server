@@ -49,3 +49,7 @@ Solution
       **tar czvf /tmp/backup.tar.gz /home/data**
 
    b. Delete unnecessary files to release inodes.
+
+.. meta::
+   :description: Fix inode exhaustion on Elastic Cloud Server from T Cloud Public.
+   :keywords: Elastic Cloud Server, inode exhaustion, file creation failure, disk space, T Cloud Public

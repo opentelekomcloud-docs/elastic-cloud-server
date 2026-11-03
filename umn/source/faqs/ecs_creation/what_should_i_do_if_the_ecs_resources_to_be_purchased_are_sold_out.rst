@@ -11,3 +11,7 @@ Each region has multiple AZs. If resources in an AZ are sold out, you are advise
 
 -  Switch to another AZ to purchase the resources.
 -  Purchase other resources that are not sold out.
+
+.. meta::
+   :description: ECS resources sold out? Switch to another AZ or choose available specs.
+   :keywords: Elastic Cloud Server, T Cloud Public, sold out, availability zone, region

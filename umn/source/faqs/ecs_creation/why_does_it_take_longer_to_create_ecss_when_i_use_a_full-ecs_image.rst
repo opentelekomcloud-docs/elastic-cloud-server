@@ -71,3 +71,7 @@ If you want to use a full-ECS image to rapidly create ECSs, ensure that the full
       For details, see *Image Management Service User Guide*.
 
       You can use the full-ECS image to rapidly create ECSs.
+
+.. meta::
+   :description: Learn why creating ECSs from full-ECS images takes longer on T Cloud Public.
+   :keywords: Elastic Cloud Server, Full-ECS Image, CSBS, CBR, Image Management Service

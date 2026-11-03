@@ -261,3 +261,7 @@ If the fault persists, record the resource details and fault occurrence time, an
 If the fault persists after the preceding operations are performed, record the resource details and fault occurrence time, and contact customer service for technical support.
 
 .. |image1| image:: /_static/images/en-us_image_0164069962.png
+
+.. meta::
+   :description: Troubleshoot Linux ECS login failures on T Cloud Public.
+   :keywords: Elastic Cloud Server, Linux ECS, VNC Login, Remote Desktop, Fault Locating

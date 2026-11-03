@@ -73,3 +73,7 @@ Before remotely logging in to your ECS using MSTSC, change the resolution of the
       **Figure 5** Display
 
 #. Use MSTSC to log in to the ECS.
+
+.. meta::
+   :description: Learn how to change the resolution of a Windows Elastic Cloud Server on T Cloud Public using VNC or MSTSC.
+   :keywords: Elastic Cloud Server, Windows, Resolution, VNC, MSTSC

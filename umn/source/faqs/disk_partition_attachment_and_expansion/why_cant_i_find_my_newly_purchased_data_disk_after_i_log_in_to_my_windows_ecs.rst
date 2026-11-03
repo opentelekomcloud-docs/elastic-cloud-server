@@ -49,3 +49,7 @@ After the ECS OS is changed, data disks may become unavailable due to file syste
 #. In **My Computer**, check whether the data disk is displayed properly.
 
    If the fault persists, initialize and partition the disk again. Before initializing the disk, create a backup for it.
+
+.. meta::
+   :description: Resolve missing data disk issues on T Cloud Public Windows ECS.
+   :keywords: Elastic Cloud Server, Windows ECS, data disk, Disk Management, disk initialization

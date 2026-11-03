@@ -17,3 +17,7 @@ To migrate ECSs across AZs or accounts, you can use Image Management Service (IM
 #. Create an ECS using the private image.
 
 For details, see the *Image Management Service User Guide*.
+
+.. meta::
+   :description: Learn how to migrate Elastic Cloud Servers across AZs or accounts using Image Management Service.
+   :keywords: Elastic Cloud Server, AZ, Account, Image Management Service, IMS

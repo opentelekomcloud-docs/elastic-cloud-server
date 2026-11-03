@@ -51,3 +51,7 @@ Configuring TPM for an ECS
 #. Click **OK**.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
+
+.. meta::
+   :description: Configuring TPM for an ECS
+   :keywords: Elastic Cloud Server

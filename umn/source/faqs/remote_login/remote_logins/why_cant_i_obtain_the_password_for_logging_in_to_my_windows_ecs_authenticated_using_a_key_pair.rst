@@ -75,3 +75,7 @@ If logging in to an ECS with Cloudbase-Init enabled failed, perform the followin
          :alt: **Figure 3** cloudbase-init
 
          **Figure 3** cloudbase-init
+
+.. meta::
+   :description: Troubleshoot why you can't obtain the Windows ECS password via key pair on T Cloud Public.
+   :keywords: Elastic Cloud Server, Cloudbase-Init, key pair, Windows ECS, password injection

@@ -184,3 +184,7 @@ If the high bandwidth usage is caused by normal service access of non-malicious 
 .. |image4| image:: /_static/images/en-us_image_0166947775.png
 .. |image5| image:: /_static/images/en-us_image_0167110971.png
 .. |image6| image:: /_static/images/en-us_image_0167295759.png
+
+.. meta::
+   :description: Troubleshoot slow Linux ECS on T Cloud Public.
+   :keywords: Elastic Cloud Server, Linux ECS, CPU usage, troubleshooting, Cloud Eye

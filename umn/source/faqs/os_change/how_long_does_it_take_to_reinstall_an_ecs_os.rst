@@ -14,3 +14,7 @@ During this process, the ECS is in **Reinstalling OS** state.
    :alt: **Figure 1** Reinstalling an OS
 
    **Figure 1** Reinstalling an OS
+
+.. meta::
+   :description: Learn how to reinstall an ECS OS on T Cloud Public.
+   :keywords: Elastic Cloud Server, ECS, reinstall OS, cloud service, T Cloud Public

@@ -151,3 +151,7 @@ Key         Value
 =========== =====================
 instance_id Specifies the ECS ID.
 =========== =====================
+
+.. meta::
+   :description: Basic ECS Metrics
+   :keywords: Elastic Cloud Server

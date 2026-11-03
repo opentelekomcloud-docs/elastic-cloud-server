@@ -16,3 +16,7 @@ Why Cannot My ECS OS Start Properly?
 #. Click **Apply for Server** and check whether the same ECS can be created. If not, this image may have been canceled.
 
 #. Change the ECS OS to one that is available on the management console.
+
+.. meta::
+   :description: Troubleshoot ECS OS boot issues on T Cloud Public.
+   :keywords: Elastic Cloud Server, ECS, OS startup, image type, management console

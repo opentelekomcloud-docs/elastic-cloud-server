@@ -12,3 +12,7 @@ Data Backup and Restoration
    :hidden: 
 
    can_ecss_automatically_recover_after_the_physical_host_accommodating_the_ecss_becomes_faulty
+
+.. meta::
+   :description: Learn how Elastic Cloud Servers from T Cloud Public automatically recover after physical host failures.
+   :keywords: Elastic Cloud Server, T Cloud Public, Data Backup, Restoration, Fault Recovery

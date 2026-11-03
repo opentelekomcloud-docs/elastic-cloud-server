@@ -22,3 +22,7 @@ For example, if the name of a German keyboard mapping file is **de**, run the **
 #. Click the **Option Menu** icon.
 #. Select **Soft Keyboard**.
 #. Select a keyboard layout.
+
+.. meta::
+   :description: Learn why VNC input errors occur on T Cloud Public Elastic Cloud Servers.
+   :keywords: Elastic Cloud Server, VNC, keyboard language, OS configuration, input method

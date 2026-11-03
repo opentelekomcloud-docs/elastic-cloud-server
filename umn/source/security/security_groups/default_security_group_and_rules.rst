@@ -35,3 +35,7 @@ Note the following when using default security group rules:
    +-----------+----------+------+--------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+
    | Inbound   | All      | All  | Source: the current security group (for example, sg-*xxxxx*) | Allows communications among cloud servers within the security group and denies all inbound traffic. |
    +-----------+----------+------+--------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+
+
+.. meta::
+   :description: Learn about T Cloud Public's Elastic Cloud Server default security group rules.
+   :keywords: Elastic Cloud Server, T Cloud Public, Security Group, Inbound Rules, Outbound Rules

@@ -14,3 +14,7 @@ Passwords and Key Pairs
 
    password_reset/index
    key_pairs/index
+
+.. meta::
+   :description: Secure your Elastic Cloud Server on T Cloud Public with password reset and key pair management.
+   :keywords: Elastic Cloud Server, T Cloud Public, Password Reset, Key Pairs, Cloud Security

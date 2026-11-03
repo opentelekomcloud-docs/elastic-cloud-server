@@ -52,3 +52,7 @@ How Can I Check Whether an ECS Is Created Before or After the Disk Function Upgr
 
    -  If the total number of disks that can be attached is 24 (including the system disk), the ECS is created before the disk function upgrade.
    -  If the total number of disks that can be attached is 60 (including the system disk), the ECS is created after the disk function upgrade.
+
+.. meta::
+   :description: Learn how to attach up to 60 disks to an Elastic Cloud Server from T Cloud Public.
+   :keywords: Elastic Cloud Server, T Cloud Public, multiple disks, VBD, SCSI

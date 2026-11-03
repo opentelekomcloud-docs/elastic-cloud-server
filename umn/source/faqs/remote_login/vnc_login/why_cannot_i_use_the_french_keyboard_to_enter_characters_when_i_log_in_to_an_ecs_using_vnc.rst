@@ -30,3 +30,7 @@ Why Cannot I Use the French Keyboard to Enter Characters When I Log In to an ECS
    To input these characters, do as follows:
 
    Use the French keyboard.
+
+.. meta::
+   :description: Troubleshoot French keyboard issues on T Cloud Public ECS via VNC.
+   :keywords: Elastic Cloud Server, VNC, French Keyboard, Input Issues, T Cloud Public

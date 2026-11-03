@@ -35,3 +35,7 @@ Solution
       :alt: **Figure 3** Saving the private key
 
       **Figure 3** Saving the private key
+
+.. meta::
+   :description: Lost your T Cloud Public key pair? Learn how to create a new one and download the private key file again.
+   :keywords: Elastic Cloud Server, Key Pair, Private Key, Cloud Provider, T Cloud Public

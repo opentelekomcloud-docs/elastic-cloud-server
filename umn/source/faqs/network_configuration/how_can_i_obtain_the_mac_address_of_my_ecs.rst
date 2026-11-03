@@ -75,3 +75,7 @@ Windows
    |image1|
 
 .. |image1| image:: /_static/images/en-us_image_0188029785.png
+
+.. meta::
+   :description: Learn how to obtain the MAC address of your Elastic Cloud Server on T Cloud Public for Linux and Windows.
+   :keywords: Elastic Cloud Server, ECS, MAC address, network interface, cloud provider

@@ -315,3 +315,7 @@ This section uses a Linux ECS running CentOS 7.4 as an example to describe how t
               let cpu_id=cpu_id*2
           done
       done
+
+.. meta::
+   :description: Enabling NIC Multi-Queue
+   :keywords: Elastic Cloud Server

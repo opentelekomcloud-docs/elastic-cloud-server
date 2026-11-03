@@ -438,3 +438,7 @@ Procedure
              "status": "ACTIVE"
            }
          }
+
+.. meta::
+   :description: Creating an ECS
+   :keywords: Elastic Cloud Server

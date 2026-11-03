@@ -18,3 +18,7 @@ How Do I Select an AZ
 ---------------------
 
 You can select an AZ when you are purchasing an ECS. After the ECS is created, the AZ cannot be changed. If there is only one AZ displayed in a region, it means the region only provides one AZ.
+
+.. meta::
+   :description: Create Elastic Cloud Servers on T Cloud Public.
+   :keywords: Elastic Cloud Server, T Cloud Public, Availability Zone, Region, Cloud Service

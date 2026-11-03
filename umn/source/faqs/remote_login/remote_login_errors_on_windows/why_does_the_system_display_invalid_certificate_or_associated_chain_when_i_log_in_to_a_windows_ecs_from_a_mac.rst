@@ -85,3 +85,7 @@ Procedure
          **Figure 7** Remote connection authentication
 
 #. Close the group policy editor and restart the ECS.
+
+.. meta::
+   :description: Resolve invalid certificate errors when accessing your T Cloud Public Windows ECS from Mac using Microsoft Remote Desktop.
+   :keywords: Elastic Cloud Server, Windows ECS, Microsoft Remote Desktop, Mac, Invalid Certificate

@@ -16,3 +16,7 @@ Getting Started
    creating_an_ecs/index
    logging_in_to_an_ecs
    initializing_evs_data_disks/index
+
+.. meta::
+   :description: Getting Started
+   :keywords: Elastic Cloud Server

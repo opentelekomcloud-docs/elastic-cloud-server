@@ -71,3 +71,7 @@ The key used for encryption relies on the Key Management Service (KMS). KMS uses
    After disabling a CMK or scheduling the deletion of a CMK takes effect, the EVS disk encrypted using this CMK can still be used until the disk is detached from and then attached to an ECS again. During this process, the disk fails to be attached to the ECS because the CMK cannot be obtained, so the EVS disk becomes unavailable.
 
 For details, see *Key Management Service User Guide*.
+
+.. meta::
+   :description: Secure your Elastic Cloud Server with T Cloud Public's encryption.
+   :keywords: Elastic Cloud Server, User Encryption, Image Encryption, EVS Disk Encryption, Key Management Service

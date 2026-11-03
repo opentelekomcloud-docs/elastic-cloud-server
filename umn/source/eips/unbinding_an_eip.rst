@@ -38,3 +38,7 @@ Procedure
 #. Confirm the EIP to be unbound and click **OK**.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
+
+.. meta::
+   :description: Unbinding an EIP
+   :keywords: Elastic Cloud Server

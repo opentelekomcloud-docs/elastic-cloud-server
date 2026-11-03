@@ -33,3 +33,7 @@ You can back up ECS data using Cloud Server Backup or Cloud Disk Backup.
    +---------------------------------------+----------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
    | Advantages                            | All disks on a server are backed up at the same time, ensuring data consistency. | Backup cost is reduced without compromising data security.                                              |
    +---------------------------------------+----------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
+
+.. meta::
+   :description: Learn about Elastic Cloud Server backup with T Cloud Public's Cloud Backup and Recovery.
+   :keywords: Elastic Cloud Server, Cloud Backup and Recovery, ECS, EVS, Fault Recovery

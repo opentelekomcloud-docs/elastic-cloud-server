@@ -56,3 +56,7 @@ To do so, perform the following operations:
    **:wq**
 
 #. Restart the ECS for the modification to take effect.
+
+.. meta::
+   :description: Learn how to attach a snapshot-based system disk to an ECS as a data disk on T Cloud Public.
+   :keywords: Elastic Cloud Server, Snapshot, System Disk, Data Disk, Linux

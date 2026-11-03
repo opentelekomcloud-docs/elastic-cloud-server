@@ -24,3 +24,7 @@ OS
    how_can_i_install_a_gui_on_an_ecs_running_debian
    why_cannot_my_ecs_os_start_properly
    best_practices_for_performance_configuration
+
+.. meta::
+   :description: Learn how to install GUIs on ECS running CentOS, Ubuntu, and Debian with T Cloud Public.
+   :keywords: Elastic Cloud Server, ECS, T Cloud Public, GUI installation, OS support

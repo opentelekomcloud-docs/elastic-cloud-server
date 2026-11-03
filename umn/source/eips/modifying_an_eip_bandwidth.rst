@@ -30,3 +30,7 @@ Procedure
 #. Change the bandwidth name and size as prompted.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
+
+.. meta::
+   :description: Learn how to modify EIP bandwidth for your Elastic Cloud Server on T Cloud Public.
+   :keywords: Elastic Cloud Server, EIP Bandwidth, Modifying Bandwidth, Public Network, T Cloud Public

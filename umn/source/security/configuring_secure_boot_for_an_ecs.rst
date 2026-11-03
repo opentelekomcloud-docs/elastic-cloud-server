@@ -385,3 +385,7 @@ Follow-up Operations
 .. |image2| image:: /_static/images/en-us_image_0000002188678994.png
 .. |image3| image:: /_static/images/en-us_image_0000001926866309.png
 .. |image4| image:: /_static/images/en-us_image_0000002571311690.png
+
+.. meta::
+   :description: Configuring Secure Boot for an ECS
+   :keywords: Elastic Cloud Server

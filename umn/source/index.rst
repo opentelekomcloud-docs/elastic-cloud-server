@@ -23,3 +23,7 @@ Elastic Cloud Server - User Guide
    faqs/index
    change_history
    glossary
+
+.. meta::
+   :description: Elastic Cloud Server - User Guide
+   :keywords: Elastic Cloud Server

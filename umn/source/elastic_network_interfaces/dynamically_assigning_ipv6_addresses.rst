@@ -637,3 +637,7 @@ If you use a private image from a CentOS 6.x or Debian ECS with IPv6 auto-assign
    #. Press **i** to enter editing mode and change **TimeoutStartSec=5min** to **TimeoutStartSec=30**.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
+
+.. meta::
+   :description: Dynamically Assigning IPv6 Addresses
+   :keywords: Elastic Cloud Server

@@ -48,3 +48,7 @@ The EIP must be associated with the private IP address using NAT, so the server 
 #. Allow traffic on TCP ports 50000-50100 and 21 in the security group in the inbound direction.
 
 #. Test the connection on the client.
+
+.. meta::
+   :description: Resolve FTP upload failures on T Cloud Public Elastic Cloud Servers by configuring NAT, EIP, and passive mode port ranges.
+   :keywords: Elastic Cloud Server, FTP, NAT, EIP, Passive mode

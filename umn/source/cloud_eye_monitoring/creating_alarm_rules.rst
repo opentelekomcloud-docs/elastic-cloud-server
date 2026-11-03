@@ -49,3 +49,7 @@ Procedure
       For more information about ECS alarm rules, see *Cloud Eye User Guide*.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
+
+.. meta::
+   :description: Creating Alarm Rules
+   :keywords: Elastic Cloud Server

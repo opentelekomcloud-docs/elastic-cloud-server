@@ -171,3 +171,7 @@ Procedure
              }
            ]
          }
+
+.. meta::
+   :description: Attaching a Disk to an ECS
+   :keywords: Elastic Cloud Server

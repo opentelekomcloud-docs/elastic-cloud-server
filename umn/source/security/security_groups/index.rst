@@ -20,3 +20,7 @@ Security Groups
    security_group_configuration_examples
    configuring_security_group_rules
    changing_a_security_group
+
+.. meta::
+   :description: Secure your Elastic Cloud Server with T Cloud Public Security Groups.
+   :keywords: Elastic Cloud Server, T Cloud Public, Security Groups, Firewall, Network Security

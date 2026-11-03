@@ -12,3 +12,7 @@ You can learn more by exploring the following topics:
 -  :ref:`Basic ECS Metrics <en-us_topic_0030911465>`
 -  :ref:`Creating Alarm Rules <en-us_topic_0027371531>`
 -  :ref:`Viewing ECS Metrics <en-us_topic_0027371530>`
+
+.. meta::
+   :description: Monitoring ECSs
+   :keywords: Elastic Cloud Server

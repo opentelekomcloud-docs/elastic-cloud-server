@@ -56,3 +56,7 @@ The operations described in this section apply to ECSs running Windows Server 20
 #. Click **Set** and then **OK** to complete the configuration.
 
 #. Restart the ECS for the configuration to take effect.
+
+.. meta::
+   :description: Learn how to enable virtual memory on Windows ECS in T Cloud Public.
+   :keywords: Elastic Cloud Server, Windows ECS, Virtual Memory, Performance, I/O

@@ -80,3 +80,7 @@ Windows Server 2012
 #. Click **Delete**.
 
 #. Restart the ECS.
+
+.. meta::
+   :description: Fix "No Remote Desktop License Servers" error on T Cloud Public ECS.
+   :keywords: Elastic Cloud Server, Windows ECS, Remote Desktop Services, License Servers, Server Manager

@@ -853,3 +853,7 @@ Checking Whether kdump Configurations Have Taken Effect
 #. Run the following command to check whether the **vmcore** file has been generated in the specified path, for example, **/var/crash/**:
 
    **ll /var/crash/**
+
+.. meta::
+   :description: Learn to configure atop and kdump on Linux ECSs from T Cloud Public.
+   :keywords: Elastic Cloud Server, Linux, atop, kdump, configuration

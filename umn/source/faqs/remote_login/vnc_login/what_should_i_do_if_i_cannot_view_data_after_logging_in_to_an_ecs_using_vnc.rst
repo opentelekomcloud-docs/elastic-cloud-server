@@ -10,3 +10,7 @@ After you log in to an ECS using VNC and view data, for example, play videos or 
 In such a case, use another browser and log in to the ECS again.
 
 If the fault persists, contact technical support.
+
+.. meta::
+   :description: Resolve VNC issues on T Cloud Public ECS.
+   :keywords: Elastic Cloud Server, ECS, VNC, browser, memory usage

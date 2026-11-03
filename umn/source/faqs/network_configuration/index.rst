@@ -34,3 +34,7 @@ Network Configuration
    how_can_i_test_the_network_performance_of_linux_ecss
    will_nics_added_to_an_ecs_start_automatically
    how_can_i_handle_the_issue_that_a_windows_7_ecs_equipped_with_an_intel_82599_nic_reports_an_error_in_sr-iov_scenarios
+
+.. meta::
+   :description: Learn to configure NTP, DNS, port mapping, and kernel parameters for your Elastic Cloud Server.
+   :keywords: Elastic Cloud Server, Network Configuration, DNS, VPC, NIC

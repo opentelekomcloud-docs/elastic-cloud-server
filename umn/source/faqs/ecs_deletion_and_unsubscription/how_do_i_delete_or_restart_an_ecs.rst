@@ -24,3 +24,7 @@ Restarting an ECS
 #. Select the region where the ECS is located.
 #. Choose **Computing** > **Elastic Cloud Server**.
 #. Locate the row containing the target ECS and choose **More** > **Restart** in the **Operation** column.
+
+.. meta::
+   :description: Learn how to delete or restart an Elastic Cloud Server on T Cloud Public.
+   :keywords: Elastic Cloud Server, ECS, T Cloud Public, delete, restart

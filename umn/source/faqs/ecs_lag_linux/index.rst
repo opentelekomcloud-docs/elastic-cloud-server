@@ -12,3 +12,7 @@ ECS Lag (Linux)
    :hidden: 
 
    why_is_my_linux_ecs_running_slowly
+
+.. meta::
+   :description: Learn why your Linux Elastic Cloud Server from T Cloud Public runs slowly and how to fix it.
+   :keywords: Elastic Cloud Server, ECS, T Cloud Public, Linux, Cloud Service

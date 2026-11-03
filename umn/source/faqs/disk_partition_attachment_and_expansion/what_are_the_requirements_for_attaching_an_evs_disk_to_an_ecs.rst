@@ -14,3 +14,7 @@ What Are the Requirements for Attaching an EVS Disk to an ECS?
 -  The target ECS must be in **Running** or **Stopped** state.
 
 -  Certain ECSs support SCSI EVS disk attachment. For details, see :ref:`Which ECSs Can Be Attached with SCSI EVS Disks? <en-us_topic_0077938284>`
+
+.. meta::
+   :description: Learn ECS requirements for attaching EVS disks.
+   :keywords: Elastic Cloud Server, EVS disk, Availability Zone, disk attachment, ECS state

@@ -128,3 +128,7 @@ This section uses Windows Server 2012 as an example.
       :alt: **Figure 6** Configuring DNS on Windows
 
       **Figure 6** Configuring DNS on Windows
+
+.. meta::
+   :description: Learn how to configure DNS for your Elastic Cloud Server on T Cloud Public.
+   :keywords: Elastic Cloud Server, DNS, T Cloud Public, Linux, Windows

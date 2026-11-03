@@ -101,3 +101,7 @@ Solution
       UUID=b9a07b7b-9322-4e05-ab9b-14b8050bdc8a  /  ext4  defaults  0  1
       UUID=b9a07b7b-9322-4e05-ab9b-14b8050cd8cc   /data1   ext4  defaults  0  0
       UUID=b9a07b7b-9322-4e05-ab9b-14b8050ab6bb   /data2   ext4  defaults  0  0
+
+.. meta::
+   :description: Learn why Linux ECS drive letters change after restart or disk detachment.
+   :keywords: Elastic Cloud Server, Linux, disk drive letter, UUID, EVS

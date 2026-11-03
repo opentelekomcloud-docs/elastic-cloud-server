@@ -41,3 +41,7 @@ Troubleshooting
 #. Check whether another user has logged in to the ECS.
 
    If yes, you can log in to the ECS only after that user logs out.
+
+.. meta::
+   :description: Fix ECS login error 1006 or 1000 on T Cloud Public.
+   :keywords: Elastic Cloud Server, VNC, Error Code 1006, Remote Login, Troubleshooting

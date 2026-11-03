@@ -75,3 +75,7 @@ Constraints on network performance vary depending on ECS flavors.
    -  For instructions about how to test PPS, see :ref:`How Can I Test the Network Performance of Linux ECSs? <en-us_topic_0115820205>`
    -  For instructions about how to enable NIC multi-queue, see :ref:`Enabling NIC Multi-Queue <en-us_topic_0058758453>`.
    -  The maximum bandwidth is the total bandwidth allocated to an ECS. If an ECS has multiple NICs, the sum of the maximum bandwidths allocated to all NICs cannot exceed the maximum bandwidth allocated to the ECS.
+
+.. meta::
+   :description: Explore Elastic Cloud Server types from T Cloud Public.
+   :keywords: Elastic Cloud Server, ECS, T Cloud Public, vCPU, Network QoS

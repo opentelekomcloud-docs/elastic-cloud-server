@@ -790,3 +790,7 @@ Pi2 ECSs support the following commonly used software:
 -  If a Pi2 ECS is created using a private image, make sure that the Tesla driver has been installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 -  Unlike general-purpose compute, GPU-accelerated ECSs deliver heterogeneous compute. Their specifications can only be modified within the same instance type.
 -  GPU-accelerated ECSs do not support live migration.
+
+.. meta::
+   :description: Explore T Cloud Public's GPU-accelerated ECSs.
+   :keywords: Elastic Cloud Server, GPU-accelerated, G series, P series, floating-point computing

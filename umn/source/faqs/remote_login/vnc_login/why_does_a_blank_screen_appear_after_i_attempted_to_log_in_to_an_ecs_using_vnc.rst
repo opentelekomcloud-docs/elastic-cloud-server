@@ -10,3 +10,7 @@ The blank screen means that another user has logged in to this ECS using VNC, so
 Only one user can be logged in to an ECS using VNC at a time. If you are already logged in and another user logs in to the same ECS, you will be automatically logged out.
 
 You can log back in, but that will kick the other user out.
+
+.. meta::
+   :description: Learn why a blank screen appears when logging into an ECS via VNC on T Cloud Public.
+   :keywords: Elastic Cloud Server, ECS, VNC, Login, T Cloud Public

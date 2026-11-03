@@ -103,3 +103,7 @@ Network QoS:
    -  Network QoS applies to any program running on an ECS.
    -  Network QoS applies for both private and public network bandwidth.
    -  The EIP bandwidth limits the external bandwidth, and the network QoS limits the internal bandwidth.
+
+.. meta::
+   :description: Network
+   :keywords: Elastic Cloud Server

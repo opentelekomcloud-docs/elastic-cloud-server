@@ -14,3 +14,7 @@ Application Deployment and Software Installation
 
    can_a_database_be_deployed_on_an_ecs
    does_an_ecs_support_oracle_databases
+
+.. meta::
+   :description: Deploy applications and databases on Elastic Cloud Server by T Cloud Public.
+   :keywords: Elastic Cloud Server, T Cloud Public, Application Deployment, Software Installation, Database Deployment

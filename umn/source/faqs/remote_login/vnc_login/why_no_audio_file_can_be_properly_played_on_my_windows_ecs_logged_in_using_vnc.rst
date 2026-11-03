@@ -55,3 +55,7 @@ Use your local PC (running Windows 7, for example) to play the audio files.
       **Figure 3** Setting remote audio playback
 
 #. In the **Remote audio playback** pane, select **Play on this computer**.
+
+.. meta::
+   :description: Troubleshoot Windows ECS audio issues on T Cloud Public.
+   :keywords: Elastic Cloud Server, Windows, VNC, MSTSC, Audio

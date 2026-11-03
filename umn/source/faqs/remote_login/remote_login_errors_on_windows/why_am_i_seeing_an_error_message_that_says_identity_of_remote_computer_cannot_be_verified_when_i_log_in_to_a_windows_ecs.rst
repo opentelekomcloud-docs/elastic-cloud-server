@@ -26,3 +26,7 @@ Solution
 
 -  Uninstall the security software.
 -  Open the security software and enable the default login mode.
+
+.. meta::
+   :description: Resolve the "Identity of Remote Computer Cannot be Verified" error on T Cloud Public Elastic Cloud Servers by adjusting security software settings.
+   :keywords: Elastic Cloud Server, Windows ECS, Remote Login, Identity Verification, Security Software

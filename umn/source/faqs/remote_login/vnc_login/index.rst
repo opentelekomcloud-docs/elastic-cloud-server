@@ -28,3 +28,7 @@ VNC Login
    why_does_a_blank_screen_appear_after_i_attempted_to_log_in_to_an_ecs_using_vnc
    what_should_i_do_if_error_code_1006_or_1000_is_displayed_when_i_log_in_to_an_ecs_through_the_management_console
    why_no_audio_file_can_be_properly_played_on_my_windows_ecs_logged_in_using_vnc
+
+.. meta::
+   :description: Troubleshoot VNC login issues on T Cloud Public Elastic Cloud Servers.
+   :keywords: Elastic Cloud Server, VNC, Login, Keyboard, Troubleshooting

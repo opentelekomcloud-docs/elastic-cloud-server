@@ -59,3 +59,7 @@ Solution
       :alt: **Figure 5** RDP-Tcp properties
 
       **Figure 5** RDP-Tcp properties
+
+.. meta::
+   :description: Fix RDP protocol errors on T Cloud Public ECS by deleting the damaged Certificate registry key and configuring RDP Security Layer.
+   :keywords: Elastic Cloud Server, Remote Desktop, Protocol Error, RDP, Registry

@@ -14,3 +14,7 @@ Product Consulting
 
    what_are_the_precautions_for_using_ecss
    what_can_i_do_with_ecss
+
+.. meta::
+   :description: Explore Elastic Cloud Server by T Cloud Public.
+   :keywords: Elastic Cloud Server, T Cloud Public, ECS, cloud service, virtual server

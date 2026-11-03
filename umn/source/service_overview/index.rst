@@ -30,3 +30,7 @@ Service Overview
    permissions
    user_permissions
    region_and_az
+
+.. meta::
+   :description: Service Overview
+   :keywords: Elastic Cloud Server

@@ -20,3 +20,7 @@ During this process, the ECS is in **Changing OS** state.
    :alt: **Figure 1** Changing an OS
 
    **Figure 1** Changing an OS
+
+.. meta::
+   :description: Learn how to change an ECS OS on T Cloud Public in 1-4 minutes.
+   :keywords: Elastic Cloud Server, ECS, Change OS, T Cloud Public, Cloud Service

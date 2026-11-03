@@ -79,3 +79,7 @@ The memory obtained by running the **free -m** command is less than the memory c
 .. note::
 
    This is a normal phenomenon even for physical servers.
+
+.. meta::
+   :description: Learn why ECS memory from 'free' differs from config.
+   :keywords: Elastic Cloud Server, ECS, Memory, free command, dmidecode

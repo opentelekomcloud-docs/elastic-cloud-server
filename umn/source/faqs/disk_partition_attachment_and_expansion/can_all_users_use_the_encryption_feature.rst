@@ -56,3 +56,7 @@ In this user group, when user 3 uses the encryption feature for the first time:
 #. User 3 asks user 1 to create Xrole to grant KMS access permissions to EVS.
 
 After user 1 grants the permissions, user 3 and all other users in the user group can use the encryption feature by default.
+
+.. meta::
+   :description: Learn how T Cloud Public manages encryption permissions for Elastic Cloud Server.
+   :keywords: Elastic Cloud Server, encryption, KMS, EVS, permissions

@@ -34,3 +34,7 @@ Solution
 
       -  If the login is successful, no further action is required.
       -  If it is not functional, contact customer service for technical support.
+
+.. meta::
+   :description: Fix Linux ECS login failures with key files on T Cloud Public.
+   :keywords: Elastic Cloud Server, Linux, Key File, Login, Cloud-Init

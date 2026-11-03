@@ -27,3 +27,7 @@ To enable the communication over an intranet, use the methods provided in the fo
 |                       |                       |                                                                                                                                                                   |
 |                       |                       | -  `What Is VPN? <https://docs.otc.t-systems.com/en-us/usermanual/vpn/en-us_topic_0035391393.html>`__                                                             |
 +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. meta::
+   :description: Learn how to enable intranet communication between ECSs in different accounts and VPCs on T Cloud Public using free VPC peering.
+   :keywords: Elastic Cloud Server, VPC, intranet communication, VPC peering, T Cloud Public

@@ -49,3 +49,7 @@ Does an ECS Support FTP-based File Transferring by Default?
 -----------------------------------------------------------
 
 No. You need to install and configure FTP so that the ECS supports FTP-based file transfer.
+
+.. meta::
+   :description: Learn how to upload files to your Elastic Cloud Server with T Cloud Public.
+   :keywords: Elastic Cloud Server, T Cloud Public, file transfer, Windows, Linux

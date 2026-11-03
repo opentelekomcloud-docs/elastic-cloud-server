@@ -24,3 +24,7 @@ Troubleshooting
    how_do_i_configure_atop_and_kdump_on_linux_ecss
    how_do_i_fix_file_creation_failures_due_to_inode_exhaustion
    why_do_i_get_the_error_no_space_left_on_device_when_i_create_a_file_on_a_linux_ecs
+
+.. meta::
+   :description: Troubleshoot T Cloud Public Elastic Cloud Server issues: fix slow startup, GCC errors, inode exhaustion, and "No space left on device" errors.
+   :keywords: Elastic Cloud Server, T Cloud Public, ECS, Linux, Troubleshooting

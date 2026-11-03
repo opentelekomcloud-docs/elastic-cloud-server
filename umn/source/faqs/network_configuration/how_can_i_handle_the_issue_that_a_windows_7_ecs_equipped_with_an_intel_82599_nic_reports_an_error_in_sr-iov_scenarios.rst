@@ -33,3 +33,7 @@ Run **Autorun.exe** in the folder where the 20.4.1 driver package is stored. Ins
    #. Click **Browse**, select the path where the driver package is stored, and click **Next**.
    #. Locate the NIC in **Network Adapter** of **Device Manager**.
    #. Run **Autorun.exe** to install the 20.4.1 driver package.
+
+.. meta::
+   :description: Resolve Windows 7 ECS SR-IOV "No Intel adapter found" error on T Cloud Public.
+   :keywords: Elastic Cloud Server, Windows 7, SR-IOV, Intel 82599, Driver

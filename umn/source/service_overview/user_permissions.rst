@@ -11,3 +11,7 @@ Two types of permissions are provided by default: user management and resource m
 -  Resource management refers to the control operations that can be performed by users on cloud service resources.
 
 For details, see `Permissions <https://docs.otc.t-systems.com/identity-access-management/permissions/permissions.html>`__.
+
+.. meta::
+   :description: User Permissions
+   :keywords: Elastic Cloud Server

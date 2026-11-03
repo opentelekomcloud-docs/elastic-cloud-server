@@ -48,3 +48,7 @@ The ECS lifecycle refers to the entire journey an ECS goes through, from creatio
    +-------------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
    | Reverting resizing      | Intermediate          | The ECS is rolling back a resizing operation.                                                                                                |
    +-------------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. meta::
+   :description: Explore the ECS lifecycle at T Cloud Public.
+   :keywords: Elastic Cloud Server, ECS, cloud service, lifecycle, T Cloud Public

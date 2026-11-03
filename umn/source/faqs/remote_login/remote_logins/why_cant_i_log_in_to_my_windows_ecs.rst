@@ -295,3 +295,7 @@ If the fault persists after the preceding operations are performed, record the r
 
 .. |image1| image:: /_static/images/en-us_image_0167092298.png
 .. |image2| image:: /_static/images/en-us_image_0167101550.png
+
+.. meta::
+   :description: Troubleshoot Windows ECS login failures on T Cloud Public.
+   :keywords: Elastic Cloud Server, Windows ECS, VNC Login, Remote Desktop, Fault Locating

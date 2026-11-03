@@ -14,3 +14,7 @@ Resources and Tags
 
    tag_management/index
    quota_adjustment
+
+.. meta::
+   :description: Manage resources and tags for Elastic Cloud Server on T Cloud Public.
+   :keywords: Elastic Cloud Server, T Cloud Public, Resources, Tags, Quota Adjustment

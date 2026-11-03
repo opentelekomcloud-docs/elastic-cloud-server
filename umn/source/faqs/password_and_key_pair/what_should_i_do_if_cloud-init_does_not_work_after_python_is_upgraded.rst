@@ -34,3 +34,7 @@ Change the Python version used by Cloud-Init to the source version. To do so, ch
    :alt: **Figure 2** Changing the Python version
 
    **Figure 2** Changing the Python version
+
+.. meta::
+   :description: Resolve Cloud-Init failures on T Cloud Public ECS after Python upgrades.
+   :keywords: Elastic Cloud Server, Cloud-Init, Python, CentOS, T Cloud Public

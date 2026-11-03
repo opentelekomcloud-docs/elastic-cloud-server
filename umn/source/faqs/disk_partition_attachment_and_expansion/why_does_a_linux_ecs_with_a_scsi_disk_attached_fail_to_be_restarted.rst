@@ -49,3 +49,7 @@ Solution
    For example, if the SCSI ID obtained in step :ref:`3 <en-us_topic_0087382187__li2064141120446>` is scsi-3688860300001436b005014f890338280, use the following data to replace **/dev/sdb**:
 
    **/dev/disk/by-id/scsi-3688860300001436b005014f890338280**
+
+.. meta::
+   :description: Fix Linux ECS restart failures with SCSI disks.
+   :keywords: Elastic Cloud Server, Linux, SCSI disk, /etc/fstab, restart

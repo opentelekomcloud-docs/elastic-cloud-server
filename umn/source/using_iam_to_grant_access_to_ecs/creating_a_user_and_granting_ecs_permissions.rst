@@ -49,3 +49,7 @@ Process Flow
 
    -  Choose **Compute** > **Elastic Cloud Server** in the service list. On the ECS console, click **Create ECS** in the upper right corner. If the creation attempt failed, the **ECSReadOnlyAccess** policy has already taken effect.
    -  Choose any service other than ECS in the service list. If a message appears indicating that you have insufficient permissions to access the service, the **ECSReadOnlyAccess** policy has already taken effect.
+
+.. meta::
+   :description: Learn how to create IAM users and grant ECS permissions on T Cloud Public.
+   :keywords: Elastic Cloud Server, IAM, permissions, user management, cloud computing

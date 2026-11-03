@@ -85,3 +85,7 @@ Key ECS Operations Recorded by CTS
    +-----------------------------------------------------------------+-----------------------+-----------------------+
    | Interrupting a spot ECS                                         | server                | interruptServer       |
    +-----------------------------------------------------------------+-----------------------+-----------------------+
+
+.. meta::
+   :description: Learn key ECS operations recorded by T Cloud Public's CTS, including creating, deleting, and starting servers for auditing and backtracking.
+   :keywords: Elastic Cloud Server, T Cloud Public, Cloud Trace Service, ECS operations, auditing

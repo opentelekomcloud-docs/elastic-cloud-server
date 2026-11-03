@@ -42,3 +42,7 @@ If an ECS requires a long period of time to start, you can change the default ti
       :alt: **Figure 2** Changing timeout duration
 
       **Figure 2** Changing timeout duration
+
+.. meta::
+   :description: Speed up T Cloud Public Elastic Cloud Server startup by adjusting the GRUB timeout.
+   :keywords: Elastic Cloud Server, T Cloud Public, ECS startup, GRUB configuration, timeout

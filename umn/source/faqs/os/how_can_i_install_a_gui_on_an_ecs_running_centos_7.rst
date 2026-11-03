@@ -51,3 +51,7 @@ Procedure
 #. Restart the ECS.
 
 #. Log in to the ECS using VNC provided on the management console. Set the language, time zone, username, and password as prompted.
+
+.. meta::
+   :description: Learn how to install a GUI on an Elastic Cloud Server running CentOS 7 with T Cloud Public.
+   :keywords: Elastic Cloud Server, CentOS 7, GUI installation, graphical.target, VNC

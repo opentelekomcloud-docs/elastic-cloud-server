@@ -74,3 +74,7 @@ If the attached disk is newly created, the disk cannot be used until it is initi
 For details about how to initialize a data disk, see :ref:`Scenarios and Disk Partitions <en-us_topic_0030831623>`.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
+
+.. meta::
+   :description: Learn how to attach EVS disks to your Elastic Cloud Server on T Cloud Public.
+   :keywords: Elastic Cloud Server, EVS disks, Attach Disk, Cloud Provider, T Cloud Public

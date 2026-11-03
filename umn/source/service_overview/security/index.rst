@@ -18,3 +18,7 @@ Security
    fault_recovery
    license_types
    project
+
+.. meta::
+   :description: Secure Elastic Cloud Server by T Cloud Public.
+   :keywords: Elastic Cloud Server, T Cloud Public, Data Protection, Fault Recovery, License Types

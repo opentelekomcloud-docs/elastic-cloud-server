@@ -48,3 +48,7 @@ FAQs
    specification_modification/index
    os_change/index
    resource_management_and_tag/index
+
+.. meta::
+   :description: FAQs
+   :keywords: Elastic Cloud Server

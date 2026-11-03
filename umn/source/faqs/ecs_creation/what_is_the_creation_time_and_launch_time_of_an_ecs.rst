@@ -10,3 +10,7 @@ Creation time: time when the ECS is created on the cloud platform.
 Launch time: time when the ECS is launched for the first time.
 
 After purchasing an ECS, you can click the ECS name on the list page and view the creation time and launch time in the **ECS Information** area.
+
+.. meta::
+   :description: Learn the difference between creation and launch time for Elastic Cloud Servers on T Cloud Public.
+   :keywords: Elastic Cloud Server, ECS, Creation Time, Launch Time, T Cloud Public

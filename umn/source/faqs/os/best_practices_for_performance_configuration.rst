@@ -81,3 +81,7 @@ This section uses c9.large.2 and HCE 2.0 as an example to describe how to disabl
 .. |image1| image:: /_static/images/en-us_image_0000002279078497.png
 .. |image2| image:: /_static/images/en-us_image_0000002278168889.png
 .. |image3| image:: /_static/images/en-us_image_0000002278999697.png
+
+.. meta::
+   :description: Learn how to optimize Elastic Cloud Server performance by disabling deep CPU C-states.
+   :keywords: Elastic Cloud Server, CPU performance, C-states, latency optimization, T Cloud Public

@@ -20,3 +20,7 @@ ECS Deletion and Unsubscription
    can_a_deleted_ecs_be_restored
    how_do_i_delete_or_restart_an_ecs
    can_i_forcibly_restart_or_stop_an_ecs
+
+.. meta::
+   :description: Manage Elastic Cloud Server deletion and unsubscription with T Cloud Public.
+   :keywords: Elastic Cloud Server, ECS, deletion, unsubscription, restart

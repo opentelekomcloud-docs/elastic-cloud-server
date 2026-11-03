@@ -50,3 +50,7 @@ Log in to the management console. On the **Elastic Cloud Server** page, obtain t
       :alt: **Figure 2** Setting file downloading
 
       **Figure 2** Setting file downloading
+
+.. meta::
+   :description: Learn how to use SCP to transfer files between your local Linux computer and a Linux ECS on T Cloud Public.
+   :keywords: Elastic Cloud Server, SCP, file transfer, Linux, EIP

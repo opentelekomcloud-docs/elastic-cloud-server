@@ -14,3 +14,7 @@ Backup Using CBR
 
    overview
    backing_up_an_ecs
+
+.. meta::
+   :description: Learn how to back up your Elastic Cloud Server using T Cloud Public's CBR service.
+   :keywords: Elastic Cloud Server, T Cloud Public, Backup, CBR, Data Protection

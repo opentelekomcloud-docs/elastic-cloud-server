@@ -39,3 +39,7 @@ The following operations use EulerOS 2.2 as an example.
       :alt: **Figure 1** Configuration verification
 
       **Figure 1** Configuration verification
+
+.. meta::
+   :description: Learn how to set the password validity period for your Elastic Cloud Server on T Cloud Public.
+   :keywords: Elastic Cloud Server, T Cloud Public, password validity, EulerOS, image password

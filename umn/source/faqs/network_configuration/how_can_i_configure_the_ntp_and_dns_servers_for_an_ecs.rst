@@ -157,3 +157,7 @@ Take an ECS running Windows Server 2012 as an example.
       **net start w32time**
 
    f. Manually change the time on the client to make it different from that on the NTP server. One minute later, check whether the time on the client is the same as that on the NTP server. If yes, the time is synchronized.
+
+.. meta::
+   :description: Learn how to configure NTP and DNS servers for your Elastic Cloud Server on T Cloud Public.
+   :keywords: Elastic Cloud Server, NTP, DNS, Linux, VPC

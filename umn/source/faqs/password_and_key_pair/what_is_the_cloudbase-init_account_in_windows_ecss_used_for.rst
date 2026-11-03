@@ -47,3 +47,7 @@ Use an image to create two ECSs, ecs01 and ecs02. Then, verify that the hash val
       :alt: **Figure 2** ecs02
 
       **Figure 2** ecs02
+
+.. meta::
+   :description: Learn about the cloudbase-init account in Windows ECSs on T Cloud Public.
+   :keywords: Elastic Cloud Server, Windows ECS, cloudbase-init, metadata, security hardening

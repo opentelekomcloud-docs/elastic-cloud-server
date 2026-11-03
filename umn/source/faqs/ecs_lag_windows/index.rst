@@ -12,3 +12,7 @@ ECS Lag (Windows)
    :hidden: 
 
    why_is_my_windows_ecs_running_slowly
+
+.. meta::
+   :description: Optimize performance on your T Cloud Public Elastic Cloud Server.
+   :keywords: Elastic Cloud Server, T Cloud Public, Windows ECS, Cloud Computing, Virtual Server

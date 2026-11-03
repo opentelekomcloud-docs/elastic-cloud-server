@@ -94,3 +94,7 @@ Procedure
 7. Run the reboot command to restart the ECS.
 
 8. Log in to the ECS using VNC provided on the management console and log in to the GUI desktop using the member account added in :ref:`6 <en-us_topic_0000001210472883__li162011120159>`.
+
+.. meta::
+   :description: Learn how to install a GUI on an Elastic Cloud Server running Debian 8, 9, or 10 with T Cloud Public.
+   :keywords: Elastic Cloud Server, Debian, GUI, GNOME, Linux

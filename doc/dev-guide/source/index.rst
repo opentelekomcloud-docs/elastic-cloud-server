@@ -13,3 +13,7 @@ Elastic Cloud Server - Developer Guide
    attaching_a_disk_to_an_ecs
    binding_a_nic_to_an_ecs
    change_history
+
+.. meta::
+   :description: Elastic Cloud Server - Developer Guide
+   :keywords: Elastic Cloud Server

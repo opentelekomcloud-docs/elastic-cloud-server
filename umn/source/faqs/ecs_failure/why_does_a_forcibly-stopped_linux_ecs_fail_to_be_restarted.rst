@@ -57,3 +57,7 @@ The following procedure considers the affected disk partition as **/dev/xvdb1**,
    .. note::
 
       If the fault persists, contact customer service for technical support.
+
+.. meta::
+   :description: Learn how to fix a Linux ECS restart failure on T Cloud Public caused by file system damage.
+   :keywords: Elastic Cloud Server, Linux, file system, fsck, reboot

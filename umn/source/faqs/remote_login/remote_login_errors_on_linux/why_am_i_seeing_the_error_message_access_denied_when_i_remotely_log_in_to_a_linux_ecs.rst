@@ -40,3 +40,7 @@ Solution
       -  CentOS 7
 
          **systemctl restart sshd**
+
+.. meta::
+   :description: Resolve "Access denied" on T Cloud Public Linux ECS.
+   :keywords: Elastic Cloud Server, Linux, SSH, Access denied, root

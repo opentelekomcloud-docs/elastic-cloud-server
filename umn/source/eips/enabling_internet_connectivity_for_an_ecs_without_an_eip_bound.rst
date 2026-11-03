@@ -175,3 +175,7 @@ The following uses CentOS 7.9 as an example. The operations apply to CentOS 7.9 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
 .. |image2| image:: /_static/images/en-us_image_0128851717.png
 .. |image3| image:: /_static/images/en-us_image_0000002188678994.png
+
+.. meta::
+   :description: Learn how to enable Internet connectivity for an Elastic Cloud Server without an EIP using T Cloud Public's proxy ECS or NAT Gateway solutions.
+   :keywords: Elastic Cloud Server, Internet Connectivity, Proxy ECS, NAT Gateway, Source/Destination Check

@@ -18,3 +18,7 @@ EIP
    can_an_ecs_without_an_eip_bound_access_the_internet
    what_should_i_do_if_an_eip_cannot_be_pinged
    why_can_i_remotely_access_an_ecs_but_cannot_ping_it
+
+.. meta::
+   :description: Learn about Elastic Cloud Server (ECS) on T Cloud Public.
+   :keywords: Elastic Cloud Server, ECS, EIP, Cloud Provider, T Cloud Public

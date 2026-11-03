@@ -86,3 +86,7 @@ Use either of the following methods to log in to ecs_02:
 
 -  Use private key file **Keypair_01** of ecs_01.
 -  Use private key file **Keypair_02** of ecs_02.
+
+.. meta::
+   :description: Learn how to log in to an Elastic Cloud Server after exchanging system disks with T Cloud Public.
+   :keywords: Elastic Cloud Server, system disk, log in, key pair, password

@@ -313,3 +313,7 @@ Latency Test
       qperf 192.168.2.10 -m 64 -t 60 -vu udp_lat
 
    After the test is complete, the **lat** value in the command output is the latency between ECSs.
+
+.. meta::
+   :description: Learn how to test network performance of Linux ECSs on T Cloud Public using netperf and iperf3.
+   :keywords: Elastic Cloud Server, network performance, netperf, iperf3, T Cloud Public

@@ -68,3 +68,7 @@ Procedure
       :alt: **Figure 4** Disks after you bring the disks online
 
       **Figure 4** Disks after you bring the disks online
+
+.. meta::
+   :description: Learn why Windows ECS disks go offline after modifying specifications on T Cloud Public.
+   :keywords: Elastic Cloud Server, Windows ECS, disk offline, specifications modification, Disk Management

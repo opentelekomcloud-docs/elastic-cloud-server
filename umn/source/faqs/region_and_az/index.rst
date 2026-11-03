@@ -16,3 +16,7 @@ Region and AZ
    what_is_az_and_how_can_i_select_and_view_an_az
    is_data_transmission_between_azs_billed
    can_i_migrate_an_ecs_to_another_az_or_account
+
+.. meta::
+   :description: Explore Elastic Cloud Server on T Cloud Public.
+   :keywords: Elastic Cloud Server, T Cloud Public, AZ, Region, ECS

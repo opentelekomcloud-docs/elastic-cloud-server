@@ -6,3 +6,7 @@ Is Data Transmission Between AZs Billed?
 ========================================
 
 Data transmission between AZs in the same region is free of charge. However, data transmission between AZs in different regions will be billed.
+
+.. meta::
+   :description: Learn if data transmission between AZs is billed.
+   :keywords: Elastic Cloud Server, T Cloud Public, data transmission, availability zones, billing

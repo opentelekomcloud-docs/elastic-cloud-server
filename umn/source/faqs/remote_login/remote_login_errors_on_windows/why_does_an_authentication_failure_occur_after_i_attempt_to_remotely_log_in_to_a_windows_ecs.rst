@@ -43,3 +43,7 @@ Modify the remote desktop connection settings on the Windows ECS:
       **Figure 2** Remote settings
 
 #. Click **OK**.
+
+.. meta::
+   :description: Fix Windows ECS RDP authentication failures.
+   :keywords: Elastic Cloud Server, Windows, RDP, Remote Desktop, Authentication Failure

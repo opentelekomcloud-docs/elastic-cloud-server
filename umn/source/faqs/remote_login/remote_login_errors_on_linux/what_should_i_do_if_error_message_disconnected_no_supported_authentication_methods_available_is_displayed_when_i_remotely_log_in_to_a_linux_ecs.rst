@@ -43,3 +43,7 @@ Solution
    -  CentOS 7
 
       **systemctl restart sshd**
+
+.. meta::
+   :description: Fix "Disconnected: No supported authentication methods available" on Linux ECS.
+   :keywords: Elastic Cloud Server, Linux, SSH, Remote Login, Authentication

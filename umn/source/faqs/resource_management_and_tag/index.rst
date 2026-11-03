@@ -12,3 +12,7 @@ Resource Management and Tag
    :hidden: 
 
    how_can_i_create_and_delete_tags_and_search_for_ecss_by_tag
+
+.. meta::
+   :description: Manage and tag your Elastic Cloud Servers with T Cloud Public.
+   :keywords: Elastic Cloud Server, Resource Management, Tag, T Cloud Public, ECS

@@ -196,3 +196,7 @@ Modifying Kernel Parameter Settings
    #. Run the following command for the configuration to take effect:
 
       **/sbin/sysctl -p**
+
+.. meta::
+   :description: Learn how to view and modify Linux kernel parameters on your T Cloud Public Elastic Cloud Server.
+   :keywords: Elastic Cloud Server, Linux, Kernel Parameters, T Cloud Public

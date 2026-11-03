@@ -39,3 +39,7 @@ Regions and Endpoints
 ---------------------
 
 Before you use an API to call resources, specify its region and endpoint. For more details, see `Regions and Endpoints <https://docs.otc.t-systems.com/regions-and-endpoints/index.html>`__.
+
+.. meta::
+   :description: Region and AZ
+   :keywords: Elastic Cloud Server

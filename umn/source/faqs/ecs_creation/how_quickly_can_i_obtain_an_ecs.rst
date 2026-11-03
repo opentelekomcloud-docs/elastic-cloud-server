@@ -12,3 +12,7 @@ The time it takes to obtain an ECS depends on ECS specifications, available reso
 .. note::
 
    If it takes a long time to obtain your ECS, contact customer service.
+
+.. meta::
+   :description: Learn how quickly you can obtain an Elastic Cloud Server (ECS) from T Cloud Public.
+   :keywords: Elastic Cloud Server, ECS, cloud service, T Cloud Public, provisioning time
