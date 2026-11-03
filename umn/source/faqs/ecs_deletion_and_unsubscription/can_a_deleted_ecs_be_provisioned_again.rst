@@ -10,7 +10,3 @@ No. ECSs in the **Deleted** state cannot provide services and are soon removed f
 A deleted ECS is retained in the ECS list on the management console only for a short period of time before it is permanently removed from the system.
 
 You can create another ECS of the same specifications.
-
-.. meta::
-   :description: Learn why deleted Elastic Cloud Servers cannot be provisioned again.
-   :keywords: Elastic Cloud Server, T Cloud Public, cloud service, ECS deletion, cloud resource management

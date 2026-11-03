@@ -10,7 +10,3 @@ You cannot manage ECSs by folders or groups, but you can use tags to organize yo
 Tags help you group your ECSs by usage or user.
 
 For more information, see :ref:`Overview <en-us_topic_0092499768>`.
-
-.. meta::
-   :description: Learn how to manage Elastic Cloud Servers in T Cloud Public.
-   :keywords: Elastic Cloud Server, T Cloud Public, ECS management, resource grouping, tags

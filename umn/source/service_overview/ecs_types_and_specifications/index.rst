@@ -18,7 +18,3 @@ ECS Types and Specifications
    ecs_lifecycle
    ecs_types
    ecs_specifications/index
-
-.. meta::
-   :description: Launch Elastic Cloud Servers with T Cloud Public.
-   :keywords: Elastic Cloud Server, T Cloud Public, ECS Types, ECS Specifications, Cloud Service

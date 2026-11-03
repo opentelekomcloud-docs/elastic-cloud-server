@@ -74,7 +74,3 @@ The following uses Windows 2012 as an example. For solutions about other OSs, se
 
 .. |image1| image:: /_static/images/en-us_image_0000001377299565.png
 .. |image2| image:: /_static/images/en-us_image_0000001377418737.png
-
-.. meta::
-   :description: Learn why DHCP fails to assign private IPs on T Cloud Public ECS.
-   :keywords: Elastic Cloud Server, DHCP, Private IP Address, Network Configuration, Linux

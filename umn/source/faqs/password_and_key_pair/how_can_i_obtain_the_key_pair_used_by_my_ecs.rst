@@ -30,7 +30,3 @@ Procedure
    The value is the key pair used by the ECS.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
-
-.. meta::
-   :description: Learn how to find the key pair for your Elastic Cloud Server (ECS) in T Cloud Public.
-   :keywords: Elastic Cloud Server, ECS, Key Pair, Cloud Provider, T Cloud Public

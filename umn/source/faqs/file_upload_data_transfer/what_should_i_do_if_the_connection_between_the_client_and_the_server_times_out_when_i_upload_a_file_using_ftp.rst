@@ -25,7 +25,3 @@ Solution
 
 #. Check the firewall settings on the server.
 #. Disable the firewall or add desired rules to the security group.
-
-.. meta::
-   :description: Resolve FTP connection timeouts on T Cloud Public Elastic Cloud Servers.
-   :keywords: Elastic Cloud Server, T Cloud Public, FTP, Connection Timeout, Firewall

@@ -12,7 +12,3 @@ Data Protection
    :hidden: 
 
    user_encryption
-
-.. meta::
-   :description: Secure your Elastic Cloud Server with T Cloud Public's user encryption.
-   :keywords: Elastic Cloud Server, T Cloud Public, Data Protection, User Encryption, Cloud Service

@@ -139,7 +139,3 @@ Procedure
 #. Click the **Disks** tab. Locate the row containing the EVS disk to be detached and click **Detach**.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
-
-.. meta::
-   :description: Detach EVS disks from running ECSs on T Cloud Public.
-   :keywords: Elastic Cloud Server, EVS Disk, Detach, System Disk, Data Disk

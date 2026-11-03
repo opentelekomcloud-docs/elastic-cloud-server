@@ -48,7 +48,3 @@ Before dialing the hotline number or sending an email, make sure that the follow
 
 .. |image1| image:: /_static/images/en-us_image_0275513364.png
 .. |image2| image:: /_static/images/en-us_image_0152727234.png
-
-.. meta::
-   :description: Learn how to view and apply for higher quotas for Elastic Cloud Servers on T Cloud Public.
-   :keywords: Elastic Cloud Server, T Cloud Public, Quota Adjustment, Resource Quota, Management Console

@@ -14,7 +14,3 @@ Images
 
    overview
    creating_an_image
-
-.. meta::
-   :description: Images
-   :keywords: Elastic Cloud Server

@@ -38,7 +38,3 @@ Helpful Links
 -------------
 
 -  :ref:`Which ECSs Can Be Attached with SCSI EVS Disks? <en-us_topic_0077938284>`
-
-.. meta::
-   :description: EVS Disks
-   :keywords: Elastic Cloud Server

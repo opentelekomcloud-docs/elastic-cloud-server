@@ -48,7 +48,3 @@ Procedure
 #. Click **OK**.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
-
-.. meta::
-   :description: Learn how to change security groups for your Elastic Cloud Server on T Cloud Public.
-   :keywords: Elastic Cloud Server, Security Group, Network Interface, Management Console, T Cloud Public

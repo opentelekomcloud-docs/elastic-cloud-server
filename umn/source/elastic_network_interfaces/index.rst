@@ -22,7 +22,3 @@ Elastic Network Interfaces
    managing_virtual_ip_addresses
    enabling_nic_multi-queue
    dynamically_assigning_ipv6_addresses
-
-.. meta::
-   :description: Elastic Network Interfaces
-   :keywords: Elastic Cloud Server

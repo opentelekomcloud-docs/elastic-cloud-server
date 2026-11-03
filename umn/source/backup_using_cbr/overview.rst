@@ -156,7 +156,3 @@ CBR supports one-off backup and periodic backup. A one-off backup task is manual
    +------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
    | Application scenario   | Executed before patching or upgrading the OS or upgrading an application on a resource. A one-off backup can be used to restore the resource to the original state if the patching or upgrading fails. | Executed for routine maintenance of a resource. The latest backup can be used for restoration if an unexpected failure or data loss occurs. |
    +------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
-
-.. meta::
-   :description: Securely back up and recover Elastic Cloud Servers with T Cloud Public CBR.
-   :keywords: Elastic Cloud Server, Cloud Backup and Recovery, CBR, data backup, data recovery

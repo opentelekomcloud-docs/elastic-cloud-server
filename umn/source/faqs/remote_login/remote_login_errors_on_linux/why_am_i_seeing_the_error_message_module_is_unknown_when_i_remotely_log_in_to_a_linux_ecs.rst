@@ -104,7 +104,3 @@ Solution
       -  Do not modify the files in the **/etc/pam.d/** directory. Run the following command for details about pam:
 
          **man pam.d**
-
-.. meta::
-   :description: Resolve "Module is unknown" error on T Cloud Public Linux ECS.
-   :keywords: Elastic Cloud Server, Linux, Module is unknown, PAM, Rescue Mode

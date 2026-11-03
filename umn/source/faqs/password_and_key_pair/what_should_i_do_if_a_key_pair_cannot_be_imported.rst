@@ -18,7 +18,3 @@ If you use Internet Explorer 9 to access the management console, the key pair ma
 #. Click **Yes**.
 
 .. |image1| image:: /_static/images/en-us_image_0146087803.png
-
-.. meta::
-   :description: Resolve key pair import issues on T Cloud Public's Elastic Cloud Server by adjusting Internet Explorer 9 security settings for ActiveX controls.
-   :keywords: Elastic Cloud Server, T Cloud Public, key pair import, Internet Explorer 9, browser settings

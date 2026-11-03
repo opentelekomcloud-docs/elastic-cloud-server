@@ -27,7 +27,3 @@ Solution
 Enable management console log obtaining on the ECS.
 
 For details, see step 1 in section :ref:`Obtaining ECS Console Logs <en-us_topic_0057711189>`.
-
-.. meta::
-   :description: Resolve the question mark error when getting ECS console logs on T Cloud Public.
-   :keywords: Elastic Cloud Server, ECS, Console Logs, Management Console, T Cloud Public

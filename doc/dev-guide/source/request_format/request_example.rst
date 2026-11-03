@@ -241,7 +241,3 @@ Request Example
              }
            ]
          }
-
-.. meta::
-   :description: Request Example
-   :keywords: Elastic Cloud Server

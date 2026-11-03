@@ -149,7 +149,3 @@ Periodically Upgrading the Operating System
 -------------------------------------------
 
 After ECSs are created, you need to maintain and periodically upgrade the operating system.
-
-.. meta::
-   :description: Methods for Improving ECS Security
-   :keywords: Elastic Cloud Server

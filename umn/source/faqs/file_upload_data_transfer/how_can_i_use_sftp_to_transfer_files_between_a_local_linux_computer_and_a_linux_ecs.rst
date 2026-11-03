@@ -109,7 +109,3 @@ Procedure
 .. |image1| image:: /_static/images/en-us_image_0263798010.png
 .. |image2| image:: /_static/images/en-us_image_0263798011.png
 .. |image3| image:: /_static/images/en-us_image_0263798012.png
-
-.. meta::
-   :description: Learn how to use SFTP to transfer files between a local Linux computer and a Linux ECS from T Cloud Public.
-   :keywords: Elastic Cloud Server, SFTP, Linux, CentOS, OpenSSH

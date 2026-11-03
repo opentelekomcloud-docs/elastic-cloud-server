@@ -46,7 +46,3 @@ Procedure
    View the bound EIP on the **EIPs** tab.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
-
-.. meta::
-   :description: Binding an EIP
-   :keywords: Elastic Cloud Server

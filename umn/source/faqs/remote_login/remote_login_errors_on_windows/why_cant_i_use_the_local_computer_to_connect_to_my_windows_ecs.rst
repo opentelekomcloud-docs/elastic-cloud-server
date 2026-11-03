@@ -150,7 +150,3 @@ Checking Remote Desktop Session Host Configuration
       :alt: **Figure 8** Setting security layer to RDP
 
       **Figure 8** Setting security layer to RDP
-
-.. meta::
-   :description: Troubleshoot why you can't connect to your Windows ECS on T Cloud Public.
-   :keywords: Elastic Cloud Server, Windows ECS, Remote Desktop, Port 3389, Security Group

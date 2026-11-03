@@ -24,7 +24,3 @@ ECS Failure
    why_does_a_forcibly-stopped_linux_ecs_fail_to_be_restarted
    how_can_a_changed_static_hostname_take_effect_permanently
    why_cant_my_linux_ecs_obtain_metadata
-
-.. meta::
-   :description: Troubleshoot Elastic Cloud Server issues on T Cloud Public.
-   :keywords: Elastic Cloud Server, ECS, cloud service, T Cloud Public, virtual machine

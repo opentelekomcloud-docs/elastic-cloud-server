@@ -19,7 +19,3 @@ When you use a browser to remotely log in to an ECS, ensure that the browser ver
    Internet Explorer 10.0 or later
    Microsoft Edge    12.0 or later
    ================= =============
-
-.. meta::
-   :description: Learn the required browser versions to remotely log in to an Elastic Cloud Server on T Cloud Public.
-   :keywords: Elastic Cloud Server, T Cloud Public, remote login, browser requirements, cloud service

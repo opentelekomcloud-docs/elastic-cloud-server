@@ -10,7 +10,3 @@ No. You can only use the original image of the ECS to reinstall the OS.
 If you want to use a new OS image, change the OS.
 
 For details, see :ref:`Changing the OS <en-us_topic_0031523135>`.
-
-.. meta::
-   :description: Reinstall OS on Elastic Cloud Server? You can only use the original image.
-   :keywords: Elastic Cloud Server, ECS, OS Reinstallation, Image, T Cloud Public

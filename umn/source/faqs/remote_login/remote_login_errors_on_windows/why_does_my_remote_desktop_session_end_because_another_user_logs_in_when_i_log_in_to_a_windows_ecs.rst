@@ -57,7 +57,3 @@ Windows Server 2012
       **Figure 5** Modifying the configuration
 
 #. Run **gpupdate/force** to update the group policy.
-
-.. meta::
-   :description: Fix Windows ECS RDP session drops when another user logs in.
-   :keywords: Elastic Cloud Server, Remote Desktop, Windows Server, Session Management, T Cloud Public

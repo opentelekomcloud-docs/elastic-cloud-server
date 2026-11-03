@@ -34,7 +34,3 @@ Solution
 
       -  If you can obtain the password, no further action is required.
       -  If you cannot obtain the password, contact customer service.
-
-.. meta::
-   :description: Learn why T Cloud Public ECS Windows password retrieval fails.
-   :keywords: Elastic Cloud Server, ECS, Windows, Cloudbase-Init, password

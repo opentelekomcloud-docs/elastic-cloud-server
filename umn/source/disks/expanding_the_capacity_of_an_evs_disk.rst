@@ -32,7 +32,3 @@ Related Operations
 ------------------
 
 For a Windows ECS, if you want to expand the disk capacity by clearing disk files, you can reduce the size of the WinSxS folder using tools built into Windows. For details, see `Clean Up the WinSxS Folder <https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/clean-up-the-winsxs-folder>`__.
-
-.. meta::
-   :description: Learn how to expand EVS disk capacity for your Elastic Cloud Server on T Cloud Public.
-   :keywords: Elastic Cloud Server, EVS Disk, Disk Capacity, System Disk, Data Disk

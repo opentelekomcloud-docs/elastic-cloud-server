@@ -86,7 +86,3 @@ Private IP address of ECS 2: 192.168.72.20
       :alt: **Figure 3** Logging in to ECS 2
 
       **Figure 3** Logging in to ECS 2
-
-.. meta::
-   :description: Learn how to configure port mapping on Elastic Cloud Server with T Cloud Public.
-   :keywords: Elastic Cloud Server, Port Mapping, EIP, Port Redirection, T Cloud Public

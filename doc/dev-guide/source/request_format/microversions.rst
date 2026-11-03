@@ -289,7 +289,3 @@ For example, you are required to use the API for details about an ECS to view th
          }
 
    -  Conclusion: The response body contains the **OS-EXT-SRV-ATTR:hostname** field.
-
-.. meta::
-   :description: Microversions
-   :keywords: Elastic Cloud Server

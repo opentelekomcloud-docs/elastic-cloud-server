@@ -58,7 +58,3 @@ Notes
    .. note::
 
       If you use the default security group rules for the outbound direction, the metadata can be accessed because the default rules meet the preceding requirements. For details about the default security group rules for the outbound direction, see :ref:`Security Group <en-us_topic_0030828257__section15617142420109>`.
-
-.. meta::
-   :description: Learn how Cloud-Init and Cloudbase-Init configure ECSs on T Cloud Public.
-   :keywords: Elastic Cloud Server, Cloud-Init, Cloudbase-Init, ECS, key pair authentication

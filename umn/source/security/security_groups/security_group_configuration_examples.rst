@@ -226,7 +226,3 @@ By default, a security group allows all outbound traffic. :ref:`Table 12 <en-us_
       +-----------+------+-----------------+-------------+--------------------------------------------------------------------------------------+
       | Outbound  | IPv6 | All             | ::/0        | Allows the instances in the security group to access any IPv6 address over any port. |
       +-----------+------+-----------------+-------------+--------------------------------------------------------------------------------------+
-
-.. meta::
-   :description: Learn Elastic Cloud Server security group configuration examples on T Cloud Public.
-   :keywords: Elastic Cloud Server, Security Group, VPC, Network Traffic, Cloud Instances

@@ -115,7 +115,3 @@ If the high CPU or bandwidth usage is caused by viruses or Trojan horses, manual
 Some viruses and Trojan horses are loaded through the filter drivers of the system. If you find a driver from an unknown source, you are advised to uninstall it. You can also use commercial antivirus software or third-party security management tools to delete it.
 
 If an unknown driver cannot be deleted, or will appear again after being deleted, it is usually a virus or Trojan horse driver. If the driver cannot be completely deleted using commercial antivirus software or third-party security management tools, you are advised to reinstall the OS and back up data before the reinstallation.
-
-.. meta::
-   :description: Resolve slow Windows ECS performance on T Cloud Public.
-   :keywords: Elastic Cloud Server, Windows, CPU usage, bandwidth, Resource Monitor

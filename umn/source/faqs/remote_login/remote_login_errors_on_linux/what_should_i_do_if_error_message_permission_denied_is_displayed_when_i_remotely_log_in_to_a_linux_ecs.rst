@@ -88,7 +88,3 @@ Solution
       **man limits.conf**
 
 4. Restart the ECS and try to log in to it again.
-
-.. meta::
-   :description: Fix "Permission denied" on Linux ECS.
-   :keywords: Elastic Cloud Server, Linux, Permission denied, ECS, T Cloud Public

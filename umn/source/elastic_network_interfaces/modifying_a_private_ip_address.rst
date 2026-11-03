@@ -50,7 +50,3 @@ Procedure
    If the target private IP address is not specified, the system will automatically assign one to the primary NIC.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
-
-.. meta::
-   :description: Modifying a Private IP Address
-   :keywords: Elastic Cloud Server

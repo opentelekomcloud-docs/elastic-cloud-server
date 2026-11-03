@@ -24,7 +24,3 @@ Helpful Links
 -  :ref:`Binding an EIP <en-us_topic_0174917535>`
 -  :ref:`Unbinding an EIP <en-us_topic_0240543420>`
 -  :ref:`Modifying an EIP Bandwidth <en-us_topic_0093492521>`
-
-.. meta::
-   :description: Overview
-   :keywords: Elastic Cloud Server

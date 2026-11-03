@@ -18,7 +18,3 @@ Cloud Eye Monitoring
    basic_ecs_metrics
    creating_alarm_rules
    viewing_ecs_metrics
-
-.. meta::
-   :description: Cloud Eye Monitoring
-   :keywords: Elastic Cloud Server

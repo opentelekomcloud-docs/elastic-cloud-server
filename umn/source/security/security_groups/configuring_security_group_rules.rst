@@ -187,7 +187,3 @@ Procedure
 #. Click **OK** to complete the security rule configuration.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
-
-.. meta::
-   :description: Learn how to configure inbound and outbound security group rules for Elastic Cloud Servers on T Cloud Public to control network access and protect your insta...
-   :keywords: Elastic Cloud Server, Security Group, Inbound Rules, Outbound Rules, Network Access

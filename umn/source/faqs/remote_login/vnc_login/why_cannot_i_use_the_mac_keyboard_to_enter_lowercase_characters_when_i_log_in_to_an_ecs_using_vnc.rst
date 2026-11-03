@@ -8,7 +8,3 @@ Why Cannot I Use the MAC Keyboard to Enter Lowercase Characters When I Log In to
 If you use the MAC keyboard to enter German characters on your computer running MAC OS, uppercase characters can be entered properly after **Caps Lock** is enabled. However, after **Caps Lock** is disabled, the entered characters are still uppercase.
 
 To resolve this issue, hold **Shift** and press the letter key on the keyboard.
-
-.. meta::
-   :description: Resolve MAC keyboard issues on T Cloud Public ECS.
-   :keywords: Elastic Cloud Server, T Cloud Public, VNC, MAC keyboard, lowercase characters

@@ -64,7 +64,3 @@ Based on example 1, if you intend to enable routing for default public network t
    **ip route add 0.0.0.0/0 dev eth1 via 192.168.2.1**
 
    In the preceding command, **192.168.2.1** is the gateway IP address of standby NIC **eth1**.
-
-.. meta::
-   :description: Learn how to bind multiple EIPs to an Elastic Cloud Server in T Cloud Public.
-   :keywords: Elastic Cloud Server, EIP, network interface, policy-based routes, routing

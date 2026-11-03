@@ -35,7 +35,3 @@ Procedure
       **Figure 1** Setting connection parameters
 
 #. Drag files from the local computer on the left to the target ECS on the right to transfer them.
-
-.. meta::
-   :description: Learn how to use FTP to transfer files from a local Windows computer to an Elastic Cloud Server (ECS) via T Cloud Public.
-   :keywords: Elastic Cloud Server, ECS, FTP, FileZilla, EIP

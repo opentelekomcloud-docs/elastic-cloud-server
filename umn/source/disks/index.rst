@@ -20,7 +20,3 @@ Disks
    detaching_an_evs_disk_from_a_running_ecs
    expanding_the_capacity_of_an_evs_disk
    expanding_the_local_disks_of_a_disk-intensive_ecs
-
-.. meta::
-   :description: Manage Elastic Cloud Server disks with T Cloud Public.
-   :keywords: Elastic Cloud Server, ECS, Cloud Disks, EVS Disk, Storage

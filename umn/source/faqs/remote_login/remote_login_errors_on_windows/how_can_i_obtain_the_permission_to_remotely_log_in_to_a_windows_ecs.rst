@@ -38,7 +38,3 @@ Solution
          :alt: **Figure 3** Deny log on through Remote Desktop Services properties
 
          **Figure 3** Deny log on through Remote Desktop Services properties
-
-.. meta::
-   :description: Learn how to fix Remote Desktop login issues on Windows ECS from T Cloud Public.
-   :keywords: Elastic Cloud Server, Windows ECS, Remote Desktop, Remote Login, Group Policy

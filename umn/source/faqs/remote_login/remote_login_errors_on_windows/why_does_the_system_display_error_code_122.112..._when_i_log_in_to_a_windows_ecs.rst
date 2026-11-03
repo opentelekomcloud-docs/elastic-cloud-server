@@ -51,7 +51,3 @@ Solution
    If it is, change the flavor or stop unnecessary processes.
 
 .. |image1| image:: /_static/images/en-us_image_0000001122204571.png
-
-.. meta::
-   :description: Resolve Windows ECS error 122.
-   :keywords: Elastic Cloud Server, Windows ECS, Error Code 122.112, RDC, T Cloud Public

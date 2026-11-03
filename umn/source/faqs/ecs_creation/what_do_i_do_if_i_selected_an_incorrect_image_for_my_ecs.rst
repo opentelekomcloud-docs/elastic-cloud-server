@@ -22,7 +22,3 @@ You can change the image for your ECS on the ECS console.
    After the application is submitted, the ECS status changes to **Changing OS**. When this status disappears, the OS change is complete.
 
 For details, see :ref:`Changing the OS <en-us_topic_0031523135>`.
-
-.. meta::
-   :description: Learn how to change the OS image for your Elastic Cloud Server on T Cloud Public.
-   :keywords: Elastic Cloud Server, ECS, change OS, image, T Cloud Public

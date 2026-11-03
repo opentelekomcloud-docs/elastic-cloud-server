@@ -95,7 +95,3 @@ Example Custom Policies
                   }
             ]
       }
-
-.. meta::
-   :description: Learn how to create custom policies for Elastic Cloud Server on T Cloud Public.
-   :keywords: Elastic Cloud Server, Custom Policies, ECS, IAM, JSON

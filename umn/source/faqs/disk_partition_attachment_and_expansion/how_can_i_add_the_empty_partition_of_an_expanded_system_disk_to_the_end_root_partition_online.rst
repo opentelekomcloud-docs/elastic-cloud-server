@@ -85,7 +85,3 @@ In the following operations, the ECS that runs CentOS 6.5 64bit and has a 50 GB 
       old_desc_blocks = 3, new_desc_blocks = 3
       ....
       [root@sluo-ecs-a611 ~] # df -hT    //Check file system capacity expansion
-
-.. meta::
-   :description: Learn how to add an empty partition to the root partition of an Elastic Cloud Server system disk online using T Cloud Public.
-   :keywords: Elastic Cloud Server, system disk, root partition, online expansion, growpart

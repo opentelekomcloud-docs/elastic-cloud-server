@@ -38,7 +38,3 @@ Remote Login Errors on Windows
    why_am_i_seeing_an_error_message_that_says_user_account_is_not_authorized_for_remote_login_when_i_log_in_to_a_windows_ecs
    why_does_my_remote_desktop_session_end_because_another_user_logs_in_when_i_log_in_to_a_windows_ecs
    why_does_an_ecs_fail_to_be_remotely_connected_using_rdp_and_internal_error_code_4_is_displayed
-
-.. meta::
-   :description: Resolve remote login errors on Windows ECS from T Cloud Public.
-   :keywords: Elastic Cloud Server, Windows, Remote Login, RDP, Troubleshooting

@@ -187,7 +187,3 @@ The changed hostname is assumed to be **new_hostname**.
    **sudo cat /etc/hosts**
 
    If the changed hostname (**new_hostname**) and **hosts** are displayed in the command output, the changes take effect permanently.
-
-.. meta::
-   :description: Learn how to permanently change a Linux ECS static hostname on T Cloud Public by updating /etc/hostname and cloud.
-   :keywords: Elastic Cloud Server, T Cloud Public, Linux ECS, Hostname, Cloud-Init

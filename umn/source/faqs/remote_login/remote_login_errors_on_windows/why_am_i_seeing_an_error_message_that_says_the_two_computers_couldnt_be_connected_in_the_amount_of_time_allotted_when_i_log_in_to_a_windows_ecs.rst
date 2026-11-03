@@ -22,7 +22,3 @@ Solution
 #. On the local computer, click on the **Start** icon, type **cmd** into the box, and run the command as an administrator.
 #. Run the **netsh winsock reset** command.
 #. Restart the local computer as prompted and reconnect to the ECS.
-
-.. meta::
-   :description: Fix Windows ECS connection timeout errors.
-   :keywords: Elastic Cloud Server, Windows ECS, Remote Connection, Network Error, Troubleshooting

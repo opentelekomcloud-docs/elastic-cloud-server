@@ -14,7 +14,3 @@ The cloud platform provides multiple ECS types for different compute and storage
 -  For details about ECS types, see :ref:`ECS Types <en-us_topic_0035470096>`.
 -  For details about all ECS statuses in a lifecycle, see :ref:`ECS Lifecycle <en-us_topic_0140323150>`.
 -  For details about ECS specifications, see :ref:`A Summary List of ECS Specifications <en-us_topic_0177512565>`.
-
-.. meta::
-   :description: Launch secure, reliable Elastic Cloud Servers with T Cloud Public.
-   :keywords: Elastic Cloud Server, T Cloud Public, vCPUs, memory, EVS disks

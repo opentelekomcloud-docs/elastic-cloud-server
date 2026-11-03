@@ -55,7 +55,3 @@ Solution
 .. |image2| image:: /_static/images/en-us_image_0166287348.png
 .. |image3| image:: /_static/images/en-us_image_0166287349.png
 .. |image4| image:: /_static/images/en-us_image_0166287351.png
-
-.. meta::
-   :description: Learn how to transfer files from a local Windows PC to a T Cloud Public Windows ECS using Remote Desktop.
-   :keywords: Elastic Cloud Server, Windows ECS, remote desktop, file transfer, EIP

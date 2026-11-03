@@ -113,7 +113,3 @@ Some OSs cannot identify newly attached network interfaces. In this case, you ne
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
 .. |image2| image:: /_static/images/en-us_image_0000002188678994.png
-
-.. meta::
-   :description: Attaching a Network Interface
-   :keywords: Elastic Cloud Server

@@ -46,7 +46,3 @@ The system does not support dynamic license type changing. ECSs support BYOL in 
 -  Attaching a system disk
 
    The license type of a system disk is determined by the ECS license type after the ECS is created, the ECS OS is reinstalled, or the ECS OS is changed. If the system disk is detached and then attached to a new ECS or the original ECS, ensure that the ECS license type is the same as the system disk license type.
-
-.. meta::
-   :description: Learn about Elastic Cloud Server license types on T Cloud Public.
-   :keywords: Elastic Cloud Server, BYOL, License Types, OS License, Cloud Platform

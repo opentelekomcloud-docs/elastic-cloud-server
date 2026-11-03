@@ -24,7 +24,3 @@ ECS Creation
    what_do_i_do_if_i_selected_an_incorrect_image_for_my_ecs
    how_quickly_can_i_obtain_an_ecs
    how_can_i_manage_ecss_by_group
-
-.. meta::
-   :description: Learn how to create, manage, and troubleshoot Elastic Cloud Servers on T Cloud Public.
-   :keywords: Elastic Cloud Server, ECS, cloud service, T Cloud Public, virtual server

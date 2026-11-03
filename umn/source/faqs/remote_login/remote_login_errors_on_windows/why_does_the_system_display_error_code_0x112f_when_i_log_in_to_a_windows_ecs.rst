@@ -38,7 +38,3 @@ Solution
    .. note::
 
       This method will deteriorate the disk I/O performance, so use this method only when necessary.
-
-.. meta::
-   :description: Resolve Windows ECS error 0x112f on T Cloud Public.
-   :keywords: Elastic Cloud Server, Windows ECS, Error Code 0x112f, Insufficient Memory, Virtual Memory

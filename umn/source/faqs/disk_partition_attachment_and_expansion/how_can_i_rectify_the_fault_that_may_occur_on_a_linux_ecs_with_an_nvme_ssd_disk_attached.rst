@@ -61,7 +61,3 @@ Solution
       :alt: **Figure 4** Logging in to the ECS
 
       **Figure 4** Logging in to the ECS
-
-.. meta::
-   :description: Learn how to fix Linux ECS faults with NVMe SSDs on T Cloud Public.
-   :keywords: Elastic Cloud Server, Linux ECS, NVMe SSD, /etc/fstab, emergency mode

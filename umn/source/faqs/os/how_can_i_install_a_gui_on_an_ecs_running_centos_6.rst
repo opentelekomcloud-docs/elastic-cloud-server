@@ -43,7 +43,3 @@ Procedure
       :alt: **Figure 1** GUI display
 
       **Figure 1** GUI display
-
-.. meta::
-   :description: Learn how to install a GUI on an ECS running CentOS 6 using T Cloud Public.
-   :keywords: Elastic Cloud Server, ECS, CentOS 6, GUI, install

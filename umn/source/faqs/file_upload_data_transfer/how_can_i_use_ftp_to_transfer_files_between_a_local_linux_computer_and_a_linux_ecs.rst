@@ -52,7 +52,3 @@ Procedure
       For example, to download the **test.txt** file on the ECS to the local Linux computer, run the following command:
 
       **get /home/test.txt**
-
-.. meta::
-   :description: Learn how to use FTP to transfer files between a local Linux computer and a Linux Elastic Cloud Server from T Cloud Public.
-   :keywords: Elastic Cloud Server, FTP, Linux, file transfer, EIP

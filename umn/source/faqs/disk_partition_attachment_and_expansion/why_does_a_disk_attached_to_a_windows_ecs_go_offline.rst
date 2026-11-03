@@ -64,7 +64,3 @@ Use the disk partition management tool DiskPart to obtain and set the SAN policy
    **san policy=onlineall**
 
 #. (Optional) Use the ECS with the SAN policy changed to create a private image so that the configuration takes effect permanently. After an ECS is created using this private image, the disks attached to the ECS are online by default. You only need to initialize them.
-
-.. meta::
-   :description: Fix Windows ECS disk offline errors on T Cloud Public.
-   :keywords: Elastic Cloud Server, Windows ECS, disk offline, SAN policy, administrator

@@ -17,7 +17,3 @@ Root Cause
 -  The **Failures** area shows the ECS creation status, including the statuses of subtasks, such as creating ECS resources and binding an EIP. Only when all subtasks are successful, the ECS is created.
 
 If the ECS is created but EIP binding failed, the task failed. However, the ECS you created is temporarily displayed in the list. After the system rolls back, the ECS is removed from the list.
-
-.. meta::
-   :description: Resolve ECS creation inconsistencies on T Cloud Public.
-   :keywords: Elastic Cloud Server, ECS creation, EIP binding, rollback, cloud provider

@@ -34,7 +34,3 @@ Solution
 
    -  **Protocol**: **ICMP**
    -  **Source**: **IP address** **0.0.0.0/0**
-
-.. meta::
-   :description: Learn why you can remotely access an ECS but cannot ping it on T Cloud Public.
-   :keywords: Elastic Cloud Server, T Cloud Public, security group, ICMP, ping

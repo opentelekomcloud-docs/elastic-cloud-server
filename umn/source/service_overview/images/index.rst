@@ -14,7 +14,3 @@ Images
 
    image_types
    cloud-init_cloudbase-init
-
-.. meta::
-   :description: Create ECS instances on T Cloud Public.
-   :keywords: Elastic Cloud Server, T Cloud Public, Image Types, Cloud-Init, Cloudbase-Init

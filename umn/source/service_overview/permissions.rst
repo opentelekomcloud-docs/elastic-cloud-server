@@ -300,7 +300,3 @@ Server Administrator Role Content
            }
        ]
    }
-
-.. meta::
-   :description: Permissions
-   :keywords: Elastic Cloud Server

@@ -317,7 +317,3 @@ Procedure
    For more information about virtual IP addresses, see *Virtual Private Cloud User Guide*.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
-
-.. meta::
-   :description: Managing Virtual IP Addresses
-   :keywords: Elastic Cloud Server

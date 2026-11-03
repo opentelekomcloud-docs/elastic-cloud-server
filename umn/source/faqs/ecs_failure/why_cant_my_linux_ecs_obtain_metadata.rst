@@ -56,7 +56,3 @@ Solution
    In this example, the primary NIC is eth0 and gateway address is 192.168.1.1. Replace them based on site requirements.
 
    **# 169.254.169.254 via 192.168.1.1**
-
-.. meta::
-   :description: Fix Linux ECS metadata issues on T Cloud Public.
-   :keywords: Elastic Cloud Server, Linux, metadata, route, static IP

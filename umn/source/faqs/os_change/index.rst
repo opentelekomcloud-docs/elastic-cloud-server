@@ -20,7 +20,3 @@ OS Change
    how_long_does_it_take_to_change_an_ecs_os
    can_i_select_another_os_during_ecs_os_reinstallation
    how_long_does_it_take_to_reinstall_an_ecs_os
-
-.. meta::
-   :description: Learn how to install, upgrade, or change the OS of your Elastic Cloud Server on T Cloud Public.
-   :keywords: Elastic Cloud Server, ECS, OS Change, OS Reinstallation, T Cloud Public

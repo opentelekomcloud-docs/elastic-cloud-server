@@ -13,7 +13,3 @@ You can add an ECS to an ECS group in either of the following ways:
 -  After creation: After creating an ECS, click **Add ECS** to add the ECS to the ECS group.
 
 Instances with local disks can be added to the ECS group at the time of purchase.
-
-.. meta::
-   :description: Learn how to add Elastic Cloud Servers with local disks to an ECS group in T Cloud Public.
-   :keywords: Elastic Cloud Server, ECS Group, Local Disks, Anti-affinity, T Cloud Public

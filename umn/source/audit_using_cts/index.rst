@@ -14,7 +14,3 @@ Audit Using CTS
 
    key_operations_supported_by_cts
    viewing_traces
-
-.. meta::
-   :description: Securely audit Elastic Cloud Server operations with T Cloud Public's CTS.
-   :keywords: Elastic Cloud Server, T Cloud Public, Cloud Computing, Server Infrastructure, IT Services

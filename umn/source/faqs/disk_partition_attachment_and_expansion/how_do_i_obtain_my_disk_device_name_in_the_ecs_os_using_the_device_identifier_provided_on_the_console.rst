@@ -234,7 +234,3 @@ Using a WWN to Obtain a Disk Device Name (Linux)
       lrwxrwxrwx 1 root root  9 May 21 20:22 scsi-36888603000008b32fa16688d09368506 -> ../../sda
 
 .. |image1| image:: /_static/images/en-us_image_0216898618.png
-
-.. meta::
-   :description: Learn how to match ECS disk device names in the OS with the console's device identifier on T Cloud Public.
-   :keywords: Elastic Cloud Server, Disk Device Name, Device Identifier, Management Console, ECS OS

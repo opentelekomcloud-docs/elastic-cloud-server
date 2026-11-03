@@ -78,7 +78,3 @@ Procedure
    Copy the files to be uploaded to the ECS. Alternatively, download the files from the ECS to your local Mac.
 
 .. |image1| image:: /_static/images/en-us_image_0295095212.png
-
-.. meta::
-   :description: Learn how to transfer files from a local Mac to a Windows Elastic Cloud Server using Microsoft Remote Desktop.
-   :keywords: Elastic Cloud Server, Windows ECS, Microsoft Remote Desktop, file transfer, EIP

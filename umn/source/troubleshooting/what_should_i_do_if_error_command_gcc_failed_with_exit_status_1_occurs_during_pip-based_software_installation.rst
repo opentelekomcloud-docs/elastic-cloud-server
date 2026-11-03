@@ -46,7 +46,3 @@ The following operations use psutil as an example:
       :alt: **Figure 2** Successful installation
 
       **Figure 2** Successful installation
-
-.. meta::
-   :description: Resolve PIP installation errors on Elastic Cloud Server.
-   :keywords: Elastic Cloud Server, PIP, Python, GCC, yum

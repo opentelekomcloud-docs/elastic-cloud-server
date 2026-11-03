@@ -27,7 +27,3 @@ Constraints on Using Security Groups
 ------------------------------------
 
 -  By default, you can add up to 50 security group rules to a security group.
-
-.. meta::
-   :description: Manage T Cloud Public ECS security groups.
-   :keywords: Elastic Cloud Server, T Cloud Public, Security Group, Access Control Rules, VPC Peering

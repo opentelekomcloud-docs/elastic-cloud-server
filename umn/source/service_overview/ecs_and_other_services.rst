@@ -56,7 +56,3 @@ ECS-related Services
 -  Tag Management Service (TMS)
 
    Tags can be used to identify ECSs for easy management.
-
-.. meta::
-   :description: ECS and Other Services
-   :keywords: Elastic Cloud Server

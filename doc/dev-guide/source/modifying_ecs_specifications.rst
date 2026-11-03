@@ -99,7 +99,3 @@ Procedure
    -  Response example
 
       N/A
-
-.. meta::
-   :description: Modifying ECS Specifications
-   :keywords: Elastic Cloud Server

@@ -81,7 +81,3 @@ Procedure
       **Figure 3** Checking the number of disks attached
 
    As shown in :ref:`Figure 3 <en-us_topic_0214940106__en-us_topic_0120890833_fig722411124917>`, the numbers of disks before and after specification modifications are the same. The disks are **/dev/vda**, **/dev/vdb**, and **/dev/vdc**.
-
-.. meta::
-   :description: Troubleshoot Linux ECS disk attachment failures after modifying specifications on T Cloud Public.
-   :keywords: Elastic Cloud Server, Linux, disk attachment, specification modification, troubleshooting

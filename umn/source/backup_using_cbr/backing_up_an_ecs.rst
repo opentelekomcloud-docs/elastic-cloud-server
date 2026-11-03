@@ -80,7 +80,3 @@ EVS Disk Backup Procedure
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
 .. |image2| image:: /_static/images/en-us_image_0000002188678994.png
 .. |image3| image:: /_static/images/en-us_image_0000001128656892.png
-
-.. meta::
-   :description: Learn how to back up Elastic Cloud Servers and EVS disks with T Cloud Public.
-   :keywords: Elastic Cloud Server, CBR, Backup, EVS, Cloud Backup and Recovery

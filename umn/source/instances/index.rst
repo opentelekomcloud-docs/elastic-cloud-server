@@ -24,7 +24,3 @@ Instances
    modifying_ecs_specifications_vcpus_and_memory/index
    reinstalling_or_changing_the_os/index
    viewing_ecs_information/index
-
-.. meta::
-   :description: Instances
-   :keywords: Elastic Cloud Server

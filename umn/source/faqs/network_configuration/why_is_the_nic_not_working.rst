@@ -127,7 +127,3 @@ Disk-intensive and large-memory ECSs use passthrough network interfaces to impro
    i. Check the driver status based on the displayed information.
 
       In this example, the driver is installed if **driver** is **ixgbevf** and **version** is **2.16.4**.
-
-.. meta::
-   :description: Fix NIC issues on T Cloud Public Elastic Cloud Servers.
-   :keywords: Elastic Cloud Server, NIC, passthrough, driver, T Cloud Public

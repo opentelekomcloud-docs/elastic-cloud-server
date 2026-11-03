@@ -68,7 +68,3 @@ Perform the following operations for troubleshooting:
          22 (v6)                    ALLOW       Anywhere (v6)
 
       Try to remotely log in to the ECS again.
-
-.. meta::
-   :description: Fix "Connection reset by peer" on Linux ECS.
-   :keywords: Elastic Cloud Server, Linux ECS, remote login, security group, firewall

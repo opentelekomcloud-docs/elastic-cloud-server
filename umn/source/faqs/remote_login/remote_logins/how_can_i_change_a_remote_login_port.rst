@@ -171,7 +171,3 @@ The following procedure uses an ECS running CentOS 7.3 as an example. The defaul
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
 .. |image2| image:: /_static/images/en-us_image_0000002188678994.png
-
-.. meta::
-   :description: Learn how to change the remote login port for your Elastic Cloud Server on T Cloud Public.
-   :keywords: Elastic Cloud Server, Remote Login Port, Security Group, Windows Server, Registry Editor

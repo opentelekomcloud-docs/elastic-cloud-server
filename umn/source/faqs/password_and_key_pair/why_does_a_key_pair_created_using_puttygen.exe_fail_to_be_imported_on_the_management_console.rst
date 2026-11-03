@@ -53,7 +53,3 @@ Use the locally stored private key and **PuTTY Key Generator** to restore the fo
    f. Copy the public key content in the .txt file to **Public Key Content** and click **OK**.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
-
-.. meta::
-   :description: Resolve PuTTY key import failures on T Cloud Public Elastic Cloud Server.
-   :keywords: Elastic Cloud Server, Key Pair, PuTTY Key Generator, Public Key, Management Console

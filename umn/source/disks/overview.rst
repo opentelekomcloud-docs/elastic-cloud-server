@@ -49,7 +49,3 @@ EVS disks have two device types, Virtual Block Device (VBD) and Small Computer S
    .. note::
 
       For more information about how to use SCSI EVS disks, for example, how to install a driver for SCSI EVS disks, see "Device Types and Usage Instructions" in the *Elastic Volume Service User Guide*.
-
-.. meta::
-   :description: Explore Elastic Cloud Server on T Cloud Public.
-   :keywords: Elastic Cloud Server, Elastic Volume Service, EVS, block storage, T Cloud Public

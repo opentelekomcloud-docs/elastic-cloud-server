@@ -70,7 +70,3 @@ For more details, see `What Is HSS? <https://docs.otc.t-systems.com/host-securit
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
 .. |image2| image:: /_static/images/en-us_image_0000002039480781.png
-
-.. meta::
-   :description: HSS
-   :keywords: Elastic Cloud Server

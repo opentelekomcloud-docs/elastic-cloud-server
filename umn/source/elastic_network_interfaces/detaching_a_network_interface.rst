@@ -40,7 +40,3 @@ Procedure
       Certain ECSs do not support network interface detachment when they are running. For details, see the GUI display. To detach a network interface from such an ECS, stop the ECS first.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
-
-.. meta::
-   :description: Detaching a Network Interface
-   :keywords: Elastic Cloud Server

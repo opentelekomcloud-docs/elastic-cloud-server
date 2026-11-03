@@ -103,7 +103,3 @@ Helpful Links
 .. |image3| image:: /_static/images/en-us_image_0000001744678489.jpg
 .. |image4| image:: /_static/images/en-us_image_0000001942942816.png
 .. |image5| image:: /_static/images/en-us_image_0000001758618249.png
-
-.. meta::
-   :description: It seems the provided content describes Cloud Trace Service (CTS) rather than Elastic Cloud Server.
-   :keywords: Elastic Cloud Server, T Cloud Public, Cloud Trace Service, operation logs, security auditing

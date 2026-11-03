@@ -11,7 +11,3 @@ Whether a deleted ECS can be restored depends on whether data backup was enabled
 -  If backup was not enabled, data cannot be restored.
 
 Therefore, before deleting an ECS, ensure that the data on the ECS has been backed up or migrated.
-
-.. meta::
-   :description: Learn if a deleted Elastic Cloud Server can be restored.
-   :keywords: Elastic Cloud Server, ECS, data restoration, backup, deletion

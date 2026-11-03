@@ -34,7 +34,3 @@ File Upload/Data Transfer
    what_should_i_do_if_writing_data_failed_when_i_upload_a_file_using_ftp
    why_am_i_seeing_an_ftp_folder_error_when_i_open_a_folder_on_an_ftp_server
    why_do_i_fail_to_connect_to_a_linux_ecs_using_winscp
-
-.. meta::
-   :description: Learn how to upload and transfer files to your Elastic Cloud Server using SCP, SFTP, FTP, and WinSCP with T Cloud Public.
-   :keywords: Elastic Cloud Server, File Upload, Data Transfer, WinSCP, FTP

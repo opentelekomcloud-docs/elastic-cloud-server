@@ -20,7 +20,3 @@ Security
    hss
    configuring_secure_boot_for_an_ecs
    configuring_tpm_for_an_ecs
-
-.. meta::
-   :description: Security
-   :keywords: Elastic Cloud Server

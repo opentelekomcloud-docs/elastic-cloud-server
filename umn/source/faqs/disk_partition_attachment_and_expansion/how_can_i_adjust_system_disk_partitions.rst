@@ -279,7 +279,3 @@ To use the 20 GB capacity, performing the following operations:
       d. Press **Esc**, run the following command, and press **Enter**. The system saves the configurations and exits the vi editor.
 
          **:wq**
-
-.. meta::
-   :description: Learn how to adjust system disk partitions on Elastic Cloud Server.
-   :keywords: Elastic Cloud Server, system disk, partitions, expand, Linux

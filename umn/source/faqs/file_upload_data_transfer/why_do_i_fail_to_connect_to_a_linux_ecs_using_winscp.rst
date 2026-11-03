@@ -43,7 +43,3 @@ Solution
 -  If the file permission is not 755, you can run the following command to change the file permission to 755:
 
    **chmod 755 -R** **/usr/libexec/openssh/sftp-server**
-
-.. meta::
-   :description: Fix WinSCP connection failures to Linux ECS on T Cloud Public.
-   :keywords: Elastic Cloud Server, Linux, WinSCP, SFTP, SSH

@@ -14,7 +14,3 @@ Using IAM to Grant Access to ECS
 
    creating_a_user_and_granting_ecs_permissions
    ecs_custom_policies
-
-.. meta::
-   :description: Learn how to use IAM to grant access to Elastic Cloud Server on T Cloud Public.
-   :keywords: Elastic Cloud Server, ECS, IAM, Access Control, Permissions

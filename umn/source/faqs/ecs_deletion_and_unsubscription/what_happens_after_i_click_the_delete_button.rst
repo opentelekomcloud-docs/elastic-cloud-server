@@ -22,7 +22,3 @@ To delete selected ECSs, perform the following operations:
       :alt: **Figure 1** Deleting selected ECSs
 
       **Figure 1** Deleting selected ECSs
-
-.. meta::
-   :description: Learn how to delete Elastic Cloud Servers in T Cloud Public.
-   :keywords: Elastic Cloud Server, ECS, delete, T Cloud Public, management console

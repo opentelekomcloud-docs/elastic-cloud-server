@@ -320,7 +320,3 @@ After installing a GUI on a GPU-accelerated ECS, perform the following operation
    .. note::
 
       If a GPU-accelerated ECS has a GRID driver installed, you need to configure a license to use the GPU rendering capability. For details, see :ref:`Manually Installing a GRID Driver on a GPU-accelerated ECS <en-us_topic_0149610914>`.
-
-.. meta::
-   :description: Learn to install a GUI on Ubuntu Elastic Cloud Servers from T Cloud Public.
-   :keywords: Elastic Cloud Server, Ubuntu, GUI, GPU-accelerated, VNC

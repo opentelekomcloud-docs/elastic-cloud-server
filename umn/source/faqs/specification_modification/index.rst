@@ -14,7 +14,3 @@ Specification Modification
 
    why_do_the_disks_of_a_windows_ecs_go_offline_after_i_modify_the_ecs_specifications
    why_does_the_disk_attachment_of_a_linux_ecs_fail_after_i_modify_the_ecs_specifications
-
-.. meta::
-   :description: Learn why Windows ECS disks go offline or Linux disk attachments fail after modifying ECS specifications on T Cloud Public.
-   :keywords: Elastic Cloud Server, T Cloud Public, specification modification, disk offline, disk attachment

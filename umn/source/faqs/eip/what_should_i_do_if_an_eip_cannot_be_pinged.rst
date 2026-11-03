@@ -256,7 +256,3 @@ Generally, the default route of an OS will preferentially select the primary NIC
 -  If the ECS has multiple NICs and the EIP is bound to an extension NIC, configure policy routing on the ECS for network communication with the extension NIC.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
-
-.. meta::
-   :description: Troubleshoot why an EIP bound to your T Cloud Public ECS cannot be pinged.
-   :keywords: Elastic Cloud Server, EIP, ping, security group, ICMP

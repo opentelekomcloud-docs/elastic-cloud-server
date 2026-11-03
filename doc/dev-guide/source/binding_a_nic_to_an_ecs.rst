@@ -307,7 +307,3 @@ Procedure
              }
            ]
          }
-
-.. meta::
-   :description: Binding a NIC to an ECS
-   :keywords: Elastic Cloud Server

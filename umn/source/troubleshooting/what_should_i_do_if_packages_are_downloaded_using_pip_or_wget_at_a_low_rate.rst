@@ -27,7 +27,3 @@ Solution
 Run the following command to install openssl packages:
 
 **yum install openssl openssl-devel**
-
-.. meta::
-   :description: Resolve low download rates for PIP or wget on Elastic Cloud Server from T Cloud Public.
-   :keywords: Elastic Cloud Server, T Cloud Public, PIP, wget, openssl

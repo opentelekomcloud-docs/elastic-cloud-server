@@ -27,7 +27,3 @@ The cloud platform provides automatic recovery by default to restart ECSs throug
       -  Local disks
       -  Passthrough FPGA cards
       -  Passthrough InfiniBand NICs
-
-.. meta::
-   :description: Learn how T Cloud Public's Elastic Cloud Server automatically recovers from physical host faults via cold migration, ensuring high availability and minimal s...
-   :keywords: Elastic Cloud Server, auto recovery, high availability, cold migration, physical host fault

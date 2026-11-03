@@ -39,7 +39,3 @@ The following uses Internet Explorer as an example.
       **Figure 2** Internet Options
 
 #. Click **OK**, restart Internet Explorer, and open the folder on the FTP server again.
-
-.. meta::
-   :description: Fix FTP folder errors on T Cloud Public Elastic Cloud Server.
-   :keywords: FTP, Server, Error, Firewall, Permissions

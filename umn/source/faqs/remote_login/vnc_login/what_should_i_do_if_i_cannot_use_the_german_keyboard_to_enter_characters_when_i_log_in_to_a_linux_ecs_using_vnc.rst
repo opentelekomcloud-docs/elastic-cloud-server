@@ -56,7 +56,3 @@ Procedure
 -  For ECSs running CentOS 7, when **Caps Lock** is enabled, the following characters cannot be entered normally: Ö Ä Ü
 
    To enter these characters, hold **Shift** and press the letter key on the keyboard.
-
-.. meta::
-   :description: Learn how to fix German keyboard input issues on Linux ECS via VNC.
-   :keywords: Elastic Cloud Server, Linux, VNC, Keyboard, T Cloud Public

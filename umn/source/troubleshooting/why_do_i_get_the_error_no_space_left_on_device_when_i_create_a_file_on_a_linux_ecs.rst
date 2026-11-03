@@ -107,7 +107,3 @@ Solution
 .. |image5| image:: /_static/images/en-us_image_0191603936.png
 .. |image6| image:: /_static/images/en-us_image_0191603937.png
 .. |image7| image:: /_static/images/en-us_image_0191603938.png
-
-.. meta::
-   :description: Resolve "No space left on device" errors on T Cloud Public ECS.
-   :keywords: Elastic Cloud Server, Linux ECS, disk space, inode usage, No space left on device

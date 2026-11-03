@@ -63,7 +63,3 @@ Deleting a Tag
       :alt: **Figure 3** Deleting a tag
 
       **Figure 3** Deleting a tag
-
-.. meta::
-   :description: Learn how to create, delete, and search for Elastic Cloud Servers by tag in the T Cloud Public management console.
-   :keywords: Elastic Cloud Server, ECS, tags, management console, cloud provider

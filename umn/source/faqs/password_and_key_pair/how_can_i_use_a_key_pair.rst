@@ -44,7 +44,3 @@ Helpful Links
 
 -  :ref:`(Recommended) Creating a Key Pair on the Management Console <en-us_topic_0000001278350057>`
 -  :ref:`Logging In to a Linux ECS Using an SSH Key Pair <en-us_topic_0017955380>`
-
-.. meta::
-   :description: Learn how to create, download, and select key pairs for your Elastic Cloud Server on T Cloud Public to secure your login access.
-   :keywords: Elastic Cloud Server, Key Pair, T Cloud Public, ECS Console, SSH Login

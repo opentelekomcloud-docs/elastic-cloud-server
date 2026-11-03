@@ -46,7 +46,3 @@ Basic Concepts
 -  Virtual Private Cloud (VPC)
 
    VPC allows users to create private, isolated virtual networks. Users can define IP address segments, subnets, and security groups, assign EIPs, and allocate bandwidth in a VPC.
-
-.. meta::
-   :description: Overview
-   :keywords: Elastic Cloud Server

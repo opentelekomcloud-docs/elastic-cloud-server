@@ -15,7 +15,3 @@ For details about how to install a GUI on a Linux OS, see the following:
 -  :ref:`How Can I Install a GUI on an ECS Running CentOS 7? <en-us_topic_0101604498>`
 -  :ref:`How Can I Install a GUI on an ECS Running Ubuntu? <en-us_topic_0155136016>`
 -  :ref:`How Can I Install a GUI on an ECS Running Debian? <en-us_topic_0000001210472883>`
-
-.. meta::
-   :description: Learn how to install a GUI on Linux ECSs with T Cloud Public.
-   :keywords: Elastic Cloud Server, GUI, CLI, Linux, Windows

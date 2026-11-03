@@ -136,7 +136,3 @@ Solution
 
 .. |image1| image:: /_static/images/en-us_image_0288997600.png
 .. |image2| image:: /_static/images/en-us_image_0288997602.png
-
-.. meta::
-   :description: Resolve Windows ECS error 0x1104 on T Cloud Public.
-   :keywords: Elastic Cloud Server, Windows, Error Code 0x1104, Port 3389, Remote Desktop

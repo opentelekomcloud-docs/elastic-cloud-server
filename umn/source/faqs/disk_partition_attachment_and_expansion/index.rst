@@ -44,7 +44,3 @@ Disk Partition, Attachment, and Expansion
    why_does_the_disk_drive_letter_change_after_the_ecs_is_restarted
    how_can_i_obtain_data_disk_information_if_tools_are_uninstalled
    how_can_i_rectify_the_fault_that_may_occur_on_a_linux_ecs_with_an_nvme_ssd_disk_attached
-
-.. meta::
-   :description: Master disk partitioning, attachment, and expansion for your T Cloud Public ECS.
-   :keywords: Elastic Cloud Server, Disk Partition, Attachment, Expansion, EVS Disk

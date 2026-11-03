@@ -48,7 +48,3 @@ A project ID is required for some URLs when an API is called. Therefore, you nee
    versions
    microversions
    request_example
-
-.. meta::
-   :description: Request Format
-   :keywords: Elastic Cloud Server

@@ -22,7 +22,3 @@ Yes. If an ECS remains in the **Restarting** or **Stopping** state for over 30 m
 #. Click **OK**.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
-
-.. meta::
-   :description: Learn how to forcibly restart or stop an Elastic Cloud Server on T Cloud Public if it hangs for over 30 minutes.
-   :keywords: Elastic Cloud Server, ECS, Forcibly Restart, Forcibly Stop, T Cloud Public

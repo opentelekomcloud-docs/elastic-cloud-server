@@ -35,7 +35,3 @@ Solution
 #. Remotely connect to the ECS again.
 
    If the connection still fails, run the cmd command on the local server as the administrator, run the **netsh winsock reset** command to restore the default network connection configurations, and then retry the remote connection.
-
-.. meta::
-   :description: Resolve RDP connection failures on T Cloud Public ECS with internal error 4.
-   :keywords: Elastic Cloud Server, T Cloud Public, RDP, Remote Desktop Services, VNC

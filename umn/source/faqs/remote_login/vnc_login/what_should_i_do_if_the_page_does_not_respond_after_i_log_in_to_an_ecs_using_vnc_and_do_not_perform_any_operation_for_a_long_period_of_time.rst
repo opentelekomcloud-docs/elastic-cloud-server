@@ -10,7 +10,3 @@ If you log in to an ECS running Windows 7 through VNC using Internet Explorer 10
 In this case, you can click **AltGr** twice on the VNC page to activate the page.
 
 If the fault persists, contact technical support.
-
-.. meta::
-   :description: Fix unresponsive ECS VNC page after inactivity on T Cloud Public.
-   :keywords: Elastic Cloud Server, ECS, VNC, Windows 7, technical support
