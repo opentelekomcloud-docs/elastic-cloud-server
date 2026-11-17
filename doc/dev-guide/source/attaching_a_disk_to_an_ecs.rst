@@ -32,17 +32,17 @@ Procedure
 
       -  API
 
-         URI format: POST /v2/{tenant_id}/volumes
+         URI format: POST /v2/{project_id}/volumes
 
-         For details, see section "Creating an EVS Disk (Native OpenStack API v2)" in *Elastic Cloud Server API Reference*.
+         For details, see "Creating EVS Disks" in *Elastic Volume Service API Reference*.
 
       -  Request example
 
-         POST: https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/volumes
+         POST https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/volumes
 
          Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
 
-         Body
+         Body:
 
          .. code-block::
 
@@ -51,7 +51,7 @@ Procedure
                     "name": "openapi_vol02",
                     "availability_zone": "eu-de-01",
                     "description": "create for api test",
-                    "volume_type": "SATA",
+                    "volume_type": "SSD",
                     "size": 40
                 }
             }
@@ -81,7 +81,7 @@ Procedure
                 "created_at": "2018-05-16T11:19:33.992984",
                 "description": "create for api test",
                 "updated_at": null,
-                "volume_type": "SATA",
+                "volume_type": "SSD",
                 "name": "openapi_vol02",
                 "replication_status": "disabled",
                 "consistencygroup_id": null,
@@ -103,17 +103,17 @@ Procedure
 
    -  API
 
-      URI format: POST /v2/{tenant_id}/servers/{server_id}/os-volume_attachments
+      URI format: POST /v2/{project_id}/servers/{server_id}/os-volume_attachments
 
-      For details, see section "Attaching a Disk to an ECS" in *Elastic Cloud Server API Reference*.
+      For details, see section "Attaching an ECS Data Disk" in *Elastic Cloud Server API Reference*.
 
    -  Request example
 
-      https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/servers/9f4d9281-95e7-4915-a126-1ee597101e2e/os-volume_attachments
+      POST https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/servers/11e8f727-d439-4ed1-b3b8-33f46c0379c4/os-volume_attachments
 
       Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
 
-      Body
+      Body:
 
       .. code-block::
 
@@ -130,10 +130,10 @@ Procedure
 
          {
            "volumeAttachment": {
+             "device": "/dev/sdb",
+             "serverId": "11e8f727-d439-4ed1-b3b8-33f46c0379c4",
              "id": "51f45e08-1d4f-44c6-a4a9-84a488e0e8d3",
-             "volumeId": "51f45e08-1d4f-44c6-a4a9-84a488e0e8d3",
-             "serverId": "9f4d9281-95e7-4915-a126-1ee597101e2e",
-             "device": "/dev/sdb"
+             "volumeId": "51f45e08-1d4f-44c6-a4a9-84a488e0e8d3"
            }
          }
 
@@ -141,13 +141,13 @@ Procedure
 
    -  API
 
-      URI format: GET /v2/{tenant_id}/servers/{server_id}/os-volume_attachments
+      URI format: GET /v2/{project_id}/servers/{server_id}/os-volume_attachments
 
-      For details, see section "Querying Disks Attached to an ECS" in *Elastic Cloud Server API Reference*.
+      For details, see section "Listing Details About Disks Attached to an ECS" in *Elastic Cloud Server API Reference*.
 
    -  Request example
 
-      https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/servers/9f4d9281-95e7-4915-a126-1ee597101e2e/os-volume_attachments
+      GET https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/servers/11e8f727-d439-4ed1-b3b8-33f46c0379c4/os-volume_attachments
 
       Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
 
@@ -156,18 +156,18 @@ Procedure
       .. code-block::
 
          {
-           "volumeAttachments": [
-             {
-               "volumeId": "4fc0b4cc-9d6c-431c-be70-3dfeec2ff6e0",
-               "id": "4fc0b4cc-9d6c-431c-be70-3dfeec2ff6e0",
-               "device": "/dev/sda",
-               "serverId": "9f4d9281-95e7-4915-a126-1ee597101e2e"
-             },
-             {
-               "volumeId": "51f45e08-1d4f-44c6-a4a9-84a488e0e8d3",
-               "id": "51f45e08-1d4f-44c6-a4a9-84a488e0e8d3",
-               "device": "/dev/sdb",
-               "serverId": "9f4d9281-95e7-4915-a126-1ee597101e2e"
-             }
-           ]
+             "volumeAttachments": [
+                 {
+                     "device": "/dev/sda",
+                     "id": "51f45e08-1d4f-44c6-a4a9-84a488e0e8d3",
+                     "serverId": "11e8f727-d439-4ed1-b3b8-33f46c0379c4",
+                     "volumeId": "51f45e08-1d4f-44c6-a4a9-84a488e0e8d3"
+                 },
+                 {
+                     "device": "/dev/sdb",
+                     "id": "51f45e08-1d4f-44c6-a4a9-84a488e0e8d3",
+                     "serverId": "11e8f727-d439-4ed1-b3b8-33f46c0379c4",
+                     "volumeId": "51f45e08-1d4f-44c6-a4a9-84a488e0e8d3"
+                 }
+             ]
          }

@@ -40,11 +40,11 @@ Procedure
 
       -  Request example
 
-         POST: https://*{endpoint}*/v2.0/networks
+         POST https://*{endpoint}*/v2.0/networks
 
          Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
 
-         Body
+         Body:
 
          .. code-block::
 
@@ -53,7 +53,7 @@ Procedure
                 "shared": false,
                 "name": "demo-net",
                 "admin_state_up": true,
-                "tenant_id": "74610f3a5ad941998e91f076297ecf27"
+                "project_id": "74610f3a5ad941998e91f076297ecf27"
               }
             }
 
@@ -74,7 +74,7 @@ Procedure
                   "eu-de-02"
                 ],
                 "admin_state_up": true,
-                "tenant_id": "74610f3a5ad941998e91f076297ecf27",
+                "project_id": "74610f3a5ad941998e91f076297ecf27",
                 "provider:network_type": "vxlan",
                 "router:external": false
               }
@@ -91,11 +91,11 @@ Procedure
 
       -  Request example
 
-         POST: https://{endpoint}/v2.0/subnets
+         POST https://{endpoint}/v2.0/subnets
 
          Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
 
-         Body
+         Body:
 
          .. code-block::
 
@@ -104,7 +104,7 @@ Procedure
                     "name": "testsubnet",
                     "enable_dhcp": true,
                     "network_id": "c4a3019d-1ac0-4cfb-a838-2342eb992e6b",
-                    "tenant_id": "74610f3a5ad941998e91f076297ecf27",
+                    "project_id": "74610f3a5ad941998e91f076297ecf27",
                     "dns_nameservers": [
                         "8.8.8.8",
                         "8.8.8.7"
@@ -133,7 +133,7 @@ Procedure
                 "id": "877b5567-e8c6-4a0d-aabf-0f13da225fe5",
                 "enable_dhcp": true,
                 "network_id": "c4a3019d-1ac0-4cfb-a838-2342eb992e6b",
-                "tenant_id": "74610f3a5ad941998e91f076297ecf27",
+                "project_id": "74610f3a5ad941998e91f076297ecf27",
                 "dns_nameservers": [
                   "8.8.8.8",
                   "8.8.8.7"
@@ -161,11 +161,11 @@ Procedure
 
       -  Request example
 
-         POST: https://*{endpoint}*/v2.0/ports
+         POST https://*{endpoint}*/v2.0/ports
 
          Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
 
-         Body
+         Body:
 
          .. code-block::
 
@@ -180,7 +180,7 @@ Procedure
                     ],
                     "name": "test",
                     "network_id": "c4a3019d-1ac0-4cfb-a838-2342eb992e6b",
-                    "tenant_id": "74610f3a5ad941998e91f076297ecf27"
+                    "project_id": "74610f3a5ad941998e91f076297ecf27"
                 }
             }
 
@@ -202,7 +202,7 @@ Procedure
                 ],
                 "mac_address": "fa:16:3e:db:91:f6",
                 "network_id": "c4a3019d-1ac0-4cfb-a838-2342eb992e6b",
-                "tenant_id": "74610f3a5ad941998e91f076297ecf27",
+                "project_id": "74610f3a5ad941998e91f076297ecf27",
                 "device_id": "",
                 "device_owner": "",
                 "security_groups": [
@@ -222,17 +222,17 @@ Procedure
 
    -  API
 
-      URI format: POST /v2/{tenant_id}/servers/{server_id}/os-interface
+      URI format: POST /v2/{project_id}/servers/{server_id}/os-interface
 
       For details, see section "Adding a NIC to an ECS" in *Elastic Cloud Server API Reference*.
 
    -  Request example
 
-      POST: https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/servers/9f4d9281-95e7-4915-a126-1ee597101e2e/os-interface
+      POST https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/servers/11e8f727-d439-4ed1-b3b8-33f46c0379c4/os-interface
 
       Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
 
-      Body
+      Body:
 
       .. code-block::
 
@@ -265,13 +265,13 @@ Procedure
 
    -  API
 
-      URI format: GET /v2/{tenant_id}/servers/{server_id}/os-interface
+      URI format: GET /v2/{project_id}/servers/{server_id}/os-interface
 
-      For details, see section "Querying ECS NICs" in *Elastic Cloud Server API Reference*.
+      For details, see section "Listing NICs of an ECS" in *Elastic Cloud Server API Reference*.
 
    -  Request example
 
-      GET: https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/servers/9f4d9281-95e7-4915-a126-1ee597101e2e/os-interface
+      GET https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/servers/11e8f727-d439-4ed1-b3b8-33f46c0379c4/os-interface
 
       Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
 

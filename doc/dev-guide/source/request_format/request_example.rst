@@ -9,7 +9,7 @@ Request Example
 
    Obtain a token.
 
-   -  POST: https://*{endpoint}*/v3/auth/tokens
+   -  POST https://*{endpoint}*/v3/auth/tokens
 
    -  Headers
 
@@ -59,11 +59,11 @@ Request Example
 
 #. Initiate a request and access the API for viewing details about an ECS.
 
-   -  GET: https://*{endpoint}*/v2/fb770eb43f934b5a8bda955642b954b9/servers/detail
+   -  GET https://*{endpoint}*/v2.1/{project_id}/servers/detail?changes-since={changes-since}&image={image}&flavor={flavor}&name={name}&status={status}&limit={limit}&marker={marker}&not-tags={not-tags}&reservation_id={reservation_id}&ip={ip}
 
-      -  URI format: GET /v2/{tenant_id}/servers/detail{?changes-since,image,flavor,name,status,limit,marker,not-tags,reservation_id,all_tenants}
-      -  tenant_id: fb770eb43f934b5a8bda955642b954b9
-      -  The fields, **changes-since,image,flavor,name,status,limit,marker,not-tags,reservation_id,all_tenants**, following the question mark (?) are optional for viewing an ECS.
+      -  URI format: GET /v2.1/{project_id}/servers/detail?changes-since={changes-since}&image={image}&flavor={flavor}&name={name}&status={status}&limit={limit}&marker={marker}&not-tags={not-tags}&reservation_id={reservation_id}&ip={ip}
+      -  project_id: fb770eb43f934b5a8bda955642b954b9
+      -  The fields, **changes-since,image,flavor,name,status,limit,marker,not-tags,reservation_id,ip**, following the question mark (?) are optional for viewing an ECS.
 
    -  Headers
 
@@ -80,7 +80,7 @@ Request Example
          {
            "servers": [
              {
-               "tenant_id": "fb770eb43f934b5a8bda955642b954b9",
+               "project_id": "fb770eb43f934b5a8bda955642b954b9",
                "addresses": {
                  "196b63ba-4201-4b55-b5aa-62ab6085d884": [
                    {
@@ -160,7 +160,7 @@ Request Example
                "status": "ACTIVE"
              },
              {
-               "tenant_id": "fb770eb43f934b5a8bda955642b954b9",
+               "project_id": "fb770eb43f934b5a8bda955642b954b9",
                "addresses": {
                  "21bcff3b-3a71-4304-ab62-dad0b305890e": [
                    {

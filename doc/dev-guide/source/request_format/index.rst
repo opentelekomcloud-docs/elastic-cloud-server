@@ -20,7 +20,7 @@ URLs are in the format of https://Endpoint/uri. :ref:`Table 1 <en-us_topic_01341
    +===========+=============================================================================================================================================================================+
    | Endpoint  | Specifies the URL that is the entry point for a web service. Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__. |
    +-----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | URI       | Specifies a resource path, which is an API access path and obtained from the API URI module, for example, /v2/{tenant_id}/servers.                                          |
+   | URI       | Specifies a resource path, which is an API access path and obtained from the API URI module, for example, /v2/{project_id}/servers.                                         |
    +-----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 A project ID is required for some URLs when an API is called. Therefore, you need to obtain a project ID on the console before calling an API. To do so, perform the following operations:
