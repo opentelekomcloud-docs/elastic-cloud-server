@@ -15,8 +15,8 @@ Constraints
 
 -  You can modify the ECS specifications only when the ECS is stopped.
 -  The EVS disk capacity of the ECS cannot be reduced during the specifications modification.
--  ECS specifications (vCPU or memory) reduction degrades the ECS performance.
--  Certain ECSs do not support specifications modification. For details about available ECS types as well as their functions and usage on the public cloud, see section "Notes" in `Instances and Application Scenarios <https://docs.otc.t-systems.com/en-us/usermanual/ecs/en-us_topic_0035470096.html>`__.
+-  Downgrading ECS specifications (vCPU or memory) deteriorates the ECS performance.
+-  Certain ECSs do not support specifications modification. For details about available ECS types as well as their functions and usage on the public cloud, see section "Notes" in `ECS Specifications <https://docs.otc.t-systems.com/en-us/usermanual/ecs/en-us_topic_0132345719.html>`__.
 
 Involved APIs
 -------------
@@ -34,17 +34,23 @@ Procedure
 
    -  API
 
-      URI format: POST /v2/{tenant_id}/servers/{server_id}/action
+      URI format: POST /v2/{project_id}/servers/{server_id}/action
 
       For details, see section "Modifying the Specifications of an ECS" in *Elastic Cloud Server API Reference*.
 
    -  Request example
 
+      POST https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/servers/11e8f727-d439-4ed1-b3b8-33f46c0379c4/action
+
+      Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
+
+      Body:
+
       .. code-block::
 
          {
              "resize": {
-                           "flavorRef": "4"
+                           "flavorRef": "c3.4xlarge.2"
              }
          }
 
@@ -54,15 +60,21 @@ Procedure
 
 #. Confirm the specifications modification.
 
-   The ECS must be in **resized** state. That is, the **OS-EXT-STS:vm_state** value of the ECS must be **resized**.
+   The ECS status must be **resized**. That is, the **OS-EXT-STS:vm_state** value of the ECS must be **resized**.
 
    -  API
 
-      URI format: POST /v2/{tenant_id}/servers/{server_id}/action
+      URI format: POST /v2/{project_id}/servers/{server_id}/action
 
-      For details, see section "Confirming ECS Specifications Modification" in *Elastic Cloud Server API Reference*.
+      For details, see section "Confirming the Specifications Modification of an ECS" in *Elastic Cloud Server API Reference*.
 
    -  Request example
+
+      POST https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/servers/11e8f727-d439-4ed1-b3b8-33f46c0379c4/action
+
+      Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
+
+      Body:
 
       .. code-block::
 
@@ -78,17 +90,23 @@ Procedure
 
    Fallback notice:
 
-   The ECS must be in **resized** state. That is, the **OS-EXT-STS:vm_state** value of the ECS must be **resized**.
+   The ECS status must be **resized**. That is, the **OS-EXT-STS:vm_state** value of the ECS must be **resized**.
 
    The data modified during specifications modification will be lost after the rollback.
 
    -  API
 
-      URI format: POST /v2/{tenant_id}/servers/{server_id}/action
+      URI format: POST /v2/{project_id}/servers/{server_id}/action
 
       For details, see section "Rolling Back ECS Specifications Modification" in *Elastic Cloud Server API Reference*.
 
    -  Request example
+
+      POST https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/servers/11e8f727-d439-4ed1-b3b8-33f46c0379c4/action
+
+      Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
+
+      Body:
 
       .. code-block::
 

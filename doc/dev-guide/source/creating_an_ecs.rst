@@ -8,17 +8,18 @@ Creating an ECS
 Scenarios
 ---------
 
-An ECS with EVS disks is required.
+This section describes how to create an ECS by calling APIs.
 
-An ECS can be created using a volume or image. This section uses an image as an example to describe how to create an ECS.
+You can create an ECS using a volume or an image. This section describes how to create an ECS using a specified image.
 
 Involved APIs
 -------------
 
 Creating an ECS involves viewing flavors and AZs as well as creating EVS disks. The following APIs are required:
 
+-  API for viewing AZs
 -  API for viewing details about ECS flavors
--  API for viewing details about images
+-  API for viewing images
 -  API for viewing networks
 -  API for creating and importing an SSH key pair
 -  API for creating an ECS
@@ -27,19 +28,60 @@ Creating an ECS involves viewing flavors and AZs as well as creating EVS disks. 
 Procedure
 ---------
 
+#. Determine the AZ where the ECS is located.
+
+   a. View AZs.
+
+      -  API
+
+         URI format: GET /v2/{project_id}/os-availability-zone
+
+         For details, see section "Listing AZs" in *Elastic Cloud Server API Reference*.
+
+      -  Request example
+
+         GET https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/os-availability-zone
+
+         Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
+
+      -  Response example
+
+         .. code-block::
+
+             {
+              "availabilityZoneInfo": [
+                {
+                  "hosts": null,
+                  "zoneState": {
+                    "available": true
+                  },
+                  "zoneName":"eu-de-01"
+                },
+                {
+                  "hosts": null,
+                  "zoneState": {
+                    "available": true
+                  },
+                  "zoneName":"eu-de-02"
+                }
+              ]
+            }
+
+   b. Select an AZ based on site requirements and record the AZ (**zoneName**).
+
 #. Determine the ECS flavor.
 
    a. View ECS flavors.
 
       -  API
 
-         URI format: GET /v2/{tenant_id}/flavors/detail{?minDisk,minRam,is_public,sort_key,sort_dir}
+         URI format: GET /v2/{project_id}/flavors?minDisk={minDisk}&minRam={minRam}&sort_key={sort_key}&sort_dir={sort_dir}
 
-         The fields following the question mark (?) are optional for viewing flavors. For details, see section `Querying Details About ECS Flavors <https://docs.otc.t-systems.com/en-us/api/ecs/en-us_topic_0020212658.html>`__.
+         The fields following the question mark (?) are optional for viewing flavors. For details, see section "Listing ECS Flavors" in *Elastic Cloud Server API Reference*.
 
       -  Request example
 
-         GET: https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/flavors/detail
+         GET https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/flavors
 
          Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
 
@@ -50,26 +92,18 @@ Procedure
             {
                 "flavors": [
                     {
-                        "name": "c3.2xlarge.2",
+                        "id": "c3.2xlarge.2",
                         "links": [
                             {
-                                "href": "https://compute.region.xxx.com/v2.1/743b4c0428d94531b9f2add666642e6b/flavors/c3.2xlarge.2",
+                                "href": "https://xxx/v2.1/74610f3a5ad941998e91f076297ecf27/flavors/c3.2xlarge.2",
                                 "rel": "self"
                             },
                             {
-                                "href": "https://compute.region.xxx.com/743b4c0428d94531b9f2add666642e6b/flavors/c3.2xlarge.2",
+                                "href": "https://xxx/74610f3a5ad941998e91f076297ecf27/flavors/c3.2xlarge.2",
                                 "rel": "bookmark"
                             }
                         ],
-                        "ram": 16384,
-                        "OS-FLV-DISABLED:disabled": false,
-                        "vcpus": 8,
-                        "swap": "",
-                        "os-flavor-access:is_public": true,
-                        "rxtx_factor": 1,
-                        "OS-FLV-EXT-DATA:ephemeral": 0,
-                        "disk": 0,
-                        "id": "c3.2xlarge.2"
+                        "name": "c3.2xlarge.2"
                     }
                 ]
             }
@@ -82,63 +116,88 @@ Procedure
 
       -  API
 
-         URI format: GET /v2/{tenant_id}/images/detail
+         URI format: GET /v2/images
 
-         For details, see section "Querying Image Details" in *Elastic Cloud Server API Reference*.
+         For details, see section "Querying Images" in *Image Management Service API Reference*.
 
       -  Request example
 
-         GET: https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/images/detail
+         GET https://*{endpoint}*/v2/images
 
          Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
 
       -  Response example
 
-         .. code-block::
+         ::
 
             {
+              "schema": "/v2/schemas/images",
+              "next": "/v2/images?__isregistered=true&marker=0328c25e-c840-4496-81ac-c4e01b214b1f&__imagetype=gold&limit=2",
               "images": [
                 {
-                  "OS-EXT-IMG-SIZE:size": 0,
-                  "metadata": {
-                    "__os_type": "Linux",
-                    "hw_vif_multiqueue_enabled": "true",
-                    "__imagetype": "gold",
-                    "__quick_start": "true",
-                    "virtual_env_type": "FusionCompute",
-                    "__support_xen": "true",
-                    "__support_kvm": "true",
-                    "__image_source_type": "uds",
-                    "__platform": "EulerOS",
-                    "__os_version": "EulerOS 2.2 64bit",
-                    "__os_bit": "64",
-                    "__isregistered": "false"
-                  },
-                  "created": "2018-05-14T06:13:50Z",
-                  "minRam": 0,
-                  "name": "DBS-MySQL-Image_2.1.3.3",
-                  "progress": 100,
-                  "links": [
-                    {
-                      "rel": "self",
-                      "href": "https://None/v2/74610f3a5ad941998e91f076297ecf27/images/11e8f727-d439-4ed1-b3b8-33f46c0379c4"
-                    },
-                    {
-                      "rel": "bookmark",
-                      "href": "https://None/74610f3a5ad941998e91f076297ecf27/images/11e8f727-d439-4ed1-b3b8-33f46c0379c4"
-                    },
-                    {
-                      "rel": "alternate",
-                      "href": "https://None/images/11e8f727-d439-4ed1-b3b8-33f46c0379c4",
-                      "type": "application/vnd.openstack.image"
-                    }
-                  ],
-                  "id": "11e8f727-d439-4ed1-b3b8-33f46c0379c4",
-                  "updated": "2018-05-14T06:13:52Z",
-                  "minDisk": 40,
-                  "status": "ACTIVE"
+                  "schema": "/v2/schemas/image",
+                  "min_disk": 100,
+                  "created_at": "2018-09-06T14:03:27Z",
+                  "__image_source_type": "uds",
+                  "container_format": "bare",
+                  "file": "/v2/images/bc6bed6e-ba3a-4447-afcc-449174a3eb52/file",
+                  "updated_at": "2018-09-06T15:17:33Z",
+                  "protected": true,
+                  "checksum": "d41d8cd98f00b204e9800998ecf8427e",
+                  "id": "bc6bed6e-ba3a-4447-afcc-449174a3eb52",
+                  "__isregistered": "true",
+                  "min_ram": 2048,
+                  "__lazyloading": "true",
+                  "owner": "1bed856811654c1cb661a6ca845ebc77",
+                  "__os_type": "Linux",
+                  "__imagetype": "gold",
+                  "visibility": "public",
+                  "virtual_env_type": "FusionCompute",
+                  "tags": [],
+                  "__platform": "CentOS",
+                  "size": 0,
+                  "__os_bit": "64",
+                  "__os_version": "CentOS 7.3 64bit",
+                  "name": "CentOS 7.3 64bit vivado",
+                  "self": "/v2/images/bc6bed6e-ba3a-4447-afcc-449174a3eb52",
+                  "disk_format": "zvhd2",
+                  "virtual_size": null,
+                  "hw_firmware_type": "bios",
+                  "status": "active"
+                },
+                {
+                  "schema": "/v2/schemas/image",
+                  "min_disk": 100,
+                  "created_at": "2018-09-06T14:03:05Z",
+                  "__image_source_type": "uds",
+                  "container_format": "bare",
+                  "file": "/v2/images/0328c25e-c840-4496-81ac-c4e01b214b1f/file",
+                  "updated_at": "2018-09-25T14:27:40Z",
+                  "protected": true,
+                  "checksum": "d41d8cd98f00b204e9800998ecf8427e",
+                  "id": "0328c25e-c840-4496-81ac-c4e01b214b1f",
+                  "__isregistered": "true",
+                  "min_ram": 2048,
+                  "__lazyloading": "true",
+                  "owner": "1bed856811654c1cb661a6ca845ebc77",
+                  "__os_type": "Linux",
+                  "__imagetype": "gold",
+                  "visibility": "public",
+                  "virtual_env_type": "FusionCompute",
+                  "tags": [],
+                  "__platform": "CentOS",
+                  "size": 0,
+                  "__os_bit": "64",
+                  "__os_version": "CentOS 7.3 64bit",
+                  "name": "CentOS 7.3 64bit with sdx",
+                  "self": "/v2/images/0328c25e-c840-4496-81ac-c4e01b214b1f",
+                  "disk_format": "zvhd2",
+                  "virtual_size": null,
+                  "hw_firmware_type": "bios",
+                  "status": "active"
                 }
-              ]
+              ],
+              "first": "/v2/images?__isregistered=true&__imagetype=gold&limit=2"
             }
 
    b. Select an image based on site requirements and record the image ID.
@@ -149,13 +208,13 @@ Procedure
 
       -  API
 
-         URI format: GET /v2/{tenant_id}/os-networks
+         URI format: GET /v2/{project_id}/os-networks
 
          For details, see section "Querying Networks" in *Elastic Cloud Server API Reference*.
 
       -  Request example
 
-         GET: https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/os-networks
+         GET https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/os-networks
 
          Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
 
@@ -189,17 +248,17 @@ Procedure
 
       -  API
 
-         URI format: POST /v2/{tenant_id}/os-keypairs
+         URI format: POST /v2/{project_id}/os-keypairs
 
          For details, see section "Creating and Importing an SSH Key Pair" in *Elastic Cloud Server API Reference*.
 
       -  Request example
 
-         POST: https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/os-keypairs
+         POST https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/os-keypairs
 
          Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
 
-         Body
+         Body:
 
          .. code-block::
 
@@ -210,6 +269,10 @@ Procedure
                     "user_id": "fake"
                 }
             }
+
+         .. note::
+
+            **user_id** is supported in microversion 2.10 and later.
 
       -  Response example
 
@@ -229,17 +292,17 @@ Procedure
 
       -  API
 
-         URI format: POST /v2/{tenant_id}/os-keypairs
+         URI format: POST /v2/{project_id}/os-keypairs
 
          For details, see section "Creating and Importing an SSH Key Pair" in *Elastic Cloud Server API Reference*.
 
       -  Request example
 
-         POST: https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/os-keypairs
+         POST https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/os-keypairs
 
          Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
 
-         Body
+         Body:
 
          .. code-block::
 
@@ -247,7 +310,7 @@ Procedure
                 "keypair": {
                     "public_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDY8wMTdBYiJgi62o6eShoOlSKx3CZ3cE6PHisDblfK3Y0Bg7EHV7iV9c74pqsrIhK0xuGUuO1NxDQWbkwLTPN4F9Iy5CIYohLuMIpbln6LDtfRPpdhEh3lxL8MM61gyfpKzeKkwkEpSFj27Rgh6zCyJgBpkA2A0HTP737UlitahL4faCWDIS+Vj6mbcfkWiMhuMCzTZgSKAZ4PfoG4B5HJhR52C6A4XLiQFT9heh9gnIsIG+uTogTKUbcJKuN7M6AraJpul6eHhV9YI4433sDmuiBF/njvreVPWwAHlAkgT9I8q1T/cfEFiwzXpdGbkK5O8NC7K+qNbbdKihlahONt Generated-by-Nova\n",
                     "type": "ssh",
-                    "name": "demo2",
+                    "name": "demo1",
                     "user_id": "fake"
                 }
             }
@@ -260,35 +323,35 @@ Procedure
               "keypair": {
                 "public_key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDY8wMTdBYiJgi62o6eShoOlSKx3CZ3cE6PHisDblfK3Y0Bg7EHV7iV9c74pqsrIhK0xuGUuO1NxDQWbkwLTPN4F9Iy5CIYohLuMIpbln6LDtfRPpdhEh3lxL8MM61gyfpKzeKkwkEpSFj27Rgh6zCyJgBpkA2A0HTP737UlitahL4faCWDIS+Vj6mbcfkWiMhuMCzTZgSKAZ4PfoG4B5HJhR52C6A4XLiQFT9heh9gnIsIG+uTogTKUbcJKuN7M6AraJpul6eHhV9YI4433sDmuiBF/njvreVPWwAHlAkgT9I8q1T/cfEFiwzXpdGbkK5O8NC7K+qNbbdKihlahONt Generated-by-Nova\n",
                 "user_id": "f79791beca3c48159ac2553fff22e166",
-                "name": "demo2",
+                "name": "demo1",
                 "fingerprint": "dd:44:45:49:d9:f6:4f:c0:24:2d:81:aa:c4:4b:83:c2"
               }
             }
 
-   c. Record the name in the response body, for example, **demo2**.
+   c. Record the name in the response body, for example, **demo1**.
 
 #. Create an ECS authenticated using the key pair.
 
    -  API
 
-      URI format: POST /v2/{tenant_id}/servers
+      URI format: POST /v2/{project_id}/servers
 
       For details about API constraints and request parameters, see section "Creating an ECS" in *Elastic Cloud Server API Reference*.
 
       .. note::
 
-         In this example, the ECS is created using a specified image. Therefore,
+         In this example, the ECS is created using a specified image.
 
          -  In **block_device_mapping_v2**, set **source_type** to **image**, **uuid** to the image ID, **destination_type** to **volume**, and **boot_index** to **0**.
          -  The **volume_size** must be greater than or equal to the minimum value specified in the image metadata.
 
    -  Request example
 
-      POST: https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/servers
+      POST https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/servers
 
       Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
 
-      Body
+      Body:
 
       .. code-block::
 
@@ -299,16 +362,16 @@ Procedure
                  "block_device_mapping_v2": [{
                  "source_type": "image",
                  "destination_type": "volume",
-                 "volume_type": "SATA",
+                 "volume_type": "SSD",
                        "volume_size": "40",
                        "delete_on_termination": "true",
                  "uuid": "11e8f727-d439-4ed1-b3b8-33f46c0379c4",
                  "boot_index": "0"
                  }],
                  "networks": [{
-                     "uuid": "fb68519f-a7c0-476e-98d4-2e4cf6de6def"
+                     "uuid": "07a9557d-4256-48ae-847c-415a9c8f7ff6"
                  }],
-                 "key_name": "demo2",
+                 "key_name": "demo1",
                  "availability_zone": "eu-de-01"
              }
          }
@@ -328,11 +391,11 @@ Procedure
              "links": [
                {
                  "rel": "self",
-                 "href": "https://None/v2/74610f3a5ad941998e91f076297ecf27/servers/6d311127-bce1-48db-bf0f-cac9f8f7f077"
+                 "href": "https://{endpoint}/v2/74610f3a5ad941998e91f076297ecf27/servers/6d311127-bce1-48db-bf0f-cac9f8f7f077"
                },
                {
                  "rel": "bookmark",
-                 "href": "https://None/74610f3a5ad941998e91f076297ecf27/servers/6d311127-bce1-48db-bf0f-cac9f8f7f077"
+                 "href": "https://{endpoint}/74610f3a5ad941998e91f076297ecf27/servers/6d311127-bce1-48db-bf0f-cac9f8f7f077"
                }
              ],
              "id": "6d311127-bce1-48db-bf0f-cac9f8f7f077",
@@ -344,17 +407,17 @@ Procedure
 
    -  API
 
-      URI format: GET /v2/{tenant_id}/servers/{server_id}
+      URI format: GET /v2/{project_id}/servers/{server_id}
 
       For details, see section "Querying Details About an ECS" in *Elastic Cloud Server API Reference*.
 
    -  Request example
 
-      GET: https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/servers/0c71c0da-8852-4c56-a1d1-3a9b9bcb6da6
+      GET https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/servers/11e8f727-d439-4ed1-b3b8-33f46c0379c4
 
       Where,
 
-      **0c71c0da-8852-4c56-a1d1-3a9b9bcb6da6** is the UUID of the created ECS.
+      **11e8f727-d439-4ed1-b3b8-33f46c0379c4** is the UUID of the created ECS.
 
       Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
 
@@ -364,7 +427,7 @@ Procedure
 
          {
            "server": {
-             "tenant_id": "74610f3a5ad941998e91f076297ecf27",
+             "project_id": "74610f3a5ad941998e91f076297ecf27",
              "addresses": {
                "2a6f4aa6-d93e-45f5-a8cb-b030dbf8cd68": [
                  {
@@ -382,15 +445,15 @@ Procedure
              "links": [
                {
                  "rel": "self",
-                 "href": "https://None/v2/74610f3a5ad941998e91f076297ecf27/servers/0c71c0da-8852-4c56-a1d1-3a9b9bcb6da6"
+                 "href": "https://{endpoint}/v2/74610f3a5ad941998e91f076297ecf27/servers/11e8f727-d439-4ed1-b3b8-33f46c0379c4"
                },
                {
                  "rel": "bookmark",
-                 "href": "https://None/74610f3a5ad941998e91f076297ecf27/servers/0c71c0da-8852-4c56-a1d1-3a9b9bcb6da6"
+                 "href": "https://{endpoint}/74610f3a5ad941998e91f076297ecf27/servers/11e8f727-d439-4ed1-b3b8-33f46c0379c4"
                }
              ],
              "OS-EXT-STS:power_state": 1,
-             "id": "0c71c0da-8852-4c56-a1d1-3a9b9bcb6da6",
+             "id": "11e8f727-d439-4ed1-b3b8-33f46c0379c4",
              "os-extended-volumes:volumes_attached": [
                {
                  "id": "b551445a-e749-4d53-932a-638a455cb6c3"
@@ -401,7 +464,7 @@ Procedure
                "links": [
                  {
                    "rel": "bookmark",
-                   "href": "https://None/74610f3a5ad941998e91f076297ecf27/images/11e8f727-d439-4ed1-b3b8-33f46c0379c4"
+                   "href": "https://{endpoint}/74610f3a5ad941998e91f076297ecf27/images/11e8f727-d439-4ed1-b3b8-33f46c0379c4"
                  }
                ],
                "id": "11e8f727-d439-4ed1-b3b8-33f46c0379c4"
@@ -417,7 +480,7 @@ Procedure
                "links": [
                  {
                    "rel": "bookmark",
-                   "href": "https://None/74610f3a5ad941998e91f076297ecf27/flavors/c3.2xlarge.2"
+                   "href": "https://{endpoint}/74610f3a5ad941998e91f076297ecf27/flavors/c3.2xlarge.2"
                  }
                ],
                "id": "c3.2xlarge.2"

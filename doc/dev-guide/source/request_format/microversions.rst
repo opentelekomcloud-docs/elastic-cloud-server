@@ -27,7 +27,7 @@ Since microversion 2.27, the client can also use the following header to specify
 
 Openstack-API-Version: compute 2.27
 
-In the following response example, the maximum microversion is 2.14 and the minimum one is 2.1:
+In the following response example, the maximum microversion is 2.60 and the minimum one is 2.1:
 
 .. code-block::
 
@@ -55,7 +55,7 @@ In the following response example, the maximum microversion is 2.14 and the mini
                  }
              ],
              "status": "CURRENT",
-             "version": "2.14",
+             "version": "2.60",
              "min_version": "2.1",
              "updated": "2013-07-23T11:33:21Z"
          }
@@ -69,7 +69,7 @@ For example, you are required to use the API for details about an ECS to view th
 
 -  **Using a v2 API without a microversion**
 
-   -  GET: https://*{endpoint}*/v2/74610f3a5ad941998e91f076297ecf27/servers/detail
+   -  GET https://*{endpoint}*/v2/{project_id}/servers/detail
 
       Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
 
@@ -88,7 +88,7 @@ For example, you are required to use the API for details about an ECS to view th
          {
            "servers": [
              {
-               "tenant_id": "74610f3a5ad941998e91f076297ecf27",
+               "project_id": "74610f3a5ad941998e91f076297ecf27",
                "addresses": {
                  "05d4fb93-84e5-4964-853b-32992ffef627": [
                    {
@@ -174,7 +174,7 @@ For example, you are required to use the API for details about an ECS to view th
 
 -  **Using a v2.1 API with a microversion**
 
-   -  GET: https://*{endpoint}*/v2.1/74610f3a5ad941998e91f076297ecf27/servers/detail
+   -  GET https://*{endpoint}*/v2.1/{project_id}/servers/detail
 
       Obtain the endpoint from `Regions and Endpoints <https://docs.otc.t-systems.com/en-us/endpoint/index.html>`__.
 
@@ -184,7 +184,7 @@ For example, you are required to use the API for details about an ECS to view th
       Content-Type                 application/json
       ============================ ================
       X-Auth-Token                 ${token}
-      X-OpenStack-Nova-API-Version 2.26
+      X-OpenStack-Nova-API-Version 2.3
       ============================ ================
 
    -  Response body
@@ -194,7 +194,7 @@ For example, you are required to use the API for details about an ECS to view th
          {
            "servers": [
              {
-               "tenant_id": "74610f3a5ad941998e91f076297ecf27",
+               "project_id": "74610f3a5ad941998e91f076297ecf27",
                "addresses": {
                  "05d4fb93-84e5-4964-853b-32992ffef627": [
                    {
