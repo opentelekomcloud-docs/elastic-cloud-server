@@ -99,7 +99,10 @@ Request
    |                 |                 |                  |                                                                                                                                                                                                           |
    |                 |                 |                  | **Constraints**                                                                                                                                                                                           |
    |                 |                 |                  |                                                                                                                                                                                                           |
-   |                 |                 |                  | N/A                                                                                                                                                                                                       |
+   |                 |                 |                  | The **delete_volume** relies on the **delete_on_termination** setting of the disks attached to the ECS.                                                                                                   |
+   |                 |                 |                  |                                                                                                                                                                                                           |
+   |                 |                 |                  | -  If **delete_on_termination** is set to **true** and **delete_volume** to **false**, the disks will be deleted.                                                                                         |
+   |                 |                 |                  | -  If **delete_on_termination** is set to **false** and **delete_volume** to **true**, the disks will be deleted.                                                                                         |
    |                 |                 |                  |                                                                                                                                                                                                           |
    |                 |                 |                  | **Range**                                                                                                                                                                                                 |
    |                 |                 |                  |                                                                                                                                                                                                           |
@@ -175,9 +178,9 @@ Example Request
           ],
           "delete_publicip": false,
           "delete_volume": false
-              }
+         }
 
--  Delete ECSs whose IDs are **616fb98f-46ca-475e-917e-2563e5a8cd19**, **616fb98f-46ca-475e-917e-2563e5a8ef20**, and **616fb98f-46ca-475e-917e-2563e5a8gh21** in batches.
+-  Delete ECSs whose IDs are **616fb98f-46ca-475e-917e-2563e5a8cd19**, **616fb98f-46ca-475e-917e-2563e5a8ef20**, and **77bd8659-aceb-464e-acda-7b9d664b99aa** in a batch.
 
    .. code-block:: text
 
@@ -194,7 +197,7 @@ Example Request
                   "id": "616fb98f-46ca-475e-917e-2563e5a8ef20"
               },
               {
-                  "id": "616fb98f-46ca-475e-917e-2563e5a8gh21"
+                  "id": "77bd8659-aceb-464e-acda-7b9d664b99aa"
               }
           ]
               }

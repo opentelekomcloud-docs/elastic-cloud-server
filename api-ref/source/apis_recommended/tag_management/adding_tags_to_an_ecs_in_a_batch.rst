@@ -14,13 +14,15 @@ Function
 Constraints
 -----------
 
--  An ECS allows a maximum of 10 tags.
+-  An ECS can have a maximum of 10 tags.
 
 -  This API is idempotent.
 
    During tag creation, if a tag exists (both the key and value are the same as those of an existing tag), the tag is successfully processed by default.
 
 -  A new tag will overwrite the original one if their keys are the same and values are different.
+
+-  This API supports checking fine-grained permissions for enterprise projects. For details, see :ref:`ecs:cloudServers:batchSetServerTags <en-us_topic_0103071521>`.
 
 URI
 ---
@@ -87,7 +89,7 @@ Request
    |                 |                 |                  |                                                                                               |
    |                 |                 |                  | **Constraints**                                                                               |
    |                 |                 |                  |                                                                                               |
-   |                 |                 |                  | N/A                                                                                           |
+   |                 |                 |                  | A maximum of 10 tags are allowed. They cannot start with **\_sys\_**.                         |
    |                 |                 |                  |                                                                                               |
    |                 |                 |                  | **Range**                                                                                     |
    |                 |                 |                  |                                                                                               |
@@ -131,7 +133,7 @@ Request
    |                 |                 |                 |                                                                          |
    |                 |                 |                 | **Range**                                                                |
    |                 |                 |                 |                                                                          |
-   |                 |                 |                 | -  A maximum of 36 characters are supported.                             |
+   |                 |                 |                 | -  A maximum of 36 characters are allowed.                               |
    |                 |                 |                 | -  Only letters, digits, hyphens (-), and underscores (_) are supported. |
    |                 |                 |                 |                                                                          |
    |                 |                 |                 | **Default Value**                                                        |
@@ -148,7 +150,7 @@ Request
    |                 |                 |                 |                                                                          |
    |                 |                 |                 | **Range**                                                                |
    |                 |                 |                 |                                                                          |
-   |                 |                 |                 | -  A maximum of 43 characters are supported.                             |
+   |                 |                 |                 | -  A maximum of 43 characters are allowed.                               |
    |                 |                 |                 | -  Only letters, digits, hyphens (-), and underscores (_) are supported. |
    |                 |                 |                 |                                                                          |
    |                 |                 |                 | **Default Value**                                                        |

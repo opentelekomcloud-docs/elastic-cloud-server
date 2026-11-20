@@ -10,6 +10,7 @@ Function
 
 -  This API is used to query the tags of a specified ECS.
 -  The Tag Management Service (TMS) uses this API to query all tags of an ECS.
+-  This API supports checking fine-grained permissions for enterprise projects. For details, see :ref:`ecs:cloudServers:showServerTags <en-us_topic_0103071521>`.
 
 URI
 ---
@@ -81,7 +82,7 @@ Response
    |                       |                       |                                                                                               |
    |                       |                       | **Range**                                                                                     |
    |                       |                       |                                                                                               |
-   |                       |                       | A maximum of 10 tags are supported. They cannot start with \_sys_.                            |
+   |                       |                       | A maximum of 10 tags are allowed.                                                             |
    +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0167811967__table1148911211295:
@@ -99,7 +100,7 @@ Response
    |                       |                       |                                                                          |
    |                       |                       | -  It cannot be left blank.                                              |
    |                       |                       | -  It must be unique for each resource.                                  |
-   |                       |                       | -  A maximum of 36 characters are supported.                             |
+   |                       |                       | -  A maximum of 36 characters are allowed.                               |
    |                       |                       | -  Only letters, digits, hyphens (-), and underscores (_) are supported. |
    +-----------------------+-----------------------+--------------------------------------------------------------------------+
    | value                 | String                | **Definition**                                                           |
@@ -108,8 +109,8 @@ Response
    |                       |                       |                                                                          |
    |                       |                       | **Range**                                                                |
    |                       |                       |                                                                          |
-   |                       |                       | -  Can be left blank.                                                    |
-   |                       |                       | -  A maximum of 43 characters are supported.                             |
+   |                       |                       | -  It can be left blank.                                                 |
+   |                       |                       | -  A maximum of 43 characters are allowed.                               |
    |                       |                       | -  Only letters, digits, hyphens (-), and underscores (_) are supported. |
    +-----------------------+-----------------------+--------------------------------------------------------------------------+
 

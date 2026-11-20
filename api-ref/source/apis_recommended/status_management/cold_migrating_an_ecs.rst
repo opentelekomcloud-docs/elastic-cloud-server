@@ -23,7 +23,6 @@ Constraints
 
 -  Currently, this API only applies to dedicated hosts.
 -  Only a stopped ECS can be cold migrated.
--  Existing constraints of the native cold migration API are inherited.
 
 URI
 ---

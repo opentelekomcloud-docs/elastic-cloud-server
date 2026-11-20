@@ -10,6 +10,8 @@ Function
 
 This API is used to delete an ECS group.
 
+Compared with the native API for deleting an ECS group, this API supports checking fine-grained permissions for enterprise projects.
+
 URI
 ---
 

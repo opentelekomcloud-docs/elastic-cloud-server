@@ -21,11 +21,25 @@ GET /v2.1/{project_id}/resize_flavors?instance_uuid={instance_uuid}&source_flavo
 
 .. table:: **Table 1** Path parameters
 
-   ========== ========= =========================
-   Parameter  Mandatory Description
-   ========== ========= =========================
-   project_id Yes       Specifies the project ID.
-   ========== ========= =========================
+   +-----------------------+-----------------------+---------------------------+
+   | Parameter             | Mandatory             | Description               |
+   +=======================+=======================+===========================+
+   | project_id            | Yes                   | **Definition**            |
+   |                       |                       |                           |
+   |                       |                       | Specifies the project ID. |
+   |                       |                       |                           |
+   |                       |                       | **Constraints**           |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Range**                 |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Default Value**         |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   +-----------------------+-----------------------+---------------------------+
 
 .. note::
 
@@ -37,36 +51,126 @@ GET /v2.1/{project_id}/resize_flavors?instance_uuid={instance_uuid}&source_flavo
 
 .. table:: **Table 2** Query parameters
 
-   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------+
-   | Parameter          | Mandatory       | Type            | Description                                                                                                |
-   +====================+=================+=================+============================================================================================================+
-   | instance_uuid      | No              | String          | Specifies the ID, in UUID format, of the target ECS.                                                       |
-   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------+
-   | source_flavor_id   | No              | String          | Specifies the source flavor ID.                                                                            |
-   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------+
-   | source_flavor_name | No              | String          | Specifies the source flavor name.                                                                          |
-   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------+
-   | sort_key           | No              | String          | Indicates the field for sorting.                                                                           |
-   |                    |                 |                 |                                                                                                            |
-   |                    |                 |                 | Options:                                                                                                   |
-   |                    |                 |                 |                                                                                                            |
-   |                    |                 |                 | -  **flavorid**: indicates the flavor ID. The default value is **flavorid**.                               |
-   |                    |                 |                 | -  **name**: indicates the flavor name.                                                                    |
-   |                    |                 |                 | -  **memory_mb**: indicates the memory size.                                                               |
-   |                    |                 |                 | -  **vcpus**: indicates the number of vCPUs.                                                               |
-   |                    |                 |                 | -  **root_gb**: indicates the system disk size.                                                            |
-   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------+
-   | sort_dir           | No              | String          | Specifies the ascending or descending sorting.                                                             |
-   |                    |                 |                 |                                                                                                            |
-   |                    |                 |                 | Value range:                                                                                               |
-   |                    |                 |                 |                                                                                                            |
-   |                    |                 |                 | -  **asc**: indicates the ascending order.                                                                 |
-   |                    |                 |                 | -  **desc**: indicates the descending order.                                                               |
-   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------+
-   | limit              | No              | Integer         | Specifies the maximum number of flavors that can be displayed on one page. The default value is **1,000**. |
-   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------+
-   | marker             | No              | String          | Uses the ID of the last flavor on one page as the paging marker.                                           |
-   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------+
+   +--------------------+-----------------+-----------------+-------------------------------------------------------------------------+
+   | Parameter          | Mandatory       | Type            | Description                                                             |
+   +====================+=================+=================+=========================================================================+
+   | instance_uuid      | No              | String          | **Definition**                                                          |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | Specifies the ID, in UUID format, of the target ECS.                    |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | **Constraints**                                                         |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | N/A                                                                     |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | **Range**                                                               |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | N/A                                                                     |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | **Default Value**                                                       |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | N/A                                                                     |
+   +--------------------+-----------------+-----------------+-------------------------------------------------------------------------+
+   | source_flavor_id   | No              | String          | **Definition**                                                          |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | Specifies the source flavor ID.                                         |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | **Constraints**                                                         |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | N/A                                                                     |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | **Range**                                                               |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | N/A                                                                     |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | **Default Value**                                                       |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | N/A                                                                     |
+   +--------------------+-----------------+-----------------+-------------------------------------------------------------------------+
+   | source_flavor_name | No              | String          | **Definition**                                                          |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | Specifies the source flavor name.                                       |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | **Constraints**                                                         |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | N/A                                                                     |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | **Range**                                                               |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | N/A                                                                     |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | **Default Value**                                                       |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | N/A                                                                     |
+   +--------------------+-----------------+-----------------+-------------------------------------------------------------------------+
+   | sort_key           | No              | String          | **Definition**                                                          |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | Indicates the field for sorting.                                        |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | **Constraints**                                                         |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | N/A                                                                     |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | **Range**                                                               |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | -  **flavorid**: indicates the flavor ID.                               |
+   |                    |                 |                 | -  **name**: indicates the flavor name.                                 |
+   |                    |                 |                 | -  **memory_mb**: indicates the memory size.                            |
+   |                    |                 |                 | -  **vcpus**: indicates the number of vCPUs.                            |
+   |                    |                 |                 | -  **root_gb**: indicates the system disk size.                         |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | **Default Value**                                                       |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | flavorid                                                                |
+   +--------------------+-----------------+-----------------+-------------------------------------------------------------------------+
+   | sort_dir           | No              | String          | **Definition**                                                          |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | Specifies the ascending or descending sorting order.                    |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | **Constraints**                                                         |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | N/A                                                                     |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | **Range**                                                               |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | -  **asc**: indicates the ascending order.                              |
+   |                    |                 |                 | -  **desc**: indicates the descending order.                            |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | **Default Value**                                                       |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | asc                                                                     |
+   +--------------------+-----------------+-----------------+-------------------------------------------------------------------------+
+   | limit              | No              | Integer         | **Definition**                                                          |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | Specifies the maximum number of flavors that can be displayed per page. |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | **Constraints**                                                         |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | N/A                                                                     |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | **Range**                                                               |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | N/A                                                                     |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | **Default Value**                                                       |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | 1000                                                                    |
+   +--------------------+-----------------+-----------------+-------------------------------------------------------------------------+
+   | marker             | No              | String          | **Definition**                                                          |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | Uses the ID of the last flavor on one page as the paging marker.        |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | **Constraints**                                                         |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | N/A                                                                     |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | **Range**                                                               |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | N/A                                                                     |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | **Default Value**                                                       |
+   |                    |                 |                 |                                                                         |
+   |                    |                 |                 | N/A                                                                     |
+   +--------------------+-----------------+-----------------+-------------------------------------------------------------------------+
 
 Request
 -------
@@ -85,9 +189,15 @@ Response
    +-----------------------+-----------------------+--------------------------------------------------------------------------------+
    | Parameter             | Type                  | Description                                                                    |
    +=======================+=======================+================================================================================+
-   | flavors               | Array of objects      | Specifies ECS flavors.                                                         |
+   | flavors               | Array of objects      | **Definition**                                                                 |
+   |                       |                       |                                                                                |
+   |                       |                       | Specifies ECS flavors.                                                         |
    |                       |                       |                                                                                |
    |                       |                       | For details, see :ref:`Table 4 <en-us_topic_0110472767__table68941918122818>`. |
+   |                       |                       |                                                                                |
+   |                       |                       | **Range**                                                                      |
+   |                       |                       |                                                                                |
+   |                       |                       | N/A                                                                            |
    +-----------------------+-----------------------+--------------------------------------------------------------------------------+
 
 .. _en-us_topic_0110472767__table68941918122818:
@@ -97,78 +207,176 @@ Response
    +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
    | Parameter                  | Type                  | Description                                                                              |
    +============================+=======================+==========================================================================================+
-   | id                         | String                | Specifies the ECS flavor ID.                                                             |
+   | id                         | String                | **Definition**                                                                           |
+   |                            |                       |                                                                                          |
+   |                            |                       | Specifies the ECS flavor ID.                                                             |
+   |                            |                       |                                                                                          |
+   |                            |                       | **Range**                                                                                |
+   |                            |                       |                                                                                          |
+   |                            |                       | N/A                                                                                      |
    +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
-   | name                       | String                | Specifies the name of the ECS flavor.                                                    |
+   | name                       | String                | **Definition**                                                                           |
+   |                            |                       |                                                                                          |
+   |                            |                       | Specifies the name of the ECS flavor.                                                    |
+   |                            |                       |                                                                                          |
+   |                            |                       | **Range**                                                                                |
+   |                            |                       |                                                                                          |
+   |                            |                       | N/A                                                                                      |
    +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
-   | vcpus                      | Integer               | Specifies the number of vCPUs in the ECS flavor.                                         |
+   | vcpus                      | Integer               | **Definition**                                                                           |
+   |                            |                       |                                                                                          |
+   |                            |                       | Specifies the number of vCPUs in the ECS flavor.                                         |
+   |                            |                       |                                                                                          |
+   |                            |                       | **Range**                                                                                |
+   |                            |                       |                                                                                          |
+   |                            |                       | N/A                                                                                      |
    +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
-   | ram                        | Integer               | Specifies the memory size (MiB) in the ECS flavor.                                       |
+   | ram                        | Integer               | **Definition**                                                                           |
+   |                            |                       |                                                                                          |
+   |                            |                       | Specifies the memory size (MiB) in the ECS flavor.                                       |
+   |                            |                       |                                                                                          |
+   |                            |                       | **Range**                                                                                |
+   |                            |                       |                                                                                          |
+   |                            |                       | N/A                                                                                      |
    +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
-   | disk                       | Integer               | Specifies the system disk size in the ECS flavor.                                        |
+   | disk                       | Integer               | **Definition**                                                                           |
+   |                            |                       |                                                                                          |
+   |                            |                       | Specifies the system disk size in the ECS flavor.                                        |
    |                            |                       |                                                                                          |
    |                            |                       | This parameter has not been used. Its default value is **0**.                            |
+   |                            |                       |                                                                                          |
+   |                            |                       | **Range**                                                                                |
+   |                            |                       |                                                                                          |
+   |                            |                       | N/A                                                                                      |
    +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
-   | swap                       | String                | Specifies the swap partition size required by the ECS flavor.                            |
+   | swap                       | String                | **Definition**                                                                           |
+   |                            |                       |                                                                                          |
+   |                            |                       | Specifies the swap partition size required by the ECS flavor.                            |
    |                            |                       |                                                                                          |
    |                            |                       | This parameter has not been used. Its default value is **""**.                           |
+   |                            |                       |                                                                                          |
+   |                            |                       | **Range**                                                                                |
+   |                            |                       |                                                                                          |
+   |                            |                       | N/A                                                                                      |
    +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
-   | OS-FLV-EXT-DATA:ephemeral  | Integer               | Specifies the temporary disk size. This is an extended attribute.                        |
+   | OS-FLV-EXT-DATA:ephemeral  | Integer               | **Definition**                                                                           |
+   |                            |                       |                                                                                          |
+   |                            |                       | Specifies the temporary disk size. This is an extended attribute.                        |
    |                            |                       |                                                                                          |
    |                            |                       | This parameter has not been used. Its default value is **0**.                            |
+   |                            |                       |                                                                                          |
+   |                            |                       | **Range**                                                                                |
+   |                            |                       |                                                                                          |
+   |                            |                       | N/A                                                                                      |
    +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
-   | OS-FLV-DISABLED:disabled   | Boolean               | This is an extended attribute, specifying whether a flavor is available.                 |
+   | OS-FLV-DISABLED:disabled   | Boolean               | **Definition**                                                                           |
+   |                            |                       |                                                                                          |
+   |                            |                       | This is an extended attribute, specifying whether a flavor is available.                 |
+   |                            |                       |                                                                                          |
+   |                            |                       | .. note::                                                                                |
+   |                            |                       |                                                                                          |
+   |                            |                       |    This parameter is not used.                                                           |
+   |                            |                       |                                                                                          |
+   |                            |                       | **Range**                                                                                |
    |                            |                       |                                                                                          |
    |                            |                       | -  **true**: indicates that a flavor is unavailable.                                     |
    |                            |                       | -  **false**: indicates that a flavor is available.                                      |
+   +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
+   | rxtx_factor                | Float                 | **Definition**                                                                           |
+   |                            |                       |                                                                                          |
+   |                            |                       | This is an extended attribute.                                                           |
    |                            |                       |                                                                                          |
    |                            |                       | .. note::                                                                                |
    |                            |                       |                                                                                          |
    |                            |                       |    This parameter is not used.                                                           |
-   +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
-   | rxtx_factor                | Float                 | This is an extended attribute.                                                           |
    |                            |                       |                                                                                          |
-   |                            |                       | .. note::                                                                                |
+   |                            |                       | **Range**                                                                                |
    |                            |                       |                                                                                          |
-   |                            |                       |    This parameter is not used.                                                           |
+   |                            |                       | N/A                                                                                      |
    +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
-   | rxtx_quota                 | String                | Specifies the software constraints of the network bandwidth that can be used by the ECS. |
+   | rxtx_quota                 | String                | **Definition**                                                                           |
    |                            |                       |                                                                                          |
-   |                            |                       | This parameter has not been used. Its default value is **null**.                         |
-   +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
-   | rxtx_cap                   | String                | Specifies the hardware constraints of the network bandwidth that can be used by the ECS. |
+   |                            |                       | Specifies the software constraints of the network bandwidth that can be used by the ECS. |
    |                            |                       |                                                                                          |
    |                            |                       | This parameter has not been used. Its default value is **null**.                         |
+   |                            |                       |                                                                                          |
+   |                            |                       | **Range**                                                                                |
+   |                            |                       |                                                                                          |
+   |                            |                       | N/A                                                                                      |
    +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
-   | os-flavor-access:is_public | Boolean               | Specifies whether a flavor is available to all tenants. This is an extended attribute.   |
+   | rxtx_cap                   | String                | **Definition**                                                                           |
+   |                            |                       |                                                                                          |
+   |                            |                       | Specifies the hardware constraints of the network bandwidth that can be used by the ECS. |
+   |                            |                       |                                                                                          |
+   |                            |                       | This parameter has not been used. Its default value is **null**.                         |
+   |                            |                       |                                                                                          |
+   |                            |                       | **Range**                                                                                |
+   |                            |                       |                                                                                          |
+   |                            |                       | N/A                                                                                      |
+   +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
+   | os-flavor-access:is_public | Boolean               | **Definition**                                                                           |
+   |                            |                       |                                                                                          |
+   |                            |                       | Specifies whether a flavor is available to all tenants. This is an extended attribute.   |
+   |                            |                       |                                                                                          |
+   |                            |                       | Default value: **true**                                                                  |
+   |                            |                       |                                                                                          |
+   |                            |                       | **Range**                                                                                |
    |                            |                       |                                                                                          |
    |                            |                       | -  **true**: indicates that a flavor is available to all tenants.                        |
    |                            |                       | -  **false**: indicates that a flavor is available only to certain tenants.              |
-   |                            |                       |                                                                                          |
-   |                            |                       | Default value: **true**                                                                  |
    +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
-   | links                      | Array of objects      | Specifies the shortcut link of the ECS flavor.                                           |
+   | links                      | Array of objects      | **Definition**                                                                           |
+   |                            |                       |                                                                                          |
+   |                            |                       | Specifies the shortcut link of the ECS flavor.                                           |
    |                            |                       |                                                                                          |
    |                            |                       | For details, see :ref:`Table 5 <en-us_topic_0110472767__table15913898194628>`.           |
+   |                            |                       |                                                                                          |
+   |                            |                       | **Range**                                                                                |
+   |                            |                       |                                                                                          |
+   |                            |                       | N/A                                                                                      |
    +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
-   | extra_specs                | Array of objects      | Specifies the extended field of the ECS specifications.                                  |
+   | extra_specs                | Array of objects      | **Definition**                                                                           |
+   |                            |                       |                                                                                          |
+   |                            |                       | Specifies the extended field of the ECS specifications.                                  |
    |                            |                       |                                                                                          |
    |                            |                       | For details, see :ref:`Table 6 <en-us_topic_0020212656__table59078165>`.                 |
+   |                            |                       |                                                                                          |
+   |                            |                       | **Range**                                                                                |
+   |                            |                       |                                                                                          |
+   |                            |                       | N/A                                                                                      |
    +----------------------------+-----------------------+------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0110472767__table15913898194628:
 
 .. table:: **Table 5** **links** field description
 
-   +-----------+-----------+--------+----------------------------------------------------------------------------------------------------+
-   | Parameter | Mandatory | Type   | Description                                                                                        |
-   +===========+===========+========+====================================================================================================+
-   | rel       | Yes       | String | Specifies the shortcut link marker name.                                                           |
-   +-----------+-----------+--------+----------------------------------------------------------------------------------------------------+
-   | href      | Yes       | String | Specifies the shortcut link.                                                                       |
-   +-----------+-----------+--------+----------------------------------------------------------------------------------------------------+
-   | type      | Yes       | String | Specifies the shortcut link type. This parameter has not been used. Its default value is **null**. |
-   +-----------+-----------+--------+----------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                                        |
+   +=================+=================+=================+====================================================================================================+
+   | rel             | Yes             | String          | **Definition**                                                                                     |
+   |                 |                 |                 |                                                                                                    |
+   |                 |                 |                 | Specifies the shortcut link marker name.                                                           |
+   |                 |                 |                 |                                                                                                    |
+   |                 |                 |                 | **Range**                                                                                          |
+   |                 |                 |                 |                                                                                                    |
+   |                 |                 |                 | N/A                                                                                                |
+   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------+
+   | href            | Yes             | String          | **Definition**                                                                                     |
+   |                 |                 |                 |                                                                                                    |
+   |                 |                 |                 | Specifies the shortcut link.                                                                       |
+   |                 |                 |                 |                                                                                                    |
+   |                 |                 |                 | **Range**                                                                                          |
+   |                 |                 |                 |                                                                                                    |
+   |                 |                 |                 | N/A                                                                                                |
+   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------+
+   | type            | Yes             | String          | **Definition**                                                                                     |
+   |                 |                 |                 |                                                                                                    |
+   |                 |                 |                 | Specifies the shortcut link type. This parameter has not been used. Its default value is **null**. |
+   |                 |                 |                 |                                                                                                    |
+   |                 |                 |                 | **Range**                                                                                          |
+   |                 |                 |                 |                                                                                                    |
+   |                 |                 |                 | N/A                                                                                                |
+   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------+
 
 Example Request
 ---------------

@@ -8,7 +8,7 @@ Removing a Security Group
 Function
 --------
 
-This API is used to remove a security group from an ECS.
+This API is used to remove an ECS from a security group.
 
 URI
 ---

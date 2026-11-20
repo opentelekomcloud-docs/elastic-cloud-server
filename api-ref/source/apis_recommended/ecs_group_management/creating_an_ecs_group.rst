@@ -10,6 +10,8 @@ Function
 
 This API is used to create an ECS group.
 
+Compared with the native API for creating an ECS group, this API supports checking fine-grained permissions for enterprise projects.
+
 Constraints
 -----------
 
@@ -79,41 +81,43 @@ Request
 
 .. table:: **Table 3** **server_group** parameters
 
-   +-----------------+-----------------+------------------+-------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type             | Description                                                                   |
-   +=================+=================+==================+===============================================================================+
-   | name            | Yes             | String           | **Definition**                                                                |
-   |                 |                 |                  |                                                                               |
-   |                 |                 |                  | Specifies the ECS group name.                                                 |
-   |                 |                 |                  |                                                                               |
-   |                 |                 |                  | **Constraints**                                                               |
-   |                 |                 |                  |                                                                               |
-   |                 |                 |                  | N/A                                                                           |
-   |                 |                 |                  |                                                                               |
-   |                 |                 |                  | **Range**                                                                     |
-   |                 |                 |                  |                                                                               |
-   |                 |                 |                  | 1 to 255 characters                                                           |
-   |                 |                 |                  |                                                                               |
-   |                 |                 |                  | **Default Value**                                                             |
-   |                 |                 |                  |                                                                               |
-   |                 |                 |                  | N/A                                                                           |
-   +-----------------+-----------------+------------------+-------------------------------------------------------------------------------+
-   | policies        | Yes             | Array of strings | **Definition**                                                                |
-   |                 |                 |                  |                                                                               |
-   |                 |                 |                  | Specifies the list of policies associated with the ECS group.                 |
-   |                 |                 |                  |                                                                               |
-   |                 |                 |                  | **Constraints**                                                               |
-   |                 |                 |                  |                                                                               |
-   |                 |                 |                  | N/A                                                                           |
-   |                 |                 |                  |                                                                               |
-   |                 |                 |                  | **Range**                                                                     |
-   |                 |                 |                  |                                                                               |
-   |                 |                 |                  | -  **anti-affinity**: ECSs in this group must be deployed on different hosts. |
-   |                 |                 |                  |                                                                               |
-   |                 |                 |                  | **Default Value**                                                             |
-   |                 |                 |                  |                                                                               |
-   |                 |                 |                  | N/A                                                                           |
-   +-----------------+-----------------+------------------+-------------------------------------------------------------------------------+
+   +-----------------+-----------------+------------------+-------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type             | Description                                                                                                                   |
+   +=================+=================+==================+===============================================================================================================================+
+   | name            | Yes             | String           | **Definition**                                                                                                                |
+   |                 |                 |                  |                                                                                                                               |
+   |                 |                 |                  | Specifies the ECS group name.                                                                                                 |
+   |                 |                 |                  |                                                                                                                               |
+   |                 |                 |                  | **Constraints**                                                                                                               |
+   |                 |                 |                  |                                                                                                                               |
+   |                 |                 |                  | N/A                                                                                                                           |
+   |                 |                 |                  |                                                                                                                               |
+   |                 |                 |                  | **Range**                                                                                                                     |
+   |                 |                 |                  |                                                                                                                               |
+   |                 |                 |                  | 1 to 255 characters                                                                                                           |
+   |                 |                 |                  |                                                                                                                               |
+   |                 |                 |                  | **Default Value**                                                                                                             |
+   |                 |                 |                  |                                                                                                                               |
+   |                 |                 |                  | N/A                                                                                                                           |
+   +-----------------+-----------------+------------------+-------------------------------------------------------------------------------------------------------------------------------+
+   | policies        | Yes             | Array of strings | **Definition**                                                                                                                |
+   |                 |                 |                  |                                                                                                                               |
+   |                 |                 |                  | Specifies the list of policies associated with the ECS group.                                                                 |
+   |                 |                 |                  |                                                                                                                               |
+   |                 |                 |                  | **Constraints**                                                                                                               |
+   |                 |                 |                  |                                                                                                                               |
+   |                 |                 |                  | N/A                                                                                                                           |
+   |                 |                 |                  |                                                                                                                               |
+   |                 |                 |                  | **Range**                                                                                                                     |
+   |                 |                 |                  |                                                                                                                               |
+   |                 |                 |                  | -  **anti-affinity**: ECSs in this group must be deployed on different hosts.                                                 |
+   |                 |                 |                  |                                                                                                                               |
+   |                 |                 |                  |    This policy enables instances in the same ECS group to run on different hosts for high availability and disaster recovery. |
+   |                 |                 |                  |                                                                                                                               |
+   |                 |                 |                  | **Default Value**                                                                                                             |
+   |                 |                 |                  |                                                                                                                               |
+   |                 |                 |                  | N/A                                                                                                                           |
+   +-----------------+-----------------+------------------+-------------------------------------------------------------------------------------------------------------------------------+
 
 Response
 --------

@@ -12,6 +12,8 @@ Projects are used to group and isolate OpenStack resources, which include comput
 
 This API is used to list all tags attached to a specified project.
 
+This API supports checking fine-grained permissions for enterprise projects. For details, see :ref:`ecs:cloudServers:list <en-us_topic_0103071521>`.
+
 URI
 ---
 
@@ -66,7 +68,7 @@ Response
    |                       |                       |                                                                                                                                |
    |                       |                       | **Range**                                                                                                                      |
    |                       |                       |                                                                                                                                |
-   |                       |                       | A maximum of 10 tags are supported. They cannot start with \_sys_.                                                             |
+   |                       |                       | A maximum of 10 tags are allowed.                                                                                              |
    +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0167811966__en-us_topic_0102606094_table207611141174713:
@@ -84,7 +86,7 @@ Response
    |                       |                       |                                                                          |
    |                       |                       | -  It cannot be left blank.                                              |
    |                       |                       | -  It must be unique for each resource.                                  |
-   |                       |                       | -  A maximum of 36 characters are supported.                             |
+   |                       |                       | -  A maximum of 36 characters are allowed.                               |
    |                       |                       | -  Only letters, digits, hyphens (-), and underscores (_) are supported. |
    +-----------------------+-----------------------+--------------------------------------------------------------------------+
    | values                | Array of strings      | **Definition**                                                           |
@@ -93,8 +95,8 @@ Response
    |                       |                       |                                                                          |
    |                       |                       | **Range**                                                                |
    |                       |                       |                                                                          |
-   |                       |                       | -  Can be left blank.                                                    |
-   |                       |                       | -  A maximum of 43 characters are supported.                             |
+   |                       |                       | -  It can be left blank.                                                 |
+   |                       |                       | -  A maximum of 43 characters are allowed.                               |
    |                       |                       | -  Only letters, digits, hyphens (-), and underscores (_) are supported. |
    +-----------------------+-----------------------+--------------------------------------------------------------------------+
 

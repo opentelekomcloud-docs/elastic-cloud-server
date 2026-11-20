@@ -18,8 +18,11 @@ Constraints
 -----------
 
 -  This API only supports images with Cloud-Init or Cloudbase-Init installed.
+
 -  OS changes are only supported on stopped ECSs or on ECSs where OS reinstallation or change has failed.
+
 -  ECSs without system disks do not support OS changes.
+
 -  You are not allowed to perform other operations when changing the OS, or the OS change may fail.
 
 URI

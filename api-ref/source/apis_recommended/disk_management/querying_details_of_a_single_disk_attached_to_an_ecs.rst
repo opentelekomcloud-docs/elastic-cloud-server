@@ -193,14 +193,14 @@ Example Response
 
    {
        "volumeAttachment": {
-           "pciAddress": "0000:02:01.0",
-           "volumeId": "a26887c6-c47b-4654-abb5-asdf234r234r",
+           "id": "34532d78-94d2-4b64-b3c7-9ee74bd3c475",
+           "volumeId": "34532d78-94d2-4b64-b3c7-9ee74bd3c475",
+           "serverId": "17833209-75ba-4ad3-931d-5645919e3664",
            "device": "/dev/vda",
-           "serverId": "4d8c3732-a248-40ed-bebc-539a6ffd25c0",
-           "id": "a26887c6-c47b-4654-abb5-asdf234r234r",
-           "size": "40",
+           "size": 40,
+           "pciAddress": "0000:02:01.0",
            "bootIndex": 0,
-           "bus":"virtio"
+           "bus": "virtio"
        }
    }
 

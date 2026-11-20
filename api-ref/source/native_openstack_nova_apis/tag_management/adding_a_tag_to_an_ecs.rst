@@ -54,15 +54,7 @@ None
 Response
 --------
 
-.. table:: **Table 2** Response parameters
-
-   ========= ====== ================================
-   Parameter Type   Description
-   ========= ====== ================================
-   message   String Example: "<br /><br />\\n\\n\\n"
-   code      String Example: "201 Created"
-   title     String Example: "Created"
-   ========= ====== ================================
+None
 
 Example Request
 ---------------
@@ -76,32 +68,7 @@ Add a tag to a specified ECS.
 Example Response
 ----------------
 
-By default, the response is in HTML format.
-
-.. code-block::
-
-   <html>
-   <head>
-         <title>201 Created</title>
-   </head>
-   <body>
-         <h1>201 Created</h1>
-         <br /><br />
-
-
-
-   </body>
-   </html>
-
-JSON format
-
-.. code-block::
-
-   {
-      "message": "<br /><br />\n\n\n",
-      "code": "201 Created",
-      "title": "Created"
-   }
+None
 
 Returned Values
 ---------------

@@ -76,7 +76,7 @@ Response
    |                       |                       |                                                                               |
    |                       |                       | -  **anti-affinity**: ECSs in this group must be deployed on different hosts. |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------+
-   | user_id               | String                | Specifies the user ID in UUID format for the ECS group.                       |
+   | user_id               | String                | Specifies the user ID for the ECS group.                                      |
    |                       |                       |                                                                               |
    |                       |                       | This parameter is supported in microversion 2.13 and later.                   |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------+

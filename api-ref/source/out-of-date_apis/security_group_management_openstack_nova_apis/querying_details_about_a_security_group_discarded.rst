@@ -10,7 +10,7 @@ Function
 
 This API is used to query details about a security group.
 
-This API can only query the inbound security group rules. To query the outbound security group rules, see "Querying a Security Group" in "Security Group (Native OpenStack API)" in the *Virtual Private Cloud API Reference*.
+This API can only query inbound security group rules. To query outbound security group rules, see "Querying a Security Group" in "Security Group (Native OpenStack API)" in *Virtual Private Cloud API Reference*.
 
 This API has been discarded. Use the API described in section "Security Group (OpenStack Neutron APIs) > Querying a Security Group" in *Virtual Private Network API Reference*.
 

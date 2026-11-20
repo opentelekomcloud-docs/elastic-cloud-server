@@ -55,20 +55,19 @@ Response
 
 .. table:: **Table 3** **tag** field description
 
-   +-----------------------+-----------------------+---------------------------------------------------------------------+
-   | Parameter             | Type                  | Description                                                         |
-   +=======================+=======================+=====================================================================+
-   | key                   | String                | Specifies the tag key.                                              |
-   |                       |                       |                                                                     |
-   |                       |                       | -  The key can contain a maximum of 36 Unicode characters.          |
-   |                       |                       | -  Contains only digits, letters, hyphens (-), and underscores (_). |
-   +-----------------------+-----------------------+---------------------------------------------------------------------+
-   | values                | Array of strings      | Specifies the tag value.                                            |
-   |                       |                       |                                                                     |
-   |                       |                       | -  Each value contains a maximum of 43 Unicode characters.          |
-   |                       |                       | -  This field can be left blank.                                    |
-   |                       |                       | -  Contains only digits, letters, hyphens (-), and underscores (_). |
-   +-----------------------+-----------------------+---------------------------------------------------------------------+
+   +-----------------------+-----------------------+--------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                              |
+   +=======================+=======================+==========================================================================+
+   | key                   | String                | Specifies the tag key.                                                   |
+   |                       |                       |                                                                          |
+   |                       |                       | -  A maximum of 36 characters are allowed.                               |
+   |                       |                       | -  Only letters, digits, hyphens (-), and underscores (_) are supported. |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------+
+   | values                | Array of strings      | Specifies the tag value.                                                 |
+   |                       |                       |                                                                          |
+   |                       |                       | -  A maximum of 43 characters are allowed.                               |
+   |                       |                       | -  Only letters, digits, hyphens (-), and underscores (_) are supported. |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------+
 
 Examples
 --------

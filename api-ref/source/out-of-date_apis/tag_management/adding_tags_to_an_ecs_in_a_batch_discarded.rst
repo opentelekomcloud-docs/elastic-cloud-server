@@ -18,7 +18,7 @@ Function
 Constraints
 -----------
 
--  An ECS allows a maximum of 10 tags.
+-  An ECS can have a maximum of 10 tags.
 
 -  This API is idempotent.
 
@@ -63,22 +63,19 @@ Request
 
 .. table:: **Table 3** **resource_tag** field description
 
-   +-----------------+-----------------+-----------------+---------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                         |
-   +=================+=================+=================+=====================================================================+
-   | key             | Yes             | String          | Specifies the tag key.                                              |
-   |                 |                 |                 |                                                                     |
-   |                 |                 |                 | -  Cannot be left blank.                                            |
-   |                 |                 |                 | -  Must be unique for each resource.                                |
-   |                 |                 |                 | -  Contains a maximum of 36 characters.                             |
-   |                 |                 |                 | -  Contains only digits, letters, hyphens (-), and underscores (_). |
-   |                 |                 |                 | -  Must be unique and cannot be left blank.                         |
-   +-----------------+-----------------+-----------------+---------------------------------------------------------------------+
-   | value           | Yes             | String          | Specifies the tag value.                                            |
-   |                 |                 |                 |                                                                     |
-   |                 |                 |                 | -  Contains a maximum of 43 characters.                             |
-   |                 |                 |                 | -  Contains only digits, letters, hyphens (-), and underscores (_). |
-   +-----------------+-----------------+-----------------+---------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+--------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                              |
+   +=================+=================+=================+==========================================================================+
+   | key             | Yes             | String          | Specifies the tag key.                                                   |
+   |                 |                 |                 |                                                                          |
+   |                 |                 |                 | -  A maximum of 36 characters are allowed.                               |
+   |                 |                 |                 | -  Only letters, digits, hyphens (-), and underscores (_) are supported. |
+   +-----------------+-----------------+-----------------+--------------------------------------------------------------------------+
+   | value           | Yes             | String          | Specifies the tag value.                                                 |
+   |                 |                 |                 |                                                                          |
+   |                 |                 |                 | -  A maximum of 43 characters are allowed.                               |
+   |                 |                 |                 | -  Only letters, digits, hyphens (-), and underscores (_) are supported. |
+   +-----------------+-----------------+-----------------+--------------------------------------------------------------------------+
 
 Response
 --------

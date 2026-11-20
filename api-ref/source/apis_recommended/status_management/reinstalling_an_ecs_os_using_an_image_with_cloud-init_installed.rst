@@ -18,8 +18,11 @@ Constraints
 -----------
 
 -  You can only use an image with Cloud-Init or Cloudbase-Init installed.
+
 -  You can reinstall OS only on an ECS that is stopped or for which OS reinstallation has failed.
+
 -  You are not allowed to reinstall the OS of an ECS that does not have the system disk.
+
 -  You are not allowed to perform other operations when reinstalling the OS. Otherwise, reinstalling the OS will fail.
 
 URI

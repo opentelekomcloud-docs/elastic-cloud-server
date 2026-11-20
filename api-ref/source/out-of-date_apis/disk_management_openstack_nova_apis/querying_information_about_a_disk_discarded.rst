@@ -105,7 +105,7 @@ Example Response
            "createdAt": "2016-05-20T07:57:56.299000",
            "displayDescription": null,
            "volumeType": null,
-           "dispalyName": "test",
+           "displayName": "test",
            "snapshotId": null,
            "metadata": {},
            "id": "70b14513-faad-4646-b7ab-a065cef282b4",

@@ -19,7 +19,7 @@ Function
 Constraints
 -----------
 
-An ECS allows a maximum of 10 tags.
+An ECS can have a maximum of 10 tags.
 
 URI
 ---
@@ -58,19 +58,19 @@ Request
 
 .. table:: **Table 3** **resource_tag** field description
 
-   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                                      |
-   +=================+=================+=================+==================================================================================+
-   | key             | Yes             | String          | Specifies the tag key.                                                           |
-   |                 |                 |                 |                                                                                  |
-   |                 |                 |                 | It contains a maximum of 127 Unicode characters and cannot be left blank.        |
-   |                 |                 |                 |                                                                                  |
-   |                 |                 |                 | The tag key of an ECS must be unique.                                            |
-   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------+
-   | value           | No              | String          | Specifies the tag value.                                                         |
-   |                 |                 |                 |                                                                                  |
-   |                 |                 |                 | The value can contain a maximum of 255 Unicode characters and can be left blank. |
-   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                   |
+   +=================+=================+=================+===============================================================================+
+   | key             | Yes             | String          | Specifies the tag key.                                                        |
+   |                 |                 |                 |                                                                               |
+   |                 |                 |                 | It contains a maximum of 36 Unicode characters and cannot be left blank.      |
+   |                 |                 |                 |                                                                               |
+   |                 |                 |                 | The tag key of an ECS must be unique.                                         |
+   +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------+
+   | value           | No              | String          | Specifies the tag value.                                                      |
+   |                 |                 |                 |                                                                               |
+   |                 |                 |                 | Each value contains a maximum of 43 Unicode characters and can be left blank. |
+   +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------+
 
 Response
 --------

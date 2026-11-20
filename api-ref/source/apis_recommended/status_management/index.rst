@@ -10,6 +10,7 @@ Status Management
 -  :ref:`Cold Migrating an ECS <en-us_topic_0132905656>`
 -  :ref:`Modifying the Specifications of an ECS <en-us_topic_0020212653>`
 -  :ref:`Adding an ECS to the Monitoring List <en-us_topic_0000001635605869>`
+-  :ref:`Triggering an ECS Kernel Dump <en-us_topic_0000002455291649>`
 
 .. toctree::
    :maxdepth: 1
@@ -20,3 +21,4 @@ Status Management
    cold_migrating_an_ecs
    modifying_the_specifications_of_an_ecs
    adding_an_ecs_to_the_monitoring_list
+   triggering_an_ecs_kernel_dump

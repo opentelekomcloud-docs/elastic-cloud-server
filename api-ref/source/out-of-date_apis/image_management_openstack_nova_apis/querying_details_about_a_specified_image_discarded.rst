@@ -105,7 +105,7 @@ Example Response
        "image": {
            "status": "ACTIVE",
            "updated": "2015-12-27T02:52:25Z",
-           "name": "cirror",
+           "name": "mirror",
            "links": [
                {
                    "href": "https://compute.localdomain.com:8001/v2/719e9483f42d4784a089862ac4c3e8d0/images/17a1890b-0fa4-485e-8505-14e294017988",
