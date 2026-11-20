@@ -16,6 +16,7 @@ Constraints
 -  The ECS to be added has been stopped.
 -  Only KVM ECSs can be added.
 -  Only the anti-affinity policy is supported. ECSs in the same ECS group are deployed on different hosts, improving service reliability.
+-  This API supports checking fine-grained permissions for enterprise projects. For details, see :ref:`ecs:cloudServers:addServerGroupMember <en-us_topic_0103071520>`.
 
 URI
 ---

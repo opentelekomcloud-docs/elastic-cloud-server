@@ -515,7 +515,7 @@ Example Request
                   {
                       "source_type":"snapshot",
                       "boot_index":"0",
-                      "uuid":"df51997d-ee35-4fb3-a372-e2ac933a6565", //Specifies the snapshot ID, which is returned by the API for creating a snapshot.
+                      "uuid":"df51997d-ee35-4fb3-a372-e2ac933a6565", // Specifies the snapshot ID, which is returned by the API for creating a snapshot.
                       "destination_type":"volume"
                   }
               ],

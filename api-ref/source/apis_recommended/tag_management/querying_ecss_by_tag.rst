@@ -21,11 +21,25 @@ POST /v1/{project_id}/servers/resource_instances/action
 
 .. table:: **Table 1** Parameter description
 
-   ========== ========= =========================
-   Parameter  Mandatory Description
-   ========== ========= =========================
-   project_id Yes       Specifies the project ID.
-   ========== ========= =========================
+   +-----------------------+-----------------------+---------------------------+
+   | Parameter             | Mandatory             | Description               |
+   +=======================+=======================+===========================+
+   | project_id            | Yes                   | **Definition**            |
+   |                       |                       |                           |
+   |                       |                       | Specifies the project ID. |
+   |                       |                       |                           |
+   |                       |                       | **Constraints**           |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Range**                 |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   |                       |                       |                           |
+   |                       |                       | **Default Value**         |
+   |                       |                       |                           |
+   |                       |                       | N/A                       |
+   +-----------------------+-----------------------+---------------------------+
 
 Request
 -------
@@ -39,40 +53,112 @@ Request
    +-----------------+-----------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter       | Mandatory       | Type             | Description                                                                                                                                                                                                                   |
    +=================+=================+==================+===============================================================================================================================================================================================================================+
-   | tags            | No              | Array of objects | Displays the ECSs with all the specified tags. For details, see :ref:`Table 3 <en-us_topic_0102606095__table8638721112919>`.                                                                                                  |
+   | tags            | No              | Array of objects | **Definition**                                                                                                                                                                                                                |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | Displays the ECSs with all the specified tags. For details, see :ref:`Table 3 <en-us_topic_0102606095__table8638721112919>`.                                                                                                  |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | **Constraints**                                                                                                                                                                                                               |
    |                 |                 |                  |                                                                                                                                                                                                                               |
    |                 |                 |                  | -  The structure body must be included.                                                                                                                                                                                       |
    |                 |                 |                  | -  This field cannot be left blank.                                                                                                                                                                                           |
    |                 |                 |                  | -  A key must be unique.                                                                                                                                                                                                      |
    |                 |                 |                  | -  Values of the same key must be unique.                                                                                                                                                                                     |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | **Range**                                                                                                                                                                                                                     |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | N/A                                                                                                                                                                                                                           |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | **Default Value**                                                                                                                                                                                                             |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | N/A                                                                                                                                                                                                                           |
    +-----------------+-----------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | not_tags        | No              | Array of strings | Displays the ECSs with none of specified tags.                                                                                                                                                                                |
+   | not_tags        | No              | Array of strings | **Definition**                                                                                                                                                                                                                |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | Displays the ECSs with none of specified tags.                                                                                                                                                                                |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | **Constraints**                                                                                                                                                                                                               |
    |                 |                 |                  |                                                                                                                                                                                                                               |
    |                 |                 |                  | -  The structure body must be included.                                                                                                                                                                                       |
    |                 |                 |                  | -  This field cannot be left blank.                                                                                                                                                                                           |
    |                 |                 |                  | -  Keys must be unique.                                                                                                                                                                                                       |
    |                 |                 |                  | -  Values of the same key must be unique.                                                                                                                                                                                     |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | **Range**                                                                                                                                                                                                                     |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | N/A                                                                                                                                                                                                                           |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | **Default Value**                                                                                                                                                                                                             |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | N/A                                                                                                                                                                                                                           |
    +-----------------+-----------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | limit           | No              | String           | Limits the maximum number of queried ECSs. The value cannot be a negative number. The maximum value is 1,000.                                                                                                                 |
+   | limit           | No              | String           | **Definition**                                                                                                                                                                                                                |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | Limits the number of returned ECSs.                                                                                                                                                                                           |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | **Constraints**                                                                                                                                                                                                               |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | The maximum value is **1000**. The value cannot be a negative number.                                                                                                                                                         |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | **Range**                                                                                                                                                                                                                     |
    |                 |                 |                  |                                                                                                                                                                                                                               |
    |                 |                 |                  | -  If the **action** value is **count**, this parameter is invalid.                                                                                                                                                           |
    |                 |                 |                  | -  If the **action** value is **filter**, the default value is **1,000**.                                                                                                                                                     |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | **Default Value**                                                                                                                                                                                                             |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | N/A                                                                                                                                                                                                                           |
    +-----------------+-----------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | offset          | No              | String           | Specifies index position. The query starts from the next piece of data indexed by this parameter. The value must be a number and cannot be a negative number.                                                                 |
+   | offset          | No              | String           | **Definition**                                                                                                                                                                                                                |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | Specifies the index position. The query starts from the next piece of data indexed by this parameter.                                                                                                                         |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | **Constraints**                                                                                                                                                                                                               |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | The value must be a number and cannot be a negative number.                                                                                                                                                                   |
    |                 |                 |                  |                                                                                                                                                                                                                               |
    |                 |                 |                  | This parameter is not required when data on the first page is queried. When you query the subsequent page data, the value in the response body for the query of the data on the previous page is contained in this parameter. |
    |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | **Range**                                                                                                                                                                                                                     |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
    |                 |                 |                  | -  If the **action** value is **count**, this parameter is invalid.                                                                                                                                                           |
    |                 |                 |                  | -  If the **action** value is **filter**, the default value is **0**.                                                                                                                                                         |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | **Default Value**                                                                                                                                                                                                             |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | N/A                                                                                                                                                                                                                           |
    +-----------------+-----------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | action          | Yes             | String           | Specifies the operation, which can be **filter** or **count**.                                                                                                                                                                |
+   | action          | Yes             | String           | **Definition**                                                                                                                                                                                                                |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | Specifies the operation, which can be **filter** or **count**.                                                                                                                                                                |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | **Constraints**                                                                                                                                                                                                               |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | N/A                                                                                                                                                                                                                           |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | **Range**                                                                                                                                                                                                                     |
    |                 |                 |                  |                                                                                                                                                                                                                               |
    |                 |                 |                  | -  **filter**: filters ECSs by tag. The ECSs that meet the filter criteria are displayed on pages.                                                                                                                            |
    |                 |                 |                  | -  **count**: searches ECSs by tag. The number of ECSs that meet the search criteria is displayed.                                                                                                                            |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | **Default Value**                                                                                                                                                                                                             |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | N/A                                                                                                                                                                                                                           |
    +-----------------+-----------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | matches         | No              | Array of objects | Specifies the search field, which is used to search for ECSs.                                                                                                                                                                 |
+   | matches         | No              | Array of objects | **Definition**                                                                                                                                                                                                                |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | Specifies the search field, which is used to search for ECSs.                                                                                                                                                                 |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | **Constraints**                                                                                                                                                                                                               |
    |                 |                 |                  |                                                                                                                                                                                                                               |
    |                 |                 |                  | Currently, only **resource_name** can be used for search. For more information, see :ref:`Table 4 <en-us_topic_0102606095__table2075564419352>`.                                                                              |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | **Range**                                                                                                                                                                                                                     |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | N/A                                                                                                                                                                                                                           |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | **Default Value**                                                                                                                                                                                                             |
+   |                 |                 |                  |                                                                                                                                                                                                                               |
+   |                 |                 |                  | N/A                                                                                                                                                                                                                           |
    +-----------------+-----------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0102606095__table8638721112919:
@@ -82,17 +168,41 @@ Request
    +-----------------+-----------------+------------------+---------------------------------------------------------------+
    | Parameter       | Mandatory       | Type             | Description                                                   |
    +=================+=================+==================+===============================================================+
-   | key             | Yes             | String           | Specifies the tag key.                                        |
+   | key             | Yes             | String           | **Definition**                                                |
    |                 |                 |                  |                                                               |
-   |                 |                 |                  | -  A key contains a maximum of 127 Unicode characters.        |
+   |                 |                 |                  | Specifies the tag key.                                        |
+   |                 |                 |                  |                                                               |
+   |                 |                 |                  | **Constraints**                                               |
+   |                 |                 |                  |                                                               |
+   |                 |                 |                  | -  A key contains a maximum of 36 Unicode characters.         |
    |                 |                 |                  | -  This field cannot be left blank.                           |
+   |                 |                 |                  |                                                               |
+   |                 |                 |                  | **Range**                                                     |
+   |                 |                 |                  |                                                               |
+   |                 |                 |                  | N/A                                                           |
+   |                 |                 |                  |                                                               |
+   |                 |                 |                  | **Default Value**                                             |
+   |                 |                 |                  |                                                               |
+   |                 |                 |                  | N/A                                                           |
    +-----------------+-----------------+------------------+---------------------------------------------------------------+
-   | values          | No              | Array of strings | Specifies the tag value.                                      |
+   | values          | No              | Array of strings | **Definition**                                                |
+   |                 |                 |                  |                                                               |
+   |                 |                 |                  | Specifies the tag value.                                      |
+   |                 |                 |                  |                                                               |
+   |                 |                 |                  | **Constraints**                                               |
    |                 |                 |                  |                                                               |
    |                 |                 |                  | -  Values of the same tag must be unique.                     |
-   |                 |                 |                  | -  Each value contains a maximum of 255 Unicode characters.   |
+   |                 |                 |                  | -  Each value contains a maximum of 43 Unicode characters.    |
    |                 |                 |                  | -  If this parameter is not specified, any value can be used. |
    |                 |                 |                  | -  The values are in the OR relationship.                     |
+   |                 |                 |                  |                                                               |
+   |                 |                 |                  | **Range**                                                     |
+   |                 |                 |                  |                                                               |
+   |                 |                 |                  | N/A                                                           |
+   |                 |                 |                  |                                                               |
+   |                 |                 |                  | **Default Value**                                             |
+   |                 |                 |                  |                                                               |
+   |                 |                 |                  | N/A                                                           |
    +-----------------+-----------------+------------------+---------------------------------------------------------------+
 
 .. _en-us_topic_0102606095__table2075564419352:
@@ -102,20 +212,44 @@ Request
    +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------+
    | Parameter       | Mandatory       | Type            | Description                                                                               |
    +=================+=================+=================+===========================================================================================+
-   | key             | Yes             | String          | Specifies the key field to be matched.                                                    |
+   | key             | Yes             | String          | **Definition**                                                                            |
+   |                 |                 |                 |                                                                                           |
+   |                 |                 |                 | Specifies the key field to be matched.                                                    |
+   |                 |                 |                 |                                                                                           |
+   |                 |                 |                 | **Constraints**                                                                           |
    |                 |                 |                 |                                                                                           |
    |                 |                 |                 | The tag key can only be **resource_name**. In such a case, the tag value is the ECS name. |
    |                 |                 |                 |                                                                                           |
    |                 |                 |                 | -  The key must be unique, and the value is used for matching.                            |
    |                 |                 |                 | -  This field is a fixed dictionary value.                                                |
    |                 |                 |                 | -  This field cannot be left blank.                                                       |
+   |                 |                 |                 |                                                                                           |
+   |                 |                 |                 | **Range**                                                                                 |
+   |                 |                 |                 |                                                                                           |
+   |                 |                 |                 | N/A                                                                                       |
+   |                 |                 |                 |                                                                                           |
+   |                 |                 |                 | **Default Value**                                                                         |
+   |                 |                 |                 |                                                                                           |
+   |                 |                 |                 | N/A                                                                                       |
    +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------+
-   | value           | Yes             | String          | Specifies the tag value.                                                                  |
+   | value           | Yes             | String          | **Definition**                                                                            |
+   |                 |                 |                 |                                                                                           |
+   |                 |                 |                 | Specifies the tag value.                                                                  |
+   |                 |                 |                 |                                                                                           |
+   |                 |                 |                 | **Constraints**                                                                           |
    |                 |                 |                 |                                                                                           |
    |                 |                 |                 | The tag key can only be **resource_name**. In such a case, the tag value is the ECS name. |
    |                 |                 |                 |                                                                                           |
    |                 |                 |                 | -  Each value contains a maximum of 255 Unicode characters.                               |
    |                 |                 |                 | -  This field cannot be left blank.                                                       |
+   |                 |                 |                 |                                                                                           |
+   |                 |                 |                 | **Range**                                                                                 |
+   |                 |                 |                 |                                                                                           |
+   |                 |                 |                 | N/A                                                                                       |
+   |                 |                 |                 |                                                                                           |
+   |                 |                 |                 | **Default Value**                                                                         |
+   |                 |                 |                 |                                                                                           |
+   |                 |                 |                 | N/A                                                                                       |
    +-----------------+-----------------+-----------------+-------------------------------------------------------------------------------------------+
 
 Response
@@ -127,42 +261,86 @@ Response
 
 .. table:: **Table 5** Response parameters
 
-   +-------------+------------------+-------------------------------------------------------------------------------------------------------+
-   | Parameter   | Type             | Description                                                                                           |
-   +=============+==================+=======================================================================================================+
-   | resources   | Array of objects | Specifies returned ECSs. For details, see :ref:`Table 6 <en-us_topic_0102606095__table790793515528>`. |
-   +-------------+------------------+-------------------------------------------------------------------------------------------------------+
-   | total_count | Integer          | Specifies the total number of queried ECSs.                                                           |
-   +-------------+------------------+-------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                           |
+   +=======================+=======================+=======================================================================================================+
+   | resources             | Array of objects      | **Definition**                                                                                        |
+   |                       |                       |                                                                                                       |
+   |                       |                       | Specifies returned ECSs. For details, see :ref:`Table 6 <en-us_topic_0102606095__table790793515528>`. |
+   |                       |                       |                                                                                                       |
+   |                       |                       | **Range**                                                                                             |
+   |                       |                       |                                                                                                       |
+   |                       |                       | N/A                                                                                                   |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------+
+   | total_count           | Integer               | **Definition**                                                                                        |
+   |                       |                       |                                                                                                       |
+   |                       |                       | Specifies the total number of returned ECSs.                                                          |
+   |                       |                       |                                                                                                       |
+   |                       |                       | **Range**                                                                                             |
+   |                       |                       |                                                                                                       |
+   |                       |                       | N/A                                                                                                   |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------+
 
 .. _en-us_topic_0102606095__table790793515528:
 
 .. table:: **Table 6** **resource** field description
 
-   +-----------------+------------------+-----------------------------------------------------+
-   | Parameter       | Type             | Description                                         |
-   +=================+==================+=====================================================+
-   | resource_id     | String           | Specifies the ECS ID.                               |
-   +-----------------+------------------+-----------------------------------------------------+
-   | resource_detail | String           | Queries ECS details.                                |
-   +-----------------+------------------+-----------------------------------------------------+
-   | tags            | Array of objects | Specifies tags.                                     |
-   +-----------------+------------------+-----------------------------------------------------+
-   | resource_name   | String           | Specifies the resource name, which is the ECS name. |
-   +-----------------+------------------+-----------------------------------------------------+
+   +-----------------------+-----------------------+-----------------------------------------------------+
+   | Parameter             | Type                  | Description                                         |
+   +=======================+=======================+=====================================================+
+   | resource_id           | String                | **Definition**                                      |
+   |                       |                       |                                                     |
+   |                       |                       | Specifies the ECS ID.                               |
+   |                       |                       |                                                     |
+   |                       |                       | **Range**                                           |
+   |                       |                       |                                                     |
+   |                       |                       | N/A                                                 |
+   +-----------------------+-----------------------+-----------------------------------------------------+
+   | resource_detail       | String                | **Definition**                                      |
+   |                       |                       |                                                     |
+   |                       |                       | Queries ECS details.                                |
+   |                       |                       |                                                     |
+   |                       |                       | **Range**                                           |
+   |                       |                       |                                                     |
+   |                       |                       | N/A                                                 |
+   +-----------------------+-----------------------+-----------------------------------------------------+
+   | tags                  | Array of objects      | **Definition**                                      |
+   |                       |                       |                                                     |
+   |                       |                       | Specifies tags.                                     |
+   |                       |                       |                                                     |
+   |                       |                       | **Range**                                           |
+   |                       |                       |                                                     |
+   |                       |                       | N/A                                                 |
+   +-----------------------+-----------------------+-----------------------------------------------------+
+   | resource_name         | String                | **Definition**                                      |
+   |                       |                       |                                                     |
+   |                       |                       | Specifies the resource name, which is the ECS name. |
+   |                       |                       |                                                     |
+   |                       |                       | **Range**                                           |
+   |                       |                       |                                                     |
+   |                       |                       | N/A                                                 |
+   +-----------------------+-----------------------+-----------------------------------------------------+
 
 .. table:: **Table 7** **resource_tag** field description
 
    +-----------------------+-----------------------+---------------------------------------------------------------------------+
    | Parameter             | Type                  | Description                                                               |
    +=======================+=======================+===========================================================================+
-   | key                   | String                | Specifies the tag key.                                                    |
+   | key                   | String                | **Definition**                                                            |
    |                       |                       |                                                                           |
-   |                       |                       | -  It contains a maximum of 36 Unicode characters.                        |
+   |                       |                       | Specifies the tag key.                                                    |
+   |                       |                       |                                                                           |
+   |                       |                       | **Range**                                                                 |
+   |                       |                       |                                                                           |
+   |                       |                       | -  A key contains a maximum of 36 Unicode characters.                     |
    |                       |                       | -  This field cannot be left blank.                                       |
    |                       |                       | -  Can only consist of digits, letters, hyphens (-), and underscores (_). |
    +-----------------------+-----------------------+---------------------------------------------------------------------------+
-   | value                 | String                | Specifies the tag value.                                                  |
+   | value                 | String                | **Definition**                                                            |
+   |                       |                       |                                                                           |
+   |                       |                       | Specifies the tag value.                                                  |
+   |                       |                       |                                                                           |
+   |                       |                       | **Range**                                                                 |
    |                       |                       |                                                                           |
    |                       |                       | -  Each value contains a maximum of 43 Unicode characters.                |
    |                       |                       | -  This field can be left blank.                                          |

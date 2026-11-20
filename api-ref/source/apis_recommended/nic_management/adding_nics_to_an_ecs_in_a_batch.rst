@@ -160,11 +160,12 @@ Request
    |                 |                 |                  |                                                                                                                                             |
    |                 |                 |                  | **Range**                                                                                                                                   |
    |                 |                 |                  |                                                                                                                                             |
-   |                 |                 |                  | If this parameter is set to **true**, the NIC supports IPv6.                                                                                |
+   |                 |                 |                  | -  **true**: The NIC supports IPv6.                                                                                                         |
+   |                 |                 |                  | -  **false**: The NIC does not support IPv6.                                                                                                |
    |                 |                 |                  |                                                                                                                                             |
    |                 |                 |                  | **Default Value**                                                                                                                           |
    |                 |                 |                  |                                                                                                                                             |
-   |                 |                 |                  | N/A                                                                                                                                         |
+   |                 |                 |                  | false                                                                                                                                       |
    +-----------------+-----------------+------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
    | ipv6_bandwidth  | No              | Object           | **Definition**                                                                                                                              |
    |                 |                 |                  |                                                                                                                                             |

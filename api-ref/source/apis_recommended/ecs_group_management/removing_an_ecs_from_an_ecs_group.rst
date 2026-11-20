@@ -15,6 +15,8 @@ Constraints
 
 Only the anti-affinity policy is supported. ECSs in the same ECS group are deployed on different hosts, improving service reliability.
 
+This API supports checking fine-grained permissions for enterprise projects. For details, see :ref:`ecs:cloudServers:deleteServerGroupMember <en-us_topic_0103071520>`.
+
 URI
 ---
 

@@ -27,7 +27,7 @@ Constraints
 #. After an ECS is deleted, the images and snapshots created using this ECS will not be automatically deleted. You must manually delete them.
 #. After an image created using an ECS is deleted, the associated snapshots will not be automatically deleted (this function is implemented by native OpenStack). You must manually delete such snapshots.
 #. The image created using an ECS cannot be used to create data disks.
-#. The images created using the API described in this section (URI: POST /v2/{project_id}/servers/{server_id}/action or POST /v2.1/{project_id}/servers/{server_id}/action) cannot be exported to OBS buckets. If such images must be exported, use the IMS API (**POST /v2/cloudimages/action**). For details, see "Creating an Image" in *Image Management Service API Reference*.
+#. The images created using the API described in this section (URI: POST /v2/{project_id}/servers/{server_id}/action or POST /v2.1/{project_id}/servers/{server_id}/action) cannot be exported to OBS buckets. If such images need to be exported, use the IMS API (**POST /v2/cloudimages/action**). For details, see "Creating an Image" in *Image Management Service API Reference*.
 
 URI
 ---
