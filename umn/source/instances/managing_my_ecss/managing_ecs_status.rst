@@ -14,8 +14,8 @@ You can start, stop, restart, or delete an ECS.
 
    For bare metal ECSs (with physical flavors) such as C7t ECSs, do not run commands such as **shutdown**, **poweroff**, or **halt** in the OS because the commands may be invalid or the ECS may fail to be started after being stopped.
 
-Starting ECSs
--------------
+Start
+-----
 
 #. Log in to the management console.
 #. Click |image1| in the upper left corner and select a region and project.
@@ -28,8 +28,10 @@ Starting ECSs
 
       Contact the administrator if the ECS has been in the **Starting** state for more than 30 minutes.
 
-Stopping ECSs
--------------
+.. _en-us_topic_0013771110__section1777940307:
+
+Stop
+----
 
 #. Log in to the management console.
 #. Click |image2| in the upper left corner and select a region and project.
@@ -50,8 +52,8 @@ Stopping ECSs
 
       Contact the administrator if the ECS has been in the **Stopping** state for more than 30 minutes.
 
-Restarting ECSs
----------------
+Restart
+-------
 
 #. Log in to the management console.
 #. Click |image3| in the upper left corner and select a region and project.
@@ -69,8 +71,8 @@ Restarting ECSs
 
       Contact the administrator if the ECS has been in the **Restarting** state for more than 30 minutes.
 
-Deleting an ECS
----------------
+Deletion
+--------
 
 #. Log in to the management console.
 #. Click |image4| in the upper left corner and select a region and project.

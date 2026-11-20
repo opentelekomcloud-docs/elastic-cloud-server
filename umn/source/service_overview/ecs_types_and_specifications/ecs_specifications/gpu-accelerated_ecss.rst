@@ -44,87 +44,135 @@ Images Supported by GPU-accelerated ECSs
 
 .. table:: **Table 1** Images supported by GPU-accelerated ECSs
 
-   +-----------------------+-----------------------+------------------------------------------+
-   | Type                  | Series                | Supported Image                          |
-   +=======================+=======================+==========================================+
-   | Graphics-accelerated  | G7v                   | -  CentOS 8.2 64bit                      |
-   |                       |                       | -  CentOS 7.6 64bit                      |
-   |                       |                       | -  Ubuntu 20.04 server 64bit             |
-   |                       |                       | -  Ubuntu 18.04 server 64bit             |
-   |                       |                       | -  Windows Server 2019 Standard 64bit    |
-   |                       |                       | -  Windows Server 2016 Standard 64bit    |
-   +-----------------------+-----------------------+------------------------------------------+
-   | Graphics-accelerated  | G7                    | -  CentOS 8.2 64bit                      |
-   |                       |                       | -  CentOS 7.6 64bit                      |
-   |                       |                       | -  Ubuntu 20.04 server 64bit             |
-   |                       |                       | -  Ubuntu 18.04 server 64bit             |
-   |                       |                       | -  Windows Server 2019 Standard 64bit    |
-   |                       |                       | -  Windows Server 2016 Standard 64bit    |
-   +-----------------------+-----------------------+------------------------------------------+
-   | Graphics-accelerated  | G6                    | -  EulerOS 2.5 64bit                     |
-   |                       |                       | -  Windows Server 2019 Standard 64bit    |
-   |                       |                       | -  Windows Server 2016 Standard 64bit    |
-   |                       |                       | -  Windows Server 2012 R2 Standard 64bit |
-   +-----------------------+-----------------------+------------------------------------------+
-   | Computing-accelerated | P5e                   | -  CentOS 7.9 64bit                      |
-   |                       |                       | -  CentOS 7.8 64bit                      |
-   |                       |                       | -  CentOS 7.7 64bit                      |
-   |                       |                       | -  CentOS 7.6 64bit                      |
-   |                       |                       | -  Ubuntu 22.04 64bit                    |
-   |                       |                       | -  Ubuntu 20.04 64bit                    |
-   |                       |                       | -  Ubuntu 18.04 64bit                    |
-   |                       |                       | -  Ubuntu 16.04 64bit                    |
-   +-----------------------+-----------------------+------------------------------------------+
-   | Computing-accelerated | P5s                   | -  CentOS 7.9 64bit                      |
-   |                       |                       | -  CentOS 7.8 64bit                      |
-   |                       |                       | -  CentOS 7.7 64bit                      |
-   |                       |                       | -  CentOS 7.6 64bit                      |
-   |                       |                       | -  Ubuntu 22.04 64bit                    |
-   |                       |                       | -  Ubuntu 20.04 64bit                    |
-   |                       |                       | -  Ubuntu 18.04 64bit                    |
-   |                       |                       | -  Ubuntu 16.04 64bit                    |
-   +-----------------------+-----------------------+------------------------------------------+
-   | Computing-accelerated | P3                    | -  CentOS 8.2 64bit                      |
-   |                       |                       | -  CentOS 8.1 64bit                      |
-   |                       |                       | -  CentOS 8.0 64bit                      |
-   |                       |                       | -  CentOS 7.9 64bit                      |
-   |                       |                       | -  CentOS 7.8 64bit                      |
-   |                       |                       | -  CentOS 7.7 64bit                      |
-   |                       |                       | -  CentOS 7.6 64bit                      |
-   |                       |                       | -  Ubuntu 20.04 server 64bit             |
-   |                       |                       | -  Ubuntu 18.04 server 64bit             |
-   +-----------------------+-----------------------+------------------------------------------+
-   | Computing-accelerated | P2s                   | -  CentOS 7.9 64bit                      |
-   |                       |                       | -  EulerOS 2.5 64bit                     |
-   |                       |                       | -  Oracle Linux Server release 7.6 64bit |
-   |                       |                       | -  Ubuntu 20.04 server 64bit             |
-   |                       |                       | -  Ubuntu 18.04 server 64bit             |
-   |                       |                       | -  Windows Server 2019 Standard 64bit    |
-   |                       |                       | -  Windows Server 2016 Standard 64bit    |
-   |                       |                       | -  Windows Server 2012 R2 Standard 64bit |
-   +-----------------------+-----------------------+------------------------------------------+
-   | Computing-accelerated | P2v                   | -  CentOS 7.9 64bit                      |
-   |                       |                       | -  EulerOS 2.5 64bit                     |
-   |                       |                       | -  Oracle Linux Server release 7.6 64bit |
-   |                       |                       | -  Ubuntu 20.04 server 64bit             |
-   |                       |                       | -  Ubuntu 18.04 server 64bit             |
-   |                       |                       | -  Windows Server 2019 Standard 64bit    |
-   |                       |                       | -  Windows Server 2016 Standard 64bit    |
-   |                       |                       | -  Windows Server 2012 R2 Standard 64bit |
-   +-----------------------+-----------------------+------------------------------------------+
-   | Inference-accelerated | Pi5e                  | -  Ubuntu 24.04 server 64bit             |
-   |                       |                       | -  Windows Server 2025 Standard 64bit    |
-   |                       |                       | -  Windows Server 2022 Standard 64bit    |
-   |                       |                       | -  Windows Server 2019 Standard 64bit    |
-   +-----------------------+-----------------------+------------------------------------------+
-   | Inference-accelerated | Pi2                   | -  CentOS 7.9 64bit                      |
-   |                       |                       | -  Oracle Linux Server release 7.6 64bit |
-   |                       |                       | -  Ubuntu 20.04 server 64bit             |
-   |                       |                       | -  Ubuntu 18.04 server 64bit             |
-   |                       |                       | -  Windows Server 2019 Standard 64bit    |
-   |                       |                       | -  Windows Server 2016 Standard 64bit    |
-   |                       |                       | -  Windows Server 2012 R2 Standard 64bit |
-   +-----------------------+-----------------------+------------------------------------------+
+   +-----------------------+-----------------------+--------------------------------------------+
+   | Type                  | Series                | Supported Image                            |
+   +=======================+=======================+============================================+
+   | Graphics-accelerated  | G7v                   | -  Rocky Linux 9 64bit                     |
+   |                       |                       | -  Windows Server 2025 Standard 64bit      |
+   |                       |                       | -  Windows Server 2022 Standard 64bit      |
+   |                       |                       | -  Windows Server 2019 Standard 64bit      |
+   +-----------------------+-----------------------+--------------------------------------------+
+   | Graphics-accelerated  | G7                    | -  AlmaLinux 9 64bit                       |
+   |                       |                       | -  AlmaLinux 8 64bit                       |
+   |                       |                       | -  Debian GNU/Linux 13 64bit               |
+   |                       |                       | -  Debian GNU/Linux 12 64bit               |
+   |                       |                       | -  Oracle Linux Server 8 64bit             |
+   |                       |                       | -  Red Hat Enterprise Linux Server 9 64bit |
+   |                       |                       | -  Red Hat Enterprise Linux Server 8 64bit |
+   |                       |                       | -  Red Hat Enterprise Linux Server 7 64bit |
+   |                       |                       | -  Rocky Linux 8 64bit                     |
+   |                       |                       | -  Ubuntu 24.04 server 64bit               |
+   |                       |                       | -  Ubuntu 22.04 server 64bit               |
+   |                       |                       | -  Windows Server 2025 Standard 64bit      |
+   |                       |                       | -  Windows Server 2022 Standard 64bit      |
+   |                       |                       | -  Windows Server 2019 Standard 64bit      |
+   +-----------------------+-----------------------+--------------------------------------------+
+   | Graphics-accelerated  | G6                    | -  AlmaLinux 9 64bit                       |
+   |                       |                       | -  AlmaLinux 8 64bit                       |
+   |                       |                       | -  Debian GNU/Linux 13 64bit               |
+   |                       |                       | -  Debian GNU/Linux 12 64bit               |
+   |                       |                       | -  Oracle Linux Server 9 64bit             |
+   |                       |                       | -  Oracle Linux Server 8 64bit             |
+   |                       |                       | -  Red Hat Enterprise Linux Server 9 64bit |
+   |                       |                       | -  Red Hat Enterprise Linux Server 8 64bit |
+   |                       |                       | -  Red Hat Enterprise Linux Server 7 64bit |
+   |                       |                       | -  Rocky Linux 9 64bit                     |
+   |                       |                       | -  Rocky Linux 8 64bit                     |
+   |                       |                       | -  Ubuntu 24.04 64bit                      |
+   |                       |                       | -  Ubuntu 22.04 64bit                      |
+   |                       |                       | -  Windows Server 2025 Standard 64bit      |
+   |                       |                       | -  Windows Server 2022 Standard 64bit      |
+   |                       |                       | -  Windows Server 2019 Standard 64bit      |
+   +-----------------------+-----------------------+--------------------------------------------+
+   | Computing-accelerated | P5e                   | -  CentOS 7.9 64bit                        |
+   |                       |                       | -  CentOS 7.8 64bit                        |
+   |                       |                       | -  CentOS 7.7 64bit                        |
+   |                       |                       | -  CentOS 7.6 64bit                        |
+   |                       |                       | -  Ubuntu 22.04 64bit                      |
+   |                       |                       | -  Ubuntu 20.04 64bit                      |
+   |                       |                       | -  Ubuntu 18.04 64bit                      |
+   |                       |                       | -  Ubuntu 16.04 64bit                      |
+   +-----------------------+-----------------------+--------------------------------------------+
+   | Computing-accelerated | P5s                   | -  Ubuntu 24.04 64bit                      |
+   |                       |                       | -  Ubuntu 22.04 64bit                      |
+   |                       |                       | -  Windows Server 2025 Standard 64bit      |
+   |                       |                       | -  Windows Server 2022 Standard 64bit      |
+   |                       |                       | -  Windows Server 2019 Standard 64bit      |
+   +-----------------------+-----------------------+--------------------------------------------+
+   | Computing-accelerated | P3                    | -  AlmaLinux 9 64bit                       |
+   |                       |                       | -  AlmaLinux 8 64bit                       |
+   |                       |                       | -  Debian GNU/Linux 13 64bit               |
+   |                       |                       | -  Debian GNU/Linux 12 64bit               |
+   |                       |                       | -  Oracle Linux Server 9 64bit             |
+   |                       |                       | -  Oracle Linux Server 8 64bit             |
+   |                       |                       | -  Red Hat Enterprise Linux Server 9 64bit |
+   |                       |                       | -  Red Hat Enterprise Linux Server 8 64bit |
+   |                       |                       | -  Red Hat Enterprise Linux Server 7 64bit |
+   |                       |                       | -  Rocky Linux 9 64bit                     |
+   |                       |                       | -  Rocky Linux 8 64bit                     |
+   |                       |                       | -  Ubuntu 24.04 server 64bit               |
+   |                       |                       | -  Ubuntu 22.04 server 64bit               |
+   |                       |                       | -  Windows Server 2025 Standard 64bit      |
+   |                       |                       | -  Windows Server 2022 Standard 64bit      |
+   |                       |                       | -  Windows Server 2019 Standard 64bit      |
+   +-----------------------+-----------------------+--------------------------------------------+
+   | Computing-accelerated | P2s                   | -  AlmaLinux 9 64bit                       |
+   |                       |                       | -  AlmaLinux 8 64bit                       |
+   |                       |                       | -  Debian GNU/Linux 13 64bit               |
+   |                       |                       | -  Debian GNU/Linux 12 64bit               |
+   |                       |                       | -  Oracle Linux Server 9 64bit             |
+   |                       |                       | -  Oracle Linux Server 8 64bit             |
+   |                       |                       | -  Red Hat Enterprise Linux Server 9 64bit |
+   |                       |                       | -  Red Hat Enterprise Linux Server 8 64bit |
+   |                       |                       | -  Red Hat Enterprise Linux Server 7 64bit |
+   |                       |                       | -  Rocky Linux 9 64bit                     |
+   |                       |                       | -  Rocky Linux 8 64bit                     |
+   |                       |                       | -  Ubuntu 24.04 server 64bit               |
+   |                       |                       | -  Ubuntu 22.04 server 64bit               |
+   |                       |                       | -  Windows Server 2025 Standard 64bit      |
+   |                       |                       | -  Windows Server 2022 Standard 64bit      |
+   |                       |                       | -  Windows Server 2019 Standard 64bit      |
+   +-----------------------+-----------------------+--------------------------------------------+
+   | Computing-accelerated | P2v                   | -  AlmaLinux 9 64bit                       |
+   |                       |                       | -  AlmaLinux 8 64bit                       |
+   |                       |                       | -  Debian GNU/Linux 13 64bit               |
+   |                       |                       | -  Debian GNU/Linux 12 64bit               |
+   |                       |                       | -  Oracle Linux Server 9 64bit             |
+   |                       |                       | -  Oracle Linux Server 8 64bit             |
+   |                       |                       | -  Red Hat Enterprise Linux Server 9 64bit |
+   |                       |                       | -  Red Hat Enterprise Linux Server 8 64bit |
+   |                       |                       | -  Red Hat Enterprise Linux Server 7 64bit |
+   |                       |                       | -  Rocky Linux 9 64bit                     |
+   |                       |                       | -  Rocky Linux 8 64bit                     |
+   |                       |                       | -  Ubuntu 24.04 server 64bit               |
+   |                       |                       | -  Ubuntu 22.04 server 64bit               |
+   |                       |                       | -  Windows Server 2025 Standard 64bit      |
+   |                       |                       | -  Windows Server 2022 Standard 64bit      |
+   |                       |                       | -  Windows Server 2019 Standard 64bit      |
+   +-----------------------+-----------------------+--------------------------------------------+
+   | Inference-accelerated | Pi5e                  | -  Ubuntu 24.04 server 64bit               |
+   |                       |                       | -  Ubuntu 22.04 server 64bit               |
+   |                       |                       | -  Windows Server 2025 Standard 64bit      |
+   |                       |                       | -  Windows Server 2022 Standard 64bit      |
+   |                       |                       | -  Windows Server 2019 Standard 64bit      |
+   +-----------------------+-----------------------+--------------------------------------------+
+   | Inference-accelerated | Pi2                   | -  AlmaLinux 9 64bit                       |
+   |                       |                       | -  AlmaLinux 8 64bit                       |
+   |                       |                       | -  Debian GNU/Linux 13 64bit               |
+   |                       |                       | -  Debian GNU/Linux 12 64bit               |
+   |                       |                       | -  Red Hat Enterprise Linux Server 9 64bit |
+   |                       |                       | -  Red Hat Enterprise Linux Server 8 64bit |
+   |                       |                       | -  Red Hat Enterprise Linux Server 7 64bit |
+   |                       |                       | -  Rocky Linux 9 64bit                     |
+   |                       |                       | -  Rocky Linux 8 64bit                     |
+   |                       |                       | -  Oracle Linux Server 9 64bit             |
+   |                       |                       | -  Oracle Linux Server 8 64bit             |
+   |                       |                       | -  Ubuntu 24.04 server 64bit               |
+   |                       |                       | -  Ubuntu 22.04 server 64bit               |
+   |                       |                       | -  Windows Server 2025 Standard 64bit      |
+   |                       |                       | -  Windows Server 2022 Standard 64bit      |
+   |                       |                       | -  Windows Server 2019 Standard 64bit      |
+   +-----------------------+-----------------------+--------------------------------------------+
 
 .. _en-us_topic_0097289624__section168054357432:
 
@@ -141,17 +189,17 @@ Select your desired GPU-accelerated ECS type and specifications.
 
 .. table:: **Table 2** G7v ECS specifications
 
-   +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------------------+------------+----------------+
-   | Flavor        | vCPUs | Memory | Max./Assured Network Bandwidth | Max. Network PPS | Max. NIC Queues | Max. NICs | GPUs               | GPU Memory | Virtualization |
-   |               |       |        |                                |                  |                 |           |                    |            |                |
-   |               |       | (GiB)  | (Gbit/s)                       | (10,000)         |                 |           |                    | (GiB)      |                |
-   +===============+=======+========+================================+==================+=================+===========+====================+============+================+
-   | g7v.2xlarge.8 | 8     | 64     | 15/3                           | 100              | 4               | 4         | 1 x NVIDIA-A40-8Q  | 8          | KVM            |
-   +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------------------+------------+----------------+
-   | g7v.4xlarge.8 | 16    | 128    | 20/6                           | 150              | 8               | 8         | 1 x NVIDIA-A40-16Q | 16         | KVM            |
-   +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------------------+------------+----------------+
-   | g7v.6xlarge.8 | 24    | 192    | 25/9                           | 200              | 8               | 8         | 1 x NVIDIA-A40-24Q | 24         | KVM            |
-   +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------------------+------------+----------------+
+   +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------+--------------------+------------+----------------+-----------------------------+
+   | Flavor        | vCPUs | Memory | Max./Assured Network Bandwidth | Max. Network PPS | Max. NIC Queues | Max. NICs | Max. EVS Disks | GPUs               | GPU Memory | Virtualization | Hardware                    |
+   |               |       |        |                                |                  |                 |           |                |                    |            |                |                             |
+   |               |       | (GiB)  | (Gbit/s)                       | (10,000)         |                 |           |                |                    | (GiB)      |                |                             |
+   +===============+=======+========+================================+==================+=================+===========+================+====================+============+================+=============================+
+   | g7v.2xlarge.8 | 8     | 64     | 15/3                           | 100              | 4               | 4         | 60             | 1 x NVIDIA-A40-8Q  | 8          | KVM            | CPU: Intel® Xeon® Gold 6348 |
+   +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------+--------------------+------------+----------------+-----------------------------+
+   | g7v.4xlarge.8 | 16    | 128    | 20/6                           | 150              | 8               | 8         | 60             | 1 x NVIDIA-A40-16Q | 16         | KVM            |                             |
+   +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------+--------------------+------------+----------------+-----------------------------+
+   | g7v.6xlarge.8 | 24    | 192    | 25/9                           | 400              | 8               | 8         | 60             | 1 x NVIDIA-A40-24Q | 24         | KVM            |                             |
+   +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------+--------------------+------------+----------------+-----------------------------+
 
 **G7v ECS Features**
 
@@ -169,11 +217,11 @@ Select your desired GPU-accelerated ECS type and specifications.
 -  Heavy-load CPU inference
 -  Application flow identical to common ECSs
 -  Automatic scheduling of G7v ECSs to AZs where NVIDIA A40 GPUs are used
--  Built-in one NVENC and two NVDECs (including AV1 decoding)
+-  One built-in NVENC and two built-in NVDECs (including AV1 decoding)
 
 **Supported Software**
 
-G7v ECSs are used in graphics acceleration scenarios, such as video rendering, cloud desktop, and 3D visualization. If the software relies on GPU DirectX and OpenGL hardware acceleration, use G7v ECSs. G7v ECSs support the following commonly used graphics processing software:
+G7v ECSs are used in graphics acceleration scenarios, such as graphics rendering, cloud desktops, and 3D visualization. If the software relies on GPU DirectX and OpenGL hardware acceleration, use G7v ECSs. G7v ECSs support the following commonly used graphics processing software:
 
 -  AutoCAD
 -  3ds Max
@@ -198,7 +246,7 @@ G7v ECSs are used in graphics acceleration scenarios, such as video rendering, c
 
    For details about how to configure a GRID license, see :ref:`Manually Installing a GRID Driver on a GPU-accelerated ECS <en-us_topic_0149610914>`.
 
--  If a G7v ECS is created using a private image, make sure that the GRID driver was installed during the private image creation. If the GRID driver has not been installed, install the driver for graphics acceleration after the ECS is created.
+-  If a G7v ECS is created using a private image, make sure that the GRID driver is installed during the private image creation. If the GRID driver has not been installed, install the driver for graphics acceleration after the ECS is created.
 
    For details, see :ref:`Manually Installing a GRID Driver on a GPU-accelerated ECS <en-us_topic_0149610914>`.
 
@@ -221,15 +269,15 @@ Select your desired GPU-accelerated ECS type and specifications.
 
 .. table:: **Table 3** G7 ECS specifications
 
-   +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------+------------+----------------+
-   | Flavor        | vCPUs | Memory | Max./Assured Network Bandwidth | Max. Network PPS | Max. NIC Queues | Max. NICs | GPUs           | GPU Memory | Virtualization |
-   |               |       |        |                                |                  |                 |           |                |            |                |
-   |               |       | (GiB)  | (Gbit/s)                       | (10,000)         |                 |           |                | (GiB)      |                |
-   +===============+=======+========+================================+==================+=================+===========+================+============+================+
-   | g7.12xlarge.8 | 48    | 384    | 35/18                          | 750              | 16              | 8         | 1 x NVIDIA-A40 | 1 x 48     | KVM            |
-   +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------+------------+----------------+
-   | g7.24xlarge.8 | 96    | 768    | 40/36                          | 850              | 16              | 8         | 2 x NVIDIA-A40 | 2 x 48     | KVM            |
-   +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------+------------+----------------+
+   +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------+----------------+------------+----------------+----------------------------------+
+   | Flavor        | vCPUs | Memory | Max./Assured Network Bandwidth | Max. Network PPS | Max. NIC Queues | Max. NICs | Max. EVS Disks | GPUs           | GPU Memory | Virtualization | Hardware                         |
+   |               |       |        |                                |                  |                 |           |                |                |            |                |                                  |
+   |               |       | (GiB)  | (Gbit/s)                       | (10,000)         |                 |           |                |                | (GiB)      |                |                                  |
+   +===============+=======+========+================================+==================+=================+===========+================+================+============+================+==================================+
+   | g7.12xlarge.8 | 48    | 384    | 35/18                          | 750              | 16              | 8         | 60             | 1 x NVIDIA-A40 | 1 x 48     | KVM            | CPU: Intel® Xeon® Platinum 8378A |
+   +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------+----------------+------------+----------------+----------------------------------+
+   | g7.24xlarge.8 | 96    | 768    | 40/36                          | 850              | 16              | 8         | 60             | 2 x NVIDIA-A40 | 2 x 48     | KVM            |                                  |
+   +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------+----------------+------------+----------------+----------------------------------+
 
 **G7 ECS Features**
 
@@ -247,11 +295,11 @@ Select your desired GPU-accelerated ECS type and specifications.
 -  Heavy-load CPU inference
 -  Application flow identical to common ECSs
 -  Automatic scheduling of G7 ECSs to AZs where NVIDIA A40 GPUs are used
--  Built-in one NVENC and two NVDECs (including AV1 decoding)
+-  One built-in NVENC and two built-in NVDECs (including AV1 decoding)
 
 **Supported Software**
 
-G7 ECSs are used in graphics acceleration scenarios, such as video rendering, cloud desktop, and 3D visualization. If the software relies on GPU DirectX and OpenGL hardware acceleration, use G7 ECSs. G7 ECSs support the following commonly used graphics processing software:
+G7 ECSs are used in graphics acceleration scenarios, such as graphics rendering, cloud desktops, and 3D visualization. If the software relies on GPU DirectX and OpenGL hardware acceleration, use G7 ECSs. G7 ECSs support the following commonly used graphics processing software:
 
 -  AutoCAD
 -  3ds Max
@@ -273,7 +321,7 @@ G7 ECSs are used in graphics acceleration scenarios, such as video rendering, cl
       Resources will be released after a G7 ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop it.
 
 -  G7 ECSs created using a public image have had the GRID driver of a specific version installed by default. However, you need to purchase and configure a GRID license by yourself. Ensure that the GRID driver version meets service requirements.
--  If a G7 ECS is created using a private image, make sure that the GRID driver was installed during the private image creation. If the GRID driver has not been installed, install the driver for graphics acceleration after the ECS is created.
+-  If a G7 ECS is created using a private image, make sure that the GRID driver is installed during the private image creation. If the GRID driver has not been installed, install the driver for graphics acceleration after the ECS is created.
 -  Unlike general-purpose compute, GPU-accelerated ECSs deliver heterogeneous compute. Their specifications can only be modified within the same instance type.
 -  GPU-accelerated ECSs do not support live migration.
 
@@ -292,17 +340,17 @@ Select your desired GPU-accelerated ECS type and specifications.
 
 .. table:: **Table 4** G6 ECS specifications
 
-   +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------+------------+----------------+
-   | Flavor        | vCPUs | Memory | Max./Assured Network Bandwidth | Max. Network PPS | Max. NIC Queues | Max. NICs | GPUs   | GPU Memory | Virtualization |
-   |               |       |        |                                |                  |                 |           |        |            |                |
-   |               |       | (GiB)  | (Gbit/s)                       | (10,000)         |                 |           |        | (GiB)      |                |
-   +===============+=======+========+================================+==================+=================+===========+========+============+================+
-   | g6.4xlarge.4  | 16    | 64     | 25/15                          | 200              | 8               | 8         | 1 x T4 | 16         | KVM            |
-   +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------+------------+----------------+
-   | g6.10xlarge.7 | 40    | 280    | 25/15                          | 200              | 16              | 8         | 1 x T4 | 16         | KVM            |
-   +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------+------------+----------------+
-   | g6.20xlarge.7 | 80    | 560    | 30/30                          | 400              | 32              | 16        | 2 x T4 | 32         | KVM            |
-   +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------+------------+----------------+
+   +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------+--------+------------+----------------+-----------------------------+
+   | Flavor        | vCPUs | Memory | Max./Assured Network Bandwidth | Max. Network PPS | Max. NIC Queues | Max. NICs | Max. EVS Disks | GPUs   | GPU Memory | Virtualization | Hardware                    |
+   |               |       |        |                                |                  |                 |           |                |        |            |                |                             |
+   |               |       | (GiB)  | (Gbit/s)                       | (10,000)         |                 |           |                |        | (GiB)      |                |                             |
+   +===============+=======+========+================================+==================+=================+===========+================+========+============+================+=============================+
+   | g6.4xlarge.4  | 16    | 64     | 15/8                           | 100              | 8               | 8         | 60             | 1 x T4 | 16         | KVM            | CPU: Intel® Xeon® Gold 6266 |
+   +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------+--------+------------+----------------+-----------------------------+
+   | g6.10xlarge.7 | 40    | 280    | 25/15                          | 200              | 16              | 8         | 60             | 1 x T4 | 16         | KVM            |                             |
+   +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------+--------+------------+----------------+-----------------------------+
+   | g6.20xlarge.7 | 80    | 560    | 30/30                          | 400              | 32              | 16        | 60             | 2 x T4 | 32         | KVM            |                             |
+   +---------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------+--------+------------+----------------+-----------------------------+
 
 .. note::
 
@@ -322,11 +370,11 @@ Select your desired GPU-accelerated ECS type and specifications.
 -  Graphics acceleration
 -  Heavy-load CPU inference
 -  Automatic scheduling of G6 ECSs to AZs where NVIDIA T4 GPUs are used
--  Built-in one NVENC and two NVDECs
+-  One built-in NVENC and two built-in NVDECs
 
 **Supported Software**
 
-G6 ECSs are used in graphics acceleration scenarios, such as video rendering, cloud desktop, and 3D visualization. If the software relies on GPU DirectX and OpenGL hardware acceleration, use G6 ECSs. G6 ECSs support the following commonly used graphics processing software:
+G6 ECSs are used in graphics acceleration scenarios, such as graphics rendering, cloud desktops, and 3D visualization. If the software relies on GPU DirectX and OpenGL hardware acceleration, use G6 ECSs. G6 ECSs support the following commonly used graphics processing software:
 
 -  AutoCAD
 -  3ds Max
@@ -344,7 +392,7 @@ G6 ECSs are used in graphics acceleration scenarios, such as video rendering, cl
 
 -  G6 ECSs created using a public image have had the GRID driver of a specific version installed by default. However, you need to purchase and configure a GRID license by yourself. Ensure that the GRID driver version meets service requirements.
 
--  If a G6 ECS is created using a private image, make sure that the GRID driver was installed during the private image creation. If not, install the driver for graphics acceleration after the ECS is created.
+-  If a G6 ECS is created using a private image, make sure that the GRID driver is installed during the private image creation. If not, install the driver for graphics acceleration after the ECS is created.
 
 -  Unlike general-purpose compute, GPU-accelerated ECSs deliver heterogeneous compute. Their specifications can only be modified within the same instance type.
 
@@ -363,15 +411,15 @@ P5e ECSs use high-performance NVIDIA Tesla H100 NVL to deliver outstanding train
 
 .. table:: **Table 5** P5e ECS specifications
 
-   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+--------------+------------------+----------------+
-   | Flavor          | vCPUs | Memory (GiB) | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS (10,000) | Max. NIC Queues | Max. NICs | GPUs         | GPU Memory (GiB) | Virtualization |
-   +=================+=======+==============+=========================================+===========================+=================+===========+==============+==================+================+
-   | p5e.10xlarge.12 | 40    | 480          | 24/9                                    | 550                       | 16              | 8         | 2 x H100 NVL | 188              | KVM            |
-   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+--------------+------------------+----------------+
-   | p5e.20xlarge.12 | 80    | 960          | 32/18                                   | 750                       | 32              | 8         | 4 x H100 NVL | 376              | KVM            |
-   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+--------------+------------------+----------------+
-   | p5e.40xlarge.12 | 160   | 1,920        | 40/36                                   | 850                       | 32              | 8         | 8 x H100 NVL | 752              | KVM            |
-   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+--------------+------------------+----------------+
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+--------------+------------------+----------------+----------------------------------+
+   | Flavor          | vCPUs | Memory (GiB) | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS (10,000) | Max. NIC Queues | Max. NICs | Max. EVS Disks | GPUs         | GPU Memory (GiB) | Virtualization | Hardware                         |
+   +=================+=======+==============+=========================================+===========================+=================+===========+================+==============+==================+================+==================================+
+   | p5e.10xlarge.12 | 40    | 480          | 24/9                                    | 550                       | 16              | 8         | 60             | 2 x H100 NVL | 188              | KVM            | CPU: Intel® Xeon® Platinum 8458P |
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+--------------+------------------+----------------+----------------------------------+
+   | p5e.20xlarge.12 | 80    | 960          | 32/18                                   | 750                       | 32              | 8         | 60             | 4 x H100 NVL | 376              | KVM            |                                  |
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+--------------+------------------+----------------+----------------------------------+
+   | p5e.40xlarge.12 | 160   | 1,920        | 40/36                                   | 850                       | 32              | 8         | 60             | 8 x H100 NVL | 752              | KVM            |                                  |
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+--------------+------------------+----------------+----------------------------------+
 
 **P5e ECS Features**
 
@@ -409,17 +457,17 @@ P5s ECSs use high-performance NVIDIA Tesla H100 PCIe to provide outstanding real
 
 .. table:: **Table 6** P5s ECS specifications
 
-   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+---------------+------------------+----------------+
-   | Flavor          | vCPUs | Memory (GiB) | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS (10,000) | Max. NIC Queues | Max. NICs | GPUs          | GPU Memory (GiB) | Virtualization |
-   +=================+=======+==============+=========================================+===========================+=================+===========+===============+==================+================+
-   | p5s.5xlarge.12  | 20    | 240          | 16/4.5                                  | 280                       | 8               | 4         | 1 x H100 PCIe | 80               | KVM            |
-   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+---------------+------------------+----------------+
-   | p5s.10xlarge.12 | 40    | 480          | 24/9                                    | 550                       | 16              | 8         | 2 x H100 PCIe | 160              | KVM            |
-   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+---------------+------------------+----------------+
-   | p5s.20xlarge.12 | 80    | 960          | 32/18                                   | 750                       | 32              | 8         | 4 x H100 PCIe | 320              | KVM            |
-   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+---------------+------------------+----------------+
-   | p5s.40xlarge.12 | 160   | 1,920        | 40/36                                   | 850                       | 32              | 8         | 8 x H100 PCIe | 640              | KVM            |
-   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+---------------+------------------+----------------+
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+---------------+------------------+----------------+----------------------------------+
+   | Flavor          | vCPUs | Memory (GiB) | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS (10,000) | Max. NIC Queues | Max. NICs | Max. EVS Disks | GPUs          | GPU Memory (GiB) | Virtualization | Hardware                         |
+   +=================+=======+==============+=========================================+===========================+=================+===========+================+===============+==================+================+==================================+
+   | p5s.5xlarge.12  | 20    | 240          | 16/4.5                                  | 280                       | 8               | 4         | 60             | 1 x H100 PCIe | 80               | KVM            | CPU: Intel® Xeon® Platinum 8458P |
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+---------------+------------------+----------------+----------------------------------+
+   | p5s.10xlarge.12 | 40    | 480          | 24/9                                    | 550                       | 16              | 8         | 60             | 2 x H100 PCIe | 160              | KVM            |                                  |
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+---------------+------------------+----------------+----------------------------------+
+   | p5s.20xlarge.12 | 80    | 960          | 32/18                                   | 750                       | 32              | 8         | 60             | 4 x H100 PCIe | 320              | KVM            |                                  |
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+---------------+------------------+----------------+----------------------------------+
+   | p5s.40xlarge.12 | 160   | 1,920        | 40/36                                   | 850                       | 32              | 8         | 60             | 8 x H100 PCIe | 640              | KVM            |                                  |
+   +-----------------+-------+--------------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+---------------+------------------+----------------+----------------------------------+
 
 **P5s ECS Features**
 
@@ -458,19 +506,19 @@ P3 ECSs use NVIDIA A100 GPUs and provide flexibility and ultra-high-performance 
 
 .. table:: **Table 7** P3 ECS specifications
 
-   +---------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+-----------------------+------------+----------------+
-   | Flavor        | vCPUs | Memory | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS | Max. NIC Queues | Max. NICs | GPUs                  | GPU Memory | Virtualization |
-   |               |       |        |                                         |                  |                 |           |                       |            |                |
-   |               |       | (GiB)  |                                         | (10,000)         |                 |           |                       | (GiB)      |                |
-   +===============+=======+========+=========================================+==================+=================+===========+=======================+============+================+
-   | p3.2xlarge.8  | 8     | 64     | 10/4                                    | 100              | 4               | 4         | 1 x NVIDIA A100 80 GB | 80         | KVM            |
-   +---------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+-----------------------+------------+----------------+
-   | p3.4xlarge.8  | 16    | 128    | 15/8                                    | 200              | 8               | 8         | 2 x NVIDIA A100 80 GB | 160        | KVM            |
-   +---------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+-----------------------+------------+----------------+
-   | p3.8xlarge.8  | 32    | 256    | 25/15                                   | 350              | 16              | 8         | 4 x NVIDIA A100 80 GB | 320        | KVM            |
-   +---------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+-----------------------+------------+----------------+
-   | p3.16xlarge.8 | 64    | 512    | 36/30                                   | 700              | 32              | 8         | 8 x NVIDIA A100 80 GB | 640        | KVM            |
-   +---------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+-----------------------+------------+----------------+
+   +---------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+----------------+-----------------------+------------+----------------+------------------------------+
+   | Flavor        | vCPUs | Memory | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS | Max. NIC Queues | Max. NICs | Max. EVS Disks | GPUs                  | GPU Memory | Virtualization | Hardware                     |
+   |               |       |        |                                         |                  |                 |           |                |                       |            |                |                              |
+   |               |       | (GiB)  |                                         | (10,000)         |                 |           |                |                       | (GiB)      |                |                              |
+   +===============+=======+========+=========================================+==================+=================+===========+================+=======================+============+================+==============================+
+   | p3.2xlarge.8  | 8     | 64     | 10/4                                    | 100              | 4               | 4         | 60             | 1 x NVIDIA A100 80 GB | 80         | KVM            | CPU: Intel® Xeon® Gold 6248R |
+   +---------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+----------------+-----------------------+------------+----------------+------------------------------+
+   | p3.4xlarge.8  | 16    | 128    | 15/8                                    | 200              | 8               | 8         | 60             | 2 x NVIDIA A100 80 GB | 160        | KVM            |                              |
+   +---------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+----------------+-----------------------+------------+----------------+------------------------------+
+   | p3.8xlarge.8  | 32    | 256    | 25/15                                   | 350              | 16              | 8         | 60             | 4 x NVIDIA A100 80 GB | 320        | KVM            |                              |
+   +---------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+----------------+-----------------------+------------+----------------+------------------------------+
+   | p3.16xlarge.8 | 64    | 512    | 36/30                                   | 700              | 32              | 8         | 60             | 8 x NVIDIA A100 80 GB | 640        | KVM            |                              |
+   +---------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+----------------+-----------------------+------------+----------------+------------------------------+
 
 **P3 ECS Features**
 
@@ -537,19 +585,19 @@ P2s ECSs use NVIDIA Tesla V100 GPUs to provide flexibility, high-performance com
 
 .. table:: **Table 8** P2s ECS specifications
 
-   +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------+----------------+------------------+----------------+----------------------------------------------------------+
-   | Flavor         | vCPUs | Memory | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS (10,000) | Max. NIC Queues | Max. NICs | GPUs     | GPU Connection | GPU Memory (GiB) | Virtualization | Hardware                                                 |
-   |                |       |        |                                         |                           |                 |           |          |                |                  |                |                                                          |
-   |                |       | (GiB)  |                                         |                           |                 |           |          |                |                  |                |                                                          |
-   +================+=======+========+=========================================+===========================+=================+===========+==========+================+==================+================+==========================================================+
-   | p2s.2xlarge.8  | 8     | 64     | 10/4                                    | 50                        | 4               | 4         | 1 x V100 | PCIe Gen3      | 1 x 32 GiB       | KVM            | CPU: 2nd Generation Intel® Xeon® Scalable Processor 6278 |
-   +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------+----------------+------------------+----------------+----------------------------------------------------------+
-   | p2s.4xlarge.8  | 16    | 128    | 15/8                                    | 100                       | 8               | 8         | 2 x V100 | PCIe Gen3      | 2 x 32 GiB       | KVM            |                                                          |
-   +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------+----------------+------------------+----------------+----------------------------------------------------------+
-   | p2s.8xlarge.8  | 32    | 256    | 25/15                                   | 200                       | 16              | 8         | 4 x V100 | PCIe Gen3      | 4 x 32 GiB       | KVM            |                                                          |
-   +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------+----------------+------------------+----------------+----------------------------------------------------------+
-   | p2s.16xlarge.8 | 64    | 512    | 30/30                                   | 400                       | 32              | 8         | 8 x V100 | PCIe Gen3      | 8 x 32 GiB       | KVM            |                                                          |
-   +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------+----------------+------------------+----------------+----------------------------------------------------------+
+   +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+----------+----------------+------------------+----------------+-----------------------------+
+   | Flavor         | vCPUs | Memory | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS (10,000) | Max. NIC Queues | Max. NICs | Max. EVS Disks | GPUs     | GPU Connection | GPU Memory (GiB) | Virtualization | Hardware                    |
+   |                |       |        |                                         |                           |                 |           |                |          |                |                  |                |                             |
+   |                |       | (GiB)  |                                         |                           |                 |           |                |          |                |                  |                |                             |
+   +================+=======+========+=========================================+===========================+=================+===========+================+==========+================+==================+================+=============================+
+   | p2s.2xlarge.8  | 8     | 64     | 10/4                                    | 50                        | 4               | 4         | 60             | 1 x V100 | PCIe Gen3      | 1 x 32 GiB       | KVM            | CPU: Intel® Xeon® Gold 6278 |
+   +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+----------+----------------+------------------+----------------+-----------------------------+
+   | p2s.4xlarge.8  | 16    | 128    | 15/8                                    | 100                       | 8               | 8         | 60             | 2 x V100 | PCIe Gen3      | 2 x 32 GiB       | KVM            |                             |
+   +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+----------+----------------+------------------+----------------+-----------------------------+
+   | p2s.8xlarge.8  | 32    | 256    | 25/15                                   | 200                       | 16              | 8         | 60             | 4 x V100 | PCIe Gen3      | 4 x 32 GiB       | KVM            |                             |
+   +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+----------+----------------+------------------+----------------+-----------------------------+
+   | p2s.16xlarge.8 | 64    | 512    | 30/30                                   | 400                       | 32              | 8         | 60             | 8 x V100 | PCIe Gen3      | 8 x 32 GiB       | KVM            |                             |
+   +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+----------+----------------+------------------+----------------+-----------------------------+
 
 **P2s ECS Features**
 
@@ -599,7 +647,7 @@ P2s ECSs are used in computing acceleration scenarios, such as deep learning tra
       Resources will be released after a P2s ECS is stopped. If resources are insufficient at the next start, the start may fail. If you want to use such an ECS for a long period of time, do not stop it.
 
 -  By default, P2s ECSs created using a Windows public image have the Tesla driver installed.
--  If a P2s ECS is created using a private image, make sure that the Tesla driver has been installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
+-  If a P2s ECS is created using a private image, make sure that the Tesla driver is installed during the private image creation. If not, install the driver for computing acceleration after the ECS is created. For details, see :ref:`Manually Installing a Tesla Driver on a GPU-accelerated ECS <en-us_topic_0149470468>`.
 -  Unlike general-purpose compute, GPU-accelerated ECSs deliver heterogeneous compute. Their specifications can only be modified within the same instance type.
 -  GPU-accelerated ECSs do not support live migration.
 
@@ -616,19 +664,19 @@ P2v ECSs use NVIDIA Tesla V100 GPUs and deliver high flexibility, high-performan
 
 .. table:: **Table 9** P2v ECS specifications
 
-   +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------+----------------+------------+----------------+-------------------------------------------+
-   | Flavor         | vCPUs | Memory | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS (10,000) | Max. NIC Queues | Max. NICs | GPUs     | GPU Connection | GPU Memory | Virtualization | Hardware                                  |
-   |                |       |        |                                         |                           |                 |           |          |                |            |                |                                           |
-   |                |       | (GiB)  |                                         |                           |                 |           |          |                | (GiB)      |                |                                           |
-   +================+=======+========+=========================================+===========================+=================+===========+==========+================+============+================+===========================================+
-   | p2v.2xlarge.8  | 8     | 64     | 10/4                                    | 50                        | 4               | 4         | 1 x V100 | ``-``          | 1 x 16 GiB | KVM            | CPU: Intel® Xeon® Skylake-SP Gold 6151 v5 |
-   +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------+----------------+------------+----------------+-------------------------------------------+
-   | p2v.4xlarge.8  | 16    | 128    | 15/8                                    | 100                       | 8               | 8         | 2 x V100 | NVLink         | 2 x 16 GiB | KVM            |                                           |
-   +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------+----------------+------------+----------------+-------------------------------------------+
-   | p2v.8xlarge.8  | 32    | 256    | 25/15                                   | 200                       | 16              | 8         | 4 x V100 | NVLink         | 4 x 16 GiB | KVM            |                                           |
-   +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------+----------------+------------+----------------+-------------------------------------------+
-   | p2v.16xlarge.8 | 64    | 512    | 30/30                                   | 400                       | 32              | 8         | 8 x V100 | NVLink         | 8 x 16 GiB | KVM            |                                           |
-   +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------+----------------+------------+----------------+-------------------------------------------+
+   +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+----------+----------------+------------+----------------+-------------------------------------------+
+   | Flavor         | vCPUs | Memory | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS (10,000) | Max. NIC Queues | Max. NICs | Max. EVS Disks | GPUs     | GPU Connection | GPU Memory | Virtualization | Hardware                                  |
+   |                |       |        |                                         |                           |                 |           |                |          |                |            |                |                                           |
+   |                |       | (GiB)  |                                         |                           |                 |           |                |          |                | (GiB)      |                |                                           |
+   +================+=======+========+=========================================+===========================+=================+===========+================+==========+================+============+================+===========================================+
+   | p2v.2xlarge.8  | 8     | 64     | 10/4                                    | 50                        | 4               | 4         | 60             | 1 x V100 | ``-``          | 1 x 16 GiB | KVM            | CPU: Intel® Xeon® Skylake-SP Gold 6151 v5 |
+   +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+----------+----------------+------------+----------------+-------------------------------------------+
+   | p2v.4xlarge.8  | 16    | 128    | 15/8                                    | 100                       | 8               | 8         | 60             | 2 x V100 | NVLink         | 2 x 16 GiB | KVM            |                                           |
+   +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+----------+----------------+------------+----------------+-------------------------------------------+
+   | p2v.8xlarge.8  | 32    | 256    | 25/15                                   | 200                       | 16              | 8         | 60             | 4 x V100 | NVLink         | 4 x 16 GiB | KVM            |                                           |
+   +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+----------+----------------+------------+----------------+-------------------------------------------+
+   | p2v.16xlarge.8 | 64    | 512    | 30/30                                   | 400                       | 32              | 8         | 60             | 8 x V100 | NVLink         | 8 x 16 GiB | KVM            |                                           |
+   +----------------+-------+--------+-----------------------------------------+---------------------------+-----------------+-----------+----------------+----------+----------------+------------+----------------+-------------------------------------------+
 
 **P2v ECS Features**
 
@@ -696,23 +744,23 @@ Pi5e ECSs use NVIDIA Ada Lovelace L4 Tensor Core GPUs that are dedicated to real
 
 .. table:: **Table 10** Pi5e ECS specifications
 
-   +-----------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+
-   | Flavor          | vCPUs | Memory | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS | Max. NIC Queues | Max. NICs | GPUs   | GPU Memory | Local Disks | Virtualization |
-   |                 |       |        |                                         |                  |                 |           |        |            |             |                |
-   |                 |       | (GiB)  |                                         | (10,000)         |                 |           |        | (GiB)      |             |                |
-   +=================+=======+========+=========================================+==================+=================+===========+========+============+=============+================+
-   | pi5e.2xlarge.4  | 8     | 32     | 15/3                                    | 150              | 4               | 4         | 1 x L4 | 24         | ``-``       | KVM            |
-   +-----------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+
-   | pi5e.4xlarge.4  | 16    | 64     | 20/6                                    | 280              | 8               | 8         | 1 x L4 | 24         | ``-``       | KVM            |
-   +-----------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+
-   | pi5e.8xlarge.4  | 32    | 128    | 30/12                                   | 550              | 8               | 8         | 2 x L4 | 48         | ``-``       | KVM            |
-   +-----------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+
-   | pi5e.12xlarge.4 | 48    | 192    | 35/18                                   | 750              | 16              | 8         | 4 x L4 | 96         | ``-``       | KVM            |
-   +-----------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+
-   | pi5e.16xlarge.4 | 64    | 256    | 36/24                                   | 800              | 16              | 8         | 4 x L4 | 96         | ``-``       | KVM            |
-   +-----------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+
-   | pi5e.24xlarge.4 | 96    | 384    | 40/36                                   | 850              | 32              | 8         | 6 x L4 | 144        | ``-``       | KVM            |
-   +-----------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+
+   +-----------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+----------------+--------+------------+-------------+----------------+-----------------------------+
+   | Flavor          | vCPUs | Memory | Max./Assured Network Bandwidth (Gbit/s) | Max. Network PPS | Max. NIC Queues | Max. NICs | Max. EVS Disks | GPUs   | GPU Memory | Local Disks | Virtualization | Hardware                    |
+   |                 |       |        |                                         |                  |                 |           |                |        |            |             |                |                             |
+   |                 |       | (GiB)  |                                         | (10,000)         |                 |           |                |        | (GiB)      |             |                |                             |
+   +=================+=======+========+=========================================+==================+=================+===========+================+========+============+=============+================+=============================+
+   | pi5e.2xlarge.4  | 8     | 32     | 15/3                                    | 150              | 4               | 4         | 60             | 1 x L4 | 24         | ``-``       | KVM            | CPU: Intel® Xeon® Gold 6348 |
+   +-----------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+----------------+--------+------------+-------------+----------------+-----------------------------+
+   | pi5e.4xlarge.4  | 16    | 64     | 20/6                                    | 280              | 8               | 8         | 60             | 1 x L4 | 24         | ``-``       | KVM            |                             |
+   +-----------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+----------------+--------+------------+-------------+----------------+-----------------------------+
+   | pi5e.8xlarge.4  | 32    | 128    | 30/12                                   | 550              | 8               | 8         | 60             | 2 x L4 | 48         | ``-``       | KVM            |                             |
+   +-----------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+----------------+--------+------------+-------------+----------------+-----------------------------+
+   | pi5e.12xlarge.4 | 48    | 192    | 35/18                                   | 750              | 16              | 8         | 60             | 4 x L4 | 96         | ``-``       | KVM            |                             |
+   +-----------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+----------------+--------+------------+-------------+----------------+-----------------------------+
+   | pi5e.16xlarge.4 | 64    | 256    | 36/24                                   | 800              | 16              | 8         | 60             | 4 x L4 | 96         | ``-``       | KVM            |                             |
+   +-----------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+----------------+--------+------------+-------------+----------------+-----------------------------+
+   | pi5e.24xlarge.4 | 96    | 384    | 40/36                                   | 850              | 32              | 8         | 60             | 6 x L4 | 144        | ``-``       | KVM            |                             |
+   +-----------------+-------+--------+-----------------------------------------+------------------+-----------------+-----------+----------------+--------+------------+-------------+----------------+-----------------------------+
 
 **Pi5e ECS features**:
 
@@ -742,21 +790,21 @@ Pi2 ECSs use NVIDIA Tesla T4 GPUs dedicated to real-time AI inference. These ECS
 
 .. table:: **Table 11** Pi2 ECS specifications
 
-   +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
-   | Flavor         | vCPUs | Memory | Max./Assured Network Bandwidth | Max. Network PPS | Max. NIC Queues | Max. NICs | GPUs   | GPU Memory | Local Disks | Virtualization | Hardware                                                                         |
-   |                |       |        |                                |                  |                 |           |        |            |             |                |                                                                                  |
-   |                |       | (GiB)  | (Gbit/s)                       | (10,000)         |                 |           |        | (GiB)      |             |                |                                                                                  |
-   +================+=======+========+================================+==================+=================+===========+========+============+=============+================+==================================================================================+
-   | pi2.2xlarge.4  | 8     | 32     | 10/4                           | 50               | 4               | 4         | 1 x T4 | 1 x 16 GiB | ``-``       | KVM            | CPU: Intel® Xeon® Skylake 6151 3.0 GHz or Intel® Xeon® Cascade Lake 6278 2.6 GHz |
-   +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
-   | pi2.3xlarge.4  | 12    | 48     | 12/6                           | 80               | 6               | 6         | 1 x T4 | 1 x 16 GiB | ``-``       | KVM            |                                                                                  |
-   +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
-   | pi2.4xlarge.4  | 16    | 64     | 15/8                           | 100              | 8               | 8         | 2 x T4 | 2 x 16 GiB | ``-``       | KVM            |                                                                                  |
-   +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
-   | pi2.8xlarge.4  | 32    | 128    | 25/15                          | 200              | 16              | 8         | 4 x T4 | 4 x 16 GiB | ``-``       | KVM            |                                                                                  |
-   +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
-   | pi2.16xlarge.4 | 64    | 256    | 30/30                          | 400              | 32              | 8         | 8 x T4 | 8 x 16 GiB | ``-``       | KVM            |                                                                                  |
-   +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
+   +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
+   | Flavor         | vCPUs | Memory | Max./Assured Network Bandwidth | Max. Network PPS | Max. NIC Queues | Max. NICs | Max. EVS Disks | GPUs   | GPU Memory | Local Disks | Virtualization | Hardware                                                                         |
+   |                |       |        |                                |                  |                 |           |                |        |            |             |                |                                                                                  |
+   |                |       | (GiB)  | (Gbit/s)                       | (10,000)         |                 |           |                |        | (GiB)      |             |                |                                                                                  |
+   +================+=======+========+================================+==================+=================+===========+================+========+============+=============+================+==================================================================================+
+   | pi2.2xlarge.4  | 8     | 32     | 10/4                           | 50               | 4               | 4         | 60             | 1 x T4 | 1 x 16 GiB | ``-``       | KVM            | CPU: Intel® Xeon® Skylake 6151 3.0 GHz or Intel® Xeon® Cascade Lake 6278 2.6 GHz |
+   +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
+   | pi2.3xlarge.4  | 12    | 48     | 12/6                           | 75               | 6               | 6         | 60             | 1 x T4 | 1 x 16 GiB | ``-``       | KVM            |                                                                                  |
+   +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
+   | pi2.4xlarge.4  | 16    | 64     | 15/8                           | 100              | 8               | 8         | 60             | 2 x T4 | 2 x 16 GiB | ``-``       | KVM            |                                                                                  |
+   +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
+   | pi2.8xlarge.4  | 32    | 128    | 25/15                          | 200              | 16              | 8         | 60             | 4 x T4 | 4 x 16 GiB | ``-``       | KVM            |                                                                                  |
+   +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
+   | pi2.16xlarge.4 | 64    | 256    | 30/30                          | 400              | 32              | 8         | 60             | 8 x T4 | 8 x 16 GiB | ``-``       | KVM            |                                                                                  |
+   +----------------+-------+--------+--------------------------------+------------------+-----------------+-----------+----------------+--------+------------+-------------+----------------+----------------------------------------------------------------------------------+
 
 **Pi2 ECS Features**
 
@@ -766,7 +814,7 @@ Pi2 ECSs use NVIDIA Tesla T4 GPUs dedicated to real-time AI inference. These ECS
 -  Up to 8.1 TFLOPS of single-precision performance on a single GPU
 -  Up to 130 TOPS of INT8 performance on a single GPU
 -  16 GiB of GDDR6 GPU memory with a bandwidth of 320 GiB/s on a single GPU
--  Built-in one NVENC and two NVDECs
+-  One built-in NVENC and two built-in NVDECs
 
 **Supported Software**
 

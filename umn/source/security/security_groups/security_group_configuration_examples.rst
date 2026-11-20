@@ -9,8 +9,8 @@ When you create instances, such as cloud servers, containers, and databases, in 
 
 -  :ref:`Remotely Logging In to an ECS from a Local Server <en-us_topic_0140323152__en-us_topic_0118534011_section14933617154810>`
 -  :ref:`Remotely Connecting to an ECS from a Local Server to Upload or Download Files over FTP <en-us_topic_0140323152__en-us_topic_0118534011_section8685162114185>`
--  :ref:`Setting Up a Website on an ECS to Provide Internet-Accessible Services <en-us_topic_0140323152__en-us_topic_0118534011_section316061115481>`
--  :ref:`Using ping Command to Verify Network Connectivity <en-us_topic_0140323152__en-us_topic_0118534011_section29561427142511>`
+-  :ref:`Deploying a Website on an ECS <en-us_topic_0140323152__en-us_topic_0118534011_section316061115481>`
+-  :ref:`Using Ping to Test Network Connectivity of the ECS <en-us_topic_0140323152__en-us_topic_0118534011_section29561427142511>`
 -  :ref:`Enabling Communications Between Instances in Different Security Groups <en-us_topic_0140323152__en-us_topic_0118534011_section094514632817>`
 -  :ref:`Allowing External Instances to Access the Database Deployed on an ECS <en-us_topic_0140323152__en-us_topic_0118534011_section7465183583515>`
 -  :ref:`Allowing ECSs to Access Only Specific External Websites <en-us_topic_0140323152__en-us_topic_0118534011_section949023514612>`
@@ -120,12 +120,12 @@ By default, a security group denies all external requests. If you need to remote
 
 .. _en-us_topic_0140323152__en-us_topic_0118534011_section316061115481:
 
-Setting Up a Website on an ECS to Provide Internet-Accessible Services
-----------------------------------------------------------------------
+Deploying a Website on an ECS
+-----------------------------
 
 A security group denies all external requests by default. If you set up a website on an ECS to allow access from the Internet, you need to add an inbound rule to the ECS security group to allow access over specific ports, such as HTTP (80) and HTTPS (443).
 
-.. table:: **Table 7** Setting up a website on an ECS to provide internet-accessible services
+.. table:: **Table 7** Deploying a website on an ECS
 
    ========= ==== =============== =====================
    Direction Type Protocol & Port Source
@@ -136,12 +136,12 @@ A security group denies all external requests by default. If you set up a websit
 
 .. _en-us_topic_0140323152__en-us_topic_0118534011_section29561427142511:
 
-Using **ping** Command to Verify Network Connectivity
------------------------------------------------------
+Using Ping to Test Network Connectivity of the ECS
+--------------------------------------------------
 
-Ping works by sending an Internet Control Message Protocol (ICMP) Echo Request. To ping an ECS from your PC to verify the network connectivity, you need to add an inbound rule to the security group of the ECS to allow ICMP traffic.
+Ping works by sending an Internet Control Message Protocol (ICMP) Echo Request. To ping an ECS from your PC to test the network connectivity, you need to add an inbound rule to the security group of the ECS to allow ICMP traffic.
 
-.. table:: **Table 8** Using **ping** command to verify network connectivity
+.. table:: **Table 8** Using **ping** command to test network connectivity
 
    ========= ==== =============== =====================
    Direction Type Protocol & Port Source

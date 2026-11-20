@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0093492517:
 
-Changing a Security Group
-=========================
+Changing Security Groups
+========================
 
 Scenarios
 ---------
@@ -45,6 +45,6 @@ Procedure
 
       Using multiple security groups may deteriorate ECS network performance. You are advised to select no more than five security groups.
 
-#. Click **OK**.
+#. Click **OK** to complete the security group change.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png

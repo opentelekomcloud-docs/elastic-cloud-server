@@ -31,11 +31,13 @@ After the network is restarted, the original route with the destination of 169.2
 Solution
 --------
 
+#. Log in to the ECS. For details, see :ref:`Login Overview (Linux) <en-us_topic_0013771089>`.
+
 #. Add the route with the destination of 169.254.169.254, and specify the next hop (gateway) and the output device (primary NIC of the Linux ECS). The following is an example:
 
    **# ip route add 169.254.169.254 via** **192.168.1.1** **dev** **eth0**
 
-   192.168.1.1 is the gateway address of the subnet that the primary NIC resides, and eth0 is the primary NIC.
+   192.168.1.1 is the gateway address of the subnet that the primary NIC resides in, and eth0 is the primary NIC.
 
 #. Run the following command to verify that the metadata can be obtained:
 
@@ -47,12 +49,12 @@ Solution
 
       **Figure 2** Obtaining metadata
 
-3. Run the following command to create or modify the **/etc/sysconfig/network-scripts/route-eth0** file to prevent the static route from being changed after network restart:
+4. Run the following command to create or modify the **/etc/sysconfig/network-scripts/route-eth0** file to prevent the static route from being changed after network restart:
 
    **# vi /etc/sysconfig/network-scripts/route-eth0**
 
    Add the following content to the file:
 
-   In this example, the primary NIC is eth0 and gateway address is 192.168.1.1. Replace them based on site requirements.
+   In this example, the primary NIC is eth0 and the gateway address is 192.168.1.1. Replace them based on site requirements.
 
    **# 169.254.169.254 via 192.168.1.1**

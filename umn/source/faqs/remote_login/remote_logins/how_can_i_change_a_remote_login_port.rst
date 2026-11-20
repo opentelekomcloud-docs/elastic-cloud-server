@@ -29,8 +29,8 @@ The following procedure uses an ECS running Windows Server 2012 as an example. T
 
    f. On the **Inbound Rules** tab, click **Add Rule**. In the displayed dialog box, set **Protocol & Port** as follows:
 
-      -  **Protocols**: TCP (Custom ports)
-      -  **Port**: 2020
+      -  Protocol & Port: Protocols/TCP (Custom ports)
+      -  Port: 2020
 
       For details, see "Adding a Security Group Rule" in the *Virtual Private Cloud User Guide*.
 
@@ -106,7 +106,7 @@ The following procedure uses an ECS running CentOS 7.3 as an example. The defaul
 
    f. On the **Inbound Rules** tab, click **Add Rule**. In the displayed dialog box, set **Protocol & Port** as follows:
 
-      -  **Protocols**: TCP (Custom ports)
+      -  Protocol & Port: Protocols/TCP (Custom ports)
       -  **Port**: 2020
 
       For details, see "Adding a Security Group Rule" in the *Virtual Private Cloud User Guide*.

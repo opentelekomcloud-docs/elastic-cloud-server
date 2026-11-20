@@ -8,7 +8,11 @@ Modifying Specifications of Individual ECSs
 Scenarios
 ---------
 
-If the ECS specifications do not meet service requirements, you can modify the specifications, including vCPUs and memory. Certain ECSs allow you to change their types when you modify their specifications.
+If the ECS specifications do not meet service requirements, you can modify the specifications, including vCPUs and memory. For certain ECSs, you can also change their types when modifying specifications.
+
+ECS flavors are available with different virtualization types.
+
+-  KVM ECS flavors: See the **Virtualization** column in :ref:`ECS Specifications <en-us_topic_0177512565>`.
 
 Background
 ----------

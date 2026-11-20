@@ -17,8 +17,8 @@ You can back up ECS data using cloud server backup or cloud disk backup.
 -  Cloud server backup (recommended): Use this backup function if you want to back up the data of all EVS disks (system and data disks) on an ECS. This prevents data inconsistency caused by time difference in creating a backup.
 -  Cloud disk backup: Use this backup function if you want to back up the data of one or more EVS disks (system or data disk) on an ECS. This minimizes backup costs on the basis of data security.
 
-ECS Backup Procedure
---------------------
+Procedure for Backing Up an ECS
+-------------------------------
 
 #. Log in to the management console.
 
@@ -47,8 +47,8 @@ ECS Backup Procedure
 
    After the backup is complete, you can restore server data or create images on the **Backups** tab. For details, see `Restoring from a Cloud Server Backup <https://docs.otc.t-systems.com/en-us/usermanual/cbr/cbr_03_0032.html>`__ and `Creating an Image from a Cloud Server Backup <https://docs.otc.t-systems.com/en-us/usermanual/cbr/cbr_03_0016.html>`__.
 
-EVS Disk Backup Procedure
--------------------------
+Procedure for Backing Up a Disk
+-------------------------------
 
 #. Log in to the management console.
 

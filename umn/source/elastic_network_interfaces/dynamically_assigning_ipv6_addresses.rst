@@ -24,7 +24,9 @@ Constraints
 
    If IPv6 is not enabled, enable it by referring to :ref:`Enabling IPv6 for an ECS <en-us_topic_0140963099__en-us_topic_0129883696_section1967161905116>`. Once enabled, IPv6 cannot be disabled.
 
--  Ensure that the ECS flavor supports IPv6. Currently, C4, M4, and S3 ECSs support IPv6.
+-  Ensure that the ECS flavor supports IPv6.
+
+   Flavors of v7 and later series, such as S7n and M7n, support IPv6.
 
 -  Ensure that **Automatically-assigned IPv6 address** is selected during ECS creation.
 
@@ -191,7 +193,7 @@ You can also enable dynamic IPv6 address assignment by following the instruction
 
 .. caution::
 
-   -  When you run **ipv6-setup-**\ *xxx*, the network service will be automatically restarted. As a result, the network is temporarily disconnected.
+   -  When you run **ipv6-setup-**\ *xxx*, the network service will automatically restart. As a result, the network is temporarily disconnected.
    -  If you use a private image from a CentOS 6.x or Debian ECS with IPv6 auto-assignment enabled to create an ECS in a non-IPv6 environment, the ECS may experience slow startup due to an IPv6 address assignment timeout. You can set the timeout duration for assigning IPv6 addresses to 30s by referring to :ref:`Setting the Timeout Duration for IPv6 Address Assignment <en-us_topic_0140963099__en-us_topic_0129883696_section814912855814>` and try to create a new private image again.
 
 #. Run the following command to check whether IPv6 is enabled for the ECS:

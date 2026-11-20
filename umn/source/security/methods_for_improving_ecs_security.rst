@@ -90,7 +90,7 @@ After server monitoring is enabled, you can set ECS alarm rules to customize the
 Backing Up Data Periodically
 ----------------------------
 
-Data backup is a process of storing all or part of data in different ways to prevent data loss. The following uses Cloud Backup and Recovery (CBR) as an example. For more backup methods, see :ref:`Overview <en-us_topic_0000001128445638>`.
+Data backup is a process of storing all or part of data in different ways to prevent data loss. The following uses Cloud Backup and Recovery (CBR) as an example. For more backup methods, see :ref:`Backup Overview <en-us_topic_0000001128445638>`.
 
 CBR enables you to back up ECSs and disks with ease. In case of a virus attack, accidental deletion, or software or hardware fault, you can restore data to any point in the past when the data was backed up. CBR protects your services by ensuring the security and consistency of your data.
 

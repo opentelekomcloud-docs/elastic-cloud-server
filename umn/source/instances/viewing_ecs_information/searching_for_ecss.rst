@@ -81,7 +81,7 @@ Procedure
 
             **Figure 1** Selecting a property
 
-      b. In the search box, enter or select properties as prompted, such as ID, status, and flavor name, and press **Enter**.
+      b. In the search box, enter or select properties as prompted, such as ID, status, and flavor name, and press **Enter** to search.
 
 Example 1: Searching by Property Value
 --------------------------------------
@@ -136,10 +136,10 @@ If the keys are the same but the values are different, the tags are also automat
 
 -  Searching by a single tag
 
-   In the search box, select **Tag** and then a key-value pair, and press **Enter**.
+   In the search box, select **Tag** and then a key-value pair, and press **Enter** to search.
 
 -  Searching by multiple tags
 
-   In the search box, select multiple tag key-value pairs and press **Enter** for search.
+   In the search box, select multiple tag key-value pairs and press **Enter** to search.
 
    If you search by multiple tags, the tags are in the AND relationship.

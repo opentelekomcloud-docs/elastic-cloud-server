@@ -8,7 +8,7 @@ Network
 VPC
 ---
 
-Virtual Private Cloud (VPC) allows you to create customized virtual networks in your logically isolated AZ. Such networks are dedicated zones that are logically isolated, providing secure network environments for your ECSs. You can define security groups, virtual private networks (VPNs), IP address segments, and bandwidth for a VPC. This facilitates internal network configuration and management and allows you to change your network in a secure and convenient network manner. You can also customize the ECS access rules within a security group and between security groups to improve ECS security.
+Virtual Private Cloud (VPC) allows you to create customized virtual networks in your logically isolated AZ. Such networks are dedicated zones that are logically isolated, providing secure network environments for your ECSs. You can define security groups, virtual private networks (VPNs), IP address segments, and bandwidth for a VPC. This facilitates internal network configuration and management and allows you to change your network in a secure and convenient manner. You can also customize the ECS access rules within a security group and between security groups to improve ECS security.
 
 For more information about VPC, see *Virtual Private Cloud User Guide*.
 
@@ -88,18 +88,18 @@ For example, if the maximum bandwidth of a hypervisor bucket is 10 Gbit/s and wi
 
 -  If the bandwidth required by ECS 1 is 10 GB/s and that required by ECS 2 is 0 GB/s, all bandwidths are allocated to ECS 1.
 -  If the bandwidth required by ECS 1 is 10 GB/s and that required by ECS 2 is 1 GB/s, the bandwidth allocated to ECS 1 is 9 GB/s and that allocated to ECS 2 is 1 GB/s.
--  If the total bandwidth required by ECS 1 and ECS 2 exceeds the bandwidth of the hypervisor bucket, the assured bandwidth will be allocated to the ECSs first, that is the bandwidth for ECS 1 is 5 GB/s and that for ECS 2 is 1 GB/s. The remaining 4 GB/s of bandwidth will be randomly used by the two ECSs.
+-  If the total bandwidth required by ECS 1 and ECS 2 exceeds the bandwidth of the hypervisor bucket, the assured bandwidth will be allocated to the ECSs first, that is, the bandwidth for ECS 1 is 5 GB/s and that for ECS 2 is 1 GB/s. The remaining 4 GB/s of bandwidth will be randomly used by the two ECSs.
 
 Network QoS:
 
 -  The maximum/assured network bandwidth is completely independent of the EIP bandwidth.
 -  ECSs of the same hypervisor share the total bandwidth of the hypervisor.
--  Network QoS applies for both private and public network bandwidth.
+-  Network QoS applies to both private and public network bandwidth.
 -  Network QoS has been applied to the existing KVM-based ECSs.
 -  ECSs of the same hypervisor are preferentially allocated with assured bandwidths. Only when other ECSs of the same hypervisor are not in use, an ECS in use in the hypervisor can have the maximum bandwidth.
 
 .. note::
 
    -  Network QoS applies to any program running on an ECS.
-   -  Network QoS applies for both private and public network bandwidth.
+   -  Network QoS applies to both private and public network bandwidth.
    -  The EIP bandwidth limits the external bandwidth, and the network QoS limits the internal bandwidth.

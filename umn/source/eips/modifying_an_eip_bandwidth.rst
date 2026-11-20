@@ -27,6 +27,6 @@ Procedure
 #. Click |image1| in the upper left corner and select a region and project.
 #. Under **Computing**, click **Elastic Cloud Server**.
 #. In the ECS list, locate the row containing the target ECS and choose **More** > **Manage Network** > **Modify Bandwidth** in the **Operation** column.
-#. Change the bandwidth name and size as prompted.
+#. Change the bandwidth name and size.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png

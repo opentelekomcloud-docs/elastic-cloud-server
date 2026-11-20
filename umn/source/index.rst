@@ -14,8 +14,9 @@ Elastic Cloud Server - User Guide
    elastic_network_interfaces/index
    eips/index
    security/index
-   backup_using_cbr/index
+   backups/index
    passwords_and_key_pairs/index
+   os_dump/index
    resources_and_tags/index
    cloud_eye_monitoring/index
    audit_using_cts/index

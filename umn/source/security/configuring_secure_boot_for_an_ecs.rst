@@ -77,7 +77,7 @@ Constraints
 -  Keys can be imported only when a private image is being created. Keys cannot be imported on the BIOS boot interface of an ECS.
 -  Keys or related configurations cannot be imported to an ECS using the mokutil tool.
 -  For details about the OSs that support UEFI boot, see `OSs Supporting UEFI Boot Mode <https://docs.otc.t-systems.com/image-management-service/umn/overview/supported_oss/oss_supporting_uefi_boot_mode.html>`__.
--  For Windows, you need to download the corresponding certificate from the OS's official website. For details, see `Keys Required for Secure Boot on all PCs <https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-secure-boot-key-creation-and-management-guidance?view=windows-11#15-keys-required-for-secure-boot-on-all-pcs>`__.
+-  For Windows, you need to download the corresponding certificate from the OS's official website. For details, see `Keys Required for Secure Boot on All PCs <https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-secure-boot-key-creation-and-management-guidance?view=windows-11#15-keys-required-for-secure-boot-on-all-pcs>`__.
 
 Process Flow
 ------------
@@ -99,7 +99,14 @@ You need to create keys based on the UEFI secure boot standard, create a certifi
 
    a. :ref:`Connect to an ECS <en-us_topic_0013771089>`.
 
-   b. Create a GUID for key generation.
+   b. Create and access the directory:
+
+      .. code-block:: text
+
+         mkdir -p ~/certs
+         cd ~/certs
+
+   c. Create a GUID for key generation.
 
       .. code-block:: text
 
@@ -230,7 +237,7 @@ Install the required package.
    # Replace the image file.
    mv /boot/vmlinuz-$(uname -r).signed  /boot/vmlinuz-$(uname -r)
 
-**Sign the boot file.**
+**Sign the boot files.**
 
 .. code-block:: text
 
@@ -239,7 +246,7 @@ Install the required package.
    sudo sbsign --key db.key --cert db.crt --output /boot/efi/EFI/ubuntu/shimx64.efi.signed /boot/efi/EFI/ubuntu/shimx64.efi
    sudo sbsign --key db.key --cert db.crt --output /boot/efi/EFI/ubuntu/mmx64.efi.signed /boot/efi/EFI/ubuntu/mmx64.efi
 
-   # Replace the original file.
+   # Replace the original files.
    sudo mv /boot/efi/EFI/ubuntu/grubx64.efi.signed /boot/efi/EFI/ubuntu/grubx64.efi
    sudo mv /boot/efi/EFI/ubuntu/shimx64.efi.signed /boot/efi/EFI/ubuntu/shimx64.efi
    sudo mv /boot/efi/EFI/ubuntu/mmx64.efi.signed /boot/efi/EFI/ubuntu/mmx64.efi

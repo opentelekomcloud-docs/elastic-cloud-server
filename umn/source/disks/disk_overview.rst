@@ -2,15 +2,15 @@
 
 .. _en-us_topic_0140313880:
 
-Overview
-========
+Disk Overview
+=============
 
 What Is Elastic Volume Service?
 -------------------------------
 
 Elastic Volume Service (EVS) offers scalable block storage for ECSs. With high reliability, high performance, and rich specifications, EVS disks can be used for distributed file systems, development and test environments, data warehouses, and high-performance computing (HPC) scenarios to meet diverse service requirements.
 
-Just like the physical disks in local PC need to be installed before they can be used, EVS disks need to be attached to servers before they can be used. They cannot be used alone. You also need to partition and create file systems on them before they can be used for persistent data storage.
+Similar to physical disks on a local PC, EVS disks must be attached to servers before they can be used. They cannot function independently. You also need to partition and create file systems on them before they can be used for persistent data storage.
 
 
 .. figure:: /_static/images/en-us_image_0205523160.png

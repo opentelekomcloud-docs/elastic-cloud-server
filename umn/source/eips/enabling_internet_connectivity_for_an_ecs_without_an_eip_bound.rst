@@ -23,140 +23,139 @@ Prerequisites
 Using a Linux Proxy ECS
 -----------------------
 
-.. note::
-
-   Prerequisites for this solution:
-
-   -  A proxy ECS with an EIP bound is available.
-   -  The IP address of the proxy ECS is in the same network and same security group as the ECSs that need to access the Internet.
-
 The following uses CentOS 7.9 as an example. The operations apply to CentOS 7.9 and earlier versions.
 
-#. Log in to the management console.
+#. **Disable Source/Destination Check for the proxy ECS.**
 
-#. Click |image1| in the upper left corner and select a region and project.
+   a. Log in to the management console.
 
-#. Under **Computing**, click **Elastic Cloud Server**.
+   b. Click |image1| in the upper left corner and select a region and project.
 
-#. In the search box above the ECS list, enter the proxy ECS name for search.
+   c. Under **Computing**, click **Elastic Cloud Server**.
 
-#. Click the name of the proxy ECS. The ECS details page is displayed.
+   d. In the search box above the ECS list, enter the proxy ECS name for search.
 
-#. On the **Network Interfaces** tab, click |image2|. Then, disable **Source/Destination Check**.
+   e. Click the name of the proxy ECS. The ECS details page is displayed.
+
+   f. On the **Network Interfaces** tab, click |image2|. Then, disable **Source/Destination Check**.
 
 
-   .. figure:: /_static/images/en-us_image_0000002385324601.png
-      :alt: **Figure 1** Disabling source/destination check
+      .. figure:: /_static/images/en-us_image_0000002385324601.png
+         :alt: **Figure 1** Disabling source/destination check
 
-      **Figure 1** Disabling source/destination check
+         **Figure 1** Disabling source/destination check
 
-   By default, the source/destination check function is enabled. When this function is enabled, the system checks whether source IP addresses contained in the packets sent by ECSs are correct. If the IP addresses are incorrect, the system does not allow the ECSs to send the packets. This mechanism prevents packet spoofing, thereby improving system security. However, this mechanism prevents the packet sender from receiving returned packets. Therefore, disable the source/destination check.
+      By default, the source/destination check function is enabled. When this function is enabled, the system checks whether source IP addresses contained in the packets sent by ECSs are correct. If the IP addresses are incorrect, the system does not allow the ECSs to send the packets. This mechanism prevents packet spoofing for improved system security. However, it prevents the packet sender from receiving returned packets, so you need to disable source/destination check.
 
-#. Log in to the proxy ECS.
+2. **Configure SNAT for the proxy ECS.**
 
-   For more details, see :ref:`Login Overview (Linux) <en-us_topic_0013771089>`.
+   a. Log in to the proxy ECS.
 
-#. Check whether the proxy ECS can access the Internet.
+      For more details, see :ref:`Login Overview (Linux) <en-us_topic_0013771089>`.
 
-   **ping www.google.com**
+   b. Check whether the proxy ECS can access the Internet.
 
-   The proxy ECS can access the Internet if information similar to the following is displayed:
+      **ping www.google.com**
 
-   .. code-block::
+      The proxy ECS can access the Internet if information similar to the following is displayed:
 
-      64 bytes from 220.181.111.148: icmp_seq=1 ttl=51 time=9.34 ms
-      64 bytes from 220.181.111.148: icmp_seq=2 ttl=51 time=9.11 ms
-      64 bytes from 220.181.111.148: icmp_seq=3 ttl=51 time=8.99 ms
+      .. code-block::
 
-#. (Optional) Install the iptables service and set the automatic startup of iptables.
+         64 bytes from 220.181.111.148: icmp_seq=1 ttl=51 time=9.34 ms
+         64 bytes from 220.181.111.148: icmp_seq=2 ttl=51 time=9.11 ms
+         64 bytes from 220.181.111.148: icmp_seq=3 ttl=51 time=8.99 ms
 
-   Perform this step only for ECSs running CentOS 7.x.
+   c. (Optional) Install the iptables service and set the automatic startup of iptables.
 
-   **yum install iptables-services -y**
+      Perform this step only for ECSs running CentOS 7.x.
 
-   **systemctl start** **iptables**
+      **yum install iptables-services -y**
 
-   **systemctl enable iptables**
+      **systemctl start** **iptables**
 
-#. Check whether IP forwarding is enabled on the proxy ECS.
+      **systemctl enable iptables**
 
-   **cat /proc/sys/net/ipv4/ip_forward**
+   d. Check whether IP forwarding is enabled on the proxy ECS.
 
-   -  If **0** (disabled) is displayed, go to :ref:`11 <en-us_topic_0027157850__li51820417113959>`.
-   -  If **1** (enabled) is displayed, go to :ref:`16 <en-us_topic_0027157850__li46434272315>`.
+      **cat /proc/sys/net/ipv4/ip_forward**
 
-#. .. _en-us_topic_0027157850__li51820417113959:
+      -  If **0** (disabled) is displayed, go to :ref:`2.e <en-us_topic_0027157850__li148817315360>`.
+      -  If **1** (enabled) is displayed, go to :ref:`2.j <en-us_topic_0027157850__li548833133613>`.
 
-   Open the IP forwarding configuration file in the vi editor.
+   e. .. _en-us_topic_0027157850__li148817315360:
 
-   **vi /etc/sysctl.conf**
+      Open the IP forwarding configuration file in the vi editor.
 
-#. Press **i** to enter editing mode.
+      **vi /etc/sysctl.conf**
 
-#. Change the parameter value.
+   f. Press **i** to enter Insert mode.
 
-   Set the **net.ipv4.ip_forward** value to **1**.
+   g. Change the parameter value.
 
-   .. note::
+      Set the **net.ipv4.ip_forward** value to **1**.
 
-      If the **sysctl.conf** file does not contain the **net.ipv4.ip_forward** parameter, run the following command to add it:
+      .. note::
 
-      **echo net.ipv4.ip_forward=1 >> /etc/sysctl.conf**
+         If the **sysctl.conf** file does not contain the **net.ipv4.ip_forward** parameter, run the following command to add it:
 
-#. Press **Esc**, type **:wq**, and press **Enter**.
+         **echo net.ipv4.ip_forward=1 >> /etc/sysctl.conf**
 
-   The system saves the configurations and exits the vi editor.
+   h. Press **Esc**, type **:wq**, and press **Enter**.
 
-#. Apply the change.
+      The system saves the configurations and exits the vi editor.
 
-   **sysctl -p /etc/sysctl.conf**
+   i. Apply the change.
 
-#. .. _en-us_topic_0027157850__li46434272315:
+      **sysctl -p /etc/sysctl.conf**
 
-   Delete the original iptables rules.
+   j. .. _en-us_topic_0027157850__li548833133613:
 
-   **iptables -F**
+      Delete the original iptables rules.
 
-#. .. _en-us_topic_0027157850__li49419571113959:
+      **iptables -F**
 
-   Configure source network address translation (SNAT) to enable ECSs in the same network segment to access the Internet through the proxy ECS.
+   k. .. _en-us_topic_0027157850__li174889319363:
 
-   **iptables -t nat -A POSTROUTING -o eth0 -s** *subnet/netmask-bits* **-j SNAT --to** *nat-instance-ip*
+      Configure source network address translation (SNAT) to enable ECSs in the same network segment to access the Internet through the proxy ECS.
 
-   For example, if the proxy ECS is in network segment 192.168.125.0, the subnet mask has 24 bits, and the private IP address is 192.168.125.4, run the following command:
+      **iptables -t nat -A POSTROUTING -o eth0 -s** *subnet/netmask-bits* **-j SNAT --to** *nat-instance-ip*
 
-   **iptables -t nat -A POSTROUTING -o eth0 -s** *192.168.125.0/24* **-j SNAT --to 192.168.125.4**
+      For example, if the proxy ECS is in network segment 192.168.125.0, the subnet mask has 24 bits, and the private IP address is 192.168.125.4, run the following command:
 
-   .. note::
+      **iptables -t nat -A POSTROUTING -o eth0 -s** **192.168.125.0/24** **-j SNAT --to 192.168.125.4**
 
-      To retain the preceding configuration even after the ECS is restarted, run the **vi /etc/rc.local** command to edit the **rc.local** file. Specifically, copy the rule described in step :ref:`17 <en-us_topic_0027157850__li49419571113959>` into **rc.local**, press **Esc** to exit Insert mode, and enter **:wq** to save the settings and exit.
+      .. note::
 
-#. Save the iptables configuration and set the automatic startup of iptables.
+         To retain the preceding configuration even after the ECS is restarted, run the **vi /etc/rc.local** command to edit the **rc.local** file. Specifically, copy the rule described in step :ref:`2.k <en-us_topic_0027157850__li174889319363>` into **rc.local**, press **Esc** to exit Insert mode, and enter **:wq** to save the settings and exit.
 
-   **service iptables save**
+   l. Save the iptables configuration and set the automatic startup of iptables.
 
-   **chkconfig iptables on**
+      **service iptables save**
 
-#. Check whether SNAT has been configured.
+      **chkconfig iptables on**
 
-   **iptables -t nat --list**
+   m. Check whether SNAT has been configured.
 
-   SNAT has been configured if information similar to :ref:`Figure 2 <en-us_topic_0027157850__fig27598108113959>` is displayed.
+      **iptables -t nat --list**
 
-   .. _en-us_topic_0027157850__fig27598108113959:
+      SNAT has been configured if information similar to :ref:`Figure 2 <en-us_topic_0027157850__fig1248917314363>` is displayed.
 
-   .. figure:: /_static/images/en-us_image_0027174005.png
-      :alt: **Figure 2** Successful SNAT configuration
+      .. _en-us_topic_0027157850__fig1248917314363:
 
-      **Figure 2** Successful SNAT configuration
+      .. figure:: /_static/images/en-us_image_0027174005.png
+         :alt: **Figure 2** Successful SNAT configuration
 
-#. Add a route.
+         **Figure 2** Successful SNAT configuration
+
+3. **Add a custom route to the route table of the VPC that the ECS belongs to.**
 
    a. Log in to the management console.
    b. Click |image3| in the upper left corner and select a region and project.
    c. Under **Network**, click **Virtual Private Cloud**.
-   d. Choose **Route Tables** in the left navigation pane. In the route table list, click a target route table. On the displayed page, click **Add Route**.
-   e. Set route information on the displayed page.
+   d. Select the target VPC and click the number in the **Route Tables** column. The route table list page is displayed.
+   e. Click the target route table to go to the details page.
+   f. Above the route list, click **Add Route**.
+   g. Set route information in the displayed dialog box.
 
       -  **Destination**: indicates the destination network segment. The default value is **0.0.0.0/0**.
 
@@ -164,9 +163,11 @@ The following uses CentOS 7.9 as an example. The operations apply to CentOS 7.9 
 
          You can obtain the private IP address of the ECS on the **Elastic Cloud Server** page.
 
-#. Delete the added iptables rules as needed.
+   h. Click **OK**. The custom route is added.
 
-   **iptables -t nat -D POSTROUTING -o eth0 -s** *subnet/netmask-bits* **-j SNAT --to** *nat-instance-ip*
+4. Delete the added iptables rules as needed.
+
+   **iptables -t nat -D POSTROUTING -o eth0 -s** **subnet/netmask-bits** **-j SNAT --to** **nat-instance-ip**
 
    For example, if the proxy ECS is in network segment 192.168.125.0, the subnet mask has 24 bits, and the private IP address is 192.168.125.4, run the following command:
 

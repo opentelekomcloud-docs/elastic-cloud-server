@@ -10,6 +10,7 @@ Security
 -  :ref:`HSS <en-us_topic_0206596990>`
 -  :ref:`Configuring Secure Boot for an ECS <en-us_topic_0000001469584572>`
 -  :ref:`Configuring TPM for an ECS <en-us_topic_0000002424701056>`
+-  :ref:`Project and Enterprise Project <en-us_topic_0206596991>`
 
 .. toctree::
    :maxdepth: 1
@@ -20,3 +21,4 @@ Security
    hss
    configuring_secure_boot_for_an_ecs
    configuring_tpm_for_an_ecs
+   project_and_enterprise_project

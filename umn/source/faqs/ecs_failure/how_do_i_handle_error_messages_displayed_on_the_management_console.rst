@@ -11,7 +11,7 @@ Symptom
 This section helps you resolve the following issues:
 
 -  An error message was displayed on the management console after you performed ECS-related operations.
--  An error code was displayed after you used an ECS API (see *Elastic Cloud Server API Reference*).
+-  An error code was displayed after you used an ECS API (see the *Elastic Cloud Server API Reference*).
 
 Background
 ----------
@@ -43,7 +43,7 @@ If an error occurs, check the error code and perform the corresponding operation
    +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
    | Ecs.0003              | You do not have the permission or your balance is insufficient.                                                                       | Contact customer service to check your account information.                                                                         |
    +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-   | Ecs.0005              | System error. Try again later or contact customer service.                                                                            | Adjust the request structure as instructed in *Elastic Cloud Server API Reference*.                                                 |
+   | Ecs.0005              | System error. Try again later or contact customer service.                                                                            | Adjust the request structure as requested in the *Elastic Cloud Server API Reference*.                                              |
    +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
    | Ecs.0010              | The private IP address is in use. Select an available IP address for ECS creation.                                                    | Use an idle IP address for ECS creation.                                                                                            |
    +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+

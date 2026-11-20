@@ -25,7 +25,7 @@ This section describes how to migrate an ECS from a public resource pool to a De
 Constraints
 -----------
 
--  Only stopped ECSs can be migrated.
+-  Only stopped ECSs can be migrated to DeHs. For details, see :ref:`Stop <en-us_topic_0013771110__section1777940307>`.
 -  To ensure that the migration is successful, there must be an available DeH.
 -  CBR and CSBS backups are not affected by migrations.
 -  ECS IDs remain unchanged after a migration.
@@ -34,9 +34,13 @@ Procedure
 ---------
 
 #. Log in to the management console.
+
 #. Click |image1| in the upper left corner and select a region and project.
+
 #. Under **Computing**, click **Elastic Cloud Server**.
+
 #. In the ECS list, locate the ECS to be migrated, choose **More** > **View O&M and Monitoring** > **Reallocate ECS** in the **Operation** column.
+
 #. In the displayed dialog box, select the target DeH.
 
    .. note::
@@ -44,5 +48,7 @@ Procedure
       If no DeHs are available, create a DeH first. For details, see Allocating DeHs in the *Dedicated Host User Guide*.
 
 #. Click **OK**.
+
+   After the migration is complete, you can view the DeH accommodating the ECS in the **DeH Name** column of the ECS list.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png

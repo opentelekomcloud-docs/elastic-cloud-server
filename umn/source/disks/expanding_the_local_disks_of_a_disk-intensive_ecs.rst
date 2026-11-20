@@ -8,18 +8,18 @@ Expanding the Local Disks of a Disk-intensive ECS
 Scenarios
 ---------
 
-Disk-intensive ECSs can use both local disks and EVS disks to store data. Local disks are generally used to store service data and feature higher throughput than EVS disks.
+Disk-intensive ECSs can use both local disks and EVS disks to store data. Local disks are generally used to store service data and provide higher throughput than EVS disks.
 
-Disk-intensive ECSs do not support specification modification. When the capacity of local disks is insufficient, you can create a new disk-intensive ECS with higher specifications for capacity expansion. The data stored in the original ECS can be migrated to the new ECS through EVS.
+Disk-intensive ECSs do not support specification modification. When the capacity of local disks is insufficient, you can create a new disk-intensive ECS with higher specifications to expand capacity. The data stored in the original ECS can be migrated to the new ECS with EVS.
 
 Procedure
 ---------
 
 #. .. _en-us_topic_0037470901__li29205763161240:
 
-   `Create an EVS disk <https://docs.otc.t-systems.com/usermanual/evs/en-us_topic_0021738346.html>`__ according to the volume of data to be migrated.
+   `Create an EVS disk <https://docs.otc.t-systems.com/usermanual/evs/en-us_topic_0021738346.html>`__ based on the volume of data to be migrated.
 
-#. Attach the EVS disk created in step :ref:`1 <en-us_topic_0037470901__li29205763161240>` to the disk-intensive ECS for which you want to expand the capacity.
+#. Attach the EVS disk created in :ref:`1 <en-us_topic_0037470901__li29205763161240>` to the disk-intensive ECS for which you want to expand capacity. For details, see :ref:`Attaching a Disk to an ECS <en-us_topic_0096293655>`.
 
 #. Back up local disk data.
 

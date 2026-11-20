@@ -133,9 +133,15 @@ Procedure
 ---------
 
 #. Log in to the management console.
+
 #. Click |image1| in the upper left corner and select a region and project.
+
 #. Under **Computing**, click **Elastic Cloud Server**.
+
 #. On the **Elastic Cloud Server** page, click the name of the ECS from which the EVS disk is to be detached. The ECS details page is displayed.
+
 #. Click the **Disks** tab. Locate the row containing the EVS disk to be detached and click **Detach**.
+
+   After the disk is detached, it will no longer be displayed in the disk list of the **Disks** tab.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png

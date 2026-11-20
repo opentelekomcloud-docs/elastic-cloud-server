@@ -10,7 +10,7 @@ Scenarios
 
 You can reset your ECS password if:
 
--  The password is forgotten.
+-  The password has been forgotten.
 -  The password has expired.
 
 The method described in this section can only be used to change the password of a local Windows account; it cannot be used to change a domain account password.
@@ -30,7 +30,9 @@ Prerequisites
 
    Run the following command to install the **ntfs-3g** and **chntpw** software packages:
 
-   **sudo apt-get install ntfs-3g chntpw**
+   .. code-block::
+
+      sudo apt-get install ntfs-3g chntpw
 
    Method 2:
 
@@ -67,17 +69,23 @@ Procedure
 
    c. Remotely log in to the temporary ECS.
 
-   d. Run the following command to query the system disk partitions attached to the temporary ECS, so you can identify the directory of the system disk:
+   d. Run the following command to view the device path and partition information of the system disk that is attached to the temporary ECS:
 
-      **fdisk -l**
+      .. code-block::
+
+         fdisk -l
 
    e. Run the following command to mount the file system of the detached system disk to the temporary ECS:
 
-      **mount -t ntfs-3g /dev/**\ *<system-disk-directory>* **/mnt/**
+      .. code-block::
+
+         mount -t ntfs-3g /dev/<system-disk-directory> /mnt/
 
       For example, if the queried system disk directory is xvde2, run the following command:
 
-      **mount -t ntfs-3g /dev/xvde2 /mnt/**
+      .. code-block::
+
+         mount -t ntfs-3g /dev/xvde2 /mnt/
 
       If the error information below is returned in the command output, the NTFS file systems between the original Windows ECS and the Linux ECS may be inconsistent.
 
@@ -92,21 +100,29 @@ Procedure
 
       If the file system is inconsistent, back up the disk data first, and run the following command to repair the New Technology File System (NTFS) partition, and then attach the system disk:
 
-      **ntfsfix /dev/**\ *system-disk-directory*
+      .. code-block::
+
+         ntfsfix /dev/<system-disk-directory>
 
       For example, if the queried system disk directory is xvde2, run the following command:
 
-      **ntfsfix /dev/xvde2**
+      .. code-block::
+
+         ntfsfix /dev/xvde2
 
 #. On the temporary ECS, change the password of the specified user and clear the original password.
 
    a. Run the following command to back up the SAM file:
 
-      **cp /mnt/Windows/System32/config/SAM /mnt/Windows/System32/config/SAM.bak**
+      .. code-block::
+
+         cp /mnt/Windows/System32/config/SAM /mnt/Windows/System32/config/SAM.bak
 
    b. Run the following command to change the password of the specified user:
 
-      **chntpw -u** **Administrator /mnt/Windows/System32/config/SAM**
+      .. code-block::
+
+         chntpw -u Administrator /mnt/Windows/System32/config/SAM
 
    c. Enter **1**, **q**, and **y** as prompted, and press **Enter**.
 
@@ -143,6 +159,8 @@ Procedure
 
    c. Run the command below to set a new password. The new password must meet the password complexity requirements. For details, see :ref:`Overview of Password Reset <en-us_topic_0035643949>`.
 
-      **net user** **Administrator** *<new-password>*
+      .. code-block::
+
+         net user Administrator new-password
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png

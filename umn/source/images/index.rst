@@ -5,12 +5,12 @@
 Images
 ======
 
--  :ref:`Overview <en-us_topic_0177457773>`
+-  :ref:`Image Overview <en-us_topic_0177457773>`
 -  :ref:`Creating an Image <en-us_topic_0101604508>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
-   overview
+   image_overview
    creating_an_image

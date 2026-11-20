@@ -16,28 +16,42 @@ Notes
 -----
 
 -  The system does not record the logs for forcible ECS stopping.
--  The system supports viewing console logs for the ECSs running the following OSs:
-
-   -  Red Hat Enterprise Linux 6.x series
-   -  Red Hat Enterprise Linux 7.x series
-   -  CentOS 6.x series
-   -  CentOS 7.x series
-   -  Ubuntu 14.x series
-   -  Ubuntu 16.x series
-   -  SUSE 11.x series
-   -  SUSE 12.x series
-   -  OpenSUSE 13.x series
-   -  OpenSUSE 42.x series
-   -  Debian 16.x series
-   -  Fedora series
-   -  Freebsd series
-   -  CoreOS series
-
 -  The ECSs running Windows do not support console logs.
 -  The system can save up to 100 KB log files.
 
 Procedure
 ---------
+
+#. Log in to the management console.
+
+#. Click |image1| in the upper left corner and select a region and project.
+
+#. Under **Computing**, click **Elastic Cloud Server**.
+
+#. On the **Elastic Cloud Server** page, click the name of the target ECS.
+
+#. On the ECS details page, click the **Console Logs** tab.
+
+#. Choose the number of lines to be displayed for a log from the **Displayed Lines** drop-down list.
+
+#. Click **Query**.
+
+   View details of the displayed log.
+
+   .. note::
+
+      After you click **Query**, the system will not automatically update the displayed log. To view the latest log, click **Query** again.
+
+      If console logs cannot be queried, check the default OS boot configuration by referring to :ref:`Configuring the Default OS Boot Configuration <en-us_topic_0057711189__section85971730182315>`.
+
+#. (Optional) Click **Download** to download the information of the displayed log.
+
+   Downloaded log files are in .txt format.
+
+.. _en-us_topic_0057711189__section85971730182315:
+
+Configuring the Default OS Boot Configuration
+---------------------------------------------
 
 #. Log in to the ECS.
 
@@ -127,32 +141,6 @@ Procedure
       c. Add **set linux_append="console=ttyS0"**. If **set linux_append="console=ttyS0"** already exists, you do not need to add it. Save the change and exit.
 
 #. On the **Elastic Cloud Server** page, click **Restart**.
-
-#. Obtain ECS console logs.
-
-   a. Log in to the management console.
-
-   b. Click |image1| in the upper left corner and select a region and project.
-
-   c. Under **Computing**, click **Elastic Cloud Server**.
-
-   d. On the **Elastic Cloud Server** page, click the name of the target ECS.
-
-   e. On the ECS details page, click the **Console Logs** tab.
-
-   f. Choose the number of lines to be displayed for a log from the **Displayed Lines** drop-down list.
-
-   g. Click **Query**.
-
-      View details of the displayed log.
-
-      .. note::
-
-         After you click **Query**, the system will not automatically update the displayed log. To view the latest log, click **Query** again.
-
-   h. (Optional) Click **Download** to download the information of the displayed log.
-
-      Downloaded log files are in .txt format.
 
 Related Links
 -------------
