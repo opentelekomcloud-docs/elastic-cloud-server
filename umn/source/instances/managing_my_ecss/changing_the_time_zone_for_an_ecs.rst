@@ -27,9 +27,9 @@ The process of changing the time zone for a Linux ECS depends on the OS. In this
 
    **ls /usr/share/zoneinfo/**
 
-   In the terminal display, the **/user/share/zoneinfo** directory contains a hierarchy of time zone data files. Use the directory structure to obtain your desired time zone file.
+   In the terminal display, the **/usr/share/zoneinfo** directory contains a directory structure of time zone data files. Use the directory structure to obtain your desired time zone file.
 
-   The directory structure shown in **/user/share/zoneinfo** includes both time zones and directories. The directories contain time zone files for specific cities. Locate the time zone for the city in which the ECS is located.
+   The information shown in **/usr/share/zoneinfo** includes both time zones and directories. The directories contain time zone files for specific cities. Locate the time zone for the city in which the ECS is located.
 
 #. Set the target time zone.
 

@@ -5,7 +5,15 @@
 Searching for Resources by Tag
 ==============================
 
-After tags are added to resources, you can search for resources by tag using either of the following methods.
+Scenarios
+---------
+
+After tags are added to resources, you can search for resources by tag using the following methods.
+
+-  :ref:`Searching for ECSs by Tag <en-us_topic_0183019670__section4982112063918>`
+-  :ref:`Filtering Resources on the TMS Console <en-us_topic_0183019670__section855219443124>`
+
+.. _en-us_topic_0183019670__section4982112063918:
 
 Searching for ECSs by Tag
 -------------------------
@@ -33,6 +41,8 @@ On the **Elastic Cloud Server** page, search for ECSs by tag key-value pair.
       :alt: **Figure 2** Searching by tag (2)
 
       **Figure 2** Searching by tag (2)
+
+.. _en-us_topic_0183019670__section855219443124:
 
 Filtering Resources on the TMS Console
 --------------------------------------

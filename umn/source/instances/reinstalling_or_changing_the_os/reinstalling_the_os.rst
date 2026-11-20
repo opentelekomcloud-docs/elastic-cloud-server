@@ -10,11 +10,11 @@ Scenarios
 
 If the OS of an ECS fails to start or requires optimization, reinstall the OS.
 
-Notes
------
+Important Notes
+---------------
 
 -  After the OS is reinstalled, the IP and MAC addresses of the ECS remain unchanged.
--  Reinstalling the OS clears the data in all partitions of the system disk, including the system partition. Back up data before reinstalling the OS. For details, see :ref:`Backing Up an ECS <en-us_topic_0000001128604648>`.
+-  Reinstalling the OS erases all data on the system disk, including the system partition and all other partitions. Back up data before reinstalling the OS. For details, see :ref:`Backing Up an ECS <en-us_topic_0000001128604648>`.
 -  Reinstalling the OS does not affect data in data disks.
 -  Do not perform any operations on the ECS immediately after its OS is reinstalled. Wait for several minutes until the system successfully injects the password or key. Otherwise, the injection may fail, and the ECS cannot be accessed.
 -  After the OS is reinstalled, the password for logging in to the ECS is reset. To retrieve the password, perform the following operations:
@@ -34,7 +34,7 @@ Constraints
 Prerequisites
 -------------
 
--  The target ECS is stopped.
+-  The target ECS must be **Stopped** or **Reinstallation failed**.
 -  The target ECS has a system disk attached.
 
 .. _en-us_topic_0024911405__section58299059111554:
@@ -60,7 +60,7 @@ Procedure
 
 #. (Optional) Select the **Encrypted** option to encrypt the system disk during OS reinstallation.
 
-   To enable encryption, click **Create Xrole** to grant KMS access permissions to EVS. If you have the granting permission, grant KMS access permissions to EVS. If you do not have the granting permission, contact the user who has the Security Administrator permissions to grant KMS access permissions. For details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
+   To enable encryption, click **Create Xrole** to grant KMS access permissions to EVS. If you have the required authorization permissions, grant access directly. If you lack the required permissions, contact a user with the Security Administrator permissions to grant access. For details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
 
    Encryption parameters are as follows:
 
@@ -92,13 +92,11 @@ Procedure
 
 #. Click **OK**.
 
-#. On the **Reinstall OS** page, confirm the settings and click **OK**.
-
-   After the request is submitted, the status **Reinstalling** is displayed. When this status disappears, the reinstallation is complete.
+   After the request is submitted, the ECS status changes to **Reinstalling**. When this status disappears, the reinstallation is complete.
 
    .. note::
 
-      During the reinstallation process, a temporary ECS is created. After the reinstallation is complete, this ECS will be automatically deleted. Do not perform any operation on the temporary ECS during the reinstallation process.
+      During the reinstallation process, a temporary ECS is created. After the reinstallation is complete, this temporary ECS will be automatically deleted. Do not perform any operation on the ECS during the reinstallation process.
 
 Follow-up Procedure
 -------------------

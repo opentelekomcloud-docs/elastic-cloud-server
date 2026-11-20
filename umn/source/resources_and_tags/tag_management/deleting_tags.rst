@@ -5,6 +5,9 @@
 Deleting Tags
 =============
 
+Scenarios
+---------
+
 If you no longer need a tag, delete it in any of the following ways:
 
 -  :ref:`Deleting a Tag on the ECS Details Page <en-us_topic_0183019671__section8763326153815>`

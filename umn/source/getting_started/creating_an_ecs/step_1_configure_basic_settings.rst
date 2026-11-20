@@ -42,7 +42,7 @@ Basic Settings
 
    This configuration is optional. This parameter is available only when you click **Create ECS** on the **Dedicated Host** page. It is unavailable when you click **Create ECS** on the **Elastic Cloud Server** page.
 
-   DeH refers to physical server resources dedicated for a specified user. You can deploy ECSs on DeHs for better isolation, security, and performance of your ECSs. You can continue using your existing server software licenses of ECSs on DeHs to reduce costs. For more details, see *Dedicated Host User Guide*.
+   DeH refers to physical server resources dedicated to a specified user. You can deploy ECSs on DeHs for better isolation, security, and performance of your ECSs. You can continue using your existing server software licenses of ECSs on DeHs to reduce costs. For more details, see *Dedicated Host User Guide*.
 
 #. Set **Specifications**.
 
@@ -58,7 +58,7 @@ Basic Settings
 
       -  You can select **Hide sold-out specifications** to hide specifications that have been sold out.
 
-      -  **Local Disk**: specifies the local storage of the physical server where the ECS is deployed. Only Hard Disk Driver (HDD) disks are supported. If the ECS of the selected type (such as **Disk-intensive**) uses local disks, the system automatically attaches the local disks to the ECS and displays the information of the local disks.
+      -  **Local Disk**: specifies the local storage of the physical server where the ECS is deployed. Only hard disk drive (HDD) disks are supported. If the ECS of the selected type (such as **Disk-intensive**) uses local disks, the system automatically attaches the local disks to the ECS and displays the information of the local disks.
 
          For example, if **Local Disk** is **3x1800 GiB (HDD)**, three HDDs are attached to the ECS and the capacity of each HDD is 1800 GiB.
 
@@ -80,9 +80,9 @@ Basic Settings
 
          -  If you use a full-ECS image to create an ECS, the EVS disks associated with the full-ECS image do not support the function of creating disks using a data disk image.
 
-         -  If a full-ECS image is in **Normal** state and the system displays message "Available in AZ\ *x*", the full-ECS image can be used to create ECSs in this AZ only, and the encryption attributes of the system and data disks of the created ECSs are the same as those of the system and data disks specified in the full-ECS image. The SCSI, encryption, and sharing attribute settings of the system and data disks cannot be modified during ECS creation.
+         -  If a full-ECS image is in **Normal** state and the system displays the message "Available in AZ\ *x*", the full-ECS image can be used to create ECSs in this AZ only, and the encryption attributes of the system and data disks of the created ECSs are the same as those of the system and data disks specified in the full-ECS image. The SCSI, encryption, and sharing attribute settings of the system and data disks cannot be modified during ECS creation.
 
-         -  If a full-ECS image is in **Normal** state but the system does not display message "Available in AZ\ *x*", the full-ECS image can be used to create ECSs in the entire region, and the encryption attributes of the system and data disks of the created ECSs are the same as those of the system and data disks specified in the full-ECS image. Additionally, the data encryption settings of the system disk, and the SCSI, sharing attribute, and data encryption settings of data disks can be modified during ECS creation.
+         -  If a full-ECS image is in **Normal** state but the system does not display the message "Available in AZ\ *x*", the full-ECS image can be used to create ECSs in the entire region, and the encryption attributes of the system and data disks of the created ECSs are the same as those of the system and data disks specified in the full-ECS image. Additionally, the data encryption settings of the system disk, and the SCSI, sharing attribute, and data encryption settings of data disks can be modified during ECS creation.
 
          -  To ensure that NIC multi-queue is enabled on an ECS created using a private image, configure NIC multi-queue when creating such a private image. NIC multi-queue routes NIC interrupt requests among multiple vCPUs for higher network packets per second (PPS) and bandwidth.
 
@@ -146,7 +146,7 @@ Basic Settings
 
          .. note::
 
-            -  One data disk image can be used for one data disk only.
+            -  The same data disk image can only be used by one data disk.
             -  When you use a data disk image to create a disk, **SCSI**, **Encryption**, and **Share** are unavailable.
             -  For instructions about how to create a data disk image, see *Image Management Service User Guide*.
 
@@ -154,7 +154,7 @@ Basic Settings
 
       (Optional) Encryption-related parameters
 
-      To enable encryption, click **Create Xrole** to grant KMS access permissions to EVS. If you have the granting permission, grant KMS access permissions to EVS. If you do not have the granting permission, contact the user who has the Security Administrator permissions to grant KMS access permissions. For details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
+      To enable encryption, click **Create Xrole** to grant KMS access permissions to EVS. If you have the required authorization permissions, grant access directly. If you lack the required permissions, contact a user with the Security Administrator permissions to grant access. For details, see :ref:`Can All Users Use the Encryption Feature? <en-us_topic_0047272493>`
 
       -  **Encryption**: indicates that the EVS disk has been encrypted.
       -  **Create Xrole**: assigns KMS access permissions to EVS to obtain KMS keys. After the permissions are assigned, follow-up operations do not require assigning permissions again.

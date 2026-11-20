@@ -13,7 +13,7 @@ You can add tags to ECSs in the following ways:
 -  :ref:`Editing Tags on the ECS Details Page <en-us_topic_0183019669__section15164103015253>`
 -  :ref:`Adding Tags on the TMS Console <en-us_topic_0183019669__section115321623241>`
 
--  :ref:`Using Predefined Tags to Add a Tag to A ECS <en-us_topic_0183019669__section648015120456>`
+-  :ref:`Adding Predefined Tags to an ECS <en-us_topic_0183019669__section648015120456>`
 
 .. _en-us_topic_0183019669__section619816351650:
 
@@ -59,7 +59,7 @@ Editing Tags on the ECS Details Page
 
 #. Click the **Tags** tab and then **Add Tag**. In the displayed dialog box, enter the tag key and value based on the requirements described in :ref:`Table 1 <en-us_topic_0092499768__table197401426182516>`.
 
-   You can also use predefined tags. For details, see :ref:`Using Predefined Tags to Add a Tag to A ECS <en-us_topic_0183019669__section648015120456>`.
+   You can also use predefined tags. For details, see :ref:`Adding Predefined Tags to an ECS <en-us_topic_0183019669__section648015120456>`.
 
 
    .. figure:: /_static/images/en-us_image_0000002385415681.png
@@ -102,8 +102,8 @@ Adding Tags on the TMS Console
 
 .. _en-us_topic_0183019669__section648015120456:
 
-Using Predefined Tags to Add a Tag to A ECS
--------------------------------------------
+Adding Predefined Tags to an ECS
+--------------------------------
 
 If you want to add the same tag to multiple ECSs or other resources, you can create a predefined tag on the TMS console and then select the tag for the ECSs or other resources. This frees you from having to repeatedly enter tag keys and values. To do so, perform the following operations:
 
@@ -117,7 +117,7 @@ If you want to add the same tag to multiple ECSs or other resources, you can cre
 
 #. Select predefined tags from the tag key and tag value drop-down lists. This operation is available during or after the ECS creation.
 
-   Predefined tags are not available in the following scenarios:
+   Predefined tags are available in the following scenarios:
 
    -  :ref:`Adding Tags During ECS Creation <en-us_topic_0183019669__section619816351650>`
    -  :ref:`Editing Tags on the ECS Details Page <en-us_topic_0183019669__section15164103015253>`

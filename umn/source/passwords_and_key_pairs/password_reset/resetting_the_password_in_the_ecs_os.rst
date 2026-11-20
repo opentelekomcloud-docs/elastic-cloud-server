@@ -8,7 +8,7 @@ Resetting the Password in the ECS OS
 Scenarios
 ---------
 
-This section describes how to reset the password for logging in to an ECS in the OS when the password is about to expire, the password is forgotten, or you are logging in to the ECS for the first time. It is a good practice to change the initial password upon the first login.
+This section describes how to reset the password for logging in to an ECS in the OS when the password is about to expire, has been compromised, or is used for the first time (you are advised to change the initial password upon first login).
 
 Prerequisites
 -------------

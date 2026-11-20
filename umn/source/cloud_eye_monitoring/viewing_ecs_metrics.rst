@@ -19,14 +19,6 @@ Prerequisites
 
    Cloud Eye does not display the monitoring data for a stopped, faulty, or deleted ECS. After such an ECS restarts or recovers, the monitoring data is available in Cloud Eye.
 
-   .. note::
-
-      Cloud Eye discontinues monitoring ECSs that remain in **Stopped** or **Faulty** state for 24 hours and removes them from the monitoring list. However, the alarm rules for such ECSs are not automatically deleted.
-
--  Alarm rules have been configured in Cloud Eye for the target ECS.
-
-   The monitoring data is unavailable for the ECSs without alarm rules configured in Cloud Eye. For details, see :ref:`Creating Alarm Rules <en-us_topic_0027371531>`.
-
 -  The target ECS has been properly running for at least about 10 minutes.
 
    The monitoring data and graphics are not available for a new ECS until the ECS has been running for a certain period.

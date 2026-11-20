@@ -10,24 +10,34 @@ Scenarios
 
 To use graphics acceleration, such as OpenGL, DirectX, or Vulkan, install a GRID driver and separately purchase and configure a GRID license. The GRID driver with a vDWS license also supports CUDA for both computing and graphics acceleration.
 
--  A graphics-accelerated (G series) ECS created using a Windows public image has had a GRID driver of a specified version installed by default, but the GRID license must be purchased and configured separately.
+-  A graphics-accelerated (G series) ECS created using a Windows public image comes with a specific version of the GRID driver preinstalled by default, but the GRID license must be purchased and configured separately.
 -  A graphics-accelerated (G series) ECS created using a Linux public image does not have a GRID driver installed by default. You are required to install a GRID driver and purchase and configure a GRID license separately.
 -  If a GPU-accelerated ECS is created using a private image, install a GRID driver and separately purchase and configure a GRID license.
 
 This section describes how to install a GRID driver, purchase or apply for a GRID license, and configure the license server.
 
-Process of installing a GRID driver:
+Constraints
+-----------
+
+-  NVIDIA allows you to apply for a 90-day trial license.
+-  The GPU driver can be installed only on GPU-accelerated ECSs. For details about GPU-accelerated ECSs and their application scenarios, see :ref:`GPU-accelerated ECSs <en-us_topic_0097289624>`.
+-  Based on the GPU attachment mode, GPU-accelerated ECSs are classified into two types: GPU virtualization ECSs and GPU passthrough ECSs.
+
+   -  GPU virtualization ECSs: Download a driver version corresponding to the ECS series based on :ref:`Table 1 <en-us_topic_0149610914__table188851534175019>`.
+   -  GPU passthrough ECSs: Select a GRID driver version as required.
+
+-  An EIP must be bound to the ECS.
+-  The screenshots in this section are for reference only.
+
+Process
+-------
+
+To install a GRID driver on a GPU-accelerated ECS, perform the following steps:
 
 #. :ref:`Purchasing a GRID License <en-us_topic_0149610914__section1130184214229>`
 #. :ref:`Downloading GRID Driver and Software License Packages <en-us_topic_0149610914__section91244318407>`
 #. :ref:`Deploying and Configuring the License Server <en-us_topic_0149610914__section19229135113439>`
 #. :ref:`Installing the GRID Driver and Configuring the License <en-us_topic_0149610914__section17545653184812>`
-
-.. note::
-
-   -  NVIDIA allows you to apply for a 90-day trial license.
-   -  For details about GPU-accelerated ECSs with different specifications and application scenarios, see :ref:`GPU-accelerated ECSs <en-us_topic_0097289624>`.
-   -  The screenshots in this section are for reference only.
 
 .. _en-us_topic_0149610914__section1130184214229:
 
@@ -40,7 +50,7 @@ Purchasing a GRID License
 
 -  Apply for a trial license.
 
-   Log in to the `official NVIDIA website <https://www.nvidia.com/object/nvidia-enterprise-account.html>`__ and enter desired information.
+   Log in to the `official NVIDIA website <https://enterpriseproductregistration.nvidia.com/?LicType=EVAL&ProductFamily=vGPU>`__ and enter desired information.
 
    For details about how to sign up for an account and apply for a trial license, see the `official NVIDIA help page <https://nvid.nvidia.com/NvidiaUtilities/#/needHelp>`__.
 
@@ -61,29 +71,40 @@ Downloading GRID Driver and Software License Packages
 
 #. Obtain the driver installation package required for an OS. For details, see :ref:`Table 1 <en-us_topic_0149610914__table188851534175019>`.
 
-   For more information about the GRID driver, see `NVIDIA vGPU Software Documentation <https://docs.nvidia.com/grid/index.html>`__.
+   For more information about the GRID driver, see `NVIDIA Virtual GPU (vGPU) Software <https://docs.nvidia.com/vgpu/index.html>`__.
 
    .. note::
 
-      For a GPU passthrough ECS, select a GRID driver version as required.
-
-      For a GPU virtualization ECS, select a driver version based on the following table.
+      -  GPU virtualization ECSs: Download a driver version corresponding to the ECS series based on :ref:`Table 1 <en-us_topic_0149610914__table188851534175019>`.
+      -  GPU passthrough ECSs: Select a GRID driver version as required.
 
    .. _en-us_topic_0149610914__table188851534175019:
 
    .. table:: **Table 1** GRID driver versions supported by GPU-accelerated ECSs
 
-      ======== ================== =========================== ================
-      ECS Type GPU Attachment     Driver Version              CPU Architecture
-      ======== ================== =========================== ================
-      G7v      GPU virtualization GRID 13.0                   x86_64
-      G7       GPU passthrough    Select a version as needed. x86_64
-      G6       GPU passthrough    Select a version as needed. x86_64
-      P3       GPU passthrough    Select a version as needed. x86_64
-      P2s      GPU passthrough    Select a version as needed. x86_64
-      P2v      GPU passthrough    Select a version as needed. x86_64
-      PI2      GPU passthrough    Select a version as needed. x86_64
-      ======== ================== =========================== ================
+      +------------+--------------------+-----------------------------+------------------+
+      | ECS Series | GPU Attachment     | Driver Version              | CPU Architecture |
+      +============+====================+=============================+==================+
+      | G7v        | GPU virtualization | GRID 13.0                   | x86_64           |
+      +------------+--------------------+-----------------------------+------------------+
+      | G7         | GPU passthrough    | Select a version as needed. | x86_64           |
+      +------------+--------------------+-----------------------------+------------------+
+      | G6         | GPU passthrough    | Select a version as needed. | x86_64           |
+      +------------+--------------------+-----------------------------+------------------+
+      | P3         | GPU passthrough    | Select a version as needed. | x86_64           |
+      +------------+--------------------+-----------------------------+------------------+
+      | P2s        | GPU passthrough    | Select a version as needed. | x86_64           |
+      +------------+--------------------+-----------------------------+------------------+
+      | P2v        | GPU passthrough    | Select a version as needed. | x86_64           |
+      +------------+--------------------+-----------------------------+------------------+
+      | P5e        | GPU passthrough    | Select a version as needed. | x86_64           |
+      +------------+--------------------+-----------------------------+------------------+
+      | P5s        | GPU passthrough    | Select a version as needed. | x86_64           |
+      +------------+--------------------+-----------------------------+------------------+
+      | Pi5e       | GPU passthrough    | Select a version as needed. | x86_64           |
+      +------------+--------------------+-----------------------------+------------------+
+      | Pi2        | GPU passthrough    | Select a version as needed. | x86_64           |
+      +------------+--------------------+-----------------------------+------------------+
 
 #. After the registration is complete, log in to the `official NVIDIA website <https://nvid.nvidia.com/dashboard/>`__ and enter the account.
 
@@ -131,7 +152,7 @@ Downloading GRID Driver and Software License Packages
 
 #. Download the GRID driver of the required version. For details, see :ref:`Table 1 <en-us_topic_0149610914__table188851534175019>`.
 
-#. Decompress the GRID driver installation package and install the driver that matches your ECS OS.
+#. Decompress the GRID driver package and install the driver corresponding to your ECS OS.
 
 #. .. _en-us_topic_0149610914__li1783092110416:
 
@@ -154,7 +175,7 @@ The following uses an ECS running CentOS 7.5 as an example to describe how to de
 
    -  The target ECS must have at least 2 vCPUs and 4 GiB of memory.
    -  Ensure that the MAC address of the target ECS has been recorded.
-   -  If the license server is used in the production environment, deploy it in high availability mode. For details, see `official NVIDIA documentation for license server high availability <https://docs.nvidia.com/grid/ls/2019.05/grid-license-server-user-guide/index.html#license-server-high-availability>`__.
+   -  For production environments, high availability deployment is recommended. For details on deploying License Server in primary/secondary high availability mode, see the `official NVIDIA License Server High Availability Documentation <https://archive.docs.nvidia.com/vgpu/ls/2019.05/grid-license-server-user-guide/index.html#license-server-high-availability>`__.
 
 #. Configure the network.
 
@@ -175,29 +196,29 @@ The following uses an ECS running CentOS 7.5 as an example to describe how to de
 
       **sudo ./setup.bin -i console**
 
-   d. In the Introduction section, press **Enter** to continue.
+   d. In the **Introduction** section, press **Enter** to continue.
 
       |image1|
 
-   e. In the License Agreement section, press **Enter** to turn to last pages and accept the license agreement.
+   e. In the **License Agreement** section, press **Enter** to scroll through the pages, and then accept the license agreement.
 
       Enter **Y** and press **Enter**.
 
       |image2|
 
-   f. In the Choose Install Folder section, press **Enter** to retain the default path for installing the License Server software.
+   f. In the **Choose Install Folder** section, press **Enter** to retain the default path for installing the License Server software.
 
-   g. In the Choose Local Tomcat Server Path section, enter the Tomcat's local path in the "/var/lib/*Tomcat version*" format, for example, /var/lib/tomcat8.
+   g. In the **Choose Local Tomcat Server Path** section, enter the Tomcat's local path in the "/var/lib/*Tomcat version*" format, for example, /var/lib/tomcat8.
 
-   h. In the Choose Firewall Options section, confirm the port to be enabled in the firewall and press **Enter**.
+   h. In the **Choose Firewall Options** section, confirm the port to be enabled in the firewall and press **Enter**.
 
       |image3|
 
-   i. In the Pre-Installation Summary section, confirm the information and press **Enter** to start the installation.
+   i. In the **Pre-Installation Summary** section, confirm the information and press **Enter** to start the installation.
 
       |image4|
 
-   j. In the Install Complete section, press **Enter** to end the installation.
+   j. In the **Install Complete** section, press **Enter** to end the installation.
 
       |image5|
 

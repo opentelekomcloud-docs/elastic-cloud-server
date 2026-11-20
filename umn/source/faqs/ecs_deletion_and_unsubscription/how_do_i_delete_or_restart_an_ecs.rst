@@ -13,9 +13,11 @@ Deleting an ECS
 #. Choose **Computing** > **Elastic Cloud Server**.
 #. Locate the row containing the target ECS and choose **More** > **Delete** in the **Operation** column.
 
-.. note::
+   .. note::
 
-   If you choose to delete the EIP and data disks associated with the ECS when deleting it, no charges will apply for the EIP and data disks. However, if they are not deleted, they will continue to incur fees.
+      If you choose to delete the EIP and data disks associated with the ECS when deleting it, no charges will apply for the EIP and data disks. However, if they are not deleted, they will continue to incur fees.
+
+#. Click **OK** to complete the deletion.
 
 Restarting an ECS
 -----------------
@@ -24,3 +26,8 @@ Restarting an ECS
 #. Select the region where the ECS is located.
 #. Choose **Computing** > **Elastic Cloud Server**.
 #. Locate the row containing the target ECS and choose **More** > **Restart** in the **Operation** column.
+#. Click **OK** to request the ECS restart.
+
+   .. note::
+
+      If the ECS has been in the **Restarting** or **Forcibly restarting** state for more than 30 minutes, contact the administrator for handling.

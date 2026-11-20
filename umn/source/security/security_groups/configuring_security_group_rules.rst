@@ -8,7 +8,7 @@ Configuring Security Group Rules
 Scenarios
 ---------
 
-Similar to firewall, a security group is a logical group used to control network access. You can define access rules for a security group to protect the ECSs that are added to this security group.
+Similar to a firewall, a security group is a logical group used to control network access. You can define access rules for a security group to protect the ECSs that are added to this security group.
 
 -  Inbound: Inbound rules allow external network traffic to be sent to the ECSs in the security group.
 -  Outbound: Outbound rules allow network traffic from the ECSs in the security group to be sent out of the security group.

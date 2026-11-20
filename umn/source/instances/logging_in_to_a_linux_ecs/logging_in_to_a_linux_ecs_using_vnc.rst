@@ -230,7 +230,7 @@ If you attempt to log in to an ECS created using a public image for the first ti
 -  VNC keyboard: English
 -  ECS OS keyboard: English
 
-In this case, you must change the languages of the other three types of keyboards to the same language as the physical keyboard for expected data entering. For details, see the **Solution 1** row in :ref:`Table 3 <en-us_topic_0093263550__en-us_topic_0027268511_en-us_topic_0039525621_table18256759113132>`.
+In this case, you must change the languages of the other three types of keyboards to match that of the physical keyboard to ensure key mappings work as expected. For details, see the **Solution 1** row in :ref:`Table 3 <en-us_topic_0093263550__en-us_topic_0027268511_en-us_topic_0039525621_table18256759113132>`.
 
 .. _en-us_topic_0093263550__en-us_topic_0027268511_en-us_topic_0039525621_table18256759113132:
 
@@ -304,7 +304,7 @@ Local commands can be copied to an ECS. To do so, perform the following operatio
 
 .. note::
 
-   There is a low probability that data is lost when you use Paste & Send on the VNC page of a GUI-based Linux ECS. This is because the number of ECS vCPUs fails to meet GUI requirements. In such a case, it is a good practice to send a maximum of 5 characters at a time or switch from GUI to CLI (also called text interface), and then use the Paste & Send function.
+   There is a low probability that data will be lost when you use Paste & Send on the VNC page of a GUI-based Linux ECS. This is because the number of ECS vCPUs fails to meet GUI requirements. In such a case, it is a good practice to send a maximum of 5 characters at a time or switch from GUI to CLI (also called text interface), and then use the Paste & Send function.
 
 Helpful Links
 -------------

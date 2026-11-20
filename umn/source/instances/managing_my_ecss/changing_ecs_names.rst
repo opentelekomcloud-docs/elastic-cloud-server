@@ -33,7 +33,7 @@ Changing the Name of a Single ECS
 
       **Figure 1** Changing the ECS name
 
-#. Click |image3|.
+#. Click |image3| to apply the new name.
 
 .. |image1| image:: /_static/images/en-us_image_0000002188678994.png
 .. |image2| image:: /_static/images/en-us_image_0000001710878525.png

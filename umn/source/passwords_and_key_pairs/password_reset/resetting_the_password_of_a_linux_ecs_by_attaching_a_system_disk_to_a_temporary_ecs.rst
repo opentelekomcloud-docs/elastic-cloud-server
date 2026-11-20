@@ -10,7 +10,7 @@ Scenarios
 
 Keep your password secure. Reset the password if:
 
--  The password is forgotten.
+-  The password has been forgotten.
 -  The password has expired.
 
 This section describes how to reset the root password. After resetting the password, you can log in to the ECS and change the keys or reset passwords for non-root users.
@@ -62,9 +62,11 @@ Procedure
 
    b. .. _en-us_topic_0021427650__li664021617445:
 
-      Run the following command to view the directory of the system disk detached from the original Linux ECS now attached to the temporary ECS:
+      Run the following command to view the device path and partition information of the system disk (detached from the original ECS) that is attached to the temporary ECS.
 
-      **fdisk -l**
+      .. code-block::
+
+         fdisk -l
 
 
       .. figure:: /_static/images/en-us_image_0000001384584706.png
@@ -74,11 +76,16 @@ Procedure
 
    c. Run the following commands in the directory where the **changepasswd.sh** script is stored to run the script for resetting the password:
 
-      **chmod +x changepasswd.sh**
+      .. code-block::
 
-      **./changepasswd.sh**
+         chmod +x changepasswd.sh
+         ./changepasswd.sh
 
-      When you run the password reset script, if the system displays a message indicating that there is no command related to logical volume manager (LVM), such as the message "no lvs command", install an LVM tool on the temporary ECS. The LVM2 tool is recommended, which can be installed by running the **yum install lvm2** command.
+      When you run the password reset script, if the system displays a message (such as "no lvs command"), indicating that there is no command related to logical volume manager (LVM), you need to install an LVM tool (lvm2 recommended) on the temporary ECS by running the following command:
+
+      .. code-block::
+
+         yum install lvm2
 
       .. note::
 
@@ -92,9 +99,11 @@ Procedure
 
          set password success.
 
-#. (Optional) Enable remote root login for non-root users.
+#. (Optional) If you are using a non-root user, enable remote root login permissions.
 
-   **vi /etc/ssh/sshd_config**
+   .. code-block::
+
+      vi /etc/ssh/sshd_config
 
    Modify the following settings:
 

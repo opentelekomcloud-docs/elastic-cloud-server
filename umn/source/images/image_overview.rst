@@ -2,11 +2,11 @@
 
 .. _en-us_topic_0177457773:
 
-Overview
-========
+Image Overview
+==============
 
-Image
------
+What Is an Image?
+-----------------
 
 An image is an ECS or BMS template that contains an OS or service data. It may also contain proprietary software and application software, such as database software. Images are classified into public, private, and shared images.
 
@@ -50,5 +50,5 @@ A shared image is a private image shared by another user and can be used as your
 -  Images can be shared within a region only.
 -  Each image can be shared to a maximum of 128 tenants.
 -  You can stop sharing images anytime without notifying the recipient.
--  You can delete shared image anytime without notifying the recipient.
+-  You can delete the shared image anytime without notifying the recipient.
 -  Encrypted images cannot be shared.

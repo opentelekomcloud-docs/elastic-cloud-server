@@ -67,7 +67,7 @@ ECS Metadata Types
    |                       |                                               |                                                                                                                                                                                                                                                  |
    |                       |                                               | You can specify scripts and configuration files for ECS initialization as required. User-defined data is read and parsed by software such as Cloud-Init or Cloudbase-Init. For details, see :ref:`Injecting User Data <en-us_topic_0032380449>`. |
    |                       |                                               |                                                                                                                                                                                                                                                  |
-   |                       |                                               | For password-authenticated Linux ECSs, this metadata is used to save password injection scripts.                                                                                                                                                 |
+   |                       |                                               | For Linux ECSs created with password authentication, save the password injection script.                                                                                                                                                         |
    +-----------------------+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | OpenStack             | /openstack/latest/network_data.json           | Displays ECS network information.                                                                                                                                                                                                                |
    +-----------------------+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -77,7 +77,7 @@ ECS Metadata Types
    |                       |                                               |                                                                                                                                                                                                                                                  |
    |                       |                                               | .. note::                                                                                                                                                                                                                                        |
    |                       |                                               |                                                                                                                                                                                                                                                  |
-   |                       |                                               |    You can determine what permissions are granted to the agency based on the principal of least privilege (PoLP).                                                                                                                                |
+   |                       |                                               |    You can determine what permissions are granted to the agency based on the principle of least privilege (PoLP).                                                                                                                                |
    |                       |                                               |                                                                                                                                                                                                                                                  |
    |                       |                                               |    ECSs will not use agencies to perform operations on resources.                                                                                                                                                                                |
    +-----------------------+-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -119,7 +119,7 @@ ECS Metadata Types
    +=======================+=======================+=====================================================================================+
    | uuid                  | String                | Specifies an ECS ID.                                                                |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------+
-   | availability_zone     | String                | Specifies the AZ where an ECS locates.                                              |
+   | availability_zone     | String                | Specifies the AZ where an ECS is located.                                           |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------+
    | meta                  | Dict                  | Specifies the metadata information, including the image name, image ID, and VPC ID. |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------+
@@ -128,6 +128,8 @@ ECS Metadata Types
    |                       |                       | To remove the suffix **.novalocal** from an ECS hostname, see:                      |
    |                       |                       |                                                                                     |
    |                       |                       | :ref:`Is an ECS Hostname with Suffix .novalocal Normal? <en-us_topic_0094874138>`   |
+   +-----------------------+-----------------------+-------------------------------------------------------------------------------------+
+   | enterprise_project_id | String                | Specifies the ID of the enterprise project accommodating an ECS.                    |
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------+
 
 Prerequisites
@@ -291,11 +293,15 @@ Security Key (OpenStack Metadata API)
 
 This API is used to obtain a temporary AK/SK.
 
+Before obtaining a temporary AK/SK of an ECS, complete the following configurations:
+
+#. On the IAM console, create and authorize an agency for ECS.
+#. On the ECS details page, add the agency in the **Management Information** > **Agency** area.
+
 .. note::
 
-   -  To enable an ECS to obtain a temporary AK/SK, you need to create and authorize an agency on the IAM console and then go to the ECS details page to configure **Agency** for the ECS in the **Management Information** area.
    -  The validity period of a temporary AK and SK is one hour. The temporary AK and SK are updated 10 minutes ahead of the expiration time. During the 10 minutes, both the new and old temporary AKs and SKs can be used.
-   -  When using temporary AKs and SKs, add **'X-Security-Token':{securitytoken}** in the message header. **securitytoken** is the value returned when a call is made to the API.
+   -  When using the temporary AKs and SKs, add **'X-Security-Token':**\ *{securitytoken}* in the message header. **securitytoken** is the value returned by the API call.
 
 -  URI
 

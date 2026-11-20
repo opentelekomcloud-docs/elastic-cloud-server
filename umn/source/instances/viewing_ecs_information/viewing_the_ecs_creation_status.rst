@@ -27,7 +27,7 @@ Procedure
 
       **Figure 1** ECS creation status
 
-#. Click the number displayed above **Creating** and view task details.
+#. Hover over **Creating** and click the number to view task details.
 
    .. note::
 

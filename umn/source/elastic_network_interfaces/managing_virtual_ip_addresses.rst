@@ -45,7 +45,7 @@ The following uses CentOS 8.2 64bit as an example.
 
 #. .. _en-us_topic_0093492520__en-us_topic_0118499077_li528316578916:
 
-   Obtain and take a note of the network interface that the virtual IP address is to be bound and the connection of the network interface:
+   Obtain and take a note of the network interface to which the virtual IP address is to be bound and the connection of the network interface:
 
    **nmcli connection**
 
