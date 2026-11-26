@@ -1,0 +1,42 @@
+# Regenerates this service's Help Center redirect maps from the content of main
+# and opens the pull request against opentelekomcloud-infra/system-config.
+#
+# The work is done by the shared composite action (documented in
+# opentelekomcloud-infra/github-actions, "Help Center redirections"), the same
+# way build-html-docs.yaml calls tox-run-env.
+#
+# Runs after a merge to main only: the merged content is the source, so a
+# redirect is created for a page that is really gone from main.
+#
+# Required repository secrets:
+#   GITEA_TOKEN                    read access to infra/otc-metadata-rework
+#   SYSTEM_CONFIG_APP_ID           GitHub App with contents:write and
+#   SYSTEM_CONFIG_APP_PRIVATE_KEY  pull-requests:write on system-config
+#   SYSTEM_CONFIG_TOKEN            fallback PAT, used when the App is not set
+name: Generate Help Center redirections
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  redirections:
+    name: Regenerate and open the system-config pull request
+    runs-on: ubuntu-internal
+    container:
+      image: catthehacker/ubuntu:act-24.04
+    steps:
+      # @main for now: the action is new and the v1 tag points at the release
+      # before it. Pin to @v1 once the next release moves the major tag.
+      - name: Generate the redirections
+        uses: opentelekomcloud-infra/github-actions/.github/actions/hc-redirections@main
+        with:
+          git_hosting: github
+          environment: public
+          gitea_token: ${{ secrets.GITEA_TOKEN }}
+          app_id: ${{ secrets.SYSTEM_CONFIG_APP_ID }}
+          app_private_key: ${{ secrets.SYSTEM_CONFIG_APP_PRIVATE_KEY }}
+          github_token: ${{ secrets.SYSTEM_CONFIG_TOKEN }}
